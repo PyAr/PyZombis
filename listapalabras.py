@@ -29,4 +29,5 @@ def main():
 	return palabras
 		
 if __name__ == "__main__":
-	main()
+	p = main()
+	print "La lista resultante es {}".format(p)
