@@ -268,8 +268,19 @@ class Parser(SGMLParser):
                 print "image type unrecognized: %s" % src[:60]
             else: 
                 src = "img/%03d.%s" % (n+1, ext)
-                open(src, "wb").write(img)
-                self.data('.. image:: %s' % src)
+                with open(src, "wb") as f:
+                    f.write(img)
+                self.writeline('.. image:: %s' % src)
+                # parse size / scale (if any)
+                for attr, value in attrs:
+                    if attr == 'style':
+                        for s in value.split(";"):
+                            if s:
+                                k, v = s.split(":")
+                                if k in ("height", "width"):
+                                    self.writeline('   :%s: %s' % (k, v))
+                    elif attr in ("height", "width", "alt"):
+                        self.writeline('   :%s: %s' % (attr, value))
 
     def start_a(self, attrs):
         href = dict(attrs).get('href', None)
