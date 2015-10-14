@@ -244,6 +244,22 @@ class Parser(SGMLParser):
         elif not self.verbatim:
             self.data(' ')
 
+    def start_img(self, attrs):
+        src = dict(attrs).get('src', None)
+        if not src:
+            return #data:image/*;base64,
+        elif self.relroot and self.relpath:
+            if src.startswith('/'):
+                src = self.relroot + src
+            elif '://' not in src:
+                src = self.relpath + src
+        self.data('`')
+        if src.startswith("data:image/*;base64,"):
+            n = len(os.listdir("img"))
+            img = src[20:].decode("base64")
+            open("img/%03d.png" % (n+1), "wb").write(img)
+        self.data('.. image:: %s' % src)
+
     def start_a(self, attrs):
         href = dict(attrs).get('href', None)
         if not href or href.startswith('#'):
