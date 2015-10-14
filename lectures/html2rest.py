@@ -30,6 +30,8 @@ from sgmllib import SGMLParser
 from StringIO import StringIO
 from textwrap import TextWrapper
 from urllib2 import urlparse
+import imghdr
+
 
 CODEBLOCK = '::'
 BLOCKTAGS = ['div', 'blockquote']
@@ -257,8 +259,14 @@ class Parser(SGMLParser):
         if src.startswith("data:image/*;base64,"):
             n = len(os.listdir("img"))
             img = src[20:].decode("base64")
-            open("img/%03d.png" % (n+1), "wb").write(img)
-        self.data('.. image:: %s' % src)
+            open("/tmp/html2rest_image", "wb").write(img)
+            ext = imghdr.what("/tmp/html2rest_image")
+            if not ext:
+                print "image type unrecognized: %s" % src[:60]
+            else: 
+                src = "img/%03d.%s" % (n+1, ext)
+                open(src, "wb").write(img)
+                self.data('.. image:: %s' % src)
 
     def start_a(self, attrs):
         href = dict(attrs).get('href', None)
