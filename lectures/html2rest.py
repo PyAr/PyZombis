@@ -211,6 +211,9 @@ class Parser(SGMLParser):
         else:
             if '#pending' in self.hrefs:
                 self.hrefs[self.hrefs['#pending']] = data
+            # ignore bullet in lists:
+            if self.lists and data.startswith(u'•'):
+                data = data[1:]
             self.data(' '.join(data.splitlines()))
 
     def unknown_starttag(self, tag, attrs):
