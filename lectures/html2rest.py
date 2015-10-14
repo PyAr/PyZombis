@@ -422,3 +422,38 @@ class Parser(SGMLParser):
                 self.writeline('.. _%s: %s' % (link, href))
         self.end_p()
 
+
+
+if __name__ == "__main__":
+    import sys
+    import urllib
+    import codecs
+    import locale
+
+
+    fileobj = None
+    args = sys.argv[1:]
+    if args:
+        arg = args[0]
+        if '://' in arg:
+            fileobj = urllib.urlopen(arg)
+        else:
+            fileobj = open(arg, 'rb')
+        if len(args) > 1:
+            encoding = args[1]
+        else:
+            encoding = 'utf8'
+        if arg[-1] == '/':
+            arg = arg[:-1]
+        relto = arg.rpartition('/')[0]
+    else:
+        fileobj = sys.stdin
+        encoding = locale.getpreferredencoding() or 'utf-8'
+        relto = None
+    try:
+        html2rest(fileobj.read(), encoding=encoding, relto=relto)
+    finally:
+        try:
+            fileobj.close()
+        except:
+            pass    
