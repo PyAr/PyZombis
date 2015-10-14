@@ -255,11 +255,11 @@ class Parser(SGMLParser):
                 src = self.relroot + src
             elif '://' not in src:
                 src = self.relpath + src
-        self.data('`')
         if src.startswith("data:image/*;base64,"):
             n = len(os.listdir("img"))
             img = src[20:].decode("base64")
-            open("/tmp/html2rest_image", "wb").write(img)
+            with open("/tmp/html2rest_image", "wb") as f:
+                f.write(img)
             ext = imghdr.what("/tmp/html2rest_image")
             if not ext:
                 print "image type unrecognized: %s" % src[:60]
