@@ -147,6 +147,7 @@ class Parser(SGMLParser):
         self.inblock = 0
         self.nobreak = False
         self.hrefs = {}
+        self.heading = ""
 
     def close(self):
         self.writeline()
@@ -214,7 +215,12 @@ class Parser(SGMLParser):
             # ignore bullet in lists:
             if self.lists and data.startswith(u'•'):
                 data = data[1:]
-            self.data(' '.join(data.splitlines()))
+            if self.heading:
+                data = ' '.join(data.splitlines())
+                self.writeline(data)
+                self.writeline(self.heading * len(data))
+            else:
+                self.data(' '.join(data.splitlines()))
 
     def unknown_starttag(self, tag, attrs):
         if tag in IGNORETAGS:
@@ -429,10 +435,15 @@ class Parser(SGMLParser):
         self.data('`')
 
     def start_span(self, attrs):
-        pass
+        attrs = dict(attrs)
+        if 'class' in attrs:
+            if attrs["class"] == "T1":
+                self.heading = "="
+            elif attrs["class"] == "T2":
+                self.heading = "-"
 
     def end_span(self):
-        pass
+        self.heading = ""
 
     def start_body(self, attrs):
         pass
