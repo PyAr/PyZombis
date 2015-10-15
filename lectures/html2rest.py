@@ -74,7 +74,7 @@ def readsoup(html, convert='html', encoding='utf8'):
     return str(BeautifulSoup(html, convertEntities=convert,
                                             fromEncoding=encoding))
 
-def html2rest(html, writer=sys.stdout, encoding='utf8', relto=None, preprocess=None):
+def html2rest(html, writer=sys.stdout, encoding='utf8', relto=None, preprocess=None, prefix=""):
     relroot = relpath = None
     if relto:
         parsed = urlparse.urlparse(relto)
@@ -84,7 +84,7 @@ def html2rest(html, writer=sys.stdout, encoding='utf8', relto=None, preprocess=N
             relpath += '/'
     if preprocess:
         html = preprocess(html, encoding=encoding)
-    parser = Parser(writer, encoding, relroot, relpath)
+    parser = Parser(writer, encoding, relroot, relpath, prefix)
     #parser.feed(readsoup(html))
     parser.feed(html.decode(encoding))
     parser.close()
@@ -133,7 +133,7 @@ class LineBuffer(object):
 
 class Parser(SGMLParser):
 
-    def __init__(self, writer=sys.stdout, encoding='utf8', relroot=None, relpath=None):
+    def __init__(self, writer=sys.stdout, encoding='utf8', relroot=None, relpath=None, prefix="", ):
         SGMLParser.__init__(self)
         self.writer = writer
         self.encoding = encoding
@@ -148,6 +148,7 @@ class Parser(SGMLParser):
         self.nobreak = False
         self.hrefs = {}
         self.heading = ""
+        self.prefix = prefix        # prefix for image filenames
 
     def close(self):
         self.writeline()
@@ -265,15 +266,15 @@ class Parser(SGMLParser):
             elif '://' not in src:
                 src = self.relpath + src
         if src.startswith("data:image/*;base64,"):
-            n = len(os.listdir("img"))
+            n = len([fn for fn in os.listdir("img") if fn.startswith(prefix)])
             img = src[20:].decode("base64")
             with open("/tmp/html2rest_image", "wb") as f:
                 f.write(img)
             ext = imghdr.what("/tmp/html2rest_image")
             if not ext:
-                print "image type unrecognized: %s" % src[:60]
+                print "..  image type unrecognized: %s" % src[:60]
             else: 
-                src = "img/%03d.%s" % (n+1, ext)
+                src = os.path.join("img", prefix + "_%03d.%s") % (n+1, ext)
                 with open(src, "wb") as f:
                     f.write(img)
                 self.writeline('.. image:: %s' % src)
@@ -479,12 +480,15 @@ if __name__ == "__main__":
         if arg[-1] == '/':
             arg = arg[:-1]
         relto = arg.rpartition('/')[0]
+        # extract prefix from html filename (for images):
+        prefix = arg.split()[0]
     else:
         fileobj = sys.stdin
         encoding = locale.getpreferredencoding() or 'utf-8'
         relto = None
+        prefix = ""
     try:
-        html2rest(fileobj.read(), encoding=encoding, relto=relto)
+        html2rest(fileobj.read(), encoding=encoding, relto=relto, prefix=prefix)
     finally:
         try:
             fileobj.close()
