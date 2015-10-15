@@ -6,9 +6,9 @@ Programación Python para Zombis MOOC (código y materiales del curso abierto y 
 
 Contenidos:
 
- * lectures: presentaciones para preparar las clases (vídeos)
- * lab: trabajos prácticos semanales (guía de ejercicios) con evaluación y calificación automatizada, implementados para el Laboratorio Virtual de Programación [VPL](http://vpl.dis.ulpgc.es/) de Moodle
- * quiz: cuestionarios rápidos con problemas simples de programación a implementar con [CodeRunner](https://www.coderunner.auckland.ac.nz/moodle/) en Moodle
+ * [lectures](lectures): presentaciones para preparar las clases (vídeos)
+ * [lab](lab): trabajos prácticos semanales (guía de ejercicios) con evaluación y calificación automatizada, implementados para el Laboratorio Virtual de Programación [VPL](http://vpl.dis.ulpgc.es/) de Moodle
+ * [quiz](quiz): cuestionarios rápidos con problemas simples de programación a implementar con [CodeRunner](http://coderunner.org.nz/) en Moodle
 
 ## Licencia
 
