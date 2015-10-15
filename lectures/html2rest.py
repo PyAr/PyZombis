@@ -268,15 +268,24 @@ class Parser(SGMLParser):
         if src.startswith("data:image/*;base64,"):
             n = len([fn for fn in os.listdir("img") if fn.startswith(prefix)])
             img = src[20:].decode("base64")
-            with open("/tmp/html2rest_image", "wb") as f:
-                f.write(img)
-            ext = imghdr.what("/tmp/html2rest_image")
-            if not ext:
-                print "..  image type unrecognized: %s" % src[:60]
-            else: 
-                src = os.path.join("img", prefix + "_%03d.%s") % (n+1, ext)
-                with open(src, "wb") as f:
+            # find if the image is already stored:
+            for fn in os.listdir("img"):
+                fn = os.path.join("img", fn)
+                if open(fn, "rb").read() == img:
+                    src = fn
+                    break
+            else:
+                with open("/tmp/html2rest_image", "wb") as f:
                     f.write(img)
+                ext = imghdr.what("/tmp/html2rest_image")
+                if not ext:
+                    print "..  image type unrecognized: %s" % src[:60]
+                    src = None
+                else: 
+                    src = os.path.join("img", prefix + "_%03d.%s") % (n+1, ext)
+                    with open(src, "wb") as f:
+                        f.write(img)
+            if src:
                 self.writeline('.. image:: %s' % src)
                 # parse size / scale (if any)
                 for attr, value in attrs:
