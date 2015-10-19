@@ -14,16 +14,15 @@ Primeiro programa
 =================
 
 
-
-
-
-
-
 + Este programa possui apenas uma linha de código
 + Observe que as aspas não aparecem na saída
 + Precisamos marcar ou limitar o início e o fim de nossas mensagens
   com um símbolo, nesse caso, as aspas
 
+.. code-block:: pycon
+
+    >>> print ("hola mundo!")
+    hola mundo!
 
 .. image:: img/TWP05_002.png
    :height: 2.592cm
@@ -34,19 +33,15 @@ Primeiro programa
 Primeira mensagem de erro
 =========================
 
-
-
-
-
-
-
-
-
-
-
 + Letras maiúsculas e minúsculas são diferentes
 + Você reparou que Print não está na cor roxa?
 
+.. code-block:: pycon
+
+    >>> Print ("hola mundo!")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'Print' is not defined
 
 .. image:: img/TWP05_003.png
    :height: 5.132cm
@@ -57,15 +52,17 @@ Primeira mensagem de erro
 Primeira mensagem de erro
 =========================
 
-
-
-
-
-
-
 + Se não utilizarmos aspas, o computador interpretará nossa mensagem
   como um comando da linguagem Python, gerando um erro de sintaxe
 + Você reparou que a mensagem não está na cor verde?
+
+.. code-block:: pycon
+
+    >>> print (hola mundo)
+      File "<stdin>", line 1
+        print (hola mundo)
+                        ^
+    SyntaxError: invalid syntax
 
 
 .. image:: img/TWP05_004.png
@@ -77,15 +74,16 @@ Primeira mensagem de erro
 Primeira mensagem de erro
 =========================
 
-
-
-
-
-
-
 + Na versão do Python que usamos os parênteses não são opcionais no
   print
 
+.. code-block:: pycon
+
+    >>> print "hola mundo"
+      File "<stdin>", line 1
+        print "hola mundo"
+              ^
+    SyntaxError: invalid syntax
 
 
 
