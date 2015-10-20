@@ -435,19 +435,19 @@ menor que
 
 diferente
 
-≠
+<>
 
 >=
 
 maior ou igual
 
-≥
+>=
 
 <=
 
 menor ou igual
 
-≤
+<=
 
 ..  image type unrecognized: data:image/*;base64,VkNMTVRGAQAxAAAAAAAAAAEAGwAAAAAAAAAAAAAA
 
