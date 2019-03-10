@@ -16,7 +16,7 @@ My First PyZombis project
 SECTION 1: Introduction
 :::::::::::::::::::::::
 
-Hi! I'm Kaushik Reddy. I had brought few python lecture into the Runestone layout. 
+Hi ! I'm Kaushik Reddy. I had brought few python lectures into the Runestone layout. 
 
 ::
 
