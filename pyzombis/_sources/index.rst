@@ -2,77 +2,67 @@
 My First PyZombis project
 =========================
 
-.. Here is were you specify the content and order of your new book.
-
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
-
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
-
 SECTION 1: Introduction
 :::::::::::::::::::::::
 
 Hi ! I'm Kaushik Reddy. I had brought few python lectures into the Runestone layout. 
 
+Try out these interesting python puzzels to boost your basics.
+
+Happy Learning !
 
 
 
 
-SECTION 2: Sample Directives
-::::::::::::::::::::::::::::
 
-ActiveCode
+SECTION 2: Sample Code snippets
+:::::::::::::::::::::::::::::::
+
+
+FirstCode
 ----------
 
-.. activecode:: codeexample1
+.. activecode:: code_snippet1
    :coach:
-   :caption: List addtion
+   :caption: Integer addition
 
-   print("My first program adds a list of numbers")
-   myList = [2, 4, 6, 8, 10]
-   total = 0
-   for num in myList:
-       total = total + num
-   print(total)
-
-Multiple Choice
+   print("Hello World ! ")
+   print("I love PyZombis !")
+   
+Quize 1
 ---------------
 
-.. mchoice:: question1_2
+.. mchoice:: question_1
     :multiple_answers:
-    :correct: a,b,d
-    :answer_a: red
-    :answer_b: yellow
-    :answer_c: black
-    :answer_d: green
-    :feedback_a: Red is a definitely on of the colors.
-    :feedback_b: Yes, yellow is correct.
-    :feedback_c: Remember the acronym...ROY G BIV.  B stands for blue.
-    :feedback_d: Yes, green is one of the colors.
+    :correct: b
+    :answer_a: List
+    :answer_b: Dictionary
+    :answer_c: Tuple
+    :answer_d: All of the above
+    :feedback_a: No, List doesn't have "key:value" concept.
+    :feedback_b: Yes, Dictionary is correct.
+    :feedback_c: Tuple acts merely like a List, hence nope.
+    :feedback_d: Nope, all of them doesn't have "key:value" relations.
 
-    Which colors might be found in a rainbow? (choose all that are correct)
+    Which python data structure/(s) uses the concept of "Key:value" ? (choose the appropriate option)
 
-User input Choice
------------------
 
-.. activecode:: codeexample2
+Arithmetic Operations
+---------------------
+
+.. activecode:: code_snippet2
    :coach:
    :caption: Code sample to determine whether a number is Even/Odd
    
-   num=int((input("Enter a number:"))
-   if num%2==0:
-	print(num + " " + "is Even")
+   numbr = int(input("Enter a number: "))
+   if (numbr % 2) == 0:
+   	print("{0} is Even".format(numbr))
    else:
-	print(num + " " + "is Odd")
-	
+   	print("{0} is Odd".format(numbr))
 
 
-String operations
------------------
+String operations-1.0
+---------------------
 
 .. activecode:: codeexample3
    :coach:
@@ -84,6 +74,33 @@ String operations
    print(str3)	
    
 
+String operations-1.1
+---------------------
 
+.. activecode:: codeexample3.1
+   :coach:
+   :caption: Parsing Strings !
 
+   strg="Argentina"
+   print(strg[0:])
+   print(strg[1:6])
+   print(strg[:])	
+   
+
+Quize 2
+---------------
+
+.. mchoice:: question_2
+    :multiple_answers:
+    :correct: d
+    :answer_a: string_sample[5:9]
+    :answer_b: string_sample[0:4]
+    :answer_c: string_sample[5:]
+    :answer_d: Both 'a' & 'c'
+    :feedback_a: Yes, but even option 'c' is also cool with it.
+    :feedback_b: Nope, check again.
+    :feedback_c: Yes, but even option 'a' is also cool with it.
+    :feedback_d: Yes, both 'a' and 'c' are true!
+
+    Which of the following will produce "tina" from the string_sample = "Argentina" ? (choose the appropriate option)
 
