@@ -15,30 +15,9 @@ Happy Learning !
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :glob:
 
-
-   lectures/TWP05  
-   lectures/TWP10  
-   lectures/TWP15  
-   lectures/TWP18  
-   lectures/TWP20  
-   lectures/TWP23 
-   lectures/TWP25  
-   lectures/TWP33  
-   lectures/TWP35  
-   lectures/TWP37  
-   lectures/TWP38  
-   lectures/TWP42  
-   lectures/TWP45  
-   lectures/TWP47  
-   lectures/TWP50  
-   lectures/TWP54  
-   lectures/TWP56  
-   lectures/TWP58  
-   lectures/TWP60  
-
-   
+   lectures/*   
 
 CHAPTER 1:  
 ::::::::::

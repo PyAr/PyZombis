@@ -1,4 +1,3 @@
-.. _TWP05:
 
 ============================
 Variáveis e Entrada de Dados
