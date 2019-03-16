@@ -2,8 +2,8 @@
 My First PyZombis project
 =========================
 
-SECTION 1: Introduction
-:::::::::::::::::::::::
+INTRODUCTION
+::::::::::::
 
 Hi ! I'm Kaushik Reddy. I had brought few python lectures into the Runestone layout. 
 
@@ -12,15 +12,40 @@ Try out these interesting python puzzels to boost your basics.
 Happy Learning !
 
 
+Contents:
+
+.. toctree::
+   :maxdepth: 3
 
 
+   lectures/TWP05  
+   lectures/TWP10  
+   lectures/TWP15  
+   lectures/TWP18  
+   lectures/TWP20  
+   lectures/TWP23 
+   lectures/TWP25  
+   lectures/TWP33  
+   lectures/TWP35  
+   lectures/TWP37  
+   lectures/TWP38  
+   lectures/TWP42  
+   lectures/TWP45  
+   lectures/TWP47  
+   lectures/TWP50  
+   lectures/TWP54  
+   lectures/TWP56  
+   lectures/TWP58  
+   lectures/TWP60  
 
-SECTION 2: Sample Code snippets
-:::::::::::::::::::::::::::::::
+   
+
+CHAPTER 1:  
+::::::::::
 
 
-FirstCode
-----------
+Data and simple structures 
+--------------------------
 
 .. activecode:: code_snippet1
    :coach:
@@ -28,6 +53,13 @@ FirstCode
 
    print("Hello World ! ")
    print("I love PyZombis !")
+
+
+.. youtube:: GpbkVHV8_64
+    :height: 315
+    :width: 560
+    :align: left
+
    
 Quize 1
 ---------------
@@ -35,20 +67,19 @@ Quize 1
 .. mchoice:: question_1
     :multiple_answers:
     :correct: b
-    :answer_a: List
-    :answer_b: Dictionary
-    :answer_c: Tuple
-    :answer_d: All of the above
-    :feedback_a: No, List doesn't have "key:value" concept.
-    :feedback_b: Yes, Dictionary is correct.
-    :feedback_c: Tuple acts merely like a List, hence nope.
-    :feedback_d: Nope, all of them doesn't have "key:value" relations.
+    :answer_a: integer only
+    :answer_b: float and integer
+    :answer_c: float only
+    :answer_d: None of the above
+    :feedback_a: No, 5.0 is a float value and 5, an integer
+    :feedback_b: Yes, that's correct!
+    :feedback_c: Both are not float, 5 is an integer here
+    :feedback_d: No, 5.0 is a float value and 5, an integer
 
-    Which python data structure/(s) uses the concept of "Key:value" ? (choose the appropriate option)
+    What kind of a datatypes are  5.0 and 5 respectively ?
 
-
-Arithmetic Operations
----------------------
+Numerical Operations
+--------------------
 
 .. activecode:: code_snippet2
    :coach:
@@ -60,11 +91,17 @@ Arithmetic Operations
    else:
    	print("{0} is Odd".format(numbr))
 
+.. youtube:: mubJU5dHyP8
+    :height: 315
+    :width: 560
+    :align: left
+
+
 
 String operations-1.0
 ---------------------
 
-.. activecode:: codeexample3
+.. activecode:: code_snippet3
    :coach:
    :caption: String concatenation
 
@@ -73,11 +110,16 @@ String operations-1.0
    str3=str1+str2
    print(str3)	
    
+.. youtube:: t5sE9ruRHHM
+    :height: 315
+    :width: 560
+    :align: left
+
 
 String operations-1.1
 ---------------------
 
-.. activecode:: codeexample3.1
+.. activecode:: code_snippet3.1
    :coach:
    :caption: Parsing Strings !
 
@@ -87,8 +129,13 @@ String operations-1.1
    print(strg[:])	
    
 
+.. youtube:: OInhmFfmNXE
+    :height: 315
+    :width: 560
+    :align: left
+
 Quize 2
----------------
+-------
 
 .. mchoice:: question_2
     :multiple_answers:
@@ -102,5 +149,66 @@ Quize 2
     :feedback_c: Yes, but even option 'a' is also cool with it.
     :feedback_d: Yes, both 'a' and 'c' are true!
 
-    Which of the following will produce "tina" from the string_sample = "Argentina" ? (choose the appropriate option)
+    Which of the following will produce "tina" from the string_sample = "Argentina" ? (choose the appropriate option).
+
+
+
+.. activecode:: code_snippet4
+   :coach:
+   :caption: Conditions
+
+   num =int(input('Enter any integer'))
+   if num >0:
+	print("{0} is Positive".format(num))
+   elif num <0:
+	print("{0} is Negative".format(num))
+   else:
+	print("The integer is  zero")
+
+.. youtube:: vyRXFoZEaJw 
+    :height: 315
+    :width:  560
+    :align:  left
+   
+.. youtube:: wuX0ImNSWWQ 
+    :height: 315
+    :width: 560
+    :align: left
+
+.. youtube:: pjOJYIzvh3w 
+    :height: 315
+    :width: 560
+    :align: left
+
+   
+Quize 3
+-------
+
+.. mchoice:: question_3
+    :multiple_answers:
+    :correct: a
+    :answer_a: <,> ==
+    :answer_b: and, or
+    :answer_c: <,>,=,==
+    :answer_d: Both 'a' & 'c'
+    :feedback_a: Yes, these are called the conditional operators
+    :feedback_b: Nope, these are called the logical operators
+    :feedback_c: Nope, '=' is not a conditional operator 
+    :feedback_d: Here '=' is is not a conditional operator
+
+    Which of the following are not conditional operators (choose the appropriate option).
+   
+
+   
+.. activecode:: code_snippet5
+   :coach:
+   :caption: Booleans
+    
+   boolval=False   
+   print(boolval)
+   print(not (boolval))
+   print(type(boolval))
+   print(True or False and True)
+
+   
 
