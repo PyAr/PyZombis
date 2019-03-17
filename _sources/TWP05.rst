@@ -117,7 +117,7 @@ Modo edição
 .. image:: img/TWP05_007.png
    :height: 11.961cm
    :width: 22.859cm
-   :alt: 
+   :align: center
 
 
 Rodar o programa
@@ -148,7 +148,7 @@ Mesmo resultado!
 .. image:: img/TWP05_010.png
    :height: 13.843cm
    :width: 19.844cm
-   :alt: 
+   :align: center
 
 
 Cuidados ao digitar programas
