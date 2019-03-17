@@ -10,7 +10,7 @@ Welcome to PyZombis's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 1 
 
    TWP05
    TWP10

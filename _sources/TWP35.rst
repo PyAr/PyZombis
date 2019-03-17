@@ -121,7 +121,7 @@ Não existem perguntas idiotas
 
 
 
-+ `http://json.org`_`/`_
++ `http://json.org/`_
 + Independente de linguagem
 + Pares nome/valor
 + Lista ordenada

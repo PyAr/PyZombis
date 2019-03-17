@@ -190,7 +190,7 @@ Primeiro: ler os dados para a memória
 Uai, vamô usar um 
 ==================
 trem de dados
-=========
+=============
 
 
 

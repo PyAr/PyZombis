@@ -6,10 +6,8 @@ Variáveis e Entrada de Dados
 .. image:: img/TWP05_001.jpeg
    :height: 14.832cm
    :width: 9.2cm
-   :alt: 
+   :align: center
 
-
-<número>
 
 Primeiro programa
 =================
@@ -25,11 +23,6 @@ Primeiro programa
     >>> print ("hola mundo!")
     hola mundo!
 
-.. image:: img/TWP05_002.png
-   :height: 2.592cm
-   :width: 15.027cm
-   :alt: 
-
 
 Primeira mensagem de erro
 =========================
@@ -43,12 +36,6 @@ Primeira mensagem de erro
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     NameError: name 'Print' is not defined
-
-.. image:: img/TWP05_003.png
-   :height: 5.132cm
-   :width: 19.419cm
-   :alt: 
-
 
 Primeira mensagem de erro
 =========================
@@ -64,12 +51,6 @@ Primeira mensagem de erro
         print (hola mundo)
                         ^
     SyntaxError: invalid syntax
-
-
-.. image:: img/TWP05_004.png
-   :height: 2.645cm
-   :width: 22.674cm
-   :alt: 
 
 
 Primeira mensagem de erro
@@ -88,29 +69,20 @@ Primeira mensagem de erro
 
 
 
-.. image:: img/TWP05_005.png
-   :height: 2.698cm
-   :width: 22.489cm
-   :alt: 
-
-
 Primeira mensagem de erro
 =========================
-
-
-
-
-
-
 
 + Os espaços iniciais possuem um significado em Python que veremos
   mais adiante
 
 
-.. image:: img/TWP05_006.png
-   :height: 3.328cm
-   :width: 22.724cm
-   :alt: 
+.. code-block:: pycon
+
+    >>>     print("Hola. Como estas?")
+    File "<stdin>", line 1
+      print("Hola. Como estas?")
+      ^
+    IndentationError: unexpected indent
 
 
 Interpretador Python
@@ -155,7 +127,8 @@ Rodar o programa
 .. image:: img/TWP05_008.png
    :height: 12.435cm
    :width: 22.859cm
-   :alt: 
+   :align: center
+
 
 
 Salvar o programa
@@ -165,7 +138,7 @@ Salvar o programa
 .. image:: img/TWP05_009.png
    :height: 12.033cm
    :width: 22.859cm
-   :alt: 
+   :align: center
 
 
 Mesmo resultado!
@@ -197,15 +170,32 @@ Calculadora no interpretador
 ============================
 
 
-.. image:: img/TWP05_011.png
-   :height: 13.89cm
-   :width: 4.814cm
-   :alt: 
+.. code-block:: pycon
+
+    Python 3.7.2 (default, Dec 29 2018, 06:19:36) 
+    [GCC 7.3.0] :: Anaconda, Inc. on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> 2+3
+    5
+    >>> 5-3
+    2
+    >>> 10-4+2
+    8
+    >>> 2*10
+    20
+    >>> 10/4
+    2.5
+    >>> 2**3
+    8
+    >>> 10%3
+    1
+    >>> 16%7
+    2
+    >>> 
 
 
 Conceitos de variáveis e atribuição
 ===================================
-
 
 
 + Variáveis são utilizadas para armazenar valores e para dar nome a
@@ -213,13 +203,13 @@ Conceitos de variáveis e atribuição
 + O símbolo para atribuição é o igual (=)
 
 
+.. code-block:: Python
 
-
-.. image:: img/TWP05_012.png
-   :height: 2.909cm
-   :width: 5.714cm
-   :alt: 
-
+    >>> a = 2
+    >>> b = 3
+    >>> print(a+b)
+    5
+    >>> 
 
 Conceitos de variáveis e atribuição
 ===================================
@@ -236,52 +226,33 @@ Conceitos de variáveis e atribuição
 Conceitos de variáveis e atribuição
 ===================================
 
-
-
 + Podemos usar o modo interativo também
-
-
-
-
-
-
-
-
-
 + As duas primeiras linhas não enviam nada para a tela, por isso,
   apenas o resultado da terceira linha é mostrado
 
+.. code-block:: Python
 
-
-
-.. image:: img/TWP05_013.png
-   :height: 3.465cm
-   :width: 7.672cm
-   :alt: 
-
-
+    >>> a = 2
+    >>> b = 3
+    >>> print(a+b)
+    5
+    
 Conceitos de variáveis e atribuição
 ===================================
-
-
 
 + Você pode estar se perguntando por que criamos duas variáveis, a e
   b, para somar dois números?
 + Poderíamos ter obtido o mesmo resultado de diversas formas
 
+.. code-block:: Python
 
-
-
-.. image:: img/TWP05_014.png
-   :height: 3.465cm
-   :width: 7.381cm
-   :alt: 
-
+    >>> print(2+3)
+    5
+    >>> print(5)
+    5
 
 Conceitos de variáveis e atribuição
 ===================================
-
-
 
 + Qual é a diferença entre o primeiro modo e os dois últimos?
 + No primeiro caso está incluído a lógica que usamos para obter o
@@ -295,8 +266,6 @@ Conceitos de variáveis e atribuição
 Conceitos de variáveis e atribuição
 ===================================
 
-
-
 #. 1.Seu salário atual é de R$ 6500 reais. Faça um programa que
    calcule o novo salário com um aumento de 5%
 #. 2.Escreva um programa que exiba seu nome na tela
@@ -307,8 +276,6 @@ Conceitos de variáveis e atribuição
 
 Nomes de variáveis
 ==================
-
-
 
 + Em Python, nomes de variáveis devem iniciar obrigatoriamente com uma
   letra ou caracter sublinhado (_)
@@ -323,17 +290,14 @@ Nomes de variáveis
 Tipos de variáveis
 ==================
 
-
 .. image:: img/TWP05_015.png
    :height: 8.507cm
    :width: 16.595cm
-   :alt: 
+   :align: center
 
 
 Tipos de variáveis
 ==================
-
-
 
 + O conteúdo de uma variável possui um tipo
 + O tipo define a natureza dos dados que a variável armazena
@@ -346,8 +310,6 @@ Tipos de variáveis
 Variáveis numéricas
 ===================
 
-
-
 + Inteiros não possuem casas decimais: 42, -7
 + O tipo inteiro em Python é chamado int
 + Números em ponto flutuante possuem casa decimal: 1.0, 3.1415,
@@ -357,28 +319,18 @@ Variáveis numéricas
 + O tipo ponto flutuante em Python é chamado float
 
 
-
-
 Exercícios
 ==========
 
-
-
-#. 5.Indique o tipo dos seguintes valores: 5, 5.0, 4.3, -2, 100,
+#. Indique o tipo dos seguintes valores: 5, 5.0, 4.3, -2, 100,
    1.333, “10”
-#. 6.Experimente digitar type(x) onde x é cada um dos valores acima no
+#. Experimente digitar type(x) onde x é cada um dos valores acima no
    Python interativo
-#. 7.É possível calcular 2 elevado a um milhão?
-
-
-
-
+#. É possível calcular 2 elevado a um milhão?
 
 
 Representação de valores numéricos
 ==================================
-
-
 
 + Internamente todos os números são representados no sistema binário
 + Esse sistema permite apenas os dígitos 0 e 1
@@ -388,66 +340,35 @@ Representação de valores numéricos
   0.30000000000000004
 
 
-
-
 Variáveis do tipo lógico
 ========================
-
-
 
 + Podemos armazenar verdadeiro e falso
 + A variável se chama lógica ou booleana
 + Em Python escrevemos True e False
 + Observe que T e F são escritos em maiúsculas
 
-
-
-
 Operadores relacionais
 ======================
 
-
-Operador
-
-Operação
-
-Símbolo matemático
-
-==
-
-igual
-
-=
-
->
-
-maior que
-
->
-
-<
-
-menor que
-
-<
-
-!=
-
-diferente
-
-<>
-
->=
-
-maior ou igual
-
->=
-
-<=
-
-menor ou igual
-
-<=
++------------+------------+-----------+
+|  Operador  | Operação   | Símbolo   |
+|            |            | matemático|
++============+============+===========+
+| ==         | igual      |     =     |
++------------+------------+-----------+
+| >          | maior que  |     >     |
++------------+------------+-----------+
+| <          | menor que  |     <     |
++------------+------------+-----------+
+| !=         | diferente  |     <>    |
++------------+------------+-----------+
+| >=         | maior      |     >=    | 
+|            | ou igual   |           |
++------------+------------+-----------+
+| <=         | menor      |     <=    | 
+|            | ou igual   |           |
++------------+------------+-----------+
 
 ..  image type unrecognized: data:image/*;base64,VkNMTVRGAQAxAAAAAAAAAAEAGwAAAAAAAAAAAAAA
 
@@ -455,85 +376,87 @@ menor ou igual
 Exemplos: operadores relacionais
 ================================
 
-
-.. image:: img/TWP05_016.png
-   :height: 12.571cm
-   :width: 3.885cm
-   :alt: 
+.. code-block:: Python
+ 
+    >>> a = 1
+    >>> b = 5
+    >>> c = 2
+    >>> d = 1
+    >>> a == b
+    False
+    >>> b > a
+    True
+    >>> a < b
+    True
+    >>> a == d
+    True
+    >>> b >= a
+    True
+    >>> c <= b
+    True
+    >>> d != a
+    False
+    >>> d != b
+    True
 
 
 Exemplo importante
 ==================
 
-
-
 + >= ou <= para valores iguais
 
+.. code-block:: Pycon
 
-
-
-.. image:: img/TWP05_017.png
-   :height: 3.465cm
-   :width: 5.397cm
-   :alt: 
+    >>> 5 <= 5
+    True
+    >>> 5 >= 5
+    True
 
 
 Exemplo
 =======
 
-
-
 + Podemos usar operadores relacionais para inicializar variáveis do
   tipo lógico
 
+.. code-block:: Pycon
 
-
-
-.. image:: img/TWP05_018.png
-   :height: 4.285cm
-   :width: 12.831cm
-   :alt: 
-
+    >>> nota = 8
+    >>> media = 6
+    >>> aprovado = nota > media
+    >>> print(aprovado)
+    True
+  
 
 Operadores Lógicos
 ==================
-
-
 
 + Temos três operadores básicos: not, and e or
 + Operador not
 
+.. code-block:: Pycon
 
-
-
-
-
-
-
-
-
-
-
-.. image:: img/TWP05_019.png
-   :height: 3.439cm
-   :width: 6.746cm
-   :alt: 
-
-
+    >>> not True
+    False
+    >>> not False
+    True
+    >>> 
+   
 Operadores Lógicos
 ==================
 
-
-
 + Operador and
 
+.. code-block:: pycon
 
-
-
-.. image:: img/TWP05_020.png
-   :height: 6.958cm
-   :width: 9.55cm
-   :alt: 
+    >>> True and True
+    True
+    >>> True and False
+    False
+    >>> False and True
+    False
+    >>> False and False
+    False
 
 
 Operadores Lógicos
@@ -543,63 +466,56 @@ Operadores Lógicos
 
 + Operador or
 
+.. code-block:: pycon
 
-
-
-.. image:: img/TWP05_021.png
-   :height: 6.905cm
-   :width: 9.18cm
-   :alt: 
+    >>> True or True
+    True
+    >>> True or False
+    True
+    >>> False or True
+    True
+    >>> False or False
+    False
 
 
 Expressões Lógicas
 ==================
 
-
-
 + Podemos combinar os operadores lógicos em expressões lógicas
 + A ordem de avaliação é not > and > or
 
-
-
-
 Exemplo
 =======
-
-
 
 + A condição para empréstimo de compra de uma moto é salário maior que
   R$ 1.000,00 e idade acima de 18 anos. Verificar se o José pode pegar o
   empréstimo
 
 
-.. image:: img/TWP05_022.png
-   :height: 3.518cm
-   :width: 15.953cm
-   :alt: 
+.. code-block:: pycon
 
+    >>> salario = 500.0
+    >>> idade = 20
+    >>> salario > 1000 and idade > 18
+    False
 
 Exemplo
 =======
 
-
-
 + Verifique se um aluno que tirou média para exercícios programa 5.8 e
   média de provas 7 passou
 
+.. code-block:: pycon
 
-
-
-.. image:: img/TWP05_023.png
-   :height: 4.365cm
-   :width: 15.53cm
-   :alt: 
+    >>> ep = 5.8
+    >>> p = 7
+    >>> aprovado = ep >= 6 and p >= 6
+    >>> print(aprovado)
+    False
 
 
 Variáveis String
 ================
-
-
 
 + Armazenam cadeias de caracteres como nomes e textos em geral
 + Chamamos cadeias de caracteres uma sequência de símbolos como
@@ -608,35 +524,26 @@ Variáveis String
   início e no final
 
 
-.. image:: img/TWP05_024.png
-   :height: 1.031cm
-   :width: 16.774cm
-   :alt: 
+.. code-block:: pycon
+
+    >>> texto ="Joao e Maria comem pao"
 
 
 Variáveis String
 ================
-
-
 
 + Note que não há problema de utilizarmos espaços para separar as
   palavras
 + Uma string tem um tamanho associado
 + Podemos obter o tamanho através da função embutida len
 
+.. code-block:: pycon
 
-
-
-.. image:: img/TWP05_025.png
-   :height: 1.692cm
-   :width: 10cm
-   :alt: 
-
+    >>> print(len(texto))
+    22
 
 Variáveis String
 ================
-
-
 
 + Podemos acessar os caracteres da string utilizando um número inteiro
   para representar sua posição
@@ -644,27 +551,28 @@ Variáveis String
 + Acessamos o caracter fornecendo o índice entre colchetes ([ ])
 
 
-.. image:: img/TWP05_026.png
-   :height: 1.745cm
-   :width: 8.863cm
-   :alt: 
+.. code-block:: pycon
 
+
+    >>> print(texto[0])
+    J
 
 Variáveis String
 ================
-
-
 
 + Cuidado: não podemos acessar um índice maior que a quantidade de
   caracteres da string
 
 
+.. code-block:: pycon
 
-
-.. image:: img/TWP05_027.png
-   :height: 6.19cm
-   :width: 19.181cm
-   :alt: 
+    >>> print(len(texto))
+    22
+    >>> print(texto[22])
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    IndexError: string index out of range
+    >>> 
 
 
 Operações com strings
@@ -683,10 +591,14 @@ Concatenação
 ============
 
 
-.. image:: img/TWP05_028.png
-   :height: 5.37cm
-   :width: 14.419cm
-   :alt: 
+.. code-block:: pycon
+
+    >>> a = "Batatinha "
+    >>> b = "quando nasce"
+    >>> print(a+b)
+    Batatinha quando nasce
+    >>> print(a * 3)
+    Batatinha Batatinha Batatinha 
 
 
 Composição
@@ -700,60 +612,59 @@ Composição
 
 
 
-.. image:: img/TWP05_029.png
-   :height: 2.645cm
-   :width: 17.462cm
-   :alt: 
-
+.. code-block:: pycon
+   
+    >>> idade = 20
+    >>> print("Joao tem %d anos" %idade)
+    Joao tem 20 anos
 
 Composição
 ==========
-
-
 
 + Os principais marcadores são %d para números inteiros, %s para
   strings e %f para números em ponto flutuante
 + %03d completa com zeros adicionais
 + %3d significa três posições sem zeros adicionais
 
+.. code-block:: pycon
 
-
-
-.. image:: img/TWP05_030.png
-   :height: 3.518cm
-   :width: 11.932cm
-   :alt: 
+    >>> print("[%03d]" %idade)
+    [020]
+    >>> print("[%3d]" %idade)
+    [ 20]
+    >>> 
 
 
 Composição
 ==========
 
-
-
 + %5.2f significa 5 caracteres no total e 2 casas decimais
 
+.. code-block:: pycon
 
-
-
-.. image:: img/TWP05_031.png
-   :height: 1.692cm
-   :width: 14.63cm
-   :alt: 
+    >>> print("R$ %5.2f reais" %23)
+    R$ 23.00 reais
 
 
 Fatiamento
 ==========
 
-
-
 + Fatia do primeiro índice até o anterior do segundo
 
+.. code-block:: pycon
 
-.. image:: img/TWP05_032.png
-   :height: 9.577cm
-   :width: 10.027cm
-   :alt: 
-
+    >>> x = "0123456789"
+    >>> print(x[0:2])
+    01
+    >>> print(x[1:2])
+    1
+    >>> print(x[2:4])
+    23
+    >>> print(x[0:5])
+    01234
+    >>> print(x[1:8])
+    1234567
+    >>> 
 
 Fatiamento
 ==========
@@ -764,11 +675,18 @@ Fatiamento
   também podemos ter índices negativos: -1 último, -2 penúltimo
 
 
-.. image:: img/TWP05_033.png
-   :height: 8.704cm
-   :width: 9.021cm
-   :alt: 
+.. code-block:: pycon
 
+      >>> print(x[:2])
+      01
+      >>> print(x[4:])
+      456789
+      >>> print(x[4:-1])
+      45678
+      >>> print(x[-4:-1])
+      678
+      >>> print(x[:])
+      0123456789
 
 Alteração de variáveis com o tempo
 ==================================
@@ -782,10 +700,18 @@ Alteração de variáveis com o tempo
 
 
 
-.. image:: img/TWP05_034.png
-   :height: 7.884cm
-   :width: 13.122cm
-   :alt: 
+.. code-block:: pycon
+
+    >>> divida = 0
+    >>> compra = 100
+    >>> divida = divida + compra
+    >>> compra = 200
+    >>> divida = divida + compra
+    >>> compra = 300
+    >>> divida = divida + compra
+    >>> print(divida)
+    600
+    >>> 
 
 
 Teste de mesa ou simulação
@@ -836,7 +762,7 @@ Não tenha pressa para o teste de mesa
 .. image:: img/TWP05_035.jpeg
    :height: 13.6cm
    :width: 20.42cm
-   :alt: 
+   :align: center
 
 
 Entrada de Dados
@@ -848,19 +774,14 @@ Entrada de Dados
 + Vamos começar a pegar os valores durante a execução dos programas e
   usar mais o modo de edição
 
+.. code-block:: pycon
 
+      >>> nome = input("Digite o seu nome: ")
+      Digite o seu nome: Epaminondas
+      >>> print("Hola %s!" % nome)
+      Hola Epaminondas!
+      >>> 
 
-
-.. image:: img/TWP05_036.png
-   :height: 2.592cm
-   :width: 13.943cm
-   :alt: 
-
-
-.. image:: img/TWP05_037.png
-   :height: 1.772cm
-   :width: 16.244cm
-   :alt: 
 
 
 Conversão da entrada de dados
@@ -872,35 +793,25 @@ Conversão da entrada de dados
 + Usamos int( ) para converter um valor para inteiro e float( ) para
   ponto flutuante
 
+.. code-block:: pycon
 
-
-
-
-
-.. image:: img/TWP05_038.png
-   :height: 2.599cm
-   :width: 23.642cm
-   :alt: 
-
-
-.. image:: img/TWP05_039.png
-   :height: 3.199cm
-   :width: 11.855cm
-   :alt: 
-
+      >>> valor_unitario = float(input("Valor de uma rosquinha: "))Valor de uma rosquinha: 1.25
+      >>> n = int(input("numbero de rosquinhas: "))
+      numbero de rosquinhas: 3
+      >>> print("Valor total = %5.2f" %(n*valor_unitario))
+      Valor total =  3.75
+      >>> 
 
 Erro comum
 ==========
 
-
-
 + Esquecer algum parênteses. O erro vai dar na linha de baixo.
 
+.. code-block:: pycon
 
-.. image:: img/TWP05_040.png
-   :height: 6.846cm
-   :width: 20.801cm
-   :alt: 
+      >>> valor_unitario = float(input("Valor de uma rosquinha: ")... 
+      ... 
+      ... 
 
 
 Lista de Exercícios
@@ -910,7 +821,7 @@ Lista de Exercícios
 .. image:: img/TWP05_041.jpeg
    :height: 12.571cm
    :width: 9.411cm
-   :alt: 
+   :align: center
 
 
 
