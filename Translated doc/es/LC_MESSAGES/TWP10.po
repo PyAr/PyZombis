@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Atharva Kulkarnni
+# This file is distributed under the same license as the Pyzombisintl
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pyzombisintl \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-30 10:32+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/TWP10.rst:3 ../../source/TWP10.rst:21 ../../source/TWP10.rst:31
+#: ../../source/TWP10.rst:44
+msgid "Condições"
+msgstr "condiciones"
+
+#: ../../source/TWP10.rst:12
+msgid "<número>"
+msgstr "Número"
+
+#: ../../source/TWP10.rst:35
+msgid "“Executar ou não executar? Eis a questão...”"
+msgstr "Ejecutar o no ejecutar? Esa es la cuestión...
+
+#: ../../source/TWP10.rst:36
+msgid "Em geral não executo todas as linhas do programa"
+msgstr "En general no ejecuto todas las líneas del programa"
+
+#: ../../source/TWP10.rst:37
+msgid "Passar pelas linhas de um programa é como andar de carro numa cidade"
+msgstr "Pasar por las líneas de un programa es como caminar en una ciudad"
+
+#: ../../source/TWP10.rst:38
+msgid "Existem pontos onde decidimos qual caminho escolher"
+msgstr "Hay puntos donde decidimos qué camino elegir"
+
+#: ../../source/TWP10.rst:54 ../../source/TWP10.rst:72
+#: ../../source/TWP10.rst:89 ../../source/TWP10.rst:100
+msgid "if"
+msgstr "si"
+
+#: ../../source/TWP10.rst:58
+msgid "Ler dois valores inteiros e imprimir o maior deles"
+msgstr "Leer dos valores enteros e imprimir el mayor de ellos"
+
+#: ../../source/TWP10.rst:68
+msgid "Dois pontos e identação"
+msgstr "Dos puntos e identación"
+
+#: ../../source/TWP10.rst:76
+msgid "Verificar se um carro é novo ou velho"
+msgstr "Comprobar si un coche es nuevo o viejo"
+
+#: ../../source/TWP10.rst:77
+msgid "Se o carro tiver pelo menos três anos é novo"
+msgstr "Si el coche tiene al menos tres años es nuevo"
+
+#: ../../source/TWP10.rst:93
+msgid ""
+"Pergunte a velocidade de um carro, supondo um valor inteiro. Caso "
+"ultrapasse 110 km/h, exiba uma mensagem dizendo que o usuário foi "
+"multado. Neste caso, exiba o valor da multa, cobrando R$ 5,00 por km "
+"acima de 110."
+msgstr "Pregunte la velocidad de un coche, suponiendo un valor entero."
+"sobrepasa 110 km / h, muestra un mensaje diciendo que el usuario fue"
+"multado, en este caso, exhiba el valor de la multa, cobrando R $ 5,00 por km"
+"encima de 110.""
+
+
+#: ../../source/TWP10.rst:110
+msgid "else"
+msgstr "otro"
+
+#: ../../source/TWP10.rst:114
+msgid "O que fazer quando a condição do if é falsa?"
+msgstr "¿Qué hacer cuando la condición del if es falsa?"
+
+#: ../../source/TWP10.rst:115
+msgid "Os dois códigos abaixo fazem a mesma coisa:"
+msgstr "Los dos códigos siguientes hacen lo mismo:"
+
+#: ../../source/TWP10.rst:125
+msgid "if / else"
+msgstr "if / else"
+
+#: ../../source/TWP10.rst:135
+msgid "Estrutura aninhadas"
+msgstr "Estructura anidada"
+
+#: ../../source/TWP10.rst:139
+msgid ""
+"Considere a empresa de telefonia Tchau. Abaixo de 200 minutos, a empresa "
+"cobra R$ 0,20 por minuto. Entre 200 e 400 minutos, o preço é R$ 0,18. "
+"Acima de 400 minutos o preço por minuto é R$ 0,15. Calcule sua conta de "
+"telefone."
+msgstr ""Considere la empresa de telefonía Tchau. Debajo de 200 minutos, la empresa"
+"cobra R $ 0,20 por minuto, entre 200 y 400 minutos, el precio es de 0,18."
+"Por encima de 400 minutos el precio por minuto es de 0,15. Calcule su cuenta de"
+"Teléfono"."
+
+#: ../../source/TWP10.rst:146 ../../source/TWP10.rst:156
+#: ../../source/TWP10.rst:184 ../../source/TWP10.rst:193
+msgid "Estruturas aninhadas"
+msgstr "Estructuras anidadas"
+
+#: ../../source/TWP10.rst:188
+msgid ""
+"Modifique o programa da empresa Tchau para uma promoção onde a tarifa é "
+"de R$ 0,08 quando você utiliza mais que 800 minutos"
+msgstr ""Modifique el programa de la empresa Tchau para una promoción donde la tarifa es"
+"de R $ 0,08 cuando se utiliza más de 800 minutos""
+
+#: ../../source/TWP10.rst:203
+msgid "elif"
+msgstr "elif"
+
+#: ../../source/TWP10.rst:207
+msgid "A cláusula elif substitui um par else if"
+msgstr "La cláusula elif reemplaza un par else if"
+
+#: ../../source/TWP10.rst:217
+msgid "Lista de Exercícios “again”"
+msgstr "Lista de ejercicios "de nuevo"
+
