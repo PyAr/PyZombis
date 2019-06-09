@@ -6,83 +6,75 @@ For Funções e Random
 .. image:: img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
+   :align: center
    :alt: 
 
 
-<número>
+for == while enrustido
+======================
 
-.. image:: img/TWP20_001.png
-   :height: 2.195cm
-   :width: 9.974cm
-   :alt: 
++ Códigos equivalentes : for durante o dia vira while á noite.
 
 
-.. image:: img/TWP20_002.png
-   :height: 5.291cm
-   :width: 2.354cm
-   :alt: 
+.. codelens:: Example6_1
+         
+        for letra in 'aeiou':
+         print(letra)
+
+.. codelens:: Example6_2
+         
+        texto = 'aeiou'
+        k = 0
+        while k < len(texto):
+         letra = texto[k]
+         print(letra)
+         k = k+1
 
 
-.. image:: img/TWP20_003.png
-   :height: 5.079cm
-   :width: 9.842cm
-   :alt: 
+for == while enrustido
+======================
+
++ Códigos equivalentes :
+
+.. codelens:: Example6_3
+         
+        for i in range(5):
+         print(i)
 
 
-.. image:: img/TWP20_002.png
-   :height: 5.291cm
-   :width: 2.354cm
-   :alt: 
+.. codelens:: Example6_4
+         
+         lista = list(range(5))
+         k = 0
+         while k < len(lista):
+            i = lista[k]
+            print(i)
+            k = k + 1
 
 
-.. image:: img/TWP20_004.png
-   :height: 5.608cm
-   :width: 10.609cm
-   :alt: 
+for == while enrustido
+======================
+
++ Códigos equivalentes :
 
 
-.. image:: img/TWP20_005.png
-   :height: 2.036cm
-   :width: 8.783cm
-   :alt: 
+.. codelens:: Example6_5
+         
+        for x in ['cpbr6',42,3.14]:
+         print(x)
+
+.. codelens:: Example6_6
+         
+        lista = ['cpbr6',42,3.14]
+        k = 0
+        while k < len(lista):
+         x = lista[k]
+         print(x)
+         k = k + 1
 
 
-.. image:: img/TWP20_006.png
-   :height: 5.238cm
-   :width: 1.798cm
-   :alt: 
-
-
-.. image:: img/TWP20_006.png
-   :height: 5.238cm
-   :width: 1.798cm
-   :alt: 
-
-
-.. image:: img/TWP20_007.png
-   :height: 1.603cm
-   :width: 12.705cm
-   :alt: 
-
-
-.. image:: img/TWP20_008.png
-   :height: 5.2cm
-   :width: 11.762cm
-   :alt: 
-
-
-.. image:: img/TWP20_009.png
-   :height: 3.215cm
-   :width: 2.886cm
-   :alt: 
-
-
-.. image:: img/TWP20_009.png
-   :height: 3.215cm
-   :width: 2.886cm
-   :alt: 
-
-
+def functions
+=============
 
 + Aprendemos algumas funções do Python: len, int, float, print e input
 + Agora iremos criar as nossas próprias funções
@@ -90,7 +82,13 @@ For Funções e Random
 + Existem funções que não retornam nada
 
 
+.. codelens:: Example6_7
+         
+  def epar(x):
+    return (x%2 == 0)
 
+  print(epar(13))
+  print(epar(12))
 
 
 + Esta função retorna se o parâmetro x é par
@@ -99,78 +97,83 @@ For Funções e Random
 + Preciso chamar a função para executá-la
 
 
-.. image:: img/TWP20_010.png
-   :height: 1.666cm
-   :width: 8.889cm
-   :alt: 
-
-
-.. image:: img/TWP20_011.png
-   :height: 3.492cm
-   :width: 5.873cm
-   :alt: 
-
 
 Funções
 =======
 
 
-
 + Defina uma função fatorial
 
 
-.. image:: img/TWP20_012.png
-   :height: 5.211cm
-   :width: 8.042cm
-   :alt: 
+.. codelens:: Example6_8
+         
+        def fat(n):
+         f = 1
+         while n > 0:
+            f = f*n
+            n = n - 1
+         return f
+
+        for i in range(5):
+         print(fat(i))
+
+ 
+
+Variáveis locais e globais
+==========================
+
++ Nota: O escopo de a é diferente nos dois casos. Em outras palavras, as duas variáveis ​​'a' são diferentes.
 
 
-.. image:: img/TWP20_013.png
-   :height: 5.8cm
-   :width: 15.913cm
-   :alt: 
+.. codelens:: Example6_9
+         
+        a = 5 
+        def muda_e_imprime():
+         a = 7
+         print('a dentro da função : %d' %a)
+        print('a antes de mudar: %d' %a)
+        muda_e_imprime()
+        print('a depois de mudar: %d' %a)
+
 
 
 Variáveis locais e globais
 ==========================
 
++ Nesse caso, usamos a palavra-chave global. Então, a variável 'a' dentro da função é a mesma que a variável definida acima, ou seja, é a variável global.
 
-.. image:: img/TWP20_014.png
-   :height: 6.005cm
-   :width: 17.726cm
-   :alt: 
-
-
-.. image:: img/TWP20_015.png
-   :height: 3.544cm
-   :width: 9.947cm
-   :alt: 
-
-
-Variáveis locais e globais
-==========================
+.. codelens:: Example6_10
+         
+        a = 5 
+        def muda_e_imprime():
+         a = 7
+         print('a dentro da função : %d' %a)
+        print('a antes de mudar: %d' %a)
+        muda_e_imprime()
+        print('a depois de mudar: %d' %a)
 
 
-.. image:: img/TWP20_016.png
-   :height: 7.116cm
-   :width: 17.514cm
-   :alt: 
 
-
-.. image:: img/TWP20_017.png
-   :height: 3.465cm
-   :width: 9.63cm
-   :alt: 
++ Observe a diferença nas saídas dos Exemplos 9 e 10.
 
 
 Números aleatórios
 ==================
 
 
-.. image:: img/TWP20_018.png
-   :height: 12.571cm
-   :width: 22.825cm
-   :alt: 
+.. codelens:: Example6_11
+         
+        import random
+
+        print(random.randint(1,100))
+        print(random.randint(1,100))
+        alunos = ['José','João','Pedro','Lucas','Tiago']
+        print(random.choice(alunos))
+        print(random.choice(alunos))
+        random.shuffle(alunos)
+        print(alunos)
+        random.shuffle(alunos)
+        print(alunos)
 
 
 Números aleatórios
@@ -182,16 +185,18 @@ Números aleatórios
   misturadas. Dica: utilize list( ) para converter sua string em lista.
 
 
-.. image:: img/TWP20_019.png
-   :height: 4.576cm
-   :width: 11.667cm
-   :alt: 
+.. codelens:: Example6_12
+         
+        def embaralha(s):
 
+         import random
+         lista = list(s)
+         random.shuffle(lista)
+         return ''.join(lista)
 
-.. image:: img/TWP20_020.png
-   :height: 3.492cm
-   :width: 12.117cm
-   :alt: 
+        print(embaralha('palmeiras'))
+        print(embaralha('palmeiras'))
+
 
 
 Números aleatórios
@@ -202,10 +207,13 @@ Números aleatórios
 + Gere uma lista de 15 inteiros aleatórios entre 10 e 100
 
 
-.. image:: img/TWP20_021.png
-   :height: 5cm
-   :width: 20.001cm
-   :alt: 
+.. codelens:: Example6_13
+         
+        import random
+        lista = []
+        for k in range(15):
+         lista.append(random.randint(10,100))
+        print(lista)
 
 
 Números aleatórios
@@ -219,10 +227,17 @@ Números aleatórios
 
 
 
-.. image:: img/TWP20_022.png
-   :height: 8.585cm
-   :width: 17.401cm
-   :alt: 
+.. codelens:: Example6_14
+         
+        import random
+        lista = []
+        while len(lista) < 15:
+         x = random.randint(10,100)
+         if x not in lista:
+            lista.append(x)
+        lista.sort()
+        print(lista)
+
 
 
 Lista 5
@@ -232,8 +247,62 @@ Lista 5
 .. image:: img/TWP05_041.jpeg
    :height: 12.571cm
    :width: 9.411cm
+   :align: center
    :alt: 
 
++ “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
+
+Links de Palestras em Vídeo:
+============================
+
+.. youtube:: SWz-TDaVOjU
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: hkmTg3ambZA
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: MtTqwE7xFeA
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: lkF7fwwdn74
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: nWgRu1S0T4s
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: HhwANFfzIMk
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: m-JiN6pMY34
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: -dapAyrls9o
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: EetzrvvQIKQ
+      :height: 315
+      :width: 560
+      :align: center
+
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture6
 
 
 

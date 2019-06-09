@@ -6,10 +6,10 @@ Revisão Listas
 .. image:: img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
-   :alt: 
+   :align: center
+   :alt:
 
 
-<número>
 
 Campeonato de Surf em Codeville
 ===============================
@@ -18,6 +18,7 @@ Campeonato de Surf em Codeville
 .. image:: img/TWP37_001.jpeg
    :height: 12.571cm
    :width: 9.428cm
+   :align: center
    :alt: 
 
 
@@ -28,6 +29,7 @@ Campeonato de Surf em Codeville
 .. image:: img/TWP37_002.jpeg
    :height: 11.923cm
    :width: 17.85cm
+   :align: center
    :alt: 
 
 
@@ -38,6 +40,7 @@ Campeonato de Surf em Codeville
 .. image:: img/TWP37_003.jpeg
    :height: 12.571cm
    :width: 16.762cm
+   :align: center
    :alt: 
 
 
@@ -50,35 +53,53 @@ Encontre a pontuação mais alta
 + Selecione a pontuação mais alta para saber o vencedor!
 
 
-.. image:: img/TWP37_004.png
+.. image:: img/TWP37_004.jpg
    :height: 8.566cm
    :width: 10.55cm
+   :align: center
    :alt: 
 
 
 Lendo o arquivo surf.txt
 ========================
 
+.. .. datafile:: surf.txt
+..    :hide: 
+      
+      Johny 8.65
+      Juan 9.12
+      Joseph 8.45
+      Stacey 7.81
+      Aideen 8.05
+      Zack 7.21
+      Aaron 8.3
 
-.. image:: img/TWP37_005.png
-   :height: 3.862cm
-   :width: 11.429cm
-   :alt: 
+.. .. activecode:: Example12_1
+..    :nocodelens:
+..    :datafile: surf.txt
+..    :enabledownload:
+..    :stdin:
 
+      f = open('surf.txt')
+      for linha in f:
+         print(linha.strip())
+      f.close()
 
-.. image:: img/TWP37_006.png
-   :height: 7.751cm
-   :width: 6.005cm
-   :alt: 
-
+.. code-block:: python
+   
+   f = open('surf.txt')
+   for linha in f:
+      print(linha.strip())
+   f.close()
 
 Fragmentador for
 ================
 
 
-.. image:: img/TWP37_007.png
+.. image:: img/TWP37_007.jpg
    :height: 12.627cm
    :width: 13cm
+   :align: center
    :alt: 
 
 
@@ -86,9 +107,10 @@ Descubra quem obteve a maior nota
 =================================
 
 
-.. image:: img/TWP37_008.png
+.. image:: img/TWP37_008.jpg
    :height: 14.824cm
    :width: 11cm
+   :align: center
    :alt: 
 
 
@@ -96,25 +118,22 @@ O método split corta a string
 =============================
 
 
-.. image:: img/TWP37_009.png
-   :height: 1.428cm
-   :width: 8.254cm
-   :alt: 
 
-
-.. image:: img/TWP37_010.png
-   :height: 6.878cm
-   :width: 7.302cm
-   :alt: 
-
-
-O método split corta a string
-=============================
-
-
-.. image:: img/TWP37_011.png
+.. image:: img/TWP37_010.jpg
    :height: 12.571cm
    :width: 21.839cm
+   :align: center
+   :alt: 
+
+
+O método split corta a string
+=============================
+
+
+.. image:: img/TWP37_011.jpg
+   :height: 12.571cm
+   :width: 21.839cm
+   :align: center
    :alt: 
 
 
@@ -122,25 +141,26 @@ Encontrando o 1º lugar
 ======================
 
 
-.. image:: img/TWP37_012.png
-   :height: 6.958cm
-   :width: 14.63cm
-   :alt: 
-
-
-.. image:: img/TWP37_013.png
-   :height: 1.851cm
-   :width: 3.227cm
-   :alt: 
+.. code-block:: python
+   
+   f = open('surf.txt')
+   maior = 0
+   for linha in f:
+      nome, pontos = linha.split()
+      if float(pontos) > maior:
+         maior = float(pontos)
+   f.close()
+   print(maior)
 
 
 Sai o placar...
 ===============
 
 
-.. image:: img/TWP37_014.png
+.. image:: img/TWP37_014.jpg
    :height: 10.906cm
    :width: 21.021cm
+   :align: center
    :alt: 
 
 
@@ -148,19 +168,38 @@ Controlar 3 pontuações é complicado
 ===================================
 
 
-.. image:: img/TWP37_015.png
-   :height: 15.167cm
-   :width: 13.801cm
-   :alt: 
+.. code-block:: python
+   
+   f = open('surf.txt')
+   primeiro = 0
+   segundo = 0
+   terceiro = 0
+   for linha in f:
+      nome, pontos = linha.split()
+      if float(pontos) > primeiro:
+         terceiro = segundo
+         segundo = primeiro
+         primeiro = float(pontos)
+      elif float(pontos) > segundo:
+         terceiro = segundo
+         segundo = float(pontos)
+      elif float(pontos) > terceiro:
+         terceiro = float(pontos)
+   f.close()
+
+   print(primeiro)
+   print(segundo)
+   print(terceiro)
 
 
 Ordenar a lista seria melhor
 ============================
 
 
-.. image:: img/TWP37_016.png
+.. image:: img/TWP37_016.jpg
    :height: 12.09cm
    :width: 20.531cm
+   :align: center
    :alt: 
 
 
@@ -171,9 +210,11 @@ Ordenação é mais fácil na memória
 
 + Dados em disco são persistentes: se você puxar o fio da tomada, o
   computador não esquecerá as informações gravadas no disco
+
 + Dados na memória são muito mais rápidos, porém não são persistentes:
   os dados na memória desaparecem quando seu programa sai ou quando o
   computador é desligado
+
 + Design Tradeoff: persistência x rapidez
 
 
@@ -181,26 +222,25 @@ Primeiro: ler os dados para a memória
 =====================================
 
 
-.. image:: img/TWP37_017.png
+.. image:: img/TWP37_017.jpg
    :height: 9.55cm
    :width: 21.457cm
+   :align: center
    :alt: 
 
 
-Uai, vamô usar um 
-==================
-trem de dados
-=========
-
-
+Uai, vamô usar um trem de dados
+===============================
 
 + Array, lista, vetor são nomes comuns para um lote inteiro de dados
+
 + Preciso de apenas uma única variável para todo o trem de dados
 
 
-.. image:: img/TWP37_018.png
+.. image:: img/TWP37_018.jpg
    :height: 7.4cm
    :width: 9.632cm
+   :align: center
    :alt: 
 
 
@@ -218,21 +258,22 @@ Nova classificação
 ==================
 
 
-.. image:: img/TWP37_019.png
-   :height: 8.175cm
-   :width: 14.63cm
-   :alt: 
+.. code-block:: python
+   
+   f = open('surf.txt')
+   notas = []
+   for linha in f:
+      nome, pontos = linha.split()
+      notas.append(float(pontos))
+   f.close()
+   print(notas[0])
+   print(notas[1])
+   print(notas[2])
 
-
-.. image:: img/TWP37_020.png
-   :height: 3.597cm
-   :width: 2.274cm
-   :alt: 
-
-
-.. image:: img/TWP37_021.png
+.. image:: img/TWP37_021.jpg
    :height: 10.006cm
    :width: 12.699cm
+   :align: center
    :alt: 
 
 
@@ -240,9 +281,10 @@ Classificar em ordem descrescente
 =================================
 
 
-.. image:: img/TWP37_022.png
+.. image:: img/TWP37_022.jpg
    :height: 12.571cm
    :width: 22.825cm
+   :align: center
    :alt: 
 
 
@@ -260,23 +302,49 @@ Finalmente a classificação correta
 ==================================
 
 
-.. image:: img/TWP37_023.png
-   :height: 9.762cm
-   :width: 14.604cm
-   :alt: 
+.. code-block:: python
+   
+   f = open('surf.txt')
+   notas = []
+   for linha in f:
+      nome, pontos = linha.split()
+      notas.append(float(pontos))
+   f.close()
+   notas.sort()
+   notas.reverse()
+   print(notas[0])
+   print(notas[1])
+   print(notas[2])
 
 
-.. image:: img/TWP37_024.png
-   :height: 3.518cm
-   :width: 2.195cm
-   :alt: 
-
-
-.. image:: img/TWP37_025.png
+.. image:: img/TWP37_025.jpg
    :height: 7.724cm
    :width: 16.645cm
+   :align: center
    :alt: 
 
 
 
+Links de Palestras em Vídeo:
+============================
 
+
+.. youtube:: uEImp8vMMKE
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: xAHvvU4N0NY
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: MRSLnv8jnWU
+      :height: 315
+      :width: 560
+      :align: center
+
+
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture12
