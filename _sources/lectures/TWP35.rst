@@ -6,10 +6,8 @@ Revisão Funções
 .. image:: img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
+   :align: center
    :alt: 
-
-
-<número>
 
 Sejamos mais organizados
 ========================
@@ -18,6 +16,7 @@ Sejamos mais organizados
 .. image:: img/TWP35_001.jpeg
    :height: 13.35cm
    :width: 17.801cm
+   :align: center
    :alt: 
 
 
@@ -28,6 +27,7 @@ Sejamos mais organizados
 .. image:: img/TWP35_002.jpeg
    :height: 14.064cm
    :width: 16.601cm
+   :align: center
    :alt: 
 
 
@@ -58,10 +58,31 @@ Sugestão de novo programa
 =========================
 
 
-.. image:: img/TWP35_003.png
-   :height: 14.959cm
-   :width: 17.401cm
-   :alt: 
+.. code-block:: python
+
+   import urllib.request
+   import time
+   opcao = input('Deseja comprar ja? (S/N)')
+   if opcao == 'S':
+      pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
+      texto = pagina.read().decode('utf8')
+      onde = texto.find('>$')
+      inicio = onde + 2
+      fim = inicio + 4
+      preco = float(texto[inicio:fim])
+      print('Comprar! Preco: %5.2f' %preco)
+   else:
+      preco = 99.99
+      while preco >= 4.74:
+        pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
+        texto = pagina.read().decode('utf8')
+        onde = texto.find('>$')
+        inicio = onde + 2
+        fim = inicio + 4
+        preco = float(texto[inicio:fim])
+        if preco >= 4.74:
+          time.sleep(600)
+      print('Comprar! Preco: 5.2%f' %preco)
 
 
 Programa feio...
@@ -92,12 +113,31 @@ Funções
   utilizar o comando return
 
 
+.. code-block:: python
 
+   import urllib.request
+   import time
 
-.. image:: img/TWP35_004.png
-   :height: 18.042cm
-   :width: 22.455cm
-   :alt: 
+   def pega_preco():
+      pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
+      texto = pagina.read().decode('utf8')
+      onde = texto.find('>$')
+      inicio = onde + 2
+      fim = inicio + 4
+      return float(texto[inicio:fim])
+
+   opcao = input('Deseja comprar ja? (S/N)')
+   if opcao == 'S':
+      preco = pega_preco()
+      print('Comprar! Preco: %5.2f' %preco)
+   else:
+      preco = 99.99
+      while preco >= 4.74:
+        preco = pega_preco()
+        if preco >= 4.74:
+          time.sleep(600)
+      print('Comprar! Preco: 5.2%f' %preco)
+
 
 
 Não existem perguntas idiotas
@@ -117,36 +157,57 @@ Não existem perguntas idiotas
 .. image:: img/TWP35_005.jpeg
    :height: 16.402cm
    :width: 25.442cm
+   :align: center
    :alt: 
 
 
 
-+ `http://json.org`_`/`_
++ `JSON <http://json.org>`_
 + Independente de linguagem
 + Pares nome/valor
 + Lista ordenada
 + Muito adotado atualmente
 + Alternativa para o XML
 
-
-
-  +
-
-    + –XML mais verbosa
-    + –XML menor legibilidade
+  + XML mais verbosa
+  + XML menor legibilidade
 
 
 
 
+.. code-block:: python 
+
+   
+    import urllib.request
+    import json
+
+    url = "http://api.icndb.com/jokes/random?limitTo=[nerdy]"
+    resp = urrlib.request.urlopen(url).read()
+    data = json.loads(resp.decode('utf-8'))
+    print(data['value']['joke'])
+
+
+Links de Palestras em Vídeo:
+============================
+
+
+.. youtube:: VxQBUPE6HbA
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: EKCo0qcVYQU
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: V7c168XpfQ4
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
-.. image:: img/TWP35_006.png
-   :height: 7.774cm
-   :width: 24.137cm
-   :alt: 
-
-
-.. _/: http://json.org/
-
-
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture11

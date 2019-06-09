@@ -6,10 +6,8 @@ Listas
 .. image:: img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
+   :align: center
    :alt: 
-
-
-<número>
 
 Edifício
 ========
@@ -19,12 +17,12 @@ Edifício
 + Edifício de apartamentos
 
 
+.. codelens:: Example4_1
 
-
-.. image:: img/TWP17_001.png
-   :height: 3.412cm
-   :width: 16.774cm
-   :alt: 
+        edifício_térreo = "Família Souza"
+        edifício_1o_andar = "Família Brito"
+        edifício_2o_andar = "Sr Jorge"
+        edifício_3o_andar = "Família Tanaka"
 
 
 Edifício
@@ -36,25 +34,22 @@ Edifício
   assim por diante
 
 
-.. image:: img/TWP17_002.png
-   :height: 6.597cm
-   :width: 12.4cm
-   :alt: 
+.. codelens:: Example4_2
 
-
-.. image:: img/TWP17_003.png
-   :height: 4.158cm
-   :width: 6.2cm
-   :alt: 
-
+        edifício = ["Família Souza","Família Brito","Sr Jorge","Família Tanaka"]
+        print(edifício[0])
+        print(edifício[1])
+        print(edifício[2])
+        print(edifício[3])
 
 Trem de dados
 =============
 
 
-.. image:: img/TWP17_004.png
+.. image:: img/TWP17_004.jpg
    :height: 12.8cm
    :width: 16.244cm
+   :align: center
    :alt: 
 
 
@@ -65,7 +60,11 @@ Trem de dados
 .. image:: img/TWP17_005.png
    :height: 8.2cm
    :width: 24.756cm
+   :align: center
    :alt: 
+
+
++ O trem de dados my_array é uma única variável
 
 
 Posso engatar vagões
@@ -75,7 +74,11 @@ Posso engatar vagões
 .. image:: img/TWP17_006.png
    :height: 10cm
    :width: 25.303cm
+   :align: center
    :alt: 
+
+
++ Como posso acrescentar um vagão com "Bettys"?
 
 
 Posso engatar vagões com append
@@ -85,7 +88,9 @@ Posso engatar vagões com append
 .. image:: img/TWP17_007.png
    :height: 8cm
    :width: 24.242cm
+   :align: center
    :alt: 
+
 
 
 Listas
@@ -95,49 +100,37 @@ Listas
 
 + Uma lista vazia
 
+.. codelens:: Example4_3
 
+        lista = []
 
 
 
 + Uma lista com três notas
 
+.. codelens:: Example4_4
 
+        notas = [7.5,9,8.3]
 
 
 
 + Acessando uma nota
 
 
+.. codelens:: Example4_5
 
+        notas = [7.5,9,8.3]
+        print(notas[0])
 
 
 + Mudando a primeira nota
 
 
-
-
-.. image:: img/TWP17_008.png
-   :height: 1.031cm
-   :width: 6.534cm
-   :alt: 
-
-
-.. image:: img/TWP17_009.png
-   :height: 0.819cm
-   :width: 11.535cm
-   :alt: 
-
-
-.. image:: img/TWP17_010.png
-   :height: 1.666cm
-   :width: 9.207cm
-   :alt: 
-
-
-.. image:: img/TWP17_011.png
-   :height: 2.565cm
-   :width: 9.312cm
-   :alt: 
+.. codelens:: Example4_6
+         
+        notas = [7.5,9,8.3]
+        notas[0] = 8.7
+        print(notas[0])
 
 
 Listas
@@ -148,11 +141,17 @@ Listas
 + Calcule a média de 5 notas
 
 
-.. image:: img/TWP17_012.png
-   :height: 6.164cm
-   :width: 14.842cm
-   :alt: 
+.. codelens:: Example4_7
 
+        notas = [6,7,5,8,9]
+        soma = 0
+        x = 0
+        while x < 5:
+         soma += notas[x]
+         x+=1
+        print("Média : %5.2f" %(soma/x))
+
++ Obs : x+=1 é o mesmo que x = x + 1 
 
 Listas
 ======
@@ -164,11 +163,17 @@ Listas
 
 
 
+.. activecode:: Example4_8
+   :nocodelens:
+   :stdin:
 
-.. image:: img/TWP17_013.png
-   :height: 6.243cm
-   :width: 18.123cm
-   :alt: 
+   vector = []
+   i = 1
+   while i <= 5:
+      n = int(input("Digite um número: "))
+      vector.append(n)
+      i = i + 1
+   print("Vector lido :", vector)
 
 
 Listas
@@ -181,11 +186,20 @@ Listas
 
 
 
+.. activecode:: Example4_9
+   :nocodelens:
+   :stdin:
 
-.. image:: img/TWP17_014.png
-   :height: 8.651cm
-   :width: 19.208cm
-   :alt: 
+   vector = []
+   i = 1
+   while i <= 10:
+      n = float(input("Digite um número: "))
+      vector.append(n)
+      i += 1
+   i = 9
+   while i >= 0:
+      print(vector[i])
+      i -= 1
 
 
 Listas
@@ -197,11 +211,23 @@ Listas
   tela
 
 
-.. image:: img/TWP17_015.png
-   :height: 11.508cm
-   :width: 14.657cm
-   :alt: 
+.. activecode:: Example4_10
+   :nocodelens:
+   :stdin:
 
+   notas = []
+   i = 1
+   while i <= 4:
+      n = float(input("Nota: "))
+      notas.append(n)
+      i += 1
+   soma = 0
+   i = 0
+   while i <= 3:
+      soma += notas[i]
+      i += 1
+   print("Notas:",notas)
+   print("Média : %4.2f" %(soma/4))
 
 Listas
 ======
@@ -211,11 +237,20 @@ Listas
 + Outra forma de fazer o mesmo
 
 
-.. image:: img/TWP17_016.png
-   :height: 8.651cm
-   :width: 14.551cm
-   :alt: 
+.. activecode:: Example4_11
+   :nocodelens:
+   :stdin:
 
+   notas = []
+   i = 1
+   soma = 0
+   while i <= 4:
+      n = float(input("Nota: "))
+      notas.append(n)
+      soma += n
+      i += 1
+   print("Notas:",notas)
+   print("Média : %4.2f" %(soma/4))
 
 Listas
 ======
@@ -228,10 +263,22 @@ Listas
 
 
 
-.. image:: img/TWP17_017.png
-   :height: 10.477cm
-   :width: 18.784cm
-   :alt: 
+.. activecode:: Example4_12
+   :nocodelens:
+   :stdin:
+
+   letras = []
+   i = 1
+   while i <= 10:
+      letras.append(input("Letra: "))
+      i+=1
+   i = 0
+   cont = 0
+   while i <= 9:
+      if letras[i] not in "aeiou":
+         cont += 1
+      i += 1
+   print("Foram lidos %d consoantes" %cont)
 
 
 Lista de Exercícios “again”
@@ -241,7 +288,49 @@ Lista de Exercícios “again”
 .. image:: img/TWP05_041.jpeg
    :height: 12.571cm
    :width: 9.411cm
+   :align: center
    :alt: 
+
+
++ “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
+
+Links de Palestras em Vídeo:
+============================
+
+.. youtube:: IKbN7PnFqTQ
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: 5fnldRu9D8I
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: n4wutespgbM
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: _ezpAhoU5B4
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: f0tF-EIl3Mk
+      :height: 315
+      :width: 560
+      :align: center
+
+.. youtube:: tO8CsxgBn1g
+      :height: 315
+      :width: 560
+      :align: center
+
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture4
+
 
 
 
