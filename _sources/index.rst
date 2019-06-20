@@ -8,6 +8,7 @@ Contents:
    :maxdepth: 1
 
    quiz/Quiz6.rst
+   quiz/Quiz7.rst
  
 
 
