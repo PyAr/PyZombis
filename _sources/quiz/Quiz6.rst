@@ -2,14 +2,19 @@
 Quiz - 6
 =========
 
+.. |br| raw:: html
+
+   <br />
+
+   
 .. activecode:: dormir
    :nocodelens:
 
-   A. Dormir :
-   dia_semana e True para dias de semana
-   feriado e True nos feriados
-   voce pode ficar dormindo quando e feriado ou nao e dia semana
-   retorne True ou False conforme voce va dormir ou nao
+   A. Dormir : |br| |br|
+   dia_semana e True para dias de semana |br| |br|
+   feriado e True nos feriados |br| |br|
+   voce pode ficar dormindo quando e feriado ou nao e dia semana |br| |br|
+   retorne True ou False conforme voce va dormir ou nao |br| |br|
 
    ~~~~
    def dormir(dia_semana, feriado):
@@ -31,12 +36,12 @@ Quiz - 6
 .. activecode:: alumnos_problema
    :nocodelens:
 
-   B. alunos_problema:
-   temos dois alunos a e b
-   a_sorri e b_sorri indicam se a e b sorriem
-   temos problemas quando ambos estão sorrindo ou ambos
-   não estão sorrindo
-   retorne True quando houver problemas
+   B. alunos_problema: |br|
+   temos dois alunos a e b |br|
+   a_sorri e b_sorri indicam se a e b sorriem |br|
+   temos problemas quando ambos estão sorrindo ou ambos |br|
+   não estão sorrindo |br|
+   retorne True quando houver problemas |br|
 
    ~~~~
    def alumnos_problema(a_sonrrie, b_sonrrie):
@@ -59,11 +64,11 @@ Quiz - 6
 .. activecode:: suma_doble
    :nocodelens:
 
-   C. suma_doble
-   dados dois números inteiros retorna sua soma
-   porém se os números forem iguais retorna o dobro da soma
-   soma_dobro(1, 2) -> 3
-   soma_dobro(2, 2) -> 8
+   C. suma_doble |br|
+   dados dois números inteiros retorna sua soma |br|
+   porém se os números forem iguais retorna o dobro da soma |br|
+   soma_dobro(1, 2) -> 3 |br|
+   soma_dobro(2, 2) -> 8 |br|
 
    ~~~~
    def suma_doble(a, b):
@@ -88,12 +93,12 @@ Quiz - 6
 .. activecode:: diff21
   :nocodelens:
 
-  D. diff21
-  dado um inteiro n retorna a diferença absoluta entre n e 21
-  porém se o número for maior que 21 retorna dobro da diferença absoluta
-  diff21(19) -> 2
-  diff21(25) -> 8
-  dica: abs(x) retorna o valor absoluto de x
+  D. diff21 |br|
+  dado um inteiro n retorna a diferença absoluta entre n e 21 |br|
+  porém se o número for maior que 21 retorna dobro da diferença absoluta |br|
+  diff21(19) -> 2 |br|
+  diff21(25) -> 8 |br|
+  dica: abs(x) retorna o valor absoluto de x |br|
 
   ~~~~
   def diff21(n):
@@ -118,11 +123,11 @@ Quiz - 6
 .. activecode:: papagaio
   :nocodelens:
 
-  E. papagaio
-  temos um papagaio que fala alto
-  hora é um parâmetro entre 0 e 23
-  temos problemas se o papagaio estiver falando
-  antes da 7 ou depois das 20
+  E. papagaio |br|
+  temos um papagaio que fala alto |br|
+  hora é um parâmetro entre 0 e 23 |br|
+  temos problemas se o papagaio estiver falando |br|
+  antes da 7 ou depois das 20 |br|
 
   ~~~~
   def papagaio(falando, hora):
@@ -149,9 +154,9 @@ Quiz - 6
 .. activecode:: dez
   :nocodelens:
 
-  F. dez
-  dados dois inteiros a e b
-  retorna True se um dos dois é 10 ou a soma é 10
+  F. dez |br|
+  dados dois inteiros a e b |br|
+  retorna True se um dos dois é 10 ou a soma é 10 |br|
 
   ~~~~
   def dez(a,b):
@@ -170,7 +175,7 @@ Quiz - 6
           self.assertEqual(dez(10,10), True,"Esperado: True")
           self.assertEqual(dez(8,2), True,"Esperado: True")
           self.assertEqual(dez(8,3), False,"Esperado: False")
-          self.assertEqual(dez(10,42), True,"Esperado: True")
+          self.assertEqual(dez(10,42), True,"Esperado: True") |br|
           self.assertEqual(dez(12,-2), True,"Esperado: True")
 
 
@@ -180,13 +185,13 @@ Quiz - 6
 .. activecode:: dista10
   :nocodelens:
 
-  G. dista10
-  seja um inteiro n
-  retorna True se a diferença absoluta entre n e 100 ou n e 200
-  for menor ou igual a 10
-  dista10(93) -> True
-  dista10(90) -> True
-  dista10(89) -> False
+  G. dista10 |br|
+  seja um inteiro n |br|
+  retorna True se a diferença absoluta entre n e 100 ou n e 200 |br|
+  for menor ou igual a 10 |br|
+  dista10(93) -> True |br|
+  dista10(90) -> True |br|
+  dista10(89) -> False |br|
 
   ~~~~
   def dista10(n):
@@ -220,11 +225,11 @@ Quiz - 6
 .. activecode:: apaga
   :nocodelens:
 
-  H. apaga
-  seja uma string s e um inteiro n
-  retorna uma nova string sem a posição n
-  apaga('kitten', 1) -> 'ktten'
-  apaga('kitten', 4) -> 'kittn'
+  H. apaga |br|
+  seja uma string s e um inteiro n |br|
+  retorna uma nova string sem a posição n |br|
+  apaga('kitten', 1) -> 'ktten' |br|
+  apaga('kitten', 4) -> 'kittn' |br|
 
   ~~~~
   def apaga(s,n):
@@ -256,13 +261,13 @@ Quiz - 6
 .. activecode:: troca
   :nocodelens:
 
-  I. troca
-  seja uma string s
-  se s tiver tamanho <= 1 retorna ela mesma
-  caso contrário troca a primeira e última letra
-  troca('code') -> 'eodc'
-  troca('a') -> 'a'
-  troca('ab') -> 'ba'
+  I. troca |br|
+  seja uma string s |br|
+  se s tiver tamanho <= 1 retorna ela mesma |br|
+  caso contrário troca a primeira e última letra |br|
+  troca('code') -> 'eodc' |br|
+  troca('a') -> 'a' |br|
+  troca('ab') -> 'ba' |br|
 
   ~~~~
   def troca(s):
@@ -283,5 +288,5 @@ Quiz - 6
           self.assertEqual(troca('nythoP'), 'Python',"Esperado: Python")
           self.assertEqual(troca('hello'), 'oellh',"Esperado: oellh")
            
-           
+
   myTests().main()
