@@ -9,6 +9,7 @@ Contents:
 
    quiz/Quiz6.rst
    quiz/Quiz7.rst
+   quiz/Quiz9.rst
  
 
 
