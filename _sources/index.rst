@@ -17,6 +17,7 @@ Contents:
    quiz/Quiz12.rst
    quiz/Quiz13.rst
    quiz/Quiz14.rst
+   quiz/QuizExtras.rst
  
 
 
