@@ -23,6 +23,14 @@ Revisão Geral 1
    :alt: 
 
 
+
+.. youtube:: EnRWAg09wKs
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Acabamos o primeiro livro
 =========================
 
@@ -77,6 +85,11 @@ Agora só faltam seus exercícios
 O que vamos aprender no segundo?
 ================================
 
+
+.. youtube:: c8BEn0WiBpw
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + As mesmas coisas!
@@ -234,6 +247,14 @@ Então, como você executa seu código?
 Então, como você executa seu código?
 ====================================
 
+
+.. youtube:: e2XxWz37n5M
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 + O interpretador Python atua em dois modos: interativo e edição
 
 + O modo interativo é ótimo para testar comandos e obter respostas
@@ -324,6 +345,19 @@ Dando dicas
 + Utilize BACKSPACE e TAB para ir e voltar
 
 
+.. youtube:: wS9zn6yZY9s
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
+.. youtube:: xXWOqrCTDys
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Os usuários ainda não gostam
 ============================
 
@@ -337,6 +371,14 @@ Os usuários ainda não gostam
 
 Repetições
 ==========
+
+
+.. youtube:: iYMDEXWEDxU
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 .. image:: img/TWP15_001.jpg
    :height: 15.602cm
@@ -377,6 +419,13 @@ Os usuários ainda não gostam
 ============================
 
 
+.. youtube:: a-herW9SXjo
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 .. image:: img/TWP30_0092.jpg
    :height: 12.571cm
    :width: 7.946cm
@@ -410,6 +459,13 @@ Sortear o número a ser adivinhado
     print('Fim do jogo!')
 
 
+
+.. youtube:: -ePLZkuEQic
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Agora sim!
 ==========
 
@@ -423,6 +479,11 @@ Agora sim!
 Resumo
 ======
 
+
+.. youtube:: 7KaRKhiXrJY
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + Você criou um game!
@@ -451,8 +512,21 @@ Ferramentas do Python
 + Sortear um número inteiro randint
 
 
+.. youtube:: BxlJpsyIilc
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Lista VI com testes!
 ====================
+
+
+.. youtube:: uoDAUDJetA0
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 .. image:: img/TWP05_041.jpeg
@@ -463,63 +537,7 @@ Lista VI com testes!
 
 + “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
 
-Links de Palestras em Vídeo:
-============================
 
-.. youtube:: EnRWAg09wKs
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: c8BEn0WiBpw
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: e2XxWz37n5M
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: BxlJpsyIilc
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: wS9zn6yZY9s
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: xXWOqrCTDys
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: iYMDEXWEDxU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: a-herW9SXjo
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: -ePLZkuEQic
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 7KaRKhiXrJY
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: uoDAUDJetA0
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::
