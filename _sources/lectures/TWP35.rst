@@ -9,6 +9,13 @@ Revisão Funções
    :align: center
    :alt: 
 
+
+.. youtube:: VxQBUPE6HbA
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Sejamos mais organizados
 ========================
 
@@ -145,6 +152,13 @@ Não existem perguntas idiotas
 
 
 
+.. youtube:: EKCo0qcVYQU
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 + O comando return é igual ao print? Não, print exibe algo na tela,
   enquanto return devolve um valor para quem chamou a função.
 + Se eu não der return dentro da função, o que ela retorna? None
@@ -187,19 +201,6 @@ Não existem perguntas idiotas
     print(data['value']['joke'])
 
 
-Links de Palestras em Vídeo:
-============================
-
-
-.. youtube:: VxQBUPE6HbA
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: EKCo0qcVYQU
-      :height: 315
-      :width: 560
-      :align: center
 
 .. youtube:: V7c168XpfQ4
       :height: 315
