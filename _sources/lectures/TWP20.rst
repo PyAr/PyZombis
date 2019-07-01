@@ -13,6 +13,13 @@ For Funções e Random
 for == while enrustido
 ======================
 
+
+.. youtube:: SWz-TDaVOjU
+      :height: 315
+      :width: 560
+      :align: center
+
+
 + Códigos equivalentes : for durante o dia vira while á noite.
 
 
@@ -76,6 +83,14 @@ for == while enrustido
 def functions
 =============
 
+
+.. youtube:: hkmTg3ambZA
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 + Aprendemos algumas funções do Python: len, int, float, print e input
 + Agora iremos criar as nossas próprias funções
 + Utilizo def para definir a função e return para devolver algum valor
@@ -100,6 +115,12 @@ def functions
 
 Funções
 =======
+
+
+.. youtube:: MtTqwE7xFeA
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + Defina uma função fatorial
@@ -161,6 +182,14 @@ Números aleatórios
 ==================
 
 
+
+.. youtube:: lkF7fwwdn74
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 .. codelens:: Example6_11
          
         import random
@@ -199,6 +228,13 @@ Números aleatórios
 
 
 
+.. youtube:: nWgRu1S0T4s
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Números aleatórios
 ==================
 
@@ -214,6 +250,15 @@ Números aleatórios
         for k in range(15):
          lista.append(random.randint(10,100))
         print(lista)
+
+
+
+      
+.. youtube:: HhwANFfzIMk
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Números aleatórios
@@ -240,8 +285,34 @@ Números aleatórios
 
 
 
+.. youtube:: m-JiN6pMY34
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
+ord , chr
+=========
+
+
+.. youtube:: EetzrvvQIKQ
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Lista 5
 =======
+
+
+.. youtube:: -dapAyrls9o
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 
 .. image:: img/TWP05_041.jpeg
@@ -250,55 +321,12 @@ Lista 5
    :align: center
    :alt: 
 
+
+
 + “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
 
-Links de Palestras em Vídeo:
-============================
 
-.. youtube:: SWz-TDaVOjU
-      :height: 315
-      :width: 560
-      :align: center
 
-.. youtube:: hkmTg3ambZA
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: MtTqwE7xFeA
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: lkF7fwwdn74
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: nWgRu1S0T4s
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: HhwANFfzIMk
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: m-JiN6pMY34
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: -dapAyrls9o
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: EetzrvvQIKQ
-      :height: 315
-      :width: 560
-      :align: center
 
 .. disqus::
    :shortname: pyzombis
