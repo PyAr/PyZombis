@@ -9,6 +9,13 @@ Strings
    :align: center
    :alt: 
 
+
+.. youtube:: t5sE9ruRHHM
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Aspas de vários tipos
 =====================
 
@@ -108,6 +115,14 @@ Incremento no fatiamento
    else:
      print('%s não é palíndrome' %palavra)
 
+
+
+.. youtube:: TQkvGiwXhdQ
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Strings são imutáveis
 =====================
 
@@ -118,6 +133,13 @@ Strings são imutáveis
 
    texto = "Alô Mundo"
    texto[0] = '@'
+
+
+
+.. youtube:: __OGe-uUBmg
+      :height: 315
+      :width: 560
+      :align: center
 
 
 Posso criar novas strings
@@ -160,6 +182,14 @@ Concatenação
        troca = troca + palavra[k]
       k+=1
    print("Nova palavra %s" %troca)
+
+
+
+.. youtube:: OInhmFfmNXE
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Verificação parcial de strings
@@ -227,8 +257,22 @@ Exercício
 
 
 
+.. youtube:: zOp-YBp3yzI
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Coding Dojo
 ===========
+
+
+.. youtube:: DR4CuztiMpY
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 .. image:: img/TWP18_015.jpeg
@@ -282,38 +326,7 @@ Pair Programming
    :align: center
    :alt: 
 
-Links de Palestras em Vídeo:
-============================
 
-.. youtube:: t5sE9ruRHHM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: TQkvGiwXhdQ
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: __OGe-uUBmg
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: OInhmFfmNXE
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: zOp-YBp3yzI
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: DR4CuztiMpY
-      :height: 315
-      :width: 560
-      :align: center
 
 .. disqus::
    :shortname: pyzombis
