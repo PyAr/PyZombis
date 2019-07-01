@@ -11,6 +11,14 @@ Revisão Listas
 
 
 
+.. youtube:: uEImp8vMMKE
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
+
 Campeonato de Surf em Codeville
 ===============================
 
@@ -258,6 +266,13 @@ Nova classificação
 ==================
 
 
+.. youtube:: xAHvvU4N0NY
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 .. code-block:: python
    
    f = open('surf.txt')
@@ -325,24 +340,12 @@ Finalmente a classificação correta
 
 
 
-Links de Palestras em Vídeo:
-============================
-
-
-.. youtube:: uEImp8vMMKE
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: xAHvvU4N0NY
-      :height: 315
-      :width: 560
-      :align: center
-
 .. youtube:: MRSLnv8jnWU
       :height: 315
       :width: 560
       :align: center
+
+
 
 
 .. disqus::
