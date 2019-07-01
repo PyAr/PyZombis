@@ -14,6 +14,13 @@ Facebook Hacking
 ================
 
 
+.. youtube:: _26fel27apU
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 
 .. image:: img/TWP45_001.jpeg
    :height: 10.225cm
@@ -32,6 +39,21 @@ Facebook Hacking
 
 Facebook Profile Photo
 ======================
+
+
+.. youtube:: F4MpDoldKoE
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
+.. youtube:: g4RIVW1Kb2U
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 .. code-block :: python
 
@@ -75,6 +97,12 @@ Facebook Profile Photo
 + Autenticar novamente neste caso
 
 
+.. youtube:: BxhJIWNzYA0
+      :height: 315
+      :width: 560
+      :align: center
+
+
 .. image:: img/TWP45_006.png
    :height: 11.2cm
    :width: 23.578cm
@@ -94,6 +122,13 @@ Facebook Profile Photo
    for amigo in data['data']:
       print(amigo['name'])
 
+
+
+
+.. youtube:: c7EIZACNWr0
+      :height: 315
+      :width: 560
+      :align: center
 
 
 .. code-block :: python
@@ -117,6 +152,13 @@ Facebook Profile Photo
 
    for amigo in dados['data']:
       grava_imagem(amigo)
+
+
+
+.. youtube:: Sv9LlF55etM
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
@@ -154,6 +196,11 @@ Android Wallpaper
          print(resp['from']['name']+':'+resp['message']+'\n')
 
 
+.. youtube:: WxpiAeCbaBg
+      :height: 315
+      :width: 560
+      :align: center
+
 
 .. image:: img/TWP45_012.png
    :height: 9.6cm
@@ -171,6 +218,18 @@ Android Wallpaper
 + Inserir link para o perfil pessoal no Facebook
 + Obs.: somente alguns participantes e com a foto na data do evento
 
+
+
+.. youtube:: rE7ZXouF0Dc
+      :height: 315
+      :width: 560
+      :align: center
+
+
+.. youtube:: JVl00TkX3tg
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
@@ -445,6 +504,12 @@ Android Wallpaper
       print()
 
 
+.. youtube:: Ot2QidTKFgI
+      :height: 315
+      :width: 560
+      :align: center
+
+
 .. image:: img/TWP45_050.png
    :height: 9.39cm
    :width: 23.344cm
@@ -495,24 +560,12 @@ Android Wallpaper
    :alt: 
 
 
-Links de Palestras em Vídeo:
-============================
 
-
-.. youtube:: E_IIrwtag_c
+.. youtube:: v-HWDVnGdsY
       :height: 315
       :width: 560
       :align: center
 
-.. youtube:: GWqpH_o8-54
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 5C35LCcrUVs
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::

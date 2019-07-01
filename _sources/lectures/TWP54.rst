@@ -11,6 +11,13 @@ Exceções
 
 
 
+.. youtube:: SnVbanjubbw
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Exceções 
 =========
 
@@ -159,16 +166,6 @@ Tratando Exceções
    :width: 13.348cm
    :align: center
    :alt: 
-
-
-Links de Palestras em Vídeo:
-============================
-
-
-.. youtube:: n_jy8-bMG0g
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::

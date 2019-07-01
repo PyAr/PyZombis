@@ -11,6 +11,13 @@ Pygame
 
 
 
+.. youtube:: vkysyHaxDnU
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Bibliografia
 ============
 
@@ -300,6 +307,13 @@ Pygame Collision Detection
 ==========================
 
 
+.. youtube:: SqTpxne2daE
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 .. image:: img/TWP60_014.png
    :height: 8.492cm
    :width: 12.117cm
@@ -341,6 +355,13 @@ Pygame Collision Detection
 
 Pygame Input
 ============
+
+
+.. youtube:: b3UTOJ9k6ws
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 .. image:: img/TWP60_017.png
@@ -431,6 +452,13 @@ Pygame Input
 
 Sounds and Sprites
 ==================
+
+
+.. youtube:: 34BS1Tj6nNU
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 .. image:: img/TWP60_022.png
@@ -557,6 +585,13 @@ Sounds and Sprites
 ==================
 
 
+.. youtube:: NZYF5t-wVdA
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 + FPS == Frames Per Second
 + Variável que controla o mainClock.tick()
 + Os monstrinhos possuem um tamanho mínimo e máximo e sua velocidade é
@@ -575,75 +610,35 @@ Sounds and Sprites
 
       baddies.append(newBaddie)
 
-Links de Palestras em Vídeo:
-============================
 
-.. youtube:: i3mk21KyaSc
-      :height: 315
-      :width: 560
-      :align: center
+Snakey : A Nibbles Clone
+========================
 
-.. youtube:: Zg_N47XbgMU
-      :height: 315
-      :width: 560
-      :align: center
 
-.. youtube:: V0yERkjnnGo
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: e0ZyAOBKWNI
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: KhsO092a_7c
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: NpbN_LmRi7Q
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: jU8Ta_BRcek
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: fudvCcJ_fA4
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: lSTWhtNMp0A
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: xWcHgmFbOSI
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: WfTgLViIaZ8
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: Gre1yR5yH7U
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: RQlgaH_09Es
+.. youtube:: elbDnrogsuM
       :height: 315
       :width: 560
       :align: center
 
 
+Classic Games with Python in the Browser
+========================================
+
+
+.. youtube:: pIQ47HQlCa0
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
+.. youtube:: LnBah4wYJP0
+      :height: 315
+      :width: 560
+      :align: center
+
+
+            
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture23

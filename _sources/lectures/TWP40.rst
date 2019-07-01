@@ -413,20 +413,6 @@ Conversão de graus em C
    }
 
 
-Links de Palestras em Vídeo:
-============================
-
-
-.. youtube:: 9gKN5n6mymk
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: CCxrF5usWwo
-      :height: 315
-      :width: 560
-      :align: center
-
 
 .. disqus::
    :shortname: pyzombis

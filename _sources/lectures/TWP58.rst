@@ -10,6 +10,14 @@ DJ Mix 2 Revisão Orientação à Objetos
    :alt: 
 
 
+
+.. youtube:: hoA4d3-CezI
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 POO – Programação Orientada à Objetos
 =====================================
 
@@ -167,53 +175,6 @@ Recordação
 + class – inicia a definição de uma classe
 + self – atribuído ao objeto corrente
 + __init__() método chamado na criação do objeto
-
-
-Links de Palestras em Vídeo:
-============================
-
-
-
-.. youtube:: vkysyHaxDnU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: SqTpxne2daE
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: b3UTOJ9k6ws
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 34BS1Tj6nNU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: NZYF5t-wVdA
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: elbDnrogsuM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: pIQ47HQlCa0
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: LnBah4wYJP0
-      :height: 315
-      :width: 560
-      :align: center
-
 
 
 

@@ -10,6 +10,12 @@ DJ Mix 1
    :alt: 
 
 
+.. youtube:: n_jy8-bMG0g
+      :height: 315
+      :width: 560
+      :align: center
+
+
 DJ Mix
 ======
 
@@ -215,17 +221,6 @@ Recordação
 + Checkbutton()
 + Scale()
 
-
-
-Links de Palestras em Vídeo:
-============================
-
-
-
-.. youtube:: hoA4d3-CezI
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::

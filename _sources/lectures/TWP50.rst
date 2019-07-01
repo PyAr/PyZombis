@@ -10,6 +10,13 @@ Interface Gráfica
    :alt: 
 
 
+.. youtube:: IZyaz4x0Ql4
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Interface Gráfica
 =================
 
@@ -22,6 +29,13 @@ Interface Gráfica
 
 Show de Calouros
 ================
+
+
+.. youtube:: Wi_N0S48tOs
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 + Opção 1 para resposta correta e 2 para errada
@@ -323,6 +337,13 @@ Show de Calouros
    :alt: 
 
 
+.. youtube:: lN3kerQfLkE
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Revisão
 =======
 
@@ -335,25 +356,6 @@ Revisão
 + Tkinter: biblioteca para interface gráfica
 
 
-
-Links de Palestras em Vídeo:
-============================
-
-
-.. youtube:: 7gNCI7Dx0kU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: rmSXED4gdcw
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: AGHSdwE3XR4
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::

@@ -11,6 +11,12 @@ MVC
 
 
 
+.. youtube:: 7gNCI7Dx0kU
+      :height: 315
+      :width: 560
+      :align: center
+
+
 HEAD-Ex Logística e Transporte
 ==============================
 
@@ -134,6 +140,13 @@ HEAD-Ex Logística e Transporte
 ==============================
 
 
+.. youtube:: rmSXED4gdcw
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 .. image:: img/TWP52_013.jpg
    :height: 9.048cm
    :width: 18.123cm
@@ -167,6 +180,13 @@ HEAD-Ex Logística e Transporte
 
 HEAD-Ex Logística e Transporte
 ==============================
+
+
+.. youtube:: AGHSdwE3XR4
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 .. image:: img/TWP52_016.jpg
@@ -267,15 +287,6 @@ Revisão
 + RadioButton()
 + OptionMenu()
 
-
-Links de Palestras em Vídeo:
-============================
-
-
-.. youtube:: SnVbanjubbw
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::

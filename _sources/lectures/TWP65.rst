@@ -10,6 +10,13 @@ Desenvolvimento Web Intro
    :alt: 
 
 
+.. youtube:: i3mk21KyaSc
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Requisições e respostas
 =======================
 
@@ -44,8 +51,75 @@ Desenvolvimento Web
   + Não é J2EE ;-)
 
 
+Bottle Hello World
+==================
+
+
+.. youtube:: Zg_N47XbgMU
+      :height: 315
+      :width: 560
+      :align: center
+
+
+Decorator Intro
+===============
+
+
+
+.. youtube:: V0yERkjnnGo
+      :height: 315
+      :width: 560
+      :align: center
+
+
+Decorators
+==========
+
+
+.. youtube:: e0ZyAOBKWNI
+      :height: 315
+      :width: 560
+      :align: center
+
+
+Decorator Contador com tempo
+============================
+
+.. youtube:: KhsO092a_7c
+      :height: 315
+      :width: 560
+      :align: center
+
+Bottle Template Simples
+=======================
+
+
+.. youtube:: NpbN_LmRi7Q
+      :height: 315
+      :width: 560
+      :align: center
+
+
+Bottle Form Get
+===============
+
+
+.. youtube:: jU8Ta_BRcek
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Web2py
 ======
+
+
+.. youtube:: fudvCcJ_fA4
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 + InfoWorld: best full-stack Python framework
 + Bossie: Best Open Source Development Software
@@ -76,6 +150,13 @@ Web2py
 
 Hello World
 ===========
+
+
+.. youtube:: lSTWhtNMp0A
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 + Habilitar a opção “Não usar servidor proxy para servidores locais”
@@ -148,8 +229,24 @@ Hello World
 + ctrl+S
 
 
+Web2py Visão
+============
+
+.. youtube:: xWcHgmFbOSI
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Contar visitantes
 =================
+
+
+.. youtube:: WfTgLViIaZ8
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + Editar controlador default.py
@@ -279,6 +376,16 @@ Appliances
 + EcardsOnMap (é grande...)
 
 
+Geradores Intro
+===============
+
+
+.. youtube:: Gre1yR5yH7U
+      :height: 315
+      :width: 560
+      :align: center
+
+      
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture24

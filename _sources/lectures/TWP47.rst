@@ -10,6 +10,11 @@ Módulos
    :alt: 
 
 
+.. youtube:: E_IIrwtag_c
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Programação Modular
@@ -36,6 +41,13 @@ Arquivo transações.txt
 
 Venda Salgados
 ==============
+
+
+.. youtube:: GWqpH_o8-54
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 .. code-block:: python
@@ -282,6 +294,14 @@ Descontos
 
 
 
+.. youtube:: 5C35LCcrUVs
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
+
 + Agora sob nova direção os salgados na FATEC terão 10% de desconto!
 + Para isso será criado um módulo fatec.py
 + Inicialmente o desconto será de 10% para todos os salgados
@@ -402,24 +422,15 @@ Nomes Completos
    :alt: 
 
 
+dis Module
+==========
 
-Links de Palestras em Vídeo:
-============================
 
-.. youtube:: IZyaz4x0Ql4
+.. youtube:: CCxrF5usWwo
       :height: 315
       :width: 560
       :align: center
 
-.. youtube:: Wi_N0S48tOs
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: lN3kerQfLkE
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::
