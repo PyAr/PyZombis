@@ -14,6 +14,15 @@ Arquivos e Dicionários
 Arquivos
 ========
 
+
+
+.. youtube:: C9_DTR1lCIs
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 + Até agora nossos dados desapareciam ao sair do IDLE
 
 + Arquivos servem para armazenamento permanente
@@ -61,6 +70,13 @@ Arquivos
 ..    arquivo.close()
 
 
+.. youtube:: 5z6zqyeLxjg
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 + Caso você execute este programa nada aparecerá na tela
 + Procure no diretório c:\Python3x o arquivo números.txt
 + O modo w cria o arquivo se ele não existir, caso exista ele será
@@ -93,6 +109,13 @@ Arquivos
   print(linha.rstrip())
 
 
+.. youtube:: iy6lC_n-C8Y
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Pythonic way
 ============
 
@@ -122,6 +145,13 @@ Cripto
 ======
 
 
+.. youtube:: 8LPKBWfGgEM
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 + Leia mensagem.txt e grave cripto.txt com todas as vogais trocadas
   por ‘*’
 
@@ -142,6 +172,13 @@ Cripto
 
 Validate IP address
 ===================
+
+
+.. youtube:: 6Bez4QcGtak
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 .. .. datafile:: IPS.txt
@@ -192,6 +229,13 @@ HTML
 ====
 
 
+.. youtube:: 9no41i9UDRI
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 + Páginas web são escritas em HTML (Hypertext Mark-up Language)
 + Tags HTML começam com < e terminam com >
 + A página web é escrita entre <html> e </html> que é a tag de maior
@@ -221,6 +265,13 @@ HTML
 
 Dictionaries
 ============
+
+
+.. youtube:: ZhDQIL5bgEU
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 + O dicionário em si consiste em relacionar uma chave a um valor
@@ -295,6 +346,13 @@ Dictionaries
 
 
 
+.. youtube:: vvfc3BAbmo0
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Exercício Programa 1
 ====================
 
@@ -308,48 +366,6 @@ Exercício Programa 1
 
 + “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
 
-Links de Palestras em Vídeo:
-============================
-
-.. youtube:: C9_DTR1lCIs
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 5z6zqyeLxjg
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: iy6lC_n-C8Y
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 8LPKBWfGgEM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 6Bez4QcGtak
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 9no41i9UDRI
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: ZhDQIL5bgEU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: vvfc3BAbmo0
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::
