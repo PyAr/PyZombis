@@ -10,6 +10,14 @@ Classes e Objetos
    :alt: 
 
 
+
+.. youtube:: Zr_FiKbgRbU
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Baixar os códigos abaixo
 ========================
 
@@ -78,6 +86,13 @@ Classes e objetos
   apenas uma variável local do método e não um atributo
 
 
+.. youtube:: l5YK0Y1QF1w
+      :height: 315
+      :width: 560
+      :align: center
+
+      
+
 Classes e objetos
 =================
 
@@ -103,6 +118,13 @@ Classes e objetos
 
 Classes e objetos
 =================
+
+
+
+.. youtube:: 3MTDybCeMQE
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
@@ -165,6 +187,11 @@ Arquivo teste.py, Saída de teste
 Extrato de operações
 ====================
 
+
+.. youtube:: d34q8zBje0I
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + Altere o método resumo da classe Conta para extrato, imprimindo
@@ -231,6 +258,13 @@ Arquivo teste2.py, Saída de teste2
 
 Herança
 =======
+
+
+
+.. youtube:: dtvjm7_PCiU
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
@@ -341,6 +375,14 @@ Outro exemplo OOP
 =================
 
 
+
+.. youtube:: eIZCUlC29Yw
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 .. codelens:: Example8_9
          
         import datetime
@@ -362,44 +404,14 @@ Outro exemplo OOP
         print(masanori)
 
 
-Links de Palestras em Vídeo:
-============================
 
-
-.. youtube:: Zr_FiKbgRbU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 3MTDybCeMQE
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: d34q8zBje0I
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: dtvjm7_PCiU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: eIZCUlC29Yw
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: l5YK0Y1QF1w
-      :height: 315
-      :width: 560
-      :align: center
 
 .. youtube:: wrMj5CwGeBY
       :height: 315
       :width: 560
       :align: center
+
+
 
 
 .. disqus::
