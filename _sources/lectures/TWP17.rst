@@ -9,6 +9,13 @@ Listas
    :align: center
    :alt: 
 
+
+.. youtube:: IKbN7PnFqTQ
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Edifício
 ========
 
@@ -153,6 +160,13 @@ Listas
 
 + Obs : x+=1 é o mesmo que x = x + 1 
 
+
+.. youtube:: 5fnldRu9D8I
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Listas
 ======
 
@@ -174,6 +188,12 @@ Listas
       vector.append(n)
       i = i + 1
    print("Vector lido :", vector)
+
+
+.. youtube:: n4wutespgbM
+      :height: 315
+      :width: 560
+      :align: center
 
 
 Listas
@@ -202,6 +222,12 @@ Listas
       i -= 1
 
 
+.. youtube:: _ezpAhoU5B4
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Listas
 ======
 
@@ -228,6 +254,15 @@ Listas
       i += 1
    print("Notas:",notas)
    print("Média : %4.2f" %(soma/4))
+
+
+
+.. youtube:: f0tF-EIl3Mk
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 Listas
 ======
@@ -281,6 +316,13 @@ Listas
    print("Foram lidos %d consoantes" %cont)
 
 
+
+.. youtube:: tO8CsxgBn1g
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Lista de Exercícios “again”
 ===========================
 
@@ -294,38 +336,7 @@ Lista de Exercícios “again”
 
 + “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
 
-Links de Palestras em Vídeo:
-============================
 
-.. youtube:: IKbN7PnFqTQ
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 5fnldRu9D8I
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: n4wutespgbM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: _ezpAhoU5B4
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: f0tF-EIl3Mk
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: tO8CsxgBn1g
-      :height: 315
-      :width: 560
-      :align: center
 
 .. disqus::
    :shortname: pyzombis
