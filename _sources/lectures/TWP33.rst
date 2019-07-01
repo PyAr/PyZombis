@@ -9,6 +9,13 @@ Revisão Strings
    :align: center
    :alt: 
 
+
+.. youtube:: VQ5vwKCi2Eg
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Texto
 =====
 
@@ -58,6 +65,12 @@ O CEO quer apenas o preço
    :width: 12.699cm
    :align: center
    :alt: 
+
+
+.. youtube:: LrP4aBa8sp0
+      :height: 315
+      :width: 560
+      :align: center
 
 
 O preço está embutido no HTML
@@ -182,6 +195,12 @@ O CEO está feliz!
    :alt: 
 
 
+.. youtube:: IgRFQhA-gXM
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Não existem perguntas idiotas
 =============================
 
@@ -214,6 +233,12 @@ Descontos para clientes fiéis
    :alt: 
 
 
+.. youtube:: 1hqmBgnJoNU
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Programa de fidelidade
 ======================
 
@@ -227,6 +252,12 @@ Programa de fidelidade
 
 
 + Não deu certo! Apareceu “bean” no lugar do preço. Por quê será?
+
+
+.. youtube:: hX9MWdrYusY
+      :height: 315
+      :width: 560
+      :align: center
 
 
 O preço se moveu
@@ -300,6 +331,13 @@ Só quando for menos que 4.74
 ============================
 
 
+.. youtube:: S3U_-K43EeA
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 .. image:: img/TWP33_025.jpg
    :height: 15.444cm
    :width: 8.6cm
@@ -309,6 +347,13 @@ Só quando for menos que 4.74
 
 Só quando for menos que 4.74
 ============================
+
+
+
+.. youtube:: TQ5aGZ2azfM
+      :height: 315
+      :width: 560
+      :align: center
 
 
 .. code-block :: python
@@ -365,6 +410,13 @@ Ele pode ficar testando o preço?
 
 Ele pode ficar tentando?
 ========================
+
+
+.. youtube:: Vjrk-_NsMFo
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 .. code-block :: python
@@ -465,6 +517,12 @@ Resumo
 ======
 
 
+.. youtube:: 8cjrzMfFb3Y
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 + Strings são seqüências de caracteres
 + Acessamos os caracteres individuais pelo índice, que começa com zero
@@ -487,53 +545,8 @@ Ferramentas Python
 + Bibliotecas: urllib.request e time
 
 
-Links de Palestras em Vídeo:
-============================
 
-.. youtube:: VQ5vwKCi2Eg
-      :height: 315
-      :width: 560
-      :align: center
 
-.. youtube:: LrP4aBa8sp0
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: IgRFQhA-gXM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 1hqmBgnJoNU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: hX9MWdrYusY
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: S3U_-K43EeA
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: TQ5aGZ2azfM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: Vjrk-_NsMFo
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 8cjrzMfFb3Y
-      :height: 315
-      :width: 560
-      :align: center
 
 .. disqus::
    :shortname: pyzombis
