@@ -24,6 +24,12 @@ Repetições
    :alt: 
 
 
+.. youtube:: ef9LpwS-UHk
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Imprimindo de 1 a 3
 ===================
 
@@ -123,6 +129,15 @@ Contadores
     print(x)
     x=x+1
 
+
+
+.. youtube:: w_1WhWzCnhk
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 Contadores
 ==========
 
@@ -140,6 +155,14 @@ Contadores
     if x%2 == 0:
     	print(x)
     x=x+1
+
+
+
+
+.. youtube:: a8uN4Sxxih4
+      :height: 315
+      :width: 560
+      :align: center
 
 
 Contadores
@@ -175,6 +198,12 @@ Contadores
 Acumuladores
 ============
 
+
+
+.. youtube:: bnUiJhfgzHk
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + A diferença entre um contador e um acumulador é que nos contadores o
@@ -230,6 +259,11 @@ Acumuladores
         	i = i+1
         print("Fat(10) = %d" %fat)
 
+
+.. youtube:: viLE8vc9XH8
+      :height: 315
+      :width: 560
+      :align: center
 
 
 Acumuladores
@@ -295,8 +329,21 @@ Interrompendo a repetição
    print("Média: %5.2f" %(soma/n))
 
 
+.. youtube:: 1i9w5Sbuylc
+      :height: 315
+      :width: 560
+      :align: center
+
+
 Repetições aninhadas
 ====================
+
+
+
+.. youtube:: HmS66jBu_po
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + Imprima as tabuadas de 1 a 10
@@ -320,6 +367,18 @@ Lista de Exercícios “again”
 ===========================
 
 
+.. youtube:: 7hfRJPKOlo8
+      :height: 315
+      :width: 560
+      :align: center
+
+
+.. youtube:: Xa_sl8Ttp1A
+      :height: 315
+      :width: 560
+      :align: center
+
+
 .. image:: img/TWP05_041.jpeg
    :height: 12.571cm
    :width: 9.411cm
@@ -330,53 +389,6 @@ Lista de Exercícios “again”
 + “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
 
 
-Links de Palestras em Vídeo:
-============================
-
-.. youtube:: ef9LpwS-UHk
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: w_1WhWzCnhk
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: a8uN4Sxxih4
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: bnUiJhfgzHk
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 1i9w5Sbuylc
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: viLE8vc9XH8
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: HmS66jBu_po
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 7hfRJPKOlo8
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: Xa_sl8Ttp1A
-      :height: 315
-      :width: 560
-      :align: center
 
 .. disqus::
    :shortname: pyzombis
