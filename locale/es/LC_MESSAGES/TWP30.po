@@ -1,0 +1,462 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP30.rst:16
+msgid "Revisão Geral 1"
+msgstr "Revisión general 1"
+
+#: ../../lectures/TWP30.rst:35
+msgid "Acabamos o primeiro livro"
+msgstr "Terminamos el primer libro."
+
+#: ../../lectures/TWP30.rst:46
+msgid "Vamos começar o segundo"
+msgstr "Vamos a empezar el segundo"
+
+#: ../../lectures/TWP30.rst:57
+msgid "O que aprendemos"
+msgstr "Que aprendemos"
+
+#: ../../lectures/TWP30.rst:61
+msgid "Variáveis e entrada de dados"
+msgstr "Variables y entrada de datos."
+
+#: ../../lectures/TWP30.rst:62
+msgid "Condições"
+msgstr "Condiciones"
+
+#: ../../lectures/TWP30.rst:63 ../../lectures/TWP30.rst:373
+msgid "Repetições"
+msgstr "Repeticiones"
+
+#: ../../lectures/TWP30.rst:64
+msgid "Listas"
+msgstr "Listas"
+
+#: ../../lectures/TWP30.rst:65
+msgid "Strings"
+msgstr "Cuerdas"
+
+#: ../../lectures/TWP30.rst:66
+msgid "Funções"
+msgstr "Funciones"
+
+#: ../../lectures/TWP30.rst:67
+msgid "Arquivos"
+msgstr "Archivos"
+
+#: ../../lectures/TWP30.rst:68
+msgid "Dicionários"
+msgstr "Los diccionarios"
+
+#: ../../lectures/TWP30.rst:69
+msgid "Classes e Objetos"
+msgstr "Clases y objetos"
+
+#: ../../lectures/TWP30.rst:73
+msgid "Agora só faltam seus exercícios"
+msgstr "Ahora todo lo que necesitas son tus ejercicios."
+
+#: ../../lectures/TWP30.rst:82 ../../lectures/TWP30.rst:538
+msgid ""
+"“A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se"
+" manter em movimento”. - Einstein."
+msgstr ""
+"La vida es como andar en bicicleta. Para mantener el equilibrio, debes estar"
+"Sigue moviéndote. - Einstein."
+
+#: ../../lectures/TWP30.rst:86
+msgid "O que vamos aprender no segundo?"
+msgstr "¿Qué aprenderemos en el segundo?"
+
+#: ../../lectures/TWP30.rst:95
+msgid "As mesmas coisas!"
+msgstr "Las mismas cosas"
+
+#: ../../lectures/TWP30.rst:96
+msgid "Fazendo jogos"
+msgstr "Haciendo juegos"
+
+#: ../../lectures/TWP30.rst:97
+msgid "Acessando sites para ver a cotação do café"
+msgstr "Accediendo a sitios web para ver la cotización del café."
+
+#: ../../lectures/TWP30.rst:98
+msgid "Usando interfaces gráficas"
+msgstr "Usando interfaces gráficas"
+
+#: ../../lectures/TWP30.rst:99
+msgid "Tratando exceções"
+msgstr "Tratamiento de excepciones"
+
+#: ../../lectures/TWP30.rst:100
+msgid "Usando banco de dados de surfistas"
+msgstr "Usando la base de datos de surfistas"
+
+#: ../../lectures/TWP30.rst:101
+msgid "Mixando músicas"
+msgstr "Mezclando canciones"
+
+#: ../../lectures/TWP30.rst:105
+msgid "Encontrando seu caminho"
+msgstr "Encontrando tu camino"
+
+#: ../../lectures/TWP30.rst:109
+msgid ""
+"Se você só usar o software dos outros, sempre estará limitado àquilo que "
+"outras pessoas acham que você deseja fazer"
+msgstr ""
+"Si solo usas el software de otros, siempre estarás limitado a qué"
+"otras personas piensan que quieres hacer"
+
+#: ../../lectures/TWP30.rst:111
+msgid "Escreva seus próprios programas"
+msgstr "Escribe tus propios programas"
+
+#: ../../lectures/TWP30.rst:112
+msgid "Você deseja ser programado ou ser o programador?"
+msgstr "¿Quieres ser programado o ser el programador?"
+
+#: ../../lectures/TWP30.rst:113
+msgid "Você pode assumir o controle"
+msgstr "Puedes tomar el control"
+
+#: ../../lectures/TWP30.rst:117
+msgid "Adivinhando números"
+msgstr "Adivinando números"
+
+#: ../../lectures/TWP30.rst:119
+msgid "**print()** é uma função"
+msgstr "** print () ** es una función"
+
+#: ../../lectures/TWP30.rst:120
+msgid "**'Bem vindo!'** é uma string"
+msgstr "** '¡Bienvenido!' ** es una cuerda"
+
+#: ../../lectures/TWP30.rst:121
+msgid "**g,chute** são variáveis"
+msgstr "** g, kick ** son variables"
+
+#: ../../lectures/TWP30.rst:122
+msgid "**if,else** são diretivas"
+msgstr "** si, si no ** son directivas"
+
+#: ../../lectures/TWP30.rst:123
+msgid ""
+"A lacuna que é fornecida após os dois pontos (:) da instrução if, a "
+"partir da qual a instrução print é iniciada, é chamada de recuo"
+msgstr ""
+"El espacio que se proporciona después de los dos puntos (:) de la instrucción if, un"
+"a partir de la cual se inicia la declaración de impresión, se denomina sangría"
+
+#: ../../lectures/TWP30.rst:124
+msgid ""
+"**=** é o operador de atribuição e é usado para atribuir valores a "
+"variáveis"
+msgstr ""
+"** = ** es el operador de asignación y se utiliza para asignar valores a"
+"variables"
+
+#: ../../lectures/TWP30.rst:125
+msgid ""
+"**==** é o operador de comparação e é usado para comparar duas variáveis "
+"​​ou valores"
+msgstr ""
+"** == ** es el operador de comparación y se utiliza para comparar dos variables"
+"O valores"
+
+#: ../../lectures/TWP30.rst:143 ../../lectures/TWP30.rst:165
+msgid "As partes do seu programa"
+msgstr "Las partes de tu programa."
+
+#: ../../lectures/TWP30.rst:147
+msgid ""
+":purple:`Funções` embutidas (built in functions) são chamadas pelo seu "
+"nome e exigem parênteses"
+msgstr ""
+":purple:`Functions` son llamadas por tu"
+"Nombre y requerimiento de paréntesis"
+
+#: ../../lectures/TWP30.rst:152
+msgid ""
+":green:`Strings` se diferenciam dos comandos do programa por estarem "
+"dentro de aspas"
+msgstr ""
+": green:`Strings` difieren de los comandos del programa porque son "
+"entre comillas"
+
+#: ../../lectures/TWP30.rst:157
+msgid ":red:`Variáveis` controlam dados na memória e possuem tipos diferentes"
+msgstr ":red:`Variables` controlan datos en memoria y tienen diferentes tipos"
+
+#: ../../lectures/TWP30.rst:161
+msgid ":yellow:`Diretivas` são comandos da linguagem"
+msgstr ":yellow:`directivas` son comandos de lenguaje"
+
+#: ../../lectures/TWP30.rst:169
+msgid "A :red:`identação` separa blocos de comandos"
+msgstr "A: red:`indentation` separa los bloques de comando"
+
+#: ../../lectures/TWP30.rst:171
+msgid "“Cada um no seu quadrado”"
+msgstr "Cada uno en su plaza"
+
+#: ../../lectures/TWP30.rst:173
+msgid "Um igual (=) significa atribuição"
+msgstr "Un igual (=) significa asignación"
+
+#: ../../lectures/TWP30.rst:175
+msgid "Ex.: chute = int(g) (chute recebe inteiro de g)"
+msgstr "Ej.: kick = int (g) (el kick recibe el entero de g)"
+
+#: ../../lectures/TWP30.rst:177
+msgid "Dois iguais (==) significa comparação"
+msgstr "Dos iguales (==) significa comparación"
+
+#: ../../lectures/TWP30.rst:179
+msgid "Ex.: chute == 42 (chute é igual a 42?)"
+msgstr "Ej .: kick == 42 (kick es igual a 42?)"
+
+#: ../../lectures/TWP30.rst:181
+msgid "Dois pontos abrem blocos de instruções"
+msgstr "Dos puntos de bloques de instrucciones abiertos."
+
+#: ../../lectures/TWP30.rst:183
+msgid "Coloque no banheiro, caderno, geladeira:"
+msgstr "Poner en el baño, cuaderno, nevera:"
+
+#: ../../lectures/TWP30.rst:184
+msgid "“Eu amo dois pontos!”"
+msgstr "¡Me encanta el colon!"
+
+#: ../../lectures/TWP30.rst:191
+msgid "Quais os tipos de erro?"
+msgstr "¿Qué tipos de errores?"
+
+#: ../../lectures/TWP30.rst:195
+msgid "Erros de sintaxe"
+msgstr "Errores de sintaxis"
+
+#: ../../lectures/TWP30.rst:197
+msgid ""
+"Uma linguagem de programação é formal, diferente das linguagens naturais "
+"possui sintaxe rígida"
+msgstr ""
+"Un lenguaje de programación es formal, diferente de los lenguajes naturales"
+"tiene sintaxis rígida"
+
+#: ../../lectures/TWP30.rst:199
+msgid "Erros em tempo de execução"
+msgstr "Errores en tiempo de ejecución"
+
+#: ../../lectures/TWP30.rst:200
+msgid "Erros semânticos (mais difíceis de achar)"
+msgstr "Errores semánticos (más difíciles de encontrar)"
+
+#: ../../lectures/TWP30.rst:204
+msgid "Como achar e tratar erros?"
+msgstr "¿Cómo encontrar y manejar errores?"
+
+#: ../../lectures/TWP30.rst:207
+msgid "Sintáticos: muita atenção e prática"
+msgstr "Sintáctica: mucha atención y práctica."
+
+#: ../../lectures/TWP30.rst:208
+msgid "Em tempo de execução: tratamento de exceções"
+msgstr "En tiempo de ejecución: manejo de excepciones"
+
+#: ../../lectures/TWP30.rst:209
+msgid "Semânticos: teste de mesa ou simulação"
+msgstr "Semántica: prueba de mesa o simulación."
+
+#: ../../lectures/TWP30.rst:213 ../../lectures/TWP30.rst:230
+#: ../../lectures/TWP30.rst:248
+msgid "Então, como você executa seu código?"
+msgstr "Entonces, ¿cómo ejecutar su código?"
+
+#: ../../lectures/TWP30.rst:217
+msgid ""
+"Há duas coisas para executar o programa de adivinhação: um editor e um "
+"interpretador"
+msgstr ""
+"Hay dos cosas para ejecutar el programa de adivinanzas: un editor y un"
+"intérprete"
+
+#: ../../lectures/TWP30.rst:219
+msgid "O editor salva o código escrito em um arquivo no disco"
+msgstr "El editor guarda el código escrito en un archivo en el disco."
+
+#: ../../lectures/TWP30.rst:234
+msgid ""
+"Computadores não podem processar textos pois somente entendem binário "
+"(zeros e uns)"
+msgstr ""
+"Las computadoras no pueden procesar texto porque solo entienden binario"
+"(ceros y unos)"
+
+#: ../../lectures/TWP30.rst:236
+msgid ""
+"O interpretador transforma o código fonte em um arquivo binário para o "
+"computador"
+msgstr ""
+"El intérprete transforma el código fuente en un archivo binario para el"
+"computadora"
+
+#: ../../lectures/TWP30.rst:258
+msgid "O interpretador Python atua em dois modos: interativo e edição"
+msgstr "El intérprete de Python actúa en dos modos: interactivo y edición"
+
+#: ../../lectures/TWP30.rst:260
+msgid ""
+"O modo interativo é ótimo para testar comandos e obter respostas "
+"instantâneas"
+msgstr ""
+"El modo interactivo es ideal para probar comandos y obtener respuestas"
+"instantáneo"
+
+#: ../../lectures/TWP30.rst:263
+msgid "Porém o modo edição é o mais utilizado para desenvolver os programas"
+msgstr "Sin embargo, el modo de edición es el más utilizado para desarrollar los programas."
+
+#: ../../lectures/TWP30.rst:265
+msgid "Nomes dos arquivos geralmente terminam com “.py”"
+msgstr "Los nombres de archivos usualmente terminan con .py"
+
+#: ../../lectures/TWP30.rst:266
+msgid "Caso utilize outra extensão perderá as cores..."
+msgstr "Si usas otra extensión perderás los colores ..."
+
+#: ../../lectures/TWP30.rst:268
+msgid "Um programa é mais que uma lista de comandos"
+msgstr "Un programa es más que una lista de comandos."
+
+#: ../../lectures/TWP30.rst:283
+msgid "O programa é uma rede viária"
+msgstr "El programa es una red de carreteras."
+
+#: ../../lectures/TWP30.rst:294
+msgid "Na rede você escolhe seu caminho"
+msgstr "En la red eliges tu camino."
+
+#: ../../lectures/TWP30.rst:305 ../../lectures/TWP30.rst:315
+#: ../../lectures/TWP30.rst:326
+msgid "Dando dicas"
+msgstr "Dando consejos"
+
+#: ../../lectures/TWP30.rst:309
+msgid "O programa somente diz se acertou ou não"
+msgstr "El programa solo te dice si lo entendiste bien o no."
+
+#: ../../lectures/TWP30.rst:310
+msgid "Para ajudar você dirá “Alto” ou “Baixo” caso a pessoa erre"
+msgstr "Para ayudarlo, dirá “Alto” ​​o “Bajo” si la persona falla"
+
+#: ../../lectures/TWP30.rst:311
+msgid "Como ficaria a estrada?"
+msgstr "¿Cómo se vería el camino?"
+
+#: ../../lectures/TWP30.rst:345
+msgid "Utilize BACKSPACE e TAB para ir e voltar"
+msgstr "Utilice RETROCESO y TAB para ir y venir"
+
+#: ../../lectures/TWP30.rst:362 ../../lectures/TWP30.rst:419
+msgid "Os usuários ainda não gostam"
+msgstr "A los usuarios todavía no les gusta."
+
+#: ../../lectures/TWP30.rst:438
+msgid "Sortear o número a ser adivinhado"
+msgstr "Dibuja el número para ser adivinado"
+
+#: ../../lectures/TWP30.rst:470
+msgid "Agora sim!"
+msgstr "¡Ahora si!"
+
+#: ../../lectures/TWP30.rst:480
+msgid "Resumo"
+msgstr "Resumen"
+
+#: ../../lectures/TWP30.rst:489
+msgid "Você criou um game!"
+msgstr "¡Has creado un juego!"
+
+#: ../../lectures/TWP30.rst:490
+msgid "Comandos fazem coisas"
+msgstr "Los comandos hacen cosas"
+
+#: ../../lectures/TWP30.rst:491
+msgid "Desvios decidem coisas"
+msgstr "Las desviaciones deciden las cosas."
+
+#: ../../lectures/TWP30.rst:492
+msgid "Laços repetem coisas"
+msgstr "Los lazos repiten cosas"
+
+#: ../../lectures/TWP30.rst:493
+msgid "As condições ajudam você a decidir se algo é True ou False"
+msgstr "Las condiciones te ayudan a decidir si algo es verdadero o falso"
+
+#: ../../lectures/TWP30.rst:494
+msgid "A atribuição define um nome para um dado"
+msgstr "La asignación define un nombre para un determinado"
+
+#: ../../lectures/TWP30.rst:500
+msgid "Ferramentas do Python"
+msgstr "Herramientas de Python"
+
+#: ../../lectures/TWP30.rst:504
+msgid "Desvios :yellow:`if/else`"
+msgstr "Desvíos:yellow:`if/else`"
+
+#: ../../lectures/TWP30.rst:505
+msgid "Laços :yellow:`while`"
+msgstr "Corbatas:yellow:`while`"
+
+#: ../../lectures/TWP30.rst:506
+msgid "Operador de atribuição ="
+msgstr "Operador de Asignación ="
+
+#: ../../lectures/TWP30.rst:507
+msgid "Operador de igualdade =="
+msgstr "Operador de Igualdad =="
+
+#: ../../lectures/TWP30.rst:508
+msgid "Operador diferente !="
+msgstr "Operador diferente! ="
+
+#: ../../lectures/TWP30.rst:509
+msgid "Exibir uma mensagem :purple:`print`"
+msgstr "Mostrar un mensaje:purple:`print`"
+
+#: ../../lectures/TWP30.rst:510
+msgid "Ler a entrada :purple:`input`"
+msgstr "Leer entrada :purple:`input`"
+
+#: ../../lectures/TWP30.rst:511
+msgid "Converter para inteiro :purple:`int`"
+msgstr "Convertir a entero :purple:`int`"
+
+#: ../../lectures/TWP30.rst:512
+msgid "Sortear um número inteiro randint"
+msgstr "Renderizar un entero randint"
+
+#: ../../lectures/TWP30.rst:522
+msgid "Lista VI com testes!"
+msgstr "Lista VI con pruebas!"
+

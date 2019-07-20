@@ -6,29 +6,35 @@ Desenvolvimento Web Intro
 .. image:: img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
+   :align: center
    :alt: 
 
 
-<número>
+.. youtube:: i3mk21KyaSc
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 Requisições e respostas
 =======================
 
 
-.. image:: img/TWP65_001.png
+.. image:: img/TWP65_001.jpg
    :height: 15.139cm
    :width: 16.053cm
+   :align: center
    :alt: 
 
 
-.. image:: img/TWP65_002.png
+.. image:: img/TWP65_002.jpg
    :height: 16.017cm
    :width: 15.601cm
+   :align: center
    :alt: 
 
 
-Requisição e resposta
-=====================
 
 
 Desenvolvimento Web
@@ -41,20 +47,77 @@ Desenvolvimento Web
 + Micro Frameworks: CherryPy, Bottle, Flask
 + WSGI (Web Server Gateway Interface)
 
+  + Padrões de acesso e comunicação entre servidores Web e aplicações Python
+  + Não é J2EE ;-)
 
 
-  +
-
-    + –Padrões de acesso e comunicação entre servidores Web e aplicações
-      Python
-    + –Não é J2EE ;-)
+Bottle Hello World
+==================
 
 
+.. youtube:: Zg_N47XbgMU
+      :height: 315
+      :width: 560
+      :align: center
 
+
+Decorator Intro
+===============
+
+
+
+.. youtube:: V0yERkjnnGo
+      :height: 315
+      :width: 560
+      :align: center
+
+
+Decorators
+==========
+
+
+.. youtube:: e0ZyAOBKWNI
+      :height: 315
+      :width: 560
+      :align: center
+
+
+Decorator Contador com tempo
+============================
+
+.. youtube:: KhsO092a_7c
+      :height: 315
+      :width: 560
+      :align: center
+
+Bottle Template Simples
+=======================
+
+
+.. youtube:: NpbN_LmRi7Q
+      :height: 315
+      :width: 560
+      :align: center
+
+
+Bottle Form Get
+===============
+
+
+.. youtube:: jU8Ta_BRcek
+      :height: 315
+      :width: 560
+      :align: center
 
 
 Web2py
 ======
+
+
+.. youtube:: fudvCcJ_fA4
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
@@ -62,13 +125,9 @@ Web2py
 + Bossie: Best Open Source Development Software
 + MVC:
 
-
-
-  +
-
-    + –Modelo: dados
-    + –Controladores: regras do negócio
-    + –Visões: apresentação
+  + Modelo: dados
+  + Controladores: regras do negócio
+  + Visões: apresentação
 
 + Autocontido == full-stack framework
 + Seguro
@@ -83,18 +142,20 @@ Web2py
 
 + Princípios Python
 
-
-
-  +
-
-    + –DRY – Don’t Repeat Yourself
-    + –Deve existir apenas uma única maneira óbvia de fazer algo
-    + –Explícito é melhor que implícito (não segue)
+  + DRY – Don’t Repeat Yourself
+  + Deve existir apenas uma única maneira óbvia de fazer algo
+  + Explícito é melhor que implícito (não segue)
 
 
 
 Hello World
 ===========
+
+
+.. youtube:: lSTWhtNMp0A
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
@@ -107,20 +168,18 @@ Hello World
 + Depois iremos aprender a utilizar appliances
 
 
-
-
 Hello World
 ===========
-
 
 
 + Nova aplicação básica: “Hello World”
 + Editar o controlador default.py
 
+.. code-block:: python
 
-def index():
 
-return "Minha primeira mensagem"
+  def index():
+    return "Minha primeira mensagem"
 
 
 + ctrl+S
@@ -134,10 +193,10 @@ Hello World
 
 + Editar novamente o controlador default.py
 
-
-def index():
-
-return dict(msg="FATEC SJC")
+.. code-block:: python
+    
+  def index():
+    return dict(msg="FATEC SJC")
 
 
 + ctrl+S
@@ -151,42 +210,64 @@ Hello World
 
 + Apagar tudo e trocar na visão default/index
 
+.. code-block:: html
 
-<html>
 
-<head></head>
+  <html>
 
-<body>
+    <head></head>
 
-<h1>{{=msg}}</h1>
+    <body>
 
-</body>
+      <h1>{{=msg}}</h1>
 
-</html>
+    </body>
+
+  </html>
 
 
 + ctrl+S
+
+
+Web2py Visão
+============
+
+.. youtube:: xWcHgmFbOSI
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Contar visitantes
 =================
 
 
+.. youtube:: WfTgLViIaZ8
+      :height: 315
+      :width: 560
+      :align: center
+
 
 + Editar controlador default.py
 
 
-def index():
+.. code-block:: python
+  
 
-if not session.counter:
+  def index():
 
-session.counter = 1
+    if not session.counter:
 
-else:
+      session.counter = 1
 
-session.counter += 1
+    else:
 
-return dict(msg="Python Zumbi", cont=session.counter)
+      session.counter += 1
+
+    return dict(msg="Python Zumbi", cont=session.counter)
+
+
 
 Contar visitantes
 =================
@@ -195,25 +276,25 @@ Contar visitantes
 
 + Visão default/index
 
+.. code-block:: html
 
-<html>
 
-<head></head>
+  <html>
 
-<body>
+    <head></head>
 
-<h1>{{=msg}}</h1>
+    <body>
 
-<h2>Visitantes: {{=cont}}</h2>
+      <h1>{{=msg}}</h1>
 
-</body>
+      <h2>Visitantes: {{=cont}}</h2>
 
-</html>
+    </body>
+
+  </html>
 
 
 + Visitantes diferentes possuem contadores diferentes
-
-
 
 
 Duas páginas
@@ -234,16 +315,16 @@ Duas páginas
 
 + Incluir no controlador default.py
 
-
-def primeira():
-
-return dict()
+.. code-block:: python
 
 
+  def primeira():
 
-def segunda():
+    return dict()
 
-return dict()
+  def segunda():
+
+    return dict()
 
 
 
@@ -267,6 +348,7 @@ Qual é o seu nome?
 
 </form>
 
+
 Duas páginas
 ============
 
@@ -286,7 +368,7 @@ Appliances
 
 
 
-+ `http://www.web2py.com/appliances`_
++ `Web2py Appliances <http://www.web2py.com/appliances>`_
 + Email Contact Form
 + Sudoku Solver
 + Train Counter Game
@@ -294,6 +376,16 @@ Appliances
 + EcardsOnMap (é grande...)
 
 
-.. _http://www.web2py.com/appliances: http://www.web2py.com/appliances
+Geradores Intro
+===============
 
 
+.. youtube:: Gre1yR5yH7U
+      :height: 315
+      :width: 560
+      :align: center
+
+      
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture24

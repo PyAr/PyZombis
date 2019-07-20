@@ -6,10 +6,17 @@ Variáveis e Entrada de Dados
 .. image:: img/TWP05_001.jpeg
    :height: 14.832cm
    :width: 9.2cm
+   :align: center
    :alt: 
 
 
-<número>
+
+.. youtube:: 6La690qlH5w
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 Primeiro programa
 =================
@@ -20,15 +27,21 @@ Primeiro programa
 + Precisamos marcar ou limitar o início e o fim de nossas mensagens
   com um símbolo, nesse caso, as aspas
 
-.. code-block:: pycon
+.. code-block:: python
 
     >>> print ("hola mundo!")
     hola mundo!
 
-.. image:: img/TWP05_002.png
-   :height: 2.592cm
-   :width: 15.027cm
-   :alt: 
+.. codelens:: Example_1
+    
+    print("Primeria mensagem")
+
+
+.. youtube:: GpbkVHV8_64
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Primeira mensagem de erro
@@ -37,18 +50,12 @@ Primeira mensagem de erro
 + Letras maiúsculas e minúsculas são diferentes
 + Você reparou que Print não está na cor roxa?
 
-.. code-block:: pycon
+.. code-block:: python
 
     >>> Print ("hola mundo!")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     NameError: name 'Print' is not defined
-
-.. image:: img/TWP05_003.png
-   :height: 5.132cm
-   :width: 19.419cm
-   :alt: 
-
 
 Primeira mensagem de erro
 =========================
@@ -57,7 +64,7 @@ Primeira mensagem de erro
   como um comando da linguagem Python, gerando um erro de sintaxe
 + Você reparou que a mensagem não está na cor verde?
 
-.. code-block:: pycon
+.. code-block:: python
 
     >>> print (hola mundo)
       File "<stdin>", line 1
@@ -65,20 +72,13 @@ Primeira mensagem de erro
                         ^
     SyntaxError: invalid syntax
 
-
-.. image:: img/TWP05_004.png
-   :height: 2.645cm
-   :width: 22.674cm
-   :alt: 
-
-
 Primeira mensagem de erro
 =========================
 
 + Na versão do Python que usamos os parênteses não são opcionais no
   print
 
-.. code-block:: pycon
+.. code-block:: python
 
     >>> print "hola mundo"
       File "<stdin>", line 1
@@ -86,31 +86,20 @@ Primeira mensagem de erro
               ^
     SyntaxError: invalid syntax
 
-
-
-.. image:: img/TWP05_005.png
-   :height: 2.698cm
-   :width: 22.489cm
-   :alt: 
-
-
 Primeira mensagem de erro
 =========================
-
-
-
-
-
-
 
 + Os espaços iniciais possuem um significado em Python que veremos
   mais adiante
 
 
-.. image:: img/TWP05_006.png
-   :height: 3.328cm
-   :width: 22.724cm
-   :alt: 
+.. code-block:: python
+
+    >>>   print("Primeira mensagem!")
+      File "<stdin>", line 1
+        print "hola mundo"
+      ^      
+    SyntaxError: unexpected indent
 
 
 Interpretador Python
@@ -145,6 +134,7 @@ Modo edição
 .. image:: img/TWP05_007.png
    :height: 11.961cm
    :width: 22.859cm
+   :align: center
    :alt: 
 
 
@@ -155,6 +145,7 @@ Rodar o programa
 .. image:: img/TWP05_008.png
    :height: 12.435cm
    :width: 22.859cm
+   :align: center
    :alt: 
 
 
@@ -165,6 +156,7 @@ Salvar o programa
 .. image:: img/TWP05_009.png
    :height: 12.033cm
    :width: 22.859cm
+   :align: center
    :alt: 
 
 
@@ -175,6 +167,7 @@ Mesmo resultado!
 .. image:: img/TWP05_010.png
    :height: 13.843cm
    :width: 19.844cm
+   :align: center
    :alt: 
 
 
@@ -197,10 +190,16 @@ Calculadora no interpretador
 ============================
 
 
-.. image:: img/TWP05_011.png
-   :height: 13.89cm
-   :width: 4.814cm
-   :alt: 
+.. codelens:: Example_Calculator
+    
+    print(2+3)
+    print(5-3)
+    print(10-4+2)
+    print(2*10)
+    print(10/4)
+    print(2**3)
+    print(10%3)
+    print(16%7)
 
 
 Conceitos de variáveis e atribuição
@@ -215,10 +214,17 @@ Conceitos de variáveis e atribuição
 
 
 
-.. image:: img/TWP05_012.png
-   :height: 2.909cm
-   :width: 5.714cm
-   :alt: 
+.. codelens:: Example_6_1
+    
+    a = 2
+    b = 3
+    print(a+b)
+
+
+.. youtube:: 9srd0tYvqv8
+      :height: 315
+      :width: 560
+      :align: center
 
 
 Conceitos de variáveis e atribuição
@@ -240,25 +246,14 @@ Conceitos de variáveis e atribuição
 
 + Podemos usar o modo interativo também
 
-
-
-
-
-
-
-
-
 + As duas primeiras linhas não enviam nada para a tela, por isso,
   apenas o resultado da terceira linha é mostrado
 
-
-
-
-.. image:: img/TWP05_013.png
-   :height: 3.465cm
-   :width: 7.672cm
-   :alt: 
-
+.. codelens:: Example_6_2
+    
+    a = 2
+    b = 3
+    print(a+b)
 
 Conceitos de variáveis e atribuição
 ===================================
@@ -272,10 +267,10 @@ Conceitos de variáveis e atribuição
 
 
 
-.. image:: img/TWP05_014.png
-   :height: 3.465cm
-   :width: 7.381cm
-   :alt: 
+.. codelens:: Example_Calculation
+    
+    print(2+3)
+    print(5)
 
 
 Conceitos de variáveis e atribuição
@@ -327,6 +322,7 @@ Tipos de variáveis
 .. image:: img/TWP05_015.png
    :height: 8.507cm
    :width: 16.595cm
+   :align: center
    :alt: 
 
 
@@ -406,61 +402,47 @@ Variáveis do tipo lógico
 Operadores relacionais
 ======================
 
+.. table:: **Operadores relacionais**
+   :widths: auto
 
-Operador
-
-Operação
-
-Símbolo matemático
-
-==
-
-igual
-
-=
-
->
-
-maior que
-
->
-
-<
-
-menor que
-
-<
-
-!=
-
-diferente
-
-<>
-
->=
-
-maior ou igual
-
->=
-
-<=
-
-menor ou igual
-
-<=
-
-..  image type unrecognized: data:image/*;base64,VkNMTVRGAQAxAAAAAAAAAAEAGwAAAAAAAAAAAAAA
+   ======== ============== ==================
+   Operador Operação       Símbolo matemático
+   ======== ============== ==================
+   ==       igual          =
+   >        maior que      >
+   <        menor que      <
+   !=       diferente      <>
+   >=       maior ou igual >=
+   <=       menor ou igual <=
+   ======== ============== ==================
 
 
-Exemplos: operadores relacionais
-================================
+
+.. youtube:: d6XyTLkTYJo
+      :height: 315
+      :width: 560
+      :align: center
 
 
-.. image:: img/TWP05_016.png
-   :height: 12.571cm
-   :width: 3.885cm
-   :alt: 
 
+Exemplos: 
+=========
+
+
+.. codelens:: Example_7
+    
+    a = 1
+    b = 5
+    c = 2
+    d = 1
+    print(a == b)
+    print(b>a)
+    print(a<b)
+    print(a == d)
+    print(b >= a)
+    print(c <= b)
+    print(d != a)
+    print(d != b)
 
 Exemplo importante
 ==================
@@ -472,10 +454,10 @@ Exemplo importante
 
 
 
-.. image:: img/TWP05_017.png
-   :height: 3.465cm
-   :width: 5.397cm
-   :alt: 
+.. codelens:: Example_8
+    
+    print(5 >= 5)
+    print(5 <= 5)
 
 
 Exemplo
@@ -489,10 +471,12 @@ Exemplo
 
 
 
-.. image:: img/TWP05_018.png
-   :height: 4.285cm
-   :width: 12.831cm
-   :alt: 
+.. codelens:: Example_9
+    
+    nota = 8
+    média = 6
+    aprovado = nota > média
+    print(aprovado)
 
 
 Operadores Lógicos
@@ -503,21 +487,10 @@ Operadores Lógicos
 + Temos três operadores básicos: not, and e or
 + Operador not
 
-
-
-
-
-
-
-
-
-
-
-
-.. image:: img/TWP05_019.png
-   :height: 3.439cm
-   :width: 6.746cm
-   :alt: 
+.. codelens:: Example_10
+    
+    print(not True)
+    print(not False)
 
 
 Operadores Lógicos
@@ -527,13 +500,12 @@ Operadores Lógicos
 
 + Operador and
 
-
-
-
-.. image:: img/TWP05_020.png
-   :height: 6.958cm
-   :width: 9.55cm
-   :alt: 
+.. codelens:: Example_11
+    
+    print(True and True)
+    print(True and False)
+    print(False and True)
+    print(False and False)
 
 
 Operadores Lógicos
@@ -543,13 +515,12 @@ Operadores Lógicos
 
 + Operador or
 
-
-
-
-.. image:: img/TWP05_021.png
-   :height: 6.905cm
-   :width: 9.18cm
-   :alt: 
+.. codelens:: Example_12
+    
+    print(True or True)
+    print(True or False)
+    print(False or True)
+    print(False or False)
 
 
 Expressões Lógicas
@@ -573,10 +544,11 @@ Exemplo
   empréstimo
 
 
-.. image:: img/TWP05_022.png
-   :height: 3.518cm
-   :width: 15.953cm
-   :alt: 
+.. codelens:: Example_13
+    
+    salário = 500.0
+    idade = 20
+    print(salário > 1000 and idade > 18)
 
 
 Exemplo
@@ -590,10 +562,12 @@ Exemplo
 
 
 
-.. image:: img/TWP05_023.png
-   :height: 4.365cm
-   :width: 15.53cm
-   :alt: 
+.. codelens:: Example_14
+    
+    ep = 5.8
+    p = 7
+    aprovado = ep >= 6 and p >= 6
+    print(aprovado)
 
 
 Variáveis String
@@ -608,10 +582,11 @@ Variáveis String
   início e no final
 
 
-.. image:: img/TWP05_024.png
-   :height: 1.031cm
-   :width: 16.774cm
-   :alt: 
+.. codelens:: Example_15
+    
+    texto = "Joao e Maria comem pão"
+    print(texto)
+
 
 
 Variáveis String
@@ -627,11 +602,10 @@ Variáveis String
 
 
 
-.. image:: img/TWP05_025.png
-   :height: 1.692cm
-   :width: 10cm
-   :alt: 
-
+.. codelens:: Example_16
+    
+    texto = "Joao e Maria comem pão"
+    print(len(texto))
 
 Variáveis String
 ================
@@ -644,10 +618,10 @@ Variáveis String
 + Acessamos o caracter fornecendo o índice entre colchetes ([ ])
 
 
-.. image:: img/TWP05_026.png
-   :height: 1.745cm
-   :width: 8.863cm
-   :alt: 
+.. codelens:: Example_17
+    
+    texto = "Joao e Maria comem pão"
+    print(texto[0])
 
 
 Variáveis String
@@ -658,13 +632,10 @@ Variáveis String
 + Cuidado: não podemos acessar um índice maior que a quantidade de
   caracteres da string
 
-
-
-
-.. image:: img/TWP05_027.png
-   :height: 6.19cm
-   :width: 19.181cm
-   :alt: 
+.. codelens:: Example_18
+    
+    texto = "Joao e Maria comem pão"
+    print(texto[22])
 
 
 Operações com strings
@@ -683,10 +654,19 @@ Concatenação
 ============
 
 
-.. image:: img/TWP05_028.png
-   :height: 5.37cm
-   :width: 14.419cm
-   :alt: 
+.. codelens:: Example_19
+    
+    a = "Batatinha"
+    b = "quando nasce"
+    print(a+b)
+    print(a*3)
+
+
+.. youtube:: WqiKtAynpI0
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Composição
@@ -700,10 +680,18 @@ Composição
 
 
 
-.. image:: img/TWP05_029.png
-   :height: 2.645cm
-   :width: 17.462cm
-   :alt: 
+.. codelens:: Example_20
+    
+    idade = 20
+    print("Joã tem %d anos"%idade)
+
+
+
+.. youtube:: dhtEDVw5EFM
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Composição
@@ -719,10 +707,11 @@ Composição
 
 
 
-.. image:: img/TWP05_030.png
-   :height: 3.518cm
-   :width: 11.932cm
-   :alt: 
+.. codelens:: Example_21
+    
+    idade = 20
+    print("[%03d]"%idade)
+    print("[%3d]"%idade)
 
 
 Composição
@@ -735,10 +724,9 @@ Composição
 
 
 
-.. image:: img/TWP05_031.png
-   :height: 1.692cm
-   :width: 14.63cm
-   :alt: 
+.. codelens:: Example_22
+    
+    print("R$ %5.2f reais" %23)
 
 
 Fatiamento
@@ -749,10 +737,14 @@ Fatiamento
 + Fatia do primeiro índice até o anterior do segundo
 
 
-.. image:: img/TWP05_032.png
-   :height: 9.577cm
-   :width: 10.027cm
-   :alt: 
+.. codelens:: Example_23
+    
+    x = "0123456789"
+    print(x[0:2])
+    print(x[1:2])
+    print(x[2:4])
+    print(x[0:5])
+    print(x[1:8])
 
 
 Fatiamento
@@ -764,10 +756,14 @@ Fatiamento
   também podemos ter índices negativos: -1 último, -2 penúltimo
 
 
-.. image:: img/TWP05_033.png
-   :height: 8.704cm
-   :width: 9.021cm
-   :alt: 
+.. codelens:: Example_24
+    
+    x = "0123456789"
+    print(x[:2])
+    print(x[4:])
+    print(x[4:-1])
+    print(x[-4:-1])
+    print(x[:])
 
 
 Alteração de variáveis com o tempo
@@ -782,10 +778,24 @@ Alteração de variáveis com o tempo
 
 
 
-.. image:: img/TWP05_034.png
-   :height: 7.884cm
-   :width: 13.122cm
-   :alt: 
+.. codelens:: Example_25
+    
+    dívida = 0 
+    compra = 100
+    dívida = dívida + compra
+    compra = 200
+    dívida = dívida + compra
+    compra = 300
+    dívida = dívida + compra
+    print(dívida)
+
+
+
+.. youtube:: nvuWPGKiVtU
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Teste de mesa ou simulação
@@ -803,64 +813,47 @@ Teste de mesa ou simulação
 Teste de mesa ou simulação
 ==========================
 
+.. table:: **Teste de mesa ou simulação**
+   :widths: auto
 
-dívida
-
-compra
-
-Tela
-
-0
-
-100
-
-600
-
-100
-
-200
-
-300
-
-300
-
-600
-
-..  image type unrecognized: data:image/*;base64,VkNMTVRGAQAxAAAAAAAAAAEAGwAAAAAAAAAAAAAA
-
+   ====== ====== ====
+   dívida compra Tela
+   ====== ====== ====
+   -0-    -100-    600
+   -100-  -200-
+   -300-    300
+   600
+   ====== ====== ====
 
 Não tenha pressa para o teste de mesa
 =====================================
 
-
 .. image:: img/TWP05_035.jpeg
    :height: 13.6cm
    :width: 20.42cm
+   :align: center
    :alt: 
-
 
 Entrada de Dados
 ================
 
+
+.. youtube:: mubJU5dHyP8
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + Até agora nossos programas trabalharam com valores conhecidos
 + Vamos começar a pegar os valores durante a execução dos programas e
   usar mais o modo de edição
 
+.. activecode:: Input_Example_1
+   :nocodelens:
+   :stdin:
 
-
-
-.. image:: img/TWP05_036.png
-   :height: 2.592cm
-   :width: 13.943cm
-   :alt: 
-
-
-.. image:: img/TWP05_037.png
-   :height: 1.772cm
-   :width: 16.244cm
-   :alt: 
+   nome = input("Digite o seu nome: ")
+   print("Olá %s!" %nome)
 
 
 Conversão da entrada de dados
@@ -873,20 +866,13 @@ Conversão da entrada de dados
   ponto flutuante
 
 
+.. activecode:: Input_Example_2
+   :nocodelens:
+   :stdin:
 
-
-
-
-.. image:: img/TWP05_038.png
-   :height: 2.599cm
-   :width: 23.642cm
-   :alt: 
-
-
-.. image:: img/TWP05_039.png
-   :height: 3.199cm
-   :width: 11.855cm
-   :alt: 
+   valor_unitario = float(input("Valor de uma rosquinha: "))
+   n = int(input("Número de rosquinha: "))
+   print("Valor total = %5.2f" %(n*valor_unitario))
 
 
 Erro comum
@@ -900,7 +886,15 @@ Erro comum
 .. image:: img/TWP05_040.png
    :height: 6.846cm
    :width: 20.801cm
+   :align: center
    :alt: 
+
+
+.. youtube:: Bogfujj2jtk
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Lista de Exercícios
@@ -910,8 +904,14 @@ Lista de Exercícios
 .. image:: img/TWP05_041.jpeg
    :height: 12.571cm
    :width: 9.411cm
+   :align: center
    :alt: 
 
 
+
+
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture1
 
 

@@ -6,10 +6,17 @@ Classes e Objetos
 .. image:: img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
+   :align: center
    :alt: 
 
 
-<número>
+
+.. youtube:: Zr_FiKbgRbU
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 Baixar os códigos abaixo
 ========================
@@ -39,22 +46,19 @@ Classes e objetos
 =================
 
 
-.. image:: img/TWP25_001.png
-   :height: 5.105cm
-   :width: 12.54cm
-   :alt: 
+.. codelens:: Example8_1
+         
+        class Televisao:
+          def __init__ (self):
+            self.ligada = False
+            self.canal = 2
 
-
-.. image:: img/TWP25_002.png
-   :height: 1.745cm
-   :width: 11.535cm
-   :alt: 
-
-
-.. image:: img/TWP25_003.png
-   :height: 3.597cm
-   :width: 12.461cm
-   :alt: 
+        tv_quarto = Televisao() 
+        tv_sala = Televisao()
+        print(tv_quarto.ligada) 
+        print(tv_quarto.canal)
+        tv_sala.ligada = True
+        tv_sala.canal = 5 
 
 
 Classes e objetos
@@ -82,24 +86,45 @@ Classes e objetos
   apenas uma variável local do método e não um atributo
 
 
+.. youtube:: l5YK0Y1QF1w
+      :height: 315
+      :width: 560
+      :align: center
+
+      
+
+Classes e objetos
+=================
+
+
+.. codelens:: Example8_2
+         
+        class Televisao:
+          def __init__ (self):
+            self.ligada = False
+            self.canal = 2
+          def muda_canal_para_baixo(self):
+            self.canal -= 1
+          def muda_canal_para_cima(self):
+            self.canal += 1
+
+        tv = Televisao()
+        tv.muda_canal_para_cima() 
+        tv.muda_canal_para_cima()
+        print(tv.canal)
+        tv.muda_canal_para_baixo()
+        print(tv.canal) 
+
+
 Classes e objetos
 =================
 
 
-.. image:: img/TWP25_004.png
-   :height: 6.4cm
-   :width: 12.679cm
-   :alt: 
 
-
-.. image:: img/TWP25_005.png
-   :height: 6.493cm
-   :width: 15.201cm
-   :alt: 
-
-
-Classes e objetos
-=================
+.. youtube:: 3MTDybCeMQE
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
@@ -117,35 +142,56 @@ Arquivo tatu.py
 ===============
 
 
-.. image:: img/TWP25_006.png
-   :height: 13.818cm
-   :width: 20.763cm
-   :alt: 
+.. activecode:: Example8_3
+   :nocodelens:
+   :stdin:
+
+   class Cliente:
+    def __init__ (self,nome,telefone):
+      self.nome = nome
+      self.telefone = telefone
+   class Conta:
+    def __init__(self, clientes, numero, saldo = 0):
+      self.saldo = saldo
+      self.clientes = clientes
+      self.numero = numero
+    def resumo(self):
+      print('CC Numero: %s Saldo: %10.2f' %(self.numero,self.saldo))
+    def saque(self,valor):
+      if self.saldo >= valor:
+        self.saldo -= valor
+    def deposito(self, valor):
+      self.sado += valor
 
 
-Arquivo teste.py
-================
+Arquivo teste.py, Saída de teste
+================================
 
 
-.. image:: img/TWP25_007.png
-   :height: 10.529cm
-   :width: 20.345cm
-   :alt: 
+.. activecode:: Example8_4
+   :nocodelens:
+   :stdin:
+   :include: Example8_3
 
+   joao = Cliente('Joao da Silva','777-1234')
+   maria = Cliente('Maria da Silva','555-4321')
+   print('Nome : %s. Telefone: %s' %(joao.nome,joao.telefone))
+   print('Nome : %s. Telefone: %s' %(maria.nome,maria.telefone))
+   conta1 = Conta([joao],1,1000)
+   conta2 = Conta([maria,joao],2,500)
+   conta1.resumo()
+   conta2.resumo()
 
-Saída de teste.py
-=================
-
-
-.. image:: img/TWP25_008.png
-   :height: 5.079cm
-   :width: 19.155cm
-   :alt: 
-
+    
 
 Extrato de operações
 ====================
 
+
+.. youtube:: d34q8zBje0I
+      :height: 315
+      :width: 560
+      :align: center
 
 
 + Altere o método resumo da classe Conta para extrato, imprimindo
@@ -158,34 +204,67 @@ Arquivo tatu2.py (apenas Conta)
 ===============================
 
 
-.. image:: img/TWP25_009.png
-   :height: 15.001cm
-   :width: 19.682cm
-   :alt: 
+.. activecode:: Example8_5
+   :nocodelens:
+   :stdin:
+
+   class Cliente:
+    def __init__ (self,nome,telefone):
+      self.nome = nome
+      self.telefone = telefone
+   class Conta:
+    def __init__(self, clientes, numero, saldo = 0):
+      self.saldo = saldo
+      self.clientes = clientes
+      self.numero = numero
+      self.operacoes = []
+      self.deposito(saldo)
+    def resumo(self):
+      print('CC N: %s Saldo: %10.2f' %(self.numero,self.saldo))
+    def saque(self,valor):
+      if self.saldo >= valor:
+        self.saldo -= valor
+        self.operacoes.append(['Saque',valor])
+    def deposito(self, valor):
+      self.sado += valor
+      self.operacoes.append(['Depósito',valor])
+    def extrato(self):
+      print('Extrato CC N %s' %self.numero)
+      for op in self.operacoes:
+        print("%10s %10.2f" %(op[0],op[1]))
+      print('%10s %10.2f\n' %('Saldo=',self.saldo))
+
+Arquivo teste2.py, Saída de teste2
+==================================
 
 
-Arquivo teste2.py
-=================
+.. activecode:: Example8_6
+   :nocodelens:
+   :stdin:
+   :include: Example8_5
 
-
-.. image:: img/TWP25_010.png
-   :height: 11.561cm
-   :width: 20.584cm
-   :alt: 
-
-
-Saída de teste2.py
-==================
-
-
-.. image:: img/TWP25_011.png
-   :height: 11.667cm
-   :width: 9.868cm
-   :alt: 
+   joao = Cliente('Joao da Silva','777-1234')
+   maria = Cliente('Maria da Silva','555-4321')
+   conta1 = Conta([joao],1,1000)
+   conta2 = Conta([maria,joao],2,500)
+   conta1.saque(50)
+   conta2.deposito(300)
+   conta1.saque(190)
+   conta2.deposito(95.15)
+   conta2.saque(250)
+   conta1.extrato()
+   conta2.extrato()
 
 
 Herança
 =======
+
+
+
+.. youtube:: dtvjm7_PCiU
+      :height: 315
+      :width: 560
+      :align: center
 
 
 
@@ -203,10 +282,45 @@ Adicionar ContaEspecial tatu3.py
 ================================
 
 
-.. image:: img/TWP25_012.png
-   :height: 5.976cm
-   :width: 22.859cm
-   :alt: 
+.. activecode:: Example8_7
+   :nocodelens:
+   :stdin:
+
+   class Cliente:
+    def __init__ (self,nome,telefone):
+      self.nome = nome
+      self.telefone = telefone
+
+   class Conta:
+    def __init__(self, clientes, numero, saldo = 0):
+      self.saldo = saldo
+      self.clientes = clientes
+      self.numero = numero
+      self.operacoes = []
+      self.deposito(saldo)
+    def resumo(self):
+      print('CC N: %s Saldo: %10.2f' %(self.numero,self.saldo))
+    def saque(self,valor):
+      if self.saldo >= valor:
+        self.saldo -= valor
+        self.operacoes.append(['Saque',valor])
+    def deposito(self, valor):
+      self.sado += valor
+      self.operacoes.append(['Depósito',valor])
+    def extrato(self):
+      print('Extrato CC N %s' %self.numero)
+      for op in self.operacoes:
+        print("%10s %10.2f" %(op[0],op[1]))
+      print('%10s %10.2f\n' %('Saldo=',self.saldo))
+
+   class ContaEspecial(Conta):
+    def __init__(self, clientes, numero, saldo = 0):
+      Conta.__init__(self,clientes,numero, saldo)
+      self.limite = limite
+    def saque(self,valor):
+      if self.saldo + self.limite >= valor:
+        self.saldo -= valor
+        self.operacoes.append(['Saque',valor])
 
 
 ContaEspecial
@@ -221,24 +335,28 @@ ContaEspecial
   ContaEspecial
 
 
-Arquivo teste3.py
-=================
+Arquivo teste3.py, Saída teste 3
+================================
 
 
-.. image:: img/TWP25_013.png
-   :height: 11.56cm
-   :width: 22.859cm
-   :alt: 
+.. activecode:: Example8_8
+   :nocodelens:
+   :stdin:
+   :include: Example8_7
+
+   joao = Cliente('Joao da Silva','777-1234')
+   maria = Cliente('Maria da Silva','555-4321')
+   conta1 = Conta([joao],1,1000)
+   conta2 = Conta([maria,joao],2,500,1000)
+   conta1.saque(50)
+   conta2.deposito(300)
+   conta1.saque(190)
+   conta2.deposito(95.15)
+   conta2.saque(250)
+   conta1.extrato()
+   conta2.extrato()
 
 
-Saída teste3.py
-===============
-
-
-.. image:: img/TWP25_014.png
-   :height: 11.508cm
-   :width: 9.894cm
-   :alt: 
 
 
 Vantagens da herança
@@ -257,11 +375,47 @@ Outro exemplo OOP
 =================
 
 
-.. image:: img/TWP25_015.png
-   :height: 10.4cm
-   :width: 24.82cm
-   :alt: 
+
+.. youtube:: eIZCUlC29Yw
+      :height: 315
+      :width: 560
+      :align: center
 
 
+
+.. codelens:: Example8_9
+         
+        import datetime
+
+        class Pessoa():
+          def __init__ (self,nome,nascimento):
+            self.nome = nome
+            self.nascimento = nascimento
+
+          def idade(self):
+            delta = datetime.date.today() - self.nascimento
+            return int(delta.days/365)
+
+          def __str__ (self):
+            return '%s,%d anos' %(self.nome,self.idade())
+
+        masanori = Pessoa('Fernando Masanori', datetime.date(1980,9,1))
+        print(masanori.idade())
+        print(masanori)
+
+
+
+
+.. youtube:: wrMj5CwGeBY
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
+
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture8
 
 

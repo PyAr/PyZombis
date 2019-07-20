@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP15.rst:3 ../../lectures/TWP15.rst:13
+msgid "Repetições"
+msgstr "Repeticiones"
+
+#: ../../lectures/TWP15.rst:34 ../../lectures/TWP15.rst:60
+#: ../../lectures/TWP15.rst:86
+msgid "Imprimindo de 1 a 3"
+msgstr "Imprimiendo de 1 a 3"
+
+#: ../../lectures/TWP15.rst:36
+msgid "Forma simples"
+msgstr "Forma simple"
+
+#: ../../lectures/TWP15.rst:46
+msgid "Usando uma variável"
+msgstr "Utilizando una variable"
+
+#: ../../lectures/TWP15.rst:64
+msgid "Incrementando a variável"
+msgstr "Aumentando la variable"
+
+#: ../../lectures/TWP15.rst:75
+msgid "Usando while"
+msgstr "Usando mientras"
+
+#: ../../lectures/TWP15.rst:97
+msgid "Teste de mesa"
+msgstr "Prueba de mesa"
+
+#: ../../lectures/TWP15.rst:115 ../../lectures/TWP15.rst:142
+#: ../../lectures/TWP15.rst:169 ../../lectures/TWP15.rst:188
+msgid "Contadores"
+msgstr "Contadores"
+
+#: ../../lectures/TWP15.rst:119
+msgid "Agora imprima de 1 até um número digitado pelo usuário"
+msgstr "Ahora imprime desde 1 a un número ingresado por el usuario"
+
+#: ../../lectures/TWP15.rst:145
+msgid "Imprimir os números pares entre 0 e um número fornecido usando if"
+msgstr "Imprima los números pares entre 0 y un número provisto usando if"
+
+#: ../../lectures/TWP15.rst:172
+msgid "Imprimir os números pares entre 0 e um número fornecido sem utilizar o if"
+msgstr "Imprima números pares entre 0 y un número dado sin usar si"
+
+#: ../../lectures/TWP15.rst:192
+msgid ""
+"Modifique o programa anterior para imprimir de 1 até o número digitado "
+"pelo usuário, mas dessa vez apenas os números ímpares"
+msgstr ""
+"Modificar el programa anterior para imprimir desde 1 hasta el número ingresado"
+"por el usuario, pero esta vez solo los números impares"
+
+
+#: ../../lectures/TWP15.rst:194
+msgid "Reescreva o programa anterior para escrever os 10 primeiros múltiplos de 3"
+msgstr "Reescribe el programa anterior para escribir los primeros 10 múltiplos de 3."
+
+#: ../../lectures/TWP15.rst:199 ../../lectures/TWP15.rst:228
+#: ../../lectures/TWP15.rst:248 ../../lectures/TWP15.rst:270
+msgid "Acumuladores"
+msgstr "Acumuladores"
+
+#: ../../lectures/TWP15.rst:209
+msgid ""
+"A diferença entre um contador e um acumulador é que nos contadores o "
+"valor adicionado é constante e, nos acumuladores, variável"
+msgstr ""
+"La diferencia entre un metro y un acumulador es que en los contadores el"
+"El valor agregado es constante y, en acumuladores, variable"
+
+#: ../../lectures/TWP15.rst:211
+msgid "Cálculo da soma de dez números inteiros"
+msgstr "Cálculo de la suma de diez enteros."
+
+#: ../../lectures/TWP15.rst:231
+msgid "Calcule a média de 10 números inteiros"
+msgstr "Calcula el promedio de 10 enteros."
+
+#: ../../lectures/TWP15.rst:251
+msgid "Calcule o fatorial de dez"
+msgstr "Calcula el factorial de diez."
+
+#: ../../lectures/TWP15.rst:273
+msgid "Calcule o fatorial de um número inteiro n"
+msgstr "Calcular el factorial de un entero n"
+
+#: ../../lectures/TWP15.rst:290 ../../lectures/TWP15.rst:310
+msgid "Interrompendo a repetição"
+msgstr "Detener la repetición"
+
+#: ../../lectures/TWP15.rst:293
+msgid "Calcule a soma de números inteiros até ser digitado zero"
+msgstr "Calcula la suma de enteros hasta que ingreses cero"
+
+#: ../../lectures/TWP15.rst:313
+msgid "Calcule a média de números até ser digitado zero"
+msgstr "Calcula el número promedio hasta que ingreses cero"
+
+#: ../../lectures/TWP15.rst:339
+msgid "Repetições aninhadas"
+msgstr "Repeticiones anidadas"
+
+#: ../../lectures/TWP15.rst:349
+msgid "Imprima as tabuadas de 1 a 10"
+msgstr "Imprime las tablas del 1 al 10."
+
+#: ../../lectures/TWP15.rst:367
+msgid "Lista de Exercícios “again”"
+msgstr "Lista de ejercicios de nuevo"
+
+#: ../../lectures/TWP15.rst:389
+msgid ""
+"“A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se"
+" manter em movimento”. - Einstein."
+msgstr ""
+"La vida es como andar en bicicleta. Para mantener el equilibrio, debes estar"
+"Sigue moviéndote. - Einstein."
+

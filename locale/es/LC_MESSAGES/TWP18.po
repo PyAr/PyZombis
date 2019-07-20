@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP18.rst:3
+msgid "Strings"
+msgstr "Cuerdas"
+
+#: ../../lectures/TWP18.rst:20
+msgid "Aspas de vários tipos"
+msgstr "Las comillas de varios tipos"
+
+#: ../../lectures/TWP18.rst:24
+msgid "Posso usar aspas simples, duplas ou triplas"
+msgstr "¿Puedo usar comillas simples, dobles o triples?"
+
+#: ../../lectures/TWP18.rst:48 ../../lectures/TWP18.rst:66
+msgid "Fatiamento"
+msgstr "Rebanada"
+
+#: ../../lectures/TWP18.rst:52
+msgid "Fatia do primeiro índice até o anterior do segundo"
+msgstr "Rebanada del primer índice al anterior del segundo."
+
+#: ../../lectures/TWP18.rst:70
+msgid ""
+"Podemos omitir índices, substituindo pelo extremo correspondente e também"
+" podemos ter índices negativos: -1 último, -2 penúltimo"
+msgstr ""
+"Podemos omitir índices, sustituyendo el extremo correspondiente y también"
+"Podemos tener índices negativos: -1 último, -2 penúltimo"
+
+
+#: ../../lectures/TWP18.rst:86 ../../lectures/TWP18.rst:102
+msgid "Incremento no fatiamento"
+msgstr "Incremento en rebanar"
+
+#: ../../lectures/TWP18.rst:90
+msgid "Posso usar um incremento ao fatiar a string"
+msgstr "¿Puedo usar un incremento al cortar la cadena?"
+
+#: ../../lectures/TWP18.rst:106
+msgid "Verifique se uma palavra é palíndrome"
+msgstr "Comprobar si una palabra es palindrome."
+
+#: ../../lectures/TWP18.rst:127
+msgid "Strings são imutáveis"
+msgstr "Las cuerdas son inmutables"
+
+#: ../../lectures/TWP18.rst:146
+msgid "Posso criar novas strings"
+msgstr "¿Puedo crear nuevas cadenas?"
+
+#: ../../lectures/TWP18.rst:150
+msgid "Usando concatenação resolvemos esse problema"
+msgstr "Usando la concatenación resolvemos este problema."
+
+#: ../../lectures/TWP18.rst:164
+msgid "Concatenação"
+msgstr "Concatenacion"
+
+#: ../../lectures/TWP18.rst:168
+msgid "Faça um programa que leia uma palavra e troque as vogais por “*”"
+msgstr "Haz un programa que lea una palabra e intercambie las vocales por"
+
+#: ../../lectures/TWP18.rst:196
+msgid "Verificação parcial de strings"
+msgstr "Verificación parcial de cuerdas"
+
+#: ../../lectures/TWP18.rst:211
+msgid "find and replace"
+msgstr "find and replace"
+
+#: ../../lectures/TWP18.rst:226
+msgid "split and join"
+msgstr "split and join"
+
+#: ../../lectures/TWP18.rst:241
+msgid "Exercício"
+msgstr "Ejercicio"
+
+#: ../../lectures/TWP18.rst:245
+msgid ""
+"Faça um programa que solicite a data de nascimento (dd/mm/aaaa) e imprima"
+" com o nome do mês por extenso"
+msgstr ""
+"Haga un programa que solicite la fecha de nacimiento (dd / mm / aaaa) e imprima"
+"con el nombre completo del mes"
+
+
+#: ../../lectures/TWP18.rst:268 ../../lectures/TWP18.rst:286
+msgid "Coding Dojo"
+msgstr "Coding Dojo"
+
+#: ../../lectures/TWP18.rst:290 ../../lectures/TWP18.rst:298
+msgid "Desenvolvimento guiado por testes"
+msgstr "Desarrollo guiado por pruebas"
+
+#: ../../lectures/TWP18.rst:291
+msgid "Passos de bebê"
+msgstr "Pasos de bebe"
+
+#: ../../lectures/TWP18.rst:292
+msgid "Pair programming"
+msgstr "Pair programming"
+
+#: ../../lectures/TWP18.rst:309
+msgid "Baby Steps"
+msgstr "Baby Steps"
+
+#: ../../lectures/TWP18.rst:320
+msgid "Pair Programming"
+msgstr "Pair Programming"
+

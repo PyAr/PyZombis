@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP58.rst:3
+msgid "DJ Mix 2 Revisão Orientação à Objetos"
+msgstr "DJ Mix 2 Object Oriented Review"
+
+#: ../../lectures/TWP58.rst:22
+msgid "POO – Programação Orientada à Objetos"
+msgstr "OOP - Programación Orientada a Objetos"
+
+#: ../../lectures/TWP58.rst:33
+msgid "Temos DJ Mix para uma música"
+msgstr "Tenemos DJ Mix para una canción."
+
+#: ../../lectures/TWP58.rst:34
+msgid "Agora precisamos para várias"
+msgstr "Ahora necesitamos varios"
+
+#: ../../lectures/TWP58.rst:35
+msgid "KISS – Kept It Simple Stupid"
+msgstr "KISS – Kept It Simple Stupid"
+
+#: ../../lectures/TWP58.rst:36
+msgid "Não duplicaremos código!"
+msgstr "¡No duplicaremos el código!"
+
+#: ../../lectures/TWP58.rst:47 ../../lectures/TWP58.rst:58
+#: ../../lectures/TWP58.rst:80 ../../lectures/TWP58.rst:91
+#: ../../lectures/TWP58.rst:120
+msgid "Programação Orientada à Objetos"
+msgstr "Programación Orientada a Objetos"
+
+#: ../../lectures/TWP58.rst:69
+msgid "Classe = fábrica de objetos"
+msgstr "Clase = fábrica de objetos"
+
+#: ../../lectures/TWP58.rst:149
+msgid "Parabéns! Agora você sabe criar programas complexos com pouco código"
+msgstr "Enhorabuena Ahora sabes cómo crear programas complejos con poco código."
+
+#: ../../lectures/TWP58.rst:168
+msgid "Recordação"
+msgstr "Recuerdo"
+
+#: ../../lectures/TWP58.rst:172
+msgid "Classes são fábricas de objetos"
+msgstr "Las clases son fábricas de objetos."
+
+#: ../../lectures/TWP58.rst:173
+msgid "Classe = métodos + dados"
+msgstr "Clase = métodos + datos"
+
+#: ../../lectures/TWP58.rst:174
+msgid "Criar objetos = instanciar uma classe"
+msgstr "Crear objetos = instanciar una clase"
+
+#: ../../lectures/TWP58.rst:175
+msgid "class – inicia a definição de uma classe"
+msgstr "clase - comienza a definir una clase"
+
+#: ../../lectures/TWP58.rst:176
+msgid "self – atribuído ao objeto corrente"
+msgstr "autoasignado al objeto actual"
+
+#: ../../lectures/TWP58.rst:177
+msgid "__init__() método chamado na criação do objeto"
+msgstr "__init __ () método llamado en la creación de objetos"
+

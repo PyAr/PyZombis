@@ -23,6 +23,9 @@ import shlex
 
 # -- General configuration ------------------------------------------------
 
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False 
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
 

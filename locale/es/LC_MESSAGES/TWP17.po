@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP17.rst:3 ../../lectures/TWP17.rst:104
+#: ../../lectures/TWP17.rst:144 ../../lectures/TWP17.rst:171
+#: ../../lectures/TWP17.rst:200 ../../lectures/TWP17.rst:232
+#: ../../lectures/TWP17.rst:268 ../../lectures/TWP17.rst:291
+msgid "Listas"
+msgstr "Listas"
+
+#: ../../lectures/TWP17.rst:20 ../../lectures/TWP17.rst:36
+msgid "Edifício"
+msgstr "Construcción"
+
+#: ../../lectures/TWP17.rst:24
+msgid "Edifício de apartamentos"
+msgstr "Edificio de apartamentos"
+
+#: ../../lectures/TWP17.rst:40
+msgid ""
+"Podemos associar o térreo ao andar zero, o primeiro é o andar 1 e assim "
+"por diante"
+msgstr ""
+"Podemos asociar la planta baja con el piso cero, el primero es el piso 1 y así"
+"en adelante"
+
+#: ../../lectures/TWP17.rst:53 ../../lectures/TWP17.rst:64
+msgid "Trem de dados"
+msgstr "Tren de datos"
+
+#: ../../lectures/TWP17.rst:74
+msgid "O trem de dados my_array é uma única variável"
+msgstr "El tren de datos my_array es una sola variable."
+
+#: ../../lectures/TWP17.rst:78
+msgid "Posso engatar vagões"
+msgstr "Puedo comprometer carros"
+
+#: ../../lectures/TWP17.rst:88
+msgid "Como posso acrescentar um vagão com \"Bettys\"?"
+msgstr "¿Cómo puedo agregar un vagón con \\Bettys\\?"
+
+#: ../../lectures/TWP17.rst:92
+msgid "Posso engatar vagões com append"
+msgstr "¿Puedo enganchar vagones con anexar?"
+
+#: ../../lectures/TWP17.rst:108
+msgid "Uma lista vazia"
+msgstr "Una lista vacía"
+
+#: ../../lectures/TWP17.rst:116
+msgid "Uma lista com três notas"
+msgstr "Una lista con tres notas."
+
+#: ../../lectures/TWP17.rst:124
+msgid "Acessando uma nota"
+msgstr "Accediendo a una nota"
+
+#: ../../lectures/TWP17.rst:133
+msgid "Mudando a primeira nota"
+msgstr "Cambiando la primera nota"
+
+#: ../../lectures/TWP17.rst:148
+msgid "Calcule a média de 5 notas"
+msgstr "Calcula el promedio de 5 notas."
+
+#: ../../lectures/TWP17.rst:161
+msgid "Obs : x+=1 é o mesmo que x = x + 1"
+msgstr "Obs: x + = 1 es lo mismo que x = x + 1"
+
+#: ../../lectures/TWP17.rst:175
+msgid "Faça um programa que leia um vetor de 5 números inteiros e mostre o vetor"
+msgstr "Haga un programa que lea un vector de 5 enteros y muestre el vector"
+
+#: ../../lectures/TWP17.rst:204
+msgid ""
+"Faça um programa que leia um vetor de dez números reais e mostre-os na "
+"ordem inversa"
+msgstr ""
+"Haz un programa que lea un vector de diez números reales y los muestre en el"
+"orden inverso"
+
+
+#: ../../lectures/TWP17.rst:236
+msgid "Faça um programa que leia quatro notas, mostre as notas e a média na tela"
+msgstr "Haga un programa que lea cuatro notas, muestre notas y promedie en la pantalla."
+
+#: ../../lectures/TWP17.rst:272
+msgid "Outra forma de fazer o mesmo"
+msgstr "Otra forma de hacer lo mismo."
+
+#: ../../lectures/TWP17.rst:295
+msgid ""
+"Faça um Programa que leia um vetor de 10 caracteres minúsculos, e diga "
+"quantas consoantes foram lidas."
+msgstr ""
+"Haz un programa que lea un vector de 10 caracteres pequeños, y di"
+"Cuántas consonantes se han leído"
+
+
+#: ../../lectures/TWP17.rst:327
+msgid "Lista de Exercícios “again”"
+msgstr "Lista de ejercicios de nuevo"
+
+#: ../../lectures/TWP17.rst:337
+msgid ""
+"“A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se"
+" manter em movimento”. - Einstein."
+msgstr ""
+"La vida es como andar en bicicleta. Para mantener el equilibrio, debes estar"
+"Sigue moviéndote. - Einstein."

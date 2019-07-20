@@ -1,0 +1,860 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP05.rst:3
+msgid "Variáveis e Entrada de Dados"
+msgstr "Variables y entrada de datos"
+
+#: ../../lectures/TWP05.rst:22
+msgid "Primeiro programa"
+msgstr "Primer programa"
+
+#: ../../lectures/TWP05.rst:25
+msgid "Este programa possui apenas uma linha de código"
+msgstr "Este programa tiene una sola línea de código."
+
+#: ../../lectures/TWP05.rst:26
+msgid "Observe que as aspas não aparecem na saída"
+msgstr "Tenga en cuenta que las comillas no aparecen en la salida"
+
+#: ../../lectures/TWP05.rst:27
+msgid ""
+"Precisamos marcar ou limitar o início e o fim de nossas mensagens com um "
+"símbolo, nesse caso, as aspas"
+msgstr ""
+"Necesitamos marcar o limitar el comienzo y el final de nuestros mensajes con una"
+"símbolo, en este caso, las comillas"
+
+
+#: ../../lectures/TWP05.rst:48 ../../lectures/TWP05.rst:61
+#: ../../lectures/TWP05.rst:76 ../../lectures/TWP05.rst:90
+msgid "Primeira mensagem de erro"
+msgstr "Primer mensaje de error"
+
+#: ../../lectures/TWP05.rst:50 ../../lectures/TWP05.rst:179
+msgid "Letras maiúsculas e minúsculas são diferentes"
+msgstr "Las letras mayúsculas y minúsculas son diferentes"
+
+#: ../../lectures/TWP05.rst:51
+msgid "Você reparou que Print não está na cor roxa?"
+msgstr "¿Notaste que la impresión no está en el color púrpura?"
+
+#: ../../lectures/TWP05.rst:63
+msgid ""
+"Se não utilizarmos aspas, o computador interpretará nossa mensagem como "
+"um comando da linguagem Python, gerando um erro de sintaxe"
+msgstr ""
+"Si no usamos comillas, la computadora interpretará nuestro mensaje como"
+"un comando de lenguaje Python, generando un error de sintaxis"
+
+
+#: ../../lectures/TWP05.rst:65
+msgid "Você reparou que a mensagem não está na cor verde?"
+msgstr "¿Notaste que el mensaje no es verde?"
+
+#: ../../lectures/TWP05.rst:78
+msgid "Na versão do Python que usamos os parênteses não são opcionais no print"
+msgstr "En la versión de Python usamos los paréntesis no son opcionales en la impresión"
+
+#: ../../lectures/TWP05.rst:92
+msgid ""
+"Os espaços iniciais possuem um significado em Python que veremos mais "
+"adiante"
+msgstr ""
+"Los espacios iniciales tienen un significado en Python que veremos más"
+"adelante"
+
+
+#: ../../lectures/TWP05.rst:106 ../../lectures/TWP05.rst:119
+msgid "Interpretador Python"
+msgstr "Interpretador Python"
+
+#: ../../lectures/TWP05.rst:110
+msgid ""
+"O interpretador é um programa que aceita comandos escritos em Python e os"
+" executa, linha a linha"
+msgstr ""
+"El intérprete es un programa que acepta comandos escritos en Python y el"
+"realizar, línea por línea"
+
+
+#: ../../lectures/TWP05.rst:112
+msgid ""
+"Sem o interpretador, nossos programas não podem ser executados, sendo "
+"considerados apenas um texto"
+msgstr ""
+"Sin el intérprete, nuestros programas no pueden ser ejecutados, siendo"
+"considerado solo texto"
+
+
+#: ../../lectures/TWP05.rst:114
+msgid ""
+"O interpretador verifica se escrevemos corretamente o programa, mostrando"
+" mensagens de erro caso haja algum problema"
+msgstr ""
+"El intérprete verifica si escribimos el programa correctamente, mostrando"
+"mensajes de error si hay un problema"
+
+#: ../../lectures/TWP05.rst:123
+msgid ""
+"Existem dois modos do interpretador Python: modo interativo e modo de "
+"edição"
+msgstr ""
+"Hay dos modos del intérprete de Python: modo interactivo y"
+"editando"
+
+#: ../../lectures/TWP05.rst:125
+msgid "Usamos nos exemplos anteriores o modo interativo"
+msgstr "Usamos en los ejemplos anteriores el modo interactivo."
+
+#: ../../lectures/TWP05.rst:126
+msgid ""
+"Uma vantagem do modo interativo é poder testar comandos e obter a "
+"resposta instantaneamente"
+msgstr ""
+"Una ventaja del modo interactivo es que puede probar comandos y obtener el"
+"respuesta al instante"
+
+#: ../../lectures/TWP05.rst:131
+msgid "Modo edição"
+msgstr "Modo de edición"
+
+#: ../../lectures/TWP05.rst:142
+msgid "Rodar o programa"
+msgstr "Ejecuta el programa"
+
+#: ../../lectures/TWP05.rst:153
+msgid "Salvar o programa"
+msgstr "Guardar el programa"
+
+#: ../../lectures/TWP05.rst:164
+msgid "Mesmo resultado!"
+msgstr "Mismo resultado"
+
+#: ../../lectures/TWP05.rst:175
+msgid "Cuidados ao digitar programas"
+msgstr "Cuidado al escribir programas"
+
+#: ../../lectures/TWP05.rst:180
+msgid ""
+"Aspas são muito importantes e não devem ser esquecidas. Todas vez que "
+"você abrir aspas, não esqueça de fechá-las"
+msgstr ""
+"Las comillas son muy importantes y no deben ser olvidadas. Cada vez"
+"Usted abre comillas, no olvide cerrarlas"
+
+#: ../../lectures/TWP05.rst:182
+msgid ""
+"Parênteses não são opcionais em Python. Todo parênteses aberto deve ser "
+"fechado."
+msgstr ""
+"Los paréntesis no son opcionales en Python. Todos los paréntesis abiertos deben ser"
+"cerrado."
+
+#: ../../lectures/TWP05.rst:184
+msgid ""
+"Espaços são muito importantes. A linguagem Python se baseia na quantidade"
+" de espaços em branco antes do início de cada linha para realizar "
+"diferentes operações."
+msgstr ""
+"Los espacios son muy importantes. El lenguaje de Python se basa en la cantidad"
+"espacios en blanco antes del comienzo de cada línea para realizar"
+"Diferentes operaciones."
+
+#: ../../lectures/TWP05.rst:190
+msgid "Calculadora no interpretador"
+msgstr "Calculadora en intérprete"
+
+#: ../../lectures/TWP05.rst:206 ../../lectures/TWP05.rst:231
+#: ../../lectures/TWP05.rst:243 ../../lectures/TWP05.rst:259
+#: ../../lectures/TWP05.rst:277 ../../lectures/TWP05.rst:291
+msgid "Conceitos de variáveis e atribuição"
+msgstr "Conceptos de variación y asignación."
+
+#: ../../lectures/TWP05.rst:210
+msgid ""
+"Variáveis são utilizadas para armazenar valores e para dar nome a uma "
+"área da memória do computador"
+msgstr ""
+"Las variables se utilizan para almacenar valores y para nombrar a"
+"área de memoria de la computadora"
+
+#: ../../lectures/TWP05.rst:212
+msgid "O símbolo para atribuição é o igual (=)"
+msgstr "El símbolo para la asignación es el igual (=)"
+
+#: ../../lectures/TWP05.rst:235
+msgid ""
+"Como em matemática, passamos parâmetros ou valores para uma função usando"
+" parênteses"
+msgstr ""
+"Como en matemáticas, pasamos parámetros o valores a una función usando"
+"paréntesis"
+
+#: ../../lectures/TWP05.rst:237
+msgid "Função f(x), onde f é o nome da função e x um parâmetro"
+msgstr "Función f (x), donde f es el nombre de la función y x un parámetro"
+
+#: ../../lectures/TWP05.rst:238
+msgid ""
+"No exemplo anterior print é o nome da função e a + b, o valor passado "
+"como parâmetro"
+msgstr ""
+"En el ejemplo anterior, imprimir es el nombre de la función y a + b el valor pasado"
+"como parámetro"
+
+#: ../../lectures/TWP05.rst:247
+msgid "Podemos usar o modo interativo também"
+msgstr "Podemos usar el modo interactivo también"
+
+#: ../../lectures/TWP05.rst:249
+msgid ""
+"As duas primeiras linhas não enviam nada para a tela, por isso, apenas o "
+"resultado da terceira linha é mostrado"
+msgstr ""
+"Las dos primeras líneas no envían nada a la pantalla, así que solo la"
+"Se muestra el resultado de la tercera línea"
+
+#: ../../lectures/TWP05.rst:263
+msgid ""
+"Você pode estar se perguntando por que criamos duas variáveis, a e b, "
+"para somar dois números?"
+msgstr ""
+"Puede que te preguntes por qué creamos dos variables, ayb"
+"para sumar dos números?"
+
+#: ../../lectures/TWP05.rst:265
+msgid "Poderíamos ter obtido o mesmo resultado de diversas formas"
+msgstr "Podríamos haber obtenido el mismo resultado de varias maneras."
+
+#: ../../lectures/TWP05.rst:281
+msgid "Qual é a diferença entre o primeiro modo e os dois últimos?"
+msgstr "¿Cuál es la diferencia entre el primer modo y los dos últimos?"
+
+#: ../../lectures/TWP05.rst:282
+msgid "No primeiro caso está incluído a lógica que usamos para obter o resultado"
+msgstr "En el primer caso se incluye la lógica que utilizamos para obtener el resultado."
+
+#: ../../lectures/TWP05.rst:284
+msgid ""
+"Deixamos assim explícito o algoritmo que usamos mentalmente para resolver"
+" esse problema"
+msgstr ""
+"Así dejamos explícito el algoritmo que usamos mentalmente para resolver"
+"este problema"
+
+#: ../../lectures/TWP05.rst:286
+msgid ""
+"Nos dois últimos casos apenas ordenamos que o computador imprima algo "
+"concreto, sem deixar claro a lógica para chegar naquele resultado"
+msgstr ""
+"En los últimos dos casos, le pedimos a la computadora que imprima algo"
+"Concreto, sin dejar clara la lógica para llegar a ese resultado"
+
+#: ../../lectures/TWP05.rst:295
+msgid ""
+"1.Seu salário atual é de R$ 6500 reais. Faça um programa que calcule o "
+"novo salário com um aumento de 5%"
+msgstr ""
+"1.Su salario actual es de R $ 6500. Haga un programa que calcule el"
+"Nuevo salario con un aumento del 5%"
+
+#: ../../lectures/TWP05.rst:297
+msgid "2.Escreva um programa que exiba seu nome na tela"
+msgstr "2. Escriba un programa que muestre su nombre en la pantalla."
+
+#: ../../lectures/TWP05.rst:298
+msgid "3.Calcule a soma de três variáveis"
+msgstr "3.Calcular la suma de tres variables"
+
+#: ../../lectures/TWP05.rst:299
+msgid "4.O que acontece se eu colocar textos nas três variáveis anteriores?"
+msgstr "4. ¿Qué sucede si pongo texto en las tres variables anteriores?"
+
+#: ../../lectures/TWP05.rst:304
+msgid "Nomes de variáveis"
+msgstr "Nombres de variables"
+
+#: ../../lectures/TWP05.rst:308
+msgid ""
+"Em Python, nomes de variáveis devem iniciar obrigatoriamente com uma "
+"letra ou caracter sublinhado (_)"
+msgstr ""
+"En Python, los nombres de las variables deben comenzar con una"
+"letra o carácter subrayado (_)"
+
+#: ../../lectures/TWP05.rst:310
+msgid "Acentos são permitidos!"
+msgstr "Se permiten los acentos!"
+
+#: ../../lectures/TWP05.rst:311
+msgid ""
+"Exemplo de nomes válidos: preço, ação, salário, _x, ano_2011, "
+"salário_médio"
+msgstr ""
+"Ejemplo de nombres válidos: precio, acción, salario, _x, año_2011,"
+"salarial_médio"
+
+#: ../../lectures/TWP05.rst:313
+msgid "Exemplo de nomes inválidos: salário médio, 3x, 1ª, @, $"
+msgstr "Ejemplo de nombres inválidos: salario promedio, 3x, 1st, @, $"
+
+#: ../../lectures/TWP05.rst:319 ../../lectures/TWP05.rst:330
+msgid "Tipos de variáveis"
+msgstr "Tipos de variables"
+
+#: ../../lectures/TWP05.rst:334
+msgid "O conteúdo de uma variável possui um tipo"
+msgstr "Los contenidos de una variable tienen un tipo de"
+
+#: ../../lectures/TWP05.rst:335
+msgid "O tipo define a natureza dos dados que a variável armazena"
+msgstr "El tipo define la naturaleza de los datos que almacena la variable"
+
+#: ../../lectures/TWP05.rst:336
+msgid ""
+"Os tipos mais comuns são inteiros, números em ponto flutuante e strings "
+"(texto)"
+msgstr ""
+"Los tipos más comunes son enteros, números de punto flotante y cadenas"
+"(texto)"
+
+#: ../../lectures/TWP05.rst:338
+msgid ""
+"Além de poder armazenar números e letras, as variáveis em Python também "
+"armazenam valores como True e False"
+msgstr ""
+"Además de almacenar números y letras, las variables en Python también"
+"almacenar valores como verdaderos y falsos"
+
+#: ../../lectures/TWP05.rst:343
+msgid "Variáveis numéricas"
+msgstr "Variables numericas"
+
+#: ../../lectures/TWP05.rst:347
+msgid "Inteiros não possuem casas decimais: 42, -7"
+msgstr "Los enteros no tienen decimales: 42, -7"
+
+#: ../../lectures/TWP05.rst:348
+msgid "O tipo inteiro em Python é chamado int"
+msgstr "El tipo entero en Python se llama int"
+
+#: ../../lectures/TWP05.rst:349
+msgid "Números em ponto flutuante possuem casa decimal: 1.0, 3.1415, 1234.56"
+msgstr "Los números de punto flotante tienen posiciones decimales: 1.0, 3.1415, 1234.56"
+
+#: ../../lectures/TWP05.rst:351
+msgid ""
+"Note que 1.0, mesmo tendo zero na parte decimal, é um número em ponto "
+"flutuante"
+msgstr ""
+"Tenga en cuenta que 1.0, incluso teniendo cero en la parte decimal, es un número de punto"
+"flotando"
+
+#: ../../lectures/TWP05.rst:353
+msgid "O tipo ponto flutuante em Python é chamado float"
+msgstr "El tipo de punto flotante en Python se llama float"
+
+#: ../../lectures/TWP05.rst:359
+msgid "Exercícios"
+msgstr "Ejercicios"
+
+#: ../../lectures/TWP05.rst:363
+msgid "5.Indique o tipo dos seguintes valores: 5, 5.0, 4.3, -2, 100, 1.333, “10”"
+msgstr "5. Ingrese el tipo de los siguientes valores: 5, 5.0, 4.3, -2, 100, 1,333, 10"
+
+#: ../../lectures/TWP05.rst:365
+msgid ""
+"6.Experimente digitar type(x) onde x é cada um dos valores acima no "
+"Python interativo"
+msgstr ""
+"6.Trate de escribir el tipo (x) donde x es cada uno de los valores anteriores en el"
+"Python interactivo"
+
+#: ../../lectures/TWP05.rst:367
+msgid "7.É possível calcular 2 elevado a um milhão?"
+msgstr "7. ¿Es posible calcular 2 de alto a un millón?"
+
+#: ../../lectures/TWP05.rst:375
+msgid "Representação de valores numéricos"
+msgstr "Representación de valores numéricos."
+
+#: ../../lectures/TWP05.rst:379
+msgid "Internamente todos os números são representados no sistema binário"
+msgstr "Internamente todos los números están representados en el sistema binario."
+
+#: ../../lectures/TWP05.rst:380
+msgid "Esse sistema permite apenas os dígitos 0 e 1"
+msgstr "Este sistema solo permite dígitos 0 y 1."
+
+#: ../../lectures/TWP05.rst:381
+msgid ""
+"Números em ponto flutuante podem não ter representação exata no sistema "
+"binário"
+msgstr ""
+"Los números de punto flotante pueden no tener una representación exacta en el sistema"
+"binario"
+
+#: ../../lectures/TWP05.rst:383
+msgid ""
+"Ex.: Digitando no interpretador 3*0.1 teremos como resposta "
+"0.30000000000000004"
+msgstr ""
+"Ej.: Escribiendo en el intérprete 3 * 0.1 tendremos como respuesta"
+"0.30000000000000004"
+
+#: ../../lectures/TWP05.rst:390
+msgid "Variáveis do tipo lógico"
+msgstr "Variables de tipo lógico"
+
+#: ../../lectures/TWP05.rst:394
+msgid "Podemos armazenar verdadeiro e falso"
+msgstr "Podemos almacenar lo verdadero y lo falso."
+
+#: ../../lectures/TWP05.rst:395
+msgid "A variável se chama lógica ou booleana"
+msgstr "La variable se llama lógica o booleana."
+
+#: ../../lectures/TWP05.rst:396
+msgid "Em Python escrevemos True e False"
+msgstr "En Python escribimos Verdadero y Falso."
+
+#: ../../lectures/TWP05.rst:397
+msgid "Observe que T e F são escritos em maiúsculas"
+msgstr "Tenga en cuenta que T y F están escritos en mayúsculas"
+
+#: ../../lectures/TWP05.rst:403
+msgid "Operadores relacionais"
+msgstr "Operadores relacionales"
+
+#: ../../lectures/TWP05.rst:405
+msgid "**Operadores relacionais**"
+msgstr "**Operadores relacionales**"
+
+#: ../../lectures/TWP05.rst:409
+msgid "Operador"
+msgstr "Operador"
+
+#: ../../lectures/TWP05.rst:409
+msgid "Operação"
+msgstr "Operación"
+
+#: ../../lectures/TWP05.rst:409
+msgid "Símbolo matemático"
+msgstr "Simbolo matematico"
+
+#: ../../lectures/TWP05.rst:411
+msgid "=="
+msgstr "=="
+
+#: ../../lectures/TWP05.rst:411
+msgid "igual"
+msgstr "igual"
+
+#: ../../lectures/TWP05.rst:411
+msgid "="
+msgstr "="
+
+#: ../../lectures/TWP05.rst:412
+msgid ">"
+msgstr ">"
+
+#: ../../lectures/TWP05.rst:412
+msgid "maior que"
+msgstr "más grande que"
+
+#: ../../lectures/TWP05.rst:413
+msgid "<"
+msgstr "<"
+
+#: ../../lectures/TWP05.rst:413
+msgid "menor que"
+msgstr "menos que"
+
+#: ../../lectures/TWP05.rst:414
+msgid "!="
+msgstr "!="
+
+#: ../../lectures/TWP05.rst:414
+msgid "diferente"
+msgstr "diferente"
+
+#: ../../lectures/TWP05.rst:414
+msgid "<>"
+msgstr "<>"
+
+#: ../../lectures/TWP05.rst:415
+msgid ">="
+msgstr ">="
+
+#: ../../lectures/TWP05.rst:415
+msgid "maior ou igual"
+msgstr "mayor o igual"
+
+#: ../../lectures/TWP05.rst:416
+msgid "<="
+msgstr "<="
+
+#: ../../lectures/TWP05.rst:416
+msgid "menor ou igual"
+msgstr "menor o igual que"
+
+#: ../../lectures/TWP05.rst:429
+msgid "Exemplos:"
+msgstr "Ejemplos:"
+
+#: ../../lectures/TWP05.rst:448
+msgid "Exemplo importante"
+msgstr "Ejemplo importante"
+
+#: ../../lectures/TWP05.rst:452
+msgid ">= ou <= para valores iguais"
+msgstr "> = o <= para valores iguales"
+
+#: ../../lectures/TWP05.rst:464 ../../lectures/TWP05.rst:538
+#: ../../lectures/TWP05.rst:555
+msgid "Exemplo"
+msgstr "Ejemplo"
+
+#: ../../lectures/TWP05.rst:468
+msgid ""
+"Podemos usar operadores relacionais para inicializar variáveis do tipo "
+"lógico"
+msgstr ""
+"Podemos usar operadores relacionales para inicializar variables de tipo"
+"lógico"
+
+#: ../../lectures/TWP05.rst:483 ../../lectures/TWP05.rst:497
+#: ../../lectures/TWP05.rst:512
+msgid "Operadores Lógicos"
+msgstr "Operadores logicos"
+
+#: ../../lectures/TWP05.rst:487
+msgid "Temos três operadores básicos: not, and e or"
+msgstr "Tenemos tres operadores básicos: no, y y o"
+
+#: ../../lectures/TWP05.rst:488
+msgid "Operador not"
+msgstr "Operador no"
+
+#: ../../lectures/TWP05.rst:501
+msgid "Operador and"
+msgstr "Operador y"
+
+#: ../../lectures/TWP05.rst:516
+msgid "Operador or"
+msgstr "Operador o"
+
+#: ../../lectures/TWP05.rst:527
+msgid "Expressões Lógicas"
+msgstr "Expresiones logicas"
+
+#: ../../lectures/TWP05.rst:531
+msgid "Podemos combinar os operadores lógicos em expressões lógicas"
+msgstr "Podemos combinar operadores lógicos en expresiones lógicas."
+
+#: ../../lectures/TWP05.rst:532
+msgid "A ordem de avaliação é not > and > or"
+msgstr "El orden de evaluación no es> y> o"
+
+#: ../../lectures/TWP05.rst:542
+msgid ""
+"A condição para empréstimo de compra de uma moto é salário maior que R$ "
+"1.000,00 e idade acima de 18 anos. Verificar se o José pode pegar o "
+"empréstimo"
+msgstr ""
+"La condición para el préstamo de compra de una motocicleta es un salario superior a R $"
+"1,000.00 y edad mayor de 18. Verifique que José pueda recoger el"
+"préstamo"
+
+#: ../../lectures/TWP05.rst:559
+msgid ""
+"Verifique se um aluno que tirou média para exercícios programa 5.8 e "
+"média de provas 7 passou"
+msgstr ""
+"Asegúrese de que un estudiante que ha promediado los ejercicios del programa para 5.8 y"
+"el promedio de la prueba 7 ha pasado"
+
+#: ../../lectures/TWP05.rst:574 ../../lectures/TWP05.rst:593
+#: ../../lectures/TWP05.rst:611 ../../lectures/TWP05.rst:628
+msgid "Variáveis String"
+msgstr "Variables de cadena"
+
+#: ../../lectures/TWP05.rst:578
+msgid "Armazenam cadeias de caracteres como nomes e textos em geral"
+msgstr "Almacenar cadenas como nombres y textos generales."
+
+#: ../../lectures/TWP05.rst:579
+msgid ""
+"Chamamos cadeias de caracteres uma sequência de símbolos como letras, "
+"números, sinais de pontuação, etc"
+msgstr ""
+"Llamamos a las cadenas una secuencia de símbolos como letras"
+"Números, signos de puntuación, etc."
+
+#: ../../lectures/TWP05.rst:581
+msgid ""
+"Para diferenciar seus comandos de uma string utilizamos aspas no início e"
+" no final"
+msgstr ""
+"Para distinguir sus comandos de una cadena usamos comillas al principio y"
+" al final"
+
+#: ../../lectures/TWP05.rst:597
+msgid "Note que não há problema de utilizarmos espaços para separar as palavras"
+msgstr "Tenga en cuenta que está bien usar espacios para separar palabras."
+
+#: ../../lectures/TWP05.rst:599
+msgid "Uma string tem um tamanho associado"
+msgstr "Una cadena tiene una longitud asociada"
+
+#: ../../lectures/TWP05.rst:600
+msgid "Podemos obter o tamanho através da função embutida len"
+msgstr "Podemos obtener el tamaño a través de la función incorporada len"
+
+#: ../../lectures/TWP05.rst:615
+msgid ""
+"Podemos acessar os caracteres da string utilizando um número inteiro para"
+" representar sua posição"
+msgstr ""
+"Podemos acceder a los caracteres de cadena usando un entero para"
+"representa tu posición"
+
+#: ../../lectures/TWP05.rst:617
+msgid "Este número é chamado de índice e começamos a contar de zero"
+msgstr "Este número se llama índice y comenzamos a contar desde cero."
+
+#: ../../lectures/TWP05.rst:618
+msgid "Acessamos o caracter fornecendo o índice entre colchetes ([ ])"
+msgstr "Accedemos al personaje proporcionando el índice entre corchetes ([])"
+
+#: ../../lectures/TWP05.rst:632
+msgid ""
+"Cuidado: não podemos acessar um índice maior que a quantidade de "
+"caracteres da string"
+msgstr ""
+"Precaución: no podemos acceder a un índice mayor que la cantidad de"
+"caracteres de cadena"
+
+#: ../../lectures/TWP05.rst:642
+msgid "Operações com strings"
+msgstr "Operaciones de cadena"
+
+#: ../../lectures/TWP05.rst:646
+msgid "As operações básicas são fatiamento, concatenação e composição"
+msgstr "Las operaciones básicas son corte, concatenación y composición."
+
+#: ../../lectures/TWP05.rst:647
+msgid ""
+"O fatiamento permite utilizar parte da string e a concatenação nada mais "
+"é do que juntar duas ou mais strings"
+msgstr ""
+"El corte le permite usar parte de la cadena y la concatenación nada más"
+"Es que unir dos o más cuerdas"
+
+#: ../../lectures/TWP05.rst:649
+msgid ""
+"A composição é muito utilizada em mensagens que enviamos para a tela e "
+"consiste em utilizar strings como modelos onde podemos inserir dados"
+msgstr ""
+"La composición se usa mucho en los mensajes que enviamos a la pantalla y"
+"consiste en usar cadenas como plantillas donde podemos insertar datos"
+
+#: ../../lectures/TWP05.rst:654
+msgid "Concatenação"
+msgstr "Concatenacion"
+
+#: ../../lectures/TWP05.rst:673 ../../lectures/TWP05.rst:698
+#: ../../lectures/TWP05.rst:718
+msgid "Composição"
+msgstr "Composicion"
+
+#: ../../lectures/TWP05.rst:677
+msgid "Juntar várias strings nem sempre é prático"
+msgstr "Unir múltiples cadenas no siempre es práctico"
+
+#: ../../lectures/TWP05.rst:678
+msgid "Podemos usar marcadores para substituir valores dentro de strings"
+msgstr "Podemos usar marcadores para reemplazar valores dentro de cadenas"
+
+#: ../../lectures/TWP05.rst:702
+#, python-format
+msgid ""
+"Os principais marcadores são %d para números inteiros, %s para strings e "
+"%f para números em ponto flutuante"
+msgstr ""
+"Los marcadores superiores son %d para enteros,%s para cadenas y"
+"%f para números de punto flotante"
+
+#: ../../lectures/TWP05.rst:704
+#, python-format
+msgid "%03d completa com zeros adicionais"
+msgstr "%03d completo con ceros adicionales"
+
+#: ../../lectures/TWP05.rst:705
+#, python-format
+msgid "%3d significa três posições sem zeros adicionais"
+msgstr "% 3d significa tres posiciones sin ceros adicionales"
+
+#: ../../lectures/TWP05.rst:722
+#, python-format
+msgid "%5.2f significa 5 caracteres no total e 2 casas decimais"
+msgstr "% 5.2f significa 5 caracteres en total y 2 decimales"
+
+#: ../../lectures/TWP05.rst:733 ../../lectures/TWP05.rst:751
+msgid "Fatiamento"
+msgstr "Rebanada"
+
+#: ../../lectures/TWP05.rst:737
+msgid "Fatia do primeiro índice até o anterior do segundo"
+msgstr "Rebanada del primer índice al anterior del segundo."
+
+#: ../../lectures/TWP05.rst:755
+msgid ""
+"Podemos omitir índices, substituindo pelo extremo correspondente e também"
+" podemos ter índices negativos: -1 último, -2 penúltimo"
+msgstr ""
+"Podemos omitir índices, sustituyendo el extremo correspondiente y también"
+"Podemos tener índices negativos: -1 último, -2 penúltimo"
+
+#: ../../lectures/TWP05.rst:770
+msgid "Alteração de variáveis com o tempo"
+msgstr "Cambio de variables a lo largo del tiempo."
+
+#: ../../lectures/TWP05.rst:774
+msgid "Um programa é executado linha por linha"
+msgstr "Un programa corre línea por línea."
+
+#: ../../lectures/TWP05.rst:775
+msgid "Assim, as variáveis podem mudar com o tempo de execução do seu programa"
+msgstr "Entonces, las variables pueden cambiar con el tiempo de ejecución de su programa"
+
+#: ../../lectures/TWP05.rst:802 ../../lectures/TWP05.rst:814
+msgid "Teste de mesa ou simulação"
+msgstr "Prueba de mesa o simulación"
+
+#: ../../lectures/TWP05.rst:806
+msgid ""
+"Entender que o valor das variáveis pode mudar durante a execução de um "
+"programa não é tão natural, mas é fundamental para a programação"
+msgstr ""
+"Comprender que el valor de las variables puede cambiar al ejecutar un"
+"El programa no es tan natural, pero es fundamental para la programación"
+
+#: ../../lectures/TWP05.rst:808
+msgid ""
+"Um programa não pode ser lido como um texto, mas cuidadosamente analisado"
+" linha a linha"
+msgstr ""
+"Un programa no puede ser leído como un texto, sino analizado cuidadosamente"
+"línea por línea"
+
+#: ../../lectures/TWP05.rst:810
+msgid "Você pode treinar com lápis, borracha e papel"
+msgstr "Puedes entrenar con lápiz, borrador y papel."
+
+#: ../../lectures/TWP05.rst:816
+msgid "**Teste de mesa ou simulação**"
+msgstr "**Prueba de mesa o simulación**"
+
+#: ../../lectures/TWP05.rst:820
+msgid "dívida"
+msgstr "deuda"
+
+#: ../../lectures/TWP05.rst:820
+msgid "compra"
+msgstr "compra"
+
+#: ../../lectures/TWP05.rst:820
+msgid "Tela"
+msgstr "Pantalla"
+
+#: ../../lectures/TWP05.rst:822
+msgid "-0-"
+msgstr "-0-"
+
+#: ../../lectures/TWP05.rst:822 ../../lectures/TWP05.rst:823
+msgid "-100-"
+msgstr "-100-"
+
+#: ../../lectures/TWP05.rst:822 ../../lectures/TWP05.rst:825
+msgid "600"
+msgstr "600"
+
+#: ../../lectures/TWP05.rst:823
+msgid "-200-"
+msgstr "-200-"
+
+#: ../../lectures/TWP05.rst:824
+msgid "-300-"
+msgstr "-300-"
+
+#: ../../lectures/TWP05.rst:824
+msgid "300"
+msgstr "300"
+
+#: ../../lectures/TWP05.rst:829
+msgid "Não tenha pressa para o teste de mesa"
+msgstr "No se apresure a la prueba de mesa"
+
+#: ../../lectures/TWP05.rst:838
+msgid "Entrada de Dados"
+msgstr "Entrada de datos"
+
+#: ../../lectures/TWP05.rst:847
+msgid "Até agora nossos programas trabalharam com valores conhecidos"
+msgstr "Hasta ahora nuestros programas han trabajado con valores conocidos."
+
+#: ../../lectures/TWP05.rst:848
+msgid ""
+"Vamos começar a pegar os valores durante a execução dos programas e usar "
+"mais o modo de edição"
+msgstr ""
+"Comencemos a recoger los valores mientras ejecutamos programas y los usamos"
+"más el modo de edición"
+
+#: ../../lectures/TWP05.rst:860
+msgid "Conversão da entrada de dados"
+msgstr "Conversión de entrada de datos"
+
+#: ../../lectures/TWP05.rst:864
+msgid "A função input retorna apenas strings"
+msgstr "La función de entrada solo devuelve cadenas"
+
+#: ../../lectures/TWP05.rst:865
+msgid ""
+"Usamos int( ) para converter um valor para inteiro e float( ) para ponto "
+"flutuante"
+msgstr ""
+"Usamos int () para convertir un valor a entero y float () a punto"
+"flotando"
+
+#: ../../lectures/TWP05.rst:879
+msgid "Erro comum"
+msgstr "Error comun"
+
+#: ../../lectures/TWP05.rst:883
+msgid "Esquecer algum parênteses. O erro vai dar na linha de baixo."
+msgstr "Olvida algunos paréntesis. El error llegará a la línea de fondo."
+
+#: ../../lectures/TWP05.rst:901
+msgid "Lista de Exercícios"
+msgstr "Lista de ejercicios"
+

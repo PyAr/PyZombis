@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP54.rst:3 ../../lectures/TWP54.rst:22
+#: ../../lectures/TWP54.rst:33 ../../lectures/TWP54.rst:58
+msgid "Exceções"
+msgstr "Excepciones"
+
+#: ../../lectures/TWP54.rst:37
+msgid "Algumas vezes as coisas dão errado. E você precisa tratá-las."
+msgstr "A veces las cosas salen mal. Y hay que tratarlos."
+
+#: ../../lectures/TWP54.rst:39
+msgid ""
+"Sempre existem coisas que fogem do seu controle. Redes falham. Arquivos "
+"desaparecem."
+msgstr ""
+"Siempre hay cosas que están fuera de tu control."
+"desaparecer"
+
+#: ../../lectures/TWP54.rst:42
+msgid ""
+"Códigos inteligentes aprendem a tratar estes erros e fazem com que o "
+"programa se recupere suavemente."
+msgstr ""
+"Los códigos inteligentes aprenden cómo manejar estos errores y hacer que"
+"El programa se recupera sin problemas"
+
+#: ../../lectures/TWP54.rst:47
+msgid "Que fedor!!"
+msgstr "¡Qué hedor!"
+
+#: ../../lectures/TWP54.rst:69
+msgid "Exceção é lançada"
+msgstr "Se lanza la excepción."
+
+#: ../../lectures/TWP54.rst:80
+msgid "Capturando a exceção"
+msgstr "Atrapando la excepción"
+
+#: ../../lectures/TWP54.rst:91
+msgid "Tratando exceções"
+msgstr "Tratamiento de excepciones"
+
+#: ../../lectures/TWP54.rst:113
+msgid "Obs.: para você testar a exceção deverá alterar as propriedades do arquivo"
+msgstr "Nota: para que pruebe la excepción, debe cambiar las propiedades del archivo."
+
+#: ../../lectures/TWP54.rst:117 ../../lectures/TWP54.rst:150
+#: ../../lectures/TWP54.rst:161
+msgid "Tratando Exceções"
+msgstr "Manejo de excepciones"
+
+#: ../../lectures/TWP54.rst:128
+msgid "Usando uma messagebox"
+msgstr "Usando un buzón de mensajes"
+

@@ -6,58 +6,87 @@ MVC
 .. image:: img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
+   :align: center
    :alt: 
 
 
-<número>
+
+.. youtube:: 7gNCI7Dx0kU
+      :height: 315
+      :width: 560
+      :align: center
+
 
 HEAD-Ex Logística e Transporte
 ==============================
 
 
 
-
-
-
-.. image:: img/TWP52_001.png
+.. image:: img/TWP52_001.jpg
    :height: 11.207cm
    :width: 15.193cm
+   :align: center
    :alt: 
 
-
-.. image:: img/TWP52_002.png
-   :height: 5.8cm
-   :width: 11.078cm
-   :alt: 
 
 
 HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_003.png
-   :height: 12.571cm
-   :width: 18.625cm
-   :alt: 
+.. code-block :: python
+
+   
+   def salvar_dados():
+      fileD = open('encomendas.txt','a')
+      fileD.write('Destino: ')
+      fileD.write('%s\n' %destino.get())
+      fileD.write('Descricao: ')
+      fileD.write('%s\n' %descricao.get())
+      fileD.write('Endereco: ')
+      fileD.write('%s\n' %endereco.get('1.0',END))
+      destino.delete(0,END)
+      descricao.delete(0,END)
+      endereco.delete('1.0',END)
+
 
 
 HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_004.png
-   :height: 9.524cm
-   :width: 22.092cm
-   :alt: 
+.. code-block :: python
+
+   from tkinter import *
+
+   app = Tk()
+   app.title('Head-Ex Logistica e Transportes')
+   app.geometry("250x180+200+100")
+
+   Label(app,text = "Destino: ").pack()
+   destino = Entry(app)
+   destino.pack()
+
+   Label(app,text = "Descricao: ").pack()
+   descricao = Entry(app)
+   descricao.pack()
+
+   Label(app,text = "Endereco: ").pack()
+   endereco = Entry(app)
+   endereco.pack()
+
+   Button(app, text = "Salvar" , command = salvar_dados).pack()
+   app.mainloop()
 
 
 HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_005.png
+.. image:: img/TWP52_005.jpg
    :height: 12.571cm
    :width: 19.302cm
+   :align: center
    :alt: 
 
 
@@ -65,19 +94,23 @@ HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_006.png
+.. image:: img/TWP52_006.jpg
    :height: 15.565cm
    :width: 17.401cm
+   :align: center
    :alt: 
 
 
 HEAD-Ex Logística e Transporte
 ==============================
+
++ Radio Buttons
 
 
 .. image:: img/TWP52_007.png
    :height: 13.973cm
    :width: 15.801cm
+   :align: center
    :alt: 
 
 
@@ -85,9 +118,10 @@ HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_008.png
+.. image:: img/TWP52_008.jpg
    :height: 8.254cm
    :width: 7.831cm
+   :align: center
    :alt: 
 
 
@@ -95,15 +129,10 @@ HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_009.png
+.. image:: img/TWP52_009.jpg
    :height: 12.571cm
    :width: 15.212cm
-   :alt: 
-
-
-.. image:: img/TWP52_010.png
-   :height: 1.603cm
-   :width: 13cm
+   :align: center
    :alt: 
 
 
@@ -111,51 +140,59 @@ HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_011.png
-   :height: 15.498cm
-   :width: 15.693cm
-   :alt: 
+.. youtube:: rmSXED4gdcw
+      :height: 315
+      :width: 560
+      :align: center
 
 
-.. image:: img/TWP52_012.png
-   :height: 6.155cm
-   :width: 12.548cm
-   :alt: 
 
-
-HEAD-Ex Logística e Transporte
-==============================
-
-
-.. image:: img/TWP52_013.png
+.. image:: img/TWP52_013.jpg
    :height: 9.048cm
    :width: 18.123cm
+   :align: center
    :alt: 
 
+
+HEAD-Ex Logística e Transporte
+==============================
 
 .. image:: img/TWP52_014.png
    :height: 4.176cm
    :width: 13cm
-   :alt: 
+   :align: center
+   :alt:
+
+
++ Modelo é o dado armazenado
++ Visão é o radio button apresentado
++ Controle é o código tkinter que gerencia tudo isso
+
+.. code-block :: python
+
+   Label(app, text = 'Destino: ').pack()
+   destino = StringVar()
+   destino.set(None)
+   Radiobutton(app, variable = destino , text = 'Cambridge , MA', value = 'Cambridge , MA').pack()
+   Radiobutton(app, variable = destino , text = 'Cambridge , UK', value = 'Cambridge , UK').pack()
+   Radiobutton(app, variable = destino , text = 'Seattle, WA', value = 'Seattle , WA').pack()
 
 
 HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_015.png
-   :height: 6.823cm
-   :width: 23.185cm
-   :alt: 
+.. youtube:: AGHSdwE3XR4
+      :height: 315
+      :width: 560
+      :align: center
 
 
-HEAD-Ex Logística e Transporte
-==============================
 
-
-.. image:: img/TWP52_016.png
+.. image:: img/TWP52_016.jpg
    :height: 14.578cm
    :width: 20.401cm
+   :align: center
    :alt: 
 
 
@@ -166,36 +203,75 @@ HEAD-Ex Logística e Transporte
 .. image:: img/TWP52_017.png
    :height: 12.571cm
    :width: 18.208cm
+   :align: center
    :alt: 
+
++ E agora??
 
 
 HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_018.png
-   :height: 12.571cm
-   :width: 18.112cm
-   :alt: 
+.. code-block :: python
+
+   
+   def salvar_dados():
+      fileD = open('encomendas.txt','a')
+      fileD.write('Destino: ')
+      fileD.write('%s\n' %destino.get())
+      fileD.write('Descricao: ')
+      fileD.write('%s\n' %descricao.get())
+      fileD.write('Endereco: ')
+      fileD.write('%s\n' %endereco.get('1.0',END))
+      destino.delete(0,END)
+      descricao.delete(0,END)
+      endereco.delete('1.0',END)
+
+   def ler_destinos(arquivo):
+      destinos = []
+      f = open(arquivo)
+      for linha in f:
+         destinos.append(linha.rstrip())
+      return destinos
 
 
 HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_019.png
-   :height: 12.571cm
-   :width: 21.092cm
-   :alt: 
+.. code-block :: python
+
+   from tkinter import *
+
+   app = Tk()
+   app.title('Head-Ex Logistica e Transportes')
+   Label(app,text = "Destino: ").pack()
+   destino = StringVar()
+   destino.set(None)
+
+   opcoes = ler_destinos("cidades.txt")
+   OptionMenu(app,destino,*opcoes).pack()
+
+   Label(app,text = "Descricao: ").pack()
+   descricao = Entry(app)
+   descricao.pack()
+   Label(app,text = "Endereco: ").pack()
+   endereco = Entry(app)
+   endereco.pack()
+   Button(app, text = "Salvar" , command = salvar_dados).pack()
+   app.mainloop()
+
 
 
 HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_020.png
+.. image:: img/TWP52_020.jpg
    :height: 12.571cm
    :width: 17.025cm
+   :align: center
    :alt: 
 
 
@@ -213,4 +289,6 @@ Revisão
 
 
 
-
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture19

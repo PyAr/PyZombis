@@ -1,0 +1,315 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP65.rst:3
+msgid "Desenvolvimento Web Intro"
+msgstr "Introducción al desarrollo web"
+
+#: ../../lectures/TWP65.rst:21
+msgid "Requisições e respostas"
+msgstr "Peticiones y respuestas"
+
+#: ../../lectures/TWP65.rst:41
+msgid "Desenvolvimento Web"
+msgstr "Desarrollo web"
+
+#: ../../lectures/TWP65.rst:45
+msgid "“Python: a única linguagem com mais frameworks web do que keywords”"
+msgstr "Python: el único idioma con más frameworks web que palabras clave."
+
+#: ../../lectures/TWP65.rst:46
+msgid "Frameworks: Plone, Django, Web2py, Pyramid"
+msgstr "Frameworks: Plone, Django, Web2py, Pyramid"
+
+#: ../../lectures/TWP65.rst:47
+msgid "Micro Frameworks: CherryPy, Bottle, Flask"
+msgstr "Micro Frameworks: CherryPy, Bottle, Flask"
+
+#: ../../lectures/TWP65.rst:48
+msgid "WSGI (Web Server Gateway Interface)"
+msgstr "WSGI (Web Server Gateway Interface)"
+
+#: ../../lectures/TWP65.rst:50
+msgid "Padrões de acesso e comunicação entre servidores Web e aplicações Python"
+msgstr "Servidor web y aplicación de Python acceso y patrones de comunicación."
+
+#: ../../lectures/TWP65.rst:51
+msgid "Não é J2EE ;-)"
+msgstr "No es J2EE ;-)"
+
+#: ../../lectures/TWP65.rst:55
+msgid "Bottle Hello World"
+msgstr "Bottle Hello World"
+
+#: ../../lectures/TWP65.rst:65
+msgid "Decorator Intro"
+msgstr "Decorator Intro"
+
+#: ../../lectures/TWP65.rst:76
+msgid "Decorators"
+msgstr "Decorators"
+
+#: ../../lectures/TWP65.rst:86
+msgid "Decorator Contador com tempo"
+msgstr "Decorador de contador con tiempo."
+
+#: ../../lectures/TWP65.rst:94
+msgid "Bottle Template Simples"
+msgstr "Bottle Template Simples"
+
+#: ../../lectures/TWP65.rst:104
+msgid "Bottle Form Get"
+msgstr "Bottle Form Get"
+
+#: ../../lectures/TWP65.rst:114 ../../lectures/TWP65.rst:139
+msgid "Web2py"
+msgstr "Web2py"
+
+#: ../../lectures/TWP65.rst:124
+msgid "InfoWorld: best full-stack Python framework"
+msgstr "InfoWorld: el mejor framework Python de pila completa"
+
+#: ../../lectures/TWP65.rst:125
+msgid "Bossie: Best Open Source Development Software"
+msgstr "Bossie: el mejor software de desarrollo de código abierto"
+
+#: ../../lectures/TWP65.rst:126
+msgid "MVC:"
+msgstr "MVC:"
+
+#: ../../lectures/TWP65.rst:128
+msgid "Modelo: dados"
+msgstr "Modelo: datos"
+
+#: ../../lectures/TWP65.rst:129
+msgid "Controladores: regras do negócio"
+msgstr "Controladores: reglas de negocio"
+
+#: ../../lectures/TWP65.rst:130
+msgid "Visões: apresentação"
+msgstr "Vistas: Presentación"
+
+#: ../../lectures/TWP65.rst:132
+msgid "Autocontido == full-stack framework"
+msgstr "Autónomo == marco de pila completa"
+
+#: ../../lectures/TWP65.rst:133
+msgid "Seguro"
+msgstr "El seguro"
+
+#: ../../lectures/TWP65.rst:134
+msgid "DAL (Data Access Layer)"
+msgstr "DAL (Data Access Layer)"
+
+#: ../../lectures/TWP65.rst:135
+msgid "Deploy rápido e distribuição fácil"
+msgstr "Implementación rápida y fácil implementación"
+
+#: ../../lectures/TWP65.rst:143
+msgid "Princípios Python"
+msgstr "Principios de Python"
+
+#: ../../lectures/TWP65.rst:145
+msgid "DRY – Don’t Repeat Yourself"
+msgstr "DRY – Don’t Repeat Yourself"
+
+#: ../../lectures/TWP65.rst:146
+msgid "Deve existir apenas uma única maneira óbvia de fazer algo"
+msgstr "Solo debe haber una manera obvia de hacer algo."
+
+#: ../../lectures/TWP65.rst:147
+msgid "Explícito é melhor que implícito (não segue)"
+msgstr "Explícito es mejor que implícito (no sigue)"
+
+#: ../../lectures/TWP65.rst:152 ../../lectures/TWP65.rst:172
+#: ../../lectures/TWP65.rst:190 ../../lectures/TWP65.rst:207
+msgid "Hello World"
+msgstr "Hello World"
+
+#: ../../lectures/TWP65.rst:162
+msgid "Habilitar a opção “Não usar servidor proxy para servidores locais”"
+msgstr "Habilitar el servidor no usar proxy para servidores locales"
+
+#: ../../lectures/TWP65.rst:163
+msgid "web2py.exe no diretório descompactado"
+msgstr "web2py.exe en el directorio descomprimido"
+
+#: ../../lectures/TWP65.rst:164
+msgid "Definir uma senha para administrador"
+msgstr "Establecer una contraseña de administrador"
+
+#: ../../lectures/TWP65.rst:165
+msgid "Clicar em “Administrative Interface”"
+msgstr "Haga clic en la interfaz administrativa"
+
+#: ../../lectures/TWP65.rst:166
+msgid "Coloque a senha que você definiu"
+msgstr "Ingrese la contraseña que estableció"
+
+#: ../../lectures/TWP65.rst:167
+msgid "Três opções: admin, examples e welcome"
+msgstr "Tres opciones: admin, ejemplos y bienvenidos."
+
+#: ../../lectures/TWP65.rst:168
+msgid "Depois iremos aprender a utilizar appliances"
+msgstr "Luego aprenderemos a usar los aparatos."
+
+#: ../../lectures/TWP65.rst:175
+msgid "Nova aplicação básica: “Hello World”"
+msgstr "Nueva aplicación básica: Hello World."
+
+#: ../../lectures/TWP65.rst:176
+msgid "Editar o controlador default.py"
+msgstr "Edite el controlador default.py"
+
+#: ../../lectures/TWP65.rst:185 ../../lectures/TWP65.rst:202
+#: ../../lectures/TWP65.rst:229
+msgid "ctrl+S"
+msgstr "ctrl+S"
+
+#: ../../lectures/TWP65.rst:186
+msgid "Voltar e clicar no Hello World"
+msgstr "Atrás y haga clic en Hello World"
+
+#: ../../lectures/TWP65.rst:194
+msgid "Editar novamente o controlador default.py"
+msgstr "Edite el controlador default.py de nuevo"
+
+#: ../../lectures/TWP65.rst:203
+msgid "Agora vamos editar a visão default/index"
+msgstr "Ahora vamos a editar la vista por defecto / índice."
+
+#: ../../lectures/TWP65.rst:211
+msgid "Apagar tudo e trocar na visão default/index"
+msgstr "Eliminar todo y cambiar en la vista predeterminada / índice"
+
+#: ../../lectures/TWP65.rst:233
+msgid "Web2py Visão"
+msgstr "Visión general de Web2py"
+
+#: ../../lectures/TWP65.rst:243 ../../lectures/TWP65.rst:273
+msgid "Contar visitantes"
+msgstr "Contar visitantes"
+
+#: ../../lectures/TWP65.rst:252
+msgid "Editar controlador default.py"
+msgstr "Editar controlador default.py"
+
+#: ../../lectures/TWP65.rst:277
+msgid "Visão default/index"
+msgstr "Vista / índice por defecto"
+
+#: ../../lectures/TWP65.rst:297
+msgid "Visitantes diferentes possuem contadores diferentes"
+msgstr "Diferentes visitantes tienen diferentes contadores."
+
+#: ../../lectures/TWP65.rst:301 ../../lectures/TWP65.rst:312
+#: ../../lectures/TWP65.rst:332 ../../lectures/TWP65.rst:353
+msgid "Duas páginas"
+msgstr "Dos paginas"
+
+#: ../../lectures/TWP65.rst:305
+msgid "Iremos criar duas páginas"
+msgstr "Crearemos dos páginas."
+
+#: ../../lectures/TWP65.rst:306
+msgid "A primeira solicita o nome em um formulário"
+msgstr "El primero solicita el nombre en un formulario."
+
+#: ../../lectures/TWP65.rst:307
+msgid "Seremos então redirecionados para a segunda"
+msgstr "Luego seremos redirigidos a la segunda."
+
+#: ../../lectures/TWP65.rst:308
+msgid "A segunda irá dar uma saudação com o nome"
+msgstr "El segundo saludará con el nombre."
+
+#: ../../lectures/TWP65.rst:316
+msgid "Incluir no controlador default.py"
+msgstr "Incluir en el controlador default.py"
+
+#: ../../lectures/TWP65.rst:336
+msgid "Criar a visão default/primeira"
+msgstr "Crear predeterminado / primera vista"
+
+#: ../../lectures/TWP65.rst:339 ../../lectures/TWP65.rst:362
+msgid "{{extend 'layout.html'}}"
+msgstr "{{extend 'layout.html'}}"
+
+#: ../../lectures/TWP65.rst:341
+msgid "Qual é o seu nome?"
+msgstr "¿Cual es tu nombre?"
+
+#: ../../lectures/TWP65.rst:343
+msgid "<form action=\"segunda\">"
+msgstr "<form action=\"El lunes\">"
+
+#: ../../lectures/TWP65.rst:345
+msgid "<input name=\"nome\" />"
+msgstr "<input name=\"nombre\" />"
+
+#: ../../lectures/TWP65.rst:347
+msgid "<input type=\"submit\" />"
+msgstr "<input type=\"submit\" />"
+
+#: ../../lectures/TWP65.rst:349
+msgid "</form>"
+msgstr "</form>"
+
+#: ../../lectures/TWP65.rst:357
+msgid "Criar a visão default/segunda"
+msgstr "Crear predeterminado / segunda vista"
+
+#: ../../lectures/TWP65.rst:364
+msgid "<h1>Olá {{=request.vars.nome}}</h1>"
+msgstr "<h1>Hola {{=request.vars.nome}}</h1>"
+
+#: ../../lectures/TWP65.rst:367
+msgid "Appliances"
+msgstr "Electrodomésticos"
+
+#: ../../lectures/TWP65.rst:371
+msgid "`Web2py Appliances <http://www.web2py.com/appliances>`_"
+msgstr "`Web2py Appliances <http://www.web2py.com/appliances>`_"
+
+#: ../../lectures/TWP65.rst:372
+msgid "Email Contact Form"
+msgstr "Email Contact Form"
+
+#: ../../lectures/TWP65.rst:373
+msgid "Sudoku Solver"
+msgstr "Sudoku Solver"
+
+#: ../../lectures/TWP65.rst:374
+msgid "Train Counter Game"
+msgstr "Train Counter Game"
+
+#: ../../lectures/TWP65.rst:375
+msgid "Quiz Builder"
+msgstr "Quiz Builder"
+
+#: ../../lectures/TWP65.rst:376
+msgid "EcardsOnMap (é grande...)"
+msgstr "EcardsOnMap (es genial ...)"
+
+#: ../../lectures/TWP65.rst:380
+msgid "Geradores Intro"
+msgstr "Generadores de introducción"
+

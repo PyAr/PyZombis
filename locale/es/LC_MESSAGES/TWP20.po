@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP20.rst:3
+msgid "For Funções e Random"
+msgstr "Para Funciones y Aleatorio."
+
+#: ../../lectures/TWP20.rst:14 ../../lectures/TWP20.rst:42
+#: ../../lectures/TWP20.rst:63
+msgid "for == while enrustido"
+msgstr "for == while apretado"
+
+#: ../../lectures/TWP20.rst:23
+msgid "Códigos equivalentes : for durante o dia vira while á noite."
+msgstr "Códigos equivalentes: durante el día girar mientras que por la noche."
+
+#: ../../lectures/TWP20.rst:44 ../../lectures/TWP20.rst:65
+msgid "Códigos equivalentes :"
+msgstr "Códigos equivalentes:"
+
+#: ../../lectures/TWP20.rst:84
+msgid "def functions"
+msgstr "def functions"
+
+#: ../../lectures/TWP20.rst:94
+msgid "Aprendemos algumas funções do Python: len, int, float, print e input"
+msgstr "Aprendimos algunas funciones de Python: len, int, float, print y input"
+
+#: ../../lectures/TWP20.rst:95
+msgid "Agora iremos criar as nossas próprias funções"
+msgstr "Ahora vamos a crear nuestras propias funciones."
+
+#: ../../lectures/TWP20.rst:96
+msgid "Utilizo def para definir a função e return para devolver algum valor"
+msgstr "Utilizo def para configurar la función y regresar para devolver algún valor"
+
+#: ../../lectures/TWP20.rst:97
+msgid "Existem funções que não retornam nada"
+msgstr "Hay funciones que no devuelven nada."
+
+#: ../../lectures/TWP20.rst:109
+msgid "Esta função retorna se o parâmetro x é par"
+msgstr "Esta función regresa si el parámetro x es par"
+
+#: ../../lectures/TWP20.rst:110
+msgid ""
+"Observe que diferentemente do que já vimos até agora, essas linhas não "
+"serão executadas imediatamente"
+msgstr ""
+"Tenga en cuenta que a diferencia de lo que hemos visto hasta ahora, estas líneas no lo hacen"
+"será ejecutado inmediatamente"
+
+
+#: ../../lectures/TWP20.rst:112
+msgid "Preciso chamar a função para executá-la"
+msgstr "Necesito llamar a la función para ejecutarla."
+
+#: ../../lectures/TWP20.rst:117
+msgid "Funções"
+msgstr "Funciones"
+
+#: ../../lectures/TWP20.rst:126
+msgid "Defina uma função fatorial"
+msgstr "Definir una función factorial."
+
+#: ../../lectures/TWP20.rst:144 ../../lectures/TWP20.rst:162
+msgid "Variáveis locais e globais"
+msgstr "Variables locales y globales"
+
+#: ../../lectures/TWP20.rst:146
+msgid ""
+"Nota: O escopo de a é diferente nos dois casos. Em outras palavras, as "
+"duas variáveis ​​'a' são diferentes."
+msgstr ""
+"Nota: O escopo de a é diferente nos dois casos. Em outras palavras, as "
+"duas variáveis ​​'a' são diferentes."
+
+
+#: ../../lectures/TWP20.rst:164
+msgid ""
+"Nesse caso, usamos a palavra-chave global. Então, a variável 'a' dentro "
+"da função é a mesma que a variável definida acima, ou seja, é a variável "
+"global."
+msgstr ""
+"En este caso, usamos la palabra clave global, por lo que la variable 'a' en"
+"La función es la misma que la variable definida anteriormente, es decir, es la variable"
+"global"
+
+
+#: ../../lectures/TWP20.rst:178
+msgid "Observe a diferença nas saídas dos Exemplos 9 e 10."
+msgstr "Note la diferencia en las salidas de los Ejemplos 9 y 10."
+
+#: ../../lectures/TWP20.rst:182 ../../lectures/TWP20.rst:209
+#: ../../lectures/TWP20.rst:239 ../../lectures/TWP20.rst:265
+msgid "Números aleatórios"
+msgstr "Números aleatorios"
+
+#: ../../lectures/TWP20.rst:213
+msgid ""
+"Defina uma função “embaralha” que retorne as letras de uma string "
+"misturadas. Dica: utilize list( ) para converter sua string em lista."
+msgstr ""
+"Establecer una función aleatoria que devuelve las letras de una cadena"
+"Usa list () para convertir tu cadena a la lista"
+
+
+#: ../../lectures/TWP20.rst:243
+msgid "Gere uma lista de 15 inteiros aleatórios entre 10 e 100"
+msgstr "Genera una lista de 15 enteros aleatorios entre 10 y 100"
+
+#: ../../lectures/TWP20.rst:269
+msgid ""
+"Gere uma lista de 15 inteiros aleatórios entre 10 e 100 que sejam "
+"distintos entre si"
+msgstr ""
+"Generar una lista de 15 enteros aleatorios entre 10 y 100 que son"
+"diferente el uno del otro"
+
+
+#: ../../lectures/TWP20.rst:296
+msgid "ord , chr"
+msgstr "ord , chr"
+
+#: ../../lectures/TWP20.rst:307
+msgid "Lista 5"
+msgstr "Lista 5"
+
+#: ../../lectures/TWP20.rst:326
+msgid ""
+"“A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se"
+" manter em movimento”. - Einstein."
+msgstr ""
+"La vida es como andar en bicicleta. Para mantener el equilibrio, debes estar"
+"Sigue moviéndote. - Einstein."
+
+

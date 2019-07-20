@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP23.rst:4
+msgid "Arquivos e Dicionários"
+msgstr "Archivos y diccionarios"
+
+#: ../../lectures/TWP23.rst:15
+msgid "Arquivos"
+msgstr "Archivos"
+
+#: ../../lectures/TWP23.rst:26
+msgid "Até agora nossos dados desapareciam ao sair do IDLE"
+msgstr "Hasta ahora, nuestros datos han desaparecido al salir de IDLE."
+
+#: ../../lectures/TWP23.rst:28
+msgid "Arquivos servem para armazenamento permanente"
+msgstr "Los archivos son para el almacenamiento permanente."
+
+#: ../../lectures/TWP23.rst:30
+msgid "Um arquivo é uma área em disco onde podemos ler ou gravar informações"
+msgstr "Un archivo es un área en un disco donde puede leer o escribir información"
+
+#: ../../lectures/TWP23.rst:33
+msgid "Acessamos o arquivo pelo seu nome"
+msgstr "Accedemos al archivo por su nombre."
+
+#: ../../lectures/TWP23.rst:35
+msgid "Para acessar um arquivo é preciso abri-lo"
+msgstr "Para acceder a un archivo necesitas abrirlo."
+
+#: ../../lectures/TWP23.rst:37
+msgid ""
+"Ao abrir o arquivo informamos seu nome, diretório onde fica (se "
+"necessário) e que operações iremos executar: leitura e/ou escrita"
+msgstr ""
+"Al abrir el archivo le informamos su nombre, directorio donde está (si"
+"requerido) y qué operaciones realizaremos: lectura y / o escritura"
+
+
+#: ../../lectures/TWP23.rst:40
+msgid ""
+"A função que abre os arquivo é open e os modos são: r – leitura, w – "
+"escrita, a – append, b – binário, + (atualização)"
+msgstr ""
+"La función que abre el archivo está abierta y los modos son: r - reading, w -"
+"escribiendo, a - anexar, b - binario, + (actualizar)"
+
+
+#: ../../lectures/TWP23.rst:43
+msgid "Os métodos para ler ou escrever são read e write"
+msgstr "Los métodos para leer o escribir son leer y escribir."
+
+#: ../../lectures/TWP23.rst:45
+msgid "Os arquivos devem ser fechados com close"
+msgstr "Los archivos deben cerrarse con cerrar"
+
+#: ../../lectures/TWP23.rst:80
+msgid "Caso você execute este programa nada aparecerá na tela"
+msgstr "Si ejecuta este programa no aparecerá nada en la pantalla."
+
+#: ../../lectures/TWP23.rst:81
+msgid "Procure no diretório c:\\Python3x o arquivo números.txt"
+msgstr "Busque en el directorio c: \\ Python3x el archivo numbers.txt"
+
+#: ../../lectures/TWP23.rst:82
+msgid ""
+"O modo w cria o arquivo se ele não existir, caso exista ele será apagado "
+"e reescrito"
+msgstr ""
+"El modo w crea el archivo si no existe, si existe, se eliminará"
+"y reescrito"
+
+
+#: ../../lectures/TWP23.rst:105
+msgid "readlines gera uma lista onde cada elemento é uma linha lida"
+msgstr "readlines genera una lista donde cada elemento es una línea de lectura"
+
+#: ../../lectures/TWP23.rst:106
+msgid ""
+"Arquivos textos são simples e possuem um caracter de controle no final "
+"para pular linha"
+msgstr ""
+"Los archivos de texto son simples y tienen un carácter de control al final"
+"saltar la linea"
+
+
+#: ../../lectures/TWP23.rst:108
+msgid ""
+"Se quisermos tirar esse caracter do final podemos usar "
+"print(linha.rstrip())"
+msgstr ""
+"Si queremos sacar a este personaje del final podemos usarlo"
+"print (line.rstrip ())"
+
+
+#: ../../lectures/TWP23.rst:120
+msgid "Pythonic way"
+msgstr "Pythonic way"
+
+#: ../../lectures/TWP23.rst:138
+msgid "O código acima faz o mesmo da forma pythônica."
+msgstr "El código anterior hace lo mismo de la forma pitónica."
+
+#: ../../lectures/TWP23.rst:139
+msgid "No slide anterior vimos como programadores normais fazem a leitura"
+msgstr "En la diapositiva anterior vimos cómo leen los programadores normales."
+
+#: ../../lectures/TWP23.rst:140
+msgid "Python é legal, pois sempre você pode se aprofundar mais"
+msgstr "Python es genial porque siempre puedes ir más profundo"
+
+#: ../../lectures/TWP23.rst:141
+msgid "Python é simples, mas difícil de esgotar"
+msgstr "Python es simple, pero difícil de agotar"
+
+#: ../../lectures/TWP23.rst:145
+msgid "Cripto"
+msgstr "Cripto"
+
+#: ../../lectures/TWP23.rst:155
+msgid "Leia mensagem.txt e grave cripto.txt com todas as vogais trocadas por ‘*’"
+msgstr "Lea message.txt y escriba crypto.txt con todas las vocales intercambiadas por '*'"
+
+#: ../../lectures/TWP23.rst:174
+msgid "Validate IP address"
+msgstr "Validate IP address"
+
+#: ../../lectures/TWP23.rst:229
+msgid "HTML"
+msgstr "HTML"
+
+#: ../../lectures/TWP23.rst:239
+msgid "Páginas web são escritas em HTML (Hypertext Mark-up Language)"
+msgstr "Las páginas web están escritas en HTML (lenguaje de marcado de hipertexto)"
+
+#: ../../lectures/TWP23.rst:240
+msgid "Tags HTML começam com < e terminam com >"
+msgstr "Las etiquetas HTML comienzan con <y terminan con>"
+
+#: ../../lectures/TWP23.rst:241
+msgid "A página web é escrita entre <html> e </html> que é a tag de maior nível"
+msgstr "La página web se escribe entre <html> y </ html> que es la etiqueta de nivel más alto"
+
+#: ../../lectures/TWP23.rst:243
+msgid "Normalmente inserimos código javascript"
+msgstr "Solemos insertar código javascript."
+
+#: ../../lectures/TWP23.rst:244
+msgid "Javascript não é um subconjunto de Java"
+msgstr "Javascript no es un subconjunto de Java"
+
+#: ../../lectures/TWP23.rst:263
+msgid "Note o parâmetro de codifição utf-8 ; Sem ele os ascentos não sairão"
+msgstr "Tenga en cuenta el parámetro de codificación utf-8; Sin ella no vendrán los ascensos."
+
+#: ../../lectures/TWP23.rst:267
+msgid "Dictionaries"
+msgstr "Dictionaries"
+
+#: ../../lectures/TWP23.rst:277
+msgid "O dicionário em si consiste em relacionar uma chave a um valor específico"
+msgstr "El diccionario en sí consiste en relacionar una clave con un valor específico."
+
+#: ../../lectures/TWP23.rst:279
+msgid ""
+"Diferentemente das listas, onde o índice é um número, dicionários "
+"utilizam suas chaves como índice"
+msgstr ""
+"A diferencia de las listas, donde el índice es un número, los diccionarios"
+"Usa tus claves como un índice"
+
+
+#: ../../lectures/TWP23.rst:281
+msgid ""
+"Para adicionar novos elementos não preciso de append, basta fazer a "
+"atribuição"
+msgstr ""
+"Para agregar nuevos elementos que no necesito agregar, simplemente haga lo"
+"asignación"
+
+
+#: ../../lectures/TWP23.rst:284
+msgid "Se a chave já existe: o valor associado é alterado"
+msgstr "Si la clave ya existe: el valor asociado cambia."
+
+#: ../../lectures/TWP23.rst:285
+msgid "Se a chave não existe: a nova chave é adicionada"
+msgstr "Si la clave no existe: se agrega la nueva clave."
+
+#: ../../lectures/TWP23.rst:322
+msgid ""
+"Faça um programa que leia o arquivo alice.txt e conte o número de "
+"ocorrências de cada palavra no texto. Obs.: para saber os caracteres "
+"especiais use import string e utilize string.punctuation"
+msgstr ""
+"Haz un programa que lea el archivo alice.txt y cuente el número de"
+"apariciones de cada palabra en el texto Nota: para conocer los caracteres"
+"especial use la cadena de importación y use string.punctuation"
+
+
+#: ../../lectures/TWP23.rst:325
+msgid "`http://www.gutenberg.org/cache/epub/11/pg11.txt`_"
+msgstr "`http://www.gutenberg.org/cache/epub/11/pg11.txt`_"
+
+#: ../../lectures/TWP23.rst:357
+msgid "Exercício Programa 1"
+msgstr "Programa de ejercicios 1"
+
+#: ../../lectures/TWP23.rst:367
+msgid ""
+"“A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se"
+" manter em movimento”. - Einstein."
+msgstr ""
+"La vida es como andar en bicicleta. Para mantener el equilibrio, debes estar"
+"Sigue moviéndote. - Einstein."

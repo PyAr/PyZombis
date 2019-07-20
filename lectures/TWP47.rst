@@ -6,10 +6,16 @@ Módulos
 .. image:: img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
+   :align: center
    :alt: 
 
 
-<número>
+.. youtube:: E_IIrwtag_c
+      :height: 315
+      :width: 560
+      :align: center
+
+
 
 Programação Modular
 ===================
@@ -18,6 +24,7 @@ Programação Modular
 .. image:: img/TWP47_001.png
    :height: 11.865cm
    :width: 21.001cm
+   :align: center
    :alt: 
 
 
@@ -28,6 +35,7 @@ Arquivo transações.txt
 .. image:: img/TWP47_002.png
    :height: 9.515cm
    :width: 22.859cm
+   :align: center
    :alt: 
 
 
@@ -35,25 +43,49 @@ Venda Salgados
 ==============
 
 
-.. image:: img/TWP47_003.png
-   :height: 12.571cm
-   :width: 21.89cm
-   :alt: 
+.. youtube:: GWqpH_o8-54
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
+.. code-block:: python
+
+   def salva_transacao(preco, cartao_credito, descricao):
+      file = open('transacoes.txt',"a")
+      file.write("%16s%07d%16s\n" %(cartao_credito,preco*100,descricao))
+      file.close()
+
+   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
+   precos = [1.50,2.20,1.80,1.20]
+   rodando = True
+
+   while rodando:
+      opcao = 1
+      for escolha in itens:
+         print(str(opcao) + "." + escolha)
+         opcao += 1
+      print(str(opcao) + ".Finalizar")
+      escolha = int(input("Escolha uma opcao: "))
+      if escolha == opcao:
+         #escolheu a ultima opcao Finalizar
+         rodando = False
+      else:
+         cartao = input("Numero do cartao de credito: ")
+         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
+
+
 
 
 Venda Salgados
 ==============
 
 
-.. image:: img/TWP47_004.png
+.. image:: img/TWP47_004.jpg
    :height: 11.112cm
    :width: 15.768cm
-   :alt: 
-
-
-.. image:: img/TWP47_005.png
-   :height: 5.952cm
-   :width: 10.08cm
+   :align: center
    :alt: 
 
 
@@ -68,6 +100,12 @@ Venda Salgados
 + Os preços estavam altos demais: rosquinha vendida por R$ 50.791,42!
 + Nos outros períodos não houve problema. O que será que aconteceu?
 
+.. image:: img/TWP47_005.png
+   :height: 5.952cm
+   :width: 10.08cm
+   :align: center
+   :alt: 
+
 
 Venda Salgados
 ==============
@@ -76,16 +114,19 @@ Venda Salgados
 .. image:: img/TWP47_006.png
    :height: 11.945cm
    :width: 22.859cm
+   :align: center
    :alt: 
 
 
 Venda Salgados
 ==============
 
++ O banco mudou a ordem dos dados! [Preço / Cartão / Item]
 
 .. image:: img/TWP47_007.png
    :height: 4.001cm
    :width: 22.802cm
+   :align: center
    :alt: 
 
 
@@ -93,15 +134,10 @@ Venda Salgados
 ==============
 
 
-.. image:: img/TWP47_008.png
+.. image:: img/TWP47_008.jpg
    :height: 12.571cm
    :width: 19.998cm
-   :alt: 
-
-
-.. image:: img/TWP47_009.png
-   :height: 12.571cm
-   :width: 21.775cm
+   :align: center
    :alt: 
 
 
@@ -109,23 +145,77 @@ Venda Salgados Tarde/Noite
 ==========================
 
 
+.. code-block:: python
+   
+   def salva_transacao(preco, cartao_credito, descricao):
+      file = open('transacoes.txt',"a")
+      file.write("%16s%07d%16s\n" %(cartao_credito,preco*100,descricao))
+      file.close()
+
+   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
+   precos = [1.50,2.20,1.80,1.20]
+   rodando = True
+
+   while rodando:
+      opcao = 1
+      for escolha in itens:
+         print(str(opcao) + "." + escolha)
+         opcao += 1
+      print(str(opcao) + ".Finalizar")
+      escolha = int(input("Escolha uma opcao: "))
+      if escolha == opcao:
+         #escolheu a ultima opcao Finalizar
+         rodando = False
+      else:
+         cartao = input("Numero do cartao de credito: ")
+         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
+
+
+
++ Formatação corrigida por aluno!
+
+
 Venda Salgados Manhã
 ====================
 
 
-.. image:: img/TWP47_010.png
-   :height: 12.571cm
-   :width: 21.448cm
-   :alt: 
+.. code-block:: python
+   
+   def salva_transacao(preco, cartao_credito, descricao):
+      file = open('transacoes.txt',"a")
+      file.write("%16s%07d%16s\n" %(cartao_credito,preco*100,descricao))
+      file.close()
+
+   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
+   precos = [1.50,2.20,1.80,1.20]
+   rodando = True
+
+   while rodando:
+      opcao = 1
+      for escolha in itens:
+         print(str(opcao) + "." + escolha)
+         opcao += 1
+      print(str(opcao) + ".Finalizar")
+      escolha = int(input("Escolha uma opcao: "))
+      if escolha == opcao:
+         #escolheu a ultima opcao Finalizar
+         rodando = False
+      else:
+         cartao = input("Numero do cartao de credito: ")
+         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
+
++ Produtos alterados, mas esqueceram a formatação!
+
 
 
 Módulo banco.py
 ===============
 
 
-.. image:: img/TWP47_011.png
+.. image:: img/TWP47_011.jpg
    :height: 12.571cm
    :width: 18.267cm
+   :align: center
    :alt: 
 
 
@@ -133,34 +223,82 @@ Módulo banco.py
 ===============
 
 
-.. image:: img/TWP47_012.png
-   :height: 2.999cm
-   :width: 24.325cm
-   :alt: 
+.. code-block:: python
+   
+   def salva_transacao(preco, cartao_credito, descricao):
+      file = open('transacoes.txt',"a")
+      file.write("%16s%07d%16s\n" %(cartao_credito,preco*100,descricao))
+      file.close()
 
+
+
++ Obs.: deixar no mesmo diretório dos programas manhã e tarde/noite
 
 Novo programa da manhã
 ======================
 
 
-.. image:: img/TWP47_013.png
-   :height: 11.665cm
-   :width: 22.859cm
-   :alt: 
+.. code-block:: python
+   
+   from banco import *
+
+   itens = ["Bauru","X Salada","Calafrango"]
+   precos = [2.50,3.0,2.20]
+   rodando = True
+
+   while rodando:
+      opcao = 1
+      for escolha in itens:
+         print(str(opcao) + "." + escolha)
+         opcao += 1
+      print(str(opcao) + ".Finalizar")
+      escolha = int(input("Escolha uma opcao: "))
+      if escolha == opcao:
+         #escolheu a ultima opcao Finalizar
+         rodando = False
+      else:
+         cartao = input("Numero do cartao de credito: ")
+         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
+
 
 
 Novo programa tarde/noite
 =========================
 
 
-.. image:: img/TWP47_014.png
-   :height: 11.62cm
-   :width: 22.859cm
-   :alt: 
+.. code-block:: python
+   
+   from banco import *
+
+   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
+   precos = [1.50,2.20,1.80,1.20]
+   rodando = True
+
+   while rodando:
+      opcao = 1
+      for escolha in itens:
+         print(str(opcao) + "." + escolha)
+         opcao += 1
+      print(str(opcao) + ".Finalizar")
+      escolha = int(input("Escolha uma opcao: "))
+      if escolha == opcao:
+         #escolheu a ultima opcao Finalizar
+         rodando = False
+      else:
+         cartao = input("Numero do cartao de credito: ")
+         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
 
 
 Descontos
 =========
+
+
+
+.. youtube:: 5C35LCcrUVs
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 
@@ -169,13 +307,10 @@ Descontos
 + Inicialmente o desconto será de 10% para todos os salgados
 
 
-
-
-
-
 .. image:: img/TWP47_015.png
    :height: 1.799cm
    :width: 9.524cm
+   :align: center
    :alt: 
 
 
@@ -183,10 +318,29 @@ Descontos
 =========
 
 
-.. image:: img/TWP47_016.png
-   :height: 12.571cm
-   :width: 18.015cm
-   :alt: 
+.. code-block:: python
+   
+   from banco import *
+   from fatec import *
+
+   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
+   precos = [1.50,2.20,1.80,1.20]
+   rodando = True
+
+   while rodando:
+      opcao = 1
+      for escolha in itens:
+         print(str(opcao) + "." + escolha)
+         opcao += 1
+      print(str(opcao) + ".Finalizar")
+      escolha = int(input("Escolha uma opcao: "))
+      if escolha == opcao:
+         #escolheu a ultima opcao Finalizar
+         rodando = False
+      else:
+         cartao = input("Numero do cartao de credito: ")
+         preco = desconto(precos[escolha-1]) 
+         salva_transacao(preco,cartao,itens[escolha-1])
 
 
 Descontos
@@ -199,11 +353,10 @@ Descontos
 + Novo módulo japa.py
 
 
-
-
 .. image:: img/TWP47_017.png
    :height: 2.199cm
    :width: 12.158cm
+   :align: center
    :alt: 
 
 
@@ -220,32 +373,66 @@ Os nomes são iguais! E agora?
 Nomes Completos
 ===============
 
++ A solução é adotar os nomes completos
 
-.. image:: img/TWP47_019.png
-   :height: 12.571cm
-   :width: 16.042cm
-   :alt: 
 
+.. code-block:: python
+   
+   from banco import *
+   import fatec
+   import japa
+
+   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
+   precos = [1.50,2.20,1.80,1.20]
+   rodando = True
+
+   while rodando:
+      opcao = 1
+      for escolha in itens:
+         print(str(opcao) + "." + escolha)
+         opcao += 1
+      print(str(opcao) + ".Finalizar")
+      escolha = int(input("Escolha uma opcao: "))
+      if escolha == opcao:
+         #escolheu a ultima opcao Finalizar
+         rodando = False
+      else:
+         cartao = input("Numero do cartao de credito: ")
+         preco = fatec.descento(precos[escolha - 1])
+         if itens[escolha - 1] == "Pastel":
+            preco = japa.descento(preco)
+         salva_transacao(preco,cartao,itens[escolha-1])
 
 Nomes Completos
 ===============
+
++ Resultado - 
 
 
 .. image:: img/TWP47_020.png
-   :height: 11.403cm
-   :width: 19.79cm
+   :height: 11.324cm
+   :width: 22.859cm
+   :align: center
    :alt: 
-
-
-Nomes Completos
-===============
-
 
 .. image:: img/TWP47_021.png
    :height: 11.324cm
    :width: 22.859cm
+   :align: center
    :alt: 
 
 
+dis Module
+==========
 
 
+.. youtube:: CCxrF5usWwo
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture17

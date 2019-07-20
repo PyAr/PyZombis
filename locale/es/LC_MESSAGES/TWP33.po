@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP33.rst:3
+msgid "Revisão Strings"
+msgstr "Revisión de cuerdas"
+
+#: ../../lectures/TWP33.rst:20
+msgid "Texto"
+msgstr "Texto"
+
+#: ../../lectures/TWP33.rst:24
+msgid "É difícil comunicar-se sem palavras"
+msgstr "Es difícil comunicarse sin palabras."
+
+#: ../../lectures/TWP33.rst:25
+msgid ""
+"Entre os vários tipos de dados, um dos mais importantes é o texto ou "
+"string"
+msgstr ""
+"Entre los diversos tipos de datos, uno de los más importantes es el texto o"
+"cuerda"
+
+#: ../../lectures/TWP33.rst:28
+msgid "Obs.: não é tão fácil manipular strings em algumas linguagens"
+msgstr "Nota: no es tan fácil manipular cadenas en algunos idiomas."
+
+#: ../../lectures/TWP33.rst:30
+msgid "Vamos procurar onde estão as informações num texto == scraping"
+msgstr "Busquemos dónde está la información en un texto == raspado"
+
+#: ../../lectures/TWP33.rst:31
+msgid ""
+"E iremos aprender um dos conceitos mais importantes de orientação à "
+"objetos: métodos"
+msgstr ""
+"Y aprenderemos uno de los conceptos más importantes de orientación a"
+"objetos: métodos"
+
+#: ../../lectures/TWP33.rst:38
+msgid "Starbuzz Café"
+msgstr "Café Starbuzz"
+
+#: ../../lectures/TWP33.rst:49
+msgid "Código Starbuzz atual"
+msgstr "Código Starbuzz actual"
+
+#: ../../lectures/TWP33.rst:60
+msgid "O CEO quer apenas o preço"
+msgstr "CEO solo quiere el precio"
+
+#: ../../lectures/TWP33.rst:77 ../../lectures/TWP33.rst:82
+msgid "O preço está embutido no HTML"
+msgstr "El precio está incrustado en HTML"
+
+#: ../../lectures/TWP33.rst:81
+msgid "Este é um texto HTML “bruto”, que é o formato das páginas Web"
+msgstr "Este es un texto HTML sin procesar, que es el formato de las páginas web."
+
+#: ../../lectures/TWP33.rst:94 ../../lectures/TWP33.rst:120
+#: ../../lectures/TWP33.rst:138
+msgid "Strings"
+msgstr "Strings"
+
+#: ../../lectures/TWP33.rst:98 ../../lectures/TWP33.rst:527
+msgid "Strings são seqüências de caracteres"
+msgstr "Las cuerdas son cuerdas"
+
+#: ../../lectures/TWP33.rst:109
+msgid "Como obter apenas o preço?"
+msgstr "¿Cómo obtener sólo el precio?"
+
+#: ../../lectures/TWP33.rst:149 ../../lectures/TWP33.rst:165
+#: ../../lectures/TWP33.rst:176
+msgid "Fatiamento"
+msgstr "Rebanada"
+
+#: ../../lectures/TWP33.rst:159
+msgid "Fatia do primeiro número até antes do segundo"
+msgstr "Rebanada desde el primer número hasta antes del segundo."
+
+#: ../../lectures/TWP33.rst:161
+msgid "Não inclui o segundo número!"
+msgstr "¡No incluye el segundo número!"
+
+#: ../../lectures/TWP33.rst:188
+msgid "O CEO está feliz!"
+msgstr "El CEO es feliz!"
+
+#: ../../lectures/TWP33.rst:205
+msgid "Não existem perguntas idiotas"
+msgstr "No hay preguntas tontas"
+
+#: ../../lectures/TWP33.rst:209
+msgid "Posso colocar qualquer página web neste código?"
+msgstr "¿Puedo poner cualquier página web en este código?"
+
+#: ../../lectures/TWP33.rst:211
+msgid "Sim. Fique à vontade, mas não esqueça o decode"
+msgstr "Sí. Siéntete libre, pero no olvides la decodificación."
+
+#: ../../lectures/TWP33.rst:212
+msgid "Por exemplo, o site abaixo usa iso8859"
+msgstr "Por ejemplo, el siguiente sitio utiliza iso8859"
+
+#: ../../lectures/TWP33.rst:213
+msgid "`Link for the same <http://www.ime.usp.br/~pf/algoritmos/dicios/br>`_"
+msgstr "`Enlace para el mismo <http://www.ime.usp.br/~pf/algoritmos/dicios/br>`_"
+
+#: ../../lectures/TWP33.rst:215
+msgid "O que urllib.request faz?"
+msgstr "Que hace urllib.request"
+
+#: ../../lectures/TWP33.rst:217
+msgid "Permite conversar com a internet"
+msgstr "Hablemos a internet"
+
+#: ../../lectures/TWP33.rst:219
+msgid "Posso acessar uma página diretamente no navegador?"
+msgstr "¿Puedo acceder a una página directamente en el navegador?"
+
+#: ../../lectures/TWP33.rst:221
+msgid "Sim. Digite no modo interativo “import antigravity”"
+msgstr "Sí. Ingrese en modo interactivo importar antigravedad"
+
+#: ../../lectures/TWP33.rst:226
+msgid "Descontos para clientes fiéis"
+msgstr "Descuentos para clientes leales."
+
+#: ../../lectures/TWP33.rst:243
+msgid "Programa de fidelidade"
+msgstr "Programa de lealtad"
+
+#: ../../lectures/TWP33.rst:254
+msgid "Não deu certo! Apareceu “bean” no lugar do preço. Por quê será?"
+msgstr "Não deu certo! Apareceu “bean” no lugar do preço. Por quê será?"
+
+#: ../../lectures/TWP33.rst:264
+msgid "O preço se moveu"
+msgstr "El precio movido"
+
+#: ../../lectures/TWP33.rst:267
+msgid "As páginas são diferentes e o preço muda de posição na string"
+msgstr "Las páginas son diferentes y el precio cambia de posición en la cadena."
+
+#: ../../lectures/TWP33.rst:278
+msgid "Os dados do Python são espertos"
+msgstr "Los datos de Python son inteligentes"
+
+#: ../../lectures/TWP33.rst:280
+msgid ""
+"As linguagens de programação fornecem uma funcionalidade embutida nos "
+"dados para ajudá-lo"
+msgstr ""
+"Los lenguajes de programación proporcionan funcionalidad incorporada en"
+"datos para ayudarte"
+
+#: ../../lectures/TWP33.rst:283
+msgid "Os dados do Python são espertos: eles podem fazer coisas"
+msgstr "Los datos de Python son inteligentes: pueden hacer cosas"
+
+#: ../../lectures/TWP33.rst:295 ../../lectures/TWP33.rst:315
+msgid "Método find"
+msgstr "Encontrar metodo"
+
+#: ../../lectures/TWP33.rst:299
+msgid "Métodos find para strings"
+msgstr "Encontrar metodos para cuerdas"
+
+#: ../../lectures/TWP33.rst:311
+msgid "Para saber os métodos que possuo dar ctrl + espaço após ponto"
+msgstr "Para conocer los métodos tengo que dar ctrl + espacio tras punto"
+
+#: ../../lectures/TWP33.rst:331 ../../lectures/TWP33.rst:349
+msgid "Só quando for menos que 4.74"
+msgstr "Solo cuando menos de 4.74"
+
+#: ../../lectures/TWP33.rst:373
+msgid "Strings são diferentes de números"
+msgstr "Las cuerdas son diferentes de los números"
+
+#: ../../lectures/TWP33.rst:384
+msgid "Convertendo para float"
+msgstr "Convertir a flotar"
+
+#: ../../lectures/TWP33.rst:401
+msgid "Ele pode ficar testando o preço?"
+msgstr "¿Puede estar probando el precio?"
+
+#: ../../lectures/TWP33.rst:412
+msgid "Ele pode ficar tentando?"
+msgstr "¿Puede seguir intentando?"
+
+#: ../../lectures/TWP33.rst:437
+msgid "O CEO está muito feliz!"
+msgstr "El CEO está muy feliz!"
+
+#: ../../lectures/TWP33.rst:448
+msgid "Aconteceu algum problema"
+msgstr "¿Pasó algo?"
+
+#: ../../lectures/TWP33.rst:459
+msgid "Acusação de DDoS"
+msgstr "Acusación DDoS"
+
+#: ../../lectures/TWP33.rst:463
+msgid "DDoS – Distributed Denial of Service"
+msgstr "DDoS – Distributed Denial of Service"
+
+#: ../../lectures/TWP33.rst:474
+msgid "Recebemos uma mensagem"
+msgstr "Recibimos un mensaje"
+
+#: ../../lectures/TWP33.rst:485
+msgid "Biblioteca time"
+msgstr "Biblioteca del tiempo"
+
+#: ../../lectures/TWP33.rst:489
+msgid "Hora atual em segundos time.clock()"
+msgstr "Tiempo actual en segundos time.clock ()"
+
+#: ../../lectures/TWP33.rst:490
+msgid "Estou no horário de verão? time.daylight()"
+msgstr "Estoy en horario de verano? time.daylight ()"
+
+#: ../../lectures/TWP33.rst:491
+msgid "Dormir alguns segundos time.sleep(secs)"
+msgstr "Duerme unos segundos time.sleep (secs)"
+
+#: ../../lectures/TWP33.rst:492
+msgid "Fuso horário time.timezone()"
+msgstr "Time.timezone ()"
+
+#: ../../lectures/TWP33.rst:496
+msgid "10 minutos entre cada acesso"
+msgstr "10 minutos entre cada acceso"
+
+#: ../../lectures/TWP33.rst:517
+msgid "Resumo"
+msgstr "Resumen"
+
+#: ../../lectures/TWP33.rst:528
+msgid "Acessamos os caracteres individuais pelo índice, que começa com zero"
+msgstr "Accedemos a los caracteres individuales por índice, que comienza con cero."
+
+#: ../../lectures/TWP33.rst:529
+msgid "Métodos são funções embutidas nas variáveis"
+msgstr "Los métodos son funciones incorporadas en variables."
+
+#: ../../lectures/TWP33.rst:530
+msgid "Existem bibliotecas de programação com código pronto"
+msgstr "Hay bibliotecas de programación ya hechas."
+
+#: ../../lectures/TWP33.rst:531
+msgid "Os dados possuem um tipo, como int ou string"
+msgstr "Los datos tienen un tipo, como int o string."
+
+#: ../../lectures/TWP33.rst:537
+msgid "Ferramentas Python"
+msgstr "Herramientas de Python"
+
+#: ../../lectures/TWP33.rst:541
+msgid "texto[4] acessa o 5º caracter"
+msgstr "texto [4] accede al quinto carácter"
+
+#: ../../lectures/TWP33.rst:542
+msgid "texto[4:9] acessa do 5º ao 9º caracter"
+msgstr "El texto [4: 9] accede del quinto al noveno carácter."
+
+#: ../../lectures/TWP33.rst:543
+msgid "O método texto.find() procura um substring"
+msgstr "El método text.find () busca una subcadena"
+
+#: ../../lectures/TWP33.rst:544
+msgid "float() converte algo para ponto flutuante"
+msgstr "float () convierte algo a punto flotante"
+
+#: ../../lectures/TWP33.rst:545
+msgid "Bibliotecas: urllib.request e time"
+msgstr "Bibliotecas: urllib.request y tiempo"
+

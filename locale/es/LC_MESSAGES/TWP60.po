@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP60.rst:3
+msgid "Pygame"
+msgstr "Pygame"
+
+#: ../../lectures/TWP60.rst:22
+msgid "Bibliografia"
+msgstr "Bibliografia"
+
+#: ../../lectures/TWP60.rst:32
+msgid "`Book Link <http://inventwithpython.com/>`_"
+msgstr "`Book Link <http://inventwithpython.com/>`_"
+
+#: ../../lectures/TWP60.rst:43 ../../lectures/TWP60.rst:59
+#: ../../lectures/TWP60.rst:87 ../../lectures/TWP60.rst:98
+#: ../../lectures/TWP60.rst:126 ../../lectures/TWP60.rst:137
+#: ../../lectures/TWP60.rst:162
+msgid "Pygame Hello World"
+msgstr "Pygame Hello World"
+
+#: ../../lectures/TWP60.rst:47
+msgid "Não temos entrada com input()"
+msgstr "No tenemos entrada con input()"
+
+#: ../../lectures/TWP60.rst:48
+msgid "Entrada pelo mouse e teclado via eventos"
+msgstr "Entrada vía ratón y teclado mediante eventos."
+
+#: ../../lectures/TWP60.rst:49
+msgid "Pygame usa tuplas ao invés de listas"
+msgstr "Pygame usa tuplas en lugar de listas"
+
+#: ../../lectures/TWP60.rst:50
+msgid "Tuplas são listas imutáveis, por isso seu processamento é mais eficiente"
+msgstr "Las tuplas son listas inmutables, por lo que su procesamiento es más eficiente."
+
+#: ../../lectures/TWP60.rst:52
+msgid "Tuplas são listas com parentêses no lugar de colchetes"
+msgstr "Las tuplas son listas con paréntesis en lugar de paréntesis"
+
+#: ../../lectures/TWP60.rst:53
+msgid "Ex.: (255, 255, 255)"
+msgstr "Ex.: (255, 255, 255)"
+
+#: ../../lectures/TWP60.rst:91
+msgid "pygame.locals inclui constantes como QUIT ou K_ESCAPE"
+msgstr "pygame.locals incluye constantes como QUIT o K_ESCAPE"
+
+#: ../../lectures/TWP60.rst:92
+msgid "Utilizamos sys.exit() para sair “suavemente” do programa"
+msgstr "Usamos sys.exit () para salir suavemente del programa"
+
+#: ../../lectures/TWP60.rst:166
+msgid "Se eu não apagar o pixArray ele ficará no estado locked"
+msgstr "Si no borro el pixArray estará en el estado bloqueado"
+
+#: ../../lectures/TWP60.rst:167
+msgid "Apago o pixArray para poder manusear o objeto Surface via método blit()"
+msgstr "Borro pixArray para poder manejar el objeto Surface mediante el método blit ()."
+
+#: ../../lectures/TWP60.rst:169
+msgid ""
+"O blit() apenas modifica a memória, mas para atualizar a tela devo dar "
+"display.update()"
+msgstr ""
+"El blit () solo modifica la memoria, pero para actualizar la pantalla debo dar"
+"display.update ()"
+
+#: ../../lectures/TWP60.rst:171
+msgid "Não esqueça de dar pygame.quit()"
+msgstr "No te olvides de dar pygame.quit ()"
+
+#: ../../lectures/TWP60.rst:175 ../../lectures/TWP60.rst:186
+#: ../../lectures/TWP60.rst:197 ../../lectures/TWP60.rst:226
+#: ../../lectures/TWP60.rst:244
+msgid "Pygame Animação"
+msgstr "Animación de Pygame"
+
+#: ../../lectures/TWP60.rst:238
+msgid "Note que nos dicionários b1, b2 e b3 tenho objetos e direções embutidos"
+msgstr "Tenga en cuenta que en los diccionarios b1, b2 y b3 tengo objetos e instrucciones incrustados"
+
+#: ../../lectures/TWP60.rst:240
+msgid "Monto uma lista blocks com os três dicionários"
+msgstr "Estoy agregando una lista de bloques con los tres diccionarios."
+
+#: ../../lectures/TWP60.rst:307 ../../lectures/TWP60.rst:325
+#: ../../lectures/TWP60.rst:336
+msgid "Pygame Collision Detection"
+msgstr "Pygame Collision Detection"
+
+#: ../../lectures/TWP60.rst:357 ../../lectures/TWP60.rst:375
+msgid "Pygame Input"
+msgstr "Pygame Input"
+
+#: ../../lectures/TWP60.rst:454 ../../lectures/TWP60.rst:479
+#: ../../lectures/TWP60.rst:499 ../../lectures/TWP60.rst:518
+#: ../../lectures/TWP60.rst:542 ../../lectures/TWP60.rst:560
+#: ../../lectures/TWP60.rst:585 ../../lectures/TWP60.rst:602
+msgid "Sounds and Sprites"
+msgstr "Sounds and Sprites"
+
+#: ../../lectures/TWP60.rst:494
+msgid "Player.png aparece na escala desejada"
+msgstr "Player.png aparece en la escala deseada"
+
+#: ../../lectures/TWP60.rst:495
+msgid "Gero randomicamente 20 cerejas iniciais"
+msgstr "Genero al azar 20 cerezas iniciales"
+
+#: ../../lectures/TWP60.rst:513
+msgid ""
+"Utilizo dois canais, um para a música de fundo e outro para cada cereja "
+"apanhada"
+msgstr ""
+"Uso dos canales, uno para música de fondo y uno para cada cereza"
+"atrapado"
+
+#: ../../lectures/TWP60.rst:536
+msgid ""
+"Tecla ‘m’ pausa o fundo musical e o click do mouse planta uma cerejinha "
+"na posição clicada"
+msgstr ""
+"La tecla M 'detiene el fondo musical y el clic del ratón planta una cereza"
+"en posición de clic"
+
+#: ../../lectures/TWP60.rst:554
+msgid "As cerejas são geradas aleatoriamente a cada passagem no looping principal"
+msgstr "Las cerezas se generan aleatoriamente con cada pasada en el bucle principal"
+
+#: ../../lectures/TWP60.rst:580
+msgid "Removo cerejas “comidas”, claro engordando!"
+msgstr "Quito las cerezas comidas, por supuesto engordando!"
+
+#: ../../lectures/TWP60.rst:581
+msgid "Todas as “blitadas” aparecem no update"
+msgstr "Todas las blitas aparecen en actualización"
+
+#: ../../lectures/TWP60.rst:595
+msgid "FPS == Frames Per Second"
+msgstr "FPS == Frames Per Second"
+
+#: ../../lectures/TWP60.rst:596
+msgid "Variável que controla o mainClock.tick()"
+msgstr "Variable que controla el mainClock.tick ()"
+
+#: ../../lectures/TWP60.rst:597
+msgid ""
+"Os monstrinhos possuem um tamanho mínimo e máximo e sua velocidade é "
+"controlada"
+msgstr ""
+"Los pequeños monstruos tienen un tamaño mínimo y máximo y su velocidad es"
+"controlado"
+
+#: ../../lectures/TWP60.rst:615
+msgid "Snakey : A Nibbles Clone"
+msgstr "Snakey : A Nibbles Clone"
+
+#: ../../lectures/TWP60.rst:625
+msgid "Classic Games with Python in the Browser"
+msgstr "Classic Games with Python in the Browser"
+

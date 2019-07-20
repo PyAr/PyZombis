@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP45.rst:3
+msgid "Hackeando o Facebook com Python"
+msgstr "Hackeando Facebook con Python"
+
+#: ../../lectures/TWP45.rst:14
+msgid "Facebook Hacking"
+msgstr "Facebook Hacking"
+
+#: ../../lectures/TWP45.rst:38
+msgid "Hackers não são “do mal” ?"
+msgstr "Los hackers no son malvados?"
+
+#: ../../lectures/TWP45.rst:41
+msgid "Facebook Profile Photo"
+msgstr "Facebook Profile Photo"
+
+#: ../../lectures/TWP45.rst:76
+msgid "Resultado"
+msgstr "Resultado"
+
+#: ../../lectures/TWP45.rst:93
+msgid "`Link <https://developers.facebook.com/docs/reference/api/examples/>`_"
+msgstr "`Link <https://developers.facebook.com/docs/reference/api/examples/>`_"
+
+#: ../../lectures/TWP45.rst:94
+msgid "Objetos JSON"
+msgstr "Objetos JSON"
+
+#: ../../lectures/TWP45.rst:95
+msgid "Links autenticados"
+msgstr "Enlaces autenticados"
+
+#: ../../lectures/TWP45.rst:96
+msgid "Obs.: access_token expira"
+msgstr "Nota: access_token expira"
+
+#: ../../lectures/TWP45.rst:97
+msgid "Autenticar novamente neste caso"
+msgstr "Volver a autenticarse en este caso"
+
+#: ../../lectures/TWP45.rst:166
+msgid "Android Wallpaper"
+msgstr "Fondo de pantalla de Android"
+
+#: ../../lectures/TWP45.rst:213
+msgid "Sabe o que é ter vontade de acordar cedo no domingo para estudar?!?"
+msgstr "¿Sabes lo que se siente al levantarte temprano el domingo para estudiar?"
+
+#: ../../lectures/TWP45.rst:214
+msgid "Bom, eu também não sei explicar, mas é o que estou sentindo no momento .-."
+msgstr "Bueno, no sé cómo explicarlo, pero eso es lo que estoy sintiendo en este momento."
+
+#: ../../lectures/TWP45.rst:216
+msgid "Bora Casdinho!"
+msgstr "¡Vamos a casdinho!"
+
+#: ../../lectures/TWP45.rst:217
+msgid "Hackear participantes a partir do evento criado no Facebook"
+msgstr "Hackea a los participantes del evento creado en Facebook."
+
+#: ../../lectures/TWP45.rst:218
+msgid "Inserir link para o perfil pessoal no Facebook"
+msgstr "Insertar enlace a perfil personal en Facebook"
+
+#: ../../lectures/TWP45.rst:219
+msgid "Obs.: somente alguns participantes e com a foto na data do evento"
+msgstr "Obs.: somente alguns participantes e com a foto na data do evento"
+

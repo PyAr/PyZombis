@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP25.rst:3
+msgid "Classes e Objetos"
+msgstr "Clases y objetos"
+
+#: ../../lectures/TWP25.rst:22
+msgid "Baixar os códigos abaixo"
+msgstr "Descarga los códigos a continuación"
+
+#: ../../lectures/TWP25.rst:26
+msgid "tv*.py"
+msgstr "tv*.py"
+
+#: ../../lectures/TWP25.rst:27
+msgid "tatu*.py"
+msgstr "tatu*.py"
+
+#: ../../lectures/TWP25.rst:28
+msgid "teste*.py"
+msgstr "teste*,py"
+
+#: ../../lectures/TWP25.rst:34 ../../lectures/TWP25.rst:46
+#: ../../lectures/TWP25.rst:65 ../../lectures/TWP25.rst:78
+#: ../../lectures/TWP25.rst:97 ../../lectures/TWP25.rst:120
+msgid "Classes e objetos"
+msgstr "Clases y objetos"
+
+#: ../../lectures/TWP25.rst:38
+msgid ""
+"Classes associam dados (atributos) e operações (métodos) em uma só "
+"estrutura"
+msgstr ""
+"Las clases asocian datos (atributos) y operaciones (métodos) en uno"
+"estructura"
+
+#: ../../lectures/TWP25.rst:40
+msgid ""
+"Um objeto é uma variável cujo tipo é uma classe, ou seja, um objeto é uma"
+" instância de uma classe"
+msgstr ""
+"Un objeto es una variable cuyo tipo es una clase, es decir, un objeto es una"
+"instancia de una clase"
+
+#: ../../lectures/TWP25.rst:42
+msgid "Veremos apenas o básico da orientação à objetos"
+msgstr "Solo veremos los fundamentos de la orientación a objetos."
+
+#: ../../lectures/TWP25.rst:69
+msgid "Quando declaramos uma classe, estamos criando um novo tipo de dados"
+msgstr "Cuando declaramos una clase, estamos creando un nuevo tipo de datos"
+
+#: ../../lectures/TWP25.rst:70
+msgid ""
+"Da mesma forma que quando criamos uma lista ou uma string, estamos "
+"instanciando ou criando uma instância dessas classes"
+msgstr ""
+"Al igual que cuando creamos una lista o una cadena, somos"
+"instanciar o crear una instancia de estas clases"
+
+#: ../../lectures/TWP25.rst:72
+msgid "É a mesma coisa fazer lista = [] ou lista = list()"
+msgstr "Es lo mismo que hacer list = [] o list = list ()"
+
+#: ../../lectures/TWP25.rst:73
+msgid "O método __init__ é chamado construtor e é chamado na criação do objeto"
+msgstr "El método __init__ se llama constructor y se llama en la creación de objetos"
+
+#: ../../lectures/TWP25.rst:82
+msgid "O parâmetro self significa o objeto televisão em si"
+msgstr "El auto parámetro significa el objeto de televisión en sí."
+
+#: ../../lectures/TWP25.rst:83
+msgid "self.ligada é um valor de self, ou seja, do objeto televisão"
+msgstr "el yo es un valor del yo, es decir, del objeto de televisión"
+
+#: ../../lectures/TWP25.rst:84
+msgid "Sempre que criamos atributos do objeto, devemos associá-los a self."
+msgstr "Siempre que creamos atributos del objeto, debemos asociarlos con uno mismo."
+
+#: ../../lectures/TWP25.rst:85
+msgid ""
+"Caso contrário, se escrevêssemos apenas ligada = False, ligada seria "
+"apenas uma variável local do método e não um atributo"
+msgstr ""
+"Caso contrário, se escrevêssemos apenas ligada = False, ligada seria "
+"apenas uma variável local do método e não um atributo"
+
+#: ../../lectures/TWP25.rst:131
+msgid ""
+"Você irá informatizar o banco Tatú, controlando o saldo das contas "
+"correntes"
+msgstr ""
+"Se informatizará al banco Tatú, controlando el saldo de las cuentas"
+"cadenas"
+
+#: ../../lectures/TWP25.rst:133
+msgid "Cada conta corrente pode ter um ou mais clientes como titular"
+msgstr "Cada cuenta corriente puede tener uno o más clientes como titular."
+
+#: ../../lectures/TWP25.rst:134
+msgid "O banco controla apenas o nome e telefone"
+msgstr "El banco solo controla el nombre y el teléfono."
+
+#: ../../lectures/TWP25.rst:135
+msgid ""
+"A conta corrente apresenta um saldo e um extrato de operações de saques e"
+" depósitos"
+msgstr ""
+"La cuenta corriente presenta un saldo y un estado de retiros y"
+"depósitos"
+
+#: ../../lectures/TWP25.rst:137
+msgid ""
+"Não há contas especiais, logo o cliente não pode sacar mais do que têm no"
+" saldo"
+msgstr ""
+"No hay cuentas especiales, por lo que el cliente no puede retirar más de lo que tiene en el"
+"balance"
+
+#: ../../lectures/TWP25.rst:142
+msgid "Arquivo tatu.py"
+msgstr "Archivo tatu.py"
+
+#: ../../lectures/TWP25.rst:168
+msgid "Arquivo teste.py, Saída de teste"
+msgstr "Archivo Test.py, salida de prueba"
+
+#: ../../lectures/TWP25.rst:188
+msgid "Extrato de operações"
+msgstr "Declaración de operaciones"
+
+#: ../../lectures/TWP25.rst:197
+msgid ""
+"Altere o método resumo da classe Conta para extrato, imprimindo agora uma"
+" lista de operações de saques e depósitos feitas"
+msgstr ""
+"Cambie el método de resumen de la clase de Cuenta para extraer, ahora imprimiendo un"
+"Listado de retiros y depósitos realizados"
+
+#: ../../lectures/TWP25.rst:199
+msgid ""
+"Altere o método __init__ para que utilize o método depósito para "
+"inicializar o saldo"
+msgstr ""
+"Cambie el método __init__ para usar el método de archivo a"
+"inicializar el balance"
+
+#: ../../lectures/TWP25.rst:204
+msgid "Arquivo tatu2.py (apenas Conta)"
+msgstr "Archivo tatu2.py (solo cuenta)"
+
+#: ../../lectures/TWP25.rst:238
+msgid "Arquivo teste2.py, Saída de teste2"
+msgstr "Archivo test2.py, salida Test2"
+
+#: ../../lectures/TWP25.rst:260
+msgid "Herança"
+msgstr "Herencia"
+
+#: ../../lectures/TWP25.rst:271
+msgid ""
+"A orientação a objetos permite modificar nossas classes, adicionando ou "
+"modificando atributos e métodos, tendo como base a classe anterior"
+msgstr ""
+"La orientación a objetos le permite modificar nuestras clases agregando o"
+"Modificación de atributos y métodos, basados ​​en la clase anterior"
+
+#: ../../lectures/TWP25.rst:273
+msgid ""
+"Vamos criar contas especiais, onde podemos sacar mais dinheiro que o "
+"saldo, até um determinado limite"
+msgstr ""
+"Vamos a crear cuentas especiales, donde podamos obtener más dinero que el"
+"saldo, hasta cierto límite"
+
+#: ../../lectures/TWP25.rst:275
+msgid "As operações depósito, extrato e resumo continuam como uma conta normal"
+msgstr "Las operaciones de depósito, extracción y resumen continúan como una cuenta normal"
+
+#: ../../lectures/TWP25.rst:282
+msgid "Adicionar ContaEspecial tatu3.py"
+msgstr "Añadir cuenta especial tatu3.py"
+
+#: ../../lectures/TWP25.rst:327
+msgid "ContaEspecial"
+msgstr "Cuenta Especial"
+
+#: ../../lectures/TWP25.rst:331
+msgid "Observe que escrevemos Conta entre parênteses"
+msgstr "Tenga en cuenta que escribimos Cuenta entre paréntesis"
+
+#: ../../lectures/TWP25.rst:332
+msgid "ContaEspecial herda os métodos e atributos de Conta"
+msgstr "La cuenta especial hereda los métodos y atributos de la cuenta."
+
+#: ../../lectures/TWP25.rst:333
+msgid "self.limite será criado apenas para classes do tipo ContaEspecial"
+msgstr "self.limite se creará solo para clases de tipo de cuenta especial"
+
+#: ../../lectures/TWP25.rst:334
+msgid ""
+"Observe que estamos substituindo completamente o método saque em "
+"ContaEspecial"
+msgstr ""
+"Tenga en cuenta que estamos reemplazando completamente el método de extracción en"
+"Cuenta Especial"
+
+#: ../../lectures/TWP25.rst:339
+msgid "Arquivo teste3.py, Saída teste 3"
+msgstr "Test3.py archivo, prueba de salida 3"
+
+#: ../../lectures/TWP25.rst:363
+msgid "Vantagens da herança"
+msgstr "Ventajas de la herencia."
+
+#: ../../lectures/TWP25.rst:367
+msgid ""
+"Modificamos muito pouco o nosso programa, mantendo a funcionalidade "
+"anterior e adicionando novos recursos"
+msgstr ""
+"Hemos modificado muy poco nuestro programa manteniendo la funcionalidad"
+"Anterior y añadiendo nuevas funcionalidades"
+
+#: ../../lectures/TWP25.rst:369
+msgid "Foi possível fazer o reuso dos métodos de Conta"
+msgstr "Se pudo reutilizar los métodos de la cuenta."
+
+#: ../../lectures/TWP25.rst:370
+msgid ""
+"Assim a definição da classe ContaEspecial foi bem menor, incluindo apenas"
+" o comportamento diferente"
+msgstr ""
+"Así que la definición de la clase SpecialCount era mucho más pequeña, incluyendo solo"
+"comportamiento diferente"
+
+#: ../../lectures/TWP25.rst:375
+msgid "Outro exemplo OOP"
+msgstr "Otro ejemplo de OOP"
+

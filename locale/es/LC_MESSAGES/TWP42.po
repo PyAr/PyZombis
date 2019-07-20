@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP42.rst:3
+msgid "Banco de Dados"
+msgstr "Banco de datos"
+
+#: ../../lectures/TWP42.rst:14
+msgid "Notas de Surfistas"
+msgstr "Notas de surfistas"
+
+#: ../../lectures/TWP42.rst:24
+msgid ""
+"A Federação de Surf possui os seguintes dados: número do surfista, nome, "
+"país, nota média, estilo, idade."
+msgstr ""
+"La Federación de Surf tiene los siguientes datos: número de surfista, nombre,"
+"País, nota media, estilo, edad"
+
+#: ../../lectures/TWP42.rst:27
+msgid "Como usar estes dados?"
+msgstr "¿Cómo utilizar estos datos?"
+
+#: ../../lectures/TWP42.rst:29
+msgid "Por exemplo, quero saber todos os surfistas com mais de 25 anos"
+msgstr "Por ejemplo, quiero conocer a todos los surfistas mayores de 25 años."
+
+#: ../../lectures/TWP42.rst:31
+msgid "Usando um Banco de Dados! No caso o sqlite3"
+msgstr "Usando una base de datos! En el caso sqlite3."
+
+#: ../../lectures/TWP42.rst:33
+msgid "Obs.: copie surfersDB.sdb para o seu diretório"
+msgstr "Nota: copie surfersDB.sdb en su directorio"
+
+#: ../../lectures/TWP42.rst:37 ../../lectures/TWP42.rst:63
+msgid "Usando sqlite3"
+msgstr "Usando sqlite3"
+
+#: ../../lectures/TWP42.rst:59
+msgid "Obs.: não salve seu programa com o nome sqlite3.py (mesmo nome da lib)"
+msgstr "Nota: no guarde su programa como sqlite3.py (mismo nombre que lib)"
+
+#: ../../lectures/TWP42.rst:74
+msgid "Noções de SQL"
+msgstr "Entendiendo SQL"
+
+#: ../../lectures/TWP42.rst:85 ../../lectures/TWP42.rst:96
+msgid "Noções de Banco de Dados"
+msgstr "Nociones de base de datos"
+
+#: ../../lectures/TWP42.rst:107
+msgid "Criando um Banco de Alunos"
+msgstr "Creación de un banco de estudiantes"
+
+#: ../../lectures/TWP42.rst:121
+msgid "Acessando o banco alunos.bd"
+msgstr "Accediendo al banco estudiantes.bd"
+
+#: ../../lectures/TWP42.rst:138
+msgid "Resultado:"
+msgstr "Resultado:"
+

@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP38.rst:3
+msgid "Revisão Geral 2"
+msgstr "Revisión general 2"
+
+#: ../../lectures/TWP38.rst:13 ../../lectures/TWP38.rst:28
+msgid "O que é um programa?"
+msgstr "¿Qué es un programa?"
+
+#: ../../lectures/TWP38.rst:17
+msgid ""
+"Um conjunto detalhado de instruções, passo a passo, dizendo o que o "
+"computador fará"
+msgstr ""
+"Un conjunto detallado de instrucciones, paso a paso, que le indica qué"
+"la computadora hará"
+
+#: ../../lectures/TWP38.rst:20
+msgid "Se mudamos o programa, o computador fará uma outra coisa diferente"
+msgstr "Si cambiamos el programa, la computadora hará algo diferente."
+
+#: ../../lectures/TWP38.rst:22
+msgid "O computador permanece o mesmo, mas o programa mudou"
+msgstr "La computadora sigue siendo la misma, pero el programa ha cambiado."
+
+#: ../../lectures/TWP38.rst:24
+msgid "Programas são executados"
+msgstr "Los programas son ejecutados"
+
+#: ../../lectures/TWP38.rst:32
+msgid "Software (programas) comandam o hardware"
+msgstr "El software (programas) impulsa el hardware."
+
+#: ../../lectures/TWP38.rst:34
+msgid "O processo de criar software chama-se programação"
+msgstr "El proceso de creación de software se denomina programación."
+
+#: ../../lectures/TWP38.rst:36
+msgid ""
+"Um algoritmo é a receita, passo a passo, que resolve um problema "
+"computacional"
+msgstr ""
+"Un algoritmo es la receta, paso a paso, que resuelve un problema"
+"computacional"
+
+#: ../../lectures/TWP38.rst:41 ../../lectures/TWP38.rst:56
+msgid "Linguagens de Programação"
+msgstr "Lenguajes de programación"
+
+#: ../../lectures/TWP38.rst:45
+msgid "Linguagens de baixo nível são as mais próximas da máquina"
+msgstr "Los lenguajes de bajo nivel son los más cercanos a la máquina"
+
+#: ../../lectures/TWP38.rst:47
+msgid "Assembler:"
+msgstr "Assembler:"
+
+#: ../../lectures/TWP38.rst:49
+msgid "Carregue o número da variável A na CPU"
+msgstr "Cargar el número de variable A en la CPU"
+
+#: ../../lectures/TWP38.rst:50
+msgid "Carregue o número da variável B na CPU"
+msgstr "Cargue el número de la variable B en la CPU"
+
+#: ../../lectures/TWP38.rst:51
+msgid "Adicione os dois números na CPU"
+msgstr "Agrega ambos números a la CPU"
+
+#: ../../lectures/TWP38.rst:52
+msgid "Armazene o resultado na variável C"
+msgstr "Almacenar el resultado en la variable C"
+
+#: ../../lectures/TWP38.rst:60
+msgid "Comando original em linguagem de alto nível: C = A + B"
+msgstr "Comando original en lenguaje de alto nivel: C = A + B"
+
+#: ../../lectures/TWP38.rst:62
+msgid ""
+"Compiladores convertem a linguagem de alto nível para a linguagem de "
+"máquina específica de um computador"
+msgstr ""
+"Los compiladores convierten el lenguaje de alto nivel a"
+"Máquina específica para una computadora"
+
+#: ../../lectures/TWP38.rst:65
+msgid ""
+"Interpretadores analisam e executam o programa instrução por instrução na"
+" linguagem de máquina"
+msgstr ""
+"Los intérpretes analizan y ejecutan el programa de instrucción por instrucción en"
+"lenguaje de máquina"
+
+#: ../../lectures/TWP38.rst:70 ../../lectures/TWP38.rst:87
+#: ../../lectures/TWP38.rst:123 ../../lectures/TWP38.rst:143
+#: ../../lectures/TWP38.rst:160 ../../lectures/TWP38.rst:182
+#: ../../lectures/TWP38.rst:201 ../../lectures/TWP38.rst:219
+#: ../../lectures/TWP38.rst:238 ../../lectures/TWP38.rst:258
+msgid "Python"
+msgstr "Python"
+
+#: ../../lectures/TWP38.rst:74
+msgid "O sinal “>>>” indica que o Python está “pronto” para receber comandos"
+msgstr "El signo >>> indica que Python está listo para recibir comandos."
+
+#: ../../lectures/TWP38.rst:91
+msgid "Normalmente queremos repetir uma série de comandos várias vezes"
+msgstr "Normalmente queremos repetir una serie de comandos varias veces."
+
+#: ../../lectures/TWP38.rst:93
+msgid "Uma forma de fazer isso é utilizar uma função"
+msgstr "Una forma de hacer esto es usar una función"
+
+#: ../../lectures/TWP38.rst:106
+msgid "Não esqueça dos parênteses ao chamar a função!"
+msgstr "¡No olvides los paréntesis al llamar a la función!"
+
+#: ../../lectures/TWP38.rst:108
+msgid ""
+"Se você esquecer dos parênteses, o python devolverá o endereço na memória"
+" onde está o código da função"
+msgstr ""
+"Si olvida los paréntesis, python devolverá la dirección en la memoria"
+"donde esta el codigo de funcion"
+
+#: ../../lectures/TWP38.rst:127
+msgid "Podemos colocar parâmetros numa função"
+msgstr "Podemos poner parámetros en una función."
+
+#: ../../lectures/TWP38.rst:147
+msgid "As funções deixam de existir assim que você sair do interpretador Python"
+msgstr "Las funciones dejan de existir tan pronto como sale del intérprete de Python."
+
+#: ../../lectures/TWP38.rst:150
+msgid ""
+"Por isso, os programas são normalmente compostos de módulos, que são "
+"arquivos salvos em disco"
+msgstr ""
+"Por lo tanto, los programas suelen estar formados por módulos, que son"
+"archivos guardados en el disco"
+
+#: ../../lectures/TWP38.rst:153
+msgid "Um módulo é um arquivo texto que contêm um programa python"
+msgstr "Un módulo es un archivo de texto que contiene un programa python."
+
+#: ../../lectures/TWP38.rst:155
+msgid ""
+"Você pode editar os módulos em uma ambiente de desenvolvimento, que "
+"realça palavras reservadas, faz identação automática, etc..."
+msgstr ""
+"Puede editar los módulos en un entorno de desarrollo, que"
+"resaltar palabras reservadas, auto-sangría, etc ..."
+
+#: ../../lectures/TWP38.rst:164
+msgid "Salvamos um programa chamado caos.py"
+msgstr "Guardamos un programa llamado caos.py."
+
+#: ../../lectures/TWP38.rst:166
+msgid "Não esqueça a extenção .py"
+msgstr "No olvides la extensión .py"
+
+#: ../../lectures/TWP38.rst:168
+msgid "Podemos rodar o programa com a tecla F5"
+msgstr "Puedes ejecutar el programa con la tecla F5."
+
+#: ../../lectures/TWP38.rst:186
+msgid "Linhas que começam com “#” são chamadas de comentários"
+msgstr "Las líneas que comienzan con "#" se llaman comentarios"
+
+#: ../../lectures/TWP38.rst:188
+msgid "Servem para serem lidas por humanos e são ignoradas pelo Python"
+msgstr "Están destinados a ser leídos por humanos y Python los ignora."
+
+#: ../../lectures/TWP38.rst:190
+msgid "O Python pula todo o texto do “#” até o fim da linha"
+msgstr "Python omite todo el texto desde "#" hasta el final de la línea."
+
+#: ../../lectures/TWP38.rst:204
+msgid "x é um exemplo de variável"
+msgstr "x es un ejemplo de una variable"
+
+#: ../../lectures/TWP38.rst:206
+msgid "Em x atribuiremos um valor que poderá ser referenciado depois"
+msgstr "En x le asignaremos un valor que puede ser referenciado más adelante."
+
+#: ../../lectures/TWP38.rst:208
+msgid "A mensagem entre aspas será apresentada e a resposta armazenada em x"
+msgstr "El mensaje citado se mostrará y la respuesta se almacenará en x"
+
+#: ../../lectures/TWP38.rst:223
+msgid "Existem comandos de loop como o for"
+msgstr "Hay comandos de bucle como para"
+
+#: ../../lectures/TWP38.rst:225
+msgid "Um loop serve para repetir várias vezes um bloco de comandos"
+msgstr "Un bucle se usa para repetir varias veces un bloque de comandos."
+
+#: ../../lectures/TWP38.rst:227
+msgid "Neste exemplo o bloco seguinte irá ser repetido 10 vezes"
+msgstr "En este ejemplo el siguiente bloque se repetirá 10 veces."
+
+#: ../../lectures/TWP38.rst:242
+msgid "Chamamos de identação os espaços no início da linha"
+msgstr "Llamamos a los espacios al comienzo de la línea de sangría."
+
+#: ../../lectures/TWP38.rst:244
+msgid "No Python a identação delimita o bloco que será executado"
+msgstr "En Python, la sangría delimita el bloque que se ejecutará"
+
+#: ../../lectures/TWP38.rst:246
+msgid "O cálculo 3.9*x*(1-x) será executado na CPU e atribuído na variável x"
+msgstr "El cálculo 3.9 * x * (1-x) se ejecutará en la CPU y se asignará en la variable x"
+
+#: ../../lectures/TWP38.rst:262
+msgid ""
+"A função caos devolve valores bem diferentes, mesmo quando a entrada é "
+"parecida"
+msgstr ""
+"La función caos devuelve valores bastante diferentes, incluso cuando la entrada es"
+"similar"
+
+#: ../../lectures/TWP38.rst:268
+msgid "Exercício"
+msgstr "Ejercicio"
+
+#: ../../lectures/TWP38.rst:272
+msgid ""
+"Altere o programa anterior de forma que leia um valor inteiro n e execute"
+" o for n vezes no lugar do valor fixo 10"
+msgstr ""
+"Cambie el programa anterior para que lea un valor entero n y ejecute"
+"o es n veces en lugar de un valor fijo de 10"
+
+#: ../../lectures/TWP38.rst:277
+msgid "Resumo"
+msgstr "Resumen"
+
+#: ../../lectures/TWP38.rst:281
+msgid ""
+"A descrição de uma seqüência de passos para resolver um problema "
+"computacional é chamada de algoritmo"
+msgstr ""
+"Describiendo una secuencia de pasos para resolver un problema"
+"computacional se llama algoritmo"
+
+#: ../../lectures/TWP38.rst:284
+msgid ""
+"Algoritmos são programas (software) que determinam o que o computador "
+"(hardware) fará"
+msgstr ""
+"Los algoritmos son programas (software) que determinan lo que la computadora"
+"(hardware) hará"
+
+#: ../../lectures/TWP38.rst:287
+msgid "O processo de criar software é chamado de programação"
+msgstr "El proceso de creación de software se denomina programación."
+
+#: ../../lectures/TWP38.rst:291
+msgid "Recordação"
+msgstr "Recuerdo"
+
+#: ../../lectures/TWP38.rst:295
+msgid "Linguagens de programação possuem uma sintaxe formal"
+msgstr "Los lenguajes de programación tienen una sintaxis formal."
+
+#: ../../lectures/TWP38.rst:297
+msgid "Computadores entendem apenas a linguagem de máquina"
+msgstr "Las computadoras solo entienden el lenguaje de la máquina"
+
+#: ../../lectures/TWP38.rst:299
+msgid "Python é uma linguagem interpretada de alto nível"
+msgstr "Python es un lenguaje interpretado de alto nivel."
+
+#: ../../lectures/TWP38.rst:301
+msgid ""
+"O interpretador Python converte os comandos instrução por instrução para "
+"a linguagem de máquina"
+msgstr ""
+"El intérprete de Python convierte los comandos de instrucción por instrucción a"
+"el lenguaje de la máquina"

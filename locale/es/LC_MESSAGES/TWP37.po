@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP37.rst:3
+msgid "Revisão Listas"
+msgstr "Listas de Revisión"
+
+#: ../../lectures/TWP37.rst:23 ../../lectures/TWP37.rst:34
+#: ../../lectures/TWP37.rst:45
+msgid "Campeonato de Surf em Codeville"
+msgstr "Campeonato de surf en Codeville"
+
+#: ../../lectures/TWP37.rst:56
+msgid "Encontre a pontuação mais alta"
+msgstr "Encuentra la puntuación más alta"
+
+#: ../../lectures/TWP37.rst:60
+msgid "As pontuações estão no arquivo surf.txt"
+msgstr ""
+
+#: ../../lectures/TWP37.rst:61
+msgid "Selecione a pontuação mais alta para saber o vencedor!"
+msgstr "Las puntuaciones están en el archivo surf.txt."
+
+#: ../../lectures/TWP37.rst:72
+msgid "Lendo o arquivo surf.txt"
+msgstr "Leyendo el archivo surf.txt"
+
+#: ../../lectures/TWP37.rst:104
+msgid "Fragmentador for"
+msgstr "Trituradora para"
+
+#: ../../lectures/TWP37.rst:115
+msgid "Descubra quem obteve a maior nota"
+msgstr "Averigua quién obtuvo el grado más alto."
+
+#: ../../lectures/TWP37.rst:126 ../../lectures/TWP37.rst:138
+msgid "O método split corta a string"
+msgstr "El método de división corta la cadena"
+
+#: ../../lectures/TWP37.rst:149
+msgid "Encontrando o 1º lugar"
+msgstr "Encontrando el 1er lugar"
+
+#: ../../lectures/TWP37.rst:165
+msgid "Sai o placar..."
+msgstr "Obtener la puntuación ..."
+
+#: ../../lectures/TWP37.rst:176
+msgid "Controlar 3 pontuações é complicado"
+msgstr "El seguimiento de 3 puntuaciones es complicado"
+
+#: ../../lectures/TWP37.rst:204
+msgid "Ordenar a lista seria melhor"
+msgstr "Ordenar la lista sería mejor"
+
+#: ../../lectures/TWP37.rst:215
+msgid "Ordenação é mais fácil na memória"
+msgstr "La clasificación es más fácil en la memoria"
+
+#: ../../lectures/TWP37.rst:219
+msgid ""
+"Dados em disco são persistentes: se você puxar o fio da tomada, o "
+"computador não esquecerá as informações gravadas no disco"
+msgstr ""
+"Los datos del disco son persistentes: si tira del cable desde el zócalo, el"
+"La computadora no olvidará la información escrita en el disco"
+
+#: ../../lectures/TWP37.rst:222
+msgid ""
+"Dados na memória são muito mais rápidos, porém não são persistentes: os "
+"dados na memória desaparecem quando seu programa sai ou quando o "
+"computador é desligado"
+msgstr ""
+"Los datos en la memoria son mucho más rápidos, pero no persistentes: el"
+"Los datos en la memoria desaparecen cuando su programa sale o cuando"
+"la computadora está apagada"
+
+#: ../../lectures/TWP37.rst:226
+msgid "Design Tradeoff: persistência x rapidez"
+msgstr "Diseño de tradeoff: persistencia x velocidad."
+
+#: ../../lectures/TWP37.rst:230
+msgid "Primeiro: ler os dados para a memória"
+msgstr "Primero: leer datos a la memoria"
+
+#: ../../lectures/TWP37.rst:241
+msgid "Uai, vamô usar um trem de dados"
+msgstr "Wow, voy a utilizar un tren de datos."
+
+#: ../../lectures/TWP37.rst:243
+msgid "Array, lista, vetor são nomes comuns para um lote inteiro de dados"
+msgstr "Array, list, vector son nombres comunes para un lote completo de datos"
+
+#: ../../lectures/TWP37.rst:245
+msgid "Preciso de apenas uma única variável para todo o trem de dados"
+msgstr "Necesito una sola variable para todo el tren de datos"
+
+#: ../../lectures/TWP37.rst:256
+msgid "Voltando ao surf..."
+msgstr "Volviendo al surf ..."
+
+#: ../../lectures/TWP37.rst:260
+msgid "Podemos criar uma lista de notas"
+msgstr "Podemos crear una lista de notas."
+
+#: ../../lectures/TWP37.rst:261
+msgid "Para inserir cada nova nota use append"
+msgstr "Para insertar cada nueva nota use adjuntar"
+
+#: ../../lectures/TWP37.rst:262
+msgid "Os melhores colocados serão notas[0], notas[1] e notas[2]"
+msgstr "Los mejores puestos serán los grados [0], los grados [1] y los grados [2]"
+
+#: ../../lectures/TWP37.rst:266
+msgid "Nova classificação"
+msgstr "Nueva clasificacion"
+
+#: ../../lectures/TWP37.rst:296
+msgid "Classificar em ordem descrescente"
+msgstr "Ordenar en orden descendente"
+
+#: ../../lectures/TWP37.rst:307
+msgid "Métodos sort e reverse"
+msgstr "Clasificar y revertir métodos."
+
+#: ../../lectures/TWP37.rst:311
+msgid "O método sort ordena os dados"
+msgstr "El método de clasificación ordena los datos"
+
+#: ../../lectures/TWP37.rst:312
+msgid "Utilizo reverse para que fiquem em ordem descrescente"
+msgstr "Uso el reverso para que estén en orden descendente."
+
+#: ../../lectures/TWP37.rst:313
+msgid "O nerd pode utilizar notas.sort(reverse = True)"
+msgstr "El nerd puede usar notes.sort (reverse = True)"
+
+#: ../../lectures/TWP37.rst:317
+msgid "Finalmente a classificação correta"
+msgstr "Finalmente la calificación correcta."
+

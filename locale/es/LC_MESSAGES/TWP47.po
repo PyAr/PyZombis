@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP47.rst:3
+msgid "Módulos"
+msgstr "Módulos"
+
+#: ../../lectures/TWP47.rst:21
+msgid "Programação Modular"
+msgstr "Programación modular"
+
+#: ../../lectures/TWP47.rst:32
+msgid "Arquivo transações.txt"
+msgstr "Transacción archivo.txt"
+
+#: ../../lectures/TWP47.rst:43 ../../lectures/TWP47.rst:82
+#: ../../lectures/TWP47.rst:93 ../../lectures/TWP47.rst:111
+#: ../../lectures/TWP47.rst:122 ../../lectures/TWP47.rst:134
+msgid "Venda Salgados"
+msgstr "Venta de salados"
+
+#: ../../lectures/TWP47.rst:97
+msgid ""
+"Problemas: o banco rejeitou todo o arquivo de transações do período da "
+"manhã!"
+msgstr ""
+"Problemas: el banco rechazó el archivo de transacciones completo por un período de"
+"mañana!"
+
+#: ../../lectures/TWP47.rst:99
+msgid "Todos os cartões estavam inválidos"
+msgstr "Todas las cartas eran inválidas"
+
+#: ../../lectures/TWP47.rst:100
+msgid "Os preços estavam altos demais: rosquinha vendida por R$ 50.791,42!"
+msgstr "Los precios eran demasiado altos: ¡las donas se vendieron por $ 50,791.42!"
+
+#: ../../lectures/TWP47.rst:101
+msgid "Nos outros períodos não houve problema. O que será que aconteceu?"
+msgstr "En los otros periodos no hubo problema. Que paso"
+
+#: ../../lectures/TWP47.rst:124
+msgid "O banco mudou a ordem dos dados! [Preço / Cartão / Item]"
+msgstr "El banco ha cambiado el orden de los datos! [Precio / Tarjeta / Artículo]"
+
+#: ../../lectures/TWP47.rst:145
+msgid "Venda Salgados Tarde/Noite"
+msgstr "Venta salada tarde / noche"
+
+#: ../../lectures/TWP47.rst:175
+msgid "Formatação corrigida por aluno!"
+msgstr "Formato corregido por el alumno!"
+
+#: ../../lectures/TWP47.rst:179
+msgid "Venda Salgados Manhã"
+msgstr "Venta Salgados Mañana"
+
+#: ../../lectures/TWP47.rst:207
+msgid "Produtos alterados, mas esqueceram a formatação!"
+msgstr "Los productos cambiaron, pero se olvidó el formato!"
+
+#: ../../lectures/TWP47.rst:212 ../../lectures/TWP47.rst:223
+msgid "Módulo banco.py"
+msgstr "Módulo banco.py"
+
+#: ../../lectures/TWP47.rst:235
+msgid "Obs.: deixar no mesmo diretório dos programas manhã e tarde/noite"
+msgstr "Nota: dejar en el mismo directorio que los programas de mañana y tarde / noche."
+
+#: ../../lectures/TWP47.rst:238
+msgid "Novo programa da manhã"
+msgstr "Nuevo show matutino"
+
+#: ../../lectures/TWP47.rst:266
+msgid "Novo programa tarde/noite"
+msgstr "Nuevo programa de tarde / noche"
+
+#: ../../lectures/TWP47.rst:293 ../../lectures/TWP47.rst:318
+#: ../../lectures/TWP47.rst:347
+msgid "Descontos"
+msgstr "Descuentos"
+
+#: ../../lectures/TWP47.rst:305
+#, python-format
+msgid "Agora sob nova direção os salgados na FATEC terão 10% de desconto!"
+msgstr "¡Ahora bajo una nueva dirección, el salado en FATEC tendrá un 10% de descuento!"
+
+#: ../../lectures/TWP47.rst:306
+msgid "Para isso será criado um módulo fatec.py"
+msgstr "Esto creará un módulo fatec.py"
+
+#: ../../lectures/TWP47.rst:307
+msgid "Inicialmente o desconto será de 10% para todos os salgados"
+msgstr "Inicialmente el descuento será del 10% para todos los salados."
+
+#: ../../lectures/TWP47.rst:351
+msgid ""
+"Teremos um desconto adicional de 50% para pastéis por conta da colônia "
+"japonesa"
+msgstr ""
+"Tendremos un descuento adicional del 50% para pasteles a cuenta de la colonia"
+"japonés"
+
+#: ../../lectures/TWP47.rst:353
+msgid "Novo módulo japa.py"
+msgstr "Nuevo módulo japa.py"
+
+#: ../../lectures/TWP47.rst:364
+msgid "Os nomes são iguais! E agora?"
+msgstr "¡Los nombres son los mismos! ¿Y ahora?"
+
+#: ../../lectures/TWP47.rst:374 ../../lectures/TWP47.rst:407
+msgid "Nomes Completos"
+msgstr "Nombres completos"
+
+#: ../../lectures/TWP47.rst:376
+msgid "A solução é adotar os nomes completos"
+msgstr "La solución es adoptar los nombres completos."
+
+#: ../../lectures/TWP47.rst:409
+msgid "Resultado -"
+msgstr "Resultado -"
+
+#: ../../lectures/TWP47.rst:426
+msgid "dis Module"
+msgstr "módulo dis"
+

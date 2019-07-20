@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP56.rst:3
+msgid "DJ Mix 1"
+msgstr "DJ Mix 1"
+
+#: ../../lectures/TWP56.rst:20 ../../lectures/TWP56.rst:31
+#: ../../lectures/TWP56.rst:74 ../../lectures/TWP56.rst:110
+#: ../../lectures/TWP56.rst:153 ../../lectures/TWP56.rst:167
+msgid "DJ Mix"
+msgstr "DJ Mix"
+
+#: ../../lectures/TWP56.rst:63
+msgid "Mas a música não termina..."
+msgstr "Pero la canción no termina ..."
+
+#: ../../lectures/TWP56.rst:156
+msgid "Ficou legal, agora vamos colocar um volume!"
+msgstr "Está bien, ahora vamos a poner un volumen!"
+
+#: ../../lectures/TWP56.rst:215
+msgid "Recordação"
+msgstr "Recuerdo"
+
+#: ../../lectures/TWP56.rst:219
+msgid "app.destroy()"
+msgstr "app.destroy()"
+
+#: ../../lectures/TWP56.rst:220
+msgid "DoubleVar()"
+msgstr "DoubleVar()"
+
+#: ../../lectures/TWP56.rst:221
+msgid "Checkbutton()"
+msgstr "Checkbutton()"
+
+#: ../../lectures/TWP56.rst:222
+msgid "Scale()"
+msgstr "Scale()"
+

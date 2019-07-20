@@ -1,0 +1,421 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP40.rst:3
+msgid "Revisão Geral 3"
+msgstr "Revisión general 3"
+
+#: ../../lectures/TWP40.rst:14
+msgid "O processo de desenvolvimento de software"
+msgstr "El proceso de desarrollo de software"
+
+#: ../../lectures/TWP40.rst:18
+msgid "Executar programas feitos por outros é uma tarefa relativamente simples"
+msgstr "Ejecutar programas hechos por otros es una tarea relativamente simple."
+
+#: ../../lectures/TWP40.rst:21
+msgid "O difícil é começar a criar seus próprios programas"
+msgstr "La parte difícil es comenzar a crear tus propios programas."
+
+#: ../../lectures/TWP40.rst:23
+msgid "Computadores são muito rigorosos e há muitos detalhes"
+msgstr "Las computadoras son muy estrictas y hay muchos detalles."
+
+#: ../../lectures/TWP40.rst:25
+msgid "Por isso é necessário ser muito sistemático"
+msgstr "Por eso es necesario ser muy sistemático."
+
+#: ../../lectures/TWP40.rst:29 ../../lectures/TWP40.rst:48
+msgid "Etapas no processo de desenvolvimento de software"
+msgstr "Pasos en el proceso de desarrollo de software."
+
+#: ../../lectures/TWP40.rst:33
+msgid "Analisar o problema:"
+msgstr "Analiza el problema:"
+
+#: ../../lectures/TWP40.rst:35
+msgid "Entender exatamente qual é o problema a ser resolvido"
+msgstr "Entender exactamente qué problema resolver"
+
+#: ../../lectures/TWP40.rst:36
+msgid "Problema bem definido, meio problema resolvido"
+msgstr "Problema bien definido, medio problema resuelto"
+
+#: ../../lectures/TWP40.rst:38
+msgid "Especificar o problema:"
+msgstr "Especifique el problema:"
+
+#: ../../lectures/TWP40.rst:40
+msgid "Descrever exatamente o que o seu programa fará"
+msgstr "Describe exactamente lo que hará tu programa"
+
+#: ../../lectures/TWP40.rst:41
+msgid "Nesta etapa não me devo preocupar em como irei fazer meu programa,"
+msgstr "En esta etapa no debería preocuparme por cómo haré mi programa,"
+
+#: ../../lectures/TWP40.rst:42
+msgid "mas em decidir exatamente o que ele fará"
+msgstr "pero al decidir exactamente lo que hará"
+
+#: ../../lectures/TWP40.rst:43
+msgid "Quais são as entradas e saídas do programa?"
+msgstr "¿Cuáles son las entradas y salidas del programa?"
+
+#: ../../lectures/TWP40.rst:52
+msgid "Projetar o programa:"
+msgstr "Diseña el programa:"
+
+#: ../../lectures/TWP40.rst:54
+msgid "Formular a estrutura geral do programa"
+msgstr "Formular la estructura general del programa."
+
+#: ../../lectures/TWP40.rst:55
+msgid "Podemos usar pseudo-código nesta etapa"
+msgstr "Podemos usar pseudocódigo en este paso"
+
+#: ../../lectures/TWP40.rst:57
+msgid "Implementar o programa:"
+msgstr "Implementar el programa:"
+
+#: ../../lectures/TWP40.rst:59
+msgid "Elaborar alguns testes para validar o seu programa"
+msgstr "Desarrolla algunas pruebas para validar tu programa."
+
+#: ../../lectures/TWP40.rst:60
+msgid "Traduzir o projeto em alguma linguagem"
+msgstr "Traducir el proyecto a algún idioma."
+
+#: ../../lectures/TWP40.rst:61
+msgid "Neste curso utilizaremos Python"
+msgstr "En este curso utilizaremos Python."
+
+#: ../../lectures/TWP40.rst:66 ../../lectures/TWP40.rst:82
+msgid "Exemplo: conversor de temperatura de Fahrenheit para Celsius"
+msgstr "Ejemplo: convertidor de temperatura Fahrenheit a Celsius"
+
+#: ../../lectures/TWP40.rst:70
+msgid ""
+"Análise: dada uma temperatura em graus Fahrenheit obter a conversão para "
+"Celsius"
+msgstr ""
+"Análisis: dada una temperatura en grados Fahrenheit, obtener la conversión a"
+"Celsius"
+
+#: ../../lectures/TWP40.rst:73
+msgid "Especificação do que o programa fará:"
+msgstr "Especificación de lo que hará el programa:"
+
+#: ../../lectures/TWP40.rst:75
+msgid "Entrada: temperatura em Fahrenheit"
+msgstr "Check in: temperatura Fahrenheit"
+
+#: ../../lectures/TWP40.rst:76
+msgid "Saída: temperatura em Celsius"
+msgstr "Salida: temperatura Celsius"
+
+#: ../../lectures/TWP40.rst:77
+msgid "Saída: 5*(F-32)/9"
+msgstr "Salida: 5 * (F-32) / 9"
+
+#: ../../lectures/TWP40.rst:86
+msgid "Projeto do como o programa fará:"
+msgstr "Proyecto de cómo se realizará el programa:"
+
+#: ../../lectures/TWP40.rst:88
+msgid "Leia o valor da temperatura em Fahrenheit"
+msgstr "Leer el valor de la temperatura en Fahrenheit"
+
+#: ../../lectures/TWP40.rst:89
+msgid "Converta o valor usando a fórmula 5*(F-32)/9"
+msgstr "Convierta el valor usando la fórmula 5 * (F-32) / 9"
+
+#: ../../lectures/TWP40.rst:90
+msgid "Imprima o valor convertido"
+msgstr "Imprima el valor convertido"
+
+#: ../../lectures/TWP40.rst:92 ../../lectures/TWP40.rst:298
+msgid "Implementação:"
+msgstr "Implementación:"
+
+#: ../../lectures/TWP40.rst:94
+msgid "Testes: 32 f = 0 c e 100 f = 37.8 c"
+msgstr "Pruebas: 32 f = 0 c y 100 f = 37.8 c"
+
+#: ../../lectures/TWP40.rst:107
+msgid "Uso de variáveis com valores definidos"
+msgstr "Uso de variables con valores definidos"
+
+#: ../../lectures/TWP40.rst:111
+msgid "Variáveis com valores indefinidos"
+msgstr "Variables con valores indefinidos."
+
+#: ../../lectures/TWP40.rst:121
+msgid "Caracter de final de linha"
+msgstr "Carácter de fin de línea"
+
+#: ../../lectures/TWP40.rst:135 ../../lectures/TWP40.rst:153
+msgid "Atribuição de variáveis"
+msgstr "Asignación de variables"
+
+#: ../../lectures/TWP40.rst:139
+msgid "<variável> = <expressão>"
+msgstr "<variable> = <expresión>"
+
+#: ../../lectures/TWP40.rst:141
+msgid ""
+"A <expressão> calculada no processador modifica a memória referenciada "
+"por <variável>"
+msgstr ""
+"Procesador calculado <expresión> modifica la memoria de referencia"
+"por <variable>"
+
+#: ../../lectures/TWP40.rst:169
+msgid "Leitura e atribuição"
+msgstr "Lectura y asignacion"
+
+#: ../../lectures/TWP40.rst:187 ../../lectures/TWP40.rst:206
+#: ../../lectures/TWP40.rst:217
+msgid "Atribuição múltipla"
+msgstr "Asignación múltiple"
+
+#: ../../lectures/TWP40.rst:227
+msgid "for <var> in <seqüência>"
+msgstr "for <var> in <consecuencia>"
+
+#: ../../lectures/TWP40.rst:241 ../../lectures/TWP40.rst:250
+#: ../../lectures/TWP40.rst:264 ../../lectures/TWP40.rst:277
+#: ../../lectures/TWP40.rst:294
+msgid "Exercício"
+msgstr "Ejercicio"
+
+#: ../../lectures/TWP40.rst:245
+msgid ""
+"Nós queremos desenvolver um programa que determine o valor futuro de um "
+"investimento, dados o valor inicial e a taxa de juros"
+msgstr ""
+"Queremos desarrollar un programa que determine el valor futuro de un"
+"Inversión, dado valor inicial y tasa de interés"
+
+#: ../../lectures/TWP40.rst:254
+msgid "Análise:"
+msgstr "Análisis:"
+
+#: ../../lectures/TWP40.rst:256
+msgid "Dinheiro inicial rende uma taxa de juros anual"
+msgstr "El efectivo inicial produce una tasa de interés anual."
+
+#: ../../lectures/TWP40.rst:257
+msgid "Quanto ele irá valer em 10 anos?"
+msgstr "¿Cuánto valdrá en 10 años?"
+
+#: ../../lectures/TWP40.rst:258
+msgid "Entrada: valor inicial, taxa de juros"
+msgstr "Entrada: valor inicial, tasa de interés"
+
+#: ../../lectures/TWP40.rst:259
+msgid "Saída: valor em 10 anos"
+msgstr "Salida: valor en 10 años."
+
+#: ../../lectures/TWP40.rst:268
+msgid "Especificação:"
+msgstr "Especificación"
+
+#: ../../lectures/TWP40.rst:270
+msgid "Usuário entra com o valor inicial investido"
+msgstr "El usuario ingresa el monto inicial invertido"
+
+#: ../../lectures/TWP40.rst:271
+msgid "Usuário entra com a taxa de juros anual"
+msgstr "El usuario ingresa con la tasa de interés anual."
+
+#: ../../lectures/TWP40.rst:272
+msgid "Fórmula de matemática financeira valor*(1+juros)"
+msgstr "Fórmula financiera de Matemáticas de valor * (1 + Interés)"
+
+#: ../../lectures/TWP40.rst:281
+msgid "Projeto:"
+msgstr "Proyecto:"
+
+#: ../../lectures/TWP40.rst:283
+msgid "Entre com o valor do investimento inicial"
+msgstr "Ingrese el valor de inversión inicial"
+
+#: ../../lectures/TWP40.rst:284
+msgid "Entre com a taxa de juros"
+msgstr "Introduce la tasa de interés"
+
+#: ../../lectures/TWP40.rst:285
+msgid "Repita 10 vezes:"
+msgstr "Repita 10 veces:"
+
+#: ../../lectures/TWP40.rst:287
+msgid "valor inicial = valor inicial * (1 + taxa de juros)"
+msgstr "valor inicial = valor inicial * (1 + tasa de interés)"
+
+#: ../../lectures/TWP40.rst:289
+msgid "–Imprima o valor atualizado"
+msgstr "-Presione el valor actualizado."
+
+#: ../../lectures/TWP40.rst:300
+msgid "–Valores de teste:"
+msgstr "–Valores de prueba:"
+
+#: ../../lectures/TWP40.rst:302
+#, python-format
+msgid "1000 reais e 3% de juros"
+msgstr "1000 reales y 3% de interes"
+
+#: ../../lectures/TWP40.rst:303
+#, python-format
+msgid "1000 reais e 10% de juros"
+msgstr "1000 reales y 10% de interés."
+
+#: ../../lectures/TWP40.rst:320
+msgid "Perguntas"
+msgstr "Inicio"
+
+#: ../../lectures/TWP40.rst:323
+msgid ""
+"Por que definir alguns testes antes da implementação é uma boa prática de"
+" programação?"
+msgstr ""
+"Por qué establecer algunas pruebas antes de la implementación es una buena práctica"
+"programación?"
+
+#: ../../lectures/TWP40.rst:326
+msgid "Qual é a vantagem de escrever um pseudo-código na etapa de projeto?"
+msgstr "¿Cuál es el beneficio de escribir un pseudo código en la etapa de diseño?"
+
+#: ../../lectures/TWP40.rst:330
+msgid "Números básicos"
+msgstr "Números basicos"
+
+#: ../../lectures/TWP40.rst:346
+msgid "Tabela de operadores"
+msgstr "Mesa de operadores"
+
+#: ../../lectures/TWP40.rst:348
+msgid "**Tabela de operadores**"
+msgstr "**Mesa de operadores**"
+
+#: ../../lectures/TWP40.rst:352
+msgid "Operador"
+msgstr "Operador"
+
+#: ../../lectures/TWP40.rst:352
+msgid "Operação"
+msgstr "Operación"
+
+#: ../../lectures/TWP40.rst:354
+msgid "\\*"
+msgstr "\\*"
+
+#: ../../lectures/TWP40.rst:354
+msgid "Multiplicação"
+msgstr "Multiplicación"
+
+#: ../../lectures/TWP40.rst:355
+msgid "/"
+msgstr "/"
+
+#: ../../lectures/TWP40.rst:355
+msgid "Divisão"
+msgstr "División"
+
+#: ../../lectures/TWP40.rst:356
+msgid "\\*\\*"
+msgstr "\\*\\*"
+
+#: ../../lectures/TWP40.rst:356
+msgid "Exponenciação"
+msgstr "Exposiciónción"
+
+#: ../../lectures/TWP40.rst:357
+msgid "abs()"
+msgstr "abs()"
+
+#: ../../lectures/TWP40.rst:357
+msgid "Valor absoluto"
+msgstr "Valor absoluto"
+
+#: ../../lectures/TWP40.rst:358
+msgid "%"
+msgstr "%"
+
+#: ../../lectures/TWP40.rst:358
+msgid "Resto da divisão"
+msgstr "Resto de la división"
+
+#: ../../lectures/TWP40.rst:359
+msgid "//"
+msgstr "//"
+
+#: ../../lectures/TWP40.rst:359
+msgid "Divisão inteira"
+msgstr "División entera"
+
+#: ../../lectures/TWP40.rst:360
+msgid "\\-"
+msgstr "\\-"
+
+#: ../../lectures/TWP40.rst:360
+msgid "Subtração"
+msgstr "Resta"
+
+#: ../../lectures/TWP40.rst:361
+msgid "\\+"
+msgstr "\\+"
+
+#: ../../lectures/TWP40.rst:361
+msgid "Adição"
+msgstr "Añadiendo"
+
+#: ../../lectures/TWP40.rst:367
+msgid "Operadores Numéricos"
+msgstr "Operadores Numéricos"
+
+#: ../../lectures/TWP40.rst:382
+msgid "Divisão inteira em linguagens antigas"
+msgstr "Toda la división en lenguas antiguas."
+
+#: ../../lectures/TWP40.rst:386
+msgid ""
+"As linguagens mais antigas geram um resultado inteiro na divisão de "
+"inteiros!"
+msgstr ""
+"Los lenguajes más antiguos generan un resultado entero en la división de"
+"¡Todo!"
+
+#: ../../lectures/TWP40.rst:389
+msgid "10 / 3 será igual a 3"
+msgstr "10/3 será igual a 3"
+
+#: ../../lectures/TWP40.rst:391
+msgid ""
+"No cálculo de fahrenheit para celsius terei que modificar um pouco meu "
+"programa se usar C ou Java"
+msgstr ""
+"Cuando calculo fahrenheit para centígrados tendré que modificar un poco mi"
+"Programa si usar C o Java"
+
+#: ../../lectures/TWP40.rst:396
+msgid "Conversão de graus em C"
+msgstr "Grados a la conversión de C"
+

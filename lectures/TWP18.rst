@@ -6,10 +6,15 @@ Strings
 .. image:: img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
+   :align: center
    :alt: 
 
 
-<número>
+.. youtube:: t5sE9ruRHHM
+      :height: 315
+      :width: 560
+      :align: center
+
 
 Aspas de vários tipos
 =====================
@@ -21,10 +26,22 @@ Aspas de vários tipos
 
 
 
-.. image:: img/TWP18_001.png
-   :height: 10.886cm
-   :width: 13.469cm
-   :alt: 
+.. codelens:: Example5_1
+         
+        x = "abacate"
+        print(x)
+        y = "MacDonald's"
+        print(y)
+        form = '''
+        <html>
+               <head>
+                  <title> Teste </title>
+               </head>
+               <body>
+                  <p>Testando</p>
+               </body>
+         <html>'''
+
 
 
 Fatiamento
@@ -35,10 +52,14 @@ Fatiamento
 + Fatia do primeiro índice até o anterior do segundo
 
 
-.. image:: img/TWP05_032.png
-   :height: 9.577cm
-   :width: 10.027cm
-   :alt: 
+.. codelens:: Example5_2
+         
+        x = "0123456789"
+        print(x[0:2])
+        print(x[1:2])
+        print(x[2:4])
+        print(x[0:5])
+        print(x[1:8])
 
 
 Fatiamento
@@ -50,10 +71,15 @@ Fatiamento
   também podemos ter índices negativos: -1 último, -2 penúltimo
 
 
-.. image:: img/TWP05_033.png
-   :height: 8.704cm
-   :width: 9.021cm
-   :alt: 
+.. codelens:: Example5_3
+         
+        x = "0123456789"
+        print(x[:2])
+        print(x[4:])
+        print(x[4:-1])
+        print(x[-4:-1])
+        print(x[:])
+
 
 
 Incremento no fatiamento
@@ -65,11 +91,11 @@ Incremento no fatiamento
 
 
 
-
-.. image:: img/TWP18_002.png
-   :height: 4.418cm
-   :width: 16.509cm
-   :alt: 
+.. codelens:: Example5_4
+         
+        texto = "batatinha quando nasce"
+        print(texto[::2])
+        print(texto[::-1])
 
 
 Incremento no fatiamento
@@ -79,21 +105,41 @@ Incremento no fatiamento
 
 + Verifique se uma palavra é palíndrome
 
+.. activecode:: Example5_5
+   :nocodelens:
+   :stdin:
 
-.. image:: img/TWP18_003.png
-   :height: 4.444cm
-   :width: 19.155cm
-   :alt: 
+   palavra  =input('Palavra: ')
+   if palavra == palavra[::-1]:
+    print('%s é palíndrome' %palavra)
+   else:
+     print('%s não é palíndrome' %palavra)
+
+
+
+.. youtube:: TQkvGiwXhdQ
+      :height: 315
+      :width: 560
+      :align: center
 
 
 Strings são imutáveis
 =====================
 
 
-.. image:: img/TWP18_004.png
-   :height: 6.058cm
-   :width: 18.837cm
-   :alt: 
+.. activecode:: Example5_6
+   :nocodelens:
+   :stdin:
+
+   texto = "Alô Mundo"
+   texto[0] = '@'
+
+
+
+.. youtube:: __OGe-uUBmg
+      :height: 315
+      :width: 560
+      :align: center
 
 
 Posso criar novas strings
@@ -104,10 +150,14 @@ Posso criar novas strings
 + Usando concatenação resolvemos esse problema
 
 
-.. image:: img/TWP18_005.png
-   :height: 2.539cm
-   :width: 12.302cm
-   :alt: 
+.. activecode:: Example5_7
+   :nocodelens:
+   :stdin:
+
+   texto = "Alô Mundo"
+   texto = '@' + texto[1:]
+   print(texto)
+
 
 
 Concatenação
@@ -118,65 +168,74 @@ Concatenação
 + Faça um programa que leia uma palavra e troque as vogais por “*”
 
 
-.. image:: img/TWP18_006.png
-   :height: 9.842cm
-   :width: 15.583cm
-   :alt: 
+.. activecode:: Example5_8
+   :nocodelens:
+   :stdin:
+
+   palavra  =input('Palavra: ')
+   k = 0
+   troca = ""
+   while k < len(palavra):
+      if palavra[k] in 'aeiou:
+       troca = troca + '*'
+      else:
+       troca = troca + palavra[k]
+      k+=1
+   print("Nova palavra %s" %troca)
+
+
+
+.. youtube:: OInhmFfmNXE
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Verificação parcial de strings
 ==============================
 
 
-.. image:: img/TWP18_007.png
-   :height: 4.285cm
-   :width: 12.805cm
-   :alt: 
-
-
-.. image:: img/TWP18_008.png
-   :height: 4.47cm
-   :width: 9.445cm
-   :alt: 
-
-
-.. image:: img/TWP18_009.png
-   :height: 1.692cm
-   :width: 18.149cm
-   :alt: 
+.. codelens:: Example5_9
+         
+        arquivo = 'prog.py'
+        print(arquivo.startswith('p'))
+        print(arquivo.endswith('p'))
+        reposta = "Sim"
+        print(reposta.lower())
+        print(reposta.upper())
+        print(reposta.lower() in 'sim não yes no')
 
 
 find and replace
 ================
 
 
-.. image:: img/TWP18_010.png
-   :height: 6.164cm
-   :width: 20.345cm
-   :alt: 
-
-
-.. image:: img/TWP18_011.png
-   :height: 6.217cm
-   :width: 16.562cm
-   :alt: 
+.. codelens:: Example5_10
+         
+        s = 'um tigre, dois tigres, três tigres'
+        print(s.find('tigre'))
+        print(s.find('tigre',4))
+        print(s.find('tigre',16))
+        print(s.replace('tigre','gato'))
+        s = s.replace('tigre','gato')
+        print(s)
 
 
 split and join
 ==============
 
 
-.. image:: img/TWP18_012.png
-   :height: 7.963cm
-   :width: 15.9cm
-   :alt: 
-
-
-.. image:: img/TWP18_013.png
-   :height: 2.565cm
-   :width: 22.25cm
-   :alt: 
-
+.. codelens:: Example5_11
+         
+        txt = 'batatinha quando nasce'
+        print(txt.split())
+        data = '21/02/2011'
+        print(data.split('/'))
+        ip = '198.188.10.144'
+        print(ip.split('.'))
+        times = ['Palmeiras','Santos','Corintians']
+        print('/'.join(times))
 
 Exercício
 =========
@@ -187,19 +246,39 @@ Exercício
   imprima com o nome do mês por extenso
 
 
-.. image:: img/TWP18_014.png
-   :height: 4.658cm
-   :width: 22.602cm
-   :alt: 
+.. activecode:: Example5_12
+   :nocodelens:
+   :stdin:
+
+   dia, mês , ano = input('Data (dd/mm/aaaa): ').split('/')
+   meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro']
+   print('Você nascem em: ')
+   print('%s de %s de %s' %(dia,meses[int(mês)-1],ano))
+
+
+
+.. youtube:: zOp-YBp3yzI
+      :height: 315
+      :width: 560
+      :align: center
+
 
 
 Coding Dojo
 ===========
 
 
+.. youtube:: DR4CuztiMpY
+      :height: 315
+      :width: 560
+      :align: center
+
+
+
 .. image:: img/TWP18_015.jpeg
    :height: 14.251cm
    :width: 19.001cm
+   :align: center
    :alt: 
 
 
@@ -222,6 +301,7 @@ Desenvolvimento guiado por testes
 .. image:: img/TWP18_016.png
    :height: 11.032cm
    :width: 17.726cm
+   :align: center
    :alt: 
 
 
@@ -232,6 +312,7 @@ Baby Steps
 .. image:: img/TWP18_017.jpeg
    :height: 12.624cm
    :width: 17.704cm
+   :align: center
    :alt: 
 
 
@@ -242,8 +323,13 @@ Pair Programming
 .. image:: img/TWP18_018.png
    :height: 13.711cm
    :width: 18.201cm
+   :align: center
    :alt: 
 
 
+
+.. disqus::
+   :shortname: pyzombis
+   :identifier: lecture5
 
 

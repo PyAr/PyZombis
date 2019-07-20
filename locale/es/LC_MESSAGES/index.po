@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/index.rst:3
+msgid "Welcome to PyZombis : A Python Course in Spanish"
+msgstr "Welcome to PyZombis : A Python Course in Spanish"
+
+#: ../../lectures/index.rst:5
+msgid "Contents:"
+msgstr "Contents:"
+
+#: ../../lectures/index.rst:39
+msgid "Indices and tables"
+msgstr "Indices and tables"
+
+#: ../../lectures/index.rst:41
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex"
+
+#: ../../lectures/index.rst:42
+msgid ":ref:`modindex`"
+msgstr ":ref:`modindex`"
+
+#: ../../lectures/index.rst:43
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
+

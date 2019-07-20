@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Mariano Reingart (translated and adapted from Fernando
+# Masanori work)
+# This file is distributed under the same license as the PyZombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyZombis ls\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-14 16:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../lectures/TWP35.rst:3
+msgid "Revisão Funções"
+msgstr "Funciones de revisión"
+
+#: ../../lectures/TWP35.rst:20 ../../lectures/TWP35.rst:31
+msgid "Sejamos mais organizados"
+msgstr "Seamos más organizados"
+
+#: ../../lectures/TWP35.rst:42
+msgid "Sejamos organizados"
+msgstr "Estemos organizados"
+
+#: ../../lectures/TWP35.rst:46
+msgid "Quando os programas crescem, geralmente o código fica mais complexo"
+msgstr "A medida que los programas crecen, el código generalmente se vuelve más complejo."
+
+#: ../../lectures/TWP35.rst:47
+msgid "Uma forma de gerenciar essa complexidade é usar funções"
+msgstr "Una forma de gestionar esta complejidad es utilizar funciones."
+
+#: ../../lectures/TWP35.rst:48
+msgid ""
+"Elas permitem separar ações comuns, assim seu código fica mais fácil de "
+"ler e mais fácil de manter"
+msgstr ""
+"Te permiten separar acciones comunes, por lo que tu código se vuelve más fácil"
+"leer y más fácil de mantener"
+
+#: ../../lectures/TWP35.rst:53
+msgid "O Starbuzz está sem grãos"
+msgstr "Starbuzz es granulada"
+
+#: ../../lectures/TWP35.rst:57
+msgid ""
+"O diretor da Starbuzz quer uma opção para compra rápida, sem esperar "
+"abaixar o preço"
+msgstr ""
+"El director de Starbuzz quiere una opción de compra rápida sin esperar"
+"bajar el precio"
+
+#: ../../lectures/TWP35.rst:59
+msgid "Ao rodar o programa irei perguntar se quer comprar já ou não"
+msgstr "Cuando ejecuto el programa le preguntaré si quiere comprar o no."
+
+#: ../../lectures/TWP35.rst:60
+msgid "Se o usuário responder sim, então irei pegar o preço atual e comprar"
+msgstr "Si el usuario responde que sí, obtendré el precio actual y compraré"
+
+#: ../../lectures/TWP35.rst:61
+msgid "c"
+msgstr "C"
+
+#: ../../lectures/TWP35.rst:65
+msgid "Sugestão de novo programa"
+msgstr "Nueva sugerencia de programa"
+
+#: ../../lectures/TWP35.rst:96
+msgid "Programa feio..."
+msgstr "Programa feo ..."
+
+#: ../../lectures/TWP35.rst:100
+msgid "Não duplique seu código..."
+msgstr "No dupliques tu código ..."
+
+#: ../../lectures/TWP35.rst:101
+msgid ""
+"Isso leva ao excesso de código, tornando a manutenção do seu código "
+"difícil"
+msgstr ""
+"Esto lleva al exceso de código, haciendo que su código se mantenga"
+"dificil"
+
+#: ../../lectures/TWP35.rst:103
+msgid "Procure reutilizar seu código"
+msgstr "Intenta reutilizar tu código"
+
+#: ../../lectures/TWP35.rst:104
+msgid "Definindo funções faremos reuso de código"
+msgstr "Definiendo funciones reutilizaremos código."
+
+#: ../../lectures/TWP35.rst:105
+msgid "Qual é a diferença?"
+msgstr "¿Cual es la diferencia?"
+
+#: ../../lectures/TWP35.rst:106
+msgid "Se eu tiver que mudar algo, irei alterar em apenas um lugar"
+msgstr "Si tengo que cambiar algo, lo cambiaré en un solo lugar."
+
+#: ../../lectures/TWP35.rst:112
+msgid "Funções"
+msgstr "Funciones"
+
+#: ../../lectures/TWP35.rst:116
+msgid "Funções são códigos compartilháveis"
+msgstr "Las funciones son códigos compartibles."
+
+#: ../../lectures/TWP35.rst:117
+msgid "Defino um nome e chamo a função ao longo do programa"
+msgstr "Defino un nombre y llamo a la función sobre el programa."
+
+#: ../../lectures/TWP35.rst:118
+msgid "A função deve ser definida antes de você chamá-la"
+msgstr "La función debe estar definida antes de que la llames."
+
+#: ../../lectures/TWP35.rst:119
+msgid ""
+"Se você quiser retornar um valor para quem chamou a função deverá "
+"utilizar o comando return"
+msgstr ""
+"Si desea devolver un valor para la persona que llama, debe"
+"usar comando de retorno"
+
+#: ../../lectures/TWP35.rst:151
+msgid "Não existem perguntas idiotas"
+msgstr "No hay preguntas tontas"
+
+#: ../../lectures/TWP35.rst:162
+msgid ""
+"O comando return é igual ao print? Não, print exibe algo na tela, "
+"enquanto return devolve um valor para quem chamou a função."
+msgstr ""
+"¿Es el comando de retorno lo mismo que imprimir? No, imprimir muestra algo en la pantalla"
+"mientras return devuelve un valor para la persona que llama"
+
+#: ../../lectures/TWP35.rst:164
+msgid "Se eu não der return dentro da função, o que ela retorna? None"
+msgstr "Si no vuelvo dentro de la función, ¿qué devuelve? Ninguno"
+
+#: ../../lectures/TWP35.rst:165
+msgid ""
+"Return sempre deve vir no final da função? Nem sempre, depende da lógica "
+"da função"
+msgstr ""
+"¿El retorno siempre debe venir al final de la función? No siempre, depende de la lógica"
+"de función"
+
+#: ../../lectures/TWP35.rst:167
+msgid ""
+"Uma função pode devolver mais de um valor? Sim, inclusive listas ou "
+"dicionários."
+msgstr ""
+"¿Puede una función devolver más de un valor? Sí, incluidas las listas o"
+"diccionarios"
+
+#: ../../lectures/TWP35.rst:179
+msgid "`JSON <http://json.org>`_"
+msgstr "`JSON <http://json.org>`_"
+
+#: ../../lectures/TWP35.rst:180
+msgid "Independente de linguagem"
+msgstr "Independiente del idioma"
+
+#: ../../lectures/TWP35.rst:181
+msgid "Pares nome/valor"
+msgstr "Nombre / Parejas de Valor"
+
+#: ../../lectures/TWP35.rst:182
+msgid "Lista ordenada"
+msgstr "Lista ordenada"
+
+#: ../../lectures/TWP35.rst:183
+msgid "Muito adotado atualmente"
+msgstr "Muy adoptado hoy"
+
+#: ../../lectures/TWP35.rst:184
+msgid "Alternativa para o XML"
+msgstr "Alternativa para o XML"
+
+#: ../../lectures/TWP35.rst:186
+msgid "XML mais verbosa"
+msgstr "XML más detallado"
+
+#: ../../lectures/TWP35.rst:187
+msgid "XML menor legibilidade"
+msgstr "XML menos legibilidad"
+
