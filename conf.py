@@ -24,7 +24,7 @@ from runestone import runestone_static_dirs, runestone_extensions
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
-locale_dirs = ['locale/es/LC_MESSAGES']   # path is example but recommended.
+locale_dirs = ['locale']   # path is example but recommended.
 gettext_compact = False 
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
