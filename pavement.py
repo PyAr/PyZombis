@@ -10,22 +10,23 @@ from socket import gethostname
 
 sys.path.append(os.getcwd())
 
-home_dir = os.getcwd()
-master_url = 'http://127.0.0.1:8000'
-master_app = 'runestone'
-serving_dir = "./build/Pyzombiscodelens"
+# The project name, for use below.
+project_name = "PyZombis"
+# The root directory for ``runestone serve``.
+serving_dir = "./build/" + project_name
+# The destination directory for ``runestone deploy``.
 dest = "../../static"
 
 options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="./build/Pyzombiscodelens",
+        builddir="./build/PyZombisDev",
         sourcedir="_sources",
-        outdir="./build/Pyzombiscodelens",
+        outdir="./build/PyZombisDev",
         confdir=".",
-        project_name = "Pyzombiscodelens",
-        template_args={'course_id': 'Pyzombiscodelens',
+        project_name = "PyZombisDev",
+        template_args={'course_id': 'PyZombisDev',
                        'login_required':'false',
                        'appname':master_app,
                        'loglevel': 0,
@@ -34,7 +35,7 @@ options(
                        'python3': 'true',
                        'dburl': '',
                        'default_ac_lang': 'python',
-                       'basecourse': 'Pyzombiscodelens',
+                       'basecourse': 'PyZombisDev',
                        'jobe_server': 'http://jobe2.cosc.canterbury.ac.nz',
                        'proxy_uri_runs': '/jobe/index.php/restapi/runs/',
                        'proxy_uri_files': '/jobe/index.php/restapi/files/',

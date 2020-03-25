@@ -25,6 +25,12 @@ Condições
 	print("Bem vindo ao meu programa!")
 	print("Volte sempre!")
 
+.. image:: img/TWP10_003.png
+   :height: 2.142cm
+   :width: 16.615cm
+   :alt: 
+
+
 Condições
 =========
 
@@ -65,6 +71,12 @@ if
 	if b>a:
 		print("O segundo numero e o maior!")
 
+.. image:: img/TWP10_005.png
+   :height: 5.158cm
+   :width: 19.816cm
+   :alt: 
+
+
 Dois pontos e identação
 =======================
 
@@ -87,6 +99,11 @@ if
 		print("Seu carro e novo")
 	if idade > 3:
 		print("Seu carro e velho")
+
+.. image:: img/TWP10_006.png
+   :height: 4.444cm
+   :width: 23.15cm
+   :alt: 
 
 
 if
@@ -113,6 +130,12 @@ if
 		print("Valor da multa : R$ %5.2f " % multa)
 
 
+.. image:: img/TWP10_007.png
+   :height: 4.603cm
+   :width: 20.928cm
+   :alt: 
+
+
 else
 ====
 
@@ -137,6 +160,12 @@ else
 		print("Seu carro e novo")
 	else:
 		print("Seu carro e velho")
+
+
+.. image:: img/TWP10_008.png
+   :height: 8.655cm
+   :width: 20.736cm
+   :alt: 
 
 
 if / else
@@ -175,6 +204,11 @@ Estruturas aninhadas
 		else:
 			preco = 0.15
 	print("Conta telefonica : R$%6.2f"%(minutos*preco))
+
+.. image:: img/TWP10_010.png
+   :height: 7.363cm
+   :width: 22.859cm
+   :alt: 
 
 
 Estruturas aninhadas
@@ -234,6 +268,12 @@ Estruturas aninhadas
 	print("Conta telefonica : R$%6.2f"%(minutos*preco))
 
 
+.. image:: img/TWP10_015.png
+   :height: 10.523cm
+   :width: 22.859cm
+   :alt: 
+
+
 elif
 ====
 
@@ -254,6 +294,12 @@ elif
 	else:
 		preco = 0.08
 	print("Costa telefonica : R$%6.2f"%(minutos*preco))
+
+
+.. image:: img/TWP10_016.png
+   :height: 9cm
+   :width: 22.969cm
+   :alt: 
 
 
 Lista de Exercícios “again”
