@@ -20,6 +20,10 @@ Condições
 Condições
 =========
 
+.. codelens:: image_1
+
+	print("Bem vindo ao meu programa!")
+	print("Volte sempre!")
 
 .. image:: img/TWP10_003.png
    :height: 2.142cm
@@ -58,6 +62,15 @@ if
 + Ler dois valores inteiros e imprimir o maior deles
 
 
+.. codelens:: image_2
+
+	a = 8
+	b = 5
+	if a>b:
+		print("O promeiro numero e o maior!")
+	if b>a:
+		print("O segundo numero e o maior!")
+
 .. image:: img/TWP10_005.png
    :height: 5.158cm
    :width: 19.816cm
@@ -78,6 +91,14 @@ if
 
 
 
+
+.. codelens:: image_3
+
+	idade = 10
+	if idade <= 3:
+		print("Seu carro e novo")
+	if idade > 3:
+		print("Seu carro e velho")
 
 .. image:: img/TWP10_006.png
    :height: 4.444cm
@@ -100,6 +121,15 @@ if
 ==
 
 
+.. codelens:: image_4
+
+	v = 120
+	if v > 110:
+		print("Voce foi multado!")
+		multa = (v-110)*5
+		print("Valor da multa : R$ %5.2f " % multa)
+
+
 .. image:: img/TWP10_007.png
    :height: 4.603cm
    :width: 20.928cm
@@ -113,6 +143,23 @@ else
 
 + O que fazer quando a condição do if é falsa?
 + Os dois códigos abaixo fazem a mesma coisa:
+
+
+.. codelens:: image_5
+
+	idade = 1
+	if idade <= 3:
+		print("Seu carro e novo")
+	if idade > 3:
+		print("Seu carro e velho")
+
+.. codelens:: image_6
+
+	idade = 6
+	if idade <= 3:
+		print("Seu carro e novo")
+	else:
+		print("Seu carro e velho")
 
 
 .. image:: img/TWP10_008.png
@@ -145,6 +192,18 @@ Estrutura aninhadas
 Estruturas aninhadas
 ====================
 
+
+.. codelens:: image_7
+
+	minutos = 800
+	if minutos < 200:
+		preco = 0.20
+	else:
+		if minutos <= 400:
+			preco = 0.18
+		else:
+			preco = 0.15
+	print("Conta telefonica : R$%6.2f"%(minutos*preco))
 
 .. image:: img/TWP10_010.png
    :height: 7.363cm
@@ -193,6 +252,22 @@ Estruturas aninhadas
 ====================
 
 
+.. codelens:: image_8
+
+	minutos = 1000
+	if minutos < 200:
+		preco = 0.2
+	else:
+		if minutos <= 400:
+			preco = 0.18
+		else:
+			if minutos <= 800:
+				preco = 0.15
+			else:
+				preco = 0.08
+	print("Conta telefonica : R$%6.2f"%(minutos*preco))
+
+
 .. image:: img/TWP10_015.png
    :height: 10.523cm
    :width: 22.859cm
@@ -205,6 +280,20 @@ elif
 
 
 + A cláusula elif substitui um par else if
+
+
+.. codelens:: image_9
+
+	minutos = 1000
+	if minutos < 200:
+		preco = 0.2
+	elif minutos <= 400:
+		preco = 0.18
+	elif minutos <= 800:
+		preco = 0.15
+	else:
+		preco = 0.08
+	print("Costa telefonica : R$%6.2f"%(minutos*preco))
 
 
 .. image:: img/TWP10_016.png
