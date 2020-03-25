@@ -12,6 +12,7 @@ Condições
 Condições
 =========
 
+<número>
 
 .. codelens:: Example2_1
 
@@ -195,6 +196,25 @@ Estruturas aninhadas
    :width: 22.859cm
    :align: center
    :alt: 
+
+
+.. image:: img/TWP10_012.png
+   :height: 0.925cm
+   :width: 5.397cm
+   :alt: 
+
+
+.. image:: img/TWP10_013.png
+   :height: 0.899cm
+   :width: 5.397cm
+   :alt: 
+
+
+.. image:: img/TWP10_014.png
+   :height: 0.819cm
+   :width: 5.238cm
+   :alt: 
+
 
 Estruturas aninhadas
 ====================
