@@ -12,31 +12,31 @@ Contents:
 .. toctree::
    :maxdepth: 1
 
-   lectures/TWP05
-   lectures/TWP10
-   lectures/TWP15
-   lectures/TWP17
-   lectures/TWP18
-   lectures/TWP20
-   lectures/TWP23
-   lectures/TWP25
-   lectures/TWP30
-   lectures/TWP33
-   lectures/TWP35
-   lectures/TWP37
-   lectures/TWP38
-   lectures/TWP40
-   lectures/TWP42
-   lectures/TWP45
-   lectures/TWP47
-   lectures/TWP50
-   lectures/TWP52
-   lectures/TWP54
-   lectures/TWP56
-   lectures/TWP58
-   lectures/TWP60
-   lectures/TWP65
-   lectures/Quiz6
+   TWP05
+   TWP10
+   TWP15
+   TWP17
+   TWP18
+   TWP20
+   TWP23
+   TWP25
+   TWP30
+   TWP33
+   TWP35
+   TWP37
+   TWP38
+   TWP40
+   TWP42
+   TWP45
+   TWP47
+   TWP50
+   TWP52
+   TWP54
+   TWP56
+   TWP58
+   TWP60
+   TWP65
+   Quiz6
 
 
 ==================
