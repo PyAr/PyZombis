@@ -1,11 +1,6 @@
-.. PyZombis documentation master file, created by
-   sphinx-quickstart on Sun Oct 18 20:05:00 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-====================================
-Welcome to PyZombis's documentation!
-====================================
+================================================
+Welcome to PyZombis : A Python Course in Spanish
+================================================
 
 Contents:
 
@@ -36,7 +31,21 @@ Contents:
    lectures/TWP58
    lectures/TWP60
    lectures/TWP65
-   
+   lectures/Quiz6
+   quiz/Quiz3.rst
+   quiz/Quiz5mcq.rst
+   quiz/Quiz6.rst
+   quiz/Quiz7.rst
+   quiz/Quiz9.rst
+   quiz/Quiz10.rst
+   quiz/Quiz11.rst
+   quiz/Quiz12.rst
+   quiz/Quiz13.rst
+   quiz/Quiz14.rst
+   quiz/QuizExtras.rst
+   quiz/QuizExtras2.rst
+
+
 ==================
 Indices and tables
 ==================

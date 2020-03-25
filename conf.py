@@ -129,7 +129,7 @@ html_theme = 'sphinx_bootstrap'
 #html_theme_options = {'nosidebar': 'true'}
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "Pyzombiscodelens",
+    'navbar_title': "PyZombis Python Course",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Chapters",
