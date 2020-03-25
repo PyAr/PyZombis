@@ -13,19 +13,19 @@ sys.path.append(os.getcwd())
 home_dir = os.getcwd()
 master_url = 'http://127.0.0.1:8000'
 master_app = 'runestone'
-serving_dir = "./build/Pyzombisquiz"
+serving_dir = "./build/PyZombisDev"
 dest = "../../static"
 
 options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="./build/Pyzombisquiz",
+        builddir="./build/PyZombisDev",
         sourcedir="_sources",
-        outdir="./build/Pyzombisquiz",
+        outdir="./build/PyZombisDev",
         confdir=".",
-        project_name = "Pyzombisquiz",
-        template_args={'course_id': 'Pyzombisquiz',
+        project_name = "PyZombisDev",
+        template_args={'course_id': 'PyZombisDev',
                        'login_required':'false',
                        'appname':master_app,
                        'loglevel': 0,
@@ -34,7 +34,7 @@ options(
                        'python3': 'true',
                        'dburl': '',
                        'default_ac_lang': 'python',
-                       'basecourse': 'Pyzombisquiz',
+                       'basecourse': 'PyZombisDev',
                        'jobe_server': 'http://jobe2.cosc.canterbury.ac.nz',
                        'proxy_uri_runs': '/jobe/index.php/restapi/runs/',
                        'proxy_uri_files': '/jobe/index.php/restapi/files/',
