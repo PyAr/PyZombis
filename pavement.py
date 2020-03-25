@@ -10,10 +10,11 @@ from socket import gethostname
 
 sys.path.append(os.getcwd())
 
-home_dir = os.getcwd()
-master_url = 'http://127.0.0.1:8000'
-master_app = 'runestone'
-serving_dir = "./build/PyZombisDev"
+# The project name, for use below.
+project_name = "PyZombis"
+# The root directory for ``runestone serve``.
+serving_dir = "./build/" + project_name
+# The destination directory for ``runestone deploy``.
 dest = "../../static"
 
 options(
