@@ -27,7 +27,7 @@ options(
     build = Bunch(
         builddir="./build/PyZombisDev",
         sourcedir="_sources",
-        outdir="./build/PyZombisDev",
+        outdir="./build/PyZombis",
         confdir=".",
         project_name = "PyZombisDev",
         template_args={'course_id': 'PyZombisDev',
