@@ -17,6 +17,10 @@ serving_dir = "./build/" + project_name
 # The destination directory for ``runestone deploy``.
 dest = "../../static"
 
+master_app = "runestone"
+master_url = "http://127.0.0.1:8000"
+
+
 options(
     sphinx = Bunch(docroot=".",),
 
