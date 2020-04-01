@@ -61,7 +61,7 @@ Primer mensaje de error
 =========================
 
 + En la versión de Python que usamos paréntesis no son opcionales en
-  imprimir
+  print
 
 
 .. code-block:: python
@@ -93,7 +93,7 @@ Intérprete de Python
 
 
 
-+ El intérprete es un programa que acepta comandos escritos en Python.
++ El intérprete es un programa que acepta comandos escritos en Python
   y los ejecuta línea por línea
 + En los ejemplos anteriores usamos el modo interactivo
 + El intérprete verifica que hayamos escrito el programa correctamente,
@@ -122,7 +122,7 @@ Modo de edición
    :alt: 
 
 
-Ejecuta el programa
+Ejecutar el programa
 ====================
 
 
@@ -144,7 +144,7 @@ Guardar el programa
    :alt: 
 
 
-Resultado mixto
+Mismo resultado
 ================
 
 
@@ -162,12 +162,12 @@ Precauciones al escribir programas
 
 + Las letras mayúsculas y minúsculas son diferentes
 + Las comillas son muy importantes y no deben pasarse por alto. Cada vez
-  que abres citas, no olvides cerrarlas
+  que abres comillas, no olvides cerrarlas
 + Los paréntesis no son opcionales en Python. Cada paréntesis abierto debe
   estar cerrado
 + Los espacios son muy importantes. El lenguaje Python se basa en
   cantidad de espacio en blanco antes del comienzo de cada línea para
-  Realizar diferentes operaciones.
+  realizar diferentes operaciones.
 
 
 Calculadora en el intérprete
@@ -186,7 +186,7 @@ Calculadora en el intérprete
     print(16%7)
 
 
-Conceptos variables y de atribución
+Conceptos variables y de asignación
 ===================================
 
 
@@ -204,7 +204,7 @@ Conceptos variables y de atribución
     b = 3
     print(a+b)
 
-Conceptos variables y de atribución
+Conceptos variables y de asignación
 ===================================
 
 
@@ -214,7 +214,7 @@ Conceptos variables y de atribución
 + Función f (x), donde f es el nombre de la función y x es un parámetro
 + En el ejemplo anterior, print es el nombre de la función y a + b, el valor
 
-Conceptos variables y de atribución
+Conceptos variables y de asignación
 ===================================
 
 
@@ -230,7 +230,7 @@ Conceptos variables y de atribución
     b = 3
     print(a+b)
 
-Conceptos variables y de atribución
+Conceptos variables y de asignación
 ===================================
 
 
@@ -248,7 +248,7 @@ Conceptos variables y de atribución
     print(5)
 
 
-Conceptos variables y de atribución
+Conceptos variables y de asignación
 ===================================
 
 
@@ -257,17 +257,17 @@ Conceptos variables y de atribución
 + El primer caso incluye la lógica que usamos para obtener el
   resultado
 + De este modo, hacemos explícito el algoritmo que utilizamos mentalmente para
-  resuelve este problema
+  resolver este problema
 + En los últimos dos casos, solo ordenamos a la computadora que imprima
   algo concreto, sin dejar en claro la lógica para llegar a ese resultado
 
 
-Conceptos variables y de atribución
+Conceptos variables y de asignación
 ===================================
 
 
 
-#. 1. Su salario actual es de R $ 6500 reales. Haz un programa que
+#. 1. Su salario actual es de $6500. Haz un programa que
    calcular el nuevo salario con un aumento del 5%
 #. 2.Escribe un programa que muestre tu nombre en la pantalla
 #. 3. Calcula la suma de tres variables
@@ -326,7 +326,7 @@ Variables numéricas
   1234.56
 + Tenga en cuenta que 1.0, incluso teniendo cero en la parte decimal, es un número en
   punto flotante
-+ El tipo de coma flotante en Python se llama flotante
++ El tipo de coma flotante en Python se llama float.
 
 
 
@@ -507,13 +507,13 @@ Ejemplo
 
 
 + La condición para un préstamo de compra de motocicleta es un salario mayor que
-  R $ 1,000.00 y mayores de 18 años. Compruebe si José puede obtener el
+  $1,000.00 y mayores de 18 años. Compruebe si José puede obtener el
   préstamo
 
 .. codelens:: Example_13
     
     salário = 500.0
-    idade = 20
+    edad = 20
     print(salário > 1000 and idade > 18)
 
 
@@ -599,12 +599,13 @@ Variable String
 
 
 
-+ Cuidado: não podemos acessar um índice maior que a quantidade de
-  caracteres da string
++ Precaución: no podemos acceder a un índice mayor que la cantidad de
+  caracteres de cadena
+
 
 .. codelens:: Example_18
     
-    texto = "Joao e Maria comem pão"
+    texto = "Juan y Maria comen pan"
     print(texto[22])
 
 
@@ -643,7 +644,7 @@ Composición
 .. codelens:: Example_20
     
     edad = 20
-    print("Joa tiene%d años "% de edad)
+    print("Juan tiene %d años" % edad)
 
 
 Composición
@@ -676,7 +677,7 @@ Composición
 
 .. codelens:: Example_22
     
-    print("R$ %5.2f real" %23)
+    print("$ %5.2f pesos" %23)
 
 
 Rebanada
@@ -742,8 +743,8 @@ Cambiar variables a lo largo del tiempo
     print(deuda)
 
 
-Prueba de mesa o simulación
-===========================
+Prueba de escritorio o simulación
+=================================
 
 
 + Comprender que el valor de las variables puede cambiar durante la ejecución de
@@ -755,8 +756,8 @@ Prueba de mesa o simulación
 
 
 
-Prueba de mesa o simulación
-===========================
+Prueba de escritorio o simulación
+=================================
 
 .. table:: **Teste de mesa ou simulação**
    :widths: auto
@@ -770,8 +771,8 @@ Prueba de mesa o simulación
    600
    ====== ====== ====
 
-No tengas prisa por la prueba de la mesa
-=========================================
+No tengas prisa por la prueba de escritorio
+===========================================
 
 .. image:: img/TWP05_035.jpeg
    :height: 13.6cm
@@ -801,7 +802,7 @@ Conversión de entrada de datos
 ==============================
 
 + La función de entrada solo devuelve cadenas
-+ Usamos int () para convertir un valor a un entero y float () a
++ Usamos int() para convertir un valor a un entero y float() a
   punto flotante
 
 
@@ -819,7 +820,7 @@ Error común
 
 
 
-+ + Olvida algunos paréntesis. El error conducirá a la línea de fondo.
++ + Olvida algunos paréntesis. El error conducirá a la línea de abajo.
 
 
 .. image:: img/TWP05_040.png
@@ -828,7 +829,7 @@ Error común
    :align: center
    :alt: 
 
-Lista de Ejercícios
+Lista de Ejercicios
 ===================
 
 
