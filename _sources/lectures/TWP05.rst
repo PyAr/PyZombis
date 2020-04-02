@@ -1,5 +1,5 @@
 ============================
-Variáveis e Entrada de Dados
+Variables y entrada de datos
 ============================
 
 
@@ -9,14 +9,14 @@ Variáveis e Entrada de Dados
    :align: center
    :alt: 
 
-Primeiro programa
+Primer programa
 =================
 
 
-+ Este programa possui apenas uma linha de código
-+ Observe que as aspas não aparecem na saída
-+ Precisamos marcar ou limitar o início e o fim de nossas mensagens
-  com um símbolo, nesse caso, as aspas
++ Este programa tiene solo una línea de código
++ Tenga en cuenta que las comillas no aparecen en la salida
++ Necesitamos marcar o limitar el comienzo y el final de nuestros mensajes.
+  con un símbolo, en este caso, las comillas
 
 .. code-block:: python
 
@@ -25,14 +25,14 @@ Primeiro programa
 
 .. codelens:: Example_1
     
-    print("Primeria mensagem")
+    print("primer mensaje")
 
 
-Primeira mensagem de erro
+Primer mensaje de error
 =========================
 
-+ Letras maiúsculas e minúsculas são diferentes
-+ Você reparou que Print não está na cor roxa?
++ Las letras mayúsculas y minúsculas son diferentes
++ ¿Notaste que la impresión no es púrpura?
 
 .. code-block:: python
 
@@ -41,12 +41,13 @@ Primeira mensagem de erro
       File "<stdin>", line 1, in <module>
     NameError: name 'Print' is not defined
 
-Primeira mensagem de erro
+Primer mensaje de error
 =========================
 
-+ Se não utilizarmos aspas, o computador interpretará nossa mensagem
-  como um comando da linguagem Python, gerando um erro de sintaxe
-+ Você reparou que a mensagem não está na cor verde?
++ Si no usamos comillas, la computadora interpretará nuestro mensaje
+  como un comando de Python, generando un error de sintaxis
++ ¿Notaste que el mensaje no es verde?
+
 
 .. code-block:: python
 
@@ -56,11 +57,12 @@ Primeira mensagem de erro
                         ^
     SyntaxError: invalid syntax
 
-Primeira mensagem de erro
+Primer mensaje de error
 =========================
 
-+ Na versão do Python que usamos os parênteses não são opcionais no
++ En la versión de Python que usamos paréntesis no son opcionales en
   print
+
 
 .. code-block:: python
 
@@ -70,49 +72,47 @@ Primeira mensagem de erro
               ^
     SyntaxError: invalid syntax
 
-Primeira mensagem de erro
+Primer mensaje de error
 =========================
 
-+ Os espaços iniciais possuem um significado em Python que veremos
-  mais adiante
++ Los espacios iniciales tienen un significado en Python que veremos
+  más adelante
 
 
 .. code-block:: python
 
-    >>>   print("Primeira mensagem!")
+    >>>   print("primer mensaje!")
       File "<stdin>", line 1
         print "hola mundo"
       ^      
     SyntaxError: unexpected indent
 
 
-Interpretador Python
+Intérprete de Python
 ====================
 
 
 
-+ O interpretador é um programa que aceita comandos escritos em Python
-  e os executa, linha a linha
-+ Sem o interpretador, nossos programas não podem ser executados,
-  sendo considerados apenas um texto
-+ O interpretador verifica se escrevemos corretamente o programa,
-  mostrando mensagens de erro caso haja algum problema
++ El intérprete es un programa que acepta comandos escritos en Python
+  y los ejecuta línea por línea
++ En los ejemplos anteriores usamos el modo interactivo
++ El intérprete verifica que hayamos escrito el programa correctamente,
+  mostrando mensajes de error si hay un problema
 
-
-Interpretador Python
+Intérprete de Python
 ====================
 
 
 
-+ Existem dois modos do interpretador Python: modo interativo e modo
-  de edição
-+ Usamos nos exemplos anteriores o modo interativo
-+ Uma vantagem do modo interativo é poder testar comandos e obter a
-  resposta instantaneamente
++ Hay dos modos del intérprete de Python: modo interactivo y
+  edición
++ En los ejemplos anteriores usamos el modo interactivo
++ Una ventaja del modo interactivo es poder probar comandos y obtener
+  responde al instante
 
 
-Modo edição
-===========
+Modo de edición
+====================
 
 
 .. image:: img/TWP05_007.png
@@ -122,8 +122,8 @@ Modo edição
    :alt: 
 
 
-Rodar o programa
-================
+Ejecutar el programa
+====================
 
 
 .. image:: img/TWP05_008.png
@@ -133,8 +133,8 @@ Rodar o programa
    :alt: 
 
 
-Salvar o programa
-=================
+Guardar el programa
+====================
 
 
 .. image:: img/TWP05_009.png
@@ -144,7 +144,7 @@ Salvar o programa
    :alt: 
 
 
-Mesmo resultado!
+Mismo resultado
 ================
 
 
@@ -155,22 +155,22 @@ Mesmo resultado!
    :alt: 
 
 
-Cuidados ao digitar programas
-=============================
+Precauciones al escribir programas
+==================================
 
 
 
-+ Letras maiúsculas e minúsculas são diferentes
-+ Aspas são muito importantes e não devem ser esquecidas. Todas vez
-  que você abrir aspas, não esqueça de fechá-las
-+ Parênteses não são opcionais em Python. Todo parênteses aberto deve
-  ser fechado.
-+ Espaços são muito importantes. A linguagem Python se baseia na
-  quantidade de espaços em branco antes do início de cada linha para
-  realizar diferentes operações.
++ Las letras mayúsculas y minúsculas son diferentes
++ Las comillas son muy importantes y no deben pasarse por alto. Cada vez
+  que abres comillas, no olvides cerrarlas
++ Los paréntesis no son opcionales en Python. Cada paréntesis abierto debe
+  estar cerrado
++ Los espacios son muy importantes. El lenguaje Python se basa en
+  cantidad de espacio en blanco antes del comienzo de cada línea para
+  realizar diferentes operaciones.
 
 
-Calculadora no interpretador
+Calculadora en el intérprete
 ============================
 
 
@@ -186,14 +186,14 @@ Calculadora no interpretador
     print(16%7)
 
 
-Conceitos de variáveis e atribuição
+Conceptos variables y de asignación
 ===================================
 
 
 
-+ Variáveis são utilizadas para armazenar valores e para dar nome a
-  uma área da memória do computador
-+ O símbolo para atribuição é o igual (=)
++ Las variables se utilizan para almacenar valores y nombrar un
+  un área de la memoria de la computadora
++ El símbolo para la asignación es el mismo (=)
 
 
 
@@ -204,27 +204,25 @@ Conceitos de variáveis e atribuição
     b = 3
     print(a+b)
 
-Conceitos de variáveis e atribuição
+Conceptos variables y de asignación
 ===================================
 
 
 
-+ Como em matemática, passamos parâmetros ou valores para uma função
-  usando parênteses
-+ Função f(x), onde f é o nome da função e x um parâmetro
-+ No exemplo anterior print é o nome da função e a + b, o valor
-  passado como parâmetro
++ Las variables se utilizan para almacenar valores y nombrar un
+  un área de la memoria de la computadora
++ Función f (x), donde f es el nombre de la función y x es un parámetro
++ En el ejemplo anterior, print es el nombre de la función y a + b, el valor
 
-
-Conceitos de variáveis e atribuição
+Conceptos variables y de asignación
 ===================================
 
 
 
-+ Podemos usar o modo interativo também
++ También podemos usar el modo interactivo
 
-+ As duas primeiras linhas não enviam nada para a tela, por isso,
-  apenas o resultado da terceira linha é mostrado
++ Las dos primeras líneas no envían nada a la pantalla, así que
+  solo se muestra el resultado de la tercera línea
 
 .. codelens:: Example_6_2
     
@@ -232,14 +230,14 @@ Conceitos de variáveis e atribuição
     b = 3
     print(a+b)
 
-Conceitos de variáveis e atribuição
+Conceptos variables y de asignación
 ===================================
 
 
 
-+ Você pode estar se perguntando por que criamos duas variáveis, a e
-  b, para somar dois números?
-+ Poderíamos ter obtido o mesmo resultado de diversas formas
++ Quizás se pregunte por qué creamos dos variables, a y
+  b, para sumar dos números?
++ Podríamos haber logrado el mismo resultado de varias maneras.
 
 
 
@@ -250,49 +248,48 @@ Conceitos de variáveis e atribuição
     print(5)
 
 
-Conceitos de variáveis e atribuição
+Conceptos variables y de asignación
 ===================================
 
 
 
-+ Qual é a diferença entre o primeiro modo e os dois últimos?
-+ No primeiro caso está incluído a lógica que usamos para obter o
++ ¿Cuál es la diferencia entre el primer modo y los dos últimos?
++ El primer caso incluye la lógica que usamos para obtener el
   resultado
-+ Deixamos assim explícito o algoritmo que usamos mentalmente para
-  resolver esse problema
-+ Nos dois últimos casos apenas ordenamos que o computador imprima
-  algo concreto, sem deixar claro a lógica para chegar naquele resultado
++ De este modo, hacemos explícito el algoritmo que utilizamos mentalmente para
+  resolver este problema
++ En los últimos dos casos, solo ordenamos a la computadora que imprima
+  algo concreto, sin dejar en claro la lógica para llegar a ese resultado
 
 
-Conceitos de variáveis e atribuição
+Conceptos variables y de asignación
 ===================================
 
 
 
-#. 1.Seu salário atual é de R$ 6500 reais. Faça um programa que
-   calcule o novo salário com um aumento de 5%
-#. 2.Escreva um programa que exiba seu nome na tela
-#. 3.Calcule a soma de três variáveis
-#. 4.O que acontece se eu colocar textos nas três variáveis
-   anteriores?
+#. 1. Su salario actual es de $6500. Haz un programa que
+   calcular el nuevo salario con un aumento del 5%
+#. 2.Escribe un programa que muestre tu nombre en la pantalla
+#. 3. Calcula la suma de tres variables
+#. 4. ¿Qué sucede si pongo textos en las tres variables?
+   anterior?
 
 
-Nomes de variáveis
-==================
-
-
-
-+ Em Python, nomes de variáveis devem iniciar obrigatoriamente com uma
-  letra ou caracter sublinhado (_)
-+ Acentos são permitidos!
-+ Exemplo de nomes válidos: preço, ação, salário, _x, ano_2011,
-  salário_médio
-+ Exemplo de nomes inválidos: salário médio, 3x, 1ª, @, $
+Nombres de variables
+====================
 
 
 
++ En Python, los nombres de las variables deben comenzar con un
+  letra o guión bajo (_)
++ Acentos están permitidos!
++ Ejemplo de nombres válidos: precio, acción, salario, _x, año_2011,
+  salario promedio
++ Ejemplo de nombres no válidos: salario promedio, 3x, 1er, @, $
 
-Tipos de variáveis
+
+
+Tipos de variables
 ==================
 
 
@@ -303,36 +300,38 @@ Tipos de variáveis
    :alt: 
 
 
-Tipos de variáveis
+Tipos de variables
 ==================
 
 
 
-+ O conteúdo de uma variável possui um tipo
-+ O tipo define a natureza dos dados que a variável armazena
-+ Os tipos mais comuns são inteiros, números em ponto flutuante e
-  strings (texto)
-+ Além de poder armazenar números e letras, as variáveis em Python
-  também armazenam valores como True e False
++ En Python, los nombres de las variables deben comenzar con un
+  letra o guión bajo (_)
++ Acentos están permitidos!
++ Ejemplo de nombres válidos: precio, acción, salario,_x, año_2011,
+  salario promedio
++ Ejemplo de nombres no válidos: salario promedio, 3x, 1er, @, $
 
 
-Variáveis numéricas
+
+
+Variables numéricas
 ===================
 
 
 
-+ Inteiros não possuem casas decimais: 42, -7
-+ O tipo inteiro em Python é chamado int
-+ Números em ponto flutuante possuem casa decimal: 1.0, 3.1415,
++ Los enteros no tienen decimales: 42, -7
++ Todo el tipo en Python se llama int
++ Los números en coma flotante tienen decimales: 1.0, 3.1415,
   1234.56
-+ Note que 1.0, mesmo tendo zero na parte decimal, é um número em
-  ponto flutuante
-+ O tipo ponto flutuante em Python é chamado float
++ Tenga en cuenta que 1.0, incluso teniendo cero en la parte decimal, es un número en
+  punto flotante
++ El tipo de coma flotante en Python se llama float.
 
 
 
 
-Exercícios
+Ejercicios
 ==========
 
 
@@ -348,8 +347,8 @@ Exercícios
 
 
 
-Representação de valores numéricos
-==================================
+Representación de valores numéricos
+===================================
 
 
 
@@ -363,38 +362,38 @@ Representação de valores numéricos
 
 
 
-Variáveis do tipo lógico
+Variables de tipo lógico
 ========================
 
 
 
-+ Podemos armazenar verdadeiro e falso
-+ A variável se chama lógica ou booleana
-+ Em Python escrevemos True e False
-+ Observe que T e F são escritos em maiúsculas
++ Podemos almacenar verdadero y falso
++ La variable se llama lógica o booleana
++ En Python escribimos verdadero y falso
++ Tenga en cuenta que T y F están en mayúscula
 
 
 
 
-Operadores relacionais
-======================
+Operadores relacionales
+=======================
 
 .. table:: **Operadores relacionais**
    :widths: auto
 
    ======== ============== ==================
-   Operador Operação       Símbolo matemático
+   Operador Operación      Símbolo matemático
    ======== ============== ==================
    ==       igual          =
-   >        maior que      >
+   >        mayor que      >
    <        menor que      <
    !=       diferente      <>
-   >=       maior ou igual >=
-   <=       menor ou igual <=
+   >=       mayor o igual  >=
+   <=       menor o igual  <=
    ======== ============== ==================
 
 
-Exemplos: 
+Ejemplos:
 =========
 
 
@@ -413,12 +412,12 @@ Exemplos:
     print(d != a)
     print(d != b)
 
-Exemplo importante
+Ejemplo importante
 ==================
 
 
 
-+ >= ou <= para valores iguais
++ >= o <= para valores iguales
 
 
 
@@ -429,23 +428,22 @@ Exemplo importante
     print(5 <= 5)
 
 
-Exemplo
+Ejemplo
 =======
 
 
 
-+ Podemos usar operadores relacionais para inicializar variáveis do
++ Podemos usar operadores relacionales para inicia variables en el
   tipo lógico
-
 
 
 
 .. codelens:: Example_9
     
     nota = 8
-    média = 6
-    aprovado = nota > média
-    print(aprovado)
+    promedio = 6
+    aprobado = nota > promedio
+    print(aprobado)
 
 
 Operadores Lógicos
@@ -453,7 +451,7 @@ Operadores Lógicos
 
 
 
-+ Temos três operadores básicos: not, and e or
++ Tenemos tres operadores básicos: not, and e or
 + Operador not
 
 .. codelens:: Example_10
@@ -492,41 +490,40 @@ Operadores Lógicos
     print(False or False)
 
 
-Expressões Lógicas
-==================
+Expresiones Lógicas
+===================
 
 
 
-+ Podemos combinar os operadores lógicos em expressões lógicas
-+ A ordem de avaliação é not > and > or
++ Podemos combinar os operadores lógicos en expresiones lógicas
++ El orden de evaluación no es> y> o
 
 
 
 
-Exemplo
+Ejemplo
 =======
 
 
 
-+ A condição para empréstimo de compra de uma moto é salário maior que
-  R$ 1.000,00 e idade acima de 18 anos. Verificar se o José pode pegar o
-  empréstimo
-
++ La condición para un préstamo de compra de motocicleta es un salario mayor que
+  $1,000.00 y mayores de 18 años. Compruebe si José puede obtener el
+  préstamo
 
 .. codelens:: Example_13
     
     salário = 500.0
-    idade = 20
+    edad = 20
     print(salário > 1000 and idade > 18)
 
 
-Exemplo
+Ejemplo
 =======
 
 
 
-+ Verifique se um aluno que tirou média para exercícios programa 5.8 e
-  média de provas 7 passou
++ Verifique que un estudiante que obtuvo un puntaje promedio para el programa de ejercicios 5.8 y
+  promedio de pruebas 7 aprobadas
 
 
 
@@ -535,160 +532,160 @@ Exemplo
     
     ep = 5.8
     p = 7
-    aprovado = ep >= 6 and p >= 6
+    aprobado = ep >= 6 and p >= 6
     print(aprovado)
 
 
-Variáveis String
+Variale String
 ================
 
 
 
-+ Armazenam cadeias de caracteres como nomes e textos em geral
-+ Chamamos cadeias de caracteres uma sequência de símbolos como
-  letras, números, sinais de pontuação, etc
-+ Para diferenciar seus comandos de uma string utilizamos aspas no
-  início e no final
++ Almacene cadenas como nombres y texto en general
++ Llamamos cadenas a una secuencia de símbolos como
+  letras, números, signos de puntuación, etc.
++ Para diferenciar sus comandos de una cadena, usamos comillas en
+  principio y fin
+
+
 
 
 .. codelens:: Example_15
     
-    texto = "Joao e Maria comem pão"
+    texto = "Joaquin y Maria comen pan"
     print(texto)
 
 
 
-Variáveis String
+Variable String
 ================
 
 
 
-+ Note que não há problema de utilizarmos espaços para separar as
-  palavras
-+ Uma string tem um tamanho associado
-+ Podemos obter o tamanho através da função embutida len
++ Tenga en cuenta que no hay problema al usar espacios para separar el
+  palabras
++ Una cadena tiene una longitud asociada
++ Podemos obtener el tamaño a través de la función de len incorporada
+
 
 
 
 
 .. codelens:: Example_16
     
-    texto = "Joao e Maria comem pão"
+    texto = "Joaquin y Maria comen pan"
     print(len(texto))
 
-Variáveis String
+Variable String
 ================
 
 
 
-+ Podemos acessar os caracteres da string utilizando um número inteiro
-  para representar sua posição
-+ Este número é chamado de índice e começamos a contar de zero
-+ Acessamos o caracter fornecendo o índice entre colchetes ([ ])
++ Podemos acceder a los caracteres en la cadena usando un número entero
+  para representar tu posición
++ Este número se llama índice y comenzamos a contar desde cero
++ Accedemos al personaje proporcionando el índice entre corchetes ([])
+
 
 
 .. codelens:: Example_17
     
-    texto = "Joao e Maria comem pão"
+    texto = "Joaquin y Maria comen pan"
     print(texto[0])
 
 
-Variáveis String
+Variable String
 ================
 
 
 
-+ Cuidado: não podemos acessar um índice maior que a quantidade de
-  caracteres da string
++ Precaución: no podemos acceder a un índice mayor que la cantidad de
+  caracteres de cadena
+
 
 .. codelens:: Example_18
     
-    texto = "Joao e Maria comem pão"
+    texto = "Juan y Maria comen pan"
     print(texto[22])
 
 
-Operações com strings
-=====================
+Operaciones con strings
+=======================
 
 
 
-+ As operações básicas são fatiamento, concatenação e composição
-+ O fatiamento permite utilizar parte da string e a concatenação nada
-  mais é do que juntar duas ou mais strings
-+ A composição é muito utilizada em mensagens que enviamos para a tela
-  e consiste em utilizar strings como modelos onde podemos inserir dados
++ Las operaciones básicas son corte, concatenación y composición.
++ Rebanar le permite usar parte de la cadena y la concatenación nada
+  más que unir dos o más cadenas
++ La composición se usa ampliamente en los mensajes que enviamos a la pantalla
+  y consiste en usar cadenas como modelos donde podemos insertar datos
 
 
-Concatenação
-============
+
+
+Concatenación
+=============
 
 
 .. codelens:: Example_19
     
-    a = "Batatinha"
-    b = "quando nasce"
+    a = "Papa"
+    b = "cuando nace"
     print(a+b)
     print(a*3)
 
 
-Composição
-==========
+Composición
+============
 
-
-
-+ Juntar várias strings nem sempre é prático
-+ Podemos usar marcadores para substituir valores dentro de strings
-
-
-
++ Unir cadenas múltiples no siempre es práctico
++ Podemos usar marcadores de posición para reemplazar valores dentro de cadenas
 
 .. codelens:: Example_20
     
-    idade = 20
-    print("Joã tem %d anos"%idade)
+    edad = 20
+    print("Juan tiene %d años" % edad)
 
 
-Composição
-==========
+Composición
+===========
 
 
-
-+ Os principais marcadores são %d para números inteiros, %s para
-  strings e %f para números em ponto flutuante
-+ %03d completa com zeros adicionais
-+ %3d significa três posições sem zeros adicionais
-
++ Los marcadores principales son% d para números enteros,% s para
+  cadenas y% f para números de coma flotante
++ % 03d completo con ceros adicionales
++ % 3d significa tres posiciones sin ceros adicionales
 
 
 
 .. codelens:: Example_21
     
-    idade = 20
-    print("[%03d]"%idade)
-    print("[%3d]"%idade)
+    edad = 20
+    print("[%03d]"%edad)
+    print("[%3d]"%edad)
 
 
-Composição
-==========
+Composición
+===========
 
 
 
-+ %5.2f significa 5 caracteres no total e 2 casas decimais
++ % 5.2f significa 5 caracteres en total y 2 decimales
 
 
 
 
 .. codelens:: Example_22
     
-    print("R$ %5.2f reais" %23)
+    print("$ %5.2f pesos" %23)
 
 
-Fatiamento
+Rebanada
 ==========
 
 
 
-+ Fatia do primeiro índice até o anterior do segundo
++ Rebanada del primer índice al anterior del segundo
 
 
 .. codelens:: Example_23
@@ -701,13 +698,15 @@ Fatiamento
     print(x[1:8])
 
 
-Fatiamento
+Rebanada
 ==========
 
 
 
-+ Podemos omitir índices, substituindo pelo extremo correspondente e
-  também podemos ter índices negativos: -1 último, -2 penúltimo
++ Podemos omitir índices, sustituyendo el extremo correspondiente y
+  también podemos tener índices negativos: -1 último, -2 penúltimo
+
+
 
 
 .. codelens:: Example_24
@@ -720,13 +719,13 @@ Fatiamento
     print(x[:])
 
 
-Alteração de variáveis com o tempo
-==================================
+Cambiar variables a lo largo del tiempo
+=======================================
 
 
 
-+ Um programa é executado linha por linha
-+ Assim, as variáveis podem mudar com o tempo de execução do seu
++ Un programa se ejecuta línea por línea.
++ Por lo tanto, las variables pueden cambiar con el tiempo de ejecución de su
   programa
 
 
@@ -734,36 +733,37 @@ Alteração de variáveis com o tempo
 
 .. codelens:: Example_25
     
-    dívida = 0 
+    deuda = 0 
     compra = 100
-    dívida = dívida + compra
+    deuda = deuda + compra
     compra = 200
-    dívida = dívida + compra
+    deuda = deuda + compra
     compra = 300
-    dívida = dívida + compra
-    print(dívida)
+    deuda = deuda + compra
+    print(deuda)
 
 
-Teste de mesa ou simulação
-==========================
+Prueba de escritorio o simulación
+=================================
+
+
++ Comprender que el valor de las variables puede cambiar durante la ejecución de
+  un programa no es tan natural, pero es fundamental para programar
++ Un programa no puede leerse como texto, pero con cuidado
+  analizado línea por línea
++ Puedes entrenar con lápiz, borrador y papel
 
 
 
-+ Entender que o valor das variáveis pode mudar durante a execução de
-  um programa não é tão natural, mas é fundamental para a programação
-+ Um programa não pode ser lido como um texto, mas cuidadosamente
-  analisado linha a linha
-+ Você pode treinar com lápis, borracha e papel
 
-
-Teste de mesa ou simulação
-==========================
+Prueba de escritorio o simulación
+=================================
 
 .. table:: **Teste de mesa ou simulação**
    :widths: auto
 
    ====== ====== ====
-   dívida compra Tela
+   deuda  compra Tela
    ====== ====== ====
    -0-    -100-    600
    -100-  -200-
@@ -771,8 +771,8 @@ Teste de mesa ou simulação
    600
    ====== ====== ====
 
-Não tenha pressa para o teste de mesa
-=====================================
+No tengas prisa por la prueba de escritorio
+===========================================
 
 .. image:: img/TWP05_035.jpeg
    :height: 13.6cm
@@ -780,14 +780,15 @@ Não tenha pressa para o teste de mesa
    :align: center
    :alt: 
 
-Entrada de Dados
+Entrada de datos
 ================
 
 
 
-+ Até agora nossos programas trabalharam com valores conhecidos
-+ Vamos começar a pegar os valores durante a execução dos programas e
-  usar mais o modo de edição
++ Hasta ahora nuestros programas han trabajado con valores conocidos.
++ Comenzaremos a obtener los valores durante la ejecución de los programas y
+  usa el modo de edición más
+
 
 .. activecode:: Input_Example_1
    :nocodelens:
@@ -797,31 +798,29 @@ Entrada de Dados
    print("Olá %s!" %nome)
 
 
-Conversão da entrada de dados
-=============================
+Conversión de entrada de datos
+==============================
 
-
-
-+ A função input retorna apenas strings
-+ Usamos int( ) para converter um valor para inteiro e float( ) para
-  ponto flutuante
++ La función de entrada solo devuelve cadenas
++ Usamos int() para convertir un valor a un entero y float() a
+  punto flotante
 
 
 .. activecode:: Input_Example_2
    :nocodelens:
    :stdin:
 
-   valor_unitario = float(input("Valor de uma rosquinha: "))
-   n = int(input("Número de rosquinha: "))
+   valor_unitario = float(input("Valor de una rosquilla: "))
+   n = int(input("Número de rosquillas: "))
    print("Valor total = %5.2f" %(n*valor_unitario))
 
 
-Erro comum
-==========
+Error común
+===========
 
 
 
-+ Esquecer algum parênteses. O erro vai dar na linha de baixo.
++ + Olvida algunos paréntesis. El error conducirá a la línea de abajo.
 
 
 .. image:: img/TWP05_040.png
@@ -830,7 +829,7 @@ Erro comum
    :align: center
    :alt: 
 
-Lista de Exercícios
+Lista de Ejercicios
 ===================
 
 
@@ -840,8 +839,8 @@ Lista de Exercícios
    :align: center
    :alt: 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias en video:
+=================================
 
 .. youtube:: 6La690qlH5w
       :height: 315
