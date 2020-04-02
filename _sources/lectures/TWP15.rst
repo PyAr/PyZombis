@@ -1,6 +1,6 @@
-==========
-Repetições
-==========
+============
+Repeticiones
+============
 
 
 .. image:: img/TWP10_001.jpeg
@@ -9,8 +9,8 @@ Repetições
    :align: center
    :alt: 
 
-Repetições
-==========
+Repeticiones
+============
 
 
 .. image:: img/TWP15_001.jpg
@@ -24,10 +24,10 @@ Repetições
    :alt: 
 
 
-Imprimindo de 1 a 3
+Impresión de 1 a 3
 ===================
 
-+ Forma simples
++ Formas  simples
 
 
 .. codelens:: Example3_1
@@ -37,7 +37,7 @@ Imprimindo de 1 a 3
         print(3)
 
 
-+ Usando uma variável
++ Usando una variable
 
 
 .. codelens:: Example3_2
@@ -50,12 +50,12 @@ Imprimindo de 1 a 3
         print(x)
 
 
-Imprimindo de 1 a 3
+Impresión de 1 a 3
 ===================
 
 
 
-+ Incrementando a variável
++ Incrementando la variable
 
 .. codelens:: Example3_3
 
@@ -76,7 +76,7 @@ Imprimindo de 1 a 3
         	print(x)
         	x=x+1
 
-Imprimindo de 1 a 3
+Impresión de 1 a 3
 ===================
 
 
@@ -87,8 +87,8 @@ Imprimindo de 1 a 3
    :alt: 
 
 
-Teste de mesa
-=============
+Prueva de escritorio
+====================
 
 
 .. image:: img/TWP15_Tab1.jpg
@@ -110,16 +110,16 @@ Contadores
 
 
 
-+ Agora imprima de 1 até um número digitado pelo usuário
++ Ahora imprima de 1 a un número ingresado por el usuario
 
 
 .. activecode:: Example3_6
    :nocodelens:
    :stdin:
 
-   fim = int(input("Digite o último número: "))
+   fin = int(input("Ingrese el último número: "))
    x = 1
-   while x <= fim:
+   while x <= fin:
     print(x)
     x=x+1
 
@@ -127,16 +127,16 @@ Contadores
 ==========
 
 
-+ Imprimir os números pares entre 0 e um número fornecido usando if
++ imprime números pares entre 0 y un número dado usando if
 
 
 .. activecode:: Example3_7
    :nocodelens:
    :stdin:
 
-   fim = int(input("Digite o último número: "))
+   fin = int(input("Ingrese el último número: "))
    x = 0
-   while x <= fim:
+   while x <= fin:
     if x%2 == 0:
     	print(x)
     x=x+1
@@ -146,17 +146,17 @@ Contadores
 ==========
 
 
-+ Imprimir os números pares entre 0 e um número fornecido sem utilizar
-  o if
++ Imprima números pares entre 0 y un número proporcionado sin usar
+   el if
 
 
 .. activecode:: Example3_8
    :nocodelens:
    :stdin:
 
-   fim = int(input("Digite o último número: "))
+   fin = int(input("Ingrese el último número: "))
    x = 0
-   while x <= fim:
+   while x <= fin:
    	print(x)
     x = x+2
 
@@ -166,20 +166,19 @@ Contadores
 
 
 
-+ Modifique o programa anterior para imprimir de 1 até o número
-  digitado pelo usuário, mas dessa vez apenas os números ímpares
-+ Reescreva o programa anterior para escrever os 10 primeiros
-  múltiplos de 3
++ Modificar el programa anterior para imprimir del 1 al número
+   ingresado por el usuario, pero esta vez solo los números impares
++ Reescribe el programa anterior para escribir los primeros 10
+   múltiplos de 3
 
 
 Acumuladores
 ============
 
 
-
-+ A diferença entre um contador e um acumulador é que nos contadores o
-  valor adicionado é constante e, nos acumuladores, variável
-+ Cálculo da soma de dez números inteiros
++ La diferencia entre un medidor y un acumulador es que en metros el
+   el valor agregado es constante y, en acumuladores, variable
++ Cálculo de la suma de diez números enteros
 
 
 .. activecode:: Example3_9
@@ -187,12 +186,11 @@ Acumuladores
    :stdin:
     
    n = 1
-   soma = 0
+   suma = 0
    while n <= 10:
-   	x = int(input("Digite o %d número: " %n))
-   	soma = soma + x
-   	n = n + 1
-   print("Soma: %d" %soma)
+ 	x = int(input("Ingrese el último %d número: " %n))	suma = ssuma+ x
+	n = n + 1
+   print("Suma: %d" %suma)
 
 
 Acumuladores
@@ -207,28 +205,28 @@ Acumuladores
    :stdin:
 
    n = 1
-   soma = 0
+   suma = 0
    while n <= 10:
-    x = int(input("Digite o %d número: " %n))
-    soma = soma + x
+    x = int(input("Ingrese el último %d número: " %n))
+    suma = suma + x
     n = n + 1
-   print("Soma: %5.2f" %(soma/n))
+   print("Suma: %5.2f" %(suma/n))
 
 
 Acumuladores
 ============
 
 
-+ Calcule o fatorial de dez
++ Calcular el factorial de diez
 
 .. codelens:: Example3_11
 
         i = 1
-        fat = 1
+        fact = 1
         while i <= 10:
-        	fat = fat*i
+        	fact = fact*i
         	i = i+1
-        print("Fat(10) = %d" %fat)
+        print("Fact(10) = %d" %fact)
 
 
 
@@ -236,87 +234,87 @@ Acumuladores
 ============
 
 
-+ Calcule o fatorial de um número inteiro n
++ Calcular el factorial de un número entero n
 
 .. activecode:: Example3_12
    :nocodelens:
    :stdin:
 
    i = 1
-   fat = 1
-   n = int(input("Digite n: "))
+   fact = 1
+   n = int(input("Ingrese n: "))
    while i <= n:
-    fat = fat*i
+    fact = fact*i
     i = i+1
-   print("Fat(%d) = %d" %(n,fat))
+   print("Fact(%d) = %d" %(n,fact))
 
 
 
-Interrompendo a repetição
-=========================
+interrumpiendo la repetición
+============================
 
 
-+ Calcule a soma de números inteiros até ser digitado zero
++ Calcule la suma de números enteros hasta que se ingrese cero
 
 
 .. activecode:: Example3_13
    :nocodelens:
    :stdin:
 
-   soma = 0
+   suma = 0
    while True:
-    x = int(input("Digite o número (0 sai): "))
+    x = int(input("Ingrese un numero (0 salir): "))
     if x == 0:
     	break
-    soma = soma + x
-   print("Soma: %d" %soma)
+    suma = suma + x
+   print("Suma: %d" %suma)
 
 
-Interrompendo a repetição
-=========================
+interrumpiendo la repetición
+============================
 
 
-+ Calcule a média de números até ser digitado zero
++ Números promedio hasta que se ingrese cero
 
 
 .. activecode:: Example3_14
    :nocodelens:
    :stdin:
 
-   soma = 0
+   suma = 0
    n = 0
    while True:
-   	x = int(input("Digite o número (0 sai): "))
+	x = int(input("Ingrese un numero (0 salir): "))
 	if x == 0:
 		break
 	else:
 		n = n+1
-	soma = soma + x
-   print("Média: %5.2f" %(soma/n))
+	suma = suma + x
+   print("Média: %5.2f" %(suma/n))
 
 
-Repetições aninhadas
-====================
+Repeticiones anidadas
+=====================
 
 
-+ Imprima as tabuadas de 1 a 10
++ Imprime las tablas del 1 al 10
 
 
 .. activecode:: Example3_15
    :nocodelens:
    :stdin:
 
-   tabuada = 1
+   tabla de multiplicar = 1
    while tabuada <= 10:
    		n = 1
-   		print("Tabuada %d" %tabuada)
+	print("tabla de multiplicar %d" %tabla de multiplicar)
    		while  n <= 10:
-   			print("%d x %d = %d" %(tabuada,n,tabuada*n))
+	print("%d x %d = %d" %(tabla de multiplicar,n,tabla de multiplicar*n))
    			n = n + 1
-   		tabuada = tabuada + 1 
+	tabla de multiplicar = tabla de multiplicar + 1
 
 
-Lista de Exercícios “again”
+Lista de Ejercicios “again”
 ===========================
 
 
@@ -327,11 +325,11 @@ Lista de Exercícios “again”
    :alt: 
 
 
-+ “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
++ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote” - Einstein
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: ef9LpwS-UHk
       :height: 315
