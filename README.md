@@ -1,4 +1,4 @@
-<img src="lectures/img/TWP05_001.jpeg" width="25%" height="25%" align="right">
+<img src="/_sources/lectures/img/TWP05_001.jpeg" width="25%" height="25%" align="right">
 
 # Python para Zombis
 
@@ -6,9 +6,9 @@ Programación Python para Zombis MOOC (código y materiales del curso abierto y 
 
 Contenidos:
 
- * [lectures](lectures): presentaciones para preparar las clases (vídeos)
+ * [lectures](/_sources/lectures): presentaciones para preparar las clases (vídeos)
  * [lab](lab): trabajos prácticos semanales (guía de ejercicios) con evaluación y calificación automatizada, implementados para el Laboratorio Virtual de Programación [VPL](http://vpl.dis.ulpgc.es/) de Moodle
- * [quiz](quiz): cuestionarios rápidos con problemas simples de programación a implementar con [CodeRunner](http://coderunner.org.nz/) en Moodle
+ * [quiz](/_sources/quiz): cuestionarios rápidos con problemas simples de programación a implementar con [CodeRunner](http://coderunner.org.nz/) en Moodle
 
 ## Licencia
 
