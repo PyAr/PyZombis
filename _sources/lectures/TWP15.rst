@@ -188,16 +188,17 @@ Acumuladores
    n = 1
    suma = 0
    while n <= 10:
- 	x = int(input("Ingrese el último %d número: " %n))	suma = ssuma+ x
+        x = int(input("Ingrese el último %d número: " %n))
+        suma = suma + x
 	n = n + 1
-   print("Suma: %d" %suma)
+   print("suma: %d" %suma)
 
 
 Acumuladores
 ============
 
 
-+ Calcule a média de 10 números inteiros
++ Promedio de 10 números enteross
 
 
 .. activecode:: Example3_10
@@ -263,10 +264,10 @@ interrumpiendo la repetición
 
    suma = 0
    while True:
-    x = int(input("Ingrese un numero (0 salir): "))
-    if x == 0:
-    	break
-    suma = suma + x
+             x = int(input("Ingrese un numero (0 salir): "))
+             if x == 0:
+	             break
+             suma = suma + x
    print("Suma: %d" %suma)
 
 
@@ -284,12 +285,12 @@ interrumpiendo la repetición
    suma = 0
    n = 0
    while True:
-	x = int(input("Ingrese un numero (0 salir): "))
-	if x == 0:
-		break
-	else:
-		n = n+1
-	suma = suma + x
+       x = int(input("Ingrese un numero (0 salir): "))
+       if x == 0:
+	       break
+       else:
+	       n = n+1
+       suma = suma + x
    print("Média: %5.2f" %(suma/n))
 
 
@@ -304,14 +305,14 @@ Repeticiones anidadas
    :nocodelens:
    :stdin:
 
-   tabla de multiplicar = 1
-   while tabuada <= 10:
-   		n = 1
-	print("tabla de multiplicar %d" %tabla de multiplicar)
-   		while  n <= 10:
-	print("%d x %d = %d" %(tabla de multiplicar,n,tabla de multiplicar*n))
-   			n = n + 1
-	tabla de multiplicar = tabla de multiplicar + 1
+   tabla_de_multiplicar = 1
+   while tabla_de_multiplicar <= 10:
+        n = 1
+	print("tabla_de_multiplicar %d" %tabla_de_multiplicar)
+        while  n <= 10:
+	     print("%d x %d = %d" %(tabla_de_multiplicar,n,tabla_de_multiplicar*n))
+	     n = n + 1
+	tabla_de_multiplicar = tabla_de_multiplicar + 1
 
 
 Lista de Ejercicios “again”
