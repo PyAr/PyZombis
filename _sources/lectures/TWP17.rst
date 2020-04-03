@@ -9,40 +9,40 @@ Listas
    :align: center
    :alt: 
 
-Edifício
+Edificio
 ========
 
 
 
-+ Edifício de apartamentos
++ Edificio de apartamentos
 
 
 .. codelens:: Example4_1
 
-        edifício_térreo = "Família Souza"
-        edifício_1o_andar = "Família Brito"
-        edifício_2o_andar = "Sr Jorge"
-        edifício_3o_andar = "Família Tanaka"
+        edifício_térreo = "La Familia Souza"
+        edifício_1o_andar = "La Familia Brito"
+        edifício_2o_andar = "El Sr Jorge"
+        edifício_3o_andar = "La Familia Tanaka"
 
 
-Edifício
+Edificio
 ========
 
 
 
-+ Podemos associar o térreo ao andar zero, o primeiro é o andar 1 e
-  assim por diante
++ Podemos asociar la planta baja con la planta baja, la primera es la planta 1 y
+  etc.
 
 
 .. codelens:: Example4_2
 
-        edifício = ["Família Souza","Família Brito","Sr Jorge","Família Tanaka"]
-        print(edifício[0])
-        print(edifício[1])
-        print(edifício[2])
-        print(edifício[3])
+        edificio = ["La Familia Souza","La Familia Brito","El Sr Jorge","La Familia Tanaka"]
+        print(edificio[0])
+        print(edificio[1])
+        print(edificio[2])
+        print(edificio[3])
 
-Trem de dados
+Tren de datos
 =============
 
 
