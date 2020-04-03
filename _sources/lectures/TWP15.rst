@@ -157,8 +157,8 @@ Contadores
    fin = int(input("Ingrese el último número: "))
    x = 0
    while x <= fin:
-   	print(x)
-    x = x+2
+       print(x)
+       x = x+2
 
 
 Contadores
