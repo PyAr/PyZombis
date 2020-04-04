@@ -37,12 +37,12 @@ Comillas de varios tipos.
 
 
 
-Fatiamento
-==========
+Rebanar
+=======
 
 
 
-+ Fatia do primeiro índice até o anterior do segundo
++ Rebanada del primer índice al anterior del segundo
 
 
 .. codelens:: Example5_2
@@ -170,10 +170,10 @@ Verificacion parcial de strings
         archivo = 'prog.py'
         print(archivo.startswith('p'))
         print(archivo.endswith('p'))
-        contestar = "si"
+        contestar = "Si"
         print(contestar.lower())
         print(contestar.upper())
-        print(contestar.lower() 'si no si no')
+        print(contestar.lower() in 'si no yes no')
 
 
 find and replace
