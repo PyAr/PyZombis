@@ -95,7 +95,6 @@ Incremento en el corte
 =======================
 
 
-
 + Comprobar si una palabra es palíndrome
 
 .. activecode:: Example5_5
@@ -106,8 +105,7 @@ Incremento en el corte
    if palabra == palabra[::-1]:
     print('%s é palíndrome' %palabra)
    else:
-     print('%s no es un palíndrome' %palabra
-
+     print('%s no es un palíndrome' %palabra)
 
 String no se puede modificar
 ============================
@@ -117,7 +115,7 @@ String no se puede modificar
    :nocodelens:
    :stdin:
 
-   texto = "Hola mundo!"
+   texto = " Hola mundo!"
    texto[0] = '@'
 
 
@@ -133,7 +131,7 @@ Puedo crear nuevos strings
    :nocodelens:
    :stdin:
 
-   texto = "Alô Mundo"
+   texto = "Hola mundo"
    texto = '@' + texto[1:]
    print(texto)
 
@@ -155,7 +153,7 @@ Concentración
    k = 0
    intercambio = ""
    while k < len(palabra):
-      if palabra[k] in 'aeiou:
+      if palabra[k] in 'aeiou':
        intercambio = intercambio + '*'
       else:
        intercambio = intercambio + palabra[k]
@@ -172,10 +170,10 @@ Verificacion parcial de strings
         archivo = 'prog.py'
         print(archivo.startswith('p'))
         print(archivo.endswith('p'))
-        contestar = "Si"
+        contestar = "si"
         print(contestar.lower())
         print(contestar.upper())
-        print(contestar.lower() en 'si no si no')
+        print(contestar.lower() 'si no si no')
 
 
 find and replace
@@ -221,10 +219,10 @@ Ejercicio
    :nocodelens:
    :stdin:
 
-   dia, mes , año = input('Data (dd/mm/aaaa): ').split('/')
-   meses = ['Enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+   dia, mes, anio = input('data (dd/mm/aaaa): ').split('/')
+   meses = ['Enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto','septiembre','octubre', 'noviembre', 'diciembre']
    print('Tu naces en: ')
-   print('%s de %s de %s' %(dia,meses[int(mês)-1],ano))
+   print('%s de %s de %s' %(dia,meses[int(mes)-1],anio))
 
 
 
