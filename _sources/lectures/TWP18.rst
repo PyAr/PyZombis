@@ -9,21 +9,21 @@ Strings
    :align: center
    :alt: 
 
-Aspas de vários tipos
-=====================
+Comillas de varios tipos.
+=========================
 
 
 
-+ Posso usar aspas simples, duplas ou triplas
++ ¿Puedo usar comillas simples, dobles o triples?
 
 
 
 
 .. codelens:: Example5_1
          
-        x = "abacate"
+        x = "aguacate"
         print(x)
-        y = "MacDonald's"
+        y = "McDonald's"
         print(y)
         form = '''
         <html>
@@ -55,13 +55,13 @@ Fatiamento
         print(x[1:8])
 
 
-Fatiamento
-==========
+Rebanar
+========
 
 
 
-+ Podemos omitir índices, substituindo pelo extremo correspondente e
-  também podemos ter índices negativos: -1 último, -2 penúltimo
++ Podemos omitir índices, sustituyendo el extremo correspondiente y
+  también podemos tener índices negativos: -1 último, -2 penúltimo
 
 
 .. codelens:: Example5_3
@@ -75,57 +75,58 @@ Fatiamento
 
 
 
-Incremento no fatiamento
-========================
+Incremento en el corte
+=======================
 
 
 
-+ Posso usar um incremento ao fatiar a string
++ Puedo usar un incremento al cortar el string
 
 
 
 .. codelens:: Example5_4
          
-        texto = "batatinha quando nasce"
+        texto = "papa cuando nace"
         print(texto[::2])
         print(texto[::-1])
 
 
-Incremento no fatiamento
-========================
+Incremento en el corte
+=======================
 
 
 
-+ Verifique se uma palavra é palíndrome
++ Comprobar si una palabra es palíndrome
 
 .. activecode:: Example5_5
    :nocodelens:
    :stdin:
 
-   palavra  =input('Palavra: ')
-   if palavra == palavra[::-1]:
-    print('%s é palíndrome' %palavra)
+   palabra  =input('Palabra: ')
+   if palabra == palabra[::-1]:
+    print('%s é palíndrome' %palabra)
    else:
-     print('%s não é palíndrome' %palavra)
+     print('%s no es un palíndrome' %palabra
 
-Strings são imutáveis
-=====================
+
+String no se puede modificar
+============================
 
 
 .. activecode:: Example5_6
    :nocodelens:
    :stdin:
 
-   texto = "Alô Mundo"
+   texto = "Hola mundo!"
    texto[0] = '@'
 
 
-Posso criar novas strings
-=========================
+Puedo crear nuevos strings
+==========================
 
 
 
-+ Usando concatenação resolvemos esse problema
++ Usando la concatenación resolvemos este problema
 
 
 .. activecode:: Example5_7
@@ -138,43 +139,43 @@ Posso criar novas strings
 
 
 
-Concatenação
-============
+Concentración
+=============
 
 
 
-+ Faça um programa que leia uma palavra e troque as vogais por “*”
++ Haga un programa que lea una palabra y reemplace las vocales con "*"
 
 
 .. activecode:: Example5_8
    :nocodelens:
    :stdin:
 
-   palavra  =input('Palavra: ')
+   palabra  =input('Palabra: ')
    k = 0
-   troca = ""
-   while k < len(palavra):
-      if palavra[k] in 'aeiou:
-       troca = troca + '*'
+   intercambio = ""
+   while k < len(palabra):
+      if palabra[k] in 'aeiou:
+       intercambio = intercambio + '*'
       else:
-       troca = troca + palavra[k]
+       intercambio = intercambio + palabra[k]
       k+=1
-   print("Nova palavra %s" %troca)
+   print("Nueva palabra %s" %intercambio)
 
 
-Verificação parcial de strings
-==============================
+Verificacion parcial de strings
+===============================
 
 
 .. codelens:: Example5_9
          
-        arquivo = 'prog.py'
-        print(arquivo.startswith('p'))
-        print(arquivo.endswith('p'))
-        reposta = "Sim"
-        print(reposta.lower())
-        print(reposta.upper())
-        print(reposta.lower() in 'sim não yes no')
+        archivo = 'prog.py'
+        print(archivo.startswith('p'))
+        print(archivo.endswith('p'))
+        contestar = "Si"
+        print(contestar.lower())
+        print(contestar.upper())
+        print(contestar.lower() en 'si no si no')
 
 
 find and replace
@@ -183,7 +184,7 @@ find and replace
 
 .. codelens:: Example5_10
          
-        s = 'um tigre, dois tigres, três tigres'
+        s = 'un tigre, dos tigres, tres tigres'
         print(s.find('tigre'))
         print(s.find('tigre',4))
         print(s.find('tigre',16))
@@ -198,37 +199,37 @@ split and join
 
 .. codelens:: Example5_11
          
-        txt = 'batatinha quando nasce'
+        txt = 'papa cuando nace'
         print(txt.split())
         data = '21/02/2011'
         print(data.split('/'))
         ip = '198.188.10.144'
         print(ip.split('.'))
-        times = ['Palmeiras','Santos','Corintians']
+        times = ['Palmeiras', 'Santos', 'Corintios']
         print('/'.join(times))
 
-Exercício
+Ejercicio
 =========
 
 
 
-+ Faça um programa que solicite a data de nascimento (dd/mm/aaaa) e
-  imprima com o nome do mês por extenso
++ Haga un programa que solicite la fecha de nacimiento (dd / mm / aaaa) y
+  imprimir con el nombre del mes completo
 
 
 .. activecode:: Example5_12
    :nocodelens:
    :stdin:
 
-   dia, mês , ano = input('Data (dd/mm/aaaa): ').split('/')
-   meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro']
-   print('Você nascem em: ')
+   dia, mes , año = input('Data (dd/mm/aaaa): ').split('/')
+   meses = ['Enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+   print('Tu naces en: ')
    print('%s de %s de %s' %(dia,meses[int(mês)-1],ano))
 
 
 
-Coding Dojo
-===========
+Dojo de codificación
+====================
 
 
 .. image:: img/TWP18_015.jpeg
@@ -238,20 +239,19 @@ Coding Dojo
    :alt: 
 
 
-Coding Dojo
-===========
+Dojo de codificación
+=====================
 
 
 
-+ Desenvolvimento guiado por testes
-+ Passos de bebê
-+ Pair programming
++ Desarrollo basado en pruebas
++ Pasos de bebé
++ Programación de pares
 
 
 
-
-Desenvolvimento guiado por testes
-=================================
+Desarrollo basado en pruebas
+============================
 
 
 .. image:: img/TWP18_016.png
@@ -261,8 +261,8 @@ Desenvolvimento guiado por testes
    :alt: 
 
 
-Baby Steps
-==========
+Pasos de bebé
+=============
 
 
 .. image:: img/TWP18_017.jpeg
@@ -272,8 +272,8 @@ Baby Steps
    :alt: 
 
 
-Pair Programming
-================
+Programación en pareja
+======================
 
 
 .. image:: img/TWP18_018.png
@@ -282,8 +282,8 @@ Pair Programming
    :align: center
    :alt: 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: t5sE9ruRHHM
       :height: 315
