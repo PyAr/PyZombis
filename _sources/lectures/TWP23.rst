@@ -1,7 +1,7 @@
 
-======================
-Arquivos e Dicionários
-======================
+=======================
+Archivos y diccionarios
+=======================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -11,37 +11,25 @@ Arquivos e Dicionários
    :alt: 
 
 
-Arquivos
+Archivos
 ========
 
-+ Até agora nossos dados desapareciam ao sair do IDLE
-
-+ Arquivos servem para armazenamento permanente
-
-+ Um arquivo é uma área em disco onde podemos ler ou gravar
-  informações
-
-+ Acessamos o arquivo pelo seu nome
-
-+ Para acessar um arquivo é preciso abri-lo
-
-+ Ao abrir o arquivo informamos seu nome, diretório onde fica (se
-  necessário) e que operações iremos executar: leitura e/ou escrita
-
-+ A função que abre os arquivo é open e os modos são: r – leitura, w –
-  escrita, a – append, b – binário, + (atualização)
-
-+ Os métodos para ler ou escrever são read e write
-
-+ Os arquivos devem ser fechados com close
-
++ Hasta ahora nuestros datos desaparecieron al salir de IDLE
++ Los archivos son para almacenamiento permanente
++ Un archivo es un área de disco donde podemos leer o escribir informacion
++ Accedemos al archivo por su nombre
++ Para acceder a un archivo necesita abrirlo
++ Al abrir el archivo informamos su nombre, directorio donde está  (si necesario) y qué operaciones realizaremos: lectura y / o escritura
++ La función que abre los archivos está abierta y los modos son: r - lectura, w - escritura, a - agregar, b - binario,(actualizar)
++ Los métodos para leer o escribir son read y write
++ Los archivos deben cerrarse con cierre Enviar comentarios
 
 .. code-block:: python
 
-   arquivo = open('numeros.txt','w')
-   for linha in range(1,101):
-       arquivo.write('%d\n' %linha)
-   arquivo.close()
+   archivo = open('numeros.txt','w')
+   for linea in range(1,101):
+       archivo.write('%d\n' %linea)
+   archivo.close()
 
 
 
@@ -61,16 +49,15 @@ Arquivos
 ..    arquivo.close()
 
 
-+ Caso você execute este programa nada aparecerá na tela
-+ Procure no diretório c:\Python3x o arquivo números.txt
-+ O modo w cria o arquivo se ele não existir, caso exista ele será
-  apagado e reescrito
++ Si ejecuta este programa, no aparecerá nada en la pantalla
++ Busque en el directorio c: \ Python3x el archivo  números.txt
++ El modo w crea el archivo si no existe, si existe será eliminado y reescrito
 
 .. code-block:: python
 
-   arquivo = open('numeros.txt','w')
-   for linha in arquivo.readlines():
-       print(linha)
+   archivo = open('numeros.txt','w')
+   for linea in archivo.readlines():
+       print(linea)
    arquivo.close()
 
 
@@ -85,12 +72,9 @@ Arquivos
 ..        print(linha)
 ..    arquivo.close()
 
-
-+ readlines gera uma lista onde cada elemento é uma linha lida
-+ Arquivos textos são simples e possuem um caracter de controle no
-  final para pular linha
-+ Se quisermos tirar esse caracter do final podemos usar
-  print(linha.rstrip())
++ readlines genera una lista donde cada elemento es una línea de lectura
++ Los archivos de texto son simples y tienen un carácter de control en fin de saltar la línea
++ Si queremos eliminar este personaje del final, podemos usar print (linh a.rstrip ())
 
 
 Pythonic way
@@ -112,36 +96,34 @@ Pythonic way
 ..     print(f.read())
 
 
-+ O código acima faz o mesmo da forma pythônica.
-+ No slide anterior vimos como programadores normais fazem a leitura
-+ Python é legal, pois sempre você pode se aprofundar mais
-+ Python é simples, mas difícil de esgotar
++ El código anterior hace lo mismo para la forma pitónica.
++ En la diapositiva anterior vimos cómo los programadores normales leen
++ Python es genial, porque siempre puedes ir más profundo
++ Python es simple, pero difícil de agotar
 
 
 Cripto
 ======
 
 
-+ Leia mensagem.txt e grave cripto.txt com todas as vogais trocadas
-  por ‘*’
-
++ Lea message.txt y escriba crypto.txt con todas las vocales cambiadas por ‘*’
 
 .. code-block:: python
 
     texto = open('mensagem.txt')
-    saida = open('cripto.txt','w')
-    for linha in texto.readlines():
-      for letra in linha:
+    salida = open('cripto.txt','w')
+    for linea in texto.readlines():
+      for letra in linea:
         if letra in 'aeiou':
-          saida.write('*')
+          salida.write('*')
         else:
           saida.write(letra)
     texto.close()
-    saida.close()
+    salida.close()
 
 
-Validate IP address
-===================
+Validar dirección IP
+====================
 
 
 .. .. datafile:: IPS.txt
@@ -178,11 +160,11 @@ Validate IP address
     arq = open('IPS.txt')
     validos = open('Válidos.txt','w')
     invalidos = open('Inválidos.txt','w')
-    for linha in arq.readlines():
-      if ip_ok(linha):
-        validos.write(linha)
+    for linea in arq.readlines():
+      if ip_ok(linea):
+        validos.write(linea)
       else:
-        invalidos.write(linha)
+        invalidos.write(linea)
     arq.close()
     validos.close()
     invalidos.close()
@@ -192,46 +174,41 @@ HTML
 ====
 
 
-+ Páginas web são escritas em HTML (Hypertext Mark-up Language)
-+ Tags HTML começam com < e terminam com >
-+ A página web é escrita entre <html> e </html> que é a tag de maior
-  nível
-+ Normalmente inserimos código javascript
-+ Javascript não é um subconjunto de Java
++ Las páginas web están escritas en HTML (lenguaje de marcado de hipertexto)
++ Las etiquetas HTML comienzan con <y terminan con>
++ La página web está escrita entre <html> y </html>, que es la etiqueta más grande nivel
++ Normalmente insertamos código javascript
++ Javascript no es un subconjunto de Java
 
 
 .. code-block:: python
 
-    arquivo = open('ola.html','w',encoding = 'utf-8')
-    arquivo.write('''<!DOCTYPE html>
-    <html lang="pt-BR">
+    archivo = open('hola.html','w',encoding = 'utf-8')
+    archivo.write('''<!DOCTYPE html>
+    <html lang="pt-AR">
     <head>
     <meta charset = "utf-8">
-    <title>Título da Página</title>
+    <title>Titulo da Pagina</title>
     </head>
     <body>
-    Olá!
+    Hola!
     </body>
     </html>''')
-    arquivo.close()
+    archivo.close()
 
 
-+ Note o parâmetro de codifição utf-8 ; Sem ele os ascentos não sairão
++ Tenga en cuenta el parámetro de codificación utf-8; Sin ella las subidas no saldrán
 
-
-Dictionaries
+Diccionarios
 ============
 
 
-+ O dicionário em si consiste em relacionar uma chave a um valor
-  específico
-+ Diferentemente das listas, onde o índice é um número, dicionários
-  utilizam suas chaves como índice
-+ Para adicionar novos elementos não preciso de append, basta fazer a
-  atribuição
++ El diccionario en sí consiste en relacionar una clave con un valor específico
++ A diferencia de las listas, donde el índice es un número, los diccionarios usar sus claves como índice
++ Para agregar nuevos elementos que no necesito agregar, solo haga la sesión
 
-    + Se a chave já existe: o valor associado é alterado
-    + Se a chave não existe: a nova chave é adicionada
+    + Si la clave ya existe: el valor asociado cambia
+    + Si la clave no existe: se agrega la nueva clave
 
 .. codelens:: Example7_4
          
@@ -254,7 +231,6 @@ Dictionaries
    print(d)
    print(d['x'])
 
-
 .. codelens:: Example7_6
          
         d = {}
@@ -268,9 +244,7 @@ Dictionaries
         for chave in d:
           print(chave)
 
-+ Faça um programa que leia o arquivo alice.txt e conte o número de
-  ocorrências de cada palavra no texto. Obs.: para saber os caracteres
-  especiais use import string e utilize string.punctuation
++ Haga un programa que lea el archivo alice.txt y cuente el número de ocurrencias de cada palabra en el texto. Nota: para conocer los personajes especiales use import string y use string.punctuation
 + `http://www.gutenberg.org/cache/epub/11/pg11.txt`_
 
 
@@ -290,7 +264,7 @@ Dictionaries
             dic[p] = 1
         else:
             dic[p] += 1
-    print ('Alice aparece %s vezes' %dic['alice'])
+    print ('Aparece Alice %s veces' %dic['alice'])
     arq.close()
 
 
@@ -306,10 +280,10 @@ Exercício Programa 1
    :alt: 
 
 
-+ “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
++ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: C9_DTR1lCIs
       :height: 315
