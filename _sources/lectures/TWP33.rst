@@ -1,6 +1,6 @@
-===============
-Revisão Strings
-===============
+==================
+Revisión de String
+==================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -14,16 +14,15 @@ Texto
 
 
 
-+ É difícil comunicar-se sem palavras
-+ Entre os vários tipos de dados, um dos mais importantes é o texto ou
++ Es difícil comunicarse sin palabras
++ Entre los diversos tipos de datos, uno de los más importantes es el texto o
   string
 
-   + Obs.: não é tão fácil manipular strings em algumas linguagens
+    + Nota: no es tan fácil manipular cadenas en algunos idiomas
 
-+ Vamos procurar onde estão as informações num texto == scraping
-+ E iremos aprender um dos conceitos mais importantes de orientação à
-  objetos: métodos
-
++ Busquemos dónde está la información en un texto == raspado
++ Y aprenderemos uno de los conceptos más importantes de orientación a la
+   objetos: métodos
 
 
 
@@ -38,8 +37,8 @@ Starbuzz Café
    :alt: 
 
 
-Código Starbuzz atual
-=====================
+Código Starbuzz corriente
+=========================
 
 .. code-block :: python
    
@@ -49,8 +48,8 @@ Código Starbuzz atual
    print(texto)
 
 
-O CEO quer apenas o preço
-=========================
+El CEO solo quiere el precio
+============================
 
 
 .. image:: img/TWP33_004.jpg
@@ -60,13 +59,13 @@ O CEO quer apenas o preço
    :alt: 
 
 
-O preço está embutido no HTML
-=============================
+El precio está incrustado en el HTML
+====================================
 
 
 
-+ Este é um texto HTML “bruto”, que é o formato das páginas Web
-+ O preço está embutido no HTML
++ Este es el texto HTML "en bruto", que es el formato de las páginas web
++ El precio está incrustado en HTML
 
 
 .. image:: img/TWP33_002.png
@@ -82,8 +81,7 @@ Strings
 
 
 
-+ Strings são seqüências de caracteres
-
++ String y cadenas de caracteres
 
 
 .. image:: img/TWP33_005.png
@@ -93,7 +91,7 @@ Strings
    :alt: 
 
 
-+ Como obter apenas o preço?
++ ¿Cómo obtener solo el precio?
 
 
 .. image:: img/TWP33_006.png
@@ -171,8 +169,8 @@ Fatiamento
    print(texto[234:238])
 
 
-O CEO está feliz!
-=================
+¡El CEO está feliz!
+===================
 
 
 .. image:: img/TWP33_015.jpg
@@ -182,29 +180,30 @@ O CEO está feliz!
    :alt: 
 
 
-Não existem perguntas idiotas
-=============================
+No hay preguntas tontas
+=======================
 
 
 
-+ Posso colocar qualquer página web neste código?
++ ¿Puedo poner alguna página web en este código?
 
-   + Sim. Fique à vontade, mas não esqueça o decode
-   + Por exemplo, o site abaixo usa iso8859
-   + `Link for the same <http://www.ime.usp.br/~pf/algoritmos/dicios/br>`_
-
-+ O que urllib.request faz?
-
-   + Permite conversar com a internet
-
-+ Posso acessar uma página diretamente no navegador?
-
-   + Sim. Digite no modo interativo “import antigravity”
+   + Sí. Siéntete libre, pero no olvides la decodificación
+   + Por ejemplo, el siguiente sitio web utiliza iso8859
+   + `Enlace para el mismo <http://www.ime.usp.br/~pf/algoritmos/dicios/br>`_
 
 
++ ¿Qué hace urllib.request?
 
-Descontos para clientes fiéis
-=============================
+    + Te permite chatear con internet
+
++ ¿Puedo acceder a una página directamente en el navegador?
+
+    + Sí. Escriba en modo interactivo "importar antigravedad"
+
+
+
+Descuentos para clientes leales
+===============================
 
 
 .. image:: img/TWP33_016.jpg
@@ -214,8 +213,8 @@ Descontos para clientes fiéis
    :alt: 
 
 
-Programa de fidelidade
-======================
+Programa de fidelización
+========================
 
 
 .. code-block :: python
@@ -226,14 +225,14 @@ Programa de fidelidade
    print(texto[234:238])
 
 
-+ Não deu certo! Apareceu “bean” no lugar do preço. Por quê será?
++ ¡No funcionó! "Bean" apareció en lugar del precio. ¿Porque sera?
 
 
-O preço se moveu
-================
+El precio se movió
+==================
 
 
-+ As páginas são diferentes e o preço muda de posição na string
++ Las páginas son diferentes y el precio cambia de posición en la cadena
 
 
 .. image:: img/TWP33_018.jpg
@@ -243,13 +242,13 @@ O preço se moveu
    :alt: 
 
 
-Os dados do Python são espertos
-===============================
+Los datos de Python son inteligentes
+====================================
 
-+ As linguagens de programação fornecem uma funcionalidade embutida
-  nos dados para ajudá-lo
++ Los lenguajes de programación proporcionan funcionalidad incorporada
+  en los datos para ayudarte
 
-+ Os dados do Python são espertos: eles podem fazer coisas
++ Los datos de Python son inteligentes: pueden hacer cosas
 
 
 .. codelens:: Example10_2
@@ -277,7 +276,7 @@ Método find
       print(string.find("Pa"))
 
 
-+ Para saber os métodos que possuo dar ctrl + espaço após ponto
++ Para conocer los métodos que tengo, dale Ctrl + espacio después de un período
 
 
 Método find
@@ -291,13 +290,13 @@ Método find
    texto = pagina.read().decode('utf8')
    onde = texto.find('>$')
    inicio = onde + 2
-   fim = inicio + 4
-   print(texto[inicio:fim])
+   fin = inicio + 4
+   print(texto[inicio:fin])
 
 
 
-Só quando for menos que 4.74
-============================
+Solo cuando es inferior a 4,74
+==============================
 
 
 .. image:: img/TWP33_025.jpg
@@ -307,8 +306,8 @@ Só quando for menos que 4.74
    :alt: 
 
 
-Só quando for menos que 4.74
-============================
+Solo cuando es inferior a 4,74
+===============================
 
 
 .. code-block :: python
@@ -318,14 +317,14 @@ Só quando for menos que 4.74
    texto = pagina.read().decode('utf8')
    onde = texto.find('>$')
    inicio = onde + 2
-   fim = inicio + 4
-   if texto[inicio:fim] < 4.74:
-      print(texto[inicio:fim])
+   fin = inicio + 4
+   if texto[inicio:fin] < 4.74:
+      print(texto[inicio:fin])
 
 
 
-Strings são diferentes de números
-=================================
+Las cadenas son diferentes de los números
+=========================================
 
 
 .. image:: img/TWP33_028.jpg
@@ -335,8 +334,8 @@ Strings são diferentes de números
    :alt: 
 
 
-Convertendo para float
-======================
+Convertir a float
+=================
 
 
 .. code-block :: python
@@ -346,14 +345,14 @@ Convertendo para float
    texto = pagina.read().decode('utf8')
    onde = texto.find('>$')
    inicio = onde + 2
-   fim = inicio + 4
-   if float(texto[inicio:fim]) < 4.74:
-      print('Comprar! float(texto[inicio:fim]): %5.2f' %float(texto[inicio:fim]))
+   fin= inicio + 4
+   if float(texto[inicio:fin]) < 4.74:
+      print('Comprar! float(texto[inicio:fin]): %5.2f' %float(texto[inicio:fin]))
 
 
 
-Ele pode ficar testando o preço?
-================================
+¿Puede seguir probando el precio?
+=================================
 
 
 .. image:: img/TWP33_029.jpg
@@ -363,25 +362,25 @@ Ele pode ficar testando o preço?
    :alt: 
 
 
-Ele pode ficar tentando?
-========================
+¿Puede seguir intentándolo?
+===========================
 
 
 .. code-block :: python
    
    import urrlib.request
-   preco = 99.99
-   while preco >= 4.74:
+   precio = 99.99
+   while precio >= 4.74:
       pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
       texto = pagina.read().decode('utf8')
       onde = texto.find('>$')
       inicio = onde + 2
-      fim = inicio + 4
-      preco = float(texto[inicio:fim])
-   print('Comprar! preco: %5.2f' %preco)
+      fin = inicio + 4
+      precio = float(texto[inicio:fin])
+   print('Comprar! precio: %5.2f' %precio)
 
 
-O CEO está muito feliz!
+¡El CEO está muy feliz!
 =======================
 
 
@@ -392,8 +391,8 @@ O CEO está muito feliz!
    :alt: 
 
 
-Aconteceu algum problema
-========================
+Algo salió mal
+==============
 
 
 .. image:: img/TWP33_032.jpg
@@ -403,9 +402,8 @@ Aconteceu algum problema
    :alt: 
 
 
-Acusação de DDoS
-================
-
+Acusación DDoS
+==============
 
 
 + DDoS – Distributed Denial of Service
@@ -418,8 +416,8 @@ Acusação de DDoS
    :alt: 
 
 
-Recebemos uma mensagem
-======================
+Recibimos un mensaje
+====================
 
 
 .. image:: img/TWP33_034.jpg
@@ -429,18 +427,17 @@ Recebemos uma mensagem
    :alt: 
 
 
-Biblioteca time
-===============
+Tiempo de biblioteca
+====================
 
 
++ Tiempo actual en segundos time.clock ()
++ ¿Estoy en verano? time.daylight ()
++ Duerme unos segundos, duerme (segundos)
++ Zona horaria time.timezone ()
 
-+ Hora atual em segundos time.clock()
-+ Estou no horário de verão? time.daylight()
-+ Dormir alguns segundos time.sleep(secs)
-+ Fuso horário time.timezone()
 
-
-10 minutos entre cada acesso
+10 minutos entre cada acceso
 ============================
 
 
@@ -448,47 +445,47 @@ Biblioteca time
    
    import urrlib.request
    import time
-   preco = 99.99
-   while preco >= 4.74:
+   precio = 99.99
+   while precio >= 4.74:
       pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
       texto = pagina.read().decode('utf8')
       onde = texto.find('>$')
       inicio = onde + 2
-      fim = inicio + 4
-      preco = float(texto[inicio:fim])
-      if preco >= 4.74:
+      fin = inicio + 4
+      precio = float(texto[inicio:fin])
+      if precio >= 4.74:
          time.sleep(600)
-   print('Comprar! preco: %5.2f' %preco)
+   print('Comprar! precio: %5.2f' %precio)
 
 
-Resumo
-======
-
-
-
-+ Strings são seqüências de caracteres
-+ Acessamos os caracteres individuais pelo índice, que começa com zero
-+ Métodos são funções embutidas nas variáveis
-+ Existem bibliotecas de programação com código pronto
-+ Os dados possuem um tipo, como int ou string
+Resumen
+=======
 
 
 
-
-Ferramentas Python
-==================
-
-
-
-+ texto[4] acessa o 5º caracter
-+ texto[4:9] acessa do 5º ao 9º caracter
-+ O método texto.find() procura um substring
-+ float() converte algo para ponto flutuante
-+ Bibliotecas: urllib.request e time
++ Las cadenas son cadenas
++ Accedemos a los caracteres individuales por el índice, que comienza con cero
++ Los métodos son funciones integradas en variables
++ Hay bibliotecas de programación con código listo
++ Los datos tienen un tipo, como int o string
 
 
-Links de Palestras em Vídeo:
-============================
+
+
+Herramientas de Python
+======================
+
+
+
++ texto [4] accede al quinto carácter
++ texto [4: 9] accede al quinto al noveno carácter
++ El método text.find () busca una subcadena
++ float () convierte algo a un punto flotante
++ Bibliotecas: urllib.request y equipo
+
+
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: VQ5vwKCi2Eg
       :height: 315
