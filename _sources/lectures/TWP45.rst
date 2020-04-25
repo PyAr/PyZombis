@@ -1,6 +1,6 @@
-===============================
-Hackeando o Facebook com Python
-===============================
+=============================
+Hackeando Facebook con Python
+=============================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -28,7 +28,7 @@ Facebook Hacking
    :align: center
    :alt: 
 
-+ Hackers não são “do mal” ?
++ Los hackers no son "malvados"?
 
 Facebook Profile Photo
 ======================
@@ -44,11 +44,11 @@ Facebook Profile Photo
    figura = urllib.request.urlopen(url).read()
 
    arquivo = user + '.jpg'
-   f = open (arquivo, 'wb')
+   f = open (archivo, 'wb')
    f.write(figura)
    f.close()
 
-   print (arquivo, 'gravado no seu diretório...')
+   print (archivo, 'gravado no seu diretório...')
 
 
 + Resultado
@@ -70,9 +70,9 @@ Facebook Profile Photo
 
 + `Link <https://developers.facebook.com/docs/reference/api/examples/>`_
 + Objetos JSON
-+ Links autenticados
-+ Obs.: access_token expira
-+ Autenticar novamente neste caso
++ Enlaces autenticados
++ Obs.: access_token caduca
++ Autenticar nuevamente en este caso
 
 
 .. image:: img/TWP45_006.png
@@ -163,14 +163,13 @@ Android Wallpaper
 
 
 
-+ Sabe o que é ter vontade de acordar cedo no domingo para estudar?!?
-+ Bom, eu também não sei explicar, mas é o que estou sentindo no
++ ¿Sabes lo que se siente despertarse temprano el domingo para estudiar?
++ Bueno, tampoco sé cómo explicarlo, pero eso es lo que siento en el
   momento .-.
 + Bora Casdinho!
-+ Hackear participantes a partir do evento criado no Facebook
-+ Inserir link para o perfil pessoal no Facebook
-+ Obs.: somente alguns participantes e com a foto na data do evento
-
++ Hackear participantes del evento creado en Facebook
++ Insertar enlace a perfil personal en Facebook
++ Obs .: solo algunos participantes y con la foto en la fecha del evento
 
 
 
@@ -495,8 +494,8 @@ Android Wallpaper
    :alt: 
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 .. youtube:: E_IIrwtag_c
