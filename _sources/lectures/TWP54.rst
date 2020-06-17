@@ -1,6 +1,6 @@
-========
-Exceções
-========
+===========
+Excepciones
+===========
 
 
 .. image:: img/TWP10_001.jpeg
@@ -11,8 +11,8 @@ Exceções
 
 
 
-Exceções 
-=========
+Excepciones 
+===========
 
 
 .. image:: img/TWP54_001.jpg
@@ -22,22 +22,22 @@ Exceções
    :alt: 
 
 
-Exceções
-========
-
-
-
-+ Algumas vezes as coisas dão errado. E você precisa tratá-las.
-
-+ Sempre existem coisas que fogem do seu controle. Redes falham.
-  Arquivos desaparecem.
-
-+ Códigos inteligentes aprendem a tratar estes erros e fazem com que o
-  programa se recupere suavemente.
-
-
-Que fedor!!
+Excepciones
 ===========
+
+
+
++ A veces las cosas salen mal. Y necesitas tratarlos.
+
++ Siempre hay cosas que están fuera de tu control. Las redes fallan.
+  Los archivos desaparecen.
+
++ Los códigos inteligentes aprenden a lidiar con estos errores y hacen que
+  programa para recuperarse sin problemas.
+
+
+¡Qué mal olor!
+==============
 
 
 .. image:: img/TWP54_002.jpg
@@ -47,8 +47,8 @@ Que fedor!!
    :alt: 
 
 
-Exceções
-========
+Excepciones
+===========
 
 
 .. image:: img/TWP54_003.jpg
@@ -58,8 +58,8 @@ Exceções
    :alt: 
 
 
-Exceção é lançada
-=================
+Se lanza una excepción
+======================
 
 
 .. image:: img/TWP54_004.jpg
@@ -69,8 +69,8 @@ Exceção é lançada
    :alt: 
 
 
-Capturando a exceção
-====================
+Atrapando la excepción
+======================
 
 
 .. image:: img/TWP54_005.jpg
@@ -80,8 +80,8 @@ Capturando a exceção
    :alt: 
 
 
-Tratando exceções
-=================
+Manejo de excepciones
+=====================
 
 
 .. code-block :: python
@@ -91,15 +91,15 @@ Tratando exceções
          fileD = open("encomendas.txt","a")
          fileD.write("Destino:\n")
          fileD.write("%s\n" %destino.get())
-         fileD.write("Descricao:\n")
-         fileD.write("%s\n" %descricao.get())
-         fileD.write("Endereco:\n")
-         fileD.write("%s\n" %endereco.get("1.0",END))
+         fileD.write("Descripcion:\n")
+         fileD.write("%s\n" %descripcion.get())
+         fileD.write("Habla:\n")
+         fileD.write("%s\n" %Habla.get("1.0",END))
          destino.set(None)
          descricao.delete(0,END)
          endereco.delete("1.0",END)
-      except Exception as excecao:
-         app.title('Erro de gravacao no arquivo %s' %excecao)
+      except Excepción como excepciones:
+         app.title('archivo de grabación %s' %excepcion)
 
 
 
@@ -139,8 +139,8 @@ Usando uma messagebox
          app.title('Erro de gravacao no arquivo %s' %excecao)
 
 
-Tratando Exceções
-=================
+Manejo de excepciones
+=====================
 
 
 .. image:: img/TWP54_009.jpg
@@ -150,8 +150,8 @@ Tratando Exceções
    :alt: 
 
 
-Tratando Exceções
-=================
+Manejo de excepciones
+=====================
 
 
 .. image:: img/TWP54_010.jpg
@@ -161,8 +161,8 @@ Tratando Exceções
    :alt: 
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 .. youtube:: n_jy8-bMG0g
