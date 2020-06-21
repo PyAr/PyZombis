@@ -1,6 +1,6 @@
-=================
-Interface Gráfica
-=================
+================
+Interfaz gráfica
+================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -10,28 +10,27 @@ Interface Gráfica
    :alt: 
 
 
-Interface Gráfica
-=================
-
-
-+ Não basta funcionar, deve ser bonito também
-+ Interface texto funciona, mas é pobre
-+ GUI – Graphical User Interface
-+ Show de Calouros
-
-
-Show de Calouros
+Interfaz gráfica
 ================
 
 
-+ Opção 1 para resposta correta e 2 para errada
-+ Teremos um efeito sonoro para cada resposta
-+ O programa deve contar quantas respostas certas e erradas houve
-+ Finalmente apertamos 0 para finalizar
++ No es suficiente para trabajar, también debe ser hermoso
++ La interfaz de texto funciona, pero es pobre
++ GUI - Interfaz gráfica de usuario
++ Show de primer año
 
 
-Show de Calouros
-================
+Show de primer año
+==================
+
++ Opción 1 para respuesta correcta y 2 para respuesta incorrecta
++ Tendremos un efecto de sonido para cada respuesta
++ El programa debe contar cuántas respuestas correctas e incorrectas hubo
++ Finalmente presione 0 para terminar
+
+
+Show de primer año
+==================
 
 
 .. image:: img/TWP50_001.png
@@ -41,11 +40,11 @@ Show de Calouros
    :alt: 
 
 
-+Atenção: instalar Pygame e baixar os arquivos de áudio para continuar a lição
++ Atención: instale Pygame y descargue los archivos de audio para continuar la lección
 
 
-Show de Calouros
-================
+Show de primer año
+==================
 
 
 .. code-block :: python
@@ -68,8 +67,8 @@ Show de Calouros
    espera_tocar(s4.play())
 
 
-Show de Calouros
-================
+Show de primer año
+==================
 
 
 .. image:: img/TWP50_003.png
@@ -85,7 +84,7 @@ Show de Calouros
    :align: center
    :alt: 
 
-+ Agora que o áudio está funcionando vamos fazer o programa do Show de Calouros!
++ Ahora que el audio está funcionando, ¡hagamos el programa Freshman Show!
 
 
 Show de Calouros
@@ -102,27 +101,27 @@ Show de Calouros
       while canal.get_busy():
          pass
 
-   certos = 0
-   errados = 0
-   opcao = int(input("Aperte 1)Certo 2)Errado e 0) Finalizar"))
+   cierto = 0
+   errores = 0
+   opcion = int(input("Apretar 1)Esta bien 2)Error e 0) Terminar"))
 
-   while opcao != 0:
-      if opcao == 1:
+   while opcion != 0:
+      if opcion == 1:
          s = sounds.Sound("correct.wav")
          espera_tocar(s.play())
-         certos = certos + 1
-      if opcao == 2"
+         cierto = ciertos + 1
+      if opcion == 2"
          s2 = sounds.Sound("wrong.wav")
          espera_tocar(s2.play())
-         errados = errados + 1
-      opcao = int(input("Aperte 1)Certo 2)Errado e 0) Finalizar"))
+         errores = errores + 1
+      opcion = int(input("Apretar 1)Esta bien 2)Error e 0) Terminar"))
 
-   print("Certos:",certos,"Errados:",errados)
+   print("Cierto:",cierto,"Terminar:",errores)
 
 
 
-Show de Calouros
-================
+Show de primer año
+==================
 
 + Resultado -
 
@@ -141,8 +140,8 @@ Show de Calouros
    :alt: 
 
 
-Show de Calouros
-================
+Show de primer año
+==================
 
 
 .. image:: img/TWP50_008.jpg
@@ -152,21 +151,21 @@ Show de Calouros
    :alt: 
 
 
-Janela básica
-=============
+Ventana básica
+==============
 
 
 .. code-block :: python
 
    from tkinter import *
    app = Tk()
-   app.title("Show de calouros")
+   app.title("Show de primer año")
    app.geometry('300x100+200+100')
 
-   b1 = Button(app,text = "Certo!", width = 10)
+   b1 = Button(app,text = "Ok!", width = 10)
    b1.pack(side = "left",padx = 10,pady = 10)
 
-   b2 = Button(app,text = "Errado!", width = 10)
+   b2 = Button(app,text = "Mal!", width = 10)
    b2.pack(side = "right",padx = 10,pady = 10)
 
 
@@ -177,7 +176,7 @@ Janela básica
    :alt: 
 
 
-Capturando um evento
+Capturando un evento
 ====================
 
 
@@ -188,8 +187,8 @@ Capturando um evento
    :alt: 
 
 
-Show de Calouros
-================
+Show de primer año
+==================
 
 
 .. code-block :: python
@@ -197,15 +196,15 @@ Show de Calouros
    from tkinter import *
 
    app = Tk()
-   app.title("Show de calouros")
+   app.title("Show de primer año")
    app.geometry('300x100+200+100')
 
    import pygame.mixer
 
    sounds = pygame.mixer
    sounds.init()
-   certos = 0
-   errados = 0
+   cierto = 0
+   errores = 0
 
    def espera_tacor(canal):
       while canal.get_busy():
@@ -233,8 +232,8 @@ Show de Calouros
 
 
 
-Show de Calouros
-================
+Show de primer año
+==================
 
 
 .. image:: img/TWP50_013.jpg
@@ -244,7 +243,7 @@ Show de Calouros
    :alt: 
 
 
-Adicionando Label´s
+Etiquetas agregadas
 ===================
 
 
@@ -252,16 +251,16 @@ Adicionando Label´s
 
    from tkinter import *
    app = Tk()
-   app.title("Show de calouros")
+   app.title("como estudiantes de primer año")
    app.geometry('300x100+200+100')
 
    import pygame.mixer
    sounds = pygame.mixer
    sounds.init()
-   certos = IntVar()
-   certos.set(0)
-   errados = IntVar()
-   errados.set(0)
+   cierto = IntVar()
+   cierto.set(0)
+   errores = IntVar()
+   errores.set(0)
 
    def espera_tacor(canal):
       while canal.get_busy():
@@ -270,34 +269,34 @@ Adicionando Label´s
    def musica_certa():
       s = sounds.Sound("correct.wav")
       espera_tocar(s.play())
-      certos.set(certos.get() + 1)
+      cierto.set(certos.get() + 1)
 
-   def musica errados():
+   def musica errores():
       s = sounds.Sound("wrong.wav")
       espera_tocar(s.play())
-      errados.set(errados.get() + 1)
+      errores.set(errores.get() + 1)
 
 
 
 
-Adicionando Label´s
-===================
+Agregar etiquetas
+=================
 
 
 .. code-block :: python
 
-   lab = Label(app,text = 'Aperte os botoes!',height = 3)
+   lab = Label(app,text = '¡Aprieta los botones!',height = 3)
    lab.pack()
 
-   lab1 = Label(app, textvariable = certos)
+   lab1 = Label(app, textvariable = cierto)
    lab1.pack(side = 'left')
-   lab1 = Label(app, textvariable = errados)
+   lab1 = Label(app, textvariable = errores)
    lab1.pack(side = 'right')
 
-   b1 = Button(app,text = "Certo!", width = 10, command = musica_certa)
+   b1 = Button(app,text = "Cierto!", width = 10, command = musica_certa)
    b1.pack(side = "left",padx = 10,pady = 10)
 
-   b2 = Button(app,text = "Errado!", width = 10, command = musica_certa)
+   b2 = Button(app,text = "Error!", width = 10, command = musica_certa)
    b2.pack(side = "right",padx = 10,pady = 10)
 
    app.mainloop
@@ -312,8 +311,8 @@ Adicionando Label´s
    :alt: 
 
 
-Show de Calouros
-================
+Show de primer año
+==================
 
 
 .. image:: img/TWP50_017.jpg
@@ -323,21 +322,19 @@ Show de Calouros
    :alt: 
 
 
-Revisão
+Revisar
 =======
 
 
-
-+ Usando biblioteca de terceiros: pygame
-+ Loop de evento: responde apenas quando o evento ocorre
-+ Tratador do evento: rotina que é executada quando o evento ocorre
-+ pass – código python para não fazer nada
-+ Tkinter: biblioteca para interface gráfica
-
++ Uso de la biblioteca de terceros: pygame
++ Bucle de eventos: responde solo cuando se produce el evento
++ Controlador de eventos: rutina que se ejecuta cuando ocurre el evento
++ pass - código de python para no hacer nada
++ Tkinter: biblioteca para interfaz gráfica
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 .. youtube:: 7gNCI7Dx0kU
