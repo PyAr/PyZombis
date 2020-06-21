@@ -1,6 +1,6 @@
-==============
-Revisão Listas
-==============
+==================
+Revición de listas
+==================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -11,8 +11,8 @@ Revisão Listas
 
 
 
-Campeonato de Surf em Codeville
-===============================
+Codeville Surf Championship
+===========================
 
 
 .. image:: img/TWP37_001.jpeg
@@ -22,9 +22,8 @@ Campeonato de Surf em Codeville
    :alt: 
 
 
-Campeonato de Surf em Codeville
-===============================
-
+Codeville Surf Championship 
+===========================
 
 .. image:: img/TWP37_002.jpeg
    :height: 11.923cm
@@ -44,13 +43,12 @@ Campeonato de Surf em Codeville
    :alt: 
 
 
-Encontre a pontuação mais alta
-==============================
+Encuentra la puntuación más alta
+================================
 
 
-
-+ As pontuações estão no arquivo surf.txt
-+ Selecione a pontuação mais alta para saber o vencedor!
++ Las puntuaciones están en el archivo surf.txt
++ ¡Selecciona la puntuación más alta para conocer al ganador!
 
 
 .. image:: img/TWP37_004.jpg
@@ -60,7 +58,7 @@ Encontre a pontuação mais alta
    :alt: 
 
 
-Lendo o arquivo surf.txt
+Leer el archivo surf.txt
 ========================
 
 .. .. datafile:: surf.txt
@@ -88,12 +86,12 @@ Lendo o arquivo surf.txt
 .. code-block:: python
    
    f = open('surf.txt')
-   for linha in f:
-      print(linha.strip())
+   for linia in f:
+      print(linia.strip())
    f.close()
 
-Fragmentador for
-================
+Fragmentador para
+=================
 
 
 .. image:: img/TWP37_007.jpg
@@ -103,8 +101,8 @@ Fragmentador for
    :alt: 
 
 
-Descubra quem obteve a maior nota
-=================================
+Descubre quién obtuvo la puntuación más alta
+============================================
 
 
 .. image:: img/TWP37_008.jpg
@@ -114,8 +112,8 @@ Descubra quem obteve a maior nota
    :alt: 
 
 
-O método split corta a string
-=============================
+El método de división corta la cadena.
+======================================
 
 
 
@@ -126,8 +124,8 @@ O método split corta a string
    :alt: 
 
 
-O método split corta a string
-=============================
+El método de división corta String
+==================================
 
 
 .. image:: img/TWP37_011.jpg
@@ -137,23 +135,22 @@ O método split corta a string
    :alt: 
 
 
-Encontrando o 1º lugar
-======================
-
+Encontrando el 1º lugar
+=======================
 
 .. code-block:: python
    
    f = open('surf.txt')
-   maior = 0
-   for linha in f:
-      nome, pontos = linha.split()
-      if float(pontos) > maior:
-         maior = float(pontos)
+   mayor = 0
+   for linia in f:
+      nombre, puntos = linia.split()
+      if float(puntos) > mayor:
+         mayor = float(puntos)
    f.close()
-   print(maior)
+   print(mayor)
 
 
-Sai o placar...
+El marcador ...
 ===============
 
 
@@ -164,35 +161,35 @@ Sai o placar...
    :alt: 
 
 
-Controlar 3 pontuações é complicado
-===================================
+El seguimiento de 3 puntajes es complicado
+==========================================
 
 
 .. code-block:: python
    
    f = open('surf.txt')
-   primeiro = 0
+   primero = 0
    segundo = 0
-   terceiro = 0
-   for linha in f:
-      nome, pontos = linha.split()
-      if float(pontos) > primeiro:
-         terceiro = segundo
-         segundo = primeiro
-         primeiro = float(pontos)
-      elif float(pontos) > segundo:
-         terceiro = segundo
-         segundo = float(pontos)
-      elif float(pontos) > terceiro:
-         terceiro = float(pontos)
+   tercero = 0
+   for linia in f:
+      nombre, puntos = linia.split()
+      if float(puntos) > primero:
+         tercero = segundo
+         segundo = primero
+         primero = float(puntos)
+      elif float(puntos) > segundo:
+         tercero = segundo
+         segundo = float(puntos)
+      elif float(puntos) > tercero:
+         tercero = float(puntos)
    f.close()
 
    print(primeiro)
    print(segundo)
-   print(terceiro)
+   print(tercero)
 
 
-Ordenar a lista seria melhor
+Ordenar la lista sería mejor
 ============================
 
 
@@ -203,23 +200,23 @@ Ordenar a lista seria melhor
    :alt: 
 
 
-Ordenação é mais fácil na memória
-=================================
+Ordenar es más fácil en la memoria
+==================================
+
+
++ Los datos del disco son persistentes: si tira del cable de la toma de corriente, el
+  la computadora no olvidará la información grabada en el disco
+
++ Los datos en la memoria son mucho más rápidos, pero no persistentes:
+  los datos en la memoria desaparecen cuando sale de su programa o cuando el
+  la computadora está apagada
+
++ Compensación de diseño: persistencia x velocidad
 
 
 
-+ Dados em disco são persistentes: se você puxar o fio da tomada, o
-  computador não esquecerá as informações gravadas no disco
-
-+ Dados na memória são muito mais rápidos, porém não são persistentes:
-  os dados na memória desaparecem quando seu programa sai ou quando o
-  computador é desligado
-
-+ Design Tradeoff: persistência x rapidez
-
-
-Primeiro: ler os dados para a memória
-=====================================
+Primero: lea los datos en la memoria
+====================================
 
 
 .. image:: img/TWP37_017.jpg
@@ -229,12 +226,12 @@ Primeiro: ler os dados para a memória
    :alt: 
 
 
-Uai, vamô usar um trem de dados
-===============================
+Wow, vampiro usa un tren de datos
+=================================
 
-+ Array, lista, vetor são nomes comuns para um lote inteiro de dados
++ Matriz, lista, vector son nombres comunes para un lote completo de datos
 
-+ Preciso de apenas uma única variável para todo o trem de dados
++ Solo necesito una sola variable para todo el tren de datos
 
 
 .. image:: img/TWP37_018.jpg
@@ -244,17 +241,17 @@ Uai, vamô usar um trem de dados
    :alt: 
 
 
-Voltando ao surf...
-===================
+Volviendo al surf ...
+=====================
 
 
 
-+ Podemos criar uma lista de notas
-+ Para inserir cada nova nota use append
-+ Os melhores colocados serão notas[0], notas[1] e notas[2]
++ Podemos crear una lista de notas
++ Para insertar cada nueva nota, use append
++ El mejor puesto serán las calificaciones [0], las calificaciones [1] y las calificaciones[2]
 
 
-Nova classificação
+Nueva calificación
 ==================
 
 
@@ -262,9 +259,9 @@ Nova classificação
    
    f = open('surf.txt')
    notas = []
-   for linha in f:
-      nome, pontos = linha.split()
-      notas.append(float(pontos))
+   for linia in f:
+      nombre, puntos = linia.split()
+      notas.append(float(puntos))
    f.close()
    print(notas[0])
    print(notas[1])
@@ -277,8 +274,8 @@ Nova classificação
    :alt: 
 
 
-Classificar em ordem descrescente
-=================================
+Ordenar en orden descendente
+============================
 
 
 .. image:: img/TWP37_022.jpg
@@ -288,27 +285,26 @@ Classificar em ordem descrescente
    :alt: 
 
 
-Métodos sort e reverse
-======================
+Ordenar y revertir métodos
+==========================
 
 
++ El método de clasificación ordena los datos
++ Uso inverso para mantenerlos en orden descendente
++ El nerd puede usar notas.sort (reverse = True)
 
-+ O método sort ordena os dados
-+ Utilizo reverse para que fiquem em ordem descrescente
-+ O nerd pode utilizar notas.sort(reverse = True)
 
-
-Finalmente a classificação correta
-==================================
+Finalmente la clasificación correcta
+====================================
 
 
 .. code-block:: python
    
    f = open('surf.txt')
    notas = []
-   for linha in f:
-      nome, pontos = linha.split()
-      notas.append(float(pontos))
+   for linia in f:
+      nombre, puntos = linia.split()
+      notas.append(float(puntos))
    f.close()
    notas.sort()
    notas.reverse()
@@ -325,8 +321,8 @@ Finalmente a classificação correta
 
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 .. youtube:: uEImp8vMMKE
