@@ -53,7 +53,7 @@ Trem de dados
    :alt: 
 
 
-Trem de dados
+Tren de datos
 =============
 
 
@@ -64,11 +64,11 @@ Trem de dados
    :alt: 
 
 
-+ O trem de dados my_array é uma única variável
++ El tren de datos my_array es una variable única
 
 
-Posso engatar vagões
-====================
+Puedo enganchar vagones
+=======================
 
 
 .. image:: img/TWP17_006.png
@@ -78,11 +78,11 @@ Posso engatar vagões
    :alt: 
 
 
-+ Como posso acrescentar um vagão com "Bettys"?
++ ¿Cómo puedo agregar un vagón con "Bettys"?
 
 
-Posso engatar vagões com append
-===============================
+Puedo conectar los vagones con agregar
+======================================
 
 
 .. image:: img/TWP17_007.png
@@ -98,7 +98,7 @@ Listas
 
 
 
-+ Uma lista vazia
++ Una lista vacia
 
 .. codelens:: Example4_3
 
@@ -106,7 +106,7 @@ Listas
 
 
 
-+ Uma lista com três notas
++ Una lista con tres notas.
 
 .. codelens:: Example4_4
 
@@ -114,7 +114,7 @@ Listas
 
 
 
-+ Acessando uma nota
++ Accediendo a una nota
 
 
 .. codelens:: Example4_5
@@ -123,7 +123,7 @@ Listas
         print(notas[0])
 
 
-+ Mudando a primeira nota
++ Cambiar la primera nota
 
 
 .. codelens:: Example4_6
@@ -138,29 +138,27 @@ Listas
 
 
 
-+ Calcule a média de 5 notas
++ Promedio de 5 notas
 
 
 .. codelens:: Example4_7
 
         notas = [6,7,5,8,9]
-        soma = 0
+        suma = 0
         x = 0
         while x < 5:
-         soma += notas[x]
+         suma += notas[x]
          x+=1
-        print("Média : %5.2f" %(soma/x))
+        print("Media : %5.2f" %(suma/x))
 
-+ Obs : x+=1 é o mesmo que x = x + 1 
++ Nota: x + = 1 es lo mismo que x = x + 1
 
 Listas
 ======
 
 
-
-+ Faça um programa que leia um vetor de 5 números inteiros e mostre o
-  vetor
-
++Haga un programa que lea un vector de 5 números enteros y muestre
+ vector
 
 
 .. activecode:: Example4_8
@@ -170,10 +168,10 @@ Listas
    vector = []
    i = 1
    while i <= 5:
-      n = int(input("Digite um número: "))
+      n = int(input("Ingrese un numero: "))
       vector.append(n)
       i = i + 1
-   print("Vector lido :", vector)
+   print("Vector de lectura :", vector)
 
 
 Listas
@@ -181,8 +179,8 @@ Listas
 
 
 
-+ Faça um programa que leia um vetor de dez números reais e mostre-os
-  na ordem inversa
++ Haga un programa que lea un vector de diez números reales y los muestre
+  en orden inverso
 
 
 
@@ -193,7 +191,7 @@ Listas
    vector = []
    i = 1
    while i <= 10:
-      n = float(input("Digite um número: "))
+      n = float(input("Ingrese un numero: "))
       vector.append(n)
       i += 1
    i = 9
@@ -207,8 +205,8 @@ Listas
 
 
 
-+ Faça um programa que leia quatro notas, mostre as notas e a média na
-  tela
++ Haga un programa que lea cuatro notas, muestre las notas y el promedio en
+  pantalla
 
 
 .. activecode:: Example4_10
@@ -221,20 +219,20 @@ Listas
       n = float(input("Nota: "))
       notas.append(n)
       i += 1
-   soma = 0
+   suma = 0
    i = 0
    while i <= 3:
-      soma += notas[i]
+      suma += notas[i]
       i += 1
    print("Notas:",notas)
-   print("Média : %4.2f" %(soma/4))
+   print("Media : %4.2f" %(suma/4))
 
 Listas
 ======
 
 
 
-+ Outra forma de fazer o mesmo
++ Otra forma de hacer lo mismo.
 
 
 .. activecode:: Example4_11
@@ -243,22 +241,22 @@ Listas
 
    notas = []
    i = 1
-   soma = 0
+   suma = 0
    while i <= 4:
       n = float(input("Nota: "))
       notas.append(n)
-      soma += n
+      suma += n
       i += 1
    print("Notas:",notas)
-   print("Média : %4.2f" %(soma/4))
+   print("Media : %4.2f" %(suma/4))
 
 Listas
 ======
 
 
 
-+ Faça um Programa que leia um vetor de 10 caracteres minúsculos, e
-  diga quantas consoantes foram lidas.
++ Haga un programa que lea un vector de 10 caracteres en minúscula, y
+  diga cuántas consonantes se leyeron.
 
 
 
@@ -278,10 +276,10 @@ Listas
       if letras[i] not in "aeiou":
          cont += 1
       i += 1
-   print("Foram lidos %d consoantes" %cont)
+   print("Fueron leídos %d consonantes" %cont)
 
 
-Lista de Exercícios “again”
+Lista de Ejercícios “again”
 ===========================
 
 
@@ -291,11 +289,10 @@ Lista de Exercícios “again”
    :align: center
    :alt: 
 
++ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote” - Einstein
 
-+ “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
-
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: IKbN7PnFqTQ
       :height: 315
