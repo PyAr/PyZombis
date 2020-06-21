@@ -1,6 +1,6 @@
-===============
-Revisão Geral 3
-===============
+==================
+Revisión general 3
+==================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -10,88 +10,85 @@ Revisão Geral 3
    :alt: 
 
 
-O processo de desenvolvimento de software
-=========================================
+El proceso de desarrollo de software.
+=====================================
+
+
++ Ejecutar programas creados por otros es relativamente
+  simple
+
++ Lo difícil es comenzar a crear tus propios programas
+
++ Las computadoras son muy estrictas y hay muchos detalles
+
++ Entonces es necesario ser muy sistemático
+
+
+Pasos en el proceso de desarrollo de software.
+==============================================
 
 
 
-+ Executar programas feitos por outros é uma tarefa relativamente
-  simples
++ Analiza el problema:
 
-+ O difícil é começar a criar seus próprios programas
+  + Comprender exactamente cuál es el problema a resolver
+  + Problema bien definido, medio problema resuelto
 
-+ Computadores são muito rigorosos e há muitos detalhes
++ Especifique el problema:
 
-+ Por isso é necessário ser muito sistemático
-
-
-Etapas no processo de desenvolvimento de software
-=================================================
-
-
-
-+ Analisar o problema:
-
-  + Entender exatamente qual é o problema a ser resolvido
-  + Problema bem definido, meio problema resolvido
-
-+ Especificar o problema:
-
-  + Descrever exatamente o que o seu programa fará
-  + Nesta etapa não me devo preocupar em como irei fazer meu programa,
-      mas em decidir exatamente o que ele fará
-  + Quais são as entradas e saídas do programa?
+  + Describe exactamente lo que hará tu programa
+  + En esta etapa, no debería preocuparme sobre cómo voy a hacer mi programa,
+    pero al decidir exactamente qué hará
+  + ¿Cuáles son las entradas y salidas del programa?
 
 
 
-Etapas no processo de desenvolvimento de software
-=================================================
+Pasos en el proceso de desarrollo de software.
+==============================================
+
+
++ Diseña el programa:
+
+  + Formular la estructura general del programa.
+  + Podemos usar pseudocódigo en este paso
+
++ Implementar el programa:
+
+  + Diseña algunas pruebas para validar tu programa
+  + Traduce el proyecto a cualquier idioma
+  + En este curso usaremos Python
 
 
 
-+ Projetar o programa:
-
-  + Formular a estrutura geral do programa
-  + Podemos usar pseudo-código nesta etapa
-
-+ Implementar o programa:
-
-  + Elaborar alguns testes para validar o seu programa
-  + Traduzir o projeto em alguma linguagem
-  + Neste curso utilizaremos Python
+Ejemplo: convertidor de temperatura Fahrenheit a Celsius
+========================================================
 
 
++ Análisis: dada una temperatura en grados Fahrenheit, obtenga la conversión
+   para Celsius
 
-Exemplo: conversor de temperatura de Fahrenheit para Celsius
-============================================================
++ Especificación de lo que hará el programa:
+
+  + Entrada: temperatura en Fahrenheit
+  + Salida: temperatura en grados Celsius
+  + Salida: 5 * (F-32) / 9
 
 
 
-+ Análise: dada uma temperatura em graus Fahrenheit obter a conversão
-  para Celsius
-
-+ Especificação do que o programa fará:
-
-  + Entrada: temperatura em Fahrenheit
-  + Saída: temperatura em Celsius
-  + Saída: 5*(F-32)/9
+Ejemplo: convertidor de temperatura Fahrenheit a Celsius
+========================================================
 
 
 
-Exemplo: conversor de temperatura de Fahrenheit para Celsius
-============================================================
++ Proyecto de cómo funcionará el programa:
 
+  + Leer el valor de temperatura en Fahrenheit
+  + Convertir el valor usando la fórmula 5 * (F-32) / 9
+  + Imprimir el valor convertido
 
++ Implementación:
 
-+ Projeto do como o programa fará:
-
-  + Leia o valor da temperatura em Fahrenheit
-  + Converta o valor usando a fórmula 5*(F-32)/9
-  + Imprima o valor convertido
-
-+ Implementação:
-
-  + Testes: 32 f = 0 c e 100 f = 37.8 c
+  + Pruebas: 32 f = 0 c y 100 f = 37.8 c
 
 
 
@@ -104,10 +101,10 @@ Exemplo: conversor de temperatura de Fahrenheit para Celsius
    print('Celsius: %2.1f' %C)
 
 
-+ Uso de variáveis com valores definidos
++ Uso de variables con valores definidos.
 
 
-Variáveis com valores indefinidos
+Variables con valores indefinidos
 =================================
 
 
@@ -117,13 +114,13 @@ Variáveis com valores indefinidos
    :align: center
    :alt: 
 
-Caracter de final de linha
-==========================
+Carácter de fin de línea
+======================== 
 
 
 .. codelens:: Example14_2
          
-        for x in 'abacate':
+        for x in 'aguacate':
           if x in 'ae':
             print(x,end = ' ')
           else:
@@ -131,8 +128,8 @@ Caracter de final de linha
 
 
 
-Atribuição de variáveis
-=======================
+Asignación de variables.
+========================
 
 
 
@@ -149,15 +146,15 @@ Atribuição de variáveis
         fahrenheit = 9/5*celsius + 32
 
 
-Atribuição de variáveis
-=======================
+Asignación de variables.
+========================
 
 
 .. codelens:: Example14_4
          
         x = 0
         print(x)
-        x = 'abacate'
+        x = 'aguacate'
         print(x)
         x = 3.14
         print(x)
@@ -165,25 +162,25 @@ Atribuição de variáveis
         print(x)
 
 
-Leitura e atribuição
-====================
+Lectura y tarea
+===============
 
 
 .. activecode:: Example14_5
    :nocodelens:
    :stdin:
 
-   string = input('Digite um texto: ')
+   string = input('Escribe un texto: ')
    print(string)
-   n = int(input('Digite um inteiro: '))
+   n = int(input('Ingrese un número entero: '))
    print(n)
-   pi = float(input('Digite o numero pi: '))
+   pi = float(input('Ingrese el número pi: '))
    print(pi)
-   x = eval(input('Digite um numero: '))
+   x = eval(input('Ingrese un número: '))
    print(x)
 
 
-Atribuição múltipla
+Asignación múltiple
 ===================
 
 
@@ -191,18 +188,18 @@ Atribuição múltipla
    :nocodelens:
    :stdin:
 
-   n1, n2, n3, n4 = eval(input('Digite 4 notas: '))
+   n1, n2, n3, n4 = eval(input('Tipo 4 notas: '))
    print('Media:',(n1+n2+n3+n4)/4)
    x = 4
    y = 5
-   soma, diferenca = x+y,x-y
-   print(soma)
-   print(diferenca)
+   suma, diferencia = x+y,x-y
+   print(suma)
+   print(diferencia)
    x,y = y,x
    print(x,y)
 
 
-Atribuição múltipla
+Asignación múltiple
 ===================
 
 
@@ -213,7 +210,7 @@ Atribuição múltipla
    :alt: 
 
 
-Atribuição múltipla
+Asignación múltiple
 ===================
 
 
@@ -233,74 +230,69 @@ Atribuição múltipla
           print(k,end = ' ')
         for k in [0,1,2,3]:
           print(k,end = ' ')
-        for k in 'abacate':
+        for k in 'aguacate':
           print(k+k,end=' ')
 
 
-Exercício
+Ejercício
+=========
+
+
++ Queremos desarrollar un programa que determine el valor futuro de
+  una inversión, dado el valor inicial y la tasa de interés
+
+
+Ejercício
 =========
 
 
 
-+ Nós queremos desenvolver um programa que determine o valor futuro de
-  um investimento, dados o valor inicial e a taxa de juros
++ Análisis:
+
+  + El dinero inicial genera una tasa de interés anual
+  + ¿Cuánto valdrá en 10 años?
+  + Entrada: monto inicial, tasa de interés
+  + Salida: valor en 10 años
 
 
-Exercício
+Ejercício
+=========
+
+
++ Especificación:
+
+  + El usuario ingresa la cantidad inicial invertida
+  + El usuario ingresa la tasa de interés anual
+  + Valor de la fórmula matemática financiera * (1 + interés)
+
+
+Ejercício
 =========
 
 
 
-+ Análise:
++ Proyecto:
 
-  + Dinheiro inicial rende uma taxa de juros anual
-  + Quanto ele irá valer em 10 anos?
-  + Entrada: valor inicial, taxa de juros
-  + Saída: valor em 10 anos
+  + Ingrese el monto de inversión inicial
+  + Ingrese la tasa de interés
+  + Repite 10 veces:
 
-
-
-Exercício
-=========
-
-
-
-+ Especificação:
-
-  + Usuário entra com o valor inicial investido
-  + Usuário entra com a taxa de juros anual
-  + Fórmula de matemática financeira valor*(1+juros)
-
-
-
-Exercício
-=========
-
-
-
-+ Projeto:
-
-  + Entre com o valor do investimento inicial
-  + Entre com a taxa de juros
-  + Repita 10 vezes:
-
-    + valor inicial = valor inicial * (1 + taxa de juros)
+    + valor inicial = valor inicial * (1 + tasa de interés)
   
-  + –Imprima o valor atualizado
+  + –Imprime el valor actualizado
 
 
 
-Exercício
+Ejercício
 =========
 
 
++ Implementación:
 
-+ Implementação:
+  + –Valores de prueba:
 
-  + –Valores de teste:
-
-    + 1000 reais e 3% de juros
-    + 1000 reais e 10% de juros
+    + 1000 reales y 3% de interés
+    + 1000 reales y 10% de interés
 
 
 
@@ -308,25 +300,24 @@ Exercício
    :nocodelens:
    :stdin:
 
-   valor = eval(input('Valor inicial investido: '))
-   taxa = eval(input('Taxa de juros anual: '))
+   valor = eval(input('Cantidad inicial invertida: '))
+   taxa = eval(input('Tasa de interés anual: '))
    for i in range(10):
     valor = valor*(1+taxa)
-   print('Valor apos 10 anos: %5.2f' %valor)
+   print('Valor después de 10 años:  %5.2f' %valor)
 
 
 
-Perguntas
-=========
+Preguntas frecuentes
+====================
+
++ ¿Por qué definir algunas pruebas antes de la implementación es una buena idea?
+   práctica de programación?
+
++ ¿Cuál es la ventaja de escribir pseudocódigo en la etapa de diseño?
 
 
-+ Por que definir alguns testes antes da implementação é uma boa
-  prática de programação?
-
-+ Qual é a vantagem de escrever um pseudo-código na etapa de projeto?
-
-
-Números básicos
+Numeros basicos
 ===============
 
 
@@ -342,23 +333,23 @@ Números básicos
         print(int(type(x)))
 
 
-Tabela de operadores
-====================
+Mesa de operadores
+==================
 
 .. table:: **Tabela de operadores**
    :widths: auto
 
    ======== ============== 
-   Operador Operação       
+   Operador Operacion
    ======== ============== 
-   \*        Multiplicação    
-   /         Divisão      
-   \*\*      Exponenciação
+   \*        Multiplicacion
+   /         Division 
+   \*\*      Exponenciación
    abs()     Valor absoluto
-   %        Resto da divisão
-   //       Divisão inteira
-   \-        Subtração
-   \+        Adição
+   %         Resto de la división
+   //        División entera
+   \-        Resta
+   \+        Además
 
    ======== ============== 
 
@@ -378,22 +369,22 @@ Operadores Numéricos
         print(abs(-5))
 
 
-Divisão inteira em linguagens antigas
-=====================================
+División entera en lenguas antiguas
+===================================
 
 
 
-+ As linguagens mais antigas geram um resultado inteiro na divisão de
-  inteiros!
++ Los idiomas más antiguos generan un resultado completo en la división de
+  todo!
 
-+ 10 / 3 será igual a 3
++ 10/3 será igual a 3
 
-+ No cálculo de fahrenheit para celsius terei que modificar um pouco
-  meu programa se usar C ou Java
++ Al calcular Fahrenheit a Celsius, tendré que modificarlo un poco
+  mi programa si uso C o Java
 
 
-Conversão de graus em C
-=======================
+Conversión de grados a C
+========================
 
 
 .. activecode:: Example14_11
@@ -413,8 +404,8 @@ Conversão de graus em C
    }
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 .. youtube:: 9gKN5n6mymk
