@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Classes e Objetos &#8212; Runestone Interactive Overview</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css?v=58C4E18A" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css?v=3BA0E63E" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css?v=239FC54E" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css?v=8A1A42E4" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css?v=E220AC33" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css?v=C184EB8A" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css?v=C6382F3" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css?v=424F1CC9" />
+    <link rel="stylesheet" type="text/css" href="../_static/reveal.css?v=4A81D381" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css?v=9CF75563" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css?v=E5385B3B" />
+    <link rel="stylesheet" type="text/css" href="../_static/shortanswer.css?v=7E18C432" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css?v=1FF7F927" />
+    <link rel="stylesheet" type="text/css" href="../_static/spreadsheet.css?v=B5F018A" />
+    <link rel="stylesheet" type="text/css" href="../_static/jexcel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/japp.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css?v=2F3E13EE" />
+    <link rel="stylesheet" type="text/css" href="../_static/js_lib/prettify.css?v=2A364B6B" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css?v=F471F95B" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=DB047029" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/mchoice.js?v=7B685250"></script>
+    <script src="../_static/timedmc.js?v=B010A457"></script>
+    <script src="../_static/timed.js?v=7A76C128"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js?v=599B42B0"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js?v=88A1430F"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js?v=AE15A4A1"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js?v=8ABDFE7F"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js?v=747279FF"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js?v=7B020E13"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js?v=660E85C3"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js?v=54B21948"></script>
+    <script src="../_static/mchoice-i18n.en.js?v=354E6CD"></script>
+    <script src="../_static/clickable.js?v=846DC076"></script>
+    <script src="../_static/timedclickable.js?v=93989C23"></script>
+    <script src="../_static/fitb.js?v=60630F3D"></script>
+    <script src="../_static/timedfitb.js?v=2AA17071"></script>
+    <script src="../_static/fitb-i18n.en.js?v=389ED00C"></script>
+    <script src="../_static/d3.v2.min.js?v=836E01C"></script>
+    <script src="../_static/jquery.ba-bbq.min.js?v=B64CF0A8"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js?v=42F9EBEA"></script>
+    <script src="../_static/pytutor.js?v=82B022B9"></script>
+    <script src="../_static/codelens.js?v=CABECD49"></script>
+    <script src="../_static/poll.js?v=45F04365"></script>
+    <script src="../_static/skulpt.min.js?v=A901CC2"></script>
+    <script src="../_static/skulpt-stdlib.js?v=24904821"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
+    <script src="../_static/datafile.js?v=156D8707"></script>
+    <script src="../_static/showEval.js?v=5B2DD7A6"></script>
+    <script src="../_static/tabbedstuff.js?v=5BE6106"></script>
+    <script src="../_static/reveal.js?v=35AF34F1"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/lp.js?v=5E742BDC"></script>
+    <script src="../_static/gas.js?v=129CE036"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/codemirror.js?v=25B54D0A"></script>
+    <script src="../_static/xml.js?v=236EDFF7"></script>
+    <script src="../_static/css.js?v=623153CE"></script>
+    <script src="../_static/htmlmixed.js?v=4EBE05BF"></script>
+    <script src="../_static/javascript.js?v=6F38CA04"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/Blob.js?v=AEC2447"></script>
+    <script src="../_static/runestonevideo.js?v=53E888DE"></script>
+    <script src="../_static/shortanswer.js?v=89F557ED"></script>
+    <script src="../_static/timed_shortanswer.js?v=B3A117D7"></script>
+    <script src="../_static/dragndrop.js?v=86D99604"></script>
+    <script src="../_static/timeddnd.js?v=378F237E"></script>
+    <script src="../_static/dragndrop-i18n.en.js?v=40C28531"></script>
+    <script src="../_static/spreadsheet.js?v=ABDABEC0"></script>
+    <script src="../_static/jexcel.js"></script>
+    <script src="../_static/japp.js"></script>
+    <script src="../_static/js_lib/prettify.js?v=CA7E8928"></script>
+    <script src="../_static/js_lib/hammer.min.js?v=73056367"></script>
+    <script src="../_static/parsons.js?v=CE79120E"></script>
+    <script src="../_static/timedparsons.js?v=2EEA9E5A"></script>
+    <script src="../_static/parsons-i18n.en.js?v=A9C11155"></script>
+    <script src="../_static/jquery.highlight.js?v=F1C496C8"></script>
+    <script src="../_static/bookfuncs.js?v=24766D61"></script>
+    <script src="../_static/python.js?v=76B9CFA2"></script>
+    <script src="../_static/sql.js?v=49D0BD74"></script>
+    <script src="../_static/activecode-i18n.en.js?v=65CA0724"></script>
+    <script src="../_static/activecode.js?v=AF9F4792"></script>
+    <script src="../_static/clike.js?v=4247C891"></script>
+    <script src="../_static/timed_activecode.js?v=20BFB7B1"></script>
+    <script src="../_static/sql-wasm.js?v=44FE0709"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.js"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../_static/presenter_mode.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Revisão Geral 1" href="TWP30.html" />
+    <link rel="prev" title="Arquivos e Dicionários" href="TWP23.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'PyZombisDev';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'PyZombisDev';
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '4.2.2';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.downloadsEnabled = false;
+  eBookConfig.enable_chatcodes = false ? false : false;
+  eBookConfig.allow_pairs = false ? false : false;
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis Python Course</a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/PyZombisDev/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/PyZombisDev/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=TWP25'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+      </div>
+
+
+
+
+
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Classes e Objetos</a><ul>
+<li><a class="reference internal" href="#baixar-os-codigos-abaixo">Baixar os códigos abaixo</a></li>
+<li><a class="reference internal" href="#id1">Classes e objetos</a></li>
+<li><a class="reference internal" href="#id2">Classes e objetos</a></li>
+<li><a class="reference internal" href="#id3">Classes e objetos</a></li>
+<li><a class="reference internal" href="#id4">Classes e objetos</a></li>
+<li><a class="reference internal" href="#id5">Classes e objetos</a></li>
+<li><a class="reference internal" href="#id6">Classes e objetos</a></li>
+<li><a class="reference internal" href="#arquivo-tatu-py">Arquivo tatu.py</a></li>
+<li><a class="reference internal" href="#arquivo-teste-py-saida-de-teste">Arquivo teste.py, Saída de teste</a></li>
+<li><a class="reference internal" href="#extrato-de-operacoes">Extrato de operações</a></li>
+<li><a class="reference internal" href="#arquivo-tatu2-py-apenas-conta">Arquivo tatu2.py (apenas Conta)</a></li>
+<li><a class="reference internal" href="#arquivo-teste2-py-saida-de-teste2">Arquivo teste2.py, Saída de teste2</a></li>
+<li><a class="reference internal" href="#heranca">Herança</a></li>
+<li><a class="reference internal" href="#adicionar-contaespecial-tatu3-py">Adicionar ContaEspecial tatu3.py</a></li>
+<li><a class="reference internal" href="#contaespecial">ContaEspecial</a></li>
+<li><a class="reference internal" href="#arquivo-teste3-py-saida-teste-3">Arquivo teste3.py, Saída teste 3</a></li>
+<li><a class="reference internal" href="#vantagens-da-heranca">Vantagens da herança</a></li>
+<li><a class="reference internal" href="#outro-exemplo-oop">Outro exemplo OOP</a></li>
+<li><a class="reference internal" href="#links-de-palestras-em-video">Links de Palestras em Vídeo:</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Arquivos e Dicionários" data-toggle="tooltip">
+    <a href="TWP23.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Revisão Geral 1' data-toggle="tooltip" >              
+    <a href="TWP30.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="classes-e-objetos">
+<h1>Classes e Objetos<a class="headerlink" href="#classes-e-objetos" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
+<div class="section" id="baixar-os-codigos-abaixo">
+<h2>Baixar os códigos abaixo<a class="headerlink" href="#baixar-os-codigos-abaixo" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>tv*.py</p></li>
+<li><p>tatu*.py</p></li>
+<li><p>teste*.py</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>Classes e objetos<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Classes associam dados (atributos) e operações (métodos) em uma só
+estrutura</p></li>
+<li><p>Um objeto é uma variável cujo tipo é uma classe, ou seja, um objeto
+é uma instância de uma classe</p></li>
+<li><p>Veremos apenas o básico da orientação à objetos</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>Classes e objetos<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="Example8_1"></div>
+<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example8_1)</span> </p>
+</div>
+<script type="text/javascript">
+var Example8_1_trace = {"code": "class Televisao:\n  def __init__ (self):\n    self.ligada = False\n    self.canal = 2\n\ntv_quarto = Televisao()\ntv_sala = Televisao()\nprint(tv_quarto.ligada)\nprint(tv_quarto.canal)\ntv_sala.ligada = True\ntv_sala.canal = 5", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null]}, "stdout": ""}, {"line": 2, "event": "call", "func_name": "__init__", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 3]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"3": ["INSTANCE", "Televisao"], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "__init__", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 3]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"3": ["INSTANCE", "Televisao"], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "__init__", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 3]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"3": ["INSTANCE", "Televisao", ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "__init__", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 3], "__return__": null}, "ordered_varnames": ["self", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3]}, "ordered_globals": ["Televisao", "tv_quarto"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]]}, "stdout": ""}, {"line": 2, "event": "call", "func_name": "__init__", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3]}, "ordered_globals": ["Televisao", "tv_quarto"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 4]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f2"}], "heap": {"4": ["INSTANCE", "Televisao"], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "__init__", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3]}, "ordered_globals": ["Televisao", "tv_quarto"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 4]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f2"}], "heap": {"4": ["INSTANCE", "Televisao"], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "__init__", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3]}, "ordered_globals": ["Televisao", "tv_quarto"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 4]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f2"}], "heap": {"4": ["INSTANCE", "Televisao", ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "__init__", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3]}, "ordered_globals": ["Televisao", "tv_quarto"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 4], "__return__": null}, "ordered_varnames": ["self", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f2"}], "heap": {"4": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3], "tv_sala": ["REF", 4]}, "ordered_globals": ["Televisao", "tv_quarto", "tv_sala"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "4": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3], "tv_sala": ["REF", 4]}, "ordered_globals": ["Televisao", "tv_quarto", "tv_sala"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "4": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]]}, "stdout": "False\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3], "tv_sala": ["REF", 4]}, "ordered_globals": ["Televisao", "tv_quarto", "tv_sala"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "4": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]]}, "stdout": "False\n2\n"}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3], "tv_sala": ["REF", 4]}, "ordered_globals": ["Televisao", "tv_quarto", "tv_sala"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "4": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", true]]}, "stdout": "False\n2\n"}, {"line": 11, "event": "return", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv_quarto": ["REF", 3], "tv_sala": ["REF", 4]}, "ordered_globals": ["Televisao", "tv_quarto", "tv_sala"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "4": ["INSTANCE", "Televisao", ["canal", 5], ["ligada", true]]}, "stdout": "False\n2\n"}]};
+var Example8_1_vis;
+
+$(document).ready(function() {
+    try {
+        Example8_1_vis = new ExecutionVisualizer('Example8_1',Example8_1_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(Example8_1_vis,'Example8_1');
+        styleButtons('Example8_1');
+        allVisualizers.push(Example8_1_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component Example8_1_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#Example8_1_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example8_1'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (Example8_1_vis) {
+        Example8_1_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Classes e objetos<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Quando declaramos uma classe, estamos criando um novo tipo de dados</p></li>
+<li><p>Da mesma forma que quando criamos uma lista ou uma string, estamos
+instanciando ou criando uma instância dessas classes</p></li>
+<li><p>É a mesma coisa fazer lista = [] ou lista = list()</p></li>
+<li><p>O método __init__ é chamado construtor e é chamado na criação do
+objeto</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>Classes e objetos<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>O parâmetro self significa o objeto televisão em si</p></li>
+<li><p>self.ligada é um valor de self, ou seja, do objeto televisão</p></li>
+<li><p>Sempre que criamos atributos do objeto, devemos associá-los a self.</p></li>
+<li><p>Caso contrário, se escrevêssemos apenas ligada = False, ligada seria
+apenas uma variável local do método e não um atributo</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>Classes e objetos<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="Example8_2"></div>
+<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example8_2)</span> </p>
+</div>
+<script type="text/javascript">
+var Example8_2_trace = {"code": "class Televisao:\n  def __init__ (self):\n    self.ligada = False\n    self.canal = 2\n  def muda_canal_para_baixo(self):\n    self.canal -= 1\n  def muda_canal_para_cima(self):\n    self.canal += 1\n\ntv = Televisao()\ntv.muda_canal_para_cima()\ntv.muda_canal_para_cima()\nprint(tv.canal)\ntv.muda_canal_para_baixo()\nprint(tv.canal)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 2, "event": "call", "func_name": "__init__", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"5": ["INSTANCE", "Televisao"], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "__init__", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"5": ["INSTANCE", "Televisao"], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "__init__", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"5": ["INSTANCE", "Televisao", ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "__init__", "globals": {"Televisao": ["REF", 1]}, "ordered_globals": ["Televisao"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5], "__return__": null}, "ordered_varnames": ["self", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null], "5": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]]}, "stdout": ""}, {"line": 7, "event": "call", "func_name": "muda_canal_para_cima", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [{"func_name": "muda_canal_para_cima", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "muda_canal_para_cima_f2"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "muda_canal_para_cima", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [{"func_name": "muda_canal_para_cima", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "muda_canal_para_cima_f2"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 2], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 8, "event": "return", "func_name": "muda_canal_para_cima", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [{"func_name": "muda_canal_para_cima", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5], "__return__": null}, "ordered_varnames": ["self", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "muda_canal_para_cima_f2"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 3], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null], "5": ["INSTANCE", "Televisao", ["canal", 3], ["ligada", false]]}, "stdout": ""}, {"line": 7, "event": "call", "func_name": "muda_canal_para_cima", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [{"func_name": "muda_canal_para_cima", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "muda_canal_para_cima_f3"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 3], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "muda_canal_para_cima", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [{"func_name": "muda_canal_para_cima", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "muda_canal_para_cima_f3"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 3], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 8, "event": "return", "func_name": "muda_canal_para_cima", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [{"func_name": "muda_canal_para_cima", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5], "__return__": null}, "ordered_varnames": ["self", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "muda_canal_para_cima_f3"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 4], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": ""}, {"line": 13, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null], "5": ["INSTANCE", "Televisao", ["canal", 4], ["ligada", false]]}, "stdout": ""}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null], "5": ["INSTANCE", "Televisao", ["canal", 4], ["ligada", false]]}, "stdout": "4\n"}, {"line": 5, "event": "call", "func_name": "muda_canal_para_baixo", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [{"func_name": "muda_canal_para_baixo", "is_parent": false, "frame_id": 4, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "muda_canal_para_baixo_f4"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 4], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": "4\n"}, {"line": 6, "event": "step_line", "func_name": "muda_canal_para_baixo", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [{"func_name": "muda_canal_para_baixo", "is_parent": false, "frame_id": 4, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "muda_canal_para_baixo_f4"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 4], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": "4\n"}, {"line": 6, "event": "return", "func_name": "muda_canal_para_baixo", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [{"func_name": "muda_canal_para_baixo", "is_parent": false, "frame_id": 4, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 5], "__return__": null}, "ordered_varnames": ["self", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "muda_canal_para_baixo_f4"}], "heap": {"5": ["INSTANCE", "Televisao", ["canal", 3], ["ligada", false]], "1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null]}, "stdout": "4\n"}, {"line": 15, "event": "step_line", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null], "5": ["INSTANCE", "Televisao", ["canal", 3], ["ligada", false]]}, "stdout": "4\n"}, {"line": 15, "event": "return", "func_name": "<module>", "globals": {"Televisao": ["REF", 1], "tv": ["REF", 5]}, "ordered_globals": ["Televisao", "tv"], "stack_to_render": [], "heap": {"1": ["CLASS", "Televisao", [], ["__init__", ["REF", 2]], ["muda_canal_para_baixo", ["REF", 3]], ["muda_canal_para_cima", ["REF", 4]]], "2": ["FUNCTION", "__init__(self)", null], "3": ["FUNCTION", "muda_canal_para_baixo(self)", null], "4": ["FUNCTION", "muda_canal_para_cima(self)", null], "5": ["INSTANCE", "Televisao", ["canal", 3], ["ligada", false]]}, "stdout": "4\n3\n"}]};
+var Example8_2_vis;
+
+$(document).ready(function() {
+    try {
+        Example8_2_vis = new ExecutionVisualizer('Example8_2',Example8_2_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(Example8_2_vis,'Example8_2');
+        styleButtons('Example8_2');
+        allVisualizers.push(Example8_2_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component Example8_2_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#Example8_2_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example8_2'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (Example8_2_vis) {
+        Example8_2_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>Classes e objetos<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Você irá informatizar o banco Tatú, controlando o saldo das contas
+correntes</p></li>
+<li><p>Cada conta corrente pode ter um ou mais clientes como titular</p></li>
+<li><p>O banco controla apenas o nome e telefone</p></li>
+<li><p>A conta corrente apresenta um saldo e um extrato de operações de
+saques e depósitos</p></li>
+<li><p>Não há contas especiais, logo o cliente não pode sacar mais do que
+têm no saldo</p></li>
+</ul>
+</div>
+<div class="section" id="arquivo-tatu-py">
+<h2>Arquivo tatu.py<a class="headerlink" href="#arquivo-tatu-py" title="Permalink to this headline">¶</a></h2>
+
+<div data-childcomponent="Example8_3" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=Example8_3 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+class Cliente:
+ def __init__ (self,nome,telefone):
+   self.nome = nome
+   self.telefone = telefone
+class Conta:
+ def __init__(self, clientes, numero, saldo = 0):
+   self.saldo = saldo
+   self.clientes = clientes
+   self.numero = numero
+ def resumo(self):
+   print('CC Numero: %s Saldo: %10.2f' %(self.numero,self.saldo))
+ def saque(self,valor):
+   if self.saldo >= valor:
+     self.saldo -= valor
+ def deposito(self, valor):
+   self.sado += valor
+</textarea>
+</div>
+</div>
+<div class="section" id="arquivo-teste-py-saida-de-teste">
+<h2>Arquivo teste.py, Saída de teste<a class="headerlink" href="#arquivo-teste-py-saida-de-teste" title="Permalink to this headline">¶</a></h2>
+
+<div data-childcomponent="Example8_4" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=Example8_4 data-lang="python" 
+     data-include="Example8_3" data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+joao = Cliente('Joao da Silva','777-1234')
+maria = Cliente('Maria da Silva','555-4321')
+print('Nome : %s. Telefone: %s' %(joao.nome,joao.telefone))
+print('Nome : %s. Telefone: %s' %(maria.nome,maria.telefone))
+conta1 = Conta([joao],1,1000)
+conta2 = Conta([maria,joao],2,500)
+conta1.resumo()
+conta2.resumo()
+</textarea>
+</div>
+</div>
+<div class="section" id="extrato-de-operacoes">
+<h2>Extrato de operações<a class="headerlink" href="#extrato-de-operacoes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Altere o método resumo da classe Conta para extrato, imprimindo
+agora uma lista de operações de saques e depósitos feitas</p></li>
+<li><p>Altere o método __init__ para que utilize o método depósito para
+inicializar o saldo</p></li>
+</ul>
+</div>
+<div class="section" id="arquivo-tatu2-py-apenas-conta">
+<h2>Arquivo tatu2.py (apenas Conta)<a class="headerlink" href="#arquivo-tatu2-py-apenas-conta" title="Permalink to this headline">¶</a></h2>
+
+<div data-childcomponent="Example8_5" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=Example8_5 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+class Cliente:
+ def __init__ (self,nome,telefone):
+   self.nome = nome
+   self.telefone = telefone
+class Conta:
+ def __init__(self, clientes, numero, saldo = 0):
+   self.saldo = saldo
+   self.clientes = clientes
+   self.numero = numero
+   self.operacoes = []
+   self.deposito(saldo)
+ def resumo(self):
+   print('CC N: %s Saldo: %10.2f' %(self.numero,self.saldo))
+ def saque(self,valor):
+   if self.saldo >= valor:
+     self.saldo -= valor
+     self.operacoes.append(['Saque',valor])
+ def deposito(self, valor):
+   self.sado += valor
+   self.operacoes.append(['Depósito',valor])
+ def extrato(self):
+   print('Extrato CC N %s' %self.numero)
+   for op in self.operacoes:
+     print("%10s %10.2f" %(op[0],op[1]))
+   print('%10s %10.2f\n' %('Saldo=',self.saldo))
+</textarea>
+</div>
+</div>
+<div class="section" id="arquivo-teste2-py-saida-de-teste2">
+<h2>Arquivo teste2.py, Saída de teste2<a class="headerlink" href="#arquivo-teste2-py-saida-de-teste2" title="Permalink to this headline">¶</a></h2>
+
+<div data-childcomponent="Example8_6" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=Example8_6 data-lang="python" 
+     data-include="Example8_5" data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+joao = Cliente('Joao da Silva','777-1234')
+maria = Cliente('Maria da Silva','555-4321')
+conta1 = Conta([joao],1,1000)
+conta2 = Conta([maria,joao],2,500)
+conta1.saque(50)
+conta2.deposito(300)
+conta1.saque(190)
+conta2.deposito(95.15)
+conta2.saque(250)
+conta1.extrato()
+conta2.extrato()
+</textarea>
+</div>
+</div>
+<div class="section" id="heranca">
+<h2>Herança<a class="headerlink" href="#heranca" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A orientação a objetos permite modificar nossas classes, adicionando
+ou modificando atributos e métodos, tendo como base a classe anterior</p></li>
+<li><p>Vamos criar contas especiais, onde podemos sacar mais dinheiro que o
+saldo, até um determinado limite</p></li>
+<li><p>As operações depósito, extrato e resumo continuam como uma conta
+normal</p></li>
+</ul>
+</div>
+<div class="section" id="adicionar-contaespecial-tatu3-py">
+<h2>Adicionar ContaEspecial tatu3.py<a class="headerlink" href="#adicionar-contaespecial-tatu3-py" title="Permalink to this headline">¶</a></h2>
+
+<div data-childcomponent="Example8_7" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=Example8_7 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+class Cliente:
+ def __init__ (self,nome,telefone):
+   self.nome = nome
+   self.telefone = telefone
+
+class Conta:
+ def __init__(self, clientes, numero, saldo = 0):
+   self.saldo = saldo
+   self.clientes = clientes
+   self.numero = numero
+   self.operacoes = []
+   self.deposito(saldo)
+ def resumo(self):
+   print('CC N: %s Saldo: %10.2f' %(self.numero,self.saldo))
+ def saque(self,valor):
+   if self.saldo >= valor:
+     self.saldo -= valor
+     self.operacoes.append(['Saque',valor])
+ def deposito(self, valor):
+   self.sado += valor
+   self.operacoes.append(['Depósito',valor])
+ def extrato(self):
+   print('Extrato CC N %s' %self.numero)
+   for op in self.operacoes:
+     print("%10s %10.2f" %(op[0],op[1]))
+   print('%10s %10.2f\n' %('Saldo=',self.saldo))
+
+class ContaEspecial(Conta):
+ def __init__(self, clientes, numero, saldo = 0):
+   Conta.__init__(self,clientes,numero, saldo)
+   self.limite = limite
+ def saque(self,valor):
+   if self.saldo + self.limite >= valor:
+     self.saldo -= valor
+     self.operacoes.append(['Saque',valor])
+</textarea>
+</div>
+</div>
+<div class="section" id="contaespecial">
+<h2>ContaEspecial<a class="headerlink" href="#contaespecial" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Observe que escrevemos Conta entre parênteses</p></li>
+<li><p>ContaEspecial herda os métodos e atributos de Conta</p></li>
+<li><p>self.limite será criado apenas para classes do tipo ContaEspecial</p></li>
+<li><p>Observe que estamos substituindo completamente o método saque em
+ContaEspecial</p></li>
+</ul>
+</div>
+<div class="section" id="arquivo-teste3-py-saida-teste-3">
+<h2>Arquivo teste3.py, Saída teste 3<a class="headerlink" href="#arquivo-teste3-py-saida-teste-3" title="Permalink to this headline">¶</a></h2>
+
+<div data-childcomponent="Example8_8" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=Example8_8 data-lang="python" 
+     data-include="Example8_7" data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+joao = Cliente('Joao da Silva','777-1234')
+maria = Cliente('Maria da Silva','555-4321')
+conta1 = Conta([joao],1,1000)
+conta2 = Conta([maria,joao],2,500,1000)
+conta1.saque(50)
+conta2.deposito(300)
+conta1.saque(190)
+conta2.deposito(95.15)
+conta2.saque(250)
+conta1.extrato()
+conta2.extrato()
+</textarea>
+</div>
+</div>
+<div class="section" id="vantagens-da-heranca">
+<h2>Vantagens da herança<a class="headerlink" href="#vantagens-da-heranca" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Modificamos muito pouco o nosso programa, mantendo a funcionalidade
+anterior e adicionando novos recursos</p></li>
+<li><p>Foi possível fazer o reuso dos métodos de Conta</p></li>
+<li><p>Assim a definição da classe ContaEspecial foi bem menor, incluindo
+apenas o comportamento diferente</p></li>
+</ul>
+</div>
+<div class="section" id="outro-exemplo-oop">
+<h2>Outro exemplo OOP<a class="headerlink" href="#outro-exemplo-oop" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="Example8_9"></div>
+<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example8_9)</span> </p>
+</div>
+<script type="text/javascript">
+var Example8_9_trace = {"code": "import datetime\n\nclass Pessoa():\n  def __init__ (self,nome,nascimento):\n    self.nome = nome\n    self.nascimento = nascimento\n\n  def idade(self):\n    delta = datetime.date.today() - self.nascimento\n    return int(delta.days/365)\n\n  def __str__ (self):\n    return '%s,%d anos' %(self.nome,self.idade())\n\nmasanori = Pessoa('Fernando Masanori', datetime.date(1980,9,1))\nprint(masanori.idade())\nprint(masanori)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"datetime": ["REF", 1]}, "ordered_globals": ["datetime"], "stack_to_render": [], "heap": {"1": ["INSTANCE", "module"]}, "stdout": ""}, {"line": 15, "event": "step_line", "func_name": "<module>", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2]}, "ordered_globals": ["datetime", "Pessoa"], "stack_to_render": [], "heap": {"1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null]}, "stdout": ""}, {"line": 4, "event": "call", "func_name": "__init__", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2]}, "ordered_globals": ["datetime", "Pessoa"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 6], "nome": "Fernando Masanori", "nascimento": ["REF", 7]}, "ordered_varnames": ["self", "nome", "nascimento"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"], "7": ["INSTANCE_PPRINT", "date", "1980-09-01"], "1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "__init__", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2]}, "ordered_globals": ["datetime", "Pessoa"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 6], "nome": "Fernando Masanori", "nascimento": ["REF", 7]}, "ordered_varnames": ["self", "nome", "nascimento"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"], "7": ["INSTANCE_PPRINT", "date", "1980-09-01"], "1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "__init__", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2]}, "ordered_globals": ["datetime", "Pessoa"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 6], "nome": "Fernando Masanori", "nascimento": ["REF", 7]}, "ordered_varnames": ["self", "nome", "nascimento"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"], "7": ["INSTANCE_PPRINT", "date", "1980-09-01"], "1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null]}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "__init__", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2]}, "ordered_globals": ["datetime", "Pessoa"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 6], "nome": "Fernando Masanori", "nascimento": ["REF", 7], "__return__": null}, "ordered_varnames": ["self", "nome", "nascimento", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"], "7": ["INSTANCE_PPRINT", "date", "1980-09-01"], "1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null]}, "stdout": ""}, {"line": 16, "event": "step_line", "func_name": "<module>", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2], "masanori": ["REF", 6]}, "ordered_globals": ["datetime", "Pessoa", "masanori"], "stack_to_render": [], "heap": {"1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null], "6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"]}, "stdout": ""}, {"line": 8, "event": "call", "func_name": "idade", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2], "masanori": ["REF", 6]}, "ordered_globals": ["datetime", "Pessoa", "masanori"], "stack_to_render": [{"func_name": "idade", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 6]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "idade_f2"}], "heap": {"6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"], "1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "idade", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2], "masanori": ["REF", 6]}, "ordered_globals": ["datetime", "Pessoa", "masanori"], "stack_to_render": [{"func_name": "idade", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 6]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "idade_f2"}], "heap": {"6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"], "1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null]}, "stdout": ""}, {"line": 9, "event": "exception", "func_name": "idade", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2], "masanori": ["REF", 6]}, "ordered_globals": ["datetime", "Pessoa", "masanori"], "stack_to_render": [{"func_name": "idade", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 6]}, "ordered_varnames": ["self"], "is_zombie": false, "is_highlighted": true, "unique_hash": "idade_f2"}], "heap": {"6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"], "1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null]}, "stdout": "", "exception_msg": "ImportError: time not supported"}, {"line": 9, "event": "return", "func_name": "idade", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2], "masanori": ["REF", 6]}, "ordered_globals": ["datetime", "Pessoa", "masanori"], "stack_to_render": [{"func_name": "idade", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 6], "__return__": null}, "ordered_varnames": ["self", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "idade_f2"}], "heap": {"6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"], "1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null]}, "stdout": ""}, {"line": 16, "event": "exception", "func_name": "<module>", "globals": {"datetime": ["REF", 1], "Pessoa": ["REF", 2], "masanori": ["REF", 6]}, "ordered_globals": ["datetime", "Pessoa", "masanori"], "stack_to_render": [], "heap": {"1": ["INSTANCE", "module"], "2": ["CLASS", "Pessoa", [], ["__init__", ["REF", 3]], ["__str__", ["REF", 4]], ["idade", ["REF", 5]]], "3": ["FUNCTION", "__init__(self, nome, nascimento)", null], "4": ["FUNCTION", "__str__(self)", null], "5": ["FUNCTION", "idade(self)", null], "6": ["INSTANCE_PPRINT", "Pessoa", "<incomplete object>"]}, "stdout": "", "exception_msg": "ImportError: time not supported"}]};
+var Example8_9_vis;
+
+$(document).ready(function() {
+    try {
+        Example8_9_vis = new ExecutionVisualizer('Example8_9',Example8_9_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(Example8_9_vis,'Example8_9');
+        styleButtons('Example8_9');
+        allVisualizers.push(Example8_9_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component Example8_9_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#Example8_9_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example8_9'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (Example8_9_vis) {
+        Example8_9_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
+</div>
+<div class="section" id="links-de-palestras-em-video">
+<h2>Links de Palestras em Vídeo:<a class="headerlink" href="#links-de-palestras-em-video" title="Permalink to this headline">¶</a></h2>
+
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+        <div id="Zr_FiKbgRbU" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="Zr_FiKbgRbU" data-video-divid="Zr_FiKbgRbU" data-video-start="0" data-video-end="-1" ></div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Video: (Zr_FiKbgRbU)</span> </p>
+    </div>
+    
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+        <div id="3MTDybCeMQE" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="3MTDybCeMQE" data-video-divid="3MTDybCeMQE" data-video-start="0" data-video-end="-1" ></div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Video: (3MTDybCeMQE)</span> </p>
+    </div>
+    
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+        <div id="d34q8zBje0I" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="d34q8zBje0I" data-video-divid="d34q8zBje0I" data-video-start="0" data-video-end="-1" ></div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Video: (d34q8zBje0I)</span> </p>
+    </div>
+    
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+        <div id="dtvjm7_PCiU" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="dtvjm7_PCiU" data-video-divid="dtvjm7_PCiU" data-video-start="0" data-video-end="-1" ></div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Video: (dtvjm7_PCiU)</span> </p>
+    </div>
+    
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+        <div id="eIZCUlC29Yw" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="eIZCUlC29Yw" data-video-divid="eIZCUlC29Yw" data-video-start="0" data-video-end="-1" ></div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Video: (eIZCUlC29Yw)</span> </p>
+    </div>
+    
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+        <div id="l5YK0Y1QF1w" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="l5YK0Y1QF1w" data-video-divid="l5YK0Y1QF1w" data-video-start="0" data-video-end="-1" ></div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Video: (l5YK0Y1QF1w)</span> </p>
+    </div>
+    
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+        <div id="wrMj5CwGeBY" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="wrMj5CwGeBY" data-video-divid="wrMj5CwGeBY" data-video-start="0" data-video-end="-1" ></div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Video: (wrMj5CwGeBY)</span> </p>
+    </div>
+    <script type="text/javascript">
+    function lecture8_disqus(source) {
+        if (window.DISQUS) {
+
+            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
+
+            //if Disqus exists, call it's reset method with new parameters
+            DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = 'lecture8_' + eBookConfig.course;
+                    this.page.url = 'https://lecture8_'+eBookConfig.course+'.interactivepython.com/#!';
+                }
+            });
+
+        } else {
+            //insert a wrapper in HTML after the relevant "show comments" link
+            $('<div id="disqus_thread"></div>').insertAfter(source);
+
+            // set Disqus required vars
+            disqus_shortname = 'pyzombis';
+            disqus_identifier = 'lecture8_' + eBookConfig.course;
+            disqus_url = 'http://lecture8_'+eBookConfig.course+'.interactivepython.com/#!';
+
+            //append the Disqus embed script to HTML
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            $('head').append(dsq);
+
+        }
+    }
+</script>
+
+<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="lecture8" onclick="lecture8_disqus(this);">Show Comments</a>
+<script type='text/javascript'>
+    $("a[data-disqus-identifier='lecture8']").attr('data-disqus-identifier', 'lecture8_' + eBookConfig.course);
+</script>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Arquivos e Dicionários' data-toggle="tooltip">
+    <a href="TWP23.html" >
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP23.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Revisão Geral 1' data-toggle="tooltip" >
+    <a href="TWP30.html" >
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="TWP30.html" >Next Section - Revisão Geral 1</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017 Atharva Kulkarni.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 4.2.2.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
