@@ -1,5 +1,5 @@
 =====================================
-DJ Mix 2 Revisão Orientação à Objetos
+DJ Mix 2 revisión orientada a objetos
 =====================================
 
 
@@ -10,8 +10,8 @@ DJ Mix 2 Revisão Orientação à Objetos
    :alt: 
 
 
-POO – Programação Orientada à Objetos
-=====================================
+POO - Programación Orientada a Objetos
+======================================
 
 
 
@@ -22,10 +22,10 @@ POO – Programação Orientada à Objetos
    :alt: 
 
 
-+ Temos DJ Mix para uma música
-+ Agora precisamos para várias
++ Tenemos DJ Mix para una canción
++ Ahora necesitamos varios
 + KISS – Kept It Simple Stupid
-+ Não duplicaremos código!
++ ¡No duplicaremos el código!
 
 
 .. image:: img/TWP58_003.jpg
@@ -35,8 +35,8 @@ POO – Programação Orientada à Objetos
    :alt: 
 
 
-Programação Orientada à Objetos
-===============================
+Programación orientada a objetos
+================================
 
 
 .. image:: img/TWP58_004.jpg
@@ -46,8 +46,8 @@ Programação Orientada à Objetos
    :alt: 
 
 
-Programação Orientada à Objetos
-===============================
+Programación orientada a objetos
+================================
 
 
 .. image:: img/TWP58_005.jpg
@@ -57,8 +57,8 @@ Programação Orientada à Objetos
    :alt: 
 
 
-Classe = fábrica de objetos
-===========================
+Clase = fábrica de objetos
+==========================
 
 
 .. image:: img/TWP58_006.jpg
@@ -68,8 +68,8 @@ Classe = fábrica de objetos
    :alt: 
 
 
-Programação Orientada à Objetos
-===============================
+Programación orientada a objetos
+================================
 
 
 .. image:: img/TWP58_007.jpg
@@ -79,8 +79,8 @@ Programação Orientada à Objetos
    :alt: 
 
 
-Programação Orientada à Objetos
-===============================
+Programación orientada a objetos
+================================
 
 
 .. code-block :: python
@@ -108,8 +108,8 @@ Programação Orientada à Objetos
          volume_scale.pack(side = RIGHT)
 
 
-Programação Orientada à Objetos
-===============================
+Programación orientada a objetos
+================================
 
 
 .. code-block :: python
@@ -138,7 +138,7 @@ Programação Orientada à Objetos
    app.mainloop()
 
 
-+ Parabéns! Agora você sabe criar programas complexos com pouco código
++ ¡Felicidades! Ahora sabes cómo crear programas complejos con poco código.
 
 
 
@@ -156,21 +156,21 @@ Programação Orientada à Objetos
    :alt: 
 
 
-Recordação
-==========
+Recuerdo
+========
 
 
 
-+ Classes são fábricas de objetos
-+ Classe = métodos + dados
-+ Criar objetos = instanciar uma classe
-+ class – inicia a definição de uma classe
-+ self – atribuído ao objeto corrente
-+ __init__() método chamado na criação do objeto
++ Las clases son fábricas de objetos
++ Classe = métodos + datos
++ Crear objetos =  instanciar una clase
++ class – comienza la definición de una clase
++ self – autoasignado al objeto actual
++ __init__() Se llama así al crear el objeto
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 
