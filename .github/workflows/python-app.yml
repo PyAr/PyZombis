@@ -39,4 +39,4 @@ jobs:
       with:
         publish_dir: build/PyZombis/
         publish_branch: gh-pages
-        github_token: ${{ secrets.ACCESS_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
