@@ -512,9 +512,9 @@ Ejemplo
 
 .. codelens:: Example_13
     
-    salário = 500.0
+    salario = 500.0
     edad = 20
-    print(salário > 1000 and idade > 18)
+    print(salario > 1000 and edad > 18)
 
 
 Ejemplo
