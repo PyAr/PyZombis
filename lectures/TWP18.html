@@ -305,24 +305,24 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Strings</a><ul>
-<li><a class="reference internal" href="#aspas-de-varios-tipos">Aspas de vários tipos</a></li>
-<li><a class="reference internal" href="#fatiamento">Fatiamento</a></li>
-<li><a class="reference internal" href="#id1">Fatiamento</a></li>
-<li><a class="reference internal" href="#incremento-no-fatiamento">Incremento no fatiamento</a></li>
-<li><a class="reference internal" href="#id2">Incremento no fatiamento</a></li>
-<li><a class="reference internal" href="#strings-sao-imutaveis">Strings são imutáveis</a></li>
-<li><a class="reference internal" href="#posso-criar-novas-strings">Posso criar novas strings</a></li>
-<li><a class="reference internal" href="#concatenacao">Concatenação</a></li>
-<li><a class="reference internal" href="#verificacao-parcial-de-strings">Verificação parcial de strings</a></li>
+<li><a class="reference internal" href="#comillas-de-varios-tipos">Comillas de varios tipos.</a></li>
+<li><a class="reference internal" href="#rebanar">Rebanar</a></li>
+<li><a class="reference internal" href="#id1">Rebanar</a></li>
+<li><a class="reference internal" href="#incremento-en-el-corte">Incremento en el corte</a></li>
+<li><a class="reference internal" href="#id2">Incremento en el corte</a></li>
+<li><a class="reference internal" href="#string-no-se-puede-modificar">String no se puede modificar</a></li>
+<li><a class="reference internal" href="#puedo-crear-nuevos-strings">Puedo crear nuevos strings</a></li>
+<li><a class="reference internal" href="#concentracion">Concentración</a></li>
+<li><a class="reference internal" href="#verificacion-parcial-de-strings">Verificacion parcial de strings</a></li>
 <li><a class="reference internal" href="#find-and-replace">find and replace</a></li>
 <li><a class="reference internal" href="#split-and-join">split and join</a></li>
-<li><a class="reference internal" href="#exercicio">Exercício</a></li>
-<li><a class="reference internal" href="#coding-dojo">Coding Dojo</a></li>
-<li><a class="reference internal" href="#id3">Coding Dojo</a></li>
-<li><a class="reference internal" href="#desenvolvimento-guiado-por-testes">Desenvolvimento guiado por testes</a></li>
-<li><a class="reference internal" href="#baby-steps">Baby Steps</a></li>
-<li><a class="reference internal" href="#pair-programming">Pair Programming</a></li>
-<li><a class="reference internal" href="#links-de-palestras-em-video">Links de Palestras em Vídeo:</a></li>
+<li><a class="reference internal" href="#ejercicio">Ejercicio</a></li>
+<li><a class="reference internal" href="#dojo-de-codificacion">Dojo de codificación</a></li>
+<li><a class="reference internal" href="#id3">Dojo de codificación</a></li>
+<li><a class="reference internal" href="#desarrollo-basado-en-pruebas">Desarrollo basado en pruebas</a></li>
+<li><a class="reference internal" href="#pasos-de-bebe">Pasos de bebé</a></li>
+<li><a class="reference internal" href="#programacion-en-pareja">Programación en pareja</a></li>
+<li><a class="reference internal" href="#enlaces-de-conferencias-de-video">Enlaces de conferencias de video:</a></li>
 </ul>
 </li>
 </ul>
@@ -372,10 +372,10 @@
   <div class="section" id="strings">
 <h1>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
-<div class="section" id="aspas-de-varios-tipos">
-<h2>Aspas de vários tipos<a class="headerlink" href="#aspas-de-varios-tipos" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="comillas-de-varios-tipos">
+<h2>Comillas de varios tipos.<a class="headerlink" href="#comillas-de-varios-tipos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Posso usar aspas simples, duplas ou triplas</p></li>
+<li><p>¿Puedo usar comillas simples, dobles o triples?</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
@@ -384,7 +384,7 @@
 <p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example5_1)</span> </p>
 </div>
 <script type="text/javascript">
-var Example5_1_trace = {"code": "x = \"abacate\"\nprint(x)\ny = \"MacDonald's\"\nprint(y)\nform = '''\n<html>\n       <head>\n          <title> Teste </title>\n       </head>\n       <body>\n          <p>Testando</p>\n       </body>\n <html>'''", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "abacate"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "abacate"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "abacate\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": "abacate", "y": "MacDonald's"}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": "abacate\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "abacate", "y": "MacDonald's"}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": "abacate\nMacDonald's\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"x": "abacate", "y": "MacDonald's", "form": "\n<html>\n       <head>\n          <title> Teste </title>\n       </head>\n       <body>\n          <p>Testando</p>\n       </body>\n <html>"}, "ordered_globals": ["x", "y", "form"], "stack_to_render": [], "heap": {}, "stdout": "abacate\nMacDonald's\n"}]};
+var Example5_1_trace = {"code": "x = \"aguacate\"\nprint(x)\ny = \"McDonald's\"\nprint(y)\nform = '''\n<html>\n       <head>\n          <title> Teste </title>\n       </head>\n       <body>\n          <p>Testando</p>\n       </body>\n <html>'''", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "aguacate"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "aguacate"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "aguacate\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": "aguacate", "y": "McDonald's"}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": "aguacate\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "aguacate", "y": "McDonald's"}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": "aguacate\nMcDonald's\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"x": "aguacate", "y": "McDonald's", "form": "\n<html>\n       <head>\n          <title> Teste </title>\n       </head>\n       <body>\n          <p>Testando</p>\n       </body>\n <html>"}, "ordered_globals": ["x", "y", "form"], "stack_to_render": [], "heap": {}, "stdout": "aguacate\nMcDonald's\n"}]};
 var Example5_1_vis;
 
 $(document).ready(function() {
@@ -425,10 +425,10 @@ $(window).resize(function() {
 </script>
 </div>
 </div>
-<div class="section" id="fatiamento">
-<h2>Fatiamento<a class="headerlink" href="#fatiamento" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="rebanar">
+<h2>Rebanar<a class="headerlink" href="#rebanar" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Fatia do primeiro índice até o anterior do segundo</p></li>
+<li><p>Rebanada del primer índice al anterior del segundo</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
@@ -479,10 +479,10 @@ $(window).resize(function() {
 </div>
 </div>
 <div class="section" id="id1">
-<h2>Fatiamento<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>Rebanar<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Podemos omitir índices, substituindo pelo extremo correspondente e
-também podemos ter índices negativos: -1 último, -2 penúltimo</p></li>
+<li><p>Podemos omitir índices, sustituyendo el extremo correspondiente y
+también podemos tener índices negativos: -1 último, -2 penúltimo</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
@@ -532,10 +532,10 @@ $(window).resize(function() {
 </script>
 </div>
 </div>
-<div class="section" id="incremento-no-fatiamento">
-<h2>Incremento no fatiamento<a class="headerlink" href="#incremento-no-fatiamento" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="incremento-en-el-corte">
+<h2>Incremento en el corte<a class="headerlink" href="#incremento-en-el-corte" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Posso usar um incremento ao fatiar a string</p></li>
+<li><p>Puedo usar un incremento al cortar el string</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
@@ -544,7 +544,7 @@ $(window).resize(function() {
 <p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example5_4)</span> </p>
 </div>
 <script type="text/javascript">
-var Example5_4_trace = {"code": "texto = \"batatinha quando nasce\"\nprint(texto[::2])\nprint(texto[::-1])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"texto": "batatinha quando nasce"}, "ordered_globals": ["texto"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"texto": "batatinha quando nasce"}, "ordered_globals": ["texto"], "stack_to_render": [], "heap": {}, "stdout": "bttnaqad ac\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"texto": "batatinha quando nasce"}, "ordered_globals": ["texto"], "stack_to_render": [], "heap": {}, "stdout": "bttnaqad ac\necsan odnauq ahnitatab\n"}]};
+var Example5_4_trace = {"code": "texto = \"papa cuando nace\"\nprint(texto[::2])\nprint(texto[::-1])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"texto": "papa cuando nace"}, "ordered_globals": ["texto"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"texto": "papa cuando nace"}, "ordered_globals": ["texto"], "stack_to_render": [], "heap": {}, "stdout": "pp unonc\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"texto": "papa cuando nace"}, "ordered_globals": ["texto"], "stack_to_render": [], "heap": {}, "stdout": "pp unonc\necan odnauc apap\n"}]};
 var Example5_4_vis;
 
 $(document).ready(function() {
@@ -586,9 +586,9 @@ $(window).resize(function() {
 </div>
 </div>
 <div class="section" id="id2">
-<h2>Incremento no fatiamento<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>Incremento en el corte<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Verifique se uma palavra é palíndrome</p></li>
+<li><p>Comprobar si una palabra es palíndrome</p></li>
 </ul>
 
 <div data-childcomponent="Example5_5" class="runestone explainer ac_section alert alert-warning">
@@ -597,16 +597,16 @@ $(window).resize(function() {
       data-timelimit=25000    
     data-audio=''   data-stdin=''   
            data-wasm=/_static>
-palavra  =input('Palavra: ')
-if palavra == palavra[::-1]:
- print('%s é palíndrome' %palavra)
+palabra  =input('Palabra: ')
+if palabra == palabra[::-1]:
+ print('%s é palíndrome' %palabra)
 else:
-  print('%s não é palíndrome' %palavra)
+  print('%s no es un palíndrome' %palabra)
 </textarea>
 </div>
 </div>
-<div class="section" id="strings-sao-imutaveis">
-<h2>Strings são imutáveis<a class="headerlink" href="#strings-sao-imutaveis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="string-no-se-puede-modificar">
+<h2>String no se puede modificar<a class="headerlink" href="#string-no-se-puede-modificar" title="Permalink to this headline">¶</a></h2>
 
 <div data-childcomponent="Example5_6" class="runestone explainer ac_section alert alert-warning">
 
@@ -614,15 +614,15 @@ else:
       data-timelimit=25000    
     data-audio=''   data-stdin=''   
            data-wasm=/_static>
-texto = "Alô Mundo"
+texto = " Hola mundo!"
 texto[0] = '@'
 </textarea>
 </div>
 </div>
-<div class="section" id="posso-criar-novas-strings">
-<h2>Posso criar novas strings<a class="headerlink" href="#posso-criar-novas-strings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="puedo-crear-nuevos-strings">
+<h2>Puedo crear nuevos strings<a class="headerlink" href="#puedo-crear-nuevos-strings" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Usando concatenação resolvemos esse problema</p></li>
+<li><p>Usando la concatenación resolvemos este problema</p></li>
 </ul>
 
 <div data-childcomponent="Example5_7" class="runestone explainer ac_section alert alert-warning">
@@ -631,16 +631,16 @@ texto[0] = '@'
       data-timelimit=25000    
     data-audio=''   data-stdin=''   
            data-wasm=/_static>
-texto = "Alô Mundo"
+texto = "Hola mundo"
 texto = '@' + texto[1:]
 print(texto)
 </textarea>
 </div>
 </div>
-<div class="section" id="concatenacao">
-<h2>Concatenação<a class="headerlink" href="#concatenacao" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="concentracion">
+<h2>Concentración<a class="headerlink" href="#concentracion" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Faça um programa que leia uma palavra e troque as vogais por “*”</p></li>
+<li><p>Haga un programa que lea una palabra y reemplace las vocales con “*”</p></li>
 </ul>
 
 <div data-childcomponent="Example5_8" class="runestone explainer ac_section alert alert-warning">
@@ -649,21 +649,21 @@ print(texto)
       data-timelimit=25000    
     data-audio=''   data-stdin=''   
            data-wasm=/_static>
-palavra  =input('Palavra: ')
+palabra  =input('Palabra: ')
 k = 0
-troca = ""
-while k < len(palavra):
-   if palavra[k] in 'aeiou:
-    troca = troca + '*'
+intercambio = ""
+while k < len(palabra):
+   if palabra[k] in 'aeiou':
+    intercambio = intercambio + '*'
    else:
-    troca = troca + palavra[k]
+    intercambio = intercambio + palabra[k]
    k+=1
-print("Nova palavra %s" %troca)
+print("Nueva palabra %s" %intercambio)
 </textarea>
 </div>
 </div>
-<div class="section" id="verificacao-parcial-de-strings">
-<h2>Verificação parcial de strings<a class="headerlink" href="#verificacao-parcial-de-strings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="verificacion-parcial-de-strings">
+<h2>Verificacion parcial de strings<a class="headerlink" href="#verificacion-parcial-de-strings" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone" style="max-width: none;">
 <div class="alert alert-warning cd_section">
@@ -671,7 +671,7 @@ print("Nova palavra %s" %troca)
 <p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example5_9)</span> </p>
 </div>
 <script type="text/javascript">
-var Example5_9_trace = {"code": "arquivo = 'prog.py'\nprint(arquivo.startswith('p'))\nprint(arquivo.endswith('p'))\nreposta = \"Sim\"\nprint(reposta.lower())\nprint(reposta.upper())\nprint(reposta.lower() in 'sim n\u00e3o yes no')", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"arquivo": "prog.py"}, "ordered_globals": ["arquivo"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"arquivo": "prog.py"}, "ordered_globals": ["arquivo"], "stack_to_render": [], "heap": {}, "stdout": "True\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"arquivo": "prog.py"}, "ordered_globals": ["arquivo"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"arquivo": "prog.py", "reposta": "Sim"}, "ordered_globals": ["arquivo", "reposta"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"arquivo": "prog.py", "reposta": "Sim"}, "ordered_globals": ["arquivo", "reposta"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsim\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"arquivo": "prog.py", "reposta": "Sim"}, "ordered_globals": ["arquivo", "reposta"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsim\nSIM\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"arquivo": "prog.py", "reposta": "Sim"}, "ordered_globals": ["arquivo", "reposta"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsim\nSIM\nTrue\n"}]};
+var Example5_9_trace = {"code": "archivo = 'prog.py'\nprint(archivo.startswith('p'))\nprint(archivo.endswith('p'))\ncontestar = \"Si\"\nprint(contestar.lower())\nprint(contestar.upper())\nprint(contestar.lower() in 'si no yes no')", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py"}, "ordered_globals": ["archivo"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py"}, "ordered_globals": ["archivo"], "stack_to_render": [], "heap": {}, "stdout": "True\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py"}, "ordered_globals": ["archivo"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsi\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsi\nSI\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsi\nSI\nTrue\n"}]};
 var Example5_9_vis;
 
 $(document).ready(function() {
@@ -721,7 +721,7 @@ $(window).resize(function() {
 <p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example5_10)</span> </p>
 </div>
 <script type="text/javascript">
-var Example5_10_trace = {"code": "s = 'um tigre, dois tigres, tr\u00eas tigres'\nprint(s.find('tigre'))\nprint(s.find('tigre',4))\nprint(s.find('tigre',16))\nprint(s.replace('tigre','gato'))\ns = s.replace('tigre','gato')\nprint(s)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"s": "um tigre, dois tigres, tr\u00eas tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"s": "um tigre, dois tigres, tr\u00eas tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"s": "um tigre, dois tigres, tr\u00eas tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n15\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"s": "um tigre, dois tigres, tr\u00eas tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n15\n28\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"s": "um tigre, dois tigres, tr\u00eas tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n15\n28\num gato, dois gatos, tr\u00eas gatos\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"s": "um gato, dois gatos, tr\u00eas gatos"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n15\n28\num gato, dois gatos, tr\u00eas gatos\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"s": "um gato, dois gatos, tr\u00eas gatos"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n15\n28\num gato, dois gatos, tr\u00eas gatos\num gato, dois gatos, tr\u00eas gatos\n"}]};
+var Example5_10_trace = {"code": "s = 'un tigre, dos tigres, tres tigres'\nprint(s.find('tigre'))\nprint(s.find('tigre',4))\nprint(s.find('tigre',16))\nprint(s.replace('tigre','gato'))\ns = s.replace('tigre','gato')\nprint(s)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\nun gato, dos gatos, tres gatos\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"s": "un gato, dos gatos, tres gatos"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\nun gato, dos gatos, tres gatos\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"s": "un gato, dos gatos, tres gatos"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\nun gato, dos gatos, tres gatos\nun gato, dos gatos, tres gatos\n"}]};
 var Example5_10_vis;
 
 $(document).ready(function() {
@@ -771,7 +771,7 @@ $(window).resize(function() {
 <p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example5_11)</span> </p>
 </div>
 <script type="text/javascript">
-var Example5_11_trace = {"code": "txt = 'batatinha quando nasce'\nprint(txt.split())\ndata = '21/02/2011'\nprint(data.split('/'))\nip = '198.188.10.144'\nprint(ip.split('.'))\ntimes = ['Palmeiras','Santos','Corintians']\nprint('/'.join(times))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"txt": "batatinha quando nasce"}, "ordered_globals": ["txt"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"txt": "batatinha quando nasce"}, "ordered_globals": ["txt"], "stack_to_render": [], "heap": {}, "stdout": "['batatinha', 'quando', 'nasce']\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"txt": "batatinha quando nasce", "data": "21/02/2011"}, "ordered_globals": ["txt", "data"], "stack_to_render": [], "heap": {}, "stdout": "['batatinha', 'quando', 'nasce']\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"txt": "batatinha quando nasce", "data": "21/02/2011"}, "ordered_globals": ["txt", "data"], "stack_to_render": [], "heap": {}, "stdout": "['batatinha', 'quando', 'nasce']\n['21', '02', '2011']\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"txt": "batatinha quando nasce", "data": "21/02/2011", "ip": "198.188.10.144"}, "ordered_globals": ["txt", "data", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['batatinha', 'quando', 'nasce']\n['21', '02', '2011']\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"txt": "batatinha quando nasce", "data": "21/02/2011", "ip": "198.188.10.144"}, "ordered_globals": ["txt", "data", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['batatinha', 'quando', 'nasce']\n['21', '02', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"txt": "batatinha quando nasce", "data": "21/02/2011", "ip": "198.188.10.144", "times": ["REF", 1]}, "ordered_globals": ["txt", "data", "ip", "times"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corintians"]}, "stdout": "['batatinha', 'quando', 'nasce']\n['21', '02', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"txt": "batatinha quando nasce", "data": "21/02/2011", "ip": "198.188.10.144", "times": ["REF", 1]}, "ordered_globals": ["txt", "data", "ip", "times"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corintians"]}, "stdout": "['batatinha', 'quando', 'nasce']\n['21', '02', '2011']\n['198', '188', '10', '144']\nPalmeiras/Santos/Corintians\n"}]};
+var Example5_11_trace = {"code": "txt = 'papa cuando nace'\nprint(txt.split())\ndata = '21/02/2011'\nprint(data.split('/'))\nip = '198.188.10.144'\nprint(ip.split('.'))\ntimes = ['Palmeiras', 'Santos', 'Corintios']\nprint('/'.join(times))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace"}, "ordered_globals": ["txt"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace"}, "ordered_globals": ["txt"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011"}, "ordered_globals": ["txt", "data"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011"}, "ordered_globals": ["txt", "data"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144"}, "ordered_globals": ["txt", "data", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144"}, "ordered_globals": ["txt", "data", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144", "times": ["REF", 1]}, "ordered_globals": ["txt", "data", "ip", "times"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corintios"]}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144", "times": ["REF", 1]}, "ordered_globals": ["txt", "data", "ip", "times"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corintios"]}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n['198', '188', '10', '144']\nPalmeiras/Santos/Corintios\n"}]};
 var Example5_11_vis;
 
 $(document).ready(function() {
@@ -812,11 +812,11 @@ $(window).resize(function() {
 </script>
 </div>
 </div>
-<div class="section" id="exercicio">
-<h2>Exercício<a class="headerlink" href="#exercicio" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ejercicio">
+<h2>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Faça um programa que solicite a data de nascimento (dd/mm/aaaa) e
-imprima com o nome do mês por extenso</p></li>
+<li><p>Haga un programa que solicite la fecha de nacimiento (dd / mm / aaaa) y
+imprimir con el nombre del mes completo</p></li>
 </ul>
 
 <div data-childcomponent="Example5_12" class="runestone explainer ac_section alert alert-warning">
@@ -825,39 +825,39 @@ imprima com o nome do mês por extenso</p></li>
       data-timelimit=25000    
     data-audio=''   data-stdin=''   
            data-wasm=/_static>
-dia, mês , ano = input('Data (dd/mm/aaaa): ').split('/')
-meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro']
-print('Você nascem em: ')
-print('%s de %s de %s' %(dia,meses[int(mês)-1],ano))
+dia, mes, anio = input('data (dd/mm/aaaa): ').split('/')
+meses = ['Enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto','septiembre','octubre', 'noviembre', 'diciembre']
+print('Tu naces en: ')
+print('%s de %s de %s' %(dia,meses[int(mes)-1],anio))
 </textarea>
 </div>
 </div>
-<div class="section" id="coding-dojo">
-<h2>Coding Dojo<a class="headerlink" href="#coding-dojo" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="dojo-de-codificacion">
+<h2>Dojo de codificación<a class="headerlink" href="#dojo-de-codificacion" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP18_015.jpeg"><img alt="" class="align-center" src="../_images/TWP18_015.jpeg" style="width: 19.001cm; height: 14.251cm;" /></a>
 </div>
 <div class="section" id="id3">
-<h2>Coding Dojo<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>Dojo de codificación<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Desenvolvimento guiado por testes</p></li>
-<li><p>Passos de bebê</p></li>
-<li><p>Pair programming</p></li>
+<li><p>Desarrollo basado en pruebas</p></li>
+<li><p>Pasos de bebé</p></li>
+<li><p>Programación de pares</p></li>
 </ul>
 </div>
-<div class="section" id="desenvolvimento-guiado-por-testes">
-<h2>Desenvolvimento guiado por testes<a class="headerlink" href="#desenvolvimento-guiado-por-testes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="desarrollo-basado-en-pruebas">
+<h2>Desarrollo basado en pruebas<a class="headerlink" href="#desarrollo-basado-en-pruebas" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP18_016.png"><img alt="" class="align-center" src="../_images/TWP18_016.png" style="width: 17.726cm; height: 11.032cm;" /></a>
 </div>
-<div class="section" id="baby-steps">
-<h2>Baby Steps<a class="headerlink" href="#baby-steps" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pasos-de-bebe">
+<h2>Pasos de bebé<a class="headerlink" href="#pasos-de-bebe" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP18_017.jpeg"><img alt="" class="align-center" src="../_images/TWP18_017.jpeg" style="width: 17.704cm; height: 12.624cm;" /></a>
 </div>
-<div class="section" id="pair-programming">
-<h2>Pair Programming<a class="headerlink" href="#pair-programming" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="programacion-en-pareja">
+<h2>Programación en pareja<a class="headerlink" href="#programacion-en-pareja" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP18_018.png"><img alt="" class="align-center" src="../_images/TWP18_018.png" style="width: 18.201cm; height: 13.711cm;" /></a>
 </div>
-<div class="section" id="links-de-palestras-em-video">
-<h2>Links de Palestras em Vídeo:<a class="headerlink" href="#links-de-palestras-em-video" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="enlaces-de-conferencias-de-video">
+<h2>Enlaces de conferencias de video:<a class="headerlink" href="#enlaces-de-conferencias-de-video" title="Permalink to this headline">¶</a></h2>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
         <div id="t5sE9ruRHHM" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="t5sE9ruRHHM" data-video-divid="t5sE9ruRHHM" data-video-start="0" data-video-end="-1" ></div>
