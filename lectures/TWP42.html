@@ -305,15 +305,15 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Banco de Dados</a><ul>
-<li><a class="reference internal" href="#notas-de-surfistas">Notas de Surfistas</a></li>
+<li><a class="reference internal" href="#notas-de-surfistas">Notas de surfistas</a></li>
 <li><a class="reference internal" href="#usando-sqlite3">Usando sqlite3</a></li>
 <li><a class="reference internal" href="#id1">Usando sqlite3</a></li>
-<li><a class="reference internal" href="#nocoes-de-sql">Noções de SQL</a></li>
+<li><a class="reference internal" href="#conceptos-basicos-de-sql">Conceptos básicos de SQL</a></li>
 <li><a class="reference internal" href="#nocoes-de-banco-de-dados">Noções de Banco de Dados</a></li>
-<li><a class="reference internal" href="#id2">Noções de Banco de Dados</a></li>
-<li><a class="reference internal" href="#criando-um-banco-de-alunos">Criando um Banco de Alunos</a></li>
-<li><a class="reference internal" href="#acessando-o-banco-alunos-bd">Acessando o banco alunos.bd</a></li>
-<li><a class="reference internal" href="#links-de-palestras-em-video">Links de Palestras em Vídeo:</a></li>
+<li><a class="reference internal" href="#nociones-de-bases-de-datos">Nociones de bases de datos</a></li>
+<li><a class="reference internal" href="#crear-un-banco-de-estudiantes">Crear un banco de estudiantes</a></li>
+<li><a class="reference internal" href="#accediendo-al-banco-alunos-bd">Accediendo al banco alunos.bd</a></li>
+<li><a class="reference internal" href="#enlaces-de-conferencias-de-video">Enlaces de conferencias de video:</a></li>
 </ul>
 </li>
 </ul>
@@ -364,14 +364,14 @@
 <h1>Banco de Dados<a class="headerlink" href="#banco-de-dados" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
 <div class="section" id="notas-de-surfistas">
-<h2>Notas de Surfistas<a class="headerlink" href="#notas-de-surfistas" title="Permalink to this headline">¶</a></h2>
+<h2>Notas de surfistas<a class="headerlink" href="#notas-de-surfistas" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>A Federação de Surf possui os seguintes dados: número do surfista,
-nome, país, nota média, estilo, idade.</p></li>
-<li><p>Como usar estes dados?</p></li>
-<li><p>Por exemplo, quero saber todos os surfistas com mais de 25 anos</p></li>
-<li><p>Usando um Banco de Dados! No caso o sqlite3</p></li>
-<li><p>Obs.: copie surfersDB.sdb para o seu diretório</p></li>
+<li><p>La Federación de Surf tiene los siguientes datos: número del surfista,
+nombre, país, grado promedio, estilo, edad.</p></li>
+<li><p>¿Cómo usar estos datos?</p></li>
+<li><p>Por ejemplo, quiero conocer a todos los surfistas mayores de 25</p></li>
+<li><p>¡Usando una base de datos! En este caso, sqlite3</p></li>
+<li><p>Obs .: copie surfersDB.sdb a su directorio</p></li>
 </ul>
 </div>
 <div class="section" id="usando-sqlite3">
@@ -383,37 +383,37 @@ nome, país, nota média, estilo, idade.</p></li>
 <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;select * from surfers where age &gt; 25&quot;</span><span class="p">)</span>
 <span class="n">linhas</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="n">linhas</span><span class="p">:</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nome  :&quot;</span><span class="p">,</span><span class="n">linha</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nombre :&quot;</span><span class="p">,</span><span class="n">linha</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pais  :&quot;</span><span class="p">,</span><span class="n">linha</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">])</span>
    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Media  :&quot;</span><span class="p">,</span><span class="n">linha</span><span class="p">[</span><span class="s1">&#39;average&#39;</span><span class="p">])</span>
    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estilo :&quot;</span><span class="p">,</span><span class="n">linha</span><span class="p">[</span><span class="s1">&#39;board&#39;</span><span class="p">])</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Idade  :&quot;</span><span class="p">,</span><span class="n">linha</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">])</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Edad  :&quot;</span><span class="p">,</span><span class="n">linha</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">])</span>
    <span class="nb">print</span><span class="p">()</span>
 <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Obs.: não salve seu programa com o nome sqlite3.py (mesmo nome da lib)</p></li>
+<li><p>Nota: no guarde su programa con el nombre sqlite3.py (mismo nombre que lib)</p></li>
 </ul>
 </div>
 <div class="section" id="id1">
 <h2>Usando sqlite3<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP42_002.png"><img alt="" class="align-center" src="../_images/TWP42_002.png" style="width: 16.879cm; height: 10.741cm;" /></a>
 </div>
-<div class="section" id="nocoes-de-sql">
-<h2>Noções de SQL<a class="headerlink" href="#nocoes-de-sql" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="conceptos-basicos-de-sql">
+<h2>Conceptos básicos de SQL<a class="headerlink" href="#conceptos-basicos-de-sql" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP42_003.jpeg"><img alt="" class="align-center" src="../_images/TWP42_003.jpeg" style="width: 10.861cm; height: 12.571cm;" /></a>
 </div>
 <div class="section" id="nocoes-de-banco-de-dados">
 <h2>Noções de Banco de Dados<a class="headerlink" href="#nocoes-de-banco-de-dados" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP42_004.jpeg"><img alt="" class="align-center" src="../_images/TWP42_004.jpeg" style="width: 14.001cm; height: 14.001cm;" /></a>
 </div>
-<div class="section" id="id2">
-<h2>Noções de Banco de Dados<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nociones-de-bases-de-datos">
+<h2>Nociones de bases de datos<a class="headerlink" href="#nociones-de-bases-de-datos" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP42_005.jpeg"><img alt="" class="align-center" src="../_images/TWP42_005.jpeg" style="width: 17.401cm; height: 13.953cm;" /></a>
 </div>
-<div class="section" id="criando-um-banco-de-alunos">
-<h2>Criando um Banco de Alunos<a class="headerlink" href="#criando-um-banco-de-alunos" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="crear-un-banco-de-estudiantes">
+<h2>Crear un banco de estudiantes<a class="headerlink" href="#crear-un-banco-de-estudiantes" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 <span class="n">con</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;alunos.bd&#39;</span><span class="p">)</span>
 <span class="n">cur</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -423,8 +423,8 @@ nome, país, nota média, estilo, idade.</p></li>
 </pre></div>
 </div>
 </div>
-<div class="section" id="acessando-o-banco-alunos-bd">
-<h2>Acessando o banco alunos.bd<a class="headerlink" href="#acessando-o-banco-alunos-bd" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="accediendo-al-banco-alunos-bd">
+<h2>Accediendo al banco alunos.bd<a class="headerlink" href="#accediendo-al-banco-alunos-bd" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 <span class="n">con</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;alunos.bd&#39;</span><span class="p">)</span>
 <span class="n">cur</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -441,8 +441,8 @@ nome, país, nota média, estilo, idade.</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/TWP42_008.png"><img alt="" class="align-center" src="../_images/TWP42_008.png" style="width: 10.212cm; height: 2.724cm;" /></a>
 </div>
-<div class="section" id="links-de-palestras-em-video">
-<h2>Links de Palestras em Vídeo:<a class="headerlink" href="#links-de-palestras-em-video" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="enlaces-de-conferencias-de-video">
+<h2>Enlaces de conferencias de video:<a class="headerlink" href="#enlaces-de-conferencias-de-video" title="Permalink to this headline">¶</a></h2>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
         <div id="F4MpDoldKoE" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="F4MpDoldKoE" data-video-divid="F4MpDoldKoE" data-video-start="0" data-video-end="-1" ></div>
