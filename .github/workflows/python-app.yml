@@ -37,6 +37,6 @@ jobs:
     - name: Publish generated content to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        dir: build/PyZombis/
-        branch: gh-pages
-        token: ${{ secrets.ACCESS_TOKEN }}
+        publish_dir: build/PyZombis/
+        publish_branch: gh-pages
+        github_token: ${{ secrets.ACCESS_TOKEN }}
