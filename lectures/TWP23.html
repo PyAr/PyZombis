@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Arquivos e Dicionários &#8212; Runestone Interactive Overview</title>
+    <title>Archivos y diccionarios &#8212; Runestone Interactive Overview</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -304,15 +304,15 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Arquivos e Dicionários</a><ul>
-<li><a class="reference internal" href="#arquivos">Arquivos</a></li>
+<li><a class="reference internal" href="#">Archivos y diccionarios</a><ul>
+<li><a class="reference internal" href="#archivos">Archivos</a></li>
 <li><a class="reference internal" href="#pythonic-way">Pythonic way</a></li>
 <li><a class="reference internal" href="#cripto">Cripto</a></li>
-<li><a class="reference internal" href="#validate-ip-address">Validate IP address</a></li>
+<li><a class="reference internal" href="#validar-direccion-ip">Validar dirección IP</a></li>
 <li><a class="reference internal" href="#html">HTML</a></li>
-<li><a class="reference internal" href="#dictionaries">Dictionaries</a></li>
+<li><a class="reference internal" href="#diccionarios">Diccionarios</a></li>
 <li><a class="reference internal" href="#exercicio-programa-1">Exercício Programa 1</a></li>
-<li><a class="reference internal" href="#links-de-palestras-em-video">Links de Palestras em Vídeo:</a></li>
+<li><a class="reference internal" href="#enlaces-de-conferencias-de-video">Enlaces de conferencias de video:</a></li>
 </ul>
 </li>
 </ul>
@@ -359,49 +359,43 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="arquivos-e-dicionarios">
-<h1>Arquivos e Dicionários<a class="headerlink" href="#arquivos-e-dicionarios" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="archivos-y-diccionarios">
+<h1>Archivos y diccionarios<a class="headerlink" href="#archivos-y-diccionarios" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
-<div class="section" id="arquivos">
-<h2>Arquivos<a class="headerlink" href="#arquivos" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="archivos">
+<h2>Archivos<a class="headerlink" href="#archivos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Até agora nossos dados desapareciam ao sair do IDLE</p></li>
-<li><p>Arquivos servem para armazenamento permanente</p></li>
-<li><p>Um arquivo é uma área em disco onde podemos ler ou gravar
-informações</p></li>
-<li><p>Acessamos o arquivo pelo seu nome</p></li>
-<li><p>Para acessar um arquivo é preciso abri-lo</p></li>
-<li><p>Ao abrir o arquivo informamos seu nome, diretório onde fica (se
-necessário) e que operações iremos executar: leitura e/ou escrita</p></li>
-<li><p>A função que abre os arquivo é open e os modos são: r – leitura, w –
-escrita, a – append, b – binário, + (atualização)</p></li>
-<li><p>Os métodos para ler ou escrever são read e write</p></li>
-<li><p>Os arquivos devem ser fechados com close</p></li>
+<li><p>Hasta ahora nuestros datos desaparecieron al salir de IDLE</p></li>
+<li><p>Los archivos son para almacenamiento permanente</p></li>
+<li><p>Un archivo es un área de disco donde podemos leer o escribir informacion</p></li>
+<li><p>Accedemos al archivo por su nombre</p></li>
+<li><p>Para acceder a un archivo necesita abrirlo</p></li>
+<li><p>Al abrir el archivo informamos su nombre, directorio donde está  (si necesario) y qué operaciones realizaremos: lectura y / o escritura</p></li>
+<li><p>La función que abre los archivos está abierta y los modos son: r - lectura, w - escritura, a - agregar, b - binario,(actualizar)</p></li>
+<li><p>Los métodos para leer o escribir son read y write</p></li>
+<li><p>Los archivos deben cerrarse con cierre Enviar comentarios</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">arquivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;numeros.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
-    <span class="n">arquivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">linha</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;numeros.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">linea</span><span class="p">)</span>
+<span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Si ejecuta este programa, no aparecerá nada en la pantalla</p></li>
+<li><p>Busque en el directorio c: Python3x el archivo  números.txt</p></li>
+<li><p>El modo w crea el archivo si no existe, si existe será eliminado y reescrito</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;numeros.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
 <span class="n">arquivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Caso você execute este programa nada aparecerá na tela</p></li>
-<li><p>Procure no diretório c:Python3x o arquivo números.txt</p></li>
-<li><p>O modo w cria o arquivo se ele não existir, caso exista ele será
-apagado e reescrito</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">arquivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;numeros.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="n">arquivo</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">linha</span><span class="p">)</span>
-<span class="n">arquivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>readlines gera uma lista onde cada elemento é uma linha lida</p></li>
-<li><p>Arquivos textos são simples e possuem um caracter de controle no
-final para pular linha</p></li>
-<li><p>Se quisermos tirar esse caracter do final podemos usar
-print(linha.rstrip())</p></li>
+<li><p>readlines genera una lista donde cada elemento es una línea de lectura</p></li>
+<li><p>Los archivos de texto son simples y tienen un carácter de control en fin de saltar la línea</p></li>
+<li><p>Si queremos eliminar este personaje del final, podemos usar print (linh a.rstrip ())</p></li>
 </ul>
 </div>
 <div class="section" id="pythonic-way">
@@ -411,33 +405,32 @@ print(linha.rstrip())</p></li>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>O código acima faz o mesmo da forma pythônica.</p></li>
-<li><p>No slide anterior vimos como programadores normais fazem a leitura</p></li>
-<li><p>Python é legal, pois sempre você pode se aprofundar mais</p></li>
-<li><p>Python é simples, mas difícil de esgotar</p></li>
+<li><p>El código anterior hace lo mismo para la forma pitónica.</p></li>
+<li><p>En la diapositiva anterior vimos cómo los programadores normales leen</p></li>
+<li><p>Python es genial, porque siempre puedes ir más profundo</p></li>
+<li><p>Python es simple, pero difícil de agotar</p></li>
 </ul>
 </div>
 <div class="section" id="cripto">
 <h2>Cripto<a class="headerlink" href="#cripto" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Leia mensagem.txt e grave cripto.txt com todas as vogais trocadas
-por ‘*’</p></li>
+<li><p>Lea message.txt y escriba crypto.txt con todas las vocales cambiadas por ‘*’</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">texto</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mensagem.txt&#39;</span><span class="p">)</span>
-<span class="n">saida</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;cripto.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="n">texto</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-  <span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">linha</span><span class="p">:</span>
+<span class="n">salida</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;cripto.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">texto</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">linea</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">letra</span> <span class="ow">in</span> <span class="s1">&#39;aeiou&#39;</span><span class="p">:</span>
-      <span class="n">saida</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+      <span class="n">salida</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
       <span class="n">saida</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
 <span class="n">texto</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="n">saida</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">salida</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="validate-ip-address">
-<h2>Validate IP address<a class="headerlink" href="#validate-ip-address" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="validar-direccion-ip">
+<h2>Validar dirección IP<a class="headerlink" href="#validar-direccion-ip" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ip_ok</span><span class="p">(</span><span class="n">ip</span><span class="p">):</span>
   <span class="n">ip</span> <span class="o">=</span> <span class="n">ip</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
   <span class="k">for</span> <span class="n">byte</span> <span class="ow">in</span> <span class="n">ip</span><span class="p">:</span>
@@ -448,11 +441,11 @@ por ‘*’</p></li>
 <span class="n">arq</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;IPS.txt&#39;</span><span class="p">)</span>
 <span class="n">validos</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;Válidos.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
 <span class="n">invalidos</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;Inválidos.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="n">arq</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-  <span class="k">if</span> <span class="n">ip_ok</span><span class="p">(</span><span class="n">linha</span><span class="p">):</span>
-    <span class="n">validos</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">linha</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">arq</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+  <span class="k">if</span> <span class="n">ip_ok</span><span class="p">(</span><span class="n">linea</span><span class="p">):</span>
+    <span class="n">validos</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
   <span class="k">else</span><span class="p">:</span>
-    <span class="n">invalidos</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">linha</span><span class="p">)</span>
+    <span class="n">invalidos</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
 <span class="n">arq</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="n">validos</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="n">invalidos</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -462,44 +455,40 @@ por ‘*’</p></li>
 <div class="section" id="html">
 <h2>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Páginas web são escritas em HTML (Hypertext Mark-up Language)</p></li>
-<li><p>Tags HTML começam com &lt; e terminam com &gt;</p></li>
-<li><p>A página web é escrita entre &lt;html&gt; e &lt;/html&gt; que é a tag de maior
-nível</p></li>
-<li><p>Normalmente inserimos código javascript</p></li>
-<li><p>Javascript não é um subconjunto de Java</p></li>
+<li><p>Las páginas web están escritas en HTML (lenguaje de marcado de hipertexto)</p></li>
+<li><p>Las etiquetas HTML comienzan con &lt;y terminan con&gt;</p></li>
+<li><p>La página web está escrita entre &lt;html&gt; y &lt;/html&gt;, que es la etiqueta más grande nivel</p></li>
+<li><p>Normalmente insertamos código javascript</p></li>
+<li><p>Javascript no es un subconjunto de Java</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">arquivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;ola.html&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
-<span class="n">arquivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;!DOCTYPE html&gt;</span>
-<span class="s1">&lt;html lang=&quot;pt-BR&quot;&gt;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;hola.html&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;!DOCTYPE html&gt;</span>
+<span class="s1">&lt;html lang=&quot;pt-AR&quot;&gt;</span>
 <span class="s1">&lt;head&gt;</span>
 <span class="s1">&lt;meta charset = &quot;utf-8&quot;&gt;</span>
-<span class="s1">&lt;title&gt;Título da Página&lt;/title&gt;</span>
+<span class="s1">&lt;title&gt;Titulo da Pagina&lt;/title&gt;</span>
 <span class="s1">&lt;/head&gt;</span>
 <span class="s1">&lt;body&gt;</span>
-<span class="s1">Olá!</span>
+<span class="s1">Hola!</span>
 <span class="s1">&lt;/body&gt;</span>
 <span class="s1">&lt;/html&gt;&#39;&#39;&#39;</span><span class="p">)</span>
-<span class="n">arquivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Note o parâmetro de codifição utf-8 ; Sem ele os ascentos não sairão</p></li>
+<li><p>Tenga en cuenta el parámetro de codificación utf-8; Sin ella las subidas no saldrán</p></li>
 </ul>
 </div>
-<div class="section" id="dictionaries">
-<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="diccionarios">
+<h2>Diccionarios<a class="headerlink" href="#diccionarios" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p>O dicionário em si consiste em relacionar uma chave a um valor
-específico</p></li>
-<li><p>Diferentemente das listas, onde o índice é um número, dicionários
-utilizam suas chaves como índice</p></li>
-<li><p>Para adicionar novos elementos não preciso de append, basta fazer a
-atribuição</p>
+<li><p>El diccionario en sí consiste en relacionar una clave con un valor específico</p></li>
+<li><p>A diferencia de las listas, donde el índice es un número, los diccionarios usar sus claves como índice</p></li>
+<li><p>Para agregar nuevos elementos que no necesito agregar, solo haga la sesión</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Se a chave já existe: o valor associado é alterado</p></li>
-<li><p>Se a chave não existe: a nova chave é adicionada</p></li>
+<li><p>Si la clave ya existe: el valor asociado cambia</p></li>
+<li><p>Si la clave no existe: se agrega la nueva clave</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -614,9 +603,7 @@ $(window).resize(function() {
 </script>
 </div>
 <ul class="simple">
-<li><p>Faça um programa que leia o arquivo alice.txt e conte o número de
-ocorrências de cada palavra no texto. Obs.: para saber os caracteres
-especiais use import string e utilize string.punctuation</p></li>
+<li><p>Haga un programa que lea el archivo alice.txt y cuente el número de ocurrencias de cada palabra en el texto. Nota: para conocer los personajes especiales use import string y use string.punctuation</p></li>
 <li><p><a href="#id1"><span class="problematic" id="id2">`http://www.gutenberg.org/cache/epub/11/pg11.txt`_</span></a></p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">arq</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;alice.txt&#39;</span><span class="p">)</span>
@@ -633,7 +620,7 @@ especiais use import string e utilize string.punctuation</p></li>
         <span class="n">dic</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">dic</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Alice aparece </span><span class="si">%s</span><span class="s1"> vezes&#39;</span> <span class="o">%</span><span class="n">dic</span><span class="p">[</span><span class="s1">&#39;alice&#39;</span><span class="p">])</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Aparece Alice </span><span class="si">%s</span><span class="s1"> veces&#39;</span> <span class="o">%</span><span class="n">dic</span><span class="p">[</span><span class="s1">&#39;alice&#39;</span><span class="p">])</span>
 <span class="n">arq</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -642,11 +629,11 @@ especiais use import string e utilize string.punctuation</p></li>
 <h2>Exercício Programa 1<a class="headerlink" href="#exercicio-programa-1" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP05_041.jpeg"><img alt="" class="align-center" src="../_images/TWP05_041.jpeg" style="width: 9.411cm; height: 12.571cm;" /></a>
 <ul class="simple">
-<li><p>“A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.</p></li>
+<li><p>“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein</p></li>
 </ul>
 </div>
-<div class="section" id="links-de-palestras-em-video">
-<h2>Links de Palestras em Vídeo:<a class="headerlink" href="#links-de-palestras-em-video" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="enlaces-de-conferencias-de-video">
+<h2>Enlaces de conferencias de video:<a class="headerlink" href="#enlaces-de-conferencias-de-video" title="Permalink to this headline">¶</a></h2>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
         <div id="C9_DTR1lCIs" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="C9_DTR1lCIs" data-video-divid="C9_DTR1lCIs" data-video-start="0" data-video-end="-1" ></div>
