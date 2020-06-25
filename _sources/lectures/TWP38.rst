@@ -1,6 +1,6 @@
-===============
-Revisão Geral 2
-===============
+==================
+Revisión general 2
+==================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -9,61 +9,57 @@ Revisão Geral 2
    :align: center
    :alt: 
 
-O que é um programa?
+¿Qué es un programa?
 ====================
 
 
++ Un conjunto detallado de instrucciones, paso a paso, que le dice cuáles son las
+  la computadora hará
 
-+ Um conjunto detalhado de instruções, passo a passo, dizendo o que o
-  computador fará
++ Si cambiamos el programa, la computadora hará algo diferente
 
-+ Se mudamos o programa, o computador fará uma outra coisa diferente
++ La computadora permanece igual, pero el programa ha cambiado
 
-+ O computador permanece o mesmo, mas o programa mudou
-
-+ Programas são executados
++ Los programas se ejecutan
 
 
-O que é um programa?
+¿Qué es un programa?
 ====================
 
 
++ El software (programas) controla el hardware
 
-+ Software (programas) comandam o hardware
++ El proceso de creación de software se llama programación
 
-+ O processo de criar software chama-se programação
-
-+ Um algoritmo é a receita, passo a passo, que resolve um problema
-  computacional
++ Un algoritmo es la receta, paso a paso, que resuelve un problema.
+   computacional
 
 
-Linguagens de Programação
+Lenguajes de programación
 =========================
 
 
++ Los idiomas de bajo nivel son los más cercanos a la máquina
 
-+ Linguagens de baixo nível são as mais próximas da máquina
++ Ensamblador:
 
-+ Assembler:
-
-  + Carregue o número da variável A na CPU
-  + Carregue o número da variável B na CPU
-  + Adicione os dois números na CPU
-  + Armazene o resultado na variável C
+  + Cargue el número de variable A en la CPU
+  + Cargue el número de variable B en la CPU
+  + Agregar los dos números en la CPU
+  + Almacenar el resultado en la variable C
 
 
-Linguagens de Programação
+Lenguajes de programación
 =========================
 
 
++ Comando original en lenguaje de alto nivel: C = A + B
 
-+ Comando original em linguagem de alto nível: C = A + B
++ Los compiladores convierten el lenguaje de alto nivel al lenguaje de
+   máquina informática específica
 
-+ Compiladores convertem a linguagem de alto nível para a linguagem de
-  máquina específica de um computador
-
-+ Interpretadores analisam e executam o programa instrução por
-  instrução na linguagem de máquina
++ Los intérpretes analizan y ejecutan el programa de instrucción por
+   instrucción de lenguaje de máquina
 
 
 Python
@@ -71,7 +67,7 @@ Python
 
 
 
-+ O sinal “>>>” indica que o Python está “pronto” para receber
++ El signo ">>>" indica que Python está "listo" para recibir
   comandos
 
 
@@ -79,7 +75,7 @@ Python
 
 .. codelens:: Example13_1
          
-        print('Alo mundo!')
+        print('hola mundo!')
         print(2+3)
         print('2 + 3 = ',2+3)
 
@@ -87,33 +83,31 @@ Python
 ======
 
 
++ Por lo general, queremos repetir una serie de comandos varias veces
 
-+ Normalmente queremos repetir uma série de comandos várias vezes
-
-+ Uma forma de fazer isso é utilizar uma função
-
++ Una forma de hacer esto es usar una función
 
 .. codelens:: Example13_2
          
         def amodoispontos():
-          print('Eu amo :!')
-          print('Dois pontos == ":"')
+          print('Yo amo:!')
+          print('Dos puntos == ":"')
         
         amodoispontos()
 
 
 
-+ Não esqueça dos parênteses ao chamar a função!
++ ¡No olvides los paréntesis cuando llames a la función!
 
-+ Se você esquecer dos parênteses, o python devolverá o endereço na
-  memória onde está o código da função
++ Si olvida los paréntesis, python devolverá la dirección en
+   memoria donde está el código de función
 
 
 .. codelens:: Example13_3
          
         def amodoispontos():
-          print('Eu amo :!')
-          print('Dois pontos == ":"')
+          print('Yo amo:!')
+          print('Dos puntos == ":"')
         
         print(amodoispontos)
         print(print)
@@ -123,57 +117,54 @@ Python
 ======
 
 
-
-+ Podemos colocar parâmetros numa função
++ Podemos poner parámetros en una función
 
 
 
 
 .. codelens:: Example13_4
          
-        def soma(a,b):
+        def suma(a,b):
           return a+b
 
-        print(soma('abacate','jabuticaba'))
-        print(soma(2,3))
-        print(soma(3.14,2.71))
+        print(suma('aguacate','jabuticaba'))
+        print(suma(2,3))
+        print(suma(3.14,2.71))
 
 
 Python
 ======
 
 
-
-+ As funções deixam de existir assim que você sair do interpretador
++ Las funciones dejan de existir en cuanto sale del intérprete
   Python
 
-+ Por isso, os programas são normalmente compostos de módulos, que são
-  arquivos salvos em disco
++ Por lo tanto, los programas generalmente se componen de módulos, que son
+  archivos guardados en el disco
 
-+ Um módulo é um arquivo texto que contêm um programa python
++ Un módulo es un archivo de texto que contiene un programa de Python
 
-+ Você pode editar os módulos em uma ambiente de desenvolvimento, que
-  realça palavras reservadas, faz identação automática, etc...
++ Puede editar los módulos en un entorno de desarrollo, que
+  resalta palabras reservadas, realiza identificación automática, etc.
 
 
 Python
 ======
 
 
++ Guardamos un programa llamado chaos.py
 
-+ Salvamos um programa chamado caos.py
++ No olvides la extensión .py
 
-+ Não esqueça a extenção .py
-
-+ Podemos rodar o programa com a tecla F5
++ Podemos ejecutar el programa con la tecla F5
 
 
 .. activecode:: Example13_5
    :nocodelens:
    :stdin:
 
-    print('Este progroma ilustra um comportamento caotico')
-    x = eval(input('Entre com um numero entre 0 e 1:'))
+    print('Este programa ilustra el comportamiento caótico.')
+    x = eval(input('Ingrese un número entre 0 y 1:'))
     for i in range(10):
       x = 3.9*x*(1-x)
       print("2.3f" %x)
@@ -183,11 +174,11 @@ Python
 
 
 
-+ Linhas que começam com “#” são chamadas de comentários
++ Las líneas que comienzan con "#" se llaman comentarios
 
-+ Servem para serem lidas por humanos e são ignoradas pelo Python
++ Están destinados a ser leídos por humanos y Python los ignora
 
-+ O Python pula todo o texto do “#” até o fim da linha
++ Python omite todo el texto desde el "#" hasta el final de la línea
 
 
 .. image:: img/TWP38_008.png
@@ -200,12 +191,11 @@ Python
 Python
 ======
 
++ x es un ejemplo de una variable
 
-+ x é um exemplo de variável
++ En x asignaremos un valor al que se puede hacer referencia más adelante
 
-+ Em x atribuiremos um valor que poderá ser referenciado depois
-
-+ A mensagem entre aspas será apresentada e a resposta armazenada em x
++ Se mostrará el mensaje entre comillas y la respuesta se almacenará en x
 
 
 .. image:: img/TWP38_009.png
@@ -219,12 +209,11 @@ Python
 ======
 
 
++ Hay comandos de bucle como para
 
-+ Existem comandos de loop como o for
++ Un bucle se usa para repetir un bloque de comandos varias veces
 
-+ Um loop serve para repetir várias vezes um bloco de comandos
-
-+ Neste exemplo o bloco seguinte irá ser repetido 10 vezes
++ En este ejemplo, el siguiente bloque se repetirá 10 veces
 
 
 .. image:: img/TWP38_010.png
@@ -238,12 +227,11 @@ Python
 ======
 
 
++ Llamamos a los espacios al comienzo de la línea sangría
 
-+ Chamamos de identação os espaços no início da linha
++ En Python, la sangría delimita el bloque que se ejecutará
 
-+ No Python a identação delimita o bloco que será executado
-
-+ O cálculo 3.9*x*(1-x) será executado na CPU e atribuído na variável
++ El cálculo 3.9 * x * (1-x) se realizará en la CPU y se asignará a la variable
   x
 
 
@@ -258,48 +246,44 @@ Python
 ======
 
 
-
-+ A função caos devolve valores bem diferentes, mesmo quando a entrada
-  é parecida
-
++ La función de caos devuelve valores muy diferentes, incluso cuando la entrada
+  es similar
 
 
-Exercício
+
+Ejercicio
 =========
 
 
-
-+ Altere o programa anterior de forma que leia um valor inteiro n e
-  execute o for n vezes no lugar do valor fixo 10
-
-
-Resumo
-======
++ Cambie el programa anterior para que pueda ingresar un valor e ingresar
+  correr por n veces en lugar del valor 10
 
 
-
-+ A descrição de uma seqüência de passos para resolver um problema
-  computacional é chamada de algoritmo
-
-+ Algoritmos são programas (software) que determinam o que o
-  computador (hardware) fará
-
-+ O processo de criar software é chamado de programação
+Resumen
+=======
 
 
-Recordação
-==========
++ La descripción de una secuencia de pasos para resolver un problema.
+   algoritmo computacional se llama
+
++ Los algoritmos son programas (software) que determinan cuáles son los
+   la computadora (hardware) hará
+
++ El proceso de creación de software se llama programación
 
 
+Recuerdo
+========
 
-+ Linguagens de programação possuem uma sintaxe formal
 
-+ Computadores entendem apenas a linguagem de máquina
++ Los lenguajes de programación tienen una sintaxis formal
 
-+ Python é uma linguagem interpretada de alto nível
++ Las computadoras solo entienden el lenguaje de máquina
 
-+ O interpretador Python converte os comandos instrução por instrução
-  para a linguagem de máquina
++ Python es un lenguaje interpretado de alto nivel
+
++ El intérprete de Python convierte los comandos instrucción por instrucción
+   para lenguaje máquina
 
 
 .. disqus::

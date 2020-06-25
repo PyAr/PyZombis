@@ -1,5 +1,5 @@
 =================
-Classes e Objetos
+Clases y objetos
 =================
 
 
@@ -10,8 +10,8 @@ Classes e Objetos
    :alt: 
 
 
-Baixar os códigos abaixo
-========================
+Descargue los códigos de abajo
+==============================
 
 
 
@@ -22,60 +22,57 @@ Baixar os códigos abaixo
 
 
 
-Classes e objetos
+Clases y objetos
 =================
 
 
 
-+ Classes associam dados (atributos) e operações (métodos) em uma só
-  estrutura
-+ Um objeto é uma variável cujo tipo é uma classe, ou seja, um objeto
-  é uma instância de uma classe
-+ Veremos apenas o básico da orientação à objetos
++ Las clases asocian datos (atributos) y operaciones (métodos) en uno
+   estructura
++ Un objeto es una variable cuyo tipo es una clase, es decir, un objeto
+   es una instancia de una clase
++ Solo veremos los conceptos básicos de la orientación a objetos
 
-
-Classes e objetos
+Clases y objetos
 =================
 
 
 .. codelens:: Example8_1
          
-        class Televisao:
+        class television:
           def __init__ (self):
-            self.ligada = False
+            self.conectado = False
             self.canal = 2
 
-        tv_quarto = Televisao() 
-        tv_sala = Televisao()
-        print(tv_quarto.ligada) 
-        print(tv_quarto.canal)
-        tv_sala.ligada = True
+        tv_cuarto = television() 
+        tv_sala = television()
+        print(tv_cuarto.conectado) 
+        print(tv_cuarto.canal)
+        tv_sala.conectado = True
         tv_sala.canal = 5 
 
 
-Classes e objetos
-=================
+Clases y objetos
+================
 
 
 
-+ Quando declaramos uma classe, estamos criando um novo tipo de dados
-+ Da mesma forma que quando criamos uma lista ou uma string, estamos
-  instanciando ou criando uma instância dessas classes
-+ É a mesma coisa fazer lista = [] ou lista = list()
-+ O método __init__ é chamado construtor e é chamado na criação do
-  objeto
++ Cuando declaramos una clase, estamos creando un nuevo tipo de datos
++ Al igual que cuando creamos una lista o una cadena, estamos creando instancias o creando una instancia de estas clases
++ Es lo mismo hacer list = [] o list = list ()
++ El método __init__ se llama constructor y se llama al crear el objeto
 
 
-Classes e objetos
-=================
+Clases y objetos
+================
 
 
 
-+ O parâmetro self significa o objeto televisão em si
-+ self.ligada é um valor de self, ou seja, do objeto televisão
-+ Sempre que criamos atributos do objeto, devemos associá-los a self.
-+ Caso contrário, se escrevêssemos apenas ligada = False, ligada seria
-  apenas uma variável local do método e não um atributo
++ El parámetro propio significa el objeto de televisión en sí
++ self.linked es un valor de self, es decir, del objeto de televisión
++ Siempre que creamos atributos del objeto, debemos asociarlos con uno mismo.
++ De lo contrario, si escribimos solo vinculado = Falso, vinculado sería
+  solo una variable de método local y no un atributo
 
 
 Classes e objetos
@@ -84,20 +81,20 @@ Classes e objetos
 
 .. codelens:: Example8_2
          
-        class Televisao:
+        class television:
           def __init__ (self):
-            self.ligada = False
+            self.conectada = False
             self.canal = 2
-          def muda_canal_para_baixo(self):
+          def cambia_el_canal_hacia_abajo(self):
             self.canal -= 1
-          def muda_canal_para_cima(self):
+          def cambia_el_canal_para_arriva(self):
             self.canal += 1
 
-        tv = Televisao()
-        tv.muda_canal_para_cima() 
-        tv.muda_canal_para_cima()
+        tv = television()
+        tv.cambia_el_canal_para_arriva() 
+        tv.cambia_el_canal_para_arriva()
         print(tv.canal)
-        tv.muda_canal_para_baixo()
+        tv.cambia_el_canal_hacia_abajo()
         print(tv.canal) 
 
 
@@ -106,17 +103,15 @@ Classes e objetos
 
 
 
-+ Você irá informatizar o banco Tatú, controlando o saldo das contas
-  correntes
-+ Cada conta corrente pode ter um ou mais clientes como titular
-+ O banco controla apenas o nome e telefone
-+ A conta corrente apresenta um saldo e um extrato de operações de
-  saques e depósitos
-+ Não há contas especiais, logo o cliente não pode sacar mais do que
-  têm no saldo
++ Informatizarás el banco Tatú, controlando el saldo de la cuenta corriente
++ Cada cuenta corriente puede tener uno o más clientes como titular
++ El banco controla solo el nombre y el número de teléfono
++ La cuenta corriente muestra un saldo y un estado de cuenta de las operaciones de retiro y depósito.
++ No hay cuentas especiales, por lo que el cliente no puede retirar más de
+  tener en equilibrio
 
 
-Arquivo tatu.py
+Archivo tatu.py
 ===============
 
 
@@ -124,26 +119,26 @@ Arquivo tatu.py
    :nocodelens:
    :stdin:
 
-   class Cliente:
-    def __init__ (self,nome,telefone):
-      self.nome = nome
-      self.telefone = telefone
-   class Conta:
+   class cliente:
+    def __init__ (self,nombre,telefono):
+      self.nombre = nombre
+      self.telefono = telefono
+   class cuenta:
     def __init__(self, clientes, numero, saldo = 0):
       self.saldo = saldo
       self.clientes = clientes
       self.numero = numero
-    def resumo(self):
-      print('CC Numero: %s Saldo: %10.2f' %(self.numero,self.saldo))
-    def saque(self,valor):
+    def resumen(self):
+      print('CC numero: %s saldo: %10.2f' %(self.numero,self.saldo))
+    def botin(self,valor):
       if self.saldo >= valor:
         self.saldo -= valor
     def deposito(self, valor):
       self.sado += valor
 
 
-Arquivo teste.py, Saída de teste
-================================
+Archivo Test.py, salida de prueba
+=================================
 
 
 .. activecode:: Example8_4
@@ -151,26 +146,25 @@ Arquivo teste.py, Saída de teste
    :stdin:
    :include: Example8_3
 
-   joao = Cliente('Joao da Silva','777-1234')
-   maria = Cliente('Maria da Silva','555-4321')
-   print('Nome : %s. Telefone: %s' %(joao.nome,joao.telefone))
-   print('Nome : %s. Telefone: %s' %(maria.nome,maria.telefone))
-   conta1 = Conta([joao],1,1000)
-   conta2 = Conta([maria,joao],2,500)
-   conta1.resumo()
-   conta2.resumo()
+   juan = cliente('Juan de Silva','777-1234')
+   maria = cliente('Maria de Silva','555-4321')
+   print('nombre : %s. telefono: %s' %(juan.nombre,juan.telefono))
+   print('nombre : %s. telefono: %s' %(maria.nombre,maria.telefono))
+   conta1 = conta([joao],1,1000)
+   conta2 = conta([maria,joao],2,500)
+   conta1.resumen()
+   conta1.resumen()
 
     
 
-Extrato de operações
-====================
+Declaración de operaciones
+==========================
 
 
 
-+ Altere o método resumo da classe Conta para extrato, imprimindo
-  agora uma lista de operações de saques e depósitos feitas
-+ Altere o método __init__ para que utilize o método depósito para
-  inicializar o saldo
++ Cambie el método de resumen de la clase Cuenta a un estado de cuenta, ahora imprima una lista de las operaciones de retiro y depósito realizadas
++ Cambie el método __init__ para usar el método de depósito para inicializar el saldo
+
 
 
 Arquivo tatu2.py (apenas Conta)
@@ -182,33 +176,33 @@ Arquivo tatu2.py (apenas Conta)
    :stdin:
 
    class Cliente:
-    def __init__ (self,nome,telefone):
-      self.nome = nome
-      self.telefone = telefone
-   class Conta:
+    def __init__ (self,nombre,telefone):
+      self.nombre = nombre
+      self.telefono = telefono
+   class conta:
     def __init__(self, clientes, numero, saldo = 0):
       self.saldo = saldo
       self.clientes = clientes
       self.numero = numero
-      self.operacoes = []
+      self.operaciones = []
       self.deposito(saldo)
-    def resumo(self):
-      print('CC N: %s Saldo: %10.2f' %(self.numero,self.saldo))
+    def resumen(self):
+      print('CC N: %s saldo: %10.2f' %(self.numero,self.saldo))
     def saque(self,valor):
       if self.saldo >= valor:
         self.saldo -= valor
-        self.operacoes.append(['Saque',valor])
+        self.operacoes.append(['Retirar',valor])
     def deposito(self, valor):
       self.sado += valor
-      self.operacoes.append(['Depósito',valor])
-    def extrato(self):
-      print('Extrato CC N %s' %self.numero)
-      for op in self.operacoes:
+      self.operacoes.append(['Deposito',valor])
+    def extraer(self):
+      print('extraer CC N %s' %self.numero)
+      for op in self.operaciones:
         print("%10s %10.2f" %(op[0],op[1]))
       print('%10s %10.2f\n' %('Saldo=',self.saldo))
 
-Arquivo teste2.py, Saída de teste2
-==================================
+Archivo teste2.py, salida teste2
+=================================
 
 
 .. activecode:: Example8_6
@@ -216,66 +210,66 @@ Arquivo teste2.py, Saída de teste2
    :stdin:
    :include: Example8_5
 
-   joao = Cliente('Joao da Silva','777-1234')
-   maria = Cliente('Maria da Silva','555-4321')
-   conta1 = Conta([joao],1,1000)
-   conta2 = Conta([maria,joao],2,500)
-   conta1.saque(50)
+   juan = cliente('Juan de Silva','777-1234')
+   maria = cliente('Maria de Silva','555-4321')
+   conta1 = cuenta([juan],1,1000)
+   conta2 = centa([maria,juan],2,500)
+   conta1.botín(50)
    conta2.deposito(300)
-   conta1.saque(190)
+   conta1.botín(190)
    conta2.deposito(95.15)
-   conta2.saque(250)
-   conta1.extrato()
-   conta2.extrato()
+   conta2.botín(250)
+   conta1.extraer()
+   conta2.extraer()
 
 
-Herança
-=======
+Herencia
+========
 
 
 
-+ A orientação a objetos permite modificar nossas classes, adicionando
-  ou modificando atributos e métodos, tendo como base a classe anterior
-+ Vamos criar contas especiais, onde podemos sacar mais dinheiro que o
-  saldo, até um determinado limite
-+ As operações depósito, extrato e resumo continuam como uma conta
++ La orientación a objetos le permite modificar nuestras clases, agregando
+  o modificando atributos y métodos, basados en la clase anterior
++ Crearemos cuentas especiales, donde podemos retirar más dinero que
+  equilibrio, hasta cierto límite
++ Las operaciones de depósito, extracto y resumen continúan como una cuenta
   normal
 
 
 
 
-Adicionar ContaEspecial tatu3.py
-================================
+Añadir cuenta Especial tatu3 tatu3.py
+=====================================
 
 
 .. activecode:: Example8_7
    :nocodelens:
    :stdin:
 
-   class Cliente:
-    def __init__ (self,nome,telefone):
-      self.nome = nome
-      self.telefone = telefone
+   class cliente:
+    def __init__ (self,nome,telefono):
+      self.nombre = nombre
+      self.telefono = telefono
 
    class Conta:
     def __init__(self, clientes, numero, saldo = 0):
       self.saldo = saldo
       self.clientes = clientes
       self.numero = numero
-      self.operacoes = []
+      self.operaciones = []
       self.deposito(saldo)
     def resumo(self):
       print('CC N: %s Saldo: %10.2f' %(self.numero,self.saldo))
     def saque(self,valor):
       if self.saldo >= valor:
         self.saldo -= valor
-        self.operacoes.append(['Saque',valor])
+        self.operaciones.append(['Retirar',valor])
     def deposito(self, valor):
       self.sado += valor
       self.operacoes.append(['Depósito',valor])
     def extrato(self):
-      print('Extrato CC N %s' %self.numero)
-      for op in self.operacoes:
+      print('Extraer CC N %s' %self.numero)
+      for op in self.operaciones:
         print("%10s %10.2f" %(op[0],op[1]))
       print('%10s %10.2f\n' %('Saldo=',self.saldo))
 
@@ -294,15 +288,15 @@ ContaEspecial
 
 
 
-+ Observe que escrevemos Conta entre parênteses
-+ ContaEspecial herda os métodos e atributos de Conta
-+ self.limite será criado apenas para classes do tipo ContaEspecial
-+ Observe que estamos substituindo completamente o método saque em
-  ContaEspecial
++ Tenga en cuenta que escribimos Cuenta entre paréntesis
++ ContaEspecial hereda los métodos y atributos de la cuenta
++ self.limite se creará solo para clases de tipo ContaEspecial
++ Tenga en cuenta que estamos reemplazando completamente el método de retiro en
+  Cuenta especial
 
 
-Arquivo teste3.py, Saída teste 3
-================================
+Archivo teste3.py, salida test3
+=================================
 
 
 .. activecode:: Example8_8
@@ -310,60 +304,58 @@ Arquivo teste3.py, Saída teste 3
    :stdin:
    :include: Example8_7
 
-   joao = Cliente('Joao da Silva','777-1234')
-   maria = Cliente('Maria da Silva','555-4321')
-   conta1 = Conta([joao],1,1000)
-   conta2 = Conta([maria,joao],2,500,1000)
-   conta1.saque(50)
+   juan = cliente('Juan de Silva','777-1234')
+   maria = cliente('Maria de Silva','555-4321')
+   conta1 = Conta([juan],1,1000)
+   conta2 = Conta([maria,juan],2,500,1000)
+   conta1.retirar(50)
    conta2.deposito(300)
-   conta1.saque(190)
+   conta1.retirar(190)
    conta2.deposito(95.15)
-   conta2.saque(250)
+   conta2.retirar(250)
    conta1.extrato()
    conta2.extrato()
 
 
 
 
-Vantagens da herança
-====================
+Ventajas de la herencia
+=======================
 
 
 
-+ Modificamos muito pouco o nosso programa, mantendo a funcionalidade
-  anterior e adicionando novos recursos
-+ Foi possível fazer o reuso dos métodos de Conta
-+ Assim a definição da classe ContaEspecial foi bem menor, incluindo
-  apenas o comportamento diferente
++ Hemos modificado muy poco nuestro programa, manteniendo la funcionalidad anterior y agregando nuevas  características
++ Fue posible reutilizar los métodos de la cuenta
++ Por lo tanto, la definición de la clase ContaEspecial fue mucho más baja, incluyendo solo el      	 comportamiento diferente
 
 
-Outro exemplo OOP
-=================
+Otro ejemplo de OOP
+===================
 
 
 .. codelens:: Example8_9
          
         import datetime
 
-        class Pessoa():
-          def __init__ (self,nome,nascimento):
-            self.nome = nome
-            self.nascimento = nascimento
+        class Persona():
+          def __init__ (self,nombre,nacimento):
+            self.nombre = nombre
+            self.nacimiento = nacimento
 
-          def idade(self):
-            delta = datetime.date.today() - self.nascimento
+          def edad(self):
+            delta = datetime.date.today() - self.nacimento
             return int(delta.days/365)
 
           def __str__ (self):
-            return '%s,%d anos' %(self.nome,self.idade())
+            return '%s,%d anios' %(self.nombre,self.edad())
 
-        masanori = Pessoa('Fernando Masanori', datetime.date(1980,9,1))
-        print(masanori.idade())
+        masanori = Persona('Fernando Masanori', datetime.date(1980,9,1))
+        print(masanori.edad())
         print(masanori)
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 .. youtube:: Zr_FiKbgRbU
