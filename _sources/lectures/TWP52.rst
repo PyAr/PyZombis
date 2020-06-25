@@ -11,7 +11,7 @@ MVC
 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 
@@ -24,7 +24,7 @@ HEAD-Ex Logística e Transporte
 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 
@@ -35,9 +35,9 @@ HEAD-Ex Logística e Transporte
       fileD = open('encomendas.txt','a')
       fileD.write('Destino: ')
       fileD.write('%s\n' %destino.get())
-      fileD.write('Descricao: ')
+      fileD.write('Descripcion: ')
       fileD.write('%s\n' %descricao.get())
-      fileD.write('Endereco: ')
+      fileD.write('Habla a: ')
       fileD.write('%s\n' %endereco.get('1.0',END))
       destino.delete(0,END)
       descricao.delete(0,END)
@@ -45,7 +45,7 @@ HEAD-Ex Logística e Transporte
 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 
@@ -54,18 +54,18 @@ HEAD-Ex Logística e Transporte
    from tkinter import *
 
    app = Tk()
-   app.title('Head-Ex Logistica e Transportes')
+   app.title('HEAD-Ex Logística y Transporte')
    app.geometry("250x180+200+100")
 
    Label(app,text = "Destino: ").pack()
    destino = Entry(app)
    destino.pack()
 
-   Label(app,text = "Descricao: ").pack()
+   Label(app,text = "Descripcion: ").pack()
    descricao = Entry(app)
    descricao.pack()
 
-   Label(app,text = "Endereco: ").pack()
+   Label(app,text = "Habla a: ").pack()
    endereco = Entry(app)
    endereco.pack()
 
@@ -84,7 +84,7 @@ HEAD-Ex Logística e Transporte
    :alt: 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 
@@ -95,7 +95,7 @@ HEAD-Ex Logística e Transporte
    :alt: 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 + Radio Buttons
@@ -108,7 +108,7 @@ HEAD-Ex Logística e Transporte
    :alt: 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 
@@ -119,7 +119,7 @@ HEAD-Ex Logística e Transporte
    :alt: 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 
@@ -130,7 +130,7 @@ HEAD-Ex Logística e Transporte
    :alt: 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 
@@ -141,7 +141,7 @@ HEAD-Ex Logística e Transporte
    :alt: 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 .. image:: img/TWP52_014.png
@@ -152,7 +152,7 @@ HEAD-Ex Logística e Transporte
 
 
 + Modelo é o dado armazenado
-+ Visão é o radio button apresentado
++ Visão é o botón de radio apresentado
 + Controle é o código tkinter que gerencia tudo isso
 
 .. code-block :: python
@@ -186,7 +186,7 @@ HEAD-Ex Logística e Transporte
    :align: center
    :alt: 
 
-+ E agora??
++ Y ahora??
 
 
 HEAD-Ex Logística e Transporte
@@ -208,9 +208,9 @@ HEAD-Ex Logística e Transporte
       descricao.delete(0,END)
       endereco.delete('1.0',END)
 
-   def ler_destinos(arquivo):
+   def ler_destinos(archivo):
       destinos = []
-      f = open(arquivo)
+      f = open(archivo)
       for linha in f:
          destinos.append(linha.rstrip())
       return destinos
@@ -225,7 +225,7 @@ HEAD-Ex Logística e Transporte
    from tkinter import *
 
    app = Tk()
-   app.title('Head-Ex Logistica e Transportes')
+   app.title('HEAD-Ex Logística e Transporte')
    Label(app,text = "Destino: ").pack()
    destino = StringVar()
    destino.set(None)
@@ -233,18 +233,18 @@ HEAD-Ex Logística e Transporte
    opcoes = ler_destinos("cidades.txt")
    OptionMenu(app,destino,*opcoes).pack()
 
-   Label(app,text = "Descricao: ").pack()
+   Label(app,text = "Descripcion: ").pack()
    descricao = Entry(app)
    descricao.pack()
-   Label(app,text = "Endereco: ").pack()
+   Label(app,text = "Habla a: ").pack()
    endereco = Entry(app)
    endereco.pack()
-   Button(app, text = "Salvar" , command = salvar_dados).pack()
+   Button(app, text = "Ahorrar" , command = salvar_dados).pack()
    app.mainloop()
 
 
 
-HEAD-Ex Logística e Transporte
+HEAD-Ex Logística y Transporte
 ==============================
 
 
@@ -255,21 +255,21 @@ HEAD-Ex Logística e Transporte
    :alt: 
 
 
-Revisão
-=======
+revisión
+========
 
 
 
-+ MVC – Modelo, Visão, Controle
-+ Entry()
-+ Text()
-+ StringVar()
-+ RadioButton()
-+ OptionMenu()
++ MVC - Modelo, Visión, Control
++ Entrada ()
++ Texto ()
++ StringVar ()
++ RadioButton ()
++ OptionMenu ()
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 .. youtube:: SnVbanjubbw

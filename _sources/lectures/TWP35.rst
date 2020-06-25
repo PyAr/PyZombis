@@ -1,6 +1,6 @@
-===============
-Revisão Funções
-===============
+===================
+Revición de strings
+===================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -9,8 +9,8 @@ Revisão Funções
    :align: center
    :alt: 
 
-Sejamos mais organizados
-========================
+Seamos más organizados
+======================
 
 
 .. image:: img/TWP35_001.jpeg
@@ -20,8 +20,8 @@ Sejamos mais organizados
    :alt: 
 
 
-Sejamos mais organizados
-========================
+Seamos más organizados
+======================
 
 
 .. image:: img/TWP35_002.jpeg
@@ -30,87 +30,81 @@ Sejamos mais organizados
    :align: center
    :alt: 
 
+Seamos organizados
+==================
 
-Sejamos organizados
-===================
-
-
-
-+ Quando os programas crescem, geralmente o código fica mais complexo
-+ Uma forma de gerenciar essa complexidade é usar funções
-+ Elas permitem separar ações comuns, assim seu código fica mais fácil
-  de ler e mais fácil de manter
++ Cuando los programas crecen, el código generalmente se vuelve más complejo
++ Una forma de gestionar esta complejidad es usar funciones
++ Te permiten separar acciones comunes, por lo que tu código es más fácil
+  fácil de leer y más fácil de mantener
 
 
-O Starbuzz está sem grãos
-=========================
+Starbuzz no tiene granos
+========================
 
 
 
-+ O diretor da Starbuzz quer uma opção para compra rápida, sem esperar
-  abaixar o preço
-+ Ao rodar o programa irei perguntar se quer comprar já ou não
-+ Se o usuário responder sim, então irei pegar o preço atual e comprar
-+ Caso negativo, irei esperar abaixar para menos que 4.74
++ El director de Starbuzz quiere una opción para comprar rápidamente, sin esperar
+  bajar el precio
++ Al ejecutar el programa, te preguntaré si quieres comprar ahora o no
++ Si el usuario responde que sí, tomaré el precio actual y compraré
++ Si no, esperaré reducirlo a menos de 4.74
 
 
-Sugestão de novo programa
-=========================
+Nueva sugerencia de programa
+============================
 
 
 .. code-block:: python
 
    import urllib.request
    import time
-   opcao = input('Deseja comprar ja? (S/N)')
-   if opcao == 'S':
+   opcion = input('¿Quieres comprar ahora? (S/N)')
+   if opcion == 'S':
       pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
       texto = pagina.read().decode('utf8')
-      onde = texto.find('>$')
-      inicio = onde + 2
-      fim = inicio + 4
-      preco = float(texto[inicio:fim])
-      print('Comprar! Preco: %5.2f' %preco)
+      donde = texto.find('>$')
+      inicio = donde + 2
+      fin = inicio + 4
+      precio = float(texto[inicio:fin])
+      print('¡Comprar! Precio: %5.2f' %precio)
    else:
-      preco = 99.99
-      while preco >= 4.74:
+      precio = 99.99
+      while precio >= 4.74:
         pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
         texto = pagina.read().decode('utf8')
-        onde = texto.find('>$')
-        inicio = onde + 2
-        fim = inicio + 4
-        preco = float(texto[inicio:fim])
-        if preco >= 4.74:
+        donde = texto.find('>$')
+        inicio = donde + 2
+        fin = inicio + 4
+        precio = float(texto[inicio:fim])
+        if precio >= 4.74:
           time.sleep(600)
-      print('Comprar! Preco: 5.2%f' %preco)
+      print('¡Comprar! Precio: 5.2%f' %precio)
 
 
-Programa feio...
+Programa feo ...
 ================
 
 
 
-+ Não duplique seu código...
-+ Isso leva ao excesso de código, tornando a manutenção do seu código
-  difícil
-+ Procure reutilizar seu código
-+ Definindo funções faremos reuso de código
-+ Qual é a diferença?
-+ Se eu tiver que mudar algo, irei alterar em apenas um lugar
++ No duplique su código ...
++ Esto conduce a un exceso de código, lo que hace que el mantenimiento de su código
+  dificil
++ Intenta reutilizar tu código
++ Definiendo funciones reutilizaremos código
++ ¿Cuál es la diferencia?
++ Si tengo que cambiar algo, lo cambiaré en un solo lugar
 
 
+Funciones
+=========
 
 
-Funções
-=======
-
-
-
-+ Funções são códigos compartilháveis
-+ Defino um nome e chamo a função ao longo do programa
-+ A função deve ser definida antes de você chamá-la
-+ Se você quiser retornar um valor para quem chamou a função deverá
-  utilizar o comando return
++ Las funciones son códigos compartibles
++ Defino un nombre y llamo a la función en todo el programa
++ La función debe estar definida antes de poder llamarla
++ Si desea devolver un valor a la persona que llama, debe
+  usa el comando de retorno
 
 
 .. code-block:: python
@@ -118,40 +112,40 @@ Funções
    import urllib.request
    import time
 
-   def pega_preco():
+   def precio_de_captura():
       pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
       texto = pagina.read().decode('utf8')
-      onde = texto.find('>$')
-      inicio = onde + 2
-      fim = inicio + 4
-      return float(texto[inicio:fim])
+      donde = texto.find('>$')
+      inicio = donde + 2
+      fin = inicio + 4
+      return float(texto[inicio:fin])
 
-   opcao = input('Deseja comprar ja? (S/N)')
-   if opcao == 'S':
-      preco = pega_preco()
-      print('Comprar! Preco: %5.2f' %preco)
+   opcion = input('¿Quieres comprar ahora? (S/N)')
+   if opcion == 'S':
+      precio = precio_de_captura()
+      print('¡Comprar! Precio: %5.2f' %precio)
    else:
-      preco = 99.99
-      while preco >= 4.74:
-        preco = pega_preco()
-        if preco >= 4.74:
+      precio = 99.99
+      while precio >= 4.74:
+        precio = precio_de_captura()
+        if precio >= 4.74:
           time.sleep(600)
-      print('Comprar! Preco: 5.2%f' %preco)
+      print('¡Comprar! Precio: 5.2%f' %precio)
 
 
 
-Não existem perguntas idiotas
-=============================
+No hay preguntas tontas
+=======================
 
 
 
-+ O comando return é igual ao print? Não, print exibe algo na tela,
-  enquanto return devolve um valor para quem chamou a função.
-+ Se eu não der return dentro da função, o que ela retorna? None
-+ Return sempre deve vir no final da função? Nem sempre, depende da
-  lógica da função
-+ Uma função pode devolver mais de um valor? Sim, inclusive listas ou
-  dicionários.
++ ¿Es el comando de retorno lo mismo que imprimir? No, imprimir muestra algo en la pantalla,
+  while return devuelve un valor para quien llamó a la función.
++ Si no regreso dentro de la función, ¿qué devuelve? Ninguno
+  ¿Debería + Volver siempre aparecer al final de la función? No siempre depende de
+  lógica de función
++ ¿Puede una función devolver más de un valor? Sí, incluidas listas o
+  diccionarios
 
 
 .. image:: img/TWP35_005.jpeg
@@ -163,14 +157,14 @@ Não existem perguntas idiotas
 
 
 + `JSON <http://json.org>`_
-+ Independente de linguagem
-+ Pares nome/valor
++ Idioma independiente
++ Pares de nombre / valor
 + Lista ordenada
-+ Muito adotado atualmente
-+ Alternativa para o XML
++ Muy adoptado hoy
++ Alternativa a XML
 
-  + XML mais verbosa
-  + XML menor legibilidade
+  + Más XML detallado
+  + XML menos legibilidad
 
 
 
@@ -187,8 +181,8 @@ Não existem perguntas idiotas
     print(data['value']['joke'])
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 .. youtube:: VxQBUPE6HbA
