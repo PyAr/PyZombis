@@ -10,21 +10,21 @@ Banco de Dados
    :alt: 
 
 
-Notas de Surfistas
+Notas de surfistas
 ==================
 
 
 
-+ A Federação de Surf possui os seguintes dados: número do surfista,
-  nome, país, nota média, estilo, idade.
++ La Federación de Surf tiene los siguientes datos: número del surfista,
+  nombre, país, grado promedio, estilo, edad.
 
-+ Como usar estes dados?
++ ¿Cómo usar estos datos?
 
-+ Por exemplo, quero saber todos os surfistas com mais de 25 anos
++ Por ejemplo, quiero conocer a todos los surfistas mayores de 25
 
-+ Usando um Banco de Dados! No caso o sqlite3
++ ¡Usando una base de datos! En este caso, sqlite3
 
-+ Obs.: copie surfersDB.sdb para o seu diretório
++ Obs .: copie surfersDB.sdb a su directorio
 
 
 Usando sqlite3
@@ -40,17 +40,17 @@ Usando sqlite3
    cursor.execute("select * from surfers where age > 25")
    linhas = cursor.fetchall()
    for linha in linhas:
-      print("Nome  :",linha['name'])
+      print("Nombre :",linha['name'])
       print("Pais  :",linha['country'])
       print("Media  :",linha['average'])
       print("Estilo :",linha['board'])
-      print("Idade  :",linha['age'])
+      print("Edad  :",linha['age'])
       print()
    cursor.close()
 
 
 
-+ Obs.: não salve seu programa com o nome sqlite3.py (mesmo nome da lib)
++ Nota: no guarde su programa con el nombre sqlite3.py (mismo nombre que lib)
 
 
 Usando sqlite3
@@ -64,8 +64,8 @@ Usando sqlite3
    :alt: 
 
 
-Noções de SQL
-=============
+Conceptos básicos de SQL
+========================
 
 
 .. image:: img/TWP42_003.jpeg
@@ -86,8 +86,8 @@ Noções de Banco de Dados
    :alt: 
 
 
-Noções de Banco de Dados
-========================
+Nociones de bases de datos
+==========================
 
 
 .. image:: img/TWP42_005.jpeg
@@ -97,8 +97,8 @@ Noções de Banco de Dados
    :alt: 
 
 
-Criando um Banco de Alunos
-==========================
+Crear un banco de estudiantes
+=============================
 
 
 .. code-block :: python
@@ -111,8 +111,8 @@ Criando um Banco de Alunos
    con.close() 
 
 
-Acessando o banco alunos.bd
-===========================
+Accediendo al banco alunos.bd
+=============================
 
 
 .. code-block :: python
@@ -138,8 +138,8 @@ Acessando o banco alunos.bd
    :alt: 
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 .. youtube:: F4MpDoldKoE

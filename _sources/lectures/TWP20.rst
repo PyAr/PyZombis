@@ -1,6 +1,6 @@
-====================
-For Funções e Random
-====================
+==========================
+For y funciones aleatorias
+==========================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -10,10 +10,10 @@ For Funções e Random
    :alt: 
 
 
-for == while enrustido
-======================
+for == while oculto
+===================
 
-+ Códigos equivalentes : for durante o dia vira while á noite.
++ Códigos equivalentes: FOR durante el día se convierte MIENTRAS por la noche.
 
 
 .. codelens:: Example6_1
@@ -31,8 +31,8 @@ for == while enrustido
          k = k+1
 
 
-for == while enrustido
-======================
+for == while oculto
+====================
 
 + Códigos equivalentes :
 
@@ -52,8 +52,8 @@ for == while enrustido
             k = k + 1
 
 
-for == while enrustido
-======================
+for == while oculto
+====================
 
 + Códigos equivalentes :
 
@@ -73,13 +73,13 @@ for == while enrustido
          k = k + 1
 
 
-def functions
+funciones def
 =============
 
-+ Aprendemos algumas funções do Python: len, int, float, print e input
-+ Agora iremos criar as nossas próprias funções
-+ Utilizo def para definir a função e return para devolver algum valor
-+ Existem funções que não retornam nada
++ Aprendimos algunas funciones de Python: len, int, float, print y input
++ Ahora crearemos nuestras propias funciones
++ Utilizo def para definir la función y regreso para devolver algún valor
++ Hay funciones que no devuelven nada
 
 
 .. codelens:: Example6_7
@@ -91,23 +91,23 @@ def functions
   print(epar(12))
 
 
-+ Esta função retorna se o parâmetro x é par
-+ Observe que diferentemente do que já vimos até agora, essas linhas
-  não serão executadas imediatamente
-+ Preciso chamar a função para executá-la
++ Esta función regresa si el parámetro x es par
++ Tenga en cuenta que, a diferencia de lo que hemos visto hasta ahora, estas líneas
+   no se ejecutará de inmediato
++ Necesito llamar a la función para ejecutarla
 
 
 
-Funções
-=======
+Funciones
+=========
 
 
-+ Defina uma função fatorial
++ Definir una función factorial
 
 
 .. codelens:: Example6_8
          
-        def fat(n):
+        def medida(n):
          f = 1
          while n > 0:
             f = f*n
@@ -115,49 +115,49 @@ Funções
          return f
 
         for i in range(5):
-         print(fat(i))
+         print(medida(i))
 
  
 
-Variáveis locais e globais
-==========================
+Variables locales y globales.
+=============================
 
-+ Nota: O escopo de a é diferente nos dois casos. Em outras palavras, as duas variáveis ​​'a' são diferentes.
++ Nota: El alcance de a es diferente en los dos casos. En otras palabras, las dos variables 'a' son diferentes.
 
 
 .. codelens:: Example6_9
          
         a = 5 
-        def muda_e_imprime():
+        def cambio_y_impresion():
          a = 7
-         print('a dentro da função : %d' %a)
-        print('a antes de mudar: %d' %a)
-        muda_e_imprime()
-        print('a depois de mudar: %d' %a)
+         print('a dentro de la función : %d' %a)
+        print('el antes de cambiar: %d' %a)
+        cambio_y_impresion()
+        print('el después de cambiar: %d' %a)
 
 
 
-Variáveis locais e globais
-==========================
+Variables locales y globales
+============================
 
-+ Nesse caso, usamos a palavra-chave global. Então, a variável 'a' dentro da função é a mesma que a variável definida acima, ou seja, é a variável global.
++ En este caso, usamos la palabra clave global. Entonces, la variable 'a' dentro de la función es la misma que la variable definida anteriormente, es decir, es la variable global.
 
 .. codelens:: Example6_10
          
         a = 5 
-        def muda_e_imprime():
+        def cambio_y_impresión():
          a = 7
-         print('a dentro da função : %d' %a)
-        print('a antes de mudar: %d' %a)
-        muda_e_imprime()
-        print('a depois de mudar: %d' %a)
+         print('a dentro de la función: %d' %a)
+        print('el antes de cambiar: %d' %a)
+        cambio_y_impresión()
+        print('el después de cambiar: %d' %a)
 
 
 
-+ Observe a diferença nas saídas dos Exemplos 9 e 10.
++ Observe la diferencia en las salidas en los ejemplos 9 y 10.
 
 
-Números aleatórios
+Números aleatorios
 ==================
 
 
@@ -167,44 +167,43 @@ Números aleatórios
 
         print(random.randint(1,100))
         print(random.randint(1,100))
-        alunos = ['José','João','Pedro','Lucas','Tiago']
-        print(random.choice(alunos))
-        print(random.choice(alunos))
-        random.shuffle(alunos)
-        print(alunos)
-        random.shuffle(alunos)
-        print(alunos)
+        alumnos = ['José','Juan','Pedro','Lucas','Thiago']
+        print(random.choice(alumnos))
+        print(random.choice(alumnos))
+        random.shuffle(alumnos)
+        print(alumnos)
+        random.shuffle(alumnos)
+        print(alumnos)
 
 
-Números aleatórios
-==================
+Números al azar
+===============
 
 
 
-+ Defina uma função “embaralha” que retorne as letras de uma string
-  misturadas. Dica: utilize list( ) para converter sua string em lista.
-
++ Defina una función de "codificación" que devuelva las letras en una cadena
+   mezclado Consejo: use list () para convertir su cadena en una lista.
 
 .. codelens:: Example6_12
          
-        def embaralha(s):
+        def codificación(s):
 
          import random
          lista = list(s)
          random.shuffle(lista)
          return ''.join(lista)
 
-        print(embaralha('palmeiras'))
-        print(embaralha('palmeiras'))
+        print(codificación('palmeras'))
+        print(codificación('palmeras'))
 
 
 
-Números aleatórios
+Números aleatorios
 ==================
 
 
 
-+ Gere uma lista de 15 inteiros aleatórios entre 10 e 100
++ Genere una lista de 15 enteros aleatorios entre 10 y 100
 
 
 .. codelens:: Example6_13
@@ -221,8 +220,7 @@ Números aleatórios
 
 
 
-+ Gere uma lista de 15 inteiros aleatórios entre 10 e 100 que sejam
-  distintos entre si
++ Genere una lista de 15 enteros aleatorios entre 10 y 100 que son distintos el uno del otro
 
 
 
@@ -250,10 +248,10 @@ Lista 5
    :align: center
    :alt: 
 
-+ “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
++ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: SWz-TDaVOjU
       :height: 315

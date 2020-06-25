@@ -1,6 +1,6 @@
-=========
-Condições
-=========
+===========
+Condiciones
+===========
 
 
 .. image:: img/TWP10_001.jpeg
@@ -9,15 +9,15 @@ Condições
    :align: center
    :alt: 
 
-Condições
-=========
+Condiciones
+===========
 
 <número>
 
 .. codelens:: Example2_1
 
-        print("Bem vindo ao meu programa!")
-        print("Volte sempre!")
+        print("¡Bienvenido a mi programa!")
+        print("¡Vuelva siempre!")
 
 .. image:: img/TWP10_002.jpg
    :height: 5.524cm
@@ -25,23 +25,20 @@ Condições
    :align: center
    :alt: 
 
-+ Seus programas nem sempre serão seqüências simples de comandos
++ Tus programas no siempre serán simples secuencias de comandos
 
-Condições
-=========
-
-
-
-+ “Executar ou não executar? Eis a questão...”
-+ Em geral não executo todas as linhas do programa
-+ Passar pelas linhas de um programa é como andar de carro numa cidade
-+ Existem pontos onde decidimos qual caminho escolher
+Condiciones
+===========
 
 
++ “¿Correr o no correr? Esa es la cuestión..."
++ En general no ejecuto todas las líneas del programa
++ Ir a través de las líneas de un programa es como viajar en automóvil en una ciudad
++ Hay puntos donde decidimos qué camino elegir
 
 
-Condições
-=========
+Condiciones
+===========
 
 
 .. image:: img/TWP10_004.png
@@ -55,8 +52,7 @@ if
 ==
 
 
-
-+ Ler dois valores inteiros e imprimir o maior deles
++ Lea dos valores enteros e imprima el más grande
 
 
 .. codelens:: Example2_2
@@ -64,33 +60,31 @@ if
         a = 8
         b = 5
         if a>b:
-                print("O promeiro numero e o maior!")
+                print("El primer número es el más grande")
         if b>a:
-                print("O segundo numero e o maior!")
+                print("¡El segundo número es el más grande!")
 
 
-Dois pontos e identação
-=======================
+Dos puntos y sangría
+====================
 
 
 if
 ==
 
 
-
-+ Verificar se um carro é novo ou velho
-+ Se o carro tiver pelo menos três anos é novo
-
++ Verificar si un auto es nuevo o viejo
++ Si el auto tiene al menos tres años, es nuevo
 
 
 
 .. codelens:: Example2_3
 
-        idade = 10
-        if idade <= 3:
-                print("Seu carro e novo")
-        if idade > 3:
-                print("Seu carro e velho")
+        edad = 10
+        if edad <= 3:
+                print("Su auto es nuevo")
+        if edad > 3:
+                print("Su auto es viejo")
 
 
 if
@@ -98,10 +92,10 @@ if
 
 
 
-+ Pergunte a velocidade de um carro, supondo um valor inteiro. Caso
-  ultrapasse 110 km/h, exiba uma mensagem dizendo que o usuário foi
-  multado. Neste caso, exiba o valor da multa, cobrando R$ 5,00 por km
-  acima de 110.
++ Pregunte la velocidad de un automóvil, suponiendo un número entero. Caso
+   supera los 110 km / h, muestra un mensaje que dice que el usuario ha sido
+   multado En este caso, muestre el monto de la multa, cobrando $5,00 por km
+   por encima de 110.
 
 
 if
@@ -112,9 +106,9 @@ if
 
         v = 120
         if v > 110:
-                print("Voce foi multado!")
+                print("Usted a sido multado")
                 multa = (v-110)*5
-                print("Valor da multa : R$ %5.2f " % multa)
+                print("Valor de la multa : $ %5.2f " % multa)
 
 
 
@@ -123,25 +117,25 @@ else
 
 
 
-+ O que fazer quando a condição do if é falsa?
-+ Os dois códigos abaixo fazem a mesma coisa:
++ ¿Qué hacer cuando la condición if es falsa?
++ Los dos códigos a continuación hacen lo mismo:
 
 
 .. codelens:: Example2_5
 
         idade = 1
         if idade <= 3:
-                print("Seu carro e novo")
+                print("Su auto es nuevo")
         if idade > 3:
-                print("Seu carro e velho")
+                print("Su auto es viejo")
 
 .. codelens:: Example2_6
 
         idade = 6
         if idade <= 3:
-                print("Seu carro e novo")
+                print("Su auto es nuevo")
         else:
-                print("Seu carro e velho")
+                print("Su auto es viejo")
 
 
 if / else
@@ -155,8 +149,8 @@ if / else
    :alt: 
 
 
-Estrutura aninhadas
-===================
+Estructuras anidadas
+====================
 
 .. image:: img/TWP10_011.jpg
    :height: 9.754cm
@@ -165,29 +159,29 @@ Estrutura aninhadas
    :alt: 
 
 
-+ Considere a empresa de telefonia Tchau. Abaixo de 200 minutos, a
-  empresa cobra R$ 0,20 por minuto. Entre 200 e 400 minutos, o preço é
-  R$ 0,18. Acima de 400 minutos o preço por minuto é R$ 0,15. Calcule
-  sua conta de telefone.
++ Considere la compañía telefónica Bye. Por debajo de 200 minutos, el
+   la empresa cobra $ 0,20 por minuto. Entre 200 y 400 minutos, el precio es
+   $ 0,18. Por encima de 400 minutos, el precio por minuto es de $ 0,15. Calcular
+   tu factura de teléfono
 
 
-Estruturas aninhadas
+Estruturas anidadas
 ====================
 
 .. codelens:: Example2_7
 
         minutos = 800
         if minutos < 200:
-                preco = 0.20
+                precio = 0.20
         else:
                 if minutos <= 400:
-                        preco = 0.18
+                        precio = 0.18
                 else:
-                        preco = 0.15
-        print("Conta telefonica : R$%6.2f"%(minutos*preco))
+                        precio = 0.15
+        print("Cuenta telefonica : $%6.2f"%(minutos*precio))
 
 
-Estruturas aninhadas
+Estruturas anidadas
 ====================
 
 
@@ -216,13 +210,13 @@ Estruturas aninhadas
    :alt: 
 
 
-Estruturas aninhadas
+Estruturas anidadas
 ====================
 
 
 
-+ Modifique o programa da empresa Tchau para uma promoção onde a
-  tarifa é de R$ 0,08 quando você utiliza mais que 800 minutos
++ 12Modificar el programa de la compañía Tchau para una promoción donde el
+   la tarifa es de $ 0.08 cuando usa más de 800 minutos
 
 
 Estruturas aninhadas
@@ -233,16 +227,16 @@ Estruturas aninhadas
 
         minutos = 1000
         if minutos < 200:
-                preco = 0.2
+                precio = 0.2
         else:
                 if minutos <= 400:
-                        preco = 0.18
+                        precio = 0.18
                 else:
                         if minutos <= 800:
-                                preco = 0.15
+                                precio = 0.15
                         else:
-                                preco = 0.08
-        print("Conta telefonica : R$%6.2f"%(minutos*preco))
+                                precio = 0.08
+        print("Cuenta telefonica : $%6.2f"%(minutos*precio))
 
 
 elif
@@ -250,24 +244,24 @@ elif
 
 
 
-+ A cláusula elif substitui um par else if
++ La cláusula elif reemplaza a else y if
 
 
 .. codelens:: Example2_9
 
         minutos = 1000
         if minutos < 200:
-                preco = 0.2
+                precio = 0.2
         elif minutos <= 400:
-                preco = 0.18
+                precio = 0.18
         elif minutos <= 800:
-                preco = 0.15
+                precio = 0.15
         else:
-                preco = 0.08
-        print("Costa telefonica : R$%6.2f"%(minutos*preco))
+                precio = 0.08
+        print("Cuenta telefonica : $%6.2f"%(minutos*precio))
 
 
-Lista de Exercícios “again”
+Lista de Ejercicios “again”
 ===========================
 
 
@@ -277,10 +271,10 @@ Lista de Exercícios “again”
    :align: center
    :alt: 
 
-+ “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
++ La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: vyRXFoZEaJw
       :height: 315

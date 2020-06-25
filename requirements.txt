@@ -1,5 +1,1 @@
 runestone==4.2.2
-sphinx
-pygments
-hieroglyph
-
