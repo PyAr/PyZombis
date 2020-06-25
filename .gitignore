@@ -1,3 +1,9 @@
+sphinx-enki-info.txt
+sphinx_settings.json
+venv/
+.gitignore
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

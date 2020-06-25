@@ -12,8 +12,8 @@ Módulos
 
 
 
-Programação Modular
-===================
+Programacion Modular
+====================
 
 
 .. image:: img/TWP47_001.png
@@ -23,8 +23,8 @@ Programação Modular
    :alt: 
 
 
-Arquivo transações.txt
-======================
+Archivo Transactions.txt
+========================
 
 
 .. image:: img/TWP47_002.png
@@ -34,39 +34,39 @@ Arquivo transações.txt
    :alt: 
 
 
-Venda Salgados
+Venta Salgados
 ==============
 
 
 .. code-block:: python
 
-   def salva_transacao(preco, cartao_credito, descricao):
+   def salva_transacao(precio, tarjeta_de_credito, descripcion):
       file = open('transacoes.txt',"a")
-      file.write("%16s%07d%16s\n" %(cartao_credito,preco*100,descricao))
+      file.write("%16s%07d%16s\n" %(tarjeta_de_credito,precio*100,descripcion))
       file.close()
 
-   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
-   precos = [1.50,2.20,1.80,1.20]
-   rodando = True
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
 
-   while rodando:
-      opcao = 1
-      for escolha in itens:
-         print(str(opcao) + "." + escolha)
+   while corriendo:
+      opción = 1
+      for elegir in alrticulos					:
+         print(str(opcion) + "." + elegir)
          opcao += 1
-      print(str(opcao) + ".Finalizar")
-      escolha = int(input("Escolha uma opcao: "))
-      if escolha == opcao:
-         #escolheu a ultima opcao Finalizar
-         rodando = False
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Escoja una opción: "))
+      if elegir == opcion:
+         #escolheu a ultima opcion Finalizar
+         corriendo = False
       else:
-         cartao = input("Numero do cartao de credito: ")
-         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
+         credito = input("Número de tarjeta de crédito: ")
+         guardar_transacción(precios[elegir-1],tarjeta,articulos[elegir-1]) 
 
 
 
 
-Venda Salgados
+Venta Salgados
 ==============
 
 
@@ -77,16 +77,16 @@ Venda Salgados
    :alt: 
 
 
-Venda Salgados
+Venta Salgados
 ==============
 
 
 
-+ Problemas: o banco rejeitou todo o arquivo de transações do período
-  da manhã!
-+ Todos os cartões estavam inválidos
-+ Os preços estavam altos demais: rosquinha vendida por R$ 50.791,42!
-+ Nos outros períodos não houve problema. O que será que aconteceu?
++ Problemas: el banco rechazó el archivo de transacción completo para el período
+  ¡de mañana!
++ Todas las tarjetas no eran válidas
++ ¡Los precios eran demasiado altos: donut vendido por R $ 50.791,42!
++ En los otros períodos no hubo problema. Que paso
 
 .. image:: img/TWP47_005.png
    :height: 5.952cm
@@ -95,7 +95,7 @@ Venda Salgados
    :alt: 
 
 
-Venda Salgados
+Venta Salgados
 ==============
 
 
@@ -106,10 +106,10 @@ Venda Salgados
    :alt: 
 
 
-Venda Salgados
+Venta Salgados
 ==============
 
-+ O banco mudou a ordem dos dados! [Preço / Cartão / Item]
++ ¡El banco cambió el orden de los datos! [Precio / Tarjeta / Artículo]
 
 .. image:: img/TWP47_007.png
    :height: 4.001cm
@@ -118,7 +118,7 @@ Venda Salgados
    :alt: 
 
 
-Venda Salgados
+Venta Salgados
 ==============
 
 
@@ -129,71 +129,70 @@ Venda Salgados
    :alt: 
 
 
-Venda Salgados Tarde/Noite
-==========================
+Venta Salgados Tarde / Noche
+============================
 
 
 .. code-block:: python
    
-   def salva_transacao(preco, cartao_credito, descricao):
+   def guardar_transacción(precio, tarjeta_de_credito, descripcion):
       file = open('transacoes.txt',"a")
-      file.write("%16s%07d%16s\n" %(cartao_credito,preco*100,descricao))
+      file.write("%16s%07d%16s\n" %(tarjeta_de_credito,precio*100,descripcion))
       file.close()
 
-   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
-   precos = [1.50,2.20,1.80,1.20]
-   rodando = True
+   articulos = ["Esfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
 
-   while rodando:
-      opcao = 1
-      for escolha in itens:
-         print(str(opcao) + "." + escolha)
-         opcao += 1
-      print(str(opcao) + ".Finalizar")
-      escolha = int(input("Escolha uma opcao: "))
-      if escolha == opcao:
-         #escolheu a ultima opcao Finalizar
-         rodando = False
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion	 += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("eliga una opcion "))
+      if elegir == opcion:
+         #la última opción Finalizar
+         corriendo = False
       else:
-         cartao = input("Numero do cartao de credito: ")
-         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
+         tarjeta = input("Número de tarjeta de crédit")
+         guardar_transacción(precios[elegir-1],tarjeta,articulos[elegir-1]) 
 
 
 
-+ Formatação corrigida por aluno!
++ Formato corregido por el alumno!
 
 
-Venda Salgados Manhã
-====================
+Venta Salgados Mañana
+=====================
 
 
 .. code-block:: python
    
-   def salva_transacao(preco, cartao_credito, descricao):
+   def guardar_transacción(precio, tarjeta_de_credito, descripcion):
       file = open('transacoes.txt',"a")
-      file.write("%16s%07d%16s\n" %(cartao_credito,preco*100,descricao))
+      file.write("%16s%07d%16s\n" %(tarjeta_de_credito,precio*100,descripcion))
       file.close()
 
-   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
-   precos = [1.50,2.20,1.80,1.20]
-   rodando = True
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
 
-   while rodando:
-      opcao = 1
-      for escolha in itens:
-         print(str(opcao) + "." + escolha)
-         opcao += 1
-      print(str(opcao) + ".Finalizar")
-      escolha = int(input("Escolha uma opcao: "))
-      if escolha == opcao:
-         #escolheu a ultima opcao Finalizar
-         rodando = False
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Eliga una opcion: "))
+      if elegir == opcion:
+         #eligió la última opción
+         corriendo = False
       else:
-         cartao = input("Numero do cartao de credito: ")
-         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
+         tarjeta = input("Número de tarjeta de crédito: ")
+         guardar_transacción(precios[elegir-1],tarjeta,articulos[elegir-1]) 
 
-+ Produtos alterados, mas esqueceram a formatação!
-
++ Productos modificados, ¡pero olvidé el formato!
 
 
 Módulo banco.py
@@ -213,78 +212,78 @@ Módulo banco.py
 
 .. code-block:: python
    
-   def salva_transacao(preco, cartao_credito, descricao):
+   def salva_transacao(precio, tarjeta_de_credito, descripcion):
       file = open('transacoes.txt',"a")
-      file.write("%16s%07d%16s\n" %(cartao_credito,preco*100,descricao))
+      file.write("%16s%07d%16s\n" %(tarjeta_de_credito,precio*100,descripcion))
       file.close()
 
 
 
-+ Obs.: deixar no mesmo diretório dos programas manhã e tarde/noite
++ Nota: dejar en el mismo directorio que los programas de mañana y tarde / noche
 
-Novo programa da manhã
-======================
-
-
-.. code-block:: python
-   
-   from banco import *
-
-   itens = ["Bauru","X Salada","Calafrango"]
-   precos = [2.50,3.0,2.20]
-   rodando = True
-
-   while rodando:
-      opcao = 1
-      for escolha in itens:
-         print(str(opcao) + "." + escolha)
-         opcao += 1
-      print(str(opcao) + ".Finalizar")
-      escolha = int(input("Escolha uma opcao: "))
-      if escolha == opcao:
-         #escolheu a ultima opcao Finalizar
-         rodando = False
-      else:
-         cartao = input("Numero do cartao de credito: ")
-         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
-
-
-
-Novo programa tarde/noite
-=========================
+Nuevo programa de la mañana
+===========================
 
 
 .. code-block:: python
    
    from banco import *
 
-   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
-   precos = [1.50,2.20,1.80,1.20]
-   rodando = True
+   articulos = ["Bauru","X ensalada","Calafrango"]
+   precios = [2.50,3.0,2.20]
+   corriendo = True
 
-   while rodando:
-      opcao = 1
-      for escolha in itens:
-         print(str(opcao) + "." + escolha)
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
          opcao += 1
-      print(str(opcao) + ".Finalizar")
-      escolha = int(input("Escolha uma opcao: "))
-      if escolha == opcao:
-         #escolheu a ultima opcao Finalizar
-         rodando = False
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Elija una opcion: "))
+      if elegir == opcion:
+         # eligió la última opción Finalizar
+         corriendo = False
       else:
-         cartao = input("Numero do cartao de credito: ")
-         salva_transacao(precos[escolha-1],cartao,itens[escolha-1]) 
-
-
-Descontos
-=========
+         tarjeta = input("Número de tarjeta de crédito: ")
+         guardar_transacción(precios[elegir-1],tarjeta,articulos[elegir-1]) 
 
 
 
-+ Agora sob nova direção os salgados na FATEC terão 10% de desconto!
-+ Para isso será criado um módulo fatec.py
-+ Inicialmente o desconto será de 10% para todos os salgados
+Nuevo programa de tarde / noche
+===============================
+
+
+.. code-block:: python
+   
+   from banco import *
+
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
+
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Elige una opcion: "))
+      if elegir == opcion:
+        # eligió la última opción Finalizar
+         corriendo = False
+      else:
+         tarjeta = input("Número de tarjeta de crédito: ")
+         guardar_transacción(precios[elegir-1],cartao,articulos[elegir-1]) 
+
+
+Descuentos
+==========
+
+
+
++ ¡Ahora bajo una nueva dirección, las sales en FATEC tendrán un 10% de descuento!
++ Para esto, se creará un módulo fatec.py
++ Inicialmente, el descuento será del 10% para todos los bocadillos
 
 
 .. image:: img/TWP47_015.png
@@ -294,8 +293,8 @@ Descontos
    :alt: 
 
 
-Descontos
-=========
+Descuentos
+==========
 
 
 .. code-block:: python
@@ -303,34 +302,34 @@ Descontos
    from banco import *
    from fatec import *
 
-   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
-   precos = [1.50,2.20,1.80,1.20]
-   rodando = True
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
 
-   while rodando:
-      opcao = 1
-      for escolha in itens:
-         print(str(opcao) + "." + escolha)
-         opcao += 1
-      print(str(opcao) + ".Finalizar")
-      escolha = int(input("Escolha uma opcao: "))
-      if escolha == opcao:
-         #escolheu a ultima opcao Finalizar
-         rodando = False
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Elige una opcion"))
+      if elegir == opcion:
+         # eligió la última opción Finalizar
+         corriendo = False
       else:
-         cartao = input("Numero do cartao de credito: ")
-         preco = desconto(precos[escolha-1]) 
-         salva_transacao(preco,cartao,itens[escolha-1])
+         tarjeta = input("Numero de tarjeta de credito: ")
+         precio = descuento(precios[elegir-1]) 
+         guardar_transacción(precio,tarjeta,articulos[elegir-1])
 
 
-Descontos
-=========
+Descuentos
+==========
 
 
 
-+ Teremos um desconto adicional de 50% para pastéis por conta da
-  colônia japonesa
-+ Novo módulo japa.py
++ Tendremos un descuento adicional del 50% para pasteles a causa de
+  colonia japonesa
++ Nuevo módulo japa.py
 
 
 .. image:: img/TWP47_017.png
@@ -340,8 +339,8 @@ Descontos
    :alt: 
 
 
-Os nomes são iguais! E agora?
-=============================
+¡Los nombres son iguales! ¿Y ahora?
+===================================
 
 
 .. image:: img/TWP47_018.png
@@ -350,10 +349,10 @@ Os nomes são iguais! E agora?
    :alt: 
 
 
-Nomes Completos
-===============
+Nombres completos
+=================
 
-+ A solução é adotar os nomes completos
++ La solución es adoptar los nombres completos
 
 
 .. code-block:: python
@@ -362,29 +361,29 @@ Nomes Completos
    import fatec
    import japa
 
-   itens = ["Esfiha","Coxinha","Pastel","Pao de Queijo"]
-   precos = [1.50,2.20,1.80,1.20]
-   rodando = True
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
 
-   while rodando:
-      opcao = 1
-      for escolha in itens:
-         print(str(opcao) + "." + escolha)
-         opcao += 1
-      print(str(opcao) + ".Finalizar")
-      escolha = int(input("Escolha uma opcao: "))
-      if escolha == opcao:
-         #escolheu a ultima opcao Finalizar
-         rodando = False
-      else:
-         cartao = input("Numero do cartao de credito: ")
-         preco = fatec.descento(precos[escolha - 1])
-         if itens[escolha - 1] == "Pastel":
-            preco = japa.descento(preco)
-         salva_transacao(preco,cartao,itens[escolha-1])
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion += 1
+       print(str(opcion) + ".Finalizar")
+       elegir = int(input("Elige una opcion"))
+         if elegir == opcion:
+       # eligió la última opción Finalizar
+          corriendo = False
+     else:
+         tarjeta = input("Número de tarjeta de crédito: ")
+         precio = fatec.descento(precios[elegir - 1])
+         if itens[elegir - 1] == "Pastel":
+            precio = japa.descento(precio)
+         (precio,tarjeta,articulos[elegir-1])
 
-Nomes Completos
-===============
+Nombres completos
+=================
 
 + Resultado - 
 
@@ -403,8 +402,8 @@ Nomes Completos
 
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: IZyaz4x0Ql4
       :height: 315

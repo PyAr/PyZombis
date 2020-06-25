@@ -11,9 +11,9 @@
 .. role:: yellow
 
 
-===============
-Revisão Geral 1
-===============
+==================
+Revisión general 1
+==================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -23,8 +23,8 @@ Revisão Geral 1
    :alt: 
 
 
-Acabamos o primeiro livro
-=========================
+Terminamos el primer libro
+==========================
 
 
 .. image:: img/TWP30_001.jpeg
@@ -34,8 +34,8 @@ Acabamos o primeiro livro
    :alt: 
 
 
-Vamos começar o segundo
-=======================
+Empecemos el segundo
+====================
 
 
 .. image:: img/TWP30_002.jpeg
@@ -45,24 +45,23 @@ Vamos começar o segundo
    :alt: 
 
 
-O que aprendemos
-================
+Lo que aprendemos
+=================
 
 
-
-+ Variáveis e entrada de dados
-+ Condições
-+ Repetições
++ Variables y entrada de datos
++ Condiciones
++ Repeticiones
 + Listas
-+ Strings
-+ Funções
-+ Arquivos
-+ Dicionários
-+ Classes e Objetos
++ Cuerdas
++ Funciones
++ Archivos
++ Diccionarios
++ Clases y objetos
 
 
-Agora só faltam seus exercícios
-===============================
+Ahora solo faltan tus ejercicios
+================================
 
 
 .. image:: img/TWP05_041.jpeg
@@ -71,139 +70,135 @@ Agora só faltam seus exercícios
    :align: center
    :alt: 
 
-+ “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
++ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. -Einstein
 
 
-O que vamos aprender no segundo?
+
+¿Qué aprenderemos en el segundo?
 ================================
 
 
-
-+ As mesmas coisas!
-+ Fazendo jogos
-+ Acessando sites para ver a cotação do café
-+ Usando interfaces gráficas
-+ Tratando exceções
-+ Usando banco de dados de surfistas
-+ Mixando músicas
-
-
-Encontrando seu caminho
-=======================
++ ¡Las mismas cosas!
++ Hacer juegos
++ Acceso a sitios web para ver el precio del café
++ Uso de interfaces gráficas
++ Manejo de excepciones
++ Uso de la base de datos de surfistas
++ Mezcla de canciones
 
 
+Encontrando tu camino
+=====================
 
-+ Se você só usar o software dos outros, sempre estará limitado àquilo
-  que outras pessoas acham que você deseja fazer
-+ Escreva seus próprios programas
-+ Você deseja ser programado ou ser o programador?
-+ Você pode assumir o controle
 
++ Si solo usa el software de otros, siempre estará limitado a lo que
+  lo que otras personas piensan que quieres hacer
++ Escribe tus propios programas
++ ¿Quieres ser programado o ser el programador?
++ Puedes tomar el control
 
 Adivinhando números
 ===================
 
-+ **print()** é uma função
-+ **'Bem vindo!'** é uma string
-+ **g,chute** são variáveis
-+ **if,else** são diretivas
-+ A lacuna que é fornecida após os dois pontos (:) da instrução if, a partir da qual a instrução print é iniciada, é chamada de recuo
-+ **=** é o operador de atribuição e é usado para atribuir valores a variáveis
-+ **==** é o operador de comparação e é usado para comparar duas variáveis ​​ou valores
++ **print ()** es una función
++ **'¡Bienvenido!'** es una cadena
++ **g, patada** son variables
++ **if, else** son directivas
++ El espacio que se proporciona después de los dos puntos (:) de la instrucción if, a partir de la cual comienza la instrucción print, se llama sangría
++ **=** es el operador de asignación y se usa para asignar valores a variables
++ **==** es el operador de comparación y se usa para comparar dos variables o valores
 
 
 .. activecode:: Example9_1
    :nocodelens:
    :stdin:
 
-    print('Bem vindo!')
-    g = input('Chute um número: ')
+    print('Bienvenido!')
+    g = input('Ingrese un numero: ')
     chute = int(g)
     if chute == 42:
-      print('Você venceu!')
+      print('¡Ganaste!')
     else:
-      print('Você perdeu!')
-    print('Fim do jogo!')
+      print('¡Tú perdiste!')
+    print('¡Fin del juego!')
     
 
-As partes do seu programa
+Las partes de tu programa
 =========================
 
 
 
-+ :purple:`Funções` embutidas (built in functions) são chamadas pelo seu nome e
-  exigem parênteses
++ :púrpura: `Las funciones incorporadas` se llaman por su nombre y requieren paréntesis
 
 
 
-+ :green:`Strings` se diferenciam dos comandos do programa por estarem dentro
-  de aspas
++ :verde: las `strings` son diferentes de los comandos del programa porque están dentro de    	comillas
 
 
 
-+ :red:`Variáveis` controlam dados na memória e possuem tipos diferentes
++ :rojo: los datos de control de `Variables` en memoria y tienen diferentes tipos
 
 
 
-+ :yellow:`Diretivas` são comandos da linguagem
++ :amarillo: `Directivas` son comandos del lenguaje
 
 
-As partes do seu programa
+Las partes de tu programa
 =========================
 
 
 
-+ A :red:`identação` separa blocos de comandos
++ A: rojo: 'sangría' separa los bloques de comandos
 
-  + “Cada um no seu quadrado”
+   + "Cada uno en su cuadrado"
 
-+ Um igual (=) significa atribuição
++ Un igual (=) significa atribución
 
-  + Ex.: chute = int(g) (chute recebe inteiro de g)
+   + Ej .: kick = int (g) (kick recibe un entero de g)
 
-+ Dois iguais (==) significa comparação
++ Dos iguales (==) significa comparación
 
-  + Ex.: chute == 42 (chute é igual a 42?)
+   + Ej .: patada == 42 (¿la patada es igual a 42?)
 
-+ Dois pontos abrem blocos de instruções
++ Bloques de instrucciones abiertos de colon
 
-  + Coloque no banheiro, caderno, geladeira:
-  + “Eu amo dois pontos!”
-
-
++ Poner en el baño, cuaderno, nevera:
+   + "¡Amo dos puntos!"
 
 
 
-Quais os tipos de erro?
+
+
+¿Qué tipos de errores?
 =======================
 
 
 
-+ Erros de sintaxe
++ Errores de sintaxis
 
-  + Uma linguagem de programação é formal, diferente das linguagens naturais possui sintaxe rígida
+   + Un lenguaje de programación es formal, diferente de los lenguajes naturales, tiene una sintaxis rígida
 
-+ Erros em tempo de execução
-+ Erros semânticos (mais difíceis de achar)
-
-
-Como achar e tratar erros?
-==========================
++ Errores de tiempo de ejecución
++ Errores semánticos (más difíciles de encontrar)
 
 
-+ Sintáticos: muita atenção e prática
-+ Em tempo de execução: tratamento de exceções
-+ Semânticos: teste de mesa ou simulação
+¿Cómo encontrar y manejar errores?
+==================================
 
 
-Então, como você executa seu código?
-====================================
++ Sintáctica: mucha atención y práctica
++ En tiempo de ejecución: manejo de excepciones
++ Semántica: prueba de mesa o simulación
+
+
+Entonces, ¿cómo ejecutas tu código?
+===================================
 
 
 
-+ Há duas coisas para executar o programa de adivinhação: um editor e
-  um interpretador
-+ O editor salva o código escrito em um arquivo no disco
++ Hay dos cosas para ejecutar el programa de adivinación: un editor y
+   un intérprete
++ El editor guarda el código escrito en un archivo en el disco
 
 
 .. image:: img/TWP30_004.png
@@ -213,16 +208,14 @@ Então, como você executa seu código?
    :alt: 
 
 
-Então, como você executa seu código?
-====================================
+Entonces, ¿cómo ejecutas tu código?
+===================================
 
 
-
-+ Computadores não podem processar textos pois somente entendem
-  binário (zeros e uns)
-+ O interpretador transforma o código fonte em um arquivo binário para
-  o computador
-
++ Las computadoras no pueden procesar texto porque solo entienden
+   binario (ceros y unos)
++ El intérprete convierte el código fuente en un archivo binario para
+   la computadora
 
 .. image:: img/TWP30_005.png
    :height: 5.921cm
@@ -231,26 +224,27 @@ Então, como você executa seu código?
    :alt: 
 
 
-Então, como você executa seu código?
+Entonces, ¿cómo ejecutas tu código?
 ====================================
 
-+ O interpretador Python atua em dois modos: interativo e edição
++ El intérprete de Python funciona en dos modos: interactivo y de edición.
 
-+ O modo interativo é ótimo para testar comandos e obter respostas
-  instantâneas
++ El modo interactivo es ideal para probar comandos y obtener respuestas
+   instantaneo
 
-+ Porém o modo edição é o mais utilizado para desenvolver os programas
++ Sin embargo, el modo de edición es el más utilizado para desarrollar los programas.
 
-  + Nomes dos arquivos geralmente terminam com “.py”
-  + Caso utilize outra extensão perderá as cores...
+   + Los nombres de archivo generalmente terminan con ".py"
+   + Si usa otra extensión, perderá colores ...
 
-+ Um programa é mais que uma lista de comandos
++ Un programa es más que una lista de comandos
+
 
 .. codelens:: Example9_2
 
 
-   print("Bem vindo ao meu programa!")      
-   print("Volte sempre!")      
+   print("¡Bienvenido a mi programa!")
+   print("¡Vuelva siempre!")
    
 .. image:: img/TWP10_002.jpg
    :height: 5.524cm
@@ -258,8 +252,8 @@ Então, como você executa seu código?
    :align: center
    :alt: 
 
-O programa é uma rede viária
-============================
+El programa es una red de carreteras.
+=====================================
 
 
 .. image:: img/TWP10_004.png
@@ -269,8 +263,8 @@ O programa é uma rede viária
    :alt: 
 
 
-Na rede você escolhe seu caminho
-================================
+En la red eliges tu camino
+==========================
 
 
 .. image:: img/TWP10_009.jpg
@@ -280,18 +274,18 @@ Na rede você escolhe seu caminho
    :alt: 
 
 
-Dando dicas
-===========
+Consejos
+========
 
 
 
-+ O programa somente diz se acertou ou não
-+ Para ajudar você dirá “Alto” ou “Baixo” caso a pessoa erre
-+ Como ficaria a estrada?
++ El programa solo dice si lo hiciste bien o no
++ Para ayudarlo a decir "Alto" o "Bajo" si la persona está equivocada
++ ¿Cómo se vería el camino?
 
 
-Dando dicas
-===========
+Consejos
+========
 
 
 .. image:: img/TWP30_006.jpg
@@ -301,7 +295,7 @@ Dando dicas
    :alt: 
 
 
-Dando dicas
+Consejos
 ===========
 
 
@@ -309,24 +303,23 @@ Dando dicas
    :nocodelens:
    :stdin:
 
-    print('Bem vindo!')
-    g = input('Chute um número: ')
+    print('Bienvenido')
+    g = input('Ingrese un numero:')
     chute = int(g)
     if chute == 42:
-      print('Você venceu!')
+      print('¡Ganaste!')
     else:
       if chute > 42:
         print('Alto')
       else:
-        print('Baixo')
-    print('Fim do jogo!')
+        print('Bajo')
+    print('Fin del juego')
 
-+ Utilize BACKSPACE e TAB para ir e voltar
++ Use la tecla RETROCESO y la PESTAÑA para ir y venir
 
 
-Os usuários ainda não gostam
-============================
-
+A los usuarios todavía no les gusta
+===================================
 
 .. image:: img/TWP30_009.jpg
    :height: 12.571cm
@@ -335,8 +328,8 @@ Os usuários ainda não gostam
    :alt: 
 
 
-Repetições
-==========
+Repeticiones
+============
 
 .. image:: img/TWP15_001.jpg
    :height: 15.602cm
@@ -349,19 +342,19 @@ Repetições
    :nocodelens:
    :stdin:
 
-    print('Bem vindo!')
+    print('¡Bienvenido!')
     chute = 0
     while chute != 42:
-      g = input('Chute um número: ')
+      g = input('Ingrese un numero: ')
       chute = int(g)
       if chute == 42:
-        print('Você venceu!')
+        print('¡Ganaste!')
       else:
         if chute > 42:
           print('Alto')
         else:
-          print('Baixo')
-    print('Fim do jogo!')
+          print('Bajo')
+    print('Fin del juego!')
 
 
 
@@ -373,8 +366,8 @@ Repetições
 
 
 
-Os usuários ainda não gostam
-============================
+A los usuarios todavía no les gusta
+====================================
 
 
 .. image:: img/TWP30_0092.jpg
@@ -385,8 +378,8 @@ Os usuários ainda não gostam
 
 
 
-Sortear o número a ser adivinhado
-=================================
+Dibuja el número a adivinar
+===========================
 
 
 .. activecode:: Example9_5
@@ -394,23 +387,23 @@ Sortear o número a ser adivinhado
    :stdin:
 
     from random import randint
-    print('Bem vindo!')
+    print('¡Bienvenido!')
     sorteado = randint(1,100)
     chute = 0
     while chute != sorteado:
-      g = input('Chute um número: ')
+      g = input('Ingrese un numero: ')
       chute = int(g)
       if chute == sorteado:
-        print('Você venceu!')
+        print('¡Ganaste!')
       else:
         if chute > sorteado:
           print('Alto')
         else:
-          print('Baixo')
-    print('Fim do jogo!')
+          print('Bajo')
+    print('Fin del juego!')
 
 
-Agora sim!
+¡Ahora si!
 ==========
 
 
@@ -420,39 +413,39 @@ Agora sim!
    :alt: 
 
 
-Resumo
-======
+Resumen
+=======
 
 
 
-+ Você criou um game!
-+ Comandos fazem coisas
-+ Desvios decidem coisas
-+ Laços repetem coisas
-+ As condições ajudam você a decidir se algo é True ou False
-+ A atribuição define um nome para um dado
++ ¡Creaste un juego!
++ Los comandos hacen cosas
++ Las desviaciones deciden las cosas
++ Corbatas repiten cosas
++ Las condiciones te ayudan a decidir si algo es verdadero o falso
++ La asignación define un nombre para un determinado
 
 
 
 
-Ferramentas do Python
-=====================
+Herramientas de Python
+======================
 
 
 
-+ Desvios :yellow:`if/else`
-+ Laços :yellow:`while`
-+ Operador de atribuição =
-+ Operador de igualdade ==
-+ Operador diferente !=
-+ Exibir uma mensagem :purple:`print`
-+ Ler a entrada :purple:`input`
-+ Converter para inteiro :purple:`int`
-+ Sortear um número inteiro randint
++ Desviaciones: amarillo: `if / else`
++ Corbatas: amarillo: `while`
++ Operador de asignación =
++ Operador de igualdad ==
++ ¡Operador diferente! =
++ Mostrar un mensaje: púrpura: `print`
++ Lea la entrada: púrpura: `input`
++ Convertir a entero: púrpura: `int`
++ Dibuja un entero randint
 
 
-Lista VI com testes!
-====================
+Lista VI con las pruebas!
+=========================
 
 
 .. image:: img/TWP05_041.jpeg
@@ -461,10 +454,10 @@ Lista VI com testes!
    :align: center
    :alt: 
 
-+ “A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso se manter em movimento”. - Einstein.
++ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: EnRWAg09wKs
       :height: 315
