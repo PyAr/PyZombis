@@ -11,7 +11,7 @@ Pygame
 
 
 
-Bibliografia
+Bibliografía
 ============
 
 
@@ -36,14 +36,13 @@ Pygame Hello World
 ==================
 
 
-
-+ Não temos entrada com input()
-+ Entrada pelo mouse e teclado via eventos
-+ Pygame usa tuplas ao invés de listas
-+ Tuplas são listas imutáveis, por isso seu processamento é mais
-  eficiente
-+ Tuplas são listas com parentêses no lugar de colchetes
-+ Ex.: (255, 255, 255)
++ No tenemos entrada con input ()
++ Entrada de mouse y teclado a través de eventos
++ Pygame usa tuplas en lugar de listas
++ Las tuplas son listas inmutables, por lo que el procesamiento es más
+   eficiente
++ Las tuplas son listas entre paréntesis en lugar de corchetes
++ Ej .: (255, 255, 255)
 
 
 
@@ -81,8 +80,8 @@ Pygame Hello World
 
 
 
-+ pygame.locals inclui constantes como QUIT ou K_ESCAPE
-+ Utilizamos sys.exit() para sair “suavemente” do programa
++ pygame.locals incluiconstantes como QUIT o K_ESCAPE
++ Utilizamos sys.exit() para salir “suavemente” del programa
 
 
 
@@ -155,17 +154,16 @@ Pygame Hello World
 ==================
 
 
++ Si no elimino pixArray, estará en estado bloqueado
++ Elimino pixArray para poder manejar el objeto Surface a través del método
+   blit ()
++ El blit () solo modifica la memoria, pero para actualizar la pantalla debo
+   dar display.update ()
++ No olvides dar pygame.quit ()
 
-+ Se eu não apagar o pixArray ele ficará no estado locked
-+ Apago o pixArray para poder manusear o objeto Surface via método
-  blit()
-+ O blit() apenas modifica a memória, mas para atualizar a tela devo
-  dar display.update()
-+ Não esqueça de dar pygame.quit()
 
-
-Pygame Animação
-===============
+Animación Pygame
+================
 
 
 .. image:: img/TWP60_007.png
@@ -175,8 +173,8 @@ Pygame Animação
    :alt: 
 
 
-Pygame Animação
-===============
+Pygame Animación
+================
 
 
 .. image:: img/TWP60_008.png
@@ -186,8 +184,8 @@ Pygame Animação
    :alt: 
 
 
-Pygame Animação
-===============
+Pygame Animación
+================
 
 
 .. code-block:: python
@@ -215,8 +213,8 @@ Pygame Animação
 
 
 
-Pygame Animação
-===============
+Pygame Animación
+================
 
 
 .. code-block:: python
@@ -228,13 +226,13 @@ Pygame Animação
    blocks = [b1,b2,b3]
 
 
-+ Note que nos dicionários b1, b2 e b3 tenho objetos e direções
-  embutidos
-+ Monto uma lista blocks com os três dicionários
++ Tenga en cuenta que en los diccionarios b1, b2 y b3 tengo objetos y direcciones
+   incrustado
++ Crea una lista de bloques con los tres diccionarios
 
 
-Pygame Animação
-===============
+Pygame Animación
+================
 
 
 .. code-block:: python
@@ -463,8 +461,8 @@ Sounds and Sprites
       foods.append(pygame.Rect(random.randint(0,WINDOWWIDTH - 20),random.randint(0,WINDOWHEIGHT - 20),20,20))
 
 
-+ Player.png aparece na escala desejada
-+ Gero randomicamente 20 cerejas iniciais
++ Player.png aparece en la escala deseada
++ Genero aleatoriamente 20 cerezas iniciales
 
 
 Sounds and Sprites
@@ -482,8 +480,8 @@ Sounds and Sprites
    musicPlaying = True
 
 
-+ Utilizo dois canais, um para a música de fundo e outro para cada
-  cereja apanhada
++ Uso dos canales, uno para música de fondo y uno para cada
+   cereza escogida
 
 
 Sounds and Sprites
@@ -523,8 +521,8 @@ Sounds and Sprites
       foods.append(pygame.Rect(random.randint(0,WINDOWWIDTH-20),random.randint(0,WINDOWHEIGHT - 20),20,20))
 
 
-+ As cerejas são geradas aleatoriamente a cada passagem no looping
-  principal
++ Las cerezas se generan aleatoriamente con cada pasada en el bucle.
+   principal
 
 
 
@@ -575,8 +573,8 @@ Sounds and Sprites
 
       baddies.append(newBaddie)
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 .. youtube:: i3mk21KyaSc
       :height: 315
