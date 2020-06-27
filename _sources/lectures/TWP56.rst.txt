@@ -53,8 +53,8 @@ DJ Mix
 
 
 
-Mas a música não termina...
-===========================
+Pero la canción no termina ...
+==============================
 
 
 .. image:: img/TWP56_003.jpg
@@ -147,7 +147,7 @@ DJ Mix
 ======
 
 
-+ Ficou legal, agora vamos colocar um volume!
++ Se ve genial, ¡ahora agreguemos un volumen!
 
 
 .. image:: img/TWP56_008.jpg
@@ -205,8 +205,8 @@ DJ Mix
    :alt: 
 
 
-Recordação
-==========
+Recuerdo
+========
 
 
 
@@ -217,8 +217,8 @@ Recordação
 
 
 
-Links de Palestras em Vídeo:
-============================
+Enlaces de conferencias de video:
+=================================
 
 
 
