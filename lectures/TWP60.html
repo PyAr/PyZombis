@@ -305,7 +305,7 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Pygame</a><ul>
-<li><a class="reference internal" href="#bibliografia">Bibliografia</a></li>
+<li><a class="reference internal" href="#bibliografia">Bibliografía</a></li>
 <li><a class="reference internal" href="#pygame-hello-world">Pygame Hello World</a></li>
 <li><a class="reference internal" href="#id1">Pygame Hello World</a></li>
 <li><a class="reference internal" href="#id2">Pygame Hello World</a></li>
@@ -313,25 +313,25 @@
 <li><a class="reference internal" href="#id4">Pygame Hello World</a></li>
 <li><a class="reference internal" href="#id5">Pygame Hello World</a></li>
 <li><a class="reference internal" href="#id6">Pygame Hello World</a></li>
-<li><a class="reference internal" href="#pygame-animacao">Pygame Animação</a></li>
-<li><a class="reference internal" href="#id7">Pygame Animação</a></li>
-<li><a class="reference internal" href="#id8">Pygame Animação</a></li>
-<li><a class="reference internal" href="#id9">Pygame Animação</a></li>
-<li><a class="reference internal" href="#id10">Pygame Animação</a></li>
+<li><a class="reference internal" href="#animacion-pygame">Animación Pygame</a></li>
+<li><a class="reference internal" href="#pygame-animacion">Pygame Animación</a></li>
+<li><a class="reference internal" href="#id7">Pygame Animación</a></li>
+<li><a class="reference internal" href="#id8">Pygame Animación</a></li>
+<li><a class="reference internal" href="#id9">Pygame Animación</a></li>
 <li><a class="reference internal" href="#pygame-collision-detection">Pygame Collision Detection</a></li>
+<li><a class="reference internal" href="#id10">Pygame Collision Detection</a></li>
 <li><a class="reference internal" href="#id11">Pygame Collision Detection</a></li>
-<li><a class="reference internal" href="#id12">Pygame Collision Detection</a></li>
 <li><a class="reference internal" href="#pygame-input">Pygame Input</a></li>
-<li><a class="reference internal" href="#id13">Pygame Input</a></li>
+<li><a class="reference internal" href="#id12">Pygame Input</a></li>
 <li><a class="reference internal" href="#sounds-and-sprites">Sounds and Sprites</a></li>
+<li><a class="reference internal" href="#id13">Sounds and Sprites</a></li>
 <li><a class="reference internal" href="#id14">Sounds and Sprites</a></li>
 <li><a class="reference internal" href="#id15">Sounds and Sprites</a></li>
 <li><a class="reference internal" href="#id16">Sounds and Sprites</a></li>
 <li><a class="reference internal" href="#id17">Sounds and Sprites</a></li>
 <li><a class="reference internal" href="#id18">Sounds and Sprites</a></li>
 <li><a class="reference internal" href="#id19">Sounds and Sprites</a></li>
-<li><a class="reference internal" href="#id20">Sounds and Sprites</a></li>
-<li><a class="reference internal" href="#links-de-palestras-em-video">Links de Palestras em Vídeo:</a></li>
+<li><a class="reference internal" href="#enlaces-de-conferencias-de-video">Enlaces de conferencias de video:</a></li>
 </ul>
 </li>
 </ul>
@@ -382,7 +382,7 @@
 <h1>Pygame<a class="headerlink" href="#pygame" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/TWP58_001.jpeg"><img alt="" class="align-center" src="../_images/TWP58_001.jpeg" style="width: 7.754cm; height: 12.501cm;" /></a>
 <div class="section" id="bibliografia">
-<h2>Bibliografia<a class="headerlink" href="#bibliografia" title="Permalink to this headline">¶</a></h2>
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP60_001.jpeg"><img alt="" class="align-center" src="../_images/TWP60_001.jpeg" style="width: 9cm; height: 11.25cm;" /></a>
 <ul class="simple">
 <li><p><a class="reference external" href="http://inventwithpython.com/">Book Link</a></p></li>
@@ -392,13 +392,16 @@
 <div class="section" id="pygame-hello-world">
 <h2>Pygame Hello World<a class="headerlink" href="#pygame-hello-world" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Não temos entrada com input()</p></li>
-<li><p>Entrada pelo mouse e teclado via eventos</p></li>
-<li><p>Pygame usa tuplas ao invés de listas</p></li>
-<li><p>Tuplas são listas imutáveis, por isso seu processamento é mais
-eficiente</p></li>
-<li><p>Tuplas são listas com parentêses no lugar de colchetes</p></li>
-<li><p>Ex.: (255, 255, 255)</p></li>
+<li><p>No tenemos entrada con input ()</p></li>
+<li><p>Entrada de mouse y teclado a través de eventos</p></li>
+<li><p>Pygame usa tuplas en lugar de listas</p></li>
+<li><dl class="simple">
+<dt>Las tuplas son listas inmutables, por lo que el procesamiento es más</dt><dd><p>eficiente</p>
+</dd>
+</dl>
+</li>
+<li><p>Las tuplas son listas entre paréntesis en lugar de corchetes</p></li>
+<li><p>Ej .: (255, 255, 255)</p></li>
 </ul>
 </div>
 <div class="section" id="id1">
@@ -428,8 +431,8 @@ eficiente</p></li>
 <div class="section" id="id2">
 <h2>Pygame Hello World<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>pygame.locals inclui constantes como QUIT ou K_ESCAPE</p></li>
-<li><p>Utilizamos sys.exit() para sair “suavemente” do programa</p></li>
+<li><p>pygame.locals incluiconstantes como QUIT o K_ESCAPE</p></li>
+<li><p>Utilizamos sys.exit() para salir “suavemente” del programa</p></li>
 </ul>
 </div>
 <div class="section" id="id3">
@@ -466,24 +469,30 @@ eficiente</p></li>
 <div class="section" id="id6">
 <h2>Pygame Hello World<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Se eu não apagar o pixArray ele ficará no estado locked</p></li>
-<li><p>Apago o pixArray para poder manusear o objeto Surface via método
-blit()</p></li>
-<li><p>O blit() apenas modifica a memória, mas para atualizar a tela devo
-dar display.update()</p></li>
-<li><p>Não esqueça de dar pygame.quit()</p></li>
+<li><p>Si no elimino pixArray, estará en estado bloqueado</p></li>
+<li><dl class="simple">
+<dt>Elimino pixArray para poder manejar el objeto Surface a través del método</dt><dd><p>blit ()</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>El blit () solo modifica la memoria, pero para actualizar la pantalla debo</dt><dd><p>dar display.update ()</p>
+</dd>
+</dl>
+</li>
+<li><p>No olvides dar pygame.quit ()</p></li>
 </ul>
 </div>
-<div class="section" id="pygame-animacao">
-<h2>Pygame Animação<a class="headerlink" href="#pygame-animacao" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="animacion-pygame">
+<h2>Animación Pygame<a class="headerlink" href="#animacion-pygame" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP60_007.png"><img alt="" class="align-center" src="../_images/TWP60_007.png" style="width: 11.217cm; height: 11.826cm;" /></a>
 </div>
-<div class="section" id="id7">
-<h2>Pygame Animação<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pygame-animacion">
+<h2>Pygame Animación<a class="headerlink" href="#pygame-animacion" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP60_008.png"><img alt="" class="align-center" src="../_images/TWP60_008.png" style="width: 10.503cm; height: 11.747cm;" /></a>
 </div>
-<div class="section" id="id8">
-<h2>Pygame Animação<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>Pygame Animación<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span> <span class="o">,</span> <span class="nn">time</span>
 <span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -506,8 +515,8 @@ dar display.update()</p></li>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id9">
-<h2>Pygame Animação<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h2>Pygame Animación<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># set up the block data structure</span>
 <span class="n">b1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rect&#39;</span><span class="p">:</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="n">RED</span><span class="p">,</span><span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="n">UPRIGHT</span><span class="p">}</span>
 <span class="n">b2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rect&#39;</span><span class="p">:</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="n">BLUE</span><span class="p">,</span><span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="n">UPLEFT</span><span class="p">}</span>
@@ -516,13 +525,16 @@ dar display.update()</p></li>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Note que nos dicionários b1, b2 e b3 tenho objetos e direções
-embutidos</p></li>
-<li><p>Monto uma lista blocks com os três dicionários</p></li>
+<li><dl class="simple">
+<dt>Tenga en cuenta que en los diccionarios b1, b2 y b3 tengo objetos y direcciones</dt><dd><p>incrustado</p>
+</dd>
+</dl>
+</li>
+<li><p>Crea una lista de bloques con los tres diccionarios</p></li>
 </ul>
 </div>
-<div class="section" id="id10">
-<h2>Pygame Animação<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h2>Pygame Animación<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
    <span class="c1"># check for the QUIT event</span>
    <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
@@ -585,12 +597,12 @@ embutidos</p></li>
 <h2>Pygame Collision Detection<a class="headerlink" href="#pygame-collision-detection" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP60_014.png"><img alt="" class="align-center" src="../_images/TWP60_014.png" style="width: 12.117cm; height: 8.492cm;" /></a>
 </div>
-<div class="section" id="id11">
-<h2>Pygame Collision Detection<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h2>Pygame Collision Detection<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP60_015.png"><img alt="" class="align-center" src="../_images/TWP60_015.png" style="width: 11.244cm; height: 7.381cm;" /></a>
 </div>
-<div class="section" id="id12">
-<h2>Pygame Collision Detection<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h2>Pygame Collision Detection<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">doRectsOverlap</span><span class="p">(</span><span class="n">rect1</span><span class="p">,</span><span class="n">rect2</span><span class="p">):</span>
    <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="p">[(</span><span class="n">rect1</span><span class="p">,</span><span class="n">rect2</span><span class="p">),(</span><span class="n">rect2</span><span class="p">,</span><span class="n">rect1</span><span class="p">)]:</span>
       <span class="c1"># Check if a&#39;s corners are inside b</span>
@@ -611,8 +623,8 @@ embutidos</p></li>
 <h2>Pygame Input<a class="headerlink" href="#pygame-input" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP60_017.png"><img alt="" class="align-center" src="../_images/TWP60_017.png" style="width: 11.085cm; height: 11.614cm;" /></a>
 </div>
-<div class="section" id="id13">
-<h2>Pygame Input<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id12">
+<h2>Pygame Input<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">random</span>
 <span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -691,8 +703,8 @@ embutidos</p></li>
 <a class="reference internal image-reference" href="../_images/TWP60_022.png"><img alt="" class="align-center" src="../_images/TWP60_022.png" style="width: 13.202cm; height: 6.164cm;" /></a>
 <a class="reference internal image-reference" href="../_images/TWP60_023.png"><img alt="" class="align-center" src="../_images/TWP60_023.png" style="width: 13.546cm; height: 11.561cm;" /></a>
 </div>
-<div class="section" id="id14">
-<h2>Sounds and Sprites<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id13">
+<h2>Sounds and Sprites<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># set up the block data structure</span>
 <span class="n">player</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">40</span><span class="p">)</span>
 <span class="n">playerImage</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;player.png&#39;</span><span class="p">)</span>
@@ -704,12 +716,12 @@ embutidos</p></li>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Player.png aparece na escala desejada</p></li>
-<li><p>Gero randomicamente 20 cerejas iniciais</p></li>
+<li><p>Player.png aparece en la escala deseada</p></li>
+<li><p>Genero aleatoriamente 20 cerezas iniciales</p></li>
 </ul>
 </div>
-<div class="section" id="id15">
-<h2>Sounds and Sprites<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id14">
+<h2>Sounds and Sprites<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># set up music</span>
 
 <span class="n">pickUpSound</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span><span class="s1">&#39;pickup.wav&#39;</span><span class="p">)</span>
@@ -719,12 +731,15 @@ embutidos</p></li>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Utilizo dois canais, um para a música de fundo e outro para cada
-cereja apanhada</p></li>
+<li><dl class="simple">
+<dt>Uso dos canales, uno para música de fondo y uno para cada</dt><dd><p>cereza escogida</p>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
-<div class="section" id="id16">
-<h2>Sounds and Sprites<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id15">
+<h2>Sounds and Sprites<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">):</span>
    <span class="k">if</span> <span class="n">musicPlaying</span><span class="p">:</span>
       <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
@@ -741,8 +756,8 @@ cereja apanhada</p></li>
 cerejinha na posição clicada</p></li>
 </ul>
 </div>
-<div class="section" id="id17">
-<h2>Sounds and Sprites<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id16">
+<h2>Sounds and Sprites<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foodCounter</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">if</span> <span class="n">foodCounter</span> <span class="o">&gt;=</span> <span class="n">NEWFOOD</span><span class="p">:</span>
    <span class="c1">#add new food</span>
@@ -751,12 +766,15 @@ cerejinha na posição clicada</p></li>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>As cerejas são geradas aleatoriamente a cada passagem no looping
-principal</p></li>
+<li><dl class="simple">
+<dt>Las cerezas se generan aleatoriamente con cada pasada en el bucle.</dt><dd><p>principal</p>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
-<div class="section" id="id18">
-<h2>Sounds and Sprites<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id17">
+<h2>Sounds and Sprites<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># check if the block has intersected with any food squares.</span>
 <span class="k">for</span> <span class="n">food</span> <span class="ow">in</span> <span class="n">foods</span><span class="p">[:]:</span>
    <span class="k">if</span> <span class="n">player</span><span class="o">.</span><span class="n">colliderect</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
@@ -776,8 +794,8 @@ principal</p></li>
 <li><p>Todas as “blitadas” aparecem no update</p></li>
 </ul>
 </div>
-<div class="section" id="id19">
-<h2>Sounds and Sprites<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id18">
+<h2>Sounds and Sprites<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>FPS == Frames Per Second</p></li>
 <li><p>Variável que controla o mainClock.tick()</p></li>
@@ -785,8 +803,8 @@ principal</p></li>
 controlada</p></li>
 </ul>
 </div>
-<div class="section" id="id20">
-<h2>Sounds and Sprites<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id19">
+<h2>Sounds and Sprites<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">baddieAddCounter</span> <span class="o">==</span> <span class="n">ADDNEWBADDIERATE</span><span class="p">:</span>
    <span class="n">baddieAddCounter</span> <span class="o">=</span> <span class="mi">0</span>
    <span class="n">baddieSize</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">BADDIEMINSIZE</span><span class="p">,</span><span class="n">BADDIEMAXSIZE</span><span class="p">)</span>
@@ -796,8 +814,8 @@ controlada</p></li>
 </pre></div>
 </div>
 </div>
-<div class="section" id="links-de-palestras-em-video">
-<h2>Links de Palestras em Vídeo:<a class="headerlink" href="#links-de-palestras-em-video" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="enlaces-de-conferencias-de-video">
+<h2>Enlaces de conferencias de video:<a class="headerlink" href="#enlaces-de-conferencias-de-video" title="Permalink to this headline">¶</a></h2>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
         <div id="i3mk21KyaSc" class="align-center youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="i3mk21KyaSc" data-video-divid="i3mk21KyaSc" data-video-start="0" data-video-end="-1" ></div>
