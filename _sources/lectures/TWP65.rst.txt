@@ -1,6 +1,6 @@
-=========================
-Desenvolvimento Web Intro
-=========================
+==============================
+Introducción al desarrollo web
+==============================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -10,8 +10,8 @@ Desenvolvimento Web Intro
    :alt: 
 
 
-Requisições e respostas
-=======================
+Solicitudes y respuestas
+========================
 
 
 .. image:: img/TWP65_001.jpg
@@ -30,18 +30,18 @@ Requisições e respostas
 
 
 
-Desenvolvimento Web
-===================
+Desarrollo web
+==============
 
 
 
-+ “Python: a única linguagem com mais frameworks web do que keywords”
++ "Python: el único lenguaje con más marcos web que palabras clave"
 + Frameworks: Plone, Django, Web2py, Pyramid
-+ Micro Frameworks: CherryPy, Bottle, Flask
-+ WSGI (Web Server Gateway Interface)
++ Micro Frameworks: CherryPy, Botella, Frasco
++ WSGI (interfaz de puerta de enlace del servidor web)
 
-  + Padrões de acesso e comunicação entre servidores Web e aplicações Python
-  + Não é J2EE ;-)
+  + Patrones de acceso y comunicación entre servidores web y aplicaciones Python
+  + No es J2EE ;-)
 
 
 Web2py
@@ -51,9 +51,9 @@ Web2py
 + Bossie: Best Open Source Development Software
 + MVC:
 
-  + Modelo: dados
-  + Controladores: regras do negócio
-  + Visões: apresentação
+  + Modelo: datos
+  + Controladores: reglas de negocio
+  + Vistas: presentación
 
 + Autocontido == full-stack framework
 + Seguro
@@ -69,8 +69,8 @@ Web2py
 + Princípios Python
 
   + DRY – Don’t Repeat Yourself
-  + Deve existir apenas uma única maneira óbvia de fazer algo
-  + Explícito é melhor que implícito (não segue)
+  + Debe haber solo una forma obvia de hacer algo
+  + Explícito es mejor que implícito (no sigue)
 
 
 
@@ -78,31 +78,31 @@ Hello World
 ===========
 
 
-+ Habilitar a opção “Não usar servidor proxy para servidores locais”
-+ web2py.exe no diretório descompactado
-+ Definir uma senha para administrador
-+ Clicar em “Administrative Interface”
-+ Coloque a senha que você definiu
-+ Três opções: admin, examples e welcome
-+ Depois iremos aprender a utilizar appliances
++ Habilite la opción "No usar servidor proxy para servidores locales"
++ web2py.exe en el directorio descomprimido
++ Establecer una contraseña de administrador
++ Haga clic en "Interfaz administrativa"
++ Ingrese la contraseña que configuró
++ Tres opciones: administrador, ejemplos y bienvenida
++ Luego aprenderemos a usar electrodomésticos
 
 
 Hello World
 ===========
 
 
-+ Nova aplicação básica: “Hello World”
-+ Editar o controlador default.py
++ Nueva aplicación básica: "Hola Mundo"
++ Edite el controlador default.py
 
 .. code-block:: python
 
 
   def index():
-    return "Minha primeira mensagem"
+    return "Mi primer mensaje"
 
 
 + ctrl+S
-+ Voltar e clicar no Hello World
++ Regrese y haga clic en Hello World
 
 
 Hello World
@@ -110,7 +110,7 @@ Hello World
 
 
 
-+ Editar novamente o controlador default.py
++ Edite el controlador nuevamente default.py
 
 .. code-block:: python
     
@@ -119,7 +119,7 @@ Hello World
 
 
 + ctrl+S
-+ Agora vamos editar a visão default/index
++ Ahora editemos la vista default/index
 
 
 Hello World
@@ -127,7 +127,7 @@ Hello World
 
 
 
-+ Apagar tudo e trocar na visão default/index
++ Borra todo y cambia la vista default/index
 
 .. code-block:: html
 
@@ -148,8 +148,8 @@ Hello World
 + ctrl+S
 
 
-Contar visitantes
-=================
+Cuentas visitantes
+==================
 
 
 + Editar controlador default.py
@@ -172,12 +172,12 @@ Contar visitantes
 
 
 
-Contar visitantes
+Cuntar visitantes
 =================
 
 
 
-+ Visão default/index
++ Vista default/index
 
 .. code-block:: html
 
@@ -197,26 +197,26 @@ Contar visitantes
   </html>
 
 
-+ Visitantes diferentes possuem contadores diferentes
++ Diferentes visitantes tienen diferentes contadores
 
 
-Duas páginas
-============
-
-
-
-+ Iremos criar duas páginas
-+ A primeira solicita o nome em um formulário
-+ Seremos então redirecionados para a segunda
-+ A segunda irá dar uma saudação com o nome
-
-
-Duas páginas
-============
+Dos paginas
+===========
 
 
 
-+ Incluir no controlador default.py
++ Crearemos dos páginas
++ El primero pide el nombre en un formulario
++ Luego seremos redirigidos a la segunda
++ El segundo dará un saludo con el nombre
+
+
+Dos paginas 
+===========
+
+
+
++ IIncluir en el controlador default.py
 
 .. code-block:: python
 
@@ -231,12 +231,11 @@ Duas páginas
 
 
 
-Duas páginas
-============
+Dos paginas
+===========
 
 
-
-+ Criar a visão default/primeira
++ Crea la visión default/primeira
 
 
 {{extend 'layout.html'}}
@@ -252,12 +251,12 @@ Qual é o seu nome?
 </form>
 
 
-Duas páginas
-============
+Dos paginas
+===========
 
 
 
-+ Criar a visão default/segunda
++ Crea la visión default/segunda
 
 
 
@@ -266,7 +265,7 @@ Duas páginas
 
 <h1>Olá {{=request.vars.nome}}</h1>
 
-Appliances
+Accesorios
 ==========
 
 
@@ -276,9 +275,10 @@ Appliances
 + Sudoku Solver
 + Train Counter Game
 + Quiz Builder
-+ EcardsOnMap (é grande...)
++ EcardsOnMap (es grande...)
 
 
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture24
+
