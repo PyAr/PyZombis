@@ -39,13 +39,13 @@ Clases y objetos
 
 .. codelens:: Example8_1
          
-        class television:
+        class Television:
           def __init__ (self):
             self.conectado = False
             self.canal = 2
 
-        tv_cuarto = television() 
-        tv_sala = television()
+        tv_cuarto = Television() 
+        tv_sala = Television()
         print(tv_cuarto.conectado) 
         print(tv_cuarto.canal)
         tv_sala.conectado = True
@@ -81,18 +81,18 @@ Classes e objetos
 
 .. codelens:: Example8_2
          
-        class television:
+        class Television:
           def __init__ (self):
             self.conectada = False
             self.canal = 2
           def cambia_el_canal_hacia_abajo(self):
             self.canal -= 1
-          def cambia_el_canal_para_arriva(self):
+          def cambia_el_canal_para_arriba(self):
             self.canal += 1
 
         tv = television()
-        tv.cambia_el_canal_para_arriva() 
-        tv.cambia_el_canal_para_arriva()
+        tv.cambia_el_canal_para_arriba() 
+        tv.cambia_el_canal_para_arriba()
         print(tv.canal)
         tv.cambia_el_canal_hacia_abajo()
         print(tv.canal) 
@@ -119,18 +119,18 @@ Archivo tatu.py
    :nocodelens:
    :stdin:
 
-   class cliente:
+   class Cliente:
     def __init__ (self,nombre,telefono):
       self.nombre = nombre
       self.telefono = telefono
    class cuenta:
-    def __init__(self, clientes, numero, saldo = 0):
+    def __init__(self, Clientes, numero, saldo = 0):
       self.saldo = saldo
-      self.clientes = clientes
+      self.Clientes = Clientes
       self.numero = numero
     def resumen(self):
       print('CC numero: %s saldo: %10.2f' %(self.numero,self.saldo))
-    def botin(self,valor):
+    def extracto(self,valor):
       if self.saldo >= valor:
         self.saldo -= valor
     def deposito(self, valor):
@@ -146,12 +146,12 @@ Archivo Test.py, salida de prueba
    :stdin:
    :include: Example8_3
 
-   juan = cliente('Juan de Silva','777-1234')
-   maria = cliente('Maria de Silva','555-4321')
+   juan = Cliente('Juan de Silva','777-1234')
+   maria = Cliente('Maria de Silva','555-4321')
    print('nombre : %s. telefono: %s' %(juan.nombre,juan.telefono))
    print('nombre : %s. telefono: %s' %(maria.nombre,maria.telefono))
-   conta1 = conta([joao],1,1000)
-   conta2 = conta([maria,joao],2,500)
+   conta1 = conta([Juan],1,1000)
+   conta2 = conta([maria,Juan],2,500)
    conta1.resumen()
    conta1.resumen()
 
@@ -180,9 +180,9 @@ Arquivo tatu2.py (apenas Conta)
       self.nombre = nombre
       self.telefono = telefono
    class conta:
-    def __init__(self, clientes, numero, saldo = 0):
+    def __init__(self, Clientes, numero, saldo = 0):
       self.saldo = saldo
-      self.clientes = clientes
+      self.Clientes = Clientes
       self.numero = numero
       self.operaciones = []
       self.deposito(saldo)
@@ -195,8 +195,8 @@ Arquivo tatu2.py (apenas Conta)
     def deposito(self, valor):
       self.sado += valor
       self.operacoes.append(['Deposito',valor])
-    def extraer(self):
-      print('extraer CC N %s' %self.numero)
+    def extracto(self):
+      print('extracto CC N %s' %self.numero)
       for op in self.operaciones:
         print("%10s %10.2f" %(op[0],op[1]))
       print('%10s %10.2f\n' %('Saldo=',self.saldo))
@@ -210,17 +210,17 @@ Archivo teste2.py, salida teste2
    :stdin:
    :include: Example8_5
 
-   juan = cliente('Juan de Silva','777-1234')
-   maria = cliente('Maria de Silva','555-4321')
-   conta1 = cuenta([juan],1,1000)
+   juan = Cliente('Juan de Silva','777-1234')
+   maria = Cliente('Maria de Silva','555-4321')
+   conta1 = Cuenta([juan],1,1000)
    conta2 = centa([maria,juan],2,500)
-   conta1.botín(50)
+   conta1.extracto(50)
    conta2.deposito(300)
-   conta1.botín(190)
+   conta1.extracto(190)
    conta2.deposito(95.15)
-   conta2.botín(250)
-   conta1.extraer()
-   conta2.extraer()
+   conta2.extracto(250)
+   conta1.extracto()
+   conta2.extracto()
 
 
 Herencia
@@ -238,7 +238,7 @@ Herencia
 
 
 
-Añadir cuenta Especial tatu3 tatu3.py
+Añadir Cuenta Especial tatu3 tatu3.py
 =====================================
 
 
@@ -246,15 +246,15 @@ Añadir cuenta Especial tatu3 tatu3.py
    :nocodelens:
    :stdin:
 
-   class cliente:
+   class Cliente:
     def __init__ (self,nome,telefono):
       self.nombre = nombre
       self.telefono = telefono
 
    class Conta:
-    def __init__(self, clientes, numero, saldo = 0):
+    def __init__(self, Clientes, numero, saldo = 0):
       self.saldo = saldo
-      self.clientes = clientes
+      self.Clientes = Clientes
       self.numero = numero
       self.operaciones = []
       self.deposito(saldo)
@@ -268,14 +268,14 @@ Añadir cuenta Especial tatu3 tatu3.py
       self.sado += valor
       self.operacoes.append(['Depósito',valor])
     def extrato(self):
-      print('Extraer CC N %s' %self.numero)
+      print('extracto CC N %s' %self.numero)
       for op in self.operaciones:
         print("%10s %10.2f" %(op[0],op[1]))
       print('%10s %10.2f\n' %('Saldo=',self.saldo))
 
    class ContaEspecial(Conta):
-    def __init__(self, clientes, numero, saldo = 0):
-      Conta.__init__(self,clientes,numero, saldo)
+    def __init__(self, Clientes, numero, saldo = 0):
+      Conta.__init__(self,Clientes,numero, saldo)
       self.limite = limite
     def saque(self,valor):
       if self.saldo + self.limite >= valor:
@@ -304,10 +304,10 @@ Archivo teste3.py, salida test3
    :stdin:
    :include: Example8_7
 
-   juan = cliente('Juan de Silva','777-1234')
-   maria = cliente('Maria de Silva','555-4321')
-   conta1 = Conta([juan],1,1000)
-   conta2 = Conta([maria,juan],2,500,1000)
+   juan = Cliente('Juan de Silva','777-1234')
+   maria = Cliente('Maria de Silva','555-4321')
+   conta1 = Cuenta([juan],1,1000)
+   conta2 = Cuenta([maria,juan],2,500,1000)
    conta1.retirar(50)
    conta2.deposito(300)
    conta1.retirar(190)
@@ -326,7 +326,7 @@ Ventajas de la herencia
 
 + Hemos modificado muy poco nuestro programa, manteniendo la funcionalidad anterior y agregando nuevas  características
 + Fue posible reutilizar los métodos de la cuenta
-+ Por lo tanto, la definición de la clase ContaEspecial fue mucho más baja, incluyendo solo el      	 comportamiento diferente
++ Por lo tanto, la definición de la clase ContaEspecial fue mucho más baja, incluyendo solo el comportamiento diferente
 
 
 Otro ejemplo de OOP
@@ -338,8 +338,8 @@ Otro ejemplo de OOP
         import datetime
 
         class Persona():
-          def __init__ (self,nombre,nacimento):
-            self.nombre = nombre
+          def __init__ (self,Nombre,nacimento):
+            self.Nombre = Nombre
             self.nacimiento = nacimento
 
           def edad(self):
@@ -347,7 +347,7 @@ Otro ejemplo de OOP
             return int(delta.days/365)
 
           def __str__ (self):
-            return '%s,%d anios' %(self.nombre,self.edad())
+            return '%s,%d años' %(self.Nombre,self.edad())
 
         masanori = Persona('Fernando Masanori', datetime.date(1980,9,1))
         print(masanori.edad())
