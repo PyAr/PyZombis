@@ -53,7 +53,7 @@ Lo que aprendemos
 + Condiciones
 + Repeticiones
 + Listas
-+ Cuerdas
++ Strings
 + Funciones
 + Archivos
 + Diccionarios
@@ -128,19 +128,19 @@ Las partes de tu programa
 
 
 
-+ :púrpura: `Las funciones incorporadas` se llaman por su nombre y requieren paréntesis
++ :purple: `Las funciones incorporadas` se llaman por su nombre y requieren paréntesis
 
 
 
-+ :verde: las `strings` son diferentes de los comandos del programa porque están dentro de    	comillas
++ :green: las `strings` son diferentes de los comandos del programa porque están dentro de    	comillas
 
 
 
-+ :rojo: los datos de control de `Variables` en memoria y tienen diferentes tipos
++ :red: los datos de control de `Variables` en memoria y tienen diferentes tipos
 
 
 
-+ :amarillo: `Directivas` son comandos del lenguaje
++ :yellow: `Directivas` son comandos del lenguaje
 
 
 Las partes de tu programa
@@ -148,21 +148,21 @@ Las partes de tu programa
 
 
 
-+ A: rojo: 'sangría' separa los bloques de comandos
++ A: red: 'sangría' separa los bloques de comandos
 
    + "Cada uno en su cuadrado"
 
-+ Un igual (=) significa atribución
++ Un igual (=) significa asignación
 
-   + Ej .: kick = int (g) (kick recibe un entero de g)
+   + Ej .: chute = int (g) (chute recibe un entero de g)
 
 + Dos iguales (==) significa comparación
 
    + Ej .: patada == 42 (¿la patada es igual a 42?)
 
-+ Bloques de instrucciones abiertos de colon
++ Los dos puntos abre un bloque de instrucciones
 
-+ Poner en el baño, cuaderno, nevera:
++ Poner en el baño, cuaderno, heladera:
    + "¡Amo dos puntos!"
 
 
@@ -188,7 +188,7 @@ Las partes de tu programa
 
 + Sintáctica: mucha atención y práctica
 + En tiempo de ejecución: manejo de excepciones
-+ Semántica: prueba de mesa o simulación
++ Semántica: prueba de escritorio o simulación
 
 
 Entonces, ¿cómo ejecutas tu código?
@@ -378,8 +378,8 @@ A los usuarios todavía no les gusta
 
 
 
-Dibuja el número a adivinar
-===========================
+Sortear el número a adivinar
+============================
 
 
 .. activecode:: Example9_5
@@ -433,14 +433,14 @@ Herramientas de Python
 
 
 
-+ Desviaciones: amarillo: `if / else`
-+ Corbatas: amarillo: `while`
++ Desviaciones:yellow: `if / else`
++ Corbatas:yellow: `while`
 + Operador de asignación =
 + Operador de igualdad ==
-+ ¡Operador diferente! =
-+ Mostrar un mensaje: púrpura: `print`
-+ Lea la entrada: púrpura: `input`
-+ Convertir a entero: púrpura: `int`
++ ¡Operador diferente!=
++ Mostrar un mensaje:purple: `print`
++ Lea la entrada:purple: `input`
++ Convertir a entero:purple: `int`
 + Dibuja un entero randint
 
 
