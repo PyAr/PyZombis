@@ -268,14 +268,6 @@ revisión
 + OptionMenu ()
 
 
-Enlaces de conferencias de video:
-=================================
-
-
-.. youtube:: SnVbanjubbw
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::
