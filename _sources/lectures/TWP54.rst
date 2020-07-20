@@ -165,12 +165,6 @@ Enlaces de conferencias de video:
 =================================
 
 
-.. youtube:: n_jy8-bMG0g
-      :height: 315
-      :width: 560
-      :align: center
-
-
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture20

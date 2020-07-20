@@ -319,28 +319,6 @@ Finalmente la clasificación correcta
    :align: center
    :alt: 
 
-
-
-Enlaces de conferencias de video:
-=================================
-
-
-.. youtube:: uEImp8vMMKE
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: xAHvvU4N0NY
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: MRSLnv8jnWU
-      :height: 315
-      :width: 560
-      :align: center
-
-
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture12

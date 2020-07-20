@@ -404,20 +404,6 @@ Conversión de grados a C
    }
 
 
-Enlaces de conferencias de video:
-=================================
-
-
-.. youtube:: 9gKN5n6mymk
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: CCxrF5usWwo
-      :height: 315
-      :width: 560
-      :align: center
-
 
 .. disqus::
    :shortname: pyzombis
