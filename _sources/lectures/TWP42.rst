@@ -97,7 +97,7 @@ Nociones de bases de datos
    :alt: 
 
 
-Crear un banco de estudiantes
+Crear un base de estudiantes
 =============================
 
 
@@ -111,7 +111,7 @@ Crear un banco de estudiantes
    con.close() 
 
 
-Accediendo al banco alunos.bd
+Accediendo al base alunos.bd
 =============================
 
 
