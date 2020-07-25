@@ -150,10 +150,9 @@ HEAD-Ex Logística y Transporte
    :align: center
    :alt:
 
-
-+ Modelo é o dado armazenado
-+ Visão é o botón de radio apresentado
-+ Controle é o código tkinter que gerencia tudo isso
++ Modelo son los datos almacenados
++ Vision es el botón de radio presentado
++ Control es el código tkinter que gestiona todo esto
 
 .. code-block :: python
 
@@ -261,11 +260,11 @@ revisión
 
 
 + MVC - Modelo, Visión, Control
-+ Entrada ()
-+ Texto ()
-+ StringVar ()
-+ RadioButton ()
-+ OptionMenu ()
++ Entry()
++ Texto()
++ StringVar()
++ RadioButton()
++ OptionMenu()
 
 
 
