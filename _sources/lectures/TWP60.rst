@@ -80,7 +80,7 @@ Pygame Hello World
 
 
 
-+ pygame.locals incluiconstantes como QUIT o K_ESCAPE
++ pygame.locals incluiye constantes como QUIT o K_ESCAPE
 + Utilizamos sys.exit() para salir “suavemente” del programa
 
 
