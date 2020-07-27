@@ -156,7 +156,7 @@ Programación orientada a objetos
    :alt: 
 
 
-Recuerdo
+Recuerda
 ========
 
 
@@ -166,7 +166,7 @@ Recuerdo
 + Crear objetos =  instanciar una clase
 + class – comienza la definición de una clase
 + self – autoasignado al objeto actual
-+ __init__() Se llama así al crear el objeto
++ __init__() Se llama al crear el objeto
 
 
 .. disqus::
