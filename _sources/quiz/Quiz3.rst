@@ -10,9 +10,9 @@ Quiz - 3
 .. activecode:: q3_1
    :nocodelens:
 
-   Dizemos que um número natural é triangular se ele é produto de três números naturais consecutivos. |br|
-   Exemplo: 120 é triangular, pois 4.5.6 = 120. Dado um inteiro não-negativo n, verificar se n é triangular |br|
-   Return True or False |br|
+   Decimos que un número natural es triangular si es el producto de tres números naturales consecutivos. |zxbr|
+    Ejemplo: 120 es triangular, ya que 4.5.6 = 120. Dado un número entero no negativo n, verifique si n es triangular |br|
+    Devuelve Verdadero o Falso |br|
    
    ~~~~
    def triangular(n):
@@ -39,10 +39,11 @@ Quiz - 3
 .. activecode:: q3_2
    :nocodelens:
 
-   Indique como um troco deve ser dado utilizando-se um número mínimo de notas. Seu algoritmo deve ler o valor da conta a ser paga e o valor do pagamento efetuado desprezandoos centavos. |br|
-   Suponha que as notas para troco sejam as de 50, 20, 10, 5, 2 e 1 reais, e que nenhuma delas esteja em falta no caixa. |br|
+   Indique cómo se debe realizar un cambio utilizando un número mínimo de notas. Su algoritmo debe leer el monto de la factura a pagar y el monto del pago realizado, sin tener en cuenta los centavos. |br|
+    Suponga que los billetes para el cambio son 50, 20, 10, 5, 2 y 1 real, y que ninguno de ellos falta en la caja registradora. |br|
 
-   Return a list with amount of each notes. The first item of list depicts 50 , next 20, and so on till 1. [Same order as shown above] |br|
+    Devuelva una lista con la cantidad de cada billete. El primer elemento de la lista muestra 50, los siguientes 20, y así sucesivamente hasta 1. [El mismo orden que se muestra arriba] |en|
+
    
    ~~~~
    def change(n):
@@ -68,9 +69,9 @@ Quiz - 3
 .. activecode:: q3_3
    :nocodelens:
 
-   Verifique se um inteiro positivo n é primo. |br|
+   Compruebe que un número entero positivo n sea primo. |br|
 
-   Retorna True se prime e False se não for primo. |br|
+   Devuelve Verdadero si presiona y Falso si no es un primo. |br|
    
    ~~~~
    def prime(n):
@@ -98,11 +99,11 @@ Quiz - 3
 .. activecode:: q3_4
    :nocodelens:
 
-   Dado um número inteiro positivo, determine a sua decomposição em fatores primos calculando também a multiplicidade de cada fator. |br|
+   Dado un número entero positivo, determine su descomposición en factores primos calculando también la multiplicidad de cada factor. |br|
 
-   Retorna um dicionário com as chaves como primos e seus respectivos valores como a freqüência do primo na fatoração primária do número. |br|
+    Devuelve un diccionario con las claves como primos y sus respectivos valores como la frecuencia del primo en la factorización primaria del número. |br|
 
-   As chaves devem estar em ordem decrescente. |br| 
+    Las claves deben estar en orden descendente. |br|
 
    
    ~~~~
