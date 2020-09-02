@@ -11,10 +11,10 @@ Quiz - 6
    :nocodelens:
 
    A. Dormir : |br| |br|
-   dia_semana e True para dias de semana |br| |br|
-   feriado e True nos feriados |br| |br|
-   voce pode ficar dormindo quando e feriado ou nao e dia semana |br| |br|
-   retorne True ou False conforme voce va dormir ou nao |br| |br|
+   dia_semana y True para días de semana |br| |br|
+    vacaciones y True en vacaciones |br| |br|
+    puedes quedarte dormido cuando sea festivo o no entre semana |br| |br|
+    devuelva Verdadero o Falso cuando se vaya a dormir o no |br|  br|
 
    ~~~~
    def dormir(dia_semana, feriado):
@@ -36,13 +36,12 @@ Quiz - 6
 .. activecode:: alumnos_problema
    :nocodelens:
 
-   B. alunos_problema: |br|
-   temos dois alunos a e b |br|
-   a_sorri e b_sorri indicam se a e b sorriem |br|
-   temos problemas quando ambos estão sorrindo ou ambos |br|
-   não estão sorrindo |br|
-   retorne True quando houver problemas |br|
-
+   B. problema_alumnos: |br|
+    tenemos dos estudiantes ayb |br|
+    a_sorri y b_sorri indican si ayb sonríen |br|
+    tenemos problemas cuando ambos sonríen o ambos |br|
+    no están sonriendo |br|
+    devuelve True cuando hay problemas |br|
    ~~~~
    def alumnos_problema(a_sonrrie, b_sonrrie):
       
@@ -65,10 +64,11 @@ Quiz - 6
    :nocodelens:
 
    C. suma_doble |br|
-   dados dois números inteiros retorna sua soma |br|
-   porém se os números forem iguais retorna o dobro da soma |br|
-   soma_dobro(1, 2) -> 3 |br|
-   soma_dobro(2, 2) -> 8 |br|
+    dados dos enteros devuelve su suma |br|
+    sin embargo, si los números son iguales, devuelve el doble de la suma |br|
+    doble_ suma (1, 2) -> 3 |br|
+    doble_ suma (2, 2) -> 8 |br|
+
 
    ~~~~
    def suma_doble(a, b):
@@ -94,11 +94,11 @@ Quiz - 6
   :nocodelens:
 
   D. diff21 |br|
-  dado um inteiro n retorna a diferença absoluta entre n e 21 |br|
-  porém se o número for maior que 21 retorna dobro da diferença absoluta |br|
+  dado un número entero n devuelve la diferencia absoluta entre n y 21 |br|
+   sin embargo, si el número es mayor que 21, devuelve el doble de ladiferencia absoluta |br|
   diff21(19) -> 2 |br|
   diff21(25) -> 8 |br|
-  dica: abs(x) retorna o valor absoluto de x |br|
+  dica: abs(x) devuelve el valor absoluto de x |br|
 
   ~~~~
   def diff21(n):
@@ -123,11 +123,11 @@ Quiz - 6
 .. activecode:: papagaio
   :nocodelens:
 
-  E. papagaio |br|
-  temos um papagaio que fala alto |br|
-  hora é um parâmetro entre 0 e 23 |br|
-  temos problemas se o papagaio estiver falando |br|
-  antes da 7 ou depois das 20 |br|
+  E. loro |br|
+   tenemos un loro que habla fuerte |br|
+   hora es un parámetro entre 0 y 23 |br|
+   tenemos problemas si el loro esta hablando |br|
+   antes de las 7 o después de las 20 |br|
 
   ~~~~
   def papagaio(falando, hora):
@@ -139,13 +139,13 @@ Quiz - 6
   class myTests(TestCaseGui):
 
       def testOne(self):
-          self.assertEqual(papagaio(True, 6), True,"Esperado: True")
-          self.assertEqual(papagaio(True, 7), False,"Esperado: False")
-          self.assertEqual(papagaio(False, 6), False,"Esperado: False")
-          self.assertEqual(papagaio(True, 21), True,"Esperado: True")
-          self.assertEqual(papagaio(False, 21), False,"Esperado: False")
-          self.assertEqual(papagaio(True, 23), True,"Esperado: True")
-          self.assertEqual(papagaio(True, 20), False,"Esperado: False")
+          self.assertEqual(loro(True, 6), True,"Esperado: True")
+          self.assertEqual(loro(True, 7), False,"Esperado: False")
+          self.assertEqual(loro(False, 6), False,"Esperado: False")
+          self.assertEqual(loro(True, 21), True,"Esperado: True")
+          self.assertEqual(loro(False, 21), False,"Esperado: False")
+          self.assertEqual(loro(True, 23), True,"Esperado: True")
+          self.assertEqual(loro(True, 20), False,"Esperado: False")
         
 
   myTests().main()
@@ -154,9 +154,9 @@ Quiz - 6
 .. activecode:: dez
   :nocodelens:
 
-  F. dez |br|
-  dados dois inteiros a e b |br|
-  retorna True se um dos dois é 10 ou a soma é 10 |br|
+  F. dez | br |
+   dos enteros ayb |br|
+   devuelve Verdadero si uno de los dos es 10 o la suma es 10 |br|
 
   ~~~~
   def dez(a,b):
@@ -168,15 +168,15 @@ Quiz - 6
   class myTests(TestCaseGui):
 
       def testOne(self):
-          self.assertEqual(dez(9,10), True,"Esperado: True")
-          self.assertEqual(dez(9,9), False,"Esperado: False")
-          self.assertEqual(dez(1,9), True,"Esperado: True")
-          self.assertEqual(dez(10,1), True,"Esperado: True")
-          self.assertEqual(dez(10,10), True,"Esperado: True")
-          self.assertEqual(dez(8,2), True,"Esperado: True")
-          self.assertEqual(dez(8,3), False,"Esperado: False")
-          self.assertEqual(dez(10,42), True,"Esperado: True") |br|
-          self.assertEqual(dez(12,-2), True,"Esperado: True")
+          self.assertEqual(diez(9,10), True,"Esperado: True")
+          self.assertEqual(diez(9,9), False,"Esperado: False")
+          self.assertEqual(diez(1,9), True,"Esperado: True")
+          self.assertEqual(diez(10,1), True,"Esperado: True")
+          self.assertEqual(diez(10,10), True,"Esperado: True")
+          self.assertEqual(diez(8,2), True,"Esperado: True")
+          self.assertEqual(diez(8,3), False,"Esperado: False")
+          self.assertEqual(diez(10,42), True,"Esperado: True") |br|
+          self.assertEqual(diez(12,-2), True,"Esperado: True")
 
 
   myTests().main()
@@ -186,12 +186,13 @@ Quiz - 6
   :nocodelens:
 
   G. dista10 |br|
-  seja um inteiro n |br|
-  retorna True se a diferença absoluta entre n e 100 ou n e 200 |br|
-  for menor ou igual a 10 |br|
-  dista10(93) -> True |br|
-  dista10(90) -> True |br|
-  dista10(89) -> False |br|
+   ser un número entero n |br|
+   devuelve Verdadero si la diferencia absoluta entre n y 100 o n y 200 |br|
+   es menor o igual que 10 |br|
+   dista10 (93) -> True |en|
+   dista10 (90) -> True |en|
+   dista10 (89) -> Falso |en|
+
 
   ~~~~
   def dista10(n):
@@ -225,12 +226,11 @@ Quiz - 6
 .. activecode:: apaga
   :nocodelens:
 
-  H. apaga |br|
-  seja uma string s e um inteiro n |br|
-  retorna uma nova string sem a posição n |br|
-  apaga('kitten', 1) -> 'ktten' |br|
-  apaga('kitten', 4) -> 'kittn' |br|
-
+  H. borra | br |
+   ser una cadena sy un entero n |br|
+   devuelve una nueva cadena sin la posición n |br|
+   delete ('gatito', 1) -> 'ktten' |en|
+   delete ('gatito', 4) -> 'kittn' |en|
   ~~~~
   def apaga(s,n):
        
@@ -241,16 +241,16 @@ Quiz - 6
   class myTests(TestCaseGui):
 
       def testOne(self):
-          self.assertEqual(apaga('kitten',1), "ktten","Esperado: ktten")
-          self.assertEqual(apaga('kitten',0), "itten","Esperado: itten")
-          self.assertEqual(apaga('kitten',4), "kittn","Esperado: kittn")
-          self.assertEqual(apaga('Hi',0), "i","Esperado: i")
-          self.assertEqual(apaga('Hi',1), "H","Esperado: H")
-          self.assertEqual(apaga('code',0), "ode","Esperado: ode")
-          self.assertEqual(apaga('code',1), "cde","Esperado: cde")
-          self.assertEqual(apaga('code',2), "coe","Esperado: coe")
-          self.assertEqual(apaga('code',3), "cod","Esperado: cod")
-          self.assertEqual(apaga('chocolate',8), "chocolat","Esperado: chocolat")
+          self.assertEqual(apagar('kitten',1), "ktten","Esperado: ktten")
+          self.assertEqual(apagar('kitten',0), "itten","Esperado: itten")
+          self.assertEqual(apagar('kitten',4), "kittn","Esperado: kittn")
+          self.assertEqual(apagar('Hi',0), "i","Esperado: i")
+          self.assertEqual(apagar('Hi',1), "H","Esperado: H")
+          self.assertEqual(apagar('code',0), "ode","Esperado: ode")
+          self.assertEqual(apagar('code',1), "cde","Esperado: cde")
+          self.assertEqual(apagar('code',2), "coe","Esperado: coe")
+          self.assertEqual(apagar('code',3), "cod","Esperado: cod")
+          self.assertEqual(apagar('chocolate',8), "chocolat","Esperado: chocolat")
 
 
 
@@ -261,13 +261,13 @@ Quiz - 6
 .. activecode:: troca
   :nocodelens:
 
-  I. troca |br|
-  seja uma string s |br|
-  se s tiver tamanho <= 1 retorna ela mesma |br|
-  caso contrário troca a primeira e última letra |br|
-  troca('code') -> 'eodc' |br|
-  troca('a') -> 'a' |br|
-  troca('ab') -> 'ba' |br|
+  I. intercambio |br|
+   ser una cadena s | br |
+   si s tiene un tamaño <= 1, se devuelve a sí mismo |br|
+   de lo contrario, cambie la primera y la última letra |br|
+   exchange ('código') -> 'eodc' |br|
+   intercambio ('a') -> 'a' |br|
+   intercambio ('ab') -> 'ba' |br|
 
   ~~~~
   def troca(s):
@@ -279,14 +279,14 @@ Quiz - 6
   class myTests(TestCaseGui):
 
       def testOne(self):
-          self.assertEqual(troca('code'), 'eodc',"Esperado: eodc")
-          self.assertEqual(troca('a'), 'a',"Esperado: a")
-          self.assertEqual(troca('ab'), 'ba',"Esperado: ba")
-          self.assertEqual(troca('abc'), 'cba',"Esperado: cba")
-          self.assertEqual(troca(' '), ' ',"Esperado: ' '")
-          self.assertEqual(troca('Chocolate'), 'ehocolatC',"Esperado: ehocolatC")
-          self.assertEqual(troca('nythoP'), 'Python',"Esperado: Python")
-          self.assertEqual(troca('hello'), 'oellh',"Esperado: oellh")
+          self.assertEqual(intercambiar('code'), 'eodc',"Esperado: eodc")
+          self.assertEqual(intercambiar('a'), 'a',"Esperado: a")
+          self.assertEqual(intercambiar('ab'), 'ba',"Esperado: ba")
+          self.assertEqual(intercambiar('abc'), 'cba',"Esperado: cba")
+          self.assertEqual(intercambiar(' '), ' ',"Esperado: ' '")
+          self.assertEqual(intercambiar('Chocolate'), 'ehocolatC',"Esperado: ehocolatC")
+          self.assertEqual(intercambiar('nythoP'), 'Python',"Esperado: Python")
+          self.assertEqual(intercambiar('hello'), 'oellh',"Esperado: oellh")
            
 
   myTests().main()
