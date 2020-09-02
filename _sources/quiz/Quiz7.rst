@@ -11,9 +11,10 @@ Quiz - 7
    :nocodelens:
 
    A. multstring
-   seja uma string s e um inteiro positivo n |br|
-   retorna uma string com n cópias da string original |br|
-   multstring('Hi', 2) -> 'HiHi' |br|
+    ser una cadena sy un entero positivo n |br|
+    devuelve una cadena con n copias de la cadena original |br|
+    multstring ('Hola', 2) -> 'HiHi' |en|
+
 
    ~~~~
    def multstring(s,n):
@@ -79,7 +80,7 @@ Quiz - 7
 
 
    C. array_count9 |br|
-   conta quantas vezes aparece o 9 numa lista nums |br|
+   cuenta cuántas veces aparece 9 en una lista de números |br|
 
    ~~~~
    def array_count9(nums):
@@ -149,7 +150,7 @@ Quiz - 7
 
 
    E. hello_name |br|
-   seja uma string name |br|
+   ser un nombre de cadena	 |br|
    hello_name('Bob') -> 'Hello Bob!' |br|
    hello_name('Alice') -> 'Hello Alice!' |br|
    hello_name('X') -> 'Hello X!' |br|
@@ -211,8 +212,8 @@ Quiz - 7
 
 
    G. extra_end |br|
-   seja um string s com no mínimo duas letras |br|
-   retorna três vezes as duas últimas letras |br|
+   ser una string s con al menos dos letras |br|
+    devuelve las dos últimas letras tres veces |br|
    extra_end('Hello'), 'lololo' |br|
    extra_end('ab'), 'ababab' |br|
    extra_end('Hi'), 'HiHiHi'  |br|
@@ -244,8 +245,8 @@ Quiz - 7
 
 
    H. first_half |br|
-   seja uma string s |br|
-   retorna a primeira metade da string |br|
+   ser una string s |br|
+    devuelve la primera mitad de la cadena |br|
    first_half('WooHoo') -> 'Woo' |br|
    first_half('HelloThere') -> 'Hello' |br|
    first_half('abcdef') -> 'abc' |br|
@@ -295,14 +296,14 @@ Quiz - 7
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(sem_pontas('Hello'), 'ell',"Esperado: ell")
-           self.assertEqual(sem_pontas('Python'), 'ytho',"Esperado: ytho")
-           self.assertEqual(sem_pontas('coding'), 'odin',"Esperado: odin")
-           self.assertEqual(sem_pontas('code'), 'od',"Esperado: od")
-           self.assertEqual(sem_pontas('ab'), '',"Esperado: ")
-           self.assertEqual(sem_pontas('Chocolate!'), 'hocolate',"Esperado: hocolate")
-           self.assertEqual(sem_pontas('kitten'), 'itte',"Esperado: itte")
-           self.assertEqual(sem_pontas('woohoo'), 'ooho',"Esperado: ooho")
+           self.assertEqual(sin_puntos('Hello'), 'ell',"Esperado: ell")
+           self.assertEqual(sin_puntos('Python'), 'ytho',"Esperado: ytho")
+           self.assertEqual(sin_puntos('coding'), 'odin',"Esperado: odin")
+           self.assertEqual(sin_puntos('code'), 'od',"Esperado: od")
+           self.assertEqual(sin_puntos('ab'), '',"Esperado: ")
+           self.assertEqual(sin_puntos('Chocolate!'), 'hocolate',"Esperado: hocolate")
+           self.assertEqual(sin_puntos('kitten'), 'itte',"Esperado: itte")
+           self.assertEqual(sin_puntos('woohoo'), 'ooho',"Esperado: ooho")
         
            
    myTests().main()
@@ -313,8 +314,8 @@ Quiz - 7
 
 
    J. roda2 |br|
-   rodar uma string s duas posições |br|
-   a string possui pelo menos 2 caracteres |br|
+   rotar una srting en dos posiciones |br|
+    la cadena tiene al menos 2 caracteres |br|
    left2('Hello') -> 'lloHe' |br|
    left2('Hi') -> 'Hi' |br|
 
@@ -329,14 +330,14 @@ Quiz - 7
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(roda2('Hello'), 'lloHe',"Esperado: lloHe")
-           self.assertEqual(roda2('python'), 'thonpy',"Esperado: thonpy")
-           self.assertEqual(roda2('Hi'), 'Hi',"Esperado: Hi")
-           self.assertEqual(roda2('code'), 'deco',"Esperado: deco")
-           self.assertEqual(roda2('cat'), 'tca',"Esperado: tca")
-           self.assertEqual(roda2('12345'), '34512',"Esperado: 34512")
-           self.assertEqual(roda2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
-           self.assertEqual(roda2('bricks'), 'icksbr',"Esperado: icksbr")
+           self.assertEqual(rueda2('Hello'), 'lloHe',"Esperado: lloHe")
+           self.assertEqual(rueda2('python'), 'thonpy',"Esperado: thonpy")
+           self.assertEqual(rueda2('Hi'), 'Hi',"Esperado: Hi")
+           self.assertEqual(rueda2('code'), 'deco',"Esperado: deco")
+           self.assertEqual(rueda2('cat'), 'tca',"Esperado: tca")
+           self.assertEqual(rueda2('12345'), '34512',"Esperado: 34512")
+           self.assertEqual(rueda2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
+           self.assertEqual(rorueda2da2('bricks'), 'icksbr',"Esperado: icksbr")
          
         
            
