@@ -11,8 +11,8 @@ Revición de listas
 
 
 
-Codeville Surf Championship
-===========================
+Campeonato de Surf de Codeville
+===============================
 
 
 .. image:: img/TWP37_001.jpeg
@@ -22,8 +22,8 @@ Codeville Surf Championship
    :alt: 
 
 
-Codeville Surf Championship 
-===========================
+Campeonato de Surf de Codeville 
+===============================
 
 .. image:: img/TWP37_002.jpeg
    :height: 11.923cm
@@ -32,7 +32,7 @@ Codeville Surf Championship
    :alt: 
 
 
-Campeonato de Surf em Codeville
+Campeonato de Surf de Codeville
 ===============================
 
 
@@ -90,8 +90,8 @@ Leer el archivo surf.txt
       print(linia.strip())
    f.close()
 
-Fragmentador para
-=================
+Fragmentador for
+================
 
 
 .. image:: img/TWP37_007.jpg
@@ -124,8 +124,8 @@ El método de división corta la cadena.
    :alt: 
 
 
-El método de división corta String
-==================================
+El método de split corta String
+===============================
 
 
 .. image:: img/TWP37_011.jpg
@@ -291,7 +291,7 @@ Ordenar y revertir métodos
 
 + El método de clasificación ordena los datos
 + Uso inverso para mantenerlos en orden descendente
-+ El nerd puede usar notas.sort (reverse = True)
++ El nerd puede usar notas.sort (reverse=True)
 
 
 Finalmente la clasificación correcta
@@ -318,28 +318,6 @@ Finalmente la clasificación correcta
    :width: 16.645cm
    :align: center
    :alt: 
-
-
-
-Enlaces de conferencias de video:
-=================================
-
-
-.. youtube:: uEImp8vMMKE
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: xAHvvU4N0NY
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: MRSLnv8jnWU
-      :height: 315
-      :width: 560
-      :align: center
-
 
 .. disqus::
    :shortname: pyzombis
