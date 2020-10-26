@@ -353,10 +353,18 @@
 <h1>Quiz - 7<a class="headerlink" href="#quiz-7" title="Permalink to this headline">¶</a></h1>
 
 <div data-childcomponent="multstring" class="runestone explainer ac_section alert alert-warning">
-<p>A. multstring
-seja uma string s e um inteiro positivo n <br />
-retorna uma string com n cópias da string original <br />
-multstring(‘Hi’, 2) -&gt; ‘HiHi’ <br /></p>
+<ol class="upperalpha simple">
+<li><p>multstring</p></li>
+</ol>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 14)</p>
+<p>Enumerated list ends without a blank line; unexpected unindent.</p>
+</div>
+<blockquote>
+<div><p>ser una cadena sy un entero positivo n <br />
+devuelve una cadena con n copias de la cadena original <br />
+multstring (‘Hola’, 2) -&gt; ‘HiHi’ <a href="#id1"><span class="problematic" id="id2">|en|</span></a></p>
+</div></blockquote>
 
 <textarea data-component="activecode" id=multstring data-lang="python" 
       data-timelimit=25000    
@@ -425,7 +433,7 @@ myTests().main()
 
 <div data-childcomponent="array_count9" class="runestone explainer ac_section alert alert-warning">
 <p>C. array_count9 <br />
-conta quantas vezes aparece o 9 numa lista nums <br /></p>
+cuenta cuántas veces aparece 9 en una lista de números <br /></p>
 
 <textarea data-component="activecode" id=array_count9 data-lang="python" 
       data-timelimit=25000    
@@ -497,7 +505,7 @@ myTests().main()
 
 <div data-childcomponent="hello_name" class="runestone explainer ac_section alert alert-warning">
 <p>E. hello_name <br />
-seja uma string name <br />
+ser un nombre de cadena       <br />
 hello_name(‘Bob’) -&gt; ‘Hello Bob!’ <br />
 hello_name(‘Alice’) -&gt; ‘Hello Alice!’ <br />
 hello_name(‘X’) -&gt; ‘Hello X!’ <br /></p>
@@ -561,9 +569,19 @@ myTests().main()
 
 <div data-childcomponent="extra_end" class="runestone explainer ac_section alert alert-warning">
 <p>G. extra_end <br />
-seja um string s com no mínimo duas letras <br />
-retorna três vezes as duas últimas letras <br />
-extra_end(‘Hello’), ‘lololo’ <br />
+ser una string s con al menos dos letras <br /></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 216)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>devuelve las dos últimas letras tres veces <br /></p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 217)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>extra_end(‘Hello’), ‘lololo’ <br />
 extra_end(‘ab’), ‘ababab’ <br />
 extra_end(‘Hi’), ‘HiHiHi’  <br /></p>
 
@@ -595,9 +613,19 @@ myTests().main()
 
 <div data-childcomponent="first_half" class="runestone explainer ac_section alert alert-warning">
 <p>H. first_half <br />
-seja uma string s <br />
-retorna a primeira metade da string <br />
-first_half(‘WooHoo’) -&gt; ‘Woo’ <br />
+ser una string s <br /></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 249)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>devuelve la primera mitad de la cadena <br /></p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 250)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>first_half(‘WooHoo’) -&gt; ‘Woo’ <br />
 first_half(‘HelloThere’) -&gt; ‘Hello’ <br />
 first_half(‘abcdef’) -&gt; ‘abc’ <br /></p>
 
@@ -650,14 +678,14 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(sem_pontas('Hello'), 'ell',"Esperado: ell")
-        self.assertEqual(sem_pontas('Python'), 'ytho',"Esperado: ytho")
-        self.assertEqual(sem_pontas('coding'), 'odin',"Esperado: odin")
-        self.assertEqual(sem_pontas('code'), 'od',"Esperado: od")
-        self.assertEqual(sem_pontas('ab'), '',"Esperado: ")
-        self.assertEqual(sem_pontas('Chocolate!'), 'hocolate',"Esperado: hocolate")
-        self.assertEqual(sem_pontas('kitten'), 'itte',"Esperado: itte")
-        self.assertEqual(sem_pontas('woohoo'), 'ooho',"Esperado: ooho")
+        self.assertEqual(sin_puntos('Hello'), 'ell',"Esperado: ell")
+        self.assertEqual(sin_puntos('Python'), 'ytho',"Esperado: ytho")
+        self.assertEqual(sin_puntos('coding'), 'odin',"Esperado: odin")
+        self.assertEqual(sin_puntos('code'), 'od',"Esperado: od")
+        self.assertEqual(sin_puntos('ab'), '',"Esperado: ")
+        self.assertEqual(sin_puntos('Chocolate!'), 'hocolate',"Esperado: hocolate")
+        self.assertEqual(sin_puntos('kitten'), 'itte',"Esperado: itte")
+        self.assertEqual(sin_puntos('woohoo'), 'ooho',"Esperado: ooho")
 
 
 myTests().main()
@@ -666,9 +694,19 @@ myTests().main()
 
 <div data-childcomponent="roda2" class="runestone explainer ac_section alert alert-warning">
 <p>J. roda2 <br />
-rodar uma string s duas posições <br />
-a string possui pelo menos 2 caracteres <br />
-left2(‘Hello’) -&gt; ‘lloHe’ <br />
+rotar una srting en dos posiciones <br /></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 318)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>la cadena tiene al menos 2 caracteres <br /></p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 319)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>left2(‘Hello’) -&gt; ‘lloHe’ <br />
 left2(‘Hi’) -&gt; ‘Hi’ <br /></p>
 
 <textarea data-component="activecode" id=roda2 data-lang="python" 
@@ -685,14 +723,14 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(roda2('Hello'), 'lloHe',"Esperado: lloHe")
-        self.assertEqual(roda2('python'), 'thonpy',"Esperado: thonpy")
-        self.assertEqual(roda2('Hi'), 'Hi',"Esperado: Hi")
-        self.assertEqual(roda2('code'), 'deco',"Esperado: deco")
-        self.assertEqual(roda2('cat'), 'tca',"Esperado: tca")
-        self.assertEqual(roda2('12345'), '34512',"Esperado: 34512")
-        self.assertEqual(roda2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
-        self.assertEqual(roda2('bricks'), 'icksbr',"Esperado: icksbr")
+        self.assertEqual(rueda2('Hello'), 'lloHe',"Esperado: lloHe")
+        self.assertEqual(rueda2('python'), 'thonpy',"Esperado: thonpy")
+        self.assertEqual(rueda2('Hi'), 'Hi',"Esperado: Hi")
+        self.assertEqual(rueda2('code'), 'deco',"Esperado: deco")
+        self.assertEqual(rueda2('cat'), 'tca',"Esperado: tca")
+        self.assertEqual(rueda2('12345'), '34512',"Esperado: 34512")
+        self.assertEqual(rueda2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
+        self.assertEqual(rorueda2da2('bricks'), 'icksbr',"Esperado: icksbr")
 
 
 

@@ -354,7 +354,7 @@
 
 <div data-childcomponent="first_last6" class="runestone explainer ac_section alert alert-warning">
 <p>A. first_last6 <br />
-verifica se 6 é o primeiro ou último elemento da lista nums <br />
+compruebe si 6 es el primer o el último elemento en la lista de números <br />
 first_last6([1, 2, 6]) -&gt; True <br />
 first_last6([6, 1, 2, 3]) -&gt; True <br />
 first_last6([3, 2, 1]) -&gt; False <br /></p>
@@ -388,8 +388,8 @@ myTests().main()
 
 <div data-childcomponent="same_first_last" class="runestone explainer ac_section alert alert-warning">
 <p>B. same_first_last <br />
-retorna True se a lista nums possui pelo menos um elemento <br />
-e o primeiro elemento é igual ao último <br />
+devuelve True si la lista de números tiene al menos un elemento <br />
+y el primer elemento es igual al último <br />
 same_first_last([1, 2, 3]) -&gt; False <br />
 same_first_last([1, 2, 3, 1]) -&gt; True <br />
 same_first_last([1, 2, 1]) -&gt; True <br /></p>
@@ -456,11 +456,29 @@ myTests().main()
 </div>
 
 <div data-childcomponent="maior_ponta" class="runestone explainer ac_section alert alert-warning">
-<p>D. maior_ponta <br />
-Dada uma lista não vazia, cria uma nova lista onde todos <br />
-os elementos são o maior das duas pontas <br />
-obs.: não é o maior de todos, mas entre as duas pontas <br />
-maior_ponta([1, 2, 3]) -&gt; [3, 3, 3] <br />
+<ol class="upperalpha simple" start="4">
+<li><p>maior_ponta <br /></p></li>
+</ol>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 111)</p>
+<p>Enumerated list ends without a blank line; unexpected unindent.</p>
+</div>
+<blockquote>
+<div><dl class="simple">
+<dt>Dada una lista que no esté vacía, cree una nueva lista donde todos <br /></dt><dd><p>los elementos son los más extremos de todos <br /></p>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 113)</p>
+<p>Definition list ends without a blank line; unexpected unindent.</p>
+</div>
+<p>obs.: no es el más grande de todos, pero entre los dos extremos <br /></p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 114)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>maior_ponta([1, 2, 3]) -&gt; [3, 3, 3] <br />
 maior_ponta([1, 3, 2]) -&gt; [2, 2, 2] <br /></p>
 
 <textarea data-component="activecode" id=maior_ponta data-lang="python" 
@@ -477,14 +495,14 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(maior_ponta([1, 2, 3]), [3, 3, 3],"Esperado: [3,3,3]")
-        self.assertEqual(maior_ponta([11, 5, 9]), [11, 11, 11],"Esperado: [11,11,11]")
-        self.assertEqual((maior_ponta([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
-        self.assertEqual(maior_ponta([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
-        self.assertEqual(maior_ponta([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
-        self.assertEqual(maior_ponta([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
-        self.assertEqual(maior_ponta([2, 11, 2]), [2, 2, 2],"Esperado: [2,2,2]")
-        self.assertEqual(maior_ponta([0, 0, 1]), [1, 1, 1],"Esperado: [1,1,1]")
+        self.assertEqual(mayor_punto([1, 2, 3]), [3, 3, 3],"Esperado: [3,3,3]")
+        self.assertEqual(mayor_punto([11, 5, 9]), [11, 11, 11],"Esperado: [11,11,11]")
+        self.assertEqual((mayor_punto([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
+        self.assertEqual(mayor_punto([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
+        self.assertEqual(mayor_punto([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
+        self.assertEqual(mayor_punto([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
+        self.assertEqual(mayor_punto([2, 11, 2]), [2, 2, 2],"Esperado: [2,2,2]")
+        self.assertEqual(mayor_punto([0, 0, 1]), [1, 1, 1],"Esperado: [1,1,1]")
 
 
 myTests().main()
@@ -493,9 +511,9 @@ myTests().main()
 
 <div data-childcomponent="sum2" class="runestone explainer ac_section alert alert-warning">
 <p>E. sum2 <br />
-Dada uma lista de inteiros de qualquer tamanho <br />
-retorna a soma dos dois primeiros elementos <br />
-se a lista tiver menos de dois elementos, soma o que for possível <br /></p>
+Dada una lista de números enteros de cualquier tamaño <br />
+devuelve la suma de los dos primeros elementos <br />
+si la lista tiene menos de dos elementos, agregue tantos como sea posible</p>
 
 <textarea data-component="activecode" id=sum2 data-lang="python" 
       data-timelimit=25000    
@@ -527,10 +545,20 @@ myTests().main()
 
 <div data-childcomponent="middle_way" class="runestone explainer ac_section alert alert-warning">
 <p>F. middle_way <br />
-sejam duas listas de inteiros a e b <br />
-retorna uma lista de tamanho 2 contendo os elementos do <br />
-meio de a e b, suponha que as listas tem tamanho ímpar <br />
-middle_way([1, 2, 3], [4, 5, 6]) -&gt; [2, 5] <br />
+son dos listas de enteros ayb | br |</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 181)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>devuelve una lista de tamaño 2 que contiene los elementos de | br |
+en medio de ayb, suponga que las listas tienen un tamaño impar <br /></p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 183)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>middle_way([1, 2, 3], [4, 5, 6]) -&gt; [2, 5] <br />
 middle_way([7, 7, 7], [3, 8, 0]) -&gt; [7, 8] <br />
 middle_way([5, 2, 9], [1, 4, 5]) -&gt; [2, 4] <br /></p>
 
@@ -562,60 +590,73 @@ myTests().main()
 </div>
 
 <div data-childcomponent="date_fashion" class="runestone explainer ac_section alert alert-warning">
-<p>G. date_fashion <br />
-você e sua namorada(o) vão a um restaurante <br />
-eu e par são as notas das suas roupas de 0 a 10 <br />
-quanto maior a nota mais chique vocês estão vestidos <br />
-o resultado é se vocês conseguiram uma mesa no restaurante: <br />
-0=não 1=talvez e 2=sim <br />
-se a nota da roupa de um dos dois for menor ou igual a 2 <br />
-vocês não terão direito à uma mesa (0) <br />
-se as notas são maiores, então caso um dos dois esteja <br />
-bem chique (nota &gt;= 8) então a resposta é sim (2) <br />
-caso contrário a resposta é talvez (1) <br />
-date_fashion(5, 10) -&gt; 2 <br />
-date_fashion(5, 2) -&gt; 0 <br />
-date_fashion(5, 5) -&gt; 1 <br /></p>
 
 <textarea data-component="activecode" id=date_fashion data-lang="python" 
-      data-timelimit=25000    
+      data-timelimit=25000  data-codelens="true"  
     data-audio=''      
            data-wasm=/_static>
-def date_fashion(eu, par):
+  G. date_fashion |br|
+  tu y tu novia (o) van a un restaurante |br|
+  yo y par son tus puntuaciones de ropa de 0 a 10 |br|
+  cuanto más alto es el grado, más elegante se viste |br|
+  el resultado es si tienes una mesa en el restaurante: |br|
+  0=no 1=talvez e 2=si |br|
+ si la puntuación de la ropa de uno de los dos es menor o igual a 2 |br|
+  no tendrá derecho a una mesa (0) | br |
+  si las calificaciones son más altas, entonces si una de las dos es |br|
+  muy elegante (nota> = 8) por lo que la respuesta es sí (2) |br|
+  de lo contrario, la respuesta es tal vez (1)
+|br|
+  date_fashion(5, 10) -> 2 |br|
+  date_fashion(5, 2) -> 0 |br|
+  date_fashion(5, 5) -> 1 |br|
+
+  ~~~~
+  def date_fashion(eu, par):
 
 
 
-====
-from unittest.gui import TestCaseGui
+  ====
+  from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
+  class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(date_fashion(5, 10), 2,"Esperado: 2")
-        self.assertEqual(date_fashion(5, 2), 0,"Esperado: 0")
-        self.assertEqual(date_fashion(5, 5), 1,"Esperado: 1")
-        self.assertEqual(date_fashion(3, 3), 1,"Esperado: 1")
-        self.assertEqual(date_fashion(10, 2), 0,"Esperado: 0")
-        self.assertEqual(date_fashion(2, 9), 0,"Esperado: 0")
-        self.assertEqual(date_fashion(9, 9), 2,"Esperado: 2")
-        self.assertEqual(date_fashion(10, 5), 2,"Esperado: 2")
-        self.assertEqual(date_fashion(2, 2), 0,"Esperado: 0")
-        self.assertEqual(date_fashion(3, 7), 1,"Esperado: 1")
-        self.assertEqual(date_fashion(2, 7), 0,"Esperado: 0")
-        self.assertEqual(date_fashion(6, 2), 0,"Esperado: 0")
+      def testOne(self):
+          self.assertEqual(date_fashion(5, 10), 2,"Esperado: 2")
+          self.assertEqual(date_fashion(5, 2), 0,"Esperado: 0")
+          self.assertEqual(date_fashion(5, 5), 1,"Esperado: 1")
+          self.assertEqual(date_fashion(3, 3), 1,"Esperado: 1")
+          self.assertEqual(date_fashion(10, 2), 0,"Esperado: 0")
+          self.assertEqual(date_fashion(2, 9), 0,"Esperado: 0")
+          self.assertEqual(date_fashion(9, 9), 2,"Esperado: 2")
+          self.assertEqual(date_fashion(10, 5), 2,"Esperado: 2")
+          self.assertEqual(date_fashion(2, 2), 0,"Esperado: 0")
+          self.assertEqual(date_fashion(3, 7), 1,"Esperado: 1")
+          self.assertEqual(date_fashion(2, 7), 0,"Esperado: 0")
+          self.assertEqual(date_fashion(6, 2), 0,"Esperado: 0")
 
 
-myTests().main()
+  myTests().main()
 </textarea>
 </div>
 
 <div data-childcomponent="squirrel_play" class="runestone explainer ac_section alert alert-warning">
 <p>H. squirrel_play <br />
-os esquilos na FATEC brincam quando a temperatura está entre 60 e 90 <br />
-graus Fahreneit (são estrangeiros e o termômetro é diferente rs) <br />
-caso seja verão, então a temperatura superior é 100 no lugar de 90 <br />
-retorne True caso os esquilos brinquem <br />
-squirrel_play(70, False) -&gt; True <br />
+ardillas en FATEC juegan cuando la temperatura está entre 60 y 90 <br /></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 262)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>grados Fahreneit (son extraños y el termómetro es diferente rs) <br />
+si es verano, entonces la temperatura superior es 100 en lugar de 90 <br />
+devuelve True si juegan las ardillas <br /></p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 265)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>squirrel_play(70, False) -&gt; True <br />
 squirrel_play(95, False) -&gt; False <br />
 squirrel_play(95, True) -&gt; True <br /></p>
 
@@ -654,17 +695,27 @@ myTests().main()
 </div>
 
 <div data-childcomponent="pego_correndo" class="runestone explainer ac_section alert alert-warning">
-<p>I. pego_correndo <br />
-você foi pego correndo <br />
-o resultado será: <br />
-sem multa = 0 <br />
-multa média = 1 <br />
-multa grave = 2 <br />
-velocide &lt;= 60 sem multa <br />
-velocidade entre 61 e 80 multa média <br />
-velocidade maior que 81 multa grave (cidade do interior) <br />
-caso seja seu aniversário a velocidade pode ser 5 km/h maior em todos os casos <br />
-pego_correndo(60, False) -&gt; 0 <br />
+<p>I. atrapado_curriendo <br />
+te pillaron corriendo <br /></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 305)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>el resultado será: <br />
+sin multa = 0 <br />
+multa media = 1 | br |
+grave multa = 2 | br |
+velocidio &lt;= 60 sin penalización <br />
+velocidad entre 61 y 80 media fina <br />
+velocidad superior a 81 multa severa (ciudad del interior) <br />
+si es tu cumpleaños la velocidad puede ser 5 km / h mayor en todos los casos|br|</p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 313)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>pego_correndo(60, False) -&gt; 0 <br />
 pego_correndo(65, False) -&gt; 1 <br />
 pego_correndo(65, True) -&gt; 0  <br /></p>
 
@@ -682,18 +733,18 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(pego_correndo(60, False), 0,"Esperado: 0")
-        self.assertEqual(pego_correndo(65, False), 1,"Esperado: 1")
-        self.assertEqual(pego_correndo(65, True), 0,"Esperado: 0")
-        self.assertEqual(pego_correndo(80, False), 1,"Esperado: 1")
-        self.assertEqual(pego_correndo(85, False), 2,"Esperado: 2")
-        self.assertEqual(pego_correndo(85, True), 1,"Esperado: 1")
-        self.assertEqual(pego_correndo(70, False), 1,"Esperado: 1")
-        self.assertEqual(pego_correndo(75, False), 1,"Esperado: 1")
-        self.assertEqual(pego_correndo(75, True), 1,"Esperado: 1")
-        self.assertEqual(pego_correndo(40, False), 0,"Esperado: 0")
-        self.assertEqual(pego_correndo(40, True), 0,"Esperado: 0")
-        self.assertEqual(pego_correndo(90, False), 2,"Esperado: 2")
+        self.assertEqual(atrapado_curriendo(60, False), 0,"Esperado: 0")
+        self.assertEqual(atrapado_curriendo(65, False), 1,"Esperado: 1")
+        self.assertEqual(atrapado_curriendo(65, True), 0,"Esperado: 0")
+        self.assertEqual(atrapado_curriendo(80, False), 1,"Esperado: 1")
+        self.assertEqual(atrapado_curriendo(85, False), 2,"Esperado: 2")
+        self.assertEqual(atrapado_curriendo(85, True), 1,"Esperado: 1")
+        self.assertEqual(atrapado_curriendo(70, False), 1,"Esperado: 1")
+        self.assertEqual(atrapado_curriendo(75, False), 1,"Esperado: 1")
+        self.assertEqual(atrapado_curriendo(75, True), 1,"Esperado: 1")
+        self.assertEqual(atrapado_curriendo(40, False), 0,"Esperado: 0")
+        self.assertEqual(atrapado_curriendo(40, True), 0,"Esperado: 0")
+        self.assertEqual(atrapado_curriendo(90, False), 2,"Esperado: 2")
 
 
 
@@ -703,15 +754,25 @@ myTests().main()
 
 <div data-childcomponent="alarm_clock" class="runestone explainer ac_section alert alert-warning">
 <p>J. alarm_clock <br />
-day: 0=domingo, 1=segunda, 2=terça, …, 6=sábado <br />
-vacation = True caso você esteja de férias <br />
-o retorno é uma string que diz quando o despertador tocará <br />
-dias da semana ‘07:00’ <br />
-finais de semana ‘10:00’ <br />
-a menos que você esteja de férias, neste caso: <br />
-dias da semana ‘10:00’ <br />
-finais de semana ‘off’ <br />
-alarm_clock(1, False) -&gt; ‘7:00’ <br />
+día: 0 = domingo, 1 = lunes, 2 = martes, …, 6 = sábado <br /></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 352)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>vacation = True si está de vacaciones <br />
+el retorno es una cadena que indica cuándo sonará el despertador <br />
+días de la semana ‘07: 00 ‘<br />
+fines de semana ‘10: 00 ‘<br />
+a menos que esté de vacaciones, en este caso: <br />
+días de la semana ‘10: 00 ‘<br />
+fines de semana ‘libres’ <br /></p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 359)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>alarm_clock(1, False) -&gt; ‘7:00’ <br />
 alarm_clock(5, False) -&gt; ‘7:00’ <br />
 alarm_clock(0, False) -&gt; ‘10:00’ <br /></p>
 
