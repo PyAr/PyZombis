@@ -493,27 +493,6 @@ Android Wallpaper
    :align: center
    :alt: 
 
-
-Enlaces de conferencias de video:
-=================================
-
-
-.. youtube:: E_IIrwtag_c
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: GWqpH_o8-54
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 5C35LCcrUVs
-      :height: 315
-      :width: 560
-      :align: center
-
-
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture16

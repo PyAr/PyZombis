@@ -55,7 +55,7 @@ Pasos en el proceso de desarrollo de software.
 + Implementar el programa:
 
   + Diseña algunas pruebas para validar tu programa
-  + Traduce el proyecto a cualquier idioma
+  + Traduce el proyecto a cualquier lenguaje de programaciónn
   + En este curso usaremos Python
 
 
@@ -333,14 +333,15 @@ Numeros basicos
         print(int(type(x)))
 
 
-Mesa de operadores
-==================
+Tabla de operadores
+===================
+
 
 .. table:: **Tabela de operadores**
    :widths: auto
 
    ======== ============== 
-   Operador Operacion
+   Operador Operación
    ======== ============== 
    \*        Multiplicacion
    /         Division 
@@ -403,20 +404,6 @@ Conversión de grados a C
 
    }
 
-
-Enlaces de conferencias de video:
-=================================
-
-
-.. youtube:: 9gKN5n6mymk
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: CCxrF5usWwo
-      :height: 315
-      :width: 560
-      :align: center
 
 
 .. disqus::

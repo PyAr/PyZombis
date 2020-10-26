@@ -401,26 +401,6 @@ Nombres completos
    :alt: 
 
 
-
-Enlaces de conferencias de video:
-=================================
-
-.. youtube:: IZyaz4x0Ql4
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: Wi_N0S48tOs
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: lN3kerQfLkE
-      :height: 315
-      :width: 560
-      :align: center
-
-
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture17
