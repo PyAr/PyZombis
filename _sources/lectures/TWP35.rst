@@ -181,27 +181,6 @@ No hay preguntas tontas
     print(data['value']['joke'])
 
 
-Enlaces de conferencias de video:
-=================================
-
-
-.. youtube:: VxQBUPE6HbA
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: EKCo0qcVYQU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: V7c168XpfQ4
-      :height: 315
-      :width: 560
-      :align: center
-
-
-
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture11

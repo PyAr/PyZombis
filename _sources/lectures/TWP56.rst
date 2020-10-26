@@ -216,18 +216,6 @@ Recuerdo
 + Scale()
 
 
-
-Enlaces de conferencias de video:
-=================================
-
-
-
-.. youtube:: hoA4d3-CezI
-      :height: 315
-      :width: 560
-      :align: center
-
-
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture21

@@ -280,41 +280,4 @@ Programación en pareja
    :align: center
    :alt: 
 
-Enlaces de conferencias de video:
-=================================
-
-.. youtube:: t5sE9ruRHHM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: TQkvGiwXhdQ
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: __OGe-uUBmg
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: OInhmFfmNXE
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: zOp-YBp3yzI
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: DR4CuztiMpY
-      :height: 315
-      :width: 560
-      :align: center
-
-.. disqus::
-   :shortname: pyzombis
-   :identifier: lecture5
-
 

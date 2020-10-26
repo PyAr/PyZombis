@@ -333,26 +333,6 @@ Revisar
 + Tkinter: biblioteca para interfaz gráfica
 
 
-Enlaces de conferencias de video:
-=================================
-
-
-.. youtube:: 7gNCI7Dx0kU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: rmSXED4gdcw
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: AGHSdwE3XR4
-      :height: 315
-      :width: 560
-      :align: center
-
-
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture18

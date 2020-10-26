@@ -20,7 +20,7 @@ Texto
 
     + Nota: no es tan fácil manipular cadenas en algunos idiomas
 
-+ Busquemos dónde está la información en un texto == raspado
++ Busquemos dónde está la información en un texto == 
 + Y aprenderemos uno de los conceptos más importantes de orientación a la
    objetos: métodos
 
@@ -37,8 +37,8 @@ Starbuzz Café
    :alt: 
 
 
-Código Starbuzz corriente
-=========================
+Código Starbuzz actual
+======================
 
 .. code-block :: python
    
@@ -323,7 +323,7 @@ Solo cuando es inferior a 4,74
 
 
 
-Las cadenas son diferentes de los números
+Las strings son diferentes de los números
 =========================================
 
 
@@ -463,7 +463,7 @@ Resumen
 
 
 
-+ Las cadenas son cadenas
++ Las srings son cadenas de caracteres
 + Accedemos a los caracteres individuales por el índice, que comienza con cero
 + Los métodos son funciones integradas en variables
 + Hay bibliotecas de programación con código listo
@@ -477,64 +477,9 @@ Herramientas de Python
 
 
 
-+ texto [4] accede al quinto carácter
-+ texto [4: 9] accede al quinto al noveno carácter
++ texto[4]accede al quinto carácter
++ texto[4:9]accede al quinto al noveno carácter
 + El método text.find () busca una subcadena
 + float () convierte algo a un punto flotante
 + Bibliotecas: urllib.request y equipo
-
-
-Enlaces de conferencias de video:
-=================================
-
-.. youtube:: VQ5vwKCi2Eg
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: LrP4aBa8sp0
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: IgRFQhA-gXM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 1hqmBgnJoNU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: hX9MWdrYusY
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: S3U_-K43EeA
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: TQ5aGZ2azfM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: Vjrk-_NsMFo
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: 8cjrzMfFb3Y
-      :height: 315
-      :width: 560
-      :align: center
-
-.. disqus::
-   :shortname: pyzombis
-   :identifier: lecture10
-
-
 

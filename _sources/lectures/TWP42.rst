@@ -97,7 +97,7 @@ Nociones de bases de datos
    :alt: 
 
 
-Crear un banco de estudiantes
+Crear un base de estudiantes
 =============================
 
 
@@ -111,7 +111,7 @@ Crear un banco de estudiantes
    con.close() 
 
 
-Accediendo al banco alunos.bd
+Accediendo al base alunos.bd
 =============================
 
 
@@ -136,68 +136,6 @@ Accediendo al banco alunos.bd
    :width: 10.212cm
    :align: center
    :alt: 
-
-
-Enlaces de conferencias de video:
-=================================
-
-
-.. youtube:: F4MpDoldKoE
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: _26fel27apU
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: g4RIVW1Kb2U
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: BxhJIWNzYA0
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: c7EIZACNWr0
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: Sv9LlF55etM
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: WxpiAeCbaBg
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: rE7ZXouF0Dc
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: JVl00TkX3tg
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: Ot2QidTKFgI
-      :height: 315
-      :width: 560
-      :align: center
-
-.. youtube:: v-HWDVnGdsY
-      :height: 315
-      :width: 560
-      :align: center
-
-
 
 .. disqus::
    :shortname: pyzombis
