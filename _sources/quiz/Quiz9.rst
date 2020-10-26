@@ -11,7 +11,7 @@ Quiz - 9
    :nocodelens:
 
    A. first_last6 |br|
-   verifica se 6 é o primeiro ou último elemento da lista nums |br|
+   compruebe si 6 es el primer o el último elemento en la lista de números |br|
    first_last6([1, 2, 6]) -> True |br|
    first_last6([6, 1, 2, 3]) -> True |br|
    first_last6([3, 2, 1]) -> False |br|
@@ -43,8 +43,8 @@ Quiz - 9
    :nocodelens:
 
    B. same_first_last |br|
-   retorna True se a lista nums possui pelo menos um elemento |br|
-   e o primeiro elemento é igual ao último |br|
+   devuelve True si la lista de números tiene al menos un elemento |br|
+   y el primer elemento es igual al último |br|
    same_first_last([1, 2, 3]) -> False |br|
    same_first_last([1, 2, 3, 1]) -> True |br|
    same_first_last([1, 2, 1]) -> True |br|
@@ -108,9 +108,9 @@ Quiz - 9
    :nocodelens:
 
    D. maior_ponta |br|
-   Dada uma lista não vazia, cria uma nova lista onde todos |br|
-   os elementos são o maior das duas pontas |br|
-   obs.: não é o maior de todos, mas entre as duas pontas |br|
+    Dada una lista que no esté vacía, cree una nueva lista donde todos |br|
+     los elementos son los más extremos de todos |br|
+    obs.: no es el más grande de todos, pero entre los dos extremos |br|
    maior_ponta([1, 2, 3]) -> [3, 3, 3] |br|
    maior_ponta([1, 3, 2]) -> [2, 2, 2] |br|
 
@@ -125,14 +125,14 @@ Quiz - 9
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(maior_ponta([1, 2, 3]), [3, 3, 3],"Esperado: [3,3,3]")
-           self.assertEqual(maior_ponta([11, 5, 9]), [11, 11, 11],"Esperado: [11,11,11]")
-           self.assertEqual((maior_ponta([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
-           self.assertEqual(maior_ponta([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
-           self.assertEqual(maior_ponta([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
-           self.assertEqual(maior_ponta([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
-           self.assertEqual(maior_ponta([2, 11, 2]), [2, 2, 2],"Esperado: [2,2,2]")
-           self.assertEqual(maior_ponta([0, 0, 1]), [1, 1, 1],"Esperado: [1,1,1]")
+           self.assertEqual(mayor_punto([1, 2, 3]), [3, 3, 3],"Esperado: [3,3,3]")
+           self.assertEqual(mayor_punto([11, 5, 9]), [11, 11, 11],"Esperado: [11,11,11]")
+           self.assertEqual((mayor_punto([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
+           self.assertEqual(mayor_punto([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
+           self.assertEqual(mayor_punto([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
+           self.assertEqual(mayor_punto([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
+           self.assertEqual(mayor_punto([2, 11, 2]), [2, 2, 2],"Esperado: [2,2,2]")
+           self.assertEqual(mayor_punto([0, 0, 1]), [1, 1, 1],"Esperado: [1,1,1]")
 
 
    myTests().main()
@@ -142,9 +142,10 @@ Quiz - 9
    :nocodelens:
 
    E. sum2 |br|
-   Dada uma lista de inteiros de qualquer tamanho |br|
-   retorna a soma dos dois primeiros elementos |br|
-   se a lista tiver menos de dois elementos, soma o que for possível |br|
+   Dada una lista de números enteros de cualquier tamaño |br|
+   devuelve la suma de los dos primeros elementos |br|
+   si la lista tiene menos de dos elementos, agregue tantos como sea posible
+
 
    ~~~~
    def sum2(nums):
@@ -176,9 +177,9 @@ Quiz - 9
    :nocodelens:
 
    F. middle_way |br|
-   sejam duas listas de inteiros a e b |br|
-   retorna uma lista de tamanho 2 contendo os elementos do |br|
-   meio de a e b, suponha que as listas tem tamanho ímpar |br|
+   son dos listas de enteros ayb | br |
+    devuelve una lista de tamaño 2 que contiene los elementos de | br |
+    en medio de ayb, suponga que las listas tienen un tamaño impar |br|
    middle_way([1, 2, 3], [4, 5, 6]) -> [2, 5] |br|
    middle_way([7, 7, 7], [3, 8, 0]) -> [7, 8] |br|
    middle_way([5, 2, 9], [1, 4, 5]) -> [2, 4] |br|
@@ -210,16 +211,17 @@ Quiz - 9
    :nocodelens:
 
    G. date_fashion |br|
-   você e sua namorada(o) vão a um restaurante |br|
-   eu e par são as notas das suas roupas de 0 a 10 |br|
-   quanto maior a nota mais chique vocês estão vestidos |br|
-   o resultado é se vocês conseguiram uma mesa no restaurante: |br|
-   0=não 1=talvez e 2=sim |br|
-   se a nota da roupa de um dos dois for menor ou igual a 2 |br|
-   vocês não terão direito à uma mesa (0) |br|
-   se as notas são maiores, então caso um dos dois esteja |br|
-   bem chique (nota >= 8) então a resposta é sim (2) |br|
-   caso contrário a resposta é talvez (1) |br|
+   tu y tu novia (o) van a un restaurante |br|
+   yo y par son tus puntuaciones de ropa de 0 a 10 |br|
+   cuanto más alto es el grado, más elegante se viste |br|
+   el resultado es si tienes una mesa en el restaurante: |br|
+   0=no 1=talvez e 2=si |br|
+  si la puntuación de la ropa de uno de los dos es menor o igual a 2 |br|
+   no tendrá derecho a una mesa (0) | br |
+   si las calificaciones son más altas, entonces si una de las dos es |br|
+   muy elegante (nota> = 8) por lo que la respuesta es sí (2) |br|
+   de lo contrario, la respuesta es tal vez (1)
+ |br|
    date_fashion(5, 10) -> 2 |br|
    date_fashion(5, 2) -> 0 |br|
    date_fashion(5, 5) -> 1 |br|
@@ -256,10 +258,10 @@ Quiz - 9
    :nocodelens:
 
    H. squirrel_play |br|
-   os esquilos na FATEC brincam quando a temperatura está entre 60 e 90 |br|
-   graus Fahreneit (são estrangeiros e o termômetro é diferente rs) |br|
-   caso seja verão, então a temperatura superior é 100 no lugar de 90 |br|
-   retorne True caso os esquilos brinquem |br|
+   ardillas en FATEC juegan cuando la temperatura está entre 60 y 90 |br|
+    grados Fahreneit (son extraños y el termómetro es diferente rs) |br|
+    si es verano, entonces la temperatura superior es 100 en lugar de 90 |br|
+    devuelve True si juegan las ardillas |br|
    squirrel_play(70, False) -> True |br|
    squirrel_play(95, False) -> False |br|
    squirrel_play(95, True) -> True |br|
@@ -298,16 +300,16 @@ Quiz - 9
 .. activecode:: pego_correndo
    :nocodelens:
  
-   I. pego_correndo |br|
-   você foi pego correndo |br|
-   o resultado será: |br|
-   sem multa = 0 |br|
-   multa média = 1 |br|
-   multa grave = 2 |br|
-   velocide <= 60 sem multa |br|
-   velocidade entre 61 e 80 multa média |br|
-   velocidade maior que 81 multa grave (cidade do interior) |br|
-   caso seja seu aniversário a velocidade pode ser 5 km/h maior em todos os casos |br|
+   I. atrapado_curriendo |br|
+   te pillaron corriendo |br|
+    el resultado será: |br|
+    sin multa = 0 |br|
+    multa media = 1 | br |
+    grave multa = 2 | br |
+    velocidio <= 60 sin penalización |br|
+    velocidad entre 61 y 80 media fina |br|
+    velocidad superior a 81 multa severa (ciudad del interior) |br|
+    si es tu cumpleaños la velocidad puede ser 5 km / h mayor en todos los casos|br|
    pego_correndo(60, False) -> 0 |br|
    pego_correndo(65, False) -> 1 |br|
    pego_correndo(65, True) -> 0  |br|
@@ -324,18 +326,18 @@ Quiz - 9
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(pego_correndo(60, False), 0,"Esperado: 0")
-           self.assertEqual(pego_correndo(65, False), 1,"Esperado: 1")
-           self.assertEqual(pego_correndo(65, True), 0,"Esperado: 0")
-           self.assertEqual(pego_correndo(80, False), 1,"Esperado: 1")
-           self.assertEqual(pego_correndo(85, False), 2,"Esperado: 2")
-           self.assertEqual(pego_correndo(85, True), 1,"Esperado: 1")
-           self.assertEqual(pego_correndo(70, False), 1,"Esperado: 1")
-           self.assertEqual(pego_correndo(75, False), 1,"Esperado: 1")
-           self.assertEqual(pego_correndo(75, True), 1,"Esperado: 1")
-           self.assertEqual(pego_correndo(40, False), 0,"Esperado: 0")
-           self.assertEqual(pego_correndo(40, True), 0,"Esperado: 0")
-           self.assertEqual(pego_correndo(90, False), 2,"Esperado: 2")
+           self.assertEqual(atrapado_curriendo(60, False), 0,"Esperado: 0")
+           self.assertEqual(atrapado_curriendo(65, False), 1,"Esperado: 1")
+           self.assertEqual(atrapado_curriendo(65, True), 0,"Esperado: 0")
+           self.assertEqual(atrapado_curriendo(80, False), 1,"Esperado: 1")
+           self.assertEqual(atrapado_curriendo(85, False), 2,"Esperado: 2")
+           self.assertEqual(atrapado_curriendo(85, True), 1,"Esperado: 1")
+           self.assertEqual(atrapado_curriendo(70, False), 1,"Esperado: 1")
+           self.assertEqual(atrapado_curriendo(75, False), 1,"Esperado: 1")
+           self.assertEqual(atrapado_curriendo(75, True), 1,"Esperado: 1")
+           self.assertEqual(atrapado_curriendo(40, False), 0,"Esperado: 0")
+           self.assertEqual(atrapado_curriendo(40, True), 0,"Esperado: 0")
+           self.assertEqual(atrapado_curriendo(90, False), 2,"Esperado: 2")
  
           
          
@@ -346,14 +348,14 @@ Quiz - 9
    :nocodelens:
  
    J. alarm_clock |br|
-   day: 0=domingo, 1=segunda, 2=terça, ..., 6=sábado |br|
-   vacation = True caso você esteja de férias |br|
-   o retorno é uma string que diz quando o despertador tocará |br|
-   dias da semana '07:00' |br|
-   finais de semana '10:00' |br|
-   a menos que você esteja de férias, neste caso: |br|
-   dias da semana '10:00' |br|
-   finais de semana 'off' |br|
+   día: 0 = domingo, 1 = lunes, 2 = martes, ..., 6 = sábado |br|
+    vacation = True si está de vacaciones |br|
+    el retorno es una cadena que indica cuándo sonará el despertador |br|
+    días de la semana '07: 00 '|br|
+    fines de semana '10: 00 '|br|
+    a menos que esté de vacaciones, en este caso: |br|
+    días de la semana '10: 00 '|br|
+    fines de semana 'libres' |br|
    alarm_clock(1, False) -> '7:00' |br|
    alarm_clock(5, False) -> '7:00' |br|
    alarm_clock(0, False) -> '10:00' |br|

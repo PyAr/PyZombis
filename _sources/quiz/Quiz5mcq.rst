@@ -7,7 +7,7 @@ Quiz - 5
    <br />
 
  
-**Você pode usar os blocos de código fornecidos para gravar snippets de código que podem ajudá-lo a obter respostas.**
+**Puede usar los bloques de código proporcionados para escribir fragmentos de código que pueden ayudarlo a obtener respuestas.**
 
 
 .. mchoice:: mcq_5_1
@@ -17,10 +17,10 @@ Quiz - 5
    :answer_d: 3
    :correct: a
 
-   O que o seguinte programa (dado na forma de pseucódigo) imprime? |br|
+  ¿Qué imprime el siguiente programa (dado en forma de pseucódigo)? |br|
    x = 2 |br|
    y = 5 |br|
-   se y > 8 então |br|
+   se y > 8 enteros |br|
    y = y * 2 |br|
    caso contrário, |br|
    x = x * 2 |br|
@@ -35,7 +35,7 @@ Quiz - 5
 
 
 
-   #Use este bloco de código para cálculo.
+   #Utilice este bloque de código para el cálculo.
 
 
 
@@ -48,11 +48,11 @@ Quiz - 5
    :answer_d: 47
    :correct: c
 
-   Quantas vezes o trecho de pseudocódigo seguinte imprime 'oi'? (obs: na nossa pseudo-linguagem, o laço inclui os extremos, ou seja, 1 até 4 significa 1, 2, 3, 4.) |br|
-   para i = 1 até 9 |br|
-   se i != 3, então |br|
-   para j = 1 até 6 |br|
-   imprime 'oi' |br|
+   ¿Cuántas veces el siguiente pseudocódigo imprime 'hola'? (nota: en nuestro pseudolenguaje, el ciclo incluye los extremos, es decir, 1 a 4 significa 1, 2, 3, 4.) |br|
+   para i = 1 hasta 9 |br|
+   se i != 3, entero |br|
+   para j = 1 hasta 6 |br|
+   imprime 'Hola' |br|
 
 
 
@@ -61,7 +61,7 @@ Quiz - 5
    :nocodelens:
 
 
-   #Use este bloco de código para cálculo.
+   #Utilice este bloque de código para el cálculo.
   
 
 
@@ -73,8 +73,7 @@ Quiz - 5
    :answer_d: 183
    :correct: d
 
-   Entre 1067 e 3627 (inclusive), quantos números são pares e também divisíveis por 7
-
+   Entre 1067 y 3627 (inclusive), ¿cuántos números son pares y también divisibles por 7?
 
 
 
@@ -82,7 +81,7 @@ Quiz - 5
    :nocodelens:
 
 
-   #Use este bloco de código para cálculo.
+   #Utilice este bloque de código para el cálculo.
   
 
 
@@ -95,8 +94,8 @@ Quiz - 5
    :correct: b
 
    
-   Daniela é uma pessoa muito supersticiosa. Para ela, um número é sortudo se ele contém o dígito 2 mas não o dígito 7. |br|
-   Então, na opinião dela, quantos números sortudos existem entre 18644 e 33087, incluindo os extremos? |br|
+   Daniela es una persona muy supersticiosa. Para ella, un número tiene suerte si contiene el dígito 2 pero no el 7. |br|
+    Entonces, en su opinión, ¿cuántos números de la suerte hay entre 18644 y 33087, incluidos los extremos? | br|
 
 
 
@@ -106,7 +105,7 @@ Quiz - 5
    :nocodelens:
 
 
-   #Use este bloco de código para cálculo.
+   #Utilice este bloque de código para el cálculo.
 
 
 
@@ -120,12 +119,11 @@ Quiz - 5
 
    
 
-   Na pacata vila campestre de Ponteironuloville, todos os telefones têm 6 dígitos. A companhia telefônica estabelece as seguintes regras sobre os números: |br|
-   1. Não pode haver dois dígitos consecutivos idênticos, porque isso é chato; |br|
-   2. A soma dos dígitos tem que ser par, porque isso é legal; |br|
-   3. O último dígito não pode ser igual ao primeiro, porque isso dá azar. |br|
-   Então, dadas essas regras perfeitamente razoáveis, bem projetadas e maduras, quantos números de telefone na lista abaixo são válidos? |br|
-   213752 216732 221063 221545 225583 229133 230648 233222 |br|
+  En el tranquilo pueblo rural de Ponteironuloville, todos los teléfonos tienen 6 dígitos. La compañía telefónica establece las siguientes reglas sobre números: |br|
+    1. No puede haber dos dígitos idénticos consecutivos, porque esto es aburrido; |br|
+    2. La suma de los dígitos debe ser par, porque esto es legal; |br|
+    3. El último dígito no puede ser el mismo que el primero, porque eso es mala suerte. |br|
+    Entonces, dadas estas reglas perfectamente razonables, bien diseñadas y maduras, ¿cuántos números de teléfono en la lista a continuación son válidos? |br|
    236043 237330 239636 240138 242123 246224 249183 252936 |br|
    254711 257200 257607 261424 263814 266794 268649 273050 |br|
    275001 277606 278997 283331 287104 287953 289137 291591 |br|
@@ -159,4 +157,4 @@ Quiz - 5
    :nocodelens:
 
 
-   #Use este bloco de código para cálculo.
+   #Utilice este bloque de código para el cálculo |br|
