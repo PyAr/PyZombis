@@ -40,7 +40,9 @@ Starbuzz Café
 Código Starbuzz actual
 ======================
 
-.. code-block :: python
+.. activecode:: beans
+   :nocodelens:
+   :stdin:
    
    import urrlib.request
    pagina = urllib.request('http://beans.itcarlow.ie/prices.html')
