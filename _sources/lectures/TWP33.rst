@@ -44,9 +44,10 @@ Código Starbuzz actual
    :nocodelens:
    :stdin:
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices.html')
-   texto = pagina.read().decode('utf8')
+   import urllib.request
+
+   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices.html')
+   texto = pagina.read().decode()
    print(texto)
 
 
@@ -165,9 +166,9 @@ Fatiamento
 
 .. code-block :: python
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices.html')
-   texto = pagina.read().decode('utf8')
+   import urllib.request
+   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices.html')
+   texto = pagina.read().decode()
    print(texto[234:238])
 
 
@@ -221,9 +222,9 @@ Programa de fidelización
 
 .. code-block :: python
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+   import urllib.request
+   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.read().decode()
    print(texto[234:238])
 
 
@@ -287,9 +288,9 @@ Método find
 
 .. code-block :: python
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+   import urllib.request
+   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.read().decode()
    onde = texto.find('>$')
    inicio = onde + 2
    fin = inicio + 4
@@ -314,13 +315,13 @@ Solo cuando es inferior a 4,74
 
 .. code-block :: python
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+   import urllib.request
+   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.read().decode()
    onde = texto.find('>$')
    inicio = onde + 2
    fin = inicio + 4
-   if texto[inicio:fin] < 4.74:
+   if float(texto[inicio:fin]) < 4.74:
       print(texto[inicio:fin])
 
 
@@ -342,9 +343,9 @@ Convertir a float
 
 .. code-block :: python
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+   import urllib.request
+   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.read().decode()
    onde = texto.find('>$')
    inicio = onde + 2
    fin= inicio + 4
@@ -370,11 +371,11 @@ Convertir a float
 
 .. code-block :: python
    
-   import urrlib.request
+   import urllib.request
    precio = 99.99
    while precio >= 4.74:
-      pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-      texto = pagina.read().decode('utf8')
+      pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
+      texto = pagina.read().decode()
       onde = texto.find('>$')
       inicio = onde + 2
       fin = inicio + 4
@@ -445,12 +446,12 @@ Tiempo de biblioteca
 
 .. code-block :: python
    
-   import urrlib.request
+   import urllib.request
    import time
    precio = 99.99
    while precio >= 4.74:
-      pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-      texto = pagina.read().decode('utf8')
+      pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
+      texto = pagina.read().decode()
       onde = texto.find('>$')
       inicio = onde + 2
       fin = inicio + 4
