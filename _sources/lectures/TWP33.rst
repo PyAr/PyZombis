@@ -43,10 +43,14 @@ Código Starbuzz actual
 .. activecode:: beans
    :nocodelens:
    :stdin:
-   
-   desde urllib.request import urlopen
-   texto = urlopen('http://beans.itcarlow.ie/prices.html').read()
-   print(texto)
+
+desde urllib.request import urlopen
+imprimir(platform.python_version())
+pagina=urlopen('http://beans.itcarlow.ie/prices.html')
+text=pagina.read().decode('utf8')
+print(texto)
+
+
 
 
 El CEO solo quiere el precio
