@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.16: http://docutils.sourceforge.net/" />
+<title>RevisiÃ³n de String</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="revisia3n-de-string">
+<h1 class="title">RevisiÃ³n de String</h1>
+
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 1)</p>
+<p>Title overline too short.</p>
+<pre class="literal-block">
+==================
+RevisiÃ³n de String
+==================
+</pre>
+</div>
+<img alt="" class="align-center" src="img/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" />
+<div class="section" id="texto">
+<h1>Texto</h1>
+<ul>
+<li><p class="first">Es difÃ­cil comunicarse sin palabras</p>
+</li>
+<li><p class="first">Entre los diversos tipos de datos, uno de los mÃ¡s importantes es el texto o
+string</p>
+<blockquote>
+<ul class="simple">
+<li>Nota: no es tan fÃ¡cil manipular cadenas en algunos idiomas</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Busquemos dÃ³nde estÃ¡ la informaciÃ³n en un texto ==</p>
+</li>
+<li><dl class="first docutils">
+<dt>Y aprenderemos uno de los conceptos mÃ¡s importantes de orientaciÃ³n a la</dt>
+<dd><p class="first last">objetos: mÃ©todos</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="starbuzz-cafa">
+<h1>Starbuzz CafÃ©</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 30)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+Starbuzz CafÃ©
+=============
+</pre>
+</div>
+<img alt="" class="align-center" src="img/TWP33_001.jpg" style="width: 14.801cm; height: 15.427cm;" />
+</div>
+<div class="section" id="ca3digo-starbuzz-actual">
+<h1>CÃ³digo Starbuzz actual</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 41)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+CÃ³digo Starbuzz actual
+======================
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 43)</p>
+<p>Unknown directive type &quot;activecode&quot;.</p>
+<pre class="literal-block">
+.. activecode:: beans
+   :nocodelens:
+   :stdin:
+
+   desde urllib.request import urlopen
+   texto = urlopen('http://beans.itcarlow.ie/prices.html').read()
+   print(texto)
+
+
+</pre>
+</div>
+</div>
+<div class="section" id="el-ceo-solo-quiere-el-precio">
+<h1>El CEO solo quiere el precio</h1>
+<img alt="" class="align-center" src="img/TWP33_004.jpg" style="width: 12.699cm; height: 6.719cm;" />
+</div>
+<div class="section" id="el-precio-esta-incrustado-en-el-html">
+<h1>El precio estÃ¡ incrustado en el HTML</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 64)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+El precio estÃ¡ incrustado en el HTML
+====================================
+</pre>
+</div>
+<ul class="simple">
+<li>Este es el texto HTML &quot;en bruto&quot;, que es el formato de las pÃ¡ginas web</li>
+<li>El precio estÃ¡ incrustado en HTML</li>
+</ul>
+<img alt="" class="align-center" src="img/TWP33_002.png" style="width: 24.005cm; height: 5.727cm;" />
+</div>
+<div class="section" id="strings">
+<h1>Strings</h1>
+<ul class="simple">
+<li>String y cadenas de caracteres</li>
+</ul>
+<img alt="" class="align-center" src="img/TWP33_005.png" style="width: 23.745cm; height: 2.112cm;" />
+<ul class="simple">
+<li>Â¿CÃ³mo obtener solo el precio?</li>
+</ul>
+<img alt="" class="align-center" src="img/TWP33_006.png" style="width: 22.621cm; height: 3.436cm;" />
+</div>
+<div class="section" id="id1">
+<h1>Strings</h1>
+<img alt="" class="align-center" src="img/TWP33_007.jpg" style="width: 16.051cm; height: 5cm;" />
+<img alt="" class="align-center" src="img/TWP33_008.jpg" style="width: 16.483cm; height: 6.323cm;" />
+</div>
+<div class="section" id="id2">
+<h1>Strings</h1>
+<img alt="" class="align-center" src="img/TWP33_009.jpg" style="width: 17.805cm; height: 5.317cm;" />
+</div>
+<div class="section" id="fatiamento">
+<h1>Fatiamento</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 137)</p>
+<p>Unknown directive type &quot;codelens&quot;.</p>
+<pre class="literal-block">
+.. codelens:: Example10_1
+
+        time = 'Palmeiras'
+        print(time[2:5])
+        print(time[0:3])
+        print(time[4:6])
+
+
+</pre>
+</div>
+<ul class="simple">
+<li>Fatia do primeiro nÃºmero atÃ© antes do segundo</li>
+<li>NÃ£o inclui o segundo nÃºmero!</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h1>Fatiamento</h1>
+<img alt="" class="align-center" src="img/TWP33_012.jpg" style="width: 13.943cm; height: 6.111cm;" />
+</div>
+<div class="section" id="id4">
+<h1>Fatiamento</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 165)</p>
+<p>Cannot analyze code. Pygments package not found.</p>
+<pre class="literal-block">
+.. code-block :: python
+
+   import urrlib.request
+   pagina = urllib.request('http://beans.itcarlow.ie/prices.html')
+   texto = pagina.read().decode('utf8')
+   print(texto[234:238])
+
+
+</pre>
+</div>
+</div>
+<div class="section" id="ael-ceo-esta-feliz">
+<h1>Â¡El CEO estÃ¡ feliz!</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 174)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+Â¡El CEO estÃ¡ feliz!
+===================
+</pre>
+</div>
+<img alt="" class="align-center" src="img/TWP33_015.jpg" style="width: 14.922cm; height: 6.402cm;" />
+</div>
+<div class="section" id="no-hay-preguntas-tontas">
+<h1>No hay preguntas tontas</h1>
+<ul>
+<li><p class="first">Â¿Puedo poner alguna pÃ¡gina web en este cÃ³digo?</p>
+<blockquote>
+<ul class="simple">
+<li>SÃ­. SiÃ©ntete libre, pero no olvides la decodificaciÃ³n</li>
+<li>Por ejemplo, el siguiente sitio web utiliza iso8859</li>
+<li><a class="reference external" href="http://www.ime.usp.br/~pf/algoritmos/dicios/br">Enlace para el mismo</a></li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Â¿QuÃ© hace urllib.request?</p>
+<blockquote>
+<ul class="simple">
+<li>Te permite chatear con internet</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Â¿Puedo acceder a una pÃ¡gina directamente en el navegador?</p>
+<blockquote>
+<ul class="simple">
+<li>SÃ­. Escriba en modo interactivo &quot;importar antigravedad&quot;</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="descuentos-para-clientes-leales">
+<h1>Descuentos para clientes leales</h1>
+<img alt="" class="align-center" src="img/TWP33_016.jpg" style="width: 17.458cm; height: 12.571cm;" />
+</div>
+<div class="section" id="programa-de-fidelizacia3n">
+<h1>Programa de fidelizaciÃ³n</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 218)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+Programa de fidelizaciÃ³n
+========================
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 221)</p>
+<p>Cannot analyze code. Pygments package not found.</p>
+<pre class="literal-block">
+.. code-block :: python
+
+   import urrlib.request
+   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.read().decode('utf8')
+   print(texto[234:238])
+
+
+</pre>
+</div>
+<ul class="simple">
+<li>Â¡No funcionÃ³! &quot;Bean&quot; apareciÃ³ en lugar del precio. Â¿Porque sera?</li>
+</ul>
+</div>
+<div class="section" id="el-precio-se-movia3">
+<h1>El precio se moviÃ³</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 233)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+El precio se moviÃ³
+==================
+</pre>
+</div>
+<ul class="simple">
+<li>Las pÃ¡ginas son diferentes y el precio cambia de posiciÃ³n en la cadena</li>
+</ul>
+<img alt="" class="align-center" src="img/TWP33_018.jpg" style="width: 16.122cm; height: 5.416cm;" />
+</div>
+<div class="section" id="los-datos-de-python-son-inteligentes">
+<h1>Los datos de Python son inteligentes</h1>
+<ul class="simple">
+<li>Los lenguajes de programaciÃ³n proporcionan funcionalidad incorporada
+en los datos para ayudarte</li>
+<li>Los datos de Python son inteligentes: pueden hacer cosas</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 255)</p>
+<p>Unknown directive type &quot;codelens&quot;.</p>
+<pre class="literal-block">
+.. codelens:: Example10_2
+
+        string = &quot;batatinha quando nasce&quot;
+        print(string.upper())
+        print(string.split())
+
+
+
+</pre>
+</div>
+</div>
+<div class="section" id="matodo-find">
+<h1>MÃ©todo find</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 264)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+MÃ©todo find
+===========
+</pre>
+</div>
+<ul class="simple">
+<li>MÃ©todos find para strings</li>
+</ul>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 272)</p>
+<p>Unknown directive type &quot;codelens&quot;.</p>
+<pre class="literal-block">
+.. codelens:: Example10_3
+
+      string = &quot;Palmeiras&quot;
+      print(string.find(&quot;P&quot;))
+      print(string.find(&quot;lmei&quot;))
+      print(string.find(&quot;Pa&quot;))
+
+
+</pre>
+</div>
+<ul class="simple">
+<li>Para conocer los mÃ©todos que tengo, dale Ctrl + espacio despuÃ©s de un perÃ­odo</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h1>MÃ©todo find</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 284)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+MÃ©todo find
+===========
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 287)</p>
+<p>Cannot analyze code. Pygments package not found.</p>
+<pre class="literal-block">
+.. code-block :: python
+
+   import urrlib.request
+   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.read().decode('utf8')
+   onde = texto.find('&gt;$')
+   inicio = onde + 2
+   fin = inicio + 4
+   print(texto[inicio:fin])
+
+
+
+</pre>
+</div>
+</div>
+<div class="section" id="solo-cuando-es-inferior-a-4-74">
+<h1>Solo cuando es inferior a 4,74</h1>
+<img alt="" class="align-center" src="img/TWP33_025.jpg" style="width: 8.6cm; height: 15.444cm;" />
+</div>
+<div class="section" id="id6">
+<h1>Solo cuando es inferior a 4,74</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 314)</p>
+<p>Cannot analyze code. Pygments package not found.</p>
+<pre class="literal-block">
+.. code-block :: python
+
+   import urrlib.request
+   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.read().decode('utf8')
+   onde = texto.find('&gt;$')
+   inicio = onde + 2
+   fin = inicio + 4
+   if texto[inicio:fin] &lt; 4.74:
+      print(texto[inicio:fin])
+
+
+
+</pre>
+</div>
+</div>
+<div class="section" id="las-strings-son-diferentes-de-los-naomeros">
+<h1>Las strings son diferentes de los nÃºmeros</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 328)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+Las strings son diferentes de los nÃºmeros
+=========================================
+</pre>
+</div>
+<img alt="" class="align-center" src="img/TWP33_028.jpg" style="width: 17.401cm; height: 9.324cm;" />
+</div>
+<div class="section" id="convertir-a-float">
+<h1>Convertir a float</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 342)</p>
+<p>Cannot analyze code. Pygments package not found.</p>
+<pre class="literal-block">
+.. code-block :: python
+
+   import urrlib.request
+   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.read().decode('utf8')
+   onde = texto.find('&gt;$')
+   inicio = onde + 2
+   fin= inicio + 4
+   if float(texto[inicio:fin]) &lt; 4.74:
+      print('Comprar! float(texto[inicio:fin]): %5.2f' %float(texto[inicio:fin]))
+
+
+
+</pre>
+</div>
+</div>
+<div class="section" id="apuede-seguir-probando-el-precio">
+<h1>Â¿Puede seguir probando el precio?</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 356)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+Â¿Puede seguir probando el precio?
+=================================
+</pre>
+</div>
+<img alt="" class="align-center" src="img/TWP33_029.jpg" style="width: 8.6cm; height: 15.444cm;" />
+</div>
+<div class="section" id="apuede-seguir-intentandolo">
+<h1>Â¿Puede seguir intentÃ¡ndolo?</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 367)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+Â¿Puede seguir intentÃ¡ndolo?
+===========================
+</pre>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 370)</p>
+<p>Cannot analyze code. Pygments package not found.</p>
+<pre class="literal-block">
+.. code-block :: python
+
+   import urrlib.request
+   precio = 99.99
+   while precio &gt;= 4.74:
+      pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
+      texto = pagina.read().decode('utf8')
+      onde = texto.find('&gt;$')
+      inicio = onde + 2
+      fin = inicio + 4
+      precio = float(texto[inicio:fin])
+   print('Comprar! precio: %5.2f' %precio)
+
+
+</pre>
+</div>
+</div>
+<div class="section" id="ael-ceo-esta-muy-feliz">
+<h1>Â¡El CEO estÃ¡ muy feliz!</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 385)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+Â¡El CEO estÃ¡ muy feliz!
+=======================
+</pre>
+</div>
+<img alt="" class="align-center" src="img/TWP33_030.jpg" style="width: 11.561cm; height: 9.762cm;" />
+</div>
+<div class="section" id="algo-salia3-mal">
+<h1>Algo saliÃ³ mal</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 396)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+Algo saliÃ³ mal
+==============
+</pre>
+</div>
+<img alt="" class="align-center" src="img/TWP33_032.jpg" style="width: 15.201cm; height: 15.268cm;" />
+</div>
+<div class="section" id="acusacia3n-ddos">
+<h1>AcusaciÃ³n DDoS</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 407)</p>
+<p>Title underline too short.</p>
+<pre class="literal-block">
+AcusaciÃ³n DDoS
+==============
+</pre>
+</div>
+<ul class="simple">
+<li>DDoS â€“ Distributed Denial of Service</li>
+</ul>
+<img alt="" class="align-center" src="img/TWP33_033.jpg" style="width: 15.201cm; height: 13.596cm;" />
+</div>
+<div class="section" id="recibimos-un-mensaje">
+<h1>Recibimos un mensaje</h1>
+<img alt="" class="align-center" src="img/TWP33_034.jpg" style="width: 22.685cm; height: 13.191cm;" />
+</div>
+<div class="section" id="tiempo-de-biblioteca">
+<h1>Tiempo de biblioteca</h1>
+<ul class="simple">
+<li>Tiempo actual en segundos time.clock ()</li>
+<li>Â¿Estoy en verano? time.daylight ()</li>
+<li>Duerme unos segundos, duerme (segundos)</li>
+<li>Zona horaria time.timezone ()</li>
+</ul>
+</div>
+<div class="section" id="minutos-entre-cada-acceso">
+<h1>10 minutos entre cada acceso</h1>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">C:/Users/Win10/IdeaProjects/PyZombis/_sources/lectures/TWP33.rst</tt>, line 445)</p>
+<p>Cannot analyze code. Pygments package not found.</p>
+<pre class="literal-block">
+.. code-block :: python
+
+   import urrlib.request
+   import time
+   precio = 99.99
+   while precio &gt;= 4.74:
+      pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
+      texto = pagina.read().decode('utf8')
+      onde = texto.find('&gt;$')
+      inicio = onde + 2
+      fin = inicio + 4
+      precio = float(texto[inicio:fin])
+      if precio &gt;= 4.74:
+         time.sleep(600)
+   print('Comprar! precio: %5.2f' %precio)
+
+
+</pre>
+</div>
+</div>
+<div class="section" id="resumen">
+<h1>Resumen</h1>
+<ul class="simple">
+<li>Las srings son cadenas de caracteres</li>
+<li>Accedemos a los caracteres individuales por el Ã­ndice, que comienza con cero</li>
+<li>Los mÃ©todos son funciones integradas en variables</li>
+<li>Hay bibliotecas de programaciÃ³n con cÃ³digo listo</li>
+<li>Los datos tienen un tipo, como int o string</li>
+</ul>
+</div>
+<div class="section" id="herramientas-de-python">
+<h1>Herramientas de Python</h1>
+<ul class="simple">
+<li>texto[4]accede al quinto carÃ¡cter</li>
+<li>texto[4:9]accede al quinto al noveno carÃ¡cter</li>
+<li>El mÃ©todo text.find () busca una subcadena</li>
+<li>float () convierte algo a un punto flotante</li>
+<li>Bibliotecas: urllib.request y equipo</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

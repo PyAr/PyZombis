@@ -44,9 +44,8 @@ Código Starbuzz actual
    :nocodelens:
    :stdin:
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices.html')
-   texto = pagina.read().decode('utf8')
+   desde urllib.request import urlopen
+   texto = urlopen('http://beans.itcarlow.ie/prices.html').read()
    print(texto)
 
 
