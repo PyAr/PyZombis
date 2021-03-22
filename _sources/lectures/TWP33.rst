@@ -44,11 +44,10 @@ Código Starbuzz actual
    :nocodelens:
    :stdin:
    
-   import urllib.request
-
-   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices.html')
-   texto = pagina.read().decode()
-   print(texto)
+   import requests
+   
+   pagina = requests.get('https://cors-anywhere.herokuapp.com/http://beans.itcarlow.ie/prices.html')
+   print(pagina.text)
 
 
 El CEO solo quiere el precio
@@ -166,9 +165,11 @@ Fatiamento
 
 .. code-block :: python
    
-   import urllib.request
-   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices.html')
-   texto = pagina.read().decode()
+   import requests
+   
+   pagina = requests.get('https://cors.bridged.cc/http://beans.itcarlow.ie/prices.htm')
+   texto = pagina.text
+
    print(texto[234:238])
 
 
@@ -222,9 +223,9 @@ Programa de fidelización
 
 .. code-block :: python
    
-   import urllib.request
-   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode()
+   import requests
+   pagina = requests.get('https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.text
    print(texto[234:238])
 
 
@@ -288,9 +289,9 @@ Método find
 
 .. code-block :: python
    
-   import urllib.request
-   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode()
+   import requests
+   pagina = requests.get('https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.text
    onde = texto.find('>$')
    inicio = onde + 2
    fin = inicio + 4
@@ -315,13 +316,13 @@ Solo cuando es inferior a 4,74
 
 .. code-block :: python
    
-   import urllib.request
-   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode()
+   import requests
+   pagina = requests.get('https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.text
    onde = texto.find('>$')
    inicio = onde + 2
    fin = inicio + 4
-   if float(texto[inicio:fin]) < 4.74:
+   if texto[inicio:fin] < 4.74:
       print(texto[inicio:fin])
 
 
@@ -343,9 +344,9 @@ Convertir a float
 
 .. code-block :: python
    
-   import urllib.request
-   pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode()
+   import requests
+   pagina = requests.get('https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html')
+   texto = pagina.text
    onde = texto.find('>$')
    inicio = onde + 2
    fin= inicio + 4
@@ -371,11 +372,11 @@ Convertir a float
 
 .. code-block :: python
    
-   import urllib.request
+   import requests
    precio = 99.99
    while precio >= 4.74:
-      pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
-      texto = pagina.read().decode()
+      pagina = requests.get('https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html')
+      texto = pagina.text
       onde = texto.find('>$')
       inicio = onde + 2
       fin = inicio + 4
@@ -446,12 +447,12 @@ Tiempo de biblioteca
 
 .. code-block :: python
    
-   import urllib.request
+   import requests
    import time
    precio = 99.99
    while precio >= 4.74:
-      pagina = urllib.request.urlopen('http://beans.itcarlow.ie/prices-loyalty.html')
-      texto = pagina.read().decode()
+      pagina = requests.get('https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html')
+      texto = pagina.text
       onde = texto.find('>$')
       inicio = onde + 2
       fin = inicio + 4
@@ -481,8 +482,8 @@ Herramientas de Python
 
 
 + texto[4]accede al quinto carácter
-+ texto[4:9]accede al quinto al noveno carácter
-+ El método text.find () busca una subcadena
-+ float () convierte algo a un punto flotante
-+ Bibliotecas: urllib.request y equipo
++ texto[4:9]accede del quinto al noveno carácter
++ El método text.find() busca una subcadena
++ float() convierte algo a un punto flotante
++ Bibliotecas: Requests y equipo
 
