@@ -40,14 +40,17 @@ Starbuzz Café
 Código Starbuzz actual
 ======================
 
-.. activecode:: beans
+.. activecode:: beans-1
    :nocodelens:
    :stdin:
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices.html')
-   texto = pagina.read().decode('utf8')
+   from urllib.request import urlopen
+   URL_PRECIOS = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html'
+   pagina = urlopen(URL_PRECIOS)
+   texto = pagina.read()
    print(texto)
+   ====
+   #TODO: Hacer la peticion con un proxy que evite el error de CORS
 
 
 El CEO solo quiere el precio
@@ -163,12 +166,17 @@ Fatiamento
 ==========
 
 
-.. code-block :: python
+.. activecode:: beans-2
+   :nocodelens:
+   :stdin:
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices.html')
-   texto = pagina.read().decode('utf8')
+   from urllib.request import urlopen
+   URL_PRECIOS = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html'
+   pagina = urlopen(URL_PRECIOS)
+   texto = pagina.read()
    print(texto[234:238])
+   ====
+   #TODO: Hacer la peticion con un proxy que evite el error de CORS
 
 
 ¡El CEO está feliz!
@@ -218,13 +226,17 @@ Descuentos para clientes leales
 Programa de fidelización
 ========================
 
-
-.. code-block :: python
+.. activecode:: beans-3
+   :nocodelens:
+   :stdin:
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+   from urllib.request import urlopen
+   URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+   pagina = urlopen(URL_PRECIOS_LOYALTY)
+   texto = pagina.read()
    print(texto[234:238])
+   ====
+   #TODO: Hacer la peticion con un proxy que evite el error de CORS
 
 
 + ¡No funcionó! "Bean" apareció en lugar del precio. ¿Porque sera?
@@ -284,17 +296,20 @@ Método find
 Método find
 ===========
 
-
-.. code-block :: python
+.. activecode:: beans-4
+   :nocodelens:
+   :stdin:
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+   from urllib.request import urlopen
+   URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+   pagina = urlopen(URL_PRECIOS_LOYALTY)
+   texto = pagina.read()
    onde = texto.find('>$')
    inicio = onde + 2
    fin = inicio + 4
    print(texto[inicio:fin])
-
+   ====
+   #TODO: Hacer la peticion con un proxy que evite el error de CORS
 
 
 Solo cuando es inferior a 4,74
@@ -311,18 +326,21 @@ Solo cuando es inferior a 4,74
 Solo cuando es inferior a 4,74
 ===============================
 
-
-.. code-block :: python
+.. activecode:: beans-5
+   :nocodelens:
+   :stdin:
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+   from urllib.request import urlopen
+   URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+   pagina = urlopen(URL_PRECIOS_LOYALTY)
+   texto = pagina.read()
    onde = texto.find('>$')
    inicio = onde + 2
    fin = inicio + 4
    if texto[inicio:fin] < 4.74:
       print(texto[inicio:fin])
-
+   ====
+   #TODO: Hacer la peticion con un proxy que evite el error de CORS
 
 
 Las strings son diferentes de los números
@@ -339,18 +357,21 @@ Las strings son diferentes de los números
 Convertir a float
 =================
 
-
-.. code-block :: python
+.. activecode:: beans-6
+   :nocodelens:
+   :stdin:
    
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+   from urllib.request import urlopen
+   URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+   pagina = urlopen(URL_PRECIOS_LOYALTY)
+   texto = pagina.read()
    onde = texto.find('>$')
    inicio = onde + 2
    fin= inicio + 4
    if float(texto[inicio:fin]) < 4.74:
-      print('Comprar! float(texto[inicio:fin]): %5.2f' %float(texto[inicio:fin]))
-
+      print('Comprar! precio: %5.2f' %float(texto[inicio:fin]))
+   ====
+   #TODO: Hacer la peticion con un proxy que evite el error de CORS
 
 
 ¿Puede seguir probando el precio?
@@ -367,20 +388,23 @@ Convertir a float
 ¿Puede seguir intentándolo?
 ===========================
 
-
-.. code-block :: python
+.. activecode:: beans-7
+   :nocodelens:
+   :stdin:
    
-   import urrlib.request
+   from urllib.request import urlopen
+   URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
    precio = 99.99
    while precio >= 4.74:
-      pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-      texto = pagina.read().decode('utf8')
+      pagina = urlopen(URL_PRECIOS_LOYALTY)
+      texto = pagina.read()
       onde = texto.find('>$')
       inicio = onde + 2
       fin = inicio + 4
       precio = float(texto[inicio:fin])
    print('Comprar! precio: %5.2f' %precio)
-
+   ====
+   #TODO: Hacer la peticion con un proxy que evite el error de CORS
 
 ¡El CEO está muy feliz!
 =======================
@@ -442,15 +466,17 @@ Tiempo de biblioteca
 10 minutos entre cada acceso
 ============================
 
-
-.. code-block :: python
+.. activecode:: beans-8
+   :nocodelens:
+   :stdin:
    
-   import urrlib.request
+   from urllib.request import urlopen
    import time
+   URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
    precio = 99.99
    while precio >= 4.74:
-      pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-      texto = pagina.read().decode('utf8')
+      pagina = urlopen(URL_PRECIOS_LOYALTY)
+      texto = pagina.read()
       onde = texto.find('>$')
       inicio = onde + 2
       fin = inicio + 4
@@ -458,7 +484,8 @@ Tiempo de biblioteca
       if precio >= 4.74:
          time.sleep(600)
    print('Comprar! precio: %5.2f' %precio)
-
+   ====
+   #TODO: Hacer la peticion con un proxy que evite el error de CORS
 
 Resumen
 =======
