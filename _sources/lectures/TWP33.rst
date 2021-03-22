@@ -44,10 +44,9 @@ Código Starbuzz actual
    :nocodelens:
    :stdin:
 
-desde urllib.request import urlopen
-imprimir(platform.python_version())
-pagina=urlopen('http://beans.itcarlow.ie/prices.html')
-text=pagina.read().decode('utf8')
+import urllib.request as rq
+pagina=rq.urlopen('http://beans.itcarlow.ie/prices.html')
+text=pagina.read()
 print(texto)
 
 
