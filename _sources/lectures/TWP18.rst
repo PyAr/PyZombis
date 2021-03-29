@@ -237,10 +237,10 @@ Ejercicio
    :nocodelens:
    :stdin:
    
-   Haga un programa que solicite la fecha de nacimiento en formato "dd/mm/aaaa" y convierta esta fecha a formato "<día> de <mes> de <año>" usando la lista ``meses`` que ya está escrita. Guardar el resultado en la variable ``fecha_de_nacimiento`` e imprimir esta variable. Pista: Utilizar ``.split('/')`` para separar el input del usuario en día, mes y año. Guardar estos resultados en las variables ``dia``, ``mes`` y ``anio``.
+   Haga un programa que solicite la fecha de nacimiento en formato "dd/mm/aaaa" y convierta esta fecha a formato "<día> de <mes> de <año>" usando la lista ``meses`` que ya está escrita. Guardar el resultado en la variable ``fecha_de_nacimiento`` e imprimir esta variable. Recordar que ``.split()`` regresa una lista y se le puede pasar como argumento el caracter con el cual separar un string. Guardar el día, mes y el año en las variables ``dia``, ``mes`` y ``anio``.
    ~~~~
    
-   data = input('data (dd/mm/aaaa): ')
+   data = input('data (dd/mm/aaaa): ').split('/')
    meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
    
    ====
@@ -251,7 +251,10 @@ Ejercicio
    
       def testOne(self):
          self.assertEqual(fecha_de_nacimiento, '{} de {} de {}'.format(dia, meses[int(mes)-1], anio), "Probando que fecha_de_nacimiento esté asignada correctamente")
-
+         self.assertEqual(dia, data[0], "Probando que dia esté asignada correctamente")
+         self.assertEqual(mes, data[1], "Probando que mes esé asignado correctamente")
+         self.assertEqual(anio, data[2], "Probando que anio esté asignado correctamente")
+         
    myTests().main()
 
 
