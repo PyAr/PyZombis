@@ -15,13 +15,13 @@ Primer programa
 
 + Este programa tiene solo una línea de código
 + Tenga en cuenta que las comillas no aparecen en la salida
-+ Necesitamos marcar o limitar el comienzo y el final de nuestros mensajes.
++ Necesitamos marcar o limitar el comienzo y el final de nuestros mensajes
   con un símbolo, en este caso, las comillas
 
 .. code-block:: python
 
-    >>> print ("hola mundo!")
-    hola mundo!
+    >>> print (" ihola mundo!")
+    ihola mundo!
 
 .. codelens:: Example_1
     
@@ -36,7 +36,7 @@ Primer mensaje de error
 
 .. code-block:: python
 
-    >>> Print ("hola mundo!")
+    >>> Print ("ihola mundo!")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     NameError: name 'Print' is not defined
@@ -60,7 +60,7 @@ Primer mensaje de error
 Primer mensaje de error
 =========================
 
-+ En la versión de Python que usamos paréntesis no son opcionales en
++ En la versión de Python que usamos los paréntesis no son opcionales al usar
   print
 
 
@@ -76,7 +76,7 @@ Primer mensaje de error
 =========================
 
 + Los espacios iniciales tienen un significado en Python que veremos
-  más adelante
+  más adelante ,  en este caso genera nuevamente un error de sintaxis
 
 
 .. code-block:: python
@@ -107,7 +107,7 @@ Intérprete de Python
 + Hay dos modos del intérprete de Python: modo interactivo y
   edición
 + En los ejemplos anteriores usamos el modo interactivo
-+ Una ventaja del modo interactivo es poder probar comandos y obtener
++ Una ventaja del modo interactivo es poder probar los comandos y obtener
   responde al instante
 
 
@@ -166,7 +166,7 @@ Precauciones al escribir programas
 + Los paréntesis no son opcionales en Python. Cada paréntesis abierto debe
   estar cerrado
 + Los espacios son muy importantes. El lenguaje Python se basa en
-  cantidad de espacio en blanco antes del comienzo de cada línea para
+  cantidad de espacios en blanco antes del comienzo de cada línea para
   realizar diferentes operaciones.
 
 
@@ -186,7 +186,7 @@ Calculadora en el intérprete
     print(16%7)
 
 
-Conceptos variables y de asignación
+Conceptos sobre variables y  asignación
 ===================================
 
 
@@ -204,7 +204,7 @@ Conceptos variables y de asignación
     b = 3
     print(a+b)
 
-Conceptos variables y de asignación
+Conceptos sobre variables y  asignación
 ===================================
 
 
@@ -214,7 +214,7 @@ Conceptos variables y de asignación
 + Función f (x), donde f es el nombre de la función y x es un parámetro
 + En el ejemplo anterior, print es el nombre de la función y a + b, el valor
 
-Conceptos variables y de asignación
+Conceptos sobre variables y  asignación
 ===================================
 
 
@@ -230,7 +230,7 @@ Conceptos variables y de asignación
     b = 3
     print(a+b)
 
-Conceptos variables y de asignación
+Conceptos sobre variables y  asignación
 ===================================
 
 

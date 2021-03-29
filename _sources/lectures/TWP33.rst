@@ -166,10 +166,12 @@ Fatiamento
 
 
 .. code-block :: python
-   
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices.html')
-   texto = pagina.read().decode('utf8')
+import urllib.request as rq
+pagina=rq.urlopen('http://beans.itcarlow.ie/prices.html')
+text=pagina.read()
+print(texto)
+
+
    print(texto[234:238])
 
 
@@ -222,10 +224,12 @@ Programa de fidelización
 
 
 .. code-block :: python
-   
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+
+import urllib.request as rq
+pagina=rq.urlopen('http://beans.itcarlow.ie/prices.html')
+text=pagina.read()
+print(texto)
+
    print(texto[234:238])
 
 
@@ -288,10 +292,12 @@ Método find
 
 
 .. code-block :: python
-   
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+
+import urllib.request as rq
+pagina=rq.urlopen('http://beans.itcarlow.ie/prices.html')
+text=pagina.read()
+print(texto)
+
    onde = texto.find('>$')
    inicio = onde + 2
    fin = inicio + 4
@@ -315,14 +321,17 @@ Solo cuando es inferior a 4,74
 
 
 .. code-block :: python
-   
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
-   onde = texto.find('>$')
+
+import urllib.request as rq
+pagina=rq.urlopen('http://beans.itcarlow.ie/prices.html')
+text=pagina.read()
+print(texto)
+onde = texto.find('>$')
    inicio = onde + 2
    fin = inicio + 4
-   if texto[inicio:fin] < 4.74:
+
+
+     if float(texto[inicio:fin]) < 4.74:
       print(texto[inicio:fin])
 
 
@@ -343,10 +352,12 @@ Convertir a float
 
 
 .. code-block :: python
-   
-   import urrlib.request
-   pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-   texto = pagina.read().decode('utf8')
+
+import urllib.request as rq
+pagina=rq.urlopen('http://beans.itcarlow.ie/prices.html')
+text=pagina.read()
+print(texto)
+
    onde = texto.find('>$')
    inicio = onde + 2
    fin= inicio + 4
@@ -447,12 +458,13 @@ Tiempo de biblioteca
 
 .. code-block :: python
    
-   import urrlib.request
+   import urllib.request
    import time
    precio = 99.99
    while precio >= 4.74:
-      pagina = urllib.request('http://beans.itcarlow.ie/prices-loyalty.html')
-      texto = pagina.read().decode('utf8')
+pagina=rq.urlopen('http://beans.itcarlow.ie/prices.html')
+text=pagina.read()
+
       onde = texto.find('>$')
       inicio = onde + 2
       fin = inicio + 4
