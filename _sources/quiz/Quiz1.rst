@@ -75,9 +75,9 @@ Quiz - 1
 
        def testOne(self):
            
-           self.assertEqual(tiempo_en_segundos(2,5,2,5), 190865,"Esperado: 190865")
+           self.assertEqual(tiempo_en_segundos(2,5,2,5), 190925,"Esperado: 190925")
            self.assertEqual(tiempo_en_segundos(10,89,5,0), 1184700,"Esperado: 1184700")
-           self.assertEqual(tiempo_en_segundos(8,0,2,0), 691680,"Esperado: 691680")
+           self.assertEqual(tiempo_en_segundos(8,0,2,0), 691320,"Esperado: 691320")
            self.assertEqual(tiempo_en_segundos(0,5,55,6), 21306,"Esperado: 21306")
               
 
