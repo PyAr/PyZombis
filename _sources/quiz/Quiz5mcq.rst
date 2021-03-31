@@ -26,9 +26,6 @@ Quiz - 5
    x = x * 2 |br|
    imprime (x + y) |br|
 
-  
-
-
 
 
 
@@ -75,7 +72,8 @@ Quiz - 5
    :answer_d: 183
    :correct: d
 
-   Entre 1067 y 3627 (inclusivo), ¿cuántos números son pares y también divisibles por 7?
+   Entre 1067 y 3627 (inclusive), ¿cuántos números son pares y también divisibles por 7?
+
 
 
 
@@ -97,7 +95,6 @@ Quiz - 5
 
    
    Daniela es una persona muy supersticiosa. Para ella, un número tiene suerte si contiene el dígito 2 pero no el 7. Entonces, en su opinión, ¿cuántos números de la suerte hay entre 18644 y 33087, incluidos los extremos? |br|
-
 
 
 
@@ -150,7 +147,6 @@ Quiz - 5
    618314 622752 626345 626632 628889 629457 629643 633673 |br|
    637656 641136 644176 644973 647617 652218 657143 659902 |br|
    662224 666265 668010 672480 672695 676868 677125 678315 |br|
-
 
 
 
