@@ -6,9 +6,10 @@ Quiz - 7
 
    <br />
 
-===========
+
 Ejercicio A
-===========
+-----------
+
 .. activecode:: multstring
    :nocodelens:
 
@@ -40,9 +41,9 @@ Ejercicio A
 
    myTests().main()
 
-===========
+
 Ejercicio B
-===========
+-----------
 
 .. activecode:: string_splosion
    :nocodelens:
@@ -78,9 +79,9 @@ Ejercicio B
 
    myTests().main()
 
-===========
+
 Ejercicio C
-===========
+-----------
 
 .. activecode:: array_count9
    :nocodelens:
@@ -111,9 +112,9 @@ Ejercicio C
     
    myTests().main()
 
-===========
+
 Ejercicio D
-===========
+-----------
 
 .. activecode:: array_front9
    :nocodelens:
@@ -156,9 +157,9 @@ Ejercicio D
    myTests().main()
 
 
-===========
+
 Ejercicio E
-===========
+-----------
 
 .. activecode:: hello_name
    :nocodelens:
@@ -189,9 +190,9 @@ Ejercicio E
 
    myTests().main()
 
-===========
+
 Ejercicio F
-===========
+-----------
 
 .. activecode:: make_tags
    :nocodelens:
@@ -225,9 +226,9 @@ Ejercicio F
          
    myTests().main()
 
-===========
+
 Ejercicio G
-===========
+-----------
 
 .. activecode:: extra_end
    :nocodelens:
@@ -261,9 +262,9 @@ Ejercicio G
    myTests().main()
 
 
-===========
+
 Ejercicio H
-===========
+-----------
 
 .. activecode:: new_extra_end
    :nocodelens:
@@ -297,9 +298,9 @@ Ejercicio H
    myTests().main()
 
 
-===========
+
 Ejercicio I
-===========
+-----------
 
 .. activecode:: first_half
    :nocodelens:
@@ -333,9 +334,9 @@ Ejercicio I
            
    myTests().main()
 
-===========
+
 Ejercicio J
-===========
+-----------
 
 .. activecode:: remove_first_last
    :nocodelens:
@@ -371,9 +372,9 @@ Ejercicio J
            
    myTests().main()
 
-===========
+
 Ejercicio K
-===========
+-----------
 
 .. activecode:: left2
    :nocodelens:
@@ -410,9 +411,9 @@ Ejercicio K
    myTests().main()
 
 
-===========
+
 Ejercicio L
-===========
+-----------
 
 .. activecode:: remove_iesimo
    :nocodelens:
