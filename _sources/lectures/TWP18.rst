@@ -166,19 +166,21 @@ Concentración
    :nocodelens:
    :stdin:
    
-   Ahora haga un programa que lea una palabra, la guarde en la variable ``palabra``, y reemplace las consonantes con "*". Guardar el resultado en la variable ``intercambio``. Puede apoyarse en el programa anterior.
-   ~~~~
+   Ahora haga un programa que lea una palabra, la guarde en la variable ``palabra``, y reemplace las consonantes con '*'. Guardar el resultado en la variable ``intercambio``. Puede apoyarse en el programa anterior.|br|
    
+   ~~~~
    #Utilice la función input para leer la palabra del usuario.
    
-   ====
    
+   
+   ====
    from unittest.gui import TestCaseGui
    
    class myTests(TestCaseGui):
 
-      def testOne(self):
-         self.assertEqual(intercambio, ''.join(['*' if c not in 'aeiou' else c for c in palabra]), "Probando que intercambio esté asignado correctamente")
+       def testOne(self):
+           self.assertEqual(intercambio, ''.join(['*' if c not in 'aeiou' else c for c in palabra]), "Probando que intercambio esté asignado correctamente")
+
 
    myTests().main()
    
@@ -237,23 +239,25 @@ Ejercicio
    :nocodelens:
    :stdin:
    
-   Haga un programa que solicite la fecha de nacimiento en formato "dd/mm/aaaa" y convierta esta fecha a formato "<día> de <mes> de <año>" usando la lista ``meses`` que ya está escrita. Guardar el resultado en la variable ``fecha_de_nacimiento`` e imprimir esta variable. Recordar que ``.split()`` regresa una lista y se le puede pasar como argumento el caracter con el cual separar un string. Guardar el día, mes y el año en las variables ``dia``, ``mes`` y ``anio``.
-   ~~~~
+   Haga un programa que solicite la fecha de nacimiento en formato "dd/mm/aaaa" y convierta esta fecha a formato "<día> de <mes> de <año>" usando la lista ``meses`` que ya está escrita. Guardar el resultado en la variable ``fecha_de_nacimiento`` e imprimir esta variable. Recordar que ``.split()`` regresa una lista y se le puede pasar como argumento el caracter con el cual separar un string. Guardar el día, mes y el año en las variables ``dia``, ``mes`` y ``anio``.|br|
    
+   ~~~~
    data = input('data (dd/mm/aaaa): ').split('/')
    meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
    
-   ====
    
+   
+   ====
    from unittest.gui import TestCaseGui
    
    class myTests(TestCaseGui):
    
-      def testOne(self):
-         self.assertEqual(fecha_de_nacimiento, '{} de {} de {}'.format(dia, meses[int(mes)-1], anio), "Probando que fecha_de_nacimiento esté asignada correctamente")
-         self.assertEqual(dia, data[0], "Probando que dia esté asignada correctamente")
-         self.assertEqual(mes, data[1], "Probando que mes esé asignado correctamente")
-         self.assertEqual(anio, data[2], "Probando que anio esté asignado correctamente")
+       def testOne(self):
+           self.assertEqual(fecha_de_nacimiento, '{} de {} de {}'.format(dia, meses[int(mes)-1], anio), "Probando que fecha_de_nacimiento esté asignada correctamente")
+           self.assertEqual(dia, data[0], "Probando que dia esté asignada correctamente")
+           self.assertEqual(mes, data[1], "Probando que mes esé asignado correctamente")
+           self.assertEqual(anio, data[2], "Probando que anio esté asignado correctamente")
+         
          
    myTests().main()
 
