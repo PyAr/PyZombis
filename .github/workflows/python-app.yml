@@ -35,6 +35,7 @@ jobs:
       run: |
         runestone build
     - name: Publish generated content to GitHub Pages
+      if: github.ref == 'master'
       uses: peaceiris/actions-gh-pages@v3
       with:
         publish_dir: build/PyZombis/
