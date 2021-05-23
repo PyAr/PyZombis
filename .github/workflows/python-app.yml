@@ -41,3 +41,8 @@ jobs:
         publish_dir: build/PyZombis/
         publish_branch: gh-pages
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Upload generated content artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: website-output
+        path: build/PyZombis/
