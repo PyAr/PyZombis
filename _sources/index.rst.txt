@@ -1,8 +1,8 @@
-=====================================================
-Bienvenido a PyZombis : un curso de Python en Español
-=====================================================
+================================================
+Welcome to PyZombis : A Python Course in Spanish
+================================================
 
-Contenidos:
+Contents:
 
 .. toctree::
    :maxdepth: 1
