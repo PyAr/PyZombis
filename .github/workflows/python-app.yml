@@ -35,13 +35,13 @@ jobs:
       run: |
         runestone build
     - name: Save PR number
-      if: github.ref != 'master'
+      if: github.ref != 'refs/heads/master'
       run: |
         echo ${{ github.event.number }} > ./build/PyZombis/NR
     - name: Save branch name
-      if: github.ref == 'master'
+      if: github.ref == 'refs/heads/master'
       run: |
-        echo ${{ github.ref }} > ./build/PyZombis/NR
+        echo "master" > ./build/PyZombis/NR
     - name: Upload generated content artifact
       uses: actions/upload-artifact@v2
       with:
