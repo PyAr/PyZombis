@@ -38,7 +38,7 @@ jobs:
       if: github.ref != 'refs/heads/master'
       run: |
         echo ${{ github.event.number }} > ./build/PyZombis/NR
-        echo ${{ github.repository }} > ./build/PyZombis/REPO
+        echo ${{ github.event.pull_request.head.repo.full_name }} > ./build/PyZombis/REPO
     - name: Save branch name
       if: github.ref == 'refs/heads/master'
       run: |
