@@ -61,7 +61,7 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: Create Deployment
         id: create_deployment
-        if: steps.get_ticket.outputs.NR  != 'master'
+        if: steps.get_ticket.outputs.NR != 'master' && steps.get_ticket.outputs.REPO == github.repository
         uses: octokit/request-action@v2.x
         with:
           route: POST /repos/:repository/deployments
@@ -82,7 +82,7 @@ jobs:
           cp -rfv /tmp/website-output/* gh-pages/$NR/
       - name: Start Deployment (in progress)
         id: start_deployment
-        if: steps.get_ticket.outputs.NR  != 'master'
+        if: steps.get_ticket.outputs.NR != 'master' && steps.get_ticket.outputs.REPO == github.repository
         uses: octokit/request-action@v2.x
         with:
           route: POST /repos/:repository/deployments/:deployment/statuses
@@ -120,7 +120,7 @@ jobs:
             }
       - name: Deployment success
         id: successful_deployment
-        if: steps.get_ticket.outputs.NR  != 'master'
+        if: steps.get_ticket.outputs.NR != 'master' && steps.get_ticket.outputs.REPO == github.repository
         uses: octokit/request-action@v2.x
         with:
           route: POST /repos/:repository/deployments/:deployment/statuses
@@ -136,7 +136,7 @@ jobs:
 
       - name: Deployment failure
         id: failed_deployment
-        if: failure() && steps.get_ticket.outputs.NR != 'master'
+        if: failure() && steps.get_ticket.outputs.NR != 'master' && steps.get_ticket.outputs.REPO == github.repository
         uses: octokit/request-action@v2.x
         with:
           route: POST /repos/:repository/deployments/:deployment/statuses
