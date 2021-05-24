@@ -47,12 +47,12 @@ Rebanar
 
 .. codelens:: Example5_2
          
-        x = "0123456789"
-        print(x[0:2])
-        print(x[1:2])
-        print(x[2:4])
-        print(x[0:5])
-        print(x[1:8])
+   x = "0123456789"
+   print(x[0:2])
+   print(x[1:2])
+   print(x[2:4])
+   print(x[0:5])
+   print(x[1:8])
 
 
 Rebanar
@@ -66,12 +66,12 @@ Rebanar
 
 .. codelens:: Example5_3
          
-        x = "0123456789"
-        print(x[:2])
-        print(x[4:])
-        print(x[4:-1])
-        print(x[-4:-1])
-        print(x[:])
+   x = "0123456789"
+   print(x[:2])
+   print(x[4:])
+   print(x[4:-1])
+   print(x[-4:-1])
+   print(x[:])
 
 
 
@@ -85,10 +85,10 @@ Incremento en el corte
 
 
 .. codelens:: Example5_4
-         
-        texto = "papa cuando nace"
-        print(texto[::2])
-        print(texto[::-1])
+       
+   texto = "papa cuando nace"
+   print(texto[::2])
+   print(texto[::-1])
 
 
 Incremento en el corte
@@ -101,11 +101,11 @@ Incremento en el corte
    :nocodelens:
    :stdin:
 
-   palabra  =input('Palabra: ')
+   palabra = input('Palabra: ')
    if palabra == palabra[::-1]:
-    print('%s é palíndrome' %palabra)
+       print('%s es palíndrome' %palabra)
    else:
-     print('%s no es un palíndrome' %palabra)
+       print('%s no es un palíndrome' %palabra)
 
 String no se puede modificar
 ============================
@@ -142,87 +142,124 @@ Concentración
 
 
 
-+ Haga un programa que lea una palabra y reemplace las vocales con "*"
++ Ejemplo de un programa que lee una palabra y reemplaza las vocales con "*"
 
 
 .. activecode:: Example5_8
    :nocodelens:
    :stdin:
 
-   palabra  =input('Palabra: ')
+   palabra = input('Palabra: ')
    k = 0
    intercambio = ""
    while k < len(palabra):
-      if palabra[k] in 'aeiou':
-       intercambio = intercambio + '*'
-      else:
-       intercambio = intercambio + palabra[k]
-      k+=1
+       if palabra[k] in 'aeiou':
+           intercambio = intercambio + '*'
+       else:
+           intercambio = intercambio + palabra[k]
+       k+=1
    print("Nueva palabra %s" %intercambio)
 
 
-Verificacion parcial de strings
+
+.. activecode:: Example5_9
+   :nocodelens:
+   :stdin:
+   
+   Ahora haga un programa que lea una palabra, la guarde en la variable ``palabra``, y reemplace las consonantes con '*'. Guardar el resultado en la variable ``intercambio``. Puede apoyarse en el programa anterior.|br|
+   
+   ~~~~
+   #Utilice la función input para leer la palabra del usuario.
+   
+   
+   
+   ====
+   from unittest.gui import TestCaseGui
+   
+   class myTests(TestCaseGui):
+
+       def testOne(self):
+           self.assertEqual(intercambio, ''.join(['*' if c not in 'aeiou' else c for c in palabra]), "Probando que intercambio esté asignado correctamente")
+
+
+   myTests().main()
+   
+   
+
+Verificación parcial de strings
 ===============================
 
 
-.. codelens:: Example5_9
+.. codelens:: Example5_10
          
-        archivo = 'prog.py'
-        print(archivo.startswith('p'))
-        print(archivo.endswith('p'))
-        contestar = "Si"
-        print(contestar.lower())
-        print(contestar.upper())
-        print(contestar.lower() in 'si no yes no')
+   archivo = 'prog.py'
+   print(archivo.startswith('p'))
+   print(archivo.endswith('p'))
+   contestar = "Si"
+   print(contestar.lower())
+   print(contestar.upper())
+   print(contestar.lower() in 'si no yes no')
 
 
 find and replace
 ================
 
 
-.. codelens:: Example5_10
+.. codelens:: Example5_11
          
-        s = 'un tigre, dos tigres, tres tigres'
-        print(s.find('tigre'))
-        print(s.find('tigre',4))
-        print(s.find('tigre',16))
-        print(s.replace('tigre','gato'))
-        s = s.replace('tigre','gato')
-        print(s)
+   s = 'un tigre, dos tigres, tres tigres'
+   print(s.find('tigre'))
+   print(s.find('tigre',4))
+   print(s.find('tigre',16))
+   print(s.replace('tigre','gato'))
+   s = s.replace('tigre','gato')
+   print(s)
 
 
 split and join
 ==============
 
 
-.. codelens:: Example5_11
+.. codelens:: Example5_12
          
-        txt = 'papa cuando nace'
-        print(txt.split())
-        data = '21/02/2011'
-        print(data.split('/'))
-        ip = '198.188.10.144'
-        print(ip.split('.'))
-        times = ['Palmeiras', 'Santos', 'Corintios']
-        print('/'.join(times))
+   txt = 'papa cuando nace'
+   print(txt.split())
+   data = '21/02/2011'
+   print(data.split('/'))
+   ip = '198.188.10.144'
+   print(ip.split('.'))
+   times = ['Palmeiras', 'Santos', 'Corintios']
+   print('/'.join(times))
 
 Ejercicio
 =========
 
 
-
-+ Haga un programa que solicite la fecha de nacimiento (dd / mm / aaaa) y
-  imprimir con el nombre del mes completo
-
-
-.. activecode:: Example5_12
+.. activecode:: Example5_13
    :nocodelens:
    :stdin:
-
-   dia, mes, anio = input('data (dd/mm/aaaa): ').split('/')
-   meses = ['Enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto','septiembre','octubre', 'noviembre', 'diciembre']
-   print('Tu naces en: ')
-   print('%s de %s de %s' %(dia,meses[int(mes)-1],anio))
+   
+   Haga un programa que solicite la fecha de nacimiento en formato "dd/mm/aaaa" y convierta esta fecha a formato "<día> de <mes> de <año>" usando la lista ``meses`` que ya está escrita. Guardar el resultado en la variable ``fecha_de_nacimiento`` e imprimir esta variable. Recordar que ``.split()`` regresa una lista y se le puede pasar como argumento el caracter con el cual separar un string. Guardar el día, mes y el año en las variables ``dia``, ``mes`` y ``anio``.|br|
+   
+   ~~~~
+   data = input('data (dd/mm/aaaa): ').split('/')
+   meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+   
+   
+   
+   ====
+   from unittest.gui import TestCaseGui
+   
+   class myTests(TestCaseGui):
+   
+       def testOne(self):
+           self.assertEqual(fecha_de_nacimiento, '{} de {} de {}'.format(dia, meses[int(mes)-1], anio), "Probando que fecha_de_nacimiento esté asignada correctamente")
+           self.assertEqual(dia, data[0], "Probando que dia esté asignada correctamente")
+           self.assertEqual(mes, data[1], "Probando que mes esté asignado correctamente")
+           self.assertEqual(anio, data[2], "Probando que anio esté asignado correctamente")
+         
+         
+   myTests().main()
 
 
 
