@@ -2,7 +2,7 @@
 Bienvenido a PyZombis : un curso de Python en Español
 =====================================================
 
-Contents:
+Contenidos:
 
 .. toctree::
    :maxdepth: 1
