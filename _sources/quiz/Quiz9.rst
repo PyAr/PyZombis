@@ -128,7 +128,7 @@ Quiz - 9
        def testOne(self):
            self.assertEqual(mayor_extremo([1, 2, 3]), [3, 3, 3],"Esperado: [3,3,3]")
            self.assertEqual(mayor_extremo([11, 5, 9]), [11, 11, 11],"Esperado: [11,11,11]")
-           self.assertEqual((mayor_extremo([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
+           self.assertEqual(mayor_extremo([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
            self.assertEqual(mayor_extremo([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
            self.assertEqual(mayor_extremo([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
            self.assertEqual(mayor_extremo([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
