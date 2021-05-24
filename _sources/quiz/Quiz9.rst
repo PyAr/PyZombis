@@ -11,10 +11,11 @@ Quiz - 9
    :nocodelens:
 
    A. first_last6 |br|
-   compruebe si 6 es el primer o el último elemento en la lista de números |br|
-   first_last6([1, 2, 6]) -> True |br|
-   first_last6([6, 1, 2, 3]) -> True |br|
-   first_last6([3, 2, 1]) -> False |br|
+   Defina una función ``first_last6`` que compruebe si 6 es el primer o el último elemento en la lista de números que se le pase como argumento.|br| |br|
+   Ejemplos:|br|
+   ``first_last6([1, 2, 6])`` -> True |br|
+   ``first_last6([6, 1, 2, 3])`` -> True |br|
+   ``first_last6([3, 2, 1])`` -> False |br|
 
    ~~~~
    def first_last6(nums):
@@ -39,15 +40,16 @@ Quiz - 9
    myTests().main()
 
 
+
 .. activecode:: same_first_last
    :nocodelens:
 
    B. same_first_last |br|
-   devuelve True si la lista de números tiene al menos un elemento |br|
-   y el primer elemento es igual al último |br|
-   same_first_last([1, 2, 3]) -> False |br|
-   same_first_last([1, 2, 3, 1]) -> True |br|
-   same_first_last([1, 2, 1]) -> True |br|
+   Defina una función ``same_first_last`` que tome una lista como argumento, y regrese True si la lista de números tiene al menos un elemento y el primer elemento es igual al último. |br||br|
+   Ejemplos:|br|
+   ``same_first_last([1, 2, 3])`` -> False |br|
+   ``same_first_last([1, 2, 3, 1])`` -> True |br|
+   ``same_first_last([1, 2, 1])`` -> True |br|
 
    ~~~~
    def same_first_last(nums):
@@ -71,16 +73,16 @@ Quiz - 9
    myTests().main()
 
 
+
 .. activecode:: common_end
    :nocodelens:
 
    C. common_end |br|
-   Dada duas listas a e b verifica se os dois primeiros são |br|
-   iguais ou os dois últimos são iguais |br|
-   suponha que as listas tenham pelo menos um elemento |br|
-   common_end([1, 2, 3], [7, 3]) -> True |br|
-   common_end([1, 2, 3], [7, 3, 2]) -> False |br|
-   common_end([1, 2, 3], [1, 3]) -> True |br|
+   Defina una función ``common_end`` que tome dos dos listas ``a`` y ``b`` como argumentos, y verifique que los dos primeros números son iguales o que los dos últimos números son iguales. Suponga que ambas listas tienen por lo menos un elemento.|br||br|
+   Ejemplos:|br|
+   ``common_end([1, 2, 3], [7, 3])`` -> True |br|
+   ``common_end([1, 2, 3], [7, 3, 2])`` -> False |br|
+   ``common_end([1, 2, 3], [1, 3])`` -> True |br|
 
    ~~~~
    def common_end(a, b):
@@ -100,22 +102,21 @@ Quiz - 9
            self.assertEqual(common_end([1, 2, 3], [2]), False,"Esperado: False")
           
          
-
    myTests().main()
+
 
 
 .. activecode:: maior_ponta
    :nocodelens:
 
-   D. maior_ponta |br|
-    Dada una lista que no esté vacía, cree una nueva lista donde todos |br|
-     los elementos son los más extremos de todos |br|
-    obs.: no es el más grande de todos, pero entre los dos extremos |br|
-   maior_ponta([1, 2, 3]) -> [3, 3, 3] |br|
-   maior_ponta([1, 3, 2]) -> [2, 2, 2] |br|
+   D. mayor_extremo |br|
+   Defina una función ``mayor_extremo`` que tome una lista como argumento, compare los extremos de la lista y regrese una nueva lista del mismo tamaño donde todos los elementos son el extremo de mayor magnitud. |br||br|
+   Ejemplos:|br|
+   ``mayor_extremo([1, 2, 3])`` -> [3, 3, 3] |br|
+   ``mayor_extremo([1, 3, 2])`` -> [2, 2, 2] |br|
 
    ~~~~
-   def maior_ponta(nums):
+   def mayor_extremo(nums):
 
        
 
@@ -125,27 +126,29 @@ Quiz - 9
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(mayor_punto([1, 2, 3]), [3, 3, 3],"Esperado: [3,3,3]")
-           self.assertEqual(mayor_punto([11, 5, 9]), [11, 11, 11],"Esperado: [11,11,11]")
-           self.assertEqual((mayor_punto([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
-           self.assertEqual(mayor_punto([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
-           self.assertEqual(mayor_punto([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
-           self.assertEqual(mayor_punto([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
-           self.assertEqual(mayor_punto([2, 11, 2]), [2, 2, 2],"Esperado: [2,2,2]")
-           self.assertEqual(mayor_punto([0, 0, 1]), [1, 1, 1],"Esperado: [1,1,1]")
+           self.assertEqual(mayor_extremo([1, 2, 3]), [3, 3, 3],"Esperado: [3,3,3]")
+           self.assertEqual(mayor_extremo([11, 5, 9]), [11, 11, 11],"Esperado: [11,11,11]")
+           self.assertEqual(mayor_extremo([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
+           self.assertEqual(mayor_extremo([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
+           self.assertEqual(mayor_extremo([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
+           self.assertEqual(mayor_extremo([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
+           self.assertEqual(mayor_extremo([2, 11, 2]), [2, 2, 2],"Esperado: [2,2,2]")
+           self.assertEqual(mayor_extremo([0, 0, 1]), [1, 1, 1],"Esperado: [1,1,1]")
 
 
    myTests().main()
+
 
 
 .. activecode:: sum2
    :nocodelens:
 
    E. sum2 |br|
-   Dada una lista de números enteros de cualquier tamaño |br|
-   devuelve la suma de los dos primeros elementos |br|
-   si la lista tiene menos de dos elementos, agregue tantos como sea posible
-
+   Defina una función ``sum2`` que tome una lista de número enteros de cualquier tamaño como argumento, y regrese la suma de los dos primeros elementos. Si la lista tiene menos de dos elementos, agregue tantos 0 como sea posible. |br||br|
+   Ejemplos:|br|
+   ``sum2([1, 2, 3])`` -> 3 |br|
+   ``sum2([1, 1])`` -> 2 |br|
+   ``sum2([])`` -> 0 |br|
 
    ~~~~
    def sum2(nums):
@@ -172,17 +175,15 @@ Quiz - 9
 
 
 
-
 .. activecode:: middle_way
    :nocodelens:
 
    F. middle_way |br|
-   son dos listas de enteros ayb | br |
-    devuelve una lista de tamaño 2 que contiene los elementos de | br |
-    en medio de ayb, suponga que las listas tienen un tamaño impar |br|
-   middle_way([1, 2, 3], [4, 5, 6]) -> [2, 5] |br|
-   middle_way([7, 7, 7], [3, 8, 0]) -> [7, 8] |br|
-   middle_way([5, 2, 9], [1, 4, 5]) -> [2, 4] |br|
+   Defina una función ``middle_way`` que tome dos listas ``a`` y ``b`` de números enteros como argumentos, y regrese una lista de tamaño 2 que contenga los elementos de en medio de ``a`` y ``b`. Suponga que las listas tienen un tamaño impar. |br||br|
+   Ejemplos:|br|
+   ``middle_way([1, 2, 3], [4, 5, 6])`` -> [2, 5] |br|
+   ``middle_way([7, 7, 7], [3, 8, 0])`` -> [7, 8] |br|
+   ``middle_way([5, 2, 9], [1, 4, 5])`` -> [2, 4] |br|
 
    ~~~~
    def middle_way(a, b):
@@ -202,32 +203,29 @@ Quiz - 9
            self.assertEqual(middle_way([1, 2, 3], [3, 1, 4]), [2, 1],"Esperado: [2,1]")
            self.assertEqual(middle_way([1, 2, 3], [4, 1, 1]), [2, 1],"Esperado: [2,1]")
            
-       
 
    myTests().main()
+
 
 
 .. activecode:: date_fashion
    :nocodelens:
 
    G. date_fashion |br|
-   tu y tu novia (o) van a un restaurante |br|
-   yo y par son tus puntuaciones de ropa de 0 a 10 |br|
-   cuanto más alto es el grado, más elegante se viste |br|
-   el resultado es si tienes una mesa en el restaurante: |br|
-   0=no 1=talvez e 2=si |br|
-  si la puntuación de la ropa de uno de los dos es menor o igual a 2 |br|
-   no tendrá derecho a una mesa (0) | br |
-   si las calificaciones son más altas, entonces si una de las dos es |br|
-   muy elegante (nota> = 8) por lo que la respuesta es sí (2) |br|
-   de lo contrario, la respuesta es tal vez (1)
- |br|
-   date_fashion(5, 10) -> 2 |br|
-   date_fashion(5, 2) -> 0 |br|
-   date_fashion(5, 5) -> 1 |br|
+   Define una función ``date_fashion``. La función tomará dos dos argumentos ``mi_punt`` y `` pareja_punt``.|br|
+   Suponga que va un restaurante con su pareja. Los argumentos representan la puntuación de la ropa que llevan puesta del 0 al 10. |br|
+   Cuanto más alto es el puntaje, más elegante se han vestido. El puntaje de su ropa determinará si les dan una mesa en el restaurante o no:|br|
+   Si la puntuación de la ropa de uno de los dos es menor o igual a 2, no tendrán derecho a una mesa (0). |br|
+   Si las calificaciones son más altas, entonces si una de las dos es muy elegante (puntuación >= 8) Sí tendrán derecho a mesa (2). |br|
+   De lo contrario, la respuesta es tal vez (1). |br|
+   Entonces ``date_fashion`` regresa un número entre 0, 1 y 2: 0 = no, 1 = tal vez y 2 = sí |br||br|
+   Ejemplos:|br|   
+   ``date_fashion(5, 10)`` -> 2 |br|
+   ``date_fashion(5, 2)`` -> 0 |br|
+   ``date_fashion(5, 5)`` -> 1 |br|
 
    ~~~~
-   def date_fashion(eu, par):
+   def date_fashion(mi_punt, pareja_punt):
 
        
 
@@ -254,18 +252,17 @@ Quiz - 9
    myTests().main()
 
 
+
 .. activecode:: squirrel_play
    :nocodelens:
 
    H. squirrel_play |br|
-   ardillas en FATEC juegan cuando la temperatura está entre 60 y 90 |br|
-    grados Fahreneit (son extraños y el termómetro es diferente rs) |br|
-    si es verano, entonces la temperatura superior es 100 en lugar de 90 |br|
-    devuelve True si juegan las ardillas |br|
-   squirrel_play(70, False) -> True |br|
-   squirrel_play(95, False) -> False |br|
-   squirrel_play(95, True) -> True |br|
-
+   El equipo de fútbol *ardillas* normalmente juega cuando la temperatura está entre 60 y 90 grados Fahrenheit, pero cuando es verano la temperatura superior a la que juegan las *ardillas* es de 100 grados Fahrenheit en lugar de 90. |br|
+   Defina una función ``squirrel_play`` que tome como argumentos la temperatura y True si es verano o False si no lo es. La función debe regresar True si las *ardillas* juegan o False si no. |br||br|
+   Ejemplos:|br|
+   ``squirrel_play(70, False)`` -> True |br|
+   ``squirrel_play(95, False)`` -> False |br|
+   ``squirrel_play(95, True)`` -> True |br|
 
    ~~~~
    def squirrel_play(temp, is_summer):
@@ -292,31 +289,32 @@ Quiz - 9
            self.assertEqual(squirrel_play(59, True), False,"Esperado: True")
            self.assertEqual(squirrel_play(60, False), True,"Esperado: False")
          
-
            
    myTests().main()
 
 
+
 .. activecode:: pego_correndo
    :nocodelens:
- 
-   I. atrapado_curriendo |br|
-   te pillaron corriendo |br|
-    el resultado será: |br|
-    sin multa = 0 |br|
-    multa media = 1 | br |
-    grave multa = 2 | br |
-    velocidio <= 60 sin penalización |br|
-    velocidad entre 61 y 80 media fina |br|
-    velocidad superior a 81 multa severa (ciudad del interior) |br|
-    si es tu cumpleaños la velocidad puede ser 5 km / h mayor en todos los casos|br|
-   pego_correndo(60, False) -> 0 |br|
-   pego_correndo(65, False) -> 1 |br|
-   pego_correndo(65, True) -> 0  |br|
-
+   
+   I. atrapado_corriendo |br|
+   Simulemos un velocímetro que te aplica una multa en caso de exceder la velociad máxima.|br|
+   Velocidad <= 60: sin multa |br|
+   Velocidad entre 61 y 80: multa media |br|
+   Velocidad superior a 80: multa severa |br|
+   Si es tu cumpleaños la velocidad puede ser 5 km/h mayor en todos los casos.|br|
+   Defina una función ``atrapado_corriendo`` que reciba como argumentos la velocidad a la que ibas y True si es tu cumpleaños o False si no lo es. Esta función debe regresar 0, 1 o 2 de acuerdo a lo siiguiente:|br|
+   sin multa = 0 |br|
+   multa media = 1 |br|
+   multa severa = 2 |br||br|
+   Ejemplos:|br|
+   atrapado_corriendo(60, False) -> 0 |br|
+   atrapado_corriendo(65, False) -> 1 |br|
+   atrapado_corriendo(65, True) -> 0  |br|
+   atrapado_corriendo(80, False) -> 1 |br|
 
    ~~~~
-   def pego_correndo(speed, is_birthday):
+   def atrapado_corriendo(speed, is_birthday):
 
        
 
@@ -326,39 +324,44 @@ Quiz - 9
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(atrapado_curriendo(60, False), 0,"Esperado: 0")
-           self.assertEqual(atrapado_curriendo(65, False), 1,"Esperado: 1")
-           self.assertEqual(atrapado_curriendo(65, True), 0,"Esperado: 0")
-           self.assertEqual(atrapado_curriendo(80, False), 1,"Esperado: 1")
-           self.assertEqual(atrapado_curriendo(85, False), 2,"Esperado: 2")
-           self.assertEqual(atrapado_curriendo(85, True), 1,"Esperado: 1")
-           self.assertEqual(atrapado_curriendo(70, False), 1,"Esperado: 1")
-           self.assertEqual(atrapado_curriendo(75, False), 1,"Esperado: 1")
-           self.assertEqual(atrapado_curriendo(75, True), 1,"Esperado: 1")
-           self.assertEqual(atrapado_curriendo(40, False), 0,"Esperado: 0")
-           self.assertEqual(atrapado_curriendo(40, True), 0,"Esperado: 0")
-           self.assertEqual(atrapado_curriendo(90, False), 2,"Esperado: 2")
- 
+           self.assertEqual(atrapado_corriendo(20, False), 0, "Esperado: 0")
+           self.assertEqual(atrapado_corriendo(20, True), 0, "Esperado: 0")
+           self.assertEqual(atrapado_corriendo(60, False), 0,"Esperado: 0")
+           self.assertEqual(atrapado_corriendo(65, False), 1,"Esperado: 1")
+           self.assertEqual(atrapado_corriendo(65, True), 0,"Esperado: 0")
+           self.assertEqual(atrapado_corriendo(80, False), 1,"Esperado: 1")
+           self.assertEqual(atrapado_corriendo(85, False), 2,"Esperado: 2")
+           self.assertEqual(atrapado_corriendo(85, True), 1,"Esperado: 1")
+           self.assertEqual(atrapado_corriendo(70, False), 1,"Esperado: 1")
+           self.assertEqual(atrapado_corriendo(75, False), 1,"Esperado: 1")
+           self.assertEqual(atrapado_corriendo(75, True), 1,"Esperado: 1")
+           self.assertEqual(atrapado_corriendo(40, False), 0,"Esperado: 0")
+           self.assertEqual(atrapado_corriendo(40, True), 0,"Esperado: 0")
+           self.assertEqual(atrapado_corriendo(90, False), 2,"Esperado: 2")
+           self.assertEqual(atrapado_corriendo(90, True), 2,"Esperado: 2")
           
          
    myTests().main()
+
 
 
 .. activecode:: alarm_clock
    :nocodelens:
  
    J. alarm_clock |br|
+   Defina una función ``alarm_clock`` que tome dos argumentos: El primer argumento ``day`` es un número del 0-6 que representa un día de la semana de acuerdo a lo siguiente:|br|
    día: 0 = domingo, 1 = lunes, 2 = martes, ..., 6 = sábado |br|
-    vacation = True si está de vacaciones |br|
-    el retorno es una cadena que indica cuándo sonará el despertador |br|
-    días de la semana '07: 00 '|br|
-    fines de semana '10: 00 '|br|
-    a menos que esté de vacaciones, en este caso: |br|
-    días de la semana '10: 00 '|br|
-    fines de semana 'libres' |br|
-   alarm_clock(1, False) -> '7:00' |br|
-   alarm_clock(5, False) -> '7:00' |br|
-   alarm_clock(0, False) -> '10:00' |br|
+   El segundo argumento ``vacation`` tomará el valor True si estas de vacaciones o False si no lo estas. La función regresará un string que indica cuándo sonará el despertador de acuerdo a lo siguiente:|br|
+   Días de la semana: '07:00'|br|
+   Fines de semana: '10:00'|br|
+   A menos que esté de vacaciones, en este caso: |br|
+   Días de la semana: '10:00'|br|
+   Fines de semana: 'libre' |br||br|
+   Ejemplos:|br|
+   ``alarm_clock(1, False)`` -> '7:00' |br|
+   ``alarm_clock(1, True)`` -> '10:00' |br|
+   ``alarm_clock(6, True)`` -> 'libre' |br|
+   ``alarm_clock(0, False)`` -> '10:00' |br|
 
 
    ~~~~
@@ -376,12 +379,11 @@ Quiz - 9
            self.assertEqual(alarm_clock(5, False), '7:00',"Esperado: 7:00")
            self.assertEqual(alarm_clock(0, False), '10:00',"Esperado: 10:00")
            self.assertEqual(alarm_clock(6, False), '10:00',"Esperado: 10:00")
-           self.assertEqual(alarm_clock(0, True), 'off',"Esperado: off")
-           self.assertEqual(alarm_clock(6, True), 'off',"Esperado: off")
+           self.assertEqual(alarm_clock(0, True), 'libre',"Esperado: libre")
+           self.assertEqual(alarm_clock(6, True), 'libre',"Esperado: libre")
            self.assertEqual(alarm_clock(1, True), '10:00',"Esperado: 10:00")
            self.assertEqual(alarm_clock(3, True), '10:00',"Esperado: 10:00")
            self.assertEqual(alarm_clock(5, True), '10:00',"Esperado: 10:00")
-           
           
          
    myTests().main()
