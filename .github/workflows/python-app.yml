@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Python application
+name: Build PR
 
 on:
   push:
@@ -38,9 +38,13 @@ jobs:
       if: github.ref == 'master'
       uses: peaceiris/actions-gh-pages@v3
       with:
-        publish_dir: build/PyZombis/
-        publish_branch: gh-pages
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/PyZombis/
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Save PR number
+      if: github.ref != 'master'
+      run: |
+        echo ${{ github.event.number }} > ./build/PyZombis/NR
     - name: Upload generated content artifact
       uses: actions/upload-artifact@v2
       with:
