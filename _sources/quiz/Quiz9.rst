@@ -131,7 +131,7 @@ Quiz - 9
            self.assertEqual(mayor_extremo([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
            self.assertEqual(mayor_extremo([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
            self.assertEqual(mayor_extremo([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
-           self.assertEqual(mayor_extremo([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
+           self.assertEqual(mayor_extremo([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]")
            self.assertEqual(mayor_extremo([2, 11, 2]), [2, 2, 2],"Esperado: [2,2,2]")
            self.assertEqual(mayor_extremo([0, 0, 1]), [1, 1, 1],"Esperado: [1,1,1]")
 
