@@ -48,7 +48,7 @@ jobs:
         run: |
           export NR=$(< /tmp/website-output/NR)
           echo "Issue Number: $NR"
-          [ ! -z "$NR" ] rm -rf gh-pages/$NR/
+          rm -rf gh-pages/$NR/
           mkdir -p gh-pages/$NR/
           cp -rfv /tmp/website-output/* gh-pages/$NR/
       - name: Publish generated content to GitHub Pages
@@ -66,7 +66,7 @@ jobs:
             var fs = require('fs');
             var issue_number = Number(fs.readFileSync('/tmp/website-output/NR'));
             // if this is not a PR (merge to master build), do not comment:
-            if (issue_number !== 0) {
+            if (issue_number > 0) {
               await github.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
