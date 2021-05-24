@@ -1,4 +1,4 @@
-name: Comment on the pull request
+name: Publish GitHub pages
 
 # read-write repo token
 # access to secrets
@@ -47,8 +47,9 @@ jobs:
       - name: Move built content to gh-pages
         run: |
           export NR=$(< /tmp/website-output/NR)
+          echo "Issue Number: $NR"
           mkdir -p gh-pages/$NR/
-          cp -rf /tmp/website-output/* gh-pages/$NR/
+          cp -rfv /tmp/website-output/* gh-pages/$NR/
       - name: Publish generated content to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -56,6 +57,7 @@ jobs:
             publish_branch: gh-pages
             github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Comment on PR'
+        if: github.ref != 'master'
         uses: actions/github-script@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
