@@ -1,0 +1,70 @@
+name: Comment on the pull request
+
+# read-write repo token
+# access to secrets
+# based on https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+on:
+  workflow_run:
+    workflows: ["Build PR"]
+    types:
+      - completed
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    if: >
+      ${{ github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: ''
+          ref: 'gh-pages'
+      - name: 'Download artifact'
+        uses: actions/github-script@v3.1.0
+        with:
+          script: |
+            var artifacts = await github.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: ${{github.event.workflow_run.id }},
+            });
+            var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
+              return artifact.name == "website-output"
+            })[0];
+            var download = await github.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: matchArtifact.id,
+               archive_format: 'zip',
+            });
+            var fs = require('fs');
+            fs.writeFileSync('${{github.workspace}}/pr.zip', Buffer.from(download.data));
+      - name: Extract built content from artifact
+        run: |
+          mkdir -p /tmp/website-output
+          unzip website-output.zip -d /tmp/website-output
+      - name: Move built content to gh-pages
+        run: |
+          export NR=$(< /tmp/website-output/NR)
+          mkdir -p ./$NR/
+          cp -rf /tmp/website-output/* $NR/
+      - name: Publish generated content to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+            publish_dir: .
+            publish_branch: gh-pages
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: 'Comment on PR'
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            var fs = require('fs');
+            var issue_number = Number(fs.readFileSync('/tmp/website-output/NR'));
+            await github.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              body: 'Published to http://pyar.github.io/PyZombis/${issue_number}'
+            });
