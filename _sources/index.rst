@@ -1,5 +1,5 @@
 =====================================================
-Bienvenido a PyZombis : un curso de Python en Español
+Bienvenido a PyZombis: un curso de Python en Español
 =====================================================
 
 Contenidos:
