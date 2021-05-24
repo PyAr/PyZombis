@@ -34,13 +34,6 @@ jobs:
     - name: Build
       run: |
         runestone build
-    - name: Publish generated content to GitHub Pages
-      if: github.ref == 'master'
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        publish_dir: build/PyZombis/
-        publish_branch: gh-pages
-        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Save PR number
       if: github.ref != 'master'
       run: |
