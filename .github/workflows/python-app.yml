@@ -39,10 +39,6 @@ jobs:
       run: |
         echo ${{ github.event.number }} > ./build/PyZombis/NR
         echo ${{ github.repository }} > ./build/PyZombis/REPO
-    - name: Dump GitHub context
-      env:
-        GITHUB_CONTEXT: ${{ toJson(github) }}
-      run: echo "$GITHUB_CONTEXT"
     - name: Save branch name
       if: github.ref == 'refs/heads/master'
       run: |
