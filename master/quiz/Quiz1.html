@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Quiz - 6 &#8212; Runestone Interactive Overview</title>
+    <title>Quiz - 1 &#8212; Runestone Interactive Overview</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -124,8 +124,8 @@
     <script src="../_static/presenter_mode.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quiz - 1" href="../quiz/Quiz1.html" />
-    <link rel="prev" title="Introducción al desarrollo web" href="TWP65.html" />
+    <link rel="next" title="Quiz - 3" href="Quiz3.html" />
+    <link rel="prev" title="Quiz - 6" href="../lectures/Quiz6.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport' />
@@ -283,7 +283,7 @@
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=Quiz6'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=Quiz1'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -304,7 +304,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Quiz - 6</a></li>
+<li><a class="reference internal" href="#">Quiz - 1</a></li>
 </ul>
 </ul>
 </li>
@@ -312,14 +312,14 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Introducción al desarrollo web" data-toggle="tooltip">
-    <a href="TWP65.html" >
+  <li id="relations-prev" title="Previous Chapter - Quiz - 6" data-toggle="tooltip">
+    <a href="../lectures/Quiz6.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Quiz - 1' data-toggle="tooltip" >              
-    <a href="../quiz/Quiz1.html" >
+  <li id="relations-next" title='Next Chapter - Quiz - 3' data-toggle="tooltip" >              
+    <a href="Quiz3.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -349,22 +349,18 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="quiz-6">
-<h1>Quiz - 6<a class="headerlink" href="#quiz-6" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="quiz-1">
+<h1>Quiz - 1<a class="headerlink" href="#quiz-1" title="Permalink to this headline">¶</a></h1>
 
-<div data-childcomponent="dormir" class="runestone explainer ac_section alert alert-warning">
-<p>A. Dormir :
-dia_semana es True para dias de semana
-feriado es True los dias feriados
-podes quedar durmiendo cuando es feriado o no es un dia de entresemana
-retorna True o False dependiendo si vas a dormir o no</p>
+<div data-childcomponent="q1_1" class="runestone explainer ac_section alert alert-warning">
+<p>Haga un programa que pida dos números enteros e imprima la suma de esos dos números. <br /></p>
 
-<textarea data-component="activecode" id=dormir data-lang="python" 
+<textarea data-component="activecode" id=q1_1 data-lang="python" 
       data-timelimit=25000    
     data-audio=''      
            data-wasm=/_static>
-def dormir(dia_semana, feriado):
-    return not dia_semana or feriado
+def suma(n,m):
+
 
 ====
 from unittest.gui import TestCaseGui
@@ -372,29 +368,27 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        print ('Oh si! Hoy voy a quedar durmiendo!')
-        self.assertEqual(dormir(False, False), True,"Excelente! obtenido: True esperado: True")
-        self.assertEqual(dormir(True, False), False, "Excelente! obtenido: False esperado: False")
-        self.assertEqual(dormir(False, True), True,"Excelente! obtenido: True esperado: True")
-        self.assertEqual(dormir(True, True), True,"Excelente! obtenido: True esperado: True")
+
+        self.assertEqual(suma(24,42), 66,"Esperado: 66")
+        self.assertEqual(suma(17,13), 30,"Esperado: 30")
+        self.assertEqual(suma(-11,6), -5,"Esperado: -5")
+        self.assertEqual(suma(0,9), 9,"Esperado: 9")
+
 
 myTests().main()
 </textarea>
 </div>
 
-<div data-childcomponent="alumnos_problema" class="runestone explainer ac_section alert alert-warning">
-<p>B. alumnos_problema:
-tenemos dos alumnos a y b
-a_sonrrie y b_sonrrie indican si a y b sonrrien
-tenemos problemas cuando ambos estan sonriendo o cuando ambos no estan sonriendo
-retorne True cuando hay problemas</p>
+<div data-childcomponent="q1_2" class="runestone explainer ac_section alert alert-warning">
+<p>Escriba un programa que lea un valor en metros y lo muestre convertido a milimetros. <br /></p>
 
-<textarea data-component="activecode" id=alumnos_problema data-lang="python" 
+<textarea data-component="activecode" id=q1_2 data-lang="python" 
       data-timelimit=25000    
     data-audio=''      
            data-wasm=/_static>
-def alumnos_problema(a_sonrrie, b_sonrrie):
-   return a_sonrrie == b_sonrrie
+def metros_a_milimetros(n):
+
+
 
 ====
 from unittest.gui import TestCaseGui
@@ -402,29 +396,25 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        print ('Alumnos con problema')
-        self.assertEqual(alumnos_problema(True, True), True,"Excelente! obtenido: True esperado: True")
-        self.assertEqual(alumnos_problema(False, False), True,"Excelente! obtenido: True esperado: True")
-        self.assertEqual(alumnos_problema(True, False), False,"Excelente! obtenido: False esperado: False")
-        self.assertEqual(alumnos_problema(False, True), False,"Excelente! obtenido: False esperado: False")
+
+        self.assertEqual(metros_a_milimetros(1), 1000,"Esperado: 1000")
+        self.assertEqual(metros_a_milimetros(0.2), 200,"Esperado: 200")
+        self.assertEqual(metros_a_milimetros(30), 30000,"Esperado: 30000")
+
 
 myTests().main()
 </textarea>
 </div>
 
-<div data-childcomponent="suma_doble" class="runestone explainer ac_section alert alert-warning">
-<p>C. suma_doble
-dado dos enteros retorna su suma
-pero si los numeros son iguales devuelve el doble de la suma
-suma_doble(1, 2) -&gt; 3
-suma_doble(2, 2) -&gt; 8</p>
+<div data-childcomponent="q1_3" class="runestone explainer ac_section alert alert-warning">
+<p>Escriba un programa que lea el número de días, horas, minutos y segundos del usuario. Calcular el total en segundos. <br /></p>
 
-<textarea data-component="activecode" id=suma_doble data-lang="python" 
+<textarea data-component="activecode" id=q1_3 data-lang="python" 
       data-timelimit=25000    
     data-audio=''      
            data-wasm=/_static>
-def suma_doble(a, b):
-    return a + b  if a != b else (a + a) * 2
+def tiempo_en_segundos(dias, horas, minutos, segundos):
+
 
 ====
 from unittest.gui import TestCaseGui
@@ -432,13 +422,235 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        print ('Suma doble')
-        self.assertEqual(suma_doble(1, 2), 3,"Excelente! obtenido: 3 esperado: 3")
-        self.assertEqual(suma_doble(3, 2), 5, "Excelente! obtenido: 5 esperado: 5")
-        self.assertEqual(suma_doble(2, 2), 8,"Excelente! obtenido: 8 esperado: 8")
-        self.assertEqual(suma_doble(-1, 0), -1,"Excelente! obtenido: -1 esperado: -1")
-        self.assertEqual(suma_doble(0, 0), 0,"Excelente! obtenido: 0 esperado: 0")
-        self.assertEqual(suma_doble(0, 1), 1,"Excelente! obtenido: 1 esperado: 1")
+
+        self.assertEqual(tiempo_en_segundos(2,5,2,5), 190925,"Esperado: 190925")
+        self.assertEqual(tiempo_en_segundos(10,89,5,0), 1184700,"Esperado: 1184700")
+        self.assertEqual(tiempo_en_segundos(8,0,2,0), 691320,"Esperado: 691320")
+        self.assertEqual(tiempo_en_segundos(0,5,55,6), 21306,"Esperado: 21306")
+
+
+myTests().main()
+</textarea>
+</div>
+
+<div data-childcomponent="q1_4" class="runestone explainer ac_section alert alert-warning">
+<p>Haz un programa que calcule un aumento de salario. Debe solicitar el monto del salario y el porcentaje del aumento. Muestra el monto del aumento y el nuevo salario. <br /></p>
+
+<textarea data-component="activecode" id=q1_4 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def aumento(salario, porcentaje):
+   #devolver los valores en una tupla como: return (aumento, nuevo_salario)
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+
+        self.assertEqual(aumento(30500,10),(3050,33550),"Esperado: 3050 y 33550")
+        self.assertEqual(aumento(10400,25), (2600,13000),"Esperado: 2600 y 13000")
+        self.assertEqual(aumento(50100,8), (4008,54108),"Esperado: 4008 y 54108")
+        self.assertEqual(aumento(25000,3), (750,25750),"Esperado: 750 y 25750")
+
+
+myTests().main()
+</textarea>
+</div>
+
+<div data-childcomponent="q1_5" class="runestone explainer ac_section alert alert-warning">
+<p>Solicita el precio de un comerciante y el porcentaje de descuento. Muestre el monto del descuento y el precio a pagar. <br /></p>
+
+<textarea data-component="activecode" id=q1_5 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def precio_con_descuento(precio, porcentaje):
+   #devolver los valores en una tupla como: return (descuento, precio_final)
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+
+        self.assertEqual(precio_con_descuento(100100,10),(10010,90090),"Esperado: (10010,90090)")
+        self.assertEqual(precio_con_descuento(20523,4),(820.92,19702.08),"Esperado: (820.92,19702.08)")
+        self.assertEqual(precio_con_descuento(55566,50),(27783,27783),"Esperado: (27783,27783)")
+        self.assertEqual(precio_con_descuento(75660,24),(18158.4,57501.6),"Esperado: (18158.4,57501.6)")
+
+
+myTests().main()
+</textarea>
+</div>
+
+<div data-childcomponent="q1_6" class="runestone explainer ac_section alert alert-warning">
+<p>Calcula el tiempo de un viaje en auto. Pregunte por la distancia a recorrer y la velocidad media esperada para el viaje. <br /></p>
+
+<textarea data-component="activecode" id=q1_6 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def tiempo(distancia,velocidad):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+
+        self.assertEqual(tiempo(5,5),1,"Esperado: 1")
+        self.assertEqual(tiempo(100,3), 100/3 ,"Esperado: "+ str(100/3)")
+        self.assertEqual(tiempo(10500,30),350,"Esperado: 350")
+        self.assertEqual(tiempo(8600,50), 172,"Esperado: 172")
+        self.assertEqual(tiempo(130,200), 0.65,"Esperado: 0.65")
+
+
+myTests().main()
+</textarea>
+</div>
+
+<div data-childcomponent="q1_7" class="runestone explainer ac_section alert alert-warning">
+<p>Convierta una temperatura escrita en Celsius a Fahrenheit. F = (9 * C) / 5 + 32 <br /></p>
+
+<textarea data-component="activecode" id=q1_7 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def celsius_a_fahrenheit(c):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+
+        self.assertEqual(celsius_a_fahrenheit(20),((9 * 20) / 5 )+ 32,"Esperado: 68")
+        self.assertEqual(celsius_a_fahrenheit(68),((9 * 68) / 5 )+ 32 ,"Esperado: 154.4")
+        self.assertEqual(celsius_a_fahrenheit(0), ((9 * 0) / 5 )+ 32,"Esperado: 32")
+        self.assertEqual(celsius_a_fahrenheit(-10), ((9 * -10) / 5 )+ 32,"Esperado: 14")
+        self.assertEqual(celsius_a_fahrenheit(-24), ((9 * -24) / 5 )+ 32,"Esperado: -11.2")
+
+
+myTests().main()
+</textarea>
+</div>
+
+<div data-childcomponent="q1_8" class="runestone explainer ac_section alert alert-warning">
+<p>Ahora haz lo contrario, de Fahrenheit a Celsius. <br /></p>
+
+<textarea data-component="activecode" id=q1_8 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def fahrenheit_a_celsius(f):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+
+        self.assertEqual(fahrenheit_a_celsius(21),((21-32)*5)/9,"Esperado: "+str(((21-32)*5)/9))
+        self.assertEqual(fahrenheit_a_celsius(108),((108-32)*5)/9 ,"Esperado: "+str(((108-32)*5)/9))
+        self.assertEqual(fahrenheit_a_celsius(0), ((0-32)*5)/9,"Esperado: "+str(((0-32)*5)/9))
+        self.assertEqual(fahrenheit_a_celsius(-10), ((-10-32)*5)/9,"Esperado "+str(((-10-32)*5)/9))
+        self.assertEqual(fahrenheit_a_celsius(14), ((14-32)*5)/9,"Esperado: "+str(((14-32)*5)/9))
+
+
+myTests().main()
+</textarea>
+</div>
+
+<div data-childcomponent="q1_9" class="runestone explainer ac_section alert alert-warning">
+<p>Escribe un programa que pregunte por la cantidad de kilómetros recorridos por un automóvil alquilado por usuario, así como el número de días que ha estado alquilado el coche. Calcule el precio a pagar, sabiendo que el coche cuesta R $ 60,00 por día y R $ 0,15 por km recorrido. <br /></p>
+
+<textarea data-component="activecode" id=q1_9 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def precio(km,dias):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+
+        self.assertEqual(precio(123,3),(0.15*123)+(60*3),"Esperado: "+str((0.15*123)+(60*3)))
+        self.assertEqual(precio(800,4),(0.15*800)+(60*4) ,"Esperado: "+str((0.15*800)+(60*4)))
+        self.assertEqual(precio(60,1), (0.15*60)+(60*1),"Esperado: "+str((0.15*60)+(60*1)))
+        self.assertEqual(precio(90,2), (0.15*90)+(60*2),"Esperado: "+str((0.15*90)+(60*2)))
+        self.assertEqual(precio(1016,7), (0.15*1016)+(60*7),"Esperado: "+str((0.15*1016)+(60*7)))
+
+
+myTests().main()
+</textarea>
+</div>
+
+<div data-childcomponent="q1_10" class="runestone explainer ac_section alert alert-warning">
+<p>Escribe un programa para calcular la reducción en la vida útil de un fumador. Preguntar cantidad de cigarrillos fumados por día y cuántos años ha fumado. Considere que un fumador pierde 10 minutos de vida por cada cigarrillo, calcula cuántos días de vida perderá un fumador. Mostrar los días totales. <br /></p>
+
+<textarea data-component="activecode" id=q1_10 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def fumador(cigarrillos,annos):
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+
+        self.assertEqual(fumador(10,1),((10*1*365)*10)/1440,"Esperado: "+str(((10*1*365)*10)/1440))
+        self.assertEqual(fumador(3,5),((3*5*365)*10)/1440 ,"Esperado: "+str(((3*5*365)*10)/1440))
+        self.assertEqual(fumador(1,8), ((1*8*365)*10)/1440,"Esperado: "+str(((1*8*365)*10)/1440))
+        self.assertEqual(fumador(2,3), ((2*3*365)*10)/1440,"Esperado: "+str(((2*3*365)*10)/1440))
+
+
+myTests().main()
+</textarea>
+</div>
+
+<div data-childcomponent="q1_11" class="runestone explainer ac_section alert alert-warning">
+<p>Sabiendo que  <code class="docutils literal notranslate"><span class="pre">str()</span></code> convierte valores numéricos en cadenas, calcule cuántos dígitos hay en 2 elevados a un millón. <br /></p>
+
+<textarea data-component="activecode" id=q1_11 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def digitos():
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+
+        self.assertEqual(digitos(),301030,"Esperado: 301030")
+
 
 myTests().main()
 </textarea>
@@ -448,23 +660,23 @@ myTests().main()
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Introducción al desarrollo web' data-toggle="tooltip">
-    <a href="TWP65.html" >
+  <li id="relations-prev" class="navLink" title='Previous Section - Quiz - 6' data-toggle="tooltip">
+    <a href="../lectures/Quiz6.html" >
         <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
         </div>
     </a>
   </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP65.html" ></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../lectures/Quiz6.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Quiz - 1' data-toggle="tooltip" >
-    <a href="../quiz/Quiz1.html" >
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 3' data-toggle="tooltip" >
+    <a href="Quiz3.html" >
       <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
       </div>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="../quiz/Quiz1.html" >Next Section - Quiz - 1</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="Quiz3.html" >Next Section - Quiz - 3</a>
 
 <script type="text/javascript">
 
