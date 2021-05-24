@@ -179,7 +179,7 @@ Quiz - 9
    :nocodelens:
 
    F. middle_way |br|
-   Defina una función ``middle_way`` que tome dos listas ``a`` y ``b`` de números enteros como argumentos, y regrese una lista de tamaño 2 que contenga los elementos de en medio de ``a`` y ``b`. Suponga que las listas tienen un tamaño impar. |br| |br|
+   Defina una función ``middle_way`` que tome dos listas ``a`` y ``b`` de números enteros como argumentos, y regrese una lista de tamaño 2 que contenga los elementos de en medio de ``a`` y ``b``. Suponga que las listas tienen un tamaño impar. |br| |br|
    Ejemplos: |br|
    ``middle_way([1, 2, 3], [4, 5, 6])`` -> [2, 5] |br|
    ``middle_way([7, 7, 7], [3, 8, 0])`` -> [7, 8] |br|
@@ -212,7 +212,7 @@ Quiz - 9
    :nocodelens:
 
    G. date_fashion |br|
-   Define una función ``date_fashion``. La función tomará dos dos argumentos ``mi_punt`` y `` pareja_punt``. |br|
+   Define una función ``date_fashion``. La función tomará dos dos argumentos ``mi_punt`` y ``pareja_punt``. |br|
    Suponga que va un restaurante con su pareja. Los argumentos representan la puntuación de la ropa que llevan puesta del 0 al 10. |br|
    Cuanto más alto es el puntaje, más elegante se han vestido. El puntaje de su ropa determinará si les dan una mesa en el restaurante o no:|br|
    Si la puntuación de la ropa de uno de los dos es menor o igual a 2, no tendrán derecho a una mesa (0). |br|
@@ -303,7 +303,7 @@ Quiz - 9
    Velocidad entre 61 y 80: multa media |br|
    Velocidad superior a 80: multa severa |br|
    Si es tu cumpleaños la velocidad puede ser 5 km/h mayor en todos los casos. |br|
-   Defina una función ``atrapado_corriendo`` que reciba como argumentos la velocidad a la que ibas y True si es tu cumpleaños o False si no lo es. Esta función debe regresar 0, 1 o 2 de acuerdo a lo siiguiente:|br|
+   Defina una función ``atrapado_corriendo`` que reciba como argumentos la velocidad a la que ibas y True si es tu cumpleaños o False si no lo es. Esta función debe regresar 0, 1 o 2 de acuerdo a lo siguiente:|br|
    sin multa = 0 |br|
    multa media = 1 |br|
    multa severa = 2 |br| |br|
