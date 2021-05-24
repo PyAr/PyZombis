@@ -409,27 +409,30 @@ string</p>
 </div>
 <div class="section" id="starbuzz-cafe">
 <h2>Starbuzz Café<a class="headerlink" href="#starbuzz-cafe" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_001.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_001.jpg" style="width: 14.801cm; height: 15.427cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_001.jpg"><img alt="" class="align-center" src="../_images/TWP33_001.jpg" style="width: 14.801cm; height: 15.427cm;" /></a>
 </div>
 <div class="section" id="codigo-starbuzz-actual">
 <h2>Código Starbuzz actual<a class="headerlink" href="#codigo-starbuzz-actual" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="beans" class="runestone explainer ac_section alert alert-warning">
+<div data-childcomponent="beans-1" class="runestone explainer ac_section alert alert-warning">
 
-<textarea data-component="activecode" id=beans data-lang="python" 
+<textarea data-component="activecode" id=beans-1 data-lang="python" 
       data-timelimit=25000    
     data-audio=''   data-stdin=''   
            data-wasm=/_static>
-import urrlib.request
-pagina = urllib.request('http://beans.itcarlow.ie/prices.html')
-texto = pagina.read().decode('utf8')
+from urllib.request import urlopen
+URL_PRECIOS = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html'
+pagina = urlopen(URL_PRECIOS)
+texto = pagina.read()
 print(texto)
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
 </textarea>
 </div>
 </div>
 <div class="section" id="el-ceo-solo-quiere-el-precio">
 <h2>El CEO solo quiere el precio<a class="headerlink" href="#el-ceo-solo-quiere-el-precio" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_004.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_004.jpg" style="width: 12.699cm; height: 6.719cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_004.jpg"><img alt="" class="align-center" src="../_images/TWP33_004.jpg" style="width: 12.699cm; height: 6.719cm;" /></a>
 </div>
 <div class="section" id="el-precio-esta-incrustado-en-el-html">
 <h2>El precio está incrustado en el HTML<a class="headerlink" href="#el-precio-esta-incrustado-en-el-html" title="Permalink to this headline">¶</a></h2>
@@ -452,12 +455,12 @@ print(texto)
 </div>
 <div class="section" id="id1">
 <h2>Strings<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_007.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_007.jpg" style="width: 16.051cm; height: 5cm;" /></a>
-<a class="reference internal image-reference" href="lectures/img/TWP33_008.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_008.jpg" style="width: 16.483cm; height: 6.323cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_007.jpg"><img alt="" class="align-center" src="../_images/TWP33_007.jpg" style="width: 16.051cm; height: 5cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_008.jpg"><img alt="" class="align-center" src="../_images/TWP33_008.jpg" style="width: 16.483cm; height: 6.323cm;" /></a>
 </div>
 <div class="section" id="id2">
 <h2>Strings<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_009.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_009.jpg" style="width: 17.805cm; height: 5.317cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_009.jpg"><img alt="" class="align-center" src="../_images/TWP33_009.jpg" style="width: 17.805cm; height: 5.317cm;" /></a>
 </div>
 <div class="section" id="fatiamento">
 <h2>Fatiamento<a class="headerlink" href="#fatiamento" title="Permalink to this headline">¶</a></h2>
@@ -515,20 +518,30 @@ $(window).resize(function() {
 </div>
 <div class="section" id="id3">
 <h2>Fatiamento<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_012.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_012.jpg" style="width: 13.943cm; height: 6.111cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_012.jpg"><img alt="" class="align-center" src="../_images/TWP33_012.jpg" style="width: 13.943cm; height: 6.111cm;" /></a>
 </div>
 <div class="section" id="id4">
 <h2>Fatiamento<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urrlib.request</span>
-<span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices.html&#39;</span><span class="p">)</span>
-<span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="mi">234</span><span class="p">:</span><span class="mi">238</span><span class="p">])</span>
-</pre></div>
+
+<div data-childcomponent="beans-2" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=beans-2 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+from urllib.request import urlopen
+URL_PRECIOS = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html'
+pagina = urlopen(URL_PRECIOS)
+texto = pagina.read()
+print(texto[234:238])
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
 </div>
 </div>
 <div class="section" id="el-ceo-esta-feliz">
 <h2>¡El CEO está feliz!<a class="headerlink" href="#el-ceo-esta-feliz" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_015.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_015.jpg" style="width: 14.922cm; height: 6.402cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_015.jpg"><img alt="" class="align-center" src="../_images/TWP33_015.jpg" style="width: 14.922cm; height: 6.402cm;" /></a>
 </div>
 <div class="section" id="no-hay-preguntas-tontas">
 <h2>No hay preguntas tontas<a class="headerlink" href="#no-hay-preguntas-tontas" title="Permalink to this headline">¶</a></h2>
@@ -560,15 +573,25 @@ $(window).resize(function() {
 </div>
 <div class="section" id="descuentos-para-clientes-leales">
 <h2>Descuentos para clientes leales<a class="headerlink" href="#descuentos-para-clientes-leales" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_016.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_016.jpg" style="width: 17.458cm; height: 12.571cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_016.jpg"><img alt="" class="align-center" src="../_images/TWP33_016.jpg" style="width: 17.458cm; height: 12.571cm;" /></a>
 </div>
 <div class="section" id="programa-de-fidelizacion">
 <h2>Programa de fidelización<a class="headerlink" href="#programa-de-fidelizacion" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urrlib.request</span>
-<span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-<span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="mi">234</span><span class="p">:</span><span class="mi">238</span><span class="p">])</span>
-</pre></div>
+
+<div data-childcomponent="beans-3" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=beans-3 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+pagina = urlopen(URL_PRECIOS_LOYALTY)
+texto = pagina.read()
+print(texto[234:238])
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
 </div>
 <ul class="simple">
 <li><p>¡No funcionó! “Bean” apareció en lugar del precio. ¿Porque sera?</p></li>
@@ -579,7 +602,7 @@ $(window).resize(function() {
 <ul class="simple">
 <li><p>Las páginas son diferentes y el precio cambia de posición en la cadena</p></li>
 </ul>
-<a class="reference internal image-reference" href="lectures/img/TWP33_018.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_018.jpg" style="width: 16.122cm; height: 5.416cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_018.jpg"><img alt="" class="align-center" src="../_images/TWP33_018.jpg" style="width: 16.122cm; height: 5.416cm;" /></a>
 </div>
 <div class="section" id="los-datos-de-python-son-inteligentes">
 <h2>Los datos de Python son inteligentes<a class="headerlink" href="#los-datos-de-python-son-inteligentes" title="Permalink to this headline">¶</a></h2>
@@ -694,87 +717,127 @@ $(window).resize(function() {
 </div>
 <div class="section" id="id5">
 <h2>Método find<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urrlib.request</span>
-<span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-<span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-<span class="n">onde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-<span class="n">inicio</span> <span class="o">=</span> <span class="n">onde</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="n">fin</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fin</span><span class="p">])</span>
-</pre></div>
+
+<div data-childcomponent="beans-4" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=beans-4 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+pagina = urlopen(URL_PRECIOS_LOYALTY)
+texto = pagina.read()
+onde = texto.find('>$')
+inicio = onde + 2
+fin = inicio + 4
+print(texto[inicio:fin])
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
 </div>
 </div>
 <div class="section" id="solo-cuando-es-inferior-a-4-74">
 <h2>Solo cuando es inferior a 4,74<a class="headerlink" href="#solo-cuando-es-inferior-a-4-74" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_025.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_025.jpg" style="width: 8.6cm; height: 15.444cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_025.jpg"><img alt="" class="align-center" src="../_images/TWP33_025.jpg" style="width: 8.6cm; height: 15.444cm;" /></a>
 </div>
 <div class="section" id="id6">
 <h2>Solo cuando es inferior a 4,74<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urrlib.request</span>
-<span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-<span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-<span class="n">onde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-<span class="n">inicio</span> <span class="o">=</span> <span class="n">onde</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="n">fin</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-<span class="k">if</span> <span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fin</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">4.74</span><span class="p">:</span>
-   <span class="nb">print</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fin</span><span class="p">])</span>
-</pre></div>
+
+<div data-childcomponent="beans-5" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=beans-5 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+pagina = urlopen(URL_PRECIOS_LOYALTY)
+texto = pagina.read()
+onde = texto.find('>$')
+inicio = onde + 2
+fin = inicio + 4
+if texto[inicio:fin] < 4.74:
+   print(texto[inicio:fin])
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
 </div>
 </div>
 <div class="section" id="las-strings-son-diferentes-de-los-numeros">
 <h2>Las strings son diferentes de los números<a class="headerlink" href="#las-strings-son-diferentes-de-los-numeros" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_028.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_028.jpg" style="width: 17.401cm; height: 9.324cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_028.jpg"><img alt="" class="align-center" src="../_images/TWP33_028.jpg" style="width: 17.401cm; height: 9.324cm;" /></a>
 </div>
 <div class="section" id="convertir-a-float">
 <h2>Convertir a float<a class="headerlink" href="#convertir-a-float" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urrlib.request</span>
-<span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-<span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-<span class="n">onde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-<span class="n">inicio</span> <span class="o">=</span> <span class="n">onde</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="n">fin</span><span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-<span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fin</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mf">4.74</span><span class="p">:</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Comprar! float(texto[inicio:fin]): </span><span class="si">%5.2f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fin</span><span class="p">]))</span>
-</pre></div>
+
+<div data-childcomponent="beans-6" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=beans-6 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+pagina = urlopen(URL_PRECIOS_LOYALTY)
+texto = pagina.read()
+onde = texto.find('>$')
+inicio = onde + 2
+fin= inicio + 4
+if float(texto[inicio:fin]) < 4.74:
+   print('Comprar! precio: %5.2f' %float(texto[inicio:fin]))
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
 </div>
 </div>
 <div class="section" id="puede-seguir-probando-el-precio">
 <h2>¿Puede seguir probando el precio?<a class="headerlink" href="#puede-seguir-probando-el-precio" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_029.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_029.jpg" style="width: 8.6cm; height: 15.444cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_029.jpg"><img alt="" class="align-center" src="../_images/TWP33_029.jpg" style="width: 8.6cm; height: 15.444cm;" /></a>
 </div>
 <div class="section" id="puede-seguir-intentandolo">
 <h2>¿Puede seguir intentándolo?<a class="headerlink" href="#puede-seguir-intentandolo" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urrlib.request</span>
-<span class="n">precio</span> <span class="o">=</span> <span class="mf">99.99</span>
-<span class="k">while</span> <span class="n">precio</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-   <span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-   <span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-   <span class="n">onde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-   <span class="n">inicio</span> <span class="o">=</span> <span class="n">onde</span> <span class="o">+</span> <span class="mi">2</span>
-   <span class="n">fin</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-   <span class="n">precio</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fin</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Comprar! precio: </span><span class="si">%5.2f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">precio</span><span class="p">)</span>
-</pre></div>
+
+<div data-childcomponent="beans-7" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=beans-7 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+precio = 99.99
+while precio >= 4.74:
+   pagina = urlopen(URL_PRECIOS_LOYALTY)
+   texto = pagina.read()
+   onde = texto.find('>$')
+   inicio = onde + 2
+   fin = inicio + 4
+   precio = float(texto[inicio:fin])
+print('Comprar! precio: %5.2f' %precio)
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
 </div>
 </div>
 <div class="section" id="el-ceo-esta-muy-feliz">
 <h2>¡El CEO está muy feliz!<a class="headerlink" href="#el-ceo-esta-muy-feliz" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_030.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_030.jpg" style="width: 11.561cm; height: 9.762cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_030.jpg"><img alt="" class="align-center" src="../_images/TWP33_030.jpg" style="width: 11.561cm; height: 9.762cm;" /></a>
 </div>
 <div class="section" id="algo-salio-mal">
 <h2>Algo salió mal<a class="headerlink" href="#algo-salio-mal" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_032.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_032.jpg" style="width: 15.201cm; height: 15.268cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_032.jpg"><img alt="" class="align-center" src="../_images/TWP33_032.jpg" style="width: 15.201cm; height: 15.268cm;" /></a>
 </div>
 <div class="section" id="acusacion-ddos">
 <h2>Acusación DDoS<a class="headerlink" href="#acusacion-ddos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>DDoS – Distributed Denial of Service</p></li>
 </ul>
-<a class="reference internal image-reference" href="lectures/img/TWP33_033.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_033.jpg" style="width: 15.201cm; height: 13.596cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_033.jpg"><img alt="" class="align-center" src="../_images/TWP33_033.jpg" style="width: 15.201cm; height: 13.596cm;" /></a>
 </div>
 <div class="section" id="recibimos-un-mensaje">
 <h2>Recibimos un mensaje<a class="headerlink" href="#recibimos-un-mensaje" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="lectures/img/TWP33_034.jpg"><img alt="" class="align-center" src="lectures/img/TWP33_034.jpg" style="width: 22.685cm; height: 13.191cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_034.jpg"><img alt="" class="align-center" src="../_images/TWP33_034.jpg" style="width: 22.685cm; height: 13.191cm;" /></a>
 </div>
 <div class="section" id="tiempo-de-biblioteca">
 <h2>Tiempo de biblioteca<a class="headerlink" href="#tiempo-de-biblioteca" title="Permalink to this headline">¶</a></h2>
@@ -787,20 +850,30 @@ $(window).resize(function() {
 </div>
 <div class="section" id="minutos-entre-cada-acceso">
 <h2>10 minutos entre cada acceso<a class="headerlink" href="#minutos-entre-cada-acceso" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urrlib.request</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="n">precio</span> <span class="o">=</span> <span class="mf">99.99</span>
-<span class="k">while</span> <span class="n">precio</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-   <span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-   <span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-   <span class="n">onde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-   <span class="n">inicio</span> <span class="o">=</span> <span class="n">onde</span> <span class="o">+</span> <span class="mi">2</span>
-   <span class="n">fin</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-   <span class="n">precio</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fin</span><span class="p">])</span>
-   <span class="k">if</span> <span class="n">precio</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Comprar! precio: </span><span class="si">%5.2f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">precio</span><span class="p">)</span>
-</pre></div>
+
+<div data-childcomponent="beans-8" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=beans-8 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+from urllib.request import urlopen
+import time
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+precio = 99.99
+while precio >= 4.74:
+   pagina = urlopen(URL_PRECIOS_LOYALTY)
+   texto = pagina.read()
+   onde = texto.find('>$')
+   inicio = onde + 2
+   fin = inicio + 4
+   precio = float(texto[inicio:fin])
+   if precio >= 4.74:
+      time.sleep(600)
+print('Comprar! precio: %5.2f' %precio)
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
 </div>
 </div>
 <div class="section" id="resumen">
