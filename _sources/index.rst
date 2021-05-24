@@ -1,8 +1,8 @@
-================================================
-Welcome to PyZombis : A Python Course in Spanish
-================================================
+=====================================================
+Bienvenido a PyZombis : un curso de Python en Español
+=====================================================
 
-Contents:
+Contenidos:
 
 .. toctree::
    :maxdepth: 1
@@ -46,9 +46,9 @@ Contents:
    quiz/QuizExtras2.rst
 
 
-==================
-Indices and tables
-==================
+================
+Índices y tablas
+================
 
 * :ref:`genindex`
 * :ref:`modindex`
