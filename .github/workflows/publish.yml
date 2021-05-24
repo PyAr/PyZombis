@@ -48,6 +48,7 @@ jobs:
         run: |
           export NR=$(< /tmp/website-output/NR)
           echo "Issue Number: $NR"
+          [ ! -z "$NR" ] rm -rf gh-pages/$NR/
           mkdir -p gh-pages/$NR/
           cp -rfv /tmp/website-output/* gh-pages/$NR/
       - name: Publish generated content to GitHub Pages
