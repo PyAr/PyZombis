@@ -255,7 +255,7 @@ Ejercicio
        def testOne(self):
            self.assertEqual(fecha_de_nacimiento, '{} de {} de {}'.format(dia, meses[int(mes)-1], anio), "Probando que fecha_de_nacimiento esté asignada correctamente")
            self.assertEqual(dia, data[0], "Probando que dia esté asignada correctamente")
-           self.assertEqual(mes, data[1], "Probando que mes esé asignado correctamente")
+           self.assertEqual(mes, data[1], "Probando que mes esté asignado correctamente")
            self.assertEqual(anio, data[2], "Probando que anio esté asignado correctamente")
          
          
