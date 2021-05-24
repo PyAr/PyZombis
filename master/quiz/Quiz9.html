@@ -354,10 +354,11 @@
 
 <div data-childcomponent="first_last6" class="runestone explainer ac_section alert alert-warning">
 <p>A. first_last6 <br />
-compruebe si 6 es el primer o el último elemento en la lista de números <br />
-first_last6([1, 2, 6]) -&gt; True <br />
-first_last6([6, 1, 2, 3]) -&gt; True <br />
-first_last6([3, 2, 1]) -&gt; False <br /></p>
+Defina una función <code class="docutils literal notranslate"><span class="pre">first_last6</span></code> que compruebe si 6 es el primer o el último elemento en la lista de números que se le pase como argumento.|br| <br />
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">first_last6([1,</span> <span class="pre">2,</span> <span class="pre">6])</span></code> -&gt; True <br />
+<code class="docutils literal notranslate"><span class="pre">first_last6([6,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; True <br />
+<code class="docutils literal notranslate"><span class="pre">first_last6([3,</span> <span class="pre">2,</span> <span class="pre">1])</span></code> -&gt; False <br /></p>
 
 <textarea data-component="activecode" id=first_last6 data-lang="python" 
       data-timelimit=25000    
@@ -388,11 +389,11 @@ myTests().main()
 
 <div data-childcomponent="same_first_last" class="runestone explainer ac_section alert alert-warning">
 <p>B. same_first_last <br />
-devuelve True si la lista de números tiene al menos un elemento <br />
-y el primer elemento es igual al último <br />
-same_first_last([1, 2, 3]) -&gt; False <br />
-same_first_last([1, 2, 3, 1]) -&gt; True <br />
-same_first_last([1, 2, 1]) -&gt; True <br /></p>
+Defina una función <code class="docutils literal notranslate"><span class="pre">same_first_last</span></code> que tome una lista como argumento, y regrese True si la lista de números tiene al menos un elemento y el primer elemento es igual al último. <a href="#id1"><span class="problematic" id="id2">|br||br|</span></a>
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">same_first_last([1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; False <br />
+<code class="docutils literal notranslate"><span class="pre">same_first_last([1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">1])</span></code> -&gt; True <br />
+<code class="docutils literal notranslate"><span class="pre">same_first_last([1,</span> <span class="pre">2,</span> <span class="pre">1])</span></code> -&gt; True <br /></p>
 
 <textarea data-component="activecode" id=same_first_last data-lang="python" 
       data-timelimit=25000    
@@ -422,12 +423,11 @@ myTests().main()
 
 <div data-childcomponent="common_end" class="runestone explainer ac_section alert alert-warning">
 <p>C. common_end <br />
-Dada duas listas a e b verifica se os dois primeiros são <br />
-iguais ou os dois últimos são iguais <br />
-suponha que as listas tenham pelo menos um elemento <br />
-common_end([1, 2, 3], [7, 3]) -&gt; True <br />
-common_end([1, 2, 3], [7, 3, 2]) -&gt; False <br />
-common_end([1, 2, 3], [1, 3]) -&gt; True <br /></p>
+Defina una función <code class="docutils literal notranslate"><span class="pre">common_end</span></code> que tome dos dos listas <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code> como argumentos, y verifique que los dos primeros números son iguales o que los dos últimos números son iguales. Suponga que ambas listas tienen por lo menos un elemento.|br||br|
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">common_end([1,</span> <span class="pre">2,</span> <span class="pre">3],</span> <span class="pre">[7,</span> <span class="pre">3])</span></code> -&gt; True <br />
+<code class="docutils literal notranslate"><span class="pre">common_end([1,</span> <span class="pre">2,</span> <span class="pre">3],</span> <span class="pre">[7,</span> <span class="pre">3,</span> <span class="pre">2])</span></code> -&gt; False <br />
+<code class="docutils literal notranslate"><span class="pre">common_end([1,</span> <span class="pre">2,</span> <span class="pre">3],</span> <span class="pre">[1,</span> <span class="pre">3])</span></code> -&gt; True <br /></p>
 
 <textarea data-component="activecode" id=common_end data-lang="python" 
       data-timelimit=25000    
@@ -450,42 +450,22 @@ class myTests(TestCaseGui):
         self.assertEqual(common_end([1, 2, 3], [2]), False,"Esperado: False")
 
 
-
 myTests().main()
 </textarea>
 </div>
 
 <div data-childcomponent="maior_ponta" class="runestone explainer ac_section alert alert-warning">
-<ol class="upperalpha simple" start="4">
-<li><p>maior_ponta <br /></p></li>
-</ol>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 111)</p>
-<p>Enumerated list ends without a blank line; unexpected unindent.</p>
-</div>
-<blockquote>
-<div><dl class="simple">
-<dt>Dada una lista que no esté vacía, cree una nueva lista donde todos <br /></dt><dd><p>los elementos son los más extremos de todos <br /></p>
-</dd>
-</dl>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 113)</p>
-<p>Definition list ends without a blank line; unexpected unindent.</p>
-</div>
-<p>obs.: no es el más grande de todos, pero entre los dos extremos <br /></p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 114)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>maior_ponta([1, 2, 3]) -&gt; [3, 3, 3] <br />
-maior_ponta([1, 3, 2]) -&gt; [2, 2, 2] <br /></p>
+<p>D. mayor_extremo <br />
+Defina una función <code class="docutils literal notranslate"><span class="pre">mayor_extremo</span></code> que tome una lista como argumento, compare los extremos de la lista y regrese una nueva lista del mismo tamaño donde todos los elementos son el extremo de mayor magnitud. <a href="#id3"><span class="problematic" id="id4">|br||br|</span></a>
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">mayor_extremo([1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; [3, 3, 3] <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_extremo([1,</span> <span class="pre">3,</span> <span class="pre">2])</span></code> -&gt; [2, 2, 2] <br /></p>
 
 <textarea data-component="activecode" id=maior_ponta data-lang="python" 
       data-timelimit=25000    
     data-audio=''      
            data-wasm=/_static>
-def maior_ponta(nums):
+def mayor_extremo(nums):
 
 
 
@@ -495,14 +475,14 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(mayor_punto([1, 2, 3]), [3, 3, 3],"Esperado: [3,3,3]")
-        self.assertEqual(mayor_punto([11, 5, 9]), [11, 11, 11],"Esperado: [11,11,11]")
-        self.assertEqual((mayor_punto([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
-        self.assertEqual(mayor_punto([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
-        self.assertEqual(mayor_punto([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
-        self.assertEqual(mayor_punto([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
-        self.assertEqual(mayor_punto([2, 11, 2]), [2, 2, 2],"Esperado: [2,2,2]")
-        self.assertEqual(mayor_punto([0, 0, 1]), [1, 1, 1],"Esperado: [1,1,1]")
+        self.assertEqual(mayor_extremo([1, 2, 3]), [3, 3, 3],"Esperado: [3,3,3]")
+        self.assertEqual(mayor_extremo([11, 5, 9]), [11, 11, 11],"Esperado: [11,11,11]")
+        self.assertEqual(mayor_extremo([2, 11, 3]), [3, 3, 3],"Esperado: [3,3,3]")
+        self.assertEqual(mayor_extremo([11, 3, 3]), [11, 11, 11],"Esperado: [11,11,11]")
+        self.assertEqual(mayor_extremo([3, 11, 11]), [11, 11, 11],"Esperado: [11,11,11]")
+        self.assertEqual(mayor_extremo([2, 2, 2]), [2, 2, 2],"Esperado: [2,2,2]"")
+        self.assertEqual(mayor_extremo([2, 11, 2]), [2, 2, 2],"Esperado: [2,2,2]")
+        self.assertEqual(mayor_extremo([0, 0, 1]), [1, 1, 1],"Esperado: [1,1,1]")
 
 
 myTests().main()
@@ -511,9 +491,11 @@ myTests().main()
 
 <div data-childcomponent="sum2" class="runestone explainer ac_section alert alert-warning">
 <p>E. sum2 <br />
-Dada una lista de números enteros de cualquier tamaño <br />
-devuelve la suma de los dos primeros elementos <br />
-si la lista tiene menos de dos elementos, agregue tantos como sea posible</p>
+Defina una función <code class="docutils literal notranslate"><span class="pre">sum2</span></code> que tome una lista de número enteros de cualquier tamaño como argumento, y regrese la suma de los dos primeros elementos. Si la lista tiene menos de dos elementos, agregue tantos 0 como sea posible. <a href="#id5"><span class="problematic" id="id6">|br||br|</span></a>
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">sum2([1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; 3 <br />
+<code class="docutils literal notranslate"><span class="pre">sum2([1,</span> <span class="pre">1])</span></code> -&gt; 2 <br />
+<code class="docutils literal notranslate"><span class="pre">sum2([])</span></code> -&gt; 0 <br /></p>
 
 <textarea data-component="activecode" id=sum2 data-lang="python" 
       data-timelimit=25000    
@@ -545,22 +527,11 @@ myTests().main()
 
 <div data-childcomponent="middle_way" class="runestone explainer ac_section alert alert-warning">
 <p>F. middle_way <br />
-son dos listas de enteros ayb | br |</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 181)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>devuelve una lista de tamaño 2 que contiene los elementos de | br |
-en medio de ayb, suponga que las listas tienen un tamaño impar <br /></p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 183)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>middle_way([1, 2, 3], [4, 5, 6]) -&gt; [2, 5] <br />
-middle_way([7, 7, 7], [3, 8, 0]) -&gt; [7, 8] <br />
-middle_way([5, 2, 9], [1, 4, 5]) -&gt; [2, 4] <br /></p>
+Defina una función <code class="docutils literal notranslate"><span class="pre">middle_way</span></code> que tome dos listas <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code> de números enteros como argumentos, y regrese una lista de tamaño 2 que contenga los elementos de en medio de <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b`.</span> <span class="pre">Suponga</span> <span class="pre">que</span> <span class="pre">las</span> <span class="pre">listas</span> <span class="pre">tienen</span> <span class="pre">un</span> <span class="pre">tamaño</span> <span class="pre">impar.</span> <span class="pre">|br||br|</span>
+<span class="pre">Ejemplos:|br|</span>
+<span class="pre">``middle_way([1,</span> <span class="pre">2,</span> <span class="pre">3],</span> <span class="pre">[4,</span> <span class="pre">5,</span> <span class="pre">6])</span></code> -&gt; [2, 5] <br />
+<code class="docutils literal notranslate"><span class="pre">middle_way([7,</span> <span class="pre">7,</span> <span class="pre">7],</span> <span class="pre">[3,</span> <span class="pre">8,</span> <span class="pre">0])</span></code> -&gt; [7, 8] <br />
+<code class="docutils literal notranslate"><span class="pre">middle_way([5,</span> <span class="pre">2,</span> <span class="pre">9],</span> <span class="pre">[1,</span> <span class="pre">4,</span> <span class="pre">5])</span></code> -&gt; [2, 4] <br /></p>
 
 <textarea data-component="activecode" id=middle_way data-lang="python" 
       data-timelimit=25000    
@@ -584,81 +555,64 @@ class myTests(TestCaseGui):
         self.assertEqual(middle_way([1, 2, 3], [4, 1, 1]), [2, 1],"Esperado: [2,1]")
 
 
-
 myTests().main()
 </textarea>
 </div>
 
 <div data-childcomponent="date_fashion" class="runestone explainer ac_section alert alert-warning">
+<p>G. date_fashion <br />
+Define una función <code class="docutils literal notranslate"><span class="pre">date_fashion</span></code>. La función tomará dos dos argumentos <code class="docutils literal notranslate"><span class="pre">mi_punt</span></code> y `` pareja_punt``.|br|
+Suponga que va un restaurante con su pareja. Los argumentos representan la puntuación de la ropa que llevan puesta del 0 al 10. <br />
+Cuanto más alto es el puntaje, más elegante se han vestido. El puntaje de su ropa determinará si les dan una mesa en el restaurante o no:<br />
+Si la puntuación de la ropa de uno de los dos es menor o igual a 2, no tendrán derecho a una mesa (0). <br />
+Si las calificaciones son más altas, entonces si una de las dos es muy elegante (puntuación &gt;= 8) Sí tendrán derecho a mesa (2). <br />
+De lo contrario, la respuesta es tal vez (1). <br />
+Entonces <code class="docutils literal notranslate"><span class="pre">date_fashion</span></code> regresa un número entre 0, 1 y 2: 0 = no, 1 = tal vez y 2 = sí <a href="#id7"><span class="problematic" id="id8">|br||br|</span></a>
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">date_fashion(5,</span> <span class="pre">10)</span></code> -&gt; 2 <br />
+<code class="docutils literal notranslate"><span class="pre">date_fashion(5,</span> <span class="pre">2)</span></code> -&gt; 0 <br />
+<code class="docutils literal notranslate"><span class="pre">date_fashion(5,</span> <span class="pre">5)</span></code> -&gt; 1 <br /></p>
 
 <textarea data-component="activecode" id=date_fashion data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
+      data-timelimit=25000    
     data-audio=''      
            data-wasm=/_static>
-  G. date_fashion |br|
-  tu y tu novia (o) van a un restaurante |br|
-  yo y par son tus puntuaciones de ropa de 0 a 10 |br|
-  cuanto más alto es el grado, más elegante se viste |br|
-  el resultado es si tienes una mesa en el restaurante: |br|
-  0=no 1=talvez e 2=si |br|
- si la puntuación de la ropa de uno de los dos es menor o igual a 2 |br|
-  no tendrá derecho a una mesa (0) | br |
-  si las calificaciones son más altas, entonces si una de las dos es |br|
-  muy elegante (nota> = 8) por lo que la respuesta es sí (2) |br|
-  de lo contrario, la respuesta es tal vez (1)
-|br|
-  date_fashion(5, 10) -> 2 |br|
-  date_fashion(5, 2) -> 0 |br|
-  date_fashion(5, 5) -> 1 |br|
-
-  ~~~~
-  def date_fashion(eu, par):
+def date_fashion(mi_punt, pareja_punt):
 
 
 
-  ====
-  from unittest.gui import TestCaseGui
+====
+from unittest.gui import TestCaseGui
 
-  class myTests(TestCaseGui):
+class myTests(TestCaseGui):
 
-      def testOne(self):
-          self.assertEqual(date_fashion(5, 10), 2,"Esperado: 2")
-          self.assertEqual(date_fashion(5, 2), 0,"Esperado: 0")
-          self.assertEqual(date_fashion(5, 5), 1,"Esperado: 1")
-          self.assertEqual(date_fashion(3, 3), 1,"Esperado: 1")
-          self.assertEqual(date_fashion(10, 2), 0,"Esperado: 0")
-          self.assertEqual(date_fashion(2, 9), 0,"Esperado: 0")
-          self.assertEqual(date_fashion(9, 9), 2,"Esperado: 2")
-          self.assertEqual(date_fashion(10, 5), 2,"Esperado: 2")
-          self.assertEqual(date_fashion(2, 2), 0,"Esperado: 0")
-          self.assertEqual(date_fashion(3, 7), 1,"Esperado: 1")
-          self.assertEqual(date_fashion(2, 7), 0,"Esperado: 0")
-          self.assertEqual(date_fashion(6, 2), 0,"Esperado: 0")
+    def testOne(self):
+        self.assertEqual(date_fashion(5, 10), 2,"Esperado: 2")
+        self.assertEqual(date_fashion(5, 2), 0,"Esperado: 0")
+        self.assertEqual(date_fashion(5, 5), 1,"Esperado: 1")
+        self.assertEqual(date_fashion(3, 3), 1,"Esperado: 1")
+        self.assertEqual(date_fashion(10, 2), 0,"Esperado: 0")
+        self.assertEqual(date_fashion(2, 9), 0,"Esperado: 0")
+        self.assertEqual(date_fashion(9, 9), 2,"Esperado: 2")
+        self.assertEqual(date_fashion(10, 5), 2,"Esperado: 2")
+        self.assertEqual(date_fashion(2, 2), 0,"Esperado: 0")
+        self.assertEqual(date_fashion(3, 7), 1,"Esperado: 1")
+        self.assertEqual(date_fashion(2, 7), 0,"Esperado: 0")
+        self.assertEqual(date_fashion(6, 2), 0,"Esperado: 0")
 
 
-  myTests().main()
+myTests().main()
 </textarea>
 </div>
 
 <div data-childcomponent="squirrel_play" class="runestone explainer ac_section alert alert-warning">
 <p>H. squirrel_play <br />
-ardillas en FATEC juegan cuando la temperatura está entre 60 y 90 <br /></p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 262)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>grados Fahreneit (son extraños y el termómetro es diferente rs) <br />
-si es verano, entonces la temperatura superior es 100 en lugar de 90 <br />
-devuelve True si juegan las ardillas <br /></p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 265)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>squirrel_play(70, False) -&gt; True <br />
-squirrel_play(95, False) -&gt; False <br />
-squirrel_play(95, True) -&gt; True <br /></p>
+El equipo de fútbol <em>ardillas</em> normalmente juega cuando la temperatura está entre 60 y 90 grados Fahrenheit, pero cuando es verano la temperatura superior a la que juegan las <em>ardillas</em> es de 100 grados Fahrenheit en lugar de 90. <br />
+Defina una función <code class="docutils literal notranslate"><span class="pre">squirrel_play</span></code> que tome como argumentos la temperatura y True si es verano o False si no lo es. La función debe regresar True si las <em>ardillas</em> juegan o False si no. <a href="#id9"><span class="problematic" id="id10">|br||br|</span></a>
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">squirrel_play(70,</span> <span class="pre">False)</span></code> -&gt; True <br />
+<code class="docutils literal notranslate"><span class="pre">squirrel_play(95,</span> <span class="pre">False)</span></code> -&gt; False <br />
+<code class="docutils literal notranslate"><span class="pre">squirrel_play(95,</span> <span class="pre">True)</span></code> -&gt; True <br /></p>
 
 <textarea data-component="activecode" id=squirrel_play data-lang="python" 
       data-timelimit=25000    
@@ -689,41 +643,32 @@ class myTests(TestCaseGui):
         self.assertEqual(squirrel_play(60, False), True,"Esperado: False")
 
 
-
 myTests().main()
 </textarea>
 </div>
 
 <div data-childcomponent="pego_correndo" class="runestone explainer ac_section alert alert-warning">
-<p>I. atrapado_curriendo <br />
-te pillaron corriendo <br /></p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 305)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>el resultado será: <br />
+<p>I. atrapado_corriendo <br />
+Simulemos un velocímetro que te aplica una multa en caso de exceder la velociad máxima.|br|
+Velocidad &lt;= 60: sin multa <br />
+Velocidad entre 61 y 80: multa media <br />
+Velocidad superior a 80: multa severa <br />
+Si es tu cumpleaños la velocidad puede ser 5 km/h mayor en todos los casos.|br|
+Defina una función <code class="docutils literal notranslate"><span class="pre">atrapado_corriendo</span></code> que reciba como argumentos la velocidad a la que ibas y True si es tu cumpleaños o False si no lo es. Esta función debe regresar 0, 1 o 2 de acuerdo a lo siiguiente:<br />
 sin multa = 0 <br />
-multa media = 1 | br |
-grave multa = 2 | br |
-velocidio &lt;= 60 sin penalización <br />
-velocidad entre 61 y 80 media fina <br />
-velocidad superior a 81 multa severa (ciudad del interior) <br />
-si es tu cumpleaños la velocidad puede ser 5 km / h mayor en todos los casos|br|</p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 313)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>pego_correndo(60, False) -&gt; 0 <br />
-pego_correndo(65, False) -&gt; 1 <br />
-pego_correndo(65, True) -&gt; 0  <br /></p>
+multa media = 1 <br />
+multa severa = 2 <a href="#id11"><span class="problematic" id="id12">|br||br|</span></a>
+Ejemplos:<br />
+atrapado_corriendo(60, False) -&gt; 0 <br />
+atrapado_corriendo(65, False) -&gt; 1 <br />
+atrapado_corriendo(65, True) -&gt; 0  <br />
+atrapado_corriendo(80, False) -&gt; 1 <br /></p>
 
 <textarea data-component="activecode" id=pego_correndo data-lang="python" 
       data-timelimit=25000    
     data-audio=''      
            data-wasm=/_static>
-def pego_correndo(speed, is_birthday):
+def atrapado_corriendo(speed, is_birthday):
 
 
 
@@ -733,19 +678,21 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(atrapado_curriendo(60, False), 0,"Esperado: 0")
-        self.assertEqual(atrapado_curriendo(65, False), 1,"Esperado: 1")
-        self.assertEqual(atrapado_curriendo(65, True), 0,"Esperado: 0")
-        self.assertEqual(atrapado_curriendo(80, False), 1,"Esperado: 1")
-        self.assertEqual(atrapado_curriendo(85, False), 2,"Esperado: 2")
-        self.assertEqual(atrapado_curriendo(85, True), 1,"Esperado: 1")
-        self.assertEqual(atrapado_curriendo(70, False), 1,"Esperado: 1")
-        self.assertEqual(atrapado_curriendo(75, False), 1,"Esperado: 1")
-        self.assertEqual(atrapado_curriendo(75, True), 1,"Esperado: 1")
-        self.assertEqual(atrapado_curriendo(40, False), 0,"Esperado: 0")
-        self.assertEqual(atrapado_curriendo(40, True), 0,"Esperado: 0")
-        self.assertEqual(atrapado_curriendo(90, False), 2,"Esperado: 2")
-
+        self.assertEqual(atrapado_corriendo(20, False), 0, "Esperado: 0")
+        self.assertEqual(atrapado_corriendo(20, True), 0, "Esperado: 0")
+        self.assertEqual(atrapado_corriendo(60, False), 0,"Esperado: 0")
+        self.assertEqual(atrapado_corriendo(65, False), 1,"Esperado: 1")
+        self.assertEqual(atrapado_corriendo(65, True), 0,"Esperado: 0")
+        self.assertEqual(atrapado_corriendo(80, False), 1,"Esperado: 1")
+        self.assertEqual(atrapado_corriendo(85, False), 2,"Esperado: 2")
+        self.assertEqual(atrapado_corriendo(85, True), 1,"Esperado: 1")
+        self.assertEqual(atrapado_corriendo(70, False), 1,"Esperado: 1")
+        self.assertEqual(atrapado_corriendo(75, False), 1,"Esperado: 1")
+        self.assertEqual(atrapado_corriendo(75, True), 1,"Esperado: 1")
+        self.assertEqual(atrapado_corriendo(40, False), 0,"Esperado: 0")
+        self.assertEqual(atrapado_corriendo(40, True), 0,"Esperado: 0")
+        self.assertEqual(atrapado_corriendo(90, False), 2,"Esperado: 2")
+        self.assertEqual(atrapado_corriendo(90, True), 2,"Esperado: 2")
 
 
 myTests().main()
@@ -754,27 +701,19 @@ myTests().main()
 
 <div data-childcomponent="alarm_clock" class="runestone explainer ac_section alert alert-warning">
 <p>J. alarm_clock <br />
-día: 0 = domingo, 1 = lunes, 2 = martes, …, 6 = sábado <br /></p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 352)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>vacation = True si está de vacaciones <br />
-el retorno es una cadena que indica cuándo sonará el despertador <br />
-días de la semana ‘07: 00 ‘<br />
-fines de semana ‘10: 00 ‘<br />
-a menos que esté de vacaciones, en este caso: <br />
-días de la semana ‘10: 00 ‘<br />
-fines de semana ‘libres’ <br /></p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz9.rst</span>, line 359)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>alarm_clock(1, False) -&gt; ‘7:00’ <br />
-alarm_clock(5, False) -&gt; ‘7:00’ <br />
-alarm_clock(0, False) -&gt; ‘10:00’ <br /></p>
+Defina una función <code class="docutils literal notranslate"><span class="pre">alarm_clock</span></code> que tome dos argumentos: El primer argumento <code class="docutils literal notranslate"><span class="pre">day</span></code> es un número del 0-6 que representa un día de la semana de acuerdo a lo siguiente:<br />
+día: 0 = domingo, 1 = lunes, 2 = martes, …, 6 = sábado <br />
+El segundo argumento <code class="docutils literal notranslate"><span class="pre">vacation</span></code> tomará el valor True si estas de vacaciones o False si no lo estas. La función regresará un string que indica cuándo sonará el despertador de acuerdo a lo siguiente:<br />
+Días de la semana: ‘07:00’<br />
+Fines de semana: ‘10:00’<br />
+A menos que esté de vacaciones, en este caso: <br />
+Días de la semana: ‘10:00’<br />
+Fines de semana: ‘libre’ <a href="#id13"><span class="problematic" id="id14">|br||br|</span></a>
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">alarm_clock(1,</span> <span class="pre">False)</span></code> -&gt; ‘7:00’ <br />
+<code class="docutils literal notranslate"><span class="pre">alarm_clock(1,</span> <span class="pre">True)</span></code> -&gt; ‘10:00’ <br />
+<code class="docutils literal notranslate"><span class="pre">alarm_clock(6,</span> <span class="pre">True)</span></code> -&gt; ‘libre’ <br />
+<code class="docutils literal notranslate"><span class="pre">alarm_clock(0,</span> <span class="pre">False)</span></code> -&gt; ‘10:00’ <br /></p>
 
 <textarea data-component="activecode" id=alarm_clock data-lang="python" 
       data-timelimit=25000    
@@ -794,12 +733,11 @@ class myTests(TestCaseGui):
         self.assertEqual(alarm_clock(5, False), '7:00',"Esperado: 7:00")
         self.assertEqual(alarm_clock(0, False), '10:00',"Esperado: 10:00")
         self.assertEqual(alarm_clock(6, False), '10:00',"Esperado: 10:00")
-        self.assertEqual(alarm_clock(0, True), 'off',"Esperado: off")
-        self.assertEqual(alarm_clock(6, True), 'off',"Esperado: off")
+        self.assertEqual(alarm_clock(0, True), 'libre',"Esperado: libre")
+        self.assertEqual(alarm_clock(6, True), 'libre',"Esperado: libre")
         self.assertEqual(alarm_clock(1, True), '10:00',"Esperado: 10:00")
         self.assertEqual(alarm_clock(3, True), '10:00',"Esperado: 10:00")
         self.assertEqual(alarm_clock(5, True), '10:00',"Esperado: 10:00")
-
 
 
 myTests().main()
