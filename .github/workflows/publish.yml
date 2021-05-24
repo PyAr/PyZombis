@@ -9,6 +9,11 @@ on:
     types:
       - completed
 
+# avoid GitHub Pages deploy to overwrite another in progress job
+concurrency:
+  group: dev_environment
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
