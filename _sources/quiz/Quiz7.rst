@@ -419,7 +419,7 @@ Ejercicio L
    :nocodelens:
 
 
-   Desarrolle la función ``remove_iesimo`` que recibe una cadena ``s`` no vacía y un entero positivo ``i`` y devuelva la cadena original sin el i-esimo caracter |br| |br|
+   Desarrolle la función ``remove_iesimo`` que recibe una cadena ``s`` no vacía y un entero positivo ``i`` y devuelva la cadena original sin el i-esimo carácter |br| |br|
    Ejemplos:|br|
    ``remove_iesimo('Hello',1)`` -> 'ello' |br|
    ``remove_iesimo('Hi',2)`` -> 'H' |br|
