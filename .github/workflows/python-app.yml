@@ -34,10 +34,9 @@ jobs:
     - name: Build
       run: |
         runestone build
-    - name: Save PR number
-      if: github.ref != 'master'
+    - name: Save PR number / branch name
       run: |
-        echo ${{ github.event.number }} > ./build/PyZombis/NR
+        ( [ ! -z "${{ github.event.number }}" ] && echo ${{ github.event.number }} || echo ${{ github.ref }} ) > ./build/PyZombis/NR
     - name: Save branch name
       if: github.ref == 'master'
       run: |
