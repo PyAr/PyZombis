@@ -1,6 +1,7 @@
 sphinx-enki-info.txt
 sphinx_settings.json
 venv/
+env/
 .gitignore
 
 
