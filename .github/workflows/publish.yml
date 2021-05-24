@@ -10,7 +10,7 @@ on:
       - completed
 
 jobs:
-  upload:
+  publish:
     runs-on: ubuntu-latest
     if: >
       ${{ github.event.workflow_run.event == 'pull_request' &&
@@ -18,8 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: ''
           ref: 'gh-pages'
+          path: 'gh-pages'
       - name: 'Download artifact'
         uses: actions/github-script@v3.1.0
         with:
@@ -39,7 +39,7 @@ jobs:
                archive_format: 'zip',
             });
             var fs = require('fs');
-            fs.writeFileSync('${{github.workspace}}/pr.zip', Buffer.from(download.data));
+            fs.writeFileSync('${{github.workspace}}/website-output.zip', Buffer.from(download.data));
       - name: Extract built content from artifact
         run: |
           mkdir -p /tmp/website-output
@@ -47,12 +47,12 @@ jobs:
       - name: Move built content to gh-pages
         run: |
           export NR=$(< /tmp/website-output/NR)
-          mkdir -p ./$NR/
-          cp -rf /tmp/website-output/* $NR/
+          mkdir -p gh-pages/$NR/
+          cp -rf /tmp/website-output/* gh-pages/$NR/
       - name: Publish generated content to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-            publish_dir: .
+            publish_dir: gh-pages
             publish_branch: gh-pages
             github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Comment on PR'
