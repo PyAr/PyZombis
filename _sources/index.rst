@@ -46,9 +46,9 @@ Contenidos:
    quiz/QuizExtras2.rst
 
 
-==================
-Indices and tables
-==================
+================
+Índices y tablas
+================
 
 * :ref:`genindex`
 * :ref:`modindex`
