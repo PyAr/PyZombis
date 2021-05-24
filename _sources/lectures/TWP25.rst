@@ -90,7 +90,7 @@ Classes e objetos
           def cambia_el_canal_para_arriba(self):
             self.canal += 1
 
-        tv = television()
+        tv = Television()
         tv.cambia_el_canal_para_arriba() 
         tv.cambia_el_canal_para_arriba()
         print(tv.canal)

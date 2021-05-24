@@ -533,7 +533,7 @@ Ejemplo
     ep = 5.8
     p = 7
     aprobado = ep >= 6 and p >= 6
-    print(aprovado)
+    print(aprobado)
 
 
 Variale String

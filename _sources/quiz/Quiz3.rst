@@ -10,7 +10,7 @@ Quiz - 3
 .. activecode:: q3_1
    :nocodelens:
 
-   Decimos que un número natural es triangular si es el producto de tres números naturales consecutivos. |zxbr|
+   Decimos que un número natural es triangular si es el producto de tres números naturales consecutivos. |br|
     Ejemplo: 120 es triangular, ya que 4.5.6 = 120. Dado un número entero no negativo n, verifique si n es triangular |br|
     Devuelve Verdadero o Falso |br|
    
@@ -131,7 +131,7 @@ Quiz - 3
 .. activecode:: q3_5
    :nocodelens:
 
-   Faça um programa que pedir um inteiro positivo e mostrá-lo invertido. Ex .: 1234 gera 4321. Retorna o número invertido. |br|
+   Haga un programa que solicite un número entero positivo y lo muestre invertido. Por ejemplo: 1234 genera 4321. Devuelve el número invertido.|br|
 
    
    ~~~~
