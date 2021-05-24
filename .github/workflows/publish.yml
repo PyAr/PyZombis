@@ -71,6 +71,6 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue_number,
-                body: 'Published to http://pyar.github.io/PyZombis/${issue_number}'
+                body: `Published to http://pyar.github.io/PyZombis/${issue_number}/index.html`
               });
             }
