@@ -17,15 +17,14 @@ Quiz - 5
    :answer_d: 3
    :correct: a
 
-  ¿Qué imprime el siguiente programa (dado en forma de pseucódigo)? |br|
+   ¿Qué imprime el siguiente programa (dado en forma de pseucódigo)? |br|
    x = 2 |br|
    y = 5 |br|
-   se y > 8 enteros |br|
+   si y > 8 entonces |br|
    y = y * 2 |br|
-   caso contrário, |br|
+   en caso contrario, |br|
    x = x * 2 |br|
    imprime (x + y) |br|
-
 
 
 
@@ -50,7 +49,7 @@ Quiz - 5
 
    ¿Cuántas veces el siguiente pseudocódigo imprime 'hola'? (nota: en nuestro pseudolenguaje, el ciclo incluye los extremos, es decir, 1 a 4 significa 1, 2, 3, 4.) |br|
    para i = 1 hasta 9 |br|
-   se i != 3, entero |br|
+   si i != 3, entonces |br|
    para j = 1 hasta 6 |br|
    imprime 'Hola' |br|
 
@@ -77,6 +76,7 @@ Quiz - 5
 
 
 
+
 .. activecode:: mcqcb_5_3
    :nocodelens:
 
@@ -94,9 +94,7 @@ Quiz - 5
    :correct: b
 
    
-   Daniela es una persona muy supersticiosa. Para ella, un número tiene suerte si contiene el dígito 2 pero no el 7. |br|
-    Entonces, en su opinión, ¿cuántos números de la suerte hay entre 18644 y 33087, incluidos los extremos? | br|
-
+   Daniela es una persona muy supersticiosa. Para ella, un número tiene suerte si contiene el dígito 2 pero no el 7. Entonces, en su opinión, ¿cuántos números de la suerte hay entre 18644 y 33087, incluidos los extremos? |br|
 
 
 
@@ -116,14 +114,15 @@ Quiz - 5
    :answer_c: 35
    :answer_d: 86
    :correct: a
+ 
 
-   
-
-  En el tranquilo pueblo rural de Ponteironuloville, todos los teléfonos tienen 6 dígitos. La compañía telefónica establece las siguientes reglas sobre números: |br|
-    1. No puede haber dos dígitos idénticos consecutivos, porque esto es aburrido; |br|
-    2. La suma de los dígitos debe ser par, porque esto es legal; |br|
-    3. El último dígito no puede ser el mismo que el primero, porque eso es mala suerte. |br|
-    Entonces, dadas estas reglas perfectamente razonables, bien diseñadas y maduras, ¿cuántos números de teléfono en la lista a continuación son válidos? |br|
+   En el tranquilo pueblo rural de Ponteironuloville, todos los teléfonos tienen 6 dígitos. La compañía telefónica establece las siguientes reglas sobre números: |br|
+   1. No puede haber dos dígitos idénticos consecutivos, porque esto es aburrido; |br|
+   2. La suma de los dígitos debe ser par, porque esto es legal; |br|
+   3. El último dígito no puede ser el mismo que el primero, porque eso es mala suerte. |br|
+   |br|
+   Entonces, dadas estas reglas perfectamente razonables, bien diseñadas y maduras, ¿cuántos números de teléfono en la lista a continuación son válidos? |br|
+   |br|
    236043 237330 239636 240138 242123 246224 249183 252936 |br|
    254711 257200 257607 261424 263814 266794 268649 273050 |br|
    275001 277606 278997 283331 287104 287953 289137 291591 |br|
@@ -148,7 +147,6 @@ Quiz - 5
    618314 622752 626345 626632 628889 629457 629643 633673 |br|
    637656 641136 644176 644973 647617 652218 657143 659902 |br|
    662224 666265 668010 672480 672695 676868 677125 678315 |br|
- 
 
 
 

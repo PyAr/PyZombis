@@ -304,7 +304,21 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Quiz - 7</a></li>
+<li><a class="reference internal" href="#">Quiz - 7</a><ul>
+<li><a class="reference internal" href="#ejercicio-a">Ejercicio A</a></li>
+<li><a class="reference internal" href="#ejercicio-b">Ejercicio B</a></li>
+<li><a class="reference internal" href="#ejercicio-c">Ejercicio C</a></li>
+<li><a class="reference internal" href="#ejercicio-d">Ejercicio D</a></li>
+<li><a class="reference internal" href="#ejercicio-e">Ejercicio E</a></li>
+<li><a class="reference internal" href="#ejercicio-f">Ejercicio F</a></li>
+<li><a class="reference internal" href="#ejercicio-g">Ejercicio G</a></li>
+<li><a class="reference internal" href="#ejercicio-h">Ejercicio H</a></li>
+<li><a class="reference internal" href="#ejercicio-i">Ejercicio I</a></li>
+<li><a class="reference internal" href="#ejercicio-j">Ejercicio J</a></li>
+<li><a class="reference internal" href="#ejercicio-k">Ejercicio K</a></li>
+<li><a class="reference internal" href="#ejercicio-l">Ejercicio L</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -351,20 +365,12 @@
   
   <div class="section" id="quiz-7">
 <h1>Quiz - 7<a class="headerlink" href="#quiz-7" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ejercicio-a">
+<h2>Ejercicio A<a class="headerlink" href="#ejercicio-a" title="Permalink to this headline">¶</a></h2>
 
 <div data-childcomponent="multstring" class="runestone explainer ac_section alert alert-warning">
-<ol class="upperalpha simple">
-<li><p>multstring</p></li>
-</ol>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 14)</p>
-<p>Enumerated list ends without a blank line; unexpected unindent.</p>
-</div>
-<blockquote>
-<div><p>ser una cadena sy un entero positivo n <br />
-devuelve una cadena con n copias de la cadena original <br />
-multstring (‘Hola’, 2) -&gt; ‘HiHi’ <a href="#id1"><span class="problematic" id="id2">|en|</span></a></p>
-</div></blockquote>
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">multstring</span></code> que recibe como parametros una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y un entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y devuelve una nueva cadena que contiene <code class="docutils literal notranslate"><span class="pre">n</span></code> copias de la cadena original <br /> <br />
+Ejemplo: <code class="docutils literal notranslate"><span class="pre">multstring('Hola',</span> <span class="pre">2)</span></code> -&gt; ‘HolaHola’</p>
 
 <textarea data-component="activecode" id=multstring data-lang="python" 
       data-timelimit=25000    
@@ -380,8 +386,8 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(multstring('Hi', 2), 'HiHi',"Esperado: HiHi")
-        self.assertEqual(multstring('Hi', 3), 'HiHiHi',"Esperado: HiHiHi")
+        self.assertEqual(multstring('Hola', 2), 'HolaHola',"Esperado: HolaHola")
+        self.assertEqual(multstring('Hola', 3), 'HolaHolaHola',"Esperado: HolaHolaHola")
         self.assertEqual(multstring('Hi', 1), 'Hi',"Esperado: Hi")
         self.assertEqual(multstring('Hi', 0), '',"Esperado: ''")
         self.assertEqual(multstring('Hi', 5), 'HiHiHiHiHi',"Esperado: HiHiHiHiHi")
@@ -394,12 +400,16 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
+</div>
+<div class="section" id="ejercicio-b">
+<h2>Ejercicio B<a class="headerlink" href="#ejercicio-b" title="Permalink to this headline">¶</a></h2>
 
 <div data-childcomponent="string_splosion" class="runestone explainer ac_section alert alert-warning">
-<p>B. string_splosion <br />
-string_splosion(‘Code’) -&gt; ‘CCoCodCode’ <br />
-string_splosion(‘abc’) -&gt; ‘aababc’ <br />
-string_splosion(‘ab’) -&gt; ‘aab’ <br /></p>
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">string_splosion</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y devuelva una nueva cadena siguiendo el patron descrito en los ejemplos <br /> <br />
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">string_splosion('Code')</span></code> -&gt; ‘CCoCodCode’ <br />
+<code class="docutils literal notranslate"><span class="pre">string_splosion('abc')</span></code> -&gt; ‘aababc’ <br />
+<code class="docutils literal notranslate"><span class="pre">string_splosion('ab')</span></code> -&gt; ‘aab’ <br /></p>
 
 <textarea data-component="activecode" id=string_splosion data-lang="python" 
       data-timelimit=25000    
@@ -430,10 +440,13 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
+</div>
+<div class="section" id="ejercicio-c">
+<h2>Ejercicio C<a class="headerlink" href="#ejercicio-c" title="Permalink to this headline">¶</a></h2>
 
 <div data-childcomponent="array_count9" class="runestone explainer ac_section alert alert-warning">
-<p>C. array_count9 <br />
-cuenta cuántas veces aparece 9 en una lista de números <br /></p>
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">array_count9</span></code> que recibe como parametro una lista no vacía de números enteros <code class="docutils literal notranslate"><span class="pre">nums</span></code> y devuelva cuántas veces aparece el número 9 en la lista <br /> <br />
+Ejemplo: <code class="docutils literal notranslate"><span class="pre">array_count9([1,</span> <span class="pre">99,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 
 <textarea data-component="activecode" id=array_count9 data-lang="python" 
       data-timelimit=25000    
@@ -453,7 +466,7 @@ class myTests(TestCaseGui):
         self.assertEqual(array_count9([1, 9, 9]), 2,"Esperado: 2")
         self.assertEqual(array_count9([1, 9, 9, 3, 9]), 3,"Esperado: 3")
         self.assertEqual(array_count9([1, 2, 3]), 0,"Esperado: 0")
-        self.assertEqual(array_count9([1, 2, 3]), 0,"Esperado: 0")
+        self.assertEqual(array_count9([1]), 0,"Esperado: 1")
         self.assertEqual(array_count9([4, 2, 4, 3, 1]), 0,"Esperado: 0")
         self.assertEqual(array_count9([9, 2, 99, 3, 1]), 1,"Esperado: 1")
 
@@ -461,13 +474,17 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
+</div>
+<div class="section" id="ejercicio-d">
+<h2>Ejercicio D<a class="headerlink" href="#ejercicio-d" title="Permalink to this headline">¶</a></h2>
 
 <div data-childcomponent="array_front9" class="runestone explainer ac_section alert alert-warning">
-<p>D. array_front9 <br />
-verifica se pelo menos um dos quatro primeiros é nove <br />
-array_front9([1, 2, 9, 3, 4]) -&gt; True <br />
-array_front9([1, 2, 3, 4, 9]) -&gt; False <br />
-array_front9([1, 2, 3, 4, 5]) -&gt; False <br /></p>
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">array_front9</span></code> que recibe una lista de números enteros <code class="docutils literal notranslate"><span class="pre">nums</span></code> y verifica si al menos uno de los primeros cuatro números es 9 <br /> <br />
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">9,</span> <span class="pre">3,</span> <span class="pre">4])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
 
 <textarea data-component="activecode" id=array_front9 data-lang="python" 
       data-timelimit=25000    
@@ -502,13 +519,16 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
+</div>
+<div class="section" id="ejercicio-e">
+<h2>Ejercicio E<a class="headerlink" href="#ejercicio-e" title="Permalink to this headline">¶</a></h2>
 
 <div data-childcomponent="hello_name" class="runestone explainer ac_section alert alert-warning">
-<p>E. hello_name <br />
-ser un nombre de cadena       <br />
-hello_name(‘Bob’) -&gt; ‘Hello Bob!’ <br />
-hello_name(‘Alice’) -&gt; ‘Hello Alice!’ <br />
-hello_name(‘X’) -&gt; ‘Hello X!’ <br /></p>
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">hello_name</span></code> que recibe como parametro un cadena representa un nombre <code class="docutils literal notranslate"><span class="pre">name</span></code> y devuelva un saludo con este nombre <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">hello_name('Bob')</span></code> -&gt; ‘¡Hola Bob!’ <br />
+<code class="docutils literal notranslate"><span class="pre">hello_name('Alice')</span></code> -&gt; ‘¡Hola Alice!’ <br />
+<code class="docutils literal notranslate"><span class="pre">hello_name('X')</span></code> -&gt; ‘Hola X!’ <br /></p>
 
 <textarea data-component="activecode" id=hello_name data-lang="python" 
       data-timelimit=25000    
@@ -524,21 +544,25 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(hello_name('Bob'), 'Hello Bob!',"Esperado: Hello Bob!")
-        self.assertEqual(hello_name('Alice'), 'Hello Alice!',"Esperado: Hello Alice!")
-        self.assertEqual(hello_name('X'), 'Hello X!',"Esperado: Hello X!")
-        self.assertEqual(hello_name('Hello'), 'Hello Hello!',"Esperado: Hello Hello!")
+        self.assertEqual(hello_name('Bob'), '¡Hola Bob!',"Esperado: ¡Hola Bob!")
+        self.assertEqual(hello_name('Alice'), '¡Hola Alice!',"Esperado: ¡Hola Alice!")
+        self.assertEqual(hello_name('X'), '¡Hola X!',"Esperado: ¡Hola X!")
+        self.assertEqual(hello_name('Hola'), '¡Hola Hola!',"Esperado: ¡Hola Hola!")
 
 
 myTests().main()
 </textarea>
 </div>
+</div>
+<div class="section" id="ejercicio-f">
+<h2>Ejercicio F<a class="headerlink" href="#ejercicio-f" title="Permalink to this headline">¶</a></h2>
 
 <div data-childcomponent="make_tags" class="runestone explainer ac_section alert alert-warning">
-<p>F. make_tags <br />
-make_tags(‘i’, ‘Yay’), ‘&lt;i&gt;Yay&lt;/i&gt;’ <br />
-make_tags(‘i’, ‘Hello’), ‘&lt;i&gt;Hello&lt;/i&gt;’ <br />
-make_tags(‘cite’, ‘Yay’), ‘&lt;cite&gt;Yay&lt;/cite&gt;’ <br /></p>
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">make_tags</span></code> que recibe dos cadenas <code class="docutils literal notranslate"><span class="pre">tag</span></code> y <code class="docutils literal notranslate"><span class="pre">word</span></code> y devuelva una nueva cadena formateada siguiendo el patrón de los ejemplos <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">make_tags('i',</span> <span class="pre">'Yay')</span></code> -&gt; ‘&lt;i&gt;Yay&lt;/i&gt;’ <br />
+<code class="docutils literal notranslate"><span class="pre">make_tags('i',</span> <span class="pre">'Hello')</span></code> -&gt; ‘&lt;i&gt;Hello&lt;/i&gt;’ <br />
+<code class="docutils literal notranslate"><span class="pre">make_tags('cite',</span> <span class="pre">'Yay')</span></code> -&gt; ‘&lt;cite&gt;Yay&lt;/cite&gt;’ <br /></p>
 
 <textarea data-component="activecode" id=make_tags data-lang="python" 
       data-timelimit=25000    
@@ -566,24 +590,16 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
+</div>
+<div class="section" id="ejercicio-g">
+<h2>Ejercicio G<a class="headerlink" href="#ejercicio-g" title="Permalink to this headline">¶</a></h2>
 
 <div data-childcomponent="extra_end" class="runestone explainer ac_section alert alert-warning">
-<p>G. extra_end <br />
-ser una string s con al menos dos letras <br /></p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 216)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>devuelve las dos últimas letras tres veces <br /></p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 217)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>extra_end(‘Hello’), ‘lololo’ <br />
-extra_end(‘ab’), ‘ababab’ <br />
-extra_end(‘Hi’), ‘HiHiHi’  <br /></p>
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">extra_end</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelve una nueva cadena con las dos últimas letras repetidas tres veces <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">extra_end('Hello')</span></code> -&gt; ‘lololo’ <br />
+<code class="docutils literal notranslate"><span class="pre">extra_end('abb')</span></code> -&gt; ‘bbbbbb’ <br />
+<code class="docutils literal notranslate"><span class="pre">extra_end('Hi')</span></code> -&gt; ‘HiHiHi’  <br /></p>
 
 <textarea data-component="activecode" id=extra_end data-lang="python" 
       data-timelimit=25000    
@@ -610,24 +626,52 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
+</div>
+<div class="section" id="ejercicio-h">
+<h2>Ejercicio H<a class="headerlink" href="#ejercicio-h" title="Permalink to this headline">¶</a></h2>
+
+<div data-childcomponent="new_extra_end" class="runestone explainer ac_section alert alert-warning">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">new_extra_end</span></code> (variante de la función del Ejercicio G) que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y un entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y devuelva una nueva cadena con las dos últimas letras repetidas <code class="docutils literal notranslate"><span class="pre">n</span></code> veces <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">new_extra_end('Hello',3)</span></code> -&gt; ‘lololo’ <br />
+<code class="docutils literal notranslate"><span class="pre">new_extra_end('abb',1)</span></code> -&gt; ‘bb’ <br />
+<code class="docutils literal notranslate"><span class="pre">new_extra_end('Hi',5)</span></code> -&gt; ‘HiHiHiHiHi’  <br /></p>
+
+<textarea data-component="activecode" id=new_extra_end data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def new_extra_end(s,n):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(new_extra_end('Hello', 3), 'lololo',"Esperado: lololo")
+        self.assertEqual(new_extra_end('ab', 2), 'abab',"Esperado: abab")
+        self.assertEqual(new_extra_end('Hi', 6), 'HiHiHiHiHiHi',"Esperado: HiHiHi")
+        self.assertEqual(new_extra_end('Candy', 1), 'dy',"Esperado: dy")
+        self.assertEqual(new_extra_end('Code', 0), '',"Esperado: ''")
+
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+<div class="section" id="ejercicio-i">
+<h2>Ejercicio I<a class="headerlink" href="#ejercicio-i" title="Permalink to this headline">¶</a></h2>
 
 <div data-childcomponent="first_half" class="runestone explainer ac_section alert alert-warning">
-<p>H. first_half <br />
-ser una string s <br /></p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 249)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>devuelve la primera mitad de la cadena <br /></p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 250)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>first_half(‘WooHoo’) -&gt; ‘Woo’ <br />
-first_half(‘HelloThere’) -&gt; ‘Hello’ <br />
-first_half(‘abcdef’) -&gt; ‘abc’ <br /></p>
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">first_half</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y devuelve la primera mitad de la cadena original <br /> <br />
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">first_half('WooHoo')</span></code> -&gt; ‘Woo’ <br />
+<code class="docutils literal notranslate"><span class="pre">first_half('HelloThere')</span></code> -&gt; ‘Hello’ <br />
+<code class="docutils literal notranslate"><span class="pre">first_half('abcdef')</span></code> -&gt; ‘abc’ <br /></p>
 
 <textarea data-component="activecode" id=first_half data-lang="python" 
       data-timelimit=25000    
@@ -655,20 +699,22 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
+</div>
+<div class="section" id="ejercicio-j">
+<h2>Ejercicio J<a class="headerlink" href="#ejercicio-j" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="sem_pontas" class="runestone explainer ac_section alert alert-warning">
-<p>I. sem_pontas <br />
-seja uma string s de pelo menos dois caracteres <br />
-retorna uma string sem o primeiro e último caracter <br />
-without_end(‘Hello’) -&gt; ‘ell’ <br />
-without_end(‘python’) -&gt; ‘ytho’ <br />
-without_end(‘coding’) -&gt; ‘odin’ <br /></p>
+<div data-childcomponent="remove_first_last" class="runestone explainer ac_section alert alert-warning">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remove_first_last</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva una cadena sin el primer y último carácter <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">remove_first_last('Hello')</span></code> -&gt; ‘ell’ <br />
+<code class="docutils literal notranslate"><span class="pre">remove_first_last('python')</span></code> -&gt; ‘ytho’ <br />
+<code class="docutils literal notranslate"><span class="pre">remove_first_last('coding')</span></code> -&gt; ‘odin’ <br /></p>
 
-<textarea data-component="activecode" id=sem_pontas data-lang="python" 
+<textarea data-component="activecode" id=remove_first_last data-lang="python" 
       data-timelimit=25000    
     data-audio=''      
            data-wasm=/_static>
-def sem_pontas(s):
+def remove_first_last(s):
 
 
 
@@ -678,42 +724,35 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(sin_puntos('Hello'), 'ell',"Esperado: ell")
-        self.assertEqual(sin_puntos('Python'), 'ytho',"Esperado: ytho")
-        self.assertEqual(sin_puntos('coding'), 'odin',"Esperado: odin")
-        self.assertEqual(sin_puntos('code'), 'od',"Esperado: od")
-        self.assertEqual(sin_puntos('ab'), '',"Esperado: ")
-        self.assertEqual(sin_puntos('Chocolate!'), 'hocolate',"Esperado: hocolate")
-        self.assertEqual(sin_puntos('kitten'), 'itte',"Esperado: itte")
-        self.assertEqual(sin_puntos('woohoo'), 'ooho',"Esperado: ooho")
+        self.assertEqual(remove_first_last('Hello'), 'ell',"Esperado: ell")
+        self.assertEqual(remove_first_last('Python'), 'ytho',"Esperado: ytho")
+        self.assertEqual(remove_first_last('coding'), 'odin',"Esperado: odin")
+        self.assertEqual(remove_first_last('code'), 'od',"Esperado: od")
+        self.assertEqual(remove_first_last('ab'), '',"Esperado: ")
+        self.assertEqual(remove_first_last(' PyZombies '), 'PyZombies',"Esperado: PyZombies")
+        self.assertEqual(remove_first_last('Chocolate!'), 'hocolate',"Esperado: hocolate")
+        self.assertEqual(remove_first_last('kitten'), 'itte',"Esperado: itte")
+        self.assertEqual(remove_first_last('woohoo'), 'ooho',"Esperado: ooho")
 
 
 myTests().main()
 </textarea>
 </div>
-
-<div data-childcomponent="roda2" class="runestone explainer ac_section alert alert-warning">
-<p>J. roda2 <br />
-rotar una srting en dos posiciones <br /></p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 318)</p>
-<p>Unexpected indentation.</p>
 </div>
-<blockquote>
-<div><p>la cadena tiene al menos 2 caracteres <br /></p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7.rst</span>, line 319)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>left2(‘Hello’) -&gt; ‘lloHe’ <br />
-left2(‘Hi’) -&gt; ‘Hi’ <br /></p>
+<div class="section" id="ejercicio-k">
+<h2>Ejercicio K<a class="headerlink" href="#ejercicio-k" title="Permalink to this headline">¶</a></h2>
 
-<textarea data-component="activecode" id=roda2 data-lang="python" 
+<div data-childcomponent="left2" class="runestone explainer ac_section alert alert-warning">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">left2</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva la cadena original rotada 2 posiciones a la izquierda <br /> <br />
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">left2('Hello')</span></code> -&gt; ‘lloHe’ <br />
+<code class="docutils literal notranslate"><span class="pre">left2('Hi')</span></code> -&gt; ‘Hi’ <br /></p>
+
+<textarea data-component="activecode" id=left2 data-lang="python" 
       data-timelimit=25000    
     data-audio=''      
            data-wasm=/_static>
-def roda2(s):
+def left2(s):
 
 
 
@@ -723,19 +762,61 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(rueda2('Hello'), 'lloHe',"Esperado: lloHe")
-        self.assertEqual(rueda2('python'), 'thonpy',"Esperado: thonpy")
-        self.assertEqual(rueda2('Hi'), 'Hi',"Esperado: Hi")
-        self.assertEqual(rueda2('code'), 'deco',"Esperado: deco")
-        self.assertEqual(rueda2('cat'), 'tca',"Esperado: tca")
-        self.assertEqual(rueda2('12345'), '34512',"Esperado: 34512")
-        self.assertEqual(rueda2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
-        self.assertEqual(rorueda2da2('bricks'), 'icksbr',"Esperado: icksbr")
+        self.assertEqual(left2('Hello'), 'lloHe',"Esperado: lloHe")
+        self.assertEqual(left2('python'), 'thonpy',"Esperado: thonpy")
+        self.assertEqual(left2('Hi'), 'Hi',"Esperado: Hi")
+        self.assertEqual(left2('code'), 'deco',"Esperado: deco")
+        self.assertEqual(left2('cat'), 'tca',"Esperado: tca")
+        self.assertEqual(left2('12345'), '34512',"Esperado: 34512")
+        self.assertEqual(left2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
+        self.assertEqual(left2('bricks'), 'icksbr',"Esperado: icksbr")
+        self.assertEqual(left2('isPyzomb'), 'PyZombies',"Esperado: PyZombies")
 
 
 
 myTests().main()
 </textarea>
+</div>
+</div>
+<div class="section" id="ejercicio-l">
+<h2>Ejercicio L<a class="headerlink" href="#ejercicio-l" title="Permalink to this headline">¶</a></h2>
+
+<div data-childcomponent="remove_iesimo" class="runestone explainer ac_section alert alert-warning">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remove_iesimo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> no vacía y un entero positivo <code class="docutils literal notranslate"><span class="pre">i</span></code> y devuelva la cadena original sin el i-esimo carácter <br /> <br />
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">remove_iesimo('Hello',1)</span></code> -&gt; ‘ello’ <br />
+<code class="docutils literal notranslate"><span class="pre">remove_iesimo('Hi',2)</span></code> -&gt; ‘H’ <br />
+<code class="docutils literal notranslate"><span class="pre">remove_iesimo('PyZombiess',</span> <span class="pre">10)</span></code> -&gt; ‘PyZombies’ <br /></p>
+
+<textarea data-component="activecode" id=remove_iesimo data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''      
+           data-wasm=/_static>
+def remove_iesimo(s,i):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(remove_iesimo('Hello', 1), 'ello',"Esperado: ello")
+        self.assertEqual(remove_iesimo('python', 6), 'pytho',"Esperado: pytho")
+        self.assertEqual(remove_iesimo('Hi', 0), 'Hi',"Esperado: Hi")
+        self.assertEqual(remove_iesimo('code', 5), 'code',"Esperado: code")
+        self.assertEqual(remove_iesimo('cat', 1), 'ct',"Esperado: ct")
+        self.assertEqual(remove_iesimo('12345', 3), '1245',"Esperado: 1245")
+        self.assertEqual(remove_iesimo('Chocolate', 15), 'Chocolate',"Esperado: Chocolate")
+        self.assertEqual(remove_iesimo('Hola mundo', 5), 'Holamundo',"Esperado: Holamundo")
+        self.assertEqual(remove_iesimo('Pyzombis ', 9), 'PyZombies',"Esperado: PyZombies")
+
+
+
+myTests().main()
+</textarea>
+</div>
 </div>
 </div>
 

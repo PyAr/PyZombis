@@ -7,13 +7,14 @@ Quiz - 7
    <br />
 
 
+Ejercicio A
+-----------
+
 .. activecode:: multstring
    :nocodelens:
 
-   A. multstring
-    ser una cadena sy un entero positivo n |br|
-    devuelve una cadena con n copias de la cadena original |br|
-    multstring ('Hola', 2) -> 'HiHi' |en|
+   Desarrolle la función ``multstring`` que recibe como parametros una cadena ``s`` y un entero positivo ``n`` y devuelve una nueva cadena que contiene ``n`` copias de la cadena original |br| |br|
+   Ejemplo: ``multstring('Hola', 2)`` -> 'HolaHola'
 
 
    ~~~~
@@ -27,8 +28,8 @@ Quiz - 7
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(multstring('Hi', 2), 'HiHi',"Esperado: HiHi")
-           self.assertEqual(multstring('Hi', 3), 'HiHiHi',"Esperado: HiHiHi")
+           self.assertEqual(multstring('Hola', 2), 'HolaHola',"Esperado: HolaHola")
+           self.assertEqual(multstring('Hola', 3), 'HolaHolaHola',"Esperado: HolaHolaHola")
            self.assertEqual(multstring('Hi', 1), 'Hi',"Esperado: Hi")
            self.assertEqual(multstring('Hi', 0), '',"Esperado: ''")
            self.assertEqual(multstring('Hi', 5), 'HiHiHiHiHi',"Esperado: HiHiHiHiHi")
@@ -41,13 +42,17 @@ Quiz - 7
    myTests().main()
 
 
+Ejercicio B
+-----------
+
 .. activecode:: string_splosion
    :nocodelens:
 
-   B. string_splosion |br|
-   string_splosion('Code') -> 'CCoCodCode' |br|
-   string_splosion('abc') -> 'aababc' |br|
-   string_splosion('ab') -> 'aab' |br|
+   Desarrolle la función ``string_splosion`` que recibe una cadena ``s`` y devuelva una nueva cadena siguiendo el patron descrito en los ejemplos |br| |br|
+   Ejemplos:|br|
+   ``string_splosion('Code')`` -> 'CCoCodCode' |br|
+   ``string_splosion('abc')`` -> 'aababc' |br|
+   ``string_splosion('ab')`` -> 'aab' |br|
 
    ~~~~
    def string_splosion(s):
@@ -75,12 +80,15 @@ Quiz - 7
    myTests().main()
 
 
+Ejercicio C
+-----------
+
 .. activecode:: array_count9
    :nocodelens:
 
 
-   C. array_count9 |br|
-   cuenta cuántas veces aparece 9 en una lista de números |br|
+   Desarrolle la función ``array_count9`` que recibe como parametro una lista no vacía de números enteros ``nums`` y devuelva cuántas veces aparece el número 9 en la lista |br| |br|
+   Ejemplo: ``array_count9([1, 99, 9])`` -> ``1``
 
    ~~~~
    def array_count9(nums):
@@ -97,7 +105,7 @@ Quiz - 7
            self.assertEqual(array_count9([1, 9, 9]), 2,"Esperado: 2")
            self.assertEqual(array_count9([1, 9, 9, 3, 9]), 3,"Esperado: 3")
            self.assertEqual(array_count9([1, 2, 3]), 0,"Esperado: 0")
-           self.assertEqual(array_count9([1, 2, 3]), 0,"Esperado: 0")
+           self.assertEqual(array_count9([1]), 0,"Esperado: 1")
            self.assertEqual(array_count9([4, 2, 4, 3, 1]), 0,"Esperado: 0")
            self.assertEqual(array_count9([9, 2, 99, 3, 1]), 1,"Esperado: 1")
            
@@ -105,15 +113,19 @@ Quiz - 7
    myTests().main()
 
 
+Ejercicio D
+-----------
+
 .. activecode:: array_front9
    :nocodelens:
 
 
-   D. array_front9 |br| 
-   verifica se pelo menos um dos quatro primeiros é nove |br|
-   array_front9([1, 2, 9, 3, 4]) -> True |br|
-   array_front9([1, 2, 3, 4, 9]) -> False |br|
-   array_front9([1, 2, 3, 4, 5]) -> False |br|
+   Desarrolle la función ``array_front9`` que recibe una lista de números enteros ``nums`` y verifica si al menos uno de los primeros cuatro números es 9 |br| |br|
+   Ejemplos:|br|
+   ``array_front9([1, 2, 9, 3, 4])`` -> ``True`` |br|
+   ``array_front9([1, 2, 3, 4, 9])`` -> ``False`` |br|
+   ``array_front9([1, 2, 3, 4, 5])`` -> ``False`` |br|
+   ``array_front9([1, 2, 9])`` -> ``True`` |br|
 
    ~~~~
    def array_front9(nums):
@@ -145,15 +157,19 @@ Quiz - 7
    myTests().main()
 
 
+
+Ejercicio E
+-----------
+
 .. activecode:: hello_name
    :nocodelens:
 
 
-   E. hello_name |br|
-   ser un nombre de cadena	 |br|
-   hello_name('Bob') -> 'Hello Bob!' |br|
-   hello_name('Alice') -> 'Hello Alice!' |br|
-   hello_name('X') -> 'Hello X!' |br|
+   Desarrolle la función ``hello_name`` que recibe como parametro un cadena representa un nombre ``name`` y devuelva un saludo con este nombre |br| |br|
+   Ejemplos: |br|
+   ``hello_name('Bob')`` -> '¡Hola Bob!' |br|
+   ``hello_name('Alice')`` -> '¡Hola Alice!' |br|
+   ``hello_name('X')`` -> 'Hola X!' |br|
 
    ~~~~
    def hello_name(name):
@@ -166,23 +182,27 @@ Quiz - 7
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(hello_name('Bob'), 'Hello Bob!',"Esperado: Hello Bob!")
-           self.assertEqual(hello_name('Alice'), 'Hello Alice!',"Esperado: Hello Alice!")
-           self.assertEqual(hello_name('X'), 'Hello X!',"Esperado: Hello X!")
-           self.assertEqual(hello_name('Hello'), 'Hello Hello!',"Esperado: Hello Hello!")
+           self.assertEqual(hello_name('Bob'), '¡Hola Bob!',"Esperado: ¡Hola Bob!")
+           self.assertEqual(hello_name('Alice'), '¡Hola Alice!',"Esperado: ¡Hola Alice!")
+           self.assertEqual(hello_name('X'), '¡Hola X!',"Esperado: ¡Hola X!")
+           self.assertEqual(hello_name('Hola'), '¡Hola Hola!',"Esperado: ¡Hola Hola!")
          
 
    myTests().main()
 
 
+Ejercicio F
+-----------
+
 .. activecode:: make_tags
    :nocodelens:
 
 
-   F. make_tags |br|
-   make_tags('i', 'Yay'), '<i>Yay</i>' |br|
-   make_tags('i', 'Hello'), '<i>Hello</i>' |br|
-   make_tags('cite', 'Yay'), '<cite>Yay</cite>' |br|
+   Desarrolle la función ``make_tags`` que recibe dos cadenas ``tag`` y ``word`` y devuelva una nueva cadena formateada siguiendo el patrón de los ejemplos |br| |br|
+   Ejemplos: |br|
+   ``make_tags('i', 'Yay')`` -> '<i>Yay</i>' |br|
+   ``make_tags('i', 'Hello')`` -> '<i>Hello</i>' |br|
+   ``make_tags('cite', 'Yay')`` -> '<cite>Yay</cite>' |br|
 
    ~~~~
    def make_tags(tag,word):
@@ -207,16 +227,18 @@ Quiz - 7
    myTests().main()
 
 
+Ejercicio G
+-----------
+
 .. activecode:: extra_end
    :nocodelens:
 
 
-   G. extra_end |br|
-   ser una string s con al menos dos letras |br|
-    devuelve las dos últimas letras tres veces |br|
-   extra_end('Hello'), 'lololo' |br|
-   extra_end('ab'), 'ababab' |br|
-   extra_end('Hi'), 'HiHiHi'  |br|
+   Desarrolle la función ``extra_end`` que recibe una cadena ``s`` de al menos dos caracteres y devuelve una nueva cadena con las dos últimas letras repetidas tres veces |br| |br|
+   Ejemplos: |br|
+   ``extra_end('Hello')`` -> 'lololo' |br|
+   ``extra_end('abb')`` -> 'bbbbbb' |br|
+   ``extra_end('Hi')`` -> 'HiHiHi'  |br|
 
    ~~~~
    def extra_end(s):
@@ -240,16 +262,55 @@ Quiz - 7
    myTests().main()
 
 
+
+Ejercicio H
+-----------
+
+.. activecode:: new_extra_end
+   :nocodelens:
+
+
+   Desarrolle la función ``new_extra_end`` (variante de la función del Ejercicio G) que recibe una cadena ``s`` de al menos dos caracteres y un entero positivo ``n`` y devuelva una nueva cadena con las dos últimas letras repetidas ``n`` veces |br| |br|
+   Ejemplos: |br|
+   ``new_extra_end('Hello',3)`` -> 'lololo' |br|
+   ``new_extra_end('abb',1)`` -> 'bb' |br|
+   ``new_extra_end('Hi',5)`` -> 'HiHiHiHiHi'  |br|
+
+   ~~~~
+   def new_extra_end(s,n):
+
+
+
+   ====
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+       def testOne(self):
+           self.assertEqual(new_extra_end('Hello', 3), 'lololo',"Esperado: lololo")
+           self.assertEqual(new_extra_end('ab', 2), 'abab',"Esperado: abab")
+           self.assertEqual(new_extra_end('Hi', 6), 'HiHiHiHiHiHi',"Esperado: HiHiHi")
+           self.assertEqual(new_extra_end('Candy', 1), 'dy',"Esperado: dy")
+           self.assertEqual(new_extra_end('Code', 0), '',"Esperado: ''")
+
+
+
+   myTests().main()
+
+
+
+Ejercicio I
+-----------
+
 .. activecode:: first_half
    :nocodelens:
 
 
-   H. first_half |br|
-   ser una string s |br|
-    devuelve la primera mitad de la cadena |br|
-   first_half('WooHoo') -> 'Woo' |br|
-   first_half('HelloThere') -> 'Hello' |br|
-   first_half('abcdef') -> 'abc' |br|
+   Desarrolle la función ``first_half`` que recibe una cadena ``s`` y devuelve la primera mitad de la cadena original |br| |br|
+   Ejemplos:|br|
+   ``first_half('WooHoo')`` -> 'Woo' |br|
+   ``first_half('HelloThere')`` -> 'Hello' |br|
+   ``first_half('abcdef')`` -> 'abc' |br|
 
    ~~~~
    def first_half(s):
@@ -274,19 +335,21 @@ Quiz - 7
    myTests().main()
 
 
-.. activecode:: sem_pontas
+Ejercicio J
+-----------
+
+.. activecode:: remove_first_last
    :nocodelens:
 
 
-   I. sem_pontas |br|
-   seja uma string s de pelo menos dois caracteres |br|
-   retorna uma string sem o primeiro e último caracter |br|
-   without_end('Hello') -> 'ell' |br|
-   without_end('python') -> 'ytho' |br|
-   without_end('coding') -> 'odin' |br|
+   Desarrolle la función ``remove_first_last`` que recibe una cadena ``s`` de al menos dos caracteres y devuelva una cadena sin el primer y último carácter |br| |br|
+   Ejemplos: |br|
+   ``remove_first_last('Hello')`` -> 'ell' |br|
+   ``remove_first_last('python')`` -> 'ytho' |br|
+   ``remove_first_last('coding')`` -> 'odin' |br|
 
    ~~~~
-   def sem_pontas(s):
+   def remove_first_last(s):
 
        
 
@@ -296,31 +359,74 @@ Quiz - 7
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(sin_puntos('Hello'), 'ell',"Esperado: ell")
-           self.assertEqual(sin_puntos('Python'), 'ytho',"Esperado: ytho")
-           self.assertEqual(sin_puntos('coding'), 'odin',"Esperado: odin")
-           self.assertEqual(sin_puntos('code'), 'od',"Esperado: od")
-           self.assertEqual(sin_puntos('ab'), '',"Esperado: ")
-           self.assertEqual(sin_puntos('Chocolate!'), 'hocolate',"Esperado: hocolate")
-           self.assertEqual(sin_puntos('kitten'), 'itte',"Esperado: itte")
-           self.assertEqual(sin_puntos('woohoo'), 'ooho',"Esperado: ooho")
+           self.assertEqual(remove_first_last('Hello'), 'ell',"Esperado: ell")
+           self.assertEqual(remove_first_last('Python'), 'ytho',"Esperado: ytho")
+           self.assertEqual(remove_first_last('coding'), 'odin',"Esperado: odin")
+           self.assertEqual(remove_first_last('code'), 'od',"Esperado: od")
+           self.assertEqual(remove_first_last('ab'), '',"Esperado: ")
+           self.assertEqual(remove_first_last(' PyZombies '), 'PyZombies',"Esperado: PyZombies")
+           self.assertEqual(remove_first_last('Chocolate!'), 'hocolate',"Esperado: hocolate")
+           self.assertEqual(remove_first_last('kitten'), 'itte',"Esperado: itte")
+           self.assertEqual(remove_first_last('woohoo'), 'ooho',"Esperado: ooho")
         
            
    myTests().main()
 
 
-.. activecode:: roda2
+Ejercicio K
+-----------
+
+.. activecode:: left2
    :nocodelens:
 
 
-   J. roda2 |br|
-   rotar una srting en dos posiciones |br|
-    la cadena tiene al menos 2 caracteres |br|
-   left2('Hello') -> 'lloHe' |br|
-   left2('Hi') -> 'Hi' |br|
+   Desarrolle la función ``left2`` que recibe una cadena ``s`` de al menos dos caracteres y devuelva la cadena original rotada 2 posiciones a la izquierda |br| |br|
+   Ejemplos:|br|
+   ``left2('Hello')`` -> 'lloHe' |br|
+   ``left2('Hi')`` -> 'Hi' |br|
 
    ~~~~
-   def roda2(s):
+   def left2(s):
+
+
+
+   ====
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+       def testOne(self):
+           self.assertEqual(left2('Hello'), 'lloHe',"Esperado: lloHe")
+           self.assertEqual(left2('python'), 'thonpy',"Esperado: thonpy")
+           self.assertEqual(left2('Hi'), 'Hi',"Esperado: Hi")
+           self.assertEqual(left2('code'), 'deco',"Esperado: deco")
+           self.assertEqual(left2('cat'), 'tca',"Esperado: tca")
+           self.assertEqual(left2('12345'), '34512',"Esperado: 34512")
+           self.assertEqual(left2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
+           self.assertEqual(left2('bricks'), 'icksbr',"Esperado: icksbr")
+           self.assertEqual(left2('isPyzomb'), 'PyZombies',"Esperado: PyZombies")
+
+
+
+   myTests().main()
+
+
+
+Ejercicio L
+-----------
+
+.. activecode:: remove_iesimo
+   :nocodelens:
+
+
+   Desarrolle la función ``remove_iesimo`` que recibe una cadena ``s`` no vacía y un entero positivo ``i`` y devuelva la cadena original sin el i-esimo carácter |br| |br|
+   Ejemplos:|br|
+   ``remove_iesimo('Hello',1)`` -> 'ello' |br|
+   ``remove_iesimo('Hi',2)`` -> 'H' |br|
+   ``remove_iesimo('PyZombiess', 10)`` -> 'PyZombies' |br|
+
+   ~~~~
+   def remove_iesimo(s,i):
 
        
 
@@ -330,14 +436,15 @@ Quiz - 7
    class myTests(TestCaseGui):
 
        def testOne(self):
-           self.assertEqual(rueda2('Hello'), 'lloHe',"Esperado: lloHe")
-           self.assertEqual(rueda2('python'), 'thonpy',"Esperado: thonpy")
-           self.assertEqual(rueda2('Hi'), 'Hi',"Esperado: Hi")
-           self.assertEqual(rueda2('code'), 'deco',"Esperado: deco")
-           self.assertEqual(rueda2('cat'), 'tca',"Esperado: tca")
-           self.assertEqual(rueda2('12345'), '34512',"Esperado: 34512")
-           self.assertEqual(rueda2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
-           self.assertEqual(rorueda2da2('bricks'), 'icksbr',"Esperado: icksbr")
+           self.assertEqual(remove_iesimo('Hello', 1), 'ello',"Esperado: ello")
+           self.assertEqual(remove_iesimo('python', 6), 'pytho',"Esperado: pytho")
+           self.assertEqual(remove_iesimo('Hi', 0), 'Hi',"Esperado: Hi")
+           self.assertEqual(remove_iesimo('code', 5), 'code',"Esperado: code")
+           self.assertEqual(remove_iesimo('cat', 1), 'ct',"Esperado: ct")
+           self.assertEqual(remove_iesimo('12345', 3), '1245',"Esperado: 1245")
+           self.assertEqual(remove_iesimo('Chocolate', 15), 'Chocolate',"Esperado: Chocolate")
+           self.assertEqual(remove_iesimo('Hola mundo', 5), 'Holamundo',"Esperado: Holamundo")
+           self.assertEqual(remove_iesimo('Pyzombis ', 9), 'PyZombies',"Esperado: PyZombies")
          
         
            
