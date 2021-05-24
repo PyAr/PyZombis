@@ -313,7 +313,7 @@
 <li><a class="reference internal" href="#string-no-se-puede-modificar">String no se puede modificar</a></li>
 <li><a class="reference internal" href="#puedo-crear-nuevos-strings">Puedo crear nuevos strings</a></li>
 <li><a class="reference internal" href="#concentracion">Concentración</a></li>
-<li><a class="reference internal" href="#verificacion-parcial-de-strings">Verificacion parcial de strings</a></li>
+<li><a class="reference internal" href="#verificacion-parcial-de-strings">Verificación parcial de strings</a></li>
 <li><a class="reference internal" href="#find-and-replace">find and replace</a></li>
 <li><a class="reference internal" href="#split-and-join">split and join</a></li>
 <li><a class="reference internal" href="#ejercicio">Ejercicio</a></li>
@@ -596,11 +596,11 @@ $(window).resize(function() {
       data-timelimit=25000    
     data-audio=''   data-stdin=''   
            data-wasm=/_static>
-palabra  =input('Palabra: ')
+palabra = input('Palabra: ')
 if palabra == palabra[::-1]:
- print('%s é palíndrome' %palabra)
+    print('%s es palíndrome' %palabra)
 else:
-  print('%s no es un palíndrome' %palabra)
+    print('%s no es un palíndrome' %palabra)
 </textarea>
 </div>
 </div>
@@ -639,7 +639,7 @@ print(texto)
 <div class="section" id="concentracion">
 <h2>Concentración<a class="headerlink" href="#concentracion" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Haga un programa que lea una palabra y reemplace las vocales con “*”</p></li>
+<li><p>Ejemplo de un programa que lee una palabra y reemplaza las vocales con “*”</p></li>
 </ul>
 
 <div data-childcomponent="Example5_8" class="runestone explainer ac_section alert alert-warning">
@@ -648,71 +648,45 @@ print(texto)
       data-timelimit=25000    
     data-audio=''   data-stdin=''   
            data-wasm=/_static>
-palabra  =input('Palabra: ')
+palabra = input('Palabra: ')
 k = 0
 intercambio = ""
 while k < len(palabra):
-   if palabra[k] in 'aeiou':
-    intercambio = intercambio + '*'
-   else:
-    intercambio = intercambio + palabra[k]
-   k+=1
+    if palabra[k] in 'aeiou':
+        intercambio = intercambio + '*'
+    else:
+        intercambio = intercambio + palabra[k]
+    k+=1
 print("Nueva palabra %s" %intercambio)
+</textarea>
+</div>
+
+<div data-childcomponent="Example5_9" class="runestone explainer ac_section alert alert-warning">
+<p>Ahora haga un programa que lea una palabra, la guarde en la variable <code class="docutils literal notranslate"><span class="pre">palabra</span></code>, y reemplace las consonantes con ‘*’. Guardar el resultado en la variable <code class="docutils literal notranslate"><span class="pre">intercambio</span></code>. Puede apoyarse en el programa anterior.|br|</p>
+
+<textarea data-component="activecode" id=Example5_9 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static>
+#Utilice la función input para leer la palabra del usuario.
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(intercambio, ''.join(['*' if c not in 'aeiou' else c for c in palabra]), "Probando que intercambio esté asignado correctamente")
+
+
+myTests().main()
 </textarea>
 </div>
 </div>
 <div class="section" id="verificacion-parcial-de-strings">
-<h2>Verificacion parcial de strings<a class="headerlink" href="#verificacion-parcial-de-strings" title="Permalink to this headline">¶</a></h2>
-
-<div class="runestone" style="max-width: none;">
-<div class="alert alert-warning cd_section">
-<div id="Example5_9"></div>
-<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example5_9)</span> </p>
-</div>
-<script type="text/javascript">
-var Example5_9_trace = {"code": "archivo = 'prog.py'\nprint(archivo.startswith('p'))\nprint(archivo.endswith('p'))\ncontestar = \"Si\"\nprint(contestar.lower())\nprint(contestar.upper())\nprint(contestar.lower() in 'si no yes no')", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py"}, "ordered_globals": ["archivo"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py"}, "ordered_globals": ["archivo"], "stack_to_render": [], "heap": {}, "stdout": "True\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py"}, "ordered_globals": ["archivo"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsi\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsi\nSI\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsi\nSI\nTrue\n"}]};
-var Example5_9_vis;
-
-$(document).ready(function() {
-    try {
-        Example5_9_vis = new ExecutionVisualizer('Example5_9',Example5_9_trace,
-                                    {embeddedMode: true,
-                                    verticalStack: false,
-                                    heightChangeCallback: redrawAllVisualizerArrows,
-                                    codeDivWidth: 500,
-                                    lang : 'py3'
-                                    });
-        attachLoggers(Example5_9_vis,'Example5_9');
-        styleButtons('Example5_9');
-        allVisualizers.push(Example5_9_vis);
-    } catch (e) {
-        console.log("Failed to Initialize CodeLens component Example5_9_vis" );
-        console.log(e.toString());
-    }
-
-});
-
-$(document).ready(function() {
-    $("#Example5_9_tracecheck").click(function() {
-        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example5_9'});
-    });
-});
-
-if (allVisualizers === undefined) {
-   var allVisualizers = [];
-}
-
-
-$(window).resize(function() {
-    if (Example5_9_vis) {
-        Example5_9_vis.redrawConnectors();
-    }
-});
-</script>
-</div>
-</div>
-<div class="section" id="find-and-replace">
-<h2>find and replace<a class="headerlink" href="#find-and-replace" title="Permalink to this headline">¶</a></h2>
+<h2>Verificación parcial de strings<a class="headerlink" href="#verificacion-parcial-de-strings" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone" style="max-width: none;">
 <div class="alert alert-warning cd_section">
@@ -720,7 +694,7 @@ $(window).resize(function() {
 <p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example5_10)</span> </p>
 </div>
 <script type="text/javascript">
-var Example5_10_trace = {"code": "s = 'un tigre, dos tigres, tres tigres'\nprint(s.find('tigre'))\nprint(s.find('tigre',4))\nprint(s.find('tigre',16))\nprint(s.replace('tigre','gato'))\ns = s.replace('tigre','gato')\nprint(s)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\nun gato, dos gatos, tres gatos\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"s": "un gato, dos gatos, tres gatos"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\nun gato, dos gatos, tres gatos\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"s": "un gato, dos gatos, tres gatos"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\nun gato, dos gatos, tres gatos\nun gato, dos gatos, tres gatos\n"}]};
+var Example5_10_trace = {"code": "archivo = 'prog.py'\nprint(archivo.startswith('p'))\nprint(archivo.endswith('p'))\ncontestar = \"Si\"\nprint(contestar.lower())\nprint(contestar.upper())\nprint(contestar.lower() in 'si no yes no')", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py"}, "ordered_globals": ["archivo"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py"}, "ordered_globals": ["archivo"], "stack_to_render": [], "heap": {}, "stdout": "True\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py"}, "ordered_globals": ["archivo"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsi\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsi\nSI\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"archivo": "prog.py", "contestar": "Si"}, "ordered_globals": ["archivo", "contestar"], "stack_to_render": [], "heap": {}, "stdout": "True\nFalse\nsi\nSI\nTrue\n"}]};
 var Example5_10_vis;
 
 $(document).ready(function() {
@@ -761,8 +735,8 @@ $(window).resize(function() {
 </script>
 </div>
 </div>
-<div class="section" id="split-and-join">
-<h2>split and join<a class="headerlink" href="#split-and-join" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="find-and-replace">
+<h2>find and replace<a class="headerlink" href="#find-and-replace" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone" style="max-width: none;">
 <div class="alert alert-warning cd_section">
@@ -770,7 +744,7 @@ $(window).resize(function() {
 <p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example5_11)</span> </p>
 </div>
 <script type="text/javascript">
-var Example5_11_trace = {"code": "txt = 'papa cuando nace'\nprint(txt.split())\ndata = '21/02/2011'\nprint(data.split('/'))\nip = '198.188.10.144'\nprint(ip.split('.'))\ntimes = ['Palmeiras', 'Santos', 'Corintios']\nprint('/'.join(times))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace"}, "ordered_globals": ["txt"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace"}, "ordered_globals": ["txt"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011"}, "ordered_globals": ["txt", "data"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011"}, "ordered_globals": ["txt", "data"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144"}, "ordered_globals": ["txt", "data", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144"}, "ordered_globals": ["txt", "data", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144", "times": ["REF", 1]}, "ordered_globals": ["txt", "data", "ip", "times"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corintios"]}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144", "times": ["REF", 1]}, "ordered_globals": ["txt", "data", "ip", "times"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corintios"]}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n['198', '188', '10', '144']\nPalmeiras/Santos/Corintios\n"}]};
+var Example5_11_trace = {"code": "s = 'un tigre, dos tigres, tres tigres'\nprint(s.find('tigre'))\nprint(s.find('tigre',4))\nprint(s.find('tigre',16))\nprint(s.replace('tigre','gato'))\ns = s.replace('tigre','gato')\nprint(s)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"s": "un tigre, dos tigres, tres tigres"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\nun gato, dos gatos, tres gatos\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"s": "un gato, dos gatos, tres gatos"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\nun gato, dos gatos, tres gatos\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"s": "un gato, dos gatos, tres gatos"}, "ordered_globals": ["s"], "stack_to_render": [], "heap": {}, "stdout": "3\n14\n27\nun gato, dos gatos, tres gatos\nun gato, dos gatos, tres gatos\n"}]};
 var Example5_11_vis;
 
 $(document).ready(function() {
@@ -811,23 +785,84 @@ $(window).resize(function() {
 </script>
 </div>
 </div>
+<div class="section" id="split-and-join">
+<h2>split and join<a class="headerlink" href="#split-and-join" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone" style="max-width: none;">
+<div class="alert alert-warning cd_section">
+<div id="Example5_12"></div>
+<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example5_12)</span> </p>
+</div>
+<script type="text/javascript">
+var Example5_12_trace = {"code": "txt = 'papa cuando nace'\nprint(txt.split())\ndata = '21/02/2011'\nprint(data.split('/'))\nip = '198.188.10.144'\nprint(ip.split('.'))\ntimes = ['Palmeiras', 'Santos', 'Corintios']\nprint('/'.join(times))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace"}, "ordered_globals": ["txt"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace"}, "ordered_globals": ["txt"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011"}, "ordered_globals": ["txt", "data"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011"}, "ordered_globals": ["txt", "data"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144"}, "ordered_globals": ["txt", "data", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144"}, "ordered_globals": ["txt", "data", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144", "times": ["REF", 1]}, "ordered_globals": ["txt", "data", "ip", "times"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corintios"]}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"txt": "papa cuando nace", "data": "21/02/2011", "ip": "198.188.10.144", "times": ["REF", 1]}, "ordered_globals": ["txt", "data", "ip", "times"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corintios"]}, "stdout": "['papa', 'cuando', 'nace']\n['21', '02', '2011']\n['198', '188', '10', '144']\nPalmeiras/Santos/Corintios\n"}]};
+var Example5_12_vis;
+
+$(document).ready(function() {
+    try {
+        Example5_12_vis = new ExecutionVisualizer('Example5_12',Example5_12_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(Example5_12_vis,'Example5_12');
+        styleButtons('Example5_12');
+        allVisualizers.push(Example5_12_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component Example5_12_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#Example5_12_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example5_12'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (Example5_12_vis) {
+        Example5_12_vis.redrawConnectors();
+    }
+});
+</script>
+</div>
+</div>
 <div class="section" id="ejercicio">
 <h2>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Haga un programa que solicite la fecha de nacimiento (dd / mm / aaaa) y
-imprimir con el nombre del mes completo</p></li>
-</ul>
 
-<div data-childcomponent="Example5_12" class="runestone explainer ac_section alert alert-warning">
+<div data-childcomponent="Example5_13" class="runestone explainer ac_section alert alert-warning">
+<p>Haga un programa que solicite la fecha de nacimiento en formato “dd/mm/aaaa” y convierta esta fecha a formato “&lt;día&gt; de &lt;mes&gt; de &lt;año&gt;” usando la lista <code class="docutils literal notranslate"><span class="pre">meses</span></code> que ya está escrita. Guardar el resultado en la variable <code class="docutils literal notranslate"><span class="pre">fecha_de_nacimiento</span></code> e imprimir esta variable. Recordar que <code class="docutils literal notranslate"><span class="pre">.split()</span></code> regresa una lista y se le puede pasar como argumento el caracter con el cual separar un string. Guardar el día, mes y el año en las variables <code class="docutils literal notranslate"><span class="pre">dia</span></code>, <code class="docutils literal notranslate"><span class="pre">mes</span></code> y <code class="docutils literal notranslate"><span class="pre">anio</span></code>.|br|</p>
 
-<textarea data-component="activecode" id=Example5_12 data-lang="python" 
+<textarea data-component="activecode" id=Example5_13 data-lang="python" 
       data-timelimit=25000    
     data-audio=''   data-stdin=''   
            data-wasm=/_static>
-dia, mes, anio = input('data (dd/mm/aaaa): ').split('/')
-meses = ['Enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto','septiembre','octubre', 'noviembre', 'diciembre']
-print('Tu naces en: ')
-print('%s de %s de %s' %(dia,meses[int(mes)-1],anio))
+data = input('data (dd/mm/aaaa): ').split('/')
+meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(fecha_de_nacimiento, '{} de {} de {}'.format(dia, meses[int(mes)-1], anio), "Probando que fecha_de_nacimiento esté asignada correctamente")
+        self.assertEqual(dia, data[0], "Probando que dia esté asignada correctamente")
+        self.assertEqual(mes, data[1], "Probando que mes esté asignado correctamente")
+        self.assertEqual(anio, data[2], "Probando que anio esté asignado correctamente")
+
+
+myTests().main()
 </textarea>
 </div>
 </div>
