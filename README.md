@@ -4,6 +4,10 @@
 
 Programación Python para Zombis MOOC (código y materiales del curso abierto y masivo en linea) ***en preparación***
 
+Versión preliminar en linea:
+
+ * http://pyar.github.io/PyZombis/
+
 Contenidos:
 
  * [lectures](/_sources/lectures): presentaciones para preparar las clases (vídeos)
@@ -23,3 +27,4 @@ El código fuente se publica bajo la Licencia Pública General Affero GNU versi�
 ![AGPLv3](http://www.gnu.org/graphics/agplv3-155x51.png)
 
 Algunos contenidos de terceros pueden estar governados por sus respectivas licencias.
+
