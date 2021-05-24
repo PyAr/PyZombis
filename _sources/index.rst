@@ -32,9 +32,6 @@ Contenidos:
    lectures/TWP60
    lectures/TWP65
    lectures/Quiz6
-
-Ejercicios:
-
    quiz/Quiz3.rst
    quiz/Quiz5mcq.rst
    quiz/Quiz6.rst
