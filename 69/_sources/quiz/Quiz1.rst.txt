@@ -277,7 +277,7 @@ Quiz - 1
 .. activecode:: q1_11
    :nocodelens:
 
-   Sabiendo que str() convierte valores numéricos en cadenas, calcule cuántos dígitos hay en 2 elevados a un millón. |br|
+   Sabiendo que  ``str()`` convierte valores numéricos en cadenas, calcule cuántos dígitos hay en 2 elevados a un millón. |br|
 
    
    ~~~~
