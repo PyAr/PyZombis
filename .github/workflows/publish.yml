@@ -65,9 +65,12 @@ jobs:
           script: |
             var fs = require('fs');
             var issue_number = Number(fs.readFileSync('/tmp/website-output/NR'));
-            await github.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue_number,
-              body: `Published to http://pyar.github.io/PyZombis/${issue_number}`
-            });
+            // if this is not a PR (merge to master build), do not comment:
+            if (issue_number !== 0) {
+              await github.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                body: 'Published to http://pyar.github.io/PyZombis/${issue_number}'
+              });
+            }
