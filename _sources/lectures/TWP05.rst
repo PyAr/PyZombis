@@ -387,7 +387,7 @@ Ejemplo
     nota = 8
     promedio = 6
     aprobado = nota > promedio
-    print(aprobado)
+    print(aprovado)
 
 
 Operadores Lógicos
