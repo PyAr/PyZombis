@@ -258,7 +258,7 @@ Quiz - 9
 
    H. squirrel_play |br|
    El equipo de fútbol *ardillas* normalmente juega cuando la temperatura está entre 60 y 90 grados Fahrenheit, pero cuando es verano la temperatura superior a la que juegan las *ardillas* es de 100 grados Fahrenheit en lugar de 90. |br|
-   Defina una función ``squirrel_play`` que tome como argumentos la temperatura y True si es verano o False si no lo es. La función debe regresar True si las *ardillas* juegan o False si no. |br| |br|
+   Defina una función ``squirrel_play`` que tome como argumentos la temperatura y ``True`` si es verano o ``False`` si no lo es. La función debe regresar ``True`` si las *ardillas* juegan o ``False`` si no. |br| |br|
    Ejemplos: |br|
    ``squirrel_play(70, False)`` -> True |br|
    ``squirrel_play(95, False)`` -> False |br|
@@ -303,7 +303,7 @@ Quiz - 9
    Velocidad entre 61 y 80: multa media |br|
    Velocidad superior a 80: multa severa |br|
    Si es tu cumpleaños la velocidad puede ser 5 km/h mayor en todos los casos. |br|
-   Defina una función ``atrapado_corriendo`` que reciba como argumentos la velocidad a la que ibas y True si es tu cumpleaños o False si no lo es. Esta función debe regresar 0, 1 o 2 de acuerdo a lo siguiente:|br|
+   Defina una función ``atrapado_corriendo`` que reciba como argumentos la velocidad a la que ibas y ``True`` si es tu cumpleaños o ``False`` si no lo es. Esta función debe regresar 0, 1 o 2 de acuerdo a lo siguiente:|br|
    sin multa = 0 |br|
    multa media = 1 |br|
    multa severa = 2 |br| |br|
@@ -351,7 +351,7 @@ Quiz - 9
    J. alarm_clock |br|
    Defina una función ``alarm_clock`` que tome dos argumentos: El primer argumento ``day`` es un número del 0-6 que representa un día de la semana de acuerdo a lo siguiente:|br|
    día: 0 = domingo, 1 = lunes, 2 = martes, ..., 6 = sábado |br|
-   El segundo argumento ``vacation`` tomará el valor True si estas de vacaciones o False si no lo estas. La función regresará un string que indica cuándo sonará el despertador de acuerdo a lo siguiente:|br|
+   El segundo argumento ``vacation`` tomará el valor ``True`` si estas de vacaciones o ``False`` si no lo estas. La función regresará un string que indica cuándo sonará el despertador de acuerdo a lo siguiente:|br|
    Días de la semana: '07:00' |br|
    Fines de semana: '10:00' |br|
    A menos que esté de vacaciones, en este caso: |br|
