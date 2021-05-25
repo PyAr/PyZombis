@@ -308,10 +308,10 @@ Quiz - 9
    multa media = 1 |br|
    multa severa = 2 |br| |br|
    Ejemplos:|br|
-   atrapado_corriendo(60, False) -> 0 |br|
-   atrapado_corriendo(65, False) -> 1 |br|
-   atrapado_corriendo(65, True) -> 0  |br|
-   atrapado_corriendo(80, False) -> 1 |br|
+   ``atrapado_corriendo(60, False)`` -> 0 |br|
+   ``atrapado_corriendo(65, False)`` -> 1 |br|
+   ``atrapado_corriendo(65, True)`` -> 0  |br|
+   ``atrapado_corriendo(80, False)`` -> 1 |br|
 
    ~~~~
    def atrapado_corriendo(speed, is_birthday):
