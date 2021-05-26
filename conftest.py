@@ -51,7 +51,7 @@ def page(context: BrowserContext, base_url: str) -> Generator[Page, None, None]:
     yield page
 
     # save off the test unique id
-    current_path_name = context.pages[0].video.path().name
+    current_path_name = context.pages[0].video.path()
     BrowserContext.current_video_name = current_path_name
 
     page.close()
@@ -65,15 +65,13 @@ def context(
     current_failed_tests = request.session.testsfailed
     yield context
     current_video_name = context.current_video_name
-    current_video_path = os.path.join(video_path, current_video_name)
+    current_video_path = current_video_name
     updated_video_path = os.path.join(
         video_path, f"{request.node.originalname}_{browser_name}.webm"
     )
     context.close()
+    import pdb; pdb.set_trace()
     os.rename(current_video_path, updated_video_path)
-    if request.session.testsfailed == current_failed_tests:
-        # test should have been successful no real reason to keep it
-        os.remove(updated_video_path)
 
 
 def _handle_page_goto(
