@@ -70,7 +70,6 @@ def context(
         video_path, f"{request.node.originalname}_{browser_name}.webm"
     )
     context.close()
-    import pdb; pdb.set_trace()
     os.rename(current_video_path, updated_video_path)
 
 
