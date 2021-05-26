@@ -1,13 +1,5 @@
-from playwright.sync_api import sync_playwright
-
-def run(playwright):
-    browser = playwright.chromium.launch(headless=False, slow_mo=100)
-    context = browser.new_context()
-
-    # Open new page
-    page = context.new_page()
-
-    page.goto("http://pyar.github.io/PyZombis/master/quiz/Quiz1.html")
+def test_quiz1_2(page):
+    page.goto("/quiz/Quiz1.html")
 
     page.click("text=def metros_a_milimetros(n):")
 
@@ -23,10 +15,3 @@ def run(playwright):
 
     element_handle = page.query_selector("[data-childcomponent='q1_2']")
     element_handle.screenshot(path="screenshot.png")
-
-    # ---------------------
-    context.close()
-    browser.close()
-
-with sync_playwright() as playwright:
-    run(playwright)
