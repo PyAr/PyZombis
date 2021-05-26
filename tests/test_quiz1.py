@@ -12,6 +12,3 @@ def test_quiz1_2(page):
 
     page.hover("#q1_2 >> text=You passed:")
     assert page.inner_text("#q1_2 >> text=You passed:") == "You passed: 100.0% of the tests"
-
-    element_handle = page.query_selector("[data-childcomponent='q1_2']")
-    element_handle.screenshot(path="screenshot.png")
