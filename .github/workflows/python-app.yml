@@ -78,7 +78,7 @@ jobs:
         runestone serve &
     - name: PyTest
       run: |
-        pytest
+        pytest --html=report.html --self-contained-html
     - name: Upload test report
       uses: actions/upload-artifact@v2
       with:
