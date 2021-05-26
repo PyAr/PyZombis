@@ -84,3 +84,8 @@ jobs:
       with:
         name: report
         path: report.html
+    - name: Upload test videos
+      uses: actions/upload-artifact@v2
+      with:
+        name: videos
+        path: videos
