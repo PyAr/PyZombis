@@ -61,11 +61,17 @@ if os.environ.get("GITHUB_ACTIONS"):
         git_ref = os.environ.get("GITHUB_REF")
 else:
     git_head = "HEAD"
-    git_ref = "HEAD"
+    git_ref = None
 
 git_hash = subprocess.check_output(["git", "rev-parse", "--short", git_head]).decode().strip()
 git_full_hash = subprocess.check_output(["git", "rev-parse", git_head]).decode().strip()
-git_branch = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", git_ref]).decode().strip()
+if git_ref and not git_ref.startswith("refs/"):
+    git_branch = git_ref
+else:
+    # resolve the branch name for the full reference given (or default)
+    if not git_ref:
+        git_ref = "HEAD"
+    git_branch = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", git_ref]).decode().strip()
 
 # The short X.Y version.
 version = git_hash
