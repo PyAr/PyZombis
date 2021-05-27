@@ -76,7 +76,7 @@ jobs:
     - name: Serve website locally
       run: |
         runestone serve &
-    - name: PyTest
+    - name: Run PyTest UTs
       run: |
         pytest --html=report.html --self-contained-html
     - name: Upload test report
