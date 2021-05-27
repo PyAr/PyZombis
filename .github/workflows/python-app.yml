@@ -16,14 +16,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8
+    - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.9
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest
+        pip install flake8
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
@@ -31,7 +31,9 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Build
+    - name: Build website content
+      env:
+        GITHUB_HEAD_SHA: "${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || '' }}"
       run: |
         runestone build
     - name: Save PR number
@@ -48,3 +50,44 @@ jobs:
       with:
         name: website-output
         path: build/PyZombis/
+
+  test:
+
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Install playwright & browsers
+      run: |
+        playwright install
+    - name: Download generated content artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: website-output
+        path: build/PyZombis/
+    - name: Serve website locally
+      run: |
+        runestone serve &
+    - name: Run PyTest UTs
+      run: |
+        pytest --html=report.html --self-contained-html
+    - name: Upload test report
+      uses: actions/upload-artifact@v2
+      with:
+        name: report.html
+        path: report.html
+    - name: Upload test videos
+      uses: actions/upload-artifact@v2
+      with:
+        name: videos
+        path: videos
