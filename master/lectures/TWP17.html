@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>Listas &#8212; Runestone Interactive Overview</title>
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas &#8212; PyZombis master@184be15</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css?v=239FC54E" />
-    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css?v=8A1A42E4" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css?v=C6382F3" />
-    <link rel="stylesheet" type="text/css" href="../_static/fitb.css?v=3BA0E63E" />
-    <link rel="stylesheet" type="text/css" href="../_static/reveal.css?v=4A81D381" />
-    <link rel="stylesheet" type="text/css" href="../_static/spreadsheet.css?v=B5F018A" />
-    <link rel="stylesheet" type="text/css" href="../_static/jexcel.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/japp.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/shortanswer.css?v=7E18C432" />
-    <link rel="stylesheet" type="text/css" href="../_static/activecode.css?v=F471F95B" />
-    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css?v=9CF75563" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/clickable.css?v=58C4E18A" />
-    <link rel="stylesheet" type="text/css" href="../_static/poll.css?v=E220AC33" />
     <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css?v=E5385B3B" />
-    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=DB047029" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css?v=424F1CC9" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css?v=2F3E13EE" />
-    <link rel="stylesheet" type="text/css" href="../_static/js_lib/prettify.css?v=2A364B6B" />
-    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css?v=1FF7F927" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css?v=C184EB8A" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/presenter_mode.css?v=9FF1320F" />
+    <link rel="stylesheet" type="text/css" href="../_static/jquery-ui-1.10.3.custom.min.css?v=97E0178A" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/runestone-custom-sphinx-bootstrap.css?v=5.6.2" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -42,75 +30,33 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
-    <script src="../_static/d3.v2.min.js?v=836E01C"></script>
-    <script src="../_static/jquery.ba-bbq.min.js?v=B64CF0A8"></script>
-    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js?v=42F9EBEA"></script>
-    <script src="../_static/pytutor.js?v=82B022B9"></script>
-    <script src="../_static/codelens.js?v=CABECD49"></script>
-    <script src="../_static/showEval.js?v=5B2DD7A6"></script>
-    <script src="../_static/fitb.js?v=60630F3D"></script>
-    <script src="../_static/timedfitb.js?v=2AA17071"></script>
-    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js?v=599B42B0"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.js?v=88A1430F"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js?v=AE15A4A1"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js?v=8ABDFE7F"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.language.js?v=747279FF"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.parser.js?v=7B020E13"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js?v=660E85C3"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js?v=54B21948"></script>
-    <script src="../_static/fitb-i18n.en.js?v=389ED00C"></script>
-    <script src="../_static/reveal.js?v=35AF34F1"></script>
-    <script src="../_static/spreadsheet.js?v=ABDABEC0"></script>
-    <script src="../_static/jexcel.js"></script>
-    <script src="../_static/japp.js"></script>
-    <script src="../_static/shortanswer.js?v=89F557ED"></script>
-    <script src="../_static/timed_shortanswer.js?v=B3A117D7"></script>
     <script src="../_static/jquery.highlight.js?v=F1C496C8"></script>
-    <script src="../_static/bookfuncs.js?v=24766D61"></script>
-    <script src="../_static/codemirror.js?v=25B54D0A"></script>
-    <script src="../_static/xml.js?v=236EDFF7"></script>
-    <script src="../_static/css.js?v=623153CE"></script>
-    <script src="../_static/python.js?v=76B9CFA2"></script>
-    <script src="../_static/htmlmixed.js?v=4EBE05BF"></script>
-    <script src="../_static/javascript.js?v=6F38CA04"></script>
-    <script src="../_static/sql.js?v=49D0BD74"></script>
-    <script src="../_static/activecode-i18n.en.js?v=65CA0724"></script>
-    <script src="../_static/skulpt.min.js?v=A901CC2"></script>
-    <script src="../_static/skulpt-stdlib.js?v=24904821"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
-    <script src="../_static/activecode.js?v=AF9F4792"></script>
-    <script src="../_static/clike.js?v=4247C891"></script>
-    <script src="../_static/timed_activecode.js?v=20BFB7B1"></script>
-    <script src="../_static/sql-wasm.js?v=44FE0709"></script>
+    <script src="../_static/sql-wasm.js?v=D71B5933"></script>
     <script src="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.js"></script>
-    <script src="../_static/mchoice.js?v=7B685250"></script>
-    <script src="../_static/timedmc.js?v=B010A457"></script>
-    <script src="../_static/timed.js?v=7A76C128"></script>
-    <script src="../_static/mchoice-i18n.en.js?v=354E6CD"></script>
-    <script src="../_static/clickable.js?v=846DC076"></script>
-    <script src="../_static/timedclickable.js?v=93989C23"></script>
-    <script src="../_static/poll.js?v=45F04365"></script>
     <script src="../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../_static/Blob.js?v=AEC2447"></script>
-    <script src="../_static/runestonevideo.js?v=53E888DE"></script>
-    <script src="../_static/tabbedstuff.js?v=5BE6106"></script>
-    <script src="../_static/js_lib/prettify.js?v=CA7E8928"></script>
-    <script src="../_static/js_lib/hammer.min.js?v=73056367"></script>
-    <script src="../_static/parsons.js?v=CE79120E"></script>
-    <script src="../_static/timedparsons.js?v=2EEA9E5A"></script>
-    <script src="../_static/parsons-i18n.en.js?v=A9C11155"></script>
-    <script src="../_static/dragndrop.js?v=86D99604"></script>
-    <script src="../_static/timeddnd.js?v=378F237E"></script>
-    <script src="../_static/dragndrop-i18n.en.js?v=40C28531"></script>
     <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../_static/lp.js?v=5E742BDC"></script>
-    <script src="../_static/gas.js?v=129CE036"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../_static/animationbase.js?v=A043C3A7"></script>
-    <script src="../_static/datafile.js?v=156D8707"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.bidi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.fallbacks.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.messagestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.parser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.language.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
+    <script src="../_static/runestone.js?v=4011C77C"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js?v=2B07FE4F"></script>
+    <script src="../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="../_static/jquery-fix.js?v=1226591B"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/jquery.idle-timer.js?v=E942DAF1"></script>
+    <script src="../_static/presenter_mode.js?v=2DF16FB4"></script>
+    <script src="../_static/theme.js?v=D899FB97"></script>
     <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="../_static/jquery-fix.js"></script>
     <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -145,7 +91,7 @@
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'PyZombisDev';
   eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
-  eBookConfig.runestone_version = '4.2.2';
+  eBookConfig.runestone_version = '5.6.2';
   eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
   eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
   eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
@@ -184,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis Python Course</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@184be15</a>
       </div>
     </div>
 
@@ -375,49 +321,21 @@
 </ul>
 
 <div class="runestone" style="max-width: none;">
-<div class="alert alert-warning cd_section">
-<div id="Example4_1"></div>
-<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example4_1)</span> </p>
-</div>
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+        <div class="pytutorVisualizer" id="Example4_1"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (Example4_1)</span> </p>
+    </div>
+
 <script type="text/javascript">
-var Example4_1_trace = {"code": "edif\u00edcio_t\u00e9rreo = \"La Familia Souza\"\nedif\u00edcio_1o_andar = \"La Familia Brito\"\nedif\u00edcio_2o_andar = \"El Sr Jorge\"\nedif\u00edcio_3o_andar = \"La Familia Tanaka\"", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"edif\u00edcio_t\u00e9rreo": "La Familia Souza"}, "ordered_globals": ["edif\u00edcio_t\u00e9rreo"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"edif\u00edcio_t\u00e9rreo": "La Familia Souza", "edif\u00edcio_1o_andar": "La Familia Brito"}, "ordered_globals": ["edif\u00edcio_t\u00e9rreo", "edif\u00edcio_1o_andar"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"edif\u00edcio_t\u00e9rreo": "La Familia Souza", "edif\u00edcio_1o_andar": "La Familia Brito", "edif\u00edcio_2o_andar": "El Sr Jorge"}, "ordered_globals": ["edif\u00edcio_t\u00e9rreo", "edif\u00edcio_1o_andar", "edif\u00edcio_2o_andar"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"edif\u00edcio_t\u00e9rreo": "La Familia Souza", "edif\u00edcio_1o_andar": "La Familia Brito", "edif\u00edcio_2o_andar": "El Sr Jorge", "edif\u00edcio_3o_andar": "La Familia Tanaka"}, "ordered_globals": ["edif\u00edcio_t\u00e9rreo", "edif\u00edcio_1o_andar", "edif\u00edcio_2o_andar", "edif\u00edcio_3o_andar"], "stack_to_render": [], "heap": {}, "stdout": ""}]};
 var Example4_1_vis;
 
-$(document).ready(function() {
-    try {
-        Example4_1_vis = new ExecutionVisualizer('Example4_1',Example4_1_trace,
-                                    {embeddedMode: true,
-                                    verticalStack: false,
-                                    heightChangeCallback: redrawAllVisualizerArrows,
-                                    codeDivWidth: 500,
-                                    lang : 'py3'
-                                    });
-        attachLoggers(Example4_1_vis,'Example4_1');
-        styleButtons('Example4_1');
-        allVisualizers.push(Example4_1_vis);
-    } catch (e) {
-        console.log("Failed to Initialize CodeLens component Example4_1_vis" );
-        console.log(e.toString());
-    }
-
-});
-
-$(document).ready(function() {
-    $("#Example4_1_tracecheck").click(function() {
-        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example4_1'});
-    });
-});
-
-if (allVisualizers === undefined) {
-   var allVisualizers = [];
+if (allTraceData === undefined) {
+   var allTraceData = {};
 }
 
-
-$(window).resize(function() {
-    if (Example4_1_vis) {
-        Example4_1_vis.redrawConnectors();
-    }
-});
+allTraceData["Example4_1"] = {"code": "edif\u00edcio_t\u00e9rreo = \"La Familia Souza\"\nedif\u00edcio_1o_andar = \"La Familia Brito\"\nedif\u00edcio_2o_andar = \"El Sr Jorge\"\nedif\u00edcio_3o_andar = \"La Familia Tanaka\"", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"edif\u00edcio_t\u00e9rreo": "La Familia Souza"}, "ordered_globals": ["edif\u00edcio_t\u00e9rreo"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"edif\u00edcio_t\u00e9rreo": "La Familia Souza", "edif\u00edcio_1o_andar": "La Familia Brito"}, "ordered_globals": ["edif\u00edcio_t\u00e9rreo", "edif\u00edcio_1o_andar"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"edif\u00edcio_t\u00e9rreo": "La Familia Souza", "edif\u00edcio_1o_andar": "La Familia Brito", "edif\u00edcio_2o_andar": "El Sr Jorge"}, "ordered_globals": ["edif\u00edcio_t\u00e9rreo", "edif\u00edcio_1o_andar", "edif\u00edcio_2o_andar"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"edif\u00edcio_t\u00e9rreo": "La Familia Souza", "edif\u00edcio_1o_andar": "La Familia Brito", "edif\u00edcio_2o_andar": "El Sr Jorge", "edif\u00edcio_3o_andar": "La Familia Tanaka"}, "ordered_globals": ["edif\u00edcio_t\u00e9rreo", "edif\u00edcio_1o_andar", "edif\u00edcio_2o_andar", "edif\u00edcio_3o_andar"], "stack_to_render": [], "heap": {}, "stdout": ""}]};
 </script>
 </div>
 </div>
@@ -429,49 +347,21 @@ etc.</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-<div class="alert alert-warning cd_section">
-<div id="Example4_2"></div>
-<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example4_2)</span> </p>
-</div>
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+        <div class="pytutorVisualizer" id="Example4_2"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (Example4_2)</span> </p>
+    </div>
+
 <script type="text/javascript">
-var Example4_2_trace = {"code": "edificio = [\"La Familia Souza\",\"La Familia Brito\",\"El Sr Jorge\",\"La Familia Tanaka\"]\nprint(edificio[0])\nprint(edificio[1])\nprint(edificio[2])\nprint(edificio[3])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": "La Familia Souza\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": "La Familia Souza\nLa Familia Brito\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": "La Familia Souza\nLa Familia Brito\nEl Sr Jorge\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": "La Familia Souza\nLa Familia Brito\nEl Sr Jorge\nLa Familia Tanaka\n"}]};
 var Example4_2_vis;
 
-$(document).ready(function() {
-    try {
-        Example4_2_vis = new ExecutionVisualizer('Example4_2',Example4_2_trace,
-                                    {embeddedMode: true,
-                                    verticalStack: false,
-                                    heightChangeCallback: redrawAllVisualizerArrows,
-                                    codeDivWidth: 500,
-                                    lang : 'py3'
-                                    });
-        attachLoggers(Example4_2_vis,'Example4_2');
-        styleButtons('Example4_2');
-        allVisualizers.push(Example4_2_vis);
-    } catch (e) {
-        console.log("Failed to Initialize CodeLens component Example4_2_vis" );
-        console.log(e.toString());
-    }
-
-});
-
-$(document).ready(function() {
-    $("#Example4_2_tracecheck").click(function() {
-        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example4_2'});
-    });
-});
-
-if (allVisualizers === undefined) {
-   var allVisualizers = [];
+if (allTraceData === undefined) {
+   var allTraceData = {};
 }
 
-
-$(window).resize(function() {
-    if (Example4_2_vis) {
-        Example4_2_vis.redrawConnectors();
-    }
-});
+allTraceData["Example4_2"] = {"code": "edificio = [\"La Familia Souza\",\"La Familia Brito\",\"El Sr Jorge\",\"La Familia Tanaka\"]\nprint(edificio[0])\nprint(edificio[1])\nprint(edificio[2])\nprint(edificio[3])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": "La Familia Souza\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": "La Familia Souza\nLa Familia Brito\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": "La Familia Souza\nLa Familia Brito\nEl Sr Jorge\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"edificio": ["REF", 1]}, "ordered_globals": ["edificio"], "stack_to_render": [], "heap": {"1": ["LIST", "La Familia Souza", "La Familia Brito", "El Sr Jorge", "La Familia Tanaka"]}, "stdout": "La Familia Souza\nLa Familia Brito\nEl Sr Jorge\nLa Familia Tanaka\n"}]};
 </script>
 </div>
 </div>
@@ -504,49 +394,21 @@ $(window).resize(function() {
 </ul>
 
 <div class="runestone" style="max-width: none;">
-<div class="alert alert-warning cd_section">
-<div id="Example4_3"></div>
-<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example4_3)</span> </p>
-</div>
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+        <div class="pytutorVisualizer" id="Example4_3"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (Example4_3)</span> </p>
+    </div>
+
 <script type="text/javascript">
-var Example4_3_trace = {"code": "lista = []", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 1, "event": "return", "func_name": "<module>", "globals": {"lista": ["REF", 1]}, "ordered_globals": ["lista"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": ""}]};
 var Example4_3_vis;
 
-$(document).ready(function() {
-    try {
-        Example4_3_vis = new ExecutionVisualizer('Example4_3',Example4_3_trace,
-                                    {embeddedMode: true,
-                                    verticalStack: false,
-                                    heightChangeCallback: redrawAllVisualizerArrows,
-                                    codeDivWidth: 500,
-                                    lang : 'py3'
-                                    });
-        attachLoggers(Example4_3_vis,'Example4_3');
-        styleButtons('Example4_3');
-        allVisualizers.push(Example4_3_vis);
-    } catch (e) {
-        console.log("Failed to Initialize CodeLens component Example4_3_vis" );
-        console.log(e.toString());
-    }
-
-});
-
-$(document).ready(function() {
-    $("#Example4_3_tracecheck").click(function() {
-        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example4_3'});
-    });
-});
-
-if (allVisualizers === undefined) {
-   var allVisualizers = [];
+if (allTraceData === undefined) {
+   var allTraceData = {};
 }
 
-
-$(window).resize(function() {
-    if (Example4_3_vis) {
-        Example4_3_vis.redrawConnectors();
-    }
-});
+allTraceData["Example4_3"] = {"code": "lista = []", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 1, "event": "return", "func_name": "<module>", "globals": {"lista": ["REF", 1]}, "ordered_globals": ["lista"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": ""}]};
 </script>
 </div>
 <ul class="simple">
@@ -554,49 +416,21 @@ $(window).resize(function() {
 </ul>
 
 <div class="runestone" style="max-width: none;">
-<div class="alert alert-warning cd_section">
-<div id="Example4_4"></div>
-<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example4_4)</span> </p>
-</div>
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="4">
+        <div class="pytutorVisualizer" id="Example4_4"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 4 (Example4_4)</span> </p>
+    </div>
+
 <script type="text/javascript">
-var Example4_4_trace = {"code": "notas = [7.5,9,8.3]", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 1, "event": "return", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 7.5, 9, 8.3]}, "stdout": ""}]};
 var Example4_4_vis;
 
-$(document).ready(function() {
-    try {
-        Example4_4_vis = new ExecutionVisualizer('Example4_4',Example4_4_trace,
-                                    {embeddedMode: true,
-                                    verticalStack: false,
-                                    heightChangeCallback: redrawAllVisualizerArrows,
-                                    codeDivWidth: 500,
-                                    lang : 'py3'
-                                    });
-        attachLoggers(Example4_4_vis,'Example4_4');
-        styleButtons('Example4_4');
-        allVisualizers.push(Example4_4_vis);
-    } catch (e) {
-        console.log("Failed to Initialize CodeLens component Example4_4_vis" );
-        console.log(e.toString());
-    }
-
-});
-
-$(document).ready(function() {
-    $("#Example4_4_tracecheck").click(function() {
-        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example4_4'});
-    });
-});
-
-if (allVisualizers === undefined) {
-   var allVisualizers = [];
+if (allTraceData === undefined) {
+   var allTraceData = {};
 }
 
-
-$(window).resize(function() {
-    if (Example4_4_vis) {
-        Example4_4_vis.redrawConnectors();
-    }
-});
+allTraceData["Example4_4"] = {"code": "notas = [7.5,9,8.3]", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 1, "event": "return", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 7.5, 9, 8.3]}, "stdout": ""}]};
 </script>
 </div>
 <ul class="simple">
@@ -604,49 +438,21 @@ $(window).resize(function() {
 </ul>
 
 <div class="runestone" style="max-width: none;">
-<div class="alert alert-warning cd_section">
-<div id="Example4_5"></div>
-<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example4_5)</span> </p>
-</div>
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5">
+        <div class="pytutorVisualizer" id="Example4_5"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5 (Example4_5)</span> </p>
+    </div>
+
 <script type="text/javascript">
-var Example4_5_trace = {"code": "notas = [7.5,9,8.3]\nprint(notas[0])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 7.5, 9, 8.3]}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 7.5, 9, 8.3]}, "stdout": "7.5\n"}]};
 var Example4_5_vis;
 
-$(document).ready(function() {
-    try {
-        Example4_5_vis = new ExecutionVisualizer('Example4_5',Example4_5_trace,
-                                    {embeddedMode: true,
-                                    verticalStack: false,
-                                    heightChangeCallback: redrawAllVisualizerArrows,
-                                    codeDivWidth: 500,
-                                    lang : 'py3'
-                                    });
-        attachLoggers(Example4_5_vis,'Example4_5');
-        styleButtons('Example4_5');
-        allVisualizers.push(Example4_5_vis);
-    } catch (e) {
-        console.log("Failed to Initialize CodeLens component Example4_5_vis" );
-        console.log(e.toString());
-    }
-
-});
-
-$(document).ready(function() {
-    $("#Example4_5_tracecheck").click(function() {
-        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example4_5'});
-    });
-});
-
-if (allVisualizers === undefined) {
-   var allVisualizers = [];
+if (allTraceData === undefined) {
+   var allTraceData = {};
 }
 
-
-$(window).resize(function() {
-    if (Example4_5_vis) {
-        Example4_5_vis.redrawConnectors();
-    }
-});
+allTraceData["Example4_5"] = {"code": "notas = [7.5,9,8.3]\nprint(notas[0])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 7.5, 9, 8.3]}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 7.5, 9, 8.3]}, "stdout": "7.5\n"}]};
 </script>
 </div>
 <ul class="simple">
@@ -654,49 +460,21 @@ $(window).resize(function() {
 </ul>
 
 <div class="runestone" style="max-width: none;">
-<div class="alert alert-warning cd_section">
-<div id="Example4_6"></div>
-<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example4_6)</span> </p>
-</div>
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="6">
+        <div class="pytutorVisualizer" id="Example4_6"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 6 (Example4_6)</span> </p>
+    </div>
+
 <script type="text/javascript">
-var Example4_6_trace = {"code": "notas = [7.5,9,8.3]\nnotas[0] = 8.7\nprint(notas[0])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 7.5, 9, 8.3]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 8.7, 9, 8.3]}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 8.7, 9, 8.3]}, "stdout": "8.7\n"}]};
 var Example4_6_vis;
 
-$(document).ready(function() {
-    try {
-        Example4_6_vis = new ExecutionVisualizer('Example4_6',Example4_6_trace,
-                                    {embeddedMode: true,
-                                    verticalStack: false,
-                                    heightChangeCallback: redrawAllVisualizerArrows,
-                                    codeDivWidth: 500,
-                                    lang : 'py3'
-                                    });
-        attachLoggers(Example4_6_vis,'Example4_6');
-        styleButtons('Example4_6');
-        allVisualizers.push(Example4_6_vis);
-    } catch (e) {
-        console.log("Failed to Initialize CodeLens component Example4_6_vis" );
-        console.log(e.toString());
-    }
-
-});
-
-$(document).ready(function() {
-    $("#Example4_6_tracecheck").click(function() {
-        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example4_6'});
-    });
-});
-
-if (allVisualizers === undefined) {
-   var allVisualizers = [];
+if (allTraceData === undefined) {
+   var allTraceData = {};
 }
 
-
-$(window).resize(function() {
-    if (Example4_6_vis) {
-        Example4_6_vis.redrawConnectors();
-    }
-});
+allTraceData["Example4_6"] = {"code": "notas = [7.5,9,8.3]\nnotas[0] = 8.7\nprint(notas[0])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 7.5, 9, 8.3]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 8.7, 9, 8.3]}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 8.7, 9, 8.3]}, "stdout": "8.7\n"}]};
 </script>
 </div>
 </div>
@@ -707,49 +485,21 @@ $(window).resize(function() {
 </ul>
 
 <div class="runestone" style="max-width: none;">
-<div class="alert alert-warning cd_section">
-<div id="Example4_7"></div>
-<p class="runestone_caption"><span class="runestone_caption_text">CodeLens:  (Example4_7)</span> </p>
-</div>
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="7">
+        <div class="pytutorVisualizer" id="Example4_7"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 7 (Example4_7)</span> </p>
+    </div>
+
 <script type="text/javascript">
-var Example4_7_trace = {"code": "notas = [6,7,5,8,9]\nsuma = 0\nx = 0\nwhile x < 5:\n suma += notas[x]\n x+=1\nprint(\"Media : %5.2f\" %(suma/x))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 0}, "ordered_globals": ["notas", "suma"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 0, "x": 0}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 0, "x": 0}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 6, "x": 0}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 6, "x": 1}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 6, "x": 1}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 13, "x": 1}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 13, "x": 2}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 13, "x": 2}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 18, "x": 2}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 18, "x": 3}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 18, "x": 3}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 26, "x": 3}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 26, "x": 4}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 26, "x": 4}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 35, "x": 4}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 35, "x": 5}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 35, "x": 5}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 35, "x": 5}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": "Media :  7.00\n"}]};
 var Example4_7_vis;
 
-$(document).ready(function() {
-    try {
-        Example4_7_vis = new ExecutionVisualizer('Example4_7',Example4_7_trace,
-                                    {embeddedMode: true,
-                                    verticalStack: false,
-                                    heightChangeCallback: redrawAllVisualizerArrows,
-                                    codeDivWidth: 500,
-                                    lang : 'py3'
-                                    });
-        attachLoggers(Example4_7_vis,'Example4_7');
-        styleButtons('Example4_7');
-        allVisualizers.push(Example4_7_vis);
-    } catch (e) {
-        console.log("Failed to Initialize CodeLens component Example4_7_vis" );
-        console.log(e.toString());
-    }
-
-});
-
-$(document).ready(function() {
-    $("#Example4_7_tracecheck").click(function() {
-        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'Example4_7'});
-    });
-});
-
-if (allVisualizers === undefined) {
-   var allVisualizers = [];
+if (allTraceData === undefined) {
+   var allTraceData = {};
 }
 
-
-$(window).resize(function() {
-    if (Example4_7_vis) {
-        Example4_7_vis.redrawConnectors();
-    }
-});
+allTraceData["Example4_7"] = {"code": "notas = [6,7,5,8,9]\nsuma = 0\nx = 0\nwhile x < 5:\n suma += notas[x]\n x+=1\nprint(\"Media : %5.2f\" %(suma/x))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1]}, "ordered_globals": ["notas"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 0}, "ordered_globals": ["notas", "suma"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 0, "x": 0}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 0, "x": 0}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 6, "x": 0}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 6, "x": 1}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 6, "x": 1}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 13, "x": 1}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 13, "x": 2}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 13, "x": 2}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 18, "x": 2}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 18, "x": 3}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 18, "x": 3}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 26, "x": 3}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 26, "x": 4}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 26, "x": 4}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 35, "x": 4}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 35, "x": 5}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 35, "x": 5}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": ""}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"notas": ["REF", 1], "suma": 35, "x": 5}, "ordered_globals": ["notas", "suma", "x"], "stack_to_render": [], "heap": {"1": ["LIST", 6, 7, 5, 8, 9]}, "stdout": "Media :  7.00\n"}]};
 </script>
 </div>
 <ul class="simple">
@@ -763,12 +513,16 @@ $(window).resize(function() {
 </dd>
 </dl>
 
-<div data-childcomponent="Example4_8" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=Example4_8 data-question_label="8">
+<div id=Example4_8_question class="ac_question col-md-12">
 
-<textarea data-component="activecode" id=Example4_8 data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="Example4_8_editor" 
+      data-timelimit=25000     
     data-audio=''   data-stdin=''   
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 vector = []
 i = 1
 while i <= 5:
@@ -779,6 +533,7 @@ print("Vector de lectura :", vector)
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="id6">
 <h2>Listas<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -786,12 +541,16 @@ print("Vector de lectura :", vector)
 en orden inverso</p></li>
 </ul>
 
-<div data-childcomponent="Example4_9" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=Example4_9 data-question_label="9">
+<div id=Example4_9_question class="ac_question col-md-12">
 
-<textarea data-component="activecode" id=Example4_9 data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="Example4_9_editor" 
+      data-timelimit=25000     
     data-audio=''   data-stdin=''   
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 vector = []
 i = 1
 while i <= 10:
@@ -805,6 +564,7 @@ while i >= 0:
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="id7">
 <h2>Listas<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -812,12 +572,16 @@ while i >= 0:
 pantalla</p></li>
 </ul>
 
-<div data-childcomponent="Example4_10" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=Example4_10 data-question_label="10">
+<div id=Example4_10_question class="ac_question col-md-12">
 
-<textarea data-component="activecode" id=Example4_10 data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="Example4_10_editor" 
+      data-timelimit=25000     
     data-audio=''   data-stdin=''   
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 notas = []
 i = 1
 while i <= 4:
@@ -834,18 +598,23 @@ print("Media : %4.2f" %(suma/4))
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="id8">
 <h2>Listas<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Otra forma de hacer lo mismo.</p></li>
 </ul>
 
-<div data-childcomponent="Example4_11" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=Example4_11 data-question_label="11">
+<div id=Example4_11_question class="ac_question col-md-12">
 
-<textarea data-component="activecode" id=Example4_11 data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="Example4_11_editor" 
+      data-timelimit=25000     
     data-audio=''   data-stdin=''   
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 notas = []
 i = 1
 suma = 0
@@ -859,6 +628,7 @@ print("Media : %4.2f" %(suma/4))
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="id9">
 <h2>Listas<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -866,12 +636,16 @@ print("Media : %4.2f" %(suma/4))
 diga cuántas consonantes se leyeron.</p></li>
 </ul>
 
-<div data-childcomponent="Example4_12" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=Example4_12 data-question_label="12">
+<div id=Example4_12_question class="ac_question col-md-12">
 
-<textarea data-component="activecode" id=Example4_12 data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="Example4_12_editor" 
+      data-timelimit=25000     
     data-audio=''   data-stdin=''   
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 letras = []
 i = 1
 while i <= 10:
@@ -885,6 +659,7 @@ while i <= 9:
    i += 1
 print("Fueron leídos %d consonantes" %cont)
 </textarea>
+</div>
 </div>
 </div>
 <div class="section" id="lista-de-ejercicios-again">
@@ -932,8 +707,8 @@ print("Fueron leídos %d consonantes" %cont)
       
     </p>
     <p>
-        &copy; Copyright 2017 Atharva Kulkarni.
-      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 4.2.2.
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.6.2.
     </p>
   </div>
 </footer>

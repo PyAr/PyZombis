@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>Quiz - 7 &#8212; Runestone Interactive Overview</title>
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - 7 &#8212; PyZombis master@184be15</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css?v=239FC54E" />
-    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css?v=8A1A42E4" />
-    <link rel="stylesheet" type="text/css" href="../_static/showEval.css?v=C6382F3" />
-    <link rel="stylesheet" type="text/css" href="../_static/fitb.css?v=3BA0E63E" />
-    <link rel="stylesheet" type="text/css" href="../_static/reveal.css?v=4A81D381" />
-    <link rel="stylesheet" type="text/css" href="../_static/spreadsheet.css?v=B5F018A" />
-    <link rel="stylesheet" type="text/css" href="../_static/jexcel.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/japp.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/shortanswer.css?v=7E18C432" />
-    <link rel="stylesheet" type="text/css" href="../_static/activecode.css?v=F471F95B" />
-    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css?v=9CF75563" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/clickable.css?v=58C4E18A" />
-    <link rel="stylesheet" type="text/css" href="../_static/poll.css?v=E220AC33" />
     <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
-    <link rel="stylesheet" type="text/css" href="../_static/video.css?v=E5385B3B" />
-    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=DB047029" />
-    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css?v=424F1CC9" />
-    <link rel="stylesheet" type="text/css" href="../_static/parsons.css?v=2F3E13EE" />
-    <link rel="stylesheet" type="text/css" href="../_static/js_lib/prettify.css?v=2A364B6B" />
-    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css?v=1FF7F927" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/datafile.css?v=C184EB8A" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/presenter_mode.css?v=9FF1320F" />
+    <link rel="stylesheet" type="text/css" href="../_static/jquery-ui-1.10.3.custom.min.css?v=97E0178A" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/runestone-custom-sphinx-bootstrap.css?v=5.6.2" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -42,75 +30,33 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
-    <script src="../_static/d3.v2.min.js?v=836E01C"></script>
-    <script src="../_static/jquery.ba-bbq.min.js?v=B64CF0A8"></script>
-    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js?v=42F9EBEA"></script>
-    <script src="../_static/pytutor.js?v=82B022B9"></script>
-    <script src="../_static/codelens.js?v=CABECD49"></script>
-    <script src="../_static/showEval.js?v=5B2DD7A6"></script>
-    <script src="../_static/fitb.js?v=60630F3D"></script>
-    <script src="../_static/timedfitb.js?v=2AA17071"></script>
-    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js?v=599B42B0"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.js?v=88A1430F"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js?v=AE15A4A1"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js?v=8ABDFE7F"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.language.js?v=747279FF"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.parser.js?v=7B020E13"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js?v=660E85C3"></script>
-    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js?v=54B21948"></script>
-    <script src="../_static/fitb-i18n.en.js?v=389ED00C"></script>
-    <script src="../_static/reveal.js?v=35AF34F1"></script>
-    <script src="../_static/spreadsheet.js?v=ABDABEC0"></script>
-    <script src="../_static/jexcel.js"></script>
-    <script src="../_static/japp.js"></script>
-    <script src="../_static/shortanswer.js?v=89F557ED"></script>
-    <script src="../_static/timed_shortanswer.js?v=B3A117D7"></script>
     <script src="../_static/jquery.highlight.js?v=F1C496C8"></script>
-    <script src="../_static/bookfuncs.js?v=24766D61"></script>
-    <script src="../_static/codemirror.js?v=25B54D0A"></script>
-    <script src="../_static/xml.js?v=236EDFF7"></script>
-    <script src="../_static/css.js?v=623153CE"></script>
-    <script src="../_static/python.js?v=76B9CFA2"></script>
-    <script src="../_static/htmlmixed.js?v=4EBE05BF"></script>
-    <script src="../_static/javascript.js?v=6F38CA04"></script>
-    <script src="../_static/sql.js?v=49D0BD74"></script>
-    <script src="../_static/activecode-i18n.en.js?v=65CA0724"></script>
-    <script src="../_static/skulpt.min.js?v=A901CC2"></script>
-    <script src="../_static/skulpt-stdlib.js?v=24904821"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
-    <script src="../_static/activecode.js?v=AF9F4792"></script>
-    <script src="../_static/clike.js?v=4247C891"></script>
-    <script src="../_static/timed_activecode.js?v=20BFB7B1"></script>
-    <script src="../_static/sql-wasm.js?v=44FE0709"></script>
+    <script src="../_static/sql-wasm.js?v=D71B5933"></script>
     <script src="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.js"></script>
-    <script src="../_static/mchoice.js?v=7B685250"></script>
-    <script src="../_static/timedmc.js?v=B010A457"></script>
-    <script src="../_static/timed.js?v=7A76C128"></script>
-    <script src="../_static/mchoice-i18n.en.js?v=354E6CD"></script>
-    <script src="../_static/clickable.js?v=846DC076"></script>
-    <script src="../_static/timedclickable.js?v=93989C23"></script>
-    <script src="../_static/poll.js?v=45F04365"></script>
     <script src="../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../_static/Blob.js?v=AEC2447"></script>
-    <script src="../_static/runestonevideo.js?v=53E888DE"></script>
-    <script src="../_static/tabbedstuff.js?v=5BE6106"></script>
-    <script src="../_static/js_lib/prettify.js?v=CA7E8928"></script>
-    <script src="../_static/js_lib/hammer.min.js?v=73056367"></script>
-    <script src="../_static/parsons.js?v=CE79120E"></script>
-    <script src="../_static/timedparsons.js?v=2EEA9E5A"></script>
-    <script src="../_static/parsons-i18n.en.js?v=A9C11155"></script>
-    <script src="../_static/dragndrop.js?v=86D99604"></script>
-    <script src="../_static/timeddnd.js?v=378F237E"></script>
-    <script src="../_static/dragndrop-i18n.en.js?v=40C28531"></script>
     <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../_static/lp.js?v=5E742BDC"></script>
-    <script src="../_static/gas.js?v=129CE036"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../_static/animationbase.js?v=A043C3A7"></script>
-    <script src="../_static/datafile.js?v=156D8707"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.bidi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.fallbacks.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.messagestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.parser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.language.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
+    <script src="../_static/runestone.js?v=4011C77C"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js?v=2B07FE4F"></script>
+    <script src="../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="../_static/jquery-fix.js?v=1226591B"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/jquery.idle-timer.js?v=E942DAF1"></script>
+    <script src="../_static/presenter_mode.js?v=2DF16FB4"></script>
+    <script src="../_static/theme.js?v=D899FB97"></script>
     <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="../_static/jquery-fix.js"></script>
     <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -145,7 +91,7 @@
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'PyZombisDev';
   eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
-  eBookConfig.runestone_version = '4.2.2';
+  eBookConfig.runestone_version = '5.6.2';
   eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
   eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
   eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
@@ -184,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis Python Course</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@184be15</a>
       </div>
     </div>
 
@@ -368,14 +314,18 @@
 <div class="section" id="ejercicio-a">
 <h2>Ejercicio A<a class="headerlink" href="#ejercicio-a" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="multstring" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=multstring data-question_label="1">
+<div id=multstring_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">multstring</span></code> que recibe como parametros una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y un entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y devuelve una nueva cadena que contiene <code class="docutils literal notranslate"><span class="pre">n</span></code> copias de la cadena original <br /> <br />
 Ejemplo: <code class="docutils literal notranslate"><span class="pre">multstring('Hola',</span> <span class="pre">2)</span></code> -&gt; ‘HolaHola’</p>
 
-<textarea data-component="activecode" id=multstring data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="multstring_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def multstring(s,n):
 
 
@@ -401,20 +351,25 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-b">
 <h2>Ejercicio B<a class="headerlink" href="#ejercicio-b" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="string_splosion" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=string_splosion data-question_label="2">
+<div id=string_splosion_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">string_splosion</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y devuelva una nueva cadena siguiendo el patron descrito en los ejemplos <br /> <br />
 Ejemplos:<br />
 <code class="docutils literal notranslate"><span class="pre">string_splosion('Code')</span></code> -&gt; ‘CCoCodCode’ <br />
 <code class="docutils literal notranslate"><span class="pre">string_splosion('abc')</span></code> -&gt; ‘aababc’ <br />
 <code class="docutils literal notranslate"><span class="pre">string_splosion('ab')</span></code> -&gt; ‘aab’ <br /></p>
 
-<textarea data-component="activecode" id=string_splosion data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="string_splosion_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def string_splosion(s):
 
 
@@ -441,17 +396,22 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-c">
 <h2>Ejercicio C<a class="headerlink" href="#ejercicio-c" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="array_count9" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=array_count9 data-question_label="3">
+<div id=array_count9_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">array_count9</span></code> que recibe como parametro una lista no vacía de números enteros <code class="docutils literal notranslate"><span class="pre">nums</span></code> y devuelva cuántas veces aparece el número 9 en la lista <br /> <br />
 Ejemplo: <code class="docutils literal notranslate"><span class="pre">array_count9([1,</span> <span class="pre">99,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 
-<textarea data-component="activecode" id=array_count9 data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="array_count9_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def array_count9(nums):
 
 
@@ -475,10 +435,13 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-d">
 <h2>Ejercicio D<a class="headerlink" href="#ejercicio-d" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="array_front9" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=array_front9 data-question_label="4">
+<div id=array_front9_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">array_front9</span></code> que recibe una lista de números enteros <code class="docutils literal notranslate"><span class="pre">nums</span></code> y verifica si al menos uno de los primeros cuatro números es 9 <br /> <br />
 Ejemplos:<br />
 <code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">9,</span> <span class="pre">3,</span> <span class="pre">4])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
@@ -486,10 +449,12 @@ Ejemplos:<br />
 <code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
 <code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
 
-<textarea data-component="activecode" id=array_front9 data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="array_front9_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def array_front9(nums):
 
 
@@ -520,20 +485,25 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-e">
 <h2>Ejercicio E<a class="headerlink" href="#ejercicio-e" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="hello_name" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=hello_name data-question_label="5">
+<div id=hello_name_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">hello_name</span></code> que recibe como parametro un cadena representa un nombre <code class="docutils literal notranslate"><span class="pre">name</span></code> y devuelva un saludo con este nombre <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">hello_name('Bob')</span></code> -&gt; ‘¡Hola Bob!’ <br />
 <code class="docutils literal notranslate"><span class="pre">hello_name('Alice')</span></code> -&gt; ‘¡Hola Alice!’ <br />
 <code class="docutils literal notranslate"><span class="pre">hello_name('X')</span></code> -&gt; ‘Hola X!’ <br /></p>
 
-<textarea data-component="activecode" id=hello_name data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="hello_name_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def hello_name(name):
 
 
@@ -554,20 +524,25 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-f">
 <h2>Ejercicio F<a class="headerlink" href="#ejercicio-f" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="make_tags" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=make_tags data-question_label="6">
+<div id=make_tags_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">make_tags</span></code> que recibe dos cadenas <code class="docutils literal notranslate"><span class="pre">tag</span></code> y <code class="docutils literal notranslate"><span class="pre">word</span></code> y devuelva una nueva cadena formateada siguiendo el patrón de los ejemplos <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">make_tags('i',</span> <span class="pre">'Yay')</span></code> -&gt; ‘&lt;i&gt;Yay&lt;/i&gt;’ <br />
 <code class="docutils literal notranslate"><span class="pre">make_tags('i',</span> <span class="pre">'Hello')</span></code> -&gt; ‘&lt;i&gt;Hello&lt;/i&gt;’ <br />
 <code class="docutils literal notranslate"><span class="pre">make_tags('cite',</span> <span class="pre">'Yay')</span></code> -&gt; ‘&lt;cite&gt;Yay&lt;/cite&gt;’ <br /></p>
 
-<textarea data-component="activecode" id=make_tags data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="make_tags_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def make_tags(tag,word):
 
 
@@ -591,20 +566,25 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-g">
 <h2>Ejercicio G<a class="headerlink" href="#ejercicio-g" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="extra_end" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=extra_end data-question_label="7">
+<div id=extra_end_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">extra_end</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelve una nueva cadena con las dos últimas letras repetidas tres veces <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">extra_end('Hello')</span></code> -&gt; ‘lololo’ <br />
 <code class="docutils literal notranslate"><span class="pre">extra_end('abb')</span></code> -&gt; ‘bbbbbb’ <br />
 <code class="docutils literal notranslate"><span class="pre">extra_end('Hi')</span></code> -&gt; ‘HiHiHi’  <br /></p>
 
-<textarea data-component="activecode" id=extra_end data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="extra_end_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def extra_end(s):
 
 
@@ -627,20 +607,25 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-h">
 <h2>Ejercicio H<a class="headerlink" href="#ejercicio-h" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="new_extra_end" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=new_extra_end data-question_label="8">
+<div id=new_extra_end_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">new_extra_end</span></code> (variante de la función del Ejercicio G) que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y un entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y devuelva una nueva cadena con las dos últimas letras repetidas <code class="docutils literal notranslate"><span class="pre">n</span></code> veces <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">new_extra_end('Hello',3)</span></code> -&gt; ‘lololo’ <br />
 <code class="docutils literal notranslate"><span class="pre">new_extra_end('abb',1)</span></code> -&gt; ‘bb’ <br />
 <code class="docutils literal notranslate"><span class="pre">new_extra_end('Hi',5)</span></code> -&gt; ‘HiHiHiHiHi’  <br /></p>
 
-<textarea data-component="activecode" id=new_extra_end data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="new_extra_end_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def new_extra_end(s,n):
 
 
@@ -663,20 +648,25 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-i">
 <h2>Ejercicio I<a class="headerlink" href="#ejercicio-i" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="first_half" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=first_half data-question_label="9">
+<div id=first_half_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">first_half</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y devuelve la primera mitad de la cadena original <br /> <br />
 Ejemplos:<br />
 <code class="docutils literal notranslate"><span class="pre">first_half('WooHoo')</span></code> -&gt; ‘Woo’ <br />
 <code class="docutils literal notranslate"><span class="pre">first_half('HelloThere')</span></code> -&gt; ‘Hello’ <br />
 <code class="docutils literal notranslate"><span class="pre">first_half('abcdef')</span></code> -&gt; ‘abc’ <br /></p>
 
-<textarea data-component="activecode" id=first_half data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="first_half_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def first_half(s):
 
 
@@ -700,20 +690,25 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-j">
 <h2>Ejercicio J<a class="headerlink" href="#ejercicio-j" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="remove_first_last" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=remove_first_last data-question_label="10">
+<div id=remove_first_last_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remove_first_last</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva una cadena sin el primer y último carácter <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">remove_first_last('Hello')</span></code> -&gt; ‘ell’ <br />
 <code class="docutils literal notranslate"><span class="pre">remove_first_last('python')</span></code> -&gt; ‘ytho’ <br />
 <code class="docutils literal notranslate"><span class="pre">remove_first_last('coding')</span></code> -&gt; ‘odin’ <br /></p>
 
-<textarea data-component="activecode" id=remove_first_last data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="remove_first_last_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def remove_first_last(s):
 
 
@@ -739,19 +734,24 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-k">
 <h2>Ejercicio K<a class="headerlink" href="#ejercicio-k" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="left2" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=left2 data-question_label="11">
+<div id=left2_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">left2</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva la cadena original rotada 2 posiciones a la izquierda <br /> <br />
 Ejemplos:<br />
 <code class="docutils literal notranslate"><span class="pre">left2('Hello')</span></code> -&gt; ‘lloHe’ <br />
 <code class="docutils literal notranslate"><span class="pre">left2('Hi')</span></code> -&gt; ‘Hi’ <br /></p>
 
-<textarea data-component="activecode" id=left2 data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="left2_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def left2(s):
 
 
@@ -778,20 +778,25 @@ myTests().main()
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="ejercicio-l">
 <h2>Ejercicio L<a class="headerlink" href="#ejercicio-l" title="Permalink to this headline">¶</a></h2>
 
-<div data-childcomponent="remove_iesimo" class="runestone explainer ac_section alert alert-warning">
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=remove_iesimo data-question_label="12">
+<div id=remove_iesimo_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remove_iesimo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> no vacía y un entero positivo <code class="docutils literal notranslate"><span class="pre">i</span></code> y devuelva la cadena original sin el i-esimo carácter <br /> <br />
 Ejemplos:<br />
 <code class="docutils literal notranslate"><span class="pre">remove_iesimo('Hello',1)</span></code> -&gt; ‘ello’ <br />
 <code class="docutils literal notranslate"><span class="pre">remove_iesimo('Hi',2)</span></code> -&gt; ‘H’ <br />
 <code class="docutils literal notranslate"><span class="pre">remove_iesimo('PyZombiess',</span> <span class="pre">10)</span></code> -&gt; ‘PyZombies’ <br /></p>
 
-<textarea data-component="activecode" id=remove_iesimo data-lang="python" 
-      data-timelimit=25000    
+</div>
+<textarea data-lang="python" id="remove_iesimo_editor" 
+      data-timelimit=25000     
     data-audio=''      
-           data-wasm=/_static>
+           data-wasm=/_static 
+     style="visibility: hidden;">
 def remove_iesimo(s,i):
 
 
@@ -816,6 +821,7 @@ class myTests(TestCaseGui):
 
 myTests().main()
 </textarea>
+</div>
 </div>
 </div>
 </div>
@@ -856,8 +862,8 @@ myTests().main()
       
     </p>
     <p>
-        &copy; Copyright 2017 Atharva Kulkarni.
-      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 4.2.2.
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.6.2.
     </p>
   </div>
 </footer>

@@ -105,9 +105,9 @@ div.ExecutionVisualizer table#pyCodeOutput .lineNo {
 /* Runestone custom modifications */
 
 body {
+    counter-reset: rscomponent;
     padding-top: 60px;
     background-color: var(--outerBackground);
-    counter-reset: rscomponent;
 }
 
 pre {
@@ -329,6 +329,7 @@ div.section {
 .CodeMirror {
     margin: 0 0 1em 0;
     background-color: var(--background);
+    height: auto;
     clear: both;
 }
 
@@ -337,7 +338,7 @@ div.section {
      * height while still relying on max-height (which keeps
      * the CM editors to no more than the size needed
      * unless resized) */
-    max-height: 30em;
+    max-height: 60em;
     min-width: 30em;
 }
 
@@ -432,8 +433,7 @@ h2 {
 
 /* override the color styles applied by Skulpt to the unittest results divs */
 .unittest-results.alert-danger {
-    background-color: var(--dangerAlerts);
-     !important;
+    background-color: var(--dangerAlerts) !important;
 }
 
 .unittest-results.alert-success {
@@ -811,65 +811,7 @@ div.ExecutionVisualizer table.visualizer {
 }
 
 
-/* TIMED ASSESSMENT BUTTON STYLES */
-ul#pageNums,
-ul#pageNums li {
-    text-align: center;
-    padding: 10px 0;
-}
 
-
-.pagination>li>a:hover {
-    background-color: #eee !important;
-    color: #000 !important;
-}
-
-
-/* The following override styles in Bootstrap distribution file (bootstrap.min.css) */
-
-.pagination>.active>a,
-.pagination>.active>span {
-    background-color: #428bca !important;
-    color: #ffffff !important;
-}
-
-.col-md-6-override {
-    text-align: center !important;
-    max-width: 100% !important;
-}
-
-/* end */
-
-
-
-.pagination>.answered>a,
-.pagination>.answered>span {
-    background-color: #eee;
-    color: #000;
-}
-
-.pagination>.correctCount>a,
-.pagination>.correctCount>span {
-    background-color: #dff0d8;
-    color: #000000;
-    border-color: #000000;
-}
-
-.pagination>.skippedCount>a,
-.pagination>.skippedCount>span {
-    background-color: #fcf8e3;
-    color: #000000;
-    border-color: #000000;
-}
-
-.pagination>.incorrectCount>a,
-.pagination>.incorrectCount>span {
-    background-color: #f2dede;
-    color: #000000;
-    border-color: #000000;
-}
-
-/* END TIMED ASSESSMENT BUTTON STYLES */
 
 .sltooltip {
     position: absolute;
@@ -995,13 +937,31 @@ textarea#lp-result {
     text-align: center;
 }
 
-.runestone_caption:before {
-    content: "Activity: "counter(rscomponent) " -- ";
+.runestone_caption_divid {
+    opacity: 50%;
+}
+
+#questions .runestone_caption:before {
     counter-increment: rscomponent;
+    content: "Problem: "counter(rscomponent) " -- ";
 }
 
 body {
     color: var(--bodyFont);
+}
+
+.jupyter_container .output  {
+    margin-top: 10px;
+}
+
+.jupyter_container .output td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.jupyter_container .output th {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /*Theme toggle*/
