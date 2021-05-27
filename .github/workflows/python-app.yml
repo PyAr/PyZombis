@@ -31,9 +31,9 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Build
+    - name: Build website content
       env:
-        GITHUB_HEAD_SHA: "${{ github.event.pull_request.head.sha }}"
+        GITHUB_HEAD_SHA: "${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || '' }}"
       run: |
         runestone build
     - name: Save PR number
