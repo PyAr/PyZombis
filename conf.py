@@ -55,7 +55,10 @@ copyright = '2021 Python Argentina et al.'
 # detect if running in GitHub Actions, HEAD do not point to the PR branch there...
 if os.environ.get("GITHUB_ACTIONS"):
     git_head = os.environ.get("GITHUB_SHA")
-    git_ref = os.environ.get("GITHUB_REF")
+    # on pull_request actions, head points to refs/pull/78/merge
+    git_ref = os.environ.get("GITHUB_HEAD_REF")
+    if not git_ref:
+        git_ref = os.environ.get("GITHUB_REF")
 else:
     git_head = "HEAD"
     git_ref = "HEAD"
