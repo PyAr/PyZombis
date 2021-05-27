@@ -33,7 +33,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Build
       env:
-          GITHUB_SHA: "${{ github.event.pull_request.head.sha }}"
+        GITHUB_HEAD_SHA: "${{ github.event.pull_request.head.sha }}"
       run: |
         runestone build
     - name: Save PR number
