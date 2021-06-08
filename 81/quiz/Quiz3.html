@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 3 &#8212; PyZombis fixQuizzes@1268617</title>
+    <title>Quiz - 3 &#8212; PyZombis fixQuizzes@b387054</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis fixQuizzes@1268617</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis fixQuizzes@b387054</a>
       </div>
     </div>
 
@@ -355,8 +355,8 @@ Devuelva una lista con la cantidad de cada billete que represente el cambio. <br
 El primer elemento de la lista coincide con la cantidad 50,
 el siguiente con 20, y así sucesivamente hasta 1. (El mismo orden que se muestra arriba). <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">calcularCambio(50,</span> <span class="pre">100)</span></code> -&gt; [1,0,0,0,0,0] <br />
-<code class="docutils literal notranslate"><span class="pre">calcularCambio(92,</span> <span class="pre">100)</span></code> -&gt; [0,0,0,1,1,1] <br /></p>
+<code class="docutils literal notranslate"><span class="pre">calcular_cambio(50,</span> <span class="pre">100)</span></code> -&gt; [1,0,0,0,0,0] <br />
+<code class="docutils literal notranslate"><span class="pre">calcular_cambio(92,</span> <span class="pre">100)</span></code> -&gt; [0,0,0,1,1,1] <br /></p>
 
 </div>
 <textarea data-lang="python" id="q3_2_editor" 
@@ -364,7 +364,7 @@ Ejemplos: <br />
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def calcularCambio(cobro, pago):
+def calcular_cambio(cobro, pago):
 
 
 ====
@@ -374,9 +374,9 @@ class myTests(TestCaseGui):
 
     def testOne(self):
 
-        self.assertEqual(calcularCambio(50, 100), [1,0,0,0,0,0], "Esperado: [1,0,0,0,0,0]")
-        self.assertEqual(calcularCambio(61, 100), [0,1,1,1,2,0], "Esperado: [0,1,1,1,2,0]")
-        self.assertEqual(calcularCambio(92, 100), [0,0,0,1,1,1], "Esperado: [0,0,0,1,1,1]")
+        self.assertEqual(calcular_cambio(50, 100), [1,0,0,0,0,0], "Esperado: [1,0,0,0,0,0]")
+        self.assertEqual(calcular_cambio(61, 100), [0,1,1,1,2,0], "Esperado: [0,1,1,1,2,0]")
+        self.assertEqual(calcular_cambio(92, 100), [0,0,0,1,1,1], "Esperado: [0,0,0,1,1,1]")
 
 
 myTests().main()
@@ -399,7 +399,7 @@ Devuelva <code class="docutils literal notranslate"><span class="pre">True</span
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def esPrimo(n):
+def es_primo(n):
 
 
 ====
@@ -409,11 +409,11 @@ class myTests(TestCaseGui):
 
     def testOne(self):
 
-        self.assertEqual(esPrimo(2), True, "Esperado: True")
-        self.assertEqual(esPrimo(49), False, "Esperado: False")
-        self.assertEqual(esPrimo(541), True, "Esperado: True")
-        self.assertEqual(esPrimo(8831), True, "Esperado: True")
-        self.assertEqual(esPrimo(7952), False, "Esperado: False")
+        self.assertEqual(es_primo(2), True, "Esperado: True")
+        self.assertEqual(es_primo(49), False, "Esperado: False")
+        self.assertEqual(es_primo(541), True, "Esperado: True")
+        self.assertEqual(es_primo(8831), True, "Esperado: True")
+        self.assertEqual(es_primo(7952), False, "Esperado: False")
 
 
 myTests().main()
@@ -472,8 +472,8 @@ myTests().main()
 <p>Haga un programa que solicite un número entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y lo muestre invertido.
 Por ejemplo: 1234 genera 4321. Devuelve el número invertido. <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">invertirNumero(123456789)</span></code> -&gt; 987654321 <br />
-<code class="docutils literal notranslate"><span class="pre">invertirNumero(1000)</span></code> -&gt; 1 <br /></p>
+<code class="docutils literal notranslate"><span class="pre">invertir_numero(123456789)</span></code> -&gt; 987654321 <br />
+<code class="docutils literal notranslate"><span class="pre">invertir_numero(1000)</span></code> -&gt; 1 <br /></p>
 
 </div>
 <textarea data-lang="python" id="q3_5_editor" 
@@ -481,7 +481,7 @@ Ejemplos: <br />
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def invertirNumero(n):
+def invertir_numero(n):
 
 
 ====
@@ -491,11 +491,11 @@ class myTests(TestCaseGui):
 
     def testOne(self):
 
-        self.assertEqual(invertirNumero(123), 321, "Esperado: 321")
-        self.assertEqual(invertirNumero(123456789), 987654321, "Esperado: 987654321")
-        self.assertEqual(invertirNumero(1001), 1001, "Esperado: 1001")
-        self.assertEqual(invertirNumero(1000), 1, "Esperado: 1")
-        self.assertEqual(invertirNumero(230), 32, "Esperado: 32")
+        self.assertEqual(invertir_numero(123), 321, "Esperado: 321")
+        self.assertEqual(invertir_numero(123456789), 987654321, "Esperado: 987654321")
+        self.assertEqual(invertir_numero(1001), 1001, "Esperado: 1001")
+        self.assertEqual(invertir_numero(1000), 1, "Esperado: 1")
+        self.assertEqual(invertir_numero(230), 32, "Esperado: 32")
 
 
 myTests().main()
