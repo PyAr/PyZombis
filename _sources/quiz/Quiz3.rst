@@ -51,11 +51,11 @@ Ejercicio 2
    El primer elemento de la lista coincide con la cantidad 50, 
    el siguiente con 20, y así sucesivamente hasta 1. (El mismo orden que se muestra arriba). |br| |br|
    Ejemplos: |br|
-   ``calcularCambio(50, 100)`` -> [1,0,0,0,0,0] |br|
-   ``calcularCambio(92, 100)`` -> [0,0,0,1,1,1] |br|
+   ``calcular_cambio(50, 100)`` -> [1,0,0,0,0,0] |br|
+   ``calcular_cambio(92, 100)`` -> [0,0,0,1,1,1] |br|
 
    ~~~~
-   def calcularCambio(cobro, pago):
+   def calcular_cambio(cobro, pago):
  
 
    ====
@@ -65,9 +65,9 @@ Ejercicio 2
 
        def testOne(self):
            
-           self.assertEqual(calcularCambio(50, 100), [1,0,0,0,0,0], "Esperado: [1,0,0,0,0,0]")
-           self.assertEqual(calcularCambio(61, 100), [0,1,1,1,2,0], "Esperado: [0,1,1,1,2,0]")
-           self.assertEqual(calcularCambio(92, 100), [0,0,0,1,1,1], "Esperado: [0,0,0,1,1,1]")
+           self.assertEqual(calcular_cambio(50, 100), [1,0,0,0,0,0], "Esperado: [1,0,0,0,0,0]")
+           self.assertEqual(calcular_cambio(61, 100), [0,1,1,1,2,0], "Esperado: [0,1,1,1,2,0]")
+           self.assertEqual(calcular_cambio(92, 100), [0,0,0,1,1,1], "Esperado: [0,0,0,1,1,1]")
               
 
    myTests().main()
@@ -83,7 +83,7 @@ Ejercicio 3
    Devuelva ``True`` si es primo o ``False`` si no lo es. |br|
    
    ~~~~
-   def esPrimo(n):
+   def es_primo(n):
 
        
    ====
@@ -93,11 +93,11 @@ Ejercicio 3
 
        def testOne(self):
            
-           self.assertEqual(esPrimo(2), True, "Esperado: True")
-           self.assertEqual(esPrimo(49), False, "Esperado: False")
-           self.assertEqual(esPrimo(541), True, "Esperado: True")
-           self.assertEqual(esPrimo(8831), True, "Esperado: True")
-           self.assertEqual(esPrimo(7952), False, "Esperado: False")
+           self.assertEqual(es_primo(2), True, "Esperado: True")
+           self.assertEqual(es_primo(49), False, "Esperado: False")
+           self.assertEqual(es_primo(541), True, "Esperado: True")
+           self.assertEqual(es_primo(8831), True, "Esperado: True")
+           self.assertEqual(es_primo(7952), False, "Esperado: False")
               
 
    myTests().main()
@@ -147,11 +147,11 @@ Ejercicio 5
    Haga un programa que solicite un número entero positivo ``n`` y lo muestre invertido. 
    Por ejemplo: 1234 genera 4321. Devuelve el número invertido. |br| |br|
    Ejemplos: |br|
-   ``invertirNumero(123456789)`` -> 987654321 |br|
-   ``invertirNumero(1000)`` -> 1 |br|
+   ``invertir_numero(123456789)`` -> 987654321 |br|
+   ``invertir_numero(1000)`` -> 1 |br|
 
    ~~~~
-   def invertirNumero(n):
+   def invertir_numero(n):
        
 
    ====
@@ -161,11 +161,11 @@ Ejercicio 5
 
        def testOne(self):
            
-           self.assertEqual(invertirNumero(123), 321, "Esperado: 321")
-           self.assertEqual(invertirNumero(123456789), 987654321, "Esperado: 987654321")
-           self.assertEqual(invertirNumero(1001), 1001, "Esperado: 1001")
-           self.assertEqual(invertirNumero(1000), 1, "Esperado: 1")
-           self.assertEqual(invertirNumero(230), 32, "Esperado: 32")
+           self.assertEqual(invertir_numero(123), 321, "Esperado: 321")
+           self.assertEqual(invertir_numero(123456789), 987654321, "Esperado: 987654321")
+           self.assertEqual(invertir_numero(1001), 1001, "Esperado: 1001")
+           self.assertEqual(invertir_numero(1000), 1, "Esperado: 1")
+           self.assertEqual(invertir_numero(230), 32, "Esperado: 32")
               
 
    myTests().main()
