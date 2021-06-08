@@ -49,6 +49,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *,cover
+videos/
 
 # Translations
 *.mo
@@ -62,3 +63,5 @@ docs/_build/
 
 # PyBuilder
 target/
+
+.vscode
