@@ -168,7 +168,7 @@ Ejercicio 6
        def testOne(self):
            
            self.assertEqual(tiempo(5,5),1,"Esperado: 1")
-           self.assertEqual(tiempo(100,3), 100/3 ,"Esperado: "+ str(100/3)")
+           self.assertEqual(tiempo(100,3), 100/3 ,"Esperado: "+ str(100/3))
            self.assertEqual(tiempo(10500,30),350,"Esperado: 350")
            self.assertEqual(tiempo(8600,50), 172,"Esperado: 172")
            self.assertEqual(tiempo(130,200), 0.65,"Esperado: 0.65")
