@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisión de String &#8212; PyZombis update-test-playwright@6da227a</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/presenter_mode.css?v=9FF1320F" />
+    <link rel="stylesheet" type="text/css" href="../_static/jquery-ui-1.10.3.custom.min.css?v=97E0178A" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/runestone-custom-sphinx-bootstrap.css?v=5.6.2" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/jquery.highlight.js?v=F1C496C8"></script>
+    <script src="../_static/sql-wasm.js?v=D71B5933"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.js"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/Blob.js?v=AEC2447"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.bidi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.fallbacks.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.messagestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.parser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.language.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
+    <script src="../_static/runestone.js?v=4011C77C"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js?v=2B07FE4F"></script>
+    <script src="../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="../_static/jquery-fix.js?v=1226591B"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/jquery.idle-timer.js?v=E942DAF1"></script>
+    <script src="../_static/presenter_mode.js?v=2DF16FB4"></script>
+    <script src="../_static/theme.js?v=D899FB97"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../_static/presenter_mode.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Revición de strings" href="TWP35.html" />
+    <link rel="prev" title="Revisión general 1" href="TWP30.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'PyZombisDev';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'PyZombisDev';
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.6.2';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.downloadsEnabled = false;
+  eBookConfig.enable_chatcodes = false ? false : false;
+  eBookConfig.allow_pairs = false ? false : false;
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis update-test-playwright@6da227a</a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/PyZombisDev/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/PyZombisDev/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=TWP33'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+      </div>
+
+
+
+
+
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Revisión de String</a><ul>
+<li><a class="reference internal" href="#texto">Texto</a></li>
+<li><a class="reference internal" href="#starbuzz-cafe">Starbuzz Café</a></li>
+<li><a class="reference internal" href="#codigo-starbuzz-actual">Código Starbuzz actual</a></li>
+<li><a class="reference internal" href="#el-ceo-solo-quiere-el-precio">El CEO solo quiere el precio</a></li>
+<li><a class="reference internal" href="#el-precio-esta-incrustado-en-el-html">El precio está incrustado en el HTML</a></li>
+<li><a class="reference internal" href="#strings">Strings</a></li>
+<li><a class="reference internal" href="#id1">Strings</a></li>
+<li><a class="reference internal" href="#id2">Strings</a></li>
+<li><a class="reference internal" href="#fatiamento">Fatiamento</a></li>
+<li><a class="reference internal" href="#id3">Fatiamento</a></li>
+<li><a class="reference internal" href="#id4">Fatiamento</a></li>
+<li><a class="reference internal" href="#el-ceo-esta-feliz">¡El CEO está feliz!</a></li>
+<li><a class="reference internal" href="#no-hay-preguntas-tontas">No hay preguntas tontas</a></li>
+<li><a class="reference internal" href="#descuentos-para-clientes-leales">Descuentos para clientes leales</a></li>
+<li><a class="reference internal" href="#programa-de-fidelizacion">Programa de fidelización</a></li>
+<li><a class="reference internal" href="#el-precio-se-movio">El precio se movió</a></li>
+<li><a class="reference internal" href="#los-datos-de-python-son-inteligentes">Los datos de Python son inteligentes</a></li>
+<li><a class="reference internal" href="#metodo-find">Método find</a></li>
+<li><a class="reference internal" href="#id5">Método find</a></li>
+<li><a class="reference internal" href="#solo-cuando-es-inferior-a-4-74">Solo cuando es inferior a 4,74</a></li>
+<li><a class="reference internal" href="#id6">Solo cuando es inferior a 4,74</a></li>
+<li><a class="reference internal" href="#las-strings-son-diferentes-de-los-numeros">Las strings son diferentes de los números</a></li>
+<li><a class="reference internal" href="#convertir-a-float">Convertir a float</a></li>
+<li><a class="reference internal" href="#puede-seguir-probando-el-precio">¿Puede seguir probando el precio?</a></li>
+<li><a class="reference internal" href="#puede-seguir-intentandolo">¿Puede seguir intentándolo?</a></li>
+<li><a class="reference internal" href="#el-ceo-esta-muy-feliz">¡El CEO está muy feliz!</a></li>
+<li><a class="reference internal" href="#algo-salio-mal">Algo salió mal</a></li>
+<li><a class="reference internal" href="#acusacion-ddos">Acusación DDoS</a></li>
+<li><a class="reference internal" href="#recibimos-un-mensaje">Recibimos un mensaje</a></li>
+<li><a class="reference internal" href="#tiempo-de-biblioteca">Tiempo de biblioteca</a></li>
+<li><a class="reference internal" href="#minutos-entre-cada-acceso">10 minutos entre cada acceso</a></li>
+<li><a class="reference internal" href="#resumen">Resumen</a></li>
+<li><a class="reference internal" href="#herramientas-de-python">Herramientas de Python</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Revisión general 1" data-toggle="tooltip">
+    <a href="TWP30.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Revición de strings' data-toggle="tooltip" >              
+    <a href="TWP35.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="revision-de-string">
+<h1>Revisión de String<a class="headerlink" href="#revision-de-string" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
+<div class="section" id="texto">
+<h2>Texto<a class="headerlink" href="#texto" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Es difícil comunicarse sin palabras</p></li>
+<li><p>Entre los diversos tipos de datos, uno de los más importantes es el texto o
+string</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nota: no es tan fácil manipular cadenas en algunos idiomas</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Busquemos dónde está la información en un texto ==</p></li>
+<li><dl class="simple">
+<dt>Y aprenderemos uno de los conceptos más importantes de orientación a la</dt><dd><p>objetos: métodos</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="starbuzz-cafe">
+<h2>Starbuzz Café<a class="headerlink" href="#starbuzz-cafe" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_001.jpg"><img alt="" class="align-center" src="../_images/TWP33_001.jpg" style="width: 14.801cm; height: 15.427cm;" /></a>
+</div>
+<div class="section" id="codigo-starbuzz-actual">
+<h2>Código Starbuzz actual<a class="headerlink" href="#codigo-starbuzz-actual" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=beans-1 data-question_label="1">
+<div id=beans-1_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="beans-1_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+from urllib.request import urlopen
+URL_PRECIOS = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html'
+pagina = urlopen(URL_PRECIOS)
+texto = pagina.read()
+print(texto)
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="el-ceo-solo-quiere-el-precio">
+<h2>El CEO solo quiere el precio<a class="headerlink" href="#el-ceo-solo-quiere-el-precio" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_004.jpg"><img alt="" class="align-center" src="../_images/TWP33_004.jpg" style="width: 12.699cm; height: 6.719cm;" /></a>
+</div>
+<div class="section" id="el-precio-esta-incrustado-en-el-html">
+<h2>El precio está incrustado en el HTML<a class="headerlink" href="#el-precio-esta-incrustado-en-el-html" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Este es el texto HTML “en bruto”, que es el formato de las páginas web</p></li>
+<li><p>El precio está incrustado en HTML</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/TWP33_002.png"><img alt="" class="align-center" src="../_images/TWP33_002.png" style="width: 24.005cm; height: 5.727cm;" /></a>
+</div>
+<div class="section" id="strings">
+<h2>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>String y cadenas de caracteres</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/TWP33_005.png"><img alt="" class="align-center" src="../_images/TWP33_005.png" style="width: 23.745cm; height: 2.112cm;" /></a>
+<ul class="simple">
+<li><p>¿Cómo obtener solo el precio?</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/TWP33_006.png"><img alt="" class="align-center" src="../_images/TWP33_006.png" style="width: 22.621cm; height: 3.436cm;" /></a>
+</div>
+<div class="section" id="id1">
+<h2>Strings<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_007.jpg"><img alt="" class="align-center" src="../_images/TWP33_007.jpg" style="width: 16.051cm; height: 5cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP33_008.jpg"><img alt="" class="align-center" src="../_images/TWP33_008.jpg" style="width: 16.483cm; height: 6.323cm;" /></a>
+</div>
+<div class="section" id="id2">
+<h2>Strings<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_009.jpg"><img alt="" class="align-center" src="../_images/TWP33_009.jpg" style="width: 17.805cm; height: 5.317cm;" /></a>
+</div>
+<div class="section" id="fatiamento">
+<h2>Fatiamento<a class="headerlink" href="#fatiamento" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+        <div class="pytutorVisualizer" id="Example10_1"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (Example10_1)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var Example10_1_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["Example10_1"] = {"code": "time = 'Palmeiras'\nprint(time[2:5])\nprint(time[0:3])\nprint(time[4:6])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"time": "Palmeiras"}, "ordered_globals": ["time"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"time": "Palmeiras"}, "ordered_globals": ["time"], "stack_to_render": [], "heap": {}, "stdout": "lme\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"time": "Palmeiras"}, "ordered_globals": ["time"], "stack_to_render": [], "heap": {}, "stdout": "lme\nPal\n"}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"time": "Palmeiras"}, "ordered_globals": ["time"], "stack_to_render": [], "heap": {}, "stdout": "lme\nPal\nei\n"}]};
+</script>
+</div>
+<ul class="simple">
+<li><p>Fatia do primeiro número até antes do segundo</p></li>
+<li><p>Não inclui o segundo número!</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>Fatiamento<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_012.jpg"><img alt="" class="align-center" src="../_images/TWP33_012.jpg" style="width: 13.943cm; height: 6.111cm;" /></a>
+</div>
+<div class="section" id="id4">
+<h2>Fatiamento<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=beans-2 data-question_label="3">
+<div id=beans-2_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="beans-2_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+from urllib.request import urlopen
+URL_PRECIOS = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html'
+pagina = urlopen(URL_PRECIOS)
+texto = pagina.read()
+print(texto[234:238])
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="el-ceo-esta-feliz">
+<h2>¡El CEO está feliz!<a class="headerlink" href="#el-ceo-esta-feliz" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_015.jpg"><img alt="" class="align-center" src="../_images/TWP33_015.jpg" style="width: 14.922cm; height: 6.402cm;" /></a>
+</div>
+<div class="section" id="no-hay-preguntas-tontas">
+<h2>No hay preguntas tontas<a class="headerlink" href="#no-hay-preguntas-tontas" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>¿Puedo poner alguna página web en este código?</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Sí. Siéntete libre, pero no olvides la decodificación</p></li>
+<li><p>Por ejemplo, el siguiente sitio web utiliza iso8859</p></li>
+<li><p><a class="reference external" href="http://www.ime.usp.br/~pf/algoritmos/dicios/br">Enlace para el mismo</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>¿Qué hace urllib.request?</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Te permite chatear con internet</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>¿Puedo acceder a una página directamente en el navegador?</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Sí. Escriba en modo interactivo “importar antigravedad”</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="descuentos-para-clientes-leales">
+<h2>Descuentos para clientes leales<a class="headerlink" href="#descuentos-para-clientes-leales" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_016.jpg"><img alt="" class="align-center" src="../_images/TWP33_016.jpg" style="width: 17.458cm; height: 12.571cm;" /></a>
+</div>
+<div class="section" id="programa-de-fidelizacion">
+<h2>Programa de fidelización<a class="headerlink" href="#programa-de-fidelizacion" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=beans-3 data-question_label="4">
+<div id=beans-3_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="beans-3_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+pagina = urlopen(URL_PRECIOS_LOYALTY)
+texto = pagina.read()
+print(texto[234:238])
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
+</div>
+</div>
+<ul class="simple">
+<li><p>¡No funcionó! “Bean” apareció en lugar del precio. ¿Porque sera?</p></li>
+</ul>
+</div>
+<div class="section" id="el-precio-se-movio">
+<h2>El precio se movió<a class="headerlink" href="#el-precio-se-movio" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Las páginas son diferentes y el precio cambia de posición en la cadena</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/TWP33_018.jpg"><img alt="" class="align-center" src="../_images/TWP33_018.jpg" style="width: 16.122cm; height: 5.416cm;" /></a>
+</div>
+<div class="section" id="los-datos-de-python-son-inteligentes">
+<h2>Los datos de Python son inteligentes<a class="headerlink" href="#los-datos-de-python-son-inteligentes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Los lenguajes de programación proporcionan funcionalidad incorporada
+en los datos para ayudarte</p></li>
+<li><p>Los datos de Python son inteligentes: pueden hacer cosas</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5">
+        <div class="pytutorVisualizer" id="Example10_2"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5 (Example10_2)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var Example10_2_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["Example10_2"] = {"code": "string = \"batatinha quando nasce\"\nprint(string.upper())\nprint(string.split())", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"string": "batatinha quando nasce"}, "ordered_globals": ["string"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"string": "batatinha quando nasce"}, "ordered_globals": ["string"], "stack_to_render": [], "heap": {}, "stdout": "BATATINHA QUANDO NASCE\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"string": "batatinha quando nasce"}, "ordered_globals": ["string"], "stack_to_render": [], "heap": {}, "stdout": "BATATINHA QUANDO NASCE\n['batatinha', 'quando', 'nasce']\n"}]};
+</script>
+</div>
+</div>
+<div class="section" id="metodo-find">
+<h2>Método find<a class="headerlink" href="#metodo-find" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Métodos find para strings</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="6">
+        <div class="pytutorVisualizer" id="Example10_3"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 6 (Example10_3)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var Example10_3_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["Example10_3"] = {"code": "string = \"Palmeiras\"\nprint(string.find(\"P\"))\nprint(string.find(\"lmei\"))\nprint(string.find(\"Pa\"))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"string": "Palmeiras"}, "ordered_globals": ["string"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"string": "Palmeiras"}, "ordered_globals": ["string"], "stack_to_render": [], "heap": {}, "stdout": "0\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"string": "Palmeiras"}, "ordered_globals": ["string"], "stack_to_render": [], "heap": {}, "stdout": "0\n2\n"}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"string": "Palmeiras"}, "ordered_globals": ["string"], "stack_to_render": [], "heap": {}, "stdout": "0\n2\n0\n"}]};
+</script>
+</div>
+<ul class="simple">
+<li><p>Para conocer los métodos que tengo, dale Ctrl + espacio después de un período</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>Método find<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=beans-4 data-question_label="7">
+<div id=beans-4_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="beans-4_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+pagina = urlopen(URL_PRECIOS_LOYALTY)
+texto = pagina.read()
+onde = texto.find('>$')
+inicio = onde + 2
+fin = inicio + 4
+print(texto[inicio:fin])
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="solo-cuando-es-inferior-a-4-74">
+<h2>Solo cuando es inferior a 4,74<a class="headerlink" href="#solo-cuando-es-inferior-a-4-74" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_025.jpg"><img alt="" class="align-center" src="../_images/TWP33_025.jpg" style="width: 8.6cm; height: 15.444cm;" /></a>
+</div>
+<div class="section" id="id6">
+<h2>Solo cuando es inferior a 4,74<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=beans-5 data-question_label="8">
+<div id=beans-5_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="beans-5_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+pagina = urlopen(URL_PRECIOS_LOYALTY)
+texto = pagina.read()
+onde = texto.find('>$')
+inicio = onde + 2
+fin = inicio + 4
+if texto[inicio:fin] < 4.74:
+   print(texto[inicio:fin])
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="las-strings-son-diferentes-de-los-numeros">
+<h2>Las strings son diferentes de los números<a class="headerlink" href="#las-strings-son-diferentes-de-los-numeros" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_028.jpg"><img alt="" class="align-center" src="../_images/TWP33_028.jpg" style="width: 17.401cm; height: 9.324cm;" /></a>
+</div>
+<div class="section" id="convertir-a-float">
+<h2>Convertir a float<a class="headerlink" href="#convertir-a-float" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=beans-6 data-question_label="9">
+<div id=beans-6_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="beans-6_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+pagina = urlopen(URL_PRECIOS_LOYALTY)
+texto = pagina.read()
+onde = texto.find('>$')
+inicio = onde + 2
+fin= inicio + 4
+if float(texto[inicio:fin]) < 4.74:
+   print('Comprar! precio: %5.2f' %float(texto[inicio:fin]))
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="puede-seguir-probando-el-precio">
+<h2>¿Puede seguir probando el precio?<a class="headerlink" href="#puede-seguir-probando-el-precio" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_029.jpg"><img alt="" class="align-center" src="../_images/TWP33_029.jpg" style="width: 8.6cm; height: 15.444cm;" /></a>
+</div>
+<div class="section" id="puede-seguir-intentandolo">
+<h2>¿Puede seguir intentándolo?<a class="headerlink" href="#puede-seguir-intentandolo" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=beans-7 data-question_label="10">
+<div id=beans-7_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="beans-7_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+from urllib.request import urlopen
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+precio = 99.99
+while precio >= 4.74:
+   pagina = urlopen(URL_PRECIOS_LOYALTY)
+   texto = pagina.read()
+   onde = texto.find('>$')
+   inicio = onde + 2
+   fin = inicio + 4
+   precio = float(texto[inicio:fin])
+print('Comprar! precio: %5.2f' %precio)
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="el-ceo-esta-muy-feliz">
+<h2>¡El CEO está muy feliz!<a class="headerlink" href="#el-ceo-esta-muy-feliz" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_030.jpg"><img alt="" class="align-center" src="../_images/TWP33_030.jpg" style="width: 11.561cm; height: 9.762cm;" /></a>
+</div>
+<div class="section" id="algo-salio-mal">
+<h2>Algo salió mal<a class="headerlink" href="#algo-salio-mal" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_032.jpg"><img alt="" class="align-center" src="../_images/TWP33_032.jpg" style="width: 15.201cm; height: 15.268cm;" /></a>
+</div>
+<div class="section" id="acusacion-ddos">
+<h2>Acusación DDoS<a class="headerlink" href="#acusacion-ddos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>DDoS – Distributed Denial of Service</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/TWP33_033.jpg"><img alt="" class="align-center" src="../_images/TWP33_033.jpg" style="width: 15.201cm; height: 13.596cm;" /></a>
+</div>
+<div class="section" id="recibimos-un-mensaje">
+<h2>Recibimos un mensaje<a class="headerlink" href="#recibimos-un-mensaje" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP33_034.jpg"><img alt="" class="align-center" src="../_images/TWP33_034.jpg" style="width: 22.685cm; height: 13.191cm;" /></a>
+</div>
+<div class="section" id="tiempo-de-biblioteca">
+<h2>Tiempo de biblioteca<a class="headerlink" href="#tiempo-de-biblioteca" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Tiempo actual en segundos time.clock ()</p></li>
+<li><p>¿Estoy en verano? time.daylight ()</p></li>
+<li><p>Duerme unos segundos, duerme (segundos)</p></li>
+<li><p>Zona horaria time.timezone ()</p></li>
+</ul>
+</div>
+<div class="section" id="minutos-entre-cada-acceso">
+<h2>10 minutos entre cada acceso<a class="headerlink" href="#minutos-entre-cada-acceso" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=beans-8 data-question_label="11">
+<div id=beans-8_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="beans-8_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+from urllib.request import urlopen
+import time
+URL_PRECIOS_LOYALTY = 'https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html'
+precio = 99.99
+while precio >= 4.74:
+   pagina = urlopen(URL_PRECIOS_LOYALTY)
+   texto = pagina.read()
+   onde = texto.find('>$')
+   inicio = onde + 2
+   fin = inicio + 4
+   precio = float(texto[inicio:fin])
+   if precio >= 4.74:
+      time.sleep(600)
+print('Comprar! precio: %5.2f' %precio)
+====
+#TODO: Hacer la peticion con un proxy que evite el error de CORS
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="resumen">
+<h2>Resumen<a class="headerlink" href="#resumen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Las srings son cadenas de caracteres</p></li>
+<li><p>Accedemos a los caracteres individuales por el índice, que comienza con cero</p></li>
+<li><p>Los métodos son funciones integradas en variables</p></li>
+<li><p>Hay bibliotecas de programación con código listo</p></li>
+<li><p>Los datos tienen un tipo, como int o string</p></li>
+</ul>
+</div>
+<div class="section" id="herramientas-de-python">
+<h2>Herramientas de Python<a class="headerlink" href="#herramientas-de-python" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>texto[4]accede al quinto carácter</p></li>
+<li><p>texto[4:9]accede al quinto al noveno carácter</p></li>
+<li><p>El método text.find () busca una subcadena</p></li>
+<li><p>float () convierte algo a un punto flotante</p></li>
+<li><p>Bibliotecas: urllib.request y equipo</p></li>
+</ul>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Revisión general 1' data-toggle="tooltip">
+    <a href="TWP30.html" >
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP30.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Revición de strings' data-toggle="tooltip" >
+    <a href="TWP35.html" >
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="TWP35.html" >Next Section - Revición de strings</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.6.2.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

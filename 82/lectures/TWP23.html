@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archivos y diccionarios &#8212; PyZombis update-test-playwright@6da227a</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/presenter_mode.css?v=9FF1320F" />
+    <link rel="stylesheet" type="text/css" href="../_static/jquery-ui-1.10.3.custom.min.css?v=97E0178A" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/runestone-custom-sphinx-bootstrap.css?v=5.6.2" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/jquery.highlight.js?v=F1C496C8"></script>
+    <script src="../_static/sql-wasm.js?v=D71B5933"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.js"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/Blob.js?v=AEC2447"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.bidi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.fallbacks.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.messagestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.parser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.language.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
+    <script src="../_static/runestone.js?v=4011C77C"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js?v=2B07FE4F"></script>
+    <script src="../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="../_static/jquery-fix.js?v=1226591B"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/jquery.idle-timer.js?v=E942DAF1"></script>
+    <script src="../_static/presenter_mode.js?v=2DF16FB4"></script>
+    <script src="../_static/theme.js?v=D899FB97"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../_static/presenter_mode.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Clases y objetos" href="TWP25.html" />
+    <link rel="prev" title="For y funciones aleatorias" href="TWP20.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'PyZombisDev';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'PyZombisDev';
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.6.2';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.downloadsEnabled = false;
+  eBookConfig.enable_chatcodes = false ? false : false;
+  eBookConfig.allow_pairs = false ? false : false;
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis update-test-playwright@6da227a</a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/PyZombisDev/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/PyZombisDev/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=TWP23'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+      </div>
+
+
+
+
+
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Archivos y diccionarios</a><ul>
+<li><a class="reference internal" href="#archivos">Archivos</a></li>
+<li><a class="reference internal" href="#pythonic-way">Pythonic way</a></li>
+<li><a class="reference internal" href="#cripto">Cripto</a></li>
+<li><a class="reference internal" href="#validar-direccion-ip">Validar dirección IP</a></li>
+<li><a class="reference internal" href="#html">HTML</a></li>
+<li><a class="reference internal" href="#diccionarios">Diccionarios</a></li>
+<li><a class="reference internal" href="#exercicio-programa-1">Exercício Programa 1</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - For y funciones aleatorias" data-toggle="tooltip">
+    <a href="TWP20.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Clases y objetos' data-toggle="tooltip" >              
+    <a href="TWP25.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="archivos-y-diccionarios">
+<h1>Archivos y diccionarios<a class="headerlink" href="#archivos-y-diccionarios" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
+<div class="section" id="archivos">
+<h2>Archivos<a class="headerlink" href="#archivos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Hasta ahora nuestros datos desaparecieron al salir de IDLE</p></li>
+<li><p>Los archivos son para almacenamiento permanente</p></li>
+<li><p>Un archivo es un área de disco donde podemos leer o escribir informacion</p></li>
+<li><p>Accedemos al archivo por su nombre</p></li>
+<li><p>Para acceder a un archivo necesita abrirlo</p></li>
+<li><p>Al abrir el archivo informamos su nombre, directorio donde está  (si necesario) y qué operaciones realizaremos: lectura y / o escritura</p></li>
+<li><p>La función que abre los archivos está abierta y los modos son: r - lectura, w - escritura, a - agregar, b - binario,(actualizar)</p></li>
+<li><p>Los métodos para leer o escribir son read y write</p></li>
+<li><p>Los archivos deben cerrarse con cierre Enviar comentarios</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;numeros.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">linea</span><span class="p">)</span>
+<span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Si ejecuta este programa, no aparecerá nada en la pantalla</p></li>
+<li><p>Busque en el directorio c: Python3x el archivo  números.txt</p></li>
+<li><p>El modo w crea el archivo si no existe, si existe será eliminado y reescrito</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;numeros.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
+<span class="n">arquivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>readlines genera una lista donde cada elemento es una línea de lectura</p></li>
+<li><p>Los archivos de texto son simples y tienen un carácter de control en fin de saltar la línea</p></li>
+<li><p>Si queremos eliminar este personaje del final, podemos usar print (linh a.rstrip ())</p></li>
+</ul>
+</div>
+<div class="section" id="pythonic-way">
+<h2>Pythonic way<a class="headerlink" href="#pythonic-way" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;numeros.txt&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+ <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>El código anterior hace lo mismo para la forma pitónica.</p></li>
+<li><p>En la diapositiva anterior vimos cómo los programadores normales leen</p></li>
+<li><p>Python es genial, porque siempre puedes ir más profundo</p></li>
+<li><p>Python es simple, pero difícil de agotar</p></li>
+</ul>
+</div>
+<div class="section" id="cripto">
+<h2>Cripto<a class="headerlink" href="#cripto" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Lea message.txt y escriba crypto.txt con todas las vocales cambiadas por ‘*’</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">texto</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mensagem.txt&#39;</span><span class="p">)</span>
+<span class="n">salida</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;cripto.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">texto</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">linea</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">letra</span> <span class="ow">in</span> <span class="s1">&#39;aeiou&#39;</span><span class="p">:</span>
+      <span class="n">salida</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">saida</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
+<span class="n">texto</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">salida</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="validar-direccion-ip">
+<h2>Validar dirección IP<a class="headerlink" href="#validar-direccion-ip" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ip_ok</span><span class="p">(</span><span class="n">ip</span><span class="p">):</span>
+  <span class="n">ip</span> <span class="o">=</span> <span class="n">ip</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">byte</span> <span class="ow">in</span> <span class="n">ip</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">byte</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">255</span><span class="p">:</span>
+      <span class="k">return</span> <span class="kc">False</span>
+  <span class="k">return</span> <span class="kc">True</span>
+
+<span class="n">arq</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;IPS.txt&#39;</span><span class="p">)</span>
+<span class="n">validos</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;Válidos.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="n">invalidos</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;Inválidos.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">arq</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+  <span class="k">if</span> <span class="n">ip_ok</span><span class="p">(</span><span class="n">linea</span><span class="p">):</span>
+    <span class="n">validos</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">invalidos</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
+<span class="n">arq</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">validos</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">invalidos</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="html">
+<h2>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Las páginas web están escritas en HTML (lenguaje de marcado de hipertexto)</p></li>
+<li><p>Las etiquetas HTML comienzan con &lt;y terminan con&gt;</p></li>
+<li><p>La página web está escrita entre &lt;html&gt; y &lt;/html&gt;, que es la etiqueta más grande nivel</p></li>
+<li><p>Normalmente insertamos código javascript</p></li>
+<li><p>Javascript no es un subconjunto de Java</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;hola.html&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;!DOCTYPE html&gt;</span>
+<span class="s1">&lt;html lang=&quot;pt-AR&quot;&gt;</span>
+<span class="s1">&lt;head&gt;</span>
+<span class="s1">&lt;meta charset = &quot;utf-8&quot;&gt;</span>
+<span class="s1">&lt;title&gt;Titulo da Pagina&lt;/title&gt;</span>
+<span class="s1">&lt;/head&gt;</span>
+<span class="s1">&lt;body&gt;</span>
+<span class="s1">Hola!</span>
+<span class="s1">&lt;/body&gt;</span>
+<span class="s1">&lt;/html&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+<span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Tenga en cuenta el parámetro de codificación utf-8; Sin ella las subidas no saldrán</p></li>
+</ul>
+</div>
+<div class="section" id="diccionarios">
+<h2>Diccionarios<a class="headerlink" href="#diccionarios" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>El diccionario en sí consiste en relacionar una clave con un valor específico</p></li>
+<li><p>A diferencia de las listas, donde el índice es un número, los diccionarios usar sus claves como índice</p></li>
+<li><p>Para agregar nuevos elementos que no necesito agregar, solo haga la sesión</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Si la clave ya existe: el valor asociado cambia</p></li>
+<li><p>Si la clave no existe: se agrega la nueva clave</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+        <div class="pytutorVisualizer" id="Example7_4"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (Example7_4)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var Example7_4_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["Example7_4"] = {"code": "d = {}\nd['a'] = 'alpha'\nd['o'] = 'omega'\nd['g'] = 'gama'\nprint(d)\nprint(d['a'])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT"]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"]]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"]]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "{'a': 'alpha', 'o': 'omega', 'g': 'gama'}\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "{'a': 'alpha', 'o': 'omega', 'g': 'gama'}\nalpha\n"}]};
+</script>
+</div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=Example7_5 data-question_label="2">
+<div id=Example7_5_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="Example7_5_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+d = {}
+d['a'] = 'alpha'
+d['o'] = 'omega'
+d['g'] = 'gama'
+print(d)
+print(d['x'])
+</textarea>
+</div>
+</div>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+        <div class="pytutorVisualizer" id="Example7_6"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (Example7_6)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var Example7_6_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["Example7_6"] = {"code": "d = {}\nd['a'] = 'alpha'\nd['o'] = 'omega'\nd['g'] = 'gama'\nprint(d.keys())\nprint(d.values())\nprint('g' in d)\nprint('x' in d)\nfor chave in d:\n  print(chave)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT"]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"]]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"]]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "chave": "a"}, "ordered_globals": ["d", "chave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "chave": "a"}, "ordered_globals": ["d", "chave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "chave": "o"}, "ordered_globals": ["d", "chave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "chave": "o"}, "ordered_globals": ["d", "chave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\no\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "chave": "g"}, "ordered_globals": ["d", "chave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\no\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "chave": "g"}, "ordered_globals": ["d", "chave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\no\ng\n"}, {"line": 9, "event": "return", "func_name": "<module>", "globals": {"d": ["REF", 1], "chave": "g"}, "ordered_globals": ["d", "chave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\no\ng\n"}]};
+</script>
+</div>
+<ul class="simple">
+<li><p>Haga un programa que lea el archivo alice.txt y cuente el número de ocurrencias de cada palabra en el texto. Nota: para conocer los personajes especiales use import string y use string.punctuation</p></li>
+<li><p><a href="#id1"><span class="problematic" id="id2">`http://www.gutenberg.org/cache/epub/11/pg11.txt`_</span></a></p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">arq</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;alice.txt&#39;</span><span class="p">)</span>
+<span class="n">texto</span> <span class="o">=</span> <span class="n">arq</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">texto</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">string</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">:</span>
+    <span class="n">texto</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">texto</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+<span class="n">dic</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">texto</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">p</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">:</span>
+        <span class="n">dic</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">dic</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Aparece Alice </span><span class="si">%s</span><span class="s1"> veces&#39;</span> <span class="o">%</span><span class="n">dic</span><span class="p">[</span><span class="s1">&#39;alice&#39;</span><span class="p">])</span>
+<span class="n">arq</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exercicio-programa-1">
+<h2>Exercício Programa 1<a class="headerlink" href="#exercicio-programa-1" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP05_041.jpeg"><img alt="" class="align-center" src="../_images/TWP05_041.jpeg" style="width: 9.411cm; height: 12.571cm;" /></a>
+<ul class="simple">
+<li><p>“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein</p></li>
+</ul>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - For y funciones aleatorias' data-toggle="tooltip">
+    <a href="TWP20.html" >
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP20.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Clases y objetos' data-toggle="tooltip" >
+    <a href="TWP25.html" >
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="TWP25.html" >Next Section - Clases y objetos</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.6.2.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
