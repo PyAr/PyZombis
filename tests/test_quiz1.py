@@ -4,7 +4,8 @@ def test_quiz1_1(page):
     page.click("text=def suma(n,m):")
     page.press("text=def suma(n,m):", "ArrowDown")
     page.press("text=def suma(n,m):", "Tab")
-    page.type("text=def suma(n,m):", "return n+m")
+    page.type("text=def suma(n, m):", "return n+m")
+
 
     # Run the exercise
     page.click("button:has-text(\"Run\")")
