@@ -132,7 +132,7 @@ Ejercicio 4
            self.assertEqual(factores(84), {2:2, 3:1, 7:1}, "Esperado: {2:2, 3:1, 7:1}")
            self.assertEqual(factores(123), {3:1, 41:1}, "Esperado: {3:1, 41:1}")
            self.assertEqual(factores(81), {3:4}, "Esperado: {3:4}")
-           self.assertEqual(factores(420), {2:2,3:1,5:1,7:1}, "Esperado: {2:2, 3:1, 5:1, 7:1}")
+           self.assertEqual(factores(420), {2:2, 3:1, 5:1, 7:1}, "Esperado: {2:2, 3:1, 5:1, 7:1}")
               
 
    myTests().main()
