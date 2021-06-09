@@ -1,7 +1,8 @@
 def test_quiz1_1(page):
     page.goto("quiz/Quiz1.html")
 
-    page.click("text=def suma(n,m):")
+    page.click("text=def suma(n, m):")
+
     page.press("text=def suma(n,m):", "ArrowDown")
     page.press("text=def suma(n,m):", "Tab")
     page.type("text=def suma(n, m):", "return n+m")
