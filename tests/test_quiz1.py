@@ -5,7 +5,8 @@ def test_quiz1_1(page):
 
     page.press("text=def suma(n, m):", "ArrowDown")
 
-    page.press("text=def suma(n,m):", "Tab")
+    page.press("text=def suma(n, m):", "Tab")
+
     page.type("text=def suma(n, m):", "return n+m")
 
 
