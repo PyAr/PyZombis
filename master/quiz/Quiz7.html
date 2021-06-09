@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 7 &#8212; PyZombis master@62c86ca</title>
+    <title>Quiz - 7 &#8212; PyZombis master@26ec252</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@62c86ca</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@26ec252</a>
       </div>
     </div>
 
@@ -251,18 +251,18 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Quiz - 7</a><ul>
-<li><a class="reference internal" href="#ejercicio-a">Ejercicio A</a></li>
-<li><a class="reference internal" href="#ejercicio-b">Ejercicio B</a></li>
-<li><a class="reference internal" href="#ejercicio-c">Ejercicio C</a></li>
-<li><a class="reference internal" href="#ejercicio-d">Ejercicio D</a></li>
-<li><a class="reference internal" href="#ejercicio-e">Ejercicio E</a></li>
-<li><a class="reference internal" href="#ejercicio-f">Ejercicio F</a></li>
-<li><a class="reference internal" href="#ejercicio-g">Ejercicio G</a></li>
-<li><a class="reference internal" href="#ejercicio-h">Ejercicio H</a></li>
-<li><a class="reference internal" href="#ejercicio-i">Ejercicio I</a></li>
-<li><a class="reference internal" href="#ejercicio-j">Ejercicio J</a></li>
-<li><a class="reference internal" href="#ejercicio-k">Ejercicio K</a></li>
-<li><a class="reference internal" href="#ejercicio-l">Ejercicio L</a></li>
+<li><a class="reference internal" href="#ejercicio-1">Ejercicio 1</a></li>
+<li><a class="reference internal" href="#ejercicio-2">Ejercicio 2</a></li>
+<li><a class="reference internal" href="#ejercicio-3">Ejercicio 3</a></li>
+<li><a class="reference internal" href="#ejercicio-4">Ejercicio 4</a></li>
+<li><a class="reference internal" href="#ejercicio-5">Ejercicio 5</a></li>
+<li><a class="reference internal" href="#ejercicio-6">Ejercicio 6</a></li>
+<li><a class="reference internal" href="#ejercicio-8">Ejercicio 8</a></li>
+<li><a class="reference internal" href="#ejercicio-9">Ejercicio 9</a></li>
+<li><a class="reference internal" href="#ejercicio-10">Ejercicio 10</a></li>
+<li><a class="reference internal" href="#ejercicio-11">Ejercicio 11</a></li>
+<li><a class="reference internal" href="#ejercicio-12">Ejercicio 12</a></li>
+<li><a class="reference internal" href="#ejercicio-13">Ejercicio 13</a></li>
 </ul>
 </li>
 </ul>
@@ -311,85 +311,49 @@
   
   <div class="section" id="quiz-7">
 <h1>Quiz - 7<a class="headerlink" href="#quiz-7" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="ejercicio-a">
-<h2>Ejercicio A<a class="headerlink" href="#ejercicio-a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=multstring data-question_label="1">
-<div id=multstring_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">multstring</span></code> que recibe como parametros una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y un entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y devuelve una nueva cadena que contiene <code class="docutils literal notranslate"><span class="pre">n</span></code> copias de la cadena original <br /> <br />
-Ejemplo: <code class="docutils literal notranslate"><span class="pre">multstring('Hola',</span> <span class="pre">2)</span></code> -&gt; ‘HolaHola’</p>
-
-</div>
-<textarea data-lang="python" id="multstring_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def multstring(s,n):
-
-
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(multstring('Hola', 2), 'HolaHola',"Esperado: HolaHola")
-        self.assertEqual(multstring('Hola', 3), 'HolaHolaHola',"Esperado: HolaHolaHola")
-        self.assertEqual(multstring('Hi', 1), 'Hi',"Esperado: Hi")
-        self.assertEqual(multstring('Hi', 0), '',"Esperado: ''")
-        self.assertEqual(multstring('Hi', 5), 'HiHiHiHiHi',"Esperado: HiHiHiHiHi")
-        self.assertEqual(multstring('Oh Boy!', 2), 'Oh Boy!Oh Boy!',"Esperado: Oh Boy!Oh Boy!")
-        self.assertEqual(multstring('x', 4), 'xxxx',"Esperado: xxxx")
-        self.assertEqual(multstring('', 4), '',"Esperado: ''")
-        self.assertEqual(multstring('code', 2), 'codecode',"Esperado: codecode")
-        self.assertEqual(multstring('code', 3), 'codecodecode',"Esperado: codecodecode")
-
-myTests().main()
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="ejercicio-b">
-<h2>Ejercicio B<a class="headerlink" href="#ejercicio-b" title="Permalink to this headline">¶</a></h2>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=string_splosion data-question_label="2">
-<div id=string_splosion_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">string_splosion</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y devuelva una nueva cadena siguiendo el patron descrito en los ejemplos <br /> <br />
+<div data-component="activecode" id=q7_1 data-question_label="1">
+<div id=q7_1_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">multi_cadena</span></code> que recibe como parámetros una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y un entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y devuelve una nueva cadena que contiene <code class="docutils literal notranslate"><span class="pre">n</span></code> copias de la cadena original <br /> <br />
 Ejemplos:<br />
-<code class="docutils literal notranslate"><span class="pre">string_splosion('Code')</span></code> -&gt; ‘CCoCodCode’ <br />
-<code class="docutils literal notranslate"><span class="pre">string_splosion('abc')</span></code> -&gt; ‘aababc’ <br />
-<code class="docutils literal notranslate"><span class="pre">string_splosion('ab')</span></code> -&gt; ‘aab’ <br /></p>
+<code class="docutils literal notranslate"><span class="pre">multi_cadena(&quot;Hola&quot;,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;HolaHola&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">multi_cadena(&quot;Hola&quot;,</span> <span class="pre">5)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;HolaHolaHolaHolaHola&quot;</span></code></p>
 
 </div>
-<textarea data-lang="python" id="string_splosion_editor" 
+<textarea data-lang="python" id="q7_1_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def string_splosion(s):
+def multi_cadena(s, n):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(string_splosion('Code'), 'CCoCodCode',"Esperado: CCoCodCode")
-        self.assertEqual(string_splosion('abc'), 'aababc',"Esperado: aababc")
-        self.assertEqual(string_splosion('ab'), 'aab',"Esperado: aab")
-        self.assertEqual(string_splosion('x'), 'x',"Esperado: x")
-        self.assertEqual(string_splosion('fade'), 'ffafadfade',"Esperado: ffafadfade")
-        self.assertEqual(string_splosion('There'), 'TThTheTherThere',"Esperado: TThTheTherThere")
-        self.assertEqual(string_splosion('Kitten'), 'KKiKitKittKitteKitten',"Esperado: KKiKitKittKitteKitten")
-        self.assertEqual(string_splosion('Bye'), 'BByBye',"Esperado: BByBye")
-        self.assertEqual(string_splosion('Good'), 'GGoGooGood',"Esperado: GGoGooGood")
-        self.assertEqual(string_splosion('Bad'), 'BBaBad',"Esperado: BBaBad")
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(multi_cadena("Hola", 2), "HolaHola", "Esperado: HolaHola")
+      self.assertEqual(
+            multi_cadena("Hola", 3), "HolaHolaHola", "Esperado: HolaHolaHola"
+      )
+      self.assertEqual(multi_cadena("Hi", 1), "Hi", "Esperado: Hi")
+      self.assertEqual(multi_cadena("Hi", 0), "", "Esperado: ''")
+      self.assertEqual(multi_cadena("Hi", 5), "HiHiHiHiHi", "Esperado: HiHiHiHiHi")
+      self.assertEqual(
+            multi_cadena("Oh Boy!", 2), "Oh Boy!Oh Boy!", "Esperado: Oh Boy!Oh Boy!"
+      )
+      self.assertEqual(multi_cadena("x", 4), "xxxx", "Esperado: xxxx")
+      self.assertEqual(multi_cadena("", 4), "", "Esperado: ''")
+      self.assertEqual(multi_cadena("code", 2), "codecode", "Esperado: codecode")
+      self.assertEqual(
+            multi_cadena("code", 3), "codecodecode", "Esperado: codecodecode"
+      )
 
 
 myTests().main()
@@ -397,88 +361,50 @@ myTests().main()
 </div>
 </div>
 </div>
-<div class="section" id="ejercicio-c">
-<h2>Ejercicio C<a class="headerlink" href="#ejercicio-c" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=array_count9 data-question_label="3">
-<div id=array_count9_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">array_count9</span></code> que recibe como parametro una lista no vacía de números enteros <code class="docutils literal notranslate"><span class="pre">nums</span></code> y devuelva cuántas veces aparece el número 9 en la lista <br /> <br />
-Ejemplo: <code class="docutils literal notranslate"><span class="pre">array_count9([1,</span> <span class="pre">99,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
-
-</div>
-<textarea data-lang="python" id="array_count9_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def array_count9(nums):
-
-
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(array_count9([1, 99, 9]), 1,"Esperado: 1")
-        self.assertEqual(array_count9([1, 9, 9]), 2,"Esperado: 2")
-        self.assertEqual(array_count9([1, 9, 9, 3, 9]), 3,"Esperado: 3")
-        self.assertEqual(array_count9([1, 2, 3]), 0,"Esperado: 0")
-        self.assertEqual(array_count9([1]), 0,"Esperado: 1")
-        self.assertEqual(array_count9([4, 2, 4, 3, 1]), 0,"Esperado: 0")
-        self.assertEqual(array_count9([9, 2, 99, 3, 1]), 1,"Esperado: 1")
-
-
-myTests().main()
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="ejercicio-d">
-<h2>Ejercicio D<a class="headerlink" href="#ejercicio-d" title="Permalink to this headline">¶</a></h2>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=array_front9 data-question_label="4">
-<div id=array_front9_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">array_front9</span></code> que recibe una lista de números enteros <code class="docutils literal notranslate"><span class="pre">nums</span></code> y verifica si al menos uno de los primeros cuatro números es 9 <br /> <br />
+<div data-component="activecode" id=q7_2 data-question_label="2">
+<div id=q7_2_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">expandir_cadena</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y devuelva una nueva cadena siguiendo el patrón descrito en los ejemplos <br /> <br />
 Ejemplos:<br />
-<code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">9,</span> <span class="pre">3,</span> <span class="pre">4])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">array_front9([1,</span> <span class="pre">2,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">expandir_cadena(&quot;Code&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;CCoCodCode&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">expandir_cadena(&quot;abc&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;aababc&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">expandir_cadena(&quot;ab&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;aab&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="array_front9_editor" 
+<textarea data-lang="python" id="q7_2_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def array_front9(nums):
+def expandir_cadena(s):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
+
 class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(array_front9([1, 2, 9, 3, 4]), True,"Esperado: True")
-        self.assertEqual(array_front9([1, 2, 3, 4, 9]), False,"Esperado: False")
-        self.assertEqual(array_front9([1, 2, 3, 4, 5]), False,"Esperado: False")
-        self.assertEqual(array_front9([9, 2, 3]), True,"Esperado: True")
-        self.assertEqual(array_front9([1, 9, 9]), True,"Esperado: True")
-        self.assertEqual(array_front9([1, 2, 3]), False,"Esperado: False")
-        self.assertEqual(array_front9([1, 9]), True,"Esperado: True")
-        self.assertEqual(array_front9([5, 5]), False,"Esperado: False")
-        self.assertEqual(array_front9([2]), False,"Esperado: False")
-        self.assertEqual(array_front9([9]), True,"Esperado: True")
-        self.assertEqual(array_front9([]), False,"Esperado: False")
-        self.assertEqual(array_front9([3, 9, 2, 3, 3]), True,"Esperado: True")
-
-
+   def testOne(self):
+      self.assertEqual(expandir_cadena("Code"), "CCoCodCode", "Esperado: CCoCodCode")
+      self.assertEqual(expandir_cadena("abc"), "aababc", "Esperado: aababc")
+      self.assertEqual(expandir_cadena("ab"), "aab", "Esperado: aab")
+      self.assertEqual(expandir_cadena("x"), "x", "Esperado: x")
+      self.assertEqual(expandir_cadena("fade"), "ffafadfade", "Esperado: ffafadfade")
+      self.assertEqual(
+            expandir_cadena("There"), "TThTheTherThere", "Esperado: TThTheTherThere"
+      )
+      self.assertEqual(
+            expandir_cadena("Kitten"),
+            "KKiKitKittKitteKitten",
+            "Esperado: KKiKitKittKitteKitten",
+      )
+      self.assertEqual(expandir_cadena("Bye"), "BByBye", "Esperado: BByBye")
+      self.assertEqual(expandir_cadena("Good"), "GGoGooGood", "Esperado: GGoGooGood")
+      self.assertEqual(expandir_cadena("Bad"), "BBaBad", "Esperado: BBaBad")
 
 
 myTests().main()
@@ -486,38 +412,38 @@ myTests().main()
 </div>
 </div>
 </div>
-<div class="section" id="ejercicio-e">
-<h2>Ejercicio E<a class="headerlink" href="#ejercicio-e" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ejercicio-3">
+<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=hello_name data-question_label="5">
-<div id=hello_name_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">hello_name</span></code> que recibe como parametro un cadena representa un nombre <code class="docutils literal notranslate"><span class="pre">name</span></code> y devuelva un saludo con este nombre <br /> <br />
-Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">hello_name('Bob')</span></code> -&gt; ‘¡Hola Bob!’ <br />
-<code class="docutils literal notranslate"><span class="pre">hello_name('Alice')</span></code> -&gt; ‘¡Hola Alice!’ <br />
-<code class="docutils literal notranslate"><span class="pre">hello_name('X')</span></code> -&gt; ‘Hola X!’ <br /></p>
+<div data-component="activecode" id=q7_3 data-question_label="3">
+<div id=q7_3_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">contar_apariciones_9</span></code> que recibe como parámetro una lista no vacía de números enteros <code class="docutils literal notranslate"><span class="pre">numeros</span></code> y devuelva cuántas veces aparece el número 9 en la lista <br /> <br />
+Ejemplo: <code class="docutils literal notranslate"><span class="pre">contar_apariciones_9([1,</span> <span class="pre">99,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 
 </div>
-<textarea data-lang="python" id="hello_name_editor" 
+<textarea data-lang="python" id="q7_3_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def hello_name(name):
+def contar_apariciones_9(numeros):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(hello_name('Bob'), '¡Hola Bob!',"Esperado: ¡Hola Bob!")
-        self.assertEqual(hello_name('Alice'), '¡Hola Alice!',"Esperado: ¡Hola Alice!")
-        self.assertEqual(hello_name('X'), '¡Hola X!',"Esperado: ¡Hola X!")
-        self.assertEqual(hello_name('Hola'), '¡Hola Hola!',"Esperado: ¡Hola Hola!")
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(contar_apariciones_9([1, 99, 9]), 1, "Esperado: 1")
+      self.assertEqual(contar_apariciones_9([1, 9, 9]), 2, "Esperado: 2")
+      self.assertEqual(contar_apariciones_9([1, 9, 9, 3, 9]), 3, "Esperado: 3")
+      self.assertEqual(contar_apariciones_9([1, 2, 3]), 0, "Esperado: 0")
+      self.assertEqual(contar_apariciones_9([1]), 0, "Esperado: 1")
+      self.assertEqual(contar_apariciones_9([4, 2, 4, 3, 1]), 0, "Esperado: 0")
+      self.assertEqual(contar_apariciones_9([9, 2, 99, 3, 1]), 1, "Esperado: 1")
 
 
 myTests().main()
@@ -525,165 +451,51 @@ myTests().main()
 </div>
 </div>
 </div>
-<div class="section" id="ejercicio-f">
-<h2>Ejercicio F<a class="headerlink" href="#ejercicio-f" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ejercicio-4">
+<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=make_tags data-question_label="6">
-<div id=make_tags_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">make_tags</span></code> que recibe dos cadenas <code class="docutils literal notranslate"><span class="pre">tag</span></code> y <code class="docutils literal notranslate"><span class="pre">word</span></code> y devuelva una nueva cadena formateada siguiendo el patrón de los ejemplos <br /> <br />
-Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">make_tags('i',</span> <span class="pre">'Yay')</span></code> -&gt; ‘&lt;i&gt;Yay&lt;/i&gt;’ <br />
-<code class="docutils literal notranslate"><span class="pre">make_tags('i',</span> <span class="pre">'Hello')</span></code> -&gt; ‘&lt;i&gt;Hello&lt;/i&gt;’ <br />
-<code class="docutils literal notranslate"><span class="pre">make_tags('cite',</span> <span class="pre">'Yay')</span></code> -&gt; ‘&lt;cite&gt;Yay&lt;/cite&gt;’ <br /></p>
-
-</div>
-<textarea data-lang="python" id="make_tags_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def make_tags(tag,word):
-
-
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(make_tags('i', 'Yay'), '<i>Yay</i>',"Esperado: <i>Yay</i>")
-        self.assertEqual(make_tags('i', 'Hello'), '<i>Hello</i>',"Esperado:<i>Hello</i>")
-        self.assertEqual(make_tags('cite', 'Yay'), '<cite>Yay</cite>',"Esperado: <cite>Yay</cite>")
-        self.assertEqual(make_tags('address', 'here'), '<address>here</address>',"Esperado: <address>here</address>")
-        self.assertEqual(make_tags('body', 'Heart'), '<body>Heart</body>',"Esperado: <body>Heart</body>")
-        self.assertEqual(make_tags('i', 'i'), '<i>i</i>',"Esperado: <i>i</i>")
-        self.assertEqual(make_tags('i', ''), '<i></i>',"Esperado: <i></i>")
-
-
-myTests().main()
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="ejercicio-g">
-<h2>Ejercicio G<a class="headerlink" href="#ejercicio-g" title="Permalink to this headline">¶</a></h2>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=extra_end data-question_label="7">
-<div id=extra_end_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">extra_end</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelve una nueva cadena con las dos últimas letras repetidas tres veces <br /> <br />
-Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">extra_end('Hello')</span></code> -&gt; ‘lololo’ <br />
-<code class="docutils literal notranslate"><span class="pre">extra_end('abb')</span></code> -&gt; ‘bbbbbb’ <br />
-<code class="docutils literal notranslate"><span class="pre">extra_end('Hi')</span></code> -&gt; ‘HiHiHi’  <br /></p>
-
-</div>
-<textarea data-lang="python" id="extra_end_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def extra_end(s):
-
-
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(extra_end('Hello'), 'lololo',"Esperado: lololo")
-        self.assertEqual(extra_end('ab'), 'ababab',"Esperado: ababab")
-        self.assertEqual(extra_end('Hi'), 'HiHiHi',"Esperado: HiHiHi")
-        self.assertEqual(extra_end('Candy'), 'dydydy',"Esperado: dydydy")
-        self.assertEqual(extra_end('Code'), 'dedede',"Esperado: dedede")
-
-
-
-myTests().main()
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="ejercicio-h">
-<h2>Ejercicio H<a class="headerlink" href="#ejercicio-h" title="Permalink to this headline">¶</a></h2>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=new_extra_end data-question_label="8">
-<div id=new_extra_end_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">new_extra_end</span></code> (variante de la función del Ejercicio G) que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y un entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y devuelva una nueva cadena con las dos últimas letras repetidas <code class="docutils literal notranslate"><span class="pre">n</span></code> veces <br /> <br />
-Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">new_extra_end('Hello',3)</span></code> -&gt; ‘lololo’ <br />
-<code class="docutils literal notranslate"><span class="pre">new_extra_end('abb',1)</span></code> -&gt; ‘bb’ <br />
-<code class="docutils literal notranslate"><span class="pre">new_extra_end('Hi',5)</span></code> -&gt; ‘HiHiHiHiHi’  <br /></p>
-
-</div>
-<textarea data-lang="python" id="new_extra_end_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def new_extra_end(s,n):
-
-
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(new_extra_end('Hello', 3), 'lololo',"Esperado: lololo")
-        self.assertEqual(new_extra_end('ab', 2), 'abab',"Esperado: abab")
-        self.assertEqual(new_extra_end('Hi', 6), 'HiHiHiHiHiHi',"Esperado: HiHiHi")
-        self.assertEqual(new_extra_end('Candy', 1), 'dy',"Esperado: dy")
-        self.assertEqual(new_extra_end('Code', 0), '',"Esperado: ''")
-
-
-
-myTests().main()
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="ejercicio-i">
-<h2>Ejercicio I<a class="headerlink" href="#ejercicio-i" title="Permalink to this headline">¶</a></h2>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=first_half data-question_label="9">
-<div id=first_half_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">first_half</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y devuelve la primera mitad de la cadena original <br /> <br />
+<div data-component="activecode" id=q7_4 data-question_label="4">
+<div id=q7_4_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">verificar_comienzo_9</span></code> que recibe una lista de números enteros <code class="docutils literal notranslate"><span class="pre">numeros</span></code> y verifica si al menos uno de los primeros cuatro números es un 9 <br /> <br />
 Ejemplos:<br />
-<code class="docutils literal notranslate"><span class="pre">first_half('WooHoo')</span></code> -&gt; ‘Woo’ <br />
-<code class="docutils literal notranslate"><span class="pre">first_half('HelloThere')</span></code> -&gt; ‘Hello’ <br />
-<code class="docutils literal notranslate"><span class="pre">first_half('abcdef')</span></code> -&gt; ‘abc’ <br /></p>
+<code class="docutils literal notranslate"><span class="pre">verificar_comienzo_9([1,</span> <span class="pre">2,</span> <span class="pre">9,</span> <span class="pre">3,</span> <span class="pre">4])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">verificar_comienzo_9([1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">verificar_comienzo_9([1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">verificar_comienzo_9([1,</span> <span class="pre">2,</span> <span class="pre">9])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="first_half_editor" 
+<textarea data-lang="python" id="q7_4_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def first_half(s):
+def verificar_comienzo_9(numeros):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(first_half('WooHoo'), 'Woo',"Esperado: Woo")
-        self.assertEqual(first_half('HelloThere'), 'Hello',"Esperado: Hello")
-        self.assertEqual(first_half('abcdef'), 'abc',"Esperado: abc")
-        self.assertEqual(first_half(''), '',"Esperado: ")
-        self.assertEqual(first_half('ab'), 'a',"Esperado: a")
-        self.assertEqual(first_half('0123456789'), '01234',"Esperado: 01234")
-        self.assertEqual(first_half('kitten'), 'kit',"Esperado: kit")
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(verificar_comienzo_9([1, 2, 9, 3, 4]), True, "Esperado: True")
+      self.assertEqual(
+            verificar_comienzo_9([1, 2, 3, 4, 9]), False, "Esperado: False"
+      )
+      self.assertEqual(
+            verificar_comienzo_9([1, 2, 3, 4, 5]), False, "Esperado: False"
+      )
+      self.assertEqual(verificar_comienzo_9([9, 2, 3]), True, "Esperado: True")
+      self.assertEqual(verificar_comienzo_9([1, 9, 9]), True, "Esperado: True")
+      self.assertEqual(verificar_comienzo_9([1, 2, 3]), False, "Esperado: False")
+      self.assertEqual(verificar_comienzo_9([1, 9]), True, "Esperado: True")
+      self.assertEqual(verificar_comienzo_9([5, 5]), False, "Esperado: False")
+      self.assertEqual(verificar_comienzo_9([2]), False, "Esperado: False")
+      self.assertEqual(verificar_comienzo_9([9]), True, "Esperado: True")
+      self.assertEqual(verificar_comienzo_9([]), False, "Esperado: False")
+      self.assertEqual(verificar_comienzo_9([3, 9, 2, 3, 3]), True, "Esperado: True")
 
 
 myTests().main()
@@ -691,43 +503,40 @@ myTests().main()
 </div>
 </div>
 </div>
-<div class="section" id="ejercicio-j">
-<h2>Ejercicio J<a class="headerlink" href="#ejercicio-j" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ejercicio-5">
+<h2>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=remove_first_last data-question_label="10">
-<div id=remove_first_last_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remove_first_last</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva una cadena sin el primer y último carácter <br /> <br />
+<div data-component="activecode" id=q7_5 data-question_label="5">
+<div id=q7_5_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">hola_usuario</span></code> que recibe como parámetro una cadena <code class="docutils literal notranslate"><span class="pre">nombre</span></code> que representa el nombre de un usuario y devuelva un saludo con este nombre <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">remove_first_last('Hello')</span></code> -&gt; ‘ell’ <br />
-<code class="docutils literal notranslate"><span class="pre">remove_first_last('python')</span></code> -&gt; ‘ytho’ <br />
-<code class="docutils literal notranslate"><span class="pre">remove_first_last('coding')</span></code> -&gt; ‘odin’ <br /></p>
+<code class="docutils literal notranslate"><span class="pre">hola_usuario(&quot;Bob&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;¡Hola</span> <span class="pre">Bob!&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">hola_usuario(&quot;Alice&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;¡Hola</span> <span class="pre">Alice!&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">hola_usuario(&quot;X&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Hola</span> <span class="pre">X!&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="remove_first_last_editor" 
+<textarea data-lang="python" id="q7_5_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def remove_first_last(s):
+def hola_usuario(nombre):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(remove_first_last('Hello'), 'ell',"Esperado: ell")
-        self.assertEqual(remove_first_last('Python'), 'ytho',"Esperado: ytho")
-        self.assertEqual(remove_first_last('coding'), 'odin',"Esperado: odin")
-        self.assertEqual(remove_first_last('code'), 'od',"Esperado: od")
-        self.assertEqual(remove_first_last('ab'), '',"Esperado: ")
-        self.assertEqual(remove_first_last(' PyZombies '), 'PyZombies',"Esperado: PyZombies")
-        self.assertEqual(remove_first_last('Chocolate!'), 'hocolate',"Esperado: hocolate")
-        self.assertEqual(remove_first_last('kitten'), 'itte',"Esperado: itte")
-        self.assertEqual(remove_first_last('woohoo'), 'ooho',"Esperado: ooho")
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(hola_usuario("Bob"), "¡Hola Bob!", "Esperado: ¡Hola Bob!")
+      self.assertEqual(
+            hola_usuario("Alice"), "¡Hola Alice!", "Esperado: ¡Hola Alice!"
+      )
+      self.assertEqual(hola_usuario("X"), "¡Hola X!", "Esperado: ¡Hola X!")
+      self.assertEqual(hola_usuario("Hola"), "¡Hola Hola!", "Esperado: ¡Hola Hola!")
 
 
 myTests().main()
@@ -735,43 +544,57 @@ myTests().main()
 </div>
 </div>
 </div>
-<div class="section" id="ejercicio-k">
-<h2>Ejercicio K<a class="headerlink" href="#ejercicio-k" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ejercicio-6">
+<h2>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=left2 data-question_label="11">
-<div id=left2_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">left2</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva la cadena original rotada 2 posiciones a la izquierda <br /> <br />
-Ejemplos:<br />
-<code class="docutils literal notranslate"><span class="pre">left2('Hello')</span></code> -&gt; ‘lloHe’ <br />
-<code class="docutils literal notranslate"><span class="pre">left2('Hi')</span></code> -&gt; ‘Hi’ <br /></p>
+<div data-component="activecode" id=q7_6 data-question_label="6">
+<div id=q7_6_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">crear_etiquetas</span></code> que recibe dos cadenas <code class="docutils literal notranslate"><span class="pre">etiqueta</span></code> y <code class="docutils literal notranslate"><span class="pre">palabra</span></code> y devuelva una nueva cadena formateada siguiendo el patrón de los ejemplos <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">crear_etiquetas(&quot;i&quot;,</span> <span class="pre">&quot;Yay&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;&lt;i&gt;Yay&lt;/i&gt;&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">crear_etiquetas(&quot;i&quot;,</span> <span class="pre">&quot;Hello&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;&lt;i&gt;Hello&lt;/i&gt;&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">crear_etiquetas(&quot;cite&quot;,</span> <span class="pre">&quot;Yay&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;&lt;cite&gt;Yay&lt;/cite&gt;&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="left2_editor" 
+<textarea data-lang="python" id="q7_6_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def left2(s):
+def crear_etiquetas(etiqueta, palabra):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
+
 class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(left2('Hello'), 'lloHe',"Esperado: lloHe")
-        self.assertEqual(left2('python'), 'thonpy',"Esperado: thonpy")
-        self.assertEqual(left2('Hi'), 'Hi',"Esperado: Hi")
-        self.assertEqual(left2('code'), 'deco',"Esperado: deco")
-        self.assertEqual(left2('cat'), 'tca',"Esperado: tca")
-        self.assertEqual(left2('12345'), '34512',"Esperado: 34512")
-        self.assertEqual(left2('Chocolate'), 'ocolateCh',"Esperado: ocolateCh")
-        self.assertEqual(left2('bricks'), 'icksbr',"Esperado: icksbr")
-        self.assertEqual(left2('isPyzomb'), 'PyZombies',"Esperado: PyZombies")
-
+   def testOne(self):
+      self.assertEqual(
+            crear_etiquetas("i", "Yay"), "<i>Yay</i>", "Esperado: <i>Yay</i>"
+      )
+      self.assertEqual(
+            crear_etiquetas("i", "Hello"), "<i>Hello</i>", "Esperado:<i>Hello</i>"
+      )
+      self.assertEqual(
+            crear_etiquetas("cite", "Yay"),
+            "<cite>Yay</cite>",
+            "Esperado: <cite>Yay</cite>",
+      )
+      self.assertEqual(
+            crear_etiquetas("address", "here"),
+            "<address>here</address>",
+            "Esperado: <address>here</address>",
+      )
+      self.assertEqual(
+            crear_etiquetas("body", "Heart"),
+            "<body>Heart</body>",
+            "Esperado: <body>Heart</body>",
+      )
+      self.assertEqual(crear_etiquetas("i", "i"), "<i>i</i>", "Esperado: <i>i</i>")
+      self.assertEqual(crear_etiquetas("i", ""), "<i></i>", "Esperado: <i></i>")
 
 
 myTests().main()
@@ -779,44 +602,264 @@ myTests().main()
 </div>
 </div>
 </div>
-<div class="section" id="ejercicio-l">
-<h2>Ejercicio L<a class="headerlink" href="#ejercicio-l" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ejercicio-8">
+<h2>Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=remove_iesimo data-question_label="12">
-<div id=remove_iesimo_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remove_iesimo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> no vacía y un entero positivo <code class="docutils literal notranslate"><span class="pre">i</span></code> y devuelva la cadena original sin el i-esimo carácter <br /> <br />
-Ejemplos:<br />
-<code class="docutils literal notranslate"><span class="pre">remove_iesimo('Hello',1)</span></code> -&gt; ‘ello’ <br />
-<code class="docutils literal notranslate"><span class="pre">remove_iesimo('Hi',2)</span></code> -&gt; ‘H’ <br />
-<code class="docutils literal notranslate"><span class="pre">remove_iesimo('PyZombiess',</span> <span class="pre">10)</span></code> -&gt; ‘PyZombies’ <br /></p>
+<div data-component="activecode" id=q7_8 data-question_label="7">
+<div id=q7_8_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">repetir_letras</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelve una nueva cadena con las dos últimas letras repetidas tres veces <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">repetir_letras(&quot;Hello&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;lololo&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">repetir_letras(&quot;abb&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;bbbbbb&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">repetir_letras(&quot;Hi&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;HiHiHi&quot;</span></code>  <br /></p>
 
 </div>
-<textarea data-lang="python" id="remove_iesimo_editor" 
+<textarea data-lang="python" id="q7_8_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def remove_iesimo(s,i):
+def repetir_letras(s):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
+
 class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(repetir_letras("Hello"), "lololo", "Esperado: lololo")
+      self.assertEqual(repetir_letras("ab"), "ababab", "Esperado: ababab")
+      self.assertEqual(repetir_letras("Hi"), "HiHiHi", "Esperado: HiHiHi")
+      self.assertEqual(repetir_letras("Candy"), "dydydy", "Esperado: dydydy")
+      self.assertEqual(repetir_letras("Code"), "dedede", "Esperado: dedede")
 
-    def testOne(self):
-        self.assertEqual(remove_iesimo('Hello', 1), 'ello',"Esperado: ello")
-        self.assertEqual(remove_iesimo('python', 6), 'pytho',"Esperado: pytho")
-        self.assertEqual(remove_iesimo('Hi', 0), 'Hi',"Esperado: Hi")
-        self.assertEqual(remove_iesimo('code', 5), 'code',"Esperado: code")
-        self.assertEqual(remove_iesimo('cat', 1), 'ct',"Esperado: ct")
-        self.assertEqual(remove_iesimo('12345', 3), '1245',"Esperado: 1245")
-        self.assertEqual(remove_iesimo('Chocolate', 15), 'Chocolate',"Esperado: Chocolate")
-        self.assertEqual(remove_iesimo('Hola mundo', 5), 'Holamundo',"Esperado: Holamundo")
-        self.assertEqual(remove_iesimo('Pyzombis ', 9), 'PyZombies',"Esperado: PyZombies")
 
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-9">
+<h2>Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q7_9 data-question_label="8">
+<div id=q7_9_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">otra_repetir_letras</span></code> (variante de la función del Ejercicio 8) que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y un entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y devuelva una nueva cadena con las dos últimas letras repetidas <code class="docutils literal notranslate"><span class="pre">n</span></code> veces <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">otra_repetir_letras(&quot;Hello&quot;,</span> <span class="pre">3)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;lololo&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">otra_repetir_letras(&quot;abb&quot;,</span> <span class="pre">1)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;bb&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">otra_repetir_letras(&quot;Hi&quot;,</span> <span class="pre">5)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;HiHiHiHiHi&quot;</span></code>  <br /></p>
+
+</div>
+<textarea data-lang="python" id="q7_9_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static 
+     style="visibility: hidden;">
+def otra_repetir_letras(s, n):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(otra_repetir_letras("Hello", 3), "lololo", "Esperado: lololo")
+      self.assertEqual(otra_repetir_letras("ab", 2), "abab", "Esperado: abab")
+      self.assertEqual(
+            otra_repetir_letras("Hi", 6), "HiHiHiHiHiHi", "Esperado: HiHiHi"
+      )
+      self.assertEqual(otra_repetir_letras("Candy", 1), "dy", "Esperado: dy")
+      self.assertEqual(otra_repetir_letras("Code", 0), "", "Esperado: ''")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-10">
+<h2>Ejercicio 10<a class="headerlink" href="#ejercicio-10" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q7_10 data-question_label="9">
+<div id=q7_10_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">primera_mitad</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y devuelve la primera mitad de la cadena original <br /> <br />
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">primera_mitad(&quot;WooHoo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Woo&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">primera_mitad(&quot;HelloThere&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Hello&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">primera_mitad(&quot;abcdef&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;abc&quot;</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q7_10_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static 
+     style="visibility: hidden;">
+def primera_mitad(s):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(primera_mitad("WooHoo"), "Woo", "Esperado: Woo")
+      self.assertEqual(primera_mitad("HelloThere"), "Hello", "Esperado: Hello")
+      self.assertEqual(primera_mitad("abcdef"), "abc", "Esperado: abc")
+      self.assertEqual(primera_mitad(""), "", "Esperado: ")
+      self.assertEqual(primera_mitad("ab"), "a", "Esperado: a")
+      self.assertEqual(primera_mitad("0123456789"), "01234", "Esperado: 01234")
+      self.assertEqual(primera_mitad("kitten"), "kit", "Esperado: kit")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-11">
+<h2>Ejercicio 11<a class="headerlink" href="#ejercicio-11" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q7_11 data-question_label="10">
+<div id=q7_11_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remover_primer_ultimo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva una cadena sin el primer ni el último carácter <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">remover_primer_ultimo(&quot;Hello&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ell&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_primer_ultimo(&quot;python&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ytho&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_primer_ultimo(&quot;coding&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;odin&quot;</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q7_11_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static 
+     style="visibility: hidden;">
+def remover_primer_ultimo(s):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(remover_primer_ultimo("Hello"), "ell", "Esperado: ell")
+      self.assertEqual(remover_primer_ultimo("Python"), "ytho", "Esperado: ytho")
+      self.assertEqual(remover_primer_ultimo("coding"), "odin", "Esperado: odin")
+      self.assertEqual(remover_primer_ultimo("code"), "od", "Esperado: od")
+      self.assertEqual(remover_primer_ultimo("ab"), "", "Esperado: ")
+      self.assertEqual(
+            remover_primer_ultimo(" PyZombies "), "PyZombies", "Esperado: PyZombies"
+      )
+      self.assertEqual(
+            remover_primer_ultimo("Chocolate!"), "hocolate", "Esperado: hocolate"
+      )
+      self.assertEqual(remover_primer_ultimo("kitten"), "itte", "Esperado: itte")
+      self.assertEqual(remover_primer_ultimo("woohoo"), "ooho", "Esperado: ooho")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-12">
+<h2>Ejercicio 12<a class="headerlink" href="#ejercicio-12" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q7_12 data-question_label="11">
+<div id=q7_12_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">rotar_izq_2</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva la cadena original rotada 2 posiciones a la izquierda <br /> <br />
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">rotar_izq_2(&quot;Hello&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;lloHe&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">rotar_izq_2(&quot;Hi&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Hi&quot;</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q7_12_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static 
+     style="visibility: hidden;">
+def rotar_izq_2(s):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(rotar_izq_2("Hello"), "lloHe", "Esperado: lloHe")
+      self.assertEqual(rotar_izq_2("python"), "thonpy", "Esperado: thonpy")
+      self.assertEqual(rotar_izq_2("Hi"), "Hi", "Esperado: Hi")
+      self.assertEqual(rotar_izq_2("code"), "deco", "Esperado: deco")
+      self.assertEqual(rotar_izq_2("cat"), "tca", "Esperado: tca")
+      self.assertEqual(rotar_izq_2("12345"), "34512", "Esperado: 34512")
+      self.assertEqual(rotar_izq_2("Chocolate"), "ocolateCh", "Esperado: ocolateCh")
+      self.assertEqual(rotar_izq_2("bricks"), "icksbr", "Esperado: icksbr")
+      self.assertEqual(rotar_izq_2("isPyzomb"), "PyZombies", "Esperado: PyZombies")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-13">
+<h2>Ejercicio 13<a class="headerlink" href="#ejercicio-13" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q7_13 data-question_label="12">
+<div id=q7_13_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remover_iesimo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> no vacía y un entero positivo <code class="docutils literal notranslate"><span class="pre">i</span></code> y devuelva la cadena original sin el i-esimo carácter <br /> <br />
+Ejemplos:<br />
+<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;Hello&quot;,</span> <span class="pre">1)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ello&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;Hi&quot;,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;H&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;PyZombiess&quot;,</span> <span class="pre">10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;PyZombies&quot;</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q7_13_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static 
+     style="visibility: hidden;">
+def remover_iesimo(s, i):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(remover_iesimo("Hello", 1), "ello", "Esperado: ello")
+      self.assertEqual(remover_iesimo("python", 6), "pytho", "Esperado: pytho")
+      self.assertEqual(remover_iesimo("Hi", 0), "Hi", "Esperado: Hi")
+      self.assertEqual(remover_iesimo("code", 5), "code", "Esperado: code")
+      self.assertEqual(remover_iesimo("cat", 1), "ct", "Esperado: ct")
+      self.assertEqual(remover_iesimo("12345", 3), "1245", "Esperado: 1245")
+      self.assertEqual(
+            remover_iesimo("Chocolate", 15), "Chocolate", "Esperado: Chocolate"
+      )
+      self.assertEqual(
+            remover_iesimo("Hola mundo", 5), "Holamundo", "Esperado: Holamundo"
+      )
+      self.assertEqual(
+            remover_iesimo("Pyzombis ", 9), "PyZombies", "Esperado: PyZombies"
+      )
 
 
 myTests().main()
