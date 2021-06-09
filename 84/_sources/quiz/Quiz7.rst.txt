@@ -180,7 +180,7 @@ Ejercicio 5
    :nocodelens:
 
 
-   Desarrolle la función ``hola_usuario`` que recibe como parámetro un cadena representa un nombre ``nombre`` y devuelva un saludo con este nombre |br| |br|
+   Desarrolle la función ``hola_usuario`` que recibe como parámetro una cadena ``nombre`` que representa el nombre de un usuario y devuelva un saludo con este nombre |br| |br|
    Ejemplos: |br|
    ``hola_usuario("Bob")`` -> ``"¡Hola Bob!"`` |br|
    ``hola_usuario("Alice")`` -> ``"¡Hola Alice!"`` |br|
@@ -374,7 +374,7 @@ Ejercicio 11
    :nocodelens:
 
 
-   Desarrolle la función ``remover_primer_ultimo`` que recibe una cadena ``s`` de al menos dos caracteres y devuelva una cadena sin el primer y último carácter |br| |br|
+   Desarrolle la función ``remover_primer_ultimo`` que recibe una cadena ``s`` de al menos dos caracteres y devuelva una cadena sin el primer ni el último carácter |br| |br|
    Ejemplos: |br|
    ``remover_primer_ultimo("Hello")`` -> ``"ell"`` |br|
    ``remover_primer_ultimo("python")`` -> ``"ytho"`` |br|
