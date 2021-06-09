@@ -59,7 +59,7 @@ Ejercicio 2
    Desarrolle la función ``expandir_cadena`` que recibe una cadena ``s`` y devuelva una nueva cadena siguiendo el patrón descrito en los ejemplos |br| |br|
    Ejemplos:|br|
    ``expandir_cadena("Code")`` -> ``"CCoCodCode"`` |br|
-   ``expandir_cadena("abc")`` -> ``"aababc""` |br|
+   ``expandir_cadena("abc")`` -> ``"aababc"`` |br|
    ``expandir_cadena("ab")`` -> ``"aab"`` |br|
 
    ~~~~
