@@ -15,7 +15,7 @@ Ejercicio 1
 
    Desarrolle la función ``dormir`` que toma dos parámetros, 
    ``dia_semana`` y ``dia_festivo``. Ambos parámetros toman 
-   valores booleanos, es decir ``True`` o ``False``. La función actúa 
+   valores booleanos, es decir pueden ser ``True`` o ``False``. La función actúa 
    de la siguiente manera: usted puede dormir cuando sea día festivo 
    o cuando no sea un día entre semana. ``dormir`` devolverá ``True`` 
    o ``False`` si usted va a dormir o no. |br| |br|
@@ -67,7 +67,7 @@ Ejercicio 2
 
    Desarrolle la función ``alumnos_en_problemas`` que toma dos parámetros, 
    ``a_sonrie`` y ``b_sonrie``. a y b representan dos estudiantes.
-   ``a_sonrie`` y ``b_sonrie`` indican si a y b sonríen. Cuando ambos ambos 
+   ``a_sonrie`` y ``b_sonrie`` indican si a y b sonríen. Cuando ambos 
    sonríen o ambos no están sonriendo tenemos problemas. ``alumnos_en_problemas`` 
    debe devovler ``True`` cuando hay problemas. De lo contrario, devolverá ``False`` 
    |br| |br|
@@ -202,7 +202,7 @@ Ejercicio 5
    :nocodelens:
 
    Desarrolle la función ``problemas_con_loro`` que toma dos parámetros, 
-   ``hablando`` que es ``True`` o ``False``, y ``hora`` que toma un valor 
+   ``hablando`` que puede ser ``True`` o ``False``, y ``hora`` que toma un valor 
    entre 0 y 23. Tenemos un loro, y hay problemas si el loro está hablando 
    antes de las 7 horas o después de las 20 horas. Devolver ``True`` si hay 
    problemas o ``False`` si no los hay. |br| |br|
@@ -343,8 +343,8 @@ Ejercicio 8
    representa un índice. La función debe devolver una nueva cadena sin 
    el carácter en la posición ``n``. |br| |br| 
    Ejemplos: |br|
-   ``quitar_caracter('gatito', 1)`` -> ``'gtito'`` |br|
-   ``quitar_caracter('gatito', 4)`` -> ``'gatio'`` |br|
+   ``quitar_caracter("gatito", 1)`` -> ``"gtito"`` |br|
+   ``quitar_caracter("gatito", 4)`` -> ``"gatio"`` |br|
 
    ~~~~
    def quitar_caracter(s, n):
