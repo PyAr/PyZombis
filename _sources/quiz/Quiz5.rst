@@ -80,6 +80,20 @@ Quiz - 5
 .. activecode:: mcqcb_5_3
    :nocodelens:
 
+   Desarrolle la función ``pares_divisibles_7`` que recibe como parámetros dos enteros positivos, ``inicio`` y ``fin`` que representan el inicio y el fin de un intervalo de números, la función tiene que devolver la cantidad de números que son pares y también divisibles por 7. |br| |br|
+   Ejemplos: |br|
+   ``pares_divisibles_7(1, 7)`` -> ``0`` |br|
+   ``pares_divisibles_7(25, 123)`` -> ``'7'`` |br|
+   ``pares_divisibles_7(13, 245)`` -> ``'17'`` |br|
+
+   ~~~~
+   def pares_divisibles_7(inicio, fin):
+
+       
+
+   ====
+   from unittest.gui import TestCaseGui
+
 
    #Utilice este bloque de código para el cálculo.
   
