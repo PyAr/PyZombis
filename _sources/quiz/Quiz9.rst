@@ -307,7 +307,7 @@ Quiz - 9
    sin multa = 0 |br|
    multa media = 1 |br|
    multa severa = 2 |br| |br|
-   Ejemplos:|br|
+   Ejemplos: |br|
    ``atrapado_corriendo(60, False)`` -> 0 |br|
    ``atrapado_corriendo(65, False)`` -> 1 |br|
    ``atrapado_corriendo(65, True)`` -> 0  |br|
@@ -357,7 +357,7 @@ Quiz - 9
    A menos que esté de vacaciones, en este caso: |br|
    Días de la semana: '10:00' |br|
    Fines de semana: 'libre' |br| |br|
-   Ejemplos:|br|
+   Ejemplos: |br|
    ``alarm_clock(1, False)`` -> '7:00' |br|
    ``alarm_clock(1, True)`` -> '10:00' |br|
    ``alarm_clock(6, True)`` -> 'libre' |br|
