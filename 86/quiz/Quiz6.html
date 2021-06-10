@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 6 &#8212; PyZombis Quiz6Update@df27c25</title>
+    <title>Quiz - 6 &#8212; PyZombis Quiz6Update@2db56b2</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis Quiz6Update@df27c25</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis Quiz6Update@2db56b2</a>
       </div>
     </div>
 
@@ -688,13 +688,13 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q6_8 data-question_label="8">
 <div id=q6_8_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">quitar_caracter</span></code> que toma a <code class="docutils literal notranslate"><span class="pre">s</span></code> y <code class="docutils literal notranslate"><span class="pre">n</span></code>
-como parámetros. <code class="docutils literal notranslate"><span class="pre">s</span></code> es una cadena, y <code class="docutils literal notranslate"><span class="pre">n</span></code> un número entero, que
-representa un índice. La función debe devolver una nueva cadena sin
-el carácter en la posición <code class="docutils literal notranslate"><span class="pre">n</span></code>. <br /> <br />
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remover_iesimo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> no vacía
+y un entero positivo <code class="docutils literal notranslate"><span class="pre">i</span></code>, y devuelva la cadena original sin el i-ésimo carácter.
+<br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">quitar_caracter(&quot;gatito&quot;,</span> <span class="pre">1)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;gtito&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">quitar_caracter(&quot;gatito&quot;,</span> <span class="pre">4)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;gatio&quot;</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;Hello&quot;,</span> <span class="pre">1)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ello&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;Hi&quot;,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;H&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;PyZombiess&quot;,</span> <span class="pre">10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;PyZombies&quot;</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q6_8_editor" 
@@ -702,7 +702,7 @@ Ejemplos: <br />
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def quitar_caracter(s, n):
+def remover_iesimo(s, i):
 
 
 ====
@@ -712,29 +712,29 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(quitar_caracter('Hi', 0), "i", "Esperado: i")
-        self.assertEqual(quitar_caracter('Hi', 1), "H", "Esperado: H")
-        self.assertEqual(quitar_caracter('code', 0), "ode", "Esperado: ode")
-        self.assertEqual(quitar_caracter('code', 1), "cde", "Esperado: cde")
-        self.assertEqual(quitar_caracter('code', 2), "coe", "Esperado: coe")
-        self.assertEqual(quitar_caracter('code', 3), "cod", "Esperado: cod")
+        self.assertEqual(remover_iesimo('Hi', 0), "i", "Esperado: i")
+        self.assertEqual(remover_iesimo('Hi', 1), "H", "Esperado: H")
+        self.assertEqual(remover_iesimo('code', 0), "ode", "Esperado: ode")
+        self.assertEqual(remover_iesimo('code', 1), "cde", "Esperado: cde")
+        self.assertEqual(remover_iesimo('code', 2), "coe", "Esperado: coe")
+        self.assertEqual(remover_iesimo('code', 3), "cod", "Esperado: cod")
         self.assertEqual(
-                quitar_caracter('gatito', 1),
+                remover_iesimo('gatito', 1),
                 "gtito",
                 "Esperado: gtito"
         )
         self.assertEqual(
-                quitar_caracter('gatito', 0),
+                remover_iesimo('gatito', 0),
                 "atito",
                 "Esperado: atito"
         )
         self.assertEqual(
-                quitar_caracter('gatito', 4),
+                remover_iesimo('gatito', 4),
                 "gatio",
                 "Esperado: gatio"
         )
         self.assertEqual(
-                quitar_caracter('chocolate', 8),
+                remover_iesimo('chocolate', 8),
                 "chocolat",
                 "Esperado: chocolat"
         )
@@ -756,9 +756,9 @@ representando una cadena. Si <code class="docutils literal notranslate"><span cl
 devuelve la misma cadena. De lo contrario, la primera y última letra de <code class="docutils literal notranslate"><span class="pre">s</span></code>
 se intercambian. <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">intercambiar('codigo')</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">'oodigc'</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">intercambiar('a')</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">'a'</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">intercambiar('ab')</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">'ba'</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">intercambiar(&quot;codigo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;oodigc&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">intercambiar(&quot;a&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;a&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">intercambiar(&quot;ab&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ba&quot;</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q6_9_editor" 

@@ -338,16 +338,16 @@ Ejercicio 8
 .. activecode:: q6_8
    :nocodelens:
 
-   Desarrolle la función ``quitar_caracter`` que toma a ``s`` y ``n`` 
-   como parámetros. ``s`` es una cadena, y ``n`` un número entero, que 
-   representa un índice. La función debe devolver una nueva cadena sin 
-   el carácter en la posición ``n``. |br| |br| 
+   Desarrolle la función ``remover_iesimo`` que recibe una cadena ``s`` no vacía 
+   y un entero positivo ``i``, y devuelva la cadena original sin el i-ésimo carácter. 
+   |br| |br| 
    Ejemplos: |br|
-   ``quitar_caracter("gatito", 1)`` -> ``"gtito"`` |br|
-   ``quitar_caracter("gatito", 4)`` -> ``"gatio"`` |br|
+   ``remover_iesimo("Hello", 1)`` -> ``"ello"`` |br|
+   ``remover_iesimo("Hi", 2)`` -> ``"H"`` |br|
+   ``remover_iesimo("PyZombiess", 10)`` -> ``"PyZombies"`` |br|
 
    ~~~~
-   def quitar_caracter(s, n):
+   def remover_iesimo(s, i):
 
 
    ====
@@ -357,29 +357,29 @@ Ejercicio 8
    class myTests(TestCaseGui):
    
        def testOne(self):
-           self.assertEqual(quitar_caracter('Hi', 0), "i", "Esperado: i")
-           self.assertEqual(quitar_caracter('Hi', 1), "H", "Esperado: H")
-           self.assertEqual(quitar_caracter('code', 0), "ode", "Esperado: ode")
-           self.assertEqual(quitar_caracter('code', 1), "cde", "Esperado: cde")
-           self.assertEqual(quitar_caracter('code', 2), "coe", "Esperado: coe")
-           self.assertEqual(quitar_caracter('code', 3), "cod", "Esperado: cod")
+           self.assertEqual(remover_iesimo('Hi', 0), "i", "Esperado: i")
+           self.assertEqual(remover_iesimo('Hi', 1), "H", "Esperado: H")
+           self.assertEqual(remover_iesimo('code', 0), "ode", "Esperado: ode")
+           self.assertEqual(remover_iesimo('code', 1), "cde", "Esperado: cde")
+           self.assertEqual(remover_iesimo('code', 2), "coe", "Esperado: coe")
+           self.assertEqual(remover_iesimo('code', 3), "cod", "Esperado: cod")
            self.assertEqual(
-                   quitar_caracter('gatito', 1),
+                   remover_iesimo('gatito', 1),
                    "gtito",
                    "Esperado: gtito"
            )
            self.assertEqual(
-                   quitar_caracter('gatito', 0),
+                   remover_iesimo('gatito', 0),
                    "atito",
                    "Esperado: atito"
            )
            self.assertEqual(
-                   quitar_caracter('gatito', 4),
+                   remover_iesimo('gatito', 4),
                    "gatio",
                    "Esperado: gatio"
            )
            self.assertEqual(
-                   quitar_caracter('chocolate', 8),
+                   remover_iesimo('chocolate', 8),
                    "chocolat",
                    "Esperado: chocolat"
            )
@@ -399,9 +399,9 @@ Ejercicio 9
    devuelve la misma cadena. De lo contrario, la primera y última letra de ``s`` 
    se intercambian. |br| |br| 
    Ejemplos: |br|
-   ``intercambiar('codigo')`` -> ``'oodigc'`` |br|
-   ``intercambiar('a')`` -> ``'a'`` |br|
-   ``intercambiar('ab')`` -> ``'ba'`` |br|
+   ``intercambiar("codigo")`` -> ``"oodigc"`` |br|
+   ``intercambiar("a")`` -> ``"a"`` |br|
+   ``intercambiar("ab")`` -> ``"ba"`` |br|
 
    ~~~~
    def intercambiar(s):
