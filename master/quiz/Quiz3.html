@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 3 &#8212; PyZombis master@57bc682</title>
+    <title>Quiz - 3 &#8212; PyZombis master@37e46e4</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@57bc682</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@37e46e4</a>
       </div>
     </div>
 
@@ -250,7 +250,14 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Quiz - 3</a></li>
+<li><a class="reference internal" href="#">Quiz - 3</a><ul>
+<li><a class="reference internal" href="#ejercicio-1">Ejercicio 1</a></li>
+<li><a class="reference internal" href="#ejercicio-2">Ejercicio 2</a></li>
+<li><a class="reference internal" href="#ejercicio-3">Ejercicio 3</a></li>
+<li><a class="reference internal" href="#ejercicio-4">Ejercicio 4</a></li>
+<li><a class="reference internal" href="#ejercicio-5">Ejercicio 5</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -297,15 +304,15 @@
   
   <div class="section" id="quiz-3">
 <h1>Quiz - 3<a class="headerlink" href="#quiz-3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q3_1 data-question_label="1">
 <div id=q3_1_question class="ac_question col-md-12">
-<dl class="simple">
-<dt>Decimos que un número natural es triangular si es el producto de tres números naturales consecutivos. <br /></dt><dd><p>Ejemplo: 120 es triangular, ya que 4.5.6 = 120. Dado un número entero no negativo n, verifique si n es triangular <br />
-Devuelve Verdadero o Falso <br /></p>
-</dd>
-</dl>
+<p>Decimos que un número natural es triangular si es el producto de tres números naturales consecutivos. <br />
+Ejemplo: 120 es triangular, ya que 4 x 5 x 6 = 120. Dado un número entero no negativo <code class="docutils literal notranslate"><span class="pre">n</span></code>, verifique si <code class="docutils literal notranslate"><span class="pre">n</span></code> es triangular.
+Devuelva <code class="docutils literal notranslate"><span class="pre">True</span></code> si el número es triangular o <code class="docutils literal notranslate"><span class="pre">False</span></code> si no lo es. <br /></p>
 
 </div>
 <textarea data-lang="python" id="q3_1_editor" 
@@ -316,7 +323,6 @@ Devuelve Verdadero o Falso <br /></p>
 def triangular(n):
 
 
-
 ====
 from unittest.gui import TestCaseGui
 
@@ -324,25 +330,33 @@ class myTests(TestCaseGui):
 
     def testOne(self):
 
-        self.assertEqual(triangular(24), True,"Esperado: True")
-        self.assertEqual(triangular(7), False,"Esperado: False")
-        self.assertEqual(triangular(10), True,"Esperado: True")
-        self.assertEqual(triangular(23), False,"Esperado: False")
+        self.assertEqual(triangular(24), True, "Esperado: True")
+        self.assertEqual(triangular(7), False, "Esperado: False")
+        self.assertEqual(triangular(10), True, "Esperado: True")
+        self.assertEqual(triangular(23), False, "Esperado: False")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q3_2 data-question_label="2">
 <div id=q3_2_question class="ac_question col-md-12">
-<dl>
-<dt>Indique cómo se debe realizar un cambio utilizando un número mínimo de notas. Su algoritmo debe leer el monto de la factura a pagar y el monto del pago realizado, sin tener en cuenta los centavos. <br /></dt><dd><p>Suponga que los billetes para el cambio son 50, 20, 10, 5, 2 y 1 real, y que ninguno de ellos falta en la caja registradora. <br /></p>
-<p>Devuelva una lista con la cantidad de cada billete. El primer elemento de la lista muestra 50, los siguientes 20, y así sucesivamente hasta 1. [El mismo orden que se muestra arriba] <a href="#id1"><span class="problematic" id="id2">|en|</span></a></p>
-</dd>
-</dl>
+<p>Indique cómo se debe devolver un cambio utilizando un número mínimo de billetes.
+Su algoritmo debe leer el monto de la factura a pagar, <code class="docutils literal notranslate"><span class="pre">cobro</span></code>, y el monto
+del pago realizado, <code class="docutils literal notranslate"><span class="pre">pago`</span></code>, sin tener en cuenta los centavos. <br />
+Suponga que los billetes para el cambio son 50, 20, 10, 5, 2 y 1, y que ninguno de ellos falta en la caja registradora.
+Devuelva una lista con la cantidad de cada billete que represente el cambio. <br />
+El primer elemento de la lista coincide con la cantidad 50,
+el siguiente con 20, y así sucesivamente hasta 1. (El mismo orden que se muestra arriba). <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">calcular_cambio(50,</span> <span class="pre">100)</span></code> -&gt; [1,0,0,0,0,0] <br />
+<code class="docutils literal notranslate"><span class="pre">calcular_cambio(92,</span> <span class="pre">100)</span></code> -&gt; [0,0,0,1,1,1] <br /></p>
 
 </div>
 <textarea data-lang="python" id="q3_2_editor" 
@@ -350,8 +364,7 @@ myTests().main()
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def change(n):
-
+def calcular_cambio(cobro, pago):
 
 
 ====
@@ -361,21 +374,24 @@ class myTests(TestCaseGui):
 
     def testOne(self):
 
-        self.assertEqual(change(50), [1,0,0,0,0,0],"Esperado: [1,0,0,0,0,0]")
-        self.assertEqual(change(39), [0,1,1,1,2,0],"Esperado: [0,1,1,1,2,0]")
-        self.assertEqual(change(8), [0,0,0,1,1,1],"Esperado: [0,0,0,1,1,1]")
+        self.assertEqual(calcular_cambio(50, 100), [1,0,0,0,0,0], "Esperado: [1,0,0,0,0,0]")
+        self.assertEqual(calcular_cambio(61, 100), [0,1,1,1,2,0], "Esperado: [0,1,1,1,2,0]")
+        self.assertEqual(calcular_cambio(92, 100), [0,0,0,1,1,1], "Esperado: [0,0,0,1,1,1]")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-3">
+<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q3_3 data-question_label="3">
 <div id=q3_3_question class="ac_question col-md-12">
-<p>Compruebe que un número entero positivo n sea primo. <br /></p>
-<p>Devuelve Verdadero si presiona y Falso si no es un primo. <br /></p>
+<p>Compruebe que un número entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> sea primo. <br />
+Devuelva <code class="docutils literal notranslate"><span class="pre">True</span></code> si es primo o <code class="docutils literal notranslate"><span class="pre">False</span></code> si no lo es. <br /></p>
 
 </div>
 <textarea data-lang="python" id="q3_3_editor" 
@@ -383,8 +399,7 @@ myTests().main()
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def prime(n):
-
+def es_primo(n):
 
 
 ====
@@ -394,26 +409,31 @@ class myTests(TestCaseGui):
 
     def testOne(self):
 
-        self.assertEqual(prime(2), True,"Esperado: True")
-        self.assertEqual(prime(49), False,"Esperado: False")
-        self.assertEqual(prime(541), True,"Esperado: True")
-        self.assertEqual(prime(8831), True,"Esperado: True")
-        self.assertEqual(prime(7952), False,"Esperado: False")
+        self.assertEqual(es_primo(2), True, "Esperado: True")
+        self.assertEqual(es_primo(49), False, "Esperado: False")
+        self.assertEqual(es_primo(541), True, "Esperado: True")
+        self.assertEqual(es_primo(8831), True, "Esperado: True")
+        self.assertEqual(es_primo(7952), False, "Esperado: False")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-4">
+<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q3_4 data-question_label="4">
 <div id=q3_4_question class="ac_question col-md-12">
-<p>Dado un número entero positivo, determine su descomposición en factores primos calculando también la multiplicidad de cada factor. <br /></p>
-<blockquote>
-<div><p>Devuelve un diccionario con las claves como primos y sus respectivos valores como la frecuencia del primo en la factorización primaria del número. <br /></p>
-<p>Las claves deben estar en orden descendente. <br /></p>
-</div></blockquote>
+<p>Dado un número entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code>, determine su descomposición en factores primos
+calculando también la multiplicidad de cada factor.
+Devuelve un diccionario con las claves como primos y sus respectivos valores como la
+frecuencia del primo en la factorización primaria del número. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">factores(5)</span></code> -&gt; {5:1} <br />
+<code class="docutils literal notranslate"><span class="pre">factores(420)</span></code> -&gt; {2:2, 3:1, 5:1, 7:1} <br /></p>
 
 </div>
 <textarea data-lang="python" id="q3_4_editor" 
@@ -421,8 +441,7 @@ myTests().main()
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def factors(n):
-
+def factores(n):
 
 
 ====
@@ -432,22 +451,29 @@ class myTests(TestCaseGui):
 
     def testOne(self):
 
-        self.assertEqual(factors(5),{5:1} ,"Esperado: {5:1}")
-        self.assertEqual(factors(84),{2:2,3:1,7:1} ,"Esperado: {2:2,3:1,7:1}")
-        self.assertEqual(factors(123), {3:1,41:1},"Esperado: {3:1,41:1}")
-        self.assertEqual(factors(81), {3:4},"Esperado: {3:4}")
-        self.assertEqual(factors(420),{2:2,3:1,5:1,7:1} ,"Esperado: {2:2,3:1,5:1,7:1}")
+        self.assertEqual(factores(5), {5:1}, "Esperado: {5:1}")
+        self.assertEqual(factores(84), {2:2, 3:1, 7:1}, "Esperado: {2:2, 3:1, 7:1}")
+        self.assertEqual(factores(123), {3:1, 41:1}, "Esperado: {3:1, 41:1}")
+        self.assertEqual(factores(81), {3:4}, "Esperado: {3:4}")
+        self.assertEqual(factores(420), {2:2, 3:1, 5:1, 7:1}, "Esperado: {2:2, 3:1, 5:1, 7:1}")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-5">
+<h2>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q3_5 data-question_label="5">
 <div id=q3_5_question class="ac_question col-md-12">
-<p>Haga un programa que solicite un número entero positivo y lo muestre invertido. Por ejemplo: 1234 genera 4321. Devuelve el número invertido.|br|</p>
+<p>Haga un programa que solicite un número entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y lo muestre invertido.
+Por ejemplo: 1234 genera 4321. Devuelve el número invertido. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">invertir_numero(123456789)</span></code> -&gt; 987654321 <br />
+<code class="docutils literal notranslate"><span class="pre">invertir_numero(1000)</span></code> -&gt; 1 <br /></p>
 
 </div>
 <textarea data-lang="python" id="q3_5_editor" 
@@ -455,8 +481,7 @@ myTests().main()
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def invertednum(n):
-
+def invertir_numero(n):
 
 
 ====
@@ -466,15 +491,16 @@ class myTests(TestCaseGui):
 
     def testOne(self):
 
-        self.assertEqual(invertednum(123),321,"Esperado: 321")
-        self.assertEqual(invertednum(123456789),987654321 ,"Esperado: 987654321")
-        self.assertEqual(invertednum(1001), 1001,"Esperado: 1001")
-        self.assertEqual(invertednum(1000), 1,"Esperado: 1")
-        self.assertEqual(invertednum(230), 32,"Esperado: 32")
+        self.assertEqual(invertir_numero(123), 321, "Esperado: 321")
+        self.assertEqual(invertir_numero(123456789), 987654321, "Esperado: 987654321")
+        self.assertEqual(invertir_numero(1001), 1001, "Esperado: 1001")
+        self.assertEqual(invertir_numero(1000), 1, "Esperado: 1")
+        self.assertEqual(invertir_numero(230), 32, "Esperado: 32")
 
 
 myTests().main()
 </textarea>
+</div>
 </div>
 </div>
 </div>
