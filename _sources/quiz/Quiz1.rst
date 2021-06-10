@@ -7,6 +7,9 @@ Quiz - 1
    <br />
 
 
+Ejercicio 1
+-----------
+
 .. activecode:: q1_1
    :nocodelens:
 
@@ -32,6 +35,8 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 2
+-----------
 
 .. activecode:: q1_2
    :nocodelens:
@@ -42,7 +47,6 @@ Quiz - 1
    def metros_a_milimetros(n):
 
        
-
    ====
    from unittest.gui import TestCaseGui
 
@@ -58,6 +62,8 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 3
+-----------
 
 .. activecode:: q1_3
    :nocodelens:
@@ -84,6 +90,9 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 4
+-----------
+
 .. activecode:: q1_4
    :nocodelens:
 
@@ -93,6 +102,7 @@ Quiz - 1
    def aumento(salario, porcentaje):
       #devolver los valores en una tupla como: return (aumento, nuevo_salario)
        
+
    ====
    from unittest.gui import TestCaseGui
 
@@ -109,12 +119,14 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 5
+-----------
+
 .. activecode:: q1_5
    :nocodelens:
 
-   Solicita el precio de un comerciante y el porcentaje de descuento. Muestre el monto del descuento y el precio a pagar. |br|
+   Solicite el precio de un comerciante y el porcentaje de descuento. Muestre el monto del descuento y el precio a pagar. |br|
 
-   
    ~~~~
    def precio_con_descuento(precio, porcentaje):
       #devolver los valores en una tupla como: return (descuento, precio_final)
@@ -136,15 +148,16 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 6
+-----------
+
 .. activecode:: q1_6
    :nocodelens:
 
-   Calcula el tiempo de un viaje en auto. Pregunte por la distancia a recorrer y la velocidad media esperada para el viaje. |br|
+   Calcule el tiempo de un viaje en auto. Pregunte por la distancia a recorrer y la velocidad media esperada para el viaje. |br|
 
-   
    ~~~~
    def tiempo(distancia,velocidad):
-
        
 
    ====
@@ -155,7 +168,7 @@ Quiz - 1
        def testOne(self):
            
            self.assertEqual(tiempo(5,5),1,"Esperado: 1")
-           self.assertEqual(tiempo(100,3), 100/3 ,"Esperado: "+ str(100/3)")
+           self.assertEqual(tiempo(100,3), 100/3 ,"Esperado: "+ str(100/3))
            self.assertEqual(tiempo(10500,30),350,"Esperado: 350")
            self.assertEqual(tiempo(8600,50), 172,"Esperado: 172")
            self.assertEqual(tiempo(130,200), 0.65,"Esperado: 0.65")
@@ -164,17 +177,18 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 7
+-----------
+
 .. activecode:: q1_7
    :nocodelens:
 
    Convierta una temperatura escrita en Celsius a Fahrenheit. F = (9 * C) / 5 + 32 |br|
-   
-   
+      
    ~~~~
    def celsius_a_fahrenheit(c):
 
        
-
    ====
    from unittest.gui import TestCaseGui
 
@@ -192,17 +206,18 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 8
+-----------
+
 .. activecode:: q1_8
    :nocodelens:
 
-   Ahora haz lo contrario, de Fahrenheit a Celsius. |br|
+   Ahora haga lo contrario, de Fahrenheit a Celsius. |br|
 
-   
    ~~~~
    def fahrenheit_a_celsius(f):
 
        
-
    ====
    from unittest.gui import TestCaseGui
 
@@ -220,14 +235,16 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 9
+-----------
+
 .. activecode:: q1_9
    :nocodelens:
 
-   Escribe un programa que pregunte por la cantidad de kilómetros recorridos por un automóvil alquilado por usuario, así como el número de días que ha estado alquilado el coche. Calcule el precio a pagar, sabiendo que el coche cuesta R $ 60,00 por día y R $ 0,15 por km recorrido. |br|
+   Escriba un programa que pregunte por la cantidad de kilómetros recorridos por un automóvil alquilado, así como el número de días que ha estado alquilado el coche. Calcule el precio a pagar, sabiendo que el coche cuesta R $ 60,00 por día y R $ 0,15 por km recorrido. |br|
    
    ~~~~
    def precio(km,dias):
-
        
 
    ====
@@ -247,15 +264,16 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 10
+------------
 
 .. activecode:: q1_10
    :nocodelens:
 
    Escribe un programa para calcular la reducción en la vida útil de un fumador. Preguntar cantidad de cigarrillos fumados por día y cuántos años ha fumado. Considere que un fumador pierde 10 minutos de vida por cada cigarrillo, calcula cuántos días de vida perderá un fumador. Mostrar los días totales. |br|
 
-   
    ~~~~
-   def fumador(cigarrillos,annos):
+   def fumador(cigarrillos,anios):
 
 
    ====
@@ -274,17 +292,18 @@ Quiz - 1
    myTests().main()
 
 
+Ejercicio 11
+------------
+
 .. activecode:: q1_11
    :nocodelens:
 
    Sabiendo que  ``str()`` convierte valores numéricos en cadenas, calcule cuántos dígitos hay en 2 elevados a un millón. |br|
 
-   
    ~~~~
    def digitos():
 
        
-
    ====
    from unittest.gui import TestCaseGui
 
