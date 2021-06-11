@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 9 &#8212; PyZombis quiz_9_fixed@488c76b</title>
+    <title>Quiz - 9 &#8212; PyZombis quiz_9_fixed@964f945</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis quiz_9_fixed@488c76b</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis quiz_9_fixed@964f945</a>
       </div>
     </div>
 
@@ -671,11 +671,11 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_7 data-question_label="7">
 <div id=q9_7_question class="ac_question col-md-12">
-<p>Define una función <code class="docutils literal notranslate"><span class="pre">cita_de_lujo</span></code>. La función tomará dos dos parámetros
+<p>Define una función <code class="docutils literal notranslate"><span class="pre">cita_de_lujo</span></code>. La función tomará dos parámetros
 <code class="docutils literal notranslate"><span class="pre">mi_punt</span></code> y <code class="docutils literal notranslate"><span class="pre">pareja_punt</span></code>. Suponga que va un restaurante con su pareja.
 Los parámetros representan la puntuación de la ropa que llevan puesta del 0 al 10.
 Cuanto más alto es el puntaje, más elegante se han vestido. El puntaje de su ropa
-determinará si les dan una mesa en el restaurante o no:<br /></p>
+determinará si les dan una mesa en el restaurante o no, de acuerdo a las siguientes reglas:<br /></p>
 <ul class="simple">
 <li><p>Si la puntuación de la ropa de uno de los dos es menor o igual a 2,
 no tendrán derecho a una mesa (<code class="docutils literal notranslate"><span class="pre">0</span></code>). <br /></p></li>
@@ -683,7 +683,7 @@ no tendrán derecho a una mesa (<code class="docutils literal notranslate"><span
 elegante (puntuación &gt;= 8) sí tendrán derecho a mesa (<code class="docutils literal notranslate"><span class="pre">2</span></code>). <br /></p></li>
 <li><p>De lo contrario, la respuesta es tal vez (<code class="docutils literal notranslate"><span class="pre">1</span></code>). <br /></p></li>
 </ul>
-<p>Entonces <code class="docutils literal notranslate"><span class="pre">cita_de_lujo</span></code> devuelve un número entre 0, 1 y 2: 0 = no, 1 = tal vez y 2 = sí <br /> <br />
+<p>Entonces <code class="docutils literal notranslate"><span class="pre">cita_de_lujo</span></code> devuelve un número entre 0, 1 y 2 que significan No, Tal vez y Si respectivamente <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">cita_de_lujo(5,</span> <span class="pre">10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">2</span></code> <br />
 <code class="docutils literal notranslate"><span class="pre">cita_de_lujo(5,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">0</span></code> <br />
@@ -734,7 +734,7 @@ myTests().main()
 está entre 60 y 90 grados Fahrenheit, pero cuando es verano la temperatura
 superior a la que juegan las <em>ardillas</em> es de 100 grados Fahrenheit en lugar de 90.
 Defina una función <code class="docutils literal notranslate"><span class="pre">juegan_ardillas</span></code> que tome 2 parámetros, <code class="docutils literal notranslate"><span class="pre">temp</span></code> representando
-la temperatura, y <code class="docutils literal notranslate"><span class="pre">es_verano</span></code>, que puede ser <code class="docutils literal notranslate"><span class="pre">True</span></code> si es verano o <code class="docutils literal notranslate"><span class="pre">False</span></code>.
+la temperatura, y <code class="docutils literal notranslate"><span class="pre">es_verano</span></code>, que puede ser <code class="docutils literal notranslate"><span class="pre">True</span></code> si es verano o <code class="docutils literal notranslate"><span class="pre">False</span></code> si no lo es.
 La función debe regresar <code class="docutils literal notranslate"><span class="pre">True</span></code> si las <em>ardillas</em> juegan o <code class="docutils literal notranslate"><span class="pre">False</span></code> si no. <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">juegan_ardillas(70,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
@@ -865,10 +865,10 @@ el despertador de acuerdo a lo siguiente: <br /></p>
 <li><p>Fines de semana: ‘libre’ <br /> <br /></p></li>
 </ul>
 <p>Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">poner_alarma(1,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">'7:00'</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">poner_alarma(1,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">'10:00'</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">poner_alarma(6,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">'libre'</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">poner_alarma(0,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">'10:00'</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">poner_alarma(1,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;7:00&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">poner_alarma(1,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;10:00&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">poner_alarma(6,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;libre&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">poner_alarma(0,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;10:00&quot;</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q9_10_editor" 
