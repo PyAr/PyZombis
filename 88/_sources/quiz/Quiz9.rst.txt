@@ -514,17 +514,16 @@ Ejercicio 10
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
-           self.assertEqual(poner_alarma(1, False), '7:00', "Esperado: 7:00")
-           self.assertEqual(poner_alarma(5, False), '7:00', "Esperado: 7:00")
-           self.assertEqual(poner_alarma(0, False), '10:00', "Esperado: 10:00")
-           self.assertEqual(poner_alarma(6, False), '10:00', "Esperado: 10:00")
-           self.assertEqual(poner_alarma(0, True), 'libre', "Esperado: libre")
-           self.assertEqual(poner_alarma(6, True), 'libre', "Esperado: libre")
-           self.assertEqual(poner_alarma(1, True), '10:00', "Esperado: 10:00")
-           self.assertEqual(poner_alarma(3, True), '10:00', "Esperado: 10:00")
-           self.assertEqual(poner_alarma(5, True), '10:00', "Esperado: 10:00")
+           self.assertEqual(poner_alarma(1, False), "7:00", "Esperado: 7:00")
+           self.assertEqual(poner_alarma(5, False), "7:00", "Esperado: 7:00")
+           self.assertEqual(poner_alarma(0, False), "10:00", "Esperado: 10:00")
+           self.assertEqual(poner_alarma(6, False), "10:00", "Esperado: 10:00")
+           self.assertEqual(poner_alarma(0, True), "libre", "Esperado: libre")
+           self.assertEqual(poner_alarma(6, True), "libre", "Esperado: libre")
+           self.assertEqual(poner_alarma(1, True), "10:00", "Esperado: 10:00")
+           self.assertEqual(poner_alarma(3, True), "10:00", "Esperado: 10:00")
+           self.assertEqual(poner_alarma(5, True), "10:00", "Esperado: 10:00")
    
    
    myTests().main()
