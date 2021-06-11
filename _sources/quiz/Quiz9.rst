@@ -327,11 +327,11 @@ Ejercicio 7
 .. activecode:: q9_7
    :nocodelens:
 
-   Define una función ``cita_de_lujo``. La función tomará dos dos parámetros 
+   Define una función ``cita_de_lujo``. La función tomará dos parámetros 
    ``mi_punt`` y ``pareja_punt``. Suponga que va un restaurante con su pareja. 
    Los parámetros representan la puntuación de la ropa que llevan puesta del 0 al 10. 
    Cuanto más alto es el puntaje, más elegante se han vestido. El puntaje de su ropa 
-   determinará si les dan una mesa en el restaurante o no:|br|
+   determinará si les dan una mesa en el restaurante o no, de acuerdo a las siguientes reglas:|br|
 
    - Si la puntuación de la ropa de uno de los dos es menor o igual a 2, 
      no tendrán derecho a una mesa (``0``). |br|
@@ -339,7 +339,7 @@ Ejercicio 7
      elegante (puntuación >= 8) sí tendrán derecho a mesa (``2``). |br|
    - De lo contrario, la respuesta es tal vez (``1``). |br|
   
-   Entonces ``cita_de_lujo`` devuelve un número entre 0, 1 y 2: 0 = no, 1 = tal vez y 2 = sí |br| |br|
+   Entonces ``cita_de_lujo`` devuelve un número entre 0, 1 y 2 que significan No, Tal vez y Si respectivamente |br| |br|
    Ejemplos: |br|   
    ``cita_de_lujo(5, 10)`` -> ``2`` |br|
    ``cita_de_lujo(5, 2)`` -> ``0`` |br|
@@ -383,7 +383,7 @@ Ejercicio 8
    está entre 60 y 90 grados Fahrenheit, pero cuando es verano la temperatura 
    superior a la que juegan las *ardillas* es de 100 grados Fahrenheit en lugar de 90.
    Defina una función ``juegan_ardillas`` que tome 2 parámetros, ``temp`` representando 
-   la temperatura, y ``es_verano``, que puede ser ``True`` si es verano o ``False``. 
+   la temperatura, y ``es_verano``, que puede ser ``True`` si es verano o ``False`` si no lo es. 
    La función debe regresar ``True`` si las *ardillas* juegan o ``False`` si no. |br| |br|
    Ejemplos: |br|
    ``juegan_ardillas(70, False)`` -> ``True`` |br|
@@ -500,10 +500,10 @@ Ejercicio 10
    - Fines de semana: 'libre' |br| |br|
  
    Ejemplos: |br|
-   ``poner_alarma(1, False)`` -> ``'7:00'`` |br|
-   ``poner_alarma(1, True)`` -> ``'10:00'`` |br|
-   ``poner_alarma(6, True)`` -> ``'libre'`` |br|
-   ``poner_alarma(0, False)`` -> ``'10:00'`` |br|
+   ``poner_alarma(1, False)`` -> ``"7:00"`` |br|
+   ``poner_alarma(1, True)`` -> ``"10:00"`` |br|
+   ``poner_alarma(6, True)`` -> ``"libre"`` |br|
+   ``poner_alarma(0, False)`` -> ``"10:00"`` |br|
 
    ~~~~
    def poner_alarma(dia, vacaciones):
