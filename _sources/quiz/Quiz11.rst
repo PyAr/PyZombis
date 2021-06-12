@@ -32,12 +32,8 @@ Ejercicio 1
    class myTests(TestCaseGui):
        def testOne(self):
    
-           self.assertEqual(
-               cuantas_donas(4), "Número de donas: 4", "Esperado: Número de donas: 4"
-           )
-           self.assertEqual(
-               cuantas_donas(9), "Número de donas: 9", "Esperado: Número de donas: 9"
-           )
+           self.assertEqual(cuantas_donas(4), "Número de donas: 4", "Esperado: Número de donas: 4")
+           self.assertEqual(cuantas_donas(9), "Número de donas: 9", "Esperado: Número de donas: 9")
            self.assertEqual(
                cuantas_donas(10),
                "Número de donas: muchas",
@@ -77,12 +73,8 @@ Ejercicio 2
    class myTests(TestCaseGui):
        def testOne(self):
    
-           self.assertEqual(
-               cadena_de_extremos("palmeras"), "paas", "Esperado: paas"
-           )
-           self.assertEqual(
-               cadena_de_extremos("algoritmos"), "alos", "Esperado: alos"
-           )
+           self.assertEqual(cadena_de_extremos("palmeras"), "paas", "Esperado: paas")
+           self.assertEqual(cadena_de_extremos("algoritmos"), "alos", "Esperado: alos")
            self.assertEqual(cadena_de_extremos("co"), "coco", "Esperado: coco")
            self.assertEqual(cadena_de_extremos("a"), "", "Esperado: ''")
            self.assertEqual(cadena_de_extremos("xyz"), "xyyz", "Esperado: xyyz")
@@ -118,15 +110,9 @@ Ejercicio 3
    class myTests(TestCaseGui):
        def testOne(self):
    
-           self.assertEqual(
-               remplazar_primer_caracter("babble"), "ba**le", "Esperado: ba**le"
-           )
-           self.assertEqual(
-               remplazar_primer_caracter("aardvark"), "a*rdv*rk", "Esperado: a*rdv*rk"
-           )
-           self.assertEqual(
-               remplazar_primer_caracter("google"), "goo*le", "Esperado: goo*le"
-           )
+           self.assertEqual(remplazar_primer_caracter("babble"), "ba**le", "Esperado: ba**le")
+           self.assertEqual(remplazar_primer_caracter("aardvark"), "a*rdv*rk", "Esperado: a*rdv*rk")
+           self.assertEqual(remplazar_primer_caracter("google"), "goo*le", "Esperado: goo*le")
            self.assertEqual(remplazar_primer_caracter("dona"), "dona", "Esperado: dona")
    
    
@@ -163,20 +149,14 @@ Ejercicio 4
    class myTests(TestCaseGui):
        def testOne(self):
    
-           self.assertEqual(
-               combinar_dos_cadenas("mix", "pod"), "pox mid", "Esperado: pox mid"
-           )
-           self.assertEqual(
-               combinar_dos_cadenas("dog", "dinner"), "dig donner", "Esperado: dig donner"
-           )
+           self.assertEqual(combinar_dos_cadenas("mix", "pod"), "pox mid", "Esperado: pox mid")
+           self.assertEqual(combinar_dos_cadenas("dog", "dinner"), "dig donner", "Esperado: dig donner")
            self.assertEqual(
                combinar_dos_cadenas("gnash", "sport"),
                "spash gnort",
                "Esperado: spash gnort",
            )
-           self.assertEqual(
-               combinar_dos_cadenas("pezzy", "firm"), "fizzy perm", "Esperado: fizzy perm"
-           )
+           self.assertEqual(combinar_dos_cadenas("pezzy", "firm"), "fizzy perm", "Esperado: fizzy perm")
    
    
    myTests().main()
@@ -241,15 +221,11 @@ Ejercicio 6
        def testOne(self):
    
            self.assertEqual(
-               contar_ocurrencias("ana y mariana gozan de bananas", "ana"),
+               contar_ocurrencias("ana y mariana gostan de bananas", "ana"),
                4,
                "Esperado: 4",
            )
-           self.assertEqual(
-               contar_ocurrencias("Cats, rats, bats, and hats.", "ats"),
-               4,
-               "Esperado: 4"
-           )
+           self.assertEqual(contar_ocurrencias("Cats, rats, bats, and hats.", "ats"), 4, "Esperado: 4")
    
    
    myTests().main()
