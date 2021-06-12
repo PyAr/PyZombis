@@ -207,7 +207,7 @@ Ejercicio 6
    ``frase`` y ``palabra``, ambos de tipo cadena. La función debe devolver 
    el número de veces que ``palabra`` se encuentra en ``frase``. |br| |br|
    Ejemplos: |br|  
-   ``contar_ocurrencias("ana y mariana gostan de bananas", "ana")`` -> ``4`` |br|
+   ``contar_ocurrencias("ana y mariana gozan de bananas", "ana")`` -> ``4`` |br|
 
    ~~~~
    def contar_ocurrencias(frase, palabra):
@@ -221,7 +221,7 @@ Ejercicio 6
        def testOne(self):
    
            self.assertEqual(
-               contar_ocurrencias("ana y mariana gostan de bananas", "ana"),
+               contar_ocurrencias("ana y mariana gozan de bananas", "ana"),
                4,
                "Esperado: 4",
            )
