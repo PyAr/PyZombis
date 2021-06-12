@@ -34,7 +34,7 @@ Contenidos:
    quiz/Quiz1.rst
    quiz/Quiz2.rst
    quiz/Quiz3.rst
-   quiz/Quiz5mcq.rst
+   quiz/Quiz5.rst
    quiz/Quiz6.rst
    quiz/Quiz7.rst
    quiz/Quiz9.rst
