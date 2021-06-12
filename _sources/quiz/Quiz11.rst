@@ -55,7 +55,7 @@ Ejercicio 2
 .. activecode:: q11_2
    :nocodelens:
 
-   Desarrolla la función cadena_de_extremos que, dada una cadena ``s``, 
+   Desarrolla la función ``cadena_de_extremos`` que, dada una cadena ``s``, 
    devuelva una cadena con las dos primeras y las dos últimas letras de ``s``. 
    Sin embargo, si la cadena tiene menos de 2 letras, devuelve una cadena vacía. |br| |br| 
    Ejemplos: |br|
