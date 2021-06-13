@@ -35,6 +35,5 @@ def test_quiz7_1_bad(page):
 
     page.hover("#q7_1 >> text=You passed:")
     assert (
-        page.inner_text("#q7_1 >> text=You passed:")
-        == "You passed: 0.0% of the tests"
+        page.inner_text("#q7_1 >> text=You passed:") == "You passed: 0.0% of the tests"
     )
