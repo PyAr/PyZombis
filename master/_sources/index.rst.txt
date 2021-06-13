@@ -31,8 +31,8 @@ Contenidos:
    lectures/TWP58
    lectures/TWP60
    lectures/TWP65
-   lectures/Quiz6
    quiz/Quiz1.rst
+   quiz/Quiz2.rst
    quiz/Quiz3.rst
    quiz/Quiz5mcq.rst
    quiz/Quiz6.rst
