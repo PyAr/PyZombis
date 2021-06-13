@@ -69,7 +69,7 @@ Ejercicio 2
    ``a_sonrie`` y ``b_sonrie``. a y b representan dos estudiantes.
    ``a_sonrie`` y ``b_sonrie`` indican si a y b sonríen. Cuando ambos 
    sonríen o ambos no están sonriendo tenemos problemas. ``alumnos_en_problemas`` 
-   debe devovler ``True`` cuando hay problemas. De lo contrario, devolverá ``False`` 
+   debe devolver ``True`` cuando hay problemas. De lo contrario, devolverá ``False``. 
    |br| |br|
    Ejemplos: |br|
    ``alumnos_en_problemas(True, True)`` -> ``True`` |br|
@@ -167,7 +167,7 @@ Ejercicio 4
    Desarrolle la función ``diferencia_absoluta_21`` que toma un parámetro, ``n``, 
    y devuelve la diferencia absoluta entre ``n`` y 21 solo si ``n`` es menor 
    o igual a 21. Si es mayor, entonces devuelve el doble de la diferencia 
-   abosuluta entre el número y 21. **Recuerde**: ``abs(x)`` devuelve 
+   absoluta entre el número y 21. **Recuerde**: ``abs(x)`` devuelve 
    el valor absoluto de x. |br| |br|   
    Ejemplos: |br|
    ``diferencia_absoluta_21(19)`` -> ``2`` |br|
