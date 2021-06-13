@@ -32,28 +32,11 @@ Ejercicio 1
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
-           self.assertEqual(
-                   dormir(False, False),
-                   True,
-                   "Esperado: True"
-           )
-           self.assertEqual(
-                   dormir(True, False),
-                   False,
-                   "Esperado: False"
-           )
-           self.assertEqual(
-                   dormir(False, True),
-                   True,
-                   "Esperado: True"
-           )
-           self.assertEqual(
-                   dormir(True, True),
-                   True,
-                   "Esperado: True"
-           )
+           self.assertEqual(dormir(False, False), True, "Excelente! obtenido: True esperado: True")
+           self.assertEqual(dormir(True, False), False, "Excelente! obtenido: False esperado: False")
+           self.assertEqual(dormir(False, True), True, "Excelente! obtenido: True esperado: True")
+           self.assertEqual(dormir(True, True), True, "Excelente! obtenido: True esperado: True")
    
    
    myTests().main()
@@ -84,28 +67,11 @@ Ejercicio 2
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
-           self.assertEqual(
-                   alumnos_en_problemas(True, True),
-                   True,
-                   "Esperado: True"
-           )
-           self.assertEqual(
-                   alumnos_en_problemas(False, False),
-                   True,
-                   "Esperado: True"
-           )
-           self.assertEqual(
-                   alumnos_en_problemas(True, False),
-                   False,
-                   "Esperado: False"
-           )
-           self.assertEqual(
-                   alumnos_en_problemas(False, True),
-                   False,
-                   "Esperado: False"
-           )
+           self.assertEqual(alumnos_en_problemas(True, True), True, "Esperado: True")
+           self.assertEqual(alumnos_en_problemas(False, False), True, "Esperado: True")
+           self.assertEqual(alumnos_en_problemas(True, False), False, "Esperado: False")
+           self.assertEqual(alumnos_en_problemas(False, True), False, "Esperado: False")
    
    
    myTests().main()
@@ -133,26 +99,13 @@ Ejercicio 3
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
-           self.assertEqual(
-               suma_doble(1, 2), 3, "Esperado: 3"
-           )
-           self.assertEqual(
-               suma_doble(3, 2), 5, "Esperado: 5"
-           )
-           self.assertEqual(
-               suma_doble(2, 2), 8, "Esperado: 8"
-           )
-           self.assertEqual(
-               suma_doble(-1, 0), -1, "Esperado: -1"
-           )
-           self.assertEqual(
-               suma_doble(0, 0), 0, "Esperado: 0"
-           )
-           self.assertEqual(
-               suma_doble(0, 1), 1, "Esperado: 1"
-           )
+           self.assertEqual(suma_doble(1, 2), 3, "Excelente! obtenido: 3 esperado: 3")
+           self.assertEqual(suma_doble(3, 2), 5, "Excelente! obtenido: 5 esperado: 5")
+           self.assertEqual(suma_doble(2, 2), 8, "Excelente! obtenido: 8 esperado: 8")
+           self.assertEqual(suma_doble(-1, 0), -1, "Excelente! obtenido: -1 esperado: -1")
+           self.assertEqual(suma_doble(0, 0), 0, "Excelente! obtenido: 0 esperado: 0")
+           self.assertEqual(suma_doble(0, 1), 1, "Excelente! obtenido: 1 esperado: 1")
    
    
    myTests().main()
@@ -182,7 +135,6 @@ Ejercicio 4
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
            self.assertEqual(diferencia_absoluta_21(19), 2, "Esperado: 2")
            self.assertEqual(diferencia_absoluta_21(10), 11, "Esperado: 11")
@@ -219,27 +171,14 @@ Ejercicio 5
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
            self.assertEqual(problemas_con_loro(True, 6), True, "Esperado: True")
            self.assertEqual(problemas_con_loro(True, 7), False, "Esperado: False")
            self.assertEqual(problemas_con_loro(True, 21), True, "Esperado: True")
            self.assertEqual(problemas_con_loro(True, 23), True, "Esperado: True")
-           self.assertEqual(
-                   problemas_con_loro(True, 20),
-                   False,
-                   "Esperado: False"
-           )
-           self.assertEqual(
-                   problemas_con_loro(False, 6),
-                   False,
-                   "Esperado: False"
-           )
-           self.assertEqual(
-                   problemas_con_loro(False, 21),
-                   False,
-                   "Esperado: False"
-           )
+           self.assertEqual(problemas_con_loro(True, 20), False, "Esperado: False")
+           self.assertEqual(problemas_con_loro(False, 6), False, "Esperado: False")
+           self.assertEqual(problemas_con_loro(False, 21), False, "Esperado: False")
    
    
    myTests().main()
@@ -268,7 +207,6 @@ Ejercicio 6
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
            self.assertEqual(es_diez(9, 10), True, "Esperado: True")
            self.assertEqual(es_diez(9, 9), False, "Esperado: False")
@@ -310,7 +248,6 @@ Ejercicio 7
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
            self.assertEqual(distancia_10(93), True, "Esperado: True")
            self.assertEqual(distancia_10(90), True, "Esperado: True")
@@ -355,34 +292,17 @@ Ejercicio 8
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
-           self.assertEqual(remover_iesimo('Hi', 0), "i", "Esperado: i")
-           self.assertEqual(remover_iesimo('Hi', 1), "H", "Esperado: H")
-           self.assertEqual(remover_iesimo('code', 0), "ode", "Esperado: ode")
-           self.assertEqual(remover_iesimo('code', 1), "cde", "Esperado: cde")
-           self.assertEqual(remover_iesimo('code', 2), "coe", "Esperado: coe")
-           self.assertEqual(remover_iesimo('code', 3), "cod", "Esperado: cod")
-           self.assertEqual(
-                   remover_iesimo('gatito', 1),
-                   "gtito",
-                   "Esperado: gtito"
-           )
-           self.assertEqual(
-                   remover_iesimo('gatito', 0),
-                   "atito",
-                   "Esperado: atito"
-           )
-           self.assertEqual(
-                   remover_iesimo('gatito', 4),
-                   "gatio",
-                   "Esperado: gatio"
-           )
-           self.assertEqual(
-                   remover_iesimo('chocolate', 8),
-                   "chocolat",
-                   "Esperado: chocolat"
-           )
+           self.assertEqual(quitar_caracter("Hi", 0), "i", "Esperado: i")
+           self.assertEqual(quitar_caracter("Hi", 1), "H", "Esperado: H")
+           self.assertEqual(quitar_caracter("code", 0), "ode", "Esperado: ode")
+           self.assertEqual(quitar_caracter("code", 1), "cde", "Esperado: cde")
+           self.assertEqual(quitar_caracter("code", 2), "coe", "Esperado: coe")
+           self.assertEqual(quitar_caracter("code", 3), "cod", "Esperado: cod")
+           self.assertEqual(quitar_caracter("gatito", 1), "gtito", "Esperado: gtito")
+           self.assertEqual(quitar_caracter("gatito", 0), "atito", "Esperado: atito")
+           self.assertEqual(quitar_caracter("gatito", 4), "gatio", "Esperado: gatio")
+           self.assertEqual(quitar_caracter("chocolate", 8), "chocolat", "Esperado: chocolat")
    
    
    myTests().main()
@@ -412,20 +332,15 @@ Ejercicio 9
 
 
    class myTests(TestCaseGui):
-   
        def testOne(self):
-           self.assertEqual(intercambiar('code'), 'eodc', "Esperado: eodc")
-           self.assertEqual(intercambiar('a'), 'a', "Esperado: a")
-           self.assertEqual(intercambiar('ab'), 'ba', "Esperado: ba")
-           self.assertEqual(intercambiar('abc'), 'cba', "Esperado: cba")
-           self.assertEqual(intercambiar(' '), ' ', "Esperado: ' '")
-           self.assertEqual(intercambiar('nythoP'), 'Python', "Esperado: Python")
-           self.assertEqual(intercambiar('hello'), 'oellh', "Esperado: oellh")
-           self.assertEqual(
-                   intercambiar('Chocolate'),
-                   'ehocolatC',
-                   "Esperado: ehocolatC"
-           )
+           self.assertEqual(intercambiar("code"), "eodc", "Esperado: eodc")
+           self.assertEqual(intercambiar("a"), "a", "Esperado: a")
+           self.assertEqual(intercambiar("ab"), "ba", "Esperado: ba")
+           self.assertEqual(intercambiar("abc"), "cba", "Esperado: cba")
+           self.assertEqual(intercambiar(" "), " ", "Esperado: ' '")
+           self.assertEqual(intercambiar("nythoP"), "Python", "Esperado: Python")
+           self.assertEqual(intercambiar("hello"), "oellh", "Esperado: oellh")
+           self.assertEqual(intercambiar("Chocolate"), "ehocolatC", "Esperado: ehocolatC")
    
    
    myTests().main()

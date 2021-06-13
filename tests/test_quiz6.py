@@ -19,3 +19,4 @@ def test_quiz6_1(page):
 
     page.hover("#q6_1 >> text=You passed:")
     assert page.inner_text("#q6_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+    
