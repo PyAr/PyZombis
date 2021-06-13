@@ -17,7 +17,7 @@ Ejercicio 1
    positivo, como parámetro, y devuelve una cadena de forma ``"Número de donas: n"``, 
    donde ``n`` es el valor que se le pasó a la función como argumento. No obstante, 
    si ``n`` >= 10, ``cuantas_donas`` devolverá ``"muchas"`` en vez de ``n``. |br| |br|
-   Ejemplos:
+   Ejemplos: |br|
    ``cuantas_donas(5)`` -> ``"Número de donas: 5"`` |br|
    ``cuantas_donas(23)`` -> ``"Número de donas: muchas"`` |br|
 
