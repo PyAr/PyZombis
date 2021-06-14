@@ -7,7 +7,10 @@ Quiz - 13
    <br />
 
 
-.. activecode:: fim_igual
+Ejercicio 1
+-----------
+
+.. activecode:: q13_1
    :nocodelens:
 
    A. fim_igual |br|
@@ -34,8 +37,10 @@ Quiz - 13
    myTests().main()
 
 
+Ejercicio 2
+-----------
 
-.. activecode:: x_antes
+.. activecode:: q13_2
    :nocodelens:
 
    B. x_antes |br|
@@ -65,7 +70,10 @@ Quiz - 13
    myTests().main
 
 
-.. activecode:: sort_last
+Ejercicio 3
+-----------
+
+.. activecode:: q13_3
    :nocodelens:
 
    C. sort_last |br|
