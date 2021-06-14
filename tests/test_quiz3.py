@@ -4,64 +4,29 @@ def test_quiz3_2(page):
 
     # Do the exercise
     page.click("text=def calcular_cambio(cobro, pago):")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "ArrowDown")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Tab")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "cambio = pago - cobro")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "billetes = []")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "billetes.append(cambio//50)")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "cambio = cambio % 50")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "billetes.append(cambio//20)")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "cambio = cambio%20")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "billetes.append(cambio//10)")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "cambio = cambio%10")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "billetes.append(cambio//5)")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "cambio%=5")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "billetes.append(cambio//2)")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "cambio%=2")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "billetes.append(cambio//1)")
-    page.press("text=def calcular_cambio(cobro, pago):",
-               "Enter")
-    page.type("text=def calcular_cambio(cobro, pago):",
-              "return billetes")
+    page.press("text=def calcular_cambio(cobro, pago):", "ArrowDown")
+    page.press("text=def calcular_cambio(cobro, pago):", "Tab")
+
+    instructions = [
+        "cambio = pago - cobro",
+        "billetes = []",
+        "billetes.append(cambio // 50)",
+        "cambio = cambio % 50",
+        "billetes.append(cambio//20)",
+        "cambio = cambio % 20",
+        "billetes.append(cambio//10)",
+        "cambio %= 10",
+        "billetes.append(cambio//5)",
+        "cambio%=5",
+        "billetes.append(cambio//2)",
+        "cambio%=2",
+        "billetes.append(cambio//1)",
+        "return billetes",
+    ]
+
+    for inst in instructions:
+        page.type("text=def calcular_cambio(cobro, pago):", inst)
+        page.press("text=def calcular_cambio(cobro, pago):", "Enter")
 
     # Click #ejercicio-2 >> text=Run
     page.click("#ejercicio-2 >> text=Run")
