@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 7 &#8212; PyZombis 13_quiz_5@7508ea7</title>
+    <title>Quiz - 7 &#8212; PyZombis 13_quiz_5@a9e7590</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 13_quiz_5@7508ea7</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 13_quiz_5@a9e7590</a>
       </div>
     </div>
 
@@ -262,7 +262,6 @@
 <li><a class="reference internal" href="#ejercicio-10">Ejercicio 10</a></li>
 <li><a class="reference internal" href="#ejercicio-11">Ejercicio 11</a></li>
 <li><a class="reference internal" href="#ejercicio-12">Ejercicio 12</a></li>
-<li><a class="reference internal" href="#ejercicio-13">Ejercicio 13</a></li>
 </ul>
 </li>
 </ul>
@@ -337,23 +336,23 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(multi_cadena("Hola", 2), "HolaHola", "Esperado: HolaHola")
-      self.assertEqual(
-            multi_cadena("Hola", 3), "HolaHolaHola", "Esperado: HolaHolaHola"
-      )
-      self.assertEqual(multi_cadena("Hi", 1), "Hi", "Esperado: Hi")
-      self.assertEqual(multi_cadena("Hi", 0), "", "Esperado: ''")
-      self.assertEqual(multi_cadena("Hi", 5), "HiHiHiHiHi", "Esperado: HiHiHiHiHi")
-      self.assertEqual(
-            multi_cadena("Oh Boy!", 2), "Oh Boy!Oh Boy!", "Esperado: Oh Boy!Oh Boy!"
-      )
-      self.assertEqual(multi_cadena("x", 4), "xxxx", "Esperado: xxxx")
-      self.assertEqual(multi_cadena("", 4), "", "Esperado: ''")
-      self.assertEqual(multi_cadena("code", 2), "codecode", "Esperado: codecode")
-      self.assertEqual(
-            multi_cadena("code", 3), "codecodecode", "Esperado: codecodecode"
-      )
+    def testOne(self):
+        self.assertEqual(multi_cadena("Hola", 2), "HolaHola", "Esperado: HolaHola")
+        self.assertEqual(
+                multi_cadena("Hola", 3), "HolaHolaHola", "Esperado: HolaHolaHola"
+        )
+        self.assertEqual(multi_cadena("Hi", 1), "Hi", "Esperado: Hi")
+        self.assertEqual(multi_cadena("Hi", 0), "", "Esperado: ''")
+        self.assertEqual(multi_cadena("Hi", 5), "HiHiHiHiHi", "Esperado: HiHiHiHiHi")
+        self.assertEqual(
+                multi_cadena("Oh Boy!", 2), "Oh Boy!Oh Boy!", "Esperado: Oh Boy!Oh Boy!"
+        )
+        self.assertEqual(multi_cadena("x", 4), "xxxx", "Esperado: xxxx")
+        self.assertEqual(multi_cadena("", 4), "", "Esperado: ''")
+        self.assertEqual(multi_cadena("code", 2), "codecode", "Esperado: codecode")
+        self.assertEqual(
+                multi_cadena("code", 3), "codecodecode", "Esperado: codecodecode"
+        )
 
 
 myTests().main()
@@ -388,23 +387,23 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(expandir_cadena("Code"), "CCoCodCode", "Esperado: CCoCodCode")
-      self.assertEqual(expandir_cadena("abc"), "aababc", "Esperado: aababc")
-      self.assertEqual(expandir_cadena("ab"), "aab", "Esperado: aab")
-      self.assertEqual(expandir_cadena("x"), "x", "Esperado: x")
-      self.assertEqual(expandir_cadena("fade"), "ffafadfade", "Esperado: ffafadfade")
-      self.assertEqual(
+    def testOne(self):
+        self.assertEqual(expandir_cadena("Code"), "CCoCodCode", "Esperado: CCoCodCode")
+        self.assertEqual(expandir_cadena("abc"), "aababc", "Esperado: aababc")
+        self.assertEqual(expandir_cadena("ab"), "aab", "Esperado: aab")
+        self.assertEqual(expandir_cadena("x"), "x", "Esperado: x")
+        self.assertEqual(expandir_cadena("fade"), "ffafadfade", "Esperado: ffafadfade")
+        self.assertEqual(
             expandir_cadena("There"), "TThTheTherThere", "Esperado: TThTheTherThere"
-      )
-      self.assertEqual(
+        )
+        self.assertEqual(
             expandir_cadena("Kitten"),
             "KKiKitKittKitteKitten",
             "Esperado: KKiKitKittKitteKitten",
-      )
-      self.assertEqual(expandir_cadena("Bye"), "BByBye", "Esperado: BByBye")
-      self.assertEqual(expandir_cadena("Good"), "GGoGooGood", "Esperado: GGoGooGood")
-      self.assertEqual(expandir_cadena("Bad"), "BBaBad", "Esperado: BBaBad")
+        )
+        self.assertEqual(expandir_cadena("Bye"), "BByBye", "Esperado: BByBye")
+        self.assertEqual(expandir_cadena("Good"), "GGoGooGood", "Esperado: GGoGooGood")
+        self.assertEqual(expandir_cadena("Bad"), "BBaBad", "Esperado: BBaBad")
 
 
 myTests().main()
@@ -436,14 +435,14 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(contar_apariciones_9([1, 99, 9]), 1, "Esperado: 1")
-      self.assertEqual(contar_apariciones_9([1, 9, 9]), 2, "Esperado: 2")
-      self.assertEqual(contar_apariciones_9([1, 9, 9, 3, 9]), 3, "Esperado: 3")
-      self.assertEqual(contar_apariciones_9([1, 2, 3]), 0, "Esperado: 0")
-      self.assertEqual(contar_apariciones_9([1]), 0, "Esperado: 1")
-      self.assertEqual(contar_apariciones_9([4, 2, 4, 3, 1]), 0, "Esperado: 0")
-      self.assertEqual(contar_apariciones_9([9, 2, 99, 3, 1]), 1, "Esperado: 1")
+    def testOne(self):
+        self.assertEqual(contar_apariciones_9([1, 99, 9]), 1, "Esperado: 1")
+        self.assertEqual(contar_apariciones_9([1, 9, 9]), 2, "Esperado: 2")
+        self.assertEqual(contar_apariciones_9([1, 9, 9, 3, 9]), 3, "Esperado: 3")
+        self.assertEqual(contar_apariciones_9([1, 2, 3]), 0, "Esperado: 0")
+        self.assertEqual(contar_apariciones_9([1]), 0, "Esperado: 1")
+        self.assertEqual(contar_apariciones_9([4, 2, 4, 3, 1]), 0, "Esperado: 0")
+        self.assertEqual(contar_apariciones_9([9, 2, 99, 3, 1]), 1, "Esperado: 1")
 
 
 myTests().main()
@@ -479,23 +478,39 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(verificar_comienzo_9([1, 2, 9, 3, 4]), True, "Esperado: True")
-      self.assertEqual(
+    def testOne(self):
+        self.assertEqual(
+            verificar_comienzo_9([1, 2, 9, 3, 4]), True, "Esperado: True"
+        )
+        self.assertEqual(
             verificar_comienzo_9([1, 2, 3, 4, 9]), False, "Esperado: False"
-      )
-      self.assertEqual(
+        )
+        self.assertEqual(
             verificar_comienzo_9([1, 2, 3, 4, 5]), False, "Esperado: False"
-      )
-      self.assertEqual(verificar_comienzo_9([9, 2, 3]), True, "Esperado: True")
-      self.assertEqual(verificar_comienzo_9([1, 9, 9]), True, "Esperado: True")
-      self.assertEqual(verificar_comienzo_9([1, 2, 3]), False, "Esperado: False")
-      self.assertEqual(verificar_comienzo_9([1, 9]), True, "Esperado: True")
-      self.assertEqual(verificar_comienzo_9([5, 5]), False, "Esperado: False")
-      self.assertEqual(verificar_comienzo_9([2]), False, "Esperado: False")
-      self.assertEqual(verificar_comienzo_9([9]), True, "Esperado: True")
-      self.assertEqual(verificar_comienzo_9([]), False, "Esperado: False")
-      self.assertEqual(verificar_comienzo_9([3, 9, 2, 3, 3]), True, "Esperado: True")
+        )
+        self.assertEqual(
+            verificar_comienzo_9([9, 2, 3]), True, "Esperado: True"
+        )
+        self.assertEqual(
+            verificar_comienzo_9([1, 9, 9]), True, "Esperado: True"
+        )
+        self.assertEqual(
+            verificar_comienzo_9([1, 2, 3]), False, "Esperado: False"
+        )
+        self.assertEqual(
+            verificar_comienzo_9([1, 9]), True, "Esperado: True"
+        )
+        self.assertEqual(
+            verificar_comienzo_9([5, 5]), False, "Esperado: False"
+        )
+        self.assertEqual(
+            verificar_comienzo_9([2]), False, "Esperado: False"
+        )
+        self.assertEqual(verificar_comienzo_9([9]), True, "Esperado: True")
+        self.assertEqual(verificar_comienzo_9([]), False, "Esperado: False")
+        self.assertEqual(verificar_comienzo_9(
+            [3, 9, 2, 3, 3]), True, "Esperado: True"
+        )
 
 
 myTests().main()
@@ -513,7 +528,7 @@ myTests().main()
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">hola_usuario(&quot;Bob&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;¡Hola</span> <span class="pre">Bob!&quot;</span></code> <br />
 <code class="docutils literal notranslate"><span class="pre">hola_usuario(&quot;Alice&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;¡Hola</span> <span class="pre">Alice!&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">hola_usuario(&quot;X&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Hola</span> <span class="pre">X!&quot;</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">hola_usuario(&quot;X&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;¡Hola</span> <span class="pre">X!&quot;</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q7_5_editor" 
@@ -530,13 +545,19 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(hola_usuario("Bob"), "¡Hola Bob!", "Esperado: ¡Hola Bob!")
-      self.assertEqual(
+    def testOne(self):
+        self.assertEqual(
+            hola_usuario("Bob"), "¡Hola Bob!", "Esperado: ¡Hola Bob!"
+        )
+        self.assertEqual(
             hola_usuario("Alice"), "¡Hola Alice!", "Esperado: ¡Hola Alice!"
-      )
-      self.assertEqual(hola_usuario("X"), "¡Hola X!", "Esperado: ¡Hola X!")
-      self.assertEqual(hola_usuario("Hola"), "¡Hola Hola!", "Esperado: ¡Hola Hola!")
+        )
+        self.assertEqual(
+            hola_usuario("X"), "¡Hola X!", "Esperado: ¡Hola X!"
+        )
+        self.assertEqual(
+            hola_usuario("Hola"), "¡Hola Hola!", "Esperado: ¡Hola Hola!"
+        )
 
 
 myTests().main()
@@ -571,30 +592,42 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(
-            crear_etiquetas("i", "Yay"), "<i>Yay</i>", "Esperado: <i>Yay</i>"
-      )
-      self.assertEqual(
-            crear_etiquetas("i", "Hello"), "<i>Hello</i>", "Esperado:<i>Hello</i>"
-      )
-      self.assertEqual(
+    def testOne(self):
+        self.assertEqual(
+            crear_etiquetas("i", "Yay"),
+            "<i>Yay</i>",
+            "Esperado: <i>Yay</i>"
+        )
+        self.assertEqual(
+            crear_etiquetas("i", "Hello"),
+            "<i>Hello</i>",
+            "Esperado:<i>Hello</i>"
+        )
+        self.assertEqual(
             crear_etiquetas("cite", "Yay"),
             "<cite>Yay</cite>",
             "Esperado: <cite>Yay</cite>",
-      )
-      self.assertEqual(
+        )
+        self.assertEqual(
             crear_etiquetas("address", "here"),
             "<address>here</address>",
             "Esperado: <address>here</address>",
-      )
-      self.assertEqual(
+        )
+        self.assertEqual(
             crear_etiquetas("body", "Heart"),
             "<body>Heart</body>",
             "Esperado: <body>Heart</body>",
-      )
-      self.assertEqual(crear_etiquetas("i", "i"), "<i>i</i>", "Esperado: <i>i</i>")
-      self.assertEqual(crear_etiquetas("i", ""), "<i></i>", "Esperado: <i></i>")
+        )
+        self.assertEqual(
+            crear_etiquetas("i", "i"),
+            "<i>i</i>",
+            "Esperado: <i>i</i>"
+        )
+        self.assertEqual(
+            crear_etiquetas("i", ""),
+            "<i></i>",
+            "Esperado: <i></i>"
+        )
 
 
 myTests().main()
@@ -629,12 +662,12 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(repetir_letras("Hello"), "lololo", "Esperado: lololo")
-      self.assertEqual(repetir_letras("ab"), "ababab", "Esperado: ababab")
-      self.assertEqual(repetir_letras("Hi"), "HiHiHi", "Esperado: HiHiHi")
-      self.assertEqual(repetir_letras("Candy"), "dydydy", "Esperado: dydydy")
-      self.assertEqual(repetir_letras("Code"), "dedede", "Esperado: dedede")
+    def testOne(self):
+        self.assertEqual(repetir_letras("Hello"), "lololo", "Esperado: lololo")
+        self.assertEqual(repetir_letras("ab"), "ababab", "Esperado: ababab")
+        self.assertEqual(repetir_letras("Hi"), "HiHiHi", "Esperado: HiHiHi")
+        self.assertEqual(repetir_letras("Candy"), "dydydy", "Esperado: dydydy")
+        self.assertEqual(repetir_letras("Code"), "dedede", "Esperado: dedede")
 
 
 myTests().main()
@@ -669,14 +702,16 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(otra_repetir_letras("Hello", 3), "lololo", "Esperado: lololo")
-      self.assertEqual(otra_repetir_letras("ab", 2), "abab", "Esperado: abab")
-      self.assertEqual(
+    def testOne(self):
+        self.assertEqual(
+            otra_repetir_letras("Hello", 3), "lololo", "Esperado: lololo"
+        )
+        self.assertEqual(otra_repetir_letras("ab", 2), "abab", "Esperado: abab")
+        self.assertEqual(
             otra_repetir_letras("Hi", 6), "HiHiHiHiHiHi", "Esperado: HiHiHi"
-      )
-      self.assertEqual(otra_repetir_letras("Candy", 1), "dy", "Esperado: dy")
-      self.assertEqual(otra_repetir_letras("Code", 0), "", "Esperado: ''")
+        )
+        self.assertEqual(otra_repetir_letras("Candy", 1), "dy", "Esperado: dy")
+        self.assertEqual(otra_repetir_letras("Code", 0), "", "Esperado: ''")
 
 
 myTests().main()
@@ -711,14 +746,18 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(primera_mitad("WooHoo"), "Woo", "Esperado: Woo")
-      self.assertEqual(primera_mitad("HelloThere"), "Hello", "Esperado: Hello")
-      self.assertEqual(primera_mitad("abcdef"), "abc", "Esperado: abc")
-      self.assertEqual(primera_mitad(""), "", "Esperado: ")
-      self.assertEqual(primera_mitad("ab"), "a", "Esperado: a")
-      self.assertEqual(primera_mitad("0123456789"), "01234", "Esperado: 01234")
-      self.assertEqual(primera_mitad("kitten"), "kit", "Esperado: kit")
+    def testOne(self):
+        self.assertEqual(primera_mitad("WooHoo"), "Woo", "Esperado: Woo")
+        self.assertEqual(
+            primera_mitad("HelloThere"), "Hello", "Esperado: Hello"
+        )
+        self.assertEqual(primera_mitad("abcdef"), "abc", "Esperado: abc")
+        self.assertEqual(primera_mitad(""), "", "Esperado: ")
+        self.assertEqual(primera_mitad("ab"), "a", "Esperado: a")
+        self.assertEqual(
+            primera_mitad("0123456789"), "01234", "Esperado: 01234"
+        )
+        self.assertEqual(primera_mitad("kitten"), "kit", "Esperado: kit")
 
 
 myTests().main()
@@ -753,20 +792,20 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(remover_primer_ultimo("Hello"), "ell", "Esperado: ell")
-      self.assertEqual(remover_primer_ultimo("Python"), "ytho", "Esperado: ytho")
-      self.assertEqual(remover_primer_ultimo("coding"), "odin", "Esperado: odin")
-      self.assertEqual(remover_primer_ultimo("code"), "od", "Esperado: od")
-      self.assertEqual(remover_primer_ultimo("ab"), "", "Esperado: ")
-      self.assertEqual(
+    def testOne(self):
+        self.assertEqual(remover_primer_ultimo("Hello"), "ell", "Esperado: ell")
+        self.assertEqual(remover_primer_ultimo("Python"), "ytho", "Esperado: ytho")
+        self.assertEqual(remover_primer_ultimo("coding"), "odin", "Esperado: odin")
+        self.assertEqual(remover_primer_ultimo("code"), "od", "Esperado: od")
+        self.assertEqual(remover_primer_ultimo("ab"), "", "Esperado: ")
+        self.assertEqual(
             remover_primer_ultimo(" PyZombies "), "PyZombies", "Esperado: PyZombies"
-      )
-      self.assertEqual(
+        )
+        self.assertEqual(
             remover_primer_ultimo("Chocolate!"), "hocolate", "Esperado: hocolate"
-      )
-      self.assertEqual(remover_primer_ultimo("kitten"), "itte", "Esperado: itte")
-      self.assertEqual(remover_primer_ultimo("woohoo"), "ooho", "Esperado: ooho")
+        )
+        self.assertEqual(remover_primer_ultimo("kitten"), "itte", "Esperado: itte")
+        self.assertEqual(remover_primer_ultimo("woohoo"), "ooho", "Esperado: ooho")
 
 
 myTests().main()
@@ -800,66 +839,20 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(rotar_izq_2("Hello"), "lloHe", "Esperado: lloHe")
-      self.assertEqual(rotar_izq_2("python"), "thonpy", "Esperado: thonpy")
-      self.assertEqual(rotar_izq_2("Hi"), "Hi", "Esperado: Hi")
-      self.assertEqual(rotar_izq_2("code"), "deco", "Esperado: deco")
-      self.assertEqual(rotar_izq_2("cat"), "tca", "Esperado: tca")
-      self.assertEqual(rotar_izq_2("12345"), "34512", "Esperado: 34512")
-      self.assertEqual(rotar_izq_2("Chocolate"), "ocolateCh", "Esperado: ocolateCh")
-      self.assertEqual(rotar_izq_2("bricks"), "icksbr", "Esperado: icksbr")
-      self.assertEqual(rotar_izq_2("isPyzomb"), "PyZombies", "Esperado: PyZombies")
-
-
-myTests().main()
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="ejercicio-13">
-<h2>Ejercicio 13<a class="headerlink" href="#ejercicio-13" title="Permalink to this headline">¶</a></h2>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=q7_13 data-question_label="12">
-<div id=q7_13_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remover_iesimo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> no vacía y un entero positivo <code class="docutils literal notranslate"><span class="pre">i</span></code> y devuelva la cadena original sin el i-esimo carácter <br /> <br />
-Ejemplos:<br />
-<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;Hello&quot;,</span> <span class="pre">1)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ello&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;Hi&quot;,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;H&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;PyZombiess&quot;,</span> <span class="pre">10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;PyZombies&quot;</span></code> <br /></p>
-
-</div>
-<textarea data-lang="python" id="q7_13_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def remover_iesimo(s, i):
-
-
-
-====
-from unittest.gui import TestCaseGui
-
-
-class myTests(TestCaseGui):
-   def testOne(self):
-      self.assertEqual(remover_iesimo("Hello", 1), "ello", "Esperado: ello")
-      self.assertEqual(remover_iesimo("python", 6), "pytho", "Esperado: pytho")
-      self.assertEqual(remover_iesimo("Hi", 0), "Hi", "Esperado: Hi")
-      self.assertEqual(remover_iesimo("code", 5), "code", "Esperado: code")
-      self.assertEqual(remover_iesimo("cat", 1), "ct", "Esperado: ct")
-      self.assertEqual(remover_iesimo("12345", 3), "1245", "Esperado: 1245")
-      self.assertEqual(
-            remover_iesimo("Chocolate", 15), "Chocolate", "Esperado: Chocolate"
-      )
-      self.assertEqual(
-            remover_iesimo("Hola mundo", 5), "Holamundo", "Esperado: Holamundo"
-      )
-      self.assertEqual(
-            remover_iesimo("Pyzombis ", 9), "PyZombies", "Esperado: PyZombies"
-      )
+    def testOne(self):
+        self.assertEqual(rotar_izq_2("Hello"), "lloHe", "Esperado: lloHe")
+        self.assertEqual(rotar_izq_2("python"), "thonpy", "Esperado: thonpy")
+        self.assertEqual(rotar_izq_2("Hi"), "Hi", "Esperado: Hi")
+        self.assertEqual(rotar_izq_2("code"), "deco", "Esperado: deco")
+        self.assertEqual(rotar_izq_2("cat"), "tca", "Esperado: tca")
+        self.assertEqual(rotar_izq_2("12345"), "34512", "Esperado: 34512")
+        self.assertEqual(
+            rotar_izq_2("Chocolate"), "ocolateCh", "Esperado: ocolateCh"
+        )
+        self.assertEqual(rotar_izq_2("bricks"), "icksbr", "Esperado: icksbr")
+        self.assertEqual(
+            rotar_izq_2("isPyzomb"), "PyZombies", "Esperado: PyZombies"
+        )
 
 
 myTests().main()

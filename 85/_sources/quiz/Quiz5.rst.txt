@@ -10,7 +10,7 @@ Quiz - 5
 Ejercicio 1
 -----------
 
-.. clickablearea:: q5_1
+..  clickablearea:: q5_1
     :question: El siguiente programa declara una variable en el lugar equivocado del código. Su tarea es seleccionar la declaración incorrecta y seleccionar la línea correcta donde debería ir. 
     :iscode:
     :feedback: Recuerda, que no puedes usar una variable sin haberla declarado anteriormente.
@@ -29,7 +29,7 @@ Ejercicio 1
 Ejercicio 2
 -----------
 
-.. activecode:: q5_2
+..  activecode:: q5_2
     :nocodelens:
 
     Traduzca el programa anterior (con la declaración en el lugar correcto) al lenguaje Python utilizando el siguiente bloque de código. |br|
@@ -41,7 +41,7 @@ Ejercicio 2
 Ejercicio 3
 -----------
 
-.. fillintheblank:: q5_3
+..  fillintheblank:: q5_3
 
     ¿Qué imprime el programa anterior?
 
@@ -52,18 +52,18 @@ Ejercicio 3
 Ejercicio 4
 -----------
 
-.. code-block:: none
+..  code-block:: none
 
     para i = 1 hasta 9:
         si i != 3 entonces:
             para j = 1 hasta 6:
-            imprimir("Hola")
+                imprimir("Hola")
 
 .. raw:: html
 
    <br/>
 
-.. activecode:: q5_4
+..  activecode:: q5_4
     :nocodelens:
 
     Traduzca el programa anterior al lenguaje Python utilizando el siguiente bloque de código. |br|
@@ -76,7 +76,7 @@ Ejercicio 4
 Ejercicio 5
 -----------
 
-.. fillintheblank:: q5_5
+..  fillintheblank:: q5_5
 
     ¿Cuántas veces el programa anterior imprime ``"Hola"``?
 
@@ -87,15 +87,14 @@ Ejercicio 5
 Ejercicio 6
 -----------
 
-.. activecode:: q5_6
+..  activecode:: q5_6
     :nocodelens:
-    :autograde:
     
     Desarrolle la función ``pares_divisibles_7`` que recibe como parámetros dos enteros positivos, ``inicio`` y ``fin`` que representan el inicio y el fin de un intervalo de números, la función tiene que devolver la cantidad de números que son pares y también divisibles por 7. |br| |br|
     Ejemplos: |br|
     ``pares_divisibles_7(1, 7)`` -> ``0`` |br|
-    ``pares_divisibles_7(25, 123)`` -> ``'7'`` |br|
-    ``pares_divisibles_7(13, 245)`` -> ``'17'`` |br|
+    ``pares_divisibles_7(25, 123)`` -> ``7`` |br|
+    ``pares_divisibles_7(13, 245)`` -> ``17`` |br|
     
     ~~~~
     def pares_divisibles_7(inicio, fin):
@@ -121,7 +120,7 @@ Ejercicio 6
 Ejercicio 7
 -----------
 
-.. fillintheblank:: q5_7
+..  fillintheblank:: q5_7
 
     Utilice la función creada en el ejercicio anterior para responder ¿Cuántos números son pares y también divisibles por 7 entre 1067 y 3627 (inclusive)?
 
@@ -132,15 +131,15 @@ Ejercicio 7
 Ejercicio 8
 -----------
 
-.. activecode:: q5_8
+..  activecode:: q5_8
     :nocodelens:
 
-    Daniela es una persona muy supersticiosa. Para ella, un número tiene **suerte** si contiene el dígito ``2`` pero no el ``7``. Ella además es muy curiosa y está interesada en saber ¿cuántos números de la suerte hay en un intervalo de números (incluido los extremos)?. Para ello le ha solicitado a usted que haga la función llamada ``cuantos_tienen_suerte``,  que recibe como parámetros dos enteros positivos, ``inicio`` y ``fin`` que representan el inicio y el fin de un intervalo de números, la función tiene que devolver la cantidad de números que tienen **suerte** |br| |br|
+    Daniela es una persona muy supersticiosa. Para ella, un número tiene **suerte** si contiene el dígito ``2`` pero no el ``7``. Ella además es muy curiosa y está interesada en saber ¿cuántos números de la suerte hay en un intervalo de números (incluido los extremos)?. Para ello le ha solicitado a usted que haga la función llamada ``cuantos_tienen_suerte``,  que recibe como parámetros dos enteros positivos, ``inicio`` y ``fin`` que representan el inicio y el fin de un intervalo de números, la función tiene que devolver la cantidad de números que tienen **suerte**. |br| |br|
     Ejemplos: |br|
     ``cuantos_tienen_suerte(1, 7)`` -> ``1`` |br|
     ``cuantos_tienen_suerte(1, 20)`` -> ``3`` |br|
-    ``cuantos_tienen_suerte(25, 123)`` -> ``'16'`` |br|
-    ``cuantos_tienen_suerte(13, 245)`` -> ``'74'`` |br|
+    ``cuantos_tienen_suerte(25, 123)`` -> ``16`` |br|
+    ``cuantos_tienen_suerte(13, 245)`` -> ``74`` |br|
     
     ~~~~
     def cuantos_tienen_suerte(inicio, fin):
@@ -166,7 +165,8 @@ Ejercicio 8
 
 Ejercicio 9
 -----------
-.. fillintheblank:: q5_9
+
+..  fillintheblank:: q5_9
 
     Utilice la función creada en el ejercicio anterior para responder ¿Cuántos números tienen suerte entre 18644 y 33087 (inclusive)?
 
@@ -177,7 +177,7 @@ Ejercicio 9
 Ejercicio 10
 ------------
 
-.. activecode:: q5_10
+..  activecode:: q5_10
     :nocodelens:
 
     En el tranquilo pueblo rural de *Ponteironuloville*, todos los teléfonos tienen 6 dígitos. La compañía telefónica establece las siguientes reglas sobre los números: |br|
@@ -208,36 +208,16 @@ Ejercicio 10
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(
-                es_numero_ponteironuloville("123457"), True, "Esperado: True"
-            )
-            self.assertEqual(
-                es_numero_ponteironuloville("234562"), False, "Esperado: False"
-            )
-            self.assertEqual(
-                es_numero_ponteironuloville("304706"), True, "Esperado: True"
-            )
-            self.assertEqual(
-                es_numero_ponteironuloville("222222"), False, "Esperado: False"
-            )
-            self.assertEqual(
-                es_numero_ponteironuloville("123456"), False, "Esperado: False"
-            )
-            self.assertEqual(
-                es_numero_ponteironuloville("312214"), False, "Esperado: False"
-            )
-            self.assertEqual(
-                es_numero_ponteironuloville("312312"), True, "Esperado: True"
-            )
-            self.assertEqual(
-                es_numero_ponteironuloville("131313"), True, "Esperado: True"
-            )
-            self.assertEqual(
-                es_numero_ponteironuloville("249184"), True, "Esperado: True"
-            )
-            self.assertEqual(
-                es_numero_ponteironuloville("012445"), False, "Esperado: False"
-            )
+            self.assertEqual(es_numero_ponteironuloville("123457"), True, "Esperado: True")
+            self.assertEqual(es_numero_ponteironuloville("234562"), False, "Esperado: False")
+            self.assertEqual(es_numero_ponteironuloville("304706"), True, "Esperado: True")
+            self.assertEqual(es_numero_ponteironuloville("222222"), False, "Esperado: False")
+            self.assertEqual(es_numero_ponteironuloville("123456"), False, "Esperado: False")
+            self.assertEqual(es_numero_ponteironuloville("312214"), False, "Esperado: False")
+            self.assertEqual(es_numero_ponteironuloville("312312"), True, "Esperado: True")
+            self.assertEqual(es_numero_ponteironuloville("131313"), True, "Esperado: True")
+            self.assertEqual(es_numero_ponteironuloville("249184"), True, "Esperado: True")
+            self.assertEqual(es_numero_ponteironuloville("012445"), False, "Esperado: False")
 
 
     myTests().main()
@@ -246,7 +226,7 @@ Ejercicio 10
 Ejercicio 11
 ------------
 
-.. activecode:: q5_11
+..  activecode:: q5_11
     :nocodelens:
     :include: q5_10
 
@@ -290,7 +270,7 @@ Ejercicio 11
 Ejercicio 12
 ------------
 
-.. fillintheblank:: q5_12
+..  fillintheblank:: q5_12
 
     Utilice la función creada en el ejercicio anterior para responder ¿Cuántos números de la lista son válidos de acuerdo a las reglas de *Ponteironuloville*?
 

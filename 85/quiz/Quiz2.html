@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 6 &#8212; PyZombis 13_quiz_5@7508ea7</title>
+    <title>Quiz - 2 &#8212; PyZombis 13_quiz_5@a9e7590</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -70,8 +70,8 @@
     <script src="../_static/presenter_mode.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quiz - 1" href="../quiz/Quiz1.html" />
-    <link rel="prev" title="Introducción al desarrollo web" href="TWP65.html" />
+    <link rel="next" title="Quiz - 3" href="Quiz3.html" />
+    <link rel="prev" title="Quiz - 1" href="Quiz1.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport' />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 13_quiz_5@7508ea7</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 13_quiz_5@a9e7590</a>
       </div>
     </div>
 
@@ -229,7 +229,7 @@
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=Quiz6'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=Quiz2'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -250,7 +250,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Quiz - 6</a></li>
+<li><a class="reference internal" href="#">Quiz - 2</a></li>
 </ul>
 </ul>
 </li>
@@ -258,14 +258,14 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Introducción al desarrollo web" data-toggle="tooltip">
-    <a href="TWP65.html" >
+  <li id="relations-prev" title="Previous Chapter - Quiz - 1" data-toggle="tooltip">
+    <a href="Quiz1.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Quiz - 1' data-toggle="tooltip" >              
-    <a href="../quiz/Quiz1.html" >
+  <li id="relations-next" title='Next Chapter - Quiz - 3' data-toggle="tooltip" >              
+    <a href="Quiz3.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -295,137 +295,30 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="quiz-6">
-<h1>Quiz - 6<a class="headerlink" href="#quiz-6" title="Permalink to this headline">¶</a></h1>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=dormir data-question_label="1">
-<div id=dormir_question class="ac_question col-md-12">
-<p>A. Dormir :
-dia_semana es True para dias de semana
-feriado es True los dias feriados
-podes quedar durmiendo cuando es feriado o no es un dia de entresemana
-retorna True o False dependiendo si vas a dormir o no</p>
-
-</div>
-<textarea data-lang="python" id="dormir_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def dormir(dia_semana, feriado):
-    return not dia_semana or feriado
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        print ('Oh si! Hoy voy a quedar durmiendo!')
-        self.assertEqual(dormir(False, False), True,"Excelente! obtenido: True esperado: True")
-        self.assertEqual(dormir(True, False), False, "Excelente! obtenido: False esperado: False")
-        self.assertEqual(dormir(False, True), True,"Excelente! obtenido: True esperado: True")
-        self.assertEqual(dormir(True, True), True,"Excelente! obtenido: True esperado: True")
-
-myTests().main()
-</textarea>
-</div>
-</div>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=alumnos_problema data-question_label="2">
-<div id=alumnos_problema_question class="ac_question col-md-12">
-<p>B. alumnos_problema:
-tenemos dos alumnos a y b
-a_sonrrie y b_sonrrie indican si a y b sonrrien
-tenemos problemas cuando ambos estan sonriendo o cuando ambos no estan sonriendo
-retorne True cuando hay problemas</p>
-
-</div>
-<textarea data-lang="python" id="alumnos_problema_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def alumnos_problema(a_sonrrie, b_sonrrie):
-   return a_sonrrie == b_sonrrie
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        print ('Alumnos con problema')
-        self.assertEqual(alumnos_problema(True, True), True,"Excelente! obtenido: True esperado: True")
-        self.assertEqual(alumnos_problema(False, False), True,"Excelente! obtenido: True esperado: True")
-        self.assertEqual(alumnos_problema(True, False), False,"Excelente! obtenido: False esperado: False")
-        self.assertEqual(alumnos_problema(False, True), False,"Excelente! obtenido: False esperado: False")
-
-myTests().main()
-</textarea>
-</div>
-</div>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=suma_doble data-question_label="3">
-<div id=suma_doble_question class="ac_question col-md-12">
-<p>C. suma_doble
-dado dos enteros retorna su suma
-pero si los numeros son iguales devuelve el doble de la suma
-suma_doble(1, 2) -&gt; 3
-suma_doble(2, 2) -&gt; 8</p>
-
-</div>
-<textarea data-lang="python" id="suma_doble_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def suma_doble(a, b):
-    return a + b  if a != b else (a + a) * 2
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        print ('Suma doble')
-        self.assertEqual(suma_doble(1, 2), 3,"Excelente! obtenido: 3 esperado: 3")
-        self.assertEqual(suma_doble(3, 2), 5, "Excelente! obtenido: 5 esperado: 5")
-        self.assertEqual(suma_doble(2, 2), 8,"Excelente! obtenido: 8 esperado: 8")
-        self.assertEqual(suma_doble(-1, 0), -1,"Excelente! obtenido: -1 esperado: -1")
-        self.assertEqual(suma_doble(0, 0), 0,"Excelente! obtenido: 0 esperado: 0")
-        self.assertEqual(suma_doble(0, 1), 1,"Excelente! obtenido: 1 esperado: 1")
-
-myTests().main()
-</textarea>
-</div>
-</div>
+  <div class="section" id="quiz-2">
+<h1>Quiz - 2<a class="headerlink" href="#quiz-2" title="Permalink to this headline">¶</a></h1>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Introducción al desarrollo web' data-toggle="tooltip">
-    <a href="TWP65.html" >
+  <li id="relations-prev" class="navLink" title='Previous Section - Quiz - 1' data-toggle="tooltip">
+    <a href="Quiz1.html" >
         <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
         </div>
     </a>
   </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP65.html" ></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="Quiz1.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Quiz - 1' data-toggle="tooltip" >
-    <a href="../quiz/Quiz1.html" >
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 3' data-toggle="tooltip" >
+    <a href="Quiz3.html" >
       <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
       </div>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="../quiz/Quiz1.html" >Next Section - Quiz - 1</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="Quiz3.html" >Next Section - Quiz - 3</a>
 
 <script type="text/javascript">
 
