@@ -94,7 +94,7 @@ Ejercicio 3
     :nocodelens:
 
 
-    Desarrolle la función llamada ``suma_con_suerte`` que recibe tres números enteros ``a``, ``b`` y ``c``. La función debe devolver la suma de los tres números con la condición de que si uno de los números es el **13**, éste no cuenta en la suma asi como todos los números que se encuentren a su derecha. |br| |br|
+    Desarrolle la función llamada ``suma_con_suerte`` que recibe tres números enteros ``a``, ``b`` y ``c``. La función debe devolver la suma de los tres números con la condición de que si uno de los números es el **13**, éste no cuenta en la suma así como todos los números que se encuentren a su derecha. |br| |br|
     Ejemplos: |br|
     ``suma_con_suerte(1, 2, 3)`` -> ``6`` |br|
     ``suma_con_suerte(1, 2, 13)`` -> ``3`` |br|
@@ -170,7 +170,7 @@ Ejercicio 5
 .. activecode:: q10_5
     :nocodelens:
 
-    Desarrolle la función, ``contar_saludo`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``"hola"`` en ``s`` |br| |br|
+    Desarrolle la función, ``contar_saludo`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``"hola"`` en ``s``. |br| |br|
     Ejemplos: |br|
     ``contar_saludo("abc hola ho")`` -> ``1`` |br|
     ``contar_saludo("ABChola hola")`` -> ``2`` |br|
@@ -206,7 +206,7 @@ Ejercicio 6
 .. activecode:: q10_6
     :nocodelens:
 
-    Desarrolle la función ``gato_perro`` que recibe como parámetro una cadena ``s`` y devuelve ``True`` si en la cadena ``s`` aparece el mismo número de veces la cadena "gato" y la cadena "perro" o devuelve ``False`` en caso contrario. |br| |br|
+    Desarrolle la función ``gato_perro`` que recibe como parámetro una cadena ``s`` y devuelve ``True`` si en la cadena ``s`` aparece el mismo número de veces la cadena ``"gato"`` y la cadena ``"perro"`` o devuelve ``False`` en caso contrario. |br| |br|
     Ejemplos: |br|
     ``gato_perro("gatoperro")`` -> ``True`` |br|
     ``gato_perro("gatogato")`` -> ``False`` |br|
@@ -246,7 +246,7 @@ Ejercicio 7
 .. activecode:: q10_7
     :nocodelens:
 
-    Desarrolle la función ``contar_code`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``"code"`` en ``s`` pero con la condición de que la letra ``'s'`` puede ser intercambiada por cualquier otra. Así, las cadenas ``"coze"`` y ``"coxe"`` deben ser contada igualmente. |br| |br|
+    Desarrolle la función ``contar_code`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``"code"`` en ``s`` pero con la condición de que la letra ``'s'`` puede ser intercambiada por cualquier otra. Así, las cadenas ``"coze"`` y ``"coxe"`` deben ser contadas igualmente. |br| |br|
     Ejemplos:|br|
     ``contar_code("aaacodebbb")`` -> ``1`` |br|
     ``contar_code("codexxcode")`` -> ``2`` |br|
@@ -287,7 +287,7 @@ Ejercicio 8
 .. activecode:: q10_8
     :nocodelens:
 
-    Sabiendo que la función ``lower()`` convierte los carácteres de una cadena en minúsculas. Desarrolle una función llamada ``finales_iguales`` que recibe dos cadenas ``a`` y ``b``` como parámetros. La función devolverá ``True`` si al final de la cadena ``a`` se encuentra la cadena ``b`` o si al final de la cadena ``a`` se encuentra la cadena ``b`` |br| |br|
+    Sabiendo que la función ``lower()`` convierte los carácteres de una cadena en minúsculas. Desarrolle una función llamada ``finales_iguales`` que recibe dos cadenas ``a`` y ``b``` como parámetros. La función devolverá ``True`` si al final de la cadena ``a`` se encuentra la cadena ``b`` o si al final de la cadena ``b`` se encuentra la cadena ``a``. |br| |br|
     Ejemplos: |br|
     ``finales_iguales("Hiabc", "abc")`` -> ``True`` |br|
     ``finales_iguales("AbC", "HiaBc")`` -> ``True`` |br|
@@ -363,7 +363,7 @@ Ejercicio 10
 .. activecode:: q10_10
     :nocodelens:
 
-    Desarrolle la función ``suma_con_mas_suerte`` que recibe una lista ``numeros`` de números enteros y devolver la suma de los números de lista con la condición de que si uno de los números es el **13**, éste no cuenta en la suma asi como todos los números que se encuentren a su derecha. |br| |br|
+    Desarrolle la función ``suma_con_mas_suerte`` que recibe una lista ``numeros`` de números enteros y devuelve la suma de los números de la lista con la condición de que si uno de los números es el **13**, éste no cuenta en la suma así como todos los números que se encuentren a su derecha. |br| |br|
     Ejemplos: |br|
     ``suma_con_mas_suerte([1, 2, 2, 1])`` -> ``6`` |br|
     ``suma_con_mas_suerte([1, 1])`` -> 2 |br|
@@ -407,7 +407,7 @@ Ejercicio 11
 .. activecode:: q10_11
     :nocodelens:
 
-    Desarrolle la función ``tiene_2`` que recibe como parámetro una lista ``numeros`` de números enteros y devolver ``True`` si en la lista aparecen dos números consecutivos y ``False`` en caso contrario. |br| |br|
+    Desarrolle la función ``tiene_2`` que recibe como parámetro una lista ``numeros`` de números enteros y devuelve ``True`` si en la lista aparecen dos números iguales consecutivos y ``False`` en caso contrario. |br| |br|
     Ejemplos: |br|
     ``tiene_2([1, 2, 2])`` -> ``True`` |br|
     ``tiene_2([1, 2, 1, 2])`` -> ``False`` |br|
@@ -448,7 +448,7 @@ Ejercicio 12
 .. activecode:: q10_12
     :nocodelens:
 
-    Desarrolle la función ``suma_en_lista`` que recibe dos parámetros, un entero ``n`` y un lista ``numeros`` de números. La función debe devolver ``True`` si existen unicamente dos elementos de la lista que su suma da como resultado ``n`` y devolver ``False`` en caso contrario. |br| |br|
+    Desarrolle la función ``suma_en_lista`` que recibe dos parámetros, un entero ``n`` y un lista ``numeros`` de números. La función debe devolver ``True`` si existen dos elementos distintos de la lista que su suma da como resultado ``n`` y devolver ``False`` en caso contrario. |br| |br|
     Ejemplos: |br|
     ``suma_en_lista(5, [1, 2, 3, 4])`` -> ``True`` |br|
     ``suma_en_lista(9, [1, 2, 3, 4])`` -> ``False`` |br|
@@ -474,6 +474,8 @@ Ejercicio 12
             self.assertEqual(suma_en_lista(4, [2, 2, 2, 2]), False, "Esperado: False")
             self.assertEqual(suma_en_lista(4, [2, 2, 1, 3]), True, "Esperado: True")
             self.assertEqual(suma_en_lista(42, [40, 2, 3, 39]), True, "Esperado: True")
+            self.assertEqual(suma_en_lista(10, [5, 5, 4, 6]), True, "Esperado: True")
+            self.assertEqual(suma_en_lista(8, [5, 5, 4, 4]), False, "Esperado: False")
 
 
     myTests().main()
