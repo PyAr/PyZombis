@@ -13,8 +13,8 @@ Ejercicio 1
 ..  activecode:: q10_1
     :nocodelens:
 
-    Desarrolle la función ``cerca_de_10`` que recibe un entero ``n`` y devuelve ``True`` cuando ``n`` sea múltiplo de 10, o esté a dos unidades de serlo, o ``False`` en caso contrario. |br| |br|
-    Ejmplos: |br|
+    Desarrolle la función ``cerca_de_10`` que recibe un entero ``n`` y devuelve ``True`` cuando ``n`` sea múltiplo de 10, o cuando ``n`` esté a una o dos unidades de serlo. En caso contrario devuelva ``False``. |br| |br|
+    Ejemplos: |br|
     ``cerca_de_10(12)`` -> ``True`` |br|
     ``cerca_de_10(17)`` -> ``False`` |br|
     ``cerca_de_10(19)`` -> ``True`` |br|
@@ -246,7 +246,7 @@ Ejercicio 7
 .. activecode:: q10_7
     :nocodelens:
 
-    Desarrolle la función ``contar_code`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``"code"`` en ``s`` pero con la condición de que la letra ``'s'`` puede ser intercambiada por cualquier otra. Así, las cadenas ``"coze"`` y ``"coxe"`` deben ser contadas igualmente. |br| |br|
+    Desarrolle la función ``contar_code`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``"code"`` en ``s`` pero con la condición de que la letra ``'d'`` puede ser intercambiada por cualquier otra. Así, las cadenas ``"coze"`` y ``"coxe"`` deben ser contadas igualmente. |br| |br|
     Ejemplos:|br|
     ``contar_code("aaacodebbb")`` -> ``1`` |br|
     ``contar_code("codexxcode")`` -> ``2`` |br|
@@ -287,7 +287,7 @@ Ejercicio 8
 .. activecode:: q10_8
     :nocodelens:
 
-    Sabiendo que la función ``lower()`` convierte los carácteres de una cadena en minúsculas. Desarrolle una función llamada ``finales_iguales`` que recibe dos cadenas ``a`` y ``b``` como parámetros. La función devolverá ``True`` si al final de la cadena ``a`` se encuentra la cadena ``b`` o si al final de la cadena ``b`` se encuentra la cadena ``a``. |br| |br|
+    Sabiendo que la función ``lower()`` convierte los carácteres de una cadena en minúsculas. Desarrolle una función llamada ``finales_iguales`` que recibe dos cadenas ``a`` y ``b`` como parámetros. La función devolverá ``True`` si al final de la cadena ``a`` se encuentra la cadena ``b`` o si al final de la cadena ``b`` se encuentra la cadena ``a``. |br| |br|
     Ejemplos: |br|
     ``finales_iguales("Hiabc", "abc")`` -> ``True`` |br|
     ``finales_iguales("AbC", "HiaBc")`` -> ``True`` |br|
@@ -366,7 +366,7 @@ Ejercicio 10
     Desarrolle la función ``suma_con_mas_suerte`` que recibe una lista ``numeros`` de números enteros y devuelve la suma de los números de la lista con la condición de que si uno de los números es el **13**, éste no cuenta en la suma así como todos los números que se encuentren a su derecha. |br| |br|
     Ejemplos: |br|
     ``suma_con_mas_suerte([1, 2, 2, 1])`` -> ``6`` |br|
-    ``suma_con_mas_suerte([1, 1])`` -> 2 |br|
+    ``suma_con_mas_suerte([1, 1])`` -> ``2`` |br|
     ``suma_con_mas_suerte([1, 2, 13, 1, 13])`` -> ``3`` |br|
     ``suma_con_mas_suerte([13, 1, 2, 3, 4])`` -> ``0`` |br|
 
