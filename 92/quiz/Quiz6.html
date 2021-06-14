@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 6 &#8212; PyZombis 15_quiz10@2ae685e</title>
+    <title>Quiz - 6 &#8212; PyZombis 15_quiz10@6701ef6</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 15_quiz10@2ae685e</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 15_quiz10@6701ef6</a>
       </div>
     </div>
 
@@ -297,107 +297,136 @@
   
   <div class="section" id="quiz-6">
 <h1>Quiz - 6<a class="headerlink" href="#quiz-6" title="Permalink to this headline">¶</a></h1>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=dormir data-question_label="1">
+<div id=dormir_question class="ac_question col-md-12">
+<p>A. Dormir : <br /> <br />
+dia_semana y True para días de semana <br /> <br /></p>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz6.rst</span>, line 10)</p>
-<p>Duplicate ID – see lectures/Quiz6, line 9</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">dormir</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-
-   <span class="n">A</span><span class="o">.</span> <span class="n">Dormir</span> <span class="p">:</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-   <span class="n">dia_semana</span> <span class="n">y</span> <span class="kc">True</span> <span class="n">para</span> <span class="n">días</span> <span class="n">de</span> <span class="n">semana</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">vacaciones</span> <span class="n">y</span> <span class="kc">True</span> <span class="n">en</span> <span class="n">vacaciones</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">puedes</span> <span class="n">quedarte</span> <span class="n">dormido</span> <span class="n">cuando</span> <span class="n">sea</span> <span class="n">festivo</span> <span class="n">o</span> <span class="n">no</span> <span class="n">entre</span> <span class="n">semana</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">devuelva</span> <span class="n">Verdadero</span> <span class="n">o</span> <span class="n">Falso</span> <span class="n">cuando</span> <span class="n">se</span> <span class="n">vaya</span> <span class="n">a</span> <span class="n">dormir</span> <span class="n">o</span> <span class="n">no</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>  <span class="n">br</span><span class="o">|</span>
-
-   <span class="o">~~~~</span>
-   <span class="k">def</span> <span class="nf">dormir</span><span class="p">(</span><span class="n">dia_semana</span><span class="p">,</span> <span class="n">feriado</span><span class="p">):</span>
-
-
-   <span class="o">====</span>
-   <span class="kn">from</span> <span class="nn">unittest.gui</span> <span class="kn">import</span> <span class="n">TestCaseGui</span>
-
-   <span class="k">class</span> <span class="nc">myTests</span><span class="p">(</span><span class="n">TestCaseGui</span><span class="p">):</span>
-
-       <span class="k">def</span> <span class="nf">testOne</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">dormir</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: True esperado: True&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">dormir</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;Excelente! obtenido: False esperado: False&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">dormir</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: True esperado: True&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">dormir</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: True esperado: True&quot;</span><span class="p">)</span>
-
-   <span class="n">myTests</span><span class="p">()</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
-</pre></div>
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz6.rst</span>, line 15)</p>
+<p>Unexpected indentation.</p>
 </div>
+<blockquote>
+<div><p>vacaciones y True en vacaciones <br /> <br />
+puedes quedarte dormido cuando sea festivo o no entre semana <br /> <br />
+devuelva Verdadero o Falso cuando se vaya a dormir o no <br />  br|</p>
+</div></blockquote>
+
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz6.rst</span>, line 36)</p>
-<p>Duplicate ID – see lectures/Quiz6, line 36</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">alumnos_problema</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-
-   <span class="n">B</span><span class="o">.</span> <span class="n">problema_alumnos</span><span class="p">:</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">tenemos</span> <span class="n">dos</span> <span class="n">estudiantes</span> <span class="n">ayb</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">a_sorri</span> <span class="n">y</span> <span class="n">b_sorri</span> <span class="n">indican</span> <span class="n">si</span> <span class="n">ayb</span> <span class="n">sonríen</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">tenemos</span> <span class="n">problemas</span> <span class="n">cuando</span> <span class="n">ambos</span> <span class="n">sonríen</span> <span class="n">o</span> <span class="n">ambos</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">no</span> <span class="n">están</span> <span class="n">sonriendo</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">devuelve</span> <span class="kc">True</span> <span class="n">cuando</span> <span class="n">hay</span> <span class="n">problemas</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-   <span class="o">~~~~</span>
-   <span class="k">def</span> <span class="nf">alumnos_problema</span><span class="p">(</span><span class="n">a_sonrrie</span><span class="p">,</span> <span class="n">b_sonrrie</span><span class="p">):</span>
+<textarea data-lang="python" id="dormir_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static 
+     style="visibility: hidden;">
+def dormir(dia_semana, feriado):
 
 
-   <span class="o">====</span>
-   <span class="kn">from</span> <span class="nn">unittest.gui</span> <span class="kn">import</span> <span class="n">TestCaseGui</span>
+====
+from unittest.gui import TestCaseGui
 
-   <span class="k">class</span> <span class="nc">myTests</span><span class="p">(</span><span class="n">TestCaseGui</span><span class="p">):</span>
+class myTests(TestCaseGui):
 
-       <span class="k">def</span> <span class="nf">testOne</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">alumnos_problema</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: True esperado: True&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">alumnos_problema</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span> <span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: True esperado: True&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">alumnos_problema</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span> <span class="kc">False</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: False esperado: False&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">alumnos_problema</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="kc">False</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: False esperado: False&quot;</span><span class="p">)</span>
+    def testOne(self):
+        self.assertEqual(dormir(False, False), True,"Excelente! obtenido: True esperado: True")
+        self.assertEqual(dormir(True, False), False, "Excelente! obtenido: False esperado: False")
+        self.assertEqual(dormir(False, True), True,"Excelente! obtenido: True esperado: True")
+        self.assertEqual(dormir(True, True), True,"Excelente! obtenido: True esperado: True")
 
-   <span class="n">myTests</span><span class="p">()</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
-
-</pre></div>
-</div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz6.rst</span>, line 63)</p>
-<p>Duplicate ID – see lectures/Quiz6, line 63</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">suma_doble</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-
-   <span class="n">C</span><span class="o">.</span> <span class="n">suma_doble</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">dados</span> <span class="n">dos</span> <span class="n">enteros</span> <span class="n">devuelve</span> <span class="n">su</span> <span class="n">suma</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">sin</span> <span class="n">embargo</span><span class="p">,</span> <span class="n">si</span> <span class="n">los</span> <span class="n">números</span> <span class="n">son</span> <span class="n">iguales</span><span class="p">,</span> <span class="n">devuelve</span> <span class="n">el</span> <span class="n">doble</span> <span class="n">de</span> <span class="n">la</span> <span class="n">suma</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">doble_</span> <span class="n">suma</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">3</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-    <span class="n">doble_</span> <span class="n">suma</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">8</span> <span class="o">|</span><span class="n">br</span><span class="o">|</span>
-
-
-   <span class="o">~~~~</span>
-   <span class="k">def</span> <span class="nf">suma_doble</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-
-
-   <span class="o">====</span>
-   <span class="kn">from</span> <span class="nn">unittest.gui</span> <span class="kn">import</span> <span class="n">TestCaseGui</span>
-
-   <span class="k">class</span> <span class="nc">myTests</span><span class="p">(</span><span class="n">TestCaseGui</span><span class="p">):</span>
-
-       <span class="k">def</span> <span class="nf">testOne</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">suma_doble</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">3</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: 3 esperado: 3&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">suma_doble</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;Excelente! obtenido: 5 esperado: 5&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">suma_doble</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">8</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: 8 esperado: 8&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">suma_doble</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: -1 esperado: -1&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">suma_doble</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: 0 esperado: 0&quot;</span><span class="p">)</span>
-           <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">suma_doble</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span><span class="s2">&quot;Excelente! obtenido: 1 esperado: 1&quot;</span><span class="p">)</span>
-
-   <span class="n">myTests</span><span class="p">()</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
-
-</pre></div>
+myTests().main()
+</textarea>
 </div>
 </div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=diff21 data-question_label="1">
+<div data-component="activecode" id=alumnos_problema data-question_label="2">
+<div id=alumnos_problema_question class="ac_question col-md-12">
+<ol class="upperalpha simple" start="2">
+<li><p>problema_alumnos: <br /></p></li>
+</ol>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz6.rst</span>, line 40)</p>
+<p>Enumerated list ends without a blank line; unexpected unindent.</p>
+</div>
+<blockquote>
+<div><p>tenemos dos estudiantes ayb <br />
+a_sorri y b_sorri indican si ayb sonríen <br />
+tenemos problemas cuando ambos sonríen o ambos <br />
+no están sonriendo <br />
+devuelve True cuando hay problemas <br /></p>
+</div></blockquote>
+
+</div>
+<textarea data-lang="python" id="alumnos_problema_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static 
+     style="visibility: hidden;">
+def alumnos_problema(a_sonrrie, b_sonrrie):
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(alumnos_problema(True, True), True,"Excelente! obtenido: True esperado: True")
+        self.assertEqual(alumnos_problema(False, False), True,"Excelente! obtenido: True esperado: True")
+        self.assertEqual(alumnos_problema(True, False), False,"Excelente! obtenido: False esperado: False")
+        self.assertEqual(alumnos_problema(False, True), False,"Excelente! obtenido: False esperado: False")
+
+myTests().main()
+</textarea>
+</div>
+</div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=suma_doble data-question_label="3">
+<div id=suma_doble_question class="ac_question col-md-12">
+<ol class="upperalpha simple" start="3">
+<li><p>suma_doble <br /></p></li>
+</ol>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz6.rst</span>, line 67)</p>
+<p>Enumerated list ends without a blank line; unexpected unindent.</p>
+</div>
+<blockquote>
+<div><p>dados dos enteros devuelve su suma <br />
+sin embargo, si los números son iguales, devuelve el doble de la suma <br />
+<a href="#id11"><span class="problematic" id="id12">doble_</span></a> suma (1, 2) -&gt; 3 <br />
+<a href="#id13"><span class="problematic" id="id14">doble_</span></a> suma (2, 2) -&gt; 8 <br /></p>
+</div></blockquote>
+
+</div>
+<textarea data-lang="python" id="suma_doble_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static 
+     style="visibility: hidden;">
+def suma_doble(a, b):
+
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(suma_doble(1, 2), 3,"Excelente! obtenido: 3 esperado: 3")
+        self.assertEqual(suma_doble(3, 2), 5, "Excelente! obtenido: 5 esperado: 5")
+        self.assertEqual(suma_doble(2, 2), 8,"Excelente! obtenido: 8 esperado: 8")
+        self.assertEqual(suma_doble(-1, 0), -1,"Excelente! obtenido: -1 esperado: -1")
+        self.assertEqual(suma_doble(0, 0), 0,"Excelente! obtenido: 0 esperado: 0")
+        self.assertEqual(suma_doble(0, 1), 1,"Excelente! obtenido: 1 esperado: 1")
+
+myTests().main()
+</textarea>
+</div>
+</div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=diff21 data-question_label="4">
 <div id=diff21_question class="ac_question col-md-12">
 <p>D. diff21 <br />
 dado un número entero n devuelve la diferencia absoluta entre n y 21 <br /></p>
@@ -445,7 +474,7 @@ myTests().main()
 </div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=papagaio data-question_label="2">
+<div data-component="activecode" id=papagaio data-question_label="5">
 <div id=papagaio_question class="ac_question col-md-12">
 <ol class="upperalpha simple" start="5">
 <li><p>loro <br /></p></li>
@@ -491,7 +520,7 @@ myTests().main()
 </div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=dez data-question_label="3">
+<div data-component="activecode" id=dez data-question_label="6">
 <div id=dez_question class="ac_question col-md-12">
 <ol class="upperalpha simple" start="6">
 <li><p>dez | br |</p></li>
@@ -537,7 +566,7 @@ myTests().main()
 </div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=dista10 data-question_label="4">
+<div data-component="activecode" id=dista10 data-question_label="7">
 <div id=dista10_question class="ac_question col-md-12">
 <ol class="upperalpha simple" start="7">
 <li><p>dista10 <br /></p></li>
@@ -592,7 +621,7 @@ myTests().main()
 </div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=apaga data-question_label="5">
+<div data-component="activecode" id=apaga data-question_label="8">
 <div id=apaga_question class="ac_question col-md-12">
 <ol class="upperalpha simple" start="8">
 <li><p>borra | br |</p></li>
@@ -642,7 +671,7 @@ myTests().main()
 </div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=troca data-question_label="6">
+<div data-component="activecode" id=troca data-question_label="9">
 <div id=troca_question class="ac_question col-md-12">
 <ol class="upperroman simple">
 <li><p>intercambio <br /></p></li>
