@@ -7,7 +7,10 @@ Quiz - Extras
    <br />
 
 
-.. activecode:: Josephus
+Ejercicio 1
+-----------
+
+.. activecode:: qExtra_1
    :nocodelens:
 
    Problema de Josephus. Imagine que temos n pessoas dispostas em círculo. Suponha que as pessoas estão numeradas 1 a n no sentido horário. |br|
@@ -18,7 +21,6 @@ Quiz - Extras
    def josephus(n,m):
 
        
-
    ====
    from unittest.gui import TestCaseGui
 
@@ -31,9 +33,10 @@ Quiz - Extras
    myTests().main()
 
 
+Ejercicio 2
+-----------
 
-
-.. activecode:: soe
+.. activecode:: qExtra_2
    :nocodelens:
 
    Implemente o crivo de Eratóstenes |br|
@@ -61,9 +64,10 @@ Quiz - Extras
    myTests().main()
 
 
+Ejercicio 3
+-----------
 
-
-.. activecode:: ep2
+.. activecode:: qExtra_3
    :nocodelens:
 
     Verifique para que serve a palavra reservada yield e dpois resolva o problema 2 do Euler Project. |br|
@@ -91,7 +95,10 @@ Quiz - Extras
    myTests().main()
 
 
-.. activecode:: chessgrainsum
+Ejercicio 4
+-----------
+
+.. activecode:: qExtra_4
    :nocodelens:
 
    No livro “O Homem que Calculava”, de Malba Tahan, um personagem desejava ganhar os grãos de trigos que fossem distribuídos sobre um tabuleiro de xadrez do seguinte modo: |br|
@@ -118,7 +125,10 @@ Quiz - Extras
    myTests().main()
 
 
-.. activecode:: tiles
+Ejercicio 5
+-----------
+
+.. activecode:: qExtra_5
    :nocodelens:
 
    N telhas com dimensões de 10cm x 10cm são dadas. Com eles, você deve montar um conjunto de quadrados (com espessura de um ladrilho) para usar TODOS os ladrilhos dados. |br|
