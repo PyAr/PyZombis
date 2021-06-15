@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 11 &#8212; PyZombis fixQuizzes@5d34d14</title>
+    <title>Quiz - 11 &#8212; PyZombis fixQuizzes@be845d5</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis fixQuizzes@5d34d14</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis fixQuizzes@be845d5</a>
       </div>
     </div>
 
@@ -540,7 +540,7 @@ myTests().main()
 <code class="docutils literal notranslate"><span class="pre">frase</span></code> y <code class="docutils literal notranslate"><span class="pre">palabra</span></code>, ambos de tipo cadena. La función debe devolver
 el número de veces que <code class="docutils literal notranslate"><span class="pre">palabra</span></code> se encuentra en <code class="docutils literal notranslate"><span class="pre">frase</span></code>. <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">contar_ocurrencias(&quot;ana</span> <span class="pre">y</span> <span class="pre">mariana</span> <span class="pre">gozan</span> <span class="pre">de</span> <span class="pre">bananas&quot;,</span> <span class="pre">&quot;ana&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">4</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">contar_ocurrencias(&quot;a</span> <span class="pre">ana</span> <span class="pre">y</span> <span class="pre">a</span> <span class="pre">mariana</span> <span class="pre">les</span> <span class="pre">gustan</span> <span class="pre">las</span> <span class="pre">manzanas&quot;,</span> <span class="pre">&quot;ana&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">3</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q11_6_editor" 
@@ -559,9 +559,9 @@ class myTests(TestCaseGui):
     def testOne(self):
 
         self.assertEqual(
-            contar_ocurrencias("ana y mariana gozan de bananas", "ana"),
-            4,
-            "Esperado: 4",
+            contar_ocurrencias("a ana y a mariana les gustan las manzanas", "ana"),
+            3,
+            "Esperado: 3",
         )
         self.assertEqual(contar_ocurrencias("Cats, rats, bats, and hats.", "ats"), 4, "Esperado: 4")
 
