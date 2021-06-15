@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 11 &#8212; PyZombis master@dfc341b</title>
+    <title>Quiz - 11 &#8212; PyZombis master@8addf71</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@dfc341b</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@8addf71</a>
       </div>
     </div>
 
@@ -250,7 +250,15 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Quiz - 11</a></li>
+<li><a class="reference internal" href="#">Quiz - 11</a><ul>
+<li><a class="reference internal" href="#ejercicio-1">Ejercicio 1</a></li>
+<li><a class="reference internal" href="#ejercicio-2">Ejercicio 2</a></li>
+<li><a class="reference internal" href="#ejercicio-3">Ejercicio 3</a></li>
+<li><a class="reference internal" href="#ejercicio-4">Ejercicio 4</a></li>
+<li><a class="reference internal" href="#ejercicio-5">Ejercicio 5</a></li>
+<li><a class="reference internal" href="#ejercicio-6">Ejercicio 6</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -297,227 +305,270 @@
   
   <div class="section" id="quiz-11">
 <h1>Quiz - 11<a class="headerlink" href="#quiz-11" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=donuts data-question_label="1">
-<div id=donuts_question class="ac_question col-md-12">
-<p>A. donuts <br />
-Para um inteiro n retorna uma string na forma ‘Número de donuts: &lt;n&gt;’ <br />
-onde n é o valor passado como argumento. <br />
-Caso n &gt;= 10 devo retornar ‘muitos’ em lugar do número. <br />
-donuts(5) returns ‘Número de donuts: 5’ <br />
-donuts(23) returns ‘Número de donuts: muitos’ <br /></p>
+<div data-component="activecode" id=q11_1 data-question_label="1">
+<div id=q11_1_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">cuantas_donas</span></code> que toma a <code class="docutils literal notranslate"><span class="pre">n</span></code>, un número entero
+positivo, como parámetro, y devuelve una cadena de forma <code class="docutils literal notranslate"><span class="pre">&quot;Número</span> <span class="pre">de</span> <span class="pre">donas:</span> <span class="pre">n&quot;</span></code>,
+donde <code class="docutils literal notranslate"><span class="pre">n</span></code> es el valor que se le pasó a la función como argumento. No obstante,
+si <code class="docutils literal notranslate"><span class="pre">n</span></code> &gt;= 10, <code class="docutils literal notranslate"><span class="pre">cuantas_donas</span></code> devolverá <code class="docutils literal notranslate"><span class="pre">&quot;muchas&quot;</span></code> en vez de <code class="docutils literal notranslate"><span class="pre">n</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">cuantas_donas(5)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Número</span> <span class="pre">de</span> <span class="pre">donas:</span> <span class="pre">5&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">cuantas_donas(23)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Número</span> <span class="pre">de</span> <span class="pre">donas:</span> <span class="pre">muchas&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="donuts_editor" 
+<textarea data-lang="python" id="q11_1_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def donuts(n):
-
+def cuantas_donas(n):
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(donuts(4), 'Número de donuts: 4',"Esperado: Número de donuts: 4")
-        self.assertEqual(donuts(9), 'Número de donuts: 9',"Esperado: Número de donuts: 9")
-        self.assertEqual(donuts(10), 'Número de donuts: muitos',"Esperado: Número de donuts: muitos")
-        self.assertEqual(donuts(99), 'Número de donuts: muitos',"Esperado: Número de donuts: muitos")
+        self.assertEqual(cuantas_donas(4), "Número de donas: 4", "Esperado: Número de donas: 4")
+        self.assertEqual(cuantas_donas(9), "Número de donas: 9", "Esperado: Número de donas: 9")
+        self.assertEqual(
+            cuantas_donas(10),
+            "Número de donas: muchas",
+            "Esperado: Número de donas: muchas",
+        )
+        self.assertEqual(
+            cuantas_donas(99),
+            "Número de donas: muchas",
+            "Esperado: Número de donas: muchas",
+        )
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=pontas data-question_label="2">
-<div id=pontas_question class="ac_question col-md-12">
-<p>B. pontas <br />
-Dada uma string s, retorna uma string com as duas primeiras e as duas <br />
-últimas letras da string original s <br />
-Assim ‘palmeiras’ retorna ‘paas’ <br />
-No entanto, se a string tiver menos que 2 letras, retorna uma string vazia <br /></p>
+<div data-component="activecode" id=q11_2 data-question_label="2">
+<div id=q11_2_question class="ac_question col-md-12">
+<p>Desarrolla la función <code class="docutils literal notranslate"><span class="pre">cadena_de_extremos</span></code> que, dada una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code>,
+devuelva una cadena con las dos primeras y las dos últimas letras de <code class="docutils literal notranslate"><span class="pre">s</span></code>.
+Sin embargo, si la cadena tiene menos de 2 letras, devuelve una cadena vacía. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">cadena_de_extremos(&quot;palmeras&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;paas&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">cadena_de_extremos(&quot;a&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="pontas_editor" 
+<textarea data-lang="python" id="q11_2_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def pontas(s):
-
+def cadena_de_extremos(s):
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(pontas('palmeiras'), 'paas',"Esperado: paas")
-        self.assertEqual(pontas('algoritmos'), 'alos',"Esperado: alos")
-        self.assertEqual(pontas('a'), '',"Esperado: ''")
-        self.assertEqual(pontas('xyz'), 'xyyz',"Esperado: xyyz")
-
+        self.assertEqual(cadena_de_extremos("palmeras"), "paas", "Esperado: paas")
+        self.assertEqual(cadena_de_extremos("algoritmos"), "alos", "Esperado: alos")
+        self.assertEqual(cadena_de_extremos("co"), "coco", "Esperado: coco")
+        self.assertEqual(cadena_de_extremos("a"), "", "Esperado: ''")
+        self.assertEqual(cadena_de_extremos("xyz"), "xyyz", "Esperado: xyyz")
+        self.assertEqual(cadena_de_extremos(""), "", "Esperado: ''")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-3">
+<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=fixa_primeiro data-question_label="3">
-<div id=fixa_primeiro_question class="ac_question col-md-12">
-<p>C. fixa_primeiro <br />
-Dada uma string s, retorna uma string onde todas as ocorrências <br />
-do primeiro caracter são trocados por ‘*’, exceto para o primeiro <br />
-Assim ‘abacate’ retorna ‘ab*c*te’ <br />
-Dica: use s.replace(stra, strb)  <br /></p>
+<div data-component="activecode" id=q11_3 data-question_label="3">
+<div id=q11_3_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remplazar_primer_caracter</span></code> que, dada una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code>,
+devuelva una cadena en la que todas las apariciones del primer carácter en <code class="docutils literal notranslate"><span class="pre">s</span></code>
+se reemplacen por “*”, a excepción del primero. <strong>Nota:</strong>
+use el método <code class="docutils literal notranslate"><span class="pre">.replace(valor_a_replazar,</span> <span class="pre">nuevo_valor)</span></code> para resolver el
+ejercicio. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">remplazar_primer_caracter(&quot;google&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;goo*le&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remplazar_primer_caracter(&quot;dona&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;dona&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="fixa_primeiro_editor" 
+<textarea data-lang="python" id="q11_3_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def fixa_primeiro(s):
-
+def remplazar_primer_caracter(s):
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(fixa_primeiro('babble'), 'ba**le',"Esperado: ba**le")
-        self.assertEqual(fixa_primeiro('aardvark'), 'a*rdv*rk',"Esperado: a*rdv*rk")
-        self.assertEqual(fixa_primeiro('google'), 'goo*le',"Esperado: goo*le")
-        self.assertEqual(fixa_primeiro('donut'), 'donut',"Esperado: donut")
-
+        self.assertEqual(remplazar_primer_caracter("babble"), "ba**le", "Esperado: ba**le")
+        self.assertEqual(remplazar_primer_caracter("aardvark"), "a*rdv*rk", "Esperado: a*rdv*rk")
+        self.assertEqual(remplazar_primer_caracter("google"), "goo*le", "Esperado: goo*le")
+        self.assertEqual(remplazar_primer_caracter("dona"), "dona", "Esperado: dona")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-4">
+<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=mistura2 data-question_label="4">
-<div id=mistura2_question class="ac_question col-md-12">
-<p>D. mistura2 <br />
-Sejam duas strings a e b <br />
-Retorno uma string ‘&lt;a&gt; &lt;b&gt;’ separada por um espaço <br />
-com as duas letras trocadas de cada string  <br />
-‘mix’, pod’ -&gt; ‘pox mid’ <br />
-‘dog’, ‘dinner’ -&gt; ‘dig donner’ <br /></p>
+<div data-component="activecode" id=q11_4 data-question_label="4">
+<div id=q11_4_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">combinar_dos_cadenas</span></code> que tome dos cadenas como
+argumentos, <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>, y devuelva una nueva cadena de la siguiente forma:</p>
+<ul class="simple">
+<li><p>La nueva cadena tiene que ser una combinación de <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>.</p></li>
+<li><p>La nueva cadena tendrá la forma <code class="docutils literal notranslate"><span class="pre">&quot;&lt;a&gt;</span> <span class="pre">&lt;b&gt;&quot;</span></code>, note el espacio entre ambas.</p></li>
+<li><p>La nueva cadena intercambiará las primeras dos letras de <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>.</p></li>
+</ul>
+<p>Suponga que <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code> tienen más de 2 caracteres.
+Para mayor claridad, observe los siguientes ejemplos. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">combinar_dos_cadenas(&quot;mix&quot;,</span> <span class="pre">&quot;pod&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;pox</span> <span class="pre">mid&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">combinar_dos_cadenas(&quot;pezzy&quot;,</span> <span class="pre">&quot;firm&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;fizzy</span> <span class="pre">perm&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="mistura2_editor" 
+<textarea data-lang="python" id="q11_4_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def mistura2(a, b):
-
+def combinar_dos_cadenas(a, b):
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(mistura2('mix', 'pod'), 'pox mid',"Esperado: pox mid")
-        self.assertEqual(mistura2('dog', 'dinner'), 'dig donner',"Esperado: dig donner")
-        self.assertEqual(mistura2('gnash', 'sport'), 'spash gnort',"Esperado: spash gnort")
-        self.assertEqual(mistura2('pezzy', 'firm'), 'fizzy perm',"Esperado: fizzy perm")
-
+        self.assertEqual(combinar_dos_cadenas("mix", "pod"), "pox mid", "Esperado: pox mid")
+        self.assertEqual(combinar_dos_cadenas("dog", "dinner"), "dig donner", "Esperado: dig donner")
+        self.assertEqual(
+            combinar_dos_cadenas("gnash", "sport"),
+            "spash gnort",
+            "Esperado: spash gnort",
+        )
+        self.assertEqual(combinar_dos_cadenas("pezzy", "firm"), "fizzy perm", "Esperado: fizzy perm")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-5">
+<h2>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=palindrome data-question_label="5">
-<div id=palindrome_question class="ac_question col-md-12">
-<p>E. palindrome <br />
-Verifique se uma string é palíndrome <br />
-palindrome(‘asa’) True <br />
-palindrome(‘casa’) False  <br /></p>
+<div data-component="activecode" id=q11_5 data-question_label="5">
+<div id=q11_5_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">es_palindromo</span></code> que toma una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> como
+parámetro y verifica si <code class="docutils literal notranslate"><span class="pre">s</span></code> es palíndromo o no, devolviendo <code class="docutils literal notranslate"><span class="pre">True</span></code> o
+<code class="docutils literal notranslate"><span class="pre">False</span></code> respectivamente. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">es_palindromo(&quot;asa&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_palindromo(&quot;casa&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code>  <br /></p>
 
 </div>
-<textarea data-lang="python" id="palindrome_editor" 
+<textarea data-lang="python" id="q11_5_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def palindrome(s):
-
+def es_palindromo(s):
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(palindrome('asa'), True,"Esperado: True")
-        self.assertEqual(palindrome('casa'), False,"Esperado: False")
+        self.assertEqual(es_palindromo("asa"), True, "Esperado: True")
+        self.assertEqual(es_palindromo("casa"), False, "Esperado: False")
+        self.assertEqual(es_palindromo("reconocer"), True, "Esperado: True")
+        self.assertEqual(es_palindromo("palabra"), False, "Esperado: False")
+        self.assertEqual(es_palindromo("radar"), True, "Esperado: True")
+        self.assertEqual(es_palindromo("seres"), True, "Esperado: True")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-6">
+<h2>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=busca data-question_label="6">
-<div id=busca_question class="ac_question col-md-12">
-<p>F. busca (COMP 89 IME-USP) <br />
-Verifique quantas ocorrências de uma palavra há numa frase <br />
-frase = ‘ana e mariana gostam de banana’ <br />
-palavra = ‘ana’ <br />
-busca (‘ana e mariana gostam de banana’, ‘ana’) == 4 <br />
-Hall of Fame Victor H. Panisa, 1a turma Python para Zumbis <br /></p>
+<div data-component="activecode" id=q11_6 data-question_label="6">
+<div id=q11_6_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">contar_ocurrencias</span></code> que toma dos parámetros:
+<code class="docutils literal notranslate"><span class="pre">frase</span></code> y <code class="docutils literal notranslate"><span class="pre">palabra</span></code>, ambos de tipo cadena. La función debe devolver
+el número de veces que <code class="docutils literal notranslate"><span class="pre">palabra</span></code> se encuentra en <code class="docutils literal notranslate"><span class="pre">frase</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">contar_ocurrencias(&quot;a</span> <span class="pre">ana</span> <span class="pre">y</span> <span class="pre">a</span> <span class="pre">mariana</span> <span class="pre">les</span> <span class="pre">gustan</span> <span class="pre">las</span> <span class="pre">manzanas&quot;,</span> <span class="pre">&quot;ana&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">3</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="busca_editor" 
+<textarea data-lang="python" id="q11_6_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def busca(frase, palavra):
-
+def contar_ocurrencias(frase, palabra):
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(busca('ana e mariana gostam de banana', 'ana'), 4,"Esperado: 4")
-        self.assertEqual(busca('uma arara ou duas araras', 'ara'), 4,"Esperado: 4")
+        self.assertEqual(
+            contar_ocurrencias("a ana y a mariana les gustan las manzanas", "ana"),
+            3,
+            "Esperado: 3",
+        )
+        self.assertEqual(contar_ocurrencias("Cats, rats, bats, and hats.", "ats"), 4, "Esperado: 4")
 
 
 myTests().main()
 </textarea>
+</div>
 </div>
 </div>
 </div>
