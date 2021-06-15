@@ -387,7 +387,7 @@ Ejemplo
     nota = 8
     promedio = 6
     aprobado = nota > promedio
-    print(aprovado)
+    print(aprobado)
 
 
 Operadores Lógicos
@@ -662,7 +662,7 @@ Prueba de escritorio o simulación
 
 + Comprender que el valor de las variables puede cambiar durante la ejecución de
   un programa no es tan natural, pero es fundamental a la hora de programar
-+ Un programa no puede leerse como texto, pero con cuidado
++ Un programa no puede leerse como texto, sino con cuidado
   analizado línea por línea
 + Puedes entrenar con lápiz, borrador y papel
 
@@ -670,7 +670,7 @@ Prueba de escritorio o simulación
 Prueba de escritorio o simulación
 =================================
 
-.. table:: **Teste de mesa ou simulação**
+.. table:: **Prueba de mesa o simulación**
    :widths: auto
 
    ====== ====== ====
@@ -697,8 +697,7 @@ Entrada de datos
 
 
 + Hasta ahora nuestros programas han trabajado con valores conocidos.
-+ Comenzaremos a obtener los valores durante la ejecución de los programas y
-  usar el modo de edición más
++ Comenzaremos a obtener los valores durante la ejecución de los programas.
 
 
 .. activecode:: Input_Example_1
@@ -713,8 +712,8 @@ Conversión de entrada de datos
 ==============================
 
 + La función  ``input`` solo devuelve cadenas
-+ Usamos la función ``int()`` y ``float()`` para convertir un valor a un entero
-  a un valor punto flotante respectivamente
++ Usamos la función ``int()`` y ``float()`` para convertir un valor a un entero o
+  a un valor de punto flotante respectivamente
 
 .. activecode:: Input_Example_2
    :nocodelens:
@@ -729,7 +728,7 @@ Error común
 ===========
 
 
-+ Cuidado con olvidar los parentesis. Un error en esto daría un error como el
++ Cuidado con olvidar los paréntesis. Un error en esto daría un error como el
   siguiente
 
 .. image:: img/TWP05_040.png
