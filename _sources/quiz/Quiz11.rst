@@ -7,183 +7,225 @@ Quiz - 11
    <br />
 
 
-.. activecode:: donuts
+Ejercicio 1
+-----------
+
+.. activecode:: q11_1
    :nocodelens:
 
-   A. donuts |br|
-   Para um inteiro n retorna uma string na forma 'Número de donuts: <n>' |br|
-   onde n é o valor passado como argumento. |br|
-   Caso n >= 10 devo retornar 'muitos' em lugar do número. |br|
-   donuts(5) returns 'Número de donuts: 5' |br|
-   donuts(23) returns 'Número de donuts: muitos' |br|
+   Desarrolle la función ``cuantas_donas`` que toma a ``n``, un número entero 
+   positivo, como parámetro, y devuelve una cadena de forma ``"Número de donas: n"``, 
+   donde ``n`` es el valor que se le pasó a la función como argumento. No obstante, 
+   si ``n`` >= 10, ``cuantas_donas`` devolverá ``"muchas"`` en vez de ``n``. |br| |br|
+   Ejemplos: |br|
+   ``cuantas_donas(5)`` -> ``"Número de donas: 5"`` |br|
+   ``cuantas_donas(23)`` -> ``"Número de donas: muchas"`` |br|
 
    ~~~~
-   def donuts(n):
+   def cuantas_donas(n):
 
        
-
    ====
    from unittest.gui import TestCaseGui
 
+
    class myTests(TestCaseGui):
-
        def testOne(self):
-           
-           self.assertEqual(donuts(4), 'Número de donuts: 4',"Esperado: Número de donuts: 4")
-           self.assertEqual(donuts(9), 'Número de donuts: 9',"Esperado: Número de donuts: 9")
-           self.assertEqual(donuts(10), 'Número de donuts: muitos',"Esperado: Número de donuts: muitos")
-           self.assertEqual(donuts(99), 'Número de donuts: muitos',"Esperado: Número de donuts: muitos")
-              
-
+   
+           self.assertEqual(cuantas_donas(4), "Número de donas: 4", "Esperado: Número de donas: 4")
+           self.assertEqual(cuantas_donas(9), "Número de donas: 9", "Esperado: Número de donas: 9")
+           self.assertEqual(
+               cuantas_donas(10),
+               "Número de donas: muchas",
+               "Esperado: Número de donas: muchas",
+           )
+           self.assertEqual(
+               cuantas_donas(99),
+               "Número de donas: muchas",
+               "Esperado: Número de donas: muchas",
+           )
+   
+   
    myTests().main()
 
 
-.. activecode:: pontas
+Ejercicio 2
+-----------
+
+.. activecode:: q11_2
    :nocodelens:
 
-   B. pontas |br|
-   Dada uma string s, retorna uma string com as duas primeiras e as duas |br|
-   últimas letras da string original s |br|
-   Assim 'palmeiras' retorna 'paas' |br|
-   No entanto, se a string tiver menos que 2 letras, retorna uma string vazia |br|
+   Desarrolla la función ``cadena_de_extremos`` que, dada una cadena ``s``, 
+   devuelva una cadena con las dos primeras y las dos últimas letras de ``s``. 
+   Sin embargo, si la cadena tiene menos de 2 letras, devuelve una cadena vacía. |br| |br| 
+   Ejemplos: |br|
+   ``cadena_de_extremos("palmeras")`` -> ``"paas"`` |br|
+   ``cadena_de_extremos("a")`` -> ``""`` |br|
 
    ~~~~
-   def pontas(s):
+   def cadena_de_extremos(s):
 
        
-
    ====
    from unittest.gui import TestCaseGui
 
+
    class myTests(TestCaseGui):
-
        def testOne(self):
-           
-           self.assertEqual(pontas('palmeiras'), 'paas',"Esperado: paas")
-           self.assertEqual(pontas('algoritmos'), 'alos',"Esperado: alos")
-           self.assertEqual(pontas('a'), '',"Esperado: ''")
-           self.assertEqual(pontas('xyz'), 'xyyz',"Esperado: xyyz")
- 
-              
-
+   
+           self.assertEqual(cadena_de_extremos("palmeras"), "paas", "Esperado: paas")
+           self.assertEqual(cadena_de_extremos("algoritmos"), "alos", "Esperado: alos")
+           self.assertEqual(cadena_de_extremos("co"), "coco", "Esperado: coco")
+           self.assertEqual(cadena_de_extremos("a"), "", "Esperado: ''")
+           self.assertEqual(cadena_de_extremos("xyz"), "xyyz", "Esperado: xyyz")
+           self.assertEqual(cadena_de_extremos(""), "", "Esperado: ''")
+   
+   
    myTests().main()
 
 
-.. activecode:: fixa_primeiro
+Ejercicio 3
+-----------
+
+.. activecode:: q11_3
    :nocodelens:
 
-   C. fixa_primeiro |br|
-   Dada uma string s, retorna uma string onde todas as ocorrências |br|
-   do primeiro caracter são trocados por '*', exceto para o primeiro |br|
-   Assim 'abacate' retorna 'ab*c*te' |br|
-   Dica: use s.replace(stra, strb)  |br|
+   Desarrolle la función ``remplazar_primer_caracter`` que, dada una cadena ``s``, 
+   devuelva una cadena en la que todas las apariciones del primer carácter en ``s`` 
+   se reemplacen por "*", a excepción del primero. **Nota:** 
+   use el método ``.replace(valor_a_replazar, nuevo_valor)`` para resolver el 
+   ejercicio. |br| |br|
+   Ejemplos: |br|
+   ``remplazar_primer_caracter("google")`` -> ``"goo*le"`` |br|
+   ``remplazar_primer_caracter("dona")`` -> ``"dona"`` |br|
 
    ~~~~
-   def fixa_primeiro(s):
+   def remplazar_primer_caracter(s):
 
-       
 
    ====
    from unittest.gui import TestCaseGui
 
+
    class myTests(TestCaseGui):
-
        def testOne(self):
-           
-           self.assertEqual(fixa_primeiro('babble'), 'ba**le',"Esperado: ba**le")
-           self.assertEqual(fixa_primeiro('aardvark'), 'a*rdv*rk',"Esperado: a*rdv*rk")
-           self.assertEqual(fixa_primeiro('google'), 'goo*le',"Esperado: goo*le")
-           self.assertEqual(fixa_primeiro('donut'), 'donut',"Esperado: donut")
- 
-              
-
+   
+           self.assertEqual(remplazar_primer_caracter("babble"), "ba**le", "Esperado: ba**le")
+           self.assertEqual(remplazar_primer_caracter("aardvark"), "a*rdv*rk", "Esperado: a*rdv*rk")
+           self.assertEqual(remplazar_primer_caracter("google"), "goo*le", "Esperado: goo*le")
+           self.assertEqual(remplazar_primer_caracter("dona"), "dona", "Esperado: dona")
+   
+   
    myTests().main()
 
 
-.. activecode:: mistura2
+Ejercicio 4
+-----------
+
+.. activecode:: q11_4
    :nocodelens:
 
-   D. mistura2 |br|
-   Sejam duas strings a e b |br|
-   Retorno uma string '<a> <b>' separada por um espaço |br|
-   com as duas letras trocadas de cada string  |br|
-   'mix', pod' -> 'pox mid' |br|
-   'dog', 'dinner' -> 'dig donner' |br|
+   Desarrolle la función ``combinar_dos_cadenas`` que tome dos cadenas como 
+   argumentos, ``a`` y ``b``, y devuelva una nueva cadena de la siguiente forma: 
+   
+   - La nueva cadena tiene que ser una combinación de ``a`` y ``b``.
+   - La nueva cadena tendrá la forma ``"<a> <b>"``, note el espacio entre ambas.
+   - La nueva cadena intercambiará las primeras dos letras de ``a`` y ``b``.
+
+   Suponga que ``a`` y ``b`` tienen más de 2 caracteres. 
+   Para mayor claridad, observe los siguientes ejemplos. |br| |br|
+   Ejemplos: |br|
+   ``combinar_dos_cadenas("mix", "pod")`` -> ``"pox mid"`` |br|
+   ``combinar_dos_cadenas("pezzy", "firm")`` -> ``"fizzy perm"`` |br|
 
    ~~~~
-   def mistura2(a, b):
+   def combinar_dos_cadenas(a, b):
 
-       
 
    ====
    from unittest.gui import TestCaseGui
 
-   class myTests(TestCaseGui):
-
-       def testOne(self):
-           
-           self.assertEqual(mistura2('mix', 'pod'), 'pox mid',"Esperado: pox mid")
-           self.assertEqual(mistura2('dog', 'dinner'), 'dig donner',"Esperado: dig donner")
-           self.assertEqual(mistura2('gnash', 'sport'), 'spash gnort',"Esperado: spash gnort")
-           self.assertEqual(mistura2('pezzy', 'firm'), 'fizzy perm',"Esperado: fizzy perm")
- 
-              
-
-   myTests().main()
-
-.. activecode:: palindrome
-   :nocodelens:
-
-   E. palindrome |br|
-   Verifique se uma string é palíndrome |br|
-   palindrome('asa') True |br|
-   palindrome('casa') False  |br|
-
-
-   ~~~~
-   def palindrome(s):
-
-       
-
-   ====
-   from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
-
        def testOne(self):
-           
-           self.assertEqual(palindrome('asa'), True,"Esperado: True")
-           self.assertEqual(palindrome('casa'), False,"Esperado: False")
-              
-
+   
+           self.assertEqual(combinar_dos_cadenas("mix", "pod"), "pox mid", "Esperado: pox mid")
+           self.assertEqual(combinar_dos_cadenas("dog", "dinner"), "dig donner", "Esperado: dig donner")
+           self.assertEqual(
+               combinar_dos_cadenas("gnash", "sport"),
+               "spash gnort",
+               "Esperado: spash gnort",
+           )
+           self.assertEqual(combinar_dos_cadenas("pezzy", "firm"), "fizzy perm", "Esperado: fizzy perm")
+   
+   
    myTests().main()
 
 
-.. activecode:: busca
+Ejercicio 5
+-----------
+
+.. activecode:: q11_5
    :nocodelens:
 
-   F. busca (COMP 89 IME-USP) |br|
-   Verifique quantas ocorrências de uma palavra há numa frase |br|
-   frase = 'ana e mariana gostam de banana' |br|
-   palavra = 'ana' |br|
-   busca ('ana e mariana gostam de banana', 'ana') == 4 |br|
-   Hall of Fame Victor H. Panisa, 1a turma Python para Zumbis |br|
-
+   Desarrolle la función ``es_palindromo`` que toma una cadena ``s`` como 
+   parámetro y verifica si ``s`` es palíndromo o no, devolviendo ``True`` o 
+   ``False`` respectivamente. |br| |br| 
+   Ejemplos: |br|
+   ``es_palindromo("asa")`` -> ``True`` |br|
+   ``es_palindromo("casa")`` -> ``False``  |br|
 
    ~~~~
-   def busca(frase, palavra):
+   def es_palindromo(s):
 
+       
+   ====
+   from unittest.gui import TestCaseGui
+
+
+   class myTests(TestCaseGui):
+       def testOne(self):
+   
+           self.assertEqual(es_palindromo("asa"), True, "Esperado: True")
+           self.assertEqual(es_palindromo("casa"), False, "Esperado: False")
+           self.assertEqual(es_palindromo("reconocer"), True, "Esperado: True")
+           self.assertEqual(es_palindromo("palabra"), False, "Esperado: False")
+           self.assertEqual(es_palindromo("radar"), True, "Esperado: True")
+           self.assertEqual(es_palindromo("seres"), True, "Esperado: True")
+   
+   
+   myTests().main()
+
+
+Ejercicio 6
+-----------
+
+.. activecode:: q11_6
+   :nocodelens:
+
+   Desarrolle la función ``contar_ocurrencias`` que toma dos parámetros: 
+   ``frase`` y ``palabra``, ambos de tipo cadena. La función debe devolver 
+   el número de veces que ``palabra`` se encuentra en ``frase``. |br| |br|
+   Ejemplos: |br|  
+   ``contar_ocurrencias("a ana y a mariana les gustan las manzanas", "ana")`` -> ``3`` |br|
+
+   ~~~~
+   def contar_ocurrencias(frase, palabra):
        
 
    ====
    from unittest.gui import TestCaseGui
 
+
    class myTests(TestCaseGui):
-
        def testOne(self):
-
-           self.assertEqual(busca('ana e mariana gostam de banana', 'ana'), 4,"Esperado: 4")
-           self.assertEqual(busca('uma arara ou duas araras', 'ara'), 4,"Esperado: 4") 
-              
-
+   
+           self.assertEqual(
+               contar_ocurrencias("a ana y a mariana les gustan las manzanas", "ana"),
+               3,
+               "Esperado: 3",
+           )
+           self.assertEqual(contar_ocurrencias("Cats, rats, bats, and hats.", "ats"), 4, "Esperado: 4")
+   
+   
    myTests().main()
