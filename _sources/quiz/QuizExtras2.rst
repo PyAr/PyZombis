@@ -9,10 +9,10 @@ Quiz - Extras 2
 Ejercicio 1
 -----------
 
-..  activecode:: qExtra_1
+..  activecode:: qExtra2_1
     :nocodelens:
 
-    Una escuela primaria tiene planeado hacer una visita al zoológico a algunos de sus alumnos. Para esto la escuela solamente puede gastar exactamente ``presupuesto`` unidades y se sabe que la entrada al zoológico cuesta 5 unidades para menores de 12 años y 7 unidades para los que tengan 12 años o mas. Desarrolle la función ``maximo_estudiantes`` que recibe ``presupuesto`` un entero positivo que indica el presupuesto que pretende gasta la escuela. La función debe devolver una tupla ``(p, g)`` con el número máximo pequeños y grandes alumnos que la escuela puede llevar al zoológico considerando todos lo valores como enteros. |br| |br|
+    Una escuela primaria tiene planeado hacer una visita al zoológico a algunos de sus alumnos. Para esto la escuela solo puede gastar exactamente ``presupuesto`` unidades. Se sabe que la entrada al zoológico cuesta 5 unidades para menores de 12 años y 7 unidades para los que tengan 12 años o más. Desarrolle la función ``maximo_estudiantes`` que recibe ``presupuesto`` un entero positivo que indica el presupuesto que pretende gasta la escuela. La función debe devolver una tupla ``(p, g)`` con el número máximo pequeños y grandes alumnos que la escuela puede llevar al zoológico considerando todos los valores como enteros. |br| |br|
     ~~~~
     def maximo_estudiantes(presupuesto):
 
@@ -41,7 +41,7 @@ Ejercicio 1
 Ejercicio 2
 -----------
 
-..  activecode:: qExtra_2
+..  activecode:: qExtra2_2
     :nocodelens:
 
     Desarrolle la función ``a_romano`` que recibe un entero ``n`` positivo mayor que cero. La función debe devolver la conversión del número en sistema arábigo al sistema a romano. La función debe devolver una cadena que represente el número en romano. |br| |br|
@@ -82,10 +82,10 @@ Ejercicio 2
 Ejercicio 3
 -----------
 
-..  activecode:: qExtra_3
+..  activecode:: qExtra2_3
     :nocodelens:
 
-    Desarrolle la función ``calcular_pi`` que recibe un parámetro ``n`` positivo mayor a 0. La función debe calcular el valor aproximado de ``pi`` con ``n`` terminos, de acuerdo a la siguiente fórmula. |br|
+    Desarrolle la función ``calcular_pi`` que recibe un parámetro ``n`` positivo mayor a 0. La función debe calcular el valor aproximado de ``pi`` con ``n`` terminos, de acuerdo con la siguiente fórmula. |br|
 
     ``pi = (4/1) - (4/3) + (4/5) - (4/7) ...`` |br|
 

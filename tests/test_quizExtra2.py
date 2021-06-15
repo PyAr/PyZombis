@@ -9,8 +9,8 @@ def test_quizExtra_3_bad(page):
     page.type("text=def calcular_pi(n):", "return 2")
 
     # Click button:has-text("Run")
-    page.click("#qExtra_3 >> *css=button >> text=Run")
+    page.click("#qExtra2_3 >> *css=button >> text=Run")
 
     # Test it passed all unit tests
-    page.hover("#qExtra_3 >> text=You passed:")
-    assert page.inner_text("#qExtra_3 >> text=You passed:") == "You passed: 0.0% of the tests"
+    page.hover("#qExtra2_3 >> text=You passed:")
+    assert page.inner_text("#qExtra2_3 >> text=You passed:") == "You passed: 0.0% of the tests"
