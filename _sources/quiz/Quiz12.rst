@@ -12,7 +12,7 @@ Ejercicio 1
 ..  activecode:: q12_1
     :nocodelens:
 
-    Desarrolle la función ``verbo`` que recibe una cadena ``s`` como parámetro. Si la longitud de la cadena es al menos 3, debe devolver la cadena original concatenando ``"ing"`` al final. Si la cadena ``s`` ya termina en ``"ing"``, concatene la cadena ``"ly"``. Si la longitud de la cadena en menor 3 devuelve la cadena original. |br| |br|
+    Desarrolle la función ``verbo`` que recibe una cadena ``s`` como parámetro. Si la longitud de la cadena es al menos 3, debe devolver la cadena original concatenando ``"ing"`` al final. Si la cadena ``s`` ya termina en ``"ing"``, concatene la cadena ``"ly"``. Si la longitud de la cadena es menor que 3, devuelve la cadena original. |br| |br|
     Ejemplos: |br|
     ``verbo("singing")`` -> ``"singingly"`` |br|
     ``verbo("travel")`` -> ``"traveling"`` |br|
@@ -102,7 +102,7 @@ Ejercicio 3
 ..  activecode:: q12_3
     :nocodelens:
 
-    Desarrolle la función ``inicio_final`` que recibe dos cadenas ``a`` y ``b``. Las cadenas tienen que ser dividas en dos, si alguna de las cadena tiene un número impar de caracteres, el primer el pedazo agregará el carácter adicional. Dada las dos cadenas, devuelva una nueva cadena formada de la siguiente manera ``a_inicio + b_inicio + a_final + b_final``. |br| |br|
+    Desarrolle la función ``inicio_final`` que recibe dos cadenas ``a`` y ``b``. Las cadenas tienen que ser dividas en dos, si alguna de las cadenas tiene un número impar de caracteres, la primera mitad será la subcadena más larga (por ejemplo ``perro`` se dividirá entre: ``per`` y ``ro``). Dada las dos cadenas, devuelva una nueva cadena formada de la siguiente manera ``a_inicio + b_inicio + a_final + b_final``. |br| |br|
     Ejemplos: |br|
     ``inicio_final("abcd", "1234")`` -> ``"ab12cd34"`` |br|
     ``inicio_final("abc", "1234")`` -> ``"ab12c34"`` |br|
