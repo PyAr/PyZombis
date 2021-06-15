@@ -13,10 +13,10 @@ Ejercicio 1
 .. activecode:: qExtra_1
     :nocodelens:
 
-    **Problema de Josephus**. Imagine que temos ``n`` personas dispuestas en un círculo. Suponga que esas personas están numeradas de 1 a ``n`` en sentido horario. 
+    **Problema de Josephus**. Imagine que tenemos ``n`` personas dispuestas en un círculo. Suponga que esas personas están numeradas de 1 a ``n`` en sentido horario. 
     Comenzando con la persona número **1**, ejecute el círculo en sentido horario y elimine cada ``m``-ésima persona, siempre y cuando el círculo 
     tenga dos o más personas. El reto es desarrollar la función ``josephus`` que toma a ``n`` y a ``m`` como parámetros, ambos números enteros positivos.
-    La función debe devolver el número en el círculo del sobrevivente. |br| |br|
+    La función debe devolver el número de la persona en el círculo que sobrevivió. |br| |br|
 
     ~~~~
     def josephus(n, m):
@@ -146,7 +146,7 @@ Ejercicio 5
 .. activecode:: qExtra_5
     :nocodelens:
 
-    Se dan ``n`` baldosas con dimensión de 10cm x 10cm. Con ellas, usted debe ensamblar un conjunto de cuadrados usando todas las baldosas dadas. Para ello, debe seguir algunas reglas:
+    Se dan ``n`` baldosas con dimensión de 10cm x 10cm. Con ellas, usted debe ensamblar un conjunto de cuadrados usando todas las baldosas dadas. Para ello, debe seguir las siguientes reglas:
 
     - El primer cuadrado que se construya debe usar la mayor cantidad de baldosas posibles.
     - Si quedan bladosas, el siguiente cuadrado también debe construirse con la mayor cantidad de las baldosas que quedaron.
