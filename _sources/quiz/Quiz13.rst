@@ -13,7 +13,7 @@ Ejercicio 1
 .. activecode:: q13_1
    :nocodelens:
 
-   Desarrolle la función ``terminan_igual`` que, dada una lista de cadenas, devuelva el número de cadenas
+   Desarrolle la función ``terminan_igual`` que, dada una lista de cadenas ``palabras``, devuelva el número de cadenas
    con longitud >= 2 donde el primer y último carácter son iguales. |br| |br|
    Ejemplo: |br|
    ``terminan_igual(["aba", "xyz", "aa", "x", "bbb"])`` -> ``3`` |br|
@@ -44,7 +44,7 @@ Ejercicio 2
    :nocodelens:
 
    Desarrolle la función ``x_antes`` que, dada una lista de cadenas ``palabras``, devuelva 
-   otra lista en la que todos los elementos que comienzan con ``"x"`` sean los primeros en la lista. 
+   otra lista en la que todas las cadenas que comienzan con el carácter ``'x'`` sean los primeros elementos de la lista. 
    Después, el resto de palabras serán acomodadas según su orden alfabético. **Nota**: Recuerde 
    que ``sorted(lista)`` devuelve una lista ordenada. |br| |br|
    Ejemplos: |br|
