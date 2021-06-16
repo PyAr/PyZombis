@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; PyZombis facebook-exercise@d29dfe5</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/runtime.bundle.js?v=86da789dd6c461fb052b"></script>
+    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=0e91cff9e660624062d3"></script>
+    <script src="../_static/runestone.bundle.js?v=5a88e358dd1b5b0905e6"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../_static/presenter_mode.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'PyZombisDev';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'PyZombisDev';
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.6.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.downloadsEnabled = false;
+  eBookConfig.enable_chatcodes = false ? false : false;
+  eBookConfig.allow_pairs = false ? false : false;
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis facebook-exercise@d29dfe5</a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/PyZombisDev/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/PyZombisDev/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=conf.py'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+      </div>
+
+
+
+
+
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul class="simple">
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <script type="text/javascript">function CodeChat_doStyle(element) {function walk_tree(elements,func_walk,func_child) {let walk_children = [];for (let index = 0; index < elements.length; ++index) {let that = elements[index];while (that && !func_walk(that)) {that = that.parentElement;}if (that) {that = func_walk(that);walk_children.push(that);while (that && func_child(that)) {that = func_child(that);walk_children.push(that);}}}return walk_children;};element = (typeof element !== 'undefined') ? element : document;let code = element.getElementsByClassName("fenced-code");walk_tree(code, x => x.nextElementSibling, x => x.firstElementChild).map(x =>x.classList.add('CodeChat_noTop'));walk_tree(code, x => x.previousElementSibling, x => x.lastElementChild).map(x =>x.classList.add('CodeChat_noBottom'));}document.addEventListener("DOMContentLoaded", function(event) { CodeChat_doStyle(); });</script><p>-<em>- coding: utf-8 -</em>-</p>
+<p>PyZombis documentation build configuration file, created by
+sphinx-quickstart on Sun Oct 18 20:05:00 2015.</p>
+<p>This file is execfile()d with the current directory set to its
+containing dir.</p>
+<p>Note that not all possible configuration values are present in this
+autogenerated file.</p>
+<p>All configuration values have a default; values that are commented out
+serve to show the default.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span> 
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">shlex</span>
+ 
+</pre></div>
+</div>
+<p>If extensions (or modules to document with autodoc) are in another directory,
+add these directories to sys.path here. If the directory is relative to the
+documentation root, use os.path.abspath to make it absolute, like shown here.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#sys.path.insert(0, os.path.abspath(&#39;.&#39;))</span>
+ 
+</pre></div>
+</div>
+<p>– General configuration ————————————————</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+<p>If your documentation needs a minimal Sphinx version, state it here.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#needs_sphinx = &#39;1.0&#39;</span>
+ 
+</pre></div>
+</div>
+<p>Add any Sphinx extension module names here, as strings. They can be
+extensions coming with Sphinx (named ‘sphinx.ext.*’) or your custom
+ones.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hieroglyph&#39;</span><span class="p">]</span>
+ 
+</pre></div>
+</div>
+<p>Add any paths that contain templates here, relative to this directory.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;_templates&#39;</span><span class="p">]</span>
+ 
+</pre></div>
+</div>
+<p>The suffix(es) of source filenames.
+You can specify multiple suffix as a list of string:
+source_suffix = [‘.rst’, ‘.md’]</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">source_suffix</span> <span class="o">=</span> <span class="s1">&#39;.rst&#39;</span>
+ 
+</pre></div>
+</div>
+<p>The encoding of source files.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#source_encoding = &#39;utf-8-sig&#39;</span>
+ 
+</pre></div>
+</div>
+<p>The master toctree document.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">master_doc</span> <span class="o">=</span> <span class="s1">&#39;index&#39;</span>
+ 
+</pre></div>
+</div>
+<p>General information about the project.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">project</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;PyZombis&#39;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;2015, Mariano Reingart (translated and adapted from Fernando Masanori work)&#39;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Mariano Reingart (translated and adapted from Fernando Masanori work)&#39;</span>
+ 
+</pre></div>
+</div>
+<p>The version info for the project you’re documenting, acts as replacement for
+d29dfe5 and d29dfe5393f3ffbb4a6e139025bbbac03c137aa3-facebook-exercise, also used in various other places throughout the
+built documents.</p>
+<p>The short X.Y version.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;ls&#39;</span>
+</pre></div>
+</div>
+<p>The full version, including alpha/beta/rc tags.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">release</span> <span class="o">=</span> <span class="s1">&#39;ls&#39;</span>
+ 
+</pre></div>
+</div>
+<p>The language for content autogenerated by Sphinx. Refer to documentation
+for a list of supported languages.</p>
+<p>This is also used if you do content translation via gettext catalogs.
+Usually you set “language” from the command line for these cases.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">language</span> <span class="o">=</span> <span class="s1">&#39;es&#39;</span>
+ 
+</pre></div>
+</div>
+<p>There are two options for replacing Jun 16, 2021: either, you set today to some
+non-false value, then it is used:</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#today = &#39;&#39;</span>
+</pre></div>
+</div>
+<p>Else, today_fmt is used as the format for a strftime call.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#today_fmt = &#39;%B %d, %Y&#39;</span>
+ 
+</pre></div>
+</div>
+<p>List of patterns, relative to source directory, that match files and
+directories to ignore when looking for source files.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">exclude_patterns</span> <span class="o">=</span> <span class="p">[]</span>
+ 
+</pre></div>
+</div>
+<p>The reST default role (used for this markup: <cite>text</cite>) to use for all
+documents.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#default_role = None</span>
+ 
+</pre></div>
+</div>
+<p>If true, ‘()’ will be appended to :func: etc. cross-reference text.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#add_function_parentheses = True</span>
+ 
+</pre></div>
+</div>
+<p>If true, the current module name will be prepended to all description
+unit titles (such as .. function::).</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#add_module_names = True</span>
+ 
+</pre></div>
+</div>
+<p>If true, sectionauthor and moduleauthor directives will be shown in the
+output. They are ignored by default.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#show_authors = False</span>
+ 
+</pre></div>
+</div>
+<p>The name of the Pygments (syntax highlighting) style to use.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygments_style</span> <span class="o">=</span> <span class="s1">&#39;sphinx&#39;</span>
+ 
+</pre></div>
+</div>
+<p>A list of ignored prefixes for module index sorting.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#modindex_common_prefix = []</span>
+ 
+</pre></div>
+</div>
+<p>If true, keep warnings as “system message” paragraphs in the built documents.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#keep_warnings = False</span>
+ 
+</pre></div>
+</div>
+<p>If true, <cite>todo</cite> and <cite>todoList</cite> produce output, else they produce nothing.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">todo_include_todos</span> <span class="o">=</span> <span class="kc">False</span>
+ 
+ 
+</pre></div>
+</div>
+<p>– Options for HTML output ———————————————-</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+<p>The theme to use for HTML and HTML Help pages.  See the documentation for
+a list of builtin themes.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;alabaster&#39;</span>
+ 
+</pre></div>
+</div>
+<p>Theme options are theme-specific and customize the look and feel of a theme
+further.  For a list of options available for each theme, see the
+documentation.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_theme_options = {}</span>
+ 
+</pre></div>
+</div>
+<p>Add any paths that contain custom themes here, relative to this directory.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_theme_path = []</span>
+ 
+</pre></div>
+</div>
+<p>The name for this set of Sphinx documents.  If None, it defaults to
+“&lt;project&gt; v&lt;release&gt; documentation”.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_title = None</span>
+ 
+</pre></div>
+</div>
+<p>A shorter title for the navigation bar.  Default is the same as html_title.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_short_title = None</span>
+ 
+</pre></div>
+</div>
+<p>The name of an image file (relative to this directory) to place at the top
+of the sidebar.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_logo = None</span>
+ 
+</pre></div>
+</div>
+<p>The name of an image file (within the static path) to use as favicon of the
+docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
+pixels large.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_favicon = None</span>
+ 
+</pre></div>
+</div>
+<p>Add any paths that contain custom static files (such as style sheets) here,
+relative to this directory. They are copied after the builtin static files,
+so a file named “default.css” will overwrite the builtin “default.css”.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;_static&#39;</span><span class="p">]</span>
+
+<span class="n">slide_theme_options</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;custom_css&#39;</span><span class="p">:</span> <span class="s1">&#39;custom.css&#39;</span><span class="p">}</span>
+ 
+</pre></div>
+</div>
+<p>Add any extra paths that contain custom files (such as robots.txt or
+.htaccess) here, relative to this directory. These files are copied
+directly to the root of the documentation.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_extra_path = []</span>
+ 
+</pre></div>
+</div>
+<p>If not ‘’, a ‘Last updated on:’ timestamp is inserted at every page bottom,
+using the given strftime format.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_last_updated_fmt = &#39;%b %d, %Y&#39;</span>
+ 
+</pre></div>
+</div>
+<p>If true, SmartyPants will be used to convert quotes and dashes to
+typographically correct entities.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_use_smartypants = True</span>
+ 
+</pre></div>
+</div>
+<p>Custom sidebar templates, maps document names to template names.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_sidebars = {}</span>
+ 
+</pre></div>
+</div>
+<p>Additional templates that should be rendered to pages, maps page names to
+template names.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_additional_pages = {}</span>
+ 
+</pre></div>
+</div>
+<p>If false, no module index is generated.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_domain_indices = True</span>
+ 
+</pre></div>
+</div>
+<p>If false, no index is generated.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_use_index = True</span>
+ 
+</pre></div>
+</div>
+<p>If true, the index is split into individual pages for each letter.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_split_index = False</span>
+ 
+</pre></div>
+</div>
+<p>If true, links to the reST sources are added to the pages.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_show_sourcelink = True</span>
+ 
+</pre></div>
+</div>
+<p>If true, “Created using Sphinx” is shown in the HTML footer. Default is True.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_show_sphinx = True</span>
+ 
+</pre></div>
+</div>
+<p>If true, “(C) Copyright …” is shown in the HTML footer. Default is True.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_show_copyright = True</span>
+ 
+</pre></div>
+</div>
+<p>If true, an OpenSearch description file will be output, and all pages will
+contain a &lt;link&gt; tag referring to it.  The value of this option must be the
+base URL from which the finished HTML is served.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_use_opensearch = &#39;&#39;</span>
+ 
+</pre></div>
+</div>
+<p>This is the file name suffix for HTML files (e.g. “.xhtml”).</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_file_suffix = None</span>
+ 
+</pre></div>
+</div>
+<p>Language to be used for generating the HTML full-text search index.
+Sphinx supports the following languages:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/conf.py</span>, line 192)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>‘da’, ‘de’, ‘en’, ‘es’, ‘fi’, ‘fr’, ‘hu’, ‘it’, ‘ja’
+‘nl’, ‘no’, ‘pt’, ‘ro’, ‘ru’, ‘sv’, ‘tr’</p>
+</div></blockquote>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_search_language = &#39;en&#39;</span>
+ 
+</pre></div>
+</div>
+<p>A dictionary with options for the search language support, empty by default.
+Now only ‘ja’ uses this config value</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_search_options = {&#39;type&#39;: &#39;default&#39;}</span>
+ 
+</pre></div>
+</div>
+<p>The name of a javascript file (relative to the configuration directory) that
+implements a search results scorer. If empty, the default will be used.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#html_search_scorer = &#39;scorer.js&#39;</span>
+ 
+</pre></div>
+</div>
+<p>Output file base name for HTML help builder.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">htmlhelp_basename</span> <span class="o">=</span> <span class="s1">&#39;PyZombisdoc&#39;</span>
+ 
+</pre></div>
+</div>
+<p>– Options for LaTeX output ———————————————</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span> 
+<span class="n">latex_elements</span> <span class="o">=</span> <span class="p">{</span>
+</pre></div>
+</div>
+<p>The paper size (‘letterpaper’ or ‘a4paper’).</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#&#39;papersize&#39;: &#39;letterpaper&#39;,</span>
+ 
+</pre></div>
+</div>
+<p>The font size (‘10pt’, ‘11pt’ or ‘12pt’).</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#&#39;pointsize&#39;: &#39;10pt&#39;,</span>
+ 
+</pre></div>
+</div>
+<p>Additional stuff for the LaTeX preamble.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#&#39;preamble&#39;: &#39;&#39;,</span>
+ 
+</pre></div>
+</div>
+<p>Latex figure (float) alignment</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#&#39;figure_align&#39;: &#39;htbp&#39;,</span>
+<span class="p">}</span>
+ 
+</pre></div>
+</div>
+<p>Grouping the document tree into LaTeX files. List of tuples
+(source start file, target name, title,</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/conf.py</span>, line 225)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>author, documentclass [howto, manual, or own class]).</p>
+</div></blockquote>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">latex_documents</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">(</span><span class="n">master_doc</span><span class="p">,</span> <span class="s1">&#39;PyZombis.tex&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;PyZombis Documentation&#39;</span><span class="p">,</span>
+   <span class="sa">u</span><span class="s1">&#39;Mariano Reingart (translated and adapted from Fernando Masanori work)&#39;</span><span class="p">,</span> <span class="s1">&#39;manual&#39;</span><span class="p">),</span>
+<span class="p">]</span>
+ 
+</pre></div>
+</div>
+<p>The name of an image file (relative to this directory) to place at the top of
+the title page.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#latex_logo = None</span>
+ 
+</pre></div>
+</div>
+<p>For “manual” documents, if this is true, then toplevel headings are parts,
+not chapters.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#latex_use_parts = False</span>
+ 
+</pre></div>
+</div>
+<p>If true, show page references after internal links.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#latex_show_pagerefs = False</span>
+ 
+</pre></div>
+</div>
+<p>If true, show URL addresses after external links.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#latex_show_urls = False</span>
+ 
+</pre></div>
+</div>
+<p>Documents to append as an appendix to all manuals.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#latex_appendices = []</span>
+ 
+</pre></div>
+</div>
+<p>If false, no module index is generated.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#latex_domain_indices = True</span>
+ 
+ 
+</pre></div>
+</div>
+<p>– Options for manual page output —————————————</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+<p>One entry per manual page. List of tuples
+(source start file, name, description, authors, manual section).</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">man_pages</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="n">master_doc</span><span class="p">,</span> <span class="s1">&#39;pyzombis&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;PyZombis Documentation&#39;</span><span class="p">,</span>
+     <span class="p">[</span><span class="n">author</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">]</span>
+ 
+</pre></div>
+</div>
+<p>If true, show URL addresses after external links.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#man_show_urls = False</span>
+ 
+ 
+</pre></div>
+</div>
+<p>– Options for Texinfo output ——————————————-</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+<p>Grouping the document tree into Texinfo files. List of tuples
+(source start file, target name, title, author,</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/conf.py</span>, line 269)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<div><p>dir menu entry, description, category)</p>
+</div></blockquote>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">texinfo_documents</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">(</span><span class="n">master_doc</span><span class="p">,</span> <span class="s1">&#39;PyZombis&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;PyZombis Documentation&#39;</span><span class="p">,</span>
+   <span class="n">author</span><span class="p">,</span> <span class="s1">&#39;PyZombis&#39;</span><span class="p">,</span> <span class="s1">&#39;One line description of project.&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Miscellaneous&#39;</span><span class="p">),</span>
+<span class="p">]</span>
+ 
+</pre></div>
+</div>
+<p>Documents to append as an appendix to all manuals.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#texinfo_appendices = []</span>
+ 
+</pre></div>
+</div>
+<p>If false, no module index is generated.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#texinfo_domain_indices = True</span>
+ 
+</pre></div>
+</div>
+<p>How to display URL addresses: ‘footnote’, ‘no’, or ‘inline’.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#texinfo_show_urls = &#39;footnote&#39;</span>
+ 
+</pre></div>
+</div>
+<p>If true, do not generate a &#64;detailmenu in the “Top” node’s menu.</p>
+<div class="code fenced-code highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#texinfo_no_detailmenu = False</span>
+</pre></div>
+</div>
+
+
+  
+      
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.6.1.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
