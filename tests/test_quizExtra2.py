@@ -1,4 +1,4 @@
-def test_quizExtra_3_bad(page):
+def test_quizExtra2_3_bad(page):
     # Go to Quiz Extras 2 page
     page.goto("quiz/QuizExtras2.html")
 
