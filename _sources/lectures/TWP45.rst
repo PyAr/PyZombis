@@ -32,40 +32,56 @@ Facebook Hacking
 
 Facebook Profile Photo
 ======================
+Para este ejercicio utilizaremos un intérprete de Python llamado Brython. 
+Éste incluye un modulo llamado browser que, a diferencia de los ejercicios
+anteriores, nos permitirá mostrar una página con elementos HTML 
+(botones, cajas de texto, titulos, etc.), en lugar de solo mostrar impresiones 
+en consola.
+En el siguiente enlace puedes encontrar una guia de todos los elementos HTML
+que Brython soporta: https://brython.info/static_doc/en/html.html
 
-.. code-block :: python
+.. activecode:: ac_l45_1
+   :language: python3
+   :python3_interpreter: brython 
 
+   Este ejercicio obtiene la foto de perfil según el nombre de usuario de un perfil publico de Facebook.
+   Pruebalo por tu propia cuenta!
+   
+   ~~~~
+   from browser import document, html
 
-   import urllib.request
-   import json
+   # Se crean dos secciones de divisiones con el elemento DIV.
+   # Y se separan por un salto de linea con el elemento BR.
+   document <= html.DIV(id="div_cajas_texto")
+   document <= html.BR()
+   document <= html.DIV(id='div_imagen')
 
-   user = 'fmasanori'
-   url = 'https://graph.facebook.com/'+user+'/picture?type=large'
-   figura = urllib.request.urlopen(url).read()
+   # El elemento H2 crea un título, INPUT crea la caja de texto y BUTTON crea un botón.
+   # Todos estos se ponen dentro de la división con id="div_cajas_texto"
+   document['div_cajas_texto'] <= html.H2("Ingrese un usuario de Facebook público")
+   document['div_cajas_texto'] <= html.INPUT(id="input_usuario", placeholder="ArianaGrande")
+   document['div_cajas_texto'] <= html.BUTTON("Mostrar foto",id="boton_mostrar")
+   
+   # Se crea la función que se le asignará al botón de mostrar foto.
+   def obtener_foto(evento):
+       # Se toma el texto que se escribe adentro de la caja con id="input_usuario" con .value
+       nombre_usuario = document["input_usuario"].value
+       # Se concatena el nombre de usuario con el enlace de la api de Facebook
+       link = 'https://graph.facebook.com/' + nombre_usuario + '/picture?type=large'
+       # Se agrega una imagen con fuente del link construido anteriormente mediande src
+       # dentro de la división de id='div_imagen' 
+       document['div_imagen'] <= html.IMG(src=link, id="img_obtenida") 
 
-   arquivo = user + '.jpg'
-   f = open (archivo, 'wb')
-   f.write(figura)
-   f.close()
+   # Por ultimo se le ordena al botón de id="boton_mostrar" que ejecute la función obtener_foto.
+   document["boton_mostrar"].bind("click", obtener_foto)
+   
 
-   print (archivo, 'gravado no seu diretório...')
-
-
-+ Resultado
 
 .. image:: img/TWP45_003.png
    :height: 6.465cm
    :width: 14.28cm
    :align: center
    :alt: 
-
-
-.. image:: img/TWP45_005.jpeg
-   :height: 4.735cm
-   :width: 4.762cm
-   :align: center
-   :alt: 
-
 
 
 + `Link <https://developers.facebook.com/docs/reference/api/examples/>`_
