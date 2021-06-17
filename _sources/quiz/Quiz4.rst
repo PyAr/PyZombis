@@ -105,7 +105,7 @@ Ejercicio 3
 .. activecode:: q4_3
     :nocodelens:
 
-    Desarrolle la función ``intercalar_listas`` que toma dos parámetros, ``l1`` y ``l2``, representando listas de **10** numeros aleatorios entre 1-100.
+    Desarrolle la función ``intercalar_listas`` que toma dos parámetros, ``l1`` y ``l2``, representando listas de **10** números aleatorios entre 1-100.
     La función debe generar una tercer lista compuesta de los elementos de ``l1`` y ``l2`` intercalados. Esta tercera lista será devuelta. |br| |br|
     Ejemplo: |br|
     ``intercalar_listas([1, 3, 5, .....], [2, 4, 6, ....])`` -> ``[1, 2, 3, 4, 5, 6, ....]`` |br|
@@ -161,17 +161,52 @@ Ejercicio 4
 
 
     ====
+
     from unittest.gui import TestCaseGui
 
 
     class myTests(TestCaseGui):
         def testOne(self):
             text = """The Python Software Foundation and the global Python community welcome and 
-                      encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, 
-                      and we are working to help each other live up to these principles. We want our community to be more diverse: 
-                      whoever you are, and whatever your background, we welcome you."""
-            res = [word for word in text.lower().replace(".", "").split() if word[0] in "python" or word[-1] in "python"]
+                    encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, 
+                    and we are working to help each other live up to these principles. We want our community to be more diverse: 
+                    whoever you are, and whatever your background, we welcome you."""
+            res = [
+                word
+                for word in text.lower().replace(".", "").replace(",", "").split()
+                if word[0] in "python" or word[-1] in "python"
+            ]
             self.assertEqual(buscar_palabras(text), res, f"Esperado: {res}")
+
+
+    myTests().main()
+
+
+Ejercicio 5
+-----------
+
+.. activecode:: q4_5
+    :nocodelens:
+
+    Ahora va a desarrollar la función ``buscar_palabras_2``, a la que se le pasará el texto anterior como parámetro. Una vez más va a separar el 
+    texto en palabras, justo como lo hizo en el *Ejercicio 4*. Esta vez, debe calcular el número de palabras dentro de ``texto`` que tienen alguna 
+    de las letras de la cadena ``"python"``, y además tienen una longitud mayor a 4 caracteres. |br| |br|
+
+    ~~~~
+    def buscar_palabras_2(texto):
+
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            text = """The Python Software Foundation and the global Python community welcome and 
+                    encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, 
+                    and we are working to help each other live up to these principles. We want our community to be more diverse: 
+                    whoever you are, and whatever your background, we welcome you."""
+            self.assertEqual(buscar_palabras_2(text), 24, "Esperado: 24")
 
 
     myTests().main()
