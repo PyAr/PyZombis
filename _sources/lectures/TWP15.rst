@@ -30,7 +30,7 @@ Impresión de 1 a 3
 + Formas  simples
 
 
-.. codelens:: Example3_1
+.. codelens:: cl_l15_1
 
         print(1)
         print(2)
@@ -40,7 +40,7 @@ Impresión de 1 a 3
 + Usando una variable
 
 
-.. codelens:: Example3_2
+.. codelens:: cl_l15_2
 
         x=1
         print(x)
@@ -57,7 +57,7 @@ Impresión de 1 a 3
 
 + Incrementando la variable
 
-.. codelens:: Example3_3
+.. codelens:: cl_l15_3
 
         x=1
         print(x)
@@ -69,7 +69,7 @@ Impresión de 1 a 3
 + Usando while
 
 
-.. codelens:: Example3_4
+.. codelens:: cl_l15_4
 
         x=1
         while x <= 3:
@@ -98,7 +98,7 @@ Prueva de escritorio
    :alt: 
 
 
-.. codelens:: Example3_5
+.. codelens:: cl_l15_5
 
         x=1
         while x <= 3:
@@ -113,7 +113,7 @@ Contadores
 + Ahora imprima de 1 a un número ingresado por el usuario
 
 
-.. activecode:: Example3_6
+.. activecode:: ac_l15_1
    :nocodelens:
    :stdin:
 
@@ -130,7 +130,7 @@ Contadores
 + imprime números pares entre 0 y un número dado usando if
 
 
-.. activecode:: Example3_7
+.. activecode:: ac_l15_2
    :nocodelens:
    :stdin:
 
@@ -150,7 +150,7 @@ Contadores
    el if
 
 
-.. activecode:: Example3_8
+.. activecode:: ac_l15_3
    :nocodelens:
    :stdin:
 
@@ -181,7 +181,7 @@ Acumuladores
 + Cálculo de la suma de diez números enteros
 
 
-.. activecode:: Example3_9
+.. activecode:: ac_l15_4
    :nocodelens:
    :stdin:
     
@@ -201,7 +201,7 @@ Acumuladores
 + Promedio de 10 números enteross
 
 
-.. activecode:: Example3_10
+.. activecode:: ac_l15_5
    :nocodelens:
    :stdin:
 
@@ -220,7 +220,7 @@ Acumuladores
 
 + Calcular el factorial de diez
 
-.. codelens:: Example3_11
+.. codelens:: cl_l15_6
 
         i = 1
         fact = 1
@@ -237,7 +237,7 @@ Acumuladores
 
 + Calcular el factorial de un número entero n
 
-.. activecode:: Example3_12
+.. activecode:: ac_l15_6
    :nocodelens:
    :stdin:
 
@@ -258,7 +258,7 @@ interrumpiendo la repetición
 + Calcule la suma de números enteros hasta que se ingrese cero
 
 
-.. activecode:: Example3_13
+.. activecode:: ac_l15_7
    :nocodelens:
    :stdin:
 
@@ -278,7 +278,7 @@ interrumpiendo la repetición
 + Números promedio hasta que se ingrese cero
 
 
-.. activecode:: Example3_14
+.. activecode:: ac_l15_8
    :nocodelens:
    :stdin:
 
@@ -301,7 +301,7 @@ Repeticiones anidadas
 + Imprime las tablas del 1 al 10
 
 
-.. activecode:: Example3_15
+.. activecode:: ac_l15_9
    :nocodelens:
    :stdin:
 
