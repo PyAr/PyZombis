@@ -32,9 +32,9 @@ Impresión de 1 a 3
 
 .. codelens:: cl_l15_1
 
-        print(1)
-        print(2)
-        print(3)
+   print(1)
+   print(2)
+   print(3)
 
 
 + Usando una variable
@@ -42,12 +42,12 @@ Impresión de 1 a 3
 
 .. codelens:: cl_l15_2
 
-        x=1
-        print(x)
-        x=2
-        print(x)
-        x=3
-        print(x)
+   x = 1
+   print(x)
+   x = 2
+   print(x)
+   x = 3
+   print(x)
 
 
 Impresión de 1 a 3
@@ -59,22 +59,22 @@ Impresión de 1 a 3
 
 .. codelens:: cl_l15_3
 
-        x=1
-        print(x)
-        x=x+1
-        print(x)
-        x=x+1
-        print(x)
+   x = 1
+   print(x)
+   x = x + 1
+   print(x)
+   x = x + 1
+   print(x)
 
 + Usando while
 
 
 .. codelens:: cl_l15_4
 
-        x=1
-        while x <= 3:
-        	print(x)
-        	x=x+1
+   x = 1
+   while x <= 3:
+       print(x)
+       x = x +1
 
 Impresión de 1 a 3
 ===================
@@ -100,10 +100,10 @@ Prueva de escritorio
 
 .. codelens:: cl_l15_5
 
-        x=1
-        while x <= 3:
-        	print(x)
-        	x=x+1
+   x = 1
+   while x <= 3:
+       print(x)
+       x = x + 1
 
 Contadores
 ==========
@@ -120,8 +120,8 @@ Contadores
    fin = int(input("Ingrese el último número: "))
    x = 1
    while x <= fin:
-    print(x)
-    x=x+1
+       print(x)
+       x = x + 1
 
 Contadores
 ==========
@@ -137,9 +137,9 @@ Contadores
    fin = int(input("Ingrese el último número: "))
    x = 0
    while x <= fin:
-    if x%2 == 0:
-    	print(x)
-    x=x+1
+       if x%2 == 0:
+           print(x)
+       x = x + 1
 
 
 Contadores
@@ -158,7 +158,7 @@ Contadores
    x = 0
    while x <= fin:
        print(x)
-       x = x+2
+       x = x + 2
 
 
 Contadores
@@ -176,7 +176,7 @@ Acumuladores
 ============
 
 
-+ La diferencia entre un medidor y un acumulador es que en metros el
++ La diferencia entre un medidor y un acumulador es que en medidores el
    el valor agregado es constante y, en acumuladores, variable
 + Cálculo de la suma de diez números enteros
 
@@ -188,9 +188,10 @@ Acumuladores
    n = 1
    suma = 0
    while n <= 10:
-        x = int(input("Ingrese el último %d número: " %n))
-        suma = suma + x
-	n = n + 1
+       x = int(input("Ingrese el último %d número: " %n))
+       suma = suma + x
+       n = n + 1
+
    print("suma: %d" %suma)
 
 
@@ -198,20 +199,21 @@ Acumuladores
 ============
 
 
-+ Promedio de 10 números enteross
++ Promedio de 10 números enteros
 
 
 .. activecode:: ac_l15_5
    :nocodelens:
    :stdin:
 
-   n = 1
+   n = 0
    suma = 0
-   while n <= 10:
-    x = int(input("Ingrese el último %d número: " %n))
-    suma = suma + x
-    n = n + 1
-   print("Suma: %5.2f" %(suma/n))
+   while n < 10:
+       x = int(input("Ingrese el último %d número: " %(n+1)))
+       suma = suma + x
+       n = n + 1
+   
+   print("Promedio: %5.2f" %(suma/n))
 
 
 Acumuladores
@@ -222,12 +224,12 @@ Acumuladores
 
 .. codelens:: cl_l15_6
 
-        i = 1
-        fact = 1
-        while i <= 10:
-        	fact = fact*i
-        	i = i+1
-        print("Fact(10) = %d" %fact)
+   i = 1
+   fact = 1
+   while i <= 10:
+       fact = fact * i
+       i = i + 1
+   print("Fact(10) = %d" %fact)
 
 
 
@@ -245,9 +247,10 @@ Acumuladores
    fact = 1
    n = int(input("Ingrese n: "))
    while i <= n:
-    fact = fact*i
-    i = i+1
-   print("Fact(%d) = %d" %(n,fact))
+       fact = fact * i
+       i = i + 1
+
+   print("Fact(%d) = %d" %(n, fact))
 
 
 
@@ -264,10 +267,11 @@ interrumpiendo la repetición
 
    suma = 0
    while True:
-             x = int(input("Ingrese un numero (0 salir): "))
-             if x == 0:
-	             break
-             suma = suma + x
+       x = int(input("Ingrese un numero (0 salir): "))
+       if x == 0:
+           break
+       suma = suma + x
+
    print("Suma: %d" %suma)
 
 
@@ -287,11 +291,12 @@ interrumpiendo la repetición
    while True:
        x = int(input("Ingrese un numero (0 salir): "))
        if x == 0:
-	       break
+           break
        else:
-	       n = n+1
+           n = n + 1
        suma = suma + x
-   print("Média: %5.2f" %(suma/n))
+
+   print("Media: %5.2f" %(suma / n))
 
 
 Repeticiones anidadas
@@ -307,12 +312,12 @@ Repeticiones anidadas
 
    tabla_de_multiplicar = 1
    while tabla_de_multiplicar <= 10:
-        n = 1
-	print("tabla_de_multiplicar %d" %tabla_de_multiplicar)
-        while  n <= 10:
-	     print("%d x %d = %d" %(tabla_de_multiplicar,n,tabla_de_multiplicar*n))
-	     n = n + 1
-	tabla_de_multiplicar = tabla_de_multiplicar + 1
+       n = 1
+       print("tabla_de_multiplicar %d" %tabla_de_multiplicar)
+       while  n <= 10:
+           print("%d x %d = %d" %(tabla_de_multiplicar, n, tabla_de_multiplicar * n))
+           n = n + 1
+       tabla_de_multiplicar = tabla_de_multiplicar + 1
 
 
 Lista de Ejercicios “again”
