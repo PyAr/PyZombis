@@ -161,15 +161,25 @@ Contadores
        x = x + 2
 
 
-Contadores
-==========
+Algunos ejercicios
+------------------
 
 
+.. activecode:: ac_l15_4
+   :nocodelens:
 
-+ Modificar el programa anterior para imprimir del 1 al número
-   ingresado por el usuario, pero esta vez solo los números impares
-+ Reescribe el programa anterior para escribir los primeros 10
-   múltiplos de 3
+   Modifique el programa anterior para imprimir del 1 al número ingresado por el usuario, 
+   pero esta vez solo los números impares.
+   
+   ~~~~
+
+
+.. activecode:: ac_l15_5
+   :nocodelens:
+
+   Escriba un programa que imprima los primeros 10 múltiplos de 3.
+   
+   ~~~~
 
 
 Acumuladores
@@ -181,7 +191,7 @@ Acumuladores
 + Cálculo de la suma de diez números enteros
 
 
-.. activecode:: ac_l15_4
+.. activecode:: ac_l15_6
    :nocodelens:
    :stdin:
     
@@ -202,18 +212,18 @@ Acumuladores
 + Promedio de 10 números enteros
 
 
-.. activecode:: ac_l15_5
+.. activecode:: ac_l15_7
    :nocodelens:
    :stdin:
 
    n = 0
    suma = 0
    while n < 10:
-       x = int(input("Ingrese el último %d número: " %(n+1)))
+       x = int(input("Ingrese el último %d número: " %(n + 1)))
        suma = suma + x
        n = n + 1
    
-   print("Promedio: %5.2f" %(suma/n))
+   print("Promedio: %5.2f" %(suma / n))
 
 
 Acumuladores
@@ -239,7 +249,7 @@ Acumuladores
 
 + Calcular el factorial de un número entero n
 
-.. activecode:: ac_l15_6
+.. activecode:: ac_l15_8
    :nocodelens:
    :stdin:
 
@@ -261,7 +271,7 @@ interrumpiendo la repetición
 + Calcule la suma de números enteros hasta que se ingrese cero
 
 
-.. activecode:: ac_l15_7
+.. activecode:: ac_l15_9
    :nocodelens:
    :stdin:
 
@@ -282,7 +292,7 @@ interrumpiendo la repetición
 + Números promedio hasta que se ingrese cero
 
 
-.. activecode:: ac_l15_8
+.. activecode:: ac_l15_10
    :nocodelens:
    :stdin:
 
@@ -306,7 +316,7 @@ Repeticiones anidadas
 + Imprime las tablas del 1 al 10
 
 
-.. activecode:: ac_l15_9
+.. activecode:: ac_l15_11
    :nocodelens:
    :stdin:
 
