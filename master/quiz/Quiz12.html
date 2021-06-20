@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 12 &#8212; PyZombis master@5a8df4a</title>
+    <title>Quiz - 12 &#8212; PyZombis master@81a5ec9</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@5a8df4a</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@81a5ec9</a>
       </div>
     </div>
 
@@ -250,7 +250,15 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Quiz - 12</a></li>
+<li><a class="reference internal" href="#">Quiz - 12</a><ul>
+<li><a class="reference internal" href="#ejercicio-1">Ejercicio 1</a></li>
+<li><a class="reference internal" href="#ejercicio-2">Ejercicio 2</a></li>
+<li><a class="reference internal" href="#ejercicio-3">Ejercicio 3</a></li>
+<li><a class="reference internal" href="#ejercicio-4">Ejercicio 4</a></li>
+<li><a class="reference internal" href="#ejercicio-5">Ejercicio 5</a></li>
+<li><a class="reference internal" href="#ejercicio-6">Ejercicio 6</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -297,89 +305,124 @@
   
   <div class="section" id="quiz-12">
 <h1>Quiz - 12<a class="headerlink" href="#quiz-12" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=verbing data-question_label="1">
-<div id=verbing_question class="ac_question col-md-12">
-<p>G. verbing <br />
-Dada uma string, caso seu comprimento seja pelo menos 3, <br />
-adiciona ‘ing’ no final <br />
-Caso a string já termine em ‘ing’, acrescentará ‘ly’. <br /></p>
+<div data-component="activecode" id=q12_1 data-question_label="1">
+<div id=q12_1_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">verbo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> como parámetro. Si la longitud de la cadena es al menos 3, debe devolver la cadena original concatenando <code class="docutils literal notranslate"><span class="pre">&quot;ing&quot;</span></code> al final. Si la cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> ya termina en <code class="docutils literal notranslate"><span class="pre">&quot;ing&quot;</span></code>, concatene la cadena <code class="docutils literal notranslate"><span class="pre">&quot;ly&quot;</span></code>. Si la longitud de la cadena es menor que 3, devuelve la cadena original. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">verbo(&quot;singing&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;singingly&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">verbo(&quot;travel&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;traveling&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">verbo(&quot;do&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;do&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="verbing_editor" 
+<textarea data-lang="python" id="q12_1_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def verbing(s):
+def verbo(s):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(verbing('hail'), 'hailing',"Esperado: hailing")
-        self.assertEqual(verbing('swiming'), 'swimingly',"Esperado: swimingly")
-        self.assertEqual(verbing('do'), 'do',"Esperado: do")
+        self.assertEqual(verbo("hail"), "hailing", "Esperado: hailing")
+        self.assertEqual(verbo("swiming"), "swimingly", "Esperado: swimingly")
+        self.assertEqual(verbo("do"), "do", "Esperado: do")
+        self.assertEqual(verbo("singing"), "singingly", "Esperado: singingly")
+        self.assertEqual(verbo("travel"), "traveling", "Esperado: traveling")
+        self.assertEqual(verbo("lly"), "llying", "Esperado: llying")
+        self.assertEqual(verbo("ing"), "ingly", "Esperado: ingly")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=not_bad data-question_label="2">
-<div id=not_bad_question class="ac_question col-md-12">
-<p>H. not_bad <br />
-Dada uma string, procura a primeira ocorrência de ‘not’ e ‘bad’ <br />
-Se ‘bad’ aparece depois de ‘not’ troca ‘not’ … ‘bad’ por ‘good’ <br />
-Assim ‘This dinner is not that bad!’ retorna ‘This dinner is good!’ <br /></p>
+<div data-component="activecode" id=q12_2 data-question_label="2">
+<div id=q12_2_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">no_es_malo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> como parámetro. La función debe buscar la primera aparición de la cadena <code class="docutils literal notranslate"><span class="pre">&quot;no&quot;</span></code> y la cadena <code class="docutils literal notranslate"><span class="pre">&quot;malo&quot;</span></code>, si ésta última aparece después de la primera, reemplace <code class="docutils literal notranslate"><span class="pre">&quot;no&quot;</span> <span class="pre">...</span> <span class="pre">&quot;malo&quot;</span></code> por la cadena <code class="docutils literal notranslate"><span class="pre">&quot;bueno&quot;</span></code> y devuelva el resultado. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">no_es_malo(&quot;El</span> <span class="pre">té</span> <span class="pre">no</span> <span class="pre">es</span> <span class="pre">malo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;El</span> <span class="pre">té</span> <span class="pre">bueno&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">no_es_malo(&quot;El</span> <span class="pre">precio</span> <span class="pre">de</span> <span class="pre">esta</span> <span class="pre">casa</span> <span class="pre">no</span> <span class="pre">es</span> <span class="pre">para</span> <span class="pre">nada</span> <span class="pre">malo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;El</span> <span class="pre">precio</span> <span class="pre">de</span> <span class="pre">esta</span> <span class="pre">casa</span> <span class="pre">bueno&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">no_es_malo(&quot;El</span> <span class="pre">teléfono</span> <span class="pre">es</span> <span class="pre">malo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;El</span> <span class="pre">teléfono</span> <span class="pre">es</span> <span class="pre">malo&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="not_bad_editor" 
+<textarea data-lang="python" id="q12_2_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def not_bad(s):
+def no_es_malo(s):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(not_bad('This movie is not so bad'), 'This movie is good',"Esperado: This movie is good")
-        self.assertEqual(not_bad('This dinner is not that bad!'), 'This dinner is good!',"Esperado: This dinner is good!")
-        self.assertEqual(not_bad('This tea is not hot'), 'This tea is not hot',"Esperado: This tea is not hot")
-        self.assertEqual(not_bad("It's bad yet not"), "It's bad yet not","Esperado: It's bad yet not")
+        self.assertEqual(
+            no_es_malo("La película no es malo"),
+            "La película bueno",
+            "Esperado: La película bueno"
+        )
+        self.assertEqual(
+            no_es_malo("Esta cena no es malo!"),
+            "Esta cena bueno!",
+            "Esperado: Esta cena bueno!"
+        )
+        self.assertEqual(
+            no_es_malo("El té no está caliente"),
+            "El té no está caliente",
+            "Esperado: El té no está caliente"
+        )
+        self.assertEqual(no_es_malo("no es para nada malo"), "bueno", "Esperado: bueno")
+        self.assertEqual(no_es_malo("no malo"), "bueno", "Esperado: bueno")
+        self.assertEqual(no_es_malo("malo"), "malo", "Esperado: malo")
+        self.assertEqual(no_es_malo("no"), "no", "Esperado: no")
+        self.assertEqual(no_es_malo("NO"), "NO", "Esperado: NO")
+        self.assertEqual(no_es_malo("MALO"), "MALO", "Esperado: MALO")
+        self.assertEqual(no_es_malo("NO es MALO"), "NO es MALO", "Esperado: NO es MALO")
+        self.assertEqual(no_es_malo("NO MALO"), "NO MALO", "Esperado: NO MALO")
+        self.assertEqual(no_es_malo("no MALO"), "no MALO", "Esperado: no MALO")
+        self.assertEqual(no_es_malo("NO malo"), "NO malo", "Esperado: NO malo")
+
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-3">
+<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=inicio_final data-question_label="3">
-<div id=inicio_final_question class="ac_question col-md-12">
-<p>I. inicio_final <br />
-Divida cada string em dois pedaços. <br />
-Se a string tiver um número ímpar de caracteres o primeiro pedaço terá um caracter a mais, <br />
-Exemplo: ‘abcde’, divide-se em ‘abc’ e ‘de’. <br />
-Dadas 2 strings, a e b, retorna a string <br />
-a_inicio + b_inicio + a_final + b_final <br /></p>
+<div data-component="activecode" id=q12_3 data-question_label="3">
+<div id=q12_3_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">inicio_final</span></code> que recibe dos cadenas <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>. Las cadenas tienen que ser dividas en dos, si alguna de las cadenas tiene un número impar de caracteres, la primera mitad será la subcadena más larga (por ejemplo <code class="docutils literal notranslate"><span class="pre">perro</span></code> se dividirá entre: <code class="docutils literal notranslate"><span class="pre">per</span></code> y <code class="docutils literal notranslate"><span class="pre">ro</span></code>). Dada las dos cadenas, devuelva una nueva cadena formada de la siguiente manera <code class="docutils literal notranslate"><span class="pre">a_inicio</span> <span class="pre">+</span> <span class="pre">b_inicio</span> <span class="pre">+</span> <span class="pre">a_final</span> <span class="pre">+</span> <span class="pre">b_final</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_final(&quot;abcd&quot;,</span> <span class="pre">&quot;1234&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ab12cd34&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_final(&quot;abc&quot;,</span> <span class="pre">&quot;1234&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ab12c34&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_final(&quot;abc&quot;,</span> <span class="pre">&quot;123&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ab12c3&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="inicio_final_editor" 
+<textarea data-lang="python" id="q12_3_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
@@ -391,116 +434,161 @@ def inicio_final(a, b):
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(inicio_final('abcd', 'xy'), 'abxcdy',"Esperado: abxcdy" )
-        self.assertEqual(inicio_final('abcde', 'xyz'), 'abcxydez',"Esperado: abcxydez" )
-        self.assertEqual(inicio_final('Kitten', 'Donut'), 'KitDontenut',"Esperado: KitDontenut" )
+        self.assertEqual(inicio_final("abcd", "xy"), "abxcdy", "Esperado: abxcdy")
+        self.assertEqual(inicio_final("abcde", "xyz"), "abcxydez", "Esperado: abcxydez")
+        self.assertEqual(inicio_final("a", "b"), "ab", "Esperado: ab")
+        self.assertEqual(inicio_final("ac", "b"), "abc", "Esperado: abc")
+        self.assertEqual(inicio_final("a", "bc"), "abc", "Esperado: abc")
+        self.assertEqual(inicio_final("", ""), "", "Esperado: ''")
+        self.assertEqual(inicio_final("a", ""), "a", "Esperado: 'a'")
+        self.assertEqual(inicio_final("", "b"), "b", "Esperado: 'b'")
+        self.assertEqual(
+            inicio_final("Kitten", "Donut"),
+            "KitDontenut",
+            "Esperado: KitDontenut"
+        )
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-4">
+<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=zeros_finais data-question_label="4">
-<div id=zeros_finais_question class="ac_question col-md-12">
-<p>J. zeros finais <br />
-Verifique quantos zeros há no final de um número inteiro positivo <br />
-Exemplo: 10010 tem 1 zero no fim e 908007000 possui três <br /></p>
+<div data-component="activecode" id=q12_4 data-question_label="4">
+<div id=q12_4_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">cuantos_ceros</span></code> que dado un entero <code class="docutils literal notranslate"><span class="pre">n</span></code> positivo, devuelva la cantidad de ceros al final del entero <code class="docutils literal notranslate"><span class="pre">n</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">cuantos_ceros(10010)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">cuantos_ceros(908007000)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">3</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="zeros_finais_editor" 
+<textarea data-lang="python" id="q12_4_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def zf(n):
+def cuantos_ceros(n):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(zf(10100100010000), 4,"Esperado: 4")
-        self.assertEqual(zf(90000000000000000010), 1,"Esperado: 1")
+        self.assertEqual(cuantos_ceros(10100100010000), 4, "Esperado: 4")
+        self.assertEqual(cuantos_ceros(90000000000000000010), 1, "Esperado: 1")
+        self.assertEqual(cuantos_ceros(10), 1, "Esperado: 1")
+        self.assertEqual(cuantos_ceros(1050051222), 0, "Esperado: 0")
+        self.assertEqual(cuantos_ceros(1010101010), 1, "Esperado: 1")
+        self.assertEqual(cuantos_ceros(5000), 3, "Esperado: 3")
+        self.assertEqual(cuantos_ceros(10000000000), 10, "Esperado: 10")
+        self.assertEqual(cuantos_ceros(555), 0, "Esperado: 0")
+        self.assertEqual(cuantos_ceros(1), 0, "Esperado: 0")
+        self.assertEqual(cuantos_ceros(0), 0, "Esperado: 0")
+
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-5">
+<h2>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=conta_2 data-question_label="5">
-<div id=conta_2_question class="ac_question col-md-12">
-<p>K. conta 2 <br />
-Verifique quantas vezes o dígito 2 aparece entre 0 e n-1 <br />
-Exemplo: para n = 20 o dígito 2 aparece duas vezes entre 0 e 19 <br /></p>
+<div data-component="activecode" id=q12_5 data-question_label="5">
+<div id=q12_5_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">contar_2</span></code> que recibe un entero <code class="docutils literal notranslate"><span class="pre">n</span></code> positivo mayor que 0. La función debe devolver la cantidad de veces que el dígito 2 aparece en el intervalo <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">n-1]</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">contar_2(20)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">2</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">contar_2(5)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">contar_2(1)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">0</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="conta_2_editor" 
+<textarea data-lang="python" id="q12_5_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def conta2(n):
+def contar_2(n):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(conta2(20), 2,"Esperado: 2")
-        self.assertEqual(conta2(999), 300,"Esperado: 300")
-        self.assertEqual(conta2(555), 216,"Esperado: 216")
+        self.assertEqual(contar_2(20), 2, "Esperado: 2")
+        self.assertEqual(contar_2(1), 0, "Esperado: 0")
+        self.assertEqual(contar_2(5), 1, "Esperado: 1")
+        self.assertEqual(contar_2(999), 300, "Esperado: 300")
+        self.assertEqual(contar_2(555), 216, "Esperado: 216")
+
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="ejercicio-6">
+<h2>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=inip2 data-question_label="6">
-<div id=inip2_question class="ac_question col-md-12">
-<p>L. inicio em potencia de 2 <br />
-Dado um número inteiro positivo n retorne a primeira potência de 2 <br />
-que tenha o início igual a n <br />
-Exemplo: para n = 65 retornará 16 pois 2**16 = 65536 <br /></p>
+<div data-component="activecode" id=q12_6 data-question_label="6">
+<div id=q12_6_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">inicio_potencia</span></code> que recibe un entero <code class="docutils literal notranslate"><span class="pre">n</span></code> positivo mayor que 0. La función debe devolver la primera potencia de 2 que comienza con <code class="docutils literal notranslate"><span class="pre">n</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_potencia(65)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">16</span></code> <br />
+<em>Explicación</em>: para <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">65</span></code> la potencia <code class="docutils literal notranslate"><span class="pre">2^16</span></code> da como resultado <code class="docutils literal notranslate"><span class="pre">65536</span></code> que contiene a <code class="docutils literal notranslate"><span class="pre">n</span></code> al comienzo. <br /> <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_potencia(4)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">2</span></code> <br />
+<em>Explicación</em>: para <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">4</span></code> la potencia <code class="docutils literal notranslate"><span class="pre">2^2</span></code> da como resultado <code class="docutils literal notranslate"><span class="pre">4</span></code> que contiene a <code class="docutils literal notranslate"><span class="pre">n</span></code> al comienzo. <br /> <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_potencia(3)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">5</span></code> <br />
+<em>Explicación</em>: para <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">3</span></code> la potencia <code class="docutils literal notranslate"><span class="pre">2^5</span></code> da como resultado <code class="docutils literal notranslate"><span class="pre">32</span></code> que contiene a <code class="docutils literal notranslate"><span class="pre">n</span></code> al comienzo. <br /></p>
 
 </div>
-<textarea data-lang="python" id="inip2_editor" 
+<textarea data-lang="python" id="q12_6_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def inip2(n):
+def inicio_potencia(n):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(inip2(7), 46,"Esperado: 46")
-        self.assertEqual(inip2(133), 316,"Esperado: 316")
-        self.assertEqual(inip2(1024), 10,"Esperado: 10")
+        self.assertEqual(inicio_potencia(7), 46, "Esperado: 46")
+        self.assertEqual(inicio_potencia(3), 5, "Esperado: 5")
+        self.assertEqual(inicio_potencia(133), 316, "Esperado: 316")
+        self.assertEqual(inicio_potencia(1024), 10, "Esperado: 10")
+        self.assertEqual(inicio_potencia(123), 90, "Esperado: 90")
+        self.assertEqual(inicio_potencia(1), 0, "Esperado: 0")
+        self.assertEqual(inicio_potencia(10), 10, "Esperado: 10")
+        self.assertEqual(inicio_potencia(50), 102, "Esperado: 102")
+
 
 myTests().main()
 </textarea>
+</div>
 </div>
 </div>
 </div>
