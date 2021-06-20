@@ -98,10 +98,10 @@ Archivo tatu.py
     :nocodelens:
     :stdin:
 
-class Cliente:
-    def __init__(self, nombre, telefono):
-        self.nombre = nombre
-        self.telefono = telefono
+    class Cliente:
+        def __init__(self, nombre, telefono):
+            self.nombre = nombre
+            self.telefono = telefono
 
     class Cuenta:
         def __init__(self, Clientes, numero, saldo=0):
@@ -150,55 +150,64 @@ Declaración de operaciones
 Arquivo tatu2.py (apenas Conta)
 ===============================
 
-.. activecode:: Example8_5
-   :nocodelens:
-   :stdin:
+..  activecode:: Example8_5
+    :nocodelens:
+    :stdin:
 
-   class Cliente:
-    def __init__ (self,nombre,telefone):
-      self.nombre = nombre
-      self.telefono = telefono
-   class conta:
-    def __init__(self, Clientes, numero, saldo = 0):
-      self.saldo = saldo
-      self.Clientes = Clientes
-      self.numero = numero
-      self.operaciones = []
-      self.deposito(saldo)
-    def resumen(self):
-      print('CC N: %s saldo: %10.2f' %(self.numero,self.saldo))
-    def saque(self,valor):
-      if self.saldo >= valor:
-        self.saldo -= valor
-        self.operacoes.append(['Retirar',valor])
-    def deposito(self, valor):
-      self.sado += valor
-      self.operacoes.append(['Deposito',valor])
-    def extracto(self):
-      print('extracto CC N %s' %self.numero)
-      for op in self.operaciones:
-        print("%10s %10.2f" %(op[0],op[1]))
-      print('%10s %10.2f\n' %('Saldo=',self.saldo))
+    class Cliente:
+        def __init__(self, nombre, telefono):
+            self.nombre = nombre
+            self.telefono = telefono
+
+
+    class Cuenta:
+        def __init__(self, Clientes, numero, saldo=0):
+            self.saldo = saldo
+            self.Clientes = Clientes
+            self.numero = numero
+            self.operaciones = []
+            self.depositar(saldo)
+
+        def resumen(self):
+            print("CC numero: %s saldo: %10.2f" % (self.numero, self.saldo))
+
+        def retirar(self, monto):
+            if self.saldo >= monto:
+                self.saldo -= monto
+                self.operaciones.append(["Retiro"], monto)
+            else:
+                print("Saldo insuficiente para retirar")
+
+        def depositar(self, monto):
+            self.saldo += monto
+            self.operaciones.append(["Deposito", monto])
+
+        def extracto_de_operaciones(self):
+            print("extracto CC N %s" % self.numero)
+            for op in self.operaciones:
+                print("%10s %10.2f" % (op[0], op[1]))
+            print("%10s %10.2f\n" % ("Saldo=", self.saldo))
+
 
 Archivo teste2.py, salida teste2
 =================================
 
-.. activecode:: Example8_6
-   :nocodelens:
-   :stdin:
-   :include: Example8_5
+..  activecode:: Example8_6
+    :nocodelens:
+    :stdin:
+    :include: Example8_5
 
-   juan = Cliente('Juan de Silva','777-1234')
-   maria = Cliente('Maria de Silva','555-4321')
-   conta1 = Cuenta([juan],1,1000)
-   conta2 = centa([maria,juan],2,500)
-   conta1.extracto(50)
-   conta2.deposito(300)
-   conta1.extracto(190)
-   conta2.deposito(95.15)
-   conta2.extracto(250)
-   conta1.extracto()
-   conta2.extracto()
+    juan = Cliente("Juan de Silva", "777-1234")
+    maria = Cliente("Maria de Silva", "555-4321")
+    cuenta_1 = Cuenta([juan], 1, 1000)
+    cuenta_2 = Cuenta([maria, juan], 2, 500)
+    cuenta_1.retirar(50)
+    cuenta_2.depositar(300)
+    cuenta_1.retirar(190)
+    cuenta_2.depositar(95.15)
+    cuenta_2.retirar(250)
+    cuenta_1.extracto_de_operaciones()
+    cuenta_2.extracto_de_operaciones()
 
 Herencia
 ========
@@ -215,45 +224,54 @@ Añadir Cuenta Especial tatu3 tatu3.py
     :nocodelens:
     :stdin:
 
-   class Cliente:
-    def __init__ (self,nome,telefono):
-      self.nombre = nombre
-      self.telefono = telefono
-
-   class Conta:
-    def __init__(self, Clientes, numero, saldo = 0):
-      self.saldo = saldo
-      self.Clientes = Clientes
-      self.numero = numero
-      self.operaciones = []
-      self.deposito(saldo)
-    def resumo(self):
-      print('CC N: %s Saldo: %10.2f' %(self.numero,self.saldo))
-    def saque(self,valor):
-      if self.saldo >= valor:
-        self.saldo -= valor
-        self.operaciones.append(['Retirar',valor])
-    def deposito(self, valor):
-      self.sado += valor
-      self.operacoes.append(['Depósito',valor])
-    def extrato(self):
-      print('extracto CC N %s' %self.numero)
-      for op in self.operaciones:
-        print("%10s %10.2f" %(op[0],op[1]))
-      print('%10s %10.2f\n' %('Saldo=',self.saldo))
-
-   class ContaEspecial(Conta):
-    def __init__(self, Clientes, numero, saldo = 0):
-      Conta.__init__(self,Clientes,numero, saldo)
-      self.limite = limite
-    def saque(self,valor):
-      if self.saldo + self.limite >= valor:
-        self.saldo -= valor
-        self.operacoes.append(['Saque',valor])
+    class Cliente:
+        def __init__(self, nombre, telefono):
+            self.nombre = nombre
+            self.telefono = telefono
 
 
-ContaEspecial
-=============
+    class Cuenta:
+        def __init__(self, Clientes, numero, saldo=0):
+            self.saldo = saldo
+            self.Clientes = Clientes
+            self.numero = numero
+            self.operaciones = []
+            self.depositar(saldo)
+
+        def resumen(self):
+            print("CC numero: %s saldo: %10.2f" % (self.numero, self.saldo))
+
+        def retirar(self, monto):
+            if self.saldo >= monto:
+                self.saldo -= monto
+                self.operaciones.append(["Retiro"], monto)
+            else:
+                print("Saldo insuficiente para retirar")
+
+        def depositar(self, monto):
+            self.saldo += monto
+            self.operaciones.append(["Deposito", monto])
+
+        def extracto_de_operaciones(self):
+            print("extracto CC N %s" % self.numero)
+            for op in self.operaciones:
+                print("%10s %10.2f" % (op[0], op[1]))
+            print("%10s %10.2f\n" % ("Saldo=", self.saldo))
+
+    class CuentaEspecial(Cuenta):
+        def __init__(self, cliente, numero, saldo = 0):
+            Cuenta.__init__(self,cliente,numero, saldo)
+            self.limite = limite
+
+        def retirar(self, monto):
+            if self.saldo + self.limite >= monto:
+                self.saldo -= monto
+                self.operaciones.append(["Retiro"], monto)
+            else:
+                print("Saldo insuficiente para retirar")
+
+Cuenta Especial
+===============
 
 + Tenga en cuenta que escribimos Cuenta entre paréntesis
 + ContaEspecial hereda los métodos y atributos de la cuenta
