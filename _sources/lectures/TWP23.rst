@@ -228,6 +228,7 @@ Validar dirección IP
 
 .. activecode:: ac_l23_6
     :nocodelens:
+    :datafile: Validos.txt, Invalidos.txt
 
     def ip_ok(ip):
         ip = ip.split(".")
@@ -288,6 +289,7 @@ HTML
 
 .. activecode:: ac_l23_7
     :nocodelens:
+    :datafile: hola.html
 
     Pruebe el programa anterior.
 
