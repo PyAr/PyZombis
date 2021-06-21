@@ -118,7 +118,7 @@ Ejercicio 4
 .. activecode:: qExtra_4
     :nocodelens:
 
-    En el libro “El Hombre que Calculaba”, de *Malba Tahan*, un personaje quería ganar los granos de trigo que estaban distribuídos sobre un tablero de ajedrez del siguiente modo: 
+    En el libro “El Hombre que Calculaba”, de *Malba Tahan*, un personaje quería ganar los granos de trigo que estaban distribuidos sobre un tablero de ajedrez del siguiente modo: 
     un grano en la primera casilla del tablero, el doble (2) en la segunda, nuevamente el doble (4) en la tercera, otra vez el doble (8) en la cuarta, y así sucesivamente hasta la sexagésima cuarta casilla del tablero. 
     Haga un algoritmo que calcule la cantidad total de granos de trigo necesarios para realizar esta distribución. La función ``suma_granos`` devolverá 
     esta cantidad. Su parámetro ``n`` será el valor ``64``, representando el número de casillas de un tablero de ajedrez. |br|
@@ -149,7 +149,7 @@ Ejercicio 5
     Se dan ``n`` baldosas con dimensión de 10cm x 10cm. Con ellas, usted debe ensamblar un conjunto de cuadrados usando todas las baldosas dadas. Para ello, debe seguir las siguientes reglas:
 
     - El primer cuadrado que se construya debe usar la mayor cantidad de baldosas posibles.
-    - Si quedan bladosas, el siguiente cuadrado también debe construirse con la mayor cantidad de las baldosas que quedaron.
+    - Si quedan baldosas, el siguiente cuadrado también debe construirse con la mayor cantidad de las baldosas que quedaron.
     - Seguir este mismo patrón hasta haber usado todas las baldosas. 
 
     Entonces, la función ``forma_cuadrados`` devuelve un **diccionario** representando el conjunto de cuadrados formados. Sus llaves representan el tamaño, en baldosas, del lado del 

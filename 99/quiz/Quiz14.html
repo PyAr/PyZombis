@@ -4,16 +4,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 14 &#8212; PyZombis 26_quiz_extra@d964fd7</title>
+    <title>Quiz - 14 &#8212; PyZombis 26_quiz_extra@1993744</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
-    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/presenter_mode.css?v=9FF1320F" />
@@ -30,15 +30,15 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../_static/jquery.highlight.js?v=F1C496C8"></script>
     <script src="../_static/sql-wasm.js?v=D71B5933"></script>
     <script src="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.js"></script>
     <script src="../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../_static/Blob.js?v=AEC2447"></script>
-    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.bidi.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.js"></script>
@@ -130,7 +130,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 26_quiz_extra@d964fd7</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 26_quiz_extra@1993744</a>
       </div>
     </div>
 
@@ -250,7 +250,11 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Quiz - 14</a></li>
+<li><a class="reference internal" href="#">Quiz - 14</a><ul>
+<li><a class="reference internal" href="#ejercicio-1">Ejercicio 1</a></li>
+<li><a class="reference internal" href="#ejercicio-2">Ejercicio 2</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -297,75 +301,112 @@
   
   <div class="section" id="quiz-14">
 <h1>Quiz - 14<a class="headerlink" href="#quiz-14" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=remove_iguais data-question_label="1">
-<div id=remove_iguais_question class="ac_question col-md-12">
-<ol class="upperalpha simple" start="4">
-<li><p>Dada uma lista de números retorna uma lista sem os elementos repetidos <br /></p></li>
+<div data-component="activecode" id=q14_1 data-question_label="1">
+<div id=q14_1_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remover_iguales</span></code> que recibe una lista <code class="docutils literal notranslate"><span class="pre">numeros</span></code> de enteros. La función debe devolver una lista sin los elementos repetidos y ordenados de manera ascendente. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iguales([1,</span> <span class="pre">2,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iguales([1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iguales([1,</span> <span class="pre">2,</span> <span class="pre">2,</span> <span class="pre">1])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2]</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q14_1_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static 
+     style="visibility: hidden;">
+def remover_iguales(numeros):
+
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(remover_iguales([2, 2, 1, 3]), [1, 2, 3], "Esperado: [1, 2, 3]")
+        self.assertEqual(remover_iguales([2, 2, 3, 2, 3]), [2, 3], "Esperado: [2, 3]")
+        self.assertEqual(remover_iguales([-2, 2, 3, -2, 2]), [-2, 2, 3], "Esperado: [-2, 2, 3]")
+        self.assertEqual(remover_iguales([]), [], "Esperado: []")
+        self.assertEqual(remover_iguales([1, 2, 3, 4]), [1, 2, 3, 4], "Esperado: [1, 2, 3, 4]")
+        self.assertEqual(remover_iguales([1, 1, 1, 1]), [1], "Esperado: []")
+        self.assertEqual(remover_iguales([0, -1, 1, 3]), [-1, 0, 1, 3], "Esperado: [-1, 0, 1, 3]")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q14_2 data-question_label="2">
+<div id=q14_2_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">encriptar</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">frase</span></code>. La función debe devolver una nueva cadena encriptada, siguiendo las siguientes reglas: <br /></p>
+<ol class="arabic simple">
+<li><p>Se deben retirar todas las letras repetidas de cada una de las palabras de la frase. <br /></p></li>
+<li><p>Se deben ordenar las letras restantes de cada una de las palabras. <br /></p></li>
 </ol>
+<p>Ejemplo: <br />
+<code class="docutils literal notranslate"><span class="pre">encriptar(&quot;anita</span> <span class="pre">lava</span> <span class="pre">la</span> <span class="pre">tina&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;aint</span> <span class="pre">alv</span> <span class="pre">al</span> <span class="pre">aint&quot;</span></code> <br />
+<em>Consejo</em>: intente convertir la frase en una lista de palabras, luego intente ordenar las letras y construya una cadena con el resultado. <br /></p>
 
 </div>
-<textarea data-lang="python" id="remove_iguais_editor" 
+<textarea data-lang="python" id="q14_2_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static 
      style="visibility: hidden;">
-def remove_iguais(nums):
+def encriptar(frase):
 
 
 
 ====
 from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
 
+class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(remove_iguais([2, 2, 1, 3]), [1, 2, 3],"Esperado: [1,2,3]")
-        self.assertEqual(remove_iguais([2, 2, 3, 2, 3]), [2, 3],"Esperado: [2,3]")
-        self.assertEqual(remove_iguais([]), [],"Esperado: []")
+        self.assertEqual(
+            encriptar("ana e mariana gostam de banana"),
+            "an e aimnr agmost de abn",
+            "Esperado: an e aimnr agmost de abn",
+        )
+        self.assertEqual(
+            encriptar("Batatinha quando nasce esparrama pelo chão"),
+            "Bahint adnoqu acens aemprs elop choã",
+            "Esperado: Bahint adnoqu acens aemprs elop choã",
+        )
+        self.assertEqual(
+            encriptar("anita lava la tina"),
+            "aint alv al aint", "Esperado: aint alv al aint"
+        )
+        self.assertEqual(
+            encriptar("¿Hola como estas?"),
+            "Halo¿ cmo ?aest",
+            "Esperado: Halo¿ cmo ?aest"
+        )
+        self.assertEqual(
+            encriptar("ana puede venir mañana"),
+            "an depu einrv amnñ",
+            "Esperado: an depu einrv amnñ"
+        )
+        self.assertEqual(encriptar("11111 2222 3333"), "1 2 3", "Esperado: 1 2 3")
+        self.assertEqual(encriptar("12345"), "12345", "Esperado: 12345")
 
 
 myTests().main()
 </textarea>
 </div>
-</div>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=Cripto_desafio data-question_label="2">
-<div id=Cripto_desafio_question class="ac_question col-md-12">
-<p>E. Cripto desafio!! <br />
-Dada uma frase, você deve retirar todas as letras repetidas das palavras <br />
-e ordenar as letras que sobraram <br />
-Exemplo: ‘ana e mariana gostam de banana’ vira ‘an e aimnr agmost de abn’ <br />
-Dicas: tente transformar cada palavra em um conjunto, depois tente sortear <br />
-as letras e montar uma string com o resultado. <br />
-Utilize listas auxiliares se facilitar <br /></p>
-
-</div>
-<textarea data-lang="python" id="Cripto_desafio_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static 
-     style="visibility: hidden;">
-def cripto(frase):
-
-
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-
-        self.assertEqual(cripto('ana e mariana gostam de banana'),'an e aimnr agmost de abn',"Esperado: an e aimnr agmost de abn")
-        self.assertEqual(cripto('Batatinha quando nasce esparrama pelo chão'),'Bahint adnoqu acens aemprs elop choã',"Esperado: Bahint adnoqu acens aemprs elop choã")
-
-
-myTests().main()
-</textarea>
 </div>
 </div>
 </div>
