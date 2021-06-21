@@ -118,6 +118,7 @@ Crypto
     para que todas las vocales
     sean cambiadas por "*".
 
+
 .. datafile:: crypto.txt
     :cols: 20
     :rows: 10
@@ -224,6 +225,7 @@ Validar dirección IP
 
     Inválidos 
 
+
 .. activecode:: ac_l23_6
     :nocodelens:
 
@@ -267,11 +269,39 @@ HTML
         """<!DOCTYPE html>
     <html lang="pt-AR">
     <head>
-    <meta charset = "utf-8">
-    <title>Titulo da Pagina</title>
+        <meta charset = "utf-8">
+        <title>Título de la Pagina</title>
     </head>
     <body>
-    Hola!
+        Hola!
+    </body>
+    </html>"""
+    )
+    archivo.close()
+
+
+.. datafile:: hola.html
+    :edit:
+    :cols: 40
+    :rows: 12
+
+
+.. activecode:: ac_l23_7
+    :nocodelens:
+
+    Pruebe el programa anterior.
+
+    ~~~~
+    archivo = open("hola.html", "w")
+    archivo.write(
+        """<!DOCTYPE html>
+    <html lang="pt-AR">
+    <head>
+        <meta charset = "utf-8">
+        <title>Título de la Página</title>
+    </head>
+    <body>
+        Hola!
     </body>
     </html>"""
     )
@@ -299,7 +329,7 @@ Diccionarios
     print(d["a"])
 
 
-.. activecode:: ac_l23_7
+.. activecode:: ac_l23_8
     :nocodelens:
     :stdin:
 
@@ -333,31 +363,26 @@ Diccionarios
 
 .. code-block:: python
 
-    arq = open('alice.txt')
-    texto = arq.read()
-    texto = texto.lower()
     import string
+
+    archivo = open("alice.txt", "r")
+    texto = archivo.read()
+    texto = texto.lower()
+
     for c in string.punctuation:
-        texto = texto.replace(c, ' ')
+        texto = texto.replace(c, " ")
     texto = texto.split()
 
     dic = {}
-    for p in texto:
-        if p not in dic:
-            dic[p] = 1
+    for palabra in texto:
+        if palabra not in dic:
+            dic[palabra] = 1
         else:
-            dic[p] += 1
-    print ('Aparece Alice %s veces' %dic['alice'])
-    arq.close()
+            dic[palabra] += 1
 
+    print("Aparece Alice %s veces" % dic["alice"])
+    archivo.close()
 
-.. activecode:: ac_l23_8
-    :nocodelens:
-    :datafile: _static/alicia.rst/alicia.txt
-
-    a = open("alicia.txt", "r")
-    print(len(a.readlines()))
-    
 
 Exercício Programa 1
 ====================
@@ -371,4 +396,3 @@ Exercício Programa 1
 
 
 + “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
-
