@@ -13,10 +13,7 @@ Comillas de varios tipos.
 =========================
 
 
-
 + ¿Puedo usar comillas simples, dobles o triples?
-
-
 
 
 .. codelens:: cl_l18_1
