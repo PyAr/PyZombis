@@ -167,14 +167,14 @@ Calculadora en el intérprete
 
 .. codelens:: cl_l05_2
     
-    print(2+3)
-    print(5-3)
-    print(10-4+2)
-    print(2*10)
-    print(10/4)
-    print(2**3)
-    print(10%3)
-    print(16%7)
+    print(2 + 3)
+    print(5 - 3)
+    print(10 - 4 + 2)
+    print(2 * 10)
+    print(10 / 4)
+    print(2 ** 3)
+    print(10 % 3)
+    print(16 % 7)
 
 
 Conceptos sobre variables y asignación
@@ -191,7 +191,7 @@ Conceptos sobre variables y asignación
     
     a = 2
     b = 3
-    print(a+b)
+    print(a + b)
 
 Conceptos sobre variables y asignación
 ======================================
@@ -211,7 +211,7 @@ Conceptos sobre variables y asignación
     
     a = 2
     b = 3
-    print(a+b)
+    print(a + b)
 
 Conceptos sobre variables y asignación
 ======================================
@@ -224,7 +224,7 @@ Conceptos sobre variables y asignación
 
 .. codelens:: cl_l05_5
     
-    print(2+3)
+    print(2 + 3)
     print(5)
 
 
@@ -348,8 +348,8 @@ Ejemplos:
     c = 2
     d = 1
     print(a == b)
-    print(b>a)
-    print(a<b)
+    print(b > a)
+    print(a < b)
     print(a == d)
     print(b >= a)
     print(c <= b)
@@ -552,8 +552,8 @@ Concatenación
     
     a = "Papa"
     b = "cuando nace"
-    print(a+b)
-    print(a*3)
+    print(a + b)
+    print(a * 3)
 
 
 Composición
@@ -582,8 +582,8 @@ Composición
 .. codelens:: cl_l05_21
     
     edad = 20
-    print("[%03d]"%edad)
-    print("[%3d]"%edad)
+    print("[%03d]" % edad)
+    print("[%3d]" % edad)
 
 
 Composición
@@ -719,9 +719,9 @@ Conversión de entrada de datos
    :nocodelens:
    :stdin:
 
-   valor_unitario = float(input("Valor de una rosquilla: "))
-   n = int(input("Número de rosquillas: "))
-   print("Valor total = %5.2f" %(n*valor_unitario))
+    valor_unitario = float(input("Valor de una rosquilla: "))
+    n = int(input("Número de rosquillas: "))
+    print("Valor total = %5.2f" % (n * valor_unitario))
 
 
 Error común
