@@ -109,7 +109,7 @@ String no se puede modificar
     :stdin:
 
     texto = " Hola mundo!"
-    texto[0] = '@'
+    texto[0] = "@"
 
 
 Puedo crear nuevos strings
@@ -124,7 +124,7 @@ Puedo crear nuevos strings
     :stdin:
 
     texto = "Hola mundo"
-    texto = '@' + texto[1:]
+    texto = "@" + texto[1:]
     print(texto)
 
 
@@ -156,7 +156,7 @@ Concentración
     :stdin:
    
     Ahora haga un programa que lea una palabra, la guarde en la variable ``palabra``, 
-    y reemplace las consonantes con '*'. Guardar el resultado en la variable ``intercambio``. 
+    y reemplace las consonantes con ``"*"``. Guardar el resultado en la variable ``intercambio``. 
     Puede apoyarse en el programa anterior.
    
     ~~~~
