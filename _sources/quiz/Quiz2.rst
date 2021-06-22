@@ -13,7 +13,7 @@ Ejercicio 1
 ..  activecode:: q2_1
     :nocodelens:
 
-    Desarrolle la función ``es_triangulo`` que recibe tres enteros positivos ``a``, ``b`` y ``c`. Éstos representan los lados de un triángulo. En la función debe verificar que con los parámetros dados se forma un triángulo. Si los parámetros dados forman un triángulo, la función debe devolver una cadena indicando su tipo, es decir, ``"Equilátero"``, ``"Isósceles"`` o ``"Escaleno"``, en caso contrario, la función debe devolver la cadena, ``"No es triángulo"``. |br|
+    Desarrolle la función ``es_triangulo`` que recibe tres enteros positivos ``a``, ``b`` y ``c``. Éstos representan los lados de un triángulo. En la función debe verificar que con los parámetros dados se forma un triángulo. Si los parámetros dados forman un triángulo, la función debe devolver una cadena indicando su tipo, es decir, ``"Equilátero"``, ``"Isósceles"`` o ``"Escaleno"``, en caso contrario, la función debe devolver la cadena, ``"No es triángulo"``. |br|
     **Nota**: recuerde que no es un triángulo cuando uno de sus lados es mayor que la suma de los otros dos. |br| |br|
     Ejemplos: |br|
     ``es_triangulo(2, 2, 2)`` -> ``"Equilátero"`` |br|
