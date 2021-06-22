@@ -160,7 +160,7 @@ Concentración
     Puede apoyarse en el programa anterior.
    
     ~~~~
-    #Utilice la función input para leer la palabra del usuario.
+    # Utilice la función input para leer la palabra del usuario.
    
       
     ====
@@ -215,14 +215,14 @@ split and join
 
 .. codelens:: cl_l18_7
          
-    txt = "papa cuando nace"
-    print(txt.split())
-    data = "21/02/2011"
-    print(data.split("/"))
+    texto = "papa cuando nace"
+    print(texto.split())
+    fecha = "21/02/2011"
+    print(fecha.split("/"))
     ip = "198.188.10.144"
     print(ip.split("."))
-    times = ["Palmeiras", "Santos", "Corintios"]
-    print("/".join(times))
+    lugares = ["Palmeiras", "Santos", "Corintios"]
+    print("/".join(lugares))
 
 
 Ejercicio
@@ -241,7 +241,7 @@ Ejercicio
     en las variables ``dia``, ``mes`` y ``anio``.
    
     ~~~~
-    data = input("data (dd/mm/aaaa): ").split("/")
+    fecha = input("fecha (dd/mm/aaaa): ").split("/")
     meses = [
         "enero",
         "febrero",
@@ -256,7 +256,6 @@ Ejercicio
         "noviembre",
         "diciembre",
     ]
-   
     
     ====
     from unittest.gui import TestCaseGui
@@ -269,9 +268,9 @@ Ejercicio
                 "{} de {} de {}".format(dia, meses[int(mes) - 1], anio),
                 "Probando que fecha_de_nacimiento esté asignada correctamente",
             )
-            self.assertEqual(dia, data[0], "Probando que dia esté asignada correctamente")
-            self.assertEqual(mes, data[1], "Probando que mes esté asignado correctamente")
-            self.assertEqual(anio, data[2], "Probando que anio esté asignado correctamente")
+            self.assertEqual(dia, fecha[0], "Probando que dia esté asignada correctamente")
+            self.assertEqual(mes, fecha[1], "Probando que mes esté asignado correctamente")
+            self.assertEqual(anio, fecha[2], "Probando que anio esté asignado correctamente")
 
 
     myTests().main()
