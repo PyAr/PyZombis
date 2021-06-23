@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisión general 2 &#8212; PyZombis 19_lesson_conditions@5c769d0</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/presenter_mode.css?v=9FF1320F" />
+    <link rel="stylesheet" type="text/css" href="../_static/jquery-ui-1.10.3.custom.min.css?v=97E0178A" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/runestone-custom-sphinx-bootstrap.css?v=5.6.2" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/jquery.highlight.js?v=F1C496C8"></script>
+    <script src="../_static/sql-wasm.js?v=D71B5933"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.js"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/Blob.js?v=AEC2447"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.bidi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.fallbacks.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.messagestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.parser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.language.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
+    <script src="../_static/runestone.js?v=4011C77C"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js?v=2B07FE4F"></script>
+    <script src="../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="../_static/jquery-fix.js?v=1226591B"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/jquery.idle-timer.js?v=E942DAF1"></script>
+    <script src="../_static/presenter_mode.js?v=2DF16FB4"></script>
+    <script src="../_static/theme.js?v=D899FB97"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../_static/presenter_mode.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Revisión general 3" href="TWP40.html" />
+    <link rel="prev" title="Revición de listas" href="TWP37.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'PyZombisDev';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'PyZombisDev';
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.6.2';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.downloadsEnabled = false;
+  eBookConfig.enable_chatcodes = false ? false : false;
+  eBookConfig.allow_pairs = false ? false : false;
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 19_lesson_conditions@5c769d0</a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/PyZombisDev/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/PyZombisDev/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=TWP38'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+      </div>
+
+
+
+
+
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Revisión general 2</a><ul>
+<li><a class="reference internal" href="#que-es-un-programa">¿Qué es un programa?</a></li>
+<li><a class="reference internal" href="#id1">¿Qué es un programa?</a></li>
+<li><a class="reference internal" href="#lenguajes-de-programacion">Lenguajes de programación</a></li>
+<li><a class="reference internal" href="#id2">Lenguajes de programación</a></li>
+<li><a class="reference internal" href="#python">Python</a></li>
+<li><a class="reference internal" href="#id3">Python</a></li>
+<li><a class="reference internal" href="#id4">Python</a></li>
+<li><a class="reference internal" href="#id5">Python</a></li>
+<li><a class="reference internal" href="#id6">Python</a></li>
+<li><a class="reference internal" href="#id7">Python</a></li>
+<li><a class="reference internal" href="#id8">Python</a></li>
+<li><a class="reference internal" href="#id9">Python</a></li>
+<li><a class="reference internal" href="#id10">Python</a></li>
+<li><a class="reference internal" href="#id11">Python</a></li>
+<li><a class="reference internal" href="#ejercicio">Ejercicio</a></li>
+<li><a class="reference internal" href="#resumen">Resumen</a></li>
+<li><a class="reference internal" href="#recuerdo">Recuerdo</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Revición de listas" data-toggle="tooltip">
+    <a href="TWP37.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Revisión general 3' data-toggle="tooltip" >              
+    <a href="TWP40.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="revision-general-2">
+<h1>Revisión general 2<a class="headerlink" href="#revision-general-2" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
+<div class="section" id="que-es-un-programa">
+<h2>¿Qué es un programa?<a class="headerlink" href="#que-es-un-programa" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Un conjunto detallado de instrucciones, paso a paso, que le dice cuáles son las
+la computadora hará</p></li>
+<li><p>Si cambiamos el programa, la computadora hará algo diferente</p></li>
+<li><p>La computadora permanece igual, pero el programa ha cambiado</p></li>
+<li><p>Los programas se ejecutan</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>¿Qué es un programa?<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>El software (programas) controla el hardware</p></li>
+<li><p>El proceso de creación de software se llama programación</p></li>
+<li><dl class="simple">
+<dt>Un algoritmo es la receta, paso a paso, que resuelve un problema.</dt><dd><p>computacional</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="lenguajes-de-programacion">
+<h2>Lenguajes de programación<a class="headerlink" href="#lenguajes-de-programacion" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Los idiomas de bajo nivel son los más cercanos a la máquina</p></li>
+<li><p>Ensamblador:</p>
+<ul>
+<li><p>Cargue el número de variable A en la CPU</p></li>
+<li><p>Cargue el número de variable B en la CPU</p></li>
+<li><p>Agregar los dos números en la CPU</p></li>
+<li><p>Almacenar el resultado en la variable C</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>Lenguajes de programación<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Comando original en lenguaje de alto nivel: C = A + B</p></li>
+<li><dl class="simple">
+<dt>Los compiladores convierten el lenguaje de alto nivel al lenguaje de</dt><dd><p>máquina informática específica</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Los intérpretes analizan y ejecutan el programa de instrucción por</dt><dd><p>instrucción de lenguaje de máquina</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>El signo “&gt;&gt;&gt;” indica que Python está “listo” para recibir
+comandos</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+        <div class="pytutorVisualizer" id="Example13_1"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (Example13_1)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var Example13_1_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["Example13_1"] = {"code": "print('hola mundo!')\nprint(2+3)\nprint('2 + 3 = ',2+3)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "hola mundo!\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "hola mundo!\n5\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "hola mundo!\n5\n2 + 3 =  5\n"}]};
+</script>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Python<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Por lo general, queremos repetir una serie de comandos varias veces</p></li>
+<li><p>Una forma de hacer esto es usar una función</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+        <div class="pytutorVisualizer" id="Example13_2"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (Example13_2)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var Example13_2_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["Example13_2"] = {"code": "def amodoispontos():\n  print('Yo amo:!')\n  print('Dos puntos == \":\"')\n\namodoispontos()", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": ""}, {"line": 1, "event": "call", "func_name": "amodoispontos", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [{"func_name": "amodoispontos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "amodoispontos_f1"}], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "amodoispontos", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [{"func_name": "amodoispontos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "amodoispontos_f1"}], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "amodoispontos", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [{"func_name": "amodoispontos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "amodoispontos_f1"}], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "Yo amo:!\n"}, {"line": 3, "event": "return", "func_name": "amodoispontos", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [{"func_name": "amodoispontos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"__return__": null}, "ordered_varnames": ["__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "amodoispontos_f1"}], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "Yo amo:!\nDos puntos == \":\"\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "Yo amo:!\nDos puntos == \":\"\n"}]};
+</script>
+</div>
+<ul class="simple">
+<li><p>¡No olvides los paréntesis cuando llames a la función!</p></li>
+<li><dl class="simple">
+<dt>Si olvida los paréntesis, python devolverá la dirección en</dt><dd><p>memoria donde está el código de función</p>
+</dd>
+</dl>
+</li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+        <div class="pytutorVisualizer" id="Example13_3"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (Example13_3)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var Example13_3_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["Example13_3"] = {"code": "def amodoispontos():\n  print('Yo amo:!')\n  print('Dos puntos == \":\"')\n\nprint(amodoispontos)\nprint(print)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "<function amodoispontos at 0x7f31fd523160>\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "<function amodoispontos at 0x7f31fd523160>\n<built-in function print>\n"}]};
+</script>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>Python<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Podemos poner parámetros en una función</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="4">
+        <div class="pytutorVisualizer" id="Example13_4"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 4 (Example13_4)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var Example13_4_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["Example13_4"] = {"code": "def suma(a,b):\n  return a+b\n\nprint(suma('aguacate','jabuticaba'))\nprint(suma(2,3))\nprint(suma(3.14,2.71))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 1, "event": "call", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": "aguacate", "b": "jabuticaba"}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f1"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": "aguacate", "b": "jabuticaba"}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f1"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": "aguacate", "b": "jabuticaba", "__return__": "aguacatejabuticaba"}, "ordered_varnames": ["a", "b", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f1"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 1, "event": "call", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"a": 2, "b": 3}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f2"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 2, "event": "step_line", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"a": 2, "b": 3}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f2"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 2, "event": "return", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"a": 2, "b": 3, "__return__": 5}, "ordered_varnames": ["a", "b", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f2"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 1, "event": "call", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"a": 3.14, "b": 2.71}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f3"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 2, "event": "step_line", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"a": 3.14, "b": 2.71}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f3"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 2, "event": "return", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"a": 3.14, "b": 2.71, "__return__": 5.85}, "ordered_varnames": ["a", "b", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f3"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n5.85\n"}]};
+</script>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Python<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Las funciones dejan de existir en cuanto sale del intérprete
+Python</p></li>
+<li><p>Por lo tanto, los programas generalmente se componen de módulos, que son
+archivos guardados en el disco</p></li>
+<li><p>Un módulo es un archivo de texto que contiene un programa de Python</p></li>
+<li><p>Puede editar los módulos en un entorno de desarrollo, que
+resalta palabras reservadas, realiza identificación automática, etc.</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>Python<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Guardamos un programa llamado chaos.py</p></li>
+<li><p>No olvides la extensión .py</p></li>
+<li><p>Podemos ejecutar el programa con la tecla F5</p></li>
+</ul>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=Example13_5 data-question_label="5">
+<div id=Example13_5_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="Example13_5_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static 
+     style="visibility: hidden;">
+ print('Este programa ilustra el comportamiento caótico.')
+ x = eval(input('Ingrese un número entre 0 y 1:'))
+ for i in range(10):
+   x = 3.9*x*(1-x)
+   print("2.3f" %x)
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>Python<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Las líneas que comienzan con “#” se llaman comentarios</p></li>
+<li><p>Están destinados a ser leídos por humanos y Python los ignora</p></li>
+<li><p>Python omite todo el texto desde el “#” hasta el final de la línea</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/TWP38_008.png"><img alt="" class="align-center" src="../_images/TWP38_008.png" style="width: 23.602cm; height: 2.173cm;" /></a>
+</div>
+<div class="section" id="id8">
+<h2>Python<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>x es un ejemplo de una variable</p></li>
+<li><p>En x asignaremos un valor al que se puede hacer referencia más adelante</p></li>
+<li><p>Se mostrará el mensaje entre comillas y la respuesta se almacenará en x</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/TWP38_009.png"><img alt="" class="align-center" src="../_images/TWP38_009.png" style="width: 23.316cm; height: 0.799cm;" /></a>
+</div>
+<div class="section" id="id9">
+<h2>Python<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Hay comandos de bucle como para</p></li>
+<li><p>Un bucle se usa para repetir un bloque de comandos varias veces</p></li>
+<li><p>En este ejemplo, el siguiente bloque se repetirá 10 veces</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/TWP38_010.png"><img alt="" class="align-center" src="../_images/TWP38_010.png" style="width: 13.067cm; height: 1.399cm;" /></a>
+</div>
+<div class="section" id="id10">
+<h2>Python<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Llamamos a los espacios al comienzo de la línea sangría</p></li>
+<li><p>En Python, la sangría delimita el bloque que se ejecutará</p></li>
+<li><p>El cálculo 3.9 * x * (1-x) se realizará en la CPU y se asignará a la variable
+x</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/TWP38_011.png"><img alt="" class="align-center" src="../_images/TWP38_011.png" style="width: 13.694cm; height: 3.599cm;" /></a>
+</div>
+<div class="section" id="id11">
+<h2>Python<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>La función de caos devuelve valores muy diferentes, incluso cuando la entrada
+es similar</p></li>
+</ul>
+</div>
+<div class="section" id="ejercicio">
+<h2>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Cambie el programa anterior para que pueda ingresar un valor e ingresar
+correr por n veces en lugar del valor 10</p></li>
+</ul>
+</div>
+<div class="section" id="resumen">
+<h2>Resumen<a class="headerlink" href="#resumen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>La descripción de una secuencia de pasos para resolver un problema.</dt><dd><p>algoritmo computacional se llama</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Los algoritmos son programas (software) que determinan cuáles son los</dt><dd><p>la computadora (hardware) hará</p>
+</dd>
+</dl>
+</li>
+<li><p>El proceso de creación de software se llama programación</p></li>
+</ul>
+</div>
+<div class="section" id="recuerdo">
+<h2>Recuerdo<a class="headerlink" href="#recuerdo" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Los lenguajes de programación tienen una sintaxis formal</p></li>
+<li><p>Las computadoras solo entienden el lenguaje de máquina</p></li>
+<li><p>Python es un lenguaje interpretado de alto nivel</p></li>
+<li><dl class="simple">
+<dt>El intérprete de Python convierte los comandos instrucción por instrucción</dt><dd><p>para lenguaje máquina</p>
+</dd>
+</dl>
+</li>
+</ul>
+<script type="text/javascript">
+    function lecture13_disqus(source) {
+        if (window.DISQUS) {
+
+            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
+
+            //if Disqus exists, call it's reset method with new parameters
+            DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = 'lecture13_' + eBookConfig.course;
+                    this.page.url = 'https://lecture13_'+eBookConfig.course+'.interactivepython.com/#!';
+                }
+            });
+
+        } else {
+            //insert a wrapper in HTML after the relevant "show comments" link
+            $('<div id="disqus_thread"></div>').insertAfter(source);
+
+            // set Disqus required vars
+            disqus_shortname = 'pyzombis';
+            disqus_identifier = 'lecture13_' + eBookConfig.course;
+            disqus_url = 'http://lecture13_'+eBookConfig.course+'.interactivepython.com/#!';
+
+            //append the Disqus embed script to HTML
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            $('head').append(dsq);
+
+        }
+    }
+</script>
+
+<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="lecture13" onclick="lecture13_disqus(this);">Show Comments</a>
+<script type='text/javascript'>
+    $("a[data-disqus-identifier='lecture13']").attr('data-disqus-identifier', 'lecture13_' + eBookConfig.course);
+</script>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Revición de listas' data-toggle="tooltip">
+    <a href="TWP37.html" >
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP37.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Revisión general 3' data-toggle="tooltip" >
+    <a href="TWP40.html" >
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="TWP40.html" >Next Section - Revisión general 3</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.6.2.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
