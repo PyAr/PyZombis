@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '458be1813fcb354ad654683161e915ebfe8ada85-20_lesson_listas_twp17',
+    VERSION: '566267d1ba497cacd290fbf105cc5e841baf2e91-20_lesson_listas_twp17',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
