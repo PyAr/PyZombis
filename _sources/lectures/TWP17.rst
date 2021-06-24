@@ -29,7 +29,10 @@ Edificio
 
 ..  codelens:: cd_l17_2
 
-    edificio = ["La Familia Souza","La Familia Brito","El Sr Jorge","La Familia Tanaka"]
+    edificio = ["La Familia Souza",
+                "La Familia Brito",
+                "El Sr Jorge",
+                "La Familia Tanaka"]
     print(edificio[0])
     print(edificio[1])
     print(edificio[2])
@@ -89,13 +92,13 @@ Listas
 
 ..  codelens:: cd_l17_4
 
-    notas = [7.5,9,8.3]
+    notas = [7.5, 9, 8.3]
 
 + Accediendo a una nota.
 
 ..  codelens:: cd_l17_5
 
-    notas = [7.5,9,8.3]
+    notas = [7.5, 9, 8.3]
     print(notas[0])
 
 
@@ -103,7 +106,7 @@ Listas
 
 ..  codelens:: cd_l17_6
          
-    notas = [7.5,9,8.3]
+    notas = [7.5, 9, 8.3]
     notas[0] = 8.7
     print(notas[0])
 
