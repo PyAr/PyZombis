@@ -359,15 +359,19 @@ Diccionarios
     for clave in d:
         print(clave)
 
-+ Haga un programa que lea el archivo alice.txt y cuente el número de ocurrencias de cada palabra en el texto. Nota: para conocer los personajes especiales use import string y use string.punctuation
-+ `http://www.gutenberg.org/cache/epub/11/pg11.txt`_
 
+.. activecode:: ac_l23_9
+    :nocodelens:
+    :available_files: alice2.txt
+    :Language: python
 
-.. code-block:: python
-
+    Haga un programa que lea el archivo alice2.txt y cuente el número de ocurrencias de cada palabra en el texto. Nota: 
+    para conocer los personajes especiales use ``import string`` y use ``string.punctuation``
+    
+    ~~~~
     import string
 
-    archivo = open("alice.txt", "r")
+    archivo = open("alice2.txt", "r")
     texto = archivo.read()
     texto = texto.lower()
 
@@ -391,10 +395,14 @@ Exercício Programa 1
 
 
 .. image:: img/TWP05_041.jpeg
-   :height: 12.571cm
-   :width: 9.411cm
-   :align: center
-   :alt: 
+    :height: 12.571cm
+    :width: 9.411cm
+    :align: center
+    :alt: 
 
 
 + “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
+
+.. datafile:: alice2.txt
+    :fromfile: _static/alice.txt
+    :hide:
