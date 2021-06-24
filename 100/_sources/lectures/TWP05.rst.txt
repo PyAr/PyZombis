@@ -433,21 +433,27 @@ Expresiones Lógicas
 
 
 + Podemos combinar los operadores lógicos para formar expresiones lógicas complejas
-+ El orden de evaluación no es> y> o
++ El orden de evaluación es: ``not`` > ``and`` > ``or``. Esto significa que en una 
+  expresión se evalúa primero el operador lógico ``not``, después ``and`` y por último ``or``.
 
+Veamos un ejemplo
 
+.. codelens:: cl_l05_13
+
+   print(not False or False and True)
+   print(False or True and True)
+   print(not False and True or False)
 
 
 Ejemplo
 =======
 
 
-
 + La condición para otorgar un préstamo de compra de una motocicleta son: tener un
   salario mayor que $1,000.00 y ser mayor de 18 años. Compruebe si José puede obtener el
   préstamo
 
-.. codelens:: cl_l05_13
+.. codelens:: cl_l05_14
     
     salario = 500.0
     edad = 20
@@ -460,7 +466,7 @@ Ejemplo
 + Verifique si un estudiante aprobó dado que obtuvo una puntuación promedio de 5.8 en
   el programa de ejercicios y obtuvo un puntaje promedio de 7 en las pruebas
 
-.. codelens:: cl_l05_14
+.. codelens:: cl_l05_15
     
     ep = 5.8
     p = 7
@@ -468,7 +474,7 @@ Ejemplo
     print(aprobado)
 
 
-Variale String
+Variable String
 ================
 
 + Almacene cadenas como nombres y texto en general
@@ -478,7 +484,7 @@ Variale String
   principio y fin
 
 
-.. codelens:: cl_l05_15
+.. codelens:: cl_l05_16
     
     texto = "Joaquin y Maria comen pan"
     print(texto)
@@ -496,7 +502,7 @@ Variable String
   Python
 
 
-.. codelens:: cl_l05_16
+.. codelens:: cl_l05_17
     
     texto = "Joaquin y Maria comen pan"
     print(len(texto))
@@ -510,7 +516,7 @@ Variable String
 + Accedemos al carácter proporcionando el índice entre corchetes ``[]``
 
 
-.. codelens:: cl_l05_17
+.. codelens:: cl_l05_18
     
     texto = "Joaquin y Maria comen pan"
     print(texto[0])
@@ -527,7 +533,7 @@ Variable String
   caracteres de cadena
 
 
-.. codelens:: cl_l05_18
+.. codelens:: cl_l05_19
     
     texto = "Juan y Maria comen pan"
     print(texto[22])
@@ -548,7 +554,7 @@ Concatenación
 
 
 
-.. codelens:: cl_l05_19
+.. codelens:: cl_l05_20
     
     a = "Papa"
     b = "cuando nace"
@@ -562,7 +568,7 @@ Composición
 + Unir cadenas múltiples no siempre es práctico
 + Podemos usar marcadores de posición para reemplazar valores dentro de cadenas
 
-.. codelens:: cl_l05_20
+.. codelens:: cl_l05_21
     
     edad = 20
     print("Juan tiene %d años" % edad)
@@ -579,7 +585,7 @@ Composición
 
 
 
-.. codelens:: cl_l05_21
+.. codelens:: cl_l05_22
     
     edad = 20
     print("[%03d]" % edad)
@@ -593,7 +599,7 @@ Composición
 + ``%5.2f`` significa 5 caracteres en total y 2 decimales
 
 
-.. codelens:: cl_l05_22
+.. codelens:: cl_l05_23
     
     print("$%5.2f pesos" % 23)
 
@@ -604,7 +610,7 @@ Corte
 
 + Podemos realizar la operación de corte utilizando ``[idice_comienzo:indice_fin]``
 
-.. codelens:: cl_l05_23
+.. codelens:: cl_l05_24
     
     x = "0123456789"
     print(x[0:2])
@@ -622,7 +628,7 @@ Corte
   también podemos tener índices negativos: -1 último, -2 penúltimo
 
 
-.. codelens:: cl_l05_24
+.. codelens:: cl_l05_25
     
     x = "0123456789"
     print(x[:2])
@@ -644,7 +650,7 @@ Cambiar variables a lo largo del tiempo
 
 
 
-.. codelens:: cl_l05_25
+.. codelens:: cl_l05_26
     
     deuda = 0 
     compra = 100
@@ -719,9 +725,9 @@ Conversión de entrada de datos
    :nocodelens:
    :stdin:
 
-    valor_unitario = float(input("Valor de una rosquilla: "))
-    n = int(input("Número de rosquillas: "))
-    print("Valor total = %5.2f" % (n * valor_unitario))
+   valor_unitario = float(input("Valor de una rosquilla: "))
+   n = int(input("Número de rosquillas: "))
+   print("Valor total = %5.2f" % (n * valor_unitario))
 
 
 Error común
