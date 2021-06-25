@@ -9,13 +9,6 @@ Clases y objetos
     :align: center
     :alt:
 
-
-Descargue los códigos de abajo
-==============================
-+ tv*.py
-+ tatu*.py
-+ teste*.py
-
 Clases y objetos
 =================
 
@@ -26,7 +19,7 @@ Clases y objetos
 Clases y objetos
 =================
 
-..  codelens:: Example8_1
+..  codelens:: cl_l25_1
          
     class Television:
         def __init__(self):
@@ -53,19 +46,19 @@ Clases y objetos
 Clases y objetos
 ================
 
-+ El parámetro propio significa el objeto de televisión en sí.
-+ self.linked es un valor de ``self``, es decir, del objeto de televisión.
-+ Siempre que creamos atributos del objeto, debemos asociarlos con uno mismo.
-+ De lo contrario, si escribimos solo vinculado = Falso, vinculado sería solo una variable de método local y no un atributo.
++ El parámetro ``self`` significa el objeto de televisión en sí.
++ ``self.conectado`` es un valor del objeto ``television``.
++ Siempre que queramos crear atributos de un objeto, debemos asociarlos con uno mismo utilizando ``self``.
++ De lo contrario, si escribimos solamente ``conectado = False``, ``conectado`` sería solo una variable local del método y no un atributo.
 
 Clases y objetos
 ================
 
-..  codelens:: Example8_2
+..  codelens:: cl_l25_2
          
     class Television:
         def __init__(self):
-            self.conectada = False
+            self.conectado = False
             self.canal = 2
 
         def cambiar_canal_hacia_abajo(self):
@@ -85,16 +78,16 @@ Clases y objetos
 Clases y objetos
 ================
 
-+ Informatizarás el banco Tatú, controlando el saldo de la cuenta corriente
-+ Cada cuenta corriente puede tener uno o más clientes como titular
-+ El banco controla solo el nombre y el número de teléfono
++ Automatizaras el banco TATU, controlando el saldo de las cuentas corriente.
++ Cada cuenta corriente puede tener uno o más clientes como titular.
++ El banco controla solo el nombre y el número de teléfono.
 + La cuenta corriente muestra un saldo y un estado de cuenta de las operaciones de retiro y depósito.
-+ No hay cuentas especiales, por lo que el cliente no puede retirar más de tener en equilibrio.
++ No hay cuentas especiales, por lo que el cliente no puede retirar más de lo que tiene de saldo.
 
-Archivo tatu.py
-===============
+Clase Cliente y Clase Cuenta
+============================
 
-..  activecode:: Example8_3
+..  activecode:: ac_l25_1
     :nocodelens:
     :stdin:
 
@@ -104,9 +97,9 @@ Archivo tatu.py
             self.telefono = telefono
 
     class Cuenta:
-        def __init__(self, Clientes, numero, saldo=0):
+        def __init__(self, clientes, numero, saldo=0):
             self.saldo = saldo
-            self.Clientes = Clientes
+            self.clientes = clientes
             self.numero = numero
 
         def resumen(self):
@@ -122,14 +115,14 @@ Archivo tatu.py
             self.saldo += monto
 
 
-Archivo Test.py, salida de prueba
-=================================
+Utilizando las clases Cliente y Cuenta
+======================================
 
 
-..  activecode:: Example8_4
+..  activecode:: ac_l25_2
     :nocodelens:
     :stdin:
-    :include: Example8_3
+    :include: ac_l25_1
 
     juan = Cliente("Juan de Silva", "777-1234")
     maria = Cliente("Maria de Silva", "555-4321")
@@ -144,13 +137,13 @@ Archivo Test.py, salida de prueba
 Declaración de operaciones
 ==========================
 
-+ Cambie el método de resumen de la clase ``Cuenta`` a un estado de cuenta, ahora imprima una lista de las operaciones de retiro y depósito realizadas
++ Agregue el método ``estado_de_cuenta`` a la clase ``Cuenta`` el cual imprime una lista de las operaciones de retiro y depósito realizadas.
 + Cambie el método ``__init__`` para usar el método ``depositar`` para inicializar el saldo.
 
-Arquivo tatu2.py (apenas Conta)
-===============================
+Clase Cliente y Clase Cuenta (Mejorada)
+=======================================
 
-..  activecode:: Example8_5
+..  activecode:: ac_l25_3
     :nocodelens:
     :stdin:
 
@@ -161,9 +154,9 @@ Arquivo tatu2.py (apenas Conta)
 
 
     class Cuenta:
-        def __init__(self, Clientes, numero, saldo=0):
-            self.saldo = saldo
-            self.Clientes = Clientes
+        def __init__(self, clientes, numero, saldo=0):
+            self.saldo = 0
+            self.clientes = clientes
             self.numero = numero
             self.operaciones = []
             self.depositar(saldo)
@@ -174,142 +167,116 @@ Arquivo tatu2.py (apenas Conta)
         def retirar(self, monto):
             if self.saldo >= monto:
                 self.saldo -= monto
-                self.operaciones.append(["Retiro"], monto)
+                self.operaciones.append(["Retiro", monto])
             else:
                 print("Saldo insuficiente para retirar")
 
         def depositar(self, monto):
             self.saldo += monto
-            self.operaciones.append(["Deposito", monto])
+            self.operaciones.append(["Depósito", monto])
 
-        def extracto_de_operaciones(self):
+        def estado_de_cuenta(self):
             print("extracto CC N %s" % self.numero)
             for op in self.operaciones:
                 print("%10s %10.2f" % (op[0], op[1]))
-            print("%10s %10.2f\n" % ("Saldo=", self.saldo))
+            print("%10s %10.2f\n" % ("Saldo", self.saldo))
 
 
-Archivo teste2.py, salida teste2
-=================================
+Utilizando las clases Cliente y Cuenta (Mejorada)
+=================================================
 
-..  activecode:: Example8_6
+..  activecode:: ac_l25_4
     :nocodelens:
     :stdin:
-    :include: Example8_5
+    :include: ac_l25_3
 
     juan = Cliente("Juan de Silva", "777-1234")
     maria = Cliente("Maria de Silva", "555-4321")
     cuenta_1 = Cuenta([juan], 1, 1000)
     cuenta_2 = Cuenta([maria, juan], 2, 500)
+
     cuenta_1.retirar(50)
     cuenta_2.depositar(300)
     cuenta_1.retirar(190)
     cuenta_2.depositar(95.15)
     cuenta_2.retirar(250)
-    cuenta_1.extracto_de_operaciones()
-    cuenta_2.extracto_de_operaciones()
+
+    cuenta_1.estado_de_cuenta()
+    cuenta_2.estado_de_cuenta()
 
 Herencia
 ========
 
-+ La orientación a objetos le permite modificar nuestras clases, agregando o modificando atributos y métodos, basados en la clase anterior.
-+ Crearemos cuentas especiales, donde podemos retirar más dinero que equilibrio, hasta cierto límite.
-+ Las operaciones de depósito, extracto y resumen continúan como una cuenta normal.
++ La herencia en objetos permite modificar nuestras clases, agregando o modificando atributos y métodos, basados en la clase anterior.
++ Vamos a crear cuentas especiales, donde podemos retirar más dinero que el saldo, hasta cierto límite.
++ Las operaciones de depósito, retiro y resumen continúan como una cuenta normal.
 
 
-Añadir Cuenta Especial tatu3 tatu3.py
-=====================================
+Clase Cuenta Especial
+=====================
 
-..  activecode:: Example8_7
+..  activecode:: ac_l25_5
     :nocodelens:
     :stdin:
-
-    class Cliente:
-        def __init__(self, nombre, telefono):
-            self.nombre = nombre
-            self.telefono = telefono
-
-
-    class Cuenta:
-        def __init__(self, Clientes, numero, saldo=0):
-            self.saldo = saldo
-            self.Clientes = Clientes
-            self.numero = numero
-            self.operaciones = []
-            self.depositar(saldo)
-
-        def resumen(self):
-            print("CC numero: %s saldo: %10.2f" % (self.numero, self.saldo))
-
-        def retirar(self, monto):
-            if self.saldo >= monto:
-                self.saldo -= monto
-                self.operaciones.append(["Retiro"], monto)
-            else:
-                print("Saldo insuficiente para retirar")
-
-        def depositar(self, monto):
-            self.saldo += monto
-            self.operaciones.append(["Deposito", monto])
-
-        def extracto_de_operaciones(self):
-            print("extracto CC N %s" % self.numero)
-            for op in self.operaciones:
-                print("%10s %10.2f" % (op[0], op[1]))
-            print("%10s %10.2f\n" % ("Saldo=", self.saldo))
+    :include: ac_l25_3
 
     class CuentaEspecial(Cuenta):
-        def __init__(self, cliente, numero, saldo = 0):
-            Cuenta.__init__(self,cliente,numero, saldo)
+        def __init__(self, clientes, numero, saldo=0, limite=0):
+            Cuenta.__init__(self, clientes, numero, saldo)
             self.limite = limite
 
         def retirar(self, monto):
             if self.saldo + self.limite >= monto:
                 self.saldo -= monto
-                self.operaciones.append(["Retiro"], monto)
+                self.operaciones.append(["Retiro", monto])
             else:
                 print("Saldo insuficiente para retirar")
 
-Cuenta Especial
-===============
+Clase Cuenta Especial
+=====================
 
-+ Tenga en cuenta que escribimos Cuenta entre paréntesis
-+ ContaEspecial hereda los métodos y atributos de la cuenta
-+ self.limite se creará solo para clases de tipo ContaEspecial
-+ Tenga en cuenta que estamos reemplazando completamente el método de retiro en
-  Cuenta especial
++ Tenga en cuenta que escribimos ``Cuenta`` entre paréntesis.
++ ``CuentaEspecial`` hereda los métodos y atributos de ``Cuenta``.
++ ``self.limite`` se creará solo para clases de tipo ``CuentaEspecial``.
++ Tenga en cuenta que estamos sobre escribiendo completamente el método ``retirar`` en ``CuentaEspecial``.
 
-Archivo teste3.py, salida test3
-=================================
+Utilizando todas las clases
+===========================
 
-..  activecode:: Example8_8
+..  activecode:: ac_l25_6
     :nocodelens:
     :stdin:
-    :include: Example8_7
+    :include: ac_l25_3, ac_l25_5
 
-    juan = Cliente('Juan de Silva','777-1234')
-    maria = Cliente('Maria de Silva','555-4321')
-    conta1 = Cuenta([juan],1,1000)
-    conta2 = Cuenta([maria,juan],2,500,1000)
-    conta1.retirar(50)
-    conta2.deposito(300)
-    conta1.retirar(190)
-    conta2.deposito(95.15)
-    conta2.retirar(250)
-    conta1.extrato()
-    conta2.extrato()
+    juan = Cliente("Juan de Silva", "777-1234")
+    maria = Cliente("Maria de Silva", "555-4321")
+    cuenta_1 = Cuenta([juan], 1, 1000)
+    cuenta_2 = CuentaEspecial([maria, juan], 2, 500, 1000)
+
+    cuenta_1.retirar(50)
+    cuenta_2.depositar(300)
+    cuenta_1.retirar(190)
+    cuenta_2.depositar(95.15)
+    cuenta_2.retirar(1500)
+
+    cuenta_1.estado_de_cuenta()
+    cuenta_2.estado_de_cuenta()
 
 Ventajas de la herencia
 =======================
 
 + Hemos modificado muy poco nuestro programa, manteniendo la funcionalidad anterior y agregando nuevas características.
 + Fue posible reutilizar los métodos de la cuenta.
-+ Por lo tanto, la definición de la clase ContaEspecial fue mucho más baja, incluyendo solo el comportamiento diferente.
++ Por lo tanto, la definición de la clase ``CuentaEspecial`` fue mucho más simple, incluyendo solo el comportamiento diferente.
 
-Otro ejemplo de POO
-===================
+Otros ejemplos de POO
+=====================
 
-..  codelens:: Example8_9
++ Podemos crear una clase ``Persona`` con los atributos básicos.
+
+..  activecode:: ac_l25_7
+    :nocodelens:
+    :stdin:
          
     import datetime
 
@@ -331,3 +298,63 @@ Otro ejemplo de POO
     print(masanori.edad())
     print(masanori)
 
++ Puedes utilizar la implementación de la clase ``Persona`` para crear un objeto con tu nombre.
+
+..  activecode:: ac_l25_8
+    :nocodelens:
+    :stdin:
+    :include: ac_l25_7
+
+    # Crea un objeto con tu nombre
+
+Múltiple herencia y ¿Qué objeto es?
+===================================
+
++ Se puede heredar de varias clases.
++ Pueden existir momentos en que quieras verificar el tipo de una instancia.
++ En Python existe la función ``isinstance``.
++ Permite verificar si una instancia de una clase es realmente de una clase dada.
+
+..  codelens:: cl_l25_3
+
+    class Ethernet:
+        def __init__(self, nombre, direccion_mac):
+            self.nombre = nombre
+            self.direccion_mac = direccion_mac
+
+
+    class Wireless(Ethernet):
+        def __init__(self, nombre, direccion_mac):
+            Ethernet.__init__(self, nombre, direccion_mac)
+
+
+    class PCI:
+        def __init__(self, bus, fabricante):
+            self.bus = bus
+            self.fabricante = fabricante
+
+
+    class USB:
+        def __init__(self, dispositivo):
+            self.dispositivo = dispositivo
+
+
+    class PCIEthernet(PCI, Ethernet):
+        def __init__(self, bus, fabricante, nombre, direccion_mac):
+            PCI.__init__(self, bus, fabricante)
+            Ethernet.__init__(self, nombre, direccion_mac)
+
+
+    class USBWireless(USB, Wireless):
+        def __init__(self, dispotivo, nombre, direccion_mac):
+            USB.__init__(self, dispotivo)
+            Wireless.__init__(self, nombre, direccion_mac)
+
+
+    wlan0 = USBWireless("usb0", "wlan0", "00:33:44:55:66")
+    eth0 = PCIEthernet("pci :0:0:1", "realtek", "eth0", "00:11:22:33:44")
+
+
+    print(isinstance(wlan0, Ethernet))
+    print(isinstance(eth0, PCI))
+    print(isinstance(eth0, USB))
