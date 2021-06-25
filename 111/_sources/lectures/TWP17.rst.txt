@@ -16,10 +16,10 @@ Edificio
 
 ..  codelens:: cd_l17_1
 
-    edifício_planta_baja = "La Familia Souza"
-    edifício_1ra_planta = "La Familia Brito"
-    edifício_2da_planta = "El Sr Jorge"
-    edifício_3ra_planta = "La Familia Tanaka"
+    edificio_planta_baja = "La Familia Souza"
+    edificio_1ra_planta = "La Familia Brito"
+    edificio_2da_planta = "El Sr Jorge"
+    edificio_3ra_planta = "La Familia Tanaka"
 
 Edificio
 ========
@@ -239,5 +239,4 @@ Lista de Ejercícios “again”
     :alt:
 
 + “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote” - Einstein
-
 
