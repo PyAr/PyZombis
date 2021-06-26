@@ -105,8 +105,8 @@ Strings
     :alt:
 
 
-Fatiamento
-==========
+Cortar
+======
 
 ..  codelens:: cl_l33_1
          
@@ -116,11 +116,11 @@ Fatiamento
     print(texto[4:6])
 
 
-+ Fatia do primeiro número até antes do segundo
-+ Não inclui o segundo número!
++ Corta el primer número antes del segundo.
++ ¡No incluye el segundo número!
 
-Fatiamento
-==========
+Cortar
+======
 
 ..  image:: img/TWP33_012.jpg
     :height: 10.323cm
@@ -129,9 +129,8 @@ Fatiamento
     :alt:
 
 
-Fatiamento
-==========
-
+Cortar
+======
 
 ..  activecode:: ac_l33_2
     :nocodelens:
@@ -163,7 +162,7 @@ No hay preguntas tontas
 + ¿Qué hace ``urllib.request``?
 + Te permite chatear con internet.
 + ¿Puedo acceder a una página directamente en el navegador?
-+ Sí. Escriba en modo interactivo "importar antigravedad"
++ Sí. Escriba en modo interactivo ``import antigravity``.
 
 Descuentos para clientes leales
 ===============================
@@ -406,17 +405,17 @@ Biblioteca ``time``
 Resumen
 =======
 
-+ Los ``string`` son cadenas de caracteres
++ Los ``string`` son cadenas de caracteres.
 + Accedemos a los caracteres individuales por el índice, que comienza con cero.
 + Los métodos son funciones integradas en variables.
 + Hay bibliotecas de programación con código listo.
-+ Los datos tienen un tipo, como ``int`` o ``string``
++ Los datos tienen un tipo, como ``int`` o ``string``.
 
 Herramientas de Python
 ======================
 
-+ ``texto[4]`` accede al quinto carácter
-+ ``texto[4:9]`` accede al quinto al noveno carácter
-+ El método ``text.find()`` busca una subcadena
-+ ``float()`` convierte algo a un punto flotante
-+ Bibliotecas: urllib.request y equipo
++ ``texto[4]`` accede al quinto carácter.
++ ``texto[4:9]`` accede al quinto al noveno carácter.
++ El método ``text.find()`` busca una subcadena.
++ ``float()`` convierte algo a un punto flotante.
++ Bibliotecas: ``urllib.request `` y ``time``.
