@@ -162,7 +162,7 @@ No hay preguntas tontas
 + ¿Qué hace ``urllib.request``?
 + Te permite chatear con internet.
 + ¿Puedo acceder a una página directamente en el navegador?
-+ Sí. Escriba en modo interactivo "importar antigravedad"
++ Sí. Escriba en modo interactivo ``import antigravity``.
 
 Descuentos para clientes leales
 ===============================
