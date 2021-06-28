@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Revisión de archivos y listas &#8212; PyZombis 24_refactor_twp37@20529a2</title>
+    <title>Revisión de Archivos, Listas y Diccionarios &#8212; PyZombis 24_refactor_twp37@a2c9d98</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 24_refactor_twp37@20529a2</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 24_refactor_twp37@a2c9d98</a>
       </div>
     </div>
 
@@ -226,7 +226,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Revisión de archivos y listas</a><ul>
+<li><a class="reference internal" href="#">Revisión de Archivos, Listas y Diccionarios</a><ul>
 <li><a class="reference internal" href="#campeonato-de-surf-de-codeville">Campeonato de Surf de Codeville</a></li>
 <li><a class="reference internal" href="#id1">Campeonato de Surf de Codeville</a></li>
 <li><a class="reference internal" href="#id2">Campeonato de Surf de Codeville</a></li>
@@ -248,6 +248,12 @@
 <li><a class="reference internal" href="#ordenar-en-orden-descendente">Ordenar en orden descendente</a></li>
 <li><a class="reference internal" href="#metodos-sort-y-reverse">Métodos <code class="docutils literal notranslate"><span class="pre">sort</span></code> y <code class="docutils literal notranslate"><span class="pre">reverse</span></code></a></li>
 <li><a class="reference internal" href="#finalmente-las-posiciones-correctas">Finalmente las posiciones correctas</a></li>
+<li><a class="reference internal" href="#cuales-son-los-nombres-de-los-ganadores">¿Cuáles son los nombres de los ganadores?</a></li>
+<li><a class="reference internal" href="#usando-otra-lista">Usando otra lista</a></li>
+<li><a class="reference internal" href="#pero-estos-datos-son-incorrectos">¡Pero estos datos son incorrectos!</a></li>
+<li><a class="reference internal" href="#necesitamos-unir-las-listas">Necesitamos unir las listas</a></li>
+<li><a class="reference internal" href="#usando-y-ordenando-un-diccionario">Usando y ordenando un diccionario</a></li>
+<li><a class="reference internal" href="#id4">Usando y ordenando un diccionario</a></li>
 </ul>
 </li>
 </ul>
@@ -294,8 +300,8 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="revision-de-archivos-y-listas">
-<h1>Revisión de archivos y listas<a class="headerlink" href="#revision-de-archivos-y-listas" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="revision-de-archivos-listas-y-diccionarios">
+<h1>Revisión de Archivos, Listas y Diccionarios<a class="headerlink" href="#revision-de-archivos-listas-y-diccionarios" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
 <div class="section" id="campeonato-de-surf-de-codeville">
 <h2>Campeonato de Surf de Codeville<a class="headerlink" href="#campeonato-de-surf-de-codeville" title="Permalink to this headline">¶</a></h2>
@@ -479,13 +485,15 @@ print("%.2f" % tercero)
       style="visibility: hidden;">
 archivo = open("surf.txt")
 puntuaciones = []
+
 for linea in archivo:
     nombre, puntos = linea.split()
-    puntuaciones.append([float(puntos), nombre])
+    puntuaciones.append(float(puntos))
 archivo.close()
-print(f"1. {puntuaciones[0][1]} puntaje -> {puntuaciones[0][0]:.2f}")
-print(f"2. {puntuaciones[1][1]} puntaje -> {puntuaciones[1][0]:.2f}")
-print(f"3. {puntuaciones[2][1]} puntaje -> {puntuaciones[2][0]:.2f}")
+
+print(f"1. {puntuaciones[0]:.2f}")
+print(f"2. {puntuaciones[1]:.2f}")
+print(f"3. {puntuaciones[2]:.2f}")
 </textarea>
 </div>
 </div>
@@ -518,21 +526,131 @@ print(f"3. {puntuaciones[2][1]} puntaje -> {puntuaciones[2][0]:.2f}")
       style="visibility: hidden;">
 archivo = open("surf.txt")
 puntuaciones = []
+
 for linea in archivo:
     nombre, puntos = linea.split()
-    puntuaciones.append([float(puntos), nombre])
+    puntuaciones.append(float(puntos))
 archivo.close()
 
-puntuaciones.sort()
-puntuaciones.reverse()
+puntuaciones.sort(reverse = True)
 
-print(f"1. {puntuaciones[0][1]} puntaje -> {puntuaciones[0][0]:.2f}")
-print(f"2. {puntuaciones[1][1]} puntaje -> {puntuaciones[1][0]:.2f}")
-print(f"3. {puntuaciones[2][1]} puntaje -> {puntuaciones[2][0]:.2f}")
+print(f"1. {puntuaciones[0]:.2f}")
+print(f"2. {puntuaciones[1]:.2f}")
+print(f"3. {puntuaciones[2]:.2f}")
 </textarea>
 </div>
 </div>
 <a class="reference internal image-reference" href="../_images/TWP37_025.jpg"><img alt="" class="align-center" src="../_images/TWP37_025.jpg" style="width: 16.645cm; height: 7.724cm;" /></a>
+</div>
+<div class="section" id="cuales-son-los-nombres-de-los-ganadores">
+<h2>¿Cuáles son los nombres de los ganadores?<a class="headerlink" href="#cuales-son-los-nombres-de-los-ganadores" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP37_026.png"><img alt="" class="align-center" src="../_images/TWP37_026.png" style="width: 16.645cm; height: 7.724cm;" /></a>
+</div>
+<div class="section" id="usando-otra-lista">
+<h2>Usando otra lista<a class="headerlink" href="#usando-otra-lista" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Para saberlo podemos usar dos listas.</p></li>
+<li><p>La lista <code class="docutils literal notranslate"><span class="pre">nombres</span></code> y la lista <code class="docutils literal notranslate"><span class="pre">puntuaciones</span></code> para guardar los nombres y las puntuaciones obtenidas por los participantes respectivamente.</p></li>
+</ul>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l37_6 data-question_label="7">
+<div id=ac_l37_6_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l37_6_editor" 
+      data-timelimit=25000     
+    data-audio=''  data-datafile='surf.txt' data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+archivo = open("surf.txt")
+puntuaciones = []
+nombres = []
+
+for linea in archivo:
+    nombre, puntos = linea.split()
+    puntuaciones.append(float(puntos))
+    nombres.append(nombre)
+archivo.close()
+
+puntuaciones.sort(reverse = True)
+nombres.sort(reverse = True)
+
+print(f"1. {nombres[0]} {puntuaciones[0]:.2f}")
+print(f"2. {nombres[1]} {puntuaciones[1]:.2f}")
+print(f"3. {nombres[2]} {puntuaciones[2]:.2f}")
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="pero-estos-datos-son-incorrectos">
+<h2>¡Pero estos datos son incorrectos!<a class="headerlink" href="#pero-estos-datos-son-incorrectos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Debe haber un problema porque ¡Zack es realmente malo!</p></li>
+<li><p>¿Qué fue lo sucedió?</p></li>
+<li><p>Ordenando la lista <code class="docutils literal notranslate"><span class="pre">nombres</span></code> de forma decreciente el carácter <code class="docutils literal notranslate"><span class="pre">'Z'</span></code> termina siendo el primero.</p></li>
+<li><p>Se pierde la correspondencia de las puntuaciones y los nombres de los participantes.</p></li>
+<li><p>Necesario otra estructura de datos para no perder la correspondencia.</p></li>
+</ul>
+</div>
+<div class="section" id="necesitamos-unir-las-listas">
+<h2>Necesitamos unir las listas<a class="headerlink" href="#necesitamos-unir-las-listas" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP37_027.png"><img alt="" class="align-center" src="../_images/TWP37_027.png" style="width: 17.645cm; height: 11.724cm;" /></a>
+</div>
+<div class="section" id="usando-y-ordenando-un-diccionario">
+<h2>Usando y ordenando un diccionario<a class="headerlink" href="#usando-y-ordenando-un-diccionario" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Usando un diccionario y ver todos sus elementos de forma iterativa.</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="8">
+        <div class="pytutorVisualizer" id="cl_l37_1"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 8 (cl_l37_1)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l37_1_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l37_1"] = {"code": "puntuaciones = {}\npuntuaciones[9.12] = \"Juan\"\npuntuaciones[7.21] = \"Zack\"\n\nfor participante in sorted(puntuaciones, reverse=True):\n    print(f\"{puntuaciones[participante]} {participante:.2f}\")", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"puntuaciones": ["REF", 1]}, "ordered_globals": ["puntuaciones"], "stack_to_render": [], "heap": {"1": ["DICT"]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"puntuaciones": ["REF", 1]}, "ordered_globals": ["puntuaciones"], "stack_to_render": [], "heap": {"1": ["DICT", [9.12, "Juan"]]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"puntuaciones": ["REF", 1]}, "ordered_globals": ["puntuaciones"], "stack_to_render": [], "heap": {"1": ["DICT", [9.12, "Juan"], [7.21, "Zack"]]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"puntuaciones": ["REF", 1], "participante": 9.12}, "ordered_globals": ["puntuaciones", "participante"], "stack_to_render": [], "heap": {"1": ["DICT", [9.12, "Juan"], [7.21, "Zack"]]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"puntuaciones": ["REF", 1], "participante": 9.12}, "ordered_globals": ["puntuaciones", "participante"], "stack_to_render": [], "heap": {"1": ["DICT", [9.12, "Juan"], [7.21, "Zack"]]}, "stdout": "Juan 9.12\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"puntuaciones": ["REF", 1], "participante": 7.21}, "ordered_globals": ["puntuaciones", "participante"], "stack_to_render": [], "heap": {"1": ["DICT", [9.12, "Juan"], [7.21, "Zack"]]}, "stdout": "Juan 9.12\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"puntuaciones": ["REF", 1], "participante": 7.21}, "ordered_globals": ["puntuaciones", "participante"], "stack_to_render": [], "heap": {"1": ["DICT", [9.12, "Juan"], [7.21, "Zack"]]}, "stdout": "Juan 9.12\nZack 7.21\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"puntuaciones": ["REF", 1], "participante": 7.21}, "ordered_globals": ["puntuaciones", "participante"], "stack_to_render": [], "heap": {"1": ["DICT", [9.12, "Juan"], [7.21, "Zack"]]}, "stdout": "Juan 9.12\nZack 7.21\n"}]};
+</script>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>Usando y ordenando un diccionario<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Usando un diccionario para el campeonato.</p></li>
+</ul>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l37_7 data-question_label="9">
+<div id=ac_l37_7_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l37_7_editor" 
+      data-timelimit=25000     
+    data-audio=''  data-datafile='surf.txt' data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+archivo = open("surf.txt")
+puntuaciones = {}
+
+for linea in archivo:
+    nombre, puntos = linea.split()
+    puntuaciones[float(puntos)] = nombre
+archivo.close()
+
+for participante in sorted(puntuaciones, reverse=True):
+    print(f"{puntuaciones[participante]} obtuvo un puntaje de {participante:.2f}")
+</textarea>
+</div>
+</div>
 </div>
 </div>
 
