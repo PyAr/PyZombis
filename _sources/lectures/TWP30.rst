@@ -45,7 +45,7 @@ Empecemos el segundo
     :alt: 
 
 
-Lo que aprendemos
+Lo que aprendimos
 =================
 
 
@@ -97,7 +97,7 @@ Encontrando tu camino
 + ¿Quieres ser programado o ser el programador?
 + Puedes tomar el control
 
-Adivinhando números
+Adivinando números
 ===================
 
 + **print()** es una función
@@ -114,7 +114,7 @@ Adivinhando números
     :stdin:
 
     print("Bienvenido!")
-    g = input("Ingrese un numero: ")
+    g = input("Ingrese un número: ")
     numero = int(g)
     if numero == 42:
         print("¡Ganaste!")
@@ -152,7 +152,7 @@ Las partes de tu programa
 
    + Ej .: patada == 42 (¿la patada es igual a 42?)
 
-+ Los dos puntos abre un bloque de instrucciones
++ Los dos puntos abren un bloque de instrucciones
 
 + Poner en el baño, cuaderno, heladera:
    + "¡Amo dos puntos!"
@@ -218,7 +218,7 @@ Entonces, ¿cómo ejecutas tu código?
 + El intérprete de Python funciona en dos modos: interactivo y de edición.
 
 + El modo interactivo es ideal para probar comandos y obtener respuestas
-   instantaneo
+   instantáneas
 
 + Sin embargo, el modo de edición es el más utilizado para desarrollar los programas.
 
@@ -291,7 +291,7 @@ Consejos
     :stdin:
 
     print("Bienvenido")
-    g = input("Ingrese un numero:")
+    g = input("Ingrese un número:")
     numero = int(g)
     if numero == 42:
         print("¡Ganaste!")
@@ -301,9 +301,6 @@ Consejos
         else:
             print("Bajo")
     print("Fin del juego")
-
-
-+ Use la tecla RETROCESO y la PESTAÑA para ir y venir
 
 
 A los usuarios todavía no les gusta
@@ -389,7 +386,7 @@ Sortear el número a adivinar
     print("Fin del juego!")
 
 
-¡Ahora si!
+¡Ahora sí!
 ==========
 
 
@@ -405,10 +402,10 @@ Resumen
 
 + ¡Creaste un juego!
 + Los comandos hacen cosas
-+ Las desviaciones deciden las cosas
-+ Corbatas repiten cosas
++ Las condicionales deciden las cosas
++ Los ciclos repiten cosas
 + Las condiciones te ayudan a decidir si algo es verdadero o falso
-+ La asignación define un nombre para un determinado
++ La asignación define un nombre para un valor.
 
 
 Herramientas de Python
@@ -416,10 +413,10 @@ Herramientas de Python
 
 
 + Desviaciones:yellow: `if / else`
-+ Corbatas:yellow: `while`
++ Ciclos:yellow: `while`
 + Operador de asignación =
 + Operador de igualdad ==
-+ ¡Operador diferente!=
++ ¡Operador diferente !=
 + Mostrar un mensaje:purple: `print`
 + Lea la entrada:purple: `input`
 + Convertir a entero:purple: `int`
