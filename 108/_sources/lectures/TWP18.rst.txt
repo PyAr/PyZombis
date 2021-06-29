@@ -18,7 +18,7 @@ Comillas de varios tipos.
 
 .. codelens:: cl_l18_1
          
-    x = "aguacate"
+    x = 'aguacate'
     print(x)
     y = "McDonald's"
     print(y)
