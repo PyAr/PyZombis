@@ -146,7 +146,7 @@ No hay preguntas tontas
   mientras que ``return`` devuelve un valor para quien llamó a la función.
 + Si no hay ``return`` dentro de la función, ¿qué devuelve? Deuelve nada: ``None``.
   ¿Debería ``return`` siempre aparecer al final de la función? No siempre, depende de la
-  lógica de función
+  lógica de la función
 + ¿Puede una función devolver más de un valor? Sí, incluidas listas o
   diccionarios.
 
@@ -166,20 +166,20 @@ No hay preguntas tontas
 + Muy adoptado hoy
 + Alternativa a XML
 
-  + Más XML detallado
-  + XML menos legibilidad
+  + XML es más detallado
+  + XML es menos legible
 
 
-.. code-block:: python 
+.. activecode:: ac_l35_3
+    :nocodelens:
 
-   
     import urllib.request
     import json
 
     url = "http://api.icndb.com/jokes/random?limitTo=[nerdy]"
-    resp = urrlib.request.urlopen(url).read()
-    data = json.loads(resp.decode('utf-8'))
-    print(data['value']['joke'])
+    texto = urllib.request.urlopen(url).read()
+    data = json.loads(texto)
+    print(data["value"]["joke"])
 
 
 .. disqus::
