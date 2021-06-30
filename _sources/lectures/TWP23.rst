@@ -360,18 +360,23 @@ Diccionarios
         print(clave)
 
 
+.. datafile:: alice_archivo.txt
+    :fromfile: _static/alice.txt
+    :hide:
+
+
 .. activecode:: ac_l23_9
     :nocodelens:
-    :available_files: alice2.txt
+    :available_files: alice_archivo.txt
     :Language: python
 
-    Haga un programa que lea el archivo alice2.txt y cuente el número de ocurrencias de cada palabra en el texto. Nota: 
-    para conocer los personajes especiales use ``import string`` y use ``string.punctuation``
+    Haga un programa que lea el archivo ``alice_archivo.txt`` y cuente el número de ocurrencias de cada palabra en el texto. Nota: 
+    para conocer los caracteres especiales use ``import string`` y use ``string.punctuation``.
     
     ~~~~
     import string
 
-    archivo = open("alice2.txt", "r")
+    archivo = open("alice_archivo.txt", "r")
     texto = archivo.read()
     texto = texto.lower()
 
@@ -390,7 +395,7 @@ Diccionarios
     archivo.close()
 
 
-Exercício Programa 1
+Ejercicio Programa 1
 ====================
 
 
@@ -402,7 +407,3 @@ Exercício Programa 1
 
 
 + “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
-
-.. datafile:: alice2.txt
-    :fromfile: _static/alice.txt
-    :hide:
