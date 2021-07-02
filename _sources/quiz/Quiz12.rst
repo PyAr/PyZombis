@@ -48,10 +48,11 @@ Ejercicio 2
 ..  activecode:: q12_2
     :nocodelens:
 
-    Desarrolle la función ``no_es_malo`` que recibe una cadena ``s`` como parámetro. La función debe buscar la primera aparición de la cadena ``"no"`` y la cadena ``"malo"``, si ésta última aparece después de la primera, reemplace ``"no" ... "malo"`` por la cadena ``"bueno"`` y devuelva el resultado. |br| |br|
+    Desarrolle la función ``no_es_malo`` que recibe una cadena ``s`` como parámetro. La función debe buscar la primera aparición de la cadena ``"no es"`` y la última aparición de la cadena ``"malo"`` o la cadena ``"mala"``, si alguna de ellas aparece después de la primera, reemplace ``"no es" ... "malo"`` o ``"no es" ... "mala"`` por las cadenas ``"es bueno"`` o ``"es buena"`` respectivamente, luego devuelva el resultado. |br| |br|
     Ejemplos: |br|
-    ``no_es_malo("El té no es malo")`` -> ``"El té bueno"`` |br|
-    ``no_es_malo("El precio de esta casa no es para nada malo")`` -> ``"El precio de esta casa bueno"`` |br|
+    ``no_es_malo("El té no es malo")`` -> ``"El té es bueno"`` |br|
+    ``no_es_malo("La película no es mala")`` -> ``"La película es buena"`` |br|
+    ``no_es_malo("El precio de esta casa no es para nada malo")`` -> ``"El precio de esta casa es bueno"`` |br|
     ``no_es_malo("El teléfono es malo")`` -> ``"El teléfono es malo"`` |br|
 
     ~~~~
@@ -67,30 +68,36 @@ Ejercicio 2
         def testOne(self):
 
             self.assertEqual(
-                no_es_malo("La película no es malo"),
-                "La película bueno",
-                "Esperado: La película bueno"
+                no_es_malo("El televisor no es malo"),
+                "El televisor es bueno",
+                "Esperado: El televisor es bueno"
             )
             self.assertEqual(
-                no_es_malo("Esta cena no es malo!"),
-                "Esta cena bueno!",
-                "Esperado: Esta cena bueno!"
+                no_es_malo("El asado de la cena no es malo!"),
+                "El asado de la cena es bueno!",
+                "Esperado: El asado de la cena es bueno!"
             )
             self.assertEqual(
                 no_es_malo("El té no está caliente"),
                 "El té no está caliente",
                 "Esperado: El té no está caliente"
             )
-            self.assertEqual(no_es_malo("no es para nada malo"), "bueno", "Esperado: bueno")
-            self.assertEqual(no_es_malo("no malo"), "bueno", "Esperado: bueno")
+            self.assertEqual(
+                no_es_malo("La película no es mala"),
+                "La película es buena",
+                "Esperado: La película es buena"
+            )
+            self.assertEqual(no_es_malo("no es para nada malo"), "es bueno", "Esperado: es bueno")
+            self.assertEqual(no_es_malo("no es malo"), "es bueno", "Esperado: es bueno")
             self.assertEqual(no_es_malo("malo"), "malo", "Esperado: malo")
             self.assertEqual(no_es_malo("no"), "no", "Esperado: no")
             self.assertEqual(no_es_malo("NO"), "NO", "Esperado: NO")
             self.assertEqual(no_es_malo("MALO"), "MALO", "Esperado: MALO")
             self.assertEqual(no_es_malo("NO es MALO"), "NO es MALO", "Esperado: NO es MALO")
-            self.assertEqual(no_es_malo("NO MALO"), "NO MALO", "Esperado: NO MALO")
-            self.assertEqual(no_es_malo("no MALO"), "no MALO", "Esperado: no MALO")
-            self.assertEqual(no_es_malo("NO malo"), "NO malo", "Esperado: NO malo")
+            self.assertEqual(no_es_malo("no es MALO"), "no es MALO", "Esperado: no es MALO")
+            self.assertEqual(no_es_malo("NO es malo"), "NO es malo", "Esperado: NO es malo")
+            self.assertEqual(no_es_malo("no es malo ni mala"), "es buena", "Esperado: es buena")
+            self.assertEqual(no_es_malo("no es ni mala ni malo"), "es bueno", "Esperado: es bueno")
 
 
     myTests().main()
@@ -248,4 +255,3 @@ Ejercicio 6
 
 
     myTests().main()
-
