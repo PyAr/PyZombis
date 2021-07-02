@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strings &#8212; PyZombis TWP18_fix@a11dc4a</title>
+    <title>Strings &#8212; PyZombis TWP18_fix@5f0438b</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis TWP18_fix@a11dc4a</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis TWP18_fix@5f0438b</a>
       </div>
     </div>
 
@@ -464,7 +464,8 @@ print(texto)
 <div class="section" id="concentracion">
 <h2>Concentración<a class="headerlink" href="#concentracion" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Ejemplo de un programa que lee una palabra y reemplaza las vocales por <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code></p></li>
+<li><p>Ejemplo de un programa que lee una palabra y reemplaza las vocales por <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code>.
+La función <code class="docutils literal notranslate"><span class="pre">lower</span></code> transforma las letras en minúsculas.</p></li>
 </ul>
 
 <div class="runestone explainer ac_section alert alert-warning">
@@ -481,7 +482,7 @@ palabra = input("Palabra: ")
 k = 0
 intercambio = ""
 while k < len(palabra):
-    if palabra[k] in "aeiou":
+    if palabra[k].lower() in "aeiou":
         intercambio = intercambio + "*"
     else:
         intercambio = intercambio + palabra[k]
@@ -515,7 +516,7 @@ class myTests(TestCaseGui):
     def testOne(self):
         self.assertEqual(
             intercambio,
-            "".join(["*" if c not in "aeiou" else c for c in palabra]),
+            "".join(["*" if c.lower() not in "aeiou" else c for c in palabra]),
             "Probando que intercambio esté asignado correctamente",
         )
 
@@ -549,14 +550,6 @@ allTraceData["cl_l18_5"] = {"code": "archivo = \"prog.py\"\nprint(archivo.starts
 </div>
 <div class="section" id="funciones-find-y-replace">
 <h2>Funciones <code class="docutils literal notranslate"><span class="pre">find</span></code> y <code class="docutils literal notranslate"><span class="pre">replace</span></code><a class="headerlink" href="#funciones-find-y-replace" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18.rst</span>, line 198)</p>
-<p>Title underline too short.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Funciones ``find`` y ``replace``
-================
-</pre></div>
-</div>
-</div>
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="11">
@@ -579,14 +572,6 @@ allTraceData["cl_l18_6"] = {"code": "s = \"un tigre, dos tigres, tres tigres\"\n
 </div>
 <div class="section" id="funciones-split-y-join">
 <h2>Funciones <code class="docutils literal notranslate"><span class="pre">split</span></code> y <code class="docutils literal notranslate"><span class="pre">join</span></code><a class="headerlink" href="#funciones-split-y-join" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18.rst</span>, line 213)</p>
-<p>Title underline too short.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Funciones ``split`` y ``join``
-==============
-</pre></div>
-</div>
-</div>
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12">
