@@ -10,23 +10,19 @@ def test_quiz3_2(page):
     instructions = [
         "cambio = pago - cobro",
         "billetes = []",
-        "billetes.append(cambio // 50)",
-        "cambio = cambio % 50",
-        "billetes.append(cambio//20)",
-        "cambio = cambio % 20",
-        "billetes.append(cambio//10)",
-        "cambio %= 10",
-        "billetes.append(cambio//5)",
-        "cambio%=5",
-        "billetes.append(cambio//2)",
-        "cambio%=2",
-        "billetes.append(cambio//1)",
-        "return billetes",
+        "for billete in [50, 20, 10, 5, 2, 1]:",
+        "billetes.append(cambio // billete)",
+        "cambio = cambio % billete",
     ]
 
     for inst in instructions:
         page.type("text=def calcular_cambio(cobro, pago):", inst)
         page.press("text=def calcular_cambio(cobro, pago):", "Enter")
+
+    for i in range(4):
+        page.press("text=def calcular_cambio(cobro, pago):", "Backspace")
+
+    page.type("text=def calcular_cambio(cobro, pago):", "return billetes")
 
     # Click #ejercicio-2 >> text=Run
     page.click("#ejercicio-2 >> text=Run")
