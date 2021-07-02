@@ -132,7 +132,7 @@ Concentración
 =============
 
 
-+ Ejemplo de un programa que lee una palabra y reemplaza las vocales con "*"
++ Ejemplo de un programa que lee una palabra y reemplaza las vocales por ``"*"``
 
 
 .. activecode:: ac_l18_4
@@ -194,7 +194,7 @@ Verificación parcial de strings
     print(contestar.lower() in "si no yes no")
 
 
-find y replace
+Funciones ``find`` y ``replace``
 ================
 
 
@@ -209,7 +209,7 @@ find y replace
     print(s)
 
 
-split and join
+Funciones ``split`` y ``join``
 ==============
 
 
@@ -237,7 +237,7 @@ Ejercicio
     convierta esta fecha a formato "<día> de <mes> de <año>" usando la lista ``meses`` 
     que ya está escrita. Guardar el resultado en la variable ``fecha_de_nacimiento`` e 
     imprimir esta variable. Recordar que ``.split()`` regresa una lista y se le puede pasar 
-    como argumento el caracter con el cual separar un string. Guardar el día, mes y el año 
+    como argumento el caracter con el cual separar un string. Guardar el día, mes y el año en formato de cadena 
     en las variables ``dia``, ``mes`` y ``anio``.
    
     ~~~~
