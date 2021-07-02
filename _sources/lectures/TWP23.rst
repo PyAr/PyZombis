@@ -21,8 +21,8 @@ Archivos
 + Para acceder a un archivo necesita abrirlo
 + Al abrir el archivo informamos su nombre, directorio donde está  (si necesario) y qué operaciones realizaremos: lectura y / o escritura
 + La función que abre los archivos está abierta y los modos son: r - lectura, w - escritura, a - agregar, b - binario,(actualizar)
-+ Los métodos para leer o escribir son read y write
-+ Los archivos deben cerrarse con cierre Enviar comentarios
++ Los métodos para leer o escribir son ``read()`` y ``write()``
++ Los archivos deben cerrarse con ``close()``
 
 .. code-block:: python
 
@@ -53,7 +53,7 @@ Archivos
 
 
 + Si ejecuta este programa, no aparecerá nada en la pantalla
-+ Busque en el directorio c: \ Python3x el archivo  números.txt
++ Busque en el directorio c: \ Python3x el archivo numeros.txt
 + El modo w crea el archivo si no existe, si existe será eliminado y reescrito
 
 .. code-block:: python
