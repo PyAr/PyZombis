@@ -30,24 +30,24 @@ Impresión de 1 a 3
 + Formas  simples
 
 
-.. codelens:: Example3_1
+.. codelens:: cl_l15_1
 
-        print(1)
-        print(2)
-        print(3)
+   print(1)
+   print(2)
+   print(3)
 
 
 + Usando una variable
 
 
-.. codelens:: Example3_2
+.. codelens:: cl_l15_2
 
-        x=1
-        print(x)
-        x=2
-        print(x)
-        x=3
-        print(x)
+   x = 1
+   print(x)
+   x = 2
+   print(x)
+   x = 3
+   print(x)
 
 
 Impresión de 1 a 3
@@ -57,24 +57,24 @@ Impresión de 1 a 3
 
 + Incrementando la variable
 
-.. codelens:: Example3_3
+.. codelens:: cl_l15_3
 
-        x=1
-        print(x)
-        x=x+1
-        print(x)
-        x=x+1
-        print(x)
+   x = 1
+   print(x)
+   x = x + 1
+   print(x)
+   x = x + 1
+   print(x)
 
 + Usando while
 
 
-.. codelens:: Example3_4
+.. codelens:: cl_l15_4
 
-        x=1
-        while x <= 3:
-        	print(x)
-        	x=x+1
+   x = 1
+   while x <= 3:
+       print(x)
+       x = x +1
 
 Impresión de 1 a 3
 ===================
@@ -98,12 +98,12 @@ Prueva de escritorio
    :alt: 
 
 
-.. codelens:: Example3_5
+.. codelens:: cl_l15_5
 
-        x=1
-        while x <= 3:
-        	print(x)
-        	x=x+1
+   x = 1
+   while x <= 3:
+       print(x)
+       x = x + 1
 
 Contadores
 ==========
@@ -113,15 +113,15 @@ Contadores
 + Ahora imprima de 1 a un número ingresado por el usuario
 
 
-.. activecode:: Example3_6
+.. activecode:: ac_l15_1
    :nocodelens:
    :stdin:
 
    fin = int(input("Ingrese el último número: "))
    x = 1
    while x <= fin:
-    print(x)
-    x=x+1
+       print(x)
+       x = x + 1
 
 Contadores
 ==========
@@ -130,16 +130,16 @@ Contadores
 + imprime números pares entre 0 y un número dado usando if
 
 
-.. activecode:: Example3_7
+.. activecode:: ac_l15_2
    :nocodelens:
    :stdin:
 
    fin = int(input("Ingrese el último número: "))
    x = 0
    while x <= fin:
-    if x%2 == 0:
-    	print(x)
-    x=x+1
+       if x%2 == 0:
+           print(x)
+       x = x + 1
 
 
 Contadores
@@ -150,7 +150,7 @@ Contadores
    el if
 
 
-.. activecode:: Example3_8
+.. activecode:: ac_l15_3
    :nocodelens:
    :stdin:
 
@@ -158,39 +158,50 @@ Contadores
    x = 0
    while x <= fin:
        print(x)
-       x = x+2
+       x = x + 2
 
 
-Contadores
-==========
+Algunos ejercicios
+------------------
 
 
+.. activecode:: ac_l15_4
+   :nocodelens:
 
-+ Modificar el programa anterior para imprimir del 1 al número
-   ingresado por el usuario, pero esta vez solo los números impares
-+ Reescribe el programa anterior para escribir los primeros 10
-   múltiplos de 3
+   Modifique el programa anterior para imprimir del 1 al número ingresado por el usuario, 
+   pero esta vez solo los números impares.
+   
+   ~~~~
+
+
+.. activecode:: ac_l15_5
+   :nocodelens:
+
+   Escriba un programa que imprima los primeros 10 múltiplos de 3.
+   
+   ~~~~
 
 
 Acumuladores
 ============
 
 
-+ La diferencia entre un medidor y un acumulador es que en metros el
++ La diferencia entre un medidor y un acumulador es que en medidores el
    el valor agregado es constante y, en acumuladores, variable
 + Cálculo de la suma de diez números enteros
 
 
-.. activecode:: Example3_9
+.. activecode:: ac_l15_6
    :nocodelens:
    :stdin:
     
    n = 1
    suma = 0
    while n <= 10:
-        x = int(input("Ingrese el último %d número: " %n))
-        suma = suma + x
-	n = n + 1
+       x = int(input("Ingrese el último %d número: " %n))
+       suma = suma + x
+       n = n + 1
+
    print("suma: %d" %suma)
 
 
@@ -198,20 +209,21 @@ Acumuladores
 ============
 
 
-+ Promedio de 10 números enteross
++ Promedio de 10 números enteros
 
 
-.. activecode:: Example3_10
+.. activecode:: ac_l15_7
    :nocodelens:
    :stdin:
 
-   n = 1
+   n = 0
    suma = 0
-   while n <= 10:
-    x = int(input("Ingrese el último %d número: " %n))
-    suma = suma + x
-    n = n + 1
-   print("Suma: %5.2f" %(suma/n))
+   while n < 10:
+       x = int(input("Ingrese el último %d número: " %(n + 1)))
+       suma = suma + x
+       n = n + 1
+   
+   print("Promedio: %5.2f" %(suma / n))
 
 
 Acumuladores
@@ -220,14 +232,14 @@ Acumuladores
 
 + Calcular el factorial de diez
 
-.. codelens:: Example3_11
+.. codelens:: cl_l15_6
 
-        i = 1
-        fact = 1
-        while i <= 10:
-        	fact = fact*i
-        	i = i+1
-        print("Fact(10) = %d" %fact)
+   i = 1
+   fact = 1
+   while i <= 10:
+       fact = fact * i
+       i = i + 1
+   print("Fact(10) = %d" %fact)
 
 
 
@@ -237,7 +249,7 @@ Acumuladores
 
 + Calcular el factorial de un número entero n
 
-.. activecode:: Example3_12
+.. activecode:: ac_l15_8
    :nocodelens:
    :stdin:
 
@@ -245,9 +257,10 @@ Acumuladores
    fact = 1
    n = int(input("Ingrese n: "))
    while i <= n:
-    fact = fact*i
-    i = i+1
-   print("Fact(%d) = %d" %(n,fact))
+       fact = fact * i
+       i = i + 1
+
+   print("Fact(%d) = %d" %(n, fact))
 
 
 
@@ -258,16 +271,17 @@ interrumpiendo la repetición
 + Calcule la suma de números enteros hasta que se ingrese cero
 
 
-.. activecode:: Example3_13
+.. activecode:: ac_l15_9
    :nocodelens:
    :stdin:
 
    suma = 0
    while True:
-             x = int(input("Ingrese un numero (0 salir): "))
-             if x == 0:
-	             break
-             suma = suma + x
+       x = int(input("Ingrese un numero (0 salir): "))
+       if x == 0:
+           break
+       suma = suma + x
+
    print("Suma: %d" %suma)
 
 
@@ -278,7 +292,7 @@ interrumpiendo la repetición
 + Números promedio hasta que se ingrese cero
 
 
-.. activecode:: Example3_14
+.. activecode:: ac_l15_10
    :nocodelens:
    :stdin:
 
@@ -287,11 +301,12 @@ interrumpiendo la repetición
    while True:
        x = int(input("Ingrese un numero (0 salir): "))
        if x == 0:
-	       break
+           break
        else:
-	       n = n+1
+           n = n + 1
        suma = suma + x
-   print("Média: %5.2f" %(suma/n))
+
+   print("Media: %5.2f" %(suma / n))
 
 
 Repeticiones anidadas
@@ -301,18 +316,18 @@ Repeticiones anidadas
 + Imprime las tablas del 1 al 10
 
 
-.. activecode:: Example3_15
+.. activecode:: ac_l15_11
    :nocodelens:
    :stdin:
 
    tabla_de_multiplicar = 1
    while tabla_de_multiplicar <= 10:
-        n = 1
-	print("tabla_de_multiplicar %d" %tabla_de_multiplicar)
-        while  n <= 10:
-	     print("%d x %d = %d" %(tabla_de_multiplicar,n,tabla_de_multiplicar*n))
-	     n = n + 1
-	tabla_de_multiplicar = tabla_de_multiplicar + 1
+       n = 1
+       print("tabla_de_multiplicar %d" %tabla_de_multiplicar)
+       while  n <= 10:
+           print("%d x %d = %d" %(tabla_de_multiplicar, n, tabla_de_multiplicar * n))
+           n = n + 1
+       tabla_de_multiplicar = tabla_de_multiplicar + 1
 
 
 Lista de Ejercicios “again”
