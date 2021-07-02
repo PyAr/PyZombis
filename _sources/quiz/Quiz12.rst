@@ -75,7 +75,7 @@ Ejercicio 2
             self.assertEqual(
                 no_es_malo("El asado de la cena no es malo!"),
                 "El asado de la cena es bueno!",
-                "Esperado: El asado de la cena es bueno!!"
+                "Esperado: El asado de la cena es bueno!"
             )
             self.assertEqual(
                 no_es_malo("El té no está caliente"),
