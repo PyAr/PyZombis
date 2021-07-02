@@ -132,7 +132,8 @@ Concentración
 =============
 
 
-+ Ejemplo de un programa que lee una palabra y reemplaza las vocales por ``"*"``
++ Ejemplo de un programa que lee una palabra y reemplaza las vocales por ``"*"``.
+  La función ``lower`` transforma las letras en minúsculas.
 
 
 .. activecode:: ac_l18_4
@@ -143,7 +144,7 @@ Concentración
     k = 0
     intercambio = ""
     while k < len(palabra):
-        if palabra[k] in "aeiou":
+        if palabra[k].lower() in "aeiou":
             intercambio = intercambio + "*"
         else:
             intercambio = intercambio + palabra[k]
@@ -171,7 +172,7 @@ Concentración
         def testOne(self):
             self.assertEqual(
                 intercambio,
-                "".join(["*" if c not in "aeiou" else c for c in palabra]),
+                "".join(["*" if c.lower() not in "aeiou" else c for c in palabra]),
                 "Probando que intercambio esté asignado correctamente",
             )
 
@@ -195,7 +196,7 @@ Verificación parcial de strings
 
 
 Funciones ``find`` y ``replace``
-================
+================================
 
 
 .. codelens:: cl_l18_6
@@ -210,7 +211,7 @@ Funciones ``find`` y ``replace``
 
 
 Funciones ``split`` y ``join``
-==============
+==============================
 
 
 .. codelens:: cl_l18_7
