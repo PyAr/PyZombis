@@ -66,7 +66,7 @@ Impresión de 1 a 3
    x = x + 1
    print(x)
 
-+ Usando while
++ Usando ``while``
 
 
 .. codelens:: cl_l15_4
@@ -329,10 +329,6 @@ Repeticiones anidadas
            print("%d x %d = %d" %(tabla_de_multiplicar, n, tabla_de_multiplicar * n))
            n = n + 1
        tabla_de_multiplicar = tabla_de_multiplicar + 1
-
-
-Lista de Ejercicios “again”
-===========================
 
 
 .. image:: img/TWP05_041.jpeg
