@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - 9 &#8212; PyZombis 11_TWP45_add@43c2df3</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/runtime.bundle.js?v=2bcd2c19954c99ce4506"></script>
+    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=0e91cff9e660624062d3"></script>
+    <script src="../_static/runestone.bundle.js?v=766cad0b55ecfe66f111"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../_static/presenter_mode.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quiz - 10" href="Quiz10.html" />
+    <link rel="prev" title="Quiz - 7" href="Quiz7.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'PyZombisDev';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'PyZombisDev';
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.7.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.downloadsEnabled = false;
+  eBookConfig.enable_chatcodes = false ? false : false;
+  eBookConfig.allow_pairs = false ? false : false;
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 11_TWP45_add@43c2df3</a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/PyZombisDev/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/PyZombisDev/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=Quiz9'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+      </div>
+
+
+
+
+
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Quiz - 9</a><ul>
+<li><a class="reference internal" href="#ejercicio-1">Ejercicio 1</a></li>
+<li><a class="reference internal" href="#ejercicio-2">Ejercicio 2</a></li>
+<li><a class="reference internal" href="#ejercicio-3">Ejercicio 3</a></li>
+<li><a class="reference internal" href="#ejercicio-4">Ejercicio 4</a></li>
+<li><a class="reference internal" href="#ejercicio-5">Ejercicio 5</a></li>
+<li><a class="reference internal" href="#ejercicio-6">Ejercicio 6</a></li>
+<li><a class="reference internal" href="#ejercicio-7">Ejercicio 7</a></li>
+<li><a class="reference internal" href="#ejercicio-8">Ejercicio 8</a></li>
+<li><a class="reference internal" href="#ejercicio-9">Ejercicio 9</a></li>
+<li><a class="reference internal" href="#ejercicio-10">Ejercicio 10</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Quiz - 7" data-toggle="tooltip">
+    <a href="Quiz7.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Quiz - 10' data-toggle="tooltip" >              
+    <a href="Quiz10.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="quiz-9">
+<h1>Quiz - 9<a class="headerlink" href="#quiz-9" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_1 data-question_label="1">
+<div id=q9_1_question class="ac_question col-md-12">
+<p>Defina una función <code class="docutils literal notranslate"><span class="pre">primer_o_ultimo_6</span></code> que compruebe si 6 es el primer
+o el último elemento en la lista de números <code class="docutils literal notranslate"><span class="pre">numeros</span></code> que se le pase como parámetro.
+Si lo es, devolver <code class="docutils literal notranslate"><span class="pre">True</span></code>, de lo contrario devolver <code class="docutils literal notranslate"><span class="pre">False</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">primer_o_ultimo_6([1,</span> <span class="pre">2,</span> <span class="pre">6])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">primer_o_ultimo_6([6,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">primer_o_ultimo_6([3,</span> <span class="pre">2,</span> <span class="pre">1])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_1_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def primer_o_ultimo_6(numeros):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(primer_o_ultimo_6([1, 2, 6]), True, "Esperado: True")
+        self.assertEqual(primer_o_ultimo_6([3, 6]), True, "Esperado: True")
+        self.assertEqual(primer_o_ultimo_6([3, 6]), True, "Esperado: True")
+        self.assertEqual(primer_o_ultimo_6([3]), False, "Esperado: False")
+        self.assertEqual(
+                primer_o_ultimo_6([6, 1, 2, 3]),
+                True,
+                "Esperado: True"
+        )
+        self.assertEqual(
+                primer_o_ultimo_6([3, 2, 1]),
+                False,
+                "Esperado: False"
+        )
+        self.assertEqual(
+                primer_o_ultimo_6([3, 6, 1]),
+                False,
+                "Esperado: False"
+        )
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_2 data-question_label="2">
+<div id=q9_2_question class="ac_question col-md-12">
+<p>Defina una función <code class="docutils literal notranslate"><span class="pre">extremos_iguales</span></code> que tome una lista <code class="docutils literal notranslate"><span class="pre">numeros</span></code> como parámetro,
+y regrese <code class="docutils literal notranslate"><span class="pre">True</span></code> si la lista de números tiene al menos un elemento y el
+primer elemento es igual al último. De lo contrario devolver <code class="docutils literal notranslate"><span class="pre">False</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">extremos_iguales([1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">extremos_iguales([1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">1])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">extremos_iguales([1,</span> <span class="pre">2,</span> <span class="pre">1])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_2_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def extremos_iguales(numeros):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(extremos_iguales([1, 2, 3]), False, "Esperado: False")
+        self.assertEqual(extremos_iguales([1, 2, 1]), True, "Esperado: True")
+        self.assertEqual(extremos_iguales([7]), True, "Esperado: True")
+        self.assertEqual(extremos_iguales([]), False, "Esperado: False")
+        self.assertEqual(extremos_iguales([7, 7]), True, "Esperado: True")
+        self.assertEqual(
+                extremos_iguales([1, 2, 3, 1]),
+                True,
+                "Esperado: True")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-3">
+<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_3 data-question_label="3">
+<div id=q9_3_question class="ac_question col-md-12">
+<p>Defina una función <code class="docutils literal notranslate"><span class="pre">extremo_comun</span></code> que tome dos listas <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>
+como parámetros, y verifique que los dos primeros números de ambas listas
+son iguales o que los dos últimos números de ambas listas son iguales.
+Suponga que ambas listas tienen por lo menos un elemento. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">extremo_comun([1,</span> <span class="pre">2,</span> <span class="pre">3],</span> <span class="pre">[7,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">extremo_comun([1,</span> <span class="pre">2,</span> <span class="pre">3],</span> <span class="pre">[7,</span> <span class="pre">3,</span> <span class="pre">2])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">extremo_comun([1,</span> <span class="pre">2,</span> <span class="pre">3],</span> <span class="pre">[1,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_3_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def extremo_comun(a, b):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(extremo_comun([1, 2, 3], [1]), True, "Esperado: True")
+        self.assertEqual(
+                extremo_comun([1, 2, 3], [2]),
+                False,
+                "Esperado: False"
+        )
+        self.assertEqual(
+                extremo_comun([1, 2, 3], [7, 3]),
+                True,
+                "Esperado: True"
+        )
+        self.assertEqual(
+                extremo_comun([1, 2, 3], [7, 3, 2]),
+                False,
+                "Esperado: False"
+        )
+        self.assertEqual(
+                extremo_comun([1, 2, 3], [1, 3]),
+                True,
+                "Esperado: True"
+        )
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-4">
+<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_4 data-question_label="4">
+<div id=q9_4_question class="ac_question col-md-12">
+<p>Defina una función <code class="docutils literal notranslate"><span class="pre">mayor_extremo</span></code> que tome la lista <code class="docutils literal notranslate"><span class="pre">numeros</span></code> como parámetro,
+compare los extremos de la lista y regrese una nueva lista del mismo tamaño
+donde todos los elementos son el extremo de mayor magnitud. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_extremo([1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[3,</span> <span class="pre">3,</span> <span class="pre">3]</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_extremo([1,</span> <span class="pre">3,</span> <span class="pre">2])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[2,</span> <span class="pre">2,</span> <span class="pre">2]</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_4_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def mayor_extremo(numeros):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(
+                mayor_extremo([1, 2, 3]),
+                [3, 3, 3],
+                "Esperado: [3,3,3]"
+        )
+        self.assertEqual(
+                mayor_extremo([11, 5, 9]),
+                [11, 11, 11],
+                "Esperado: [11,11,11]"
+        )
+        self.assertEqual(
+                mayor_extremo([2, 11, 3]),
+                [3, 3, 3],
+                "Esperado: [3,3,3]"
+        )
+        self.assertEqual(
+                mayor_extremo([11, 3, 3]),
+                [11, 11, 11],
+                "Esperado: [11,11,11]"
+        )
+        self.assertEqual(
+                mayor_extremo([3, 11, 11]),
+                [11, 11, 11],
+                "Esperado: [11,11,11]"
+        )
+        self.assertEqual(
+                mayor_extremo([2, 2, 2]),
+                [2, 2, 2],
+                "Esperado: [2,2,2]"
+        )
+        self.assertEqual(
+                mayor_extremo([2, 11, 2]),
+                [2, 2, 2],
+                "Esperado: [2,2,2]"
+        )
+        self.assertEqual(
+                mayor_extremo([0, 0, 1]),
+                [1, 1, 1],
+                "Esperado: [1,1,1]"
+        )
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-5">
+<h2>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_5 data-question_label="5">
+<div id=q9_5_question class="ac_question col-md-12">
+<p>Defina una función <code class="docutils literal notranslate"><span class="pre">sumar_primeros_dos</span></code> que tome la lista <code class="docutils literal notranslate"><span class="pre">numeros</span></code>
+de número enteros de cualquier tamaño como parámetro, y regrese la suma
+de los dos primeros elementos. Si la lista tiene menos de dos elementos, sume 0s. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">sumar_primeros_dos([1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">3</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">sumar_primeros_dos([1,</span> <span class="pre">1])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">2</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">sumar_primeros_dos([])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">0</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_5_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def sumar_primeros_dos(numeros):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(sumar_primeros_dos([1, 2, 3]), 3, "Esperado: 3")
+        self.assertEqual(sumar_primeros_dos([1, 1]), 2, "Esperado: 2")
+        self.assertEqual(sumar_primeros_dos([1, 1, 1, 1]), 2, "Esperado: 2")
+        self.assertEqual(sumar_primeros_dos([1, 2]), 3, "Esperado: 3")
+        self.assertEqual(sumar_primeros_dos([1]), 1, "Esperado: 1")
+        self.assertEqual(sumar_primeros_dos([]), 0, "Esperado: 0")
+        self.assertEqual(sumar_primeros_dos([4, 5, 6]), 9, "Esperado: 9")
+        self.assertEqual(sumar_primeros_dos([4]), 4, "Esperado: 4")
+        self.assertEqual(sumar_primeros_dos([4, -12, 5]), -8, "Esperado: -8")
+        self.assertEqual(
+                sumar_primeros_dos([-200, 35, 10, 8]),
+                -165,
+                "Esperado: -165"
+        )
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-6">
+<h2>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_6 data-question_label="6">
+<div id=q9_6_question class="ac_question col-md-12">
+<p>Defina una función <code class="docutils literal notranslate"><span class="pre">al_medio</span></code> que tome dos listas <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code> de
+números enteros como parámetros, y regrese una lista de tamaño 2 que
+contenga los elementos de en medio de <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>. Suponga que las listas
+tienen un tamaño impar. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">al_medio([1,</span> <span class="pre">2,</span> <span class="pre">3],</span> <span class="pre">[4,</span> <span class="pre">5,</span> <span class="pre">6])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[2,</span> <span class="pre">5]</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">al_medio([7,</span> <span class="pre">7,</span> <span class="pre">7],</span> <span class="pre">[3,</span> <span class="pre">8,</span> <span class="pre">0])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[7,</span> <span class="pre">8]</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">al_medio([5,</span> <span class="pre">2,</span> <span class="pre">9],</span> <span class="pre">[1,</span> <span class="pre">4,</span> <span class="pre">5])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[2,</span> <span class="pre">4]</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_6_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def al_medio(a, b):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(
+                al_medio([1, 2, 3], [4, 5, 6]),
+                [2, 5],
+                "Esperado: [2,5]"
+        )
+        self.assertEqual(
+                al_medio([7, 7, 7], [3, 8, 0]),
+                [7, 8],
+                "Esperado: [7,8]"
+        )
+        self.assertEqual(
+                al_medio([5, 2, 9], [1, 4, 5]),
+                [2, 4],
+                "Esperado: [2,4]"
+        )
+        self.assertEqual(
+                al_medio([1, 9, 7], [4, 8, 8]),
+                [9, 8],
+                "Esperado: [9,8]"
+        )
+        self.assertEqual(
+                al_medio([1, 2, 3, 10, 2], [3, 1, 4]),
+                [3, 1],
+                "Esperado: [2,1]"
+        )
+        self.assertEqual(
+                al_medio([1, 2, -2, 4, 1], [1]),
+                [-2, 1],
+                "Esperado: [2,1]"
+        )
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-7">
+<h2>Ejercicio 7<a class="headerlink" href="#ejercicio-7" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_7 data-question_label="7">
+<div id=q9_7_question class="ac_question col-md-12">
+<p>Define una función <code class="docutils literal notranslate"><span class="pre">cita_de_lujo</span></code>. La función tomará dos parámetros
+<code class="docutils literal notranslate"><span class="pre">mi_punt</span></code> y <code class="docutils literal notranslate"><span class="pre">pareja_punt</span></code>. Suponga que va un restaurante con su pareja.
+Los parámetros representan la puntuación de la ropa que llevan puesta del 0 al 10.
+Cuanto más alto es el puntaje, más elegante se han vestido. El puntaje de su ropa
+determinará si les dan una mesa en el restaurante o no, de acuerdo a las siguientes reglas:<br /></p>
+<ul class="simple">
+<li><p>Si la puntuación de la ropa de uno de los dos es menor o igual a 2,
+no tendrán derecho a una mesa (<code class="docutils literal notranslate"><span class="pre">0</span></code>). <br /></p></li>
+<li><p>Si las calificaciones son más altas, entonces si una de las dos es muy
+elegante (puntuación &gt;= 8) sí tendrán derecho a mesa (<code class="docutils literal notranslate"><span class="pre">2</span></code>). <br /></p></li>
+<li><p>De lo contrario, la respuesta es tal vez (<code class="docutils literal notranslate"><span class="pre">1</span></code>). <br /></p></li>
+</ul>
+<p>Entonces <code class="docutils literal notranslate"><span class="pre">cita_de_lujo</span></code> devuelve un número entre 0, 1 y 2 que significan No, Tal vez y Si respectivamente <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">cita_de_lujo(5,</span> <span class="pre">10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">2</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">cita_de_lujo(5,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">0</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">cita_de_lujo(5,</span> <span class="pre">5)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_7_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def cita_de_lujo(mi_punt, pareja_punt):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(cita_de_lujo(5, 10), 2, "Esperado: 2")
+        self.assertEqual(cita_de_lujo(5, 2), 0, "Esperado: 0")
+        self.assertEqual(cita_de_lujo(5, 5), 1, "Esperado: 1")
+        self.assertEqual(cita_de_lujo(3, 3), 1, "Esperado: 1")
+        self.assertEqual(cita_de_lujo(10, 2), 0, "Esperado: 0")
+        self.assertEqual(cita_de_lujo(2, 9), 0, "Esperado: 0")
+        self.assertEqual(cita_de_lujo(9, 9), 2, "Esperado: 2")
+        self.assertEqual(cita_de_lujo(10, 5), 2, "Esperado: 2")
+        self.assertEqual(cita_de_lujo(2, 2), 0, "Esperado: 0")
+        self.assertEqual(cita_de_lujo(3, 7), 1, "Esperado: 1")
+        self.assertEqual(cita_de_lujo(2, 7), 0, "Esperado: 0")
+        self.assertEqual(cita_de_lujo(6, 2), 0, "Esperado: 0")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-8">
+<h2>Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_8 data-question_label="8">
+<div id=q9_8_question class="ac_question col-md-12">
+<p>El equipo de fútbol <em>ardillas</em> normalmente juega cuando la temperatura
+está entre 60 y 90 grados Fahrenheit, pero cuando es verano la temperatura
+superior a la que juegan las <em>ardillas</em> es de 100 grados Fahrenheit en lugar de 90.
+Defina una función <code class="docutils literal notranslate"><span class="pre">juegan_ardillas</span></code> que tome 2 parámetros, <code class="docutils literal notranslate"><span class="pre">temp</span></code> representando
+la temperatura, y <code class="docutils literal notranslate"><span class="pre">es_verano</span></code>, que puede ser <code class="docutils literal notranslate"><span class="pre">True</span></code> si es verano o <code class="docutils literal notranslate"><span class="pre">False</span></code> si no lo es.
+La función debe regresar <code class="docutils literal notranslate"><span class="pre">True</span></code> si las <em>ardillas</em> juegan o <code class="docutils literal notranslate"><span class="pre">False</span></code> si no. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">juegan_ardillas(70,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">juegan_ardillas(95,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">juegan_ardillas(95,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_8_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def juegan_ardillas(temp, es_verano):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(juegan_ardillas(70, False), True, "Esperado: True")
+        self.assertEqual(juegan_ardillas(95, False), False, "Esperado: False")
+        self.assertEqual(juegan_ardillas(95, True), True, "Esperado: True")
+        self.assertEqual(juegan_ardillas(90, False), True, "Esperado: True")
+        self.assertEqual(juegan_ardillas(90, True), True, "Esperado: True")
+        self.assertEqual(juegan_ardillas(50, False), False, "Esperado: False")
+        self.assertEqual(juegan_ardillas(50, True), False, "Esperado: True")
+        self.assertEqual(juegan_ardillas(100, False), False, "Esperado: False")
+        self.assertEqual(juegan_ardillas(100, True), True, "Esperado: True")
+        self.assertEqual(juegan_ardillas(105, True), False, "Esperado: True")
+        self.assertEqual(juegan_ardillas(59, False), False, "Esperado: False")
+        self.assertEqual(juegan_ardillas(59, True), False, "Esperado: True")
+        self.assertEqual(juegan_ardillas(60, False), True, "Esperado: False")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-9">
+<h2>Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_9 data-question_label="9">
+<div id=q9_9_question class="ac_question col-md-12">
+<p>Simulemos un velocímetro que te aplica una multa en caso de exceder la velociad máxima:</p>
+<ul class="simple">
+<li><p>Velocidad &lt;= 60: sin multa <br /></p></li>
+<li><p>Velocidad entre 61 y 80: multa media <br /></p></li>
+<li><p>Velocidad superior a 80: multa severa <br /></p></li>
+</ul>
+<p>Si es tu cumpleaños la velocidad puede ser 5 km/h mayor en todos los casos. <br />
+Defina una función <code class="docutils literal notranslate"><span class="pre">aplicar_multa</span></code> que reciba como parámetros a <code class="docutils literal notranslate"><span class="pre">velocidad</span></code> y
+<code class="docutils literal notranslate"><span class="pre">cumplo_anios</span></code>. El primero representa la velocidad a la que ibas, y el segundo
+puede ser <code class="docutils literal notranslate"><span class="pre">True</span></code> si es tu cumpleaños o <code class="docutils literal notranslate"><span class="pre">False</span></code> si no lo es. Esta función debe
+regresar 0, 1 o 2 de acuerdo a lo siguiente: <br /></p>
+<ul class="simple">
+<li><p>sin multa = 0 <br /></p></li>
+<li><p>multa media = 1 <br /></p></li>
+<li><p>multa severa = 2 <br /> <br /></p></li>
+</ul>
+<p>Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">aplicar_multa(60,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">0</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">aplicar_multa(65,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">aplicar_multa(65,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">0</span></code>  <br />
+<code class="docutils literal notranslate"><span class="pre">aplicar_multa(80,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_9_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def aplicar_multa(velocidad, cumplo_anios):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(aplicar_multa(20, False), 0, "Esperado: 0")
+        self.assertEqual(aplicar_multa(20, True), 0, "Esperado: 0")
+        self.assertEqual(aplicar_multa(60, False), 0, "Esperado: 0")
+        self.assertEqual(aplicar_multa(65, False), 1, "Esperado: 1")
+        self.assertEqual(aplicar_multa(65, True), 0, "Esperado: 0")
+        self.assertEqual(aplicar_multa(80, False), 1, "Esperado: 1")
+        self.assertEqual(aplicar_multa(85, False), 2, "Esperado: 2")
+        self.assertEqual(aplicar_multa(85, True), 1, "Esperado: 1")
+        self.assertEqual(aplicar_multa(70, False), 1, "Esperado: 1")
+        self.assertEqual(aplicar_multa(75, False), 1, "Esperado: 1")
+        self.assertEqual(aplicar_multa(75, True), 1, "Esperado: 1")
+        self.assertEqual(aplicar_multa(40, False), 0, "Esperado: 0")
+        self.assertEqual(aplicar_multa(40, True), 0, "Esperado: 0")
+        self.assertEqual(aplicar_multa(90, False), 2, "Esperado: 2")
+        self.assertEqual(aplicar_multa(90, True), 2, "Esperado: 2")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio-10">
+<h2>Ejercicio 10<a class="headerlink" href="#ejercicio-10" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q9_10 data-question_label="10">
+<div id=q9_10_question class="ac_question col-md-12">
+<p>Defina una función <code class="docutils literal notranslate"><span class="pre">poner_alarma</span></code> que tome dos parámetros: El primer parámetro
+<code class="docutils literal notranslate"><span class="pre">dia</span></code> es un número del 0-6 que representa un día de la semana de acuerdo a lo siguiente: <br />
+día: 0 = domingo, 1 = lunes, 2 = martes, …, 6 = sábado. <br />
+El segundo parámetro <code class="docutils literal notranslate"><span class="pre">vacaciones</span></code> tomará el valor <code class="docutils literal notranslate"><span class="pre">True</span></code> si estás de vacaciones o
+<code class="docutils literal notranslate"><span class="pre">False</span></code> si no lo estás. La función regresará un string que indica cuándo sonará
+el despertador de acuerdo a lo siguiente: <br /></p>
+<ul class="simple">
+<li><p>Días de la semana: ‘07:00’ <br /></p></li>
+<li><p>Fines de semana: ‘10:00’ <br /></p></li>
+</ul>
+<p>A menos que esté de vacaciones, en este caso: <br /></p>
+<ul class="simple">
+<li><p>Días de la semana: ‘10:00’ <br /></p></li>
+<li><p>Fines de semana: ‘libre’ <br /> <br /></p></li>
+</ul>
+<p>Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">poner_alarma(1,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;7:00&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">poner_alarma(1,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;10:00&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">poner_alarma(6,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;libre&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">poner_alarma(0,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;10:00&quot;</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q9_10_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def poner_alarma(dia, vacaciones):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(poner_alarma(1, False), "7:00", "Esperado: 7:00")
+        self.assertEqual(poner_alarma(5, False), "7:00", "Esperado: 7:00")
+        self.assertEqual(poner_alarma(0, False), "10:00", "Esperado: 10:00")
+        self.assertEqual(poner_alarma(6, False), "10:00", "Esperado: 10:00")
+        self.assertEqual(poner_alarma(0, True), "libre", "Esperado: libre")
+        self.assertEqual(poner_alarma(6, True), "libre", "Esperado: libre")
+        self.assertEqual(poner_alarma(1, True), "10:00", "Esperado: 10:00")
+        self.assertEqual(poner_alarma(3, True), "10:00", "Esperado: 10:00")
+        self.assertEqual(poner_alarma(5, True), "10:00", "Esperado: 10:00")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Quiz - 7' data-toggle="tooltip">
+    <a href="Quiz7.html" >
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="Quiz7.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 10' data-toggle="tooltip" >
+    <a href="Quiz10.html" >
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="Quiz10.html" >Next Section - Quiz - 10</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.7.1.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
