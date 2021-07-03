@@ -5,10 +5,10 @@ Archivos y diccionarios
 
 
 .. image:: img/TWP10_001.jpeg
-   :height: 14.925cm
-   :width: 9.258cm
-   :align: center
-   :alt: 
+    :height: 14.925cm
+    :width: 9.258cm
+    :align: center
+    :alt: 
 
 
 Archivos
@@ -26,27 +26,30 @@ Archivos
 
 .. code-block:: python
 
-   archivo = open('numeros.txt','w')
-   for linea in range(1,101):
-       archivo.write('%d\n' %linea)
-   archivo.close()
+    archivo = open("numeros.txt", "w")
+    for numero in range(1, 31):
+        archivo.write("%d\n" % numero)
+    archivo.close()
 
 
+.. datafile:: numeros.txt
+    :cols: 20
+    :rows: 10
+    :edit:
 
-.. .. datafile:: numeros.txt
-..    :edit: 
-..    :hide: 
 
-.. .. activecode:: Example7_1
-..    :nocodelens:
-..    :datafile: numeros.txt
-..    :enabledownload:
-..    :stdin:
+.. activecode:: ac_l23_1
+    :nocodelens:
+    :datafile: numeros.txt
+    :enabledownload:
 
-..    arquivo = open('numeros.txt','w')
-..    for linha in range(1,101):
-..        arquivo.write('%d\n' %linha)
-..    arquivo.close()
+    Pruebe el programa anterior:
+
+    ~~~~
+    archivo = open("numeros.txt", "w")
+    for numero in range(1, 31):
+        archivo.write("%d\n" % numero)
+    archivo.close()
 
 
 + Si ejecuta este programa, no aparecerá nada en la pantalla
@@ -55,22 +58,24 @@ Archivos
 
 .. code-block:: python
 
-   archivo = open('numeros.txt','w')
-   for linea in archivo.readlines():
-       print(linea)
-   arquivo.close()
+    archivo = open("numeros.txt", "r")
+    for linea in archivo.readlines():
+        print(linea)
+    archivo.close()
 
 
-.. .. activecode:: Example7_2
-..    :nocodelens:
-..    :datafile: numeros.txt
-..    :enabledownload:
-..    :stdin:
+.. activecode:: ac_l23_2
+    :nocodelens:
+    :datafile: numeros.txt
+    :enabledownload:
+    
+    Ya escribió en el archivo ``"numeros.txt"``. Ahora va a leer los datos que ha escrito: 
 
-..    arquivo = open('numeros.txt','w')
-..    for linha in arquivo.readlines():
-..        print(linha)
-..    arquivo.close()
+    ~~~~
+    archivo = open("numeros.txt", "r")
+    for linea in archivo.readlines():
+        print(linea)
+    archivo.close()
 
 + readlines genera una lista donde cada elemento es una línea de lectura
 + Los archivos de texto son simples y tienen un carácter de control en fin de saltar la línea
@@ -83,17 +88,16 @@ Pythonic way
 
 .. code-block:: python
 
-   with open('numeros.txt','r') as f:
-    print(f.read())
+    with open("numeros.txt", "r") as f:
+        print(f.read())
 
-.. .. activecode:: Example7_3
-..    :nocodelens:
-..    :datafile: numeros.txt
-..    :enabledownload:
-..    :stdin:
+.. activecode:: ac_l23_3
+    :nocodelens:
+    :datafile: numeros.txt
+    :enabledownload:
 
-..    with open('numeros.txt','r') as f:
-..     print(f.read())
+    with open("numeros.txt", "r") as f:
+        print(f.read())
 
 
 + El código anterior hace lo mismo para la forma pitónica.
@@ -102,70 +106,148 @@ Pythonic way
 + Python es simple, pero difícil de agotar
 
 
-Cripto
+Crypto
 ======
 
 
-+ Lea message.txt y escriba crypto.txt con todas las vocales cambiadas por ‘*’
+.. datafile:: mensaje.txt
+    :hide:
 
-.. code-block:: python
+    Éste es el archivo de texto
+    que usted está modificando 
+    para que todas las vocales
+    sean cambiadas por "*".
 
-    texto = open('mensagem.txt')
-    salida = open('cripto.txt','w')
+
+.. datafile:: crypto.txt
+    :cols: 20
+    :rows: 10
+    :edit:
+
+
+.. activecode:: ac_l23_4
+    :nocodelens:
+    :datafile: mensaje.txt, crypto.txt 
+
+    Lea el archivo ``"mensaje.txt"`` y escriba el archivo ``"crypto.txt"`` el cual 
+    debe tener el mismo texto del primer archivo, pero con las vocales cambiadas por 
+    ``"*"``.
+
+    ~~~~
+    texto = open("mensaje.txt", "r")
+    salida = open("crypto.txt", "w")
+
     for linea in texto.readlines():
-      for letra in linea:
-        if letra in 'aeiou':
-          salida.write('*')
-        else:
-          saida.write(letra)
+        for letra in linea:
+            if letra in "aeiou":
+                salida.write("*")
+            else:
+                salida.write(letra)
+
     texto.close()
     salida.close()
+
+
+Ejercicio
+---------
+
+.. activecode:: ac_l23_5
+    :nocodelens:
+    :datafile: mensaje.txt, crypto.txt
+
+    Como puede observar, el código anterior no cambió algunas vocales 
+    del archivo ``"mensaje.txt"``. Esto debido a las mayúsculas o a los acentos. 
+    Su trabajo es modificar el programa anterior para que cambie **TODAS** las 
+    vocales por ``"*"``. **Recuerde**: el método ``.lower()`` devuelve una cadena 
+    con todos sus caracteres vueltos letras minúsculas.
+
+    ~~~~
+    texto = open("mensaje.txt", "r")
+    salida = open("crypto.txt", "w")
+
+    # Modifique el programa
+
+    for linea in texto.readlines():
+        for letra in linea:
+            if letra in "aeiou":
+                salida.write("*")
+            else:
+                salida.write(letra)
+
+    texto.close()
+    salida.close()
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            archivo = open("crypto.txt", "r")
+            text = """*st* *s *l *rch*v* d* t*xt* q** *st*d *st* m*d*f*c*nd* p*r* q** t*d*s l*s v*c*l*s s**n c*mb**d*s p*r "*"."""
+
+            self.assertEqual(archivo.read().replace("\n", " ").rstrip(), text.strip(), f"Esperado: {text}")
+
+
+    myTests().main()
 
 
 Validar dirección IP
 ====================
 
 
-.. .. datafile:: IPS.txt
-..    :edit: 
-..    :hide: 
+.. datafile:: IPS.txt  
+    :cols: 20
+    :rows: 12
 
-..    200.135.80.9
-..    192.168.1.1
-..    8.35.67.74
-..    257.32.4.5
-..    85.345.1.2
-..    1.2.3.4
-..    9.8.284.5
-..    192.168.0.256
-
-
-.. .. datafile:: Válidos.txt
-..    Válidos
+    200.135.80.9
+    192.168.1.1
+    8.35.67.74
+    257.32.4.5
+    85.345.1.2
+    1.2.3.4
+    9.8.284.5
+    192.168.0.256
 
 
+.. datafile:: Validos.txt
+    :edit:
+    :cols: 15
+    :rows: 7
 
-.. .. datafile:: Inválidos.txt
-..    Inválidos 
+    Válidos
 
-.. code-block:: python
+
+.. datafile:: Invalidos.txt
+    :edit:
+    :cols: 15
+    :rows: 7
+
+    Inválidos 
+
+
+.. activecode:: ac_l23_6
+    :nocodelens:
+    :datafile: Validos.txt, Invalidos.txt
 
     def ip_ok(ip):
-      ip = ip.split('.')
-      for byte in ip:
-        if int(byte) > 255:
-          return False
-      return True
+        ip = ip.split(".")
+        for byte in ip:
+            if int(byte) > 255:
+                return False
+        return True
 
-    arq = open('IPS.txt')
-    validos = open('Válidos.txt','w')
-    invalidos = open('Inválidos.txt','w')
-    for linea in arq.readlines():
-      if ip_ok(linea):
-        validos.write(linea)
-      else:
-        invalidos.write(linea)
-    arq.close()
+
+    ips = open("IPS.txt")
+    validos = open("Validos.txt", "w")
+    invalidos = open("Invalidos.txt", "w")
+    for linea in ips.readlines():
+        if ip_ok(linea):
+            validos.write(linea)
+        else:
+            invalidos.write(linea)
+
+    ips.close()
     validos.close()
     invalidos.close()
 
@@ -183,21 +265,50 @@ HTML
 
 .. code-block:: python
 
-    archivo = open('hola.html','w',encoding = 'utf-8')
-    archivo.write('''<!DOCTYPE html>
+    archivo = open("hola.html", "w")
+    archivo.write(
+        """<!DOCTYPE html>
     <html lang="pt-AR">
     <head>
-    <meta charset = "utf-8">
-    <title>Titulo da Pagina</title>
+        <meta charset = "utf-8">
+        <title>Título de la Pagina</title>
     </head>
     <body>
-    Hola!
+        Hola!
     </body>
-    </html>''')
+    </html>"""
+    )
     archivo.close()
 
 
-+ Tenga en cuenta el parámetro de codificación utf-8; Sin ella las subidas no saldrán
+.. datafile:: hola.html
+    :edit:
+    :cols: 40
+    :rows: 12
+
+
+.. activecode:: ac_l23_7
+    :nocodelens:
+    :datafile: hola.html
+
+    Pruebe el programa anterior.
+
+    ~~~~
+    archivo = open("hola.html", "w")
+    archivo.write(
+        """<!DOCTYPE html>
+    <html lang="pt-AR">
+    <head>
+        <meta charset = "utf-8">
+        <title>Título de la Página</title>
+    </head>
+    <body>
+        Hola!
+    </body>
+    </html>"""
+    )
+    archivo.close()
+
 
 Diccionarios
 ============
@@ -210,75 +321,89 @@ Diccionarios
     + Si la clave ya existe: el valor asociado cambia
     + Si la clave no existe: se agrega la nueva clave
 
-.. codelens:: Example7_4
+.. codelens:: cl_l23_1
          
-        d = {}
-        d['a'] = 'alpha'
-        d['o'] = 'omega'
-        d['g'] = 'gama'
-        print(d)
-        print(d['a'])
+    d = {}
+    d["a"] = "alpha"
+    d["o"] = "omega"
+    d["g"] = "gama"
+    print(d)
+    print(d["a"])
 
 
-.. activecode:: Example7_5
-   :nocodelens:
-   :stdin:
+.. activecode:: ac_l23_8
+    :nocodelens:
+    :stdin:
 
-   d = {}
-   d['a'] = 'alpha'
-   d['o'] = 'omega'
-   d['g'] = 'gama'
-   print(d)
-   print(d['x'])
+    d = {}
+    d["a"] = "alpha"
+    d["o"] = "omega"
+    d["g"] = "gama"
+    print(d)
 
-.. codelens:: Example7_6
+
+    # Esta línea va a resultar en error porque no hay 
+    # una clave "x" en el diccionario
+    print(d["x"])
+
+.. codelens:: cl_l23_2
          
-        d = {}
-        d['a'] = 'alpha'
-        d['o'] = 'omega'
-        d['g'] = 'gama'
-        print(d.keys())
-        print(d.values())
-        print('g' in d)
-        print('x' in d)
-        for chave in d:
-          print(chave)
-
-+ Haga un programa que lea el archivo alice.txt y cuente el número de ocurrencias de cada palabra en el texto. Nota: para conocer los personajes especiales use import string y use string.punctuation
-+ `http://www.gutenberg.org/cache/epub/11/pg11.txt`_
+    d = {}
+    d["a"] = "alpha"
+    d["o"] = "omega"
+    d["g"] = "gama"
+    print(d.keys())
+    print(d.values())
+    print("g" in d)
+    print("x" in d)
+    for clave in d:
+        print(clave)
 
 
-.. code-block:: python
+.. datafile:: alice_archivo.txt
+    :fromfile: _static/alice.txt
+    :hide:
 
-    arq = open('alice.txt')
-    texto = arq.read()
-    texto = texto.lower()
+
+.. activecode:: ac_l23_9
+    :nocodelens:
+    :available_files: alice_archivo.txt
+    :Language: python
+
+    Haga un programa que lea el archivo ``alice_archivo.txt`` y cuente el número de ocurrencias de cada palabra en el texto. Nota: 
+    para conocer los caracteres especiales use ``import string`` y use ``string.punctuation``.
+    
+    ~~~~
     import string
+
+    archivo = open("alice_archivo.txt", "r")
+    texto = archivo.read()
+    texto = texto.lower()
+
     for c in string.punctuation:
-        texto = texto.replace(c, ' ')
+        texto = texto.replace(c, " ")
     texto = texto.split()
 
     dic = {}
-    for p in texto:
-        if p not in dic:
-            dic[p] = 1
+    for palabra in texto:
+        if palabra not in dic:
+            dic[palabra] = 1
         else:
-            dic[p] += 1
-    print ('Aparece Alice %s veces' %dic['alice'])
-    arq.close()
+            dic[palabra] += 1
+
+    print("Aparece Alice %s veces" % dic["alice"])
+    archivo.close()
 
 
-
-Exercício Programa 1
+Ejercicio Programa 1
 ====================
 
 
 .. image:: img/TWP05_041.jpeg
-   :height: 12.571cm
-   :width: 9.411cm
-   :align: center
-   :alt: 
+    :height: 12.571cm
+    :width: 9.411cm
+    :align: center
+    :alt: 
 
 
 + “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
-
