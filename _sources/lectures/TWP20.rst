@@ -3,7 +3,7 @@ For, Funciones y Azar
 =====================
 
 
-..  image:: img/TWP10_001.jpeg
+.. image:: img/TWP10_001.jpeg
     :height: 14.925cm
     :width: 9.258cm
     :align: center
@@ -16,12 +16,12 @@ for == while oculto
 + Códigos equivalentes: FOR durante el día se convierte MIENTRAS por la noche.
 
 
-..  codelens:: cl_l20_1
+.. codelens:: cl_l20_1
          
     for letra in "aeiou":
         print(letra)
 
-..  codelens:: cl_l20_2
+.. codelens:: cl_l20_2
          
     texto = "aeiou"
     k = 0
@@ -35,12 +35,12 @@ for == while oculto
 
 + Códigos equivalentes :
 
-..  codelens:: cl_l20_3
+.. codelens:: cl_l20_3
          
     for i in range(5):
         print(i)
 
-..  codelens:: cl_l20_4
+.. codelens:: cl_l20_4
          
     lista = list(range(5))
     k = 0
@@ -54,12 +54,12 @@ for == while oculto
 
 + Códigos equivalentes :
 
-..  codelens:: cl_l20_5
+.. codelens:: cl_l20_5
          
     for x in ["cpbr6", 42, 3.14]:
         print(x)
 
-..  codelens:: cl_l20_6
+.. codelens:: cl_l20_6
          
     lista = ["cpbr6", 42, 3.14]
     k = 0
@@ -76,7 +76,7 @@ funciones def
 + Utilizo ``def`` para definir la función y ``return`` para devolver algún valor.
 + Hay funciones que no devuelven nada.
 
-..  codelens:: cl_l20_7
+.. codelens:: cl_l20_7
          
     def es_par(x):
         return x % 2 == 0
@@ -112,9 +112,9 @@ Funciones
 Variables locales y globales
 ============================
 
-+ **Nota**: El alcance de ``a`` es diferente en los dos casos. En otras palabras, las dos variables ``a`` son diferentes.
++ **Nota**: El alcance de ``a`` en el ejemplo de abajo es diferente en los dos casos. En otras palabras, las dos variables ``a`` son diferentes.
 
-..  codelens:: cl_l20_9
+.. codelens:: cl_l20_9
 
     a = 5
 
@@ -133,14 +133,15 @@ Variables locales y globales
 Variables locales y globales
 ============================
 
-+ En este caso, usamos la palabra clave global. Entonces, la variable ``a`` dentro de la función es la misma que la variable definida anteriormente, es decir, es la variable global.
++ En este caso, usamos la palabra reservada global. Entonces, la variable ``a`` dentro de la función es la misma que la variable definida anteriormente, es decir, es la variable global.
 
-..  codelens:: cl_l20_10
+.. codelens:: cl_l20_10
          
     a = 5
 
 
     def cambio_y_impresion():
+        global a
         a = 7
         print("valor de a dentro de la función : %d" % a)
 
@@ -155,7 +156,7 @@ Variables locales y globales
 Números aleatorios
 ==================
 
-..  codelens:: cl_l20_11
+.. codelens:: cl_l20_11
          
     import random
 
@@ -180,7 +181,7 @@ Números al azar
 + Defina una función de "codificación" que devuelva las letras en una cadena mezclados.
 + **Consejo**: use ``list()`` para convertir su cadena en una lista.
 
-..  codelens:: cl_l20_12
+.. codelens:: cl_l20_12
          
     import random
 
@@ -198,9 +199,9 @@ Números al azar
 Números aleatorios
 ==================
 
-+ Genere una lista de 15 enteros aleatorios entre 10 y 100
++ Genere una lista de 15 enteros aleatorios entre 10 y 100.
 
-..  codelens:: cl_l20_13
+.. codelens:: cl_l20_13
          
     import random
 
@@ -214,9 +215,9 @@ Números aleatorios
 Números aleatórios
 ==================
 
-+ Genere una lista de 15 enteros aleatorios entre 10 y 100 que son distintos el uno del otro
++ Genere una lista de 15 enteros aleatorios entre 10 y 100 que son distintos el uno del otro.
 
-..  codelens:: cl_l20_14
+.. codelens:: cl_l20_14
          
     import random
 
@@ -232,7 +233,7 @@ Lista de ejercicios "again"
 ===========================
 
 
-..  image:: img/TWP05_041.jpeg
+.. image:: img/TWP05_041.jpeg
     :height: 12.571cm
     :width: 9.411cm
     :align: center
