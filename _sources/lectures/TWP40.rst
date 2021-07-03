@@ -234,9 +234,9 @@ Asignación múltiple
     x = y
     y = temporal
 
-+ También utilizar asignación múltiple que más elegante.
++ También se puede utilizar la asignación múltiple que es más elegante.
 
-..  codelens:: cl_l40_7
+.. codelens:: cl_l40_7
 
     x = 4
     y = 5
@@ -290,8 +290,8 @@ Ejercicio
 
 + Implementación:
     + Valores de prueba:
-        + 1000 dolares y 3% de interés
-        + 1000 dolares y 10% de interés
+        + 1000 dolares de inversión y 3% la tasa de interés anual
+        + 1000 dolares de inversión y 10% la tasa de interés anual
 
 .. activecode:: ac_l40_6
     :nocodelens:
@@ -300,7 +300,7 @@ Ejercicio
     valor = float(input("Cantidad inicial invertida: "))
     tasa = float(input("Tasa de interés anual: "))
     for i in range(10):
-        valor = valor * (1 + tasa)
+        valor = valor * (1 + tasa / 100)
     print("Valor después de 10 años:  %5.2f" % valor)
 
 
