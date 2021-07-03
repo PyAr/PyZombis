@@ -80,7 +80,7 @@ Impresión de 1 a 3
 ===================
 
 
-.. image:: img/TWP15_007.jpg
+.. image:: img/TWP15_007.jpeg
    :height: 14.804cm
    :width: 22.181cm
    :align: center
