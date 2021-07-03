@@ -3,7 +3,7 @@ Condiciones
 ===========
 
 
-..  image:: img/TWP10_001.jpeg
+.. image:: img/TWP10_001.jpeg
     :height: 15.125cm
     :width: 9.382cm
     :align: center
@@ -12,12 +12,12 @@ Condiciones
 Condiciones
 ===========
 
-..  codelens:: cl_l10_1
+.. codelens:: cl_l10_1
 
     print("¡Bienvenido a mi programa!")
     print("¡Vuelva siempre!")
 
-..  image:: img/TWP10_002.jpg
+.. image:: img/TWP10_002.jpg
     :height: 5.524cm
     :width: 22.859cm
     :align: center
@@ -37,7 +37,7 @@ Condiciones
 Condiciones
 ===========
 
-..  image:: img/TWP10_004.png
+.. image:: img/TWP10_004.png
     :height: 13.389cm
     :width: 20.001cm
     :align: center
@@ -49,7 +49,7 @@ if
 
 + Lea dos valores enteros e imprima el más grande
 
-..  codelens:: cl_l10_2
+.. codelens:: cl_l10_2
 
     a = 8
     b = 5
@@ -71,7 +71,7 @@ if
 + Verificar si un auto es nuevo o viejo.
 + Si el auto tiene al menos tres años de creado, es nuevo, es viejo en caso contrario.
 
-..  codelens:: cl_l10_3
+.. codelens:: cl_l10_3
 
     anio_creacion = 10
     if anio_creacion <= 3:
@@ -89,7 +89,7 @@ if
 if
 ==
 
-..  codelens:: cl_l10_4
+.. codelens:: cl_l10_4
 
     velocidad = 120
     if velocidad > 110:
@@ -97,16 +97,24 @@ if
         multa = (velocidad - 110) * 5
         print("Valor de la multa : $%5.2f " % multa)
 
-else
-====
-
+if / else
+=========
 
 + ¿Qué hacer cuando la condición ``if`` es falsa?.
 + La clausula ``else`` significa en caso contrario.
 + Se suele usar cuando para indicar condiciones complementarias.
-+ Los dos códigos a continuación hacen lo mismo:
++ Las condiciones if / else pueden verse como un carro al llegar a una bifurcación en la ruta.
++ Dependiendo del resultado de una condición el carro puede ir por la ruta de arriba o por la ruta de abajo.
 
-..  codelens:: cl_l10_5
+.. image:: img/TWP10_009.jpg
+    :height: 9.754cm
+    :width: 22.859cm
+    :align: center
+    :alt:
+
++ Los dos códigos a continuación hacen lo mismo pero uno usando condiciones if / else
+
+.. codelens:: cl_l10_5
 
     anio_creacion = 1
     if anio_creacion <= 3:
@@ -114,25 +122,13 @@ else
     if anio_creacion > 3:
         print("Su auto es viejo")
 
-..  codelens:: cl_l10_6
+.. codelens:: cl_l10_6
 
-    anio_creacion = 6
+    anio_creacion = 1
     if anio_creacion <= 3:
         print("Su auto es nuevo")
-    if anio_creacion > 3:
+    else:
         print("Su auto es viejo")
-
-if / else
-=========
- 
-+ Las condiciones if / else pueden verse como un carro al llegar a una bifurcación en la ruta.
-+ Dependiendo del resultado de una condición el carro puede ir por la ruta de arriba o por la ruta de abajo.
-
-..  image:: img/TWP10_009.jpg
-    :height: 9.754cm
-    :width: 22.859cm
-    :align: center
-    :alt:
 
 Estructuras anidadas
 ====================
@@ -140,7 +136,7 @@ Estructuras anidadas
 + Considere la compañía telefónica "Chao". Por debajo de 200 minutos, la empresa cobra ``$0.20`` por minuto. Entre 200 y 400 minutos, el precio es de ``$0.18``. Por encima de 400 minutos, el precio por minuto es de ``$0.15``. Calcular tu factura de teléfono con estas condiciones.
 + Las condiciones de la compañía, puede verse representado visualmente con la ruta de una carretera como la siguiente imagen.
 
-..  image:: img/TWP10_011.jpg
+.. image:: img/TWP10_011.jpg
     :height: 9.754cm
     :width: 22.859cm
     :align: center
@@ -152,7 +148,7 @@ Estructuras anidadas
 + Pueden crearse condiciones anidadas.
 + Recuerda identar las porciones de código que se encuentren anidadas.
 
-..  codelens:: cl_l10_7
+.. codelens:: cl_l10_7
 
     minutos = 800
     if minutos < 200:
@@ -176,7 +172,7 @@ Estructuras anidadas
 Estructuras anidadas
 ====================
 
-..  codelens:: cl_l10_8
+.. codelens:: cl_l10_8
 
     minutos = 1000
     if minutos < 200:
@@ -200,7 +196,7 @@ elif
 
 + La cláusula elif sustituye a ``else`` y ``if``.
 
-..  codelens:: cl_l10_9
+.. codelens:: cl_l10_9
 
     minutos = 1000
     if minutos < 200:
@@ -217,7 +213,7 @@ elif
 Lista de Ejercicios “again”
 ===========================
 
-..  image:: img/TWP05_041.jpeg
+.. image:: img/TWP05_041.jpeg
     :height: 12.571cm
     :width: 9.411cm
     :align: center
