@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hackeando Facebook con Python &#8212; PyZombis master@ae5586e</title>
+    <title>Hackeando Facebook con Python &#8212; PyZombis master@c7987c0</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -30,9 +30,9 @@
     <script src="../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../_static/animationbase.js?v=A043C3A7"></script>
-    <script src="../_static/runtime.bundle.js?v=86da789dd6c461fb052b"></script>
+    <script src="../_static/runtime.bundle.js?v=2bcd2c19954c99ce4506"></script>
     <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=0e91cff9e660624062d3"></script>
-    <script src="../_static/runestone.bundle.js?v=5a88e358dd1b5b0905e6"></script>
+    <script src="../_static/runestone.bundle.js?v=766cad0b55ecfe66f111"></script>
     <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="../_static/jquery-fix.js"></script>
     <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -67,7 +67,7 @@
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'PyZombisDev';
   eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
-  eBookConfig.runestone_version = '5.7.0';
+  eBookConfig.runestone_version = '5.7.1';
   eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
   eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
   eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@ae5586e</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@c7987c0</a>
       </div>
     </div>
 
@@ -230,6 +230,7 @@
 <li><a class="reference internal" href="#facebook-hacking">Facebook Hacking</a></li>
 <li><a class="reference internal" href="#los-hackers-no-son-malvados">¿Los hackers no son “malvados”?</a></li>
 <li><a class="reference internal" href="#obtener-foto-de-perfil-de-facebook">Obtener foto de perfil de Facebook</a></li>
+<li><a class="reference internal" href="#obtener-datos-de-reddit">Obtener datos de Reddit</a></li>
 </ul>
 </li>
 </ul>
@@ -342,6 +343,46 @@ document["boton_mostrar"].bind("click", obtener_foto)
 </textarea>
 </div>
 </div>
+</div>
+<div class="section" id="obtener-datos-de-reddit">
+<h2>Obtener datos de Reddit<a class="headerlink" href="#obtener-datos-de-reddit" title="Permalink to this headline">¶</a></h2>
+<p>En este ejercicio vamos a acceder a Reddit para obetener datos como los de la siguiente imagen.</p>
+<a class="reference internal image-reference" href="../_images/TWP45_050.png"><img alt="" class="align-center" src="../_images/TWP45_050.png" style="width: 23.344cm; height: 9.39cm;" /></a>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_2 data-question_label="2">
+<div id=ac_l45_2_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l45_2_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import urllib.request
+import json
+
+# La url de Reddit a la que accederemos
+url = "http://www.reddit.com/r/Python/.json"
+resp = urllib.request.urlopen(url).read()
+
+# La respuesta se da en formato json, se debe transformar a
+# un diccionario de Python con json.loads
+texto = json.loads(resp)
+
+# Puede ver los datos que se recibieron si quita el comentario de abajo
+# print(texto)
+
+# Buscamos e imprimimos los datos que queremos
+for item in texto["data"]["children"]:
+    doc = item["data"]
+    print(doc["title"])
+    print("#comments: %d" % doc["num_comments"])
+    print(doc["url"])
+    print()
+</textarea>
+</div>
+</div>
 <script type="text/javascript">
     function lecture16_disqus(source) {
         if (window.DISQUS) {
@@ -419,7 +460,7 @@ document["boton_mostrar"].bind("click", obtener_foto)
     </p>
     <p>
         &copy; Copyright 2021 Python Argentina et al..
-      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.7.0.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.7.1.
     </p>
   </div>
 </footer>
