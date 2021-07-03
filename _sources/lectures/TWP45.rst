@@ -1,6 +1,6 @@
-=============================
-Hackeando Facebook con Python
-=============================
+====================
+Hackeando con Python
+====================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -202,10 +202,11 @@ se transforma a un diccionario de Python. Sin embargo, no es del todo legible. E
 
 
 .. datafile:: datosjson.txt
-    :rows: 20
-    :cols: 40
+    :rows: 10
+    :cols: 80
     :edit:
 
+|
 
 El siguiente ejercicio viene con calificación automática.
 
@@ -253,7 +254,7 @@ El siguiente ejercicio viene con calificación automática.
     # print(f"resultados: {resultados}")
     
     # Cree peliculas_similares
-    # Utilice un for loop para encontrar las peliculas similares y agregarlas
+    # Utilice un ciclo for para encontrar las peliculas similares y agregarlas
     # a la variable correspondiente
 
     # print(f"Pelis: {peliculas_similares} len: {len(peliculas_similares)}")
