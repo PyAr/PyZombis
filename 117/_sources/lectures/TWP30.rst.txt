@@ -324,14 +324,26 @@ Repeticiones
 
 
 .. activecode:: ac_l30_3
-    :nocodelens:
-    :stdin:
+    :language: python3
+    :python3_interpreter: brython 
+
+    from browser import document as doc
+    from browser import html
+    from browser import timer
 
     print("¡Bienvenido!")
     numero = 0
-    while numero != 42:
-        g = input("Ingrese un número: ")
-        numero = int(g)
+
+    doc <= html.DIV(id="div_juego")
+
+    # Creamos el botón para jugar
+    doc["div_juego"] <= html.BUTTON("Jugar", id="btn_jugar")
+
+    # Definimos lo que hará el boton cuando sea apretado
+    def adivinar():
+    
+        global numero
+        numero = int(input("Adivine el número: "))
         if numero == 42:
             print("¡Ganaste!")
         else:
@@ -339,7 +351,19 @@ Repeticiones
                 print("Alto")
             else:
                 print("Bajo")
-    print("Fin del juego!")
+        
+        if numero != 42:
+            # Si el número no se adivinó, se repite la función después de
+            # 3 segundos 
+            timer.set_timeout(adivinar, 3000)
+
+    
+    def empezar(ev):
+        adivinar()
+    
+    # Cuando el botón sea apretado, llamará a la función empezar, 
+    # que a su vez llamará a adivinar.
+    doc["btn_jugar"].bind("click", empezar)
 
 
 .. image:: img/TWP15_007.png

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Revisión general 1 &#8212; PyZombis 37_TWP30_fix@35ebda2</title>
+    <title>Revisión general 1 &#8212; PyZombis 37_TWP30_fix@b9406a0</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 37_TWP30_fix@35ebda2</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 37_TWP30_fix@b9406a0</a>
       </div>
     </div>
 
@@ -605,16 +605,28 @@ print("Fin del juego")
 <div id=ac_l30_3_question class="ac_question col-md-12">
 
 </div>
-<textarea data-lang="python" id="ac_l30_3_editor" 
+<textarea data-lang="python3" id="ac_l30_3_editor" 
       data-timelimit=25000     
-    data-audio=''   data-stdin=''   
+    data-audio=''      
            data-wasm=/_static
-      style="visibility: hidden;">
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import document as doc
+from browser import html
+from browser import timer
+
 print("¡Bienvenido!")
 numero = 0
-while numero != 42:
-    g = input("Ingrese un número: ")
-    numero = int(g)
+
+doc <= html.DIV(id="div_juego")
+
+# Creamos el botón para jugar
+doc["div_juego"] <= html.BUTTON("Jugar", id="btn_jugar")
+
+# Definimos lo que hará el boton cuando sea apretado
+def adivinar():
+
+    global numero
+    numero = int(input("Adivine el número: "))
     if numero == 42:
         print("¡Ganaste!")
     else:
@@ -622,7 +634,19 @@ while numero != 42:
             print("Alto")
         else:
             print("Bajo")
-print("Fin del juego!")
+
+    if numero != 42:
+        # Si el número no se adivinó, se repite la función después de
+        # 3 segundos
+        timer.set_timeout(adivinar, 3000)
+
+
+def empezar(ev):
+    adivinar()
+
+# Cuando el botón sea apretado, llamará a la función empezar,
+# que a su vez llamará a adivinar.
+doc["btn_jugar"].bind("click", empezar)
 </textarea>
 </div>
 </div>
