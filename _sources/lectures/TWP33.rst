@@ -3,7 +3,7 @@ Revisión de String
 ==================
 
 
-..  image:: img/TWP10_001.jpeg
+.. image:: img/TWP10_001.jpeg
     :height: 14.925cm
     :width: 9.258cm
     :align: center
@@ -18,7 +18,7 @@ Revisión de String
 Starbuzz Café
 =============
 
-..  image:: img/TWP33_001.jpg
+.. image:: img/TWP33_001.jpg
     :height: 15.427cm
     :width: 14.801cm
     :align: center
@@ -28,7 +28,7 @@ Starbuzz Café
 Código Starbuzz actual
 ======================
 
-..  activecode:: ac_l33_1
+.. activecode:: ac_l33_1
     :nocodelens:
     :stdin:
    
@@ -44,7 +44,7 @@ El CEO solo quiere el precio
 ============================
 
 
-..  image:: img/TWP33_004.jpg
+.. image:: img/TWP33_004.jpg
     :height: 6.719cm
     :width: 12.699cm
     :align: center
@@ -54,7 +54,7 @@ El CEO solo quiere el precio
 + El precio está incrustado en HTML
 
 
-..  image:: img/TWP33_002.png
+.. image:: img/TWP33_002.png
     :height: 5.727cm
     :width: 24.005cm
     :align: center
@@ -65,7 +65,7 @@ Strings
 
 + String y las cadenas de caracteres.
 
-..  image:: img/TWP33_005.png
+.. image:: img/TWP33_005.png
     :height: 2.112cm
     :width: 23.745cm
     :align: center
@@ -73,7 +73,7 @@ Strings
 
 + ¿Cómo obtener solo el precio?
 
-..  image:: img/TWP33_006.png
+.. image:: img/TWP33_006.png
     :height: 3.436cm
     :width: 22.621cm
     :align: center
@@ -82,14 +82,14 @@ Strings
 Strings
 =======
 
-..  image:: img/TWP33_007.jpg
+.. image:: img/TWP33_007.jpg
     :height: 5cm
     :width: 16.051cm
     :align: center
     :alt:
 
 
-..  image:: img/TWP33_008.jpg
+.. image:: img/TWP33_008.jpg
     :height: 8.323cm
     :width: 16.483cm
     :align: center
@@ -98,7 +98,7 @@ Strings
 Strings
 =======
 
-..  image:: img/TWP33_009.jpg
+.. image:: img/TWP33_009.jpg
     :height: 7.317cm
     :width: 17.805cm
     :align: center
@@ -108,7 +108,7 @@ Strings
 Cortar
 ======
 
-..  codelens:: cl_l33_1
+.. codelens:: cl_l33_1
          
     texto = "Palmeras"
     print(texto[2:5])
@@ -122,7 +122,7 @@ Cortar
 Cortar
 ======
 
-..  image:: img/TWP33_012.jpg
+.. image:: img/TWP33_012.jpg
     :height: 10.323cm
     :width: 19.483cm
     :align: center
@@ -132,7 +132,7 @@ Cortar
 Cortar
 ======
 
-..  activecode:: ac_l33_2
+.. activecode:: ac_l33_2
     :nocodelens:
     :stdin:
    
@@ -146,7 +146,7 @@ Cortar
 ¡El CEO está feliz!
 ===================
 
-..  image:: img/TWP33_015.jpg
+.. image:: img/TWP33_015.jpg
     :height: 7.402cm
     :width: 14.922cm
     :align: center
@@ -158,16 +158,23 @@ No hay preguntas tontas
 
 + ¿Puedo poner alguna página web en este código?
 + Sí. Siéntete libre, pero no olvides la decodificación
-+ Por ejemplo, el siguiente sitio web utiliza iso8859. `Enlace para el mismo <http://www.ime.usp.br/~pf/algoritmos/dicios/br>`_
++ Por ejemplo, el siguiente `sitio web <http://www.atc.uniovi.es/cgi-bin/encodings?encoding=iso-8859-1>`_ muestra caracteres con la decodificación iso8859.
 + ¿Qué hace ``urllib.request``?
 + Te permite chatear con internet.
 + ¿Puedo acceder a una página directamente en el navegador?
-+ Sí. Escriba en modo interactivo ``import antigravity``.
++ Sí ejecute el código de abajo que utiliza ``import antigravity``.
+
+.. activecode:: ac_l33_3
+    :language: python3
+    :python3_interpreter: brython
+
+    import antigravity
+    # Ejecuta este codigo
 
 Descuentos para clientes leales
 ===============================
 
-..  image:: img/TWP33_016.jpg
+.. image:: img/TWP33_016.jpg
     :height: 12.571cm
     :width: 17.458cm
     :align: center
@@ -177,7 +184,7 @@ Descuentos para clientes leales
 Programa de fidelización
 ========================
 
-..  activecode:: ac_l33_3
+.. activecode:: ac_l33_4
     :nocodelens:
     :stdin:
    
@@ -195,7 +202,7 @@ El precio se movió
 
 + Las páginas son diferentes y el precio cambia de posición en la cadena
 
-..  image:: img/TWP33_018.jpg
+.. image:: img/TWP33_018.jpg
     :height: 8.416cm
     :width: 16.122cm
     :align: center
@@ -229,7 +236,7 @@ Método ``find``
 Método ``find``
 ===============
 
-..  activecode:: ac_l33_4
+.. activecode:: ac_l33_5
     :nocodelens:
     :stdin:
 
@@ -246,7 +253,7 @@ Método ``find``
 Solo cuando es inferior a 4,74
 ==============================
 
-..  image:: img/TWP33_025.jpg
+.. image:: img/TWP33_025.jpg
     :height: 15.444cm
     :width: 8.6cm
     :align: center
@@ -256,7 +263,7 @@ Solo cuando es inferior a 4,74
 Solo cuando es inferior a 4,74
 ===============================
 
-..  activecode:: ac_l33_5
+.. activecode:: ac_l33_6
     :nocodelens:
     :stdin:
    
@@ -274,7 +281,7 @@ Solo cuando es inferior a 4,74
 Los strings son diferentes de los números
 =========================================
 
-..  image:: img/TWP33_028.jpg
+.. image:: img/TWP33_028.jpg
     :height: 9.324cm
     :width: 17.401cm
     :align: center
@@ -284,7 +291,7 @@ Los strings son diferentes de los números
 Convertir a ``float``
 =====================
 
-..  activecode:: ac_l33_6
+.. activecode:: ac_l33_7
     :nocodelens:
     :stdin:
    
@@ -302,7 +309,7 @@ Convertir a ``float``
 ¿Puede seguir probando el precio?
 =================================
 
-..  image:: img/TWP33_029.jpg
+.. image:: img/TWP33_029.jpg
     :height: 15.444cm
     :width: 8.6cm
     :align: center
@@ -311,7 +318,7 @@ Convertir a ``float``
 ¿Puede seguir intentándolo?
 ===========================
 
-..  activecode:: ac_l33_7
+.. activecode:: ac_l33_8
     :nocodelens:
     :stdin:
    
@@ -332,7 +339,7 @@ Convertir a ``float``
 ¡El CEO está muy feliz!
 =======================
 
-..  image:: img/TWP33_030.jpg
+.. image:: img/TWP33_030.jpg
     :height: 9.762cm
     :width: 11.561cm
     :align: center
@@ -341,7 +348,7 @@ Convertir a ``float``
 Algo salió mal
 ==============
 
-..  image:: img/TWP33_032.jpg
+.. image:: img/TWP33_032.jpg
     :height: 15.268cm
     :width: 15.201cm
     :align: center
@@ -353,7 +360,7 @@ Acusación DDoS
 + DDoS – Distributed Denial of Service
 + Ataque de denegación de servicio.
 
-..  image:: img/TWP33_033.jpg
+.. image:: img/TWP33_033.jpg
     :height: 13.596cm
     :width: 15.201cm
     :align: center
@@ -363,7 +370,7 @@ Acusación DDoS
 Recibimos un mensaje
 ====================
 
-..  image:: img/TWP33_034.jpg
+.. image:: img/TWP33_034.jpg
     :height: 13.191cm
     :width: 22.685cm
     :align: center
@@ -381,7 +388,7 @@ Biblioteca ``time``
 10 minutos entre cada acceso
 ============================
 
-..  activecode:: ac_l33_8
+.. activecode:: ac_l33_9
     :nocodelens:
     :stdin:
    
@@ -415,7 +422,7 @@ Herramientas de Python
 ======================
 
 + ``texto[4]`` accede al quinto carácter.
-+ ``texto[4:9]`` accede al quinto al noveno carácter.
++ ``texto[4:9]`` accede del quinto al noveno carácter.
 + El método ``text.find()`` busca una subcadena.
 + ``float()`` convierte algo a un punto flotante.
-+ Bibliotecas: ``urllib.request `` y ``time``.
++ Bibliotecas: ``urllib.request`` y ``time``.
