@@ -23,7 +23,7 @@ Primer programa
     >>> print ("¡hola mundo!")
     ¡hola mundo!
 
-.. codelens:: Example_1
+.. codelens:: cl_l05_1
     
     print("primer mensaje")
 
@@ -165,16 +165,16 @@ Calculadora en el intérprete
 ============================
 
 
-.. codelens:: Example_Calculator
+.. codelens:: cl_l05_2
     
-    print(2+3)
-    print(5-3)
-    print(10-4+2)
-    print(2*10)
-    print(10/4)
-    print(2**3)
-    print(10%3)
-    print(16%7)
+    print(2 + 3)
+    print(5 - 3)
+    print(10 - 4 + 2)
+    print(2 * 10)
+    print(10 / 4)
+    print(2 ** 3)
+    print(10 % 3)
+    print(16 % 7)
 
 
 Conceptos sobre variables y asignación
@@ -187,11 +187,11 @@ Conceptos sobre variables y asignación
 + El símbolo para la asignación es el mismo ``=``
 
 
-.. codelens:: Example_6_1
+.. codelens:: cl_l05_3
     
     a = 2
     b = 3
-    print(a+b)
+    print(a + b)
 
 Conceptos sobre variables y asignación
 ======================================
@@ -207,11 +207,11 @@ Conceptos sobre variables y asignación
 + Las dos primeras líneas no envían nada a la pantalla, así que
   solo se muestra el resultado de la tercera línea
 
-.. codelens:: Example_6_2
+.. codelens:: cl_l05_4
     
     a = 2
     b = 3
-    print(a+b)
+    print(a + b)
 
 Conceptos sobre variables y asignación
 ======================================
@@ -222,9 +222,9 @@ Conceptos sobre variables y asignación
 + Podríamos haber logrado el mismo resultado de varias maneras.
 
 
-.. codelens:: Example_Calculation
+.. codelens:: cl_l05_5
     
-    print(2+3)
+    print(2 + 3)
     print(5)
 
 
@@ -303,7 +303,7 @@ Representación de valores numéricos
 + Tecleando en el intérprete ``3 * 0.1`` tendremos un ejemplo
 
 
-.. codelens:: Example_Multiplcation
+.. codelens:: cl_l05_6
 
     print(3 * 0.1)
 
@@ -341,15 +341,15 @@ Ejemplos:
 =========
 
 
-.. codelens:: Example_7
+.. codelens:: cl_l05_7
     
     a = 1
     b = 5
     c = 2
     d = 1
     print(a == b)
-    print(b>a)
-    print(a<b)
+    print(b > a)
+    print(a < b)
     print(a == d)
     print(b >= a)
     print(c <= b)
@@ -366,7 +366,7 @@ Ejemplo importante
 
 
 
-.. codelens:: Example_8
+.. codelens:: cl_l05_8
     
     print(5 >= 5)
     print(5 <= 5)
@@ -382,12 +382,12 @@ Ejemplo
 
 
 
-.. codelens:: Example_9
+.. codelens:: cl_l05_9
     
     nota = 8
     promedio = 6
     aprobado = nota > promedio
-    print(aprovado)
+    print(aprobado)
 
 
 Operadores Lógicos
@@ -400,7 +400,7 @@ Operadores Lógicos
 Uso del operador ``not``
 ************************
 
-.. codelens:: Example_10
+.. codelens:: cl_l05_10
     
     print(not True)
     print(not False)
@@ -409,7 +409,7 @@ Uso del operador ``not``
 Uso del operador ``and``
 ************************
 
-.. codelens:: Example_11
+.. codelens:: cl_l05_11
     
     print(True and True)
     print(True and False)
@@ -420,7 +420,7 @@ Uso del operador ``and``
 Uso del operador ``or``
 ************************
 
-.. codelens:: Example_12
+.. codelens:: cl_l05_12
     
     print(True or True)
     print(True or False)
@@ -433,21 +433,27 @@ Expresiones Lógicas
 
 
 + Podemos combinar los operadores lógicos para formar expresiones lógicas complejas
-+ El orden de evaluación no es> y> o
++ El orden de evaluación es: ``not`` > ``and`` > ``or``. Esto significa que en una 
+  expresión se evalúa primero el operador lógico ``not``, después ``and`` y por último ``or``.
 
+Veamos un ejemplo
 
+.. codelens:: cl_l05_13
+
+   print(not False or False and True)
+   print(False or True and True)
+   print(not False and True or False)
 
 
 Ejemplo
 =======
 
 
-
 + La condición para otorgar un préstamo de compra de una motocicleta son: tener un
   salario mayor que $1,000.00 y ser mayor de 18 años. Compruebe si José puede obtener el
   préstamo
 
-.. codelens:: Example_13
+.. codelens:: cl_l05_14
     
     salario = 500.0
     edad = 20
@@ -460,7 +466,7 @@ Ejemplo
 + Verifique si un estudiante aprobó dado que obtuvo una puntuación promedio de 5.8 en
   el programa de ejercicios y obtuvo un puntaje promedio de 7 en las pruebas
 
-.. codelens:: Example_14
+.. codelens:: cl_l05_15
     
     ep = 5.8
     p = 7
@@ -468,7 +474,7 @@ Ejemplo
     print(aprobado)
 
 
-Variale String
+Variable String
 ================
 
 + Almacene cadenas como nombres y texto en general
@@ -478,7 +484,7 @@ Variale String
   principio y fin
 
 
-.. codelens:: Example_15
+.. codelens:: cl_l05_16
     
     texto = "Joaquin y Maria comen pan"
     print(texto)
@@ -496,7 +502,7 @@ Variable String
   Python
 
 
-.. codelens:: Example_16
+.. codelens:: cl_l05_17
     
     texto = "Joaquin y Maria comen pan"
     print(len(texto))
@@ -510,7 +516,7 @@ Variable String
 + Accedemos al carácter proporcionando el índice entre corchetes ``[]``
 
 
-.. codelens:: Example_17
+.. codelens:: cl_l05_18
     
     texto = "Joaquin y Maria comen pan"
     print(texto[0])
@@ -527,7 +533,7 @@ Variable String
   caracteres de cadena
 
 
-.. codelens:: Example_18
+.. codelens:: cl_l05_19
     
     texto = "Juan y Maria comen pan"
     print(texto[22])
@@ -548,12 +554,12 @@ Concatenación
 
 
 
-.. codelens:: Example_19
+.. codelens:: cl_l05_20
     
     a = "Papa"
     b = "cuando nace"
-    print(a+b)
-    print(a*3)
+    print(a + b)
+    print(a * 3)
 
 
 Composición
@@ -562,7 +568,7 @@ Composición
 + Unir cadenas múltiples no siempre es práctico
 + Podemos usar marcadores de posición para reemplazar valores dentro de cadenas
 
-.. codelens:: Example_20
+.. codelens:: cl_l05_21
     
     edad = 20
     print("Juan tiene %d años" % edad)
@@ -579,11 +585,11 @@ Composición
 
 
 
-.. codelens:: Example_21
+.. codelens:: cl_l05_22
     
     edad = 20
-    print("[%03d]"%edad)
-    print("[%3d]"%edad)
+    print("[%03d]" % edad)
+    print("[%3d]" % edad)
 
 
 Composición
@@ -593,7 +599,7 @@ Composición
 + ``%5.2f`` significa 5 caracteres en total y 2 decimales
 
 
-.. codelens:: Example_22
+.. codelens:: cl_l05_23
     
     print("$%5.2f pesos" % 23)
 
@@ -604,7 +610,7 @@ Corte
 
 + Podemos realizar la operación de corte utilizando ``[idice_comienzo:indice_fin]``
 
-.. codelens:: Example_23
+.. codelens:: cl_l05_24
     
     x = "0123456789"
     print(x[0:2])
@@ -622,7 +628,7 @@ Corte
   también podemos tener índices negativos: -1 último, -2 penúltimo
 
 
-.. codelens:: Example_24
+.. codelens:: cl_l05_25
     
     x = "0123456789"
     print(x[:2])
@@ -644,7 +650,7 @@ Cambiar variables a lo largo del tiempo
 
 
 
-.. codelens:: Example_25
+.. codelens:: cl_l05_26
     
     deuda = 0 
     compra = 100
@@ -662,7 +668,7 @@ Prueba de escritorio o simulación
 
 + Comprender que el valor de las variables puede cambiar durante la ejecución de
   un programa no es tan natural, pero es fundamental a la hora de programar
-+ Un programa no puede leerse como texto, pero con cuidado
++ Un programa no puede leerse como texto, sino con cuidado
   analizado línea por línea
 + Puedes entrenar con lápiz, borrador y papel
 
@@ -670,7 +676,7 @@ Prueba de escritorio o simulación
 Prueba de escritorio o simulación
 =================================
 
-.. table:: **Teste de mesa ou simulação**
+.. table:: **Prueba de mesa o simulación**
    :widths: auto
 
    ====== ====== ====
@@ -697,11 +703,10 @@ Entrada de datos
 
 
 + Hasta ahora nuestros programas han trabajado con valores conocidos.
-+ Comenzaremos a obtener los valores durante la ejecución de los programas y
-  usar el modo de edición más
++ Comenzaremos a obtener los valores durante la ejecución de los programas.
 
 
-.. activecode:: Input_Example_1
+.. activecode:: ac_l05_1
    :nocodelens:
    :stdin:
 
@@ -713,23 +718,23 @@ Conversión de entrada de datos
 ==============================
 
 + La función  ``input`` solo devuelve cadenas
-+ Usamos la función ``int()`` y ``float()`` para convertir un valor a un entero
-  a un valor punto flotante respectivamente
++ Usamos la función ``int()`` y ``float()`` para convertir un valor a un entero o
+  a un valor de punto flotante respectivamente
 
-.. activecode:: Input_Example_2
+.. activecode:: ac_l05_2
    :nocodelens:
    :stdin:
 
    valor_unitario = float(input("Valor de una rosquilla: "))
    n = int(input("Número de rosquillas: "))
-   print("Valor total = %5.2f" %(n*valor_unitario))
+   print("Valor total = %5.2f" % (n * valor_unitario))
 
 
 Error común
 ===========
 
 
-+ Cuidado con olvidar los parentesis. Un error en esto daría un error como el
++ Cuidado con olvidar los paréntesis. Un error en esto daría un error como el
   siguiente
 
 .. image:: img/TWP05_040.png
