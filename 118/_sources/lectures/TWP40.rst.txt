@@ -3,7 +3,7 @@ Revisión general 3
 ==================
 
 
-..  image:: img/TWP10_001.jpeg
+.. image:: img/TWP10_001.jpeg
     :height: 14.925cm
     :width: 9.258cm
     :align: center
@@ -59,7 +59,7 @@ Ejemplo: convertidor de temperatura Fahrenheit a Celsius
 + Implementación del problema:
     + Pruebas: 32F = 0C y 100F = 37.8C
 
-..  activecode:: ac_l40_1
+.. activecode:: ac_l40_1
     :nocodelens:
     :stdin:
 
@@ -81,9 +81,9 @@ Variables con valores definidos e indefinidos
 =============================================
 
 + Solo se puede usar el contenido de una variable si ya tiene un valor *definido* antes.
-+ Si se usa una variable que no tiene valor definido o se encuentra *indefinido* daría como resultado un error como el siguiente.
++ Si se usa variable que no tiene valor definido o se encuentra *indefinido* daría como resultado un error como el siguiente.
 
-..  activecode:: ac_l40_2
+.. activecode:: ac_l40_2
     :nocodelens:
     :stdin:
 
@@ -104,7 +104,7 @@ Literales o constantes
 + Existen varios tipos de datos.
 + Los más simples son los llamados literales o constantes.
 
-..  code-block:: python
+.. code-block:: python
 
         """
         Fahrenheit, 5, 32 y 9 son valores literales o constantes.
@@ -115,7 +115,7 @@ Literales o constantes
 
 + ¡Recuerde que hay diferentes tipos de datos! por ejemplo: ``"32"`` no es lo mismo que ``32``.
 
-..  codelens:: cl_l40_1
+.. codelens:: cl_l40_1
 
     int("32") == 32
     "32" == str(32)
@@ -136,7 +136,7 @@ Carácter de fin de línea
 + El comando ``print`` agrega un salto de línea como carácter por defecto.
 + Se puede reemplazar el carácter de fin de línea utilizando ``end`` en el comando ``print``.
 
-..  codelens:: cl_l40_2
+.. codelens:: cl_l40_2
          
     for x in "aguacate":
         if x in "ae":
@@ -151,7 +151,7 @@ Asignación de variables.
 + Asignar una variable por lo general sigue el siguiente formato ``<variable>`` = ``<expresion>``
 + La ``<expresión>`` es calculada en el procesador y modifica el valor en la memoria referenciada por ``<variable>``.
 
-..  codelens:: cl_l40_3
+.. codelens:: cl_l40_3
          
     x = 5
     celsius = 5
@@ -163,7 +163,7 @@ Asignación de variables.
 
 + Puede asignar valores a una misma variable varias veces.
 
-..  codelens:: cl_l40_4
+.. codelens:: cl_l40_4
          
     x = 0
     print(x)
@@ -179,7 +179,7 @@ Asignación de variables.
 Lectura y tarea
 ===============
 
-..  activecode:: ac_l40_3
+.. activecode:: ac_l40_3
     :language: python3
     :python3_interpreter: brython
 
@@ -187,8 +187,8 @@ Lectura y tarea
     print(string)
     n = int(input("Ingrese un número entero: "))
     print(n)
-    pi = float(input("Ingrese el número pi: "))
-    print(pi)
+    y = float(input("Ingrese un número en punto flotante: "))
+    print(y)
     x = eval(input("Ingrese una expresión matemática: "))
     print(x)
 
@@ -197,11 +197,11 @@ Asignación múltiple
 ===================
 
 
-..  activecode:: ac_l40_4
+.. activecode:: ac_l40_4
     :language: python3
     :python3_interpreter: brython
 
-    n1, n2, n3, n4 = eval(input("Tipo 4 notas: "))
+    n1, n2, n3, n4 = eval(input("Ingrese 4 notas separadas por comas: "))
     print("Media:", (n1 + n2 + n3 + n4) / 4)
     x = 4
     y = 5
@@ -217,7 +217,7 @@ Asignación múltiple
 
 + ¡Para intercambiar variables, la siguiente secuencia no funciona!
 
-..  codelens:: cl_l40_5
+.. codelens:: cl_l40_5
 
     x = 4
     y = 5
@@ -226,7 +226,7 @@ Asignación múltiple
 
 + Una solución sería usar una variable ``temporal``.
 
-..  codelens:: cl_l40_6
+.. codelens:: cl_l40_6
 
     x = 4
     y = 5
@@ -248,7 +248,7 @@ Formas de iterar
 + Todas siguen el siguiente patrón ``for <var> in <secuencia>``.
 
 
-..  activecode:: ac_l40_5
+.. activecode:: ac_l40_5
     :nocodelens:
     :stdin:
 
@@ -263,8 +263,8 @@ Formas de iterar
     for k in "aguacate":
         print(k + k, end=" ")
 
-Ejercicio 1
-===========
+Ejercicio
+=========
 
 + Queremos desarrollar un programa que determine el valor futuro de una inversión, dado el valor inicial y la tasa de interés
 + Seguimos los pasos para el desarrollo.
@@ -293,7 +293,7 @@ Ejercicio 1
         + 1000 dolares y 3% de interés
         + 1000 dolares y 10% de interés
 
-..  activecode:: ac_l40_6
+.. activecode:: ac_l40_6
     :nocodelens:
     :stdin:
 
@@ -320,7 +320,7 @@ Números básicos
     + Las operaciones con números enteros son mucho más rápidas.
     + Los números de coma flotante son aproximaciones: su precisión tiene un límite.
 
-..  codelens:: cl_l40_8
+.. codelens:: cl_l40_8
          
     print(type(3))
     print(type(3.14))
@@ -337,27 +337,25 @@ Tabla de operadores
 
 
 .. table:: **Tabla de operadores**
-   :widths: auto
+    :widths: auto
 
-   ======== ============== 
-   Operador Operación
-   ======== ============== 
-   \*        Multiplicación
-   /         División
-   \*\*      Exponenciación
-   abs()     Valor absoluto
-   %         Resto de la división
-   //        División entera
-   \-        Resta
-   \+        Además
-
-   ======== ============== 
-
+    ======== =====================
+    Operador Operación
+    ======== =====================
+    \*        Multiplicación
+    /         División
+    \*\*      Exponenciación
+    abs()     Valor absoluto
+    %         Resto de la división
+    //        División entera
+    \-        Resta
+    \+        Suma
+    ======== =====================
 
 Operadores Numéricos
 ====================
 
-..  codelens:: cl_l40_9
+.. codelens:: cl_l40_9
          
     print(3 + 4)
     print(3.0 + 4.0)
@@ -378,14 +376,14 @@ División entera en lenguajes de programación antiguos
 Conversión de grados usando C
 =============================
 
-..  code-block:: c
+.. code-block:: c
 
-   #include <stdio.h>
+    #include <stdio.h>
 
-    int main(void){
-        float F, C;
-        printf("Farenheit: ");
-        scanf("%f", &F);
-        C = 5.0 * (F - 32.0) / 9.0;
-        printf("Celsius: %2.1f\n", C);
-    }
+        int main(void){
+            float F, C;
+            printf("Farenheit: ");
+            scanf("%f", &F);
+            C = 5.0 * (F - 32.0) / 9.0;
+            printf("Celsius: %2.1f\n", C);
+        }
