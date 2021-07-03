@@ -33,7 +33,8 @@ Clases y objetos
     print(tv_cuarto.canal)
     tv_sala.conectado = True
     tv_sala.canal = 5
-
+    print(tv_sala.conectado)
+    print(tv_sala.canal)
 
 Clases y objetos
 ================

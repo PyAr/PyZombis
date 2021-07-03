@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: 'de78070f73b039bc59e31f93bcc482ba82bba7c0-22_lesson_clases_objetos',
+    VERSION: '137b62cc6b0a3c86b0b4397140551492a8f24cfc-22_lesson_clases_objetos',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
