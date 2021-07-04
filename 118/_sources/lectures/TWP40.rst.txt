@@ -300,7 +300,7 @@ Ejercicio
     valor = float(input("Cantidad inicial invertida: "))
     tasa = float(input("Tasa de interés anual: "))
     for i in range(10):
-        valor = valor * (1 + tasa)
+        valor = valor * (1 + tasa / 100)
     print("Valor después de 10 años:  %5.2f" % valor)
 
 
