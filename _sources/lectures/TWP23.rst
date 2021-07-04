@@ -21,8 +21,8 @@ Archivos
 + Para acceder a un archivo necesita abrirlo
 + Al abrir el archivo informamos su nombre, directorio donde está  (si necesario) y qué operaciones realizaremos: lectura y / o escritura
 + La función que abre los archivos está abierta y los modos son: r - lectura, w - escritura, a - agregar, b - binario,(actualizar)
-+ Los métodos para leer o escribir son read y write
-+ Los archivos deben cerrarse con cierre Enviar comentarios
++ Los métodos para leer o escribir son ``read()`` y ``write()``
++ Los archivos deben cerrarse con ``close()``
 
 .. code-block:: python
 
@@ -53,7 +53,7 @@ Archivos
 
 
 + Si ejecuta este programa, no aparecerá nada en la pantalla
-+ Busque en el directorio c: \ Python3x el archivo  números.txt
++ Busque en el directorio c: \ Python3x el archivo numeros.txt
 + El modo w crea el archivo si no existe, si existe será eliminado y reescrito
 
 .. code-block:: python
@@ -119,12 +119,6 @@ Crypto
     sean cambiadas por "*".
 
 
-.. datafile:: crypto.txt
-    :cols: 20
-    :rows: 10
-    :edit:
-
-
 .. activecode:: ac_l23_4
     :nocodelens:
     :datafile: mensaje.txt, crypto.txt 
@@ -148,6 +142,12 @@ Crypto
     salida.close()
 
 
+.. datafile:: crypto.txt
+    :cols: 20
+    :rows: 10
+    :edit:
+
+
 Ejercicio
 ---------
 
@@ -159,11 +159,12 @@ Ejercicio
     del archivo ``"mensaje.txt"``. Esto debido a las mayúsculas o a los acentos. 
     Su trabajo es modificar el programa anterior para que cambie **TODAS** las 
     vocales por ``"*"``. **Recuerde**: el método ``.lower()`` devuelve una cadena 
-    con todos sus caracteres vueltos letras minúsculas.
+    con todos sus caracteres vueltos letras minúsculas. Esta vez, va a escribir en 
+    el archivo ``"crypto2.txt"``
 
     ~~~~
     texto = open("mensaje.txt", "r")
-    salida = open("crypto.txt", "w")
+    salida = open("crypto2.txt", "w")
 
     # Modifique el programa
 
@@ -183,13 +184,19 @@ Ejercicio
 
     class myTests(TestCaseGui):
         def testOne(self):
-            archivo = open("crypto.txt", "r")
+            archivo = open("crypto2.txt", "r")
             text = """*st* *s *l *rch*v* d* t*xt* q** *st*d *st* m*d*f*c*nd* p*r* q** t*d*s l*s v*c*l*s s**n c*mb**d*s p*r "*"."""
 
             self.assertEqual(archivo.read().replace("\n", " ").rstrip(), text.strip(), f"Esperado: {text}")
 
 
     myTests().main()
+
+
+.. datafile:: crypto2.txt
+    :cols: 20
+    :rows: 10
+    :edit:
 
 
 Validar dirección IP
@@ -208,22 +215,6 @@ Validar dirección IP
     1.2.3.4
     9.8.284.5
     192.168.0.256
-
-
-.. datafile:: Validos.txt
-    :edit:
-    :cols: 15
-    :rows: 7
-
-    Válidos
-
-
-.. datafile:: Invalidos.txt
-    :edit:
-    :cols: 15
-    :rows: 7
-
-    Inválidos 
 
 
 .. activecode:: ac_l23_6
@@ -250,6 +241,22 @@ Validar dirección IP
     ips.close()
     validos.close()
     invalidos.close()
+
+
+.. datafile:: Validos.txt
+    :edit:
+    :cols: 15
+    :rows: 7
+
+    Válidos
+
+
+.. datafile:: Invalidos.txt
+    :edit:
+    :cols: 15
+    :rows: 7
+
+    Inválidos
 
 
 HTML
@@ -281,12 +288,6 @@ HTML
     archivo.close()
 
 
-.. datafile:: hola.html
-    :edit:
-    :cols: 40
-    :rows: 12
-
-
 .. activecode:: ac_l23_7
     :nocodelens:
     :datafile: hola.html
@@ -308,6 +309,12 @@ HTML
     </html>"""
     )
     archivo.close()
+
+
+.. datafile:: hola.html
+    :edit:
+    :cols: 40
+    :rows: 12
 
 
 Diccionarios
@@ -360,6 +367,10 @@ Diccionarios
         print(clave)
 
 
+Último Ejercicio
+================
+
+
 .. datafile:: alice_archivo.txt
     :fromfile: _static/alice.txt
     :hide:
@@ -393,10 +404,6 @@ Diccionarios
 
     print("Aparece Alice %s veces" % dic["alice"])
     archivo.close()
-
-
-Ejercicio Programa 1
-====================
 
 
 .. image:: img/TWP05_041.jpeg
