@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Revisión general 1 &#8212; PyZombis 37_TWP30_fix@b9406a0</title>
+    <title>Revisión general 1 &#8212; PyZombis 37_TWP30_fix@512dac5</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 37_TWP30_fix@b9406a0</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 37_TWP30_fix@512dac5</a>
       </div>
     </div>
 
@@ -664,27 +664,45 @@ doc["btn_jugar"].bind("click", empezar)
 <div id=ac_l30_4_question class="ac_question col-md-12">
 
 </div>
-<textarea data-lang="python" id="ac_l30_4_editor" 
+<textarea data-lang="python3" id="ac_l30_4_editor" 
       data-timelimit=25000     
-    data-audio=''   data-stdin=''   
+    data-audio=''      
            data-wasm=/_static
-      style="visibility: hidden;">
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import document as doc
+from browser import html
+from browser import timer
 from random import randint
 
 print("¡Bienvenido!")
 azar = randint(1, 100)
 numero = 0
-while numero != azar:
-    g = input("Ingrese un número: ")
-    numero = int(g)
+
+doc <= html.DIV(id="div_juego_2")
+
+# Creamos una caja de texto donde ingresar el número que queramos
+doc["div_juego_2"] <= html.INPUT(id="inp_adivinar", placeholder="Adivine el número", type="number")
+# Creamos el botón para adivinar
+doc["div_juego_2"] <= html.BUTTON("Enviar adivinanza", id="btn_adivinar") + html.BR()
+
+def confirmar_adivinanza(e):
+    global numero
+    numero = int(doc["inp_adivinar"].value)
+
     if numero == azar:
         print("¡Ganaste!")
+        print("¡Fin del juego!")
+        # Si el número es adivinado, el botón desaparece y el juego
+        # termina
+        doc["btn_adivinar"].style.display = "none"
     else:
         if numero > azar:
             print("Alto")
         else:
             print("Bajo")
-print("Fin del juego!")
+
+# Al apretar el botón, invoca a la función confirmar_adivinanza
+doc["btn_adivinar"].bind("click", confirmar_adivinanza)
 </textarea>
 </div>
 </div>
@@ -707,15 +725,15 @@ print("Fin del juego!")
 <div class="section" id="herramientas-de-python">
 <h2>Herramientas de Python<a class="headerlink" href="#herramientas-de-python" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Desviaciones:yellow: <cite>if / else</cite></p></li>
-<li><p>Ciclos:yellow: <cite>while</cite></p></li>
-<li><p>Operador de asignación =</p></li>
-<li><p>Operador de igualdad ==</p></li>
-<li><p>¡Operador diferente !=</p></li>
-<li><p>Mostrar un mensaje:purple: <cite>print</cite></p></li>
-<li><p>Lea la entrada:purple: <cite>input</cite></p></li>
-<li><p>Convertir a entero:purple: <cite>int</cite></p></li>
-<li><p>Dibuja un entero randint</p></li>
+<li><p>Condiciones: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">/</span> <span class="pre">else</span></code></p></li>
+<li><p>Ciclo: <code class="docutils literal notranslate"><span class="pre">while</span></code></p></li>
+<li><p>Operador de asignación: <code class="docutils literal notranslate"><span class="pre">=</span></code></p></li>
+<li><p>Operador de igualdad: <code class="docutils literal notranslate"><span class="pre">==</span></code></p></li>
+<li><p>Operador diferente de: <code class="docutils literal notranslate"><span class="pre">!=</span></code></p></li>
+<li><p>Mostrar un mensaje: <code class="docutils literal notranslate"><span class="pre">print</span></code></p></li>
+<li><p>Leer una entrada del usuario: <code class="docutils literal notranslate"><span class="pre">input</span></code></p></li>
+<li><p>Convertir a entero: <code class="docutils literal notranslate"><span class="pre">int</span></code></p></li>
+<li><p>Sortear un entero: <code class="docutils literal notranslate"><span class="pre">randint</span></code></p></li>
 </ul>
 </div>
 <div class="section" id="lista-vi-con-las-pruebas">

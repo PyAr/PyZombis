@@ -389,25 +389,43 @@ Sortear el número a adivinar
 
 
 .. activecode:: ac_l30_4
-    :nocodelens:
-    :stdin:
+    :language: python3
+    :python3_interpreter: brython
 
+    from browser import document as doc
+    from browser import html
+    from browser import timer
     from random import randint
 
     print("¡Bienvenido!")
     azar = randint(1, 100)
     numero = 0
-    while numero != azar:
-        g = input("Ingrese un número: ")
-        numero = int(g)
+
+    doc <= html.DIV(id="div_juego_2")
+
+    # Creamos una caja de texto donde ingresar el número que queramos
+    doc["div_juego_2"] <= html.INPUT(id="inp_adivinar", placeholder="Adivine el número", type="number")
+    # Creamos el botón para adivinar
+    doc["div_juego_2"] <= html.BUTTON("Enviar adivinanza", id="btn_adivinar") + html.BR()
+
+    def confirmar_adivinanza(e):
+        global numero
+        numero = int(doc["inp_adivinar"].value)
+
         if numero == azar:
             print("¡Ganaste!")
+            print("¡Fin del juego!")
+            # Si el número es adivinado, el botón desaparece y el juego 
+            # termina
+            doc["btn_adivinar"].style.display = "none"
         else:
             if numero > azar:
                 print("Alto")
             else:
                 print("Bajo")
-    print("Fin del juego!")
+
+    # Al apretar el botón, invoca a la función confirmar_adivinanza
+    doc["btn_adivinar"].bind("click", confirmar_adivinanza)
 
 
 ¡Ahora sí!
@@ -436,15 +454,15 @@ Herramientas de Python
 ======================
 
 
-+ Desviaciones:yellow: `if / else`
-+ Ciclos:yellow: `while`
-+ Operador de asignación =
-+ Operador de igualdad ==
-+ ¡Operador diferente !=
-+ Mostrar un mensaje:purple: `print`
-+ Lea la entrada:purple: `input`
-+ Convertir a entero:purple: `int`
-+ Dibuja un entero randint
++ Condiciones: ``if / else``
++ Ciclo: ``while``
++ Operador de asignación: ``=``
++ Operador de igualdad: ``==``
++ Operador diferente de: ``!=``
++ Mostrar un mensaje: ``print``
++ Leer una entrada del usuario: ``input``
++ Convertir a entero: ``int``
++ Sortear un entero: ``randint``
 
 
 Lista VI con las pruebas!
