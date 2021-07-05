@@ -66,8 +66,6 @@ Python
 ======
 
 
-+ El signo ">>>" indica que Python está "listo" para recibir
-  comandos
 
 
 .. codelens:: cl_l38_1
@@ -270,7 +268,7 @@ Resumen
 + El proceso de creación de software se llama programación.
 
 
-Recuerdo
+Recuerde
 ========
 
 
@@ -281,7 +279,7 @@ Recuerdo
 + Python es un lenguaje interpretado de alto nivel
 
 + El intérprete de Python convierte los comandos instrucción por instrucción
-  para lenguaje máquina
+  a lenguaje máquina
 
 
 .. disqus::
