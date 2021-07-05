@@ -59,15 +59,21 @@ Nueva sugerencia de programa
     :stdin:
 
     import urllib.request
-    import time
-
+    
     opcion = input("¿Quieres comprar ahora? (S/N)")
-    if opcion == "S":
+    if opcion.lower() == "s":
         pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
         texto = pagina.read()
-        donde = texto.find(">$")
-        inicio = donde + 2
+        # El método .find() devuelve la posición de la primer ocurrencia
+        # de la cadena que se le pase como parámetro.
+        donde = texto.find("$")
+        # el valor de donde es un número entero, representando 
+        # la posición de $ en la cadena texto.
+        # Podemos obtener el precio si sacamos el pedazo de la cadena texto
+        # en donde se encuentra el precio.
+        inicio = donde + 1
         fin = inicio + 4
+        # Obtenemos el precio con los índices correspondientes
         precio = float(texto[inicio:fin])
         print("¡Comprar! Precio: %5.2f" % precio)
     else:
@@ -75,12 +81,10 @@ Nueva sugerencia de programa
         while precio >= 4.74:
             pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
             texto = pagina.read()
-            donde = texto.find(">$")
-            inicio = donde + 2
+            donde = texto.find("$")
+            inicio = donde + 1
             fin = inicio + 4
             precio = float(texto[inicio:fin])
-            if precio >= 4.74:
-                time.sleep(600)
         print("¡Comprar! Precio: %5.2f" % precio)
 
 
@@ -113,28 +117,25 @@ Funciones
     :stdin:
 
     import urllib.request
-    import time
 
 
     def capturar_precio():
         pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
         texto = pagina.read()
-        donde = texto.find(">$")
-        inicio = donde + 2
+        donde = texto.find("$")
+        inicio = donde + 1
         fin = inicio + 4
         return float(texto[inicio:fin])
 
 
     opcion = input("¿Quieres comprar ahora? (S/N)")
-    if opcion == "S":
+    if opcion.lower() == "s":
         precio = capturar_precio()
         print("¡Comprar! Precio: %5.2f" % precio)
     else:
         precio = 99.99
         while precio >= 4.74:
             precio = capturar_precio()
-            if precio >= 4.74:
-                time.sleep(600)
         print("¡Comprar! Precio: %5.2f" % precio)
 
 
