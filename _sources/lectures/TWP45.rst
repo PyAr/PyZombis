@@ -141,7 +141,7 @@ La documentación de la API de `TasteDive <https://tastedive.com/read/api>`_.
 
     En este caso, utilizaremos la librería ``requests`` para hacer la solicitud a la API. La url base 
     es ``"https://tastedive.com/api/similar"``. A esta url se le va a pasar un parámetro ``q`` con el 
-    valor de la artista Dua Lipa. Al final la url se va a ver de la siguiente forma: ``"https://tastedive.com/api/similar?q=dua+lipa"``.
+    valor de la artista Ariana Grande. Al final la url se va a ver de la siguiente forma: ``"https://tastedive.com/api/similar?q=ariana+grande"``.
     Note que después de la url base se escribe un ``?`` para indicar que siguen los parámetros.
 
     ~~~~
@@ -152,7 +152,7 @@ La documentación de la API de `TasteDive <https://tastedive.com/read/api>`_.
     proxy = "https://cors.bridged.cc/"
 
     # Los parámetros que se le pasaran a la url los escribimos dentro de un diccionario
-    parametros = {"q": "dua lipa"}
+    parametros = {"q": "ariana grande"}
 
     # Solicitamos a la api los datos
     respuesta = requests.get(proxy + api_url, params=parametros)
@@ -172,39 +172,34 @@ se transforma a un diccionario de Python. Sin embargo, no es del todo legible. E
 ``json.dumps``.
 
 .. activecode:: ac_l45_4
-    :nocodelens:
-    :language: python
-    :datafile: datosjson.txt
+    :language: python3
+    :python3_interpreter: brython
+    
 
     Ahora vamos a solicitar información de la banda Coldplay. Esta vez vamos a imprimir los datos de forma 
     que sean legibles. Esto lo hacemos con el argumento ``indent`` de la función ``dumps`` de ``json``.
+    Vamos a usar ``urllib`` para hacer la solicitud.
 
     ~~~~
-    import requests
+    import urllib.request
+    import urllib.parse
     import json
 
-    api_url = "https://tastedive.com/api/similar"
+    api_url = "https://tastedive.com/api/similar?"
     proxy = "https://cors.bridged.cc/"
-    parametros = {"q": "coldplay"}
+    # La siguiente línea es para los parámetros de la url.
+    parametros = urllib.parse.urlencode({"q": "coldplay"})
 
-    respuesta = requests.get(proxy + api_url, params=parametros)
-    datos = json.loads(respuesta.text)
+    solicitud = urllib.request.urlopen(proxy + api_url + parametros)
+    datos = json.loads(solicitud.read())
 
     # Imprimimos los datos de forma legible para un usuario
     print(json.dumps(datos, indent=4))
-
-    with open("datosjson.txt", "w") as archivo:
-        archivo.write(json.dumps(datos, indent=4))
 
     # Podemos ver que la api arrojó 20 resultados relacionados con
     # la solicitud
     print(len(datos["Similar"]["Results"]))
 
-
-.. datafile:: datosjson.txt
-    :rows: 10
-    :cols: 80
-    :edit:
 
 |
 
