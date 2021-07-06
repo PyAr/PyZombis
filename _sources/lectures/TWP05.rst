@@ -22,8 +22,9 @@ Primer programa
 + Necesitamos marcar o limitar el comienzo y el final de nuestros mensajes 
   con un símbolo, en este caso, las comillas
 
-**¡Ahora Inténtelo por su propia cuenta!** 
-Escriba ``print("primer mensaje")`` en el interprete de abajo y compruebe que recibe la salida de su mensaje sin comillas.
+**¡Ahora inténtelo por su propia cuenta!**
+
++ Escriba ``print("primer mensaje")`` en el interprete de abajo y compruebe que recibe la salida de su mensaje sin comillas.
 
 .. only:: html
 
@@ -35,7 +36,7 @@ Primer mensaje de error
 =========================
 
 + Las letras mayúsculas y minúsculas son diferentes
-+ ¿Notaste que la impresión no es púrpura?
++ ``print()`` es diferente de ``Print()``
 
 .. code-block:: python
 
@@ -44,13 +45,15 @@ Primer mensaje de error
       File "<stdin>", line 1, in <module>
     NameError: name 'Print' is not defined
 
-Primer mensaje de error
-=========================
+**¡Ahora inténtelo por su propia cuenta!**
+
+.. raw:: html
+   :file: _static/interpreter.html
+
 
 + Si no usamos comillas, la computadora interpretará nuestro mensaje
   como un comando de Python, generando un error de sintaxis
-+ ¿Notaste que el mensaje no es verde?
-
++ ``"hola mundo"`` es diferente de ``hola mundo``
 
 .. code-block:: python
 
@@ -60,11 +63,16 @@ Primer mensaje de error
                         ^
     SyntaxError: invalid syntax
 
-Primer mensaje de error
-=========================
+**¡Ahora inténtelo por su propia cuenta!**
 
-+ En la versión de Python que usamos, los paréntesis no son opcionales al usar
-  print
+.. only:: html
+
+   .. raw:: html
+      :file: _static/interpreter.html
+
+
++ En la versión de Python que usamos (Python 3), los paréntesis no son opcionales al usar ``print()``
++ ``print("hola mundo")`` es diferente de ``print "hola mundo"``
 
 .. code-block:: python
 
@@ -72,14 +80,19 @@ Primer mensaje de error
       File "<stdin>", line 1
         print "hola mundo"
               ^
-    SyntaxError: invalid syntax
+    SyntaxError: missing parenthesis in call to 'print'
 
-Primer mensaje de error
-=========================
+**¡Ahora inténtelo por su propia cuenta!**
+
+.. only:: html
+
+   .. raw:: html
+      :file: _static/interpreter.html
+
 
 + Los espacios iniciales tienen un significado en Python que veremos
   más adelante, en este caso genera nuevamente un error de sintaxis
-
++ Estos espacios se llaman indentaciones o sangrías
 
 .. code-block:: python
 
@@ -89,6 +102,13 @@ Primer mensaje de error
       ^      
     SyntaxError: unexpected indent
 
+**¡Ahora inténtelo por su propia cuenta!**
+
+.. only:: html
+
+   .. raw:: html
+      :file: _static/interpreter.html
+
 
 Intérprete de Python
 ====================
@@ -97,8 +117,7 @@ Intérprete de Python
   y los ejecuta línea por línea
 + El intérprete verifica que hayamos escrito el programa correctamente,
   mostrando mensajes de error si hay un problema
-+ Hay dos modos del intérprete de Python: modo interactivo y
-  edición
++ Hay dos modos del intérprete de Python: modo interactivo y edición
 + En los ejemplos anteriores usamos el modo interactivo
 + Una ventaja del modo interactivo es poder probar los comandos y obtener
   la respuesta al instante
@@ -106,52 +125,20 @@ Intérprete de Python
 
 Modo de edición
 ====================
+.. activecode:: ac_l05_1
+  :nocodelens:
 
+   Intente dar un enter dentro del bloque en modo de edición
+   
+   ~~~~
+   print("primer mensaje")
 
-.. image:: img/TWP05_007.png
-   :height: 11.961cm
-   :width: 22.859cm
-   :align: center
-   :alt: 
-
-
-Ejecutar el programa
-====================
-
-
-.. image:: img/TWP05_008.png
-   :height: 12.435cm
-   :width: 22.859cm
-   :align: center
-   :alt: 
-
-
-Guardar el programa
-====================
-
-
-.. image:: img/TWP05_009.png
-   :height: 12.033cm
-   :width: 22.859cm
-   :align: center
-   :alt: 
-
-
-Mismo resultado
-================
-
-
-.. image:: img/TWP05_010.png
-   :height: 13.843cm
-   :width: 19.844cm
-   :align: center
-   :alt: 
+Note que no sucede nada al escribir enter al final de la línea.
+En modo de edición es necesario "ejecutar" el programa (Para esto presione el botón de Run)
 
 
 Precauciones al escribir programas
 ==================================
-
-
 
 + Las letras mayúsculas y minúsculas son diferentes
 + Las comillas son muy importantes y no deben pasarse por alto. Cada vez
@@ -160,13 +147,11 @@ Precauciones al escribir programas
   estar cerrado
 + Los espacios son muy importantes. El lenguaje Python se basa en
   cantidad de espacios en blanco antes del comienzo de cada línea para
-  realizar diferentes operaciones.
-+ Esto se le conoce como identación
+  realizar diferentes operaciones. Esto se le conoce como indentación.
 
 
 Calculadora en el intérprete
 ============================
-
 
 .. codelens:: cl_l05_2
     
