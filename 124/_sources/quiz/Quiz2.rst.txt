@@ -17,7 +17,7 @@ Ejercicio 1
     **Nota**: recuerde que no es un triángulo cuando el lado de mayor longitud es mayor o igual que la suma de los otros dos. |br| |br|
     Ejemplos: |br|
     ``es_triangulo(2, 2, 2)`` -> ``"Equilátero"`` |br|
-    ``es_triangulo(4, 2, 2)`` -> ``"Isósceles"`` |br|
+    ``es_triangulo(3, 2, 2)`` -> ``"Isósceles"`` |br|
     ``es_triangulo(4, 2, 6)`` -> ``"No es triángulo"`` |br|
     ``es_triangulo(2, 1, 8)`` -> ``"No es triángulo"`` |br|
     ~~~~
