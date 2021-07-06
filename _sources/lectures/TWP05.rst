@@ -12,20 +12,23 @@ Variables y entrada de datos
 Primer programa
 =================
 
+.. code-block:: python
+
+    >>> print ("¡hola mundo!")
+    ¡hola mundo!
 
 + Este programa tiene solo una línea de código
 + Tenga en cuenta que las comillas no aparecen en la salida
 + Necesitamos marcar o limitar el comienzo y el final de nuestros mensajes 
   con un símbolo, en este caso, las comillas
 
-.. code-block:: python
+**¡Ahora Inténtelo por su propia cuenta!** 
+Escriba ``print("primer mensaje")`` en el interprete de abajo y compruebe que recibe la salida de su mensaje sin comillas.
 
-    >>> print ("¡hola mundo!")
-    ¡hola mundo!
+.. only:: html
 
-.. codelens:: cl_l05_1
-    
-    print("primer mensaje")
+   .. raw:: html
+      :file: _static/interpreter.html
 
 
 Primer mensaje de error
