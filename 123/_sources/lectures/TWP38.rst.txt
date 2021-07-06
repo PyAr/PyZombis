@@ -4,17 +4,17 @@ Revisión general 2
 
 
 .. image:: img/TWP10_001.jpeg
-   :height: 14.925cm
-   :width: 9.258cm
-   :align: center
-   :alt: 
+    :height: 14.925cm
+    :width: 9.258cm
+    :align: center
+    :alt: 
 
 ¿Qué es un programa?
 ====================
 
 
-+ Un conjunto detallado de instrucciones, paso a paso, que le dice cuáles son las
-  la computadora hará
++ Un conjunto detallado de instrucciones, paso a paso, que le dice a la 
+  computadora qué hacer.
 
 + Si cambiamos el programa, la computadora hará algo diferente
 
@@ -32,7 +32,7 @@ Revisión general 2
 + El proceso de creación de software se llama programación
 
 + Un algoritmo es la receta, paso a paso, que resuelve un problema.
-   computacional
+  computacional
 
 
 Lenguajes de programación
@@ -43,8 +43,8 @@ Lenguajes de programación
 
 + Ensamblador:
 
-  + Cargue el número de variable A en la CPU
-  + Cargue el número de variable B en la CPU
+  + Cargue el número de variables A en la CPU
+  + Cargue el número de variables B en la CPU
   + Agregar los dos números en la CPU
   + Almacenar el resultado en la variable C
 
@@ -56,10 +56,10 @@ Lenguajes de programación
 + Comando original en lenguaje de alto nivel: C = A + B
 
 + Los compiladores convierten el lenguaje de alto nivel al lenguaje de
-   máquina informática específica
+  máquina informática específica
 
-+ Los intérpretes analizan y ejecutan el programa de instrucción por
-   instrucción de lenguaje de máquina
++ Los intérpretes analizan y ejecutan el programa instrucción por
+  instrucción del lenguaje de máquina
 
 
 Python
@@ -67,17 +67,13 @@ Python
 
 
 
-+ El signo ">>>" indica que Python está "listo" para recibir
-  comandos
 
-
-
-
-.. codelens:: Example13_1
+.. codelens:: cl_l38_1
          
-        print('hola mundo!')
-        print(2+3)
-        print('2 + 3 = ',2+3)
+    print("hola mundo!")
+    print(2 + 3)
+    print("2 + 3 = ", 2 + 3)
+
 
 Python
 ======
@@ -87,30 +83,31 @@ Python
 
 + Una forma de hacer esto es usar una función
 
-.. codelens:: Example13_2
-         
-        def amodoispontos():
-          print('Yo amo:!')
-          print('Dos puntos == ":"')
-        
-        amodoispontos()
+.. codelens:: cl_l38_2
+
+    def amo_dos_puntos():
+        print("Yo amo:!")
+        print('Dos puntos == ":"')
+
+
+    amo_dos_puntos()
 
 
 
-+ ¡No olvides los paréntesis cuando llames a la función!
++ ¡No olvide los paréntesis cuando llames a la función!
 
 + Si olvida los paréntesis, python devolverá la dirección en
-   memoria donde está el código de función
+  memoria donde se encuentra definida la función.
 
-
-.. codelens:: Example13_3
+.. codelens:: cl_l38_3
          
-        def amodoispontos():
-          print('Yo amo:!')
-          print('Dos puntos == ":"')
-        
-        print(amodoispontos)
-        print(print)
+    def amo_dos_puntos():
+        print("Yo amo:!")
+        print('Dos puntos == ":"')
+
+
+    print(amo_dos_puntos)
+    print(print)
 
 
 Python
@@ -120,16 +117,15 @@ Python
 + Podemos poner parámetros en una función
 
 
-
-
-.. codelens:: Example13_4
+.. codelens:: cl_l38_4
          
-        def suma(a,b):
-          return a+b
+    def suma(a, b):
+        return a + b
 
-        print(suma('aguacate','jabuticaba'))
-        print(suma(2,3))
-        print(suma(3.14,2.71))
+
+    print(suma("aguacate", "jabuticaba"))
+    print(suma(2, 3))
+    print(suma(3.14, 2.71))
 
 
 Python
@@ -152,94 +148,95 @@ Python
 ======
 
 
-+ Guardamos un programa llamado chaos.py
++ Guardamos un programa llamado ``caos.py``
 
-+ No olvides la extensión .py
++ No olvides la extensión ``.py``
 
 + Podemos ejecutar el programa con la tecla F5
 
 
-.. activecode:: Example13_5
-   :nocodelens:
-   :stdin:
+.. activecode:: ac_l38_1
+    :language: python3
+    :python3_interpreter: brython
 
-    print('Este programa ilustra el comportamiento caótico.')
-    x = eval(input('Ingrese un número entre 0 y 1:'))
+    print("Este programa ilustra el comportamiento caótico.")
+    x = eval(input("Ingrese un número entre 0 y 1:"))
     for i in range(10):
-      x = 3.9*x*(1-x)
-      print("2.3f" %x)
+        x = 3.9 * x * (1 - x)
+        print("%2.3f" % x)
+
 
 Python
 ======
 
 
-
-+ Las líneas que comienzan con "#" se llaman comentarios
++ Las líneas que comienzan con **"#"** se llaman comentarios
 
 + Están destinados a ser leídos por humanos y Python los ignora
 
-+ Python omite todo el texto desde el "#" hasta el final de la línea
++ Python omite todo el texto desde el **"#"** hasta el final de la línea
 
 
 .. image:: img/TWP38_008.png
-   :height: 2.173cm
-   :width: 23.602cm
-   :align: center
-   :alt: 
+    :height: 2.173cm
+    :width: 23.602cm
+    :align: center
+    :alt: 
 
 
 Python
 ======
 
-+ x es un ejemplo de una variable
 
-+ En x asignaremos un valor al que se puede hacer referencia más adelante
++ ``x`` es un ejemplo de una variable
 
-+ Se mostrará el mensaje entre comillas y la respuesta se almacenará en x
++ En ``x`` asignaremos un valor al que se puede hacer referencia más adelante
+
++ Se mostrará el mensaje entre comillas y la respuesta se almacenará en ``x``
 
 
 .. image:: img/TWP38_009.png
-   :height: 0.799cm
-   :width: 23.316cm
-   :align: center
-   :alt: 
+    :height: 0.799cm
+    :width: 23.316cm
+    :align: center
+    :alt: 
 
 
 Python
 ======
 
 
-+ Hay comandos de bucle como para
++ Hay comandos de bucle o ciclos como el comando ``for``
 
-+ Un bucle se usa para repetir un bloque de comandos varias veces
++ Un bucle o ciclo se usa para repetir un bloque de código varias veces
 
 + En este ejemplo, el siguiente bloque se repetirá 10 veces
 
 
 .. image:: img/TWP38_010.png
-   :height: 1.399cm
-   :width: 13.067cm
-   :align: center
-   :alt: 
+    :height: 1.399cm
+    :width: 13.067cm
+    :align: center
+    :alt: 
 
 
 Python
 ======
 
 
-+ Llamamos a los espacios al comienzo de la línea sangría
++ Llamamos **sangría** a los espacios al comienzo de la línea 
 
 + En Python, la sangría delimita el bloque que se ejecutará
 
-+ El cálculo 3.9 * x * (1-x) se realizará en la CPU y se asignará a la variable
-  x
++ El cálculo ``3.9 * x * (1-x)`` se realizará en la CPU y se asignará a la variable
+  ``x``
 
 
 .. image:: img/TWP38_011.png
-   :height: 3.599cm
-   :width: 13.694cm
-   :align: center
-   :alt: 
+    :height: 3.599cm
+    :width: 13.694cm
+    :align: center
+    :alt: 
 
 
 Python
@@ -248,7 +245,6 @@ Python
 
 + La función de caos devuelve valores muy diferentes, incluso cuando la entrada
   es similar
-
 
 
 Ejercicio
@@ -263,16 +259,16 @@ Resumen
 =======
 
 
-+ La descripción de una secuencia de pasos para resolver un problema.
-   algoritmo computacional se llama
++ La descripción de una secuencia de pasos para resolver un problema se llama
+  algoritmo computacional.
 
-+ Los algoritmos son programas (software) que determinan cuáles son los
-   la computadora (hardware) hará
++ Los algoritmos son programas (software) que determinan que hará
+  la computadora (hardware).
 
-+ El proceso de creación de software se llama programación
++ El proceso de creación de software se llama programación.
 
 
-Recuerdo
+Recuerde
 ========
 
 
@@ -283,10 +279,9 @@ Recuerdo
 + Python es un lenguaje interpretado de alto nivel
 
 + El intérprete de Python convierte los comandos instrucción por instrucción
-   para lenguaje máquina
+  a lenguaje máquina
 
 
 .. disqus::
-   :shortname: pyzombis
-   :identifier: lecture13
-
+    :shortname: pyzombis
+    :identifier: lecture13

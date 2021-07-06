@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hackeando con Python &#8212; PyZombis 11_TWP45_add@43c2df3</title>
+    <title>Hackeando con Python &#8212; PyZombis 11_TWP45_add@89c312e</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 11_TWP45_add@43c2df3</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 11_TWP45_add@89c312e</a>
       </div>
     </div>
 
@@ -402,7 +402,7 @@ La documentación de la API de <a class="reference external" href="https://taste
 <div id=ac_l45_3_question class="ac_question col-md-12">
 <p>En este caso, utilizaremos la librería <code class="docutils literal notranslate"><span class="pre">requests</span></code> para hacer la solicitud a la API. La url base
 es <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar&quot;</span></code>. A esta url se le va a pasar un parámetro <code class="docutils literal notranslate"><span class="pre">q</span></code> con el
-valor de la artista Dua Lipa. Al final la url se va a ver de la siguiente forma: <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar?q=dua+lipa&quot;</span></code>.
+valor de la artista Ariana Grande. Al final la url se va a ver de la siguiente forma: <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar?q=ariana+grande&quot;</span></code>.
 Note que después de la url base se escribe un <code class="docutils literal notranslate"><span class="pre">?</span></code> para indicar que siguen los parámetros.</p>
 
 </div>
@@ -418,7 +418,7 @@ api_url = "https://tastedive.com/api/similar"
 proxy = "https://cors.bridged.cc/"
 
 # Los parámetros que se le pasaran a la url los escribimos dentro de un diccionario
-parametros = {"q": "dua lipa"}
+parametros = {"q": "ariana grande"}
 
 # Solicitamos a la api los datos
 respuesta = requests.get(proxy + api_url, params=parametros)
@@ -442,29 +442,29 @@ se transforma a un diccionario de Python. Sin embargo, no es del todo legible. E
 <div data-component="activecode" id=ac_l45_4 data-question_label="4">
 <div id=ac_l45_4_question class="ac_question col-md-12">
 <p>Ahora vamos a solicitar información de la banda Coldplay. Esta vez vamos a imprimir los datos de forma
-que sean legibles. Esto lo hacemos con el argumento <code class="docutils literal notranslate"><span class="pre">indent</span></code> de la función <code class="docutils literal notranslate"><span class="pre">dumps</span></code> de <code class="docutils literal notranslate"><span class="pre">json</span></code>.</p>
+que sean legibles. Esto lo hacemos con el argumento <code class="docutils literal notranslate"><span class="pre">indent</span></code> de la función <code class="docutils literal notranslate"><span class="pre">dumps</span></code> de <code class="docutils literal notranslate"><span class="pre">json</span></code>.
+Vamos a usar <code class="docutils literal notranslate"><span class="pre">urllib</span></code> para hacer la solicitud.</p>
 
 </div>
-<textarea data-lang="python" id="ac_l45_4_editor" 
+<textarea data-lang="python3" id="ac_l45_4_editor" 
       data-timelimit=25000     
-    data-audio=''  data-datafile='datosjson.txt'    
+    data-audio=''      
            data-wasm=/_static
-      style="visibility: hidden;">
-import requests
+     data-python3_interpreter='brython' style="visibility: hidden;">
+import urllib.request
+import urllib.parse
 import json
 
-api_url = "https://tastedive.com/api/similar"
+api_url = "https://tastedive.com/api/similar?"
 proxy = "https://cors.bridged.cc/"
-parametros = {"q": "coldplay"}
+# La siguiente línea es para los parámetros de la url.
+parametros = urllib.parse.urlencode({"q": "coldplay"})
 
-respuesta = requests.get(proxy + api_url, params=parametros)
-datos = json.loads(respuesta.text)
+solicitud = urllib.request.urlopen(proxy + api_url + parametros)
+datos = json.loads(solicitud.read())
 
 # Imprimimos los datos de forma legible para un usuario
 print(json.dumps(datos, indent=4))
-
-with open("datosjson.txt", "w") as archivo:
-    archivo.write(json.dumps(datos, indent=4))
 
 # Podemos ver que la api arrojó 20 resultados relacionados con
 # la solicitud
@@ -472,19 +472,13 @@ print(len(datos["Similar"]["Results"]))
 </textarea>
 </div>
 </div>
-
-<div class="runestone datafile">
-<div class="datafile_caption">Data file: <code>datosjson.txt</code></div>
-<pre data-component="datafile" id=datosjson.txt  data-edit="true" data-rows="10" data-cols="80">
-
-</pre></div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>El siguiente ejercicio viene con calificación automática.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_5 data-question_label="6">
+<div data-component="activecode" id=ac_l45_5 data-question_label="5">
 <div id=ac_l45_5_question class="ac_question col-md-12">
 <p>Ahora va a preguntar a TasteDive por la película Coco. Entonces el diccionario <code class="docutils literal notranslate"><span class="pre">parametros</span></code> debe tener el
 valor <code class="docutils literal notranslate"><span class="pre">&quot;Coco&quot;</span></code> asignado a la llave <code class="docutils literal notranslate"><span class="pre">&quot;q&quot;</span></code>. Además, esta vez solo queremos 5 resultados en vez de 20. Para

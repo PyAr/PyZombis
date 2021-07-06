@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Revición de strings &#8212; PyZombis 11_TWP45_add@43c2df3</title>
+    <title>Revisión de Funciones &#8212; PyZombis 11_TWP45_add@89c312e</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -46,7 +46,7 @@
     <script src="../_static/presenter_mode.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Revición de listas" href="TWP37.html" />
+    <link rel="next" title="Revisión de Archivos, Listas y Diccionarios" href="TWP37.html" />
     <link rel="prev" title="Revisión de String" href="TWP33.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 11_TWP45_add@43c2df3</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 11_TWP45_add@89c312e</a>
       </div>
     </div>
 
@@ -226,7 +226,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Revición de strings</a><ul>
+<li><a class="reference internal" href="#">Revisión de Funciones</a><ul>
 <li><a class="reference internal" href="#seamos-mas-organizados">Seamos más organizados</a></li>
 <li><a class="reference internal" href="#id1">Seamos más organizados</a></li>
 <li><a class="reference internal" href="#seamos-organizados">Seamos organizados</a></li>
@@ -250,7 +250,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Revición de listas' data-toggle="tooltip" >              
+  <li id="relations-next" title='Next Chapter - Revisión de Archivos, Listas y Diccionarios' data-toggle="tooltip" >              
     <a href="TWP37.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -281,8 +281,8 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="revicion-de-strings">
-<h1>Revición de strings<a class="headerlink" href="#revicion-de-strings" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="revision-de-funciones">
+<h1>Revisión de Funciones<a class="headerlink" href="#revision-de-funciones" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
 <div class="section" id="seamos-mas-organizados">
 <h2>Seamos más organizados<a class="headerlink" href="#seamos-mas-organizados" title="Permalink to this headline">¶</a></h2>
@@ -297,7 +297,7 @@
 <ul class="simple">
 <li><p>Cuando los programas crecen, el código generalmente se vuelve más complejo</p></li>
 <li><p>Una forma de gestionar esta complejidad es usar funciones</p></li>
-<li><p>Te permiten separar acciones comunes, por lo que tu código es más fácil
+<li><p>Te permiten separar acciones comunes, por lo que tu código es más
 fácil de leer y más fácil de mantener</p></li>
 </ul>
 </div>
@@ -305,7 +305,7 @@ fácil de leer y más fácil de mantener</p></li>
 <h2>Starbuzz no tiene granos<a class="headerlink" href="#starbuzz-no-tiene-granos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>El director de Starbuzz quiere una opción para comprar rápidamente, sin esperar
-bajar el precio</p></li>
+a que baje el precio</p></li>
 <li><p>Al ejecutar el programa, te preguntaré si quieres comprar ahora o no</p></li>
 <li><p>Si el usuario responde que sí, tomaré el precio actual y compraré</p></li>
 <li><p>Si no, esperaré reducirlo a menos de 4.74</p></li>
@@ -313,30 +313,47 @@ bajar el precio</p></li>
 </div>
 <div class="section" id="nueva-sugerencia-de-programa">
 <h2>Nueva sugerencia de programa<a class="headerlink" href="#nueva-sugerencia-de-programa" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="n">opcion</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;¿Quieres comprar ahora? (S/N)&#39;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">opcion</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
-   <span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-   <span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-   <span class="n">donde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-   <span class="n">inicio</span> <span class="o">=</span> <span class="n">donde</span> <span class="o">+</span> <span class="mi">2</span>
-   <span class="n">fin</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-   <span class="n">precio</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fin</span><span class="p">])</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;¡Comprar! Precio: </span><span class="si">%5.2f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">precio</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-   <span class="n">precio</span> <span class="o">=</span> <span class="mf">99.99</span>
-   <span class="k">while</span> <span class="n">precio</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-     <span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-     <span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-     <span class="n">donde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-     <span class="n">inicio</span> <span class="o">=</span> <span class="n">donde</span> <span class="o">+</span> <span class="mi">2</span>
-     <span class="n">fin</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-     <span class="n">precio</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fim</span><span class="p">])</span>
-     <span class="k">if</span> <span class="n">precio</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;¡Comprar! Precio: 5.2</span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">precio</span><span class="p">)</span>
-</pre></div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l35_1 data-question_label="1">
+<div id=ac_l35_1_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l35_1_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+import urllib.request
+
+opcion = input("¿Quieres comprar ahora? (S/N)")
+if opcion.lower() == "s":
+    pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+    texto = pagina.read()
+    # El método .find() devuelve la posición de la primer ocurrencia
+    # de la cadena que se le pase como parámetro.
+    donde = texto.find("$")
+    # el valor de donde es un número entero, representando
+    # la posición de $ en la cadena texto.
+    # Podemos obtener el precio si sacamos el pedazo de la cadena texto
+    # en donde se encuentra el precio.
+    inicio = donde + 1
+    fin = inicio + 4
+    # Obtenemos el precio con los índices correspondientes
+    precio = float(texto[inicio:fin])
+    print("¡Comprar! Precio: %5.2f" % precio)
+else:
+    precio = 99.99
+    while precio >= 4.74:
+        pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+        texto = pagina.read()
+        donde = texto.find("$")
+        inicio = donde + 1
+        fin = inicio + 4
+        precio = float(texto[inicio:fin])
+    print("¡Comprar! Precio: %5.2f" % precio)
+</textarea>
+</div>
 </div>
 </div>
 <div class="section" id="programa-feo">
@@ -345,7 +362,7 @@ bajar el precio</p></li>
 <li><p>No duplique su código …</p></li>
 <li><p>Esto conduce a un exceso de código, lo que hace que el mantenimiento de su código
 dificil</p></li>
-<li><p>Intenta reutilizar tu código</p></li>
+<li><p>Intente reutilizar su código</p></li>
 <li><p>Definiendo funciones reutilizaremos código</p></li>
 <li><p>¿Cuál es la diferencia?</p></li>
 <li><p>Si tengo que cambiar algo, lo cambiaré en un solo lugar</p></li>
@@ -357,44 +374,55 @@ dificil</p></li>
 <li><p>Las funciones son códigos compartibles</p></li>
 <li><p>Defino un nombre y llamo a la función en todo el programa</p></li>
 <li><p>La función debe estar definida antes de poder llamarla</p></li>
-<li><p>Si desea devolver un valor a la persona que llama, debe
-usa el comando de retorno</p></li>
+<li><p>Si desea devolver un valor al sujeto que llama la función, debe
+usa el comando de retorno <code class="docutils literal notranslate"><span class="pre">return</span></code></p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="kn">import</span> <span class="nn">time</span>
 
-<span class="k">def</span> <span class="nf">precio_de_captura</span><span class="p">():</span>
-   <span class="n">pagina</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://beans.itcarlow.ie/prices-loyalty.html&#39;</span><span class="p">)</span>
-   <span class="n">texto</span> <span class="o">=</span> <span class="n">pagina</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-   <span class="n">donde</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&gt;$&#39;</span><span class="p">)</span>
-   <span class="n">inicio</span> <span class="o">=</span> <span class="n">donde</span> <span class="o">+</span> <span class="mi">2</span>
-   <span class="n">fin</span> <span class="o">=</span> <span class="n">inicio</span> <span class="o">+</span> <span class="mi">4</span>
-   <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">texto</span><span class="p">[</span><span class="n">inicio</span><span class="p">:</span><span class="n">fin</span><span class="p">])</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l35_2 data-question_label="2">
+<div id=ac_l35_2_question class="ac_question col-md-12">
 
-<span class="n">opcion</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;¿Quieres comprar ahora? (S/N)&#39;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">opcion</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
-   <span class="n">precio</span> <span class="o">=</span> <span class="n">precio_de_captura</span><span class="p">()</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;¡Comprar! Precio: </span><span class="si">%5.2f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">precio</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-   <span class="n">precio</span> <span class="o">=</span> <span class="mf">99.99</span>
-   <span class="k">while</span> <span class="n">precio</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-     <span class="n">precio</span> <span class="o">=</span> <span class="n">precio_de_captura</span><span class="p">()</span>
-     <span class="k">if</span> <span class="n">precio</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;¡Comprar! Precio: 5.2</span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">precio</span><span class="p">)</span>
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l35_2_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+import urllib.request
+
+
+def capturar_precio():
+    pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+    texto = pagina.read()
+    donde = texto.find("$")
+    inicio = donde + 1
+    fin = inicio + 4
+    return float(texto[inicio:fin])
+
+
+opcion = input("¿Quieres comprar ahora? (S/N)")
+if opcion.lower() == "s":
+    precio = capturar_precio()
+    print("¡Comprar! Precio: %5.2f" % precio)
+else:
+    precio = 99.99
+    while precio >= 4.74:
+        precio = capturar_precio()
+    print("¡Comprar! Precio: %5.2f" % precio)
+</textarea>
+</div>
 </div>
 </div>
 <div class="section" id="no-hay-preguntas-tontas">
 <h2>No hay preguntas tontas<a class="headerlink" href="#no-hay-preguntas-tontas" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>¿Es el comando de retorno lo mismo que imprimir? No, imprimir muestra algo en la pantalla,
-while return devuelve un valor para quien llamó a la función.</p></li>
-<li><p>Si no regreso dentro de la función, ¿qué devuelve? Ninguno
-¿Debería + Volver siempre aparecer al final de la función? No siempre depende de
-lógica de función</p></li>
+<li><p>¿Es el comando de retorno lo mismo que imprimir? No, <code class="docutils literal notranslate"><span class="pre">print()</span></code> muestra algo en la pantalla,
+mientras que <code class="docutils literal notranslate"><span class="pre">return</span></code> devuelve un valor para quien llamó a la función.</p></li>
+<li><p>Si no hay <code class="docutils literal notranslate"><span class="pre">return</span></code> dentro de la función, ¿qué devuelve? Deuelve nada: <code class="docutils literal notranslate"><span class="pre">None</span></code>.
+¿Debería <code class="docutils literal notranslate"><span class="pre">return</span></code> siempre aparecer al final de la función? No siempre, depende de la
+lógica de la función</p></li>
 <li><p>¿Puede una función devolver más de un valor? Sí, incluidas listas o
-diccionarios</p></li>
+diccionarios.</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/TWP35_005.jpeg"><img alt="" class="align-center" src="../_images/TWP35_005.jpeg" style="width: 25.442cm; height: 16.402cm;" /></a>
 <ul class="simple">
@@ -405,19 +433,31 @@ diccionarios</p></li>
 <li><p>Muy adoptado hoy</p></li>
 <li><p>Alternativa a XML</p>
 <ul>
-<li><p>Más XML detallado</p></li>
-<li><p>XML menos legibilidad</p></li>
+<li><p>XML es más detallado</p></li>
+<li><p>XML es menos legible</p></li>
 </ul>
 </li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="kn">import</span> <span class="nn">json</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://api.icndb.com/jokes/random?limitTo=[nerdy]&quot;</span>
-<span class="n">resp</span> <span class="o">=</span> <span class="n">urrlib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">][</span><span class="s1">&#39;joke&#39;</span><span class="p">])</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l35_3 data-question_label="3">
+<div id=ac_l35_3_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l35_3_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import urllib.request
+import json
+
+url = "http://api.icndb.com/jokes/random?limitTo=[nerdy]"
+texto = urllib.request.urlopen(url).read()
+data = json.loads(texto)
+print(data["value"]["joke"])
+</textarea>
+</div>
 </div>
 <script type="text/javascript">
     function lecture11_disqus(source) {
@@ -471,14 +511,14 @@ diccionarios</p></li>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="TWP33.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Revición de listas' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Revisión de Archivos, Listas y Diccionarios' data-toggle="tooltip" >
     <a href="TWP37.html" >
       <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
       </div>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="TWP37.html" >Next Section - Revición de listas</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="TWP37.html" >Next Section - Revisión de Archivos, Listas y Diccionarios</a>
 
 <script type="text/javascript">
 

@@ -66,7 +66,7 @@ Impresión de 1 a 3
    x = x + 1
    print(x)
 
-+ Usando while
++ Usando ``while``
 
 
 .. codelens:: cl_l15_4
@@ -80,14 +80,14 @@ Impresión de 1 a 3
 ===================
 
 
-.. image:: img/TWP15_007.jpg
+.. image:: img/TWP15_007.jpeg
    :height: 14.804cm
    :width: 22.181cm
    :align: center
    :alt: 
 
 
-Prueva de escritorio
+Prueba de escritorio
 ====================
 
 
@@ -127,7 +127,7 @@ Contadores
 ==========
 
 
-+ imprime números pares entre 0 y un número dado usando if
++ Imprima números pares entre 0 y un número dado por el usuario usando ``if``
 
 
 .. activecode:: ac_l15_2
@@ -147,7 +147,7 @@ Contadores
 
 
 + Imprima números pares entre 0 y un número proporcionado sin usar
-   el if
+  ``if``
 
 
 .. activecode:: ac_l15_3
@@ -186,8 +186,9 @@ Acumuladores
 ============
 
 
-+ La diferencia entre un medidor y un acumulador es que en medidores el
-   el valor agregado es constante y, en acumuladores, variable
++ La diferencia entre un contador y un acumulador es que en contadores el
+  el valor agregado es constante, y en acumuladores, variable.
+
 + Cálculo de la suma de diez números enteros
 
 
@@ -247,7 +248,7 @@ Acumuladores
 ============
 
 
-+ Calcular el factorial de un número entero n
++ Calcular el factorial de un número entero ``n``
 
 .. activecode:: ac_l15_8
    :nocodelens:
@@ -264,7 +265,7 @@ Acumuladores
 
 
 
-interrumpiendo la repetición
+Interrumpiendo la repetición
 ============================
 
 
@@ -285,11 +286,11 @@ interrumpiendo la repetición
    print("Suma: %d" %suma)
 
 
-interrumpiendo la repetición
+Interrumpiendo la repetición
 ============================
 
 
-+ Números promedio hasta que se ingrese cero
++ Calcule el promedio de los números ingresados hasta que se ingrese cero
 
 
 .. activecode:: ac_l15_10
@@ -313,7 +314,7 @@ Repeticiones anidadas
 =====================
 
 
-+ Imprime las tablas del 1 al 10
++ Imprime las tablas de multiplicar del 1 al 10
 
 
 .. activecode:: ac_l15_11
@@ -330,10 +331,6 @@ Repeticiones anidadas
        tabla_de_multiplicar = tabla_de_multiplicar + 1
 
 
-Lista de Ejercicios “again”
-===========================
-
-
 .. image:: img/TWP05_041.jpeg
    :height: 12.571cm
    :width: 9.411cm
@@ -342,4 +339,3 @@ Lista de Ejercicios “again”
 
 
 + “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote” - Einstein
-

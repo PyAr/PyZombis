@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Revisión general 2 &#8212; PyZombis 11_TWP45_add@43c2df3</title>
+    <title>Revisión general 2 &#8212; PyZombis 11_TWP45_add@89c312e</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -47,7 +47,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Revisión general 3" href="TWP40.html" />
-    <link rel="prev" title="Revición de listas" href="TWP37.html" />
+    <link rel="prev" title="Revisión de Archivos, Listas y Diccionarios" href="TWP37.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport' />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 11_TWP45_add@43c2df3</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 11_TWP45_add@89c312e</a>
       </div>
     </div>
 
@@ -243,7 +243,7 @@
 <li><a class="reference internal" href="#id11">Python</a></li>
 <li><a class="reference internal" href="#ejercicio">Ejercicio</a></li>
 <li><a class="reference internal" href="#resumen">Resumen</a></li>
-<li><a class="reference internal" href="#recuerdo">Recuerdo</a></li>
+<li><a class="reference internal" href="#recuerde">Recuerde</a></li>
 </ul>
 </li>
 </ul>
@@ -253,7 +253,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Revición de listas" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Revisión de Archivos, Listas y Diccionarios" data-toggle="tooltip">
     <a href="TWP37.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -296,8 +296,8 @@
 <div class="section" id="que-es-un-programa">
 <h2>¿Qué es un programa?<a class="headerlink" href="#que-es-un-programa" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Un conjunto detallado de instrucciones, paso a paso, que le dice cuáles son las
-la computadora hará</p></li>
+<li><p>Un conjunto detallado de instrucciones, paso a paso, que le dice a la
+computadora qué hacer.</p></li>
 <li><p>Si cambiamos el programa, la computadora hará algo diferente</p></li>
 <li><p>La computadora permanece igual, pero el programa ha cambiado</p></li>
 <li><p>Los programas se ejecutan</p></li>
@@ -308,11 +308,8 @@ la computadora hará</p></li>
 <ul class="simple">
 <li><p>El software (programas) controla el hardware</p></li>
 <li><p>El proceso de creación de software se llama programación</p></li>
-<li><dl class="simple">
-<dt>Un algoritmo es la receta, paso a paso, que resuelve un problema.</dt><dd><p>computacional</p>
-</dd>
-</dl>
-</li>
+<li><p>Un algoritmo es la receta, paso a paso, que resuelve un problema.
+computacional</p></li>
 </ul>
 </div>
 <div class="section" id="lenguajes-de-programacion">
@@ -321,8 +318,8 @@ la computadora hará</p></li>
 <li><p>Los idiomas de bajo nivel son los más cercanos a la máquina</p></li>
 <li><p>Ensamblador:</p>
 <ul>
-<li><p>Cargue el número de variable A en la CPU</p></li>
-<li><p>Cargue el número de variable B en la CPU</p></li>
+<li><p>Cargue el número de variables A en la CPU</p></li>
+<li><p>Cargue el número de variables B en la CPU</p></li>
 <li><p>Agregar los dos números en la CPU</p></li>
 <li><p>Almacenar el resultado en la variable C</p></li>
 </ul>
@@ -333,41 +330,31 @@ la computadora hará</p></li>
 <h2>Lenguajes de programación<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Comando original en lenguaje de alto nivel: C = A + B</p></li>
-<li><dl class="simple">
-<dt>Los compiladores convierten el lenguaje de alto nivel al lenguaje de</dt><dd><p>máquina informática específica</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Los intérpretes analizan y ejecutan el programa de instrucción por</dt><dd><p>instrucción de lenguaje de máquina</p>
-</dd>
-</dl>
-</li>
+<li><p>Los compiladores convierten el lenguaje de alto nivel al lenguaje de
+máquina informática específica</p></li>
+<li><p>Los intérpretes analizan y ejecutan el programa instrucción por
+instrucción del lenguaje de máquina</p></li>
 </ul>
 </div>
 <div class="section" id="python">
 <h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>El signo “&gt;&gt;&gt;” indica que Python está “listo” para recibir
-comandos</p></li>
-</ul>
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
-        <div class="pytutorVisualizer" id="Example13_1"
+        <div class="pytutorVisualizer" id="cl_l38_1"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (Example13_1)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (cl_l38_1)</span> </p>
     </div>
 
 <script type="text/javascript">
-var Example13_1_vis;
+var cl_l38_1_vis;
 
 if (allTraceData === undefined) {
    var allTraceData = {};
 }
 
-allTraceData["Example13_1"] = {"code": "print('hola mundo!')\nprint(2+3)\nprint('2 + 3 = ',2+3)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "hola mundo!\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "hola mundo!\n5\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "hola mundo!\n5\n2 + 3 =  5\n"}]};
+allTraceData["cl_l38_1"] = {"code": "print(\"hola mundo!\")\nprint(2 + 3)\nprint(\"2 + 3 = \", 2 + 3)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "hola mundo!\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "hola mundo!\n5\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "hola mundo!\n5\n2 + 3 =  5\n"}]};
 </script>
 </div>
 </div>
@@ -380,47 +367,44 @@ allTraceData["Example13_1"] = {"code": "print('hola mundo!')\nprint(2+3)\nprint(
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
-        <div class="pytutorVisualizer" id="Example13_2"
+        <div class="pytutorVisualizer" id="cl_l38_2"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (Example13_2)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (cl_l38_2)</span> </p>
     </div>
 
 <script type="text/javascript">
-var Example13_2_vis;
+var cl_l38_2_vis;
 
 if (allTraceData === undefined) {
    var allTraceData = {};
 }
 
-allTraceData["Example13_2"] = {"code": "def amodoispontos():\n  print('Yo amo:!')\n  print('Dos puntos == \":\"')\n\namodoispontos()", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": ""}, {"line": 1, "event": "call", "func_name": "amodoispontos", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [{"func_name": "amodoispontos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "amodoispontos_f1"}], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "amodoispontos", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [{"func_name": "amodoispontos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "amodoispontos_f1"}], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "amodoispontos", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [{"func_name": "amodoispontos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "amodoispontos_f1"}], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "Yo amo:!\n"}, {"line": 3, "event": "return", "func_name": "amodoispontos", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [{"func_name": "amodoispontos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"__return__": null}, "ordered_varnames": ["__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "amodoispontos_f1"}], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "Yo amo:!\nDos puntos == \":\"\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "Yo amo:!\nDos puntos == \":\"\n"}]};
+allTraceData["cl_l38_2"] = {"code": "def amo_dos_puntos():\n    print(\"Yo amo:!\")\n    print('Dos puntos == \":\"')\n\n\namo_dos_puntos()", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"amo_dos_puntos": ["REF", 1]}, "ordered_globals": ["amo_dos_puntos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amo_dos_puntos()", null]}, "stdout": ""}, {"line": 1, "event": "call", "func_name": "amo_dos_puntos", "globals": {"amo_dos_puntos": ["REF", 1]}, "ordered_globals": ["amo_dos_puntos"], "stack_to_render": [{"func_name": "amo_dos_puntos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "amo_dos_puntos_f1"}], "heap": {"1": ["FUNCTION", "amo_dos_puntos()", null]}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "amo_dos_puntos", "globals": {"amo_dos_puntos": ["REF", 1]}, "ordered_globals": ["amo_dos_puntos"], "stack_to_render": [{"func_name": "amo_dos_puntos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "amo_dos_puntos_f1"}], "heap": {"1": ["FUNCTION", "amo_dos_puntos()", null]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "amo_dos_puntos", "globals": {"amo_dos_puntos": ["REF", 1]}, "ordered_globals": ["amo_dos_puntos"], "stack_to_render": [{"func_name": "amo_dos_puntos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "amo_dos_puntos_f1"}], "heap": {"1": ["FUNCTION", "amo_dos_puntos()", null]}, "stdout": "Yo amo:!\n"}, {"line": 3, "event": "return", "func_name": "amo_dos_puntos", "globals": {"amo_dos_puntos": ["REF", 1]}, "ordered_globals": ["amo_dos_puntos"], "stack_to_render": [{"func_name": "amo_dos_puntos", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"__return__": null}, "ordered_varnames": ["__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "amo_dos_puntos_f1"}], "heap": {"1": ["FUNCTION", "amo_dos_puntos()", null]}, "stdout": "Yo amo:!\nDos puntos == \":\"\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"amo_dos_puntos": ["REF", 1]}, "ordered_globals": ["amo_dos_puntos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amo_dos_puntos()", null]}, "stdout": "Yo amo:!\nDos puntos == \":\"\n"}]};
 </script>
 </div>
 <ul class="simple">
-<li><p>¡No olvides los paréntesis cuando llames a la función!</p></li>
-<li><dl class="simple">
-<dt>Si olvida los paréntesis, python devolverá la dirección en</dt><dd><p>memoria donde está el código de función</p>
-</dd>
-</dl>
-</li>
+<li><p>¡No olvide los paréntesis cuando llames a la función!</p></li>
+<li><p>Si olvida los paréntesis, python devolverá la dirección en
+memoria donde se encuentra definida la función.</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
-        <div class="pytutorVisualizer" id="Example13_3"
+        <div class="pytutorVisualizer" id="cl_l38_3"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (Example13_3)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (cl_l38_3)</span> </p>
     </div>
 
 <script type="text/javascript">
-var Example13_3_vis;
+var cl_l38_3_vis;
 
 if (allTraceData === undefined) {
    var allTraceData = {};
 }
 
-allTraceData["Example13_3"] = {"code": "def amodoispontos():\n  print('Yo amo:!')\n  print('Dos puntos == \":\"')\n\nprint(amodoispontos)\nprint(print)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "<function amodoispontos at 0x7f3c72d2e040>\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"amodoispontos": ["REF", 1]}, "ordered_globals": ["amodoispontos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amodoispontos()", null]}, "stdout": "<function amodoispontos at 0x7f3c72d2e040>\n<built-in function print>\n"}]};
+allTraceData["cl_l38_3"] = {"code": "def amo_dos_puntos():\n    print(\"Yo amo:!\")\n    print('Dos puntos == \":\"')\n\n\nprint(amo_dos_puntos)\nprint(print)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"amo_dos_puntos": ["REF", 1]}, "ordered_globals": ["amo_dos_puntos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amo_dos_puntos()", null]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"amo_dos_puntos": ["REF", 1]}, "ordered_globals": ["amo_dos_puntos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amo_dos_puntos()", null]}, "stdout": "<function amo_dos_puntos at 0x7fa9bb528c10>\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"amo_dos_puntos": ["REF", 1]}, "ordered_globals": ["amo_dos_puntos"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "amo_dos_puntos()", null]}, "stdout": "<function amo_dos_puntos at 0x7fa9bb528c10>\n<built-in function print>\n"}]};
 </script>
 </div>
 </div>
@@ -432,20 +416,20 @@ allTraceData["Example13_3"] = {"code": "def amodoispontos():\n  print('Yo amo:!'
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="4">
-        <div class="pytutorVisualizer" id="Example13_4"
+        <div class="pytutorVisualizer" id="cl_l38_4"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 4 (Example13_4)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 4 (cl_l38_4)</span> </p>
     </div>
 
 <script type="text/javascript">
-var Example13_4_vis;
+var cl_l38_4_vis;
 
 if (allTraceData === undefined) {
    var allTraceData = {};
 }
 
-allTraceData["Example13_4"] = {"code": "def suma(a,b):\n  return a+b\n\nprint(suma('aguacate','jabuticaba'))\nprint(suma(2,3))\nprint(suma(3.14,2.71))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 1, "event": "call", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": "aguacate", "b": "jabuticaba"}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f1"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": "aguacate", "b": "jabuticaba"}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f1"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": "aguacate", "b": "jabuticaba", "__return__": "aguacatejabuticaba"}, "ordered_varnames": ["a", "b", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f1"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 1, "event": "call", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"a": 2, "b": 3}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f2"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 2, "event": "step_line", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"a": 2, "b": 3}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f2"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 2, "event": "return", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"a": 2, "b": 3, "__return__": 5}, "ordered_varnames": ["a", "b", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f2"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 1, "event": "call", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"a": 3.14, "b": 2.71}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f3"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 2, "event": "step_line", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"a": 3.14, "b": 2.71}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f3"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 2, "event": "return", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"a": 3.14, "b": 2.71, "__return__": 5.85}, "ordered_varnames": ["a", "b", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f3"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n5.85\n"}]};
+allTraceData["cl_l38_4"] = {"code": "def suma(a, b):\n    return a + b\n\n\nprint(suma(\"aguacate\", \"jabuticaba\"))\nprint(suma(2, 3))\nprint(suma(3.14, 2.71))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 1, "event": "call", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": "aguacate", "b": "jabuticaba"}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f1"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": "aguacate", "b": "jabuticaba"}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f1"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": "aguacate", "b": "jabuticaba", "__return__": "aguacatejabuticaba"}, "ordered_varnames": ["a", "b", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f1"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 1, "event": "call", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"a": 2, "b": 3}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f2"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 2, "event": "step_line", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"a": 2, "b": 3}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f2"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 2, "event": "return", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"a": 2, "b": 3, "__return__": 5}, "ordered_varnames": ["a", "b", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f2"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 1, "event": "call", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"a": 3.14, "b": 2.71}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f3"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 2, "event": "step_line", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"a": 3.14, "b": 2.71}, "ordered_varnames": ["a", "b"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f3"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 2, "event": "return", "func_name": "suma", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [{"func_name": "suma", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"a": 3.14, "b": 2.71, "__return__": 5.85}, "ordered_varnames": ["a", "b", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "suma_f3"}], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"suma": ["REF", 1]}, "ordered_globals": ["suma"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "suma(a, b)", null]}, "stdout": "aguacatejabuticaba\n5\n5.85\n"}]};
 </script>
 </div>
 </div>
@@ -464,26 +448,26 @@ resalta palabras reservadas, realiza identificación automática, etc.</p></li>
 <div class="section" id="id6">
 <h2>Python<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Guardamos un programa llamado chaos.py</p></li>
-<li><p>No olvides la extensión .py</p></li>
+<li><p>Guardamos un programa llamado <code class="docutils literal notranslate"><span class="pre">caos.py</span></code></p></li>
+<li><p>No olvides la extensión <code class="docutils literal notranslate"><span class="pre">.py</span></code></p></li>
 <li><p>Podemos ejecutar el programa con la tecla F5</p></li>
 </ul>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=Example13_5 data-question_label="5">
-<div id=Example13_5_question class="ac_question col-md-12">
+<div data-component="activecode" id=ac_l38_1 data-question_label="5">
+<div id=ac_l38_1_question class="ac_question col-md-12">
 
 </div>
-<textarea data-lang="python" id="Example13_5_editor" 
+<textarea data-lang="python3" id="ac_l38_1_editor" 
       data-timelimit=25000     
-    data-audio=''   data-stdin=''   
+    data-audio=''      
            data-wasm=/_static
-      style="visibility: hidden;">
- print('Este programa ilustra el comportamiento caótico.')
- x = eval(input('Ingrese un número entre 0 y 1:'))
- for i in range(10):
-   x = 3.9*x*(1-x)
-   print("2.3f" %x)
+     data-python3_interpreter='brython' style="visibility: hidden;">
+print("Este programa ilustra el comportamiento caótico.")
+x = eval(input("Ingrese un número entre 0 y 1:"))
+for i in range(10):
+    x = 3.9 * x * (1 - x)
+    print("%2.3f" % x)
 </textarea>
 </div>
 </div>
@@ -491,26 +475,26 @@ resalta palabras reservadas, realiza identificación automática, etc.</p></li>
 <div class="section" id="id7">
 <h2>Python<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Las líneas que comienzan con “#” se llaman comentarios</p></li>
+<li><p>Las líneas que comienzan con <strong>“#”</strong> se llaman comentarios</p></li>
 <li><p>Están destinados a ser leídos por humanos y Python los ignora</p></li>
-<li><p>Python omite todo el texto desde el “#” hasta el final de la línea</p></li>
+<li><p>Python omite todo el texto desde el <strong>“#”</strong> hasta el final de la línea</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/TWP38_008.png"><img alt="" class="align-center" src="../_images/TWP38_008.png" style="width: 23.602cm; height: 2.173cm;" /></a>
 </div>
 <div class="section" id="id8">
 <h2>Python<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>x es un ejemplo de una variable</p></li>
-<li><p>En x asignaremos un valor al que se puede hacer referencia más adelante</p></li>
-<li><p>Se mostrará el mensaje entre comillas y la respuesta se almacenará en x</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code> es un ejemplo de una variable</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">x</span></code> asignaremos un valor al que se puede hacer referencia más adelante</p></li>
+<li><p>Se mostrará el mensaje entre comillas y la respuesta se almacenará en <code class="docutils literal notranslate"><span class="pre">x</span></code></p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/TWP38_009.png"><img alt="" class="align-center" src="../_images/TWP38_009.png" style="width: 23.316cm; height: 0.799cm;" /></a>
 </div>
 <div class="section" id="id9">
 <h2>Python<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Hay comandos de bucle como para</p></li>
-<li><p>Un bucle se usa para repetir un bloque de comandos varias veces</p></li>
+<li><p>Hay comandos de bucle o ciclos como el comando <code class="docutils literal notranslate"><span class="pre">for</span></code></p></li>
+<li><p>Un bucle o ciclo se usa para repetir un bloque de código varias veces</p></li>
 <li><p>En este ejemplo, el siguiente bloque se repetirá 10 veces</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/TWP38_010.png"><img alt="" class="align-center" src="../_images/TWP38_010.png" style="width: 13.067cm; height: 1.399cm;" /></a>
@@ -518,10 +502,10 @@ resalta palabras reservadas, realiza identificación automática, etc.</p></li>
 <div class="section" id="id10">
 <h2>Python<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Llamamos a los espacios al comienzo de la línea sangría</p></li>
+<li><p>Llamamos <strong>sangría</strong> a los espacios al comienzo de la línea</p></li>
 <li><p>En Python, la sangría delimita el bloque que se ejecutará</p></li>
-<li><p>El cálculo 3.9 * x * (1-x) se realizará en la CPU y se asignará a la variable
-x</p></li>
+<li><p>El cálculo <code class="docutils literal notranslate"><span class="pre">3.9</span> <span class="pre">*</span> <span class="pre">x</span> <span class="pre">*</span> <span class="pre">(1-x)</span></code> se realizará en la CPU y se asignará a la variable
+<code class="docutils literal notranslate"><span class="pre">x</span></code></p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/TWP38_011.png"><img alt="" class="align-center" src="../_images/TWP38_011.png" style="width: 13.694cm; height: 3.599cm;" /></a>
 </div>
@@ -542,30 +526,21 @@ correr por n veces en lugar del valor 10</p></li>
 <div class="section" id="resumen">
 <h2>Resumen<a class="headerlink" href="#resumen" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><dl class="simple">
-<dt>La descripción de una secuencia de pasos para resolver un problema.</dt><dd><p>algoritmo computacional se llama</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Los algoritmos son programas (software) que determinan cuáles son los</dt><dd><p>la computadora (hardware) hará</p>
-</dd>
-</dl>
-</li>
-<li><p>El proceso de creación de software se llama programación</p></li>
+<li><p>La descripción de una secuencia de pasos para resolver un problema se llama
+algoritmo computacional.</p></li>
+<li><p>Los algoritmos son programas (software) que determinan que hará
+la computadora (hardware).</p></li>
+<li><p>El proceso de creación de software se llama programación.</p></li>
 </ul>
 </div>
-<div class="section" id="recuerdo">
-<h2>Recuerdo<a class="headerlink" href="#recuerdo" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="recuerde">
+<h2>Recuerde<a class="headerlink" href="#recuerde" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Los lenguajes de programación tienen una sintaxis formal</p></li>
 <li><p>Las computadoras solo entienden el lenguaje de máquina</p></li>
 <li><p>Python es un lenguaje interpretado de alto nivel</p></li>
-<li><dl class="simple">
-<dt>El intérprete de Python convierte los comandos instrucción por instrucción</dt><dd><p>para lenguaje máquina</p>
-</dd>
-</dl>
-</li>
+<li><p>El intérprete de Python convierte los comandos instrucción por instrucción
+a lenguaje máquina</p></li>
 </ul>
 <script type="text/javascript">
     function lecture13_disqus(source) {
@@ -610,7 +585,7 @@ correr por n veces en lugar del valor 10</p></li>
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Revición de listas' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Revisión de Archivos, Listas y Diccionarios' data-toggle="tooltip">
     <a href="TWP37.html" >
         <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
