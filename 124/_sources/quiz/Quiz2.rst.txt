@@ -18,7 +18,7 @@ Ejercicio 1
     Ejemplos: |br|
     ``es_triangulo(2, 2, 2)`` -> ``"Equilátero"`` |br|
     ``es_triangulo(4, 2, 2)`` -> ``"Isósceles"`` |br|
-    ``es_triangulo(4, 2, 6)`` -> ``"Escaleno"`` |br|
+    ``es_triangulo(4, 2, 6)`` -> ``"No es triángulo"`` |br|
     ``es_triangulo(2, 1, 8)`` -> ``"No es triángulo"`` |br|
     ~~~~
     def es_triangulo(a, b, c):
@@ -33,13 +33,13 @@ Ejercicio 1
 
             self.assertEqual(es_triangulo(2, 2, 2), "Equilátero", "Esperado: Equilátero")
             self.assertEqual(es_triangulo(2, 1, 2), "Isósceles", "Esperado: Isósceles")
-            self.assertEqual(es_triangulo(2, 1, 3), "Escaleno", "Esperado: Escaleno")
+            self.assertEqual(es_triangulo(2, 1, 3), "No es triángulo", "Esperado: No es triángulo")
             self.assertEqual(es_triangulo(2, 1, 8), "No es triángulo", "Esperado: No es triángulo")
             self.assertEqual(es_triangulo(4, 2, 1), "No es triángulo", "Esperado: No es triángulo")
             self.assertEqual(es_triangulo(4, 1000, 1000), "Isósceles", "Esperado: Isósceles")
             self.assertEqual(es_triangulo(10000, 10000, 10000), "Equilátero", "Esperado: Equilátero")
-            self.assertEqual(es_triangulo(4, 2, 2), "Isósceles", "Esperado: Isósceles")
-            self.assertEqual(es_triangulo(10000, 1, 9999), "Escaleno", "Esperado: Escaleno")
+            self.assertEqual(es_triangulo(3, 2, 2), "Isósceles", "Esperado: Isósceles")
+            self.assertEqual(es_triangulo(10000, 1, 9999), "No es triángulo", "Esperado: No es triángulo")
 
 
     myTests().main()

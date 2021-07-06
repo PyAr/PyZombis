@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Archivos y diccionarios &#8212; PyZombis 14_quiz2@c838ecf</title>
+    <title>Archivos y diccionarios &#8212; PyZombis 14_quiz2@31cbab8</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -47,7 +47,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Clases y objetos" href="TWP25.html" />
-    <link rel="prev" title="For y funciones aleatorias" href="TWP20.html" />
+    <link rel="prev" title="For, Funciones y Azar" href="TWP20.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport' />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 14_quiz2@c838ecf</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 14_quiz2@31cbab8</a>
       </div>
     </div>
 
@@ -236,7 +236,7 @@
 <li><a class="reference internal" href="#validar-direccion-ip">Validar dirección IP</a></li>
 <li><a class="reference internal" href="#html">HTML</a></li>
 <li><a class="reference internal" href="#diccionarios">Diccionarios</a></li>
-<li><a class="reference internal" href="#ejercicio-programa-1">Ejercicio Programa 1</a></li>
+<li><a class="reference internal" href="#ultimo-ejercicio">Último Ejercicio</a></li>
 </ul>
 </li>
 </ul>
@@ -246,7 +246,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - For y funciones aleatorias" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - For, Funciones y Azar" data-toggle="tooltip">
     <a href="TWP20.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -296,8 +296,8 @@
 <li><p>Para acceder a un archivo necesita abrirlo</p></li>
 <li><p>Al abrir el archivo informamos su nombre, directorio donde está  (si necesario) y qué operaciones realizaremos: lectura y / o escritura</p></li>
 <li><p>La función que abre los archivos está abierta y los modos son: r - lectura, w - escritura, a - agregar, b - binario,(actualizar)</p></li>
-<li><p>Los métodos para leer o escribir son read y write</p></li>
-<li><p>Los archivos deben cerrarse con cierre Enviar comentarios</p></li>
+<li><p>Los métodos para leer o escribir son <code class="docutils literal notranslate"><span class="pre">read()</span></code> y <code class="docutils literal notranslate"><span class="pre">write()</span></code></p></li>
+<li><p>Los archivos deben cerrarse con <code class="docutils literal notranslate"><span class="pre">close()</span></code></p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;numeros.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">31</span><span class="p">):</span>
@@ -332,7 +332,7 @@ archivo.close()
 </div>
 <ul class="simple">
 <li><p>Si ejecuta este programa, no aparecerá nada en la pantalla</p></li>
-<li><p>Busque en el directorio c: Python3x el archivo  números.txt</p></li>
+<li><p>Busque en el directorio c: Python3x el archivo numeros.txt</p></li>
 <li><p>El modo w crea el archivo si no existe, si existe será eliminado y reescrito</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;numeros.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
@@ -407,14 +407,8 @@ para que todas las vocales
 sean cambiadas por "*".
 </pre></div>
 
-<div class="runestone datafile">
-<div class="datafile_caption">Data file: <code>crypto.txt</code></div>
-<pre data-component="datafile" id=crypto.txt  data-edit="true" data-rows="10" data-cols="20">
-
-</pre></div>
-
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l23_4 data-question_label="7">
+<div data-component="activecode" id=ac_l23_4 data-question_label="6">
 <div id=ac_l23_4_question class="ac_question col-md-12">
 <p>Lea el archivo <code class="docutils literal notranslate"><span class="pre">&quot;mensaje.txt&quot;</span></code> y escriba el archivo <code class="docutils literal notranslate"><span class="pre">&quot;crypto.txt&quot;</span></code> el cual
 debe tener el mismo texto del primer archivo, pero con las vocales cambiadas por
@@ -441,6 +435,12 @@ salida.close()
 </textarea>
 </div>
 </div>
+
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>crypto.txt</code></div>
+<pre data-component="datafile" id=crypto.txt  data-edit="true" data-rows="10" data-cols="20">
+
+</pre></div>
 <div class="section" id="ejercicio">
 <h3>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this headline">¶</a></h3>
 
@@ -451,7 +451,8 @@ salida.close()
 del archivo <code class="docutils literal notranslate"><span class="pre">&quot;mensaje.txt&quot;</span></code>. Esto debido a las mayúsculas o a los acentos.
 Su trabajo es modificar el programa anterior para que cambie <strong>TODAS</strong> las
 vocales por <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code>. <strong>Recuerde</strong>: el método <code class="docutils literal notranslate"><span class="pre">.lower()</span></code> devuelve una cadena
-con todos sus caracteres vueltos letras minúsculas.</p>
+con todos sus caracteres vueltos letras minúsculas. Esta vez, va a escribir en
+el archivo <code class="docutils literal notranslate"><span class="pre">&quot;crypto2.txt&quot;</span></code></p>
 
 </div>
 <textarea data-lang="python" id="ac_l23_5_editor" 
@@ -460,7 +461,7 @@ con todos sus caracteres vueltos letras minúsculas.</p>
            data-wasm=/_static
       style="visibility: hidden;">
 texto = open("mensaje.txt", "r")
-salida = open("crypto.txt", "w")
+salida = open("crypto2.txt", "w")
 
 # Modifique el programa
 
@@ -480,7 +481,7 @@ from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        archivo = open("crypto.txt", "r")
+        archivo = open("crypto2.txt", "r")
         text = """*st* *s *l *rch*v* d* t*xt* q** *st*d *st* m*d*f*c*nd* p*r* q** t*d*s l*s v*c*l*s s**n c*mb**d*s p*r "*"."""
 
         self.assertEqual(archivo.read().replace("\n", " ").rstrip(), text.strip(), f"Esperado: {text}")
@@ -490,6 +491,12 @@ myTests().main()
 </textarea>
 </div>
 </div>
+
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>crypto2.txt</code></div>
+<pre data-component="datafile" id=crypto2.txt  data-edit="true" data-rows="10" data-cols="20">
+
+</pre></div>
 </div>
 </div>
 <div class="section" id="validar-direccion-ip">
@@ -508,20 +515,8 @@ myTests().main()
 192.168.0.256
 </pre></div>
 
-<div class="runestone datafile">
-<div class="datafile_caption">Data file: <code>Validos.txt</code></div>
-<pre data-component="datafile" id=Validos.txt  data-edit="true" data-rows="7" data-cols="15">
-Válidos
-</pre></div>
-
-<div class="runestone datafile">
-<div class="datafile_caption">Data file: <code>Invalidos.txt</code></div>
-<pre data-component="datafile" id=Invalidos.txt  data-edit="true" data-rows="7" data-cols="15">
-Inválidos
-</pre></div>
-
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l23_6 data-question_label="12">
+<div data-component="activecode" id=ac_l23_6 data-question_label="11">
 <div id=ac_l23_6_question class="ac_question col-md-12">
 
 </div>
@@ -553,6 +548,18 @@ invalidos.close()
 </textarea>
 </div>
 </div>
+
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>Validos.txt</code></div>
+<pre data-component="datafile" id=Validos.txt  data-edit="true" data-rows="7" data-cols="15">
+Válidos
+</pre></div>
+
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>Invalidos.txt</code></div>
+<pre data-component="datafile" id=Invalidos.txt  data-edit="true" data-rows="7" data-cols="15">
+Inválidos
+</pre></div>
 </div>
 <div class="section" id="html">
 <h2>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
@@ -579,12 +586,6 @@ invalidos.close()
 <span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
-
-<div class="runestone datafile">
-<div class="datafile_caption">Data file: <code>hola.html</code></div>
-<pre data-component="datafile" id=hola.html  data-edit="true" data-rows="12" data-cols="40">
-
-</pre></div>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_l23_7 data-question_label="14">
@@ -614,6 +615,12 @@ archivo.close()
 </textarea>
 </div>
 </div>
+
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>hola.html</code></div>
+<pre data-component="datafile" id=hola.html  data-edit="true" data-rows="12" data-cols="40">
+
+</pre></div>
 </div>
 <div class="section" id="diccionarios">
 <h2>Diccionarios<a class="headerlink" href="#diccionarios" title="Permalink to this headline">¶</a></h2>
@@ -631,11 +638,11 @@ archivo.close()
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="15">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="16">
         <div class="pytutorVisualizer" id="cl_l23_1"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 15 (cl_l23_1)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 16 (cl_l23_1)</span> </p>
     </div>
 
 <script type="text/javascript">
@@ -650,7 +657,7 @@ allTraceData["cl_l23_1"] = {"code": "d = {}\nd[\"a\"] = \"alpha\"\nd[\"o\"] = \"
 </div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l23_8 data-question_label="16">
+<div data-component="activecode" id=ac_l23_8 data-question_label="17">
 <div id=ac_l23_8_question class="ac_question col-md-12">
 
 </div>
@@ -674,11 +681,11 @@ print(d["x"])
 </div>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="17">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="18">
         <div class="pytutorVisualizer" id="cl_l23_2"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 17 (cl_l23_2)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 18 (cl_l23_2)</span> </p>
     </div>
 
 <script type="text/javascript">
@@ -691,6 +698,9 @@ if (allTraceData === undefined) {
 allTraceData["cl_l23_2"] = {"code": "d = {}\nd[\"a\"] = \"alpha\"\nd[\"o\"] = \"omega\"\nd[\"g\"] = \"gama\"\nprint(d.keys())\nprint(d.values())\nprint(\"g\" in d)\nprint(\"x\" in d)\nfor clave in d:\n    print(clave)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT"]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"]]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"]]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1]}, "ordered_globals": ["d"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "clave": "a"}, "ordered_globals": ["d", "clave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "clave": "a"}, "ordered_globals": ["d", "clave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "clave": "o"}, "ordered_globals": ["d", "clave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "clave": "o"}, "ordered_globals": ["d", "clave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\no\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "clave": "g"}, "ordered_globals": ["d", "clave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\no\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"d": ["REF", 1], "clave": "g"}, "ordered_globals": ["d", "clave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\no\ng\n"}, {"line": 9, "event": "return", "func_name": "<module>", "globals": {"d": ["REF", 1], "clave": "g"}, "ordered_globals": ["d", "clave"], "stack_to_render": [], "heap": {"1": ["DICT", ["a", "alpha"], ["o", "omega"], ["g", "gama"]]}, "stdout": "dict_keys(['a', 'o', 'g'])\ndict_values(['alpha', 'omega', 'gama'])\nTrue\nFalse\na\no\ng\n"}]};
 </script>
 </div>
+</div>
+<div class="section" id="ultimo-ejercicio">
+<h2>Último Ejercicio<a class="headerlink" href="#ultimo-ejercicio" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone datafile">
 <div class="datafile_caption">Data file: <code>alice_archivo.txt</code></div>
@@ -4433,7 +4443,7 @@ subscribe to our email newsletter to hear about new eBooks.
 </pre></div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l23_9 data-question_label="19">
+<div data-component="activecode" id=ac_l23_9 data-question_label="20">
 <div id=ac_l23_9_question class="ac_question col-md-12">
 <p>Haga un programa que lea el archivo <code class="docutils literal notranslate"><span class="pre">alice_archivo.txt</span></code> y cuente el número de ocurrencias de cada palabra en el texto. Nota:
 para conocer los caracteres especiales use <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">string</span></code> y use <code class="docutils literal notranslate"><span class="pre">string.punctuation</span></code>.</p>
@@ -4466,9 +4476,6 @@ archivo.close()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-programa-1">
-<h2>Ejercicio Programa 1<a class="headerlink" href="#ejercicio-programa-1" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP05_041.jpeg"><img alt="" class="align-center" src="../_images/TWP05_041.jpeg" style="width: 9.411cm; height: 12.571cm;" /></a>
 <ul class="simple">
 <li><p>“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein</p></li>
@@ -4479,7 +4486,7 @@ archivo.close()
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - For y funciones aleatorias' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - For, Funciones y Azar' data-toggle="tooltip">
     <a href="TWP20.html" >
         <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
