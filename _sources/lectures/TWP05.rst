@@ -125,16 +125,16 @@ Intérprete de Python
 
 Modo de edición
 ====================
-.. activecode:: ac_l05_1
-  :nocodelens:
 
-   Intente dar un enter dentro del bloque en modo de edición
+.. activecode:: ac_l05_1
+   :nocodelens:
+
+   Intente dar un enter dentro del bloque en modo de edición.
+   Note que no sucede nada al escribir enter al final de la línea.
+   En modo de edición es necesario "ejecutar" el programa (Para esto presione el botón de Run).
    
    ~~~~
    print("primer mensaje")
-
-Note que no sucede nada al escribir enter al final de la línea.
-En modo de edición es necesario "ejecutar" el programa (Para esto presione el botón de Run)
 
 
 Precauciones al escribir programas
@@ -153,71 +153,71 @@ Precauciones al escribir programas
 Calculadora en el intérprete
 ============================
 
-.. codelens:: cl_l05_2
-    
-    print(2 + 3)
-    print(5 - 3)
-    print(10 - 4 + 2)
-    print(2 * 10)
-    print(10 / 4)
-    print(2 ** 3)
-    print(10 % 3)
-    print(16 % 7)
+.. code-block:: python
+
+    >>> 2+3 # No te olvides de dar enter
+    5
+    >>> 5-3
+    2
+    >>> 10-4+2
+    8
+    >>> 2*10 # Asterisco para la multiplicación
+    20
+    >>> 10/4 # Barra inclinada para la división
+    2.5
+    >>> 2**3 # Exponenciación
+    8
+    >>> 10%3 # Residuo de la división (módulo)
+    1
+    >>> 16%7
+    2
+
+**¡Ahora inténtelo por su propia cuenta!**
+Escriba estas operaciones en el interprete y usé el modo interactivo como una calculadora
+
+.. only:: html
+
+   .. raw:: html
+      :file: _static/interpreter.html
 
 
 Conceptos sobre variables y asignación
 ======================================
-
-
 
 + Las variables se utilizan para almacenar valores y nombrar
   un área de la memoria de la computadora
-+ El símbolo para la asignación es el mismo ``=``
++ El símbolo para la asignación es el igual (``=``)
 
-
-.. codelens:: cl_l05_3
+.. codelens:: cl_l05_1
     
     a = 2
     b = 3
     print(a + b)
 
-Conceptos sobre variables y asignación
-======================================
++ Como en matemáticas, pasamos parámetros o valores para una función usando paréntesis
++ Una función ``f(x)``, donde ``f`` es el nombre de la función y ``x`` es un parámetro
++ En el ejemplo anterior, ``print`` es el nombre de la función y ``a + b`` el valor pasado como parámetro
++ También podemos usar el modo interactivo **¡Pruebelo aquí!**
 
-+ Función f (x), donde f es el nombre de la función y x es un parámetro
-+ En el ejemplo anterior, ``print`` es el nombre de la función y ``a + b``, el valor
+.. only:: html
 
-Conceptos sobre variables y asignación
-======================================
+   .. raw:: html
+      :file: _static/interpreter.html
 
 
-+ También podemos usar el modo interactivo
-+ Las dos primeras líneas no envían nada a la pantalla, así que
-  solo se muestra el resultado de la tercera línea
++ Las dos primeras líneas no envían nada a la pantalla, así que solo se muestra el resultado de la tercera línea
 
-.. codelens:: cl_l05_4
-    
-    a = 2
-    b = 3
-    print(a + b)
-
-Conceptos sobre variables y asignación
-======================================
-
+Otras alternativas
+******************
 
 + Quizás se pregunte ¿por qué creamos dos variables, ``a`` y
   ``b``, para sumar dos números?
 + Podríamos haber logrado el mismo resultado de varias maneras.
 
-
-.. codelens:: cl_l05_5
+.. codelens:: cl_l05_2
     
     print(2 + 3)
     print(5)
-
-
-Conceptos sobre variables y asignación
-======================================
 
 + ¿Cuál es la diferencia entre el primer modo y los dos últimos?
 + El primer caso incluye la lógica que usamos para obtener el
@@ -235,7 +235,7 @@ Nombres de variables
   letra o guión bajo ``_``
 + ¡Acentos están permitidos!
 + Ejemplo de nombres válidos: ``precio``, ``acción``, ``salario``, ``_x``,
-  ``año_2011``, ``salario`` y ``promedio``
+  ``año_2011``, ``salario_promedio``
 
 .. code-block:: python
 
@@ -246,7 +246,7 @@ Nombres de variables
     >>> print(precio)
     500
 
-+ Ejemplo de nombres no válidos: ``3x``, ``1er``, ``@``, ``$``
++ Ejemplo de nombres no válidos: ``salario promedio``, ``3x``, ``1er``, ``@``, ``$``
 
 .. code-block:: python
 
@@ -256,9 +256,16 @@ Nombres de variables
         ^
     SyntaxError: invalid syntax
 
+**Defina variables válidas e invalidas a continuación**
+
+.. only:: html
+
+   .. raw:: html
+      :file: _static/interpreter.html
+
+
 Tipos de variables
 ==================
-
 
 .. image:: img/TWP05_015.png
    :height: 8.507cm
@@ -266,9 +273,14 @@ Tipos de variables
    :align: center
    :alt: 
 
++ El contenido de una variable tiene un tipo
++ El tipo define la naturaleza de los datos que almacena la variable
++ Los tipos más comunes son los enteros, números de coma flotante y cadenas (texto)
++ Además de poder almacenar números y letras, las variables de Python también almacenan valores como Verdadero y Falso
+
+
 Variables numéricas
 ===================
-
 
 + Los enteros no tienen decimales: ``42``, ``-7``
 + Los valores del tipo entero en Python se llaman ``int``
@@ -282,23 +294,23 @@ Variables numéricas
 Representación de valores numéricos
 ===================================
 
-
 + Internamente todos los números son representados con el
   sistema binario
 + Este sistema permite solo los dígitos ``0`` o ``1``
 + Los números en punto flotante pueden no tener una correcta representación
   en el sistema binario
-+ Tecleando en el intérprete ``3 * 0.1`` tendremos un ejemplo
++ Tecleando en el intérprete ``3 * 0.1`` tendremos como respuesta: ``0.30000000000000004``
 
+**¡Pruebelo aquí!**
 
-.. codelens:: cl_l05_6
+.. only:: html
 
-    print(3 * 0.1)
+   .. raw:: html
+      :file: _static/interpreter.html
 
 
 Variables de tipo lógico
 ========================
-
 
 + Podemos almacenar verdadero y falso 
 + Las variables de este tipo se llaman lógicas o booleanas
@@ -324,12 +336,13 @@ Operadores relacionales
    <=       menor o igual  <=
    ======== ============== ==============================
 
++ Tenga en cuenta que el operador de igualdad son dos iguales (``==``)
+
 
 Ejemplos:
 =========
 
-
-.. codelens:: cl_l05_7
+.. codelens:: cl_l05_3
     
     a = 1
     b = 5
@@ -344,17 +357,13 @@ Ejemplos:
     print(d != a)
     print(d != b)
 
+
 Ejemplo importante
 ==================
 
-
-
 + >= o <= para valores iguales
 
-
-
-
-.. codelens:: cl_l05_8
+.. codelens:: cl_l05_4
     
     print(5 >= 5)
     print(5 <= 5)
@@ -363,14 +372,10 @@ Ejemplo importante
 Ejemplo
 =======
 
-
-
 + Podemos usar operadores relacionales para inicializar variables del
   tipo lógico
 
-
-
-.. codelens:: cl_l05_9
+.. codelens:: cl_l05_5
     
     nota = 8
     promedio = 6
@@ -378,37 +383,33 @@ Ejemplo
     print(aprobado)
 
 
-Operadores Lógicos
+Operadores lógicos
 ==================
-
-
 
 + Tenemos tres operadores básicos: ``not``, ``and`` y ``or``
 
 Uso del operador ``not``
 ************************
 
-.. codelens:: cl_l05_10
+.. codelens:: cl_l05_6
     
     print(not True)
     print(not False)
 
-
 Uso del operador ``and``
 ************************
 
-.. codelens:: cl_l05_11
+.. codelens:: cl_l05_7
     
     print(True and True)
     print(True and False)
     print(False and True)
     print(False and False)
 
-
 Uso del operador ``or``
 ************************
 
-.. codelens:: cl_l05_12
+.. codelens:: cl_l05_8
     
     print(True or True)
     print(True or False)
@@ -416,9 +417,8 @@ Uso del operador ``or``
     print(False or False)
 
 
-Expresiones Lógicas
+Expresiones lógicas
 ===================
-
 
 + Podemos combinar los operadores lógicos para formar expresiones lógicas complejas
 + El orden de evaluación es: ``not`` > ``and`` > ``or``. Esto significa que en una 
@@ -426,7 +426,7 @@ Expresiones Lógicas
 
 Veamos un ejemplo
 
-.. codelens:: cl_l05_13
+.. codelens:: cl_l05_9
 
    print(not False or False and True)
    print(False or True and True)
@@ -436,12 +436,11 @@ Veamos un ejemplo
 Ejemplo
 =======
 
-
 + La condición para otorgar un préstamo de compra de una motocicleta son: tener un
   salario mayor que $1,000.00 y ser mayor de 18 años. Compruebe si José puede obtener el
   préstamo
 
-.. codelens:: cl_l05_14
+.. codelens:: cl_l05_10
     
     salario = 500.0
     edad = 20
@@ -454,7 +453,7 @@ Ejemplo
 + Verifique si un estudiante aprobó dado que obtuvo una puntuación promedio de 5.8 en
   el programa de ejercicios y obtuvo un puntaje promedio de 7 en las pruebas
 
-.. codelens:: cl_l05_15
+.. codelens:: cl_l05_11
     
     ep = 5.8
     p = 7
@@ -471,40 +470,26 @@ Variable String
 + Para diferenciar sus comandos de una cadena, usamos comillas en
   principio y fin
 
-
-.. codelens:: cl_l05_16
+.. codelens:: cl_l05_12
     
     texto = "Joaquin y Maria comen pan"
     print(texto)
 
-
-
-Variable String
-================
-
-
-
 + Tenga en cuenta que no hay problema al usar espacios para separar palabras
 + Una cadena tiene una longitud asociada
-+ Podemos obtener el tamaño a través de la función de ``len`` incorporada en
-  Python
++ Podemos obtener el tamaño a través de la función de ``len`` incorporada en Python
 
-
-.. codelens:: cl_l05_17
+.. codelens:: cl_l05_13
     
     texto = "Joaquin y Maria comen pan"
     print(len(texto))
-
-Variable String
-================
 
 + Podemos acceder a los caracteres en la cadena usando un número entero
   para representar su posición en la cadena
 + Este número se llama índice y comenzamos a contar desde cero
 + Accedemos al carácter proporcionando el índice entre corchetes ``[]``
 
-
-.. codelens:: cl_l05_18
+.. codelens:: cl_l05_14
     
     texto = "Joaquin y Maria comen pan"
     print(texto[0])
@@ -513,15 +498,10 @@ Variable String
     print(texto[10])
     print(texto[15])
 
-
-Variable String
-================
-
 + **Precaución**: no podemos acceder a un índice mayor que la cantidad de
   caracteres de cadena
 
-
-.. codelens:: cl_l05_19
+.. codelens:: cl_l05_15
     
     texto = "Juan y Maria comen pan"
     print(texto[22])
@@ -540,9 +520,7 @@ Operaciones con strings
 Concatenación
 =============
 
-
-
-.. codelens:: cl_l05_20
+.. codelens:: cl_l05_16
     
     a = "Papa"
     b = "cuando nace"
@@ -556,49 +534,49 @@ Composición
 + Unir cadenas múltiples no siempre es práctico
 + Podemos usar marcadores de posición para reemplazar valores dentro de cadenas
 
-.. codelens:: cl_l05_21
+.. codelens:: cl_l05_17
     
     edad = 20
     print("Juan tiene %d años" % edad)
-
-
-Composición
-===========
-
 
 + Los marcadores principales son ``%d`` para números enteros, ``%s`` para
   cadenas y ``%f`` para números de punto flotante
 + % 03d completo con ceros adicionales
 + % 3d significa tres posiciones sin ceros adicionales
 
-
-
-.. codelens:: cl_l05_22
+.. codelens:: cl_l05_18
     
     edad = 20
     print("[%03d]" % edad)
     print("[%3d]" % edad)
 
-
-Composición
-===========
-
-
 + ``%5.2f`` significa 5 caracteres en total y 2 decimales
 
-
-.. codelens:: cl_l05_23
+.. codelens:: cl_l05_19
     
     print("$%5.2f pesos" % 23)
+
+
+f-strings
+=========
+
++ Otra manera de unir cadenas es mediante las f-strings
++ Todo lo que esté entre llaves {} se reemplazará si se definió anteriormente. En el ejemplo .2f significa dos lugares decimales.
+
+.. activecode:: ac_l05_2
+   :nocodelens:
+   :stdin:
+
+   precio = 10.123
+   print(f"El precio es: ${precio:.2f}")
 
 
 Corte
 =====
 
++ Podemos realizar la operación de corte utilizando ``[indice_comienzo:indice_fin]``
 
-+ Podemos realizar la operación de corte utilizando ``[idice_comienzo:indice_fin]``
-
-.. codelens:: cl_l05_24
+.. codelens:: cl_l05_20
     
     x = "0123456789"
     print(x[0:2])
@@ -607,16 +585,10 @@ Corte
     print(x[0:5])
     print(x[1:8])
 
-
-Corte
-=====
-
-
 + Podemos omitir índices, sustituyendo el indice correspondiente y
   también podemos tener índices negativos: -1 último, -2 penúltimo
 
-
-.. codelens:: cl_l05_25
+.. codelens:: cl_l05_21
     
     x = "0123456789"
     print(x[:2])
@@ -629,16 +601,11 @@ Corte
 Cambiar variables a lo largo del tiempo
 =======================================
 
-
-
 + Un programa se ejecuta línea por línea.
 + Por lo tanto, las variables pueden cambiar a lo largo de la ejecución de su
   programa
 
-
-
-
-.. codelens:: cl_l05_26
+.. codelens:: cl_l05_22
     
     deuda = 0 
     compra = 100
@@ -652,7 +619,6 @@ Cambiar variables a lo largo del tiempo
 
 Prueba de escritorio o simulación
 =================================
-
 
 + Comprender que el valor de las variables puede cambiar durante la ejecución de
   un programa no es tan natural, pero es fundamental a la hora de programar
@@ -676,6 +642,7 @@ Prueba de escritorio o simulación
    600
    ====== ====== ====
 
+
 No tengas prisa por la prueba de escritorio
 ===========================================
 
@@ -685,21 +652,19 @@ No tengas prisa por la prueba de escritorio
    :align: center
    :alt: 
 
+
 Entrada de datos
 ================
-
-
 
 + Hasta ahora nuestros programas han trabajado con valores conocidos.
 + Comenzaremos a obtener los valores durante la ejecución de los programas.
 
-
-.. activecode:: ac_l05_1
+.. activecode:: ac_l05_3
    :nocodelens:
    :stdin:
 
    nombre = input("Escriba su nombre: ")
-   print("¡Hola %s!" % nombre)
+   print(f"Hola {nombre}!")
 
 
 Conversión de entrada de datos
@@ -709,27 +674,29 @@ Conversión de entrada de datos
 + Usamos la función ``int()`` y ``float()`` para convertir un valor a un entero o
   a un valor de punto flotante respectivamente
 
-.. activecode:: ac_l05_2
+.. activecode:: ac_l05_4
    :nocodelens:
    :stdin:
 
    valor_unitario = float(input("Valor de una rosquilla: "))
    n = int(input("Número de rosquillas: "))
-   print("Valor total = %5.2f" % (n * valor_unitario))
+   print(f"Valor total: ${(n * valor_unitario)}")
 
 
 Error común
 ===========
 
++ Abrir dos paréntesis y cerrar solo uno
++ El error terminará en lo siguiente
++ Siempre que la línea parezca correcta, consulte la línea inmediatamente anterior
 
-+ Cuidado con olvidar los paréntesis. Un error en esto daría un error como el
-  siguiente
+.. code-block:: python
 
-.. image:: img/TWP05_040.png
-   :height: 6.846cm
-   :width: 20.801cm
-   :align: center
-   :alt: 
+    >>> valor_unitario = float(input("Valor de una rosquilla: ")
+    File <string>, line 1
+    valor_unitario = float(input("Valor de una rosquilla: ")
+                           ^
+    SyntaxError: '( was never closed
 
 
 Lista de Ejercicios
