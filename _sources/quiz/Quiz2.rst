@@ -2,7 +2,7 @@
 Quiz - 2
 =========
 
-..  |br| raw:: html
+.. |br| raw:: html
 
     <br />
 
@@ -10,15 +10,15 @@ Quiz - 2
 Ejercicio 1
 -----------
 
-..  activecode:: q2_1
+.. activecode:: q2_1
     :nocodelens:
 
     Desarrolle la función ``es_triangulo`` que recibe tres enteros positivos ``a``, ``b`` y ``c``. Éstos representan los lados de un triángulo. En la función debe verificar que con los parámetros dados se forma un triángulo. Si los parámetros dados forman un triángulo, la función debe devolver una cadena indicando su tipo, es decir, ``"Equilátero"``, ``"Isósceles"`` o ``"Escaleno"``, en caso contrario, la función debe devolver la cadena, ``"No es triángulo"``. |br|
-    **Nota**: recuerde que no es un triángulo cuando uno de sus lados es mayor que la suma de los otros dos. |br| |br|
+    **Nota**: recuerde que no es un triángulo cuando el lado de mayor longitud es mayor o igual que la suma de los otros dos. |br| |br|
     Ejemplos: |br|
     ``es_triangulo(2, 2, 2)`` -> ``"Equilátero"`` |br|
-    ``es_triangulo(4, 2, 2)`` -> ``"Isósceles"`` |br|
-    ``es_triangulo(4, 2, 6)`` -> ``"Escaleno"`` |br|
+    ``es_triangulo(3, 2, 2)`` -> ``"Isósceles"`` |br|
+    ``es_triangulo(4, 2, 6)`` -> ``"No es triángulo"`` |br|
     ``es_triangulo(2, 1, 8)`` -> ``"No es triángulo"`` |br|
     ~~~~
     def es_triangulo(a, b, c):
@@ -33,13 +33,13 @@ Ejercicio 1
 
             self.assertEqual(es_triangulo(2, 2, 2), "Equilátero", "Esperado: Equilátero")
             self.assertEqual(es_triangulo(2, 1, 2), "Isósceles", "Esperado: Isósceles")
-            self.assertEqual(es_triangulo(2, 1, 3), "Escaleno", "Esperado: Escaleno")
+            self.assertEqual(es_triangulo(2, 1, 3), "No es triángulo", "Esperado: No es triángulo")
             self.assertEqual(es_triangulo(2, 1, 8), "No es triángulo", "Esperado: No es triángulo")
             self.assertEqual(es_triangulo(4, 2, 1), "No es triángulo", "Esperado: No es triángulo")
             self.assertEqual(es_triangulo(4, 1000, 1000), "Isósceles", "Esperado: Isósceles")
             self.assertEqual(es_triangulo(10000, 10000, 10000), "Equilátero", "Esperado: Equilátero")
-            self.assertEqual(es_triangulo(4, 2, 2), "Isósceles", "Esperado: Isósceles")
-            self.assertEqual(es_triangulo(10000, 1, 9999), "Escaleno", "Esperado: Escaleno")
+            self.assertEqual(es_triangulo(3, 2, 2), "Isósceles", "Esperado: Isósceles")
+            self.assertEqual(es_triangulo(10000, 1, 9999), "No es triángulo", "Esperado: No es triángulo")
 
 
     myTests().main()
@@ -48,10 +48,10 @@ Ejercicio 1
 Ejercicio 2
 -----------
 
-..  activecode:: q2_2
+.. activecode:: q2_2
     :nocodelens:
 
-    Desarrolle la función ``es_bisiesto`` que recibe el parámetro ``anio`` que es un entero positivo mayor que cero y representa un año. La función debe verificar si el parámetro dado es un año bisiesto, por lo tanto debe devolver ``True`` si lo es, o ``False`` en caso contrario. Un año es bisiesto, si es divisible entre 400 **ó** divisible entre 4 y no es divisible entre 100. |br| |br|
+    Desarrolle la función ``es_bisiesto`` que recibe el parámetro ``anio`` que es un entero positivo mayor que cero y representa un año. La función debe verificar si el parámetro dado es un año bisiesto, por lo tanto debe devolver ``True`` si lo es, o ``False`` en caso contrario. Un año es bisiesto, si es divisible entre 400 o también si es divisible entre 4 pero no divisible entre 100. |br| |br|
     Ejemplos: |br|
     ``es_bisiesto(2014)`` -> ``False`` |br|
     ``es_bisiesto(2016)`` -> ``True`` |br|
@@ -85,7 +85,7 @@ Ejercicio 2
 Ejercicio 3
 -----------
 
-..  activecode:: q2_3
+.. activecode:: q2_3
     :nocodelens:
 
     Juan Pablo el pescador, es un buen hombre que trabaja todos los días de la semana. Al final de cada día de trabajo, Juan debe reportar al estado. Cada vez que trae un peso de pescado mayor al establecido por la normativa de pesca (50 kilogramos) debe pagar una multa de 4.00 unidades por kilogramo adicional. Para llevar un registro, él compro una computadora para controlar los ingresos de su trabajo y te solicitó que hicieras la función llamada ``generar_reporte`` que recibe una lista de flotantes positivos ``pesos``, que representan la cantidad que pescó Juan cada día de la semana. La función debe devolver un arreglo de tuplas, donde cada tupla debe ser un par de la forma ``(adicional, multa)``, que representan la cantidad de kilogramos adicional que pescó Juan durante un día y la multa que tuvo que pagar respectivamente. De no haber pagado multa el resultado será ``0.0`` en ambos casos. |br| |br|
@@ -120,7 +120,7 @@ Ejercicio 3
 Ejercicio 4
 -----------
 
-..  activecode:: q2_4
+.. activecode:: q2_4
     :nocodelens:
 
     Desarrolle la función ``mayor_tres`` que recibe tres números enteros ``a``, ``b`` y ``c``. La función debe devolver el mayor de los tres números, sin usar las funciones ``max`` o ``min``. |br| |br|
@@ -151,7 +151,7 @@ Ejercicio 4
 Ejercicio 5
 -----------
 
-..  activecode:: q2_5
+.. activecode:: q2_5
     :nocodelens:
 
     Desarrolle la función ``mayor_menor_tres`` que recibe tres números enteros ``a``, ``b`` y ``c``. La función debe devolver una tupla de la forma ``(mayor, menor)`` que representan el mayor y el menor de los tres números, sin usar las funciones ``max`` o ``min``. |br| |br|
@@ -182,7 +182,7 @@ Ejercicio 5
 Ejercicio 6
 -----------
 
-..  activecode:: q2_6
+.. activecode:: q2_6
     :nocodelens:
 
     Un trabajador de una empresa recibe un salario mensual bruto calculado por la cantidad de horas trabajadas multiplicada por su valor. De este ``salario_bruto`` se le descuentan al mes el ``11%`` por impuestos, el ``8%`` de seguro médico y ``5%`` como pago al sindicato. Desarrolle la función ``calcular_salario`` que recibe un flotante ``valor_hora`` y un entero ``cantidad_horas`` que representan cuánto gana por hora y la cantidad de horas trabajadas durante el mes. La función debe devolver un diccionario de la forma: |br|
@@ -209,21 +209,49 @@ Ejercicio 6
                 "seguro_medico": salary * 0.08,
                 "sindicato": salary * 0.05,
             }
-            result["salario_neto"] = salary - result["impuestos"] - result["seguro_medico"] - result["sindicato"]
+            result["salario_neto"] = (salary - result["impuestos"] -
+                result["seguro_medico"] - result["sindicato"])
             return result
 
         def testOne(self):
             test_numbers = 10
             min_hour = 50
             max_hour = 200
-            min_price_hour = 7.5
-            max_price_hour = 30.5
+            min_price_hour = 7
+            max_price_hour = 30
             for test in range(test_numbers):
                 hour = random.randint(min_hour, max_hour)
                 price = round(random.uniform(min_price_hour, max_price_hour), 2)
                 salary = price * hour
                 expected = self.get_expected_dictionary(salary)
-                self.assertEqual(calcular_salario(price, hour), expected, "Esperado: %s " % str(expected))
+                result = calcular_salario(price, hour)
+                current_test = test + 1
+
+                self.assertEqual(
+                    round(result["salario_bruto"], 2),
+                    round(expected["salario_bruto"], 2),
+                    f"Test #{current_test} - Salario Bruto esperado: {round(expected['salario_bruto'], 2)}",
+                )
+                self.assertEqual(
+                    round(result["impuestos"], 2),
+                    round(expected["impuestos"], 2),
+                    f"Test #{current_test} - Impuestos esperado: {round(expected['impuestos'], 2)}",
+                )
+                self.assertEqual(
+                    round(result["seguro_medico"], 2),
+                    round(expected["seguro_medico"], 2),
+                    f"Test #{current_test} - Seguro médico esperado: {round(expected['seguro_medico'], 2)}",
+                )
+                self.assertEqual(
+                    round(result["sindicato"], 2),
+                    round(expected["sindicato"], 2),
+                    f"Test #{current_test} - Sindicato esperado: {round(expected['sindicato'], 2)}",
+                )
+                self.assertEqual(
+                    round(result["salario_neto"], 2),
+                    round(expected["salario_neto"], 2),
+                    f"Test #{current_test} - Salario neto esperado: {round(expected['salario_neto'], 2)}",
+                )
 
 
     myTests().main()
@@ -232,7 +260,7 @@ Ejercicio 6
 Ejercicio 7
 -----------
 
-..  activecode:: q2_7
+.. activecode:: q2_7
     :nocodelens:
 
     La pintura que venden en su ferretería de confianza tiene una cobertura de 1 litro por cada 3 metros cuadrados y la pintura se vende solo en botes de 18 litros que cuestan cada uno ``80.00`` unidades. Desarrolle la función ``puedo_pintar`` que recibe una cantidad en metros cuadrados de un área a pintar como un entero positivo ``area``. La función debe devolver una tupla con las cantidad de botes de pintura que se necesitan comprar para cubrir toda el área, así como su precio total, es decir, utilizando la forma ``(cantidad_botes, precio_total)``. |br|
