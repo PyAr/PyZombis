@@ -24,7 +24,7 @@ Primer programa
 
 **¡Ahora inténtelo por su propia cuenta!**
 
-+ Escriba ``print("primer mensaje")`` en el interprete de abajo y compruebe que recibe la salida de su mensaje sin comillas.
++ Escriba ``print("primer mensaje")`` en el intérprete de abajo y compruebe que recibe la salida de su mensaje sin comillas.
 
 .. only:: html
 
@@ -173,7 +173,7 @@ Calculadora en el intérprete
     2
 
 **¡Ahora inténtelo por su propia cuenta!**
-Escriba estas operaciones en el interprete y usé el modo interactivo como una calculadora
+Escriba estas operaciones en el intérprete y use el modo interactivo como una calculadora
 
 .. only:: html
 
@@ -585,7 +585,7 @@ Corte
     print(x[0:5])
     print(x[1:8])
 
-+ Podemos omitir índices, sustituyendo el indice correspondiente y
++ Podemos omitir índices, sustituyendo el índice correspondiente y
   también podemos tener índices negativos: -1 último, -2 penúltimo
 
 .. codelens:: cl_l05_21
@@ -623,7 +623,7 @@ Prueba de escritorio o simulación
 + Comprender que el valor de las variables puede cambiar durante la ejecución de
   un programa no es tan natural, pero es fundamental a la hora de programar
 + Un programa no puede leerse como texto, sino con cuidado
-  analizado línea por línea
+  analizando línea por línea
 + Puedes entrenar con lápiz, borrador y papel
 
 
@@ -670,7 +670,7 @@ Entrada de datos
 Conversión de entrada de datos
 ==============================
 
-+ La función  ``input`` solo devuelve cadenas
++ La función ``input`` solo devuelve cadenas
 + Usamos la función ``int()`` y ``float()`` para convertir un valor a un entero o
   a un valor de punto flotante respectivamente
 
@@ -709,7 +709,7 @@ Lista de Ejercicios
 #. ¿Qué sucede si escribo textos en las tres variables anteriores?
 #. Indique el tipo de los siguientes valores: ``5``, ``5.0``, ``4.3``, ``-2``,
    ``100``, ``1.333``, ``"10"``
-#. Experimente en el interprete interactivo de Python utilizar ``type(x)`` donde ``x``
+#. Experimente en el intérprete interactivo de Python utilizar ``type(x)`` donde ``x``
    es cada uno de los valores anteriores
 #. ¿Es posible calcular 2 elevado a un millón?
 
