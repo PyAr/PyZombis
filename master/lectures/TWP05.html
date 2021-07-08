@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Variables y entrada de datos &#8212; PyZombis master@db82290</title>
+    <title>Variables y entrada de datos &#8212; PyZombis master@e6d49bf</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@db82290</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@e6d49bf</a>
       </div>
     </div>
 
@@ -354,7 +354,7 @@ con un símbolo, en este caso, las comillas</p></li>
     }
 </style>
 <div class="iframe-interpreter-container">
-    <iframe class="responsive-iframe" srcdoc='
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
     <html>
     <head>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
@@ -370,13 +370,23 @@ con un símbolo, en este caso, las comillas</p></li>
             }
         </style>
     </head>
-
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
     <body onload="brython()">
         <div>
             <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
-            <script type="text/python3">from interpreter import Interpreter
-Interpreter("code")
-        </script>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
         </div>
     </body>
     </html>
@@ -416,7 +426,7 @@ Interpreter("code")
     }
 </style>
 <div class="iframe-interpreter-container">
-    <iframe class="responsive-iframe" srcdoc='
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
     <html>
     <head>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
@@ -432,13 +442,23 @@ Interpreter("code")
             }
         </style>
     </head>
-
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
     <body onload="brython()">
         <div>
             <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
-            <script type="text/python3">from interpreter import Interpreter
-Interpreter("code")
-        </script>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
         </div>
     </body>
     </html>
@@ -477,7 +497,7 @@ como un comando de Python, generando un error de sintaxis</p></li>
     }
 </style>
 <div class="iframe-interpreter-container">
-    <iframe class="responsive-iframe" srcdoc='
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
     <html>
     <head>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
@@ -493,13 +513,23 @@ como un comando de Python, generando un error de sintaxis</p></li>
             }
         </style>
     </head>
-
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
     <body onload="brython()">
         <div>
             <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
-            <script type="text/python3">from interpreter import Interpreter
-Interpreter("code")
-        </script>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
         </div>
     </body>
     </html>
@@ -537,7 +567,7 @@ Interpreter("code")
     }
 </style>
 <div class="iframe-interpreter-container">
-    <iframe class="responsive-iframe" srcdoc='
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
     <html>
     <head>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
@@ -553,13 +583,23 @@ Interpreter("code")
             }
         </style>
     </head>
-
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
     <body onload="brython()">
         <div>
             <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
-            <script type="text/python3">from interpreter import Interpreter
-Interpreter("code")
-        </script>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
         </div>
     </body>
     </html>
@@ -598,7 +638,7 @@ más adelante, en este caso genera nuevamente un error de sintaxis</p></li>
     }
 </style>
 <div class="iframe-interpreter-container">
-    <iframe class="responsive-iframe" srcdoc='
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
     <html>
     <head>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
@@ -614,13 +654,23 @@ más adelante, en este caso genera nuevamente un error de sintaxis</p></li>
             }
         </style>
     </head>
-
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
     <body onload="brython()">
         <div>
             <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
-            <script type="text/python3">from interpreter import Interpreter
-Interpreter("code")
-        </script>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
         </div>
     </body>
     </html>
@@ -716,7 +766,7 @@ Escriba estas operaciones en el intérprete y use el modo interactivo como una c
     }
 </style>
 <div class="iframe-interpreter-container">
-    <iframe class="responsive-iframe" srcdoc='
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
     <html>
     <head>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
@@ -732,13 +782,23 @@ Escriba estas operaciones en el intérprete y use el modo interactivo como una c
             }
         </style>
     </head>
-
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
     <body onload="brython()">
         <div>
             <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
-            <script type="text/python3">from interpreter import Interpreter
-Interpreter("code")
-        </script>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
         </div>
     </body>
     </html>
@@ -797,7 +857,7 @@ allTraceData["cl_l05_1"] = {"code": "a = 2\nb = 3\nprint(a + b)", "trace": [{"li
     }
 </style>
 <div class="iframe-interpreter-container">
-    <iframe class="responsive-iframe" srcdoc='
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
     <html>
     <head>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
@@ -813,13 +873,23 @@ allTraceData["cl_l05_1"] = {"code": "a = 2\nb = 3\nprint(a + b)", "trace": [{"li
             }
         </style>
     </head>
-
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
     <body onload="brython()">
         <div>
             <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
-            <script type="text/python3">from interpreter import Interpreter
-Interpreter("code")
-        </script>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
         </div>
     </body>
     </html>
@@ -913,7 +983,7 @@ letra o guión bajo <code class="docutils literal notranslate"><span class="pre"
     }
 </style>
 <div class="iframe-interpreter-container">
-    <iframe class="responsive-iframe" srcdoc='
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
     <html>
     <head>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
@@ -929,13 +999,23 @@ letra o guión bajo <code class="docutils literal notranslate"><span class="pre"
             }
         </style>
     </head>
-
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
     <body onload="brython()">
         <div>
             <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
-            <script type="text/python3">from interpreter import Interpreter
-Interpreter("code")
-        </script>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
         </div>
     </body>
     </html>
@@ -995,7 +1075,7 @@ en el sistema binario</p></li>
     }
 </style>
 <div class="iframe-interpreter-container">
-    <iframe class="responsive-iframe" srcdoc='
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
     <html>
     <head>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
@@ -1011,13 +1091,23 @@ en el sistema binario</p></li>
             }
         </style>
     </head>
-
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
     <body onload="brython()">
         <div>
             <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
-            <script type="text/python3">from interpreter import Interpreter
-Interpreter("code")
-        </script>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
         </div>
     </body>
     </html>
@@ -1700,9 +1790,9 @@ print(f"Valor total: ${(n * valor_unitario)}")
 <div class="section" id="error-comun">
 <h2>Error común<a class="headerlink" href="#error-comun" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Abrir dos paréntesis y cerrar solo uno</p></li>
-<li><p>El error terminará en lo siguiente</p></li>
-<li><p>Siempre que la línea parezca correcta, consulte la línea inmediatamente anterior</p></li>
+<li><p>Abrir dos paréntesis y cerrar solo uno.</p></li>
+<li><p>Esto mismo nos puede ocurrir con las llaves, corchetes, comillas, entre otros caracteres. <code class="docutils literal notranslate"><span class="pre">{}</span></code>,``[]``,``””`` siempre que abrimos uno debemos acordarnos de cerrarlo.</p></li>
+<li><p>El error terminará en lo siguiente:</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">valor_unitario</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Valor de una rosquilla: &quot;</span><span class="p">)</span>
 <span class="go">File &lt;string&gt;, line 1</span>
@@ -1711,6 +1801,9 @@ print(f"Valor total: ${(n * valor_unitario)}")
 <span class="go">SyntaxError: &#39;( was never closed</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>Siempre que la línea parezca correcta, consulte la línea inmediatamente anterior</p></li>
+</ul>
 </div>
 <div class="section" id="lista-de-ejercicios">
 <h2>Lista de Ejercicios<a class="headerlink" href="#lista-de-ejercicios" title="Permalink to this headline">¶</a></h2>
@@ -1726,7 +1819,67 @@ calcule su nuevo salario con un aumento del 5%</p></li>
 es cada uno de los valores anteriores</p></li>
 <li><p>¿Es posible calcular 2 elevado a un millón?</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/TWP05_041.jpeg"><img alt="" class="align-center" src="../_images/TWP05_041.jpeg" style="width: 9.411cm; height: 12.571cm;" /></a>
+<p>Utilice el intérprete de modo interactivo aquí abajo para solucionar estos ejercicios.</p>
+<style>
+    .iframe-interpreter-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 20%;
+    }
+    
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+</style>
+<div class="iframe-interpreter-container">
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
+    <html>
+    <head>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython_stdlib.min.js"></script>
+        <style>
+
+            .codearea {
+                background-color: #000;
+                color: #fff;
+                font-family: consolas, courier;
+                width: 100%;
+                min-height: 75px;
+            }
+        </style>
+    </head>
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
+    <body onload="brython()">
+        <div>
+            <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
+        </div>
+    </body>
+    </html>
+'>
+    </iframe>
+</div><a class="reference internal image-reference" href="../_images/TWP05_041.jpeg"><img alt="" class="align-center" src="../_images/TWP05_041.jpeg" style="width: 9.411cm; height: 12.571cm;" /></a>
+<p>“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein</p>
 </div>
 </div>
 
