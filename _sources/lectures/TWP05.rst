@@ -686,9 +686,9 @@ Conversión de entrada de datos
 Error común
 ===========
 
-+ Abrir dos paréntesis y cerrar solo uno
-+ El error terminará en lo siguiente
-+ Siempre que la línea parezca correcta, consulte la línea inmediatamente anterior
++ Abrir dos paréntesis y cerrar solo uno.
++ Esto mismo nos puede ocurrir con las llaves, corchetes, comillas, entre otros caracteres. ``{}``,``[]``,``""`` siempre que abrimos uno debemos acordarnos de cerrarlo.
++ El error terminará en lo siguiente:
 
 .. code-block:: python
 
@@ -698,6 +698,7 @@ Error común
                            ^
     SyntaxError: '( was never closed
 
++ Siempre que la línea parezca correcta, consulte la línea inmediatamente anterior
 
 Lista de Ejercicios
 ===================
@@ -713,8 +714,18 @@ Lista de Ejercicios
    es cada uno de los valores anteriores
 #. ¿Es posible calcular 2 elevado a un millón?
 
+Utilice el intérprete de modo interactivo aquí abajo para solucionar estos ejercicios.
+
+.. only:: html
+
+   .. raw:: html
+      :file: _static/interpreter.html
+
+
 .. image:: img/TWP05_041.jpeg
    :height: 12.571cm
    :width: 9.411cm
    :align: center
    :alt: 
+
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
