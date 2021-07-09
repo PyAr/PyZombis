@@ -283,6 +283,74 @@ El siguiente ejercicio viene con calificación automática.
     myTests().main()
 
 
+Probando la API de University Domains
+=====================================
+
+`University Domains and Names Data List & API <https://github.com/Hipo/university-domains-list>`_ es una API que 
+contiene  dominios, nombres y países de la mayoría de las universidades del mundo.
+
+.. activecode:: ac_l45_6
+    :language: python3
+    :python3_interpreter: brython
+
+    Veamos un ejemplo de cómo usar esta API. Le vamos a pedir las universidades de Turquía que tengan
+    en su nombre la palabra **"middle"**.
+
+    ~~~~
+    import urllib.request
+    import urllib.parse
+    import json
+
+    api_url = "http://universities.hipolabs.com/search?"
+    parametros = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
+
+    solicitud = urllib.request.urlopen(api_url + parametros)
+    datos_json = json.loads(solicitud.read())
+
+    print(json.dumps(datos_json, indent=4))
+
+
+.. activecode:: ac_l45_7
+    :nocodelens:
+    :language: python
+
+    Busquemos todas las universidades en Colombia.
+
+    ~~~~
+    import requests
+    import json
+
+    api_url = "http://universities.hipolabs.com/search"
+    parametros = {"country": "colombia"}
+
+    solicitud = requests.get(api_url, params=parametros)
+    solicitud = json.loads(solicitud.text)
+
+    universidades = []
+
+    for universidad in solicitud:
+        universidades.append(universidad["name"])
+
+        print(universidad["name"])
+
+    print("----------------------------------------------")
+    print(f"Hay {len(universidades)} universidades registradas")
+
+
+Aprendizajes
+============
+
++ Accedemos a **APIs** para buscar información que nos es útil.
++ Podemos solicitar la información con dos librerías de Python: ``urllib`` o ``requests``.
++ La librería ``json`` de Pyhton nos ayuda a transformar la respuesta de la API en un objeto
+  de Python, ya sea diccionario o lista, con el método ``loads``, mientras que el método ``dumps`` 
+  hace lo contrario; transforma un objeto de Python en una cadena con formato JSON. 
++ El método ``dumps`` de ``json`` es útil si queremos visualizar la respuesta de una API de manera 
+  legible. Esto se logra con el argumento ``indent``.
+
+
+|
+
 .. disqus::
     :shortname: pyzombis
     :identifier: lecture16
