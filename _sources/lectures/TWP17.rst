@@ -9,6 +9,7 @@ Listas
     :align: center
     :alt:
 
+
 Edificio
 ========
 
@@ -20,9 +21,6 @@ Edificio
     edificio_1ra_planta = "La Familia Brito"
     edificio_2da_planta = "El Sr Jorge"
     edificio_3ra_planta = "La Familia Tanaka"
-
-Edificio
-========
 
 + Podemos asociar la planta baja con la planta baja, la primera es la planta 1 y etc.
 
@@ -38,6 +36,7 @@ Edificio
     print(edificio[2])
     print(edificio[3])
 
+
 Tren de datos
 =============
 
@@ -47,8 +46,6 @@ Tren de datos
     :align: center
     :alt:
 
-Tren de datos
-=============
 
 ..  image:: img/TWP17_005.png
     :height: 8.2cm
@@ -70,8 +67,8 @@ Puedo enganchar vagones
 
 + ¿Cómo puedo agregar un vagón con "Bettys"?
 
-Puedo conectar los vagones con agregar
-======================================
+Puedo conectar los vagones con el método append()
+=================================================
 
 ..  image:: img/TWP17_007.png
     :height: 8cm

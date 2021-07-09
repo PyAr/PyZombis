@@ -27,8 +27,9 @@ Repeticiones
 Impresión de 1 a 3
 ===================
 
-+ Formas  simples
 
+Forma  simple
+*************
 
 .. codelens:: cl_l15_1
 
@@ -37,8 +38,8 @@ Impresión de 1 a 3
    print(3)
 
 
-+ Usando una variable
-
+Usando una variable
+*******************
 
 .. codelens:: cl_l15_2
 
@@ -50,12 +51,8 @@ Impresión de 1 a 3
    print(x)
 
 
-Impresión de 1 a 3
-===================
-
-
-
-+ Incrementando la variable
+Incrementando la variable
+*************************
 
 .. codelens:: cl_l15_3
 
@@ -66,8 +63,8 @@ Impresión de 1 a 3
    x = x + 1
    print(x)
 
-+ Usando ``while``
-
+Usando ``while``
+****************
 
 .. codelens:: cl_l15_4
 
@@ -75,9 +72,6 @@ Impresión de 1 a 3
    while x <= 3:
        print(x)
        x = x +1
-
-Impresión de 1 a 3
-===================
 
 
 .. image:: img/TWP15_007.jpeg
@@ -90,13 +84,24 @@ Impresión de 1 a 3
 Prueba de escritorio
 ====================
 
+.. code-block:: python
 
-.. image:: img/TWP15_Tab1.jpg
-   :height: 6cm
-   :width: 22.181cm
-   :align: center
-   :alt: 
+   x=1
+   while x <= 3:
+       print(x)
+       x = x + 1
 
+.. table:: **Prueba de escritorio**
+   :widths: auto
+
+   ====== ========
+     x    Pantalla
+   ====== ========
+   -1-    1
+   -2-    2
+   -3-    3
+   4
+   ====== ======
 
 .. codelens:: cl_l15_5
 
@@ -105,13 +110,11 @@ Prueba de escritorio
        print(x)
        x = x + 1
 
+
 Contadores
 ==========
 
-
-
 + Ahora imprima de 1 a un número ingresado por el usuario
-
 
 .. activecode:: ac_l15_1
    :nocodelens:
@@ -123,12 +126,7 @@ Contadores
        print(x)
        x = x + 1
 
-Contadores
-==========
-
-
 + Imprima números pares entre 0 y un número dado por el usuario usando ``if``
-
 
 .. activecode:: ac_l15_2
    :nocodelens:
@@ -142,13 +140,8 @@ Contadores
        x = x + 1
 
 
-Contadores
-==========
-
-
 + Imprima números pares entre 0 y un número proporcionado sin usar
   ``if``
-
 
 .. activecode:: ac_l15_3
    :nocodelens:
@@ -206,10 +199,6 @@ Acumuladores
    print("suma: %d" %suma)
 
 
-Acumuladores
-============
-
-
 + Promedio de 10 números enteros
 
 
@@ -227,10 +216,6 @@ Acumuladores
    print("Promedio: %5.2f" %(suma / n))
 
 
-Acumuladores
-============
-
-
 + Calcular el factorial de diez
 
 .. codelens:: cl_l15_6
@@ -241,11 +226,6 @@ Acumuladores
        fact = fact * i
        i = i + 1
    print("Fact(10) = %d" %fact)
-
-
-
-Acumuladores
-============
 
 
 + Calcular el factorial de un número entero ``n``
@@ -284,10 +264,6 @@ Interrumpiendo la repetición
        suma = suma + x
 
    print("Suma: %d" %suma)
-
-
-Interrumpiendo la repetición
-============================
 
 
 + Calcule el promedio de los números ingresados hasta que se ingrese cero
