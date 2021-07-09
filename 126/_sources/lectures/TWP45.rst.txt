@@ -331,7 +331,10 @@ contiene  dominios, nombres y países de la mayoría de las universidades del mu
     for universidad in solicitud:
         universidades.append(universidad["name"])
 
-    print(universidades)
+        print(universidad["name"])
+
+    print("----------------------------------------------")
+    print(f"Hay {len(universidades)} universidades registradas")
 
 
 Aprendizajes
