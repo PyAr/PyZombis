@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hackeando con Python &#8212; PyZombis master@e6d49bf</title>
+    <title>Hackeando con Python &#8212; PyZombis master@d76106d</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@e6d49bf</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis master@d76106d</a>
       </div>
     </div>
 
@@ -232,6 +232,8 @@
 <li><a class="reference internal" href="#obtener-foto-de-perfil-de-facebook">Obtener foto de perfil de Facebook</a></li>
 <li><a class="reference internal" href="#obtener-datos-de-reddit">Obtener datos de Reddit</a></li>
 <li><a class="reference internal" href="#probando-la-api-de-tastedive">Probando la API de TasteDive</a></li>
+<li><a class="reference internal" href="#probando-la-api-de-university-domains">Probando la API de University Domains</a></li>
+<li><a class="reference internal" href="#aprendizajes">Aprendizajes</a></li>
 </ul>
 </li>
 </ul>
@@ -556,6 +558,86 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
+</div>
+</div>
+<div class="section" id="probando-la-api-de-university-domains">
+<h2>Probando la API de University Domains<a class="headerlink" href="#probando-la-api-de-university-domains" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/Hipo/university-domains-list">University Domains and Names Data List &amp; API</a> es una API que
+contiene  dominios, nombres y países de la mayoría de las universidades del mundo.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_6 data-question_label="6">
+<div id=ac_l45_6_question class="ac_question col-md-12">
+<p>Veamos un ejemplo de cómo usar esta API. Le vamos a pedir las universidades de Turquía que tengan
+en su nombre la palabra <strong>“middle”</strong>.</p>
+
+</div>
+<textarea data-lang="python3" id="ac_l45_6_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+import urllib.request
+import urllib.parse
+import json
+
+api_url = "http://universities.hipolabs.com/search?"
+parametros = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
+
+solicitud = urllib.request.urlopen(api_url + parametros)
+datos_json = json.loads(solicitud.read())
+
+print(json.dumps(datos_json, indent=4))
+</textarea>
+</div>
+</div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_7 data-question_label="7">
+<div id=ac_l45_7_question class="ac_question col-md-12">
+<p>Busquemos todas las universidades en Colombia.</p>
+
+</div>
+<textarea data-lang="python" id="ac_l45_7_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import requests
+import json
+
+api_url = "http://universities.hipolabs.com/search"
+parametros = {"country": "colombia"}
+
+solicitud = requests.get(api_url, params=parametros)
+solicitud = json.loads(solicitud.text)
+
+universidades = []
+
+for universidad in solicitud:
+    universidades.append(universidad["name"])
+
+    print(universidad["name"])
+
+print("----------------------------------------------")
+print(f"Hay {len(universidades)} universidades registradas")
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="aprendizajes">
+<h2>Aprendizajes<a class="headerlink" href="#aprendizajes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Accedemos a <strong>APIs</strong> para buscar información que nos es útil.</p></li>
+<li><p>Podemos solicitar la información con dos librerías de Python: <code class="docutils literal notranslate"><span class="pre">urllib</span></code> o <code class="docutils literal notranslate"><span class="pre">requests</span></code>.</p></li>
+<li><p>La librería <code class="docutils literal notranslate"><span class="pre">json</span></code> de Pyhton nos ayuda a transformar la respuesta de la API en un objeto
+de Python, ya sea diccionario o lista, con el método <code class="docutils literal notranslate"><span class="pre">loads</span></code>, mientras que el método <code class="docutils literal notranslate"><span class="pre">dumps</span></code>
+hace lo contrario; transforma un objeto de Python en una cadena con formato JSON.</p></li>
+<li><p>El método <code class="docutils literal notranslate"><span class="pre">dumps</span></code> de <code class="docutils literal notranslate"><span class="pre">json</span></code> es útil si queremos visualizar la respuesta de una API de manera
+legible. Esto se logra con el argumento <code class="docutils literal notranslate"><span class="pre">indent</span></code>.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
 <script type="text/javascript">
     function lecture16_disqus(source) {
