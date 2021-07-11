@@ -86,13 +86,14 @@ Prueba de escritorio
 
 .. code-block:: python
 
-   x=1
+   x = 1
    while x <= 3:
        print(x)
        x = x + 1
 
 .. table:: **Prueba de escritorio**
    :widths: auto
+   :align: left
 
    ====== ========
      x    Pantalla
@@ -101,7 +102,7 @@ Prueba de escritorio
    -2-    2
    -3-    3
    4
-   ====== ======
+   ====== ========
 
 .. codelens:: cl_l15_5
 
@@ -155,7 +156,7 @@ Contadores
 
 
 Algunos ejercicios
-------------------
+==================
 
 
 .. activecode:: ac_l15_4
@@ -300,7 +301,7 @@ Repeticiones anidadas
    tabla_de_multiplicar = 1
    while tabla_de_multiplicar <= 10:
        n = 1
-       print("tabla_de_multiplicar %d" %tabla_de_multiplicar)
+       print("\nTabla de multiplicar del %d" %tabla_de_multiplicar)
        while  n <= 10:
            print("%d x %d = %d" %(tabla_de_multiplicar, n, tabla_de_multiplicar * n))
            n = n + 1
@@ -314,4 +315,4 @@ Repeticiones anidadas
    :alt: 
 
 
-+ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote” - Einstein
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
