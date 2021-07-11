@@ -687,7 +687,7 @@ Error común
 ===========
 
 + Abrir dos paréntesis y cerrar solo uno.
-+ Esto mismo nos puede ocurrir con las llaves, corchetes, comillas, entre otros caracteres. ``{}``,``[]``,``""`` siempre que abrimos uno debemos acordarnos de cerrarlo.
++ Esto mismo nos puede ocurrir con las llaves, corchetes, comillas, entre otros caracteres. ``{}``, ``[]``, ``" "`` siempre que abrimos uno debemos acordarnos de cerrarlo.
 + El error terminará en lo siguiente:
 
 .. code-block:: python
@@ -703,15 +703,12 @@ Error común
 Lista de Ejercicios
 ===================
 
-#. Su salario actual es de $6500. Haga un programa que
-   calcule su nuevo salario con un aumento del 5%
-#. Escriba un programa que muestre su nombre en la pantalla
+#. Su salario actual es de $6500. Calcule su nuevo salario con un aumento del 5%
+#. Muestre su nombre en la pantalla
 #. Calcule la suma de tres variables
 #. ¿Qué sucede si escribo textos en las tres variables anteriores?
-#. Indique el tipo de los siguientes valores: ``5``, ``5.0``, ``4.3``, ``-2``,
-   ``100``, ``1.333``, ``"10"``
-#. Experimente en el intérprete interactivo de Python utilizar ``type(x)`` donde ``x``
-   es cada uno de los valores anteriores
+#. Indique el tipo de los siguientes valores: ``5``, ``5.0``, ``4.3``, ``-2``, ``100``, ``1.333``, ``"10"``
+#. Experimente en el intérprete interactivo de Python utilizar ``type(x)`` donde ``x`` es cada uno de los valores anteriores
 #. ¿Es posible calcular 2 elevado a un millón?
 
 Utilice el intérprete de modo interactivo aquí abajo para solucionar estos ejercicios.

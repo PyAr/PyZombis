@@ -67,8 +67,8 @@ Puedo enganchar vagones
 
 + ¿Cómo puedo agregar un vagón con "Bettys"?
 
-Puedo conectar los vagones con el método append()
-=================================================
+Puedo unir los vagones con el método append()
+=============================================
 
 ..  image:: img/TWP17_007.png
     :height: 8cm
@@ -98,7 +98,6 @@ Listas
     notas = [7.5, 9, 8.3]
     print(notas[0])
 
-
 + Cambiar la primera nota
 
 ..  codelens:: cd_l17_6
@@ -106,9 +105,6 @@ Listas
     notas = [7.5, 9, 8.3]
     notas[0] = 8.7
     print(notas[0])
-
-Listas
-======
 
 + Promedio de 5 notas
 
@@ -124,9 +120,6 @@ Listas
 
 +  **Nota**: ``x += 1`` es lo mismo que ``x = x + 1``
 
-Listas
-======
-
 + Haga un programa que lea un vector de 5 números enteros y muestre vector.
 
 ..  activecode:: ac_l17_1
@@ -141,8 +134,6 @@ Listas
         i = i + 1
     print("Vector de lectura :", vector)
 
-Listas
-======
 
 + Haga un programa que lea un vector de diez números reales y los muestre en orden inverso
 
@@ -160,9 +151,6 @@ Listas
     while i >= 0:
         print(vector[i])
         i -= 1
-
-Listas
-======
 
 + Haga un programa que lea cuatro notas, muestre las notas y el promedio en pantalla
 
@@ -184,9 +172,6 @@ Listas
     print("Notas:", notas)
     print("Media : %4.2f" % (suma / 4))
 
-Listas
-======
-
 + Otra forma de hacer lo mismo.
 
 ..  activecode:: ac_l17_4
@@ -204,8 +189,6 @@ Listas
     print("Notas:", notas)
     print("Media : %4.2f" % (suma / 4))
 
-Listas
-======
 
 + Haga un programa que lea un vector de 10 caracteres en minúscula, y diga cuántas consonantes se leyeron.
 
@@ -235,5 +218,4 @@ Lista de Ejercícios “again”
     :align: center
     :alt:
 
-+ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote” - Einstein
-
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein

@@ -19,19 +19,11 @@ Seamos más organizados
     :align: center
     :alt: 
 
-
-Seamos más organizados
-======================
-
-
 .. image:: img/TWP35_002.jpeg
     :height: 14.064cm
     :width: 16.601cm
     :align: center
     :alt: 
-
-Seamos organizados
-==================
 
 + Cuando los programas crecen, el código generalmente se vuelve más complejo
 + Una forma de gestionar esta complejidad es usar funciones
@@ -42,7 +34,6 @@ Seamos organizados
 Starbuzz no tiene granos
 ========================
 
-
 + El director de Starbuzz quiere una opción para comprar rápidamente, sin esperar
   a que baje el precio
 + Al ejecutar el programa, te preguntaré si quieres comprar ahora o no
@@ -52,7 +43,6 @@ Starbuzz no tiene granos
 
 Nueva sugerencia de programa
 ============================
-
 
 .. activecode:: ac_l35_1
     :nocodelens:
