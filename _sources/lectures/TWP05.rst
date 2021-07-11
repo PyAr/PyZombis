@@ -632,15 +632,16 @@ Prueba de escritorio o simulación
 
 .. table:: **Prueba de mesa o simulación**
    :widths: auto
+   :align: left
 
-   ====== ====== ====
-   deuda  compra Tela
-   ====== ====== ====
+   ====== ====== ========
+   deuda  compra Pantalla
+   ====== ====== ========
    -0-    -100-    600
    -100-  -200-
    -300-    300
    600
-   ====== ====== ====
+   ====== ====== ========
 
 
 No tengas prisa por la prueba de escritorio
