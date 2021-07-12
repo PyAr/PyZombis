@@ -185,7 +185,7 @@ Ejercicio
 
     myTests().testOne()
     print("-------------------------------------")
-    print("Haz aprobado el 100% de las pruebas.")
+    print("Has aprobado el 100% de las pruebas.")
 
 Resumen
 =======
