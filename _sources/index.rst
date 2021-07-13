@@ -2,6 +2,13 @@
 Bienvenido a PyZombis: un curso de Python en Español
 ====================================================
 
+
+.. youtube:: YO58tXerKDc
+   :divid: Introducción
+   :height: 315
+   :width: 560
+
+
 Contenidos:
 
 .. toctree::
@@ -46,13 +53,4 @@ Contenidos:
    quiz/Quiz14.rst
    quiz/QuizExtras.rst
    quiz/QuizExtras2.rst
-
-
-================
-Índices y tablas
-================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
