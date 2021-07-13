@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisión general 3 &#8212; PyZombis intro-video@eef2128</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/runtime.bundle.js?v=ef1af912ec3415fea854"></script>
+    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=0e91cff9e660624062d3"></script>
+    <script src="../_static/runestone.bundle.js?v=766cad0b55ecfe66f111"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../_static/presenter_mode.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Banco de Dados" href="TWP42.html" />
+    <link rel="prev" title="Revisión general 2" href="TWP38.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'PyZombisDev';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'PyZombisDev';
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.7.2';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.downloadsEnabled = false;
+  eBookConfig.enable_chatcodes = false ? false : false;
+  eBookConfig.allow_pairs = false ? false : false;
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis intro-video@eef2128</a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/PyZombisDev/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/PyZombisDev/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=TWP40'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+      </div>
+
+
+
+
+
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Revisión general 3</a><ul>
+<li><a class="reference internal" href="#el-proceso-de-desarrollo-de-software">El proceso de desarrollo de software</a></li>
+<li><a class="reference internal" href="#pasos-en-el-proceso-de-desarrollo-de-software">Pasos en el proceso de desarrollo de software</a></li>
+<li><a class="reference internal" href="#ejemplo-convertidor-de-temperatura-fahrenheit-a-celsius">Ejemplo: convertidor de temperatura Fahrenheit a Celsius</a></li>
+<li><a class="reference internal" href="#variables">Variables</a></li>
+<li><a class="reference internal" href="#variables-con-valores-definidos-e-indefinidos">Variables con valores definidos e indefinidos</a></li>
+<li><a class="reference internal" href="#palabras-reservadas">Palabras reservadas</a></li>
+<li><a class="reference internal" href="#literales-o-constantes">Literales o constantes</a></li>
+<li><a class="reference internal" href="#comandos-de-salida">Comandos de salida</a></li>
+<li><a class="reference internal" href="#caracter-de-fin-de-linea">Carácter de fin de línea</a></li>
+<li><a class="reference internal" href="#asignacion-de-variables">Asignación de variables.</a></li>
+<li><a class="reference internal" href="#id1">Asignación de variables.</a></li>
+<li><a class="reference internal" href="#lectura-y-tarea">Lectura y tarea</a></li>
+<li><a class="reference internal" href="#asignacion-multiple">Asignación múltiple</a></li>
+<li><a class="reference internal" href="#id2">Asignación múltiple</a></li>
+<li><a class="reference internal" href="#formas-de-iterar">Formas de iterar</a></li>
+<li><a class="reference internal" href="#ejercicio">Ejercicio</a></li>
+<li><a class="reference internal" href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+<li><a class="reference internal" href="#numeros-basicos">Números básicos</a></li>
+<li><a class="reference internal" href="#tabla-de-operadores">Tabla de operadores</a></li>
+<li><a class="reference internal" href="#operadores-numericos">Operadores Numéricos</a></li>
+<li><a class="reference internal" href="#division-entera-en-lenguajes-de-programacion-antiguos">División entera en lenguajes de programación antiguos</a></li>
+<li><a class="reference internal" href="#conversion-de-grados-usando-c">Conversión de grados usando C</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Revisión general 2" data-toggle="tooltip">
+    <a href="TWP38.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Banco de Dados' data-toggle="tooltip" >              
+    <a href="TWP42.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="revision-general-3">
+<h1>Revisión general 3<a class="headerlink" href="#revision-general-3" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
+<div class="section" id="el-proceso-de-desarrollo-de-software">
+<h2>El proceso de desarrollo de software<a class="headerlink" href="#el-proceso-de-desarrollo-de-software" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Ejecutar programas creados por otros es relativamente simple</p></li>
+<li><p>Lo difícil es comenzar a crear tus propios programas</p></li>
+<li><p>Las computadoras son muy estrictas y hay muchos detalles</p></li>
+<li><p>Entonces es necesario ser muy sistemático</p></li>
+</ul>
+</div>
+<div class="section" id="pasos-en-el-proceso-de-desarrollo-de-software">
+<h2>Pasos en el proceso de desarrollo de software<a class="headerlink" href="#pasos-en-el-proceso-de-desarrollo-de-software" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Analizar el problema:</dt><dd><ul>
+<li><p>Comprender exactamente ¿cuál es el problema a resolver?</p></li>
+<li><p>Problema bien definido, medio problema resuelto.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Especificación de lo que hará el programa:</dt><dd><ul>
+<li><p>Describe exactamente lo que hará tu programa.</p></li>
+<li><p>En esta etapa, no debería preocuparme sobre ¿cómo voy a hacer mi programa?, pero mas decidir exactamente ¿qué hará?</p></li>
+<li><p>¿Cuáles son las entradas y salidas del programa?</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Diseñar el programa:</dt><dd><ul>
+<li><p>Formular la estructura general del programa.</p></li>
+<li><p>Podemos usar pseudocódigo en este paso.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Implementar el programa:</dt><dd><ul>
+<li><p>Diseñar algunas pruebas para validar tu programa.</p></li>
+<li><p>Traduce el proyecto a cualquier lenguaje de programación.</p></li>
+<li><p>En este curso usaremos Python.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="ejemplo-convertidor-de-temperatura-fahrenheit-a-celsius">
+<h2>Ejemplo: convertidor de temperatura Fahrenheit a Celsius<a class="headerlink" href="#ejemplo-convertidor-de-temperatura-fahrenheit-a-celsius" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Análisis del problema:</dt><dd><ul>
+<li><p>Dada una temperatura en grados <em>Fahrenheit</em>, obtenga la conversión en Celsius.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Especificación de lo que hará el programa:</dt><dd><ul>
+<li><p>Entrada: temperatura en Fahrenheit</p></li>
+<li><p>Salida: temperatura en grados Celsius</p></li>
+<li><p>Salida: 5 * (F-32) / 9</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Diseñar ¿cómo funcionará el programa?:</dt><dd><ul>
+<li><p>Leer el valor de temperatura en Fahrenheit.</p></li>
+<li><p>Convertir el valor usando la fórmula <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">*</span> <span class="pre">(F-32)</span> <span class="pre">/</span> <span class="pre">9</span></code></p></li>
+<li><p>Imprimir el valor convertido.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Implementación del problema:</dt><dd><ul>
+<li><p>Pruebas: 32F = 0C y 100F = 37.8C</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l40_1 data-question_label="1">
+<div id=ac_l40_1_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l40_1_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+F = float(input("Fahrenheit: "))
+C = 5 * (F - 32) / 9
+print("Celsius: %2.1f" % C)
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Las variables son referencias a regiones de memoria que definiste para usarla en el programa.</p></li>
+<li><p>Las variables <code class="docutils literal notranslate"><span class="pre">F</span></code> y <code class="docutils literal notranslate"><span class="pre">C</span></code> del ejemplo anterior son referencias a regiones de memoria.</p></li>
+<li><p>Las variables <code class="docutils literal notranslate"><span class="pre">F</span></code> y <code class="docutils literal notranslate"><span class="pre">f</span></code> son diferentes, al igual que <code class="docutils literal notranslate"><span class="pre">C</span></code> y <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;F&quot;</span></code> o <code class="docutils literal notranslate"><span class="pre">&quot;C&quot;</span></code> no son variables.</p></li>
+</ul>
+</div>
+<div class="section" id="variables-con-valores-definidos-e-indefinidos">
+<h2>Variables con valores definidos e indefinidos<a class="headerlink" href="#variables-con-valores-definidos-e-indefinidos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Solo se puede usar el contenido de una variable si ya tiene un valor <em>definido</em> antes.</p></li>
+<li><p>Si se usa variable que no tiene valor definido o se encuentra <em>indefinido</em> daría como resultado un error como el siguiente.</p></li>
+</ul>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l40_2 data-question_label="2">
+<div id=ac_l40_2_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l40_2_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+x = 42
+print(x)
+print(y)
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="palabras-reservadas">
+<h2>Palabras reservadas<a class="headerlink" href="#palabras-reservadas" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Existen palabras reservadas en Python.</p></li>
+<li><p>Estas palabras no se pueden usar para declarar una variable.</p></li>
+<li><p>En el ejercicio de la conversión las palabras <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">input</span></code> y <code class="docutils literal notranslate"><span class="pre">print</span></code> son palabras reservadas.</p></li>
+</ul>
+</div>
+<div class="section" id="literales-o-constantes">
+<h2>Literales o constantes<a class="headerlink" href="#literales-o-constantes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Existen varios tipos de datos.</p></li>
+<li><p>Los más simples son los llamados literales o constantes.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Fahrenheit, 5, 32 y 9 son valores literales o constantes.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">F</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Fahrenheit: &quot;</span><span class="p">))</span>
+<span class="n">C</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">*</span> <span class="p">(</span><span class="n">F</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">/</span> <span class="mi">9</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Celsius: </span><span class="si">%2.1f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>¡Recuerde que hay diferentes tipos de datos! por ejemplo: <code class="docutils literal notranslate"><span class="pre">&quot;32&quot;</span></code> no es lo mismo que <code class="docutils literal notranslate"><span class="pre">32</span></code>.</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+        <div class="pytutorVisualizer" id="cl_l40_1"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (cl_l40_1)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l40_1_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_1"] = {"code": "int(\"32\") == 32\n\"32\" == str(32)\n32 == \"32\"", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}]};
+</script>
+</div>
+<ul class="simple">
+<li><p>Para comparar diferentes tipos, primero realice una conversión.</p></li>
+</ul>
+</div>
+<div class="section" id="comandos-de-salida">
+<h2>Comandos de salida<a class="headerlink" href="#comandos-de-salida" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>El comando o instrucción <code class="docutils literal notranslate"><span class="pre">print</span></code> sirve para mostrar información al usuario.</p></li>
+</ul>
+</div>
+<div class="section" id="caracter-de-fin-de-linea">
+<h2>Carácter de fin de línea<a class="headerlink" href="#caracter-de-fin-de-linea" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>El comando <code class="docutils literal notranslate"><span class="pre">print</span></code> agrega un salto de línea como carácter por defecto.</p></li>
+<li><p>Se puede reemplazar el carácter de fin de línea utilizando <code class="docutils literal notranslate"><span class="pre">end</span></code> en el comando <code class="docutils literal notranslate"><span class="pre">print</span></code>.</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="4">
+        <div class="pytutorVisualizer" id="cl_l40_2"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 4 (cl_l40_2)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l40_2_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_2"] = {"code": "for x in \"aguacate\":\n    if x in \"ae\":\n        print(x, end=\" \")\n    else:\n        print(\"*\", end=\" \")", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "g"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a "}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "g"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "g"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "u"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * "}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "u"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "u"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * "}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "c"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a "}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "c"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "c"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * "}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * a "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "t"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * a "}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "t"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * a "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "t"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * a * "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "e"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * a * "}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "e"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * a * "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "e"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * a * e "}, {"line": 1, "event": "return", "func_name": "<module>", "globals": {"x": "e"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * a * a * e "}]};
+</script>
+</div>
+</div>
+<div class="section" id="asignacion-de-variables">
+<h2>Asignación de variables.<a class="headerlink" href="#asignacion-de-variables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Asignar una variable por lo general sigue el siguiente formato <code class="docutils literal notranslate"><span class="pre">&lt;variable&gt;</span></code> = <code class="docutils literal notranslate"><span class="pre">&lt;expresion&gt;</span></code></p></li>
+<li><p>La <code class="docutils literal notranslate"><span class="pre">&lt;expresión&gt;</span></code> es calculada en el procesador y modifica el valor en la memoria referenciada por <code class="docutils literal notranslate"><span class="pre">&lt;variable&gt;</span></code>.</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5">
+        <div class="pytutorVisualizer" id="cl_l40_3"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5 (cl_l40_3)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l40_3_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_3"] = {"code": "x = 5\ncelsius = 5\nfahrenheit = 9 / 5 * celsius + 32", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 5}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 5, "celsius": 5}, "ordered_globals": ["x", "celsius"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"x": 5, "celsius": 5, "fahrenheit": ["SPECIAL_FLOAT", "41.0"]}, "ordered_globals": ["x", "celsius", "fahrenheit"], "stack_to_render": [], "heap": {}, "stdout": ""}]};
+</script>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Asignación de variables.<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Puede asignar valores a una misma variable varias veces.</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="6">
+        <div class="pytutorVisualizer" id="cl_l40_4"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 6 (cl_l40_4)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l40_4_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_4"] = {"code": "x = 0\nprint(x)\nx = \"aguacate\"\nprint(x)\nx = 3.14\nprint(x)\nx = x * 2\nprint(x)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 0}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 0}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "0\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": "aguacate"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "0\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "aguacate"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "0\naguacate\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"x": 3.14}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "0\naguacate\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"x": 3.14}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "0\naguacate\n3.14\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"x": 6.28}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "0\naguacate\n3.14\n"}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"x": 6.28}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "0\naguacate\n3.14\n6.28\n"}]};
+</script>
+</div>
+<ul class="simple">
+<li><p>En el ejemplo anterior, <code class="docutils literal notranslate"><span class="pre">x</span></code> toma el último valor asignado.</p></li>
+</ul>
+</div>
+<div class="section" id="lectura-y-tarea">
+<h2>Lectura y tarea<a class="headerlink" href="#lectura-y-tarea" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l40_3 data-question_label="7">
+<div id=ac_l40_3_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l40_3_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+string = input("Escribe un texto: ")
+print(string)
+n = int(input("Ingrese un número entero: "))
+print(n)
+y = float(input("Ingrese un número en punto flotante: "))
+print(y)
+x = eval(input("Ingrese una expresión matemática: "))
+print(x)
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="asignacion-multiple">
+<h2>Asignación múltiple<a class="headerlink" href="#asignacion-multiple" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l40_4 data-question_label="8">
+<div id=ac_l40_4_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l40_4_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+n1, n2, n3, n4 = eval(input("Ingrese 4 notas separadas por comas: "))
+print("Media:", (n1 + n2 + n3 + n4) / 4)
+x = 4
+y = 5
+suma, diferencia = x + y, x - y
+print(suma)
+print(diferencia)
+x, y = y, x
+print(x, y)
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Asignación múltiple<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>¡Para intercambiar variables, la siguiente secuencia no funciona!</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="9">
+        <div class="pytutorVisualizer" id="cl_l40_5"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 9 (cl_l40_5)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l40_5_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_5"] = {"code": "x = 4\ny = 5\nx = y\ny = x", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 4}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 4, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 5, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"x": 5, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}]};
+</script>
+</div>
+<ul class="simple">
+<li><p>Una solución sería usar una variable <code class="docutils literal notranslate"><span class="pre">temporal</span></code>.</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="10">
+        <div class="pytutorVisualizer" id="cl_l40_6"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 10 (cl_l40_6)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l40_6_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_6"] = {"code": "x = 4\ny = 5\ntemporal = x\nx = y\ny = temporal", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 4}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 4, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 4, "y": 5, "temporal": 4}, "ordered_globals": ["x", "y", "temporal"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": 5, "y": 5, "temporal": 4}, "ordered_globals": ["x", "y", "temporal"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"x": 5, "y": 4, "temporal": 4}, "ordered_globals": ["x", "y", "temporal"], "stack_to_render": [], "heap": {}, "stdout": ""}]};
+</script>
+</div>
+<ul class="simple">
+<li><p>También se puede utilizar la asignación múltiple que es más elegante.</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="11">
+        <div class="pytutorVisualizer" id="cl_l40_7"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 11 (cl_l40_7)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l40_7_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_7"] = {"code": "x = 4\ny = 5\nx, y = y, x", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 4}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 4, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"x": 5, "y": 4}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}]};
+</script>
+</div>
+</div>
+<div class="section" id="formas-de-iterar">
+<h2>Formas de iterar<a class="headerlink" href="#formas-de-iterar" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Existen diversas formas de iterar.</p></li>
+<li><p>Todas siguen el siguiente patrón <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">&lt;var&gt;</span> <span class="pre">in</span> <span class="pre">&lt;secuencia&gt;</span></code>.</p></li>
+</ul>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l40_5 data-question_label="12">
+<div id=ac_l40_5_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l40_5_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+print(list(range(10)))
+
+for k in range(10):
+    print(k, end=" ")
+
+for k in [0, 1, 2, 3]:
+    print(k, end=" ")
+
+for k in "aguacate":
+    print(k + k, end=" ")
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="ejercicio">
+<h2>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Queremos desarrollar un programa que determine el valor futuro de una inversión, dado el valor inicial y la tasa de interés</p></li>
+<li><p>Seguimos los pasos para el desarrollo.</p></li>
+<li><dl class="simple">
+<dt>Análisis:</dt><dd><ul>
+<li><p>El dinero inicial genera una tasa de interés anual</p></li>
+<li><p>¿Cuánto valdrá en 10 años?</p></li>
+<li><p>Entrada: monto inicial, tasa de interés</p></li>
+<li><p>Salida: valor en 10 años</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Especificación:</dt><dd><ul>
+<li><p>El usuario ingresa la cantidad inicial invertida</p></li>
+<li><p>El usuario ingresa la tasa de interés anual</p></li>
+<li><p>Valor de la fórmula matemática financiera * (1 + interés)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Diseño:</dt><dd><ul>
+<li><p>Ingrese el monto de inversión inicial.</p></li>
+<li><p>Ingrese la tasa de interés.</p></li>
+<li><dl class="simple">
+<dt>Repite 10 veces:</dt><dd><ul>
+<li><p>valor inicial = valor inicial * (1 + tasa de interés)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Imprime el valor actualizado.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Implementación:</dt><dd><ul>
+<li><dl class="simple">
+<dt>Valores de prueba:</dt><dd><ul>
+<li><p>1000 dolares de inversión y 3% la tasa de interés anual</p></li>
+<li><p>1000 dolares de inversión y 10% la tasa de interés anual</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l40_6 data-question_label="13">
+<div id=ac_l40_6_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l40_6_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+valor = float(input("Cantidad inicial invertida: "))
+tasa = float(input("Tasa de interés anual: "))
+for i in range(10):
+    valor = valor * (1 + tasa / 100)
+print("Valor después de 10 años:  %5.2f" % valor)
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="preguntas-frecuentes">
+<h2>Preguntas frecuentes<a class="headerlink" href="#preguntas-frecuentes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>¿Por qué definir algunas pruebas antes de la implementación es una buena práctica de programación?</p></li>
+<li><p>¿Cuál es la ventaja de escribir pseudocódigo en la etapa de diseño?</p></li>
+</ul>
+</div>
+<div class="section" id="numeros-basicos">
+<h2>Números básicos<a class="headerlink" href="#numeros-basicos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Existen dos tipos de datos numéricos: <code class="docutils literal notranslate"><span class="pre">int</span></code> y <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p></li>
+<li><dl class="simple">
+<dt>¿Por qué existen diferentes tipos?</dt><dd><ul>
+<li><p>Hay diferentes datos: los contadores son números enteros y el número PI no es.</p></li>
+<li><p>Las operaciones con números enteros son mucho más rápidas.</p></li>
+<li><p>Los números de coma flotante son aproximaciones: su precisión tiene un límite.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="14">
+        <div class="pytutorVisualizer" id="cl_l40_8"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 14 (cl_l40_8)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l40_8_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_8"] = {"code": "print(type(3))\nprint(type(3.14))\nprint(type(3.0))\nx = -32\nprint(type(x))\nx = 32.0\nprint(type(x))\nprint(type(int(x)))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "<class 'int'>\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "<class 'int'>\n<class 'float'>\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "<class 'int'>\n<class 'float'>\n<class 'float'>\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": -32}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "<class 'int'>\n<class 'float'>\n<class 'float'>\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"x": -32}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "<class 'int'>\n<class 'float'>\n<class 'float'>\n<class 'int'>\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"x": ["SPECIAL_FLOAT", "32.0"]}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "<class 'int'>\n<class 'float'>\n<class 'float'>\n<class 'int'>\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"x": ["SPECIAL_FLOAT", "32.0"]}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "<class 'int'>\n<class 'float'>\n<class 'float'>\n<class 'int'>\n<class 'float'>\n"}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"x": ["SPECIAL_FLOAT", "32.0"]}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "<class 'int'>\n<class 'float'>\n<class 'float'>\n<class 'int'>\n<class 'float'>\n<class 'int'>\n"}]};
+</script>
+</div>
+</div>
+<div class="section" id="tabla-de-operadores">
+<h2>Tabla de operadores<a class="headerlink" href="#tabla-de-operadores" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default" id="id3">
+<caption><span class="caption-text"><strong>Tabla de operadores</strong></span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operador</p></th>
+<th class="head"><p>Operación</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>*</p></td>
+<td><p>Multiplicación</p></td>
+</tr>
+<tr class="row-odd"><td><p>/</p></td>
+<td><p>División</p></td>
+</tr>
+<tr class="row-even"><td><p>**</p></td>
+<td><p>Exponenciación</p></td>
+</tr>
+<tr class="row-odd"><td><p>abs()</p></td>
+<td><p>Valor absoluto</p></td>
+</tr>
+<tr class="row-even"><td><p>%</p></td>
+<td><p>Resto de la división</p></td>
+</tr>
+<tr class="row-odd"><td><p>//</p></td>
+<td><p>División entera</p></td>
+</tr>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>Resta</p></td>
+</tr>
+<tr class="row-odd"><td><p>+</p></td>
+<td><p>Suma</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="operadores-numericos">
+<h2>Operadores Numéricos<a class="headerlink" href="#operadores-numericos" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="15">
+        <div class="pytutorVisualizer" id="cl_l40_9"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 15 (cl_l40_9)</span> </p>
+    </div>
+
+<script type="text/javascript">
+var cl_l40_9_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_9"] = {"code": "print(3 + 4)\nprint(3.0 + 4.0)\nprint(3.0 * 4.0)\nprint(4 ** 3)\nprint(4.0 ** 3)\nprint(abs(5))\nprint(abs(-5))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "7\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "7\n7.0\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "7\n7.0\n12.0\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "7\n7.0\n12.0\n64\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "7\n7.0\n12.0\n64\n64.0\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "7\n7.0\n12.0\n64\n64.0\n5\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "7\n7.0\n12.0\n64\n64.0\n5\n5\n"}]};
+</script>
+</div>
+</div>
+<div class="section" id="division-entera-en-lenguajes-de-programacion-antiguos">
+<h2>División entera en lenguajes de programación antiguos<a class="headerlink" href="#division-entera-en-lenguajes-de-programacion-antiguos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Los lenguaje más antiguos generan un resultado completo en la división de enteros.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">10/3</span></code> será igual a 3</p></li>
+<li><p>Al calcular Fahrenheit a Celsius, tendré que modificarlo un poco mi programa si uso C o Java.</p></li>
+</ul>
+</div>
+<div class="section" id="conversion-de-grados-usando-c">
+<h2>Conversión de grados usando C<a class="headerlink" href="#conversion-de-grados-usando-c" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+
+    <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+        <span class="kt">float</span> <span class="n">F</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Farenheit: &quot;</span><span class="p">);</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">F</span><span class="p">);</span>
+        <span class="n">C</span> <span class="o">=</span> <span class="mf">5.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">F</span> <span class="o">-</span> <span class="mf">32.0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">9.0</span><span class="p">;</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Celsius: %2.1f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Revisión general 2' data-toggle="tooltip">
+    <a href="TWP38.html" >
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="TWP38.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Banco de Dados' data-toggle="tooltip" >
+    <a href="TWP42.html" >
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="TWP42.html" >Next Section - Banco de Dados</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.7.2.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
