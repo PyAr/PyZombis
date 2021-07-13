@@ -117,12 +117,12 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             ciudades = []
             for universidad in datos:
                 if universidad["country"] not in ciudades:
-                    ciudades.append(universidad["country"])
+                    ciudades.append(universidad["country"].lower().replace(" ", ""))
 
             def escoger(ciudades):
                 # Desarrolle la función
                 # Se puede lograr con una sola línea de código
-                pass
+
 
             ====
             from unittest.gui import TestCaseGui
@@ -148,11 +148,12 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             :include: ac_r01_1, ac_r01_2, ac_r01_3
 
             La función ``imprimir_ahorcado`` imprime el dibujo del ahorcado correspondiente al 
-            número de letras incorrectas y correctas hasta el momento.
+            número de letras incorrectas y correctas hasta el momento. Toma un único parámetro
+            ``p_aleatoria`` que representa la palabra a adivinar.
 
             ~~~~
             p_aleatoria = escoger(ciudades)
-            def imprimir_ahorcado():
+            def imprimir_ahorcado(p_aleatoria):
                 print(dibujos[len(incorrectas)])
                 for c in p_aleatoria:
                     print(c if c in correctas else "_", end=" ")
@@ -202,3 +203,114 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
 
 
             myTests().main()
+
+    
+    .. tab:: ac_6
+
+        Hagamos posible que el usuario decida si quiere volver a jugar o no.
+
+        .. activecode:: ac_r01_6
+            :nocodelens:
+
+            Desarrolle la función ``jugar_nuevamente`` que pregunte al usuario si quiere volver a 
+            jugar. La respuesta debe ser una *s* o *n* (S/N). Sin importar si el usuario ingresa la respuesta
+            en mayúscula o minúscula, el programa debe transformarla a minúscula. La función devuelve ``True`` o ``False``
+            dependiendo de la respuesta. **Nota**: La función se va a ejecutar dos vez para verificar si pasa las pruebas unitarias.
+            En la consola verá instrucciones sobre qué ingresar para cada prueba.
+
+            ~~~~
+            def jugar_nuevamente():
+                
+                return 
+
+            
+            ====
+            from unittest.gui import TestCaseGui
+            import time
+
+
+            class myTests(TestCaseGui):
+                def testOne(self):
+                    print("Ingrese 'S'")
+                    time.sleep(2)
+                    r = jugar_nuevamente()
+                    self.assertEqual(r, True, "Probando que se haya utilizado el método lower")
+
+                
+                def testTwo(self):
+                    print("Ingrese 'n'")
+                    time.sleep(2)
+                    r = jugar_nuevamente()
+                    self.assertEqual(r, False, "Probando que al ingresar 'n' regrese False")
+
+
+            myTests().main()
+
+
+    .. tab:: ac_7
+
+        .. activecode:: ac_r01_7
+            :nocodelens:
+
+            Ahora desarrolle la función ``ganar``. Ésta toma dos parámetros: ``p_aleatoria`` que representa 
+            la palabra a adivinar, y ``letras_adivinadas``. Debe devolver ``True`` si todas las letras de 
+            ``p_aleatoria`` están en la cadena ``letras_adivinadas``. De lo contrario, devuelve False.
+
+            ~~~~
+            def ganar(p_aleatoria, letras_adivinadas):
+
+
+            ====
+            from unittest.gui import TestCaseGui
+
+
+            class myTests(TestCaseGui):
+                def testOne(self):
+                    self.assertEqual(ganar("argentina", "anitnegra"), True, "Probando la función")
+                    self.assertEqual(ganar("argentina", "argent"), False, "Probando la función")
+
+
+            myTests().main()
+
+    .. tab:: ac_8
+        
+        Ya ha definido todas las funciones y variables necesarias para el programa. Si ha llegado hasta aquí, 
+        debió haber cumplido con todo y haber pasado todas las pruebas unitarias. De ser así, puede correr el
+        siguiente programa para probar su juego.
+
+        .. activecode:: ac_r01_8
+            :nocodelens:
+            :include: ac_r01_1, ac_r01_2, ac_r01_3, ac_r01_4, ac_r01_5, ac_r01_6, ac_r01_7
+
+            # Esto es para aumentar el tiempo de ejecución de Runestone
+            import sys
+
+            sys.setExecutionLimit(300000)
+
+
+            p_aleatoria = escoger(ciudades)
+
+            while True:
+                imprimir_ahorcado(p_aleatoria)
+                time.sleep(2)
+                x = adivinar(correctas + incorrectas)
+                if x in p_aleatoria:
+                    correctas = correctas + x
+                else:
+                    incorrectas = incorrectas + x
+                if len(incorrectas) == len(dibujos):
+                    print(f"Quedó ahorcado, la palabra era {p_aleatoria}")
+                    time.sleep(1)
+                    if jugar_nuevamente():
+                        correctas = incorrectas = ""
+                        p_aleatoria = escoger(ciudades)
+                    else:
+                        break
+                elif ganar(p_aleatoria, correctas):
+                    print(f"Acertó la palabra: {p_aleatoria}")
+                    time.sleep(1)
+                    if jugar_nuevamente():
+                        correctas = incorrectas = ""
+                        p_aleatoria = escoger(ciudades)
+                    else:
+                        break
