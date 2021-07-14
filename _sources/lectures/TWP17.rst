@@ -68,7 +68,7 @@ Puedo enganchar vagones
 + ¿Cómo puedo agregar un vagón con "Bettys"?
 
 Puedo unir los vagones con el método ``append()``
-=============================================
+=================================================
 
 ..  image:: img/TWP17_007.png
     :height: 8cm
