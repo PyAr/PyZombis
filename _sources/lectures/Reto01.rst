@@ -1,6 +1,6 @@
-========
-Ahorcado
-========
+=============
+Reto Ahorcado
+=============
 
 Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
 
@@ -168,7 +168,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
         .. activecode:: ac_r01_5
             :nocodelens:
         
-            Desarrole la función ``adivinar``. Recibe como parámetro una cadena (``letras``) con todas las letras ya 
+            Desarrolle la función ``adivinar``. Recibe como parámetro una cadena (``letras``) con todas las letras ya 
             probadas (correctas + incorrectas). Devuelve una letra minúscula que no se ha probado antes. 
             Si el usuario ingresa más de una letra u otro carácter especial, se debe imprimir un mensaje 
             alertando al usuario de su error. Por ejemplo: ``"Caracter inválido"``
@@ -184,7 +184,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
                 while True:
                     x =      # Empiece aquí
 
-                    # Todod su código debe ir dentro de este ciclo while
+                    # Todo su código debe ir dentro de este ciclo while
 
                     # Esperar antes de preguntar por un input de nuevo
                     # No remover esta línea de código
