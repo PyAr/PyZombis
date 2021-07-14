@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bienvenido a PyZombis: un curso de Python en Español &#8212; PyZombis intro-video@eef2128</title>
+    <title>Bienvenido a PyZombis: un curso de Python en Español &#8212; PyZombis intro-video@450eeca</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -105,7 +105,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="#" aria-label="index-page">PyZombis intro-video@eef2128</a>
+        <a class="navbar-brand" href="#" aria-label="index-page">PyZombis intro-video@450eeca</a>
       </div>
     </div>
 
@@ -274,7 +274,14 @@
             data-video-divid="Introducción" data-video-start="0"
             data-video-end="-1" ></div>
     </div>
-    <p>Contenidos:</p>
+    <script>
+    // script to center the introduction video.
+    let video = document.getElementById("Introducción");
+    console.log(video);
+    let div = video.parentElement;
+    console.log(div);
+    div.style.cssText += "text-align:center";
+</script><p>Contenidos:</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP05.html">Variables y entrada de datos</a></li>

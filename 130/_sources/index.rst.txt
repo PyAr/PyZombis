@@ -9,6 +9,18 @@ Bienvenido a PyZombis: un curso de Python en Español
    :width: 560
 
 
+.. raw:: html
+
+   <script>
+       // script to center the introduction video.
+       let video = document.getElementById("Introducción");
+       console.log(video);
+       let div = video.parentElement;
+       console.log(div);
+       div.style.cssText += "text-align:center";
+   </script>
+
+
 Contenidos:
 
 .. toctree::
