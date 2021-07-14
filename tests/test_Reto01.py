@@ -1,4 +1,4 @@
-import time
+import string
 
 
 def test_r01(page):
@@ -40,9 +40,6 @@ def test_r01(page):
 
     # ac_5
     # Deal with prompt box
-    def handle_dialog(dialog):
-        dialog.accept("f")
-
     page.click("text=ac_5")
     page.click("text=x = # Empiece aquí >> span")
     page.keyboard.press("Control+Shift+End")
@@ -55,7 +52,47 @@ def test_r01(page):
         page.keyboard.press("Enter")
     page.click("#ac_r01_5 >> text=Save & Run")
     # Fill prompt box
-    page.on("dialog", handle_dialog)
+    with page.expect_event("dialog") as prompt:
+        page.once("dialog", lambda dialog: dialog.accept("f"))
+        page.evaluate("prompt('Adivine una letra: ')")
     # Make sure it passed all unit tests
     page.hover("#ac_r01_5 >> text=You passed:")
     assert page.inner_text("#ac_r01_5 >> text=You passed:") == "You passed: 100.0% of the tests"
+
+    # ac_6
+    page.click("text=ac_6")
+    page.click("#ac_r01_6 >> text=return")
+    page.keyboard.press("Control+ArrowRight")
+    page.keyboard.type(" input('jugar de nuevo S/N: ').lower() == 's'")
+    page.click("#ac_r01_6 >> text=Save & Run")
+    # Handle dialogs
+    with page.expect_event("dialog") as prompt1:
+        page.once("dialog", lambda dialog: dialog.accept("S"))
+    with page.expect_event("dialog") as prompt2:
+        page.once("dialog", lambda dialog: dialog.accept("n"))
+    # Ensure it passed all of the tests
+    page.hover("#ac_r01_6 >> text=You passed:")
+    assert page.inner_text("#ac_r01_6 >> text=You passed:") == "You passed: 100.0% of the tests"
+
+    # ac_7
+    page.click("text=ac_7")
+    page.click("text=def ganar(p_aleatoria, letras_adivinadas):")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
+    page.keyboard.type("return set(p_aleatoria) == set(letras_adivinadas)")
+    page.click("#ac_r01_7 >> text=Save & Run")
+    # Make sure it passed all unit tests
+    page.hover("#ac_r01_7 >> text=You passed:")
+    assert page.inner_text("#ac_r01_7 >> text=You passed:") == "You passed: 100.0% of the tests"
+
+    # ac_8
+    page.click("text=ac_8")
+    page.click("#ac_r01_8 >> text=Save & Run")
+    # Handle dialogs
+    i = 0
+    while page.is_hidden("#ac_r01_8_stdout >> text=Quedó ahorcado"):
+        with page.expect_event("dialog") as prompt:
+            page.once("dialog", lambda dialog: dialog.accept(string.ascii_lowercase[i]))
+        i += 1
+    page.hover("#ac_r01_8_stdout >> text=Quedó ahorcado")
+    assert page.is_visible("#ac_r01_8_stdout >> text=Quedó ahorcado") == True
