@@ -4,20 +4,19 @@ Interfaz gráfica
 
 
 .. image:: img/TWP10_001.jpeg
-   :height: 14.925cm
-   :width: 9.258cm
-   :align: center
-   :alt: 
+    :height: 14.925cm
+    :width: 9.258cm
+    :align: center
+    :alt:
 
 
-Interfaz gráfica
-================
-
-
-+ No es suficiente para trabajar, también debe ser hermoso
-+ La interfaz de texto funciona, pero es pobre
-+ GUI - Interfaz gráfica de usuario
-+ Show de primer año
++ En la programación no es basta con hacer solamente el código.
++ No es suficiente para trabajar, también debe ser hermoso para el usuario.
++ La interfaz basada texto funciona, pero es muy limitada y antigua.
++ Motivado a esto se necesita crear una interfaz gráfica de usuario, también conocida por sus iniciales del inglés GUI *graphical user interface*
++ En Python se pueden usar diferentes librerías para la creación de GUI, una de las conocidas es ``tkinter``
++ Sin embargo en esta oportunidad utilizaremos nuevamente el interprete de Brython.
++ Vamos a crear en este ejercicio un Show de preguntas.
 
 
 Show de primer año
@@ -34,10 +33,10 @@ Show de primer año
 
 
 .. image:: img/TWP50_001.png
-   :height: 12.571cm
-   :width: 7.165cm
-   :align: center
-   :alt: 
+    :height: 12.571cm
+    :width: 7.165cm
+    :align: center
+    :alt:
 
 
 + Atención: instale Pygame y descargue los archivos de audio para continuar la lección
@@ -72,17 +71,17 @@ Show de primer año
 
 
 .. image:: img/TWP50_003.png
-   :height: 7.01cm
-   :width: 6.825cm
-   :align: center
-   :alt: 
+    :height: 7.01cm
+    :width: 6.825cm
+    :align: center
+    :alt:
 
 
 .. image:: img/TWP50_004.png
-   :height: 9.626cm
-   :width: 6.118cm
-   :align: center
-   :alt: 
+    :height: 9.626cm
+    :width: 6.118cm
+    :align: center
+    :alt:
 
 + Ahora que el audio está funcionando, ¡hagamos el programa Freshman Show!
 
@@ -127,17 +126,17 @@ Show de primer año
 
 
 .. image:: img/TWP50_006.png
-   :height: 7.989cm
-   :width: 15.027cm
-   :align: center
-   :alt: 
+    :height: 7.989cm
+    :width: 15.027cm
+    :align: center
+    :alt:
 
 
 .. image:: img/TWP50_007.jpg
    :height: 7.487cm
    :width: 10.688cm
    :align: center
-   :alt: 
+   :alt:
 
 
 Show de primer año
@@ -148,7 +147,7 @@ Show de primer año
    :height: 13.801cm
    :width: 9.79cm
    :align: center
-   :alt: 
+   :alt:
 
 
 Ventana básica
@@ -173,7 +172,7 @@ Ventana básica
    :height: 5.344cm
    :width: 10.397cm
    :align: center
-   :alt: 
+   :alt:
 
 
 Capturando un evento
@@ -184,7 +183,7 @@ Capturando un evento
    :height: 7.775cm
    :width: 22.859cm
    :align: center
-   :alt: 
+   :alt:
 
 
 Show de primer año
@@ -240,7 +239,7 @@ Show de primer año
    :height: 15.793cm
    :width: 11.6cm
    :align: center
-   :alt: 
+   :alt:
 
 
 Etiquetas agregadas
@@ -308,7 +307,7 @@ Agregar etiquetas
    :height: 4.629cm
    :width: 9.736cm
    :align: center
-   :alt: 
+   :alt:
 
 
 Show de primer año
@@ -319,7 +318,7 @@ Show de primer año
    :height: 14.861cm
    :width: 15.801cm
    :align: center
-   :alt: 
+   :alt:
 
 
 Revisar
