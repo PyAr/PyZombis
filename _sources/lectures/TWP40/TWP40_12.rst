@@ -7,7 +7,7 @@ División entera en lenguajes de programación antiguos
 
 
 Conversión de grados usando C
-=============================
+-----------------------------
 
 .. code-block:: c
 
