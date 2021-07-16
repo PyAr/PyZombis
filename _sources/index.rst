@@ -1,6 +1,9 @@
-====================================================
-Bienvenido a PyZombis: un curso de Python en Español
-====================================================
+=====================
+Bienvenido a PyZombis
+=====================
+-----------------------------
+un curso de Python en español
+-----------------------------
 
 
 .. youtube:: YO58tXerKDc
@@ -14,11 +17,12 @@ Bienvenido a PyZombis: un curso de Python en Español
    <script>
        // script to center the introduction video.
        let video = document.getElementById("Introducción");
-       console.log(video);
        let div = video.parentElement;
-       console.log(div);
        div.style.cssText += "text-align:center";
    </script>
+   <style>
+       h1, h2 {text-align: center;}
+   </style>
 
 
 Contenidos:
