@@ -1,0 +1,6 @@
+Palabras reservadas
+===================
+
++ Existen palabras reservadas en Python.
++ Estas palabras no se pueden usar para declarar una variable.
++ En el ejercicio de la conversión las palabras ``float``, ``input`` y ``print`` son palabras reservadas.
