@@ -22,3 +22,8 @@ Revisión general 3
    TWP40_5.rst
    TWP40_6.rst
    TWP40_7.rst
+   TWP40_8.rst
+   TWP40_9.rst
+   TWP40_10.rst
+   TWP40_11.rst
+   TWP40_12.rst
