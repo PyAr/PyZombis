@@ -6,6 +6,8 @@ def get_menu_titles(page) -> list:
 
 
 flag = True
+
+
 def test_check_titles(page):
     global flag
     if(flag):
