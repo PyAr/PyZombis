@@ -52,18 +52,6 @@ Lo que aprendimos
 + Clases y objetos
 
 
-Ahora solo faltan tus ejercicios
-================================
-
-.. image:: img/TWP05_041.jpeg
-    :height: 12.571cm
-    :width: 9.411cm
-    :align: center
-    :alt: 
-
-“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
-
-
 ¿Qué aprenderemos en el segundo?
 ================================
 
@@ -144,9 +132,9 @@ Tenga en cuenta que en el siguiente programa:
 + Las partes en púrpura son :purple:`directivas` (ej: **if** y **else**)
 + Las partes en amarillo son :yellow:`indentaciones o sangría` ("Cada uno en su bloque")
 + Las partes en negro son :black:`variables` (ej: **g** y **numero**)
-+ **=** es el operador de asignación y se usa para asignar valores a variables (ej: ``numero = int(g)`` La variable 'número' recibe un entero de g))
-+ **==** es el operador de comparación y se usa para comparar dos variables o valores (ej: ``numero == 42`` ¿el número es igual a 42?)
-+ **:** es el operador que abre un bloque de indentación. Va después de las directivas (ej: ``if numero == 42:`` y ``else:``) 
++ El símbolo de igual (``=``) es el operador de asignación y se usa para asignar valores a variables (ej: ``numero = int(g)`` La variable 'número' recibe un entero de g))
++ El símbolo de doble igual (``==``) es el operador de comparación y se usa para comparar dos variables o valores (ej: ``numero == 42`` ¿el número es igual a 42?)
++ El símbolo de dos puntos (``:``) es el operador que abre un bloque de indentación. Va después de las directivas (ej: ``if numero == 42:`` y ``else:``) 
 
 
 ¿Qué tipos de errores?
@@ -410,19 +398,20 @@ Resumen
 Herramientas de Python
 ======================
 
-+ Condiciones: ``if / else``
++ Condiciones: ``if``, ``elif``, ``else``
 + Ciclo: ``while``
 + Operador de asignación: ``=``
 + Operador de igualdad: ``==``
 + Operador diferente de: ``!=``
-+ Mostrar un mensaje: ``print``
-+ Leer una entrada del usuario: ``input``
-+ Convertir a entero: ``int``
-+ Sortear un entero: ``randint``
++ Mostrar un mensaje: ``print()``
++ Leer una entrada del usuario: ``input()``
++ Convertir a entero: ``int()``
++ Sortear un entero: ``randint()``
 
+Estas son algunas de las herramientas. ¡Existen muchas más!
 
-Lista VI con las pruebas!
-=========================
+Ahora solo faltan tus ejercicios
+================================
 
 .. image:: img/TWP05_041.jpeg
     :height: 12.571cm
