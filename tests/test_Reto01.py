@@ -50,11 +50,9 @@ def test_r01(page):
     for i in instructions:
         page.keyboard.type(i)
         page.keyboard.press("Enter")
-    page.click("#ac_r01_5 >> text=Save & Run")
     # Fill prompt box
-    with page.expect_event("dialog") as prompt:
-        page.once("dialog", lambda dialog: dialog.accept("f"))
-        page.evaluate("prompt('Adivine una letra: ')")
+    page.once("dialog", lambda dialog: dialog.accept("f"))
+    page.click("#ac_r01_5 >> text=Save & Run")
     # Make sure it passed all unit tests
     page.hover("#ac_r01_5 >> text=You passed:")
     assert page.inner_text("#ac_r01_5 >> text=You passed:") == "You passed: 100.0% of the tests"
