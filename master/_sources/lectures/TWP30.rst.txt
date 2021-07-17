@@ -1,13 +1,8 @@
-.. raw:: html
-
-    <style> .purple {color:purple} </style>
-    <style> .green {color:green} </style>
-    <style> .red {color:red} </style>
-    <style> .yellow {color:yellow} </style>
-
+.. role:: black
+.. role:: blue
 .. role:: red
-.. role:: purple
 .. role:: green
+.. role:: purple
 .. role:: yellow
 
 
@@ -26,7 +21,6 @@ Revisión general 1
 Terminamos el primer libro
 ==========================
 
-
 .. image:: img/TWP30_001.jpeg
     :height: 14.384cm
     :width: 10cm
@@ -37,7 +31,6 @@ Terminamos el primer libro
 Empecemos el segundo
 ====================
 
-
 .. image:: img/TWP30_002.jpeg
     :height: 13.801cm
     :width: 13.801cm
@@ -47,7 +40,6 @@ Empecemos el segundo
 
 Lo que aprendimos
 =================
-
 
 + Variables y entrada de datos
 + Condiciones
@@ -60,23 +52,8 @@ Lo que aprendimos
 + Clases y objetos
 
 
-Ahora solo faltan tus ejercicios
-================================
-
-
-.. image:: img/TWP05_041.jpeg
-    :height: 12.571cm
-    :width: 9.411cm
-    :align: center
-    :alt: 
-
-+ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. -Einstein
-
-
-
 ¿Qué aprenderemos en el segundo?
 ================================
-
 
 + ¡Las mismas cosas!
 + Hacer juegos
@@ -90,24 +67,15 @@ Ahora solo faltan tus ejercicios
 Encontrando tu camino
 =====================
 
-
 + Si solo usa el software de otros, siempre estará limitado a lo que
   lo que otras personas piensan que quieres hacer
 + Escribe tus propios programas
 + ¿Quieres ser programado o ser el programador?
 + Puedes tomar el control
 
+
 Adivinando números
-===================
-
-+ **print()** es una función
-+ **'¡Bienvenido!'** es una cadena
-+ **g, patada** son variables
-+ **if, else** son directivas
-+ El espacio que se proporciona después de los dos puntos (:) de la instrucción if, a partir de la cual comienza la instrucción print, se llama sangría
-+ **=** es el operador de asignación y se usa para asignar valores a variables
-+ **==** es el operador de comparación y se usa para comparar dos variables o valores
-
+==================
 
 .. activecode:: ac_l30_1
     :nocodelens:
@@ -126,53 +94,59 @@ Adivinando números
 Las partes de tu programa
 =========================
 
+Ahora analizemos las partes del código anterior
 
-+ :purple: `Las funciones incorporadas` se llaman por su nombre y requieren paréntesis
+.. raw:: html
 
-+ :green: las `strings` son diferentes de los comandos del programa porque están dentro de    	comillas
+   <div>
+        <style>
+            div.code-example {border: 1px ; border: 1.5px solid #b3b3b3; padding: 15px;
+                border-radius: 4px; background-color:rgb(226, 226, 226)}
+            code.code-example {font-size: 20px;background-color:transparent}
+            .black {color:black}
+            .blue {color:#3300AA}
+            .red {color:#AA1111}
+            .green {color:#116644}
+            .purple {color:#770088}
+            .yellow {background:yellow}
+        </style>
+        <div class="code-example">
+            <code class="code-example">
+                <text class="blue">print</text><text class="black">(</text><text class="red">"Bienvenido!"</text><text class="black">)</text><br/>
+                <text class="black">g = </text><text class="blue">input</text><text class="black">(</text><text class="red">"Ingrese un número: "</text><text class="black">)</text><br/>
+                <text class="black">numero = </text><text class="blue">int</text><text class="black">(g)</text><br/>
+                <text class="purple">if</text> <text class="black">numero == </text><text class="green">42</text><text class="black">:</text><br/>
+                <text class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;</text><text class="blue">print</text><text class="black">(</text><text class="red">"¡Ganaste!"</text><text class="black">)</text><br/>
+                <text class="purple">else</text><text class="black">:</text><br/>
+                <text class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;</text><text class="blue">print</text><text class="black">(</text><text class="red">"¡Tú perdiste!"</text><text class="black">)</text><br/>
+                <text class="blue">print</text><text class="black">(</text><text class="red">"¡Fin del juego!"</text><text class="black">)</text><br/>
+            </code>
+        </div>
+    </div>
 
-+ :red: los datos de control de `Variables` en memoria y tienen diferentes tipos
+Tenga en cuenta que en el siguiente programa:
 
-+ :yellow: `Directivas` son comandos del lenguaje
-
-
-Las partes de tu programa
-=========================
-
-
-+ A: red: 'sangría' separa los bloques de comandos
-
-   + "Cada uno en su cuadrado"
-
-+ Un igual (=) significa asignación
-
-   + Ej .: numero = int(g) (numero recibe un entero de g)
-
-+ Dos iguales (==) significa comparación
-
-   + Ej .: patada == 42 (¿la patada es igual a 42?)
-
-+ Los dos puntos abren un bloque de instrucciones
-
-+ Poner en el baño, cuaderno, heladera:
-   + "¡Amo dos puntos!"
++ Las partes en azul son :blue:`funciones` (ej: **print()**) 
++ Las partes en rojo son :red:`strings o cadenas` (ej: **"¡Bienvenido!"**)
++ Las partes en verde son :green:`números` (ej: **42**)
++ Las partes en púrpura son :purple:`directivas` (ej: **if** y **else**)
++ Las partes en amarillo son :yellow:`indentaciones o sangría` ("Cada uno en su bloque")
++ Las partes en negro son :black:`variables` (ej: **g** y **numero**)
++ El símbolo de igual (``=``) es el operador de asignación y se usa para asignar valores a variables (ej: ``numero = int(g)`` La variable 'número' recibe un entero de g))
++ El símbolo de doble igual (``==``) es el operador de comparación y se usa para comparar dos variables o valores (ej: ``numero == 42`` ¿el número es igual a 42?)
++ El símbolo de dos puntos (``:``) es el operador que abre un bloque de indentación. Va después de las directivas (ej: ``if numero == 42:`` y ``else:``) 
 
 
 ¿Qué tipos de errores?
 =======================
 
-
-+ Errores de sintaxis
-
-   + Un lenguaje de programación es formal, diferente de los lenguajes naturales, tiene una sintaxis rígida
-
++ Errores de sintaxis: un lenguaje de programación es formal, diferente de los lenguajes naturales, tiene una sintaxis rígida
 + Errores de tiempo de ejecución
 + Errores semánticos (más difíciles de encontrar)
 
 
 ¿Cómo encontrar y manejar errores?
 ==================================
-
 
 + Sintáctica: mucha atención y práctica
 + En tiempo de ejecución: manejo de excepciones
@@ -182,12 +156,8 @@ Las partes de tu programa
 Entonces, ¿cómo ejecutas tu código?
 ===================================
 
-
-
-+ Hay dos cosas para ejecutar el programa de adivinación: un editor y
-   un intérprete
++ Hay dos cosas para ejecutar el programa de adivinación: un editor y un intérprete
 + El editor guarda el código escrito en un archivo en el disco
-
 
 .. image:: img/TWP30_004.png
     :height: 4.867cm
@@ -195,15 +165,8 @@ Entonces, ¿cómo ejecutas tu código?
     :align: center
     :alt: 
 
-
-Entonces, ¿cómo ejecutas tu código?
-===================================
-
-
-+ Las computadoras no pueden procesar texto porque solo entienden
-   binario (ceros y unos)
-+ El intérprete convierte el código fuente en un archivo binario para
-   la computadora
++ Las computadoras no pueden procesar texto porque solo entienden binario (ceros y unos)
++ El intérprete convierte el código fuente en un archivo binario para la computadora
 
 .. image:: img/TWP30_005.png
     :height: 5.921cm
@@ -212,13 +175,9 @@ Entonces, ¿cómo ejecutas tu código?
     :alt: 
 
 
-Entonces, ¿cómo ejecutas tu código?
-====================================
-
 + El intérprete de Python funciona en dos modos: interactivo y de edición.
 
-+ El modo interactivo es ideal para probar comandos y obtener respuestas
-   instantáneas
++ El modo interactivo es ideal para probar comandos y obtener respuestas instantáneas
 
 + Sin embargo, el modo de edición es el más utilizado para desarrollar los programas.
 
@@ -243,7 +202,6 @@ Entonces, ¿cómo ejecutas tu código?
 El programa es una red de carreteras.
 =====================================
 
-
 .. image:: img/TWP10_004.png
     :height: 12.571cm
     :width: 18.78cm
@@ -253,7 +211,6 @@ El programa es una red de carreteras.
 
 En la red eliges tu camino
 ==========================
-
 
 .. image:: img/TWP10_009.jpg
     :height: 9.754cm
@@ -265,14 +222,9 @@ En la red eliges tu camino
 Consejos
 ========
 
-
 + El programa solo dice si lo hiciste bien o no
 + Para ayudarlo a decir "Alto" o "Bajo" si la persona está equivocada
 + ¿Cómo se vería el camino?
-
-
-Consejos
-========
 
 
 .. image:: img/TWP30_006.jpg
@@ -280,11 +232,6 @@ Consejos
     :width: 10.8cm
     :align: center
     :alt: 
-
-
-Consejos
-===========
-
 
 .. activecode:: ac_l30_2
     :nocodelens:
@@ -431,7 +378,6 @@ Sortear el número a adivinar
 ¡Ahora sí!
 ==========
 
-
 .. image:: img/TWP30_012.jpg
     :height: 10.873cm
     :width: 14.154cm
@@ -440,7 +386,6 @@ Sortear el número a adivinar
 
 Resumen
 =======
-
 
 + ¡Creaste un juego!
 + Los comandos hacen cosas
@@ -453,21 +398,20 @@ Resumen
 Herramientas de Python
 ======================
 
-
-+ Condiciones: ``if / else``
++ Condiciones: ``if``, ``elif``, ``else``
 + Ciclo: ``while``
 + Operador de asignación: ``=``
 + Operador de igualdad: ``==``
 + Operador diferente de: ``!=``
-+ Mostrar un mensaje: ``print``
-+ Leer una entrada del usuario: ``input``
-+ Convertir a entero: ``int``
-+ Sortear un entero: ``randint``
++ Mostrar un mensaje: ``print()``
++ Leer una entrada del usuario: ``input()``
++ Convertir a entero: ``int()``
++ Sortear un entero: ``randint()``
 
+Estas son algunas de las herramientas. ¡Existen muchas más!
 
-Lista VI con las pruebas!
-=========================
-
+Ahora solo faltan tus ejercicios
+================================
 
 .. image:: img/TWP05_041.jpeg
     :height: 12.571cm
@@ -475,4 +419,10 @@ Lista VI con las pruebas!
     :align: center
     :alt: 
 
-+ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
+
+.. raw:: html
+
+    <br/>
+
+
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
