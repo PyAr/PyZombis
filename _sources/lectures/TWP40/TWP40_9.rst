@@ -4,7 +4,7 @@ Formas de iterar
 + Todas siguen el siguiente patrón ``for <var> in <secuencia>``.
 
 
-.. activecode:: ac_l40_5
+.. activecode:: ac_l40_9
     :nocodelens:
     :stdin:
 
@@ -18,4 +18,3 @@ Formas de iterar
 
     for k in "aguacate":
         print(k + k, end=" ")
-

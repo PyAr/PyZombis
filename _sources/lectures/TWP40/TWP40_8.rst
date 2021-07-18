@@ -2,7 +2,7 @@ Asignación múltiple
 ===================
 
 
-.. activecode:: ac_l40_4
+.. activecode:: ac_l40_8
     :language: python3
     :python3_interpreter: brython
 
@@ -19,7 +19,7 @@ Asignación múltiple
 
 + ¡Para intercambiar variables, la siguiente secuencia no funciona!
 
-.. codelens:: cl_l40_5
+.. codelens:: cl_l40_8a
 
     x = 4
     y = 5
@@ -28,7 +28,7 @@ Asignación múltiple
 
 + Una solución sería usar una variable ``temporal``.
 
-.. codelens:: cl_l40_6
+.. codelens:: cl_l40_8b
 
     x = 4
     y = 5
@@ -38,7 +38,7 @@ Asignación múltiple
 
 + También se puede utilizar la asignación múltiple que es más elegante.
 
-.. codelens:: cl_l40_7
+.. codelens:: cl_l40_8c
 
     x = 4
     y = 5
