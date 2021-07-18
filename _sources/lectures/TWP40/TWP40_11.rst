@@ -7,7 +7,7 @@ Números básicos
     + Las operaciones con números enteros son mucho más rápidas.
     + Los números de coma flotante son aproximaciones: su precisión tiene un límite.
 
-.. codelens:: cl_l40_8
+.. codelens:: cl_l40_11a
          
     print(type(3))
     print(type(3.14))
@@ -42,7 +42,7 @@ Tabla de operadores
 Operadores Numéricos
 --------------------
 
-.. codelens:: cl_l40_9
+.. codelens:: cl_l40_11b
          
     print(3 + 4)
     print(3.0 + 4.0)

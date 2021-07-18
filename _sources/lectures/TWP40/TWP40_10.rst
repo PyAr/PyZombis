@@ -28,7 +28,7 @@ Ejercicio
         + 1000 dolares de inversión y 3% la tasa de interés anual
         + 1000 dolares de inversión y 10% la tasa de interés anual
 
-.. activecode:: ac_l40_6
+.. activecode:: ac_l40_10
     :nocodelens:
     :stdin:
 

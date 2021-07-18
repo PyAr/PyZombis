@@ -53,4 +53,3 @@ Ejemplo: convertidor de temperatura Fahrenheit a Celsius
     F = float(input("Fahrenheit: "))
     C = 5 * (F - 32) / 9
     print("Celsius: %2.1f" % C)
-

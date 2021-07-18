@@ -9,7 +9,7 @@ Carácter de fin de línea
 + El comando ``print`` agrega un salto de línea como carácter por defecto.
 + Se puede reemplazar el carácter de fin de línea utilizando ``end`` en el comando ``print``.
 
-.. codelens:: cl_l40_2
+.. codelens:: cl_l40_5
          
     for x in "aguacate":
         if x in "ae":
