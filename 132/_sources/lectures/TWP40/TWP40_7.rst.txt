@@ -1,7 +1,7 @@
 Lectura y tarea
 ===============
 
-.. activecode:: ac_l40_3
+.. activecode:: ac_l40_7
     :language: python3
     :python3_interpreter: brython
 

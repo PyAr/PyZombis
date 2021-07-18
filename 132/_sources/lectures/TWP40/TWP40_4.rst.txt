@@ -15,7 +15,7 @@ Literales o constantes
 
 + ¡Recuerde que hay diferentes tipos de datos! por ejemplo: ``"32"`` no es lo mismo que ``32``.
 
-.. codelens:: cl_l40_1
+.. codelens:: cl_l40_4
 
     print(int("32") == 32)
     print("32" == str(32))

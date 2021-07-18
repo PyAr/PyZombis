@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Palabras reservadas &#8212; PyZombis toctree@27651eb</title>
+    <title>3. Palabras reservadas &#8212; PyZombis toctree@0935be4</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../../index.html" aria-label="index-page">PyZombis toctree@27651eb</a>
+        <a class="navbar-brand" href="../../index.html" aria-label="index-page">PyZombis toctree@0935be4</a>
       </div>
     </div>
 
@@ -275,8 +275,30 @@
 <h1><span class="section-number">3. </span>Palabras reservadas<a class="headerlink" href="#palabras-reservadas" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>Existen palabras reservadas en Python.</p></li>
-<li><p>Estas palabras no se pueden usar para declarar una variable.</p></li>
+<li><p>Estas palabras no se pueden usar para declarar una variable, ni una función.</p></li>
 <li><p>En el ejercicio de la conversión las palabras <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">input</span></code> y <code class="docutils literal notranslate"><span class="pre">print</span></code> son palabras reservadas.</p></li>
+</ul>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l40_3 data-question_label="3.1">
+<div id=ac_l40_3_question class="ac_question col-md-12">
+<p>Este programa le permite ver la lista completa de todas las palabras reservadas que existen en Python.
+Ejecute el programa para verlas.</p>
+
+</div>
+<textarea data-lang="python" id="ac_l40_3_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import keyword
+print(keyword.kwlist)
+</textarea>
+</div>
+</div>
+<ul class="simple">
+<li><p>Aqui no se incluyen las funciones como <code class="docutils literal notranslate"><span class="pre">float()</span></code>, <code class="docutils literal notranslate"><span class="pre">input()</span></code>, <code class="docutils literal notranslate"><span class="pre">int()</span></code>, pero estas también son palabras que cumplen con la restricción.</p></li>
+<li><p>Podemos ver directivas como <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span></code>, <code class="docutils literal notranslate"><span class="pre">elif</span></code>, que ya hemos usando anteriormente.</p></li>
 </ul>
 </div>
 

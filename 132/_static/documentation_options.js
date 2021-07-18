@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '27651ebae854bc23a4583a973522f49503d5036c-toctree',
+    VERSION: '0935be4dff4f06585506704288cdd5c4124fa954-toctree',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
