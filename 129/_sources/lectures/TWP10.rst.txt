@@ -197,4 +197,4 @@ Lista de Ejercicios “again”
     :align: center
     :alt:
 
-“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
