@@ -1,6 +1,6 @@
-=====================
-For, Funciones y Azar
-=====================
+=======================
+for, random y funciones
+=======================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -30,8 +30,6 @@ for == while oculto
         print(letra)
         k = k + 1
 
-for == while oculto
-====================
 
 + Códigos equivalentes :
 
@@ -49,8 +47,6 @@ for == while oculto
         print(i)
         k = k + 1
 
-for == while oculto
-====================
 
 + Códigos equivalentes :
 
