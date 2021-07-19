@@ -726,4 +726,4 @@ Utilice el intérprete de modo interactivo aquí abajo para solucionar estos eje
    :align: center
    :alt: 
 
-“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
