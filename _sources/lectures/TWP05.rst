@@ -627,9 +627,6 @@ Prueba de escritorio o simulación
 + Puedes entrenar con lápiz, borrador y papel
 
 
-Prueba de escritorio o simulación
-=================================
-
 .. table:: **Prueba de mesa o simulación**
    :widths: auto
    :align: left
@@ -719,6 +716,9 @@ Utilice el intérprete de modo interactivo aquí abajo para solucionar estos eje
    .. raw:: html
       :file: _static/interpreter.html
 
+.. raw:: html
+   
+   <br/>
 
 .. image:: img/TWP05_041.jpeg
    :height: 12.571cm
