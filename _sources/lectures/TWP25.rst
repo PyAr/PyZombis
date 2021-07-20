@@ -9,15 +9,13 @@ Clases y objetos
     :align: center
     :alt:
 
+
 Clases y objetos
 =================
 
 + Las clases asocian datos (atributos) y operaciones (métodos) en una estructura.
 + Un objeto es una variable cuyo tipo es una clase, es decir, un objeto es una instancia de una clase.
 + Solo veremos los conceptos básicos de la programación orientada a objetos.
-
-Clases y objetos
-=================
 
 ..  codelens:: cl_l25_1
          
@@ -36,24 +34,14 @@ Clases y objetos
     print(tv_sala.conectado)
     print(tv_sala.canal)
 
-Clases y objetos
-================
-
 + Cuando declaramos una clase, estamos creando un nuevo tipo de datos.
 + Al igual que cuando creamos una lista o una cadena, estamos creando instancias o creando una instancia de estas clases.
 + Es lo mismo hacer ``list = []`` o ``list = list ()``
 + El método ``__init__`` se llama constructor y se llama al crear el objeto.
-
-Clases y objetos
-================
-
 + El parámetro ``self`` significa el objeto de televisión en sí.
 + ``self.conectado`` es un valor del objeto ``television``.
 + Siempre que queramos crear atributos de un objeto, debemos asociarlos con uno mismo utilizando ``self``.
 + De lo contrario, si escribimos solamente ``conectado = False``, ``conectado`` sería solo una variable local del método y no un atributo.
-
-Clases y objetos
-================
 
 ..  codelens:: cl_l25_2
          
@@ -76,14 +64,13 @@ Clases y objetos
     tv.cambiar_canal_hacia_abajo()
     print(tv.canal)
 
-Clases y objetos
-================
 
 + Automatizaras el banco TATU, controlando el saldo de las cuentas corriente.
 + Cada cuenta corriente puede tener uno o más clientes como titular.
 + El banco controla solo el nombre y el número de teléfono.
 + La cuenta corriente muestra un saldo y un estado de cuenta de las operaciones de retiro y depósito.
 + No hay cuentas especiales, por lo que el cliente no puede retirar más de lo que tiene de saldo.
+
 
 Clase Cliente y Clase Cuenta
 ============================
@@ -119,7 +106,6 @@ Clase Cliente y Clase Cuenta
 Utilizando las clases Cliente y Cuenta
 ======================================
 
-
 ..  activecode:: ac_l25_2
     :nocodelens:
     :stdin:
@@ -135,11 +121,13 @@ Utilizando las clases Cliente y Cuenta
     cuenta_1.resumen()
     cuenta_2.resumen()
 
+
 Declaración de operaciones
 ==========================
 
 + Agregue el método ``estado_de_cuenta`` a la clase ``Cuenta`` el cual imprime una lista de las operaciones de retiro y depósito realizadas.
 + Cambie el método ``__init__`` para usar el método ``depositar`` para inicializar el saldo.
+
 
 Clase Cliente y Clase Cuenta (Mejorada)
 =======================================
@@ -205,6 +193,7 @@ Utilizando las clases Cliente y Cuenta (Mejorada)
     cuenta_1.estado_de_cuenta()
     cuenta_2.estado_de_cuenta()
 
+
 Herencia
 ========
 
@@ -233,13 +222,12 @@ Clase Cuenta Especial
             else:
                 print("Saldo insuficiente para retirar")
 
-Clase Cuenta Especial
-=====================
 
 + Tenga en cuenta que escribimos ``Cuenta`` entre paréntesis.
 + ``CuentaEspecial`` hereda los métodos y atributos de ``Cuenta``.
 + ``self.limite`` se creará solo para clases de tipo ``CuentaEspecial``.
 + Tenga en cuenta que estamos sobre escribiendo completamente el método ``retirar`` en ``CuentaEspecial``.
+
 
 Utilizando todas las clases
 ===========================
@@ -263,12 +251,14 @@ Utilizando todas las clases
     cuenta_1.estado_de_cuenta()
     cuenta_2.estado_de_cuenta()
 
+
 Ventajas de la herencia
 =======================
 
 + Hemos modificado muy poco nuestro programa, manteniendo la funcionalidad anterior y agregando nuevas características.
 + Fue posible reutilizar los métodos de la cuenta.
 + Por lo tanto, la definición de la clase ``CuentaEspecial`` fue mucho más simple, incluyendo solo el comportamiento diferente.
+
 
 Otros ejemplos de POO
 =====================
@@ -307,6 +297,7 @@ Otros ejemplos de POO
     :include: ac_l25_7
 
     # Crea un objeto con tu nombre
+
 
 Múltiple herencia y ¿Qué objeto es?
 ===================================

@@ -9,9 +9,9 @@ Strings
     :align: center
     :alt: 
 
-Comillas de varios tipos.
-=========================
 
+Comillas de varios tipos
+========================
 
 + ¿Puedo usar comillas simples, dobles o triples?
 
@@ -36,9 +36,7 @@ Comillas de varios tipos.
 Rebanar
 =======
 
-
 + Rebanada del primer índice al anterior del segundo
-
 
 .. codelens:: cl_l18_2
          
@@ -48,10 +46,6 @@ Rebanar
     print(x[2:4])
     print(x[0:5])
     print(x[1:8])
-
-
-Rebanar
-========
 
 
 + Podemos omitir índices, sustituyendo el extremo correspondiente y
@@ -80,10 +74,6 @@ Incremento en el corte
     texto = "papa cuando nace"
     print(texto[::2])
     print(texto[::-1])
-
-
-Incremento en el corte
-=======================
 
 
 + Comprobar si una palabra es palíndrome
@@ -128,9 +118,8 @@ Puedo crear nuevos strings
     print(texto)
 
 
-Concentración
+Concatenación
 =============
-
 
 + Ejemplo de un programa que lee una palabra y reemplaza las vocales por ``"*"``.
   La función ``lower`` transforma las letras en minúsculas.
@@ -280,17 +269,11 @@ Ejercicio
 Dojo de codificación
 ====================
 
-
 .. image:: img/TWP18_015.jpeg
     :height: 14.251cm
     :width: 19.001cm
     :align: center
     :alt: 
-
-
-Dojo de codificación
-=====================
-
 
 + Desarrollo basado en pruebas
 + Pasos de bebé

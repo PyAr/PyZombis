@@ -15,6 +15,7 @@ Revisión de String
 + Busquemos dónde está la información en un texto.
 + Y aprenderemos uno de los conceptos más importantes de orientación a la objetos: métodos
 
+
 Starbuzz Café
 =============
 
@@ -53,17 +54,21 @@ El CEO solo quiere el precio
 + Este es el texto HTML "en bruto", que es el formato de las páginas web.
 + El precio está incrustado en HTML
 
+.. code-block:: html
 
-.. image:: img/TWP33_002.png
-    :height: 5.727cm
-    :width: 24.005cm
-    :align: center
-    :alt:
+    <html><head><title>Welcome to the Beans'R'Us Pricing Page</title>
+    <link rel="stylesheet" type="text/css" href="beansrus.css" />
+    </head><body>
+    <h2>Welcome to the Beans'R'Us Pricing Page</h2>
+    <p>Current price of coffee beans = <strong>$6.73</strong></p>
+    <p>Price valid for 15 minutes from Sun Jul 11 03:08:01 2021.</p>
+    </body></html>
+
 
 Strings
 =======
 
-+ String y las cadenas de caracteres.
++ Recibimos el output anterior como una string o cadena de caracteres.
 
 .. image:: img/TWP33_005.png
     :height: 2.112cm
@@ -79,8 +84,6 @@ Strings
     :align: center
     :alt:
 
-Strings
-=======
 
 .. image:: img/TWP33_007.jpg
     :height: 5cm
@@ -94,9 +97,6 @@ Strings
     :width: 16.483cm
     :align: center
     :alt:
-
-Strings
-=======
 
 .. image:: img/TWP33_009.jpg
     :height: 7.317cm
@@ -115,22 +115,14 @@ Cortar
     print(texto[0:3])
     print(texto[4:6])
 
-
 + Corta el primer número antes del segundo.
 + ¡No incluye el segundo número!
-
-Cortar
-======
 
 .. image:: img/TWP33_012.jpg
     :height: 10.323cm
     :width: 19.483cm
     :align: center
     :alt:
-
-
-Cortar
-======
 
 .. activecode:: ac_l33_2
     :nocodelens:
@@ -142,6 +134,7 @@ Cortar
     pagina = urlopen(URL_PRECIOS)
     texto = pagina.read()
     print(texto[234:238])
+
 
 ¡El CEO está feliz!
 ===================
@@ -171,6 +164,7 @@ No hay preguntas tontas
     import antigravity
     # Ejecuta este codigo
 
+
 Descuentos para clientes leales
 ===============================
 
@@ -197,6 +191,7 @@ Programa de fidelización
 
 + ¡No funcionó! la cadena "Bean" apareció en lugar del precio. ¿Por qué sera?
 
+
 El precio se movió
 ==================
 
@@ -221,6 +216,7 @@ Los datos de Python son inteligentes
     print(texto.upper())
     print(texto.split())
 
+
 Método ``find``
 ===============
 
@@ -232,9 +228,6 @@ Método ``find``
     print(texto.find("P"))
     print(texto.find("lmer"))
     print(texto.find("Pa"))
-
-Método ``find``
-===============
 
 .. activecode:: ac_l33_5
     :nocodelens:
@@ -258,10 +251,6 @@ Solo cuando es inferior a 4,74
     :width: 8.6cm
     :align: center
     :alt:
-
-
-Solo cuando es inferior a 4,74
-===============================
 
 .. activecode:: ac_l33_6
     :nocodelens:
@@ -385,6 +374,7 @@ Biblioteca ``time``
 + Duerme unos segundos, ``sleep(segundos)``
 + Zona horaria ``time.timezone()``
 
+
 10 minutos entre cada acceso
 ============================
 
@@ -417,6 +407,7 @@ Resumen
 + Los métodos son funciones integradas en variables.
 + Hay bibliotecas de programación con código listo.
 + Los datos tienen un tipo, como ``int`` o ``string``.
+
 
 Herramientas de Python
 ======================
