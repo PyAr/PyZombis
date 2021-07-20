@@ -16,19 +16,26 @@ Repeticiones
 .. image:: img/TWP15_001.jpg
    :height: 15.602cm
    :width: 16.801cm
+   :align: center
    :alt: 
+
+.. raw:: html
+   
+   <br/>
 
 .. image:: img/TWP15_002.jpeg
    :height: 19.049cm
    :width: 12.668cm 
+   :align: center
    :alt: 
 
 
 Impresión de 1 a 3
 ===================
 
-+ Formas  simples
 
+Forma  simple
+*************
 
 .. codelens:: cl_l15_1
 
@@ -37,8 +44,8 @@ Impresión de 1 a 3
    print(3)
 
 
-+ Usando una variable
-
+Usando una variable
+*******************
 
 .. codelens:: cl_l15_2
 
@@ -50,12 +57,8 @@ Impresión de 1 a 3
    print(x)
 
 
-Impresión de 1 a 3
-===================
-
-
-
-+ Incrementando la variable
+Incrementando la variable
+*************************
 
 .. codelens:: cl_l15_3
 
@@ -66,8 +69,8 @@ Impresión de 1 a 3
    x = x + 1
    print(x)
 
-+ Usando ``while``
-
+Usando ``while``
+****************
 
 .. codelens:: cl_l15_4
 
@@ -75,9 +78,6 @@ Impresión de 1 a 3
    while x <= 3:
        print(x)
        x = x +1
-
-Impresión de 1 a 3
-===================
 
 
 .. image:: img/TWP15_007.jpeg
@@ -90,13 +90,25 @@ Impresión de 1 a 3
 Prueba de escritorio
 ====================
 
+.. code-block:: python
 
-.. image:: img/TWP15_Tab1.jpg
-   :height: 6cm
-   :width: 22.181cm
-   :align: center
-   :alt: 
+   x = 1
+   while x <= 3:
+       print(x)
+       x = x + 1
 
+.. table:: **Prueba de escritorio**
+   :widths: auto
+   :align: left
+
+   ====== ========
+     x    Pantalla
+   ====== ========
+   -1-    1
+   -2-    2
+   -3-    3
+   4
+   ====== ========
 
 .. codelens:: cl_l15_5
 
@@ -105,13 +117,11 @@ Prueba de escritorio
        print(x)
        x = x + 1
 
+
 Contadores
 ==========
 
-
-
 + Ahora imprima de 1 a un número ingresado por el usuario
-
 
 .. activecode:: ac_l15_1
    :nocodelens:
@@ -123,12 +133,7 @@ Contadores
        print(x)
        x = x + 1
 
-Contadores
-==========
-
-
 + Imprima números pares entre 0 y un número dado por el usuario usando ``if``
-
 
 .. activecode:: ac_l15_2
    :nocodelens:
@@ -142,13 +147,8 @@ Contadores
        x = x + 1
 
 
-Contadores
-==========
-
-
 + Imprima números pares entre 0 y un número proporcionado sin usar
   ``if``
-
 
 .. activecode:: ac_l15_3
    :nocodelens:
@@ -162,7 +162,7 @@ Contadores
 
 
 Algunos ejercicios
-------------------
+==================
 
 
 .. activecode:: ac_l15_4
@@ -206,10 +206,6 @@ Acumuladores
    print("suma: %d" %suma)
 
 
-Acumuladores
-============
-
-
 + Promedio de 10 números enteros
 
 
@@ -227,10 +223,6 @@ Acumuladores
    print("Promedio: %5.2f" %(suma / n))
 
 
-Acumuladores
-============
-
-
 + Calcular el factorial de diez
 
 .. codelens:: cl_l15_6
@@ -241,11 +233,6 @@ Acumuladores
        fact = fact * i
        i = i + 1
    print("Fact(10) = %d" %fact)
-
-
-
-Acumuladores
-============
 
 
 + Calcular el factorial de un número entero ``n``
@@ -286,10 +273,6 @@ Interrumpiendo la repetición
    print("Suma: %d" %suma)
 
 
-Interrumpiendo la repetición
-============================
-
-
 + Calcule el promedio de los números ingresados hasta que se ingrese cero
 
 
@@ -324,7 +307,7 @@ Repeticiones anidadas
    tabla_de_multiplicar = 1
    while tabla_de_multiplicar <= 10:
        n = 1
-       print("tabla_de_multiplicar %d" %tabla_de_multiplicar)
+       print("\nTabla de multiplicar del %d" %tabla_de_multiplicar)
        while  n <= 10:
            print("%d x %d = %d" %(tabla_de_multiplicar, n, tabla_de_multiplicar * n))
            n = n + 1
@@ -338,4 +321,4 @@ Repeticiones anidadas
    :alt: 
 
 
-+ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote” - Einstein
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
