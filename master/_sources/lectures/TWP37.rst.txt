@@ -9,6 +9,7 @@ Revisión de Archivos, Listas y Diccionarios
     :align: center
     :alt:
 
+
 Campeonato de Surf de Codeville
 ===============================
 
@@ -18,25 +19,18 @@ Campeonato de Surf de Codeville
     :align: center
     :alt:
 
-
-Campeonato de Surf de Codeville 
-===============================
-
 ..  image:: img/TWP37_002.jpeg
     :height: 11.923cm
     :width: 17.85cm
     :align: center
     :alt:
 
-
-Campeonato de Surf de Codeville
-===============================
-
 ..  image:: img/TWP37_003.jpeg
     :height: 12.571cm
     :width: 16.762cm
     :align: center
     :alt:
+
 
 Encuentra la puntuación más alta
 ================================
@@ -74,6 +68,7 @@ Leer el archivo ``surf.txt``
     for linea in archivo:
         print(linea.strip())
     archivo.close()
+
 
 Fragmentador for
 ================
@@ -183,6 +178,7 @@ Ordenar la lista sería mejor
     :align: center
     :alt:
 
+
 Ordenar es más fácil en la memoria
 ==================================
 
@@ -201,8 +197,8 @@ Primero: lea los datos en la memoria
     :alt:
 
 
-Wow, vampiro usa un tren de datos
-=================================
+Wow, usemos un tren de datos
+============================
 
 + Matriz, lista, vector son nombres comunes para un lote completo de datos.
 + Solo necesito una sola variable para todo el tren de datos.
@@ -264,14 +260,13 @@ Ordenar en orden descendente
 Métodos ``sort`` y ``reverse``
 ==============================
 
-
 + El método ``sort`` ordena los datos.
 + El uso de ``reverse`` para mantenerlos en orden descendente.
 + Es más inteligente usar ``puntuaciones.sort(reverse = True)``
 
+
 Finalmente las posiciones correctas
 ===================================
-
 
 ..  activecode:: ac_l37_5
     :nocodelens:
@@ -298,6 +293,7 @@ Finalmente las posiciones correctas
     :align: center
     :alt:
 
+
 ¿Cuáles son los nombres de los ganadores?
 =========================================
 
@@ -306,6 +302,7 @@ Finalmente las posiciones correctas
     :width: 16.645cm
     :align: center
     :alt:
+
 
 Usando otra lista
 =================
@@ -335,6 +332,7 @@ Usando otra lista
     print(f"2. {nombres[1]} {puntuaciones[1]:.2f}")
     print(f"3. {nombres[2]} {puntuaciones[2]:.2f}")
 
+
 ¡Pero estos datos son incorrectos!
 ==================================
 
@@ -344,6 +342,7 @@ Usando otra lista
 + Se pierde la correspondencia de las puntuaciones y los nombres de los participantes.
 + Necesario otra estructura de datos para no perder la correspondencia.
 
+
 Necesitamos unir las listas
 ===========================
 
@@ -352,6 +351,7 @@ Necesitamos unir las listas
     :width: 17.645cm
     :align: center
     :alt:
+
 
 Usando y ordenando un diccionario
 =================================
