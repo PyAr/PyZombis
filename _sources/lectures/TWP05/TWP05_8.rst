@@ -8,7 +8,7 @@ Variables lógicas
   un error de sintaxis
 
 Operadores relacionales
-=======================
+-----------------------
 
 .. table:: **Operadores relacionales**
    :widths: auto
