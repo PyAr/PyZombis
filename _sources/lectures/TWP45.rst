@@ -103,7 +103,7 @@ En este ejercicio vamos a acceder a Reddit para obetener datos como los de la si
     import json
     
     # La url de Reddit a la que accederemos
-    url = "http://www.reddit.com/r/Python/.json"
+    url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
     resp = urllib.request.urlopen(url).read()
     
     # La respuesta se da en formato json, se debe transformar a  
@@ -301,7 +301,7 @@ contiene  dominios, nombres y países de la mayoría de las universidades del mu
     import urllib.parse
     import json
 
-    api_url = "http://universities.hipolabs.com/search?"
+    api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search?"
     parametros = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
 
     solicitud = urllib.request.urlopen(api_url + parametros)
@@ -320,7 +320,7 @@ contiene  dominios, nombres y países de la mayoría de las universidades del mu
     import requests
     import json
 
-    api_url = "http://universities.hipolabs.com/search"
+    api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search"
     parametros = {"country": "colombia"}
 
     solicitud = requests.get(api_url, params=parametros)
