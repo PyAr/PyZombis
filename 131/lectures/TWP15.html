@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Repeticiones &#8212; PyZombis 13_Hangman@dd7f7d4</title>
+    <title>Repeticiones &#8212; PyZombis 13_Hangman@b9b3beb</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 13_Hangman@dd7f7d4</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 13_Hangman@b9b3beb</a>
       </div>
     </div>
 
@@ -228,22 +228,18 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Repeticiones</a><ul>
 <li><a class="reference internal" href="#id1">Repeticiones</a></li>
-<li><a class="reference internal" href="#impresion-de-1-a-3">Impresión de 1 a 3</a></li>
-<li><a class="reference internal" href="#id2">Impresión de 1 a 3</a></li>
-<li><a class="reference internal" href="#id3">Impresión de 1 a 3</a></li>
-<li><a class="reference internal" href="#prueba-de-escritorio">Prueba de escritorio</a></li>
-<li><a class="reference internal" href="#contadores">Contadores</a></li>
-<li><a class="reference internal" href="#id4">Contadores</a></li>
-<li><a class="reference internal" href="#id5">Contadores</a><ul>
-<li><a class="reference internal" href="#algunos-ejercicios">Algunos ejercicios</a></li>
+<li><a class="reference internal" href="#impresion-de-1-a-3">Impresión de 1 a 3</a><ul>
+<li><a class="reference internal" href="#forma-simple">Forma  simple</a></li>
+<li><a class="reference internal" href="#usando-una-variable">Usando una variable</a></li>
+<li><a class="reference internal" href="#incrementando-la-variable">Incrementando la variable</a></li>
+<li><a class="reference internal" href="#usando-while">Usando <code class="docutils literal notranslate"><span class="pre">while</span></code></a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#prueba-de-escritorio">Prueba de escritorio</a></li>
+<li><a class="reference internal" href="#contadores">Contadores</a></li>
+<li><a class="reference internal" href="#algunos-ejercicios">Algunos ejercicios</a></li>
 <li><a class="reference internal" href="#acumuladores">Acumuladores</a></li>
-<li><a class="reference internal" href="#id6">Acumuladores</a></li>
-<li><a class="reference internal" href="#id7">Acumuladores</a></li>
-<li><a class="reference internal" href="#id8">Acumuladores</a></li>
 <li><a class="reference internal" href="#interrumpiendo-la-repeticion">Interrumpiendo la repetición</a></li>
-<li><a class="reference internal" href="#id9">Interrumpiendo la repetición</a></li>
 <li><a class="reference internal" href="#repeticiones-anidadas">Repeticiones anidadas</a></li>
 </ul>
 </li>
@@ -296,14 +292,13 @@
 <a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
 <div class="section" id="id1">
 <h2>Repeticiones<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP15_001.jpg"><img alt="" src="../_images/TWP15_001.jpg" style="width: 16.801cm; height: 15.602cm;" /></a>
-<a class="reference internal image-reference" href="../_images/TWP15_002.jpeg"><img alt="" src="../_images/TWP15_002.jpeg" style="width: 12.668cm; height: 19.049cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP15_001.jpg"><img alt="" class="align-center" src="../_images/TWP15_001.jpg" style="width: 16.801cm; height: 15.602cm;" /></a>
+<br/><a class="reference internal image-reference" href="../_images/TWP15_002.jpeg"><img alt="" class="align-center" src="../_images/TWP15_002.jpeg" style="width: 12.668cm; height: 19.049cm;" /></a>
 </div>
 <div class="section" id="impresion-de-1-a-3">
 <h2>Impresión de 1 a 3<a class="headerlink" href="#impresion-de-1-a-3" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Formas  simples</p></li>
-</ul>
+<div class="section" id="forma-simple">
+<h3>Forma  simple<a class="headerlink" href="#forma-simple" title="Permalink to this headline">¶</a></h3>
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
@@ -323,9 +318,9 @@ if (allTraceData === undefined) {
 allTraceData["cl_l15_1"] = {"code": "print(1)\nprint(2)\nprint(3)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "1\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n3\n"}]};
 </script>
 </div>
-<ul class="simple">
-<li><p>Usando una variable</p></li>
-</ul>
+</div>
+<div class="section" id="usando-una-variable">
+<h3>Usando una variable<a class="headerlink" href="#usando-una-variable" title="Permalink to this headline">¶</a></h3>
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
@@ -346,11 +341,8 @@ allTraceData["cl_l15_2"] = {"code": "x = 1\nprint(x)\nx = 2\nprint(x)\nx = 3\npr
 </script>
 </div>
 </div>
-<div class="section" id="id2">
-<h2>Impresión de 1 a 3<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Incrementando la variable</p></li>
-</ul>
+<div class="section" id="incrementando-la-variable">
+<h3>Incrementando la variable<a class="headerlink" href="#incrementando-la-variable" title="Permalink to this headline">¶</a></h3>
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
@@ -370,9 +362,9 @@ if (allTraceData === undefined) {
 allTraceData["cl_l15_3"] = {"code": "x = 1\nprint(x)\nx = x + 1\nprint(x)\nx = x + 1\nprint(x)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 1}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 1}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 2}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": 2}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"x": 3}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"x": 3}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n3\n"}]};
 </script>
 </div>
-<ul class="simple">
-<li><p>Usando <code class="docutils literal notranslate"><span class="pre">while</span></code></p></li>
-</ul>
+</div>
+<div class="section" id="usando-while">
+<h3>Usando <code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#usando-while" title="Permalink to this headline">¶</a></h3>
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="4">
@@ -392,14 +384,39 @@ if (allTraceData === undefined) {
 allTraceData["cl_l15_4"] = {"code": "x = 1\nwhile x <= 3:\n    print(x)\n    x = x +1", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 1}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 1}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 1}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 2}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 2}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 2}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 3}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 3}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 3}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n3\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 4}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n3\n"}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"x": 4}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "1\n2\n3\n"}]};
 </script>
 </div>
-</div>
-<div class="section" id="id3">
-<h2>Impresión de 1 a 3<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP15_007.jpeg"><img alt="" class="align-center" src="../_images/TWP15_007.jpeg" style="width: 22.181cm; height: 14.804cm;" /></a>
+</div>
 </div>
 <div class="section" id="prueba-de-escritorio">
 <h2>Prueba de escritorio<a class="headerlink" href="#prueba-de-escritorio" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP15_Tab1.jpg"><img alt="" class="align-center" src="../_images/TWP15_Tab1.jpg" style="width: 22.181cm; height: 6cm;" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<table class="colwidths-auto docutils align-left" id="id2">
+<caption><span class="caption-text"><strong>Prueba de escritorio</strong></span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>x</p></th>
+<th class="head"><p>Pantalla</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-1-</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>-2-</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>-3-</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 <div class="runestone" style="max-width: none;">
     <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5">
@@ -444,9 +461,6 @@ while x <= fin:
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="id4">
-<h2>Contadores<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Imprima números pares entre 0 y un número dado por el usuario usando <code class="docutils literal notranslate"><span class="pre">if</span></code></p></li>
 </ul>
@@ -470,9 +484,6 @@ while x <= fin:
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="id5">
-<h2>Contadores<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Imprima números pares entre 0 y un número proporcionado sin usar
 <code class="docutils literal notranslate"><span class="pre">if</span></code></p></li>
@@ -496,8 +507,9 @@ while x <= fin:
 </textarea>
 </div>
 </div>
+</div>
 <div class="section" id="algunos-ejercicios">
-<h3>Algunos ejercicios<a class="headerlink" href="#algunos-ejercicios" title="Permalink to this headline">¶</a></h3>
+<h2>Algunos ejercicios<a class="headerlink" href="#algunos-ejercicios" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_l15_4 data-question_label="9">
@@ -532,7 +544,6 @@ pero esta vez solo los números impares.</p>
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="acumuladores">
 <h2>Acumuladores<a class="headerlink" href="#acumuladores" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -562,9 +573,6 @@ print("suma: %d" %suma)
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="id6">
-<h2>Acumuladores<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Promedio de 10 números enteros</p></li>
 </ul>
@@ -590,9 +598,6 @@ print("Promedio: %5.2f" %(suma / n))
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="id7">
-<h2>Acumuladores<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Calcular el factorial de diez</p></li>
 </ul>
@@ -615,9 +620,6 @@ if (allTraceData === undefined) {
 allTraceData["cl_l15_6"] = {"code": "i = 1\nfact = 1\nwhile i <= 10:\n    fact = fact * i\n    i = i + 1\nprint(\"Fact(10) = %d\" %fact)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 1, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 1, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 1, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 2, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 2, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 2, "fact": 2}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 3, "fact": 2}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 3, "fact": 2}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 3, "fact": 6}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 4, "fact": 6}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 4, "fact": 6}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 4, "fact": 24}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 5, "fact": 24}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 5, "fact": 24}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 5, "fact": 120}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 6, "fact": 120}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 6, "fact": 120}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 6, "fact": 720}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 7, "fact": 720}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 7, "fact": 720}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 7, "fact": 5040}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 8, "fact": 5040}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 8, "fact": 5040}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 8, "fact": 40320}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 9, "fact": 40320}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 9, "fact": 40320}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 9, "fact": 362880}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 10, "fact": 362880}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 10, "fact": 362880}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 10, "fact": 3628800}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 11, "fact": 3628800}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"i": 11, "fact": 3628800}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"i": 11, "fact": 3628800}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": "Fact(10) = 3628800\n"}]};
 </script>
 </div>
-</div>
-<div class="section" id="id8">
-<h2>Acumuladores<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Calcular el factorial de un número entero <code class="docutils literal notranslate"><span class="pre">n</span></code></p></li>
 </ul>
@@ -671,9 +673,6 @@ print("Suma: %d" %suma)
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="id9">
-<h2>Interrumpiendo la repetición<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Calcule el promedio de los números ingresados hasta que se ingrese cero</p></li>
 </ul>
@@ -722,7 +721,7 @@ print("Media: %5.2f" %(suma / n))
 tabla_de_multiplicar = 1
 while tabla_de_multiplicar <= 10:
     n = 1
-    print("tabla_de_multiplicar %d" %tabla_de_multiplicar)
+    print("\nTabla de multiplicar del %d" %tabla_de_multiplicar)
     while  n <= 10:
         print("%d x %d = %d" %(tabla_de_multiplicar, n, tabla_de_multiplicar * n))
         n = n + 1
@@ -731,9 +730,7 @@ while tabla_de_multiplicar <= 10:
 </div>
 </div>
 <a class="reference internal image-reference" href="../_images/TWP05_041.jpeg"><img alt="" class="align-center" src="../_images/TWP05_041.jpeg" style="width: 9.411cm; height: 12.571cm;" /></a>
-<ul class="simple">
-<li><p>“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote” - Einstein</p></li>
-</ul>
+<p>“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein</p>
 </div>
 </div>
 

@@ -1,6 +1,29 @@
-====================================================
-Bienvenido a PyZombis: un curso de Python en Español
-====================================================
+=====================
+Bienvenido a PyZombis
+=====================
+-----------------------------
+un curso de Python en español
+-----------------------------
+
+
+.. youtube:: YO58tXerKDc
+   :divid: Introducción
+   :height: 315
+   :width: 560
+
+
+.. raw:: html
+
+   <script>
+       // script to center the introduction video.
+       let video = document.getElementById("Introducción");
+       let div = video.parentElement;
+       div.style.cssText += "text-align:center";
+   </script>
+   <style>
+       h1, h2 {text-align: center;}
+   </style>
+
 
 Contenidos:
 
@@ -20,7 +43,7 @@ Contenidos:
    lectures/TWP35
    lectures/TWP37
    lectures/TWP38
-   lectures/TWP40
+   lectures/TWP40/toctree
    lectures/TWP42
    lectures/TWP45
    lectures/TWP47
@@ -47,13 +70,4 @@ Contenidos:
    quiz/QuizExtras.rst
    quiz/QuizExtras2.rst
    lectures/Reto01.rst
-
-
-================
-Índices y tablas
-================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reto Ahorcado &#8212; PyZombis 13_Hangman@dd7f7d4</title>
+    <title>Reto Ahorcado &#8212; PyZombis 13_Hangman@b9b3beb</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -105,7 +105,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 13_Hangman@dd7f7d4</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis 13_Hangman@b9b3beb</a>
       </div>
     </div>
 
@@ -285,48 +285,70 @@ los dibujos del ahorcado.</p>
            data-wasm=/_static
       style="visibility: hidden;">
 dibujos = [
-    """     +------+
-            |     |
-            O     |
-                  |
-                  |
-                  |
-        ...........""",
-    """     +------+
-            |     |
-            O     |
-            |     |
-                  |
-                  |
-        ...........""",
-    """     +------+
-            |     |
-            O     |
-            |\    |
-                  |
-                  |
-        ...........""",
-    """     +------+
-            |     |
-            O     |
-           /|\    |
-                  |
-                  |
-        ...........""",
-    """     +------+
-            |     |
-            O     |
-           /|\    |
-           /      |
-                  |
-        ...........""",
-    """     +------+
-            |     |
-            O     |
-           /|\    |
-           / \    |
-                  |
-        ...........""",
+    """
+  +------+
+         |
+         |
+         |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+         |
+         |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+         |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+  |      |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+ /|      |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+ /|\     |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+ /|\     |
+ /       |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+ /|\     |
+ / \     |
+         |
++--------+ """,
 ]
 </textarea>
 </div>
@@ -374,7 +396,8 @@ del mundo.
 Con la librería <code class="docutils literal notranslate"><span class="pre">requests</span></code> acceda a la API de University Domains. La url es la siguiente
 <a class="reference external" href="http://universities.hipolabs.com/search">http://universities.hipolabs.com/search</a>
 Desarrolle la función <code class="docutils literal notranslate"><span class="pre">escoger</span></code> que escoja de manera <strong>aleatoria</strong> una ciudad dentro de las ciudades de la
-lista <code class="docutils literal notranslate"><span class="pre">ciudades</span></code>. Esta ciudad será devuelta por la función.</p>
+lista <code class="docutils literal notranslate"><span class="pre">ciudades</span></code>. Esta ciudad será devuelta por la función. Cabe aclarar que el nombre de cada ciudad
+está en inglés.</p>
 
 </div>
 <textarea data-lang="python" id="ac_r01_3_editor" 
@@ -384,7 +407,7 @@ lista <code class="docutils literal notranslate"><span class="pre">ciudades</spa
       style="visibility: hidden;">
 import requests
 import json
-# Debe importar otra librería
+from random import choice
 
 api_url = "http://universities.hipolabs.com/search"
 
@@ -455,7 +478,8 @@ Si el usuario ingresa más de una letra u otro carácter especial, se debe impri
 alertando al usuario de su error. Por ejemplo: <code class="docutils literal notranslate"><span class="pre">&quot;Caracter</span> <span class="pre">inválido&quot;</span></code>
 Esta función tendrá un bucle que hará que todos los datos sean coherentes y solo pasará
 a tu programa principal la letra minúscula que no se probó antes. Guarde lo ingresado por el usuario en la
-variable <code class="docutils literal notranslate"><span class="pre">x</span></code>. <strong>Nota</strong>: La función se va a ejecutar una vez para verificar si pasa las pruebas unitarias.</p>
+variable <code class="docutils literal notranslate"><span class="pre">x</span></code>. <strong>Nota</strong>: La función se va a ejecutar una vez y pedirá que se ingrese una letra
+para verificar si pasa las pruebas unitarias.</p>
 
 </div>
 <textarea data-lang="python" id="ac_r01_5_editor" 
@@ -501,7 +525,7 @@ myTests().main()
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">jugar_nuevamente</span></code> que pregunte al usuario si quiere volver a
 jugar. La respuesta debe ser una <em>s</em> o <em>n</em> (S/N). Sin importar si el usuario ingresa la respuesta
 en mayúscula o minúscula, el programa debe transformarla a minúscula. La función devuelve <code class="docutils literal notranslate"><span class="pre">True</span></code> o <code class="docutils literal notranslate"><span class="pre">False</span></code>
-dependiendo de la respuesta. <strong>Nota</strong>: La función se va a ejecutar dos vez para verificar si pasa las pruebas unitarias.
+dependiendo de la respuesta. <strong>Nota</strong>: La función se va a ejecutar dos veces para verificar si pasa las pruebas unitarias.
 En la consola verá instrucciones sobre qué ingresar para cada prueba.</p>
 
 </div>
@@ -574,7 +598,7 @@ myTests().main()
 </div><div data-component="tab" data-tabname="ac_8" >
 <p>Ya ha definido todas las funciones y variables necesarias para el programa. Si ha llegado hasta aquí,
 debió haber cumplido con todo y haber pasado todas las pruebas unitarias. De ser así, puede correr el
-siguiente programa para probar su juego.</p>
+siguiente programa para probar su juego. El tiempo que tiene para jugar son 5 minutos.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_r01_8 data-question_label="8">
@@ -586,11 +610,9 @@ siguiente programa para probar su juego.</p>
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
-# Esto es para aumentar el tiempo de ejecución de Runestone
+# Esto nos sirve para aumentar la duración del programa a 5 minutos.
 import sys
-
 sys.setExecutionLimit(300000)
-
 
 p_aleatoria = escoger(ciudades)
 
@@ -618,6 +640,8 @@ while True:
             p_aleatoria = escoger(ciudades)
         else:
             break
+
+====
 </textarea>
 </div>
 </div>
