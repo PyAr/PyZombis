@@ -29,7 +29,7 @@ Operadores relacionales
 Ejemplos:
 ---------
 
-.. codelens:: cl_l05_3
+.. codelens:: cl_l05_8a
     
     a = 1
     b = 5
@@ -49,7 +49,7 @@ Ejemplo importante
 
 + >= o <= para valores iguales
 
-.. codelens:: cl_l05_4
+.. codelens:: cl_l05_8b
     
     print(5 >= 5)
     print(5 <= 5)
@@ -60,7 +60,7 @@ Ejemplo
 + Podemos usar operadores relacionales para inicializar variables del
   tipo lógico
 
-.. codelens:: cl_l05_5
+.. codelens:: cl_l05_8c
     
     nota = 8
     promedio = 6
