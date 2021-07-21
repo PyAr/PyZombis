@@ -5,7 +5,7 @@ Cambiar variables a lo largo del tiempo
 + Por lo tanto, las variables pueden cambiar a lo largo de la ejecución de su
   programa
 
-.. codelens:: cl_l05_22
+.. codelens:: cl_l05_13
     
     deuda = 0 
     compra = 100
