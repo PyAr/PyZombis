@@ -5,7 +5,7 @@ Conceptos sobre variables y asignación
   un área de la memoria de la computadora
 + El símbolo para la asignación es el igual (``=``)
 
-.. codelens:: cl_l05_1
+.. codelens:: cl_l05_4a
     
     a = 2
     b = 3
@@ -31,7 +31,7 @@ Otras alternativas
   ``b``, para sumar dos números?
 + Podríamos haber logrado el mismo resultado de varias maneras.
 
-.. codelens:: cl_l05_2
+.. codelens:: cl_l05_4b
     
     print(2 + 3)
     print(5)

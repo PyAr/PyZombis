@@ -7,7 +7,7 @@ Variable String
 + Para diferenciar sus comandos de una cadena, usamos comillas en
   principio y fin
 
-.. codelens:: cl_l05_12
+.. codelens:: cl_l05_11a
     
     texto = "Joaquin y Maria comen pan"
     print(texto)
@@ -16,7 +16,7 @@ Variable String
 + Una cadena tiene una longitud asociada
 + Podemos obtener el tamaño a través de la función de ``len`` incorporada en Python
 
-.. codelens:: cl_l05_13
+.. codelens:: cl_l05_11b
     
     texto = "Joaquin y Maria comen pan"
     print(len(texto))
@@ -26,7 +26,7 @@ Variable String
 + Este número se llama índice y comenzamos a contar desde cero
 + Accedemos al carácter proporcionando el índice entre corchetes ``[]``
 
-.. codelens:: cl_l05_14
+.. codelens:: cl_l05_11c
     
     texto = "Joaquin y Maria comen pan"
     print(texto[0])
@@ -38,7 +38,7 @@ Variable String
 + **Precaución**: no podemos acceder a un índice mayor que la cantidad de
   caracteres de cadena
 
-.. codelens:: cl_l05_15
+.. codelens:: cl_l05_11d
     
     texto = "Juan y Maria comen pan"
     print(texto[22])

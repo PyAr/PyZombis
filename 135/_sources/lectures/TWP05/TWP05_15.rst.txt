@@ -4,7 +4,7 @@ Entrada de datos
 + Hasta ahora nuestros programas han trabajado con valores conocidos.
 + Comenzaremos a obtener los valores durante la ejecución de los programas.
 
-.. activecode:: ac_l05_10b
+.. activecode:: ac_l05_15a
    :nocodelens:
    :stdin:
 
@@ -19,7 +19,7 @@ Conversión de entrada de datos
 + Usamos la función ``int()`` y ``float()`` para convertir un valor a un entero o
   a un valor de punto flotante respectivamente
 
-.. activecode:: ac_l05_10c
+.. activecode:: ac_l05_15b
    :nocodelens:
    :stdin:
 

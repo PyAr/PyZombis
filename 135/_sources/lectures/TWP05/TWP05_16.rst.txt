@@ -1,6 +1,8 @@
 Lista de Ejercicios
 ===================
 
+Utilice el intérprete de modo interactivo aquí abajo para solucionar los siguientes ejercicios.
+
 #. Su salario actual es de $6500. Calcule su nuevo salario con un aumento del 5%
 #. Muestre su nombre en la pantalla
 #. Calcule la suma de tres variables
@@ -9,7 +11,6 @@ Lista de Ejercicios
 #. Experimente en el intérprete interactivo de Python utilizar ``type(x)`` donde ``x`` es cada uno de los valores anteriores
 #. ¿Es posible calcular 2 elevado a un millón?
 
-Utilice el intérprete de modo interactivo aquí abajo para solucionar estos ejercicios.
 
 .. only:: html
 
