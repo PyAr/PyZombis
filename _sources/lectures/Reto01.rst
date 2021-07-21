@@ -18,48 +18,70 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
 
             ~~~~
             dibujos = [
-                """     +------+
-                        |     |
-                        O     |
-                              |
-                              |
-                              |
-                    ...........""",
-                """     +------+
-                        |     |
-                        O     |
-                        |     |
-                              |
-                              |
-                    ...........""",
-                """     +------+
-                        |     |
-                        O     |
-                        |\    |
-                              |
-                              |
-                    ...........""",
-                """     +------+
-                        |     |
-                        O     |
-                       /|\    |
-                              |
-                              |
-                    ...........""",
-                """     +------+
-                        |     |
-                        O     |
-                       /|\    |
-                       /      |
-                              |
-                    ...........""",
-                """     +------+
-                        |     |
-                        O     |
-                       /|\    |
-                       / \    |
-                              |
-                    ...........""",
+                """
+              +------+
+                     |
+                     |
+                     |
+                     |
+                     |
+            +--------+ """,
+                """
+              +------+
+              |      |
+                     |
+                     |
+                     |
+                     |
+            +--------+ """,
+                """
+              +------+
+              |      |
+              o      |
+                     |
+                     |
+                     |
+            +--------+ """,
+                """
+              +------+
+              |      |
+              o      |
+              |      |
+                     |
+                     |
+            +--------+ """,
+                """
+              +------+
+              |      |
+              o      |
+             /|      |
+                     |
+                     |
+            +--------+ """,
+                """
+              +------+
+              |      |
+              o      |
+             /|\     |
+                     |
+                     |
+            +--------+ """,
+                """
+              +------+
+              |      |
+              o      |
+             /|\     |
+             /       |
+                     |
+            +--------+ """,
+                """
+              +------+
+              |      |
+              o      |
+             /|\     |
+             / \     |
+                     |
+            +--------+ """,
             ]
 
 
@@ -102,12 +124,13 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             Con la librería ``requests`` acceda a la API de University Domains. La url es la siguiente 
             http://universities.hipolabs.com/search 
             Desarrolle la función ``escoger`` que escoja de manera **aleatoria** una ciudad dentro de las ciudades de la 
-            lista ``ciudades``. Esta ciudad será devuelta por la función.
+            lista ``ciudades``. Esta ciudad será devuelta por la función. Cabe aclarar que el nombre de cada ciudad 
+            está en inglés.
 
             ~~~~
             import requests
             import json
-            # Debe importar otra librería
+            from random import choice
 
             api_url = "http://universities.hipolabs.com/search"
 
@@ -174,7 +197,8 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             alertando al usuario de su error. Por ejemplo: ``"Caracter inválido"``
             Esta función tendrá un bucle que hará que todos los datos sean coherentes y solo pasará 
             a tu programa principal la letra minúscula que no se probó antes. Guarde lo ingresado por el usuario en la
-            variable ``x``. **Nota**: La función se va a ejecutar una vez para verificar si pasa las pruebas unitarias.
+            variable ``x``. **Nota**: La función se va a ejecutar una vez y pedirá que se ingrese una letra 
+            para verificar si pasa las pruebas unitarias.
 
             ~~~~
             from string import digits, punctuation
@@ -215,7 +239,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             Desarrolle la función ``jugar_nuevamente`` que pregunte al usuario si quiere volver a 
             jugar. La respuesta debe ser una *s* o *n* (S/N). Sin importar si el usuario ingresa la respuesta
             en mayúscula o minúscula, el programa debe transformarla a minúscula. La función devuelve ``True`` o ``False``
-            dependiendo de la respuesta. **Nota**: La función se va a ejecutar dos vez para verificar si pasa las pruebas unitarias.
+            dependiendo de la respuesta. **Nota**: La función se va a ejecutar dos veces para verificar si pasa las pruebas unitarias.
             En la consola verá instrucciones sobre qué ingresar para cada prueba.
 
             ~~~~
@@ -276,17 +300,15 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
         
         Ya ha definido todas las funciones y variables necesarias para el programa. Si ha llegado hasta aquí, 
         debió haber cumplido con todo y haber pasado todas las pruebas unitarias. De ser así, puede correr el
-        siguiente programa para probar su juego.
+        siguiente programa para probar su juego. El tiempo que tiene para jugar son 5 minutos.
 
         .. activecode:: ac_r01_8
             :nocodelens:
             :include: ac_r01_1, ac_r01_2, ac_r01_3, ac_r01_4, ac_r01_5, ac_r01_6, ac_r01_7
 
-            # Esto es para aumentar el tiempo de ejecución de Runestone
+            # Esto nos sirve para aumentar la duración del programa a 5 minutos.
             import sys
-
             sys.setExecutionLimit(300000)
-
 
             p_aleatoria = escoger(ciudades)
 
@@ -314,3 +336,5 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
                         p_aleatoria = escoger(ciudades)
                     else:
                         break
+
+            ====
