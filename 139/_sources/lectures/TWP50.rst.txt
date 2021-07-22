@@ -342,7 +342,7 @@ Show de preguntas Zombis
     def apretar_boton_incorrecto(ev):
         global incorrectas
         iniciar_audio("incorrecto")
-        incorrectas = +1
+        incorrectas += 1
         document["contador_incorrectas"].textContent = str(incorrectas)
         print("Apretaste el botón incorrecto")
 
