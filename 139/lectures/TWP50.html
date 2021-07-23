@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interfaz gráfica &#8212; PyZombis user_interface@4154901</title>
+    <title>Interfaz gráfica &#8212; PyZombis user_interface@9919bc0</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis user_interface@4154901</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis user_interface@9919bc0</a>
       </div>
     </div>
 
@@ -332,7 +332,7 @@ from browser import document, html
 
 url_audio = "" # Agrega un enlace de un audio para reproducirlo
 print("Creando el elemento audio")
-document <= html.AUDIO(id="audio" src=url_audio, controls=True)
+document <= html.AUDIO(id="audio", src=url_audio, controls=True)
 </textarea>
 </div>
 </div>
@@ -484,7 +484,7 @@ from browser.widgets.dialog import Dialog
 d = Dialog("Show de preguntas Zombis")
 
 # Agrega elementos como botones y títulos
-d.panel <= html.H3(Aprieta los botones, id="titulo_ventana", style=dict(textAlign="center"))
+d.panel <= html.H3("Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center"))
 d.panel <= html.BUTTON("Correcto", id="btn_correcto")
 d.panel <= html.BUTTON("Incorrecto", id="btn_incorrecto", style=dict(marginLeft="5em"))
 </textarea>

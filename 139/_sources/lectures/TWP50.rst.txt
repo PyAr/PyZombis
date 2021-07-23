@@ -49,7 +49,7 @@ Reproduciendo un audio
 
     url_audio = "" # Agrega un enlace de un audio para reproducirlo
     print("Creando el elemento audio")
-    document <= html.AUDIO(id="audio" src=url_audio, controls=True)
+    document <= html.AUDIO(id="audio", src=url_audio, controls=True)
 
 + Notaste que se creó el elemento de audio con los controles para reproducirlo y detenerlo.
 + Puedes agregar cuantos sonidos quieras.
@@ -179,7 +179,7 @@ Ventana básica
     d = Dialog("Show de preguntas Zombis")
 
     # Agrega elementos como botones y títulos
-    d.panel <= html.H3(Aprieta los botones, id="titulo_ventana", style=dict(textAlign="center"))
+    d.panel <= html.H3("Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center"))
     d.panel <= html.BUTTON("Correcto", id="btn_correcto")
     d.panel <= html.BUTTON("Incorrecto", id="btn_incorrecto", style=dict(marginLeft="5em"))
 
