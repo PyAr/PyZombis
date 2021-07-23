@@ -1,7 +1,7 @@
 El programa es una red de carreteras
 ====================================
 
-.. codelens:: cl_l30_1
+.. codelens:: cl_l30_4
 
     print("¡Bienvenido a mi programa!")
     print("¡Vuelva siempre!")
@@ -41,7 +41,7 @@ Consejos
     :align: center
     :alt: 
 
-.. activecode:: ac_l30_2
+.. activecode:: ac_l30_4
     :nocodelens:
     :stdin:
 

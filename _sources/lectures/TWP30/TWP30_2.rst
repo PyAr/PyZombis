@@ -11,7 +11,7 @@ Las partes de tu programa
 Adivinando números
 ------------------
 
-.. activecode:: ac_l30_1
+.. activecode:: ac_l30_2
     :nocodelens:
     :stdin:
 
