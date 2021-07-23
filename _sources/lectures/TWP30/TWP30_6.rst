@@ -2,7 +2,7 @@ Sortear el número a adivinar
 ============================
 
 
-.. activecode:: ac_l30_4
+.. activecode:: ac_l30_6
     :language: python3
     :python3_interpreter: brython
 
