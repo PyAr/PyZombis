@@ -1,0 +1,27 @@
+Asignación de variables
+========================
+
++ Asignar una variable por lo general sigue el siguiente formato ``<variable>`` = ``<expresion>``
++ La ``<expresión>`` es calculada en el procesador y modifica el valor en la memoria referenciada por ``<variable>``.
+
+.. codelens:: cl_l40_6a
+         
+    x = 5
+    celsius = 5
+    fahrenheit = 9 / 5 * celsius + 32
+
+
++ Puede asignar valores a una misma variable varias veces.
+
+.. codelens:: cl_l40_6b
+         
+    x = 0
+    print(x)
+    x = "aguacate"
+    print(x)
+    x = 3.14
+    print(x)
+    x = x * 2
+    print(x)
+
++ En el ejemplo anterior, ``x`` toma el último valor asignado.
