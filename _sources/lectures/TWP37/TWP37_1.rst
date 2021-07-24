@@ -1,0 +1,33 @@
+Campeonato de Surf de Codeville
+===============================
+
+..  image:: ../img/TWP37_001.jpeg
+    :height: 12.571cm
+    :width: 9.428cm
+    :align: center
+    :alt:
+
+..  image:: ../img/TWP37_002.jpeg
+    :height: 11.923cm
+    :width: 17.85cm
+    :align: center
+    :alt:
+
+..  image:: ../img/TWP37_003.jpeg
+    :height: 12.571cm
+    :width: 16.762cm
+    :align: center
+    :alt:
+
+
+Encuentra la puntuación más alta
+--------------------------------
+
++ Las puntuaciones están en el archivo ``surf.txt``
++ ¡Selecciona la puntuación más alta para conocer al ganador!
+
+..  image:: ../img/TWP37_004.jpg
+    :height: 8.566cm
+    :width: 10.55cm
+    :align: center
+    :alt:
