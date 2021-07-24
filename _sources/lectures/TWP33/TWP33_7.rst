@@ -57,7 +57,7 @@ Convertir a ``float``
 
 
 ¡El CEO está muy feliz!
-=======================
+-----------------------
 
 .. image:: ../img/TWP33_030.jpg
     :height: 9.762cm
