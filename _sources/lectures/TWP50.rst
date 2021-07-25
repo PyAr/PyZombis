@@ -207,7 +207,7 @@ Capturando un evento
 
     d = Dialog("Prueba capturando un evento")
 
-    d.panel <= html.BUTTON("¡Aprietame!", id="btn_apretar", style=dict(margin="auto", display="block"))
+    d.panel <= html.BUTTON("¡Apriétame!", id="btn_apretar", style=dict(margin="auto", display="block"))
 
     # Función controladora del evento, mostrando un mensaje
     def apretar_boton(ev):
