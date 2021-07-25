@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 14 &#8212; PyZombis user_interface@80d01d0</title>
+    <title>Reto Ahorcado &#8212; PyZombis user_interface@80d01d0</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -46,8 +46,7 @@
     <script src="../_static/presenter_mode.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quiz - Extras" href="QuizExtras.html" />
-    <link rel="prev" title="Quiz - 13" href="Quiz13.html" />
+    <link rel="prev" title="Quiz - Extras 2" href="../quiz/QuizExtras2.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport' />
@@ -205,7 +204,7 @@
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=Quiz14'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombisDev&page=Reto01'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -226,11 +225,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Quiz - 14</a><ul>
-<li><a class="reference internal" href="#ejercicio-1">Ejercicio 1</a></li>
-<li><a class="reference internal" href="#ejercicio-2">Ejercicio 2</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Reto Ahorcado</a></li>
 </ul>
 </ul>
 </li>
@@ -238,18 +233,14 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Quiz - 13" data-toggle="tooltip">
-    <a href="Quiz13.html" >
+  <li id="relations-prev" title="Previous Chapter - Quiz - Extras 2" data-toggle="tooltip">
+    <a href="../quiz/QuizExtras2.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Quiz - Extras' data-toggle="tooltip" >              
-    <a href="QuizExtras.html" >
-        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
-    </a>
-  </li>
-  <li class="divider-vertical"></li>
+    <li class="divider-vertical"></li>
+  
 
 <script type="text/javascript">
   opts = {'placement':'bottom',
@@ -275,28 +266,162 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="quiz-14">
-<h1>Quiz - 14<a class="headerlink" href="#quiz-14" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="reto-ahorcado">
+<h1>Reto Ahorcado<a class="headerlink" href="#reto-ahorcado" title="Permalink to this headline">¶</a></h1>
+<p>Este reto consiste en crear el juego de <strong>ahorcado</strong> a partir de código Python.</p>
+<div id='ahorcado' data-component="tabbedStuff"  class='alert alert-warning'><div data-component="tab" data-tabname="ac_1" >
+<p>Primero haremos los distintos dibujos del ahorcado con cadenas de texto.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=q14_1 data-question_label="1">
-<div id=q14_1_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remover_iguales</span></code> que recibe una lista <code class="docutils literal notranslate"><span class="pre">numeros</span></code> de enteros. La función debe devolver una lista sin los elementos repetidos y ordenados de manera ascendente. <br /> <br />
-Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">remover_iguales([1,</span> <span class="pre">2,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">remover_iguales([1,</span> <span class="pre">2,</span> <span class="pre">3])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">remover_iguales([1,</span> <span class="pre">2,</span> <span class="pre">2,</span> <span class="pre">1])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2]</span></code> <br /></p>
+<div data-component="activecode" id=ac_r01_1 data-question_label="1">
+<div id=ac_r01_1_question class="ac_question col-md-12">
+<p>En la lista <code class="docutils literal notranslate"><span class="pre">dibujos</span></code> colocaremos las cadenas de texto que representan
+los dibujos del ahorcado.</p>
 
 </div>
-<textarea data-lang="python" id="q14_1_editor" 
+<textarea data-lang="python" id="ac_r01_1_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
-def remover_iguales(numeros):
+dibujos = [
+    """
+  +------+
+         |
+         |
+         |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+         |
+         |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+         |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+  |      |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+ /|      |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+ /|\     |
+         |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+ /|\     |
+ /       |
+         |
++--------+ """,
+    """
+  +------+
+  |      |
+  o      |
+ /|\     |
+ / \     |
+         |
++--------+ """,
+]
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="ac_2" >
+<p>Va a resolver el reto de manera progresiva.</p>
 
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_r01_2 data-question_label="2">
+<div id=ac_r01_2_question class="ac_question col-md-12">
+<p>Cree dos variables, una llamada <code class="docutils literal notranslate"><span class="pre">correctas</span></code> y la otra <code class="docutils literal notranslate"><span class="pre">incorrectas</span></code>. Ambas asígnelas a
+una cadena vacía.</p>
+
+</div>
+<textarea data-lang="python" id="ac_r01_2_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(correctas, "", "Probando que correctas esté asignada correctamente")
+        self.assertEqual(incorrectas, "", "Probando que incorrectas esté asignada correctamente")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="ac_3" >
+<p>¿Recuerda la lección de las APIs? Vamos a aplicar lo aprendido de esa lección.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_r01_3 data-question_label="3">
+<div id=ac_r01_3_question class="ac_question col-md-12">
+<p>Para poder jugar ahorcado necesitamos palabras para adivinar. En este caso vamos a
+recuperar esas palabras de la API de University Domains. Estas palabras serán ciudades
+del mundo.
+Con la librería <code class="docutils literal notranslate"><span class="pre">requests</span></code> acceda a la API de University Domains. La url es la siguiente
+<a class="reference external" href="http://universities.hipolabs.com/search">http://universities.hipolabs.com/search</a>
+Desarrolle la función <code class="docutils literal notranslate"><span class="pre">escoger</span></code> que escoja de manera <strong>aleatoria</strong> una ciudad dentro de las ciudades de la
+lista <code class="docutils literal notranslate"><span class="pre">ciudades</span></code>. Esta ciudad será devuelta por la función. Cabe aclarar que el nombre de cada ciudad
+está en inglés.</p>
+
+</div>
+<textarea data-lang="python" id="ac_r01_3_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import requests
+import json
+from random import choice
+
+api_url = "http://universities.hipolabs.com/search"
+
+solicitud = requests.get(api_url)
+datos = json.loads(solicitud.text)
+
+ciudades = []
+for universidad in datos:
+    if universidad["country"] not in ciudades:
+        ciudades.append(universidad["country"].lower().replace(" ", ""))
+
+def escoger(ciudades):
+    # Desarrolle la función
+    # Se puede lograr con una sola línea de código
 
 
 ====
@@ -306,43 +431,154 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(remover_iguales([2, 2, 1, 3]), [1, 2, 3], "Esperado: [1, 2, 3]")
-        self.assertEqual(remover_iguales([2, 2, 3, 2, 3]), [2, 3], "Esperado: [2, 3]")
-        self.assertEqual(remover_iguales([-2, 2, 3, -2, 2]), [-2, 2, 3], "Esperado: [-2, 2, 3]")
-        self.assertEqual(remover_iguales([]), [], "Esperado: []")
-        self.assertEqual(remover_iguales([1, 2, 3, 4]), [1, 2, 3, 4], "Esperado: [1, 2, 3, 4]")
-        self.assertEqual(remover_iguales([1, 1, 1, 1]), [1], "Esperado: []")
-        self.assertEqual(remover_iguales([0, -1, 1, 3]), [-1, 0, 1, 3], "Esperado: [-1, 0, 1, 3]")
+        self.assertEqual(str(type(escoger)), "<class 'function'>", "Probando que escoger haya sido definida")
+        self.assertEqual(escoger(["Mexico"]), "Mexico", "Probando que la función sirva")
+        self.assertEqual(choice([2]), 2, "Probando que choice haya sido importado")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-2">
-<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="ac_4" >
+<p>Ahora definamos otra función para imprimir el ahorcado.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=q14_2 data-question_label="2">
-<div id=q14_2_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">encriptar</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">frase</span></code>. La función debe devolver una nueva cadena encriptada, siguiendo las siguientes reglas: <br /></p>
-<ol class="arabic simple">
-<li><p>Se deben retirar todas las letras repetidas de cada una de las palabras de la frase. <br /></p></li>
-<li><p>Se deben ordenar las letras restantes de cada una de las palabras. <br /></p></li>
-</ol>
-<p>Ejemplo: <br />
-<code class="docutils literal notranslate"><span class="pre">encriptar(&quot;anita</span> <span class="pre">lava</span> <span class="pre">la</span> <span class="pre">tina&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;aint</span> <span class="pre">alv</span> <span class="pre">al</span> <span class="pre">aint&quot;</span></code> <br />
-<em>Consejo</em>: intente convertir la frase en una lista de palabras, luego intente ordenar las letras y construya una cadena con el resultado. <br /></p>
+<div data-component="activecode" id=ac_r01_4 data-question_label="4">
+<div id=ac_r01_4_question class="ac_question col-md-12">
+<p>La función <code class="docutils literal notranslate"><span class="pre">imprimir_ahorcado</span></code> imprime el dibujo del ahorcado correspondiente al
+número de letras incorrectas y correctas hasta el momento. Toma un único parámetro
+<code class="docutils literal notranslate"><span class="pre">p_aleatoria</span></code> que representa la palabra a adivinar.</p>
 
 </div>
-<textarea data-lang="python" id="q14_2_editor" 
+<textarea data-lang="python" id="ac_r01_4_editor" 
+     data-include="ac_r01_1 ac_r01_2 ac_r01_3" data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+p_aleatoria = escoger(ciudades)
+def imprimir_ahorcado(p_aleatoria):
+    print(dibujos[len(incorrectas)])
+    for c in p_aleatoria:
+        print(c if c in correctas else "_", end=" ")
+    print()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="ac_5" >
+<p>Es momento de crear la función principal de nuestro programa, la cuál pide al usuario una
+letra para adivinar.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_r01_5 data-question_label="5">
+<div id=ac_r01_5_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">adivinar</span></code>. Recibe como parámetro una cadena (<code class="docutils literal notranslate"><span class="pre">letras</span></code>) con todas las letras ya
+probadas (correctas + incorrectas). Devuelve una letra minúscula que no se ha probado antes.
+Si el usuario ingresa más de una letra u otro carácter especial, se debe imprimir un mensaje
+alertando al usuario de su error. Por ejemplo: <code class="docutils literal notranslate"><span class="pre">&quot;Caracter</span> <span class="pre">inválido&quot;</span></code>
+Esta función tendrá un bucle que hará que todos los datos sean coherentes y solo pasará
+a tu programa principal la letra minúscula que no se probó antes. Guarde lo ingresado por el usuario en la
+variable <code class="docutils literal notranslate"><span class="pre">x</span></code>. <strong>Nota</strong>: La función se va a ejecutar una vez y pedirá que se ingrese una letra
+para verificar si pasa las pruebas unitarias.</p>
+
+</div>
+<textarea data-lang="python" id="ac_r01_5_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
-def encriptar(frase):
+from string import digits, punctuation
+import time
 
+def adivinar(letras):
+    while True:
+        x =      # Empiece aquí
+
+        # Todo su código debe ir dentro de este ciclo while
+
+        # Esperar antes de preguntar por un input de nuevo
+        # No remover esta línea de código
+        time.sleep(2)
+
+
+====
+from unittest.gui import TestCaseGui
+import string
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        x = adivinar("aeiou")
+        self.assertEqual(x in string.ascii_lowercase, True, "Probando que x haya sido devuelto correctamente")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="ac_6" >
+<p>Hagamos posible que el usuario decida si quiere volver a jugar o no.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_r01_6 data-question_label="6">
+<div id=ac_r01_6_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">jugar_nuevamente</span></code> que pregunte al usuario si quiere volver a
+jugar. La respuesta debe ser una <em>s</em> o <em>n</em> (S/N). Sin importar si el usuario ingresa la respuesta
+en mayúscula o minúscula, el programa debe transformarla a minúscula. La función devuelve <code class="docutils literal notranslate"><span class="pre">True</span></code> o <code class="docutils literal notranslate"><span class="pre">False</span></code>
+dependiendo de la respuesta. <strong>Nota</strong>: La función se va a ejecutar dos veces para verificar si pasa las pruebas unitarias.
+En la consola verá instrucciones sobre qué ingresar para cada prueba.</p>
+
+</div>
+<textarea data-lang="python" id="ac_r01_6_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def jugar_nuevamente():
+
+    return
+
+
+====
+from unittest.gui import TestCaseGui
+import time
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        print("Ingrese 'S'")
+        time.sleep(2)
+        r = jugar_nuevamente()
+        self.assertEqual(r, True, "Probando que se haya utilizado el método lower")
+
+
+    def testTwo(self):
+        print("Ingrese 'n'")
+        time.sleep(2)
+        r = jugar_nuevamente()
+        self.assertEqual(r, False, "Probando que al ingresar 'n' regrese False")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="ac_7" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_r01_7 data-question_label="7">
+<div id=ac_r01_7_question class="ac_question col-md-12">
+<p>Ahora desarrolle la función <code class="docutils literal notranslate"><span class="pre">ganar</span></code>. Ésta toma dos parámetros: <code class="docutils literal notranslate"><span class="pre">p_aleatoria</span></code> que representa
+la palabra a adivinar, y <code class="docutils literal notranslate"><span class="pre">letras_adivinadas</span></code>. Debe devolver <code class="docutils literal notranslate"><span class="pre">True</span></code> si todas las letras de
+<code class="docutils literal notranslate"><span class="pre">p_aleatoria</span></code> están en la cadena <code class="docutils literal notranslate"><span class="pre">letras_adivinadas</span></code>. De lo contrario, devuelve False.</p>
+
+</div>
+<textarea data-lang="python" id="ac_r01_7_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def ganar(p_aleatoria, letras_adivinadas):
 
 
 ====
@@ -351,62 +587,81 @@ from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-
-        self.assertEqual(
-            encriptar("ana e mariana gostam de banana"),
-            "an e aimnr agmost de abn",
-            "Esperado: an e aimnr agmost de abn",
-        )
-        self.assertEqual(
-            encriptar("Batatinha quando nasce esparrama pelo chão"),
-            "Bahint adnoqu acens aemprs elop choã",
-            "Esperado: Bahint adnoqu acens aemprs elop choã",
-        )
-        self.assertEqual(
-            encriptar("anita lava la tina"),
-            "aint alv al aint", "Esperado: aint alv al aint"
-        )
-        self.assertEqual(
-            encriptar("¿Hola como estas?"),
-            "Halo¿ cmo ?aest",
-            "Esperado: Halo¿ cmo ?aest"
-        )
-        self.assertEqual(
-            encriptar("ana puede venir mañana"),
-            "an depu einrv amnñ",
-            "Esperado: an depu einrv amnñ"
-        )
-        self.assertEqual(encriptar("11111 2222 3333"), "1 2 3", "Esperado: 1 2 3")
-        self.assertEqual(encriptar("12345"), "12345", "Esperado: 12345")
+        self.assertEqual(ganar("argentina", "anitnegra"), True, "Probando la función")
+        self.assertEqual(ganar("argentina", "argent"), False, "Probando la función")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
+</div><div data-component="tab" data-tabname="ac_8" >
+<p>Ya ha definido todas las funciones y variables necesarias para el programa. Si ha llegado hasta aquí,
+debió haber cumplido con todo y haber pasado todas las pruebas unitarias. De ser así, puede correr el
+siguiente programa para probar su juego. El tiempo que tiene para jugar son 5 minutos.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_r01_8 data-question_label="8">
+<div id=ac_r01_8_question class="ac_question col-md-12">
+
 </div>
+<textarea data-lang="python" id="ac_r01_8_editor" 
+     data-include="ac_r01_1 ac_r01_2 ac_r01_3 ac_r01_4 ac_r01_5 ac_r01_6 ac_r01_7" data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+# Esto nos sirve para aumentar la duración del programa a 5 minutos.
+import sys
+sys.setExecutionLimit(300000)
+
+p_aleatoria = escoger(ciudades)
+
+while True:
+    imprimir_ahorcado(p_aleatoria)
+    time.sleep(2)
+    x = adivinar(correctas + incorrectas)
+    if x in p_aleatoria:
+        correctas = correctas + x
+    else:
+        incorrectas = incorrectas + x
+    if len(incorrectas) == len(dibujos):
+        print(f"Quedó ahorcado, la palabra era {p_aleatoria}")
+        time.sleep(1)
+        if jugar_nuevamente():
+            correctas = incorrectas = ""
+            p_aleatoria = escoger(ciudades)
+        else:
+            break
+    elif ganar(p_aleatoria, correctas):
+        print(f"Acertó la palabra: {p_aleatoria}")
+        time.sleep(1)
+        if jugar_nuevamente():
+            correctas = incorrectas = ""
+            p_aleatoria = escoger(ciudades)
+        else:
+            break
+
+====
+</textarea>
+</div>
+</div>
+</div>
+    </div>
+
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Quiz - 13' data-toggle="tooltip">
-    <a href="Quiz13.html" >
+  <li id="relations-prev" class="navLink" title='Previous Section - Quiz - Extras 2' data-toggle="tooltip">
+    <a href="../quiz/QuizExtras2.html" >
         <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
         </div>
     </a>
   </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="Quiz13.html" ></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../quiz/QuizExtras2.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Quiz - Extras' data-toggle="tooltip" >
-    <a href="QuizExtras.html" >
-      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">            
-          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
-      </div>
-    </a>
-  </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="QuizExtras.html" >Next Section - Quiz - Extras</a>
 
 <script type="text/javascript">
 
