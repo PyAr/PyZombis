@@ -69,8 +69,8 @@ Contenidos:
    quiz/Quiz14.rst
    quiz/QuizExtras.rst
    quiz/QuizExtras2.rst
-   
-   lectures/Reto02.rst
+   challenges/Reto01.rst
+   challenges/Reto02.rst
 
 ================
 Índices y tablas
