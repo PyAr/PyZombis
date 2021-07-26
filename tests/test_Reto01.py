@@ -2,7 +2,7 @@ import string
 
 
 def test_r01(page):
-    page.goto("lectures/Reto01.html")
+    page.goto("challenges/Reto01.html")
 
     # ac_1
     page.click("text=Save & Run")

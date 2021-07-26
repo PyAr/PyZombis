@@ -1,5 +1,5 @@
 def test_r02(page):
-    page.goto("lectures/Reto02.html")
+    page.goto("challenges/Reto02.html")
 
     # ac_1
     page.click("text=Save & Run")
