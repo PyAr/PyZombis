@@ -1,6 +1,6 @@
-=====================
-For, Funciones y Azar
-=====================
+=======================
+for, random y funciones
+=======================
 
 
 .. image:: img/TWP10_001.jpeg
@@ -30,8 +30,6 @@ for == while oculto
         print(letra)
         k = k + 1
 
-for == while oculto
-====================
 
 + Códigos equivalentes :
 
@@ -49,8 +47,6 @@ for == while oculto
         print(i)
         k = k + 1
 
-for == while oculto
-====================
 
 + Códigos equivalentes :
 
@@ -68,8 +64,8 @@ for == while oculto
         print(x)
         k = k + 1
 
-funciones def
-=============
+funciones ``def``
+=================
 
 + Aprendimos algunas funciones de Python: ``len``, ``int``, ``float``, ``print`` e ``input``.
 + Ahora crearemos nuestras propias funciones.
@@ -118,27 +114,20 @@ Variables locales y globales
 
     a = 5
 
-
     def cambio_y_impresion():
         a = 7
-        print("valor de a dentro de la función : %d" % a)
+        print("valor de 'a' dentro de la función : %d" % a)
 
 
-    print("valor de a antes de cambiar: %d" % a)
+    print("valor de 'a' antes de cambiar: %d" % a)
     cambio_y_impresion()
-    print("valor de a después de cambiar: %d" % a)
-
-
-
-Variables locales y globales
-============================
+    print("valor de 'a' después de cambiar: %d" % a)
 
 + En este caso, usamos la palabra reservada global. Entonces, la variable ``a`` dentro de la función es la misma que la variable definida anteriormente, es decir, es la variable global.
 
 .. codelens:: cl_l20_10
          
     a = 5
-
 
     def cambio_y_impresion():
         global a
@@ -175,11 +164,8 @@ Números aleatorios
     print(alumnos)
 
 
-Números al azar
-===============
-
-+ Defina una función de "codificación" que devuelva las letras en una cadena mezclados.
-+ **Consejo**: use ``list()`` para convertir su cadena en una lista.
++ Se define una función de "codificación" que devuelve las letras en una cadena mezclados.
++ **Nota**: Se usa la función ``list()`` para convertir una cadena en una lista.
 
 .. codelens:: cl_l20_12
          
@@ -196,8 +182,6 @@ Números al azar
     print(codificación("palmeras"))
     print(codificación("palmeras"))
 
-Números aleatorios
-==================
 
 + Genere una lista de 15 enteros aleatorios entre 10 y 100.
 
@@ -212,8 +196,6 @@ Números aleatorios
             )
     print(lista)
 
-Números aleatórios
-==================
 
 + Genere una lista de 15 enteros aleatorios entre 10 y 100 que son distintos el uno del otro.
 
@@ -239,6 +221,4 @@ Lista de ejercicios "again"
     :align: center
     :alt:
 
-+ “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
-
-
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
