@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: 'a0de155185286ccf7e5bff89811a87525c5dfde2-14_Pergamino',
+    VERSION: 'af790ec7c0da8e215ff1c27a57af0b91256be873-14_Pergamino',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',

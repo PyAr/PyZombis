@@ -9,6 +9,7 @@ Condiciones
     :align: center
     :alt:
 
+
 Condiciones
 ===========
 
@@ -25,17 +26,13 @@ Condiciones
 
 + Tus programas no siempre serán simples secuencias de comandos
 
-Condiciones
-===========
 
-+ “¿Correr o no correr? Esa es la cuestión..."
+“¿Correr o no correr? Esa es la cuestión..."
+============================================
+
 + En general no ejecuto todas las líneas del programa.
 + Ir a través de las líneas de un programa es como viajar en automóvil en una ciudad.
 + Hay puntos dónde decidimos qué camino elegir.
-
-
-Condiciones
-===========
 
 .. image:: img/TWP10_004.png
     :height: 13.389cm
@@ -60,15 +57,13 @@ if
 
 
 Dos puntos e identación
-=======================
+***********************
 
-+ En Python es obligatorio culminar cualquier condición con ``:``.
++ Note que en Python es obligatorio culminar cualquier condición (if) con ``:``.
 + Recuerda también identar los bloques de código dentro de las condiciones, es obligatorio.
 
-if
-==
 
-+ Verificar si un auto es nuevo o viejo.
+Verificar si un auto es nuevo o viejo:
 + Si el auto tiene al menos tres años de creado, es nuevo, es viejo en caso contrario.
 
 .. codelens:: cl_l10_3
@@ -79,15 +74,9 @@ if
     if anio_creacion > 3:
         print("Su auto es viejo")
 
-if
-==
-
 + Pregunte la velocidad de un automóvil, suponiendo que es un número entero.
 + En caso de que la velocidad supere los 110 km/h, muestre un mensaje que dice que el usuario ha sido multado.
 + Muestre el monto de la multa si es multado, cobrando ``$5.00`` por cada km por encima de los 110 km/h.
-
-if
-==
 
 .. codelens:: cl_l10_4
 
@@ -96,6 +85,7 @@ if
         print("Usted a sido multado")
         multa = (velocidad - 110) * 5
         print("Valor de la multa : $%5.2f " % multa)
+
 
 if / else
 =========
@@ -142,9 +132,6 @@ Estructuras anidadas
     :align: center
     :alt:
 
-Estructuras anidadas
-====================
-
 + Pueden crearse condiciones anidadas.
 + Recuerda identar las porciones de código que se encuentren anidadas.
 
@@ -161,16 +148,7 @@ Estructuras anidadas
     print("Cuenta telefonica : $%6.2f" % (minutos * precio))
 
 + Note la doble identación para cumplir la segunda condición.
-
-
-Estructuras anidadas
-====================
-
-+ Modificar el programa de la compañía "Chao" para una promoción dónde la tarifa es de ``$0.08`` cuando usa más de 800 minutos.
-
-
-Estructuras anidadas
-====================
++ Ahora modificamos el programa de la compañía "Chao" para una promoción dónde la tarifa es de ``$0.08`` cuando usa más de 800 minutos.
 
 .. codelens:: cl_l10_8
 
@@ -219,5 +197,4 @@ Lista de Ejercicios “again”
     :align: center
     :alt:
 
-+ La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
-
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein

@@ -118,7 +118,7 @@ Este reto consiste en descifrar un pergamino a partir de código Python
         Estos pergaminos están en el antiguo y misterioso idioma Googlon. Después de muchos años de estudio, 
         los lingüistas ya conocen algunas características de este idioma.
         Primero, las letras de Googlon se clasifican en dos grupos: las letras **z, m, b** se denominan 
-        "letras de tipo zombi", mientras que las demás se conocen como "letras de otro tipo".
+        "letras de tipo zombi", mientras que las demás se conocen como "letras de tipo sobrevivientes".
         Los lingüistas han descubierto que las preposiciones en Googlon son palabras que comienzan con una 
         letra de tipo zombi y terminan con otra letra, es fácil ver que hay 71 preposiciones en el Texto A.
 
@@ -126,7 +126,7 @@ Este reto consiste en descifrar un pergamino a partir de código Python
             :nocodelens:
             :include: ac_r02_1
 
-            **Calcule cuántas preposiciones existen en el texto B.** El resultado asígnelo a la varible 
+            **Calcule cuántas preposiciones existen en el texto B.** El resultado asígnelo a la variable 
             ``prep_B``. **Nota**: ``txt_A`` y ``txt_B`` ya están definidas aunque no aparezcan en la ventana 
             de código siguiente.
 
@@ -151,8 +151,8 @@ Este reto consiste en descifrar un pergamino a partir de código Python
     .. tab:: ac_3
 
         Otro hecho interesante descubierto por los lingüistas es que, en Googlon, los verbos son siempre 
-        palabras de 7 letras que terminan en una letra de tipo otra. Además, si un verbo comienza con
-        una letra de tipo otra, el verbo está en primera persona. Así, leyendo el Texto A, es posible 
+        palabras de 7 letras que terminan en una letra de tipo sobreviviente. Además, si un verbo comienza con
+        una letra de tipo sobreviviente, el verbo está en primera persona. Así, leyendo el Texto A, es posible 
         identificar 84 verbos en el texto, de los cuales 70 están en primera persona.
 
         .. activecode:: ac_r02_3
@@ -196,7 +196,7 @@ Este reto consiste en descifrar un pergamino a partir de código Python
             :nocodelens:
             :include: ac_r02_1
 
-            El profersor preparó la lista de vocabulario (ordenada) para el Texto A; obsérvela en la variable 
+            El profesor preparó la lista de vocabulario (ordenada) para el Texto A; obsérvela en la variable 
             ``lista_A``. ¿Cuál sería la lista de vocabulario ordenada del Texto B? Haga un programa que realice 
             esta lista, y la guarde en la variable ``lista_B``. **Recuerde**: los textos ya están definidos como
             en el primer ejercicio (ac_1).
