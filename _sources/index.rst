@@ -69,5 +69,13 @@ Contenidos:
    quiz/Quiz14.rst
    quiz/QuizExtras.rst
    quiz/QuizExtras2.rst
-   lectures/Reto01.rst
+   
+   lectures/Reto02.rst
+
+================
+Índices y tablas
+================
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
 
