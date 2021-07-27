@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hackeando con Python &#8212; PyZombis split-TWP35@4f1ab3d</title>
+    <title>Hackeando con Python &#8212; PyZombis split-TWP35@71a8b42</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -106,7 +106,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis split-TWP35@4f1ab3d</a>
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">PyZombis split-TWP35@71a8b42</a>
       </div>
     </div>
 
@@ -366,7 +366,7 @@ import urllib.request
 import json
 
 # La url de Reddit a la que accederemos
-url = "http://www.reddit.com/r/Python/.json"
+url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
 resp = urllib.request.urlopen(url).read()
 
 # La respuesta se da en formato json, se debe transformar a
@@ -581,7 +581,7 @@ import urllib.request
 import urllib.parse
 import json
 
-api_url = "http://universities.hipolabs.com/search?"
+api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search?"
 parametros = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
 
 solicitud = urllib.request.urlopen(api_url + parametros)
@@ -606,7 +606,7 @@ print(json.dumps(datos_json, indent=4))
 import requests
 import json
 
-api_url = "http://universities.hipolabs.com/search"
+api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search"
 parametros = {"country": "colombia"}
 
 solicitud = requests.get(api_url, params=parametros)

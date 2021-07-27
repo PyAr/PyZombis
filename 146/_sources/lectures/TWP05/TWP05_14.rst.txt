@@ -1,0 +1,32 @@
+Prueba de escritorio o simulación
+=================================
+
++ Comprender que el valor de las variables puede cambiar durante la ejecución de
+  un programa no es tan natural, pero es fundamental a la hora de programar
++ Un programa no puede leerse como texto, sino con cuidado
+  analizando línea por línea
++ Puedes entrenar con lápiz, borrador y papel
+
+
+.. table:: **Prueba de mesa o simulación**
+   :widths: auto
+   :align: left
+
+   ====== ====== ========
+   deuda  compra Pantalla
+   ====== ====== ========
+   -0-    -100-    600
+   -100-  -200-
+   -300-    300
+   600
+   ====== ====== ========
+
+
+No tengas prisa por la prueba de escritorio
+-------------------------------------------
+
+.. image:: ../img/TWP05_035.jpeg
+   :height: 13.6cm
+   :width: 20.42cm
+   :align: center
+   :alt: 
