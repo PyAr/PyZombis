@@ -12,7 +12,6 @@ Repeticiones
 
 .. toctree::
    :caption: Contenido
-   :numbered:
    :maxdepth: 1
 
    TWP15_1.rst
