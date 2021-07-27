@@ -1,0 +1,15 @@
+Tipos de variables
+==================
+
+.. image:: ../img/TWP05_015.png
+   :height: 8.507cm
+   :width: 16.595cm
+   :align: center
+   :alt: 
+
++ El contenido de una variable tiene un tipo
++ El tipo define la naturaleza de los datos que almacena la variable
++ Los tipos más comunes son:
+    + **Numéricas:** numeros enteros, números de coma flotante.
+    + **Cadenas o texto:** poder almacenar números, letras y otros caracteres.
+    + **Lógicas:** almacenan valores como Verdadero y Falso.
