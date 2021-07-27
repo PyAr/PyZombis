@@ -1,0 +1,91 @@
+Algunos ejemplos
+================
+
++ Haga un programa que lea un vector de 5 números enteros y muestre vector.
+
+..  activecode:: ac_l17_4a
+    :nocodelens:
+    :stdin:
+
+    vector = []
+    i = 1
+    while i <= 5:
+        n = int(input("Ingrese un numero: "))
+        vector.append(n)
+        i = i + 1
+    print("Vector de lectura :", vector)
+
+
++ Haga un programa que lea un vector de diez números reales y los muestre en orden inverso
+
+..  activecode:: ac_l17_4b
+    :nocodelens:
+    :stdin:
+
+    vector = []
+    i = 1
+    while i <= 10:
+        n = float(input("Ingrese un numero: "))
+        vector.append(n)
+        i += 1
+    i = 9
+    while i >= 0:
+        print(vector[i])
+        i -= 1
+
++ Haga un programa que lea cuatro notas, muestre las notas y el promedio en pantalla
+
+..  activecode:: ac_l17_4c
+    :nocodelens:
+    :stdin:
+
+    notas = []
+    i = 1
+    while i <= 4:
+        n = float(input("Nota: "))
+        notas.append(n)
+        i += 1
+    suma = 0
+    i = 0
+    while i <= 3:
+        suma += notas[i]
+        i += 1
+    print("Notas:", notas)
+    print("Media : %4.2f" % (suma / 4))
+
++ Otra forma de hacer lo mismo.
+
+..  activecode:: ac_l17_4d
+    :nocodelens:
+    :stdin:
+
+    notas = []
+    i = 1
+    suma = 0
+    while i <= 4:
+        n = float(input("Nota: "))
+        notas.append(n)
+        suma += n
+        i += 1
+    print("Notas:", notas)
+    print("Media : %4.2f" % (suma / 4))
+
+
++ Haga un programa que lea un vector de 10 caracteres en minúscula, y diga cuántas consonantes se leyeron.
+
+..  activecode:: ac_l17_4e
+    :nocodelens:
+    :stdin:
+
+    letras = []
+    i = 1
+    while i <= 10:
+        letras.append(input("Letra: "))
+        i += 1
+    i = 0
+    cont = 0
+    while i <= 9:
+        if letras[i] not in "aeiou":
+            cont += 1
+        i += 1
+    print("Fueron leídos %d consonantes" % cont)

@@ -12,7 +12,6 @@ Archivos y diccionarios
 
 .. toctree::
    :caption: Contenido
-   :numbered:
    :maxdepth: 1
 
    TWP23_1.rst
