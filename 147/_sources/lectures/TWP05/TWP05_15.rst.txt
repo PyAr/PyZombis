@@ -1,0 +1,46 @@
+Entrada de datos
+================
+
++ Hasta ahora nuestros programas han trabajado con valores conocidos.
++ Comenzaremos a obtener los valores durante la ejecución de los programas.
+
+.. activecode:: ac_l05_15a
+   :nocodelens:
+   :stdin:
+
+   nombre = input("Escriba su nombre: ")
+   print(f"Hola {nombre}!")
+
+
+Conversión de entrada de datos
+------------------------------
+
++ La función ``input`` solo devuelve cadenas
++ Usamos la función ``int()`` y ``float()`` para convertir un valor a un entero o
+  a un valor de punto flotante respectivamente
+
+.. activecode:: ac_l05_15b
+   :nocodelens:
+   :stdin:
+
+   valor_unitario = float(input("Valor de una rosquilla: "))
+   n = int(input("Número de rosquillas: "))
+   print(f"Valor total: ${(n * valor_unitario)}")
+
+
+Error común
+-----------
+
++ Abrir dos paréntesis y cerrar solo uno.
++ Esto mismo nos puede ocurrir con las llaves, corchetes, comillas, entre otros caracteres. ``{}``, ``[]``, ``" "`` siempre que abrimos uno debemos acordarnos de cerrarlo.
++ El error terminará en lo siguiente:
+
+.. code-block:: python
+
+    >>> valor_unitario = float(input("Valor de una rosquilla: ")
+    File <string>, line 1
+    valor_unitario = float(input("Valor de una rosquilla: ")
+                           ^
+    SyntaxError: '( was never closed
+
++ Siempre que la línea parezca correcta, consulte la línea inmediatamente anterior
