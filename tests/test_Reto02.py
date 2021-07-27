@@ -50,3 +50,26 @@ def test_r02(page):
     # Ensure it passed all of the tests
     page.hover("#ac_r02_4 >> text=You passed:")
     assert page.inner_text("#ac_r02_4 >> text=You passed:") == "You passed: 100.0% of the tests"
+
+    # ac_5
+    page.click("text=ac_5")
+    page.click("text=magia = []")
+    page.keyboard.press("ArrowDown")
+
+    # Code to type
+    code = [
+        "txt_B = list(set(txt_B))",
+        "for x in txt_B:",
+        "n = base_20(x)",
+        "if n % 42 == 0 and len(set(x)) == len(x):",
+        "num_magicos += 1",
+        "magia.append(x)",
+    ]
+    for i in code:
+        page.keyboard.type(i)
+        page.keyboard.press("Enter")
+
+    page.click("#ac_r02_5 >> text=Save & Run")
+    # Ensure it passed all of the tests
+    page.hover("#ac_r02_5 >> text=You passed:")
+    assert page.inner_text("#ac_r02_4 >> text=You passed:") == "You passed: 100.0% of the tests"
