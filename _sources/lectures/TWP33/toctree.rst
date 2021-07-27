@@ -18,7 +18,6 @@ Revisión de String
 
 .. toctree::
    :caption: Contenido
-   :numbered:
    :maxdepth: 1
 
    TWP33_1.rst
