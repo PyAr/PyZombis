@@ -12,7 +12,6 @@ Revisión general 2
 
 .. toctree::
    :caption: Contenido
-   :numbered:
    :maxdepth: 1
 
    TWP38_1.rst
