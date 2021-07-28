@@ -1,0 +1,91 @@
+Crypto
+======
+
+
+.. datafile:: mensaje.txt
+    :hide:
+
+    Éste es el archivo de texto
+    que usted está modificando 
+    para que todas las vocales
+    sean cambiadas por "*".
+
+
+.. activecode:: ac_l23_2a
+    :nocodelens:
+    :datafile: mensaje.txt, crypto.txt 
+
+    Lea el archivo ``"mensaje.txt"`` y escriba el archivo ``"crypto.txt"`` el cual 
+    debe tener el mismo texto del primer archivo, pero con las vocales cambiadas por 
+    ``"*"``.
+
+    ~~~~
+    texto = open("mensaje.txt", "r")
+    salida = open("crypto.txt", "w")
+
+    for linea in texto.readlines():
+        for letra in linea:
+            if letra in "aeiou":
+                salida.write("*")
+            else:
+                salida.write(letra)
+
+    texto.close()
+    salida.close()
+
+
+.. datafile:: crypto.txt
+    :cols: 20
+    :rows: 10
+    :edit:
+
+
+Ejercicio
+---------
+
+.. activecode:: ac_l23_2b
+    :nocodelens:
+    :datafile: mensaje.txt, crypto.txt
+
+    Como puede observar, el código anterior no cambió algunas vocales 
+    del archivo ``"mensaje.txt"``. Esto debido a las mayúsculas o a los acentos. 
+    Su trabajo es modificar el programa anterior para que cambie **TODAS** las 
+    vocales por ``"*"``. **Recuerde**: el método ``.lower()`` devuelve una cadena 
+    con todos sus caracteres vueltos letras minúsculas. Esta vez, va a escribir en 
+    el archivo ``"crypto2.txt"``
+
+    ~~~~
+    texto = open("mensaje.txt", "r")
+    salida = open("crypto2.txt", "w")
+
+    # Modifique el programa
+
+    for linea in texto.readlines():
+        for letra in linea:
+            if letra in "aeiou":
+                salida.write("*")
+            else:
+                salida.write(letra)
+
+    texto.close()
+    salida.close()
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            archivo = open("crypto2.txt", "r")
+            text = """*st* *s *l *rch*v* d* t*xt* q** *st*d *st* m*d*f*c*nd* p*r* q** t*d*s l*s v*c*l*s s**n c*mb**d*s p*r "*"."""
+
+            self.assertEqual(archivo.read().replace("\n", " ").rstrip(), text.strip(), f"Esperado: {text}")
+
+
+    myTests().main()
+
+
+.. datafile:: crypto2.txt
+    :cols: 20
+    :rows: 10
+    :edit:
