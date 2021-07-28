@@ -39,7 +39,7 @@ Contenidos:
    lectures/TWP23/toctree
    lectures/TWP25/toctree
    lectures/TWP30/toctree
-   lectures/TWP33
+   lectures/TWP33/toctree
    lectures/TWP35
    lectures/TWP37
    lectures/TWP38
