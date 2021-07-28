@@ -1,0 +1,44 @@
+if
+==
+
++ Lea dos valores enteros e imprima el más grande
+
+.. codelens:: cl_l10_3a
+
+    a = 8
+    b = 5
+    if a > b:
+        print("El primer número es el más grande")
+    if b > a:
+        print("¡El segundo número es el más grande!")
+
+
+Dos puntos e identación
+***********************
+
++ Note que en Python es obligatorio culminar cualquier condición (if) con ``:``.
++ Recuerda también identar los bloques de código dentro de las condiciones, es obligatorio.
+
+
+Verificar si un auto es nuevo o viejo:
++ Si el auto tiene al menos tres años de creado, es nuevo, es viejo en caso contrario.
+
+.. codelens:: cl_l10_3b
+
+    anio_creacion = 10
+    if anio_creacion <= 3:
+        print("Su auto es nuevo")
+    if anio_creacion > 3:
+        print("Su auto es viejo")
+
++ Pregunte la velocidad de un automóvil, suponiendo que es un número entero.
++ En caso de que la velocidad supere los 110 km/h, muestre un mensaje que dice que el usuario ha sido multado.
++ Muestre el monto de la multa si es multado, cobrando ``$5.00`` por cada km por encima de los 110 km/h.
+
+.. codelens:: cl_l10_3c
+
+    velocidad = 120
+    if velocidad > 110:
+        print("Usted a sido multado")
+        multa = (velocidad - 110) * 5
+        print("Valor de la multa : $%5.2f " % multa)
