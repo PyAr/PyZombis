@@ -1,0 +1,95 @@
+Archivos
+========
+
++ Hasta ahora nuestros datos desaparecieron al salir de IDLE
++ Los archivos son para almacenamiento permanente
++ Un archivo es un área de disco donde podemos leer o escribir informacion
++ Accedemos al archivo por su nombre
++ Para acceder a un archivo necesita abrirlo
++ Al abrir el archivo informamos su nombre, directorio donde está  (si necesario) y qué operaciones realizaremos: lectura y / o escritura
++ La función que abre los archivos está abierta y los modos son: r - lectura, w - escritura, a - agregar, b - binario,(actualizar)
++ Los métodos para leer o escribir son ``read()`` y ``write()``
++ Los archivos deben cerrarse con ``close()``
+
+.. code-block:: python
+
+    archivo = open("numeros.txt", "w")
+    for numero in range(1, 31):
+        archivo.write("%d\n" % numero)
+    archivo.close()
+
+
+.. datafile:: numeros.txt
+    :cols: 20
+    :rows: 10
+    :edit:
+
+
+.. activecode:: ac_l23_1a
+    :nocodelens:
+    :datafile: numeros.txt
+    :enabledownload:
+
+    Pruebe el programa anterior:
+
+    ~~~~
+    archivo = open("numeros.txt", "w")
+    for numero in range(1, 31):
+        archivo.write("%d\n" % numero)
+    archivo.close()
+
+
++ Si ejecuta este programa, no aparecerá nada en la pantalla
++ Busque en el directorio c: \ Python3x el archivo numeros.txt
++ El modo w crea el archivo si no existe, si existe será eliminado y reescrito
+
+.. code-block:: python
+
+    archivo = open("numeros.txt", "r")
+    for linea in archivo.readlines():
+        print(linea)
+    archivo.close()
+
+
+.. activecode:: ac_l23_1b
+    :nocodelens:
+    :datafile: numeros.txt
+    :enabledownload:
+    
+    Ya escribió en el archivo ``"numeros.txt"``. Ahora va a leer los datos que ha escrito: 
+
+    ~~~~
+    archivo = open("numeros.txt", "r")
+    for linea in archivo.readlines():
+        print(linea)
+    archivo.close()
+
++ readlines genera una lista donde cada elemento es una línea de lectura
++ Los archivos de texto son simples y tienen un carácter de control en fin de saltar la línea
++ Si queremos eliminar este personaje del final, podemos usar print (linh a.rstrip ())
+
+
+Pythonic way
+------------
+
+
+.. code-block:: python
+
+    with open("numeros.txt", "r") as f:
+        print(f.read())
+
+.. activecode:: ac_l23_1c
+    :nocodelens:
+    :datafile: numeros.txt
+    :enabledownload:
+
+    with open("numeros.txt", "r") as f:
+        print(f.read())
+
+
++ El código anterior hace lo mismo para la forma pitónica.
++ En la diapositiva anterior vimos cómo los programadores normales leen
++ Python es genial, porque siempre puedes ir más profundo
++ Python es simple, pero difícil de agotar
+
+
