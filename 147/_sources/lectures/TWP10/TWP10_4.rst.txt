@@ -1,0 +1,32 @@
+if / else
+=========
+
++ ¿Qué hacer cuando la condición ``if`` es falsa?.
++ La clausula ``else`` significa en caso contrario.
++ Se suele usar cuando para indicar condiciones complementarias.
++ Las condiciones if / else pueden verse como un carro al llegar a una bifurcación en la ruta.
++ Dependiendo del resultado de una condición el carro puede ir por la ruta de arriba o por la ruta de abajo.
+
+.. image:: ../img/TWP10_009.jpg
+    :height: 9.754cm
+    :width: 22.859cm
+    :align: center
+    :alt:
+
++ Los dos códigos a continuación hacen lo mismo pero uno usando condiciones if / else
+
+.. codelens:: cl_l10_4a
+
+    anio_creacion = 1
+    if anio_creacion <= 3:
+        print("Su auto es nuevo")
+    if anio_creacion > 3:
+        print("Su auto es viejo")
+
+.. codelens:: cl_l10_4b
+
+    anio_creacion = 1
+    if anio_creacion <= 3:
+        print("Su auto es nuevo")
+    else:
+        print("Su auto es viejo")
