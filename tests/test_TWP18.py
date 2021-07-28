@@ -4,7 +4,7 @@ def test_TWP18_ac_5(page):
         dialog.accept("palabra")
 
     # Go to TWP18 page
-    page.goto("lectures/TWP18.html")
+    page.goto("lectures/TWP18/TWP18_3.html")
 
     # Do the exercise
     page.click("text=# Utilice la función input para leer la palabra del usuario.")
@@ -30,10 +30,10 @@ def test_TWP18_ac_5(page):
     page.type("text=# Utilice la función input para leer la palabra del usuario.", "intercambio += '*'")
 
     # Run the exercise
-    page.click("#ac_l18_5 >> *css=button >> text=Run")
+    page.click("#ac_l18_3d >> *css=button >> text=Run")
     # Fill prompt box
     page.on("dialog", handle_dialog)
 
     # Check whether it passed all unit tests
-    page.hover("#ac_l18_5 >> text=You passed:")
-    assert page.inner_text("#ac_l18_5 >> text=You passed:") == "You passed: 100.0% of the tests"
+    page.hover("#ac_l18_3d >> text=You passed:")
+    assert page.inner_text("#ac_l18_3d >> text=You passed:") == "You passed: 100.0% of the tests"
