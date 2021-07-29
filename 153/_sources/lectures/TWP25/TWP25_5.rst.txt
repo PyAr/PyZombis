@@ -1,0 +1,51 @@
+Múltiple herencia y ¿Qué objeto es?
+===================================
+
++ Se puede heredar de varias clases.
++ Pueden existir momentos en que quieras verificar el tipo de una instancia.
++ En Python existe la función ``isinstance``.
++ Permite verificar si una instancia de una clase es realmente de una clase dada.
+
+..  codelens:: cl_l25_5
+
+    class Ethernet:
+        def __init__(self, nombre, direccion_mac):
+            self.nombre = nombre
+            self.direccion_mac = direccion_mac
+
+
+    class Wireless(Ethernet):
+        def __init__(self, nombre, direccion_mac):
+            Ethernet.__init__(self, nombre, direccion_mac)
+
+
+    class PCI:
+        def __init__(self, bus, fabricante):
+            self.bus = bus
+            self.fabricante = fabricante
+
+
+    class USB:
+        def __init__(self, dispositivo):
+            self.dispositivo = dispositivo
+
+
+    class PCIEthernet(PCI, Ethernet):
+        def __init__(self, bus, fabricante, nombre, direccion_mac):
+            PCI.__init__(self, bus, fabricante)
+            Ethernet.__init__(self, nombre, direccion_mac)
+
+
+    class USBWireless(USB, Wireless):
+        def __init__(self, dispotivo, nombre, direccion_mac):
+            USB.__init__(self, dispotivo)
+            Wireless.__init__(self, nombre, direccion_mac)
+
+
+    wlan0 = USBWireless("usb0", "wlan0", "00:33:44:55:66")
+    eth0 = PCIEthernet("pci :0:0:1", "realtek", "eth0", "00:11:22:33:44")
+
+
+    print(isinstance(wlan0, Ethernet))
+    print(isinstance(eth0, PCI))
+    print(isinstance(eth0, USB))
