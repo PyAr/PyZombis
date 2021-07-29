@@ -1,0 +1,51 @@
+Biblioteca ``time``
+===================
+
++ Tiempo actual en segundos ``time.clock()``
++ ¿Estoy en verano? ``time.daylight()``
++ Duerme unos segundos, ``sleep(segundos)``
++ Zona horaria ``time.timezone()``
+
+
+10 minutos entre cada acceso
+----------------------------
+
+.. activecode:: ac_l33_9
+    :nocodelens:
+    :stdin:
+   
+    from urllib.request import urlopen
+    import time
+
+    URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
+    precio = 99.99
+    while precio >= 4.74:
+        pagina = urlopen(URL_PRECIOS_LOYALTY)
+        texto = pagina.read()
+        ubicacion = texto.find(">$")
+        inicio = ubicacion + 2
+        fin = inicio + 4
+        precio = float(texto[inicio:fin])
+        if precio >= 4.74:
+            time.sleep(600)
+    print("Comprar! precio: %5.2f" % precio)
+
+
+Resumen
+-------
+
++ Los ``string`` son cadenas de caracteres.
++ Accedemos a los caracteres individuales por el índice, que comienza con cero.
++ Los métodos son funciones integradas en variables.
++ Hay bibliotecas de programación con código listo.
++ Los datos tienen un tipo, como ``int`` o ``string``.
+
+
+Herramientas de Python
+----------------------
+
++ ``texto[4]`` accede al quinto carácter.
++ ``texto[4:9]`` accede del quinto al noveno carácter.
++ El método ``text.find()`` busca una subcadena.
++ ``float()`` convierte algo a un punto flotante.
++ Bibliotecas: ``urllib.request`` y ``time``.

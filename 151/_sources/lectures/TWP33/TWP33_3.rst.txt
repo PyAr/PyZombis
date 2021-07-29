@@ -1,0 +1,58 @@
+Cortar
+======
+
+.. codelens:: cl_l33_3
+         
+    texto = "Palmeras"
+    print(texto[2:5])
+    print(texto[0:3])
+    print(texto[4:6])
+
++ Corta el primer número antes del segundo.
++ ¡No incluye el segundo número!
+
+.. image:: ../img/TWP33_012.jpg
+    :height: 10.323cm
+    :width: 19.483cm
+    :align: center
+    :alt:
+
+.. activecode:: ac_l33_3a
+    :nocodelens:
+    :stdin:
+   
+    from urllib.request import urlopen
+
+    URL_PRECIOS = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html"
+    pagina = urlopen(URL_PRECIOS)
+    texto = pagina.read()
+    print(texto[234:238])
+
+
+¡El CEO está feliz!
+-------------------
+
+.. image:: ../img/TWP33_015.jpg
+    :height: 7.402cm
+    :width: 14.922cm
+    :align: center
+    :alt:
+
+
+No hay preguntas tontas
+-----------------------
+
++ ¿Puedo poner alguna página web en este código?
++ Sí. Siéntete libre, pero no olvides la decodificación
++ Por ejemplo, el siguiente `sitio web <http://www.atc.uniovi.es/cgi-bin/encodings?encoding=iso-8859-1>`_ muestra caracteres con la decodificación iso8859.
++ ¿Qué hace ``urllib.request``?
++ Te permite chatear con internet.
++ ¿Puedo acceder a una página directamente en el navegador?
++ Sí ejecute el código de abajo que utiliza ``import antigravity``.
+
+.. activecode:: ac_l33_3b
+    :language: python3
+    :python3_interpreter: brython
+
+    import antigravity
+    # Ejecuta este codigo
