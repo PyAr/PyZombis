@@ -31,17 +31,17 @@ Contenidos:
    :maxdepth: 1
 
    lectures/TWP05/toctree
-   lectures/TWP10
-   lectures/TWP15
-   lectures/TWP17
-   lectures/TWP18
-   lectures/TWP20
-   lectures/TWP23
-   lectures/TWP25
-   lectures/TWP30
-   lectures/TWP33
-   lectures/TWP35
-   lectures/TWP37
+   lectures/TWP10/toctree
+   lectures/TWP15/toctree
+   lectures/TWP17/toctree
+   lectures/TWP18/toctree
+   lectures/TWP20/toctree
+   lectures/TWP23/toctree
+   lectures/TWP25/toctree
+   lectures/TWP30/toctree
+   lectures/TWP33/toctree
+   lectures/TWP35/toctree
+   lectures/TWP37/toctree
    lectures/TWP38/toctree
    lectures/TWP40/toctree
    lectures/TWP42
