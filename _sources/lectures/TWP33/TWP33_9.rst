@@ -3,12 +3,12 @@ Biblioteca ``time``
 
 + Tiempo actual en segundos ``time.clock()``
 + ¿Estoy en verano? ``time.daylight()``
-+ Duerme unos segundos, ``sleep(segundos)``
++ Duerme unos segundos, ``time.sleep(segundos)``
 + Zona horaria ``time.timezone()``
 
 
-10 minutos entre cada acceso
-----------------------------
+10 segundos entre cada acceso
+-----------------------------
 
 .. activecode:: ac_l33_9
     :nocodelens:
@@ -27,7 +27,8 @@ Biblioteca ``time``
         fin = inicio + 4
         precio = float(texto[inicio:fin])
         if precio >= 4.74:
-            time.sleep(600)
+            print("Esperando 10 segundos...")
+            time.sleep(10)
     print("Comprar! precio: %5.2f" % precio)
 
 
