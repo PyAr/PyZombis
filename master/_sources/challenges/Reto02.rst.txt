@@ -230,4 +230,65 @@ Este reto consiste en descifrar un pergamino a partir de código Python
 
 
             myTests().main()
+
+        
+    .. tab:: ac_5
+
+        Pero, ¿cómo escriben los Googlons los números? Bueno, en Googlon, las palabras también son 
+        números dados en base 20, donde cada letra es un dígito. En Googlon, la primera posición es 
+        la unidad y corresponde a la letra de hasta la izquierda de la palabra, la segunda posición 
+        tiene un valor de 20, la tercera de 400 y así sucesivamente.
+        Los valores de las letras se dan en el orden en que aparecen en el alfabeto Googlon (que es
+        diferente de nuestro orden, como vimos anteriormente). Es decir, la primera letra del alfabeto
+        Googlon, que es la z, representa el dígito 0, la segunda representa el dígito 1, y así sucesivamente.
             
+        Por ejemplo, la palabra ``zmbzmb`` tiene un valor numérico de ``6560820``. La explicación es la siguiente:
+        En el albafeto Googlon, las letras ``z`` ``m`` y ``b`` son las tres primeras. Si representamos esa
+        palabra en dígitos según las reglas anteriores, éste sería su valor: ``012012``. Como último paso hace falta
+        convertirlo a base 20. Según las reglas anteriores, la conversión se hace de la siguiente forma:
+        :math:`(0 * 1) + (1 * 20) + (2 * 20^2) + (0 * 20^3) + (1 * 20^4) + (2 * 20^5) = 6560820`
+
+        .. activecode:: ac_r02_5
+            :nocodelens
+            :include: ac_r02_1, ac_r02_4
+
+            Los Googlons consideran un número mágico (muy raro) si satisface una propiedad: el valor numérico 
+            es divisible por 42 (respuesta para todo) y todos los dígitos son distintos entre sí. Al considerar 
+            el Texto A como una lista de números (es decir, interpretar cada palabra como un número usando la 
+            convención explicada anteriormente), notamos que hay 8 números mágicos:
+            **kpbslq, gtrpzhwb, ghfntj, ljdz, gthkq, lbqjrp, jplzc** y **gjw**.
+
+            Y en el Texto B, ¿cuántos números mágicos hay y cuáles son? Guarde en la variable ``num_magicos``
+            la cantidad de números mágicos que hay en el Texto B, y en la variable ``magia`` guarde cuales son. 
+            **Recuerde**: Los textos ya están definidos, al igual que la variable ``orden`` del ejercicio anterior.
+
+            ~~~~
+            def base_20(num):
+                """Esta función convierte una palabra a su valor numérico"""
+                p20 = 1
+                n = 0
+                for c in num:
+                    n += orden.find(c) * p20
+                    p20 *= 20
+                return n
+
+            num_magicos = 0
+            magia = []
+
+
+            ====
+            from unittest.gui import TestCaseGui
+
+
+            class myTests(TestCaseGui):
+                def testOne(self):
+
+                    self.assertEqual(num_magicos, 6, "Probando que num_magicos tenga el valor correcto")
+                    self.assertEqual(
+                        magia,
+                        ["vbxj", "jnwp", "cdvr", "bksx", "jtg", "gjdn"],
+                        "Probando que magia tenga el valor correcto",
+                    )
+
+
+            myTests().main()
