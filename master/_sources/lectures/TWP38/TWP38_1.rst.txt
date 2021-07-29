@@ -1,0 +1,27 @@
+¿Qué es un programa?
+====================
+
++ Un conjunto detallado de instrucciones, paso a paso, que le dice a la 
+  computadora qué hacer.
++ Si cambiamos el programa, la computadora hará algo diferente
++ La computadora permanece igual, pero el programa ha cambiado
++ Los programas se ejecutan
++ El software (programas) controla el hardware
++ El proceso de creación de software se llama programación
++ Un algoritmo es la receta, paso a paso, que resuelve un problema computacional
+
+
+Lenguajes de programación
+-------------------------
++ Los idiomas de bajo nivel son los más cercanos a la máquina
++ Ensamblador:
+
+  + Cargue el número de variables A en la CPU
+  + Cargue el número de variables B en la CPU
+  + Agregar los dos números en la CPU
+  + Almacenar el resultado en la variable C
++ Comando original en lenguaje de alto nivel: C = A + B
++ Los compiladores convierten el lenguaje de alto nivel al lenguaje de
+  máquina informática específica
++ Los intérpretes analizan y ejecutan el programa instrucción por
+  instrucción del lenguaje de máquina
