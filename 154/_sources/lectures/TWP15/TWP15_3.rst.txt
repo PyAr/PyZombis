@@ -1,0 +1,61 @@
+Contadores
+==========
+
++ Ahora imprima de 1 a un número ingresado por el usuario
+
+.. activecode:: ac_l15_3a
+   :nocodelens:
+   :stdin:
+
+   fin = int(input("Ingrese el último número: "))
+   x = 1
+   while x <= fin:
+       print(x)
+       x = x + 1
+
++ Imprima números pares entre 0 y un número dado por el usuario usando ``if``
+
+.. activecode:: ac_l15_3b
+   :nocodelens:
+   :stdin:
+
+   fin = int(input("Ingrese el último número: "))
+   x = 0
+   while x <= fin:
+       if x%2 == 0:
+           print(x)
+       x = x + 1
+
+
++ Imprima números pares entre 0 y un número proporcionado sin usar
+  ``if``
+
+.. activecode:: ac_l15_3c
+   :nocodelens:
+   :stdin:
+
+   fin = int(input("Ingrese el último número: "))
+   x = 0
+   while x <= fin:
+       print(x)
+       x = x + 2
+
+
+Algunos ejercicios
+------------------
+
+.. activecode:: ac_l15_3d
+   :nocodelens:
+
+   Modifique el programa anterior para imprimir del 1 al número ingresado por el usuario, 
+   pero esta vez solo los números impares.
+   
+   ~~~~
+
+
+.. activecode:: ac_l15_3e
+   :nocodelens:
+
+   Escriba un programa que imprima los primeros 10 múltiplos de 3.
+   
+   ~~~~
