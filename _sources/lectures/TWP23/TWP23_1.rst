@@ -39,6 +39,10 @@ Archivos
     archivo.close()
 
 
+    ====
+    print("Se han escrito datos en el archivo numeros.txt")
+
+
 + Al ejecutar el programa anterior no se imprime nada en la consola, pero sí
   se modifica el archivo ``numeros.txt``.
 + El modo w crea el archivo si no existe, si existe será eliminado y reescrito
