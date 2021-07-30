@@ -75,7 +75,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 677200500aedc7f2-DFW
+      - 67723118df2c0c23-DFW
       Connection:
       - keep-alive
       Content-Encoding:
@@ -83,17 +83,17 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 30 Jul 2021 22:25:09 GMT
+      - Fri, 30 Jul 2021 22:58:27 GMT
       Expect-CT:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       NEL:
       - '{"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cs4L9hGMStMGoX7eAloucjpJ2wFJ0O%2FvhZbkcof%2FshsoOJoqQvMnlNW92OJfp1JnUgm%2Fkm1SSCTAJLu0%2FNnJmWM6ZGOn7knkHU8TJ1ydPCpoqTef0ILbdPsW8X80X0y3"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DOg4nNAu%2Fiu%2Ban7bDEVbWUtAaWoNIx47k2M6X4SOkhH8Kcvi7%2BZ%2FN%2Bv5Fno6pViNfu7hwVS%2FOkpAi%2BOLEdGBmz7LqljkT%2F2azOkMAxcsgAkzFw7h%2Bvyl8HRWl83A002B"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Set-Cookie:
-      - tk_s=.eJyrVsrJT04syczPU7KqVkrOLKmMz0vMTVWyUopKLMgvSMxT0lFKzi_NKymqjE_OTwFJ-EYgiUEV-6ZWZCbnA8WLS5NSMssyi4EGxhvCZL0SczKLgdK1tQCMBicW.E-YNxQ.C2wzuluO96yCnS7_e-8JrHPppN8;
+      - tk_s=.eJyrVsrJT04syczPU7KqVkrOLKmMz0vMTVWyUopKLMgvSMxT0lFKzi_NKymqjE_OTwFJ-EYgiUEV-6ZWZCbnA8WLS5NSMssyi4EGxhvCZL0SczKLgdK1tQCMBicW.E-YVkw.zBr5-FLnnrHSV3b0oZK7V256L0c;
         Domain=.tastedive.com; HttpOnly; Path=/
       Transfer-Encoding:
       - chunked
