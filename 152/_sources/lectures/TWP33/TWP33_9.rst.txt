@@ -27,7 +27,7 @@ Biblioteca ``time``
         fin = inicio + 4
         precio = float(texto[inicio:fin])
         if precio >= 4.74:
-            print("Esperando 10 segundos...")
+            print("Esperando 10 segundos... Precio actual: %5.2f" % precio)
             time.sleep(10)
     print("Comprar! precio: %5.2f" % precio)
 
