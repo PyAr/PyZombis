@@ -1,0 +1,35 @@
+Variables locales y globales
+============================
+
++ **Nota**: El alcance de ``a`` en el ejemplo de abajo es diferente en los dos casos. En otras palabras, las dos variables ``a`` son diferentes.
+
+.. codelens:: cl_l20_3a
+
+    a = 5
+
+    def cambio_y_impresion():
+        a = 7
+        print("valor de 'a' dentro de la función : %d" % a)
+
+
+    print("valor de 'a' antes de cambiar: %d" % a)
+    cambio_y_impresion()
+    print("valor de 'a' después de cambiar: %d" % a)
+
++ En este caso, usamos la palabra reservada global. Entonces, la variable ``a`` dentro de la función es la misma que la variable definida anteriormente, es decir, es la variable global.
+
+.. codelens:: cl_l20_3b
+         
+    a = 5
+
+    def cambio_y_impresion():
+        global a
+        a = 7
+        print("valor de a dentro de la función : %d" % a)
+
+
+    print("valor de a antes de cambiar: %d" % a)
+    cambio_y_impresion()
+    print("valor de a después de cambiar: %d" % a)
+
++ Observe la diferencia en las salidas en los ejemplos 9 y 10.

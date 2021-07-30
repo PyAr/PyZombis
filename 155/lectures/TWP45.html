@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackeando con Python &#8212; PyZombis 47_mock_vcr@5828693</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+
+
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/runtime.bundle.js?v=f50940efe5177b9c81e6"></script>
+    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../_static/runestone.bundle.js?v=2a0b78efc53bfc8dda40"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Módulos" href="TWP47.html" />
+    <link rel="prev" title="Banco de Dados" href="TWP42.html" />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script>
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'PyZombis';
+    eBookConfig.basecourse = 'PyZombis';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.enableCompareMe = eBookConfig.useRunestoneServices;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar" aria-label="navbar toggle">toggle navbar</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+          <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">
+          
+          PyZombis
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='../genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/assignments/chooseAssignment.html'>Assignments</a></li>
+            <li><a href='/runestone/assignments/practice'>Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link"><a href='/runestone/admin/index'>Instructor's Page</a></li>
+            
+            <li><a href='/runestone/dashboard/studentreport'>Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()" />
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode" >Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=TWP45'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - Banco de Dados" data-toggle="tooltip">
+    <a href="TWP42.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Módulos' data-toggle="tooltip" >              
+    <a href="TWP47.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  document.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+<!-- Ad Serving for Runestone Campaign -->
+
+
+  
+  <div class="section" id="hackeando-con-python">
+<h1>Hackeando con Python<a class="headerlink" href="#hackeando-con-python" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
+<div class="section" id="facebook-hacking">
+<h2>Facebook Hacking<a class="headerlink" href="#facebook-hacking" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP45_001.jpeg"><img alt="" class="align-center" src="../_images/TWP45_001.jpeg" style="width: 14.801cm; height: 10.225cm;" /></a>
+</div>
+<div class="section" id="los-hackers-no-son-malvados">
+<h2>¿Los hackers no son “malvados”?<a class="headerlink" href="#los-hackers-no-son-malvados" title="Permalink to this headline">¶</a></h2>
+<p>Facebook está dirigido por hackers. La mayoría de la gente piensa en un hacker
+como alguien que irrumpe en un sistema informático. Pero nosotros vemos esto
+como una filosofía. Aquí, los hackers asumen que siempre hay una forma mejor
+y más eficiente de resolver problemas “. facebook.com/careers (2012)</p>
+<a class="reference internal image-reference" href="../_images/TWP45_002.jpeg"><img alt="" class="align-center" src="../_images/TWP45_002.jpeg" style="width: 17.638cm; height: 11.747cm;" /></a>
+</div>
+<div class="section" id="obtener-foto-de-perfil-de-facebook">
+<h2>Obtener foto de perfil de Facebook<a class="headerlink" href="#obtener-foto-de-perfil-de-facebook" title="Permalink to this headline">¶</a></h2>
+<p>Para este ejercicio utilizaremos un intérprete de Python llamado Brython.
+Éste incluye un módulo llamado browser que, a diferencia de los ejercicios
+anteriores, nos permitirá mostrar una página con elementos HTML
+(botones, cajas de texto, títulos, etc.), en lugar de solo mostrar impresiones
+en consola.
+En el siguiente enlace puedes encontrar una guía de todos los elementos HTML
+que Brython soporta: <a class="reference external" href="https://brython.info/static_doc/en/html.html">https://brython.info/static_doc/en/html.html</a></p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_1 data-question_label="1">
+<div id=ac_l45_1_question class="ac_question col-md-12">
+<p>Este ejercicio obtiene la foto de perfil según el nombre de usuario de un perfil público de Facebook.
+Pruébalo por tu propia cuenta!</p>
+
+</div>
+<textarea data-lang="python3" id="ac_l45_1_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import document, html
+
+# Se crean dos secciones de divisiones con el elemento DIV.
+# Y se separan por un salto de linea con el elemento BR.
+document <= html.DIV(id="div_cajas_texto")
+document <= html.BR()
+document <= html.DIV(id='div_imagen')
+
+# El elemento H2 crea un título, INPUT crea la caja de texto y BUTTON crea un botón.
+# Todos estos se ponen dentro de la división con id="div_cajas_texto"
+document['div_cajas_texto'] <= html.H2("Ingrese un usuario de Facebook público")
+document['div_cajas_texto'] <= html.INPUT(id="input_usuario", placeholder="ArianaGrande")
+document['div_cajas_texto'] <= html.BUTTON("Mostrar foto",id="boton_mostrar")
+
+# Se crea la función que se le asignará al botón de mostrar foto.
+def obtener_foto(evento):
+    # Se toma el texto que se escribe adentro de la caja con id="input_usuario" con .value
+    nombre_usuario = document["input_usuario"].value
+    # Se concatena el nombre de usuario con el enlace de la API de Facebook
+    link = 'https://graph.facebook.com/' + nombre_usuario + '/picture?type=large'
+    # Se agrega una imagen con fuente del link construido anteriormente mediante src
+    # dentro de la división de id='div_imagen'
+    document['div_imagen'] <= html.IMG(src=link, id="img_obtenida")
+
+# Por último se le ordena al botón de id="boton_mostrar" que ejecute la función obtener_foto.
+document["boton_mostrar"].bind("click", obtener_foto)
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="obtener-datos-de-reddit">
+<h2>Obtener datos de Reddit<a class="headerlink" href="#obtener-datos-de-reddit" title="Permalink to this headline">¶</a></h2>
+<p>En este ejercicio vamos a acceder a Reddit para obetener datos como los de la siguiente imagen.</p>
+<a class="reference internal image-reference" href="../_images/TWP45_050.png"><img alt="" class="align-center" src="../_images/TWP45_050.png" style="width: 23.344cm; height: 9.39cm;" /></a>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_2 data-question_label="2">
+<div id=ac_l45_2_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l45_2_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import urllib.request
+import json
+
+# La url de Reddit a la que accederemos
+url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
+resp = urllib.request.urlopen(url).read()
+
+# La respuesta se da en formato json, se debe transformar a
+# un diccionario de Python con json.loads
+texto = json.loads(resp)
+
+# Puede ver los datos que se recibieron si quita el comentario de abajo
+# print(texto)
+
+# Buscamos e imprimimos los datos que queremos
+for item in texto["data"]["children"]:
+    doc = item["data"]
+    print(doc["title"])
+    print("#comments: %d" % doc["num_comments"])
+    print(doc["url"])
+    print()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="probando-la-api-de-tastedive">
+<h2>Probando la API de TasteDive<a class="headerlink" href="#probando-la-api-de-tastedive" title="Permalink to this headline">¶</a></h2>
+<p>TasteDive es una herramienta que:</p>
+<blockquote>
+<div><p>le ayuda a descubrir nueva música, películas, programas de televisión, libros, autores, juegos,
+podcasts y personas con intereses compartidos.
+– TasteDive</p>
+</div></blockquote>
+<p>En el siguiente ejercicio usaremos la API de TasteDive para buscar obras o artistas similares a otra de nuestra
+elección.
+La documentación de la API de <a class="reference external" href="https://tastedive.com/read/api">TasteDive</a>.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_3 data-question_label="3">
+<div id=ac_l45_3_question class="ac_question col-md-12">
+<p>En este caso, utilizaremos la librería <code class="docutils literal notranslate"><span class="pre">requests</span></code> para hacer la solicitud a la API. La url base
+es <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar&quot;</span></code>. A esta url se le va a pasar un parámetro <code class="docutils literal notranslate"><span class="pre">q</span></code> con el
+valor de la artista Ariana Grande. Al final la url se va a ver de la siguiente forma: <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar?q=ariana+grande&quot;</span></code>.
+Note que después de la url base se escribe un <code class="docutils literal notranslate"><span class="pre">?</span></code> para indicar que siguen los parámetros.</p>
+
+</div>
+<textarea data-lang="python" id="ac_l45_3_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import requests
+import json
+
+api_url = "https://tastedive.com/api/similar"
+proxy = "https://cors.bridged.cc/"
+
+# Los parámetros que se le pasaran a la url los escribimos dentro de un diccionario
+parametros = {"q": "ariana grande"}
+
+# Solicitamos a la api los datos
+respuesta = requests.get(proxy + api_url, params=parametros)
+
+# Ahora imprimimos la url
+print(respuesta.url)
+print()
+
+# Transformamos los datos de formato json a Python
+datos = json.loads(respuesta.text)
+
+print(datos)
+</textarea>
+</div>
+</div>
+<p>En el ejemplo anterior pudo apreciar que la API regresa un texto, que si lo pasamos por <code class="docutils literal notranslate"><span class="pre">json.loads</span></code>
+se transforma a un diccionario de Python. Sin embargo, no es del todo legible. Esto se puede solucionar con
+<code class="docutils literal notranslate"><span class="pre">json.dumps</span></code>.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_4 data-question_label="4">
+<div id=ac_l45_4_question class="ac_question col-md-12">
+<p>Ahora vamos a solicitar información de la banda Coldplay. Esta vez vamos a imprimir los datos de forma
+que sean legibles. Esto lo hacemos con el argumento <code class="docutils literal notranslate"><span class="pre">indent</span></code> de la función <code class="docutils literal notranslate"><span class="pre">dumps</span></code> de <code class="docutils literal notranslate"><span class="pre">json</span></code>.
+Vamos a usar <code class="docutils literal notranslate"><span class="pre">urllib</span></code> para hacer la solicitud.</p>
+
+</div>
+<textarea data-lang="python3" id="ac_l45_4_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+import urllib.request
+import urllib.parse
+import json
+
+api_url = "https://tastedive.com/api/similar?"
+proxy = "https://cors.bridged.cc/"
+# La siguiente línea es para los parámetros de la url.
+parametros = urllib.parse.urlencode({"q": "coldplay"})
+
+solicitud = urllib.request.urlopen(proxy + api_url + parametros)
+datos = json.loads(solicitud.read())
+
+# Imprimimos los datos de forma legible para un usuario
+print(json.dumps(datos, indent=4))
+
+# Podemos ver que la api arrojó 20 resultados relacionados con
+# la solicitud
+print(len(datos["Similar"]["Results"]))
+</textarea>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>El siguiente ejercicio viene con calificación automática.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_5 data-question_label="5">
+<div id=ac_l45_5_question class="ac_question col-md-12">
+<p>Ahora va a preguntar a TasteDive por la película Coco. Entonces el diccionario <code class="docutils literal notranslate"><span class="pre">parametros</span></code> debe tener el
+valor <code class="docutils literal notranslate"><span class="pre">&quot;Coco&quot;</span></code> asignado a la llave <code class="docutils literal notranslate"><span class="pre">&quot;q&quot;</span></code>. Además, esta vez solo queremos 5 resultados en vez de 20. Para
+esto existe un parámetro llamado <code class="docutils literal notranslate"><span class="pre">&quot;limit&quot;</span></code>, que puede ser asignado al número de resultados que se necesiten.
+Otro parámetro que le pasará a la url será <code class="docutils literal notranslate"><span class="pre">&quot;info&quot;</span></code> y tendrá el valor de 1. Lo que hará esto es que los
+resultados vendrán con un texto extra con información sobre la película.</p>
+<p>Primero, va a solicitar a la API lo descrito anteriormente, y guardará esto en la variable <code class="docutils literal notranslate"><span class="pre">solicitud</span></code>. En
+otra variable, <code class="docutils literal notranslate"><span class="pre">solicitud_url</span></code>, guarde la url de la solicitud. Después asignará los datos a la variable <code class="docutils literal notranslate"><span class="pre">datos</span></code>.
+Después va asignar a la variable <code class="docutils literal notranslate"><span class="pre">resultados</span></code> el número de resultados que arrojó la solicitud
+(como se hizo en el ejemplo anterior). Como pusimos un límite, este número debe coincidir con el límite.</p>
+<p>Ahora va a crear la lista <code class="docutils literal notranslate"><span class="pre">peliculas_similares</span></code>. Dentro de <code class="docutils literal notranslate"><span class="pre">datos</span></code> usted tiene un diccionario de diccionarios
+y listas. Lo que hará será buscar los conjuntos dentro de los cuales se encuentren los nombres de las películas
+similares a Coco, y va a agregar a <code class="docutils literal notranslate"><span class="pre">peliculas_similares</span></code> el nombre de esas películas. En total deben ser 5.
+<strong>Pista</strong>: los datos de las películas se encuentran dentro de <code class="docutils literal notranslate"><span class="pre">datos[&quot;Similar&quot;][&quot;Results&quot;]</span></code>, y la llave para
+acceder a ellas es <code class="docutils literal notranslate"><span class="pre">&quot;Name&quot;</span></code>.</p>
+<p>Por último, va a buscar el número de veces que aparece la palabra <code class="docutils literal notranslate"><span class="pre">&quot;Pixar&quot;</span></code> en los textos de información de las
+películas relacionadas a Coco. Ese número lo va a guardar en la variable <code class="docutils literal notranslate"><span class="pre">pixar</span></code>. <strong>Pista</strong>: <code class="docutils literal notranslate"><span class="pre">&quot;wTeaser&quot;</span></code> es la
+llave que guarda el texto. Esta llave se encuentra en el mismo diccionario que el nombre de las películas.</p>
+
+</div>
+<textarea data-lang="python" id="ac_l45_5_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import requests
+import json
+
+api_url = "https://tastedive.com/api/similar"
+proxy = "https://cors.bridged.cc/"
+
+# Agregue los parámetros
+parametros = {}
+
+# Complete el código
+solicitud =
+solicitud_url =
+datos =
+
+# Asigne la variable resultados
+
+# print(f"resultados: {resultados}")
+
+# Cree peliculas_similares
+# Utilice un ciclo for para encontrar las peliculas similares y agregarlas
+# a la variable correspondiente
+
+# print(f"Pelis: {peliculas_similares} len: {len(peliculas_similares)}")
+
+pixar = 0
+# Busque el número de ocurrencias de "Pixar" dentro de los datos
+
+# print(f"Pixar: {pixar}")
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(
+            solicitud_url,
+            "https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+            "Probando que la url sea: https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+        )
+        self.assertEqual(resultados, 5, "Probando que resultados esté asignado correctamente.")
+        self.assertEqual(len(peliculas_similares), 5, "Probando que peliculas_similares sean: 5")
+        self.assertEqual(
+            peliculas_similares,
+            ["Toy Story 3", "Finding Nemo", "Inside Out", "Spirited Away", "Monsters, Inc."],
+            "Esperado: ['Toy Story 3', 'Finding Nemo', 'Inside Out', 'Spirited Away', 'Monsters, Inc.']",
+        )
+        self.assertEqual(pixar, 5, "Probando que pixar esté asignado correctamente.")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="probando-la-api-de-university-domains">
+<h2>Probando la API de University Domains<a class="headerlink" href="#probando-la-api-de-university-domains" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/Hipo/university-domains-list">University Domains and Names Data List &amp; API</a> es una API que
+contiene  dominios, nombres y países de la mayoría de las universidades del mundo.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_6 data-question_label="6">
+<div id=ac_l45_6_question class="ac_question col-md-12">
+<p>Veamos un ejemplo de cómo usar esta API. Le vamos a pedir las universidades de Turquía que tengan
+en su nombre la palabra <strong>“middle”</strong>.</p>
+
+</div>
+<textarea data-lang="python3" id="ac_l45_6_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+import urllib.request
+import urllib.parse
+import json
+
+api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search?"
+parametros = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
+
+solicitud = urllib.request.urlopen(api_url + parametros)
+datos_json = json.loads(solicitud.read())
+
+print(json.dumps(datos_json, indent=4))
+</textarea>
+</div>
+</div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_7 data-question_label="7">
+<div id=ac_l45_7_question class="ac_question col-md-12">
+<p>Busquemos todas las universidades en Colombia.</p>
+
+</div>
+<textarea data-lang="python" id="ac_l45_7_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import requests
+import json
+
+api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search"
+parametros = {"country": "colombia"}
+
+solicitud = requests.get(api_url, params=parametros)
+solicitud = json.loads(solicitud.text)
+
+universidades = []
+
+for universidad in solicitud:
+    universidades.append(universidad["name"])
+
+    print(universidad["name"])
+
+print("----------------------------------------------")
+print(f"Hay {len(universidades)} universidades registradas")
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="aprendizajes">
+<h2>Aprendizajes<a class="headerlink" href="#aprendizajes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Accedemos a <strong>APIs</strong> para buscar información que nos es útil.</p></li>
+<li><p>Podemos solicitar la información con dos librerías de Python: <code class="docutils literal notranslate"><span class="pre">urllib</span></code> o <code class="docutils literal notranslate"><span class="pre">requests</span></code>.</p></li>
+<li><p>La librería <code class="docutils literal notranslate"><span class="pre">json</span></code> de Pyhton nos ayuda a transformar la respuesta de la API en un objeto
+de Python, ya sea diccionario o lista, con el método <code class="docutils literal notranslate"><span class="pre">loads</span></code>, mientras que el método <code class="docutils literal notranslate"><span class="pre">dumps</span></code>
+hace lo contrario; transforma un objeto de Python en una cadena con formato JSON.</p></li>
+<li><p>El método <code class="docutils literal notranslate"><span class="pre">dumps</span></code> de <code class="docutils literal notranslate"><span class="pre">json</span></code> es útil si queremos visualizar la respuesta de una API de manera
+legible. Esto se logra con el argumento <code class="docutils literal notranslate"><span class="pre">indent</span></code>.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<script>
+    function lecture16_disqus(source) {
+        if (window.DISQUS) {
+
+            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
+
+            //if Disqus exists, call it's reset method with new parameters
+            DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = 'lecture16_' + eBookConfig.course;
+                    this.page.url = 'https://lecture16_'+eBookConfig.course+'.interactivepython.com/#!';
+                }
+            });
+
+        } else {
+            //insert a wrapper in HTML after the relevant "show comments" link
+            $('<div id="disqus_thread"></div>').insertAfter(source);
+
+            // set Disqus required vars
+            disqus_shortname = 'pyzombis';
+            disqus_identifier = 'lecture16_' + eBookConfig.course;
+            disqus_url = 'http://lecture16_'+eBookConfig.course+'.interactivepython.com/#!';
+
+            //append the Disqus embed script to HTML
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            $('head').append(dsq);
+
+        }
+    }
+</script>
+
+<a href="#disqus_thread" class="disqus_thread_link" data-disqus-identifier="lecture16" onclick="lecture16_disqus(this);">Show Comments</a>
+<script>
+  document.addEventListener('load', (event) => {
+    $("a[data-disqus-identifier='lecture16']").attr('data-disqus-identifier', 'lecture16_' + eBookConfig.course);
+  });
+</script>
+</div>
+</div>
+
+
+  <div id=scprogresscontainer>
+    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  </div>
+  
+      
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Banco de Dados' data-toggle="tooltip">
+    <a href="TWP42.html" aria-label="Banco de Dados">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
+
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Módulos' data-toggle="tooltip" >
+    <a href="TWP47.html" aria-label="Módulos">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<script>
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      
+      <span id='numuserspan'></span><span class='loggedinuser'></span>
+      
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> 
+  document.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  </body>
+</html>

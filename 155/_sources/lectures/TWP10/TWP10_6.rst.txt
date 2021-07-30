@@ -1,0 +1,17 @@
+elif
+====
+
++ La cláusula elif sustituye a ``else`` y ``if``.
+
+.. codelens:: cl_l10_6
+
+    minutos = 1000
+    if minutos < 200:
+        precio = 0.2
+    elif minutos <= 400:
+        precio = 0.18
+    elif minutos <= 800:
+        precio = 0.15
+    else:
+        precio = 0.08
+    print("Cuenta telefonica : $%6.2f" % (minutos * precio))
