@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crypto &#8212; PyZombis 46_TWP23@86235da</title>
+    <title>Crypto &#8212; PyZombis 46_TWP23@dff410e</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -316,6 +316,10 @@ for linea in texto.readlines():
 
 texto.close()
 salida.close()
+
+
+====
+print("Se han escrito datos en el archivo crypto.txt")
 </textarea>
 </div>
 </div>
@@ -359,6 +363,7 @@ for linea in texto.readlines():
 texto.close()
 salida.close()
 
+
 ====
 from unittest.gui import TestCaseGui
 
@@ -370,6 +375,8 @@ class myTests(TestCaseGui):
 
         self.assertEqual(archivo.read().replace("\n", " ").rstrip(), text.strip(), f"Esperado: {text}")
 
+
+print("Se han escrito datos en el archivo crypto2.txt")
 
 myTests().main()
 </textarea>
