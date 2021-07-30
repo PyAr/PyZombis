@@ -17,9 +17,21 @@ Biblioteca ``time``
     from urllib.request import urlopen
     import time
 
+    # Esto nos sirve para aumentar la duración del programa a 3 minutos.
+    import sys
+    sys.setExecutionLimit(180000)
+
     URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
     precio = 99.99
-    while precio >= 4.74:
+    limite = 0
+    disponibilidad = True
+    while precio >= 4.74 or limite <=15:
+        try:
+            pagina = urlopen(URL_PRECIOS_LOYALTY)
+        except:
+            print("URL no disponilbe por este momento.")
+            disponibilidad = False
+            break
         pagina = urlopen(URL_PRECIOS_LOYALTY)
         texto = pagina.read()
         ubicacion = texto.find(">$")
@@ -28,8 +40,12 @@ Biblioteca ``time``
         precio = float(texto[inicio:fin])
         if precio >= 4.74:
             print("Esperando 10 segundos... Precio actual: %5.2f" % precio)
+            limite += 1
             time.sleep(10)
-    print("Comprar! precio: %5.2f" % precio)
+    if limite == 16:
+        print("No quieren bajar el precio. Comprar a %5.2f pesos" % precio)
+    elif limite < 7 and disponibilidad == True:
+        print("Comprar! precio: %5.2f" % precio)
 
 
 Resumen
