@@ -13,6 +13,7 @@ Bases de datos
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP42_1.rst
    TWP42_2.rst
