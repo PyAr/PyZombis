@@ -24,6 +24,7 @@ def test_l45_5(page):
     # Go to TWP45 page
     page.goto("lectures/TWP45.html")
 
+    # request data for the exercise to the .yaml file
     res = requests.get("https://tastedive.com/api/similar?q=Coco&limit=5&info=1")
     data = json.loads(res.text)
     movies = []
