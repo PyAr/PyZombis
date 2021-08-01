@@ -43,8 +43,7 @@ Archivos
     print("Se han escrito datos en el archivo numeros.txt")
 
 
-+ Al ejecutar el programa anterior no se imprime nada en la consola, pero sí
-  se modifica el archivo ``numeros.txt``.
++ Al ejecutar el programa anterior se modifica el archivo ``numeros.txt``.
 + El modo w crea el archivo si no existe, si existe será eliminado y reescrito
 
 
@@ -90,5 +89,4 @@ Pythonic way
 + En la diapositiva anterior vimos cómo los programadores normales leen
 + Python es genial, porque siempre puedes ir más profundo
 + Python es simple, pero difícil de agotar
-
 
