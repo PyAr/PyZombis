@@ -1,0 +1,23 @@
+Solo cuando es inferior a 4,74
+==============================
+
+.. image:: ../img/TWP33_025.jpg
+    :height: 15.444cm
+    :width: 8.6cm
+    :align: center
+    :alt:
+
+.. activecode:: ac_l33_6
+    :nocodelens:
+    :stdin:
+   
+    from urllib.request import urlopen
+
+    URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
+    pagina = urlopen(URL_PRECIOS_LOYALTY)
+    texto = pagina.read()
+    ubicacion = texto.find(">$")
+    inicio = ubicacion + 2
+    fin = inicio + 4
+    if texto[inicio:fin] < 4.74:
+        print(texto[inicio:fin])
