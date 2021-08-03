@@ -1,0 +1,108 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: https://tastedive.com/api/similar?q=Coco&limit=5&info=1
+  response:
+    body:
+      string: !!binary |
+        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
+        AKm19kZ5HAAA
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 67723118df2c0c23-DFW
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 30 Jul 2021 22:58:27 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      NEL:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DOg4nNAu%2Fiu%2Ban7bDEVbWUtAaWoNIx47k2M6X4SOkhH8Kcvi7%2BZ%2FN%2Bv5Fno6pViNfu7hwVS%2FOkpAi%2BOLEdGBmz7LqljkT%2F2azOkMAxcsgAkzFw7h%2Bvyl8HRWl83A002B"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - tk_s=.eJyrVsrJT04syczPU7KqVkrOLKmMz0vMTVWyUopKLMgvSMxT0lFKzi_NKymqjE_OTwFJ-EYgiUEV-6ZWZCbnA8WLS5NSMssyi4EGxhvCZL0SczKLgdK1tQCMBicW.E-YVkw.zBr5-FLnnrHSV3b0oZK7V256L0c;
+        Domain=.tastedive.com; HttpOnly; Path=/
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Cookie
+      alt-svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+        ma=86400
+    status:
+      code: 200
+      message: OK
+version: 1
