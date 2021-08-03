@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Archivos &#8212; PyZombis split-TWP56@64441ef</title>
+    <title>Archivos &#8212; PyZombis split-TWP56@30bc23f</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -320,20 +320,17 @@ archivo = open("numeros.txt", "w")
 for numero in range(1, 31):
     archivo.write("%d\n" % numero)
 archivo.close()
+
+
+====
+print("Se han escrito datos en el archivo numeros.txt")
 </textarea>
 </div>
 </div>
 <ul class="simple">
-<li><p>Si ejecuta este programa, no aparecerá nada en la pantalla</p></li>
-<li><p>Busque en el directorio c: Python3x el archivo numeros.txt</p></li>
+<li><p>Al ejecutar el programa anterior se modifica el archivo <code class="docutils literal notranslate"><span class="pre">numeros.txt</span></code>.</p></li>
 <li><p>El modo w crea el archivo si no existe, si existe será eliminado y reescrito</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;numeros.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
-<span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-</div>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_l23_1b data-question_label="3">
@@ -354,9 +351,11 @@ archivo.close()
 </div>
 </div>
 <ul class="simple">
-<li><p>readlines genera una lista donde cada elemento es una línea de lectura</p></li>
-<li><p>Los archivos de texto son simples y tienen un carácter de control en fin de saltar la línea</p></li>
-<li><p>Si queremos eliminar este personaje del final, podemos usar print (linh a.rstrip ())</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">readlines()</span></code> genera una lista donde cada elemento es una línea de lectura.</p></li>
+<li><p>El archivo <code class="docutils literal notranslate"><span class="pre">numeros.txt</span></code> ahora tiene escrito números, cada número en una línea diferente.
+Este cambio de línea fue inscrito con el carácter especial <code class="docutils literal notranslate"><span class="pre">\n</span></code>.</p></li>
+<li><p>Si queremos eliminar este carácter del final, podemos usar <code class="docutils literal notranslate"><span class="pre">print(linea.rstrip())</span></code>.
+Pruebe imprimir de esta manera las líneas de texto.</p></li>
 </ul>
 <div class="section" id="pythonic-way">
 <h2>Pythonic way<a class="headerlink" href="#pythonic-way" title="Permalink to this headline">¶</a></h2>
