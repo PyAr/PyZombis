@@ -1,0 +1,56 @@
+Starbuzz Café
+=============
+
+.. image:: ../img/TWP33_001.jpg
+    :height: 15.427cm
+    :width: 14.801cm
+    :align: center
+    :alt:
+
+
+Código Starbuzz actual
+----------------------
+
+.. activecode:: ac_l33_1
+    :nocodelens:
+    :stdin:
+   
+    from urllib.request import urlopen
+
+    precios = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html"
+    pagina = urlopen(precios)
+    texto = pagina.read()
+    print(texto)
+
+
+El CEO solo quiere el precio
+----------------------------
+
+
+.. image:: ../img/TWP33_004.jpg
+    :height: 6.719cm
+    :width: 12.699cm
+    :align: center
+    :alt:
+
++ Este es el texto HTML "en bruto", que es el formato de las páginas web.
++ El precio está incrustado en HTML
+
+.. code-block:: html
+
+    <html><head><title>Welcome to the Beans'R'Us Pricing Page</title>
+    <link rel="stylesheet" type="text/css" href="beansrus.css" />
+    </head><body>
+    <h2>Welcome to the Beans'R'Us Pricing Page</h2>
+    <p>Current price of coffee beans = <strong>$6.73</strong></p>
+    <p>Price valid for 15 minutes from Sun Jul 11 03:08:01 2021.</p>
+    </body></html>
+
+
++ Recibimos el output anterior como una string o cadena de caracteres.
+
+.. image:: ../img/TWP33_005.png
+    :height: 2.112cm
+    :width: 23.745cm
+    :align: center
+    :alt:
