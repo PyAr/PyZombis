@@ -41,6 +41,10 @@ Validar dirección IP
     invalidos.close()
 
 
+    ====
+    print("Se han escrito datos en los archivos Validos.txt e Invalidos.txt")
+
+
 .. datafile:: Validos.txt
     :edit:
     :cols: 15
