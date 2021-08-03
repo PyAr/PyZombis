@@ -1,3 +1,8 @@
+import pytest
+import requests
+import json
+
+
 def test_l45_1(page):
     page.goto("lectures/TWP45.html")
 
@@ -14,9 +19,22 @@ def test_l45_1(page):
     assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
 
 
+@pytest.mark.vcr()
 def test_l45_5(page):
     # Go to TWP45 page
     page.goto("lectures/TWP45.html")
+
+    # request data for the exercise to the .yaml file
+    res = requests.get("https://tastedive.com/api/similar?q=Coco&limit=5&info=1")
+    data = json.loads(res.text)
+    movies = []
+    pixar = 0
+    for mov in data["Similar"]["Results"]:
+        movies.append(mov["Name"])
+    for mov in data["Similar"]["Results"]:
+        for wrd in mov["wTeaser"].split():
+            if wrd == "Pixar":
+                pixar += 1
 
     # Do the exercise
     page.click("#ac_l45_5 >> text=parametros = {}")
@@ -25,36 +43,16 @@ def test_l45_5(page):
     page.keyboard.press("Backspace")
 
     instructions1 = [
-        "import requests",
-        "import json",
-        "api_url = 'https://cors.bridged.cc/https://tastedive.com/api/similar'",
-        'parametros = {"q": "Coco", "limit": 5, "info": 1}',
-        "solicitud = requests.get(api_url, params=parametros)",
-        "datos = json.loads(solicitud.text)",
-        'resultados = len(datos["Similar"]["Results"])',
-        "peliculas_similares = []",
-        'for peli in datos["Similar"]["Results"]:',
-        'peliculas_similares.append(peli["Name"])',
+        f"solicitud_url = 'https://cors.bridged.cc/{res.url}'",
+        f'resultados = {len(data["Similar"]["Results"])}',
+        f"peliculas_similares = {movies}",
     ]
 
     for i in instructions1:
-        page.keyboard.type(i)
+        page.keyboard.type(i, delay=0)
         page.keyboard.press("Enter")
 
-    for i in range(4):
-        page.keyboard.press("Backspace")
-
-    instructions2 = [
-        "pixar = 0",
-        'for peli in datos["Similar"]["Results"]:',
-        'for pal in peli["wTeaser"].split():',
-        'if pal == "Pixar":',
-        "pixar += 1",
-    ]
-
-    for i in instructions2:
-        page.keyboard.type(i)
-        page.keyboard.press("Enter")
+    page.keyboard.type(f"pixar = {pixar}")
 
     # Run and check it passed all tests
     page.click("#ac_l45_5 >> *css=button >> text=Run")

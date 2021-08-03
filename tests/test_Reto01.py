@@ -1,6 +1,10 @@
 import string
+import pytest
+import requests
+import json
 
 
+@pytest.mark.vcr()
 def test_r01(page):
     page.goto("challenges/Reto01.html")
 
@@ -18,16 +22,24 @@ def test_r01(page):
 
     # ac_3
     page.click("text=ac_3")
-    page.click("text=json")
-    page.keyboard.press("Control+ArrowRight")
-    for i in range(2):
-        page.keyboard.press("Shift+ArrowDown")
-    page.keyboard.press("Enter")
-    page.keyboard.type("from random import choice")
+
+    # request data for the exercise to the .yaml file
+    res = requests.get("http://universities.hipolabs.com/search")
+    datos = json.loads(res.text)
+    countries = [universidad["country"].lower().replace(" ", "") for universidad in datos]
+
+    page.click("#ac_r01_3 >> text=api_url =")
+    page.keyboard.press("ArrowDown")
+    for i in range(8):
+        page.keyboard.press("Control+Shift+ArrowDown")
+    page.keyboard.press("Backspace")
+
+    page.keyboard.type(f"ciudades = {countries[:10]}")
+
     page.click("text=def escoger(ciudades):")
     page.keyboard.press("ArrowDown")
-    for i in range(2):
-        page.keyboard.press("Control+ArrowLeft")
+    page.keyboard.press("Enter")
+    page.keyboard.press("Tab")
     page.keyboard.type("return choice(ciudades)")
     page.click("#ac_r01_3 >> text=Save & Run")
     # Make sure it passed all unit tests
