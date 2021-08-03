@@ -1,0 +1,45 @@
+Asignación múltiple
+===================
+
+
+.. activecode:: ac_l40_8
+    :language: python3
+    :python3_interpreter: brython
+
+    n1, n2, n3, n4 = eval(input("Ingrese 4 notas separadas por comas: "))
+    print("Media:", (n1 + n2 + n3 + n4) / 4)
+    x = 4
+    y = 5
+    suma, diferencia = x + y, x - y
+    print(suma)
+    print(diferencia)
+    x, y = y, x
+    print(x, y)
+
+
++ ¡Para intercambiar variables, la siguiente secuencia no funciona!
+
+.. codelens:: cl_l40_8a
+
+    x = 4
+    y = 5
+    x = y
+    y = x
+
++ Una solución sería usar una variable ``temporal``.
+
+.. codelens:: cl_l40_8b
+
+    x = 4
+    y = 5
+    temporal = x
+    x = y
+    y = temporal
+
++ También se puede utilizar la asignación múltiple que es más elegante.
+
+.. codelens:: cl_l40_8c
+
+    x = 4
+    y = 5
+    x, y = y, x
