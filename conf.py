@@ -35,8 +35,6 @@ extensions = ["sphinx.ext.mathjax"] + runestone_extensions()
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["./_templates"]
 
-print(templates_path)
-
 # The suffix of source filenames.
 source_suffix = ".rst"
 
@@ -69,7 +67,9 @@ else:
     git_head = "HEAD"
     git_ref = None
 
-git_hash = subprocess.check_output(["git", "rev-parse", "--short", git_head]).decode().strip()
+git_hash = (
+    subprocess.check_output(["git", "rev-parse", "--short", git_head]).decode().strip()
+)
 git_full_hash = subprocess.check_output(["git", "rev-parse", git_head]).decode().strip()
 if git_ref and not git_ref.startswith("refs/"):
     git_branch = git_ref
@@ -77,7 +77,11 @@ else:
     # resolve the branch name for the full reference given (or default)
     if not git_ref:
         git_ref = "HEAD"
-    git_branch = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", git_ref]).decode().strip()
+    git_branch = (
+        subprocess.check_output(["git", "rev-parse", "--abbrev-ref", git_ref])
+        .decode()
+        .strip()
+    )
 
 # The short X.Y version.
 version = git_hash
@@ -228,8 +232,6 @@ html_theme_options = {
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ["./_templates/plugin_layouts"]
-
-print(html_theme_path)
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
