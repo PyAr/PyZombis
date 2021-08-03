@@ -50,7 +50,7 @@ Contenidos:
    lectures/TWP50
    lectures/TWP52
    lectures/TWP54
-   lectures/TWP56
+   lectures/TWP56/toctree
    lectures/TWP58
    lectures/TWP60
    lectures/TWP65
