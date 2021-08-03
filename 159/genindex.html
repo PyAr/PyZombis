@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; PyZombis Split-TWP58@77ef7aa</title>
+    <title>Index &#8212; PyZombis Split-TWP58@0f7f19a</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/accessibility.css?v=50109A2C" />
@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css" />
-    <link rel="stylesheet" type="text/css" href="_static/theme-overrides.css?v=2DAFE138" />
 
 
 
@@ -31,7 +30,10 @@
     <script src="_static/runestone.bundle.js?v=2a0b78efc53bfc8dda40"></script>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
+
+
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
 
 <script>
   eBookConfig = {};
@@ -50,7 +52,7 @@
   eBookConfig.build_info = "unknown";
   eBookConfig.python3 = true;
   eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
-  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.runestone_version = '5.9.0';
   eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
   eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
   eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
@@ -72,15 +74,16 @@
 
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="icon-bar" aria-label="navbar toggle">toggle navbar</span>
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
       <div>
         
-          <a class="brand-logo" style='background: transparent url("_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="_static/img/logo_small.png" alt=""></a>
         
         <a class="navbar-brand" href="index.html" aria-label="index-page">
           
@@ -245,7 +248,7 @@
           'delay': { show: 100, hide: 50}
          };
 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     $('#relations-prev').tooltip(opts);
     $('#relations-next').tooltip(opts);
   });
@@ -264,6 +267,19 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+  
+
 <!-- Ad Serving for Runestone Campaign -->
 
 
@@ -276,34 +292,18 @@
 </div>
 
 
-  <div id=scprogresscontainer>
-    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-      
+    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
+</ul>
 
 <script>
-document.addEventListener('load', (event) => {
-  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
-  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+window.addEventListener('load', (event) => {
+  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
 });
-</script>
-
-<script>
-	function mouseOverPrev() {
-		document.getElementById("relations-prev").style.opacity=1;
-	}
-
-	function mouseOutPrev() {
-		document.getElementById("relations-prev").style.opacity=0.4;
-	}
-	function mouseOverNext() {
-		document.getElementById("relations-next").style.opacity=1;
-	}
-
-	function mouseOutNext() {
-		document.getElementById("relations-next").style.opacity=0.4;
-	}
 </script>
   
 </div>
@@ -320,7 +320,7 @@ document.addEventListener('load', (event) => {
     </p>
     <p>
         &copy; Copyright 2021 Python Argentina et al..
-      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.9.0.
     </p>
   </div>
 </footer>
@@ -329,7 +329,7 @@ document.addEventListener('load', (event) => {
 
 
 <script> 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     runestoneComponents.getSwitch(); 
   });
 </script>

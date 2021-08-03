@@ -215,10 +215,10 @@ El siguiente ejercicio viene con calificación automática.
     Otro parámetro que le pasará a la url será ``"info"`` y tendrá el valor de 1. Lo que hará esto es que los 
     resultados vendrán con un texto extra con información sobre la película.
 
-    Primero, va a solicitar a la API lo descrito anteriormente, y guardará esto en la variable ``solicitud``. Después 
-    asignará los datos a la variable ``datos``. Después va asignar a la variable ``resultados`` el número de 
-    resultados que arrojó la solicitud (como se hizo en el ejemplo anterior). Como pusimos un límite, este número 
-    debe coincidir con el límite.
+    Primero, va a solicitar a la API lo descrito anteriormente, y guardará esto en la variable ``solicitud``. En 
+    otra variable, ``solicitud_url``, guarde la url de la solicitud. Después asignará los datos a la variable ``datos``. 
+    Después va asignar a la variable ``resultados`` el número de resultados que arrojó la solicitud 
+    (como se hizo en el ejemplo anterior). Como pusimos un límite, este número debe coincidir con el límite.
 
     Ahora va a crear la lista ``peliculas_similares``. Dentro de ``datos`` usted tiene un diccionario de diccionarios 
     y listas. Lo que hará será buscar los conjuntos dentro de los cuales se encuentren los nombres de las películas 
@@ -242,6 +242,7 @@ El siguiente ejercicio viene con calificación automática.
     
     # Complete el código
     solicitud = 
+    solicitud_url = 
     datos = 
 
     # Asigne la variable resultados 
@@ -266,7 +267,7 @@ El siguiente ejercicio viene con calificación automática.
     class myTests(TestCaseGui):
         def testOne(self):
             self.assertEqual(
-                solicitud.url,
+                solicitud_url,
                 "https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
                 "Probando que la url sea: https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
             )

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biblioteca time &#8212; PyZombis Split-TWP58@77ef7aa</title>
+    <title>Biblioteca time &#8212; PyZombis Split-TWP58@0f7f19a</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
 
 
 
@@ -33,7 +32,10 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Revisión de Funciones" href="../TWP35/toctree.html" />
     <link rel="prev" title="Algo salió mal" href="TWP33_8.html" />
+
+
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
 
 <script>
   eBookConfig = {};
@@ -52,7 +54,7 @@
   eBookConfig.build_info = "unknown";
   eBookConfig.python3 = true;
   eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
-  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.runestone_version = '5.9.0';
   eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
   eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
   eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
@@ -74,15 +76,16 @@
 
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="icon-bar" aria-label="navbar toggle">toggle navbar</span>
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
       <div>
         
-          <a class="brand-logo" style='background: transparent url("../../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../../_static/img/logo_small.png" alt=""></a>
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
@@ -257,7 +260,7 @@
           'delay': { show: 100, hide: 50}
          };
 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     $('#relations-prev').tooltip(opts);
     $('#relations-next').tooltip(opts);
   });
@@ -275,6 +278,30 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
+<li id="relations-prev-top" class="relations-prev navLink" title='Previous Section - Algo salió mal' data-toggle="tooltip">
+  <a href="TWP33_8.html" aria-label="Previous - Algo salió mal">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next-top" class="relations-next navLink" title='Next Section - Revisión de Funciones' data-toggle="tooltip" >
+    <a href="../TWP35/toctree.html" aria-label="Next - Revisión de Funciones">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+  
+
 <!-- Ad Serving for Runestone Campaign -->
 
 
@@ -284,11 +311,11 @@
 <ul class="simple">
 <li><p>Tiempo actual en segundos <code class="docutils literal notranslate"><span class="pre">time.clock()</span></code></p></li>
 <li><p>¿Estoy en verano? <code class="docutils literal notranslate"><span class="pre">time.daylight()</span></code></p></li>
-<li><p>Duerme unos segundos, <code class="docutils literal notranslate"><span class="pre">sleep(segundos)</span></code></p></li>
+<li><p>Duerme unos segundos, <code class="docutils literal notranslate"><span class="pre">time.sleep(segundos)</span></code></p></li>
 <li><p>Zona horaria <code class="docutils literal notranslate"><span class="pre">time.timezone()</span></code></p></li>
 </ul>
-<div class="section" id="minutos-entre-cada-acceso">
-<h2>10 minutos entre cada acceso<a class="headerlink" href="#minutos-entre-cada-acceso" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="segundos-entre-cada-acceso">
+<h2>10 segundos entre cada acceso<a class="headerlink" href="#segundos-entre-cada-acceso" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_l33_9 data-question_label="1">
@@ -303,9 +330,21 @@
 from urllib.request import urlopen
 import time
 
+# Esto nos sirve para aumentar la duración del programa a 3 minutos.
+import sys
+sys.setExecutionLimit(180000)
+
 URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
 precio = 99.99
-while precio >= 4.74:
+limite = 0
+disponibilidad = True
+while precio >= 4.74 or limite <=15:
+    try:
+        pagina = urlopen(URL_PRECIOS_LOYALTY)
+    except:
+        print("URL no disponilbe por este momento.")
+        disponibilidad = False
+        break
     pagina = urlopen(URL_PRECIOS_LOYALTY)
     texto = pagina.read()
     ubicacion = texto.find(">$")
@@ -313,8 +352,13 @@ while precio >= 4.74:
     fin = inicio + 4
     precio = float(texto[inicio:fin])
     if precio >= 4.74:
-        time.sleep(600)
-print("Comprar! precio: %5.2f" % precio)
+        print("Esperando 10 segundos... Precio actual: %5.2f" % precio)
+        limite += 1
+        time.sleep(10)
+if limite == 16:
+    print("No quieren bajar el precio. Comprar a %5.2f pesos" % precio)
+elif limite < 7 and disponibilidad == True:
+    print("Comprar! precio: %5.2f" % precio)
 </textarea>
 </div>
 </div>
@@ -342,54 +386,29 @@ print("Comprar! precio: %5.2f" % precio)
 </div>
 
 
-  <div id=scprogresscontainer>
-    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-      
-<ul>
-  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Algo salió mal' data-toggle="tooltip">
-    <a href="TWP33_8.html" aria-label="Algo salió mal">
-        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
-            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-        </div>
-    </a>
-  </li>
-</ul>
+    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
+<li id="relations-prev-bottom" class="relations-prev navLink" title='Previous Section - Algo salió mal' data-toggle="tooltip">
+  <a href="TWP33_8.html" aria-label="Previous - Algo salió mal">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
 
-  
-<ul>
-  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Revisión de Funciones' data-toggle="tooltip" >
-    <a href="../TWP35/toctree.html" aria-label="Revisión de Funciones">
-      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
-          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
-      </div>
+  <li id="relations-next-bottom" class="relations-next navLink" title='Next Section - Revisión de Funciones' data-toggle="tooltip" >
+    <a href="../TWP35/toctree.html" aria-label="Next - Revisión de Funciones">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>
 </ul>
 
 <script>
-document.addEventListener('load', (event) => {
-  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
-  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+window.addEventListener('load', (event) => {
+  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
 });
-</script>
-
-<script>
-	function mouseOverPrev() {
-		document.getElementById("relations-prev").style.opacity=1;
-	}
-
-	function mouseOutPrev() {
-		document.getElementById("relations-prev").style.opacity=0.4;
-	}
-	function mouseOverNext() {
-		document.getElementById("relations-next").style.opacity=1;
-	}
-
-	function mouseOutNext() {
-		document.getElementById("relations-next").style.opacity=0.4;
-	}
 </script>
   
 </div>
@@ -406,7 +425,7 @@ document.addEventListener('load', (event) => {
     </p>
     <p>
         &copy; Copyright 2021 Python Argentina et al..
-      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.9.0.
     </p>
   </div>
 </footer>
@@ -415,7 +434,7 @@ document.addEventListener('load', (event) => {
 
 
 <script> 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     runestoneComponents.getSwitch(); 
   });
 </script>

@@ -4,36 +4,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Excepciones &#8212; PyZombis Split-TWP58@77ef7aa</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
-    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
-    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+    <title>2. Se lanza una excepción &#8212; PyZombis Split-TWP58@0f7f19a</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
 
 
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/webglinteractive.js?v=2B768384"></script>
-    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../_static/animationbase.js?v=A043C3A7"></script>
-    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../_static/html4css1.css?v=4533ACD3"></script>
-    <script src="../_static/runtime.bundle.js?v=f50940efe5177b9c81e6"></script>
-    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
-    <script src="../_static/runestone.bundle.js?v=2a0b78efc53bfc8dda40"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="DJ Mix 1" href="TWP56.html" />
-    <link rel="prev" title="MVC" href="TWP52.html" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../../_static/runtime.bundle.js?v=f50940efe5177b9c81e6"></script>
+    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../../_static/runestone.bundle.js?v=2a0b78efc53bfc8dda40"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3. Usando un messagebox" href="TWP54_3.html" />
+    <link rel="prev" title="1. Introducción a las excepciones" href="TWP54_1.html" />
+
+
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
 
 <script>
   eBookConfig = {};
@@ -52,7 +54,7 @@
   eBookConfig.build_info = "unknown";
   eBookConfig.python3 = true;
   eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
-  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.runestone_version = '5.9.0';
   eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
   eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
   eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
@@ -74,17 +76,18 @@
 
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="icon-bar" aria-label="navbar toggle">toggle navbar</span>
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
       <div>
         
-          <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
         
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../../_static/img/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
           PyZombis
         </a>
@@ -142,12 +145,12 @@
           </a>
           <ul class='dropdown-menu'>
             
-                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+                <li><a href='../../index.html' aria-label="index-page">Table of Contents</a></li>
             
-            <li><a href='../genindex.html'>Book Index</a></li>
+            <li><a href='../../genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li style="width: 240px;">
-              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+              <form class="navbar-search" style="margin:10px;" action="../../search.html" method="get">
                 <div class="input-group">
                   <input type="text" class="form-control" name="q" placeholder="Search this book" />
                   <span class="input-group-btn">
@@ -221,7 +224,7 @@
             <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=PyZombis&page=TWP54'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=TWP54_2'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -238,14 +241,14 @@
         
         <!-- 
           
-  <li id="relations-prev" title="Previous Chapter - MVC" data-toggle="tooltip">
-    <a href="TWP52.html" >
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">1. </span>Introducción a las excepciones" data-toggle="tooltip">
+    <a href="TWP54_1.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - DJ Mix 1' data-toggle="tooltip" >              
-    <a href="TWP56.html" >
+  <li id="relations-next" title='Next Chapter - <span class="section-number">3. </span>Usando un messagebox' data-toggle="tooltip" >              
+    <a href="TWP54_3.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -257,7 +260,7 @@
           'delay': { show: 100, hide: 50}
          };
 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     $('#relations-prev').tooltip(opts);
     $('#relations-next').tooltip(opts);
   });
@@ -275,45 +278,43 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
+<li id="relations-prev-top" class="relations-prev navLink" title='Previous Section - 1. Introducción a las excepciones' data-toggle="tooltip">
+  <a href="TWP54_1.html" aria-label="Previous - 1. Introducción a las excepciones">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next-top" class="relations-next navLink" title='Next Section - 3. Usando un messagebox' data-toggle="tooltip" >
+    <a href="TWP54_3.html" aria-label="Next - 3. Usando un messagebox">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+  
+
 <!-- Ad Serving for Runestone Campaign -->
 
 
   
-  <div class="section" id="excepciones">
-<h1>Excepciones<a class="headerlink" href="#excepciones" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
-<div class="section" id="id1">
-<h2>Excepciones<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP54_001.jpg"><img alt="" class="align-center" src="../_images/TWP54_001.jpg" style="width: 17.401cm; height: 14.249cm;" /></a>
-</div>
-<div class="section" id="id2">
-<h2>Excepciones<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>A veces las cosas salen mal. Y necesitas tratarlos.</p></li>
-<li><p>Siempre hay cosas que están fuera de tu control. Las redes fallan.
-Los archivos desaparecen.</p></li>
-<li><p>Los códigos inteligentes aprenden a lidiar con estos errores y hacen que
-programa para recuperarse sin problemas.</p></li>
-</ul>
-</div>
-<div class="section" id="que-mal-olor">
-<h2>¡Qué mal olor!<a class="headerlink" href="#que-mal-olor" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP54_002.jpg"><img alt="" class="align-center" src="../_images/TWP54_002.jpg" style="width: 12.6cm; height: 14.477cm;" /></a>
-</div>
-<div class="section" id="id3">
-<h2>Excepciones<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP54_003.jpg"><img alt="" class="align-center" src="../_images/TWP54_003.jpg" style="width: 20.601cm; height: 14.219cm;" /></a>
-</div>
-<div class="section" id="se-lanza-una-excepcion">
-<h2>Se lanza una excepción<a class="headerlink" href="#se-lanza-una-excepcion" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP54_004.jpg"><img alt="" class="align-center" src="../_images/TWP54_004.jpg" style="width: 22.859cm; height: 11.211cm;" /></a>
-</div>
+  <div class="section" id="se-lanza-una-excepcion">
+<h1><span class="section-number">2. </span>Se lanza una excepción<a class="headerlink" href="#se-lanza-una-excepcion" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../../_images/TWP54_004.jpg"><img alt="" class="align-center" src="../../_images/TWP54_004.jpg" style="width: 22.859cm; height: 11.211cm;" /></a>
 <div class="section" id="atrapando-la-excepcion">
-<h2>Atrapando la excepción<a class="headerlink" href="#atrapando-la-excepcion" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP54_005.jpg"><img alt="" class="align-center" src="../_images/TWP54_005.jpg" style="width: 22.771cm; height: 14.432cm;" /></a>
+<h2><span class="section-number">2.1. </span>Atrapando la excepción<a class="headerlink" href="#atrapando-la-excepcion" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/TWP54_005.jpg"><img alt="" class="align-center" src="../../_images/TWP54_005.jpg" style="width: 22.771cm; height: 14.432cm;" /></a>
 </div>
 <div class="section" id="manejo-de-excepciones">
-<h2>Manejo de excepciones<a class="headerlink" href="#manejo-de-excepciones" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.2. </span>Manejo de excepciones<a class="headerlink" href="#manejo-de-excepciones" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">salvar_dados</span><span class="p">():</span>
    <span class="k">try</span><span class="p">:</span>
       <span class="n">fileD</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;encomendas.txt&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
@@ -333,131 +334,34 @@ programa para recuperarse sin problemas.</p></li>
 <ul class="simple">
 <li><p>Obs.: para você testar a exceção deverá alterar as propriedades do arquivo</p></li>
 </ul>
-</div>
-<div class="section" id="tratando-excecoes">
-<h2>Tratando Exceções<a class="headerlink" href="#tratando-excecoes" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP54_007.jpg"><img alt="" class="align-center" src="../_images/TWP54_007.jpg" style="width: 22.859cm; height: 7.611cm;" /></a>
-</div>
-<div class="section" id="usando-uma-messagebox">
-<h2>Usando uma messagebox<a class="headerlink" href="#usando-uma-messagebox" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">salvar_dados</span><span class="p">():</span>
-   <span class="k">try</span><span class="p">:</span>
-      <span class="n">fileD</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;encomendas.txt&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Destino:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">destino</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Descricao:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">descricao</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Endereco:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">endereco</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="n">END</span><span class="p">))</span>
-      <span class="n">destino</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
-      <span class="n">descricao</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-      <span class="n">endereco</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-   <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">excecao</span><span class="p">:</span>
-      <span class="n">app</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Erro de gravacao no arquivo </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">excecao</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="id4">
-<h2>Manejo de excepciones<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP54_009.jpg"><img alt="" class="align-center" src="../_images/TWP54_009.jpg" style="width: 18.335cm; height: 8.042cm;" /></a>
-</div>
-<div class="section" id="id5">
-<h2>Manejo de excepciones<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP54_010.jpg"><img alt="" class="align-center" src="../_images/TWP54_010.jpg" style="width: 13.348cm; height: 15.573cm;" /></a>
-</div>
-<div class="section" id="enlaces-de-conferencias-de-video">
-<h2>Enlaces de conferencias de video:<a class="headerlink" href="#enlaces-de-conferencias-de-video" title="Permalink to this headline">¶</a></h2>
-<script>
-    function lecture20_disqus(source) {
-        if (window.DISQUS) {
-
-            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
-
-            //if Disqus exists, call it's reset method with new parameters
-            DISQUS.reset({
-                reload: true,
-                config: function () {
-                    this.page.identifier = 'lecture20_' + eBookConfig.course;
-                    this.page.url = 'https://lecture20_'+eBookConfig.course+'.interactivepython.com/#!';
-                }
-            });
-
-        } else {
-            //insert a wrapper in HTML after the relevant "show comments" link
-            $('<div id="disqus_thread"></div>').insertAfter(source);
-
-            // set Disqus required vars
-            disqus_shortname = 'pyzombis';
-            disqus_identifier = 'lecture20_' + eBookConfig.course;
-            disqus_url = 'http://lecture20_'+eBookConfig.course+'.interactivepython.com/#!';
-
-            //append the Disqus embed script to HTML
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-            $('head').append(dsq);
-
-        }
-    }
-</script>
-
-<a href="#disqus_thread" class="disqus_thread_link" data-disqus-identifier="lecture20" onclick="lecture20_disqus(this);">Show Comments</a>
-<script>
-  document.addEventListener('load', (event) => {
-    $("a[data-disqus-identifier='lecture20']").attr('data-disqus-identifier', 'lecture20_' + eBookConfig.course);
-  });
-</script>
+<a class="reference internal image-reference" href="../../_images/TWP54_007.jpg"><img alt="" class="align-center" src="../../_images/TWP54_007.jpg" style="width: 22.859cm; height: 7.611cm;" /></a>
 </div>
 </div>
 
 
-  <div id=scprogresscontainer>
-    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-      
-<ul>
-  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - MVC' data-toggle="tooltip">
-    <a href="TWP52.html" aria-label="MVC">
-        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
-            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-        </div>
-    </a>
-  </li>
-</ul>
+    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
+<li id="relations-prev-bottom" class="relations-prev navLink" title='Previous Section - 1. Introducción a las excepciones' data-toggle="tooltip">
+  <a href="TWP54_1.html" aria-label="Previous - 1. Introducción a las excepciones">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
 
-  
-<ul>
-  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - DJ Mix 1' data-toggle="tooltip" >
-    <a href="TWP56.html" aria-label="DJ Mix 1">
-      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
-          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
-      </div>
+  <li id="relations-next-bottom" class="relations-next navLink" title='Next Section - 3. Usando un messagebox' data-toggle="tooltip" >
+    <a href="TWP54_3.html" aria-label="Next - 3. Usando un messagebox">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>
 </ul>
 
 <script>
-document.addEventListener('load', (event) => {
-  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
-  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+window.addEventListener('load', (event) => {
+  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
 });
-</script>
-
-<script>
-	function mouseOverPrev() {
-		document.getElementById("relations-prev").style.opacity=1;
-	}
-
-	function mouseOutPrev() {
-		document.getElementById("relations-prev").style.opacity=0.4;
-	}
-	function mouseOverNext() {
-		document.getElementById("relations-next").style.opacity=1;
-	}
-
-	function mouseOutNext() {
-		document.getElementById("relations-next").style.opacity=0.4;
-	}
 </script>
   
 </div>
@@ -474,7 +378,7 @@ document.addEventListener('load', (event) => {
     </p>
     <p>
         &copy; Copyright 2021 Python Argentina et al..
-      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.9.0.
     </p>
   </div>
 </footer>
@@ -483,7 +387,7 @@ document.addEventListener('load', (event) => {
 
 
 <script> 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     runestoneComponents.getSwitch(); 
   });
 </script>
