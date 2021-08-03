@@ -39,16 +39,12 @@ Archivos
     archivo.close()
 
 
-+ Si ejecuta este programa, no aparecerá nada en la pantalla
-+ Busque en el directorio c: \ Python3x el archivo numeros.txt
+    ====
+    print("Se han escrito datos en el archivo numeros.txt")
+
+
++ Al ejecutar el programa anterior se modifica el archivo ``numeros.txt``.
 + El modo w crea el archivo si no existe, si existe será eliminado y reescrito
-
-.. code-block:: python
-
-    archivo = open("numeros.txt", "r")
-    for linea in archivo.readlines():
-        print(linea)
-    archivo.close()
 
 
 .. activecode:: ac_l23_1b
@@ -64,9 +60,11 @@ Archivos
         print(linea)
     archivo.close()
 
-+ readlines genera una lista donde cada elemento es una línea de lectura
-+ Los archivos de texto son simples y tienen un carácter de control en fin de saltar la línea
-+ Si queremos eliminar este personaje del final, podemos usar print (linh a.rstrip ())
++ ``readlines()`` genera una lista donde cada elemento es una línea de lectura.
++ El archivo ``numeros.txt`` ahora tiene escrito números, cada número en una línea diferente.
+  Este cambio de línea fue inscrito con el carácter especial ``\n``.
++ Si queremos eliminar este carácter del final, podemos usar ``print(linea.rstrip())``.
+  Pruebe imprimir de esta manera las líneas de texto.
 
 
 Pythonic way
@@ -91,5 +89,4 @@ Pythonic way
 + En la diapositiva anterior vimos cómo los programadores normales leen
 + Python es genial, porque siempre puedes ir más profundo
 + Python es simple, pero difícil de agotar
-
 
