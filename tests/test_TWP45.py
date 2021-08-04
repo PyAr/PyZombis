@@ -4,7 +4,6 @@ import json
 
 
 def test_l45_1(page):
-    page.set_viewport_size({"width": 1050, "height": 600})
     page.goto("lectures/TWP45/TWP45_1.html")
     # Run the exercise
     page.click("#ac_l45_1 >> *css=button >> text=Run")
@@ -22,7 +21,6 @@ def test_l45_1(page):
 @pytest.mark.vcr()
 def test_l45_3(page):
     # Go to TWP45 page
-    page.set_viewport_size({"width": 1050, "height": 600})
     page.goto("lectures/TWP45/TWP45_3.html")
 
     # request data for the exercise to the .yaml file
