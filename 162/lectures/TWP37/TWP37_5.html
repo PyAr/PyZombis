@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nueva puntuación &#8212; PyZombis new-templates-files@cadada0</title>
+    <title>Nueva puntuación &#8212; PyZombis new-templates-files@b565adf</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,12 +90,10 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis new-templates-files@cadada0
+          PyZombis new-templates-files@b565adf
         </a>
       </div>
     </div>
-
-
 
     <div class="navbar-collapse collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" >
@@ -261,7 +259,7 @@
           'delay': { show: 100, hide: 50}
          };
 
-  window.addEventListener('load', (event) => {
+  document.addEventListener('load', (event) => {
     $('#relations-prev').tooltip(opts);
     $('#relations-next').tooltip(opts);
   });
@@ -281,25 +279,50 @@
 <div class="container" id="main-content" role="main">
 
   
-    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
-<li id="relations-prev-top" class="relations-prev navLink" title='Previous Section - Ordenar la lista sería mejor' data-toggle="tooltip">
-  <a href="TWP37_4.html" aria-label="Previous - Ordenar la lista sería mejor">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Ordenar la lista sería mejor' data-toggle="tooltip">
+    <a href="TWP37_4.html" aria-label="Ordenar la lista sería mejor">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
 
-  <li id="relations-next-top" class="relations-next navLink" title='Next Section - ¿Cuáles son los nombres de los ganadores?' data-toggle="tooltip" >
-    <a href="TWP37_6.html" aria-label="Next - ¿Cuáles son los nombres de los ganadores?">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - ¿Cuáles son los nombres de los ganadores?' data-toggle="tooltip" >
+    <a href="TWP37_6.html" aria-label="¿Cuáles son los nombres de los ganadores?">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 
@@ -397,25 +420,50 @@ print(f"3. {puntuaciones[2]:.2f}")
     You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
-<li id="relations-prev-bottom" class="relations-prev navLink" title='Previous Section - Ordenar la lista sería mejor' data-toggle="tooltip">
-  <a href="TWP37_4.html" aria-label="Previous - Ordenar la lista sería mejor">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Ordenar la lista sería mejor' data-toggle="tooltip">
+    <a href="TWP37_4.html" aria-label="Ordenar la lista sería mejor">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
 
-  <li id="relations-next-bottom" class="relations-next navLink" title='Next Section - ¿Cuáles son los nombres de los ganadores?' data-toggle="tooltip" >
-    <a href="TWP37_6.html" aria-label="Next - ¿Cuáles son los nombres de los ganadores?">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - ¿Cuáles son los nombres de los ganadores?' data-toggle="tooltip" >
+    <a href="TWP37_6.html" aria-label="¿Cuáles son los nombres de los ganadores?">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 </div>

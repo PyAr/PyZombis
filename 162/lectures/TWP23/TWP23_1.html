@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Archivos &#8212; PyZombis new-templates-files@cadada0</title>
+    <title>Archivos &#8212; PyZombis new-templates-files@b565adf</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,12 +90,10 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis new-templates-files@cadada0
+          PyZombis new-templates-files@b565adf
         </a>
       </div>
     </div>
-
-
 
     <div class="navbar-collapse collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" >
@@ -261,7 +259,7 @@
           'delay': { show: 100, hide: 50}
          };
 
-  window.addEventListener('load', (event) => {
+  document.addEventListener('load', (event) => {
     $('#relations-prev').tooltip(opts);
     $('#relations-next').tooltip(opts);
   });
@@ -281,25 +279,50 @@
 <div class="container" id="main-content" role="main">
 
   
-    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
-<li id="relations-prev-top" class="relations-prev navLink" title='Previous Section - Archivos y diccionarios' data-toggle="tooltip">
-  <a href="toctree.html" aria-label="Previous - Archivos y diccionarios">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Archivos y diccionarios' data-toggle="tooltip">
+    <a href="toctree.html" aria-label="Archivos y diccionarios">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
 
-  <li id="relations-next-top" class="relations-next navLink" title='Next Section - Crypto' data-toggle="tooltip" >
-    <a href="TWP23_2.html" aria-label="Next - Crypto">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Crypto' data-toggle="tooltip" >
+    <a href="TWP23_2.html" aria-label="Crypto">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 
@@ -348,20 +371,17 @@ archivo = open("numeros.txt", "w")
 for numero in range(1, 31):
     archivo.write("%d\n" % numero)
 archivo.close()
+
+
+====
+print("Se han escrito datos en el archivo numeros.txt")
 </textarea>
 </div>
 </div>
 <ul class="simple">
-<li><p>Si ejecuta este programa, no aparecerá nada en la pantalla</p></li>
-<li><p>Busque en el directorio c: Python3x el archivo numeros.txt</p></li>
+<li><p>Al ejecutar el programa anterior se modifica el archivo <code class="docutils literal notranslate"><span class="pre">numeros.txt</span></code>.</p></li>
 <li><p>El modo w crea el archivo si no existe, si existe será eliminado y reescrito</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;numeros.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
-<span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-</div>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_l23_1b data-question_label="3">
@@ -382,9 +402,11 @@ archivo.close()
 </div>
 </div>
 <ul class="simple">
-<li><p>readlines genera una lista donde cada elemento es una línea de lectura</p></li>
-<li><p>Los archivos de texto son simples y tienen un carácter de control en fin de saltar la línea</p></li>
-<li><p>Si queremos eliminar este personaje del final, podemos usar print (linh a.rstrip ())</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">readlines()</span></code> genera una lista donde cada elemento es una línea de lectura.</p></li>
+<li><p>El archivo <code class="docutils literal notranslate"><span class="pre">numeros.txt</span></code> ahora tiene escrito números, cada número en una línea diferente.
+Este cambio de línea fue inscrito con el carácter especial <code class="docutils literal notranslate"><span class="pre">\n</span></code>.</p></li>
+<li><p>Si queremos eliminar este carácter del final, podemos usar <code class="docutils literal notranslate"><span class="pre">print(linea.rstrip())</span></code>.
+Pruebe imprimir de esta manera las líneas de texto.</p></li>
 </ul>
 <div class="section" id="pythonic-way">
 <h2>Pythonic way<a class="headerlink" href="#pythonic-way" title="Permalink to this headline">¶</a></h2>
@@ -422,25 +444,50 @@ with open("numeros.txt", "r") as f:
     You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
-<li id="relations-prev-bottom" class="relations-prev navLink" title='Previous Section - Archivos y diccionarios' data-toggle="tooltip">
-  <a href="toctree.html" aria-label="Previous - Archivos y diccionarios">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Archivos y diccionarios' data-toggle="tooltip">
+    <a href="toctree.html" aria-label="Archivos y diccionarios">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
 
-  <li id="relations-next-bottom" class="relations-next navLink" title='Next Section - Crypto' data-toggle="tooltip" >
-    <a href="TWP23_2.html" aria-label="Next - Crypto">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Crypto' data-toggle="tooltip" >
+    <a href="TWP23_2.html" aria-label="Crypto">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 </div>

@@ -49,6 +49,10 @@ HTML
     archivo.close()
 
 
+    ====
+    print("Se han escrito datos en el archivo hola.html")
+
+
 .. datafile:: hola.html
     :edit:
     :cols: 40

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hackeando con Python &#8212; PyZombis new-templates-files@cadada0</title>
+    <title>Hackeando con Python &#8212; PyZombis new-templates-files@b565adf</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
@@ -31,8 +31,8 @@
     <script src="../_static/runestone.bundle.js?v=2a0b78efc53bfc8dda40"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Módulos" href="TWP47.html" />
-    <link rel="prev" title="Banco de Dados" href="TWP42.html" />
+    <link rel="next" title="Módulos" href="TWP47/toctree.html" />
+    <link rel="prev" title="2. Conceptos básicos de SQL" href="TWP42/TWP42_2.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,12 +90,10 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis new-templates-files@cadada0
+          PyZombis new-templates-files@b565adf
         </a>
       </div>
     </div>
-
-
 
     <div class="navbar-collapse collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" >
@@ -242,14 +240,14 @@
         
         <!-- 
           
-  <li id="relations-prev" title="Previous Chapter - Banco de Dados" data-toggle="tooltip">
-    <a href="TWP42.html" >
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">2. </span>Conceptos básicos de SQL" data-toggle="tooltip">
+    <a href="TWP42/TWP42_2.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
   <li id="relations-next" title='Next Chapter - Módulos' data-toggle="tooltip" >              
-    <a href="TWP47.html" >
+    <a href="TWP47/toctree.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -261,7 +259,7 @@
           'delay': { show: 100, hide: 50}
          };
 
-  window.addEventListener('load', (event) => {
+  document.addEventListener('load', (event) => {
     $('#relations-prev').tooltip(opts);
     $('#relations-next').tooltip(opts);
   });
@@ -281,25 +279,50 @@
 <div class="container" id="main-content" role="main">
 
   
-    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
-<li id="relations-prev-top" class="relations-prev navLink" title='Previous Section - Banco de Dados' data-toggle="tooltip">
-  <a href="TWP42.html" aria-label="Previous - Banco de Dados">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - 2. Conceptos básicos de SQL' data-toggle="tooltip">
+    <a href="TWP42/TWP42_2.html" aria-label="2. Conceptos básicos de SQL">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
 
-  <li id="relations-next-top" class="relations-next navLink" title='Next Section - Módulos' data-toggle="tooltip" >
-    <a href="TWP47.html" aria-label="Next - Módulos">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Módulos' data-toggle="tooltip" >
+    <a href="TWP47/toctree.html" aria-label="Módulos">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 
@@ -514,10 +537,10 @@ valor <code class="docutils literal notranslate"><span class="pre">&quot;Coco&qu
 esto existe un parámetro llamado <code class="docutils literal notranslate"><span class="pre">&quot;limit&quot;</span></code>, que puede ser asignado al número de resultados que se necesiten.
 Otro parámetro que le pasará a la url será <code class="docutils literal notranslate"><span class="pre">&quot;info&quot;</span></code> y tendrá el valor de 1. Lo que hará esto es que los
 resultados vendrán con un texto extra con información sobre la película.</p>
-<p>Primero, va a solicitar a la API lo descrito anteriormente, y guardará esto en la variable <code class="docutils literal notranslate"><span class="pre">solicitud</span></code>. Después
-asignará los datos a la variable <code class="docutils literal notranslate"><span class="pre">datos</span></code>. Después va asignar a la variable <code class="docutils literal notranslate"><span class="pre">resultados</span></code> el número de
-resultados que arrojó la solicitud (como se hizo en el ejemplo anterior). Como pusimos un límite, este número
-debe coincidir con el límite.</p>
+<p>Primero, va a solicitar a la API lo descrito anteriormente, y guardará esto en la variable <code class="docutils literal notranslate"><span class="pre">solicitud</span></code>. En
+otra variable, <code class="docutils literal notranslate"><span class="pre">solicitud_url</span></code>, guarde la url de la solicitud. Después asignará los datos a la variable <code class="docutils literal notranslate"><span class="pre">datos</span></code>.
+Después va asignar a la variable <code class="docutils literal notranslate"><span class="pre">resultados</span></code> el número de resultados que arrojó la solicitud
+(como se hizo en el ejemplo anterior). Como pusimos un límite, este número debe coincidir con el límite.</p>
 <p>Ahora va a crear la lista <code class="docutils literal notranslate"><span class="pre">peliculas_similares</span></code>. Dentro de <code class="docutils literal notranslate"><span class="pre">datos</span></code> usted tiene un diccionario de diccionarios
 y listas. Lo que hará será buscar los conjuntos dentro de los cuales se encuentren los nombres de las películas
 similares a Coco, y va a agregar a <code class="docutils literal notranslate"><span class="pre">peliculas_similares</span></code> el nombre de esas películas. En total deben ser 5.
@@ -544,6 +567,7 @@ parametros = {}
 
 # Complete el código
 solicitud =
+solicitud_url =
 datos =
 
 # Asigne la variable resultados
@@ -568,7 +592,7 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
         self.assertEqual(
-            solicitud.url,
+            solicitud_url,
             "https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
             "Probando que la url sea: https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
         )
@@ -713,25 +737,50 @@ legible. Esto se logra con el argumento <code class="docutils literal notranslat
     You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
-<li id="relations-prev-bottom" class="relations-prev navLink" title='Previous Section - Banco de Dados' data-toggle="tooltip">
-  <a href="TWP42.html" aria-label="Previous - Banco de Dados">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - 2. Conceptos básicos de SQL' data-toggle="tooltip">
+    <a href="TWP42/TWP42_2.html" aria-label="2. Conceptos básicos de SQL">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
 
-  <li id="relations-next-bottom" class="relations-next navLink" title='Next Section - Módulos' data-toggle="tooltip" >
-    <a href="TWP47.html" aria-label="Next - Módulos">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Módulos' data-toggle="tooltip" >
+    <a href="TWP47/toctree.html" aria-label="Módulos">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 </div>

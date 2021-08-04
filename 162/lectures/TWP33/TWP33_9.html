@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biblioteca time &#8212; PyZombis new-templates-files@cadada0</title>
+    <title>Biblioteca time &#8212; PyZombis new-templates-files@b565adf</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,12 +90,10 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis new-templates-files@cadada0
+          PyZombis new-templates-files@b565adf
         </a>
       </div>
     </div>
-
-
 
     <div class="navbar-collapse collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" >
@@ -261,7 +259,7 @@
           'delay': { show: 100, hide: 50}
          };
 
-  window.addEventListener('load', (event) => {
+  document.addEventListener('load', (event) => {
     $('#relations-prev').tooltip(opts);
     $('#relations-next').tooltip(opts);
   });
@@ -281,25 +279,50 @@
 <div class="container" id="main-content" role="main">
 
   
-    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
-<li id="relations-prev-top" class="relations-prev navLink" title='Previous Section - Algo salió mal' data-toggle="tooltip">
-  <a href="TWP33_8.html" aria-label="Previous - Algo salió mal">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Algo salió mal' data-toggle="tooltip">
+    <a href="TWP33_8.html" aria-label="Algo salió mal">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
 
-  <li id="relations-next-top" class="relations-next navLink" title='Next Section - Revisión de Funciones' data-toggle="tooltip" >
-    <a href="../TWP35/toctree.html" aria-label="Next - Revisión de Funciones">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Revisión de Funciones' data-toggle="tooltip" >
+    <a href="../TWP35/toctree.html" aria-label="Revisión de Funciones">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 
@@ -312,11 +335,11 @@ window.addEventListener('load', (event) => {
 <ul class="simple">
 <li><p>Tiempo actual en segundos <code class="docutils literal notranslate"><span class="pre">time.clock()</span></code></p></li>
 <li><p>¿Estoy en verano? <code class="docutils literal notranslate"><span class="pre">time.daylight()</span></code></p></li>
-<li><p>Duerme unos segundos, <code class="docutils literal notranslate"><span class="pre">sleep(segundos)</span></code></p></li>
+<li><p>Duerme unos segundos, <code class="docutils literal notranslate"><span class="pre">time.sleep(segundos)</span></code></p></li>
 <li><p>Zona horaria <code class="docutils literal notranslate"><span class="pre">time.timezone()</span></code></p></li>
 </ul>
-<div class="section" id="minutos-entre-cada-acceso">
-<h2>10 minutos entre cada acceso<a class="headerlink" href="#minutos-entre-cada-acceso" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="segundos-entre-cada-acceso">
+<h2>10 segundos entre cada acceso<a class="headerlink" href="#segundos-entre-cada-acceso" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_l33_9 data-question_label="1">
@@ -331,9 +354,21 @@ window.addEventListener('load', (event) => {
 from urllib.request import urlopen
 import time
 
+# Esto nos sirve para aumentar la duración del programa a 3 minutos.
+import sys
+sys.setExecutionLimit(180000)
+
 URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
 precio = 99.99
-while precio >= 4.74:
+limite = 0
+disponibilidad = True
+while precio >= 4.74 or limite <=15:
+    try:
+        pagina = urlopen(URL_PRECIOS_LOYALTY)
+    except:
+        print("URL no disponilbe por este momento.")
+        disponibilidad = False
+        break
     pagina = urlopen(URL_PRECIOS_LOYALTY)
     texto = pagina.read()
     ubicacion = texto.find(">$")
@@ -341,8 +376,13 @@ while precio >= 4.74:
     fin = inicio + 4
     precio = float(texto[inicio:fin])
     if precio >= 4.74:
-        time.sleep(600)
-print("Comprar! precio: %5.2f" % precio)
+        print("Esperando 10 segundos... Precio actual: %5.2f" % precio)
+        limite += 1
+        time.sleep(10)
+if limite == 16:
+    print("No quieren bajar el precio. Comprar a %5.2f pesos" % precio)
+elif limite < 7 and disponibilidad == True:
+    print("Comprar! precio: %5.2f" % precio)
 </textarea>
 </div>
 </div>
@@ -374,25 +414,50 @@ print("Comprar! precio: %5.2f" % precio)
     You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
-<li id="relations-prev-bottom" class="relations-prev navLink" title='Previous Section - Algo salió mal' data-toggle="tooltip">
-  <a href="TWP33_8.html" aria-label="Previous - Algo salió mal">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Algo salió mal' data-toggle="tooltip">
+    <a href="TWP33_8.html" aria-label="Algo salió mal">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
 
-  <li id="relations-next-bottom" class="relations-next navLink" title='Next Section - Revisión de Funciones' data-toggle="tooltip" >
-    <a href="../TWP35/toctree.html" aria-label="Next - Revisión de Funciones">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Revisión de Funciones' data-toggle="tooltip" >
+    <a href="../TWP35/toctree.html" aria-label="Revisión de Funciones">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 </div>

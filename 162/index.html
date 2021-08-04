@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bienvenido a PyZombis &#8212; PyZombis new-templates-files@cadada0</title>
+    <title>Bienvenido a PyZombis &#8212; PyZombis new-templates-files@b565adf</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/accessibility.css?v=50109A2C" />
@@ -89,12 +89,10 @@
         
         <a class="navbar-brand" href="#" aria-label="index-page">
           
-          PyZombis new-templates-files@cadada0
+          PyZombis new-templates-files@b565adf
         </a>
       </div>
     </div>
-
-
 
     <div class="navbar-collapse collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" >
@@ -254,7 +252,7 @@
           'delay': { show: 100, hide: 50}
          };
 
-  window.addEventListener('load', (event) => {
+  document.addEventListener('load', (event) => {
     $('#relations-prev').tooltip(opts);
     $('#relations-next').tooltip(opts);
   });
@@ -274,19 +272,39 @@
 <div class="container" id="main-content" role="main">
 
   
-    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
-  <li id="relations-next-top" class="relations-next navLink" title='Next Section - Variables y entrada de datos' data-toggle="tooltip" >
-    <a href="lectures/TWP05/toctree.html" aria-label="Next - Variables y entrada de datos">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Variables y entrada de datos' data-toggle="tooltip" >
+    <a href="lectures/TWP05/toctree.html" aria-label="Variables y entrada de datos">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 
@@ -331,13 +349,13 @@ window.addEventListener('load', (event) => {
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP37/toctree.html">Revisión de Archivos, Listas y Diccionarios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP38/toctree.html">Revisión general 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP40/toctree.html">Revisión general 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/TWP42.html">Banco de Dados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/TWP42/toctree.html">Bases de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP45.html">Hackeando con Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/TWP47.html">Módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/TWP47/toctree.html">Módulos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP50.html">Interfaz gráfica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP52.html">MVC</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/TWP54.html">Excepciones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/TWP56.html">DJ Mix 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/TWP54/toctree.html">Excepciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/TWP56/toctree.html">DJ Mix 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP58.html">DJ Mix 2 revisión orientada a objetos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP60.html">Pygame</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/TWP65.html">Introducción al desarrollo web</a></li>
@@ -368,19 +386,39 @@ window.addEventListener('load', (event) => {
     You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
-  <li id="relations-next-bottom" class="relations-next navLink" title='Next Section - Variables y entrada de datos' data-toggle="tooltip" >
-    <a href="lectures/TWP05/toctree.html" aria-label="Next - Variables y entrada de datos">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Variables y entrada de datos' data-toggle="tooltip" >
+    <a href="lectures/TWP05/toctree.html" aria-label="Variables y entrada de datos">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 </div>
