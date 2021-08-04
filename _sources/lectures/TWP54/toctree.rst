@@ -18,3 +18,6 @@ Excepciones
    TWP54_1.rst
    TWP54_2.rst
    TWP54_3.rst
+   TWP54_4.rst
+   TWP54_5.rst
+   TWP54_6.rst

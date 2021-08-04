@@ -1,33 +1,68 @@
-Usando un messagebox
-====================
+Excepciones comunes
+===================
 
-.. code-block :: python
+Estas son algunas excepciones comunes que encontrarás al escribir
+programas simples.
 
-   def salvar_dados():
-      try:
-         fileD = open("encomendas.txt","a")
-         fileD.write("Destino:\n")
-         fileD.write("%s\n" %destino.get())
-         fileD.write("Descricao:\n")
-         fileD.write("%s\n" %descricao.get())
-         fileD.write("Endereco:\n")
-         fileD.write("%s\n" %endereco.get("1.0",END))
-         destino.set(None)
-         descricao.delete(0,END)
-         endereco.delete("1.0",END)
-      except Exception as excecao:
-         app.title('Erro de gravacao no arquivo %s' %excecao)
+NameError
+---------
 
+Ocurre cuando el programa no encuentra el nombre de un objeto que mencionaste en el código.
 
-.. image:: ../img/TWP54_009.jpg
-   :height: 8.042cm
-   :width: 18.335cm
-   :align: center
-   :alt: 
+.. activecode:: ac_l54_3a
+    :nocodelens:
+    
+    a = 1
+    try:
+        print(b)
+    except NameError as e:
+        print(f"Error: {e}")
 
 
-.. image:: ../img/TWP54_010.jpg
-   :height: 15.573cm
-   :width: 13.348cm
-   :align: center
-   :alt: 
+TypeError
+---------
+
+Ocurre cuando se quiere realizar una operación en un tipo de objeto incorrecto.
+
+.. activecode:: ac_l54_3b
+    :nocodelens:
+
+    try:
+        len(5)
+    except TypeError as e:
+        print(f"Error: {e}")
+
+
+ValueError
+----------
+
+Ocurre cuando se quiere realizar una operación en donde el tipo de objeto es correcto,
+pero el valor es inapropiado.
+
+.. activecode:: ac_l54_3c
+    :nocodelens:
+
+    import math
+
+    try:
+        raiz_cuadrada = math.sqrt(-4)
+    except ValueError as e:
+        print(f"Error: {e}")
+
+
+ZeroDivisionError
+-----------------
+
+Ocurre cuando en una operación de división el denominador es ``0``.
+
+.. activecode:: ac_l54_3d
+    :nocodelens:
+    
+    numerador = 5
+    denominador = 0
+
+    try:
+        numerador/denominador
+    except ZeroDivisionError as e:
+        print(f"Error: {e}")
+
