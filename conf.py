@@ -33,7 +33,7 @@ extensions = ["sphinx.ext.mathjax"] + runestone_extensions()
 # ,'runestone.video','runestone.reveal','runestone.poll','runestone.tabbedStuff','runestone.disqus','runestone.codelens','runestone.activecode', 'runestone.assess', 'runestone.animation','runestone.meta', 'runestone.parsons', 'runestone.blockly', 'runestone.livecode','runestone.accessibility']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ["./_templates"]
+templates_path = ["_templates"]
 
 # The suffix of source filenames.
 source_suffix = ".rst"
@@ -231,7 +231,11 @@ html_theme_options = {
 # html_style = "style.css"
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ["./_templates/plugin_layouts"]
+html_theme_path = [
+    pkg_resources.resource_filename(
+        "runestone", "common/project_template/_templates/plugin_layouts"
+    )
+]
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
