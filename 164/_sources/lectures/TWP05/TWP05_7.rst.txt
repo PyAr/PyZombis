@@ -1,0 +1,28 @@
+Variables numéricas
+===================
+
++ Los enteros no tienen decimales: ``42``, ``-7``
++ Los valores del tipo entero en Python se llaman ``int``
++ Los números en coma flotante tienen decimales: ``1.0``, ``3.1415``,
+  ``1234.56``
++ Tenga en cuenta que ``1.0``, incluso teniendo cero en la parte decimal, es un número en
+  punto flotante
++ Los valores de tipo coma flotante en Python se llaman ``float``.
+
+
+Representación de valores numéricos
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++ Internamente todos los números son representados con el
+  sistema binario
++ Este sistema permite solo los dígitos ``0`` o ``1``
++ Los números en punto flotante pueden no tener una correcta representación
+  en el sistema binario
++ Tecleando en el intérprete ``3 * 0.1`` tendremos como respuesta: ``0.30000000000000004``
+
+**¡Pruebelo aquí!**
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/interpreter.html
