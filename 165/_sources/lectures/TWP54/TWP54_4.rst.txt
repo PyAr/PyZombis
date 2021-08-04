@@ -1,0 +1,46 @@
+Ejercicio
+=========
+
+.. activecode:: ac_l54_4
+    :nocodelens:
+
+    El siguiente código produce una excepción. Córralo una vez para ver el nombre 
+    de la excepción, y después modifique el código para manejar dicha excepción.
+    Utilice la estructura vista en los ejemplos de la página anterior: 
+    ``except Excepcion as e:``. Al manejar la excepción se debe imprimir en consola 
+    el mensaje ``"Error: {e}"``. También, ``mi_funcion`` debe regresar la 
+    excepción ``e``.
+
+    ~~~~
+    def mi_funcion():
+        edades = [18, 19, 20]
+        cuarta = edades[3]
+    
+    mi_funcion()
+
+
+    ====
+    import StringIO
+    import sys
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+
+            self.assertEqual(type(mi_funcion()), IndexError, "Probando que la excepción en e sea la correcta")
+
+        
+        def testTwo(self):
+            capturedOutput = StringIO.StringIO()  # Create StringIO object
+            sys.stdout = capturedOutput  #  and redirect stdout.
+            mi_funcion()  # Call function.
+            sys.stdout = sys.__stdout__  # Reset redirect.
+            self.assertEqual(
+                f"Error: {mi_funcion()}",
+                "Error: list index out of range",
+                "Probando que el mensaje en la consola sea el correcto",
+            )
+
+
+    myTests().main()

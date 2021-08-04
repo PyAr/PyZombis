@@ -1,0 +1,24 @@
+Literales o constantes
+======================
+
++ Existen varios tipos de datos.
++ Los más simples son los llamados literales o constantes.
+
+.. code-block:: python
+
+        """
+        Fahrenheit, 5, 32 y 9 son valores literales o constantes.
+        """
+        F = float(input("Fahrenheit: "))
+        C = 5 * (F - 32) / 9
+        print("Celsius: %2.1f" % C)
+
++ ¡Recuerde que hay diferentes tipos de datos! por ejemplo: ``"32"`` no es lo mismo que ``32``.
+
+.. codelens:: cl_l40_4
+
+    print(int("32") == 32)
+    print("32" == str(32))
+    print(32 == "32")
+
++ Para comparar diferentes tipos, primero realice una conversión.

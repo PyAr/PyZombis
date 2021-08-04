@@ -1,0 +1,23 @@
+Introducción a las excepciones
+==============================
+
++ A veces las cosas salen mal, y necesitas tratarlas.
+
++ Siempre hay cosas que están fuera de tu control. Las redes fallan.
+  Los archivos desaparecen.
+
++ Los códigos inteligentes aprenden a lidiar con estos errores y hacen que
+  el programa pueda depurarse sin mayor problema.
+
+
+.. activecode:: ac_l54_1
+    :nocodelens:
+
+    Vamos a intentar abrir el archivo ``numeros.txt``, el cual no existe.
+
+    ~~~~
+    archivo = open("numeros.txt", "r")
+
+
+El código anterior produce un error que dice que el archivo al que 
+intentamos acceder no existe.

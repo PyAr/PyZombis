@@ -1,0 +1,68 @@
+Excepciones comunes
+===================
+
+Estas son algunas excepciones comunes que encontrarás al escribir
+programas simples.
+
+NameError
+---------
+
+Ocurre cuando el programa no encuentra el nombre de un objeto que mencionaste en el código.
+
+.. activecode:: ac_l54_3a
+    :nocodelens:
+    
+    a = 1
+    try:
+        print(b)
+    except NameError as e:
+        print(f"Error: {e}")
+
+
+TypeError
+---------
+
+Ocurre cuando se quiere realizar una operación en un tipo de objeto incorrecto.
+
+.. activecode:: ac_l54_3b
+    :nocodelens:
+
+    try:
+        len(5)
+    except TypeError as e:
+        print(f"Error: {e}")
+
+
+ValueError
+----------
+
+Ocurre cuando se quiere realizar una operación en donde el tipo de objeto es correcto,
+pero el valor es inapropiado.
+
+.. activecode:: ac_l54_3c
+    :nocodelens:
+
+    import math
+
+    try:
+        raiz_cuadrada = math.sqrt(-4)
+    except ValueError as e:
+        print(f"Error: {e}")
+
+
+ZeroDivisionError
+-----------------
+
+Ocurre cuando en una operación de división el denominador es ``0``.
+
+.. activecode:: ac_l54_3d
+    :nocodelens:
+    
+    numerador = 5
+    denominador = 0
+
+    try:
+        numerador/denominador
+    except ZeroDivisionError as e:
+        print(f"Error: {e}")
+
