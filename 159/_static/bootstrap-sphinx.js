@@ -51,7 +51,7 @@
       .attr("border", 0);
   };
 
-$(function () {
+  $(document).ready(function () {
 
     /*
      * Scroll the window to avoid the topnav bar
