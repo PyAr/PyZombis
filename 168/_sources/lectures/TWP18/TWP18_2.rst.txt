@@ -1,0 +1,54 @@
+Rebanar
+=======
+
++ Rebanada del primer índice al anterior del segundo
+
+.. codelens:: cl_l18_2a
+         
+    x = "0123456789"
+    print(x[0:2])
+    print(x[1:2])
+    print(x[2:4])
+    print(x[0:5])
+    print(x[1:8])
+
+
++ Podemos omitir índices, sustituyendo el extremo correspondiente y
+  también podemos tener índices negativos: -1 último, -2 penúltimo
+
+
+.. codelens:: cl_l18_2b
+         
+    x = "0123456789"
+    print(x[:2])
+    print(x[4:])
+    print(x[4:-1])
+    print(x[-4:-1])
+    print(x[:])
+
+
+Incremento en el corte
+----------------------
+
++ Puedo usar un incremento al cortar el string
+
+
+.. codelens:: cl_l18_2c
+       
+    texto = "papa cuando nace"
+    print(texto[::2])
+    print(texto[::-1])
+
+
++ Comprobar si una palabra es palíndrome
+
+
+.. activecode:: ac_l18_2
+    :nocodelens:
+    :stdin:
+
+    palabra = input("Palabra: ")
+    if palabra == palabra[::-1]:
+        print("%s es palíndrome" % palabra)
+    else:
+        print("%s no es un palíndrome" % palabra)
