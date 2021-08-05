@@ -1,0 +1,30 @@
+Lista de Ejercicios
+===================
+
+Utilice el intérprete de modo interactivo aquí abajo para solucionar los siguientes ejercicios.
+
+#. Su salario actual es de $6500. Calcule su nuevo salario con un aumento del 5%
+#. Muestre su nombre en la pantalla
+#. Calcule la suma de tres variables
+#. ¿Qué sucede si escribo textos en las tres variables anteriores?
+#. Indique el tipo de los siguientes valores: ``5``, ``5.0``, ``4.3``, ``-2``, ``100``, ``1.333``, ``"10"``
+#. Experimente en el intérprete interactivo de Python utilizar ``type(x)`` donde ``x`` es cada uno de los valores anteriores
+#. ¿Es posible calcular 2 elevado a un millón?
+
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/interpreter.html
+
+.. raw:: html
+   
+   <br/>
+
+.. image:: ../img/TWP05_041.jpeg
+   :height: 12.571cm
+   :width: 9.411cm
+   :align: center
+   :alt: 
+
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
