@@ -1,0 +1,20 @@
+Seamos más organizados
+======================
+
+
+.. image:: ../img/TWP35_001.jpeg
+    :height: 13.35cm
+    :width: 17.801cm
+    :align: center
+    :alt: 
+
+.. image:: ../img/TWP35_002.jpeg
+    :height: 14.064cm
+    :width: 16.601cm
+    :align: center
+    :alt: 
+
++ Cuando los programas crecen, el código generalmente se vuelve más complejo
++ Una forma de gestionar esta complejidad es usar funciones
++ Te permiten separar acciones comunes, por lo que tu código es más
+  fácil de leer y más fácil de mantener
