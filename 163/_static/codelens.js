@@ -49,7 +49,7 @@ if (typeof allVsualizers === "undefined") {
     window.allVisualizers = [];
 }
 
-$(function () {
+$(document).ready(function () {
     if (typeof allTraceData !== "undefined") {
         for (let divid in allTraceData) {
             let cl = document.getElementById(divid);
@@ -69,7 +69,7 @@ $(function () {
                 console.log(err);
             }
         }
-        window.addEventListener("codelens:answer", function (evt) {
+        document.addEventListener("codelens:answer", function (evt) {
             let rb = new RunestoneBase();
             rb.logBookEvent({
                 event: "codelens",

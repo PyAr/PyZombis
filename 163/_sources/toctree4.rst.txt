@@ -11,9 +11,3 @@ Retos
 
    challenges/Reto01.rst
    challenges/Reto02.rst
-
-.. only:: html
-
-   .. raw:: html
-      :file: lectures/_static/indexLayout.html
-

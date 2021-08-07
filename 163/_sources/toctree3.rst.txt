@@ -19,8 +19,3 @@ Programación avanzada
    lectures/TWP58.rst
    lectures/TWP60.rst
    lectures/TWP65.rst
-
-.. only:: html
-
-   .. raw:: html
-      :file: lectures/_static/indexLayout.html
