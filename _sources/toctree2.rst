@@ -22,9 +22,3 @@ Hagamos una revisión de lo aprendido
    lectures/TWP40/toctree.rst
    quiz/QuizExtras.rst
    quiz/QuizExtras2.rst
-
-.. only:: html
-
-   .. raw:: html
-      :file: lectures/_static/indexLayout.html
-

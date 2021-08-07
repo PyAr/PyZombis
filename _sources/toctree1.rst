@@ -25,8 +25,3 @@ Aprendiendo lo básico
    quiz/Quiz7.rst
    lectures/TWP25/toctree.rst
    quiz/Quiz9.rst
-
-.. only:: html
-
-   .. raw:: html
-      :file: lectures/_static/indexLayout.html
