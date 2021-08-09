@@ -9,7 +9,7 @@ Notas de surfistas
 + ¿Cómo usar estos datos?
 + Por ejemplo, quiero conocer a todos los surfistas mayores de 25
 + ¡Usando una base de datos!
-+ En este caso utilizaremos una de Brython llamada indexedDB.
++ En este caso utilizaremos una herramienta de Brython llamada indexedDB.
 
 .. activecode:: ac_l42_1a
    :language: python3
