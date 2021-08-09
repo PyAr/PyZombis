@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Usando sqlite3 &#8212; PyZombis Refactor-bases-de-datos@e81916a</title>
+    <title>1. Usando IndexedDB &#8212; PyZombis Refactor-bases-de-datos@e263ad5</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -279,8 +279,8 @@
 
 
   
-  <div class="section" id="usando-sqlite3">
-<h1><span class="section-number">1. </span>Usando sqlite3<a class="headerlink" href="#usando-sqlite3" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="usando-indexeddb">
+<h1><span class="section-number">1. </span>Usando IndexedDB<a class="headerlink" href="#usando-indexeddb" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="notas-de-surfistas">
 <h2><span class="section-number">1.1. </span>Notas de surfistas<a class="headerlink" href="#notas-de-surfistas" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -339,9 +339,9 @@ def mostrar_registros(ev):
         res = ev.target.result
         if res:
             v = res.value
+            print("----------------------------------------")
             for key in ["nombre", "pais", "media", "estilo", "edad"]:
                 print(f"{key}: {getattr(v, key)}")
-            print("----------------------------------------")
             # Continuamos con el siguiente registro
             getattr(res, "continue")()
 
@@ -383,9 +383,9 @@ def mostrar_mayores_25(ev):
         if res:
             v = res.value
             if(getattr(v, "edad") >=25):
-               print("----------------------------------------")
-               for key in ["nombre", "pais", "media", "estilo", "edad"]:
-                  print(f"{key}: {getattr(v, key)}")
+                for key in ["nombre", "pais", "media", "estilo", "edad"]:
+                    print(f"{key}: {getattr(v, key)}")
+                print("----------------------------------------")
             # Continuamos con el siguiente registro
             getattr(res, "continue")()
 

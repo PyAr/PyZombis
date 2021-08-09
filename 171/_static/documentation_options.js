@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: 'e81916aa7524b82ac0ad41c8d669fe1a7a6e9022-Refactor-bases-de-datos',
+    VERSION: 'e263ad577a746916a831ee653bb87579b310d344-Refactor-bases-de-datos',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',

@@ -1,5 +1,5 @@
-Usando sqlite3
-==============
+Usando IndexedDB
+================
 
 Notas de surfistas
 ------------------
@@ -54,9 +54,9 @@ Notas de surfistas
            res = ev.target.result
            if res:
                v = res.value
+               print("----------------------------------------")
                for key in ["nombre", "pais", "media", "estilo", "edad"]:
                    print(f"{key}: {getattr(v, key)}")
-               print("----------------------------------------")
                # Continuamos con el siguiente registro
                getattr(res, "continue")()
 
@@ -92,9 +92,9 @@ Notas de surfistas
            if res:
                v = res.value
                if(getattr(v, "edad") >=25):
-                  print("----------------------------------------")
-                  for key in ["nombre", "pais", "media", "estilo", "edad"]:
-                     print(f"{key}: {getattr(v, key)}")
+                   for key in ["nombre", "pais", "media", "estilo", "edad"]:
+                       print(f"{key}: {getattr(v, key)}")
+                   print("----------------------------------------")
                # Continuamos con el siguiente registro
                getattr(res, "continue")()
 
