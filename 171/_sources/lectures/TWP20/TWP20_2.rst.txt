@@ -1,0 +1,39 @@
+Funciones ``def``
+=================
+
++ Aprendimos algunas funciones de Python: ``len``, ``int``, ``float``, ``print`` e ``input``.
++ Ahora crearemos nuestras propias funciones.
++ Utilizo ``def`` para definir la función y ``return`` para devolver algún valor.
++ Hay funciones que no devuelven nada.
+
+.. codelens:: cl_l20_2a
+         
+    def es_par(x):
+        return x % 2 == 0
+
+
+    print(es_par(13))
+    print(es_par(12))
+
+
++ Esta función regresa ``True`` si el parámetro ``x`` es par, ``False`` en caso contrario.
++ Tenga en cuenta que, a diferencia de lo que hemos visto hasta ahora, estas líneas de código no se ejecutarán de inmediato.
++ Es necesario llamar a la función para ejecutarlas.
+
+Ejemplo
+-------
+
++ Definir una función ``factorial``
+
+.. codelens:: cl_l20_2b
+         
+    def factorial(n):
+        f = 1
+        while n > 0:
+            f = f * n
+            n = n - 1
+        return f
+
+
+    for i in range(5):
+        print(factorial(i))
