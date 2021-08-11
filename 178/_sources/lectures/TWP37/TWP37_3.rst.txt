@@ -1,0 +1,50 @@
+El marcador...
+===============
+
+
+..  image:: ../img/TWP37_014.jpg
+    :height: 10.906cm
+    :width: 21.021cm
+    :align: center
+    :alt:
+
+
+El seguimiento de 3 puntajes es complicado
+------------------------------------------
+
+..  datafile:: surf2.txt
+    :hide: 
+      
+    Johny 8.65
+    Juan 9.12
+    Joseph 8.45
+    Stacey 7.81
+    Aideen 8.05
+    Zack 7.21
+    Aaron 8.31
+
+..  activecode:: ac_l37_3
+    :nocodelens:
+    :datafile: surf2.txt
+    :stdin:
+   
+    archivo = open("surf2.txt")
+    primero = 0
+    segundo = 0
+    tercero = 0
+    for linea in archivo:
+        nombre, puntos = linea.split()
+        if float(puntos) > primero:
+            tercero = segundo
+            segundo = primero
+            primero = float(puntos)
+        elif float(puntos) > segundo:
+            tercero = segundo
+            segundo = float(puntos)
+        elif float(puntos) > tercero:
+            tercero = float(puntos)
+    archivo.close()
+
+    print("%.2f" % primero)
+    print("%.2f" % segundo)
+    print("%.2f" % tercero)
