@@ -1,0 +1,33 @@
+Usando un messagebox
+====================
+
+.. code-block :: python
+
+   def salvar_dados():
+      try:
+         fileD = open("encomendas.txt","a")
+         fileD.write("Destino:\n")
+         fileD.write("%s\n" %destino.get())
+         fileD.write("Descricao:\n")
+         fileD.write("%s\n" %descricao.get())
+         fileD.write("Endereco:\n")
+         fileD.write("%s\n" %endereco.get("1.0",END))
+         destino.set(None)
+         descricao.delete(0,END)
+         endereco.delete("1.0",END)
+      except Exception as excecao:
+         app.title('Erro de gravacao no arquivo %s' %excecao)
+
+
+.. image:: ../img/TWP54_009.jpg
+   :height: 8.042cm
+   :width: 18.335cm
+   :align: center
+   :alt: 
+
+
+.. image:: ../img/TWP54_010.jpg
+   :height: 15.573cm
+   :width: 13.348cm
+   :align: center
+   :alt: 
