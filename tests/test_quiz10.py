@@ -3,6 +3,7 @@ def test_quiz10_11_good(page):
     page.goto("quiz/Quiz10.html")
     page.wait_for_load_state()
 
+    page.click("text=Ejercicio 11")
     page.click("text=def tiene_2(numeros):")
 
     page.press("text=def tiene_2(numeros):", "ArrowDown")
