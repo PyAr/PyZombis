@@ -1,0 +1,53 @@
+Programa con funciones
+======================
+
+Funciones
+---------
+
++ Las funciones son códigos compartibles
++ Defino un nombre y llamo a la función en todo el programa
++ La función debe estar definida antes de poder llamarla
++ Si desea devolver un valor al sujeto que llama la función, debe
+  usa el comando de retorno ``return``
+
+Programa con funciones
+----------------------
+
+.. activecode:: ac_l35_3
+    :nocodelens:
+    :stdin:
+
+    import urllib.request
+
+
+    def capturar_precio():
+        pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+        texto = pagina.read()
+        donde = texto.find("$")
+        inicio = donde + 1
+        fin = inicio + 4
+        return float(texto[inicio:fin])
+
+
+    opcion = input("¿Quieres comprar ahora? (S/N)")
+    if opcion.lower() == "s":
+        precio = capturar_precio()
+        print("¡Comprar! Precio: %5.2f" % precio)
+    else:
+        precio = 99.99
+        while precio >= 4.74:
+            precio = capturar_precio()
+        print("¡Comprar! Precio: %5.2f" % precio)
+
+
+No hay preguntas tontas
+-----------------------
+
+
++ ¿Es el comando de retorno lo mismo que imprimir? No, ``print()`` muestra algo en la pantalla,
+  mientras que ``return`` devuelve un valor para quien llamó a la función.
++ Si no hay ``return`` dentro de la función, ¿qué devuelve? Deuelve nada: ``None``.
+  ¿Debería ``return`` siempre aparecer al final de la función? No siempre, depende de la
+  lógica de la función
++ ¿Puede una función devolver más de un valor? Sí, incluidas listas o
+  diccionarios.

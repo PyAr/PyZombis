@@ -1,0 +1,54 @@
+Clase Cliente y Clase Cuenta
+============================
+
++ Automatizarás el banco TATU, controlando el saldo de las cuentas corriente.
++ Cada cuenta corriente puede tener uno o más clientes como titular.
++ El banco controla solo el nombre y el número de teléfono.
++ La cuenta corriente muestra un saldo y un estado de cuenta de las operaciones de retiro y depósito.
++ No hay cuentas especiales, por lo que el cliente no puede retirar más de lo que tiene de saldo.
+
+..  activecode:: ac_l25_2a
+    :nocodelens:
+    :stdin:
+
+    class Cliente:
+        def __init__(self, nombre, telefono):
+            self.nombre = nombre
+            self.telefono = telefono
+
+    class Cuenta:
+        def __init__(self, clientes, numero, saldo=0):
+            self.saldo = saldo
+            self.clientes = clientes
+            self.numero = numero
+
+        def resumen(self):
+            print("CC numero: %s saldo: %10.2f" % (self.numero, self.saldo))
+
+        def retirar(self, monto):
+            if self.saldo >= monto:
+                self.saldo -= monto
+            else:
+                print("Saldo insuficiente para retirar")
+
+        def depositar(self, monto):
+            self.saldo += monto
+
+
+Utilizando las clases Cliente y Cuenta
+--------------------------------------
+
+..  activecode:: ac_l25_2b
+    :nocodelens:
+    :stdin:
+    :include: ac_l25_2a
+
+    juan = Cliente("Juan de Silva", "777-1234")
+    maria = Cliente("Maria de Silva", "555-4321")
+    print("nombre : %s. telefono: %s" % (juan.nombre, juan.telefono))
+    print("nombre : %s. telefono: %s" % (maria.nombre, maria.telefono))
+
+    cuenta_1 = Cuenta([juan], 1, 1000)
+    cuenta_2 = Cuenta([maria, juan], 2, 500)
+    cuenta_1.resumen()
+    cuenta_2.resumen()

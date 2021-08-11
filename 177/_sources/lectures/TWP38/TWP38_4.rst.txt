@@ -1,0 +1,55 @@
+Ejercicio
+=========
+
++ Cambie el programa anterior para que pueda ingresar un valor e ingresar correr por 
+  n veces en lugar del valor 10. Asigne ese valor a una variable llamada ``n``.
++ **Debe llamar su variable n para que su programa pase la prueba, de lo contrario dará error.**
+
+.. activecode:: ac_l38_4
+    :language: python3
+    :python3_interpreter: brython
+
+    # Archivo caos.py
+    # Un programa que ilustra la Teoria del caos
+    print("Este programa ilustra el comportamiento caótico.")
+    x = eval(input("Ingrese un número entre 0 y 1:"))
+    for i in range(10):
+        x = 3.9 * x * (1 - x)
+        print("%2.3f" % x)
+    
+    ====
+    import unittest
+
+    class myTests(unittest.TestCase):
+
+        def testOne(self):
+
+            self.assertEqual(n, i+1, "El número de ciclos no es el especificado por el usuario")
+
+    myTests().testOne()
+    print("-------------------------------------")
+    print("Has aprobado el 100% de las pruebas.")
+
+Resumen
+-------
+
++ La descripción de una secuencia de pasos para resolver un problema se llama
+  algoritmo computacional.
++ Los algoritmos son programas (software) que determinan que hará
+  la computadora (hardware).
++ El proceso de creación de software se llama programación.
+
+
+Recuerde
+--------
+
++ Los lenguajes de programación tienen una sintaxis formal
++ Las computadoras solo entienden el lenguaje de máquina
++ Python es un lenguaje interpretado de alto nivel
++ El intérprete de Python convierte los comandos instrucción por instrucción
+  a lenguaje máquina
+
+
+.. disqus::
+    :shortname: pyzombis
+    :identifier: lecture13

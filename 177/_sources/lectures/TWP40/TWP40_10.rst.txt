@@ -1,0 +1,46 @@
+Ejercicio
+=========
+
++ Queremos desarrollar un programa que determine el valor futuro de una inversión, dado el valor inicial y la tasa de interés
++ Seguimos los pasos para el desarrollo.
+
+
++ Análisis:
+    + El dinero inicial genera una tasa de interés anual
+    + ¿Cuánto valdrá en 10 años?
+    + Entrada: monto inicial, tasa de interés
+    + Salida: valor en 10 años
+
++ Especificación:
+    + El usuario ingresa la cantidad inicial invertida
+    + El usuario ingresa la tasa de interés anual
+    + Valor de la fórmula matemática financiera * (1 + interés)
+
++ Diseño:
+    + Ingrese el monto de inversión inicial.
+    + Ingrese la tasa de interés.
+    + Repite 10 veces:
+        + valor inicial = valor inicial * (1 + tasa de interés)
+    + Imprime el valor actualizado.
+
++ Implementación:
+    + Valores de prueba:
+        + 1000 dolares de inversión y 3% la tasa de interés anual
+        + 1000 dolares de inversión y 10% la tasa de interés anual
+
+.. activecode:: ac_l40_10
+    :nocodelens:
+    :stdin:
+
+    valor = float(input("Cantidad inicial invertida: "))
+    tasa = float(input("Tasa de interés anual: "))
+    for i in range(10):
+        valor = valor * (1 + tasa / 100)
+    print("Valor después de 10 años:  %5.2f" % valor)
+
+
+Preguntas frecuentes
+--------------------
+
++ ¿Por qué definir algunas pruebas antes de la implementación es una buena práctica de programación?
++ ¿Cuál es la ventaja de escribir pseudocódigo en la etapa de diseño?
