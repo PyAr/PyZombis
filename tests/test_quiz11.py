@@ -3,6 +3,7 @@ def test_quiz11_3(page):
     page.goto("quiz/Quiz11.html")
 
     # Do the exercise
+    page.click("text=Ejercicio 3")
     page.click("text=def remplazar_primer_caracter(s):")
     page.press("text=def remplazar_primer_caracter(s):", "ArrowDown")
     page.press("text=def remplazar_primer_caracter(s):", "Tab")
@@ -15,7 +16,4 @@ def test_quiz11_3(page):
     page.click("#q11_3 >> *css=button >> text=Run")
 
     page.hover("#q11_3 >> text=You passed:")
-    assert (
-        page.inner_text("#q11_3 >> text=You passed:")
-        == "You passed: 100.0% of the tests"
-    )
+    assert page.inner_text("#q11_3 >> text=You passed:") == "You passed: 100.0% of the tests"
