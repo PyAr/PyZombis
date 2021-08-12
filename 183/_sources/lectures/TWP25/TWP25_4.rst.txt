@@ -1,0 +1,37 @@
+Otros ejemplos de POO
+=====================
+
++ Podemos crear una clase ``Persona`` con los atributos básicos.
+
+..  activecode:: ac_l25_4a
+    :nocodelens:
+    :stdin:
+         
+    import datetime
+
+
+    class Persona:
+        def __init__(self, nombre, nacimiento):
+            self.nombre = nombre
+            self.nacimiento = nacimiento
+
+        def edad(self):
+            delta = datetime.date.today() - self.nacimiento
+            return int(delta.days / 365)
+
+        def __str__(self):
+            return "%s, %d años" % (self.nombre, self.edad())
+
+
+    masanori = Persona("Fernando Masanori", datetime.date(1980, 9, 1))
+    print(masanori.edad())
+    print(masanori)
+
++ Puedes utilizar la implementación de la clase ``Persona`` para crear un objeto con tu nombre.
+
+..  activecode:: ac_l25_4b
+    :nocodelens:
+    :stdin:
+    :include: ac_l25_4a
+
+    # Crea un objeto con tu nombre

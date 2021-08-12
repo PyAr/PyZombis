@@ -1,0 +1,37 @@
+Descuentos para clientes leales
+===============================
+
+.. image:: ../img/TWP33_016.jpg
+    :height: 12.571cm
+    :width: 17.458cm
+    :align: center
+    :alt:
+
+
+Programa de fidelización
+------------------------
+
+.. activecode:: ac_l33_4
+    :nocodelens:
+    :stdin:
+   
+    from urllib.request import urlopen
+
+    URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
+    pagina = urlopen(URL_PRECIOS_LOYALTY)
+    texto = pagina.read()
+    print(texto[234:238])
+
++ ¡No funcionó! la cadena "Bean" apareció en lugar del precio. ¿Por qué sera?
+
+
+El precio se movió
+------------------
+
++ Las páginas son diferentes y el precio cambia de posición en la cadena
+
+.. image:: ../img/TWP33_018.jpg
+    :height: 8.416cm
+    :width: 16.122cm
+    :align: center
+    :alt:

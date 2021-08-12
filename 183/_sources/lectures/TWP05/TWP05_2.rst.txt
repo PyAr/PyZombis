@@ -1,0 +1,76 @@
+Primer mensaje de error
+=========================
+
++ Las letras mayúsculas y minúsculas son diferentes
++ ``print()`` es diferente de ``Print()``
+
+.. code-block:: python
+
+    >>> Print ("¡hola mundo!")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'Print' is not defined
+
+**¡Ahora inténtelo por su propia cuenta!**
+
+.. raw:: html
+   :file: ../_static/interpreter.html
+
+
++ Si no usamos comillas, la computadora interpretará nuestro mensaje
+  como un comando de Python, generando un error de sintaxis
++ ``"hola mundo"`` es diferente de ``hola mundo``
+
+.. code-block:: python
+
+    >>> print (hola mundo)
+      File "<stdin>", line 1
+        print (hola mundo)
+                        ^
+    SyntaxError: invalid syntax
+
+**¡Ahora inténtelo por su propia cuenta!**
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/interpreter.html
+
+
++ En la versión de Python que usamos (Python 3), los paréntesis no son opcionales al usar ``print()``
++ ``print("hola mundo")`` es diferente de ``print "hola mundo"``
+
+.. code-block:: python
+
+    >>> print "hola mundo"
+      File "<stdin>", line 1
+        print "hola mundo"
+              ^
+    SyntaxError: missing parenthesis in call to 'print'
+
+**¡Ahora inténtelo por su propia cuenta!**
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/interpreter.html
+
+
++ Los espacios iniciales tienen un significado en Python que veremos
+  más adelante, en este caso genera nuevamente un error de sintaxis
++ Estos espacios se llaman indentaciones o sangrías
+
+.. code-block:: python
+
+    >>>   print("primer mensaje!")
+      File "<stdin>", line 1
+        print "hola mundo"
+      ^      
+    SyntaxError: unexpected indent
+
+**¡Ahora inténtelo por su propia cuenta!**
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/interpreter.html
