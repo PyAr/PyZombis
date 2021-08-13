@@ -1,0 +1,59 @@
+¡Los nombres son iguales! ¿Y ahora?
+===================================
+
+
+.. image:: ../img/TWP47_018.png
+   :height: 10.722cm
+   :width: 19.917cm
+   :align: center
+   :alt: 
+
+
+Nombres completos
+-----------------
+
++ La solución es adoptar los nombres completos
+
+
+.. code-block:: python
+   
+   from banco import *
+   import fatec
+   import japa
+
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
+
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion += 1
+       print(str(opcion) + ".Finalizar")
+       elegir = int(input("Elige una opcion"))
+         if elegir == opcion:
+       # eligió la última opción Finalizar
+          corriendo = False
+     else:
+         tarjeta = input("Número de tarjeta de crédito: ")
+         precio = fatec.descento(precios[elegir - 1])
+         if itens[elegir - 1] == "Pastel":
+            precio = japa.descento(precio)
+         (precio,tarjeta,articulos[elegir-1])
+
+
+Resultado
+---------
+
+.. image:: ../img/TWP47_020.png
+   :height: 11.324cm
+   :width: 22.859cm
+   :align: center
+   :alt: 
+
+.. image:: ../img/TWP47_021.png
+   :height: 11.324cm
+   :width: 22.859cm
+   :align: center
+   :alt: 
