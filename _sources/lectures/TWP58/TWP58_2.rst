@@ -1,87 +1,23 @@
-=====================================
-DJ Mix 2 revisión orientada a objetos
-=====================================
-
-
-.. image:: img/TWP58_001.jpeg
-   :height: 12.501cm
-   :width: 7.754cm
-   :align: center
-   :alt: 
-
-
-POO - Programación Orientada a Objetos
-======================================
-
-
-
-.. image:: img/TWP58_002.jpeg
-   :height: 4.629cm
-   :width: 13.81cm
-   :align: center
-   :alt: 
-
-
-+ Tenemos DJ Mix para una canción
-+ Ahora necesitamos varios
-+ KISS – Kept It Simple Stupid
-+ ¡No duplicaremos el código!
-
-
-.. image:: img/TWP58_003.jpg
-   :height: 13.704cm
-   :width: 9.736cm
-   :align: center
-   :alt: 
-
-
-Programación orientada a objetos
-================================
-
-
-.. image:: img/TWP58_004.jpg
-   :height: 10.966cm
-   :width: 22.859cm
-   :align: center
-   :alt: 
-
-
-Programación orientada a objetos
-================================
-
-
-.. image:: img/TWP58_005.jpg
-   :height: 14.21cm
-   :width: 13.435cm
-   :align: center
-   :alt: 
-
-
 Clase = fábrica de objetos
 ==========================
 
 
-.. image:: img/TWP58_006.jpg
+.. image:: ../img/TWP58_006.jpg
    :height: 12.514cm
    :width: 22.7cm
    :align: center
    :alt: 
 
 
-Programación orientada a objetos
-================================
-
-
-.. image:: img/TWP58_007.jpg
+.. image:: ../img/TWP58_007.jpg
    :height: 9.471cm
    :width: 22.647cm
    :align: center
    :alt: 
 
 
-Programación orientada a objetos
-================================
-
+Clase SoundPanel
+----------------
 
 .. code-block :: python
 
@@ -108,9 +44,8 @@ Programación orientada a objetos
          volume_scale.pack(side = RIGHT)
 
 
-Programación orientada a objetos
-================================
-
+Programa principal
+------------------
 
 .. code-block :: python
 
@@ -141,15 +76,14 @@ Programación orientada a objetos
 + ¡Felicidades! Ahora sabes cómo crear programas complejos con poco código.
 
 
-
-.. image:: img/TWP58_010.png
+.. image:: ../img/TWP58_010.png
    :height: 14.125cm
    :width: 19.746cm
    :align: center
    :alt: 
 
 
-.. image:: img/TWP58_011.png
+.. image:: ../img/TWP58_011.png
    :height: 5.45cm
    :width: 3.91cm
    :align: center
@@ -157,9 +91,7 @@ Programación orientada a objetos
 
 
 Recuerda
-========
-
-
+--------
 
 + Las clases son fábricas de objetos
 + Classe = métodos + datos
@@ -167,9 +99,3 @@ Recuerda
 + class – comienza la definición de una clase
 + self – autoasignado al objeto actual
 + __init__() Se llama al crear el objeto
-
-
-.. disqus::
-   :shortname: pyzombis
-   :identifier: lecture22
-
