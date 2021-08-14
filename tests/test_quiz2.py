@@ -2,6 +2,7 @@ def test_quiz2_2(page):
     page.goto("quiz/Quiz2.html")
 
     # Do the exercise
+    page.click("text=Ejercicio 2")
     page.click("text=def es_bisiesto(anio):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
