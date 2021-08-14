@@ -3,6 +3,7 @@ def test_quiz3_2(page):
     page.goto("quiz/Quiz3.html")
 
     # Do the exercise
+    page.click("text=Ejercicio 2")
     page.click("text=def calcular_cambio(cobro, pago):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
@@ -25,7 +26,7 @@ def test_quiz3_2(page):
     page.keyboard.type("return billetes")
 
     # Click #ejercicio-2 >> text=Run
-    page.click("#ejercicio-2 >> text=Run")
+    page.click("#q3_2 >> *css=button >> text=Run")
 
     # Test it passed all unit tests
     page.hover("#q3_2 >> text=You passed:")
