@@ -4,6 +4,7 @@ def test_quiz10_11_good(page):
     page.wait_for_load_state()
 
     # Do the exercise
+    page.click("text=Ejercicio 11")
     page.click("text=def tiene_2(numeros):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
