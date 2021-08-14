@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 1 &#8212; PyZombis Split-TWP60@b8141db</title>
+    <title>Quiz - 1 &#8212; PyZombis Split-TWP60@9682bdd</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
@@ -33,7 +33,10 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Quiz - 2" href="Quiz2.html" />
     <link rel="prev" title="Introducción al desarrollo web" href="../lectures/TWP65.html" />
+
+
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
 
 <script>
   eBookConfig = {};
@@ -74,24 +77,23 @@
 
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="icon-bar" aria-label="navbar toggle">toggle navbar</span>
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
       <div>
         
-          <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../_static/img/logo_small.png" alt=""></a>
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis
+          PyZombis Split-TWP60@9682bdd
         </a>
       </div>
     </div>
-
-
 
     <div class="navbar-collapse collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" >
@@ -275,14 +277,62 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content" role="main">
+
+  
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Introducción al desarrollo web' data-toggle="tooltip">
+    <a href="../lectures/TWP65.html" aria-label="Introducción al desarrollo web">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
+
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Quiz - 2' data-toggle="tooltip" >
+    <a href="Quiz2.html" aria-label="Quiz - 2">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<script>
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
 <!-- Ad Serving for Runestone Campaign -->
 
 
   
   <div class="section" id="quiz-1">
 <h1>Quiz - 1<a class="headerlink" href="#quiz-1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
+<div id='quiz1' data-component="tabbedStuff"  class='alert alert-warning'><div data-component="tab" data-tabname="Ejercicio 1" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_1 data-question_label="1">
@@ -303,7 +353,6 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
         self.assertEqual(suma(24, 42), 66, "Esperado: 66")
@@ -316,9 +365,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-2">
-<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 2" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_2 data-question_label="2">
@@ -339,7 +386,6 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
         self.assertEqual(metros_a_milimetros(1), 1000,"Esperado: 1000")
@@ -351,9 +397,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-3">
-<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 3" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_3 data-question_label="3">
@@ -375,38 +419,19 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
-        self.assertEqual(
-                tiempo_en_segundos(2, 5, 2, 5),
-                190925,
-                "Esperado: 190925"
-        )
-        self.assertEqual(
-                tiempo_en_segundos(10, 89, 5, 0),
-                1184700,
-                "Esperado: 1184700"
-        )
-        self.assertEqual(
-                tiempo_en_segundos(8, 0, 2, 0),
-                691320,
-                "Esperado: 691320"
-        )
-        self.assertEqual(
-                tiempo_en_segundos(0, 5, 55, 6),
-                21306,
-                "Esperado: 21306"
-        )
+        self.assertEqual(tiempo_en_segundos(2, 5, 2, 5), 190925, "Esperado: 190925")
+        self.assertEqual(tiempo_en_segundos(10, 89, 5, 0), 1184700, "Esperado: 1184700")
+        self.assertEqual(tiempo_en_segundos(8, 0, 2, 0), 691320, "Esperado: 691320")
+        self.assertEqual(tiempo_en_segundos(0, 5, 55, 6), 21306, "Esperado: 21306")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-4">
-<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 4" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_4 data-question_label="4">
@@ -422,7 +447,7 @@ aumento y el nuevo salario. <br /></p>
            data-wasm=/_static
       style="visibility: hidden;">
 def aumento(salario, porcentaje):
-    #devolver los valores en una tupla como: return (aumento, nuevo_salario)
+        #devolver los valores en una tupla como: return (aumento, nuevo_salario)
 
 
 ====
@@ -430,38 +455,19 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
-        self.assertEqual(
-                aumento(30500, 10),
-                (3050, 33550),
-                "Esperado: 3050 y 33550"
-        )
-        self.assertEqual(
-                aumento(10400, 25),
-                (2600, 13000),
-                "Esperado: 2600 y 13000"
-        )
-        self.assertEqual(
-                aumento(50100, 8),
-                (4008, 54108),
-                "Esperado: 4008 y 54108"
-        )
-        self.assertEqual(
-                aumento(25000, 3),
-                (750, 25750),
-                "Esperado: 750 y 25750"
-        )
+        self.assertEqual(aumento(30500, 10), (3050, 33550), "Esperado: 3050 y 33550")
+        self.assertEqual(aumento(10400, 25), (2600, 13000), "Esperado: 2600 y 13000")
+        self.assertEqual(aumento(50100, 8), (4008, 54108), "Esperado: 4008 y 54108")
+        self.assertEqual(aumento(25000, 3), (750, 25750), "Esperado: 750 y 25750")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-5">
-<h2>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 5" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_5 data-question_label="5">
@@ -476,7 +482,7 @@ Muestre el monto del descuento y el precio a pagar. <br /></p>
            data-wasm=/_static
       style="visibility: hidden;">
 def precio_con_descuento(precio, porcentaje):
-    #devolver los valores en una tupla como: return (descuento, precio_final)
+        #devolver los valores en una tupla como: return (descuento, precio_final)
 
 
 ====
@@ -484,38 +490,19 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
-        self.assertEqual(
-                precio_con_descuento(100100, 10),
-                (10010, 90090),
-                "Esperado: (10010,90090)"
-        )
-        self.assertEqual(
-                precio_con_descuento(20523, 4),
-                (820.92, 19702.08),
-                "Esperado: (820.92,19702.08)"
-        )
-        self.assertEqual(
-                precio_con_descuento(55566, 50),
-                (27783, 27783),
-                "Esperado: (27783,27783)"
-        )
-        self.assertEqual(
-                precio_con_descuento(75660, 24),
-                (18158.4, 57501.6),
-                "Esperado: (18158.4,57501.6)"
-        )
+        self.assertEqual(precio_con_descuento(100100, 10), (10010, 90090), "Esperado: (10010,90090)")
+        self.assertEqual(precio_con_descuento(20523, 4), (820.92, 19702.08), "Esperado: (820.92,19702.08)")
+        self.assertEqual(precio_con_descuento(55566, 50), (27783, 27783), "Esperado: (27783,27783)")
+        self.assertEqual(precio_con_descuento(75660, 24), (18158.4, 57501.6), "Esperado: (18158.4,57501.6)")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-6">
-<h2>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 6" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_6 data-question_label="6">
@@ -537,7 +524,6 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
         self.assertEqual(tiempo(5, 5), 1, "Esperado: 1")
@@ -551,9 +537,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-7">
-<h2>Ejercicio 7<a class="headerlink" href="#ejercicio-7" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 7" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_7 data-question_label="7">
@@ -574,43 +558,20 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
-        self.assertEqual(
-                celsius_a_fahrenheit(20),
-                ((9 * 20) / 5) + 32,
-                "Esperado: 68"
-        )
-        self.assertEqual(
-                celsius_a_fahrenheit(68),
-                ((9 * 68) / 5) + 32,
-                "Esperado: 154.4"
-        )
-        self.assertEqual(
-                celsius_a_fahrenheit(0),
-                ((9 * 0) / 5) + 32,
-                "Esperado: 32"
-        )
-        self.assertEqual(
-                celsius_a_fahrenheit(-10),
-                ((9 * -10) / 5) + 32,
-                "Esperado: 14"
-        )
-        self.assertEqual(
-                celsius_a_fahrenheit(-24),
-                ((9 * -24) / 5) + 32,
-                "Esperado: -11.2"
-        )
+        self.assertEqual(celsius_a_fahrenheit(20), ((9 * 20) / 5) + 32, "Esperado: 68")
+        self.assertEqual(celsius_a_fahrenheit(68), ((9 * 68) / 5) + 32, "Esperado: 154.4")
+        self.assertEqual(celsius_a_fahrenheit(0), ((9 * 0) / 5) + 32, "Esperado: 32")
+        self.assertEqual(celsius_a_fahrenheit(-10), ((9 * -10) / 5) + 32, "Esperado: 14")
+        self.assertEqual(celsius_a_fahrenheit(-24), ((9 * -24) / 5) + 32, "Esperado: -11.2")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-8">
-<h2>Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 8" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_8 data-question_label="8">
@@ -631,42 +592,20 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
-        self.assertEqual(
-                fahrenheit_a_celsius(21),
-                ((21-32)*5)/9,
-                "Esperado: " + str(((21-32)*5)/9)
-        )
-        self.assertEqual(
-                fahrenheit_a_celsius(108),
-                ((108-32)*5)/9,
-                "Esperado: " + str(((108-32)*5)/9)
-        )
-        self.assertEqual(
-                fahrenheit_a_celsius(0),
-                ((0-32)*5)/9,
-                "Esperado: " + str(((0-32)*5)/9)
-        )
-        self.assertEqual(
-                fahrenheit_a_celsius(-10),
-                ((-10-32)*5)/9,
-                "Esperado: " + str(((-10-32)*5)/9)
-        )
-        self.assertEqual(
-                fahrenheit_a_celsius(14),
-                ((14-32)*5)/9, "Esperado: " + str(((14-32)*5)/9)
-        )
+        self.assertEqual(fahrenheit_a_celsius(21), ((21 - 32) * 5) / 9, "Esperado: " + str(((21 - 32) * 5) / 9))
+        self.assertEqual(fahrenheit_a_celsius(108), ((108 - 32) * 5) / 9, "Esperado: " + str(((108 - 32) * 5) / 9))
+        self.assertEqual(fahrenheit_a_celsius(0), ((0 - 32) * 5) / 9, "Esperado: " + str(((0 - 32) * 5) / 9))
+        self.assertEqual(fahrenheit_a_celsius(-10), ((-10 - 32) * 5) / 9, "Esperado: " + str(((-10 - 32) * 5) / 9))
+        self.assertEqual(fahrenheit_a_celsius(14), ((14 - 32) * 5) / 9, "Esperado: " + str(((14 - 32) * 5) / 9))
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-9">
-<h2>Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 9" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_9 data-question_label="9">
@@ -690,43 +629,20 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
-        self.assertEqual(
-                precio(123, 3),
-                (0.15*123) + (60*3),
-                "Esperado: " + str((0.15*123)+(60*3))
-        )
-        self.assertEqual(
-                precio(800, 4),
-                (0.15*800) + (60*4),
-                "Esperado: " + str((0.15*800)+(60*4))
-        )
-        self.assertEqual(
-                precio(60, 1),
-                (0.15*60) + (60*1),
-                "Esperado: " + str((0.15*60)+(60*1))
-        )
-        self.assertEqual(
-                precio(90, 2),
-                (0.15*90) + (60*2),
-                "Esperado: " + str((0.15*90)+(60*2))
-        )
-        self.assertEqual(
-                precio(1016, 7),
-                (0.15*1016) + (60*7),
-                "Esperado: " + str((0.15*1016)+(60*7))
-        )
+        self.assertEqual(precio(123, 3), (0.15 * 123) + (60 * 3), "Esperado: " + str((0.15 * 123) + (60 * 3)))
+        self.assertEqual(precio(800, 4), (0.15 * 800) + (60 * 4), "Esperado: " + str((0.15 * 800) + (60 * 4)))
+        self.assertEqual(precio(60, 1), (0.15 * 60) + (60 * 1), "Esperado: " + str((0.15 * 60) + (60 * 1)))
+        self.assertEqual(precio(90, 2), (0.15 * 90) + (60 * 2), "Esperado: " + str((0.15 * 90) + (60 * 2)))
+        self.assertEqual(precio(1016, 7), (0.15 * 1016) + (60 * 7), "Esperado: " + str((0.15 * 1016) + (60 * 7)))
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-10">
-<h2>Ejercicio 10<a class="headerlink" href="#ejercicio-10" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 10" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_10 data-question_label="10">
@@ -750,38 +666,21 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
         self.assertEqual(
-                fumador(10, 1),
-                ((10*1*365)*10)/1440,
-                "Esperado: "+str(((10*1*365)*10)/1440)
+                fumador(10, 1), ((10 * 1 * 365) * 10) / 1440, "Esperado: " + str(((10 * 1 * 365) * 10) / 1440)
         )
-        self.assertEqual(
-                fumador(3, 5),
-                ((3*5*365)*10)/1440,
-                "Esperado: "+str(((3*5*365)*10)/1440)
-        )
-        self.assertEqual(
-                fumador(1, 8),
-                ((1*8*365)*10)/1440,
-                "Esperado: "+str(((1*8*365)*10)/1440)
-        )
-        self.assertEqual(
-                fumador(2, 3),
-                ((2*3*365)*10)/1440,
-                "Esperado: "+str(((2*3*365)*10)/1440)
-        )
+        self.assertEqual(fumador(3, 5), ((3 * 5 * 365) * 10) / 1440, "Esperado: " + str(((3 * 5 * 365) * 10) / 1440))
+        self.assertEqual(fumador(1, 8), ((1 * 8 * 365) * 10) / 1440, "Esperado: " + str(((1 * 8 * 365) * 10) / 1440))
+        self.assertEqual(fumador(2, 3), ((2 * 3 * 365) * 10) / 1440, "Esperado: " + str(((2 * 3 * 365) * 10) / 1440))
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-11">
-<h2>Ejercicio 11<a class="headerlink" href="#ejercicio-11" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 11" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_11 data-question_label="11">
@@ -803,10 +702,9 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
 
-        self.assertEqual(digitos(),301030,"Esperado: 301030")
+        self.assertEqual(digitos(), 301030, "Esperado: 301030")
 
 
 myTests().main()
@@ -814,14 +712,16 @@ myTests().main()
 </div>
 </div>
 </div>
+    </div>
+
 </div>
 
 
-  <div id=scprogresscontainer>
-    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-      
+    
 <ul>
   <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Introducción al desarrollo web' data-toggle="tooltip">
     <a href="../lectures/TWP65.html" aria-label="Introducción al desarrollo web">
@@ -890,7 +790,7 @@ document.addEventListener('load', (event) => {
 
 
 <script> 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     runestoneComponents.getSwitch(); 
   });
 </script>
