@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interfaz gráfica &#8212; PyZombis master@eca1d9e</title>
+    <title>Interfaz gráfica &#8212; PyZombis master@7e97442</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis master@eca1d9e
+          PyZombis master@7e97442
         </a>
       </div>
     </div>
@@ -334,12 +334,22 @@ document.addEventListener('load', (event) => {
 <h1>Interfaz gráfica<a class="headerlink" href="#interfaz-grafica" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
 <ul class="simple">
-<li><p>En la programación no es basta con hacer solamente el código.</p></li>
-<li><p>No es suficiente para trabajar, también debe ser hermoso para el usuario.</p></li>
-<li><p>La interfaz basada texto funciona, pero es muy limitada y antigua.</p></li>
-<li><p>Motivado a esto se necesita crear una interfaz gráfica de usuario, también conocida por sus iniciales del inglés GUI <em>graphical user interface</em></p></li>
-<li><p>En Python se pueden usar diferentes librerías para la creación de GUI, una de las conocidas es <code class="docutils literal notranslate"><span class="pre">tkinter</span></code></p></li>
-<li><p>Sin embargo, en esta oportunidad utilizaremos nuevamente el interprete de Brython para la creación de interfaces gráficas.</p></li>
+<li><p>En la programación no basta con hacer solamente el código.</p></li>
+<li><p>No es suficiente para trabajar, también debe ser atractivo para el usuario.</p></li>
+<li><p>Las interfaces basadas en texto funcionan, pero son limitadas y antiguas.</p></li>
+<li><p>Motivado a esto, se necesita crear interfaces gráficas de usuario, también conocida por sus iniciales del inglés GUI <em>graphical user interface</em></p></li>
+<li><dl class="simple">
+<dt>Las interfaces gráficas de usuario podemos encontrarlas en diferentes sitios:</dt><dd><ul>
+<li><p>En programas para la computadora, por ejemplo, una muy conocida es el programa Office. Estas interfaces las podemos llamar <em>interfaces de escritorio</em>.</p></li>
+<li><p>También podemos encontrar interfaces que se ven dentro del navegador, como por ejemplo la página de Facebook, estas interfaces podemos llamarlas <em>interfaces web</em>.</p></li>
+<li><p>Por último, encontramos interfaces en las aplicaciones para nuestros teléfonos inteligentes, un ejemplo es la aplicación Whatsapp, representando a las <em>interfaces móviles</em>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>En Python existen diferentes herramientas y librerías para la creación de interfaces, entre las conocidas para crear interfaces de escritorio se encuentran las librerías <code class="docutils literal notranslate"><span class="pre">tkinter</span></code> y <code class="docutils literal notranslate"><span class="pre">PyQt</span></code>.</p></li>
+<li><p>Ya que nuestro objetivo es crear interfaces dentro del navegador, utilizaremos nuevamente <code class="docutils literal notranslate"><span class="pre">brython</span></code>.</p></li>
+<li><p>Brython permite a través de su sintaxis la capacidad de crear interfaces gráficas simples.</p></li>
 <li><p>Crearemos en este ejercicio el <strong>Show de preguntas Zombis</strong>.</p></li>
 </ul>
 <div class="section" id="show-de-preguntas-zombis">
@@ -531,7 +541,7 @@ from browser import document, html
 from browser.widgets.dialog import Dialog
 
 # Creación de un dialogo con el título
-d = Dialog("Show de preguntas Zombis")
+d = Dialog("Show de preguntas Zombis", top=20, left=20)
 
 # Agrega elementos como botones y títulos
 d.panel <= html.H3("Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center"))
@@ -569,7 +579,7 @@ d.panel <= html.BUTTON("Incorrecto", id="btn_incorrecto", style=dict(marginLeft=
 from browser import document, html
 from browser.widgets.dialog import Dialog
 
-d = Dialog("Prueba capturando un evento")
+d = Dialog("Prueba capturando un evento", top=20, left=20)
 
 d.panel <= html.BUTTON("¡Apriétame!", id="btn_apretar", style=dict(margin="auto", display="block"))
 
@@ -630,7 +640,7 @@ crear_elemento("http://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/sm
 # Sonido de incorrecto
 crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/1684.ogg", "incorrecto")
 
-d = Dialog("Show de preguntas Zombis")
+d = Dialog("Show de preguntas Zombis", top=20, left=20)
 
 d.panel <= html.H4("Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center"))
 d.panel <= html.BUTTON("Correcto", id="btn_correcto")
@@ -697,7 +707,7 @@ crear_elemento("http://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/sm
 # Sonido de incorrecto
 crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/1684.ogg", "incorrecto")
 
-d = Dialog("Show de preguntas Zombis")
+d = Dialog("Show de preguntas Zombis", top=20, left=20)
 
 d.panel <= html.H4(
     "Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center")
