@@ -4,8 +4,8 @@ def test_quiz3_2(page):
 
     # Do the exercise
     page.click("text=def calcular_cambio(cobro, pago):")
-    page.press("text=def calcular_cambio(cobro, pago):", "ArrowDown")
-    page.press("text=def calcular_cambio(cobro, pago):", "Tab")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
 
     instructions = [
         "cambio = pago - cobro",
@@ -16,13 +16,13 @@ def test_quiz3_2(page):
     ]
 
     for inst in instructions:
-        page.type("text=def calcular_cambio(cobro, pago):", inst)
-        page.press("text=def calcular_cambio(cobro, pago):", "Enter")
+        page.keyboard.type(inst)
+        page.keyboard.press("Enter")
 
     for i in range(4):
-        page.press("text=def calcular_cambio(cobro, pago):", "Backspace")
+        page.keyboard.press("Backspace")
 
-    page.type("text=def calcular_cambio(cobro, pago):", "return billetes")
+    page.keyboard.type("return billetes")
 
     # Click #ejercicio-2 >> text=Run
     page.click("#ejercicio-2 >> text=Run")
