@@ -4,8 +4,7 @@ import json
 
 
 def test_l45_1(page):
-    page.goto("lectures/TWP45.html")
-
+    page.goto("lectures/TWP45/TWP45_1.html")
     # Run the exercise
     page.click("#ac_l45_1 >> *css=button >> text=Run")
 
@@ -20,9 +19,9 @@ def test_l45_1(page):
 
 
 @pytest.mark.vcr()
-def test_l45_5(page):
+def test_l45_3(page):
     # Go to TWP45 page
-    page.goto("lectures/TWP45.html")
+    page.goto("lectures/TWP45/TWP45_3.html")
 
     # request data for the exercise to the .yaml file
     res = requests.get("https://tastedive.com/api/similar?q=Coco&limit=5&info=1")
@@ -37,7 +36,7 @@ def test_l45_5(page):
                 pixar += 1
 
     # Do the exercise
-    page.click("#ac_l45_5 >> text=parametros = {}")
+    page.click("#ac_l45_3c >> text=parametros = {}")
     # Clear all code
     page.keyboard.press("Control+A")
     page.keyboard.press("Backspace")
@@ -55,6 +54,6 @@ def test_l45_5(page):
     page.keyboard.type(f"pixar = {pixar}")
 
     # Run and check it passed all tests
-    page.click("#ac_l45_5 >> *css=button >> text=Run")
-    page.hover("#ac_l45_5 >> text=You passed:")
-    assert page.inner_text("#ac_l45_5 >> text=You passed:") == "You passed: 100.0% of the tests"
+    page.click("#ac_l45_3c >> *css=button >> text=Run")
+    page.hover("#ac_l45_3c >> text=You passed:")
+    assert page.inner_text("#ac_l45_3c >> text=You passed:") == "You passed: 100.0% of the tests"
