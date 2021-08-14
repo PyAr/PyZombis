@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 9 &#8212; PyZombis 61_quiz10@a41962f</title>
+    <title>Quiz - 9 &#8212; PyZombis 61_quiz10@bce0682</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
@@ -33,7 +33,10 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Quiz - 10" href="Quiz10.html" />
     <link rel="prev" title="Quiz - 7" href="Quiz7.html" />
+
+
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
 
 <script>
   eBookConfig = {};
@@ -74,24 +77,23 @@
 
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="icon-bar" aria-label="navbar toggle">toggle navbar</span>
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
       <div>
         
-          <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../_static/img/logo_small.png" alt=""></a>
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis
+          PyZombis 61_quiz10@bce0682
         </a>
       </div>
     </div>
-
-
 
     <div class="navbar-collapse collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" >
@@ -275,14 +277,62 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content" role="main">
+
+  
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Quiz - 7' data-toggle="tooltip">
+    <a href="Quiz7.html" aria-label="Quiz - 7">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
+
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Quiz - 10' data-toggle="tooltip" >
+    <a href="Quiz10.html" aria-label="Quiz - 10">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<script>
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
 <!-- Ad Serving for Runestone Campaign -->
 
 
   
   <div class="section" id="quiz-9">
 <h1>Quiz - 9<a class="headerlink" href="#quiz-9" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
+<div id='quiz9' data-component="tabbedStuff"  class='alert alert-warning'><div data-component="tab" data-tabname="Ejercicio 1" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_1 data-question_label="1">
@@ -309,36 +359,21 @@ from unittest.gui import TestCaseGui
 
 
 class myTests(TestCaseGui):
-
     def testOne(self):
         self.assertEqual(primer_o_ultimo_6([1, 2, 6]), True, "Esperado: True")
         self.assertEqual(primer_o_ultimo_6([3, 6]), True, "Esperado: True")
         self.assertEqual(primer_o_ultimo_6([3, 6]), True, "Esperado: True")
         self.assertEqual(primer_o_ultimo_6([3]), False, "Esperado: False")
-        self.assertEqual(
-                primer_o_ultimo_6([6, 1, 2, 3]),
-                True,
-                "Esperado: True"
-        )
-        self.assertEqual(
-                primer_o_ultimo_6([3, 2, 1]),
-                False,
-                "Esperado: False"
-        )
-        self.assertEqual(
-                primer_o_ultimo_6([3, 6, 1]),
-                False,
-                "Esperado: False"
-        )
+        self.assertEqual(primer_o_ultimo_6([6, 1, 2, 3]), True, "Esperado: True")
+        self.assertEqual(primer_o_ultimo_6([3, 2, 1]), False, "Esperado: False")
+        self.assertEqual(primer_o_ultimo_6([3, 6, 1]), False, "Esperado: False")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-2">
-<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 2" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_2 data-question_label="2">
@@ -382,9 +417,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-3">
-<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 3" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_3 data-question_label="3">
@@ -441,9 +474,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-4">
-<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 4" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_4 data-question_label="4">
@@ -517,9 +548,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-5">
-<h2>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 5" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_5 data-question_label="5">
@@ -568,9 +597,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-6">
-<h2>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 6" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_6 data-question_label="6">
@@ -636,9 +663,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-7">
-<h2>Ejercicio 7<a class="headerlink" href="#ejercicio-7" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 7" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_7 data-question_label="7">
@@ -695,9 +720,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-8">
-<h2>Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 8" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_8 data-question_label="8">
@@ -748,9 +771,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-9">
-<h2>Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 9" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_9 data-question_label="9">
@@ -814,9 +835,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-10">
-<h2>Ejercicio 10<a class="headerlink" href="#ejercicio-10" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 10" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q9_10 data-question_label="10">
@@ -873,14 +892,16 @@ myTests().main()
 </div>
 </div>
 </div>
+    </div>
+
 </div>
 
 
-  <div id=scprogresscontainer>
-    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-      
+    
 <ul>
   <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Quiz - 7' data-toggle="tooltip">
     <a href="Quiz7.html" aria-label="Quiz - 7">
@@ -949,7 +970,7 @@ document.addEventListener('load', (event) => {
 
 
 <script> 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     runestoneComponents.getSwitch(); 
   });
 </script>
