@@ -4,10 +4,9 @@ def test_quiz13_1(page):
 
     # Do the exercise
     page.click("text=def terminan_igual(palabras):")
-    page.press("text=def terminan_igual(palabras):", "ArrowDown")
-    page.press("text=def terminan_igual(palabras):", "Tab")
-    page.type(
-        "text=def terminan_igual(palabras):",
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
+    page.keyboard.type(
         "return len([palabra for palabra in palabras if len(palabra) >= 2 and palabra[0] == palabra[-1]])",
     )
 

@@ -10,12 +10,17 @@ Interfaz gráfica
     :alt:
 
 
-+ En la programación no es basta con hacer solamente el código.
-+ No es suficiente para trabajar, también debe ser hermoso para el usuario.
-+ La interfaz basada texto funciona, pero es muy limitada y antigua.
-+ Motivado a esto se necesita crear una interfaz gráfica de usuario, también conocida por sus iniciales del inglés GUI *graphical user interface*
-+ En Python se pueden usar diferentes librerías para la creación de GUI, una de las conocidas es ``tkinter``
-+ Sin embargo, en esta oportunidad utilizaremos nuevamente el interprete de Brython para la creación de interfaces gráficas.
++ En la programación no basta con hacer solamente el código.
++ No es suficiente para trabajar, también debe ser atractivo para el usuario.
++ Las interfaces basadas en texto funcionan, pero son limitadas y antiguas.
++ Motivado a esto, se necesita crear interfaces gráficas de usuario, también conocida por sus iniciales del inglés GUI *graphical user interface*
++ Las interfaces gráficas de usuario podemos encontrarlas en diferentes sitios:
+    + En programas para la computadora, por ejemplo, una muy conocida es el programa Office. Estas interfaces las podemos llamar *interfaces de escritorio*.
+    + También podemos encontrar interfaces que se ven dentro del navegador, como por ejemplo la página de Facebook, estas interfaces podemos llamarlas *interfaces web*.
+    + Por último, encontramos interfaces en las aplicaciones para nuestros teléfonos inteligentes, un ejemplo es la aplicación Whatsapp, representando a las *interfaces móviles*.
++ En Python existen diferentes herramientas y librerías para la creación de interfaces, entre las conocidas para crear interfaces de escritorio se encuentran las librerías ``tkinter`` y ``PyQt``.
++ Ya que nuestro objetivo es crear interfaces dentro del navegador, utilizaremos nuevamente ``brython``.
++ Brython permite a través de su sintaxis la capacidad de crear interfaces gráficas simples.
 + Crearemos en este ejercicio el **Show de preguntas Zombis**.
 
 Show de preguntas Zombis
@@ -176,7 +181,7 @@ Ventana básica
     from browser.widgets.dialog import Dialog
 
     # Creación de un dialogo con el título
-    d = Dialog("Show de preguntas Zombis")
+    d = Dialog("Show de preguntas Zombis", top=20, left=20)
 
     # Agrega elementos como botones y títulos
     d.panel <= html.H3("Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center"))
@@ -205,7 +210,7 @@ Capturando un evento
     from browser import document, html
     from browser.widgets.dialog import Dialog
 
-    d = Dialog("Prueba capturando un evento")
+    d = Dialog("Prueba capturando un evento", top=20, left=20)
 
     d.panel <= html.BUTTON("¡Apriétame!", id="btn_apretar", style=dict(margin="auto", display="block"))
 
@@ -252,7 +257,7 @@ Show de preguntas Zombis
     # Sonido de incorrecto
     crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/1684.ogg", "incorrecto")
 
-    d = Dialog("Show de preguntas Zombis")
+    d = Dialog("Show de preguntas Zombis", top=20, left=20)
 
     d.panel <= html.H4("Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center"))
     d.panel <= html.BUTTON("Correcto", id="btn_correcto")
@@ -314,7 +319,7 @@ Show de preguntas Zombis
     # Sonido de incorrecto
     crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/1684.ogg", "incorrecto")
 
-    d = Dialog("Show de preguntas Zombis")
+    d = Dialog("Show de preguntas Zombis", top=20, left=20)
 
     d.panel <= html.H4(
         "Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center")

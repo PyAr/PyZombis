@@ -33,9 +33,7 @@ extensions = ["sphinx.ext.mathjax"] + runestone_extensions()
 # ,'runestone.video','runestone.reveal','runestone.poll','runestone.tabbedStuff','runestone.disqus','runestone.codelens','runestone.activecode', 'runestone.assess', 'runestone.animation','runestone.meta', 'runestone.parsons', 'runestone.blockly', 'runestone.livecode','runestone.accessibility']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = [pkg_resources.resource_filename("runestone", "common/project_template/_templates")]
-
-print(templates_path)
+templates_path = ["_templates"]
 
 # The suffix of source filenames.
 source_suffix = ".rst"
@@ -69,7 +67,9 @@ else:
     git_head = "HEAD"
     git_ref = None
 
-git_hash = subprocess.check_output(["git", "rev-parse", "--short", git_head]).decode().strip()
+git_hash = (
+    subprocess.check_output(["git", "rev-parse", "--short", git_head]).decode().strip()
+)
 git_full_hash = subprocess.check_output(["git", "rev-parse", git_head]).decode().strip()
 if git_ref and not git_ref.startswith("refs/"):
     git_branch = git_ref
@@ -77,7 +77,11 @@ else:
     # resolve the branch name for the full reference given (or default)
     if not git_ref:
         git_ref = "HEAD"
-    git_branch = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", git_ref]).decode().strip()
+    git_branch = (
+        subprocess.check_output(["git", "rev-parse", "--abbrev-ref", git_ref])
+        .decode()
+        .strip()
+    )
 
 # The short X.Y version.
 version = git_hash
@@ -227,9 +231,11 @@ html_theme_options = {
 # html_style = "style.css"
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [pkg_resources.resource_filename("runestone", "common/project_template/_templates/plugin_layouts")]
-
-print(html_theme_path)
+html_theme_path = [
+    pkg_resources.resource_filename(
+        "runestone", "common/project_template/_templates/plugin_layouts"
+    )
+]
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.

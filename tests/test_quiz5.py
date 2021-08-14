@@ -5,10 +5,10 @@ def test_quiz5_10(page):
 
     page.click("text=def es_numero_ponteironuloville(numero):")
 
-    page.press("text=es_numero_ponteironuloville(numero):", "ArrowDown")
-    page.press("text=es_numero_ponteironuloville(numero):", "Tab")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
 
-    page.type("text=es_numero_ponteironuloville(numero):", "return True")
+    page.keyboard.type("return True")
 
     page.click("#q5_10 >> *css=button >> text=Run")
 
