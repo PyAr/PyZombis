@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 7 &#8212; PyZombis master@2b4d1f5</title>
+    <title>Quiz - 7 &#8212; PyZombis master@436f169</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis master@2b4d1f5
+          PyZombis master@436f169
         </a>
       </div>
     </div>
@@ -332,8 +332,7 @@ document.addEventListener('load', (event) => {
   
   <div class="section" id="quiz-7">
 <h1>Quiz - 7<a class="headerlink" href="#quiz-7" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this headline">¶</a></h2>
+<div id='quiz7' data-component="tabbedStuff"  class='alert alert-warning'><div data-component="tab" data-tabname="Ejercicio 1" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q7_1 data-question_label="1">
@@ -381,9 +380,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-2">
-<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 2" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q7_2 data-question_label="2">
@@ -432,9 +429,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-3">
-<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 3" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q7_3 data-question_label="3">
@@ -471,9 +466,7 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-4">
-<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 4" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q7_4 data-question_label="4">
@@ -501,47 +494,25 @@ from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        self.assertEqual(
-            verificar_comienzo_9([1, 2, 9, 3, 4]), True, "Esperado: True"
-        )
-        self.assertEqual(
-            verificar_comienzo_9([1, 2, 3, 4, 9]), False, "Esperado: False"
-        )
-        self.assertEqual(
-            verificar_comienzo_9([1, 2, 3, 4, 5]), False, "Esperado: False"
-        )
-        self.assertEqual(
-            verificar_comienzo_9([9, 2, 3]), True, "Esperado: True"
-        )
-        self.assertEqual(
-            verificar_comienzo_9([1, 9, 9]), True, "Esperado: True"
-        )
-        self.assertEqual(
-            verificar_comienzo_9([1, 2, 3]), False, "Esperado: False"
-        )
-        self.assertEqual(
-            verificar_comienzo_9([1, 9]), True, "Esperado: True"
-        )
-        self.assertEqual(
-            verificar_comienzo_9([5, 5]), False, "Esperado: False"
-        )
-        self.assertEqual(
-            verificar_comienzo_9([2]), False, "Esperado: False"
-        )
+        self.assertEqual(verificar_comienzo_9([1, 2, 9, 3, 4]), True, "Esperado: True")
+        self.assertEqual(verificar_comienzo_9([1, 2, 3, 4, 9]), False, "Esperado: False")
+        self.assertEqual(verificar_comienzo_9([1, 2, 3, 4, 5]), False, "Esperado: False")
+        self.assertEqual(verificar_comienzo_9([9, 2, 3]), True, "Esperado: True")
+        self.assertEqual(verificar_comienzo_9([1, 9, 9]), True, "Esperado: True")
+        self.assertEqual(verificar_comienzo_9([1, 2, 3]), False, "Esperado: False")
+        self.assertEqual(verificar_comienzo_9([1, 9]), True, "Esperado: True")
+        self.assertEqual(verificar_comienzo_9([5, 5]), False, "Esperado: False")
+        self.assertEqual(verificar_comienzo_9([2]), False, "Esperado: False")
         self.assertEqual(verificar_comienzo_9([9]), True, "Esperado: True")
         self.assertEqual(verificar_comienzo_9([]), False, "Esperado: False")
-        self.assertEqual(verificar_comienzo_9(
-            [3, 9, 2, 3, 3]), True, "Esperado: True"
-        )
+        self.assertEqual(verificar_comienzo_9([3, 9, 2, 3, 3]), True, "Esperado: True")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-5">
-<h2>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 5" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q7_5 data-question_label="5">
@@ -568,27 +539,17 @@ from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        self.assertEqual(
-            hola_usuario("Bob"), "¡Hola Bob!", "Esperado: ¡Hola Bob!"
-        )
-        self.assertEqual(
-            hola_usuario("Alice"), "¡Hola Alice!", "Esperado: ¡Hola Alice!"
-        )
-        self.assertEqual(
-            hola_usuario("X"), "¡Hola X!", "Esperado: ¡Hola X!"
-        )
-        self.assertEqual(
-            hola_usuario("Hola"), "¡Hola Hola!", "Esperado: ¡Hola Hola!"
-        )
+        self.assertEqual(hola_usuario("Bob"), "¡Hola Bob!", "Esperado: ¡Hola Bob!")
+        self.assertEqual(hola_usuario("Alice"), "¡Hola Alice!", "Esperado: ¡Hola Alice!")
+        self.assertEqual(hola_usuario("X"), "¡Hola X!", "Esperado: ¡Hola X!")
+        self.assertEqual(hola_usuario("Hola"), "¡Hola Hola!", "Esperado: ¡Hola Hola!")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-6">
-<h2>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 6" >
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q7_6 data-question_label="6">
@@ -615,16 +576,8 @@ from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        self.assertEqual(
-            crear_etiquetas("i", "Yay"),
-            "<i>Yay</i>",
-            "Esperado: <i>Yay</i>"
-        )
-        self.assertEqual(
-            crear_etiquetas("i", "Hello"),
-            "<i>Hello</i>",
-            "Esperado:<i>Hello</i>"
-        )
+        self.assertEqual(crear_etiquetas("i", "Yay"), "<i>Yay</i>", "Esperado: <i>Yay</i>")
+        self.assertEqual(crear_etiquetas("i", "Hello"), "<i>Hello</i>", "Esperado:<i>Hello</i>")
         self.assertEqual(
             crear_etiquetas("cite", "Yay"),
             "<cite>Yay</cite>",
@@ -640,29 +593,19 @@ class myTests(TestCaseGui):
             "<body>Heart</body>",
             "Esperado: <body>Heart</body>",
         )
-        self.assertEqual(
-            crear_etiquetas("i", "i"),
-            "<i>i</i>",
-            "Esperado: <i>i</i>"
-        )
-        self.assertEqual(
-            crear_etiquetas("i", ""),
-            "<i></i>",
-            "Esperado: <i></i>"
-        )
+        self.assertEqual(crear_etiquetas("i", "i"), "<i>i</i>", "Esperado: <i>i</i>")
+        self.assertEqual(crear_etiquetas("i", ""), "<i></i>", "Esperado: <i></i>")
 
 
 myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-8">
-<h2>Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 7" >
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=q7_8 data-question_label="7">
-<div id=q7_8_question class="ac_question col-md-12">
+<div data-component="activecode" id=q7_7 data-question_label="7">
+<div id=q7_7_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">repetir_letras</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelve una nueva cadena con las dos últimas letras repetidas tres veces <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">repetir_letras(&quot;Hello&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;lololo&quot;</span></code> <br />
@@ -670,7 +613,7 @@ Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">repetir_letras(&quot;Hi&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;HiHiHi&quot;</span></code>  <br /></p>
 
 </div>
-<textarea data-lang="python" id="q7_8_editor" 
+<textarea data-lang="python" id="q7_7_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -696,13 +639,11 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-9">
-<h2>Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 8" >
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=q7_9 data-question_label="8">
-<div id=q7_9_question class="ac_question col-md-12">
+<div data-component="activecode" id=q7_8 data-question_label="8">
+<div id=q7_8_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">otra_repetir_letras</span></code> (variante de la función del Ejercicio 8) que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y un entero positivo <code class="docutils literal notranslate"><span class="pre">n</span></code> y devuelva una nueva cadena con las dos últimas letras repetidas <code class="docutils literal notranslate"><span class="pre">n</span></code> veces <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">otra_repetir_letras(&quot;Hello&quot;,</span> <span class="pre">3)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;lololo&quot;</span></code> <br />
@@ -710,7 +651,7 @@ Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">otra_repetir_letras(&quot;Hi&quot;,</span> <span class="pre">5)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;HiHiHiHiHi&quot;</span></code>  <br /></p>
 
 </div>
-<textarea data-lang="python" id="q7_9_editor" 
+<textarea data-lang="python" id="q7_8_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -725,13 +666,9 @@ from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        self.assertEqual(
-            otra_repetir_letras("Hello", 3), "lololo", "Esperado: lololo"
-        )
+        self.assertEqual(otra_repetir_letras("Hello", 3), "lololo", "Esperado: lololo")
         self.assertEqual(otra_repetir_letras("ab", 2), "abab", "Esperado: abab")
-        self.assertEqual(
-            otra_repetir_letras("Hi", 6), "HiHiHiHiHiHi", "Esperado: HiHiHi"
-        )
+        self.assertEqual(otra_repetir_letras("Hi", 6), "HiHiHiHiHiHi", "Esperado: HiHiHi")
         self.assertEqual(otra_repetir_letras("Candy", 1), "dy", "Esperado: dy")
         self.assertEqual(otra_repetir_letras("Code", 0), "", "Esperado: ''")
 
@@ -740,13 +677,11 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-10">
-<h2>Ejercicio 10<a class="headerlink" href="#ejercicio-10" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 9" >
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=q7_10 data-question_label="9">
-<div id=q7_10_question class="ac_question col-md-12">
+<div data-component="activecode" id=q7_9 data-question_label="9">
+<div id=q7_9_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">primera_mitad</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> y devuelve la primera mitad de la cadena original <br /> <br />
 Ejemplos:<br />
 <code class="docutils literal notranslate"><span class="pre">primera_mitad(&quot;WooHoo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Woo&quot;</span></code> <br />
@@ -754,7 +689,7 @@ Ejemplos:<br />
 <code class="docutils literal notranslate"><span class="pre">primera_mitad(&quot;abcdef&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;abc&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="q7_10_editor" 
+<textarea data-lang="python" id="q7_9_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -770,15 +705,11 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
         self.assertEqual(primera_mitad("WooHoo"), "Woo", "Esperado: Woo")
-        self.assertEqual(
-            primera_mitad("HelloThere"), "Hello", "Esperado: Hello"
-        )
+        self.assertEqual(primera_mitad("HelloThere"), "Hello", "Esperado: Hello")
         self.assertEqual(primera_mitad("abcdef"), "abc", "Esperado: abc")
         self.assertEqual(primera_mitad(""), "", "Esperado: ")
         self.assertEqual(primera_mitad("ab"), "a", "Esperado: a")
-        self.assertEqual(
-            primera_mitad("0123456789"), "01234", "Esperado: 01234"
-        )
+        self.assertEqual(primera_mitad("0123456789"), "01234", "Esperado: 01234")
         self.assertEqual(primera_mitad("kitten"), "kit", "Esperado: kit")
 
 
@@ -786,13 +717,11 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-11">
-<h2>Ejercicio 11<a class="headerlink" href="#ejercicio-11" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 10" >
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=q7_11 data-question_label="10">
-<div id=q7_11_question class="ac_question col-md-12">
+<div data-component="activecode" id=q7_10 data-question_label="10">
+<div id=q7_10_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remover_primer_ultimo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva una cadena sin el primer ni el último carácter <br /> <br />
 Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">remover_primer_ultimo(&quot;Hello&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ell&quot;</span></code> <br />
@@ -800,7 +729,7 @@ Ejemplos: <br />
 <code class="docutils literal notranslate"><span class="pre">remover_primer_ultimo(&quot;coding&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;odin&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="q7_11_editor" 
+<textarea data-lang="python" id="q7_10_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -820,12 +749,8 @@ class myTests(TestCaseGui):
         self.assertEqual(remover_primer_ultimo("coding"), "odin", "Esperado: odin")
         self.assertEqual(remover_primer_ultimo("code"), "od", "Esperado: od")
         self.assertEqual(remover_primer_ultimo("ab"), "", "Esperado: ")
-        self.assertEqual(
-            remover_primer_ultimo(" PyZombies "), "PyZombies", "Esperado: PyZombies"
-        )
-        self.assertEqual(
-            remover_primer_ultimo("Chocolate!"), "hocolate", "Esperado: hocolate"
-        )
+        self.assertEqual(remover_primer_ultimo(" PyZombies "), "PyZombies", "Esperado: PyZombies")
+        self.assertEqual(remover_primer_ultimo("Chocolate!"), "hocolate", "Esperado: hocolate")
         self.assertEqual(remover_primer_ultimo("kitten"), "itte", "Esperado: itte")
         self.assertEqual(remover_primer_ultimo("woohoo"), "ooho", "Esperado: ooho")
 
@@ -834,20 +759,18 @@ myTests().main()
 </textarea>
 </div>
 </div>
-</div>
-<div class="section" id="ejercicio-12">
-<h2>Ejercicio 12<a class="headerlink" href="#ejercicio-12" title="Permalink to this headline">¶</a></h2>
+</div><div data-component="tab" data-tabname="Ejercicio 11" >
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=q7_12 data-question_label="11">
-<div id=q7_12_question class="ac_question col-md-12">
+<div data-component="activecode" id=q7_11 data-question_label="11">
+<div id=q7_11_question class="ac_question col-md-12">
 <p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">rotar_izq_2</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> de al menos dos caracteres y devuelva la cadena original rotada 2 posiciones a la izquierda <br /> <br />
 Ejemplos:<br />
 <code class="docutils literal notranslate"><span class="pre">rotar_izq_2(&quot;Hello&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;lloHe&quot;</span></code> <br />
 <code class="docutils literal notranslate"><span class="pre">rotar_izq_2(&quot;Hi&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Hi&quot;</span></code> <br /></p>
 
 </div>
-<textarea data-lang="python" id="q7_12_editor" 
+<textarea data-lang="python" id="q7_11_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -882,6 +805,8 @@ myTests().main()
 </div>
 </div>
 </div>
+    </div>
+
 </div>
 
 
