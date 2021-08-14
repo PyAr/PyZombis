@@ -3,6 +3,7 @@ def test_quizExtra2_3_bad(page):
     page.goto("quiz/QuizExtras2.html")
 
     # Complete the exercise
+    page.click("text=Ejercicio 3")
     page.click("text=def calcular_pi(n):")
     page.press("text=def calcular_pi(n):", "ArrowDown")
     page.press("text=def calcular_pi(n):", "Tab")
