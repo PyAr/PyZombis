@@ -4,9 +4,9 @@ def test_quiz4_1(page):
 
     # Do the exercise
     page.click("text=def valores_extremos(numeros):")
-    page.press("text=def valores_extremos(numeros):", "ArrowDown")
-    page.press("text=def valores_extremos(numeros):", "Tab")
-    page.type("text=def valores_extremos(numeros):", "return (max(numeros), min(numeros))")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
+    page.keyboard.type("return (max(numeros), min(numeros))")
 
     # Run the exercise and check it passed all tests
     page.click("#q4_1 >> *css=button >> text=Run")
