@@ -3,6 +3,7 @@ def test_quiz11_3(page):
     page.goto("quiz/Quiz11.html")
 
     # Do the exercise
+    page.click("text=Ejercicio 3")
     page.click("text=def remplazar_primer_caracter(s):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
