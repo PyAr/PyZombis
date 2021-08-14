@@ -4,38 +4,36 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hackeando con Python &#8212; PyZombis master@c757b8e</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
-    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
-    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <title>3. Probando la API de TasteDive &#8212; PyZombis master@f6f8c43</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
 
 
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/webglinteractive.js?v=2B768384"></script>
-    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../_static/animationbase.js?v=A043C3A7"></script>
-    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../_static/html4css1.css?v=4533ACD3"></script>
-    <script src="../_static/runtime.bundle.js?v=f50940efe5177b9c81e6"></script>
-    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
-    <script src="../_static/runestone.bundle.js?v=2a0b78efc53bfc8dda40"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Módulos" href="TWP47/toctree.html" />
-    <link rel="prev" title="2. Conceptos básicos de SQL" href="TWP42/TWP42_2.html" />
-
-
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../../_static/runtime.bundle.js?v=f50940efe5177b9c81e6"></script>
+    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../../_static/runestone.bundle.js?v=2a0b78efc53bfc8dda40"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. Probando la API de University Domains" href="TWP45_4.html" />
+    <link rel="prev" title="2. Obtener datos de Reddit" href="TWP45_2.html" />
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
-
 
 <script>
   eBookConfig = {};
@@ -54,7 +52,7 @@
   eBookConfig.build_info = "unknown";
   eBookConfig.python3 = true;
   eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
-  eBookConfig.runestone_version = '5.9.0';
+  eBookConfig.runestone_version = '5.8.1';
   eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
   eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
   eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
@@ -76,18 +74,17 @@
 
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
-        <span class="icon-bar"></span>
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar" aria-label="navbar toggle">toggle navbar</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
       <div>
         
+          <a class="brand-logo" style='background: transparent url("../../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
         
-          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../_static/img/logo_small.png" alt=""></a>
-        
-        <a class="navbar-brand" href="../index.html" aria-label="index-page">
+        <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
           PyZombis
         </a>
@@ -145,12 +142,12 @@
           </a>
           <ul class='dropdown-menu'>
             
-                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+                <li><a href='../../index.html' aria-label="index-page">Table of Contents</a></li>
             
-            <li><a href='../genindex.html'>Book Index</a></li>
+            <li><a href='../../genindex.html'>Book Index</a></li>
             <li class="divider"></li>
             <li style="width: 240px;">
-              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+              <form class="navbar-search" style="margin:10px;" action="../../search.html" method="get">
                 <div class="input-group">
                   <input type="text" class="form-control" name="q" placeholder="Search this book" />
                   <span class="input-group-btn">
@@ -224,7 +221,7 @@
             <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=PyZombis&page=TWP45'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=TWP45_3'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -241,14 +238,14 @@
         
         <!-- 
           
-  <li id="relations-prev" title="Previous Chapter - <span class="section-number">2. </span>Conceptos básicos de SQL" data-toggle="tooltip">
-    <a href="TWP42/TWP42_2.html" >
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">2. </span>Obtener datos de Reddit" data-toggle="tooltip">
+    <a href="TWP45_2.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Módulos' data-toggle="tooltip" >              
-    <a href="TWP47/toctree.html" >
+  <li id="relations-next" title='Next Chapter - <span class="section-number">4. </span>Probando la API de University Domains' data-toggle="tooltip" >              
+    <a href="TWP45_4.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -260,7 +257,7 @@
           'delay': { show: 100, hide: 50}
          };
 
-  window.addEventListener('load', (event) => {
+  document.addEventListener('load', (event) => {
     $('#relations-prev').tooltip(opts);
     $('#relations-next').tooltip(opts);
   });
@@ -278,143 +275,12 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content" role="main">
-
-  
-    <ul role="navigation" class="nextprev-list nextprev-list-top" aria-label="Change page">
-<li id="relations-prev-top" class="relations-prev navLink" title='Previous Section - 2. Conceptos básicos de SQL' data-toggle="tooltip">
-  <a href="TWP42/TWP42_2.html" aria-label="Previous - 2. Conceptos básicos de SQL">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
-
-  <li id="relations-next-top" class="relations-next navLink" title='Next Section - Módulos' data-toggle="tooltip" >
-    <a href="TWP47/toctree.html" aria-label="Next - Módulos">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
-    </a>
-  </li>
-</ul>
-
-<script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-top').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-top').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
-});
-</script>
-  
-
 <!-- Ad Serving for Runestone Campaign -->
 
 
   
-  <div class="section" id="hackeando-con-python">
-<h1>Hackeando con Python<a class="headerlink" href="#hackeando-con-python" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
-<div class="section" id="facebook-hacking">
-<h2>Facebook Hacking<a class="headerlink" href="#facebook-hacking" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP45_001.jpeg"><img alt="" class="align-center" src="../_images/TWP45_001.jpeg" style="width: 14.801cm; height: 10.225cm;" /></a>
-</div>
-<div class="section" id="los-hackers-no-son-malvados">
-<h2>¿Los hackers no son “malvados”?<a class="headerlink" href="#los-hackers-no-son-malvados" title="Permalink to this headline">¶</a></h2>
-<p>Facebook está dirigido por hackers. La mayoría de la gente piensa en un hacker
-como alguien que irrumpe en un sistema informático. Pero nosotros vemos esto
-como una filosofía. Aquí, los hackers asumen que siempre hay una forma mejor
-y más eficiente de resolver problemas “. facebook.com/careers (2012)</p>
-<a class="reference internal image-reference" href="../_images/TWP45_002.jpeg"><img alt="" class="align-center" src="../_images/TWP45_002.jpeg" style="width: 17.638cm; height: 11.747cm;" /></a>
-</div>
-<div class="section" id="obtener-foto-de-perfil-de-facebook">
-<h2>Obtener foto de perfil de Facebook<a class="headerlink" href="#obtener-foto-de-perfil-de-facebook" title="Permalink to this headline">¶</a></h2>
-<p>Para este ejercicio utilizaremos un intérprete de Python llamado Brython.
-Éste incluye un módulo llamado browser que, a diferencia de los ejercicios
-anteriores, nos permitirá mostrar una página con elementos HTML
-(botones, cajas de texto, títulos, etc.), en lugar de solo mostrar impresiones
-en consola.
-En el siguiente enlace puedes encontrar una guía de todos los elementos HTML
-que Brython soporta: <a class="reference external" href="https://brython.info/static_doc/en/html.html">https://brython.info/static_doc/en/html.html</a></p>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_1 data-question_label="1">
-<div id=ac_l45_1_question class="ac_question col-md-12">
-<p>Este ejercicio obtiene la foto de perfil según el nombre de usuario de un perfil público de Facebook.
-Pruébalo por tu propia cuenta!</p>
-
-</div>
-<textarea data-lang="python3" id="ac_l45_1_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static
-     data-python3_interpreter='brython' style="visibility: hidden;">
-from browser import document, html
-
-# Se crean dos secciones de divisiones con el elemento DIV.
-# Y se separan por un salto de linea con el elemento BR.
-document <= html.DIV(id="div_cajas_texto")
-document <= html.BR()
-document <= html.DIV(id='div_imagen')
-
-# El elemento H2 crea un título, INPUT crea la caja de texto y BUTTON crea un botón.
-# Todos estos se ponen dentro de la división con id="div_cajas_texto"
-document['div_cajas_texto'] <= html.H2("Ingrese un usuario de Facebook público")
-document['div_cajas_texto'] <= html.INPUT(id="input_usuario", placeholder="ArianaGrande")
-document['div_cajas_texto'] <= html.BUTTON("Mostrar foto",id="boton_mostrar")
-
-# Se crea la función que se le asignará al botón de mostrar foto.
-def obtener_foto(evento):
-    # Se toma el texto que se escribe adentro de la caja con id="input_usuario" con .value
-    nombre_usuario = document["input_usuario"].value
-    # Se concatena el nombre de usuario con el enlace de la API de Facebook
-    link = 'https://graph.facebook.com/' + nombre_usuario + '/picture?type=large'
-    # Se agrega una imagen con fuente del link construido anteriormente mediante src
-    # dentro de la división de id='div_imagen'
-    document['div_imagen'] <= html.IMG(src=link, id="img_obtenida")
-
-# Por último se le ordena al botón de id="boton_mostrar" que ejecute la función obtener_foto.
-document["boton_mostrar"].bind("click", obtener_foto)
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="obtener-datos-de-reddit">
-<h2>Obtener datos de Reddit<a class="headerlink" href="#obtener-datos-de-reddit" title="Permalink to this headline">¶</a></h2>
-<p>En este ejercicio vamos a acceder a Reddit para obetener datos como los de la siguiente imagen.</p>
-<a class="reference internal image-reference" href="../_images/TWP45_050.png"><img alt="" class="align-center" src="../_images/TWP45_050.png" style="width: 23.344cm; height: 9.39cm;" /></a>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_2 data-question_label="2">
-<div id=ac_l45_2_question class="ac_question col-md-12">
-
-</div>
-<textarea data-lang="python" id="ac_l45_2_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static
-      style="visibility: hidden;">
-import urllib.request
-import json
-
-# La url de Reddit a la que accederemos
-url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
-resp = urllib.request.urlopen(url).read()
-
-# La respuesta se da en formato json, se debe transformar a
-# un diccionario de Python con json.loads
-texto = json.loads(resp)
-
-# Puede ver los datos que se recibieron si quita el comentario de abajo
-# print(texto)
-
-# Buscamos e imprimimos los datos que queremos
-for item in texto["data"]["children"]:
-    doc = item["data"]
-    print(doc["title"])
-    print("#comments: %d" % doc["num_comments"])
-    print(doc["url"])
-    print()
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="probando-la-api-de-tastedive">
-<h2>Probando la API de TasteDive<a class="headerlink" href="#probando-la-api-de-tastedive" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="probando-la-api-de-tastedive">
+<h1><span class="section-number">3. </span>Probando la API de TasteDive<a class="headerlink" href="#probando-la-api-de-tastedive" title="Permalink to this headline">¶</a></h1>
 <p>TasteDive es una herramienta que:</p>
 <blockquote>
 <div><p>le ayuda a descubrir nueva música, películas, programas de televisión, libros, autores, juegos,
@@ -426,15 +292,15 @@ elección.
 La documentación de la API de <a class="reference external" href="https://tastedive.com/read/api">TasteDive</a>.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_3 data-question_label="3">
-<div id=ac_l45_3_question class="ac_question col-md-12">
+<div data-component="activecode" id=ac_l45_3a data-question_label="3.1">
+<div id=ac_l45_3a_question class="ac_question col-md-12">
 <p>En este caso, utilizaremos la librería <code class="docutils literal notranslate"><span class="pre">requests</span></code> para hacer la solicitud a la API. La url base
 es <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar&quot;</span></code>. A esta url se le va a pasar un parámetro <code class="docutils literal notranslate"><span class="pre">q</span></code> con el
 valor de la artista Ariana Grande. Al final la url se va a ver de la siguiente forma: <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar?q=ariana+grande&quot;</span></code>.
 Note que después de la url base se escribe un <code class="docutils literal notranslate"><span class="pre">?</span></code> para indicar que siguen los parámetros.</p>
 
 </div>
-<textarea data-lang="python" id="ac_l45_3_editor" 
+<textarea data-lang="python" id="ac_l45_3a_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -467,14 +333,14 @@ se transforma a un diccionario de Python. Sin embargo, no es del todo legible. E
 <code class="docutils literal notranslate"><span class="pre">json.dumps</span></code>.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_4 data-question_label="4">
-<div id=ac_l45_4_question class="ac_question col-md-12">
+<div data-component="activecode" id=ac_l45_3b data-question_label="3.2">
+<div id=ac_l45_3b_question class="ac_question col-md-12">
 <p>Ahora vamos a solicitar información de la banda Coldplay. Esta vez vamos a imprimir los datos de forma
 que sean legibles. Esto lo hacemos con el argumento <code class="docutils literal notranslate"><span class="pre">indent</span></code> de la función <code class="docutils literal notranslate"><span class="pre">dumps</span></code> de <code class="docutils literal notranslate"><span class="pre">json</span></code>.
 Vamos a usar <code class="docutils literal notranslate"><span class="pre">urllib</span></code> para hacer la solicitud.</p>
 
 </div>
-<textarea data-lang="python3" id="ac_l45_4_editor" 
+<textarea data-lang="python3" id="ac_l45_3b_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -506,8 +372,8 @@ print(len(datos["Similar"]["Results"]))
 <p>El siguiente ejercicio viene con calificación automática.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_5 data-question_label="5">
-<div id=ac_l45_5_question class="ac_question col-md-12">
+<div data-component="activecode" id=ac_l45_3c data-question_label="3.3">
+<div id=ac_l45_3c_question class="ac_question col-md-12">
 <p>Ahora va a preguntar a TasteDive por la película Coco. Entonces el diccionario <code class="docutils literal notranslate"><span class="pre">parametros</span></code> debe tener el
 valor <code class="docutils literal notranslate"><span class="pre">&quot;Coco&quot;</span></code> asignado a la llave <code class="docutils literal notranslate"><span class="pre">&quot;q&quot;</span></code>. Además, esta vez solo queremos 5 resultados en vez de 20. Para
 esto existe un parámetro llamado <code class="docutils literal notranslate"><span class="pre">&quot;limit&quot;</span></code>, que puede ser asignado al número de resultados que se necesiten.
@@ -527,7 +393,7 @@ películas relacionadas a Coco. Ese número lo va a guardar en la variable <code
 llave que guarda el texto. Esta llave se encuentra en el mismo diccionario que el nombre de las películas.</p>
 
 </div>
-<textarea data-lang="python" id="ac_l45_5_editor" 
+<textarea data-lang="python" id="ac_l45_3c_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -587,151 +453,56 @@ myTests().main()
 </div>
 </div>
 </div>
-<div class="section" id="probando-la-api-de-university-domains">
-<h2>Probando la API de University Domains<a class="headerlink" href="#probando-la-api-de-university-domains" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://github.com/Hipo/university-domains-list">University Domains and Names Data List &amp; API</a> es una API que
-contiene  dominios, nombres y países de la mayoría de las universidades del mundo.</p>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_6 data-question_label="6">
-<div id=ac_l45_6_question class="ac_question col-md-12">
-<p>Veamos un ejemplo de cómo usar esta API. Le vamos a pedir las universidades de Turquía que tengan
-en su nombre la palabra <strong>“middle”</strong>.</p>
-
-</div>
-<textarea data-lang="python3" id="ac_l45_6_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static
-     data-python3_interpreter='brython' style="visibility: hidden;">
-import urllib.request
-import urllib.parse
-import json
-
-api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search?"
-parametros = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
-
-solicitud = urllib.request.urlopen(api_url + parametros)
-datos_json = json.loads(solicitud.read())
-
-print(json.dumps(datos_json, indent=4))
-</textarea>
-</div>
-</div>
-
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_7 data-question_label="7">
-<div id=ac_l45_7_question class="ac_question col-md-12">
-<p>Busquemos todas las universidades en Colombia.</p>
-
-</div>
-<textarea data-lang="python" id="ac_l45_7_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static
-      style="visibility: hidden;">
-import requests
-import json
-
-api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search"
-parametros = {"country": "colombia"}
-
-solicitud = requests.get(api_url, params=parametros)
-solicitud = json.loads(solicitud.text)
-
-universidades = []
-
-for universidad in solicitud:
-    universidades.append(universidad["name"])
-
-    print(universidad["name"])
-
-print("----------------------------------------------")
-print(f"Hay {len(universidades)} universidades registradas")
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="aprendizajes">
-<h2>Aprendizajes<a class="headerlink" href="#aprendizajes" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Accedemos a <strong>APIs</strong> para buscar información que nos es útil.</p></li>
-<li><p>Podemos solicitar la información con dos librerías de Python: <code class="docutils literal notranslate"><span class="pre">urllib</span></code> o <code class="docutils literal notranslate"><span class="pre">requests</span></code>.</p></li>
-<li><p>La librería <code class="docutils literal notranslate"><span class="pre">json</span></code> de Pyhton nos ayuda a transformar la respuesta de la API en un objeto
-de Python, ya sea diccionario o lista, con el método <code class="docutils literal notranslate"><span class="pre">loads</span></code>, mientras que el método <code class="docutils literal notranslate"><span class="pre">dumps</span></code>
-hace lo contrario; transforma un objeto de Python en una cadena con formato JSON.</p></li>
-<li><p>El método <code class="docutils literal notranslate"><span class="pre">dumps</span></code> de <code class="docutils literal notranslate"><span class="pre">json</span></code> es útil si queremos visualizar la respuesta de una API de manera
-legible. Esto se logra con el argumento <code class="docutils literal notranslate"><span class="pre">indent</span></code>.</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<script>
-    function lecture16_disqus(source) {
-        if (window.DISQUS) {
-
-            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
-
-            //if Disqus exists, call it's reset method with new parameters
-            DISQUS.reset({
-                reload: true,
-                config: function () {
-                    this.page.identifier = 'lecture16_' + eBookConfig.course;
-                    this.page.url = 'https://lecture16_'+eBookConfig.course+'.interactivepython.com/#!';
-                }
-            });
-
-        } else {
-            //insert a wrapper in HTML after the relevant "show comments" link
-            $('<div id="disqus_thread"></div>').insertAfter(source);
-
-            // set Disqus required vars
-            disqus_shortname = 'pyzombis';
-            disqus_identifier = 'lecture16_' + eBookConfig.course;
-            disqus_url = 'http://lecture16_'+eBookConfig.course+'.interactivepython.com/#!';
-
-            //append the Disqus embed script to HTML
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-            $('head').append(dsq);
-
-        }
-    }
-</script>
-
-<a href="#disqus_thread" class="disqus_thread_link" data-disqus-identifier="lecture16" onclick="lecture16_disqus(this);">Show Comments</a>
-<script>
-  window.addEventListener('load', (event) => {
-    $("a[data-disqus-identifier='lecture16']").attr('data-disqus-identifier', 'lecture16_' + eBookConfig.course);
-  });
-</script>
-</div>
-</div>
 
 
-  <div id="scprogresscontainer">
-    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
+  <div id=scprogresscontainer>
+    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
   </div>
   
-    <ul role="navigation" class="nextprev-list nextprev-list-bottom" aria-label="Change page">
-<li id="relations-prev-bottom" class="relations-prev navLink" title='Previous Section - 2. Conceptos básicos de SQL' data-toggle="tooltip">
-  <a href="TWP42/TWP42_2.html" aria-label="Previous - 2. Conceptos básicos de SQL">
-    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
-  </a>
-</li>
+      
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - 2. Obtener datos de Reddit' data-toggle="tooltip">
+    <a href="TWP45_2.html" aria-label="2. Obtener datos de Reddit">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
 
-  <li id="relations-next-bottom" class="relations-next navLink" title='Next Section - Módulos' data-toggle="tooltip" >
-    <a href="TWP47/toctree.html" aria-label="Next - Módulos">
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - 4. Probando la API de University Domains' data-toggle="tooltip" >
+    <a href="TWP45_4.html" aria-label="4. Probando la API de University Domains">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
     </a>
   </li>
 </ul>
 
 <script>
-window.addEventListener('load', (event) => {
-  $('#relations-prev-bottom').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
-  $('#relations-next-bottom').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
 });
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
 </script>
   
 </div>
@@ -748,7 +519,7 @@ window.addEventListener('load', (event) => {
     </p>
     <p>
         &copy; Copyright 2021 Python Argentina et al..
-      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.9.0.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
     </p>
   </div>
 </footer>
@@ -757,7 +528,7 @@ window.addEventListener('load', (event) => {
 
 
 <script> 
-  window.addEventListener('load', (event) => {
+  document.addEventListener('load', (event) => {
     runestoneComponents.getSwitch(); 
   });
 </script>
