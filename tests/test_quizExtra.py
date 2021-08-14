@@ -3,6 +3,7 @@ def test_quizExtra_4(page):
     page.goto("quiz/QuizExtras.html")
 
     # Do the exercise
+    page.click("text=Ejercicio 4")
     page.click("text=def suma_granos(n):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
