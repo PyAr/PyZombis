@@ -1,5 +1,5 @@
 =========
-Quiz - 14
+Quiz - 13
 =========
 
 .. |br| raw:: html
@@ -7,11 +7,11 @@ Quiz - 14
    <br />
     
 
-.. tabbed:: quiz14
+.. tabbed:: quiz13
 
     .. tab:: Ejercicio 1
 
-        ..  activecode:: q14_1
+        ..  activecode:: q13_1
             :nocodelens:
 
             Desarrolle la función ``remover_iguales`` que recibe una lista ``numeros`` de enteros. La función debe devolver una lista sin los elementos repetidos y ordenados de manera ascendente. |br| |br|
@@ -46,7 +46,7 @@ Quiz - 14
 
     .. tab:: Ejercicio 2
 
-        ..  activecode:: q14_2
+        ..  activecode:: q13_2
             :nocodelens:
 
             Desarrolle la función ``encriptar`` que recibe una cadena ``frase``. La función debe devolver una nueva cadena encriptada, siguiendo las siguientes reglas: |br|
