@@ -13,6 +13,7 @@ for, random y funciones
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP20_1.rst
    TWP20_2.rst

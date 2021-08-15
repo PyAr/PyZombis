@@ -13,6 +13,7 @@ Archivos y diccionarios
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP23_1.rst
    TWP23_2.rst

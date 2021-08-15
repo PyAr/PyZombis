@@ -30,8 +30,3 @@ JSON
     texto = urllib.request.urlopen(url).read()
     data = json.loads(texto)
     print(data["value"]["joke"])
-
-
-.. disqus::
-   :shortname: pyzombis
-   :identifier: lecture11
