@@ -1,17 +1,17 @@
-=========
-Quiz - 10
-=========
+========
+Quiz - 9
+========
 
 .. |br| raw:: html
 
    <br />
 
 
-.. tabbed:: quiz10
+.. tabbed:: quiz9
 
     .. tab:: Ejercicio 1
 
-        ..  activecode:: q10_1
+        ..  activecode:: q9_1
             :nocodelens:
 
             Desarrolle la función ``cerca_de_10`` que recibe un entero ``n`` y devuelve ``True`` cuando ``n`` sea múltiplo de 10, o cuando ``n`` esté a una o dos unidades de serlo. En caso contrario devuelva ``False``. |br| |br|
@@ -52,7 +52,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 2
 
-        .. activecode:: q10_2
+        .. activecode:: q9_2
             :nocodelens:
 
 
@@ -88,7 +88,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 3
 
-        .. activecode:: q10_3
+        .. activecode:: q9_3
             :nocodelens:
 
 
@@ -127,7 +127,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 4
 
-        .. activecode:: q10_4
+        .. activecode:: q9_4
             :nocodelens:
 
             Desarrolle la función ``caracteres_dobles`` que recibe una cadena ``s`` y debe devolver los caracteres de la cadena original duplicados. |br| |br|
@@ -162,7 +162,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 5
 
-        .. activecode:: q10_5
+        .. activecode:: q9_5
             :nocodelens:
 
             Desarrolle la función, ``contar_saludo`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``"hola"`` en ``s``. |br| |br|
@@ -197,7 +197,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 6
 
-        .. activecode:: q10_6
+        .. activecode:: q9_6
             :nocodelens:
 
             Desarrolle la función ``gato_perro`` que recibe como parámetro una cadena ``s`` y devuelve ``True`` si en la cadena ``s`` aparece el mismo número de veces la cadena ``"gato"`` y la cadena ``"perro"`` o devuelve ``False`` en caso contrario. |br| |br|
@@ -236,7 +236,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 7
 
-        .. activecode:: q10_7
+        .. activecode:: q9_7
             :nocodelens:
 
             Desarrolle la función ``contar_code`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``"code"`` en ``s`` pero con la condición de que la letra ``'d'`` puede ser intercambiada por cualquier otra. Así, las cadenas ``"coze"`` y ``"coxe"`` deben ser contadas igualmente. |br| |br|
@@ -276,7 +276,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 8
 
-        .. activecode:: q10_8
+        .. activecode:: q9_8
             :nocodelens:
 
             Sabiendo que la función ``lower()`` convierte los carácteres de una cadena en minúsculas. Desarrolle una función llamada ``finales_iguales`` que recibe dos cadenas ``a`` y ``b`` como parámetros. La función devolverá ``True`` si al final de la cadena ``a`` se encuentra la cadena ``b`` o si al final de la cadena ``b`` se encuentra la cadena ``a``. |br| |br|
@@ -316,7 +316,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 9
 
-        .. activecode:: q10_9
+        .. activecode:: q9_9
             :nocodelens:
 
             Desarrolle la función ``contar_pares`` que recibe una lista ``numeros`` de números enteros y devuelve la cantidad números pares que se encuentran en la lista. |br| |br|
@@ -350,7 +350,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 10
 
-        .. activecode:: q10_10
+        .. activecode:: q9_10
             :nocodelens:
 
             Desarrolle la función ``suma_con_mas_suerte`` que recibe una lista ``numeros`` de números enteros y devuelve la suma de los números de la lista con la condición de que si uno de los números es el **13**, éste no cuenta en la suma así como todos los números que se encuentren a su derecha. |br| |br|
@@ -393,7 +393,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 11
 
-        .. activecode:: q10_11
+        .. activecode:: q9_11
             :nocodelens:
 
             Desarrolle la función ``tiene_2`` que recibe como parámetro una lista ``numeros`` de números enteros y devuelve ``True`` si en la lista aparecen dos números iguales consecutivos y ``False`` en caso contrario. |br| |br|
@@ -433,7 +433,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 12
 
-        .. activecode:: q10_12
+        .. activecode:: q9_12
             :nocodelens:
 
             Desarrolle la función ``suma_en_lista`` que recibe dos parámetros, un entero ``n`` y un lista ``numeros`` de números. La función debe devolver ``True`` si existen dos elementos distintos de la lista que su suma da como resultado ``n`` y devolver ``False`` en caso contrario. |br| |br|
@@ -471,7 +471,7 @@ Quiz - 10
 
     .. tab:: Ejercicio 13
 
-        .. activecode:: q10_13
+        .. activecode:: q9_13
             :nocodelens:
 
             En una construcción se desea construir una fila de ladrillos. Se tienen ladrillos pequeños y ladrillos grandes. Los ladrillos pequeños son de 1 unidad de longitud mientras que los ladrillos grandes son de 5 unidades de longitud. Desarrolle la función ``construir_fila`` que recibe tres parámetros, ``n_lad_peq``, ``n_lad_grand`` y ``longitud_fila``. Estos parámetros son números enteros que representan la cantidad de ladrillos pequeños, cantidad de ladrillos grandes y la longitud de la fila que se quiere construir, respectivamente. La función debe devolver ``True`` si es posible armar la fila, o ``False`` en caso contrario. |br| |br|
