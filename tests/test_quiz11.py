@@ -1,6 +1,6 @@
-def test_quiz12_1(page):
-    # Go to http://localhost:8000/quiz/Quiz12.html
-    page.goto("quiz/Quiz12.html")
+def test_quiz11_1(page):
+    # Go to http://localhost:8000/quiz/Quiz11.html
+    page.goto("quiz/Quiz11.html")
     page.wait_for_load_state()
 
     # Do the exercise
@@ -23,7 +23,7 @@ def test_quiz12_1(page):
     page.keyboard.type("return s")
 
     # Run the exercise and check it passed all unit tests
-    page.click("#q12_1 >> *css=button >> text=Run")
+    page.click("#q11_1 >> *css=button >> text=Run")
 
-    page.hover("#q12_1 >> text=You passed:")
-    assert page.inner_text("#q12_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+    page.hover("#q11_1 >> text=You passed:")
+    assert page.inner_text("#q11_1 >> text=You passed:") == "You passed: 100.0% of the tests"
