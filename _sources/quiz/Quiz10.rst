@@ -1,5 +1,5 @@
 =========
-Quiz - 11
+Quiz - 10
 =========
 
 .. |br| raw:: html
@@ -7,11 +7,11 @@ Quiz - 11
     <br />
 
 
-.. tabbed:: quiz11
+.. tabbed:: quiz10
 
     .. tab:: Ejercicio 1
 
-        .. activecode:: q11_1
+        .. activecode:: q10_1
             :nocodelens:
 
             Desarrolle la función ``cuantas_donas`` que toma a ``n``, un número entero 
@@ -52,7 +52,7 @@ Quiz - 11
 
     .. tab:: Ejercicio 2
 
-        .. activecode:: q11_2
+        .. activecode:: q10_2
             :nocodelens:
 
             Desarrolla la función ``cadena_de_extremos`` que, dada una cadena ``s``, 
@@ -86,7 +86,7 @@ Quiz - 11
 
     .. tab:: Ejercicio 3
 
-        .. activecode:: q11_3
+        .. activecode:: q10_3
             :nocodelens:
 
             Desarrolle la función ``remplazar_primer_caracter`` que, dada una cadena ``s``, 
@@ -120,7 +120,7 @@ Quiz - 11
 
     .. tab:: Ejercicio 4
 
-        .. activecode:: q11_4
+        .. activecode:: q10_4
             :nocodelens:
 
             Desarrolle la función ``combinar_dos_cadenas`` que tome dos cadenas como 
@@ -163,7 +163,7 @@ Quiz - 11
     .. tab:: Ejercicio 5
 
 
-        .. activecode:: q11_5
+        .. activecode:: q10_5
             :nocodelens:
 
             Desarrolle la función ``es_palindromo`` que toma una cadena ``s`` como 
@@ -197,7 +197,7 @@ Quiz - 11
 
     .. tab:: Ejercicio 6
 
-        .. activecode:: q11_6
+        .. activecode:: q10_6
             :nocodelens:
 
             Desarrolle la función ``contar_ocurrencias`` que toma dos parámetros: 
