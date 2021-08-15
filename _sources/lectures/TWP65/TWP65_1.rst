@@ -1,0 +1,51 @@
+Desarrollo web
+==============
+
+Solicitudes y respuestas
+------------------------
+
+
+.. image:: ../img/TWP65_001.jpg
+   :height: 15.139cm
+   :width: 16.053cm
+   :align: center
+   :alt: 
+
+
+.. image:: ../img/TWP65_002.jpg
+   :height: 16.017cm
+   :width: 15.601cm
+   :align: center
+   :alt: 
+
+
+
++ "Python: el único lenguaje con más marcos web que palabras clave"
++ Frameworks: Plone, Django, Web2py, Pyramid
++ Micro Frameworks: CherryPy, Botella, Frasco
++ WSGI (interfaz de puerta de enlace del servidor web)
+
+  + Patrones de acceso y comunicación entre servidores web y aplicaciones Python
+  + No es J2EE ;-)
+
+
+Web2py
+------
+
++ InfoWorld: best full-stack Python framework
++ Bossie: Best Open Source Development Software
++ MVC:
+
+  + Modelo: datos
+  + Controladores: reglas de negocio
+  + Vistas: presentación
+
++ Autocontido == full-stack framework
++ Seguro
++ DAL (Data Access Layer)
++ Deploy rápido e distribuição fácil
++ Princípios Python
+
+  + DRY – Don’t Repeat Yourself
+  + Debe haber solo una forma obvia de hacer algo
+  + Explícito es mejor que implícito (no sigue)
