@@ -1,0 +1,38 @@
+Los datos de Python son inteligentes
+====================================
+
++ Los lenguajes de programación proporcionan funcionalidades incorporadas en los datos para ayudarte.
++ Los datos de Python son inteligentes: pueden hacer cosas.
+
+.. codelens:: cl_l33_5a
+         
+    texto = "anita lava la tina"
+    print(texto.upper())
+    print(texto.split())
+
+
+Método ``find``
+---------------
+
++ Método ``find`` para strings
+
+.. codelens:: cl_l33_5b
+         
+    texto = "Palmeras"
+    print(texto.find("P"))
+    print(texto.find("lmer"))
+    print(texto.find("Pa"))
+
+.. activecode:: ac_l33_5
+    :nocodelens:
+    :stdin:
+
+    from urllib.request import urlopen
+
+    URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
+    pagina = urlopen(URL_PRECIOS_LOYALTY)
+    texto = pagina.read()
+    ubicacion = texto.find(">$")
+    inicio = ubicacion + 2
+    fin = inicio + 4
+    print(texto[inicio:fin])

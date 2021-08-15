@@ -1,0 +1,30 @@
+Algo salió mal
+==============
+
+.. image:: ../img/TWP33_032.jpg
+    :height: 15.268cm
+    :width: 15.201cm
+    :align: center
+    :alt:
+
+Acusación DDoS
+--------------
+
++ DDoS – Distributed Denial of Service
++ Ataque de denegación de servicio.
+
+.. image:: ../img/TWP33_033.jpg
+    :height: 13.596cm
+    :width: 15.201cm
+    :align: center
+    :alt:
+
+
+Recibimos un mensaje
+--------------------
+
+.. image:: ../img/TWP33_034.jpg
+    :height: 13.191cm
+    :width: 22.685cm
+    :align: center
+    :alt:
