@@ -1,5 +1,5 @@
 =========
-Quiz - 13
+Quiz - 12
 =========
 
 .. |br| raw:: html
@@ -7,11 +7,11 @@ Quiz - 13
     <br />
 
 
-.. tabbed:: quiz13
+.. tabbed:: quiz12
 
     .. tab:: Ejercicio 1
 
-        .. activecode:: q13_1
+        .. activecode:: q12_1
             :nocodelens:
 
             Desarrolle la función ``terminan_igual`` que, dada una lista de cadenas ``palabras``, devuelva el número de cadenas
@@ -40,7 +40,7 @@ Quiz - 13
 
     .. tab:: Ejercicio 2
 
-        .. activecode:: q13_2
+        .. activecode:: q12_2
             :nocodelens:
 
             Desarrolle la función ``x_antes`` que, dada una lista de cadenas ``palabras``, devuelva 
@@ -84,7 +84,7 @@ Quiz - 13
 
     .. tab:: Ejercicio 3
 
-        .. activecode:: q13_3
+        .. activecode:: q12_3
             :nocodelens:
 
             Desarrolle la función ``ordenar_tuplas`` que, dada una lista de tuplas no vacías, devuelve otra lista 
