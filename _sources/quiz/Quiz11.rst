@@ -1,16 +1,16 @@
 =========
-Quiz - 12
+Quiz - 11
 =========
 
 ..  |br| raw:: html
 
     <br />
 
-.. tabbed:: quiz12
+.. tabbed:: quiz11
 
     .. tab:: Ejercicio 1
 
-        ..  activecode:: q12_1
+        ..  activecode:: q11_1
             :nocodelens:
 
             Desarrolle la función ``verbo`` que recibe una cadena ``s`` como parámetro. Si la longitud de la cadena es al menos 3, debe devolver la cadena original concatenando ``"ing"`` al final. Si la cadena ``s`` ya termina en ``"ing"``, concatene la cadena ``"ly"``. Si la longitud de la cadena es menor que 3, devuelve la cadena original. |br| |br|
@@ -45,7 +45,7 @@ Quiz - 12
 
     .. tab:: Ejercicio 2
 
-        ..  activecode:: q12_2
+        ..  activecode:: q11_2
             :nocodelens:
 
             Desarrolle la función ``no_es_malo`` que recibe una cadena ``s`` como parámetro. La función debe buscar la primera aparición de la cadena ``"no es"`` y la última aparición de la cadena ``"malo"`` o la cadena ``"mala"``, si alguna de ellas aparece después de la primera, reemplace ``"no es" ... "malo"`` o ``"no es" ... "mala"`` por las cadenas ``"es bueno"`` o ``"es buena"`` respectivamente, luego devuelva el resultado. |br| |br|
@@ -105,7 +105,7 @@ Quiz - 12
 
     .. tab:: Ejercicio 3
 
-        ..  activecode:: q12_3
+        ..  activecode:: q11_3
             :nocodelens:
 
             Desarrolle la función ``inicio_final`` que recibe dos cadenas ``a`` y ``b``. Las cadenas tienen que ser dividas en dos, si alguna de las cadenas tiene un número impar de caracteres, la primera mitad será la subcadena más larga (por ejemplo ``perro`` se dividirá entre: ``per`` y ``ro``). Dada las dos cadenas, devuelva una nueva cadena formada de la siguiente manera ``a_inicio + b_inicio + a_final + b_final``. |br| |br|
@@ -146,7 +146,7 @@ Quiz - 12
 
     .. tab:: Ejercicio 4
 
-        ..  activecode:: q12_4
+        ..  activecode:: q11_4
             :nocodelens:
 
             Desarrolle la función ``cuantos_ceros`` que dado un entero ``n`` positivo, devuelva la cantidad de ceros al final del entero ``n``. |br| |br|
@@ -183,7 +183,7 @@ Quiz - 12
 
     .. tab:: Ejercicio 5
 
-        ..  activecode:: q12_5
+        ..  activecode:: q11_5
             :nocodelens:
 
             Desarrolle la función ``contar_2`` que recibe un entero ``n`` positivo mayor que 0. La función debe devolver la cantidad de veces que el dígito 2 aparece en el intervalo ``[0, n-1]``. |br| |br|
@@ -216,7 +216,7 @@ Quiz - 12
 
     .. tab:: Ejercicio 6
 
-        ..  activecode:: q12_6
+        ..  activecode:: q11_6
             :nocodelens:
 
             Desarrolle la función ``inicio_potencia`` que recibe un entero ``n`` positivo mayor que 0. La función debe devolver la primera potencia de 2 que comienza con ``n``. |br| |br|
