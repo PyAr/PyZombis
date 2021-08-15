@@ -1,5 +1,5 @@
 =========
-Quiz - 9
+Quiz - 8
 =========
 
 .. |br| raw:: html
@@ -7,11 +7,11 @@ Quiz - 9
    <br />
 
 
-.. tabbed:: quiz9
+.. tabbed:: quiz8
 
    .. tab:: Ejercicio 1
 
-      .. activecode:: q9_1
+      .. activecode:: q8_1
          :nocodelens:
       
          Defina una función ``primer_o_ultimo_6`` que compruebe si 6 es el primer 
@@ -46,7 +46,7 @@ Quiz - 9
 
    .. tab:: Ejercicio 2
 
-      .. activecode:: q9_2
+      .. activecode:: q8_2
          :nocodelens:
       
          Defina una función ``extremos_iguales`` que tome una lista ``numeros`` como parámetro, 
@@ -84,7 +84,7 @@ Quiz - 9
 
    .. tab:: Ejercicio 3
 
-      .. activecode:: q9_3
+      .. activecode:: q8_3
          :nocodelens:
       
          Defina una función ``extremo_comun`` que tome dos listas ``a`` y ``b`` 
@@ -135,7 +135,7 @@ Quiz - 9
 
    .. tab:: Ejercicio 4
 
-      .. activecode:: q9_4
+      .. activecode:: q8_4
          :nocodelens:
       
          Defina una función ``mayor_extremo`` que tome la lista ``numeros`` como parámetro, 
@@ -203,7 +203,7 @@ Quiz - 9
 
    .. tab:: Ejercicio 5
 
-      .. activecode:: q9_5
+      .. activecode:: q8_5
          :nocodelens:
       
          Defina una función ``sumar_primeros_dos`` que tome la lista ``numeros`` 
@@ -246,7 +246,7 @@ Quiz - 9
 
    .. tab:: Ejercicio 6
 
-      .. activecode:: q9_6
+      .. activecode:: q8_6
          :nocodelens:
       
          Defina una función ``al_medio`` que tome dos listas ``a`` y ``b`` de 
@@ -306,7 +306,7 @@ Quiz - 9
 
    .. tab:: Ejercicio 7
 
-      .. activecode:: q9_7
+      .. activecode:: q8_7
          :nocodelens:
       
          Define una función ``cita_de_lujo``. La función tomará dos parámetros 
@@ -357,7 +357,7 @@ Quiz - 9
 
    .. tab:: Ejercicio 8
 
-      .. activecode:: q9_8
+      .. activecode:: q8_8
          :nocodelens:
       
          El equipo de fútbol *ardillas* normalmente juega cuando la temperatura 
@@ -402,7 +402,7 @@ Quiz - 9
 
    .. tab:: Ejercicio 9
 
-      .. activecode:: q9_9
+      .. activecode:: q8_9
          :nocodelens:
       
          Simulemos un velocímetro que te aplica una multa en caso de exceder la velociad máxima:
@@ -460,7 +460,7 @@ Quiz - 9
 
    .. tab:: Ejercicio 10
 
-      .. activecode:: q9_10
+      .. activecode:: q8_10
          :nocodelens:
        
          Defina una función ``poner_alarma`` que tome dos parámetros: El primer parámetro 
