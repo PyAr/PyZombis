@@ -47,7 +47,7 @@ Contenidos:
    lectures/TWP42/toctree
    lectures/TWP45/toctree
    lectures/TWP47/toctree
-   lectures/TWP50
+   lectures/TWP50/toctree
    lectures/TWP52
    lectures/TWP54/toctree
    lectures/TWP56/toctree
