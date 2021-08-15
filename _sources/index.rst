@@ -31,7 +31,7 @@ Contenidos:
    :maxdepth: 1
 
    lectures/TWP05/toctree
-   lectures/TWP10/toctree
+   lectures/TWP10.rst
    lectures/TWP15/toctree
    lectures/TWP17/toctree
    lectures/TWP18/toctree
