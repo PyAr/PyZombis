@@ -53,7 +53,7 @@ Contenidos:
    lectures/TWP56/toctree
    lectures/TWP58/toctree
    lectures/TWP60/toctree
-   lectures/TWP65
+   lectures/TWP65/toctree
    quiz/Quiz1.rst
    quiz/Quiz2.rst
    quiz/Quiz3.rst
