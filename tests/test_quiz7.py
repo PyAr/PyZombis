@@ -5,18 +5,15 @@ def test_quiz7_1_good(page):
 
     page.click("text=def multi_cadena(s, n):")
 
-    page.press("text=def multi_cadena(s, n):", "ArrowDown")
-    page.press("text=def multi_cadena(s, n):", "Tab")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
 
-    page.type("text=def multi_cadena(s, n):", "return s * n")
+    page.keyboard.type("return s * n")
 
     page.click("#q7_1 >> *css=button >> text=Run")
 
     page.hover("#q7_1 >> text=You passed:")
-    assert (
-        page.inner_text("#q7_1 >> text=You passed:")
-        == "You passed: 100.0% of the tests"
-    )
+    assert page.inner_text("#q7_1 >> text=You passed:") == "You passed: 100.0% of the tests"
 
 
 def test_quiz7_1_bad(page):
@@ -26,14 +23,12 @@ def test_quiz7_1_bad(page):
 
     page.click("text=def multi_cadena(s, n):")
 
-    page.press("text=def multi_cadena(s, n):", "ArrowDown")
-    page.press("text=def multi_cadena(s, n):", "Tab")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
 
-    page.type("text=def multi_cadena(s, n):", "return 5")
+    page.keyboard.type("return 5")
 
     page.click("#q7_1 >> *css=button >> text=Run")
 
     page.hover("#q7_1 >> text=You passed:")
-    assert (
-        page.inner_text("#q7_1 >> text=You passed:") == "You passed: 0.0% of the tests"
-    )
+    assert page.inner_text("#q7_1 >> text=You passed:") == "You passed: 0.0% of the tests"

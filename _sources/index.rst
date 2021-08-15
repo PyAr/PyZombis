@@ -45,14 +45,14 @@ Contenidos:
    lectures/TWP38/toctree
    lectures/TWP40/toctree
    lectures/TWP42/toctree
-   lectures/TWP45
+   lectures/TWP45/toctree
    lectures/TWP47/toctree
    lectures/TWP50
    lectures/TWP52
    lectures/TWP54/toctree
    lectures/TWP56/toctree
-   lectures/TWP58
-   lectures/TWP60
+   lectures/TWP58/toctree
+   lectures/TWP60/toctree
    lectures/TWP65/toctree
    quiz/Quiz1.rst
    quiz/Quiz2.rst
