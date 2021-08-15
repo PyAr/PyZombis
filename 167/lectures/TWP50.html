@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interfaz gráfica &#8212; PyZombis split-TWP65@617fe51</title>
+    <title>Interfaz gráfica &#8212; PyZombis split-TWP65@3195233</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
@@ -33,7 +33,10 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="MVC" href="TWP52.html" />
     <link rel="prev" title="5. ¡Los nombres son iguales! ¿Y ahora?" href="TWP47/TWP47_5.html" />
+
+
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
 
 <script>
   eBookConfig = {};
@@ -74,24 +77,23 @@
 
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="icon-bar" aria-label="navbar toggle">toggle navbar</span>
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
       <div>
         
-          <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../_static/img/logo_small.png" alt=""></a>
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis
+          PyZombis split-TWP65@3195233
         </a>
       </div>
     </div>
-
-
 
     <div class="navbar-collapse collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" >
@@ -275,6 +277,55 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content" role="main">
+
+  
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - 5. ¡Los nombres son iguales! ¿Y ahora?' data-toggle="tooltip">
+    <a href="TWP47/TWP47_5.html" aria-label="5. ¡Los nombres son iguales! ¿Y ahora?">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
+
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - MVC' data-toggle="tooltip" >
+    <a href="TWP52.html" aria-label="MVC">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<script>
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
 <!-- Ad Serving for Runestone Campaign -->
 
 
@@ -283,12 +334,22 @@
 <h1>Interfaz gráfica<a class="headerlink" href="#interfaz-grafica" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
 <ul class="simple">
-<li><p>En la programación no es basta con hacer solamente el código.</p></li>
-<li><p>No es suficiente para trabajar, también debe ser hermoso para el usuario.</p></li>
-<li><p>La interfaz basada texto funciona, pero es muy limitada y antigua.</p></li>
-<li><p>Motivado a esto se necesita crear una interfaz gráfica de usuario, también conocida por sus iniciales del inglés GUI <em>graphical user interface</em></p></li>
-<li><p>En Python se pueden usar diferentes librerías para la creación de GUI, una de las conocidas es <code class="docutils literal notranslate"><span class="pre">tkinter</span></code></p></li>
-<li><p>Sin embargo, en esta oportunidad utilizaremos nuevamente el interprete de Brython para la creación de interfaces gráficas.</p></li>
+<li><p>En la programación no basta con hacer solamente el código.</p></li>
+<li><p>No es suficiente para trabajar, también debe ser atractivo para el usuario.</p></li>
+<li><p>Las interfaces basadas en texto funcionan, pero son limitadas y antiguas.</p></li>
+<li><p>Motivado a esto, se necesita crear interfaces gráficas de usuario, también conocida por sus iniciales del inglés GUI <em>graphical user interface</em></p></li>
+<li><dl class="simple">
+<dt>Las interfaces gráficas de usuario podemos encontrarlas en diferentes sitios:</dt><dd><ul>
+<li><p>En programas para la computadora, por ejemplo, una muy conocida es el programa Office. Estas interfaces las podemos llamar <em>interfaces de escritorio</em>.</p></li>
+<li><p>También podemos encontrar interfaces que se ven dentro del navegador, como por ejemplo la página de Facebook, estas interfaces podemos llamarlas <em>interfaces web</em>.</p></li>
+<li><p>Por último, encontramos interfaces en las aplicaciones para nuestros teléfonos inteligentes, un ejemplo es la aplicación Whatsapp, representando a las <em>interfaces móviles</em>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>En Python existen diferentes herramientas y librerías para la creación de interfaces, entre las conocidas para crear interfaces de escritorio se encuentran las librerías <code class="docutils literal notranslate"><span class="pre">tkinter</span></code> y <code class="docutils literal notranslate"><span class="pre">PyQt</span></code>.</p></li>
+<li><p>Ya que nuestro objetivo es crear interfaces dentro del navegador, utilizaremos nuevamente <code class="docutils literal notranslate"><span class="pre">brython</span></code>.</p></li>
+<li><p>Brython permite a través de su sintaxis la capacidad de crear interfaces gráficas simples.</p></li>
 <li><p>Crearemos en este ejercicio el <strong>Show de preguntas Zombis</strong>.</p></li>
 </ul>
 <div class="section" id="show-de-preguntas-zombis">
@@ -480,7 +541,7 @@ from browser import document, html
 from browser.widgets.dialog import Dialog
 
 # Creación de un dialogo con el título
-d = Dialog("Show de preguntas Zombis")
+d = Dialog("Show de preguntas Zombis", top=20, left=20)
 
 # Agrega elementos como botones y títulos
 d.panel <= html.H3("Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center"))
@@ -518,7 +579,7 @@ d.panel <= html.BUTTON("Incorrecto", id="btn_incorrecto", style=dict(marginLeft=
 from browser import document, html
 from browser.widgets.dialog import Dialog
 
-d = Dialog("Prueba capturando un evento")
+d = Dialog("Prueba capturando un evento", top=20, left=20)
 
 d.panel <= html.BUTTON("¡Apriétame!", id="btn_apretar", style=dict(margin="auto", display="block"))
 
@@ -579,7 +640,7 @@ crear_elemento("http://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/sm
 # Sonido de incorrecto
 crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/1684.ogg", "incorrecto")
 
-d = Dialog("Show de preguntas Zombis")
+d = Dialog("Show de preguntas Zombis", top=20, left=20)
 
 d.panel <= html.H4("Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center"))
 d.panel <= html.BUTTON("Correcto", id="btn_correcto")
@@ -646,7 +707,7 @@ crear_elemento("http://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/sm
 # Sonido de incorrecto
 crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/1684.ogg", "incorrecto")
 
-d = Dialog("Show de preguntas Zombis")
+d = Dialog("Show de preguntas Zombis", top=20, left=20)
 
 d.panel <= html.H4(
     "Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center")
@@ -710,11 +771,11 @@ def apretar_boton_incorrecto(ev):
 </div>
 
 
-  <div id=scprogresscontainer>
-    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-      
+    
 <ul>
   <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - 5. ¡Los nombres son iguales! ¿Y ahora?' data-toggle="tooltip">
     <a href="TWP47/TWP47_5.html" aria-label="5. ¡Los nombres son iguales! ¿Y ahora?">
@@ -783,7 +844,7 @@ document.addEventListener('load', (event) => {
 
 
 <script> 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     runestoneComponents.getSwitch(); 
   });
 </script>
