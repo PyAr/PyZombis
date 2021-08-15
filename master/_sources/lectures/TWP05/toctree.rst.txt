@@ -13,6 +13,7 @@ Variables y entrada de datos
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP05_1.rst
    TWP05_2.rst
