@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 11 &#8212; PyZombis master@3dd8761</title>
+    <title>Quiz - 11 &#8212; PyZombis master@3d5d4b3</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
@@ -26,7 +26,7 @@
     <script src="../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../_static/html4css1.css?v=4533ACD3"></script>
-    <script src="../_static/runtime.bundle.js?v=f50940efe5177b9c81e6"></script>
+    <script src="../_static/runtime.bundle.js?v=7528086b13aa510024e4"></script>
     <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../_static/runestone.bundle.js?v=2a0b78efc53bfc8dda40"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis master@3dd8761
+          PyZombis master@3d5d4b3
         </a>
       </div>
     </div>
@@ -337,13 +337,11 @@ document.addEventListener('load', (event) => {
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q11_1 data-question_label="1">
 <div id=q11_1_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">cuantas_donas</span></code> que toma a <code class="docutils literal notranslate"><span class="pre">n</span></code>, un número entero
-positivo, como parámetro, y devuelve una cadena de forma <code class="docutils literal notranslate"><span class="pre">&quot;Número</span> <span class="pre">de</span> <span class="pre">donas:</span> <span class="pre">n&quot;</span></code>,
-donde <code class="docutils literal notranslate"><span class="pre">n</span></code> es el valor que se le pasó a la función como argumento. No obstante,
-si <code class="docutils literal notranslate"><span class="pre">n</span></code> &gt;= 10, <code class="docutils literal notranslate"><span class="pre">cuantas_donas</span></code> devolverá <code class="docutils literal notranslate"><span class="pre">&quot;muchas&quot;</span></code> en vez de <code class="docutils literal notranslate"><span class="pre">n</span></code>. <br /> <br />
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">verbo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> como parámetro. Si la longitud de la cadena es al menos 3, debe devolver la cadena original concatenando <code class="docutils literal notranslate"><span class="pre">&quot;ing&quot;</span></code> al final. Si la cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> ya termina en <code class="docutils literal notranslate"><span class="pre">&quot;ing&quot;</span></code>, concatene la cadena <code class="docutils literal notranslate"><span class="pre">&quot;ly&quot;</span></code>. Si la longitud de la cadena es menor que 3, devuelve la cadena original. <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">cuantas_donas(5)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Número</span> <span class="pre">de</span> <span class="pre">donas:</span> <span class="pre">5&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">cuantas_donas(23)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Número</span> <span class="pre">de</span> <span class="pre">donas:</span> <span class="pre">muchas&quot;</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">verbo(&quot;singing&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;singingly&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">verbo(&quot;travel&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;traveling&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">verbo(&quot;do&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;do&quot;</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q11_1_editor" 
@@ -351,7 +349,8 @@ Ejemplos: <br />
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
-def cuantas_donas(n):
+def verbo(s):
+
 
 
 ====
@@ -361,18 +360,13 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(cuantas_donas(4), "Número de donas: 4", "Esperado: Número de donas: 4")
-        self.assertEqual(cuantas_donas(9), "Número de donas: 9", "Esperado: Número de donas: 9")
-        self.assertEqual(
-            cuantas_donas(10),
-            "Número de donas: muchas",
-            "Esperado: Número de donas: muchas",
-        )
-        self.assertEqual(
-            cuantas_donas(99),
-            "Número de donas: muchas",
-            "Esperado: Número de donas: muchas",
-        )
+        self.assertEqual(verbo("hail"), "hailing", "Esperado: hailing")
+        self.assertEqual(verbo("swiming"), "swimingly", "Esperado: swimingly")
+        self.assertEqual(verbo("do"), "do", "Esperado: do")
+        self.assertEqual(verbo("singing"), "singingly", "Esperado: singingly")
+        self.assertEqual(verbo("travel"), "traveling", "Esperado: traveling")
+        self.assertEqual(verbo("lly"), "llying", "Esperado: llying")
+        self.assertEqual(verbo("ing"), "ingly", "Esperado: ingly")
 
 
 myTests().main()
@@ -384,12 +378,12 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q11_2 data-question_label="2">
 <div id=q11_2_question class="ac_question col-md-12">
-<p>Desarrolla la función <code class="docutils literal notranslate"><span class="pre">cadena_de_extremos</span></code> que, dada una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code>,
-devuelva una cadena con las dos primeras y las dos últimas letras de <code class="docutils literal notranslate"><span class="pre">s</span></code>.
-Sin embargo, si la cadena tiene menos de 2 letras, devuelve una cadena vacía. <br /> <br />
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">no_es_malo</span></code> que recibe una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> como parámetro. La función debe buscar la primera aparición de la cadena <code class="docutils literal notranslate"><span class="pre">&quot;no</span> <span class="pre">es&quot;</span></code> y la última aparición de la cadena <code class="docutils literal notranslate"><span class="pre">&quot;malo&quot;</span></code> o la cadena <code class="docutils literal notranslate"><span class="pre">&quot;mala&quot;</span></code>, si alguna de ellas aparece después de la primera, reemplace <code class="docutils literal notranslate"><span class="pre">&quot;no</span> <span class="pre">es&quot;</span> <span class="pre">...</span> <span class="pre">&quot;malo&quot;</span></code> o <code class="docutils literal notranslate"><span class="pre">&quot;no</span> <span class="pre">es&quot;</span> <span class="pre">...</span> <span class="pre">&quot;mala&quot;</span></code> por las cadenas <code class="docutils literal notranslate"><span class="pre">&quot;es</span> <span class="pre">bueno&quot;</span></code> o <code class="docutils literal notranslate"><span class="pre">&quot;es</span> <span class="pre">buena&quot;</span></code> respectivamente, luego devuelva el resultado. <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">cadena_de_extremos(&quot;palmeras&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;paas&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">cadena_de_extremos(&quot;a&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">no_es_malo(&quot;El</span> <span class="pre">té</span> <span class="pre">no</span> <span class="pre">es</span> <span class="pre">malo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;El</span> <span class="pre">té</span> <span class="pre">es</span> <span class="pre">bueno&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">no_es_malo(&quot;La</span> <span class="pre">película</span> <span class="pre">no</span> <span class="pre">es</span> <span class="pre">mala&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;La</span> <span class="pre">película</span> <span class="pre">es</span> <span class="pre">buena&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">no_es_malo(&quot;El</span> <span class="pre">precio</span> <span class="pre">de</span> <span class="pre">esta</span> <span class="pre">casa</span> <span class="pre">no</span> <span class="pre">es</span> <span class="pre">para</span> <span class="pre">nada</span> <span class="pre">malo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;El</span> <span class="pre">precio</span> <span class="pre">de</span> <span class="pre">esta</span> <span class="pre">casa</span> <span class="pre">es</span> <span class="pre">bueno&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">no_es_malo(&quot;El</span> <span class="pre">teléfono</span> <span class="pre">es</span> <span class="pre">malo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;El</span> <span class="pre">teléfono</span> <span class="pre">es</span> <span class="pre">malo&quot;</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q11_2_editor" 
@@ -397,7 +391,8 @@ Ejemplos: <br />
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
-def cadena_de_extremos(s):
+def no_es_malo(s):
+
 
 
 ====
@@ -407,12 +402,37 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(cadena_de_extremos("palmeras"), "paas", "Esperado: paas")
-        self.assertEqual(cadena_de_extremos("algoritmos"), "alos", "Esperado: alos")
-        self.assertEqual(cadena_de_extremos("co"), "coco", "Esperado: coco")
-        self.assertEqual(cadena_de_extremos("a"), "", "Esperado: ''")
-        self.assertEqual(cadena_de_extremos("xyz"), "xyyz", "Esperado: xyyz")
-        self.assertEqual(cadena_de_extremos(""), "", "Esperado: ''")
+        self.assertEqual(
+            no_es_malo("El televisor no es malo"),
+            "El televisor es bueno",
+            "Esperado: El televisor es bueno"
+        )
+        self.assertEqual(
+            no_es_malo("El asado de la cena no es malo!"),
+            "El asado de la cena es bueno!",
+            "Esperado: El asado de la cena es bueno!"
+        )
+        self.assertEqual(
+            no_es_malo("El té no está caliente"),
+            "El té no está caliente",
+            "Esperado: El té no está caliente"
+        )
+        self.assertEqual(
+            no_es_malo("La película no es mala"),
+            "La película es buena",
+            "Esperado: La película es buena"
+        )
+        self.assertEqual(no_es_malo("no es para nada malo"), "es bueno", "Esperado: es bueno")
+        self.assertEqual(no_es_malo("no es malo"), "es bueno", "Esperado: es bueno")
+        self.assertEqual(no_es_malo("malo"), "malo", "Esperado: malo")
+        self.assertEqual(no_es_malo("no"), "no", "Esperado: no")
+        self.assertEqual(no_es_malo("NO"), "NO", "Esperado: NO")
+        self.assertEqual(no_es_malo("MALO"), "MALO", "Esperado: MALO")
+        self.assertEqual(no_es_malo("NO es MALO"), "NO es MALO", "Esperado: NO es MALO")
+        self.assertEqual(no_es_malo("no es MALO"), "no es MALO", "Esperado: no es MALO")
+        self.assertEqual(no_es_malo("NO es malo"), "NO es malo", "Esperado: NO es malo")
+        self.assertEqual(no_es_malo("no es malo ni mala"), "es buena", "Esperado: es buena")
+        self.assertEqual(no_es_malo("no es ni mala ni malo"), "es bueno", "Esperado: es bueno")
 
 
 myTests().main()
@@ -424,14 +444,11 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q11_3 data-question_label="3">
 <div id=q11_3_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">remplazar_primer_caracter</span></code> que, dada una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code>,
-devuelva una cadena en la que todas las apariciones del primer carácter en <code class="docutils literal notranslate"><span class="pre">s</span></code>
-se reemplacen por “*”, a excepción del primero. <strong>Nota:</strong>
-use el método <code class="docutils literal notranslate"><span class="pre">.replace(valor_a_replazar,</span> <span class="pre">nuevo_valor)</span></code> para resolver el
-ejercicio. <br /> <br />
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">inicio_final</span></code> que recibe dos cadenas <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>. Las cadenas tienen que ser dividas en dos, si alguna de las cadenas tiene un número impar de caracteres, la primera mitad será la subcadena más larga (por ejemplo <code class="docutils literal notranslate"><span class="pre">perro</span></code> se dividirá entre: <code class="docutils literal notranslate"><span class="pre">per</span></code> y <code class="docutils literal notranslate"><span class="pre">ro</span></code>). Dada las dos cadenas, devuelva una nueva cadena formada de la siguiente manera <code class="docutils literal notranslate"><span class="pre">a_inicio</span> <span class="pre">+</span> <span class="pre">b_inicio</span> <span class="pre">+</span> <span class="pre">a_final</span> <span class="pre">+</span> <span class="pre">b_final</span></code>. <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">remplazar_primer_caracter(&quot;google&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;goo*le&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">remplazar_primer_caracter(&quot;dona&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;dona&quot;</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">inicio_final(&quot;abcd&quot;,</span> <span class="pre">&quot;1234&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ab12cd34&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_final(&quot;abc&quot;,</span> <span class="pre">&quot;1234&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ab12c34&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_final(&quot;abc&quot;,</span> <span class="pre">&quot;123&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ab12c3&quot;</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q11_3_editor" 
@@ -439,7 +456,8 @@ Ejemplos: <br />
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
-def remplazar_primer_caracter(s):
+def inicio_final(a, b):
+
 
 
 ====
@@ -449,10 +467,19 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(remplazar_primer_caracter("babble"), "ba**le", "Esperado: ba**le")
-        self.assertEqual(remplazar_primer_caracter("aardvark"), "a*rdv*rk", "Esperado: a*rdv*rk")
-        self.assertEqual(remplazar_primer_caracter("google"), "goo*le", "Esperado: goo*le")
-        self.assertEqual(remplazar_primer_caracter("dona"), "dona", "Esperado: dona")
+        self.assertEqual(inicio_final("abcd", "xy"), "abxcdy", "Esperado: abxcdy")
+        self.assertEqual(inicio_final("abcde", "xyz"), "abcxydez", "Esperado: abcxydez")
+        self.assertEqual(inicio_final("a", "b"), "ab", "Esperado: ab")
+        self.assertEqual(inicio_final("ac", "b"), "abc", "Esperado: abc")
+        self.assertEqual(inicio_final("a", "bc"), "abc", "Esperado: abc")
+        self.assertEqual(inicio_final("", ""), "", "Esperado: ''")
+        self.assertEqual(inicio_final("a", ""), "a", "Esperado: 'a'")
+        self.assertEqual(inicio_final("", "b"), "b", "Esperado: 'b'")
+        self.assertEqual(
+            inicio_final("Kitten", "Donut"),
+            "KitDontenut",
+            "Esperado: KitDontenut"
+        )
 
 
 myTests().main()
@@ -464,18 +491,10 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q11_4 data-question_label="4">
 <div id=q11_4_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">combinar_dos_cadenas</span></code> que tome dos cadenas como
-argumentos, <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>, y devuelva una nueva cadena de la siguiente forma:</p>
-<ul class="simple">
-<li><p>La nueva cadena tiene que ser una combinación de <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>.</p></li>
-<li><p>La nueva cadena tendrá la forma <code class="docutils literal notranslate"><span class="pre">&quot;&lt;a&gt;</span> <span class="pre">&lt;b&gt;&quot;</span></code>, note el espacio entre ambas.</p></li>
-<li><p>La nueva cadena intercambiará las primeras dos letras de <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code>.</p></li>
-</ul>
-<p>Suponga que <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">b</span></code> tienen más de 2 caracteres.
-Para mayor claridad, observe los siguientes ejemplos. <br /> <br />
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">cuantos_ceros</span></code> que dado un entero <code class="docutils literal notranslate"><span class="pre">n</span></code> positivo, devuelva la cantidad de ceros al final del entero <code class="docutils literal notranslate"><span class="pre">n</span></code>. <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">combinar_dos_cadenas(&quot;mix&quot;,</span> <span class="pre">&quot;pod&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;pox</span> <span class="pre">mid&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">combinar_dos_cadenas(&quot;pezzy&quot;,</span> <span class="pre">&quot;firm&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;fizzy</span> <span class="pre">perm&quot;</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">cuantos_ceros(10010)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">cuantos_ceros(908007000)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">3</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q11_4_editor" 
@@ -483,7 +502,8 @@ Ejemplos: <br />
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
-def combinar_dos_cadenas(a, b):
+def cuantos_ceros(n):
+
 
 
 ====
@@ -493,14 +513,16 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(combinar_dos_cadenas("mix", "pod"), "pox mid", "Esperado: pox mid")
-        self.assertEqual(combinar_dos_cadenas("dog", "dinner"), "dig donner", "Esperado: dig donner")
-        self.assertEqual(
-            combinar_dos_cadenas("gnash", "sport"),
-            "spash gnort",
-            "Esperado: spash gnort",
-        )
-        self.assertEqual(combinar_dos_cadenas("pezzy", "firm"), "fizzy perm", "Esperado: fizzy perm")
+        self.assertEqual(cuantos_ceros(10100100010000), 4, "Esperado: 4")
+        self.assertEqual(cuantos_ceros(90000000000000000010), 1, "Esperado: 1")
+        self.assertEqual(cuantos_ceros(10), 1, "Esperado: 1")
+        self.assertEqual(cuantos_ceros(1050051222), 0, "Esperado: 0")
+        self.assertEqual(cuantos_ceros(1010101010), 1, "Esperado: 1")
+        self.assertEqual(cuantos_ceros(5000), 3, "Esperado: 3")
+        self.assertEqual(cuantos_ceros(10000000000), 10, "Esperado: 10")
+        self.assertEqual(cuantos_ceros(555), 0, "Esperado: 0")
+        self.assertEqual(cuantos_ceros(1), 0, "Esperado: 0")
+        self.assertEqual(cuantos_ceros(0), 0, "Esperado: 0")
 
 
 myTests().main()
@@ -512,12 +534,11 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q11_5 data-question_label="5">
 <div id=q11_5_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">es_palindromo</span></code> que toma una cadena <code class="docutils literal notranslate"><span class="pre">s</span></code> como
-parámetro y verifica si <code class="docutils literal notranslate"><span class="pre">s</span></code> es palíndromo o no, devolviendo <code class="docutils literal notranslate"><span class="pre">True</span></code> o
-<code class="docutils literal notranslate"><span class="pre">False</span></code> respectivamente. <br /> <br />
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">contar_2</span></code> que recibe un entero <code class="docutils literal notranslate"><span class="pre">n</span></code> positivo mayor que 0. La función debe devolver la cantidad de veces que el dígito 2 aparece en el intervalo <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">n-1]</span></code>. <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">es_palindromo(&quot;asa&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">es_palindromo(&quot;casa&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code>  <br /></p>
+<code class="docutils literal notranslate"><span class="pre">contar_2(20)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">2</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">contar_2(5)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">1</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">contar_2(1)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">0</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q11_5_editor" 
@@ -525,7 +546,8 @@ Ejemplos: <br />
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
-def es_palindromo(s):
+def contar_2(n):
+
 
 
 ====
@@ -535,12 +557,11 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(es_palindromo("asa"), True, "Esperado: True")
-        self.assertEqual(es_palindromo("casa"), False, "Esperado: False")
-        self.assertEqual(es_palindromo("reconocer"), True, "Esperado: True")
-        self.assertEqual(es_palindromo("palabra"), False, "Esperado: False")
-        self.assertEqual(es_palindromo("radar"), True, "Esperado: True")
-        self.assertEqual(es_palindromo("seres"), True, "Esperado: True")
+        self.assertEqual(contar_2(20), 2, "Esperado: 2")
+        self.assertEqual(contar_2(1), 0, "Esperado: 0")
+        self.assertEqual(contar_2(5), 1, "Esperado: 1")
+        self.assertEqual(contar_2(999), 300, "Esperado: 300")
+        self.assertEqual(contar_2(555), 216, "Esperado: 216")
 
 
 myTests().main()
@@ -552,11 +573,14 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q11_6 data-question_label="6">
 <div id=q11_6_question class="ac_question col-md-12">
-<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">contar_ocurrencias</span></code> que toma dos parámetros:
-<code class="docutils literal notranslate"><span class="pre">frase</span></code> y <code class="docutils literal notranslate"><span class="pre">palabra</span></code>, ambos de tipo cadena. La función debe devolver
-el número de veces que <code class="docutils literal notranslate"><span class="pre">palabra</span></code> se encuentra en <code class="docutils literal notranslate"><span class="pre">frase</span></code>. <br /> <br />
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">inicio_potencia</span></code> que recibe un entero <code class="docutils literal notranslate"><span class="pre">n</span></code> positivo mayor que 0. La función debe devolver la primera potencia de 2 que comienza con <code class="docutils literal notranslate"><span class="pre">n</span></code>. <br /> <br />
 Ejemplos: <br />
-<code class="docutils literal notranslate"><span class="pre">contar_ocurrencias(&quot;a</span> <span class="pre">ana</span> <span class="pre">y</span> <span class="pre">a</span> <span class="pre">mariana</span> <span class="pre">les</span> <span class="pre">gustan</span> <span class="pre">las</span> <span class="pre">manzanas&quot;,</span> <span class="pre">&quot;ana&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">3</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">inicio_potencia(65)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">16</span></code> <br />
+<em>Explicación</em>: para <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">65</span></code> la potencia <code class="docutils literal notranslate"><span class="pre">2^16</span></code> da como resultado <code class="docutils literal notranslate"><span class="pre">65536</span></code> que contiene a <code class="docutils literal notranslate"><span class="pre">n</span></code> al comienzo. <br /> <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_potencia(4)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">2</span></code> <br />
+<em>Explicación</em>: para <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">4</span></code> la potencia <code class="docutils literal notranslate"><span class="pre">2^2</span></code> da como resultado <code class="docutils literal notranslate"><span class="pre">4</span></code> que contiene a <code class="docutils literal notranslate"><span class="pre">n</span></code> al comienzo. <br /> <br />
+<code class="docutils literal notranslate"><span class="pre">inicio_potencia(3)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">5</span></code> <br />
+<em>Explicación</em>: para <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">3</span></code> la potencia <code class="docutils literal notranslate"><span class="pre">2^5</span></code> da como resultado <code class="docutils literal notranslate"><span class="pre">32</span></code> que contiene a <code class="docutils literal notranslate"><span class="pre">n</span></code> al comienzo. <br /></p>
 
 </div>
 <textarea data-lang="python" id="q11_6_editor" 
@@ -564,7 +588,8 @@ Ejemplos: <br />
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
-def contar_ocurrencias(frase, palabra):
+def inicio_potencia(n):
+
 
 
 ====
@@ -574,12 +599,14 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(
-            contar_ocurrencias("a ana y a mariana les gustan las manzanas", "ana"),
-            3,
-            "Esperado: 3",
-        )
-        self.assertEqual(contar_ocurrencias("Cats, rats, bats, and hats.", "ats"), 4, "Esperado: 4")
+        self.assertEqual(inicio_potencia(7), 46, "Esperado: 46")
+        self.assertEqual(inicio_potencia(3), 5, "Esperado: 5")
+        self.assertEqual(inicio_potencia(133), 316, "Esperado: 316")
+        self.assertEqual(inicio_potencia(1024), 10, "Esperado: 10")
+        self.assertEqual(inicio_potencia(123), 90, "Esperado: 90")
+        self.assertEqual(inicio_potencia(1), 0, "Esperado: 0")
+        self.assertEqual(inicio_potencia(10), 10, "Esperado: 10")
+        self.assertEqual(inicio_potencia(50), 102, "Esperado: 102")
 
 
 myTests().main()

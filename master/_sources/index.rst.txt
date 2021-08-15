@@ -61,12 +61,12 @@ Contenidos:
    quiz/Quiz5.rst
    quiz/Quiz6.rst
    quiz/Quiz7.rst
+   quiz/Quiz8.rst
    quiz/Quiz9.rst
    quiz/Quiz10.rst
    quiz/Quiz11.rst
    quiz/Quiz12.rst
    quiz/Quiz13.rst
-   quiz/Quiz14.rst
    quiz/QuizExtras.rst
    quiz/QuizExtras2.rst
    challenges/Reto01.rst
