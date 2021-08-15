@@ -1,0 +1,59 @@
+<style>
+    .iframe-interpreter-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 20%;
+    }
+    
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+</style>
+<div class="iframe-interpreter-container">
+    <iframe id="iframe-brython-console" class="responsive-iframe" srcdoc='
+    <html>
+    <head>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.4/brython_stdlib.min.js"></script>
+        <style>
+
+            .codearea {
+                background-color: #000;
+                color: #fff;
+                font-family: consolas, courier;
+                width: 100%;
+                min-height: 75px;
+            }
+        </style>
+    </head>
+    <script>
+        function scrollTop() {
+            topWindow = document.defaultView.parent;
+            topWindow.scrollTo(0, 0);
+          }
+    </script>
+    <body onload="brython()">
+        <div>
+            <textarea id="code" class="codearea" rows="12" cols="100" spellcheck="false"></textarea>
+            <script type="text/python3">
+                from interpreter import Interpreter
+                Interpreter("code")
+            </script>
+            <script type="text/python3">
+                from browser import document, html
+                document <= html.SCRIPT("scrollTop();")
+            </script>
+        </div>
+    </body>
+    </html>
+'>
+    </iframe>
+</div>
