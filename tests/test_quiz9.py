@@ -1,6 +1,6 @@
-def test_quiz10_11_good(page):
-    # Go to the Quiz 10 page
-    page.goto("quiz/Quiz10.html")
+def test_quiz9_11_good(page):
+    # Go to the Quiz 9 page
+    page.goto("quiz/Quiz9.html")
     page.wait_for_load_state()
 
     # Do the exercise
@@ -11,7 +11,7 @@ def test_quiz10_11_good(page):
     page.keyboard.type("return '2, 2' in str(numeros)")
 
     # Run the exercise and check it passed all tests
-    page.click("#q10_11 >> *css=button >> text=Run")
+    page.click("#q9_11 >> *css=button >> text=Run")
 
-    page.hover("#q10_11 >> text=You passed:")
-    assert page.inner_text("#q10_11 >> text=You passed:") == "You passed: 100.0% of the tests"
+    page.hover("#q9_11 >> text=You passed:")
+    assert page.inner_text("#q9_11 >> text=You passed:") == "You passed: 100.0% of the tests"
