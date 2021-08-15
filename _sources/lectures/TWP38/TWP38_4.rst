@@ -48,8 +48,3 @@ Recuerde
 + Python es un lenguaje interpretado de alto nivel
 + El intérprete de Python convierte los comandos instrucción por instrucción
   a lenguaje máquina
-
-
-.. disqus::
-    :shortname: pyzombis
-    :identifier: lecture13

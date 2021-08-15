@@ -13,6 +13,7 @@ Strings
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP18_1.rst
    TWP18_2.rst
