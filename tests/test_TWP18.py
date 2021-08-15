@@ -8,7 +8,7 @@ def test_TWP18_ac_5(page):
 
     # Do the exercise
     page.click("text=# Utilice la función input para leer la palabra del usuario.")
-    page.press("text=# Utilice la función input para leer la palabra del usuario.", "ArrowDown")
+    page.keyboard.press("ArrowDown")
 
     instructions = [
         "palabra = input('alguna palabra: ')",
@@ -19,15 +19,15 @@ def test_TWP18_ac_5(page):
     ]
 
     for inst in instructions:
-        page.type("text=# Utilice la función input para leer la palabra del usuario.", inst)
-        page.press("text=# Utilice la función input para leer la palabra del usuario.", "Enter")
+        page.keyboard.type(inst)
+        page.keyboard.press("Enter")
 
     for i in range(4):
-        page.press("text=# Utilice la función input para leer la palabra del usuario.", "Backspace")
+        page.keyboard.press("Backspace")
 
-    page.type("text=# Utilice la función input para leer la palabra del usuario.", "else:")
-    page.press("text=# Utilice la función input para leer la palabra del usuario.", "Enter")
-    page.type("text=# Utilice la función input para leer la palabra del usuario.", "intercambio += '*'")
+    page.keyboard.type("else:")
+    page.keyboard.press("Enter")
+    page.keyboard.type("intercambio += '*'")
 
     # Run the exercise
     page.click("#ac_l18_3d >> *css=button >> text=Run")
