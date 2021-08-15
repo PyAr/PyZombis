@@ -1,5 +1,5 @@
-if / else
-=========
+``if`` / ``else``
+=================
 
 + ¿Qué hacer cuando la condición ``if`` es falsa?.
 + La clausula ``else`` significa en caso contrario.

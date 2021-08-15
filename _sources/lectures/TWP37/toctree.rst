@@ -13,6 +13,7 @@ Revisión de Archivos, Listas y Diccionarios
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP37_1.rst
    TWP37_2.rst

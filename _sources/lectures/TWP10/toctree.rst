@@ -13,6 +13,7 @@ Condiciones
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP10_1.rst
    TWP10_2.rst
