@@ -13,6 +13,7 @@ Clases y objetos
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP25_1.rst
    TWP25_2.rst
