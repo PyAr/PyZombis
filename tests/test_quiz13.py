@@ -1,14 +1,13 @@
 def test_quiz13_1(page):
-    # Go to Quiz 13 page
+    # Go to http://localhost:8000/quiz/Quiz13.html
     page.goto("quiz/Quiz13.html")
+    page.wait_for_load_state()
 
     # Do the exercise
-    page.click("text=def terminan_igual(palabras):")
+    page.click("text=def remover_iguales(numeros):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
-    page.keyboard.type(
-        "return len([palabra for palabra in palabras if len(palabra) >= 2 and palabra[0] == palabra[-1]])",
-    )
+    page.keyboard.type("return sorted(list(set(numeros)))")
 
     # Run the exercise and check it passed all unit tests
     page.click("#q13_1 >> *css=button >> text=Run")
