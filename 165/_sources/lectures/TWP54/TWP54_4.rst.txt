@@ -7,9 +7,9 @@ Ejercicio
     El siguiente código produce una excepción. Córralo una vez para ver el nombre 
     de la excepción, y después modifique el código para manejar dicha excepción.
     Utilice la estructura vista en los ejemplos de la página anterior: 
-    ``except Excepcion as e:``. Al manejar la excepción se debe imprimir en consola 
+    ``except Excepcion as err:``. Al manejar la excepción se debe imprimir en consola 
     el mensaje ``"Error: {e}"``. También, ``mi_funcion`` debe regresar la 
-    excepción ``e``.
+    excepción ``err``.
 
     ~~~~
     def mi_funcion():

@@ -1,5 +1,5 @@
-elif
-====
+``elif``
+========
 
 + La cláusula elif sustituye a ``else`` y ``if``.
 

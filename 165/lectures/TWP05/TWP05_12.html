@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Operaciones con strings &#8212; PyZombis 51_TWP54@4a5b638</title>
+    <title>12. Operaciones con strings &#8212; PyZombis 51_TWP54@a8f0501</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -26,14 +26,17 @@
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/html4css1.css?v=4533ACD3"></script>
-    <script src="../../_static/runtime.bundle.js?v=f50940efe5177b9c81e6"></script>
+    <script src="../../_static/runtime.bundle.js?v=7528086b13aa510024e4"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=2a0b78efc53bfc8dda40"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Cambiar variables a lo largo del tiempo" href="TWP05_13.html" />
-    <link rel="prev" title="Variable String" href="TWP05_11.html" />
+    <link rel="next" title="13. Cambiar variables a lo largo del tiempo" href="TWP05_13.html" />
+    <link rel="prev" title="11. Variable String" href="TWP05_11.html" />
+
+
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
 
 <script>
   eBookConfig = {};
@@ -74,24 +77,23 @@
 
     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="icon-bar" aria-label="navbar toggle">toggle navbar</span>
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
       <div>
         
-          <a class="brand-logo" style='background: transparent url("../../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../../_static/img/logo_small.png" alt=""></a>
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis
+          PyZombis 51_TWP54@a8f0501
         </a>
       </div>
     </div>
-
-
 
     <div class="navbar-collapse collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right" >
@@ -238,13 +240,13 @@
         
         <!-- 
           
-  <li id="relations-prev" title="Previous Chapter - Variable String" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">11. </span>Variable String" data-toggle="tooltip">
     <a href="TWP05_11.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Cambiar variables a lo largo del tiempo' data-toggle="tooltip" >              
+  <li id="relations-next" title='Next Chapter - <span class="section-number">13. </span>Cambiar variables a lo largo del tiempo' data-toggle="tooltip" >              
     <a href="TWP05_13.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -275,12 +277,61 @@
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content" role="main">
+
+  
+    
+<ul>
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - 11. Variable String' data-toggle="tooltip">
+    <a href="TWP05_11.html" aria-label="11. Variable String">
+        <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+        </div>
+    </a>
+  </li>
+</ul>
+
+  
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - 13. Cambiar variables a lo largo del tiempo' data-toggle="tooltip" >
+    <a href="TWP05_13.html" aria-label="13. Cambiar variables a lo largo del tiempo">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<script>
+document.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
 <!-- Ad Serving for Runestone Campaign -->
 
 
   
   <div class="section" id="operaciones-con-strings">
-<h1>Operaciones con strings<a class="headerlink" href="#operaciones-con-strings" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">12. </span>Operaciones con strings<a class="headerlink" href="#operaciones-con-strings" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>Las operaciones básicas son corte, concatenación y composición.</p></li>
 <li><p>La operación corte le permite usar parte de la cadena</p></li>
@@ -289,14 +340,14 @@
 y consiste en usar cadenas como patrones donde podemos insertar datos</p></li>
 </ul>
 <div class="section" id="concatenacion">
-<h2>Concatenación<a class="headerlink" href="#concatenacion" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.1. </span>Concatenación<a class="headerlink" href="#concatenacion" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.1.1">
         <div class="pytutorVisualizer" id="cl_l05_12a"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (cl_l05_12a)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.1.1 (cl_l05_12a)</span> </p>
     </div>
 
 <script>
@@ -311,17 +362,17 @@ allTraceData["cl_l05_12a"] = {"code": "a = \"Papa\"\nb = \"cuando nace\"\nprint(
 </div>
 </div>
 <div class="section" id="corte">
-<h2>Corte<a class="headerlink" href="#corte" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.2. </span>Corte<a class="headerlink" href="#corte" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Podemos realizar la operación de corte utilizando <code class="docutils literal notranslate"><span class="pre">[indice_comienzo:indice_fin]</span></code></p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.2.1">
         <div class="pytutorVisualizer" id="cl_l05_12b"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (cl_l05_12b)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.2.1 (cl_l05_12b)</span> </p>
     </div>
 
 <script>
@@ -340,11 +391,11 @@ también podemos tener índices negativos: -1 último, -2 penúltimo</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.2.2">
         <div class="pytutorVisualizer" id="cl_l05_12c"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (cl_l05_12c)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.2.2 (cl_l05_12c)</span> </p>
     </div>
 
 <script>
@@ -359,18 +410,18 @@ allTraceData["cl_l05_12c"] = {"code": "x = \"0123456789\"\nprint(x[:2])\nprint(x
 </div>
 </div>
 <div class="section" id="composicion">
-<h2>Composición<a class="headerlink" href="#composicion" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.3. </span>Composición<a class="headerlink" href="#composicion" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Unir cadenas múltiples no siempre es práctico</p></li>
 <li><p>Podemos usar marcadores de posición para reemplazar valores dentro de cadenas</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="4">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.3.1">
         <div class="pytutorVisualizer" id="cl_l05_12d"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 4 (cl_l05_12d)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.3.1 (cl_l05_12d)</span> </p>
     </div>
 
 <script>
@@ -391,11 +442,11 @@ cadenas y <code class="docutils literal notranslate"><span class="pre">%f</span>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.3.2">
         <div class="pytutorVisualizer" id="cl_l05_12e"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5 (cl_l05_12e)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.3.2 (cl_l05_12e)</span> </p>
     </div>
 
 <script>
@@ -413,11 +464,11 @@ allTraceData["cl_l05_12e"] = {"code": "edad = 20\nprint(\"[%03d]\" % edad)\nprin
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="6">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.3.3">
         <div class="pytutorVisualizer" id="cl_l05_12f"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 6 (cl_l05_12f)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.3.3 (cl_l05_12f)</span> </p>
     </div>
 
 <script>
@@ -432,14 +483,14 @@ allTraceData["cl_l05_12f"] = {"code": "print(\"$%5.2f pesos\" % 23)", "trace": [
 </div>
 </div>
 <div class="section" id="f-strings">
-<h2>f-strings<a class="headerlink" href="#f-strings" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.4. </span>f-strings<a class="headerlink" href="#f-strings" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Otra manera de unir cadenas es mediante las f-strings</p></li>
 <li><p>Todo lo que esté entre llaves {} se reemplazará si se definió anteriormente. En el ejemplo .2f significa dos lugares decimales.</p></li>
 </ul>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l05_12 data-question_label="7">
+<div data-component="activecode" id=ac_l05_12 data-question_label="12.4.1">
 <div id=ac_l05_12_question class="ac_question col-md-12">
 
 </div>
@@ -457,14 +508,14 @@ print(f"El precio es: ${precio:.2f}")
 </div>
 
 
-  <div id=scprogresscontainer>
-    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
   </div>
   
-      
+    
 <ul>
-  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - Variable String' data-toggle="tooltip">
-    <a href="TWP05_11.html" aria-label="Variable String">
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - 11. Variable String' data-toggle="tooltip">
+    <a href="TWP05_11.html" aria-label="11. Variable String">
         <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
             <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
         </div>
@@ -474,8 +525,8 @@ print(f"El precio es: ${precio:.2f}")
 
   
 <ul>
-  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - Cambiar variables a lo largo del tiempo' data-toggle="tooltip" >
-    <a href="TWP05_13.html" aria-label="Cambiar variables a lo largo del tiempo">
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - 13. Cambiar variables a lo largo del tiempo' data-toggle="tooltip" >
+    <a href="TWP05_13.html" aria-label="13. Cambiar variables a lo largo del tiempo">
       <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
       </div>
@@ -530,7 +581,7 @@ document.addEventListener('load', (event) => {
 
 
 <script> 
-  document.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     runestoneComponents.getSwitch(); 
   });
 </script>
