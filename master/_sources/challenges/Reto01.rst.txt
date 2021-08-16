@@ -6,7 +6,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
 
 .. tabbed:: ahorcado
 
-    .. tab:: ac_1
+    .. tab:: Ejercicio 1
 
         Primero haremos los distintos dibujos del ahorcado con cadenas de texto.
 
@@ -85,7 +85,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             ]
 
 
-    .. tab:: ac_2
+    .. tab:: Ejercicio 2
 
         Va a resolver el reto de manera progresiva.
 
@@ -111,7 +111,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             myTests().main()
 
 
-    .. tab:: ac_3
+    .. tab:: Ejercicio 3
 
         ¿Recuerda la lección de las APIs? Vamos a aplicar lo aprendido de esa lección.
 
@@ -162,7 +162,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             myTests().main()
 
 
-    .. tab:: ac_4
+    .. tab:: Ejercicio 4
 
         Ahora definamos otra función para imprimir el ahorcado.
 
@@ -183,7 +183,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
                 print()
 
     
-    .. tab:: ac_5
+    .. tab:: Ejercicio 5
 
         Es momento de crear la función principal de nuestro programa, la cuál pide al usuario una 
         letra para adivinar.
@@ -229,7 +229,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             myTests().main()
 
     
-    .. tab:: ac_6
+    .. tab:: Ejercicio 6
 
         Hagamos posible que el usuario decida si quiere volver a jugar o no.
 
@@ -271,7 +271,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             myTests().main()
 
 
-    .. tab:: ac_7
+    .. tab:: Ejercicio 7
 
         .. activecode:: ac_r01_7
             :nocodelens:
@@ -296,7 +296,7 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
 
             myTests().main()
 
-    .. tab:: ac_8
+    .. tab:: Ejercicio 8
         
         Ya ha definido todas las funciones y variables necesarias para el programa. Si ha llegado hasta aquí, 
         debió haber cumplido con todo y haber pasado todas las pruebas unitarias. De ser así, puede correr el
