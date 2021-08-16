@@ -12,7 +12,7 @@ def test_r01(page):
     page.click("text=Save & Run")
 
     # ac_2
-    page.click("text=ac_2")
+    page.click("text=Ejercicio 2")
     page.click('pre[role="presentation"]:has-text("​")')
     page.keyboard.type("correctas = incorrectas = ''")
     page.click("#ac_r01_2 >> text=Save & Run")
@@ -21,7 +21,7 @@ def test_r01(page):
     assert page.inner_text("#ac_r01_2 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_3
-    page.click("text=ac_3")
+    page.click("text=Ejercicio 3")
 
     # request data for the exercise to the .yaml file
     res = requests.get("http://universities.hipolabs.com/search")
@@ -47,12 +47,12 @@ def test_r01(page):
     assert page.inner_text("#ac_r01_3 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_4
-    page.click("text=ac_4")
+    page.click("text=Ejercicio 4")
     page.click("#ac_r01_4 >> text=Save & Run")
 
     # ac_5
     # Deal with prompt box
-    page.click("text=ac_5")
+    page.click("text=Ejercicio 5")
     page.click("text=x = # Empiece aquí >> span")
     page.keyboard.press("Control+Shift+End")
     page.keyboard.press("Backspace")
@@ -70,7 +70,7 @@ def test_r01(page):
     assert page.inner_text("#ac_r01_5 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_6
-    page.click("text=ac_6")
+    page.click("text=Ejercicio 6")
     page.click("#ac_r01_6 >> text=return")
     page.keyboard.press("Control+ArrowRight")
     page.keyboard.type(" input('jugar de nuevo S/N: ').lower() == 's'")
@@ -85,7 +85,7 @@ def test_r01(page):
     assert page.inner_text("#ac_r01_6 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_7
-    page.click("text=ac_7")
+    page.click("text=Ejercicio 7")
     page.click("text=def ganar(p_aleatoria, letras_adivinadas):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
@@ -96,7 +96,7 @@ def test_r01(page):
     assert page.inner_text("#ac_r01_7 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_8
-    page.click("text=ac_8")
+    page.click("text=Ejercicio 8")
     page.click("#ac_r01_8 >> text=Save & Run")
     # Handle dialogs
     i = 0

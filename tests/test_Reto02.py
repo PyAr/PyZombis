@@ -5,7 +5,7 @@ def test_r02(page):
     page.click("text=Save & Run")
 
     # ac_2
-    page.click("text=ac_2")
+    page.click("text=Ejercicio 2")
     page.click("text=prep_B = 0")
     page.keyboard.press("ArrowDown")
     # Code to type
@@ -19,7 +19,7 @@ def test_r02(page):
     assert page.inner_text("#ac_r02_2 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_3
-    page.click("text=ac_3")
+    page.click("text=Ejercicio 3")
     page.click("text=persona_1_B = 0")
     page.keyboard.press("ArrowDown")
     # Code to type
@@ -40,7 +40,7 @@ def test_r02(page):
     assert page.inner_text("#ac_r02_3 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_4
-    page.click("text=ac_4")
+    page.click("text=Ejercicio 4")
     page.click("text=lista_B = []")
     page.keyboard.press("ArrowDown")
     page.keyboard.type(
@@ -52,7 +52,7 @@ def test_r02(page):
     assert page.inner_text("#ac_r02_4 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_5
-    page.click("text=ac_5")
+    page.click("text=Ejercicio 5")
     page.click("text=magia = []")
     page.keyboard.press("ArrowDown")
 
