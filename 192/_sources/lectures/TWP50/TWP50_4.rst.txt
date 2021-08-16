@@ -1,0 +1,144 @@
+Versión final del show de preguntas Zombis
+==========================================
+
+.. activecode:: ac_l50_4a
+    :nocodelens:
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import document, html
+    from browser.widgets.dialog import Dialog
+
+
+    def crear_elemento(url_audio, nombre_audio):
+        print(f"Creando el elemento audio {url_audio}")
+        document <= html.AUDIO(id=nombre_audio, src=url_audio)
+
+
+    def iniciar_audio(elemento):
+        document[elemento].play()
+
+
+    def pausar_audio(elemento):
+        document[elemento].pause()
+
+    correctas = incorrectas = 0
+
+    # Sonido de correcto
+    crear_elemento("http://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_correct.wav", "correcto")
+    # Sonido de incorrecto
+    crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/1684.ogg", "incorrecto")
+
+    d = Dialog("Show de preguntas Zombis", top=20, left=20)
+
+    d.panel <= html.H4("Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center"))
+    d.panel <= html.BUTTON("Correcto", id="btn_correcto")
+    d.panel <= html.BUTTON("Incorrecto", id="btn_incorrecto", style=dict(marginLeft="5em"))
+
+    def apretar_boton_correcto(ev):
+        global correctas
+        iniciar_audio("correcto")
+        correctas = correctas + 1
+        print("Apretaste el botón correcto")
+
+    def apretar_boton_incorrecto(ev):
+        global incorrectas
+        iniciar_audio("incorrecto")
+        incorrectas = incorrectas + 1
+        print("Apretaste el botón incorrecto")
+
+    document["btn_correcto"].bind("click", apretar_boton_correcto)
+    document["btn_incorrecto"].bind("click", apretar_boton_incorrecto)
+
++ Falta algo importante.
++ ¡Los resultados de cada una de las opciones!
+
+.. image:: ../img/TWP50_013.jpg
+   :height: 15.793cm
+   :width: 11.6cm
+   :align: center
+   :alt:
+
++ Cambiemos la ventana para agregar una etiqueta que cambie su valor.
++ El valor aumentará cada vez que se presione el botón respectivo
+
+.. activecode:: ac_l50_4b
+    :nocodelens:
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import document, html, bind
+    from browser.widgets.dialog import Dialog
+
+
+    def crear_elemento(url_audio, nombre_audio):
+        print(f"Creando el elemento audio {url_audio}")
+        document <= html.AUDIO(id=nombre_audio, src=url_audio)
+
+
+    def iniciar_audio(elemento):
+        document[elemento].play()
+
+
+    def pausar_audio(elemento):
+        document[elemento].pause()
+
+
+    correctas = incorrectas = 0
+
+    # Sonido de correcto
+    crear_elemento("http://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_correct.wav", "correcto")
+    # Sonido de incorrecto
+    crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/1684.ogg", "incorrecto")
+
+    d = Dialog("Show de preguntas Zombis", top=20, left=20)
+
+    d.panel <= html.H4(
+        "Aprieta los botones", id="titulo_ventana", style=dict(textAlign="center")
+    )
+    d.panel <= html.SPAN(
+        str(correctas), id="contador_correctas", style=dict(paddingRight="2em")
+    ) + html.BUTTON("Correcto", id="btn_correcto")
+    d.panel <= html.BUTTON(
+        "Incorrecto", id="btn_incorrecto", style=dict(marginLeft="5em")
+    ) + html.SPAN(
+        str(incorrectas), id="contador_incorrectas", style=dict(paddingLeft="2em")
+    )
+
+
+    @bind(document["btn_correcto"], "click")
+    def apretar_boton_correcto(ev):
+        global correctas
+        iniciar_audio("correcto")
+        correctas += 1
+        document["contador_correctas"].textContent = str(correctas)
+        print("Apretaste el botón correcto")
+
+
+    @bind(document["btn_incorrecto"], "click")
+    def apretar_boton_incorrecto(ev):
+        global incorrectas
+        iniciar_audio("incorrecto")
+        incorrectas += 1
+        document["contador_incorrectas"].textContent = str(incorrectas)
+        print("Apretaste el botón incorrecto")
+
++ ¡Muy bien! ya todo funciona perfectamente.
++ Puedes cambiar el audio para cada opción.
++ El jefe está feliz por el Show de preguntas Zombis.
+
+.. image:: ../img/TWP50_017.jpg
+    :height: 14.861cm
+    :width: 15.801cm
+    :align: center
+    :alt:
+
+
+Recuerda
+--------
+
++ Uso de las funcionalidades con el componente de ``brython``.
++ No es la única forma de crear interfaces gráficas.
+    + Uso de la biblioteca de terceros: ``pygame`` y ``tkinter``.
++ Para manejar los eventos se usa un controlador de eventos.
+    + Controlador de eventos: función que se ejecuta cuando ocurre el evento.
