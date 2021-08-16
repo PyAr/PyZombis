@@ -1,8 +1,8 @@
 Excepciones comunes
 ===================
 
-Estas son algunas excepciones comunes que encontrarás al escribir
-programas simples.
+Estas son algunas errxcepciones comunes que encontrarás al escribir
+programas simplerrs.
 
 NameError
 ---------
@@ -15,8 +15,8 @@ Ocurre cuando el programa no encuentra el nombre de un objeto que mencionaste en
     a = 1
     try:
         print(b)
-    except NameError as e:
-        print(f"Error: {e}")
+    except NameError as err:
+        print(f"Error: {err}")
 
 
 TypeError
@@ -29,8 +29,8 @@ Ocurre cuando se quiere realizar una operación en un tipo de objeto incorrecto.
 
     try:
         len(5)
-    except TypeError as e:
-        print(f"Error: {e}")
+    except TypeError as err:
+        print(f"Error: {err}")
 
 
 ValueError
@@ -46,8 +46,8 @@ pero el valor es inapropiado.
 
     try:
         raiz_cuadrada = math.sqrt(-4)
-    except ValueError as e:
-        print(f"Error: {e}")
+    except ValueError as err:
+        print(f"Error: {err}")
 
 
 ZeroDivisionError
@@ -63,6 +63,6 @@ Ocurre cuando en una operación de división el denominador es ``0``.
 
     try:
         numerador/denominador
-    except ZeroDivisionError as e:
-        print(f"Error: {e}")
+    except ZeroDivisionError as err:
+        print(f"Error: {err}")
 
