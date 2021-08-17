@@ -1,18 +1,16 @@
-def test_quiz10_11_good(page):
-    # Go to the Quiz 10 page
+def test_quiz10_3(page):
+    # Go to Quiz 10 page
     page.goto("quiz/Quiz10.html")
-    page.wait_for_load_state()
 
-    page.click("text=def tiene_2(numeros):")
+    # Do the exercise
+    page.click("text=Ejercicio 3")
+    page.click("text=def remplazar_primer_caracter(s):")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
+    page.keyboard.type("return s[0] + s[1:].replace(s[0], '*')")
 
-    page.press("text=def tiene_2(numeros):", "ArrowDown")
-    page.press("text=def tiene_2(numeros):", "Tab")
+    # Run the exercise and check it passed all tests
+    page.click("#q10_3 >> *css=button >> text=Run")
 
-    page.type("text=def tiene_2(numeros):", "return '2, 2' in str(numeros)")
-
-    page.click("#q10_11 >> *css=button >> text=Run")
-
-    page.hover("#q10_11 >> text=You passed:")
-    page.press("text=def tiene_2(numeros):", "ArrowDown")
-
-    assert page.inner_text("#q10_11 >> text=You passed:") == "You passed: 100.0% of the tests"
+    page.hover("#q10_3 >> text=You passed:")
+    assert page.inner_text("#q10_3 >> text=You passed:") == "You passed: 100.0% of the tests"

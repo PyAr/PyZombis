@@ -13,6 +13,7 @@ Listas
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP17_1.rst
    TWP17_2.rst
