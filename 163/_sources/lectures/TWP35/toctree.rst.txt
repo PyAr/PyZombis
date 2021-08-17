@@ -13,6 +13,7 @@ Revisión de Funciones
 .. toctree::
    :caption: Contenido
    :maxdepth: 1
+   :numbered:
 
    TWP35_1.rst
    TWP35_2.rst

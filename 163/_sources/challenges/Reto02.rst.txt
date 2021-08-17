@@ -6,7 +6,7 @@ Este reto consiste en descifrar un pergamino a partir de código Python
 
 .. tabbed:: pergamino
 
-    .. tab:: ac_1
+    .. tab:: Ejercicio 1
 
         Primero veamos la estructura de los textos del pergamino.
 
@@ -113,7 +113,7 @@ Este reto consiste en descifrar un pergamino a partir de código Python
             vwtbh mfxs gbgw'''.split()
 
     
-    .. tab:: ac_2
+    .. tab:: Ejercicio 2
 
         Estos pergaminos están en el antiguo y misterioso idioma Googlon. Después de muchos años de estudio, 
         los lingüistas ya conocen algunas características de este idioma.
@@ -148,7 +148,7 @@ Este reto consiste en descifrar un pergamino a partir de código Python
             myTests().main()
 
 
-    .. tab:: ac_3
+    .. tab:: Ejercicio 3
 
         Otro hecho interesante descubierto por los lingüistas es que, en Googlon, los verbos son siempre 
         palabras de 7 letras que terminan en una letra de tipo sobreviviente. Además, si un verbo comienza con
@@ -182,7 +182,7 @@ Este reto consiste en descifrar un pergamino a partir de código Python
             myTests().main()
 
 
-    .. tab:: ac_4
+    .. tab:: Ejercicio 4
 
         Un profesor universitario utilizará los textos A y B para enseñar Googlon a los estudiantes. 
         Para ayudar a los alumnos a comprender el texto, este profesor necesita crear una lista de 
@@ -199,7 +199,7 @@ Este reto consiste en descifrar un pergamino a partir de código Python
             El profesor preparó la lista de vocabulario (ordenada) para el Texto A; obsérvela en la variable 
             ``lista_A``. ¿Cuál sería la lista de vocabulario ordenada del Texto B? Haga un programa que realice 
             esta lista, y la guarde en la variable ``lista_B``. **Recuerde**: los textos ya están definidos como
-            en el primer ejercicio (ac_1).
+            en el primer ejercicio (Ejercicio 1).
 
             ~~~~
             orden = "zmbtshjpnwlrcxkqvdgf"
@@ -232,7 +232,7 @@ Este reto consiste en descifrar un pergamino a partir de código Python
             myTests().main()
 
         
-    .. tab:: ac_5
+    .. tab:: Ejercicio 5
 
         Pero, ¿cómo escriben los Googlons los números? Bueno, en Googlon, las palabras también son 
         números dados en base 20, donde cada letra es un dígito. En Googlon, la primera posición es 
