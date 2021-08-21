@@ -24,4 +24,4 @@ Aprendiendo lo básico
    lectures/TWP23/toctree.rst
    quiz/Quiz7.rst
    lectures/TWP25/toctree.rst
-   quiz/Quiz9.rst
+   quiz/Quiz8.rst
