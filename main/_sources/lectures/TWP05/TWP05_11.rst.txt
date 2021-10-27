@@ -1,0 +1,44 @@
+Variable String
+===============
+
++ Almacene cadenas como nombres y texto en general
++ Llamamos cadenas a una secuencia de símbolos como
+  letras, números, signos de puntuación, etc.
++ Para diferenciar sus comandos de una cadena, usamos comillas en
+  principio y fin
+
+.. codelens:: cl_l05_11a
+    
+    texto = "Joaquin y Maria comen pan"
+    print(texto)
+
++ Tenga en cuenta que no hay problema al usar espacios para separar palabras
++ Una cadena tiene una longitud asociada
++ Podemos obtener el tamaño a través de la función de ``len`` incorporada en Python
+
+.. codelens:: cl_l05_11b
+    
+    texto = "Joaquin y Maria comen pan"
+    print(len(texto))
+
++ Podemos acceder a los caracteres en la cadena usando un número entero
+  para representar su posición en la cadena
++ Este número se llama índice y comenzamos a contar desde cero
++ Accedemos al carácter proporcionando el índice entre corchetes ``[]``
+
+.. codelens:: cl_l05_11c
+    
+    texto = "Joaquin y Maria comen pan"
+    print(texto[0])
+    print(texto[2])
+    print(texto[5])
+    print(texto[10])
+    print(texto[15])
+
++ **Precaución**: no podemos acceder a un índice mayor que la cantidad de
+  caracteres de cadena
+
+.. codelens:: cl_l05_11d
+    
+    texto = "Juan y Maria comen pan"
+    print(texto[22])

@@ -1,0 +1,112 @@
+Pygame Animación
+================
+
+
+.. image:: ../img/TWP60_007.png
+   :height: 11.826cm
+   :width: 11.217cm
+   :align: center
+   :alt: 
+
+
+.. image:: ../img/TWP60_008.png
+   :height: 11.747cm
+   :width: 10.503cm
+   :align: center
+   :alt: 
+
+
+.. code-block:: python
+
+   import pygame, sys , time
+   from pygame.locals import *
+
+   # set up pygame
+   pygame.init()
+
+   # set up the window
+   WINDOWWIDTH = 400
+   WINDOWHEIGHT = 400
+   windowSurface = pygame.display.set_mode((WINDOWWIDNTH,WINDOWHEIGHT),0,32)
+   pygame.display.set_caption('Animation')
+
+   # set up the direction variables
+   DOWNLEFT = 1
+   DOWNRIGHT = 3
+   UPLEFT = 7
+   UPRIGHT = 9
+
+   MOVESPEED = 4
+
+
+.. code-block:: python
+
+   # set up the block data structure
+   b1 = {'rect':pygame.Rect(300,80,50,100),'color':RED,'dir':UPRIGHT}
+   b2 = {'rect':pygame.Rect(200,200,20,20),'color':BLUE,'dir':UPLEFT}
+   b3 = {'rect':pygame.Rect(100,150,60,60),'color':GREEN,'dir':DOWNLEFT}
+   blocks = [b1,b2,b3]
+
+
++ Tenga en cuenta que en los diccionarios b1, b2 y b3 tengo objetos y direcciones
+   incrustado
++ Crea una lista de bloques con los tres diccionarios
+
+
+.. code-block:: python
+
+   while True:
+      # check for the QUIT event
+      for event in pygame.event.get():
+         if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+
+      # draw the black background onto the surface
+      windowSurface.fill(BLACK)
+
+      for b in blocks:
+         # move the block data structure
+         if b['dir'] == DOWNLEFT:
+            b['rect'].left -= MOVESPEED
+            b['rect'].top += MOVESPEED
+
+         if b['dir'] == DOWNRIGHT:
+            b['rect'].left += MOVESPEED
+            b['rect'].top += MOVESPEED
+
+         # check if the block has moved out of the window
+         if b['rect'].top < 0:
+            # block has moved past the top
+            if b['dir'] == UPLEFT:
+               b['dir'] = DOWNLEFT
+            if b['dir'] == UPRIGHT:
+               b['dir'] = DOWNRIGHT
+
+         if b['rect'].bottom > WINDOWHEIGHT:
+            # block has moved past the bottom
+            if b['dir'] == DOWNLEFT:
+               b['dir'] = UPLEFT
+            if b['dir'] == DOWNRIGHT:
+               b['dir'] = UPRIGHT
+
+         if b['rect'].left < 0:
+            # block has moved past the left side
+            if b['dir'] == DOWNLEFT:
+               b['dir'] = DOWNRIGHT
+            if b['dir'] == UPLEFT:
+               b['dir'] = UPRIGHT
+
+         if b['rect'].right > WINDOWWIDTH:
+            # block has moved past the right side
+            if b['dir'] == DOWNRIGHT:
+               b['dir'] = DOWNLEFT
+            if b['dir'] == UPRIGHT:
+               b['dir'] = UPLEFT
+
+         # draw the block onto the surface
+         pygame.draw.rect(windowSurface, b['color'],b['rect'])
+
+      # draw the window onto the screen
+      pygame.display.update()
+      time.sleep(0.02)
