@@ -5,9 +5,9 @@ name: Build PR
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -37,14 +37,14 @@ jobs:
       run: |
         runestone build
     - name: Save PR number
-      if: github.ref != 'refs/heads/master'
+      if: github.ref != 'refs/heads/main'
       run: |
         echo ${{ github.event.number }} > ./build/PyZombis/NR
         echo ${{ github.event.pull_request.head.repo.full_name }} > ./build/PyZombis/REPO
     - name: Save branch name
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       run: |
-        echo "master" > ./build/PyZombis/NR
+        echo "main" > ./build/PyZombis/NR
     - name: Upload generated content artifact
       uses: actions/upload-artifact@v2
       with:
