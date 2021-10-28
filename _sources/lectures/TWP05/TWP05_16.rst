@@ -10,8 +10,9 @@ Utilice el intérprete de modo interactivo aquí abajo para solucionar los sigui
 #. Indique el tipo de los siguientes valores: ``5``, ``5.0``, ``4.3``, ``-2``, ``100``, ``1.333``, ``"10"``
 #. Experimente en el intérprete interactivo de Python utilizar ``type(x)`` donde ``x`` es cada uno de los valores anteriores
 #. ¿Es posible calcular 2 elevado a un millón?
-#. Pruebe asignar a una variable la cadena de caracteres ``'hola'`` (string). 
-#. ¿Es posible sumar o multiplicar cadenas de caracteres (strings)?
+#. Pruebe asignar a una variable ``saludo`` la cadena de caracteres ``'hola'`` (string).
+#. Solicite que el usuario ingrese su nombre, y guardelo en otra variable ``nombre``
+#. ¿Es posible unir ambas cadenas de caracteres (strings) ``saludo`` y ``nombre``?
 #. Intente obtener la longitud de las cadena de caracteres con ``len(x)``
 
 
