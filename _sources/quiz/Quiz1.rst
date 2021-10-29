@@ -303,7 +303,7 @@ Quiz - 1
             :nocodelens:
 
             Sabiendo que  ``str()`` convierte valores numéricos en cadenas, 
-            calcule cuántos dígitos hay en 2 elevados a un millón. |br|
+            calcule cuántos dígitos hay en 2 elevado a la potencia de mil. |br|
 
             ~~~~
             def digitos():
@@ -316,7 +316,7 @@ Quiz - 1
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(digitos(), 301030, "Esperado: 301030")
+                    self.assertEqual(digitos(), 302, "Esperado: 302 digitos")
 
 
             myTests().main()
