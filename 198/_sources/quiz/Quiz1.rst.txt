@@ -14,11 +14,17 @@ Quiz - 1
         .. activecode:: q1_1
             :nocodelens:
 
-            Haga un programa que pida dos números enteros e imprima la suma de esos dos números. |br|
+            Haga un programa que dado dos números enteros, devuelva la suma de esos dos números. |br|
+            * Reemplazar los `...` por la fórmula correspondiente.
+            * Los números son dados en las variables n y m (parámetros)
    
             ~~~~
             def suma(n, m):
+                resultado = ...
+                return resultado
 
+            # Ejemplo para comprobación:
+            print("El resultado es:", suma(2, 3))
 
             ====
             from unittest.gui import TestCaseGui
