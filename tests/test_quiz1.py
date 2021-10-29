@@ -8,8 +8,7 @@ def test_quiz1_1(page):
     page.click("text=Ejercicio 1")
     page.click("text=def suma(n, m):")
     page.keyboard.press("ArrowDown")
-    page.keyboard.press("Tab")
-    page.keyboard.type("return n+m")
+    page.keyboard.press(" n+m #")
 
     # Run the exercise
     page.click("#q1_1 >> *css=button >> text=Run")
