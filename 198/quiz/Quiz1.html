@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 1 &#8212; PyZombis bugfix/quiz1@10e4318</title>
+    <title>Quiz - 1 &#8212; PyZombis bugfix/quiz1@7ebaaf6</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis bugfix/quiz1@10e4318
+          PyZombis bugfix/quiz1@7ebaaf6
         </a>
       </div>
     </div>
@@ -527,7 +527,7 @@ class myTests(TestCaseGui):
     def testOne(self):
 
         self.assertEqual(tiempo(5, 5), 1, "Esperado: 1")
-        self.assertEqual(round(tiempo(100, 3), 2), 33.33, "Esperado: 33.33"))
+        self.assertEqual(round(tiempo(100, 3), 2), 33.33, "Esperado: 33.33")
         self.assertEqual(tiempo(10500, 30), 350, "Esperado: 350")
         self.assertEqual(tiempo(8600, 50), 172, "Esperado: 172")
         self.assertEqual(tiempo(130, 200), 0.65, "Esperado: 0.65")
@@ -668,12 +668,10 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(
-                fumador(10, 1), ((10 * 1 * 365) * 10) / 1440, "Esperado: " + str(((10 * 1 * 365) * 10) / 1440)
-        )
-        self.assertEqual(round(fumador(3, 5), 2), round(((3 * 5 * 365) * 10) / 1440, 2), "Esperado: %.2f" % ((3 * 5 * 365) * 10) / 1440))
-        self.assertEqual(round(fumador(1, 8), 2), round(((1 * 8 * 365) * 10) / 1440, 2), "Esperado: %.2f" % ((1 * 8 * 365) * 10) / 1440))
-        self.assertEqual(round(fumador(2, 3), 2), round(((2 * 3 * 365) * 10) / 1440, 2), "Esperado: %.2f" % ((2 * 3 * 365) * 10) / 1440))
+        for c, a, e in ((10, 1, 25.35), (3, 5, 38.02), (1, 8, 20.28), (2, 3, 15.21)):
+            self.assertEqual(
+                round(fumador(c, a), 2), e, "Esperado: %.2f para %d cig. en %d años" % (e, c, a))
+            )
 
 
 myTests().main()
