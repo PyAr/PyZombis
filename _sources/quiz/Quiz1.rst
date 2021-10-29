@@ -175,7 +175,7 @@ Quiz - 1
                 def testOne(self):
             
                     self.assertEqual(tiempo(5, 5), 1, "Esperado: 1")
-                    self.assertEqual(round(tiempo(100, 3), 2), 33.33, "Esperado: 33.33"))
+                    self.assertEqual(round(tiempo(100, 3), 2), 33.33, "Esperado: 33.33")
                     self.assertEqual(tiempo(10500, 30), 350, "Esperado: 350")
                     self.assertEqual(tiempo(8600, 50), 172, "Esperado: 172")
                     self.assertEqual(tiempo(130, 200), 0.65, "Esperado: 0.65")
