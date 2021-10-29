@@ -294,7 +294,7 @@ Quiz - 1
     
                     for c, a, e in ((10, 1, 25.35), (3, 5, 38.02), (1, 8, 20.28), (2, 3, 15.21)):
                         self.assertEqual(
-                            round(fumador(c, a), 2), e, "Esperado: %.2f para %d cig. en %d años" % (e, c, a))
+                            round(fumador(c, a), 2), e, "Esperado: %.2f para %d cig. en %d años" % (e, c, a)
                         )
 
 
