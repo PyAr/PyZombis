@@ -169,7 +169,7 @@ Quiz - 1
                 def testOne(self):
             
                     self.assertEqual(tiempo(5, 5), 1, "Esperado: 1")
-                    self.assertEqual(tiempo(100, 3), 100/3, "Esperado: " + str(100/3))
+                    self.assertEqual(round(tiempo(100, 3), 2), 33.33, "Esperado: 33.33"))
                     self.assertEqual(tiempo(10500, 30), 350, "Esperado: 350")
                     self.assertEqual(tiempo(8600, 50), 172, "Esperado: 172")
                     self.assertEqual(tiempo(130, 200), 0.65, "Esperado: 0.65")
@@ -224,11 +224,11 @@ Quiz - 1
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(fahrenheit_a_celsius(21), ((21 - 32) * 5) / 9, "Esperado: " + str(((21 - 32) * 5) / 9))
-                    self.assertEqual(fahrenheit_a_celsius(108), ((108 - 32) * 5) / 9, "Esperado: " + str(((108 - 32) * 5) / 9))
-                    self.assertEqual(fahrenheit_a_celsius(0), ((0 - 32) * 5) / 9, "Esperado: " + str(((0 - 32) * 5) / 9))
-                    self.assertEqual(fahrenheit_a_celsius(-10), ((-10 - 32) * 5) / 9, "Esperado: " + str(((-10 - 32) * 5) / 9))
-                    self.assertEqual(fahrenheit_a_celsius(14), ((14 - 32) * 5) / 9, "Esperado: " + str(((14 - 32) * 5) / 9))
+                    self.assertEqual(round(fahrenheit_a_celsius(21), 2), round(((21 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((21 - 32) * 5) / 9))
+                    self.assertEqual(round(fahrenheit_a_celsius(108), 2), round(((108 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((108 - 32) * 5) / 9))
+                    self.assertEqual(round(fahrenheit_a_celsius(0), 2), round(((0 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((0 - 32) * 5) / 9))
+                    self.assertEqual(round(fahrenheit_a_celsius(-10), 2), round(((-10 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((-10 - 32) * 5) / 9))
+                    self.assertEqual(round(fahrenheit_a_celsius(14), 2), round(((14 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((14 - 32) * 5) / 9))
 
 
             myTests().main()
@@ -242,7 +242,7 @@ Quiz - 1
             Escriba un programa que pregunte por la cantidad de kilómetros recorridos 
             por un automóvil alquilado, así como el número de días que ha estado alquilado 
             el coche. Calcule el precio a pagar, sabiendo que el coche cuesta R $ 60,00 
-            por día y R $ 0,15 por km recorrido. |br|
+            por día y $ 0,15 por km recorrido. |br|
             
             ~~~~
             def precio(km, dias):
@@ -289,9 +289,9 @@ Quiz - 1
                     self.assertEqual(
                             fumador(10, 1), ((10 * 1 * 365) * 10) / 1440, "Esperado: " + str(((10 * 1 * 365) * 10) / 1440)
                     )
-                    self.assertEqual(fumador(3, 5), ((3 * 5 * 365) * 10) / 1440, "Esperado: " + str(((3 * 5 * 365) * 10) / 1440))
-                    self.assertEqual(fumador(1, 8), ((1 * 8 * 365) * 10) / 1440, "Esperado: " + str(((1 * 8 * 365) * 10) / 1440))
-                    self.assertEqual(fumador(2, 3), ((2 * 3 * 365) * 10) / 1440, "Esperado: " + str(((2 * 3 * 365) * 10) / 1440))
+                    self.assertEqual(round(fumador(3, 5), 2), round(((3 * 5 * 365) * 10) / 1440, 2), "Esperado: %.2f" % ((3 * 5 * 365) * 10) / 1440))
+                    self.assertEqual(round(fumador(1, 8), 2), round(((1 * 8 * 365) * 10) / 1440, 2), "Esperado: %.2f" % ((1 * 8 * 365) * 10) / 1440))
+                    self.assertEqual(round(fumador(2, 3), 2), round(((2 * 3 * 365) * 10) / 1440, 2), "Esperado: %.2f" % ((2 * 3 * 365) * 10) / 1440))
 
 
             myTests().main()
