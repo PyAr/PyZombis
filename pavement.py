@@ -44,7 +44,7 @@ options(
             "loglevel": 10,
             "course_title": project_name,
             "python3": "true",
-            "dburl": "postgresql://user:password@localhost/runestone",
+            "dburl": "",
             "default_ac_lang": "python",
             "downloads_enabled": "false",
             "enable_chatcodes": "false",
