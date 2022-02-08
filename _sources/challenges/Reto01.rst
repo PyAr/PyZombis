@@ -132,15 +132,16 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             import json
             from random import choice
 
-            api_url = "http://universities.hipolabs.com/search"
+            api_url = "https://countriesnow.space/api/v0.1/countries/state/cities"
+            payload = {"country": "spain", "state": "Community of Madrid"}
+            headers = {}
 
-            solicitud = requests.get(api_url)
+            solicitud = requests.request("POST", api_url, headers=headers, data=payload)
             datos = json.loads(solicitud.text)
 
             ciudades = []
-            for universidad in datos:
-                if universidad["country"] not in ciudades:
-                    ciudades.append(universidad["country"].lower().replace(" ", ""))
+            for ciudad in datos['data']:
+                ciudades.append(ciudad)
 
             def escoger(ciudades):
                 # Desarrolle la función
