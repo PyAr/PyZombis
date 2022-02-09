@@ -24,17 +24,17 @@ def test_r01(page):
     page.click("text=Ejercicio 3")
 
     # request data for the exercise to the .yaml file
-    res = requests.get("http://universities.hipolabs.com/search")
+    res =requests.get("https://countriesnow.space/api/v0.1/countries")
     datos = json.loads(res.text)
-    countries = [universidad["country"].lower().replace(" ", "") for universidad in datos]
+    ciudades = [item['cities'] for item in datos['data'] if item['country'] == "Spain"][0]
 
     page.click("#ac_r01_3 >> text=api_url =")
     page.keyboard.press("ArrowDown")
-    for i in range(8):
+    for i in range(11):
         page.keyboard.press("Control+Shift+ArrowDown")
     page.keyboard.press("Backspace")
 
-    page.keyboard.type(f"ciudades = {countries[:10]}")
+    page.keyboard.type(f"ciudades = {ciudades[:10]}")
 
     page.click("text=def escoger(ciudades):")
     page.keyboard.press("ArrowDown")
