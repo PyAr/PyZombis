@@ -1,44 +1,143 @@
-Usando sqlite3
-==============
+Usando SQL
+==========
 
 Notas de surfistas
 ------------------
 
 + La Federación de Surf tiene los siguientes datos: número del surfista,
   nombre, país, grado promedio, estilo, edad.
-
 + ¿Cómo usar estos datos?
-
 + Por ejemplo, quiero conocer a todos los surfistas mayores de 25
++ ¡Usando una base de datos! En este caso, SQL.
 
-+ ¡Usando una base de datos! En este caso, sqlite3
+.. raw:: html
 
-+ Obs .: copie surfersDB.sdb a su directorio
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js'></script>
+   <script id="create-db-script", query="", result="">
+      config = {
+         locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
+      }
+
+       function getData(config){
+         return initSqlJs(config).then(function(SQL){
+               //Create the database
+               window.db = new SQL.Database();
+
+               //Create table surfers
+               db.run("CREATE TABLE surfers (id, nombre, pais, media, estilo, edad)");
+
+               //Insert records
+               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (101, \"Johnny 'wave-boy' Jones\",\"USA\",8.32,\"Fish\",21)");
+               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (102, \"Juan Martino\",\"Spain\",9.01,\"Gun\",36)");
+               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (103, \"Joseph 'smitty' Smyth\",\"USA\",8.85,\"Cruizer\",18)");
+               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (104, \"Stacey O'Neill\",\"Ireland\",8.91,\"Malibu\",22)");
+               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (105, \"Aideen 'board babe' Wu\",\"Japan\",8.65,\"Fish\",24)");
+               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (106, \"Zack 'bonnie-lad' MacFadden\",\"Scotland\",7.82,\"Thruster\",26)");
+               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (107, \"Aaron Valentino\",\"Italy\",8.98,\"Gun\",19)");
+
+               // writing table in browser console as test
+               res = db.exec(document.getElementById("create-db-script").getAttribute("query"));
+               
+               if(res !== undefined && res.length > 0 && res[0].values.length > 0) {
+                  document.getElementById("create-db-script").setAttribute("result",JSON.stringify(res));        
+                  console.log(JSON.stringify(res));
+               }
+
+            });
+      }
 
 
-.. code-block :: python
+      var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+         if (mutation.type === "attributes") {
+               getData(config);
+         }
+      });
+      });
 
-   import sqlite3
-   base_datos = sqlite3.connect("surfersDB.sdb")
-   base_datos.row_factory = sqlite3.Row
-   cursor = base_datos.cursor()
-   cursor.execute("select * from surfers where age > 25")
-   linhas = cursor.fetchall()
-   for linha in linhas:
-      print("Nombre :",linha['name'])
-      print("Pais  :",linha['country'])
-      print("Media  :",linha['average'])
-      print("Estilo :",linha['board'])
-      print("Edad  :",linha['age'])
-      print()
-   cursor.close()
+      observer.observe(document.querySelector('#create-db-script'), {
+         attributes: true ,
+         attributeFilter: ['query']
+      });
+
+   </script>
 
 
++ Previamente fue creada una base de datos con una tabla llamada ``surfers``.
++ Esta tabla tiene la información de los participantes del torneo de surf organizada en las siguientes columnas: ``id``, ``nombre``, ``pais``, ``media``, ``estilo``, ``edad``.
++ ``id`` es un número entero que identifica al concursante.
++ ``nombre`` es una string con su nombre y su apodo (si tiene uno).
++ ``pais`` muestra el país que está representando en el torneo.
++ ``media`` es el promedio de puntos obtenidos en el torneo.
++ ``estilo`` es el estilo que tiene su tabla de surf.
++ ``edad`` es un número entero que muestra la edad del concursante.
 
-+ Nota: no guarde su programa con el nombre sqlite3.py (mismo nombre que lib)
 
-.. image:: ../img/TWP42_002.png
-   :height: 10.741cm
-   :width: 16.879cm
-   :align: center
-   :alt: 
+.. activecode:: ac_l42_1
+
+
+    En este ejercicio leeremos los datos de la tabla ``surfers`` y mostraremos
+    solo los mayores a 25 con una instrucción SQL (conocidas como query). 
+    Actualmente, la consulta devuelve todos los datos en la tabla ``surfers``.
+ 
+    ~~~~
+    import document, time, json
+ 
+    def formato_datos(data, width):
+       """
+       Función que recibe un diccionario y formatea los datos en forma de
+       params -> data: diccionario con los datos a formatear
+                width: ancho de la tabla
+       """
+       columns = data['columns']
+       for i in range(len(columns)):
+          print("_" * width, end="")
+       print()
+       for c in columns:
+          print("|",end="")
+          print(f"{c:<{width}}", end="")      
+       print()
+       for i in range(len(columns)):
+          print("_" * width, end="")
+       print()
+          
+       values = data['values']
+ 
+       for v in values:
+          for d in v:
+                print("|",end="")
+                print(f"{d:<{width}}", end="")      
+          print()
+
+       for i in range(len(columns)):
+          print("_" * width, end="")
+       print()
+ 
+ 
+ 
+    #modifique la consulta a continuación para mostrar los 
+    #detalles de las personas cuya edad es mayor de 25 años
+    query = """SELECT * FROM surfers"""
+ 
+ 
+    #usando el módulo de documento y SQL.js para ejecutar la 
+    #consulta en una base de datos predefinida
+    script_element = document.getElementById("create-db-script")
+    script_element.setAttribute("query", query)
+    time.sleep(1)
+ 
+    #recuperar el resultado de la consulta
+    #el resultado es un diccionario con claves de
+    #columnas y valores que representan los 
+    #nombres de las columnas y las filas respectivamente
+    result = json.loads(document.getElementById("create-db-script").getAttribute("result"))
+ 
+    if(result is None):
+       print("No data found")
+       print("Please check your query")
+    else:
+       result = result[0]
+       formato_datos(result,30)
+ 
+    document.getElementById("create-db-script").setAttribute("result", "")
+
