@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Usando SQL &#8212; PyZombis Refactor_TWP42_SQL_JS@fd6b01d</title>
+    <title>1. Usando SQL &#8212; PyZombis Refactor_TWP42_SQL_JS@b23818e</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
-    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
     <link rel="stylesheet" type="text/css" href="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.css?v=6ab2699256a7cd2f2dee" />
@@ -23,9 +23,9 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis Refactor_TWP42_SQL_JS@fd6b01d
+          PyZombis Refactor_TWP42_SQL_JS@b23818e
         </a>
       </div>
     </div>
@@ -336,11 +336,13 @@ nombre, país, grado promedio, estilo, edad.</p></li>
 <li><p>¡Usando una base de datos! En este caso, SQL.</p></li>
 </ul>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js'></script>
-<script id="create-db-script", query="", result="">
+
+<script id="create-db-script", query="", result="", flag="0">
    config = {
       locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
    }
-
+    // a fuction is created that returns a promise
+    // this function can be called everytime the query is executed
     function getData(config){
       return initSqlJs(config).then(function(SQL){
             //Create the database
@@ -358,18 +360,43 @@ nombre, país, grado promedio, estilo, edad.</p></li>
             db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (106, \"Zack 'bonnie-lad' MacFadden\",\"Scotland\",7.82,\"Thruster\",26)");
             db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (107, \"Aaron Valentino\",\"Italy\",8.98,\"Gun\",19)");
 
-            // writing table in browser console as test
+            // the below code sets the flag and query attributes of the script tag depending on the result of the query
+            // this is done to avoid the need for a callback function
+            // the query attribute is set to the query string
+            // the result attribute is set to the result of the query
+            // the flag attribute is set to 0 initially
+            // the flag attribute is set to "data found" if the query is successful and the result is not empty
+            // the flag attribute is set to "no data" if the query is successful and the result is empty
+            // the flag attribute is set to "query error" if the query is unsuccessful
+            try{
             res = db.exec(document.getElementById("create-db-script").getAttribute("query"));
+            console.log(res);
+            } catch(e) {
+               console.log(e);
+               document.getElementById("create-db-script").setAttribute("flag","query error flag");
+               document.getElementById("create-db-script").setAttribute("result",JSON.stringify("query error"));
+               res=undefined;
+               console.log(document.getElementById("create-db-script").getAttribute("flag"));
+               console.log(document.getElementById("create-db-script").getAttribute("result"));
+            }
 
             if(res !== undefined && res.length > 0 && res[0].values.length > 0) {
                document.getElementById("create-db-script").setAttribute("result",JSON.stringify(res));
-               console.log(JSON.stringify(res));
+               document.getElementById("create-db-script").setAttribute("flag","data found");
+               console.log(document.getElementById("create-db-script").getAttribute("flag"));
+               console.log(document.getElementById("create-db-script").getAttribute("result"));
+            }
+            else if(res.length==0){
+               document.getElementById("create-db-script").setAttribute("flag","no data");
+               document.getElementById("create-db-script").setAttribute("result",JSON.stringify("no data"));
+               console.log(document.getElementById("create-db-script").getAttribute("flag"));
+               console.log(document.getElementById("create-db-script").getAttribute("result"));
             }
 
          });
    }
 
-
+   // creating a mutation observer function to observe changes in attributes of script with id "create-db-script"
    var observer = new MutationObserver(function(mutations) {
    mutations.forEach(function(mutation) {
       if (mutation.type === "attributes") {
@@ -377,7 +404,8 @@ nombre, país, grado promedio, estilo, edad.</p></li>
       }
    });
    });
-
+   // the observer below only observes the attribute "query" of the script tag with id "create-db-script"
+   // if the query attribute is changed, the function getData is called
    observer.observe(document.querySelector('#create-db-script'), {
       attributes: true ,
       attributeFilter: ['query']
@@ -407,8 +435,10 @@ Actualmente, la consulta devuelve todos los datos en la tabla <code class="docut
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
+
 import document, time, json
 
+# función personalizada para imprimir datos en formato tabular
 def formato_datos(data, width):
    """
    Función que recibe un diccionario y formatea los datos en forma de
@@ -439,33 +469,92 @@ def formato_datos(data, width):
       print("_" * width, end="")
    print()
 
+# creando un contenedor para imitar el módulo sqlite3
+# actualmente solo algunas funciones como connect, execute, fetchall son imitados
+class Cursor:
+   def execute(self, query):
+      # get the script tag with id "create-db-script"
+      script_element = document.getElementById("create-db-script")
+      # set the "query" attribute of the script tag to the query string
+      script_element.setAttribute("query", query)
+
+      # the below code waits for result
+      # the result of the query can be one of 4 things
+      # 1. the result of the query is data present in the table
+      # 2. the result of the query is an empty list as no data is present in the table satisfying the query
+      # 3. the result of the query is an error because the query is invalid
+      # 4. the query is taking too long to execute, in this case if the qury takes more than 5 seconds, the flag is set to "query error flag" and the result is set to "query error"
+      start = time.time()
+      while(script_element.getAttribute("flag") != "data found" and script_element.getAttribute("flag") != "query error flag" and script_element.getAttribute("flag") != "no data"):
+            time.sleep(0.1)
+            if(time.time()-start > 5):
+                script_element.setAttribute("flag", "query error flag")
+                script_element.setAttribute("result", "query error")
+                break
+
+   # the below function returns the result of the query
+   def fetchall(self):
+      result = json.loads(document.getElementById("create-db-script").getAttribute("result"))
+
+      if(result=="no data"):
+            print("No data found")
+            print("Please check your query")
+            return None
+      elif(result=="query error"):
+            print("Query error \nSomething is wrong with the query")
+            return None
+      else:
+            result = result[0]
+            return result
+
+   # the below code resets the flag and result attributes of the script tag for the next query
+   def close(self):
+      document.getElementById("create-db-script").setAttribute("result", "")
+      document.getElementById("create-db-script").setAttribute("flag", "0")
+
+class Connection:
+   def cursor(self): return Cursor()
+
+def connect(table_name=None): return Connection()
+
+^^^^
+# el método de conexión de sqlite3 se ha importado para su uso
+# uno puede hacer esto por la declaración
+# from sqlite3 import connect
+
+# inicie la conexión y conéctese a la tabla de surfers predefinida
+base_datos = connect('surfers.db')
+
+# crear un cursor y ejecutar la consulta
+cursor = base_datos.cursor()
+query = 'SELECT * FROM surfers'
+
+cursor.execute(query)
+
+# obtener los datos
+linhas = cursor.fetchall()
+
+# imprimir los datos
+# Se ha predefinido la función formato_datos para imprimir el resultado en formato tabular
+if(linhas!=None):
+   formato_datos(linhas, 30)
+
+# cerrar el cursor
+cursor.close()
 
 
-#modifique la consulta a continuación para mostrar los
-#detalles de las personas cuya edad es mayor de 25 años
-query = """SELECT * FROM surfers"""
+====
+from unittest.gui import TestCaseGui
+import time
 
 
-#usando el módulo de documento y SQL.js para ejecutar la
-#consulta en una base de datos predefinida
-script_element = document.getElementById("create-db-script")
-script_element.setAttribute("query", query)
-time.sleep(1)
+class myTests(TestCaseGui):
+      def testOne(self):
+         ans = {"columns":["id","nombre","pais","media","estilo","edad"],"values":[[102,"Juan Martino","Spain",9.01,"Gun",36],[106,"Zack 'bonnie-lad' MacFadden","Scotland",7.82,"Thruster",26]]}
+         self.assertEqual(linhas, ans, "Comparando el resultado de la consulta con el resultado esperado")
 
-#recuperar el resultado de la consulta
-#el resultado es un diccionario con claves de
-#columnas y valores que representan los
-#nombres de las columnas y las filas respectivamente
-result = json.loads(document.getElementById("create-db-script").getAttribute("result"))
 
-if(result is None):
-   print("No data found")
-   print("Please check your query")
-else:
-   result = result[0]
-   formato_datos(result,30)
-
-document.getElementById("create-db-script").setAttribute("result", "")
+myTests().main()
 </textarea>
 </div>
 </div>
