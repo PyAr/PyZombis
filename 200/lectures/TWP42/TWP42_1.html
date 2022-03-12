@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Usando SQL &#8212; PyZombis Refactor_TWP42_SQL_JS@0386521</title>
+    <title>1. Usando SQL &#8212; PyZombis Refactor_TWP42_SQL_JS@1cfa8c2</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis Refactor_TWP42_SQL_JS@0386521
+          PyZombis Refactor_TWP42_SQL_JS@1cfa8c2
         </a>
       </div>
     </div>
@@ -337,7 +337,7 @@ nombre, país, grado promedio, estilo, edad.</p></li>
 </ul>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js'></script>
 
-<script id="create-db-script", query="", result="", flag="0">
+<script id="create-db-script", query="", result="", flag="0", error="">
    config = {
       locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
    }
@@ -373,6 +373,7 @@ nombre, país, grado promedio, estilo, edad.</p></li>
             console.log(res);
             } catch(e) {
                console.log(e);
+               document.getElementById("create-db-script").setAttribute("error",e);
                document.getElementById("create-db-script").setAttribute("flag","query error flag");
                document.getElementById("create-db-script").setAttribute("result",JSON.stringify("query error"));
                res=undefined;
@@ -475,6 +476,9 @@ class Cursor:
       # set the "query" attribute of the script tag to the query string
       if(self.curr_query == ""):
          self.curr_query = self.prev_query
+      if("BEGIN TRANSACTION" not in self.curr_query):
+         self.curr_query = "BEGIN TRANSACTION;\n" + self.curr_query
+
       script_element.setAttribute("query", self.curr_query)
       self.prev_query = self.curr_query
       self.curr_query = ""
@@ -495,21 +499,20 @@ class Cursor:
       result = json.loads(document.getElementById("create-db-script").getAttribute("result"))
 
       if(result=="no data"):
-            print("No data found")
-            print("Please check your query")
-            document.getElementById("create-db-script").setAttribute("result", "")
-            document.getElementById("create-db-script").setAttribute("flag", "0")
-            return None
+         document.getElementById("create-db-script").setAttribute("result", "")
+         document.getElementById("create-db-script").setAttribute("flag", "0")
+         raise Exception("No data found in the table for the query.\n\nException raised by sqlite3")
       elif(result=="query error"):
-            print("Query error \nSomething is wrong with the query")
-            document.getElementById("create-db-script").setAttribute("result", "")
-            document.getElementById("create-db-script").setAttribute("flag", "0")
-            return None
+         document.getElementById("create-db-script").setAttribute("result", "")
+         document.getElementById("create-db-script").setAttribute("flag", "0")
+         error_msg = str(document.getElementById("create-db-script").getAttribute("error")) + "\n\nException raised by sqlite3"
+         raise SyntaxError(error_msg)
       else:
-            result = result[0]
-            document.getElementById("create-db-script").setAttribute("result", "")
-            document.getElementById("create-db-script").setAttribute("flag", "0")
-            return formato_datos(result)
+         result = result[0]
+         document.getElementById("create-db-script").setAttribute("result", "")
+         document.getElementById("create-db-script").setAttribute("flag", "0")
+         return formato_datos(result)
+
 
    # the below code resets the flag and result attributes of the script tag for the next query
    def close(self):
@@ -517,14 +520,16 @@ class Cursor:
       document.getElementById("create-db-script").setAttribute("flag", "0")
 
 class Connection:
+   def __init__(self):
+      self.curr_cursor_obj = Cursor()
+   def cursor(self):
+       return self.curr_cursor_obj
    def commit(self):
-      pass
+      self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"COMMIT TRANSACTION;\n"
    def rollback(self):
-      pass
+      self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"ROLLBACK TRANSACTION;\n"
    def close(self):
       pass
-   def cursor(self):
-       return Cursor()
 
 def connect(table_name=None): return Connection()
 
