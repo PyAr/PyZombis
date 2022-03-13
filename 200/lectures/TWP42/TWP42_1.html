@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Usando SQL &#8212; PyZombis Refactor_TWP42_SQL_JS@1cfa8c2</title>
+    <title>1. Usando SQL &#8212; PyZombis Refactor_TWP42_SQL_JS@c501568</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis Refactor_TWP42_SQL_JS@1cfa8c2
+          PyZombis Refactor_TWP42_SQL_JS@c501568
         </a>
       </div>
     </div>
@@ -476,9 +476,9 @@ class Cursor:
       # set the "query" attribute of the script tag to the query string
       if(self.curr_query == ""):
          self.curr_query = self.prev_query
-      if("BEGIN TRANSACTION" not in self.curr_query):
+      if("BEGIN TRANSACTION" not in self.curr_query[:20]):
          self.curr_query = "BEGIN TRANSACTION;\n" + self.curr_query
-
+      print("final query: ", self.curr_query)
       script_element.setAttribute("query", self.curr_query)
       self.prev_query = self.curr_query
       self.curr_query = ""
@@ -525,7 +525,7 @@ class Connection:
    def cursor(self):
        return self.curr_cursor_obj
    def commit(self):
-      self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"COMMIT TRANSACTION;\n"
+      self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"COMMIT TRANSACTION;\nBEGIN TRANSACTION;\n"
    def rollback(self):
       self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"ROLLBACK TRANSACTION;\n"
    def close(self):

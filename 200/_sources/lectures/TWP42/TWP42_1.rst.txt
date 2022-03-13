@@ -149,9 +149,9 @@ Notas de surfistas
           # set the "query" attribute of the script tag to the query string
           if(self.curr_query == ""):
              self.curr_query = self.prev_query
-          if("BEGIN TRANSACTION" not in self.curr_query):
+          if("BEGIN TRANSACTION" not in self.curr_query[:20]):
              self.curr_query = "BEGIN TRANSACTION;\n" + self.curr_query
-
+          print("final query: ", self.curr_query)
           script_element.setAttribute("query", self.curr_query)
           self.prev_query = self.curr_query
           self.curr_query = ""
@@ -198,7 +198,7 @@ Notas de surfistas
        def cursor(self):
            return self.curr_cursor_obj
        def commit(self):
-          self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"COMMIT TRANSACTION;\n"
+          self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"COMMIT TRANSACTION;\nBEGIN TRANSACTION;\n"
        def rollback(self):
           self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"ROLLBACK TRANSACTION;\n"
        def close(self):
