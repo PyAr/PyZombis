@@ -151,7 +151,6 @@ Notas de surfistas
              self.curr_query = self.prev_query
           if("BEGIN TRANSACTION" not in self.curr_query[:20]):
              self.curr_query = "BEGIN TRANSACTION;\n" + self.curr_query
-          print("final query: ", self.curr_query)
           script_element.setAttribute("query", self.curr_query)
           self.prev_query = self.curr_query
           self.curr_query = ""
