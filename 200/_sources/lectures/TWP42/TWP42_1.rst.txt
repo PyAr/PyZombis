@@ -14,7 +14,7 @@ Notas de surfistas
 
    <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js'></script>
 
-   <script id="create-db-script", query="", result="", flag="0", error="">
+   <script id="create-db-script", query="", result="", flag="0", error="", first_exec_flag="">
       config = {
          locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
       }
@@ -22,20 +22,24 @@ Notas de surfistas
        // this function can be called everytime the query is executed
        function getData(config){
          return initSqlJs(config).then(function(SQL){
-               //Create the database
-               window.db = new SQL.Database();
 
-               //Create table surfers
-               db.run("CREATE TABLE surfers (id, nombre, pais, media, estilo, edad)");
 
-               //Insert records
-               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (101, \"Johnny 'wave-boy' Jones\",\"USA\",8.32,\"Fish\",21)");
-               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (102, \"Juan Martino\",\"Spain\",9.01,\"Gun\",36)");
-               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (103, \"Joseph 'smitty' Smyth\",\"USA\",8.85,\"Cruizer\",18)");
-               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (104, \"Stacey O'Neill\",\"Ireland\",8.91,\"Malibu\",22)");
-               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (105, \"Aideen 'board babe' Wu\",\"Japan\",8.65,\"Fish\",24)");
-               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (106, \"Zack 'bonnie-lad' MacFadden\",\"Scotland\",7.82,\"Thruster\",26)");
-               db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (107, \"Aaron Valentino\",\"Italy\",8.98,\"Gun\",19)");
+               if(document.getElementById("create-db-script").getAttribute("first_exec_flag") == "true"){
+                  console.log("first_exec_flag is true")
+                  //Create the database
+                  window.db = new SQL.Database();
+                  //Create table surfers
+                  db.run("CREATE TABLE surfers (id, nombre, pais, media, estilo, edad)");
+
+                  //Insert records
+                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (101, \"Johnny 'wave-boy' Jones\",\"USA\",8.32,\"Fish\",21)");
+                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (102, \"Juan Martino\",\"Spain\",9.01,\"Gun\",36)");
+                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (103, \"Joseph 'smitty' Smyth\",\"USA\",8.85,\"Cruizer\",18)");
+                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (104, \"Stacey O'Neill\",\"Ireland\",8.91,\"Malibu\",22)");
+                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (105, \"Aideen 'board babe' Wu\",\"Japan\",8.65,\"Fish\",24)");
+                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (106, \"Zack 'bonnie-lad' MacFadden\",\"Scotland\",7.82,\"Thruster\",26)");
+                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (107, \"Aaron Valentino\",\"Italy\",8.98,\"Gun\",19)");
+               }
                
                // the below code sets the flag and query attributes of the script tag depending on the result of the query
                // this is done to avoid the need for a callback function
@@ -74,11 +78,21 @@ Notas de surfistas
             });
       }
 
+      let coun = 0;
       // creating a mutation observer function to observe changes in attributes of script with id "create-db-script"
       var observer = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
          if (mutation.type === "attributes") {
-               getData(config);
+               if(coun == 0){
+                  console.log("first mutation");
+                  coun++;
+                  document.getElementById("create-db-script").setAttribute("first_exec_flag","true");
+               }
+               else{
+                  console.log("next mutation");
+                  document.getElementById("create-db-script").setAttribute("first_exec_flag","false");
+               }                  
+                 getData(config);
          }
       });
       });
@@ -135,6 +149,7 @@ Notas de surfistas
        def __init__(self):
           self.prev_query = """"""
           self.curr_query = """"""
+          self.prev_result = None
        def execute(self, query):
           query = query.strip()
           if(query[-1] != ";"):
@@ -149,9 +164,12 @@ Notas de surfistas
           # set the "query" attribute of the script tag to the query string
           if(self.curr_query == ""):
              self.curr_query = self.prev_query
-          if("BEGIN TRANSACTION" not in self.curr_query[:20]):
+          if(script_element.getAttribute("first_exec_flag") is None):
              self.curr_query = "BEGIN TRANSACTION;\n" + self.curr_query
-          script_element.setAttribute("query", self.curr_query)
+          if(self.prev_query == self.curr_query):  
+             return formato_datos(self.prev_result)
+          else:
+             script_element.setAttribute("query", self.curr_query)
           self.prev_query = self.curr_query
           self.curr_query = ""
           # the below code waits for result
@@ -181,6 +199,7 @@ Notas de surfistas
              raise SyntaxError(error_msg)
           else:
              result = result[0]
+             self.prev_result = result
              document.getElementById("create-db-script").setAttribute("result", "")
              document.getElementById("create-db-script").setAttribute("flag", "0")
              return formato_datos(result)
