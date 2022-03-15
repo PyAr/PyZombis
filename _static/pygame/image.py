@@ -46,7 +46,7 @@ import javascript
 import os
 import re
 
-#from SDL import *
+from pygame.SDL import *
 
 import pygame.surface
 

@@ -77,7 +77,7 @@ from pygame.version import *
 from pygame.rect import Rect
 import pygame.color
 Color = pygame.color.Color
-__version__ = ver
+__version__ = '2.0.1-PY-MOCKUP'
 
 #added by earney
 from . import time

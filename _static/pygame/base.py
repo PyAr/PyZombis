@@ -27,7 +27,7 @@ __version__ = '$Id$'
 # import atexit
 # import sys
 
-#import SDL
+from pygame.SDL import *
 
 _quitfunctions = []
 
