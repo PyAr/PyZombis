@@ -1,0 +1,68 @@
+Conceptos básicos de SQL
+========================
+
+
+.. image:: ../img/TWP42_003.jpeg
+   :height: 12.571cm
+   :width: 10.861cm
+   :align: center
+   :alt: 
+
+
+Nociones de bases de datos
+--------------------------
+
+
+.. image:: ../img/TWP42_004.jpeg
+   :height: 14.001cm
+   :width: 14.001cm
+   :align: center
+   :alt: 
+
+
+.. image:: ../img/TWP42_005.jpeg
+   :height: 13.953cm
+   :width: 17.401cm
+   :align: center
+   :alt: 
+
+
+Crear un base de estudiantes
+----------------------------
+
+
+.. code-block :: python
+
+   import sqlite3
+   con = sqlite3.connect('alumnos.bd')
+   cur = con.cursor()
+   cur.execute('''create table alumnos(login varchar(8),ra integer)''')
+   cur.close()
+   con.close() 
+
+
+Accediendo a la base alumnos.bd
+-------------------------------
+
+
+.. code-block :: python
+
+   import sqlite3
+   con = sqlite3.connect('alumnos.bd')
+   cur = con.cursor()
+   cur.execute('insert into alumnos values("masanori",42)')
+   cur.execute('insert into alumnos values("emengarda",666)')
+   cur.execute('select * from alumnos')
+   cur.close()
+   con.commit()
+   con.close() 
+
+
+Resultado:
+----------
+
+.. image:: ../img/TWP42_008.png
+   :height: 2.724cm
+   :width: 10.212cm
+   :align: center
+   :alt: 

@@ -1,0 +1,94 @@
+Programacion Modular
+====================
+
+
+.. image:: ../img/TWP47_001.png
+   :height: 11.865cm
+   :width: 21.001cm
+   :align: center
+   :alt: 
+
+
+Archivo Transactions.txt
+------------------------
+
+
+.. image:: ../img/TWP47_002.png
+   :height: 9.515cm
+   :width: 22.859cm
+   :align: center
+   :alt: 
+
+
+Venta Salgados
+--------------
+
+.. code-block:: python
+
+   def salva_transacao(precio, tarjeta_de_credito, descripcion):
+      file = open('transacoes.txt',"a")
+      file.write("%16s%07d%16s\n" %(tarjeta_de_credito,precio*100,descripcion))
+      file.close()
+
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
+
+   while corriendo:
+      opción = 1
+      for elegir in alrticulos					:
+         print(str(opcion) + "." + elegir)
+         opcao += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Escoja una opción: "))
+      if elegir == opcion:
+         #escolheu a ultima opcion Finalizar
+         corriendo = False
+      else:
+         credito = input("Número de tarjeta de crédito: ")
+         guardar_transacción(precios[elegir-1],tarjeta,articulos[elegir-1]) 
+
+
+.. image:: ../img/TWP47_004.jpg
+   :height: 11.112cm
+   :width: 15.768cm
+   :align: center
+   :alt: 
+
+
++ Problemas: el banco rechazó el archivo de transacción completo para el período
+  ¡de mañana!
++ Todas las tarjetas no eran válidas
++ ¡Los precios eran demasiado altos: donut vendido por R $ 50.791,42!
++ En los otros períodos no hubo problema. Que paso
+
+.. image:: ../img/TWP47_005.png
+   :height: 5.952cm
+   :width: 10.08cm
+   :align: center
+   :alt: 
+
+
+.. image:: ../img/TWP47_006.png
+   :height: 11.945cm
+   :width: 22.859cm
+   :align: center
+   :alt: 
+
+
++ ¡El banco cambió el orden de los datos! [Precio / Tarjeta / Artículo]
+
+.. image:: ../img/TWP47_007.png
+   :height: 4.001cm
+   :width: 22.802cm
+   :align: center
+   :alt: 
+
+
+.. image:: ../img/TWP47_008.jpg
+   :height: 12.571cm
+   :width: 19.998cm
+   :align: center
+   :alt: 
+
+
