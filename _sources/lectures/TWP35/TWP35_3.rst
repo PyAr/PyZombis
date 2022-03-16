@@ -21,7 +21,7 @@ Programa con funciones
 
 
     def capturar_precio():
-        pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+        pagina = urllib.request.urlopen("https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices-loyalty.html")
         texto = pagina.read()
         donde = texto.find("$")
         inicio = donde + 1
