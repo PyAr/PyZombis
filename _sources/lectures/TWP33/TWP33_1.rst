@@ -17,7 +17,7 @@ Código Starbuzz actual
    
     from urllib.request import urlopen
 
-    precios = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html"
+    precios = "https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices.html"
     pagina = urlopen(precios)
     texto = pagina.read()
     print(texto)
