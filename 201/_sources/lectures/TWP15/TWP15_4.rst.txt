@@ -1,0 +1,67 @@
+Acumuladores
+============
+
+
++ La diferencia entre un contador y un acumulador es que en contadores el
+  el valor agregado es constante, y en acumuladores, variable.
+
++ Cálculo de la suma de diez números enteros
+
+
+.. activecode:: ac_l15_4a
+   :nocodelens:
+   :stdin:
+    
+   n = 1
+   suma = 0
+   while n <= 10:
+       x = int(input("Ingrese el último %d número: " %n))
+       suma = suma + x
+       n = n + 1
+
+   print("suma: %d" %suma)
+
+
++ Promedio de 10 números enteros
+
+
+.. activecode:: ac_l15_4b
+   :nocodelens:
+   :stdin:
+
+   n = 0
+   suma = 0
+   while n < 10:
+       x = int(input("Ingrese el último %d número: " %(n + 1)))
+       suma = suma + x
+       n = n + 1
+   
+   print("Promedio: %5.2f" %(suma / n))
+
+
++ Calcular el factorial de diez
+
+.. codelens:: cl_l15_4
+
+   i = 1
+   fact = 1
+   while i <= 10:
+       fact = fact * i
+       i = i + 1
+   print("Fact(10) = %d" %fact)
+
+
++ Calcular el factorial de un número entero ``n``
+
+.. activecode:: ac_l15_4c
+   :nocodelens:
+   :stdin:
+
+   i = 1
+   fact = 1
+   n = int(input("Ingrese n: "))
+   while i <= n:
+       fact = fact * i
+       i = i + 1
+
+   print("Fact(%d) = %d" %(n, fact))

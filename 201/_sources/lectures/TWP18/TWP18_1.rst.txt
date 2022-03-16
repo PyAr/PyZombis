@@ -1,0 +1,21 @@
+Comillas de varios tipos
+========================
+
++ ¿Puedo usar comillas simples, dobles o triples?
+
+
+.. codelens:: cl_l18_1
+         
+    x = 'aguacate'
+    print(x)
+    y = "McDonald's"
+    print(y)
+    formulario = """
+    <html>
+    <head>
+        <title> Prueba </title>
+    </head>
+    <body>
+        <p>Probando</p>
+    </body>
+    <html>"""
