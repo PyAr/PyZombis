@@ -32,6 +32,9 @@ Pygame Hello World
     Intenta ejecutar este código. Explore con colores cambiantes y la ubicación del rectángulo.
 
     ~~~~
+    import sys
+    sys.path.append("../../_static")
+    ^^^^
     import pygame 
     pygame.init() 
     scr = pygame.display.set_mode((500,500)) 
