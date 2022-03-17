@@ -25,7 +25,7 @@ La documentación de la API de `TasteDive <https://tastedive.com/read/api>`_.
     import json
 
     api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    proxy = "https://api.allorigins.win/raw?url="
 
     # Los parámetros que se le pasaran a la url los escribimos dentro de un diccionario
     parametros = {"q": "ariana grande"}
@@ -62,7 +62,7 @@ se transforma a un diccionario de Python. Sin embargo, no es del todo legible. E
     import json
 
     api_url = "https://tastedive.com/api/similar?"
-    proxy = "https://cors.bridged.cc/"
+    proxy = "https://api.allorigins.win/raw?url="
     # La siguiente línea es para los parámetros de la url.
     parametros = urllib.parse.urlencode({"q": "coldplay"})
 
@@ -111,7 +111,7 @@ El siguiente ejercicio viene con calificación automática.
     import json
 
     api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    proxy = "https://api.allorigins.win/raw?url="
 
     # Agregue los parámetros
     parametros = {}
@@ -144,15 +144,15 @@ El siguiente ejercicio viene con calificación automática.
         def testOne(self):
             self.assertEqual(
                 solicitud_url,
-                "https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
-                "Probando que la url sea: https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                "https://api.allorigins.win/raw?url=https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                "Probando que la url sea: https://api.allorigins.win/raw?url=https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
             )
             self.assertEqual(resultados, 5, "Probando que resultados esté asignado correctamente.")
             self.assertEqual(len(peliculas_similares), 5, "Probando que peliculas_similares sean: 5")
             self.assertEqual(
                 peliculas_similares,
-                ["Toy Story 3", "Finding Nemo", "Inside Out", "Spirited Away", "Monsters, Inc."],
-                "Esperado: ['Toy Story 3', 'Finding Nemo', 'Inside Out', 'Spirited Away', 'Monsters, Inc.']",
+                ["Toy Story 3", "Finding Nemo", "Inside Out", 'Up', "Monsters, Inc."],
+                "Esperado: ['Toy Story 3', 'Finding Nemo', 'Inside Out', 'Up', 'Monsters, Inc.']",
             )
             self.assertEqual(pixar, 5, "Probando que pixar esté asignado correctamente.")
 
