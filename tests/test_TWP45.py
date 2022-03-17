@@ -42,7 +42,7 @@ def test_l45_3(page):
     page.keyboard.press("Backspace")
 
     instructions1 = [
-        f"solicitud_url = 'https://cors.bridged.cc/{res.url}'",
+        f"solicitud_url = 'https://api.allorigins.win/raw?url={res.url}'",
         f'resultados = {len(data["Similar"]["Results"])}',
         f"peliculas_similares = {movies}",
     ]
