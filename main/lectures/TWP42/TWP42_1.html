@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Usando sqlite3 &#8212; PyZombis main@49d9384</title>
+    <title>1. Usando sqlite3 &#8212; PyZombis main@a4052d6</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@49d9384
+          PyZombis main@a4052d6
         </a>
       </div>
     </div>
@@ -336,6 +336,49 @@ nombre, país, grado promedio, estilo, edad.</p></li>
 <li><p>¡Usando una base de datos! En este caso, sqlite3</p></li>
 <li><p>Obs .: copie surfersDB.sdb a su directorio</p></li>
 </ul>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js'></script>
+
+<script type="text/javascript">
+   config = {
+      locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
+   }
+   // Version 1.0 of sql.js must be loaded asynchronously:
+   initSqlJs(config).then(function(SQL){
+      // use the global JS namespace as it is available later to Brython via browser.window:
+      window.Database = SQL.Database;
+   });
+</script>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_42_1 data-question_label="1.1.1">
+<div id=ac_42_1_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_42_1_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import document, window
+import json
+
+db = window.parent.Database.new()  # we're in a IFRAME!
+
+db.run("CREATE TABLE surfers (id, nombre, pais, media, estilo, edad)")
+db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (101, \"Johnny 'wave-boy' Jones\",\"USA\",8.32,\"Fish\",21)")
+db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (102, \"Juan Martino\",\"Spain\",9.01,\"Gun\",36)")
+db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (103, \"Joseph 'smitty' Smyth\",\"USA\",8.85,\"Cruizer\",18)")
+db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (104, \"Stacey O'Neill\",\"Ireland\",8.91,\"Malibu\",22)")
+db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (105, \"Aideen 'board babe' Wu\",\"Japan\",8.65,\"Fish\",24)")
+db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (106, \"Zack 'bonnie-lad' MacFadden\",\"Scotland\",7.82,\"Thruster\",26)")
+db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (107, \"Aaron Valentino\",\"Italy\",8.98,\"Gun\",19)")
+res = db.exec("SELECT * FROM surfers WHERE edad>25")
+
+for i in range(len(res[0]["values"])):
+   for j in range(len(res[0]["columns"])):
+      print(res[0]["columns"][j], res[0]["values"][i][j])
+</textarea>
+</div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 <span class="n">base_datos</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;surfersDB.sdb&quot;</span><span class="p">)</span>
 <span class="n">base_datos</span><span class="o">.</span><span class="n">row_factory</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Row</span>
