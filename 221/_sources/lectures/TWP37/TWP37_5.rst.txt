@@ -1,0 +1,84 @@
+Nueva puntuación
+================
+
+..  datafile:: surf3.txt
+    :hide: 
+      
+    Johny 8.65
+    Juan 9.12
+    Joseph 8.45
+    Stacey 7.81
+    Aideen 8.05
+    Zack 7.21
+    Aaron 8.31
+
+..  activecode:: ac_l37_5a
+    :nocodelens:
+    :datafile: surf3.txt
+    :stdin:
+   
+    archivo = open("surf3.txt")
+    puntuaciones = []
+
+    for linea in archivo:
+        nombre, puntos = linea.split()
+        puntuaciones.append(float(puntos))
+    archivo.close()
+
+    print(f"1. {puntuaciones[0]:.2f}")
+    print(f"2. {puntuaciones[1]:.2f}")
+    print(f"3. {puntuaciones[2]:.2f}")
+
+
+.. image:: ../img/TWP37_021.jpg
+   :height: 10.006cm
+   :width: 12.699cm
+   :align: center
+   :alt:
+
+
+Ordenar en orden descendente
+----------------------------
+
+..  image:: ../img/TWP37_022.jpg
+    :height: 12.571cm
+    :width: 22.825cm
+    :align: center
+    :alt:
+
+
+Métodos ``sort`` y ``reverse``
+------------------------------
+
++ El método ``sort`` ordena los datos.
++ El uso de ``reverse`` para mantenerlos en orden descendente.
++ Es más inteligente usar ``puntuaciones.sort(reverse = True)``
+
+
+Finalmente las posiciones correctas
+-----------------------------------
+
+..  activecode:: ac_l37_5b
+    :nocodelens:
+    :datafile: surf3.txt
+    :stdin:
+   
+    archivo = open("surf3.txt")
+    puntuaciones = []
+
+    for linea in archivo:
+        nombre, puntos = linea.split()
+        puntuaciones.append(float(puntos))
+    archivo.close()
+
+    puntuaciones.sort(reverse = True)
+
+    print(f"1. {puntuaciones[0]:.2f}")
+    print(f"2. {puntuaciones[1]:.2f}")
+    print(f"3. {puntuaciones[2]:.2f}")
+
+..  image:: ../img/TWP37_025.jpg
+    :height: 7.724cm
+    :width: 16.645cm
+    :align: center
+    :alt:

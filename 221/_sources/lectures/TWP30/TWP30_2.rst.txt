@@ -1,0 +1,73 @@
+.. role:: black
+.. role:: blue
+.. role:: red
+.. role:: green
+.. role:: purple
+.. role:: yellow
+
+Las partes de tu programa
+=========================
+
+Adivinando números
+------------------
+
+.. activecode:: ac_l30_2
+    :nocodelens:
+    :stdin:
+
+    print("Bienvenido!")
+    g = input("Ingrese un número: ")
+    numero = int(g)
+    if numero == 42:
+        print("¡Ganaste!")
+    else:
+        print("¡Tú perdiste!")
+    print("¡Fin del juego!")
+    
+
+Las partes del programa
+-----------------------
+
+Ahora analizemos las partes del código anterior
+
+.. raw:: html
+
+   <div>
+        <style>
+            div.code-example {border: 1px ; border: 1.5px solid #b3b3b3; padding: 15px;
+                border-radius: 4px; background-color:rgb(226, 226, 226)}
+            code.code-example {font-size: 20px;background-color:transparent}
+            .black {color:black}
+            .blue {color:#3300AA}
+            .red {color:#AA1111}
+            .green {color:#116644}
+            .purple {color:#770088}
+            .yellow {background:yellow}
+        </style>
+        <div class="code-example">
+            <code class="code-example">
+                <text class="blue">print</text><text class="black">(</text><text class="red">"Bienvenido!"</text><text class="black">)</text><br/>
+                <text class="black">g = </text><text class="blue">input</text><text class="black">(</text><text class="red">"Ingrese un número: "</text><text class="black">)</text><br/>
+                <text class="black">numero = </text><text class="blue">int</text><text class="black">(g)</text><br/>
+                <text class="purple">if</text> <text class="black">numero == </text><text class="green">42</text><text class="black">:</text><br/>
+                <text class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;</text><text class="blue">print</text><text class="black">(</text><text class="red">"¡Ganaste!"</text><text class="black">)</text><br/>
+                <text class="purple">else</text><text class="black">:</text><br/>
+                <text class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;</text><text class="blue">print</text><text class="black">(</text><text class="red">"¡Tú perdiste!"</text><text class="black">)</text><br/>
+                <text class="blue">print</text><text class="black">(</text><text class="red">"¡Fin del juego!"</text><text class="black">)</text><br/>
+            </code>
+        </div>
+    </div>
+
+Tenga en cuenta que en el siguiente programa:
+
++ Las partes en azul son :blue:`funciones` (ej: **print()**) 
++ Las partes en rojo son :red:`strings o cadenas` (ej: **"¡Bienvenido!"**)
++ Las partes en verde son :green:`números` (ej: **42**)
++ Las partes en púrpura son :purple:`directivas` (ej: **if** y **else**)
++ Las partes en amarillo son :yellow:`indentaciones o sangría` ("Cada uno en su bloque")
++ Las partes en negro son :black:`variables` (ej: **g** y **numero**)
++ El símbolo de igual (``=``) es el operador de asignación y se usa para asignar valores a variables (ej: ``numero = int(g)`` La variable 'número' recibe un entero de g))
++ El símbolo de doble igual (``==``) es el operador de comparación y se usa para comparar dos variables o valores (ej: ``numero == 42`` ¿el número es igual a 42?)
++ El símbolo de dos puntos (``:``) es el operador que abre un bloque de indentación. Va después de las directivas (ej: ``if numero == 42:`` y ``else:``) 
+
+**Nota:** Estos son los colores de los bloques de código que haz visto durante el curso, pero estos colores pueden variar dependiendo de la herramienta que se use para programar.
