@@ -13,7 +13,7 @@ Solo cuando es inferior a 4,74
    
     from urllib.request import urlopen
 
-    URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
+    URL_PRECIOS_LOYALTY = "https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices-loyalty.html"
     pagina = urlopen(URL_PRECIOS_LOYALTY)
     texto = pagina.read()
     ubicacion = texto.find(">$")

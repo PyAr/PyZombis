@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>7. Los strings son diferentes de los números &#8212; PyZombis Pygame_POC@48f4c4f</title>
+    <title>7. Los strings son diferentes de los números &#8212; PyZombis Pygame_POC@6fc6635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis Pygame_POC@48f4c4f
+          PyZombis Pygame_POC@6fc6635
         </a>
       </div>
     </div>
@@ -342,7 +342,7 @@ window.addEventListener('load', (event) => {
       style="visibility: hidden;">
 from urllib.request import urlopen
 
-URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
+URL_PRECIOS_LOYALTY = "https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices-loyalty.html"
 pagina = urlopen(URL_PRECIOS_LOYALTY)
 texto = pagina.read()
 ubicacion = texto.find(">$")
@@ -373,7 +373,7 @@ if float(texto[inicio:fin]) < 4.74:
       style="visibility: hidden;">
 from urllib.request import urlopen
 
-URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
+URL_PRECIOS_LOYALTY = "https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices-loyalty.html"
 precio = 99.99
 while precio >= 4.74:
     pagina = urlopen(URL_PRECIOS_LOYALTY)
