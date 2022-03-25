@@ -32,8 +32,8 @@ Pygame Hello World
     Intenta ejecutar este código. Explore con colores cambiantes y la ubicación del rectángulo.
 
     ~~~~
-    import sys
-    sys.path.append("../../_static")
+    from browser import load
+    load('../../_static/pygame.brython.js')
     ^^^^
     import pygame 
     pygame.init() 
