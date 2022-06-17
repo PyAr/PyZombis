@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '03e6055987e174952cf72a0aaf7d7bde98b9bd05-Pygame(Brython-&amp;-GameJs)',
+    VERSION: '9cda9cd60532ea8c4982418ea22605f270316b5d-Pygame(Brython-&amp;-GameJs)',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
