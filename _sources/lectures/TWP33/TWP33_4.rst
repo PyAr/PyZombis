@@ -17,7 +17,7 @@ Programa de fidelización
    
     from urllib.request import urlopen
 
-    URL_PRECIOS_LOYALTY = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html"
+    URL_PRECIOS_LOYALTY = "https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices-loyalty.html"
     pagina = urlopen(URL_PRECIOS_LOYALTY)
     texto = pagina.read()
     print(texto[234:238])

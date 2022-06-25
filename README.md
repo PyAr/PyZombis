@@ -8,11 +8,15 @@ Versión preliminar en linea:
 
  * http://pyar.github.io/PyZombis/
 
-Contenidos:
+### Contenidos:
 
  * [lectures](/_sources/lectures): presentaciones para preparar las clases (vídeos)
  * [lab](lab): trabajos prácticos semanales (guía de ejercicios) con evaluación y calificación automatizada, implementados para el Laboratorio Virtual de Programación [VPL](http://vpl.dis.ulpgc.es/) de Moodle
  * [quiz](/_sources/quiz): cuestionarios rápidos con problemas simples de programación a implementar con [CodeRunner](http://coderunner.org.nz/) en Moodle
+
+### Quick Start
+
+Dev tutorial: https://github.com/PyAr/PyZombis/wiki/Development-HOW-TO
 
 ## Licencia
 

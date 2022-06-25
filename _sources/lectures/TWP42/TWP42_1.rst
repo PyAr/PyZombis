@@ -40,9 +40,142 @@ Notas de surfistas
    :language: python3
    :python3_interpreter: brython
 
-   En este ejercicio leeremos los datos de la tabla ``surfers`` y mostraremos
-   solo los mayores a 25 con una instrucción SQL (conocidas como query). 
-   Actualmente, la consulta devuelve todos los datos en la tabla ``surfers``.
+    En este ejercicio leeremos los datos de la tabla ``surfers`` y mostraremos
+    solo los mayores a 25 con una instrucción SQL (conocidas como query). 
+    Actualmente, la consulta devuelve todos los datos en la tabla ``surfers``.
+    
+    ~~~~
+
+    import document, time, json
+
+    def formato_datos(data):
+       """
+       esta función formatea el resultado de sql.js para que coincida con el formato de salida de sqlite3
+       params -> data: diccionario con los datos a formatear
+       """
+       final_list = []
+       columns = data['columns']          
+       values = data['values']
+
+       for v in values:
+           Dict = {}
+           for c,d in zip(columns,v):
+               Dict[c] = d
+           final_list.append(Dict)
+       
+       return final_list
+ 
+    # creando un contenedor para imitar el módulo sqlite3
+    # actualmente solo algunas funciones como connect, execute, fetchall son imitados
+    class Cursor:
+       def __init__(self):
+          self.prev_query = """"""
+          self.curr_query = """"""
+          self.prev_result = None
+       def execute(self, query):
+          query = query.strip()
+          if(query[-1] != ";"):
+             query += ";"
+          self.curr_query += query
+          self.curr_query += "\n"
+       
+       # the below function returns the result of the query
+       def fetchall(self): 
+          # get the script tag with id "create-db-script"
+          script_element = document.getElementById("create-db-script")
+          # set the "query" attribute of the script tag to the query string
+          if(self.curr_query == ""):
+             self.curr_query = self.prev_query
+          if(script_element.getAttribute("first_exec_flag") is None):
+             self.curr_query = "BEGIN TRANSACTION;\n" + self.curr_query
+          if(self.prev_query == self.curr_query):  
+             return formato_datos(self.prev_result)
+          else:
+             script_element.setAttribute("query", self.curr_query)
+          self.prev_query = self.curr_query
+          self.curr_query = ""
+          # the below code waits for result
+          # the result of the query can be one of 4 things
+          # 1. the result of the query is data present in the table
+          # 2. the result of the query is an empty list as no data is present in the table satisfying the query
+          # 3. the result of the query is an error because the query is invalid
+          # 4. the query is taking too long to execute, in this case if the qury takes more than 5 seconds, the flag is set to "query error flag" and the result is set to "query error"
+          start = time.time()
+          while(script_element.getAttribute("flag") != "data found" and script_element.getAttribute("flag") != "query error flag" and script_element.getAttribute("flag") != "no data"):
+                time.sleep(0.1)
+                if(time.time()-start > 5):
+                    script_element.setAttribute("flag", "query error flag")
+                    script_element.setAttribute("result", "query error")
+                    break
+
+          result = json.loads(document.getElementById("create-db-script").getAttribute("result"))
+          
+          if(result=="no data"):
+             document.getElementById("create-db-script").setAttribute("result", "")
+             document.getElementById("create-db-script").setAttribute("flag", "0")
+             raise Exception("No data found in the table for the query.\n\nException raised by sqlite3")
+          elif(result=="query error"):
+             document.getElementById("create-db-script").setAttribute("result", "")
+             document.getElementById("create-db-script").setAttribute("flag", "0")
+             error_msg = str(document.getElementById("create-db-script").getAttribute("error")) + "\n\nException raised by sqlite3"
+             raise SyntaxError(error_msg)
+          else:
+             result = result[0]
+             self.prev_result = result
+             document.getElementById("create-db-script").setAttribute("result", "")
+             document.getElementById("create-db-script").setAttribute("flag", "0")
+             return formato_datos(result)
+
+       
+       # the below code resets the flag and result attributes of the script tag for the next query
+       def close(self):
+          document.getElementById("create-db-script").setAttribute("result", "")
+          document.getElementById("create-db-script").setAttribute("flag", "0")               
+ 
+    class Connection:
+       def __init__(self):
+          self.curr_cursor_obj = Cursor()
+       def cursor(self):
+           return self.curr_cursor_obj
+       def commit(self):
+          self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"COMMIT TRANSACTION;\nBEGIN TRANSACTION;\n"
+       def rollback(self):
+          self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"ROLLBACK TRANSACTION;\n"
+       def close(self):
+          pass
+ 
+    def connect(table_name=None): return Connection()
+
+    ^^^^
+    # el método de conexión de sqlite3 se ha importado para su uso
+    # uno puede hacer esto por la declaración
+    # from sqlite3 import connect
+
+    # inicie la conexión y conéctese a la tabla de surfers predefinida
+    base_datos = connect('surfers.db')
+
+    # la siguiente línea proporciona acceso basado en el nombre a las columnas
+    #base_datos.row_factory = sqlite3.Row
+    
+    # crear un cursor y ejecutar la consulta
+    cursor = base_datos.cursor()
+    query = 'SELECT * FROM surfers'
+    
+    cursor.execute(query)
+
+
+
+    
+    # imprimir los datos
+    if(linhas!=None):
+       for linha in linhas:
+          print("ID    :",linha['id'])
+          print("Nombre :",linha['nombre'])
+          print("Pais  :",linha['pais'])
+          print("Media  :",linha['media'])
+          print("Estilo :",linha['estilo'])
+          print("Edad  :",linha['edad'])
+          print()
    
    ~~~~
    import sys
