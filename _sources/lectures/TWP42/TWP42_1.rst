@@ -241,9 +241,9 @@ Notas de surfistas
     
     cursor.execute(query)
 
-    # obtener los datos
-    linhas = cursor.fetchall()
 
+
+    
     # imprimir los datos
     if(linhas!=None):
        for linha in linhas:

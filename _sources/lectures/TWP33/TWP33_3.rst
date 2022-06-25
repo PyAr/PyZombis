@@ -23,7 +23,7 @@ Cortar
    
     from urllib.request import urlopen
 
-    URL_PRECIOS = "https://cors.bridged.cc/http://beans.itcarlow.ie/prices.html"
+    URL_PRECIOS = "https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices.html"
     pagina = urlopen(URL_PRECIOS)
     texto = pagina.read()
     print(texto[234:238])
