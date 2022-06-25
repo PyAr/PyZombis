@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '6cdbdc0e602e4c0b36447b8aabb83d78860b271c-Refactor_TWP42_SQL_JS',
+    VERSION: '0fbbd62c55b201573b9aa369a64e655c152e8776-Refactor_TWP42_SQL_JS',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',

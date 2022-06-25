@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Usando SQL &#8212; PyZombis Refactor_TWP42_SQL_JS@6cdbdc0</title>
+    <title>1. Usando SQL &#8212; PyZombis Refactor_TWP42_SQL_JS@0fbbd62</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis Refactor_TWP42_SQL_JS@6cdbdc0
+          PyZombis Refactor_TWP42_SQL_JS@0fbbd62
         </a>
       </div>
     </div>
@@ -360,220 +360,9 @@ nombre, país, grado promedio, estilo, edad.</p></li>
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_42_1 data-question_label="1.1.1">
 <div id=ac_42_1_question class="ac_question col-md-12">
-<blockquote>
-<div><p>En este ejercicio leeremos los datos de la tabla <code class="docutils literal notranslate"><span class="pre">surfers</span></code> y mostraremos
+<p>En este ejercicio leeremos los datos de la tabla <code class="docutils literal notranslate"><span class="pre">surfers</span></code> y mostraremos
 solo los mayores a 25 con una instrucción SQL (conocidas como query).
 Actualmente, la consulta devuelve todos los datos en la tabla <code class="docutils literal notranslate"><span class="pre">surfers</span></code>.</p>
-<div class="system-message">
-<p class="system-message-title">System Message: SEVERE/4 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 47)</p>
-<p>Unexpected section title or transition.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">~~~~</span>
-</pre></div>
-</div>
-</div>
-<p>import document, time, json</p>
-<dl>
-<dt>def formato_datos(data):</dt><dd><p>“””
-esta función formatea el resultado de sql.js para que coincida con el formato de salida de sqlite3
-params -&gt; data: diccionario con los datos a formatear
-“””
-final_list = []
-columns = data[‘columns’]
-values = data[‘values’]</p>
-<dl>
-<dt>for v in values:</dt><dd><p>Dict = {}
-for c,d in zip(columns,v):</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 63)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>Dict[c] = d</p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 64)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>final_list.append(Dict)</p>
-</dd>
-</dl>
-<p>return final_list</p>
-</dd>
-</dl>
-<p># creando un contenedor para imitar el módulo sqlite3
-# actualmente solo algunas funciones como connect, execute, fetchall son imitados
-class Cursor:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 71)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><dl>
-<dt>def __init__(self):</dt><dd><p>self.prev_query = “”””””
-self.curr_query = “”””””
-self.prev_result = None</p>
-</dd>
-<dt>def execute(self, query):</dt><dd><p>query = query.strip()
-if(query[-1] != “;”):</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 78)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>query += “;”</p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 79)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<p>self.curr_query += query
-self.curr_query += “n”</p>
-</dd>
-</dl>
-<p># the below function returns the result of the query
-def fetchall(self):</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 84)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p># get the script tag with id “create-db-script”
-script_element = document.getElementById(“create-db-script”)
-# set the “query” attribute of the script tag to the query string
-if(self.curr_query == “”):</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 88)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>self.curr_query = self.prev_query</p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 89)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<dl class="simple">
-<dt>if(script_element.getAttribute(“first_exec_flag”) is None):</dt><dd><p>self.curr_query = “BEGIN TRANSACTION;n” + self.curr_query</p>
-</dd>
-<dt>if(self.prev_query == self.curr_query):</dt><dd><p>return formato_datos(self.prev_result)</p>
-</dd>
-<dt>else:</dt><dd><p>script_element.setAttribute(“query”, self.curr_query)</p>
-</dd>
-</dl>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 95)</p>
-<p>Definition list ends without a blank line; unexpected unindent.</p>
-</div>
-<p>self.prev_query = self.curr_query
-self.curr_query = “”
-# the below code waits for result
-# the result of the query can be one of 4 things
-# 1. the result of the query is data present in the table
-# 2. the result of the query is an empty list as no data is present in the table satisfying the query
-# 3. the result of the query is an error because the query is invalid
-# 4. the query is taking too long to execute, in this case if the qury takes more than 5 seconds, the flag is set to “query error flag” and the result is set to “query error”
-start = time.time()
-while(script_element.getAttribute(“flag”) != “data found” and script_element.getAttribute(“flag”) != “query error flag” and script_element.getAttribute(“flag”) != “no data”):</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 105)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>time.sleep(0.1)
-if(time.time()-start &gt; 5):</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 107)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>script_element.setAttribute(“flag”, “query error flag”)
-script_element.setAttribute(“result”, “query error”)
-break</p>
-</div></blockquote>
-</div></blockquote>
-<p>result = json.loads(document.getElementById(“create-db-script”).getAttribute(“result”))</p>
-<dl class="simple">
-<dt>if(result==”no data”):</dt><dd><p>document.getElementById(“create-db-script”).setAttribute(“result”, “”)
-document.getElementById(“create-db-script”).setAttribute(“flag”, “0”)
-raise Exception(“No data found in the table for the query.nnException raised by sqlite3”)</p>
-</dd>
-<dt>elif(result==”query error”):</dt><dd><p>document.getElementById(“create-db-script”).setAttribute(“result”, “”)
-document.getElementById(“create-db-script”).setAttribute(“flag”, “0”)
-error_msg = str(document.getElementById(“create-db-script”).getAttribute(“error”)) + “nnException raised by sqlite3”
-raise SyntaxError(error_msg)</p>
-</dd>
-<dt>else:</dt><dd><p>result = result[0]
-self.prev_result = result
-document.getElementById(“create-db-script”).setAttribute(“result”, “”)
-document.getElementById(“create-db-script”).setAttribute(“flag”, “0”)
-return formato_datos(result)</p>
-</dd>
-</dl>
-</div></blockquote>
-<p># the below code resets the flag and result attributes of the script tag for the next query
-def close(self):</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 132)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><p>document.getElementById(“create-db-script”).setAttribute(“result”, “”)
-document.getElementById(“create-db-script”).setAttribute(“flag”, “0”)</p>
-</div></blockquote>
-</div></blockquote>
-<dl class="simple">
-<dt>class Connection:</dt><dd><dl class="simple">
-<dt>def __init__(self):</dt><dd><p>self.curr_cursor_obj = Cursor()</p>
-</dd>
-<dt>def cursor(self):</dt><dd><p>return self.curr_cursor_obj</p>
-</dd>
-<dt>def commit(self):</dt><dd><p>self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +”COMMIT TRANSACTION;nBEGIN TRANSACTION;n”</p>
-</dd>
-<dt>def rollback(self):</dt><dd><p>self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +”ROLLBACK TRANSACTION;n”</p>
-</dd>
-<dt>def close(self):</dt><dd><p>pass</p>
-</dd>
-</dl>
-</dd>
-</dl>
-<p>def connect(table_name=None): return Connection()</p>
-<div class="system-message">
-<p class="system-message-title">System Message: SEVERE/4 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 149)</p>
-<p>Unexpected section title or transition.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">^^^^</span>
-</pre></div>
-</div>
-</div>
-<p># el método de conexión de sqlite3 se ha importado para su uso
-# uno puede hacer esto por la declaración
-# from sqlite3 import connect</p>
-<p># inicie la conexión y conéctese a la tabla de surfers predefinida
-base_datos = connect(‘surfers.db’)</p>
-<p># la siguiente línea proporciona acceso basado en el nombre a las columnas
-#base_datos.row_factory = sqlite3.Row</p>
-<p># crear un cursor y ejecutar la consulta
-cursor = base_datos.cursor()
-query = ‘SELECT * FROM surfers’</p>
-<p>cursor.execute(query)</p>
-<p># imprimir los datos
-if(linhas!=None):</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_1.rst</span>, line 171)</p>
-<p>Unexpected indentation.</p>
-</div>
-<blockquote>
-<div><dl class="simple">
-<dt>for linha in linhas:</dt><dd><p>print(“ID    :”,linha[‘id’])
-print(“Nombre :”,linha[‘nombre’])
-print(“Pais  :”,linha[‘pais’])
-print(“Media  :”,linha[‘media’])
-print(“Estilo :”,linha[‘estilo’])
-print(“Edad  :”,linha[‘edad’])
-print()</p>
-</dd>
-</dl>
-</div></blockquote>
-</div></blockquote>
 
 </div>
 <textarea data-lang="python3" id="ac_42_1_editor" 
