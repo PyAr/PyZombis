@@ -14,95 +14,15 @@ Notas de surfistas
 
    <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js'></script>
 
-   <script id="create-db-script", query="", result="", flag="0", error="", first_exec_flag="">
-      config = {
-         locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
-      }
-       // a fuction is created that returns a promise
-       // this function can be called everytime the query is executed
-       function getData(config){
-         return initSqlJs(config).then(function(SQL){
+   <script type="module">
 
-
-               if(document.getElementById("create-db-script").getAttribute("first_exec_flag") == "true"){
-                  console.log("first_exec_flag is true")
-                  //Create the database
-                  window.db = new SQL.Database();
-                  //Create table surfers
-                  db.run("CREATE TABLE surfers (id, nombre, pais, media, estilo, edad)");
-
-                  //Insert records
-                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (101, \"Johnny 'wave-boy' Jones\",\"USA\",8.32,\"Fish\",21)");
-                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (102, \"Juan Martino\",\"Spain\",9.01,\"Gun\",36)");
-                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (103, \"Joseph 'smitty' Smyth\",\"USA\",8.85,\"Cruizer\",18)");
-                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (104, \"Stacey O'Neill\",\"Ireland\",8.91,\"Malibu\",22)");
-                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (105, \"Aideen 'board babe' Wu\",\"Japan\",8.65,\"Fish\",24)");
-                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (106, \"Zack 'bonnie-lad' MacFadden\",\"Scotland\",7.82,\"Thruster\",26)");
-                  db.run("INSERT INTO surfers (id, nombre, pais, media, estilo, edad) VALUES (107, \"Aaron Valentino\",\"Italy\",8.98,\"Gun\",19)");
-               }
-               
-               // the below code sets the flag and query attributes of the script tag depending on the result of the query
-               // this is done to avoid the need for a callback function
-               // the query attribute is set to the query string
-               // the result attribute is set to the result of the query
-               // the flag attribute is set to 0 initially
-               // the flag attribute is set to "data found" if the query is successful and the result is not empty
-               // the flag attribute is set to "no data" if the query is successful and the result is empty
-               // the flag attribute is set to "query error" if the query is unsuccessful
-               try{
-               res = db.exec(document.getElementById("create-db-script").getAttribute("query"));
-               console.log(res);
-               } catch(e) {
-                  console.log(e);
-                  document.getElementById("create-db-script").setAttribute("error",e);
-                  document.getElementById("create-db-script").setAttribute("flag","query error flag");
-                  document.getElementById("create-db-script").setAttribute("result",JSON.stringify("query error"));
-                  res=undefined;
-                  console.log(document.getElementById("create-db-script").getAttribute("flag"));
-                  console.log(document.getElementById("create-db-script").getAttribute("result"));
-               }
-               
-               if(res !== undefined && res.length > 0 && res[0].values.length > 0) {
-                  document.getElementById("create-db-script").setAttribute("result",JSON.stringify(res));        
-                  document.getElementById("create-db-script").setAttribute("flag","data found");
-                  console.log(document.getElementById("create-db-script").getAttribute("flag"));
-                  console.log(document.getElementById("create-db-script").getAttribute("result"));
-               }
-               else if(res.length==0){
-                  document.getElementById("create-db-script").setAttribute("flag","no data");
-                  document.getElementById("create-db-script").setAttribute("result",JSON.stringify("no data"));
-                  console.log(document.getElementById("create-db-script").getAttribute("flag"));
-                  console.log(document.getElementById("create-db-script").getAttribute("result"));
-               }
-
-            });
-      }
-
-      let coun = 0;
-      // creating a mutation observer function to observe changes in attributes of script with id "create-db-script"
-      var observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-         if (mutation.type === "attributes") {
-               if(coun == 0){
-                  console.log("first mutation");
-                  coun++;
-                  document.getElementById("create-db-script").setAttribute("first_exec_flag","true");
-               }
-               else{
-                  console.log("next mutation");
-                  document.getElementById("create-db-script").setAttribute("first_exec_flag","false");
-               }                  
-                 getData(config);
-         }
-      });
-      });
-      // the observer below only observes the attribute "query" of the script tag with id "create-db-script"
-      // if the query attribute is changed, the function getData is called
-      observer.observe(document.querySelector('#create-db-script'), {
-         attributes: true ,
-         attributeFilter: ['query']
+      const sqlPromise = initSqlJs({
+      locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
       });
 
+      const dataPromise = fetch("../../_static/surfers.db").then(res => res.arrayBuffer());
+      const [SQL, buf] = await Promise.all([sqlPromise, dataPromise])
+      window.Database = new SQL.Database(new Uint8Array(buf));  
    </script>
 
 
@@ -116,161 +36,48 @@ Notas de surfistas
 + ``edad`` es un número entero que muestra la edad del concursante.
       
 
-.. activecode:: ac_l42_1
+.. activecode:: ac_42_1
+   :language: python3
+   :python3_interpreter: brython
 
-    En este ejercicio leeremos los datos de la tabla ``surfers`` y mostraremos
-    solo los mayores a 25 con una instrucción SQL (conocidas como query). 
-    Actualmente, la consulta devuelve todos los datos en la tabla ``surfers``.
-    
-    ~~~~
-
-    import document, time, json
-
-    def formato_datos(data):
-       """
-       esta función formatea el resultado de sql.js para que coincida con el formato de salida de sqlite3
-       params -> data: diccionario con los datos a formatear
-       """
-       final_list = []
-       columns = data['columns']          
-       values = data['values']
-
-       for v in values:
-           Dict = {}
-           for c,d in zip(columns,v):
-               Dict[c] = d
-           final_list.append(Dict)
-       
-       return final_list
- 
-    # creando un contenedor para imitar el módulo sqlite3
-    # actualmente solo algunas funciones como connect, execute, fetchall son imitados
-    class Cursor:
-       def __init__(self):
-          self.prev_query = """"""
-          self.curr_query = """"""
-          self.prev_result = None
-       def execute(self, query):
-          query = query.strip()
-          if(query[-1] != ";"):
-             query += ";"
-          self.curr_query += query
-          self.curr_query += "\n"
-       
-       # the below function returns the result of the query
-       def fetchall(self): 
-          # get the script tag with id "create-db-script"
-          script_element = document.getElementById("create-db-script")
-          # set the "query" attribute of the script tag to the query string
-          if(self.curr_query == ""):
-             self.curr_query = self.prev_query
-          if(script_element.getAttribute("first_exec_flag") is None):
-             self.curr_query = "BEGIN TRANSACTION;\n" + self.curr_query
-          if(self.prev_query == self.curr_query):  
-             return formato_datos(self.prev_result)
-          else:
-             script_element.setAttribute("query", self.curr_query)
-          self.prev_query = self.curr_query
-          self.curr_query = ""
-          # the below code waits for result
-          # the result of the query can be one of 4 things
-          # 1. the result of the query is data present in the table
-          # 2. the result of the query is an empty list as no data is present in the table satisfying the query
-          # 3. the result of the query is an error because the query is invalid
-          # 4. the query is taking too long to execute, in this case if the qury takes more than 5 seconds, the flag is set to "query error flag" and the result is set to "query error"
-          start = time.time()
-          while(script_element.getAttribute("flag") != "data found" and script_element.getAttribute("flag") != "query error flag" and script_element.getAttribute("flag") != "no data"):
-                time.sleep(0.1)
-                if(time.time()-start > 5):
-                    script_element.setAttribute("flag", "query error flag")
-                    script_element.setAttribute("result", "query error")
-                    break
-
-          result = json.loads(document.getElementById("create-db-script").getAttribute("result"))
-          
-          if(result=="no data"):
-             document.getElementById("create-db-script").setAttribute("result", "")
-             document.getElementById("create-db-script").setAttribute("flag", "0")
-             raise Exception("No data found in the table for the query.\n\nException raised by sqlite3")
-          elif(result=="query error"):
-             document.getElementById("create-db-script").setAttribute("result", "")
-             document.getElementById("create-db-script").setAttribute("flag", "0")
-             error_msg = str(document.getElementById("create-db-script").getAttribute("error")) + "\n\nException raised by sqlite3"
-             raise SyntaxError(error_msg)
-          else:
-             result = result[0]
-             self.prev_result = result
-             document.getElementById("create-db-script").setAttribute("result", "")
-             document.getElementById("create-db-script").setAttribute("flag", "0")
-             return formato_datos(result)
-
-       
-       # the below code resets the flag and result attributes of the script tag for the next query
-       def close(self):
-          document.getElementById("create-db-script").setAttribute("result", "")
-          document.getElementById("create-db-script").setAttribute("flag", "0")               
- 
-    class Connection:
-       def __init__(self):
-          self.curr_cursor_obj = Cursor()
-       def cursor(self):
-           return self.curr_cursor_obj
-       def commit(self):
-          self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"COMMIT TRANSACTION;\nBEGIN TRANSACTION;\n"
-       def rollback(self):
-          self.curr_cursor_obj.curr_query =  self.curr_cursor_obj.curr_query +"ROLLBACK TRANSACTION;\n"
-       def close(self):
-          pass
- 
-    def connect(table_name=None): return Connection()
-
-    ^^^^
-    # el método de conexión de sqlite3 se ha importado para su uso
-    # uno puede hacer esto por la declaración
-    # from sqlite3 import connect
-
-    # inicie la conexión y conéctese a la tabla de surfers predefinida
-    base_datos = connect('surfers.db')
-
-    # la siguiente línea proporciona acceso basado en el nombre a las columnas
-    #base_datos.row_factory = sqlite3.Row
-    
-    # crear un cursor y ejecutar la consulta
-    cursor = base_datos.cursor()
-    query = 'SELECT * FROM surfers'
-    
-    cursor.execute(query)
-
-    # obtener los datos
-    linhas = cursor.fetchall()
-
-    # imprimir los datos
-    if(linhas!=None):
-       for linha in linhas:
-          print("ID    :",linha['id'])
-          print("Nombre :",linha['nombre'])
-          print("Pais  :",linha['pais'])
-          print("Media  :",linha['media'])
-          print("Estilo :",linha['estilo'])
-          print("Edad  :",linha['edad'])
-          print()
+   En este ejercicio leeremos los datos de la tabla ``surfers`` y mostraremos
+   solo los mayores a 25 con una instrucción SQL (conocidas como query). 
+   Actualmente, la consulta devuelve todos los datos en la tabla ``surfers``.
    
-    # cerrar el cursor
-    cursor.close()
+   ~~~~
+   import sys
+   sys.path.append("../../_static")
 
+   ^^^^
+   # el método de conexión de sqlite3 se ha importado para su uso
+   # uno puede hacer esto por la declaración
+   from sqlite3 import connect
 
-    ====
-    from unittest.gui import TestCaseGui
-    import time
- 
- 
-    class myTests(TestCaseGui):
-          def testOne(self):
-             ans = [{'id': 102, 'nombre': 'Juan Martino', 'pais': 'Spain', 'media': 9.01, 'estilo': 'Gun', 'edad': 36}, {'id': 106, 'nombre': "Zack 'bonnie-lad' MacFadden", 'pais': 'Scotland', 'media': 7.82, 'estilo': 'Thruster', 'edad': 26}]
-             self.assertEqual(linhas, ans, "Comparando el resultado de la consulta con el resultado esperado")
- 
- 
-    myTests().main()
+   # inicie la conexión y conéctese a la tabla de surfers predefinida
+   base_datos = connect('surfers.db')
+
+   
+   # crear un cursor y ejecutar la consulta
+   cursor = base_datos.cursor()
+   query = 'SELECT * FROM surfers'
+   
+   cursor.execute(query)
+   # obtener los datos
+   linhas = cursor.fetchall()
+   # imprimir los datos
+   if(linhas!=None):
+      for linha in linhas:
+         print("ID    :",linha['id'])
+         print("Nombre :",linha['nombre'])
+         print("Pais  :",linha['pais'])
+         print("Media  :",linha['media'])
+         print("Estilo :",linha['estilo'])
+         print("Edad  :",linha['edad'])
+         print()
+  
+   # cerrar el cursor
+   cursor.close()
+
 
 
     
