@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5. Sounds and Sprites &#8212; PyZombis main@542d627</title>
+    <title>5. Sounds and Sprites &#8212; PyZombis main@8153ec6</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@542d627
+          PyZombis main@8153ec6
         </a>
       </div>
     </div>
@@ -328,6 +328,109 @@ window.addEventListener('load', (event) => {
 <h1><span class="section-number">5. </span>Sounds and Sprites<a class="headerlink" href="#sounds-and-sprites" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../../_images/TWP60_022.png"><img alt="" class="align-center" src="../../_images/TWP60_022.png" style="width: 13.202cm; height: 6.164cm;" /></a>
 <a class="reference internal image-reference" href="../../_images/TWP60_023.png"><img alt="" class="align-center" src="../../_images/TWP60_023.png" style="width: 13.546cm; height: 11.561cm;" /></a>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_5 data-question_label="5.1">
+<div id=ac_l60_5_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l60_5_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, timer
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
+
+^^^^
+
+# Sprites
+
+import pygame
+import random
+
+# GLOBAL VARIABLES
+COLOR = pygame.color.Color(255, 100, 98)
+SURFACE_COLOR = pygame.color.Color(167, 255, 100)
+WIDTH = 500
+HEIGHT = 300
+
+# Object class
+class Sprite(pygame.sprite.Sprite):
+   def __init__(self, color, height, width):
+      super().__init__()
+
+      self.image = pygame.Surface([width, height])
+      self.image.fill(SURFACE_COLOR)
+      self.image.set_colorkey(COLOR)
+
+      pygame.draw.rect(self.image,color,pygame.Rect(0, 0, width, height))
+
+      self.rect = self.image.get_rect()
+
+
+pygame.init()
+
+RED = pygame.color.Color(255, 0, 0)
+
+size = (WIDTH, HEIGHT)
+screen = pygame.display.set_mode(size)
+all_sprites_list = pygame.sprite.Group()
+
+object_ = Sprite(RED, 50, 30)
+object_.rect.x = 50
+object_.rect.y = 50
+
+all_sprites_list.add(object_)
+
+
+
+def func():
+   all_sprites_list.update()
+   screen.fill(SURFACE_COLOR)
+   all_sprites_list.draw(screen)
+   pygame.display.flip()
+
+
+timer.set_interval(func,60)
+</textarea>
+</div>
+</div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_51 data-question_label="5.2">
+<div id=ac_l60_51_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l60_51_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, timer
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
+
+^^^^
+
+# Sounds
+from pygame import mixer
+
+# Starting the mixer
+mixer.init()
+
+# Loading the song
+mixer.music.load("../../audio/Example04_Tour01_Line01.wav")
+
+# Setting the volume
+mixer.music.set_volume(0.7)
+
+# Start playing the song
+mixer.music.play()
+</textarea>
+</div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># set up the block data structure</span>
 <span class="n">player</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">40</span><span class="p">)</span>
 <span class="n">playerImage</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;player.png&#39;</span><span class="p">)</span>

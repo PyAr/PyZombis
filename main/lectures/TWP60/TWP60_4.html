@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4. Pygame Input &#8212; PyZombis main@542d627</title>
+    <title>4. Pygame Input &#8212; PyZombis main@8153ec6</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@542d627
+          PyZombis main@8153ec6
         </a>
       </div>
     </div>
@@ -327,6 +327,107 @@ window.addEventListener('load', (event) => {
   <div class="section" id="pygame-input">
 <h1><span class="section-number">4. </span>Pygame Input<a class="headerlink" href="#pygame-input" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../../_images/TWP60_017.png"><img alt="" class="align-center" src="../../_images/TWP60_017.png" style="width: 11.085cm; height: 11.614cm;" /></a>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_4 data-question_label="4.1">
+<div id=ac_l60_4_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l60_4_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, document,timer
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
+
+^^^^
+import pygame, sys, random
+from pygame.locals import *
+
+# set up pygame
+pygame.init()
+gamejs = window.gamejs
+gamejs.ready()
+
+# set up the window
+WINDOWWIDTH = 500
+WINDOWHEIGHT = 300
+windowSurface = pygame.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),0,32)
+#pygame.display.set_caption('Input')
+
+# set up the colors
+BLACK = pygame.color.Color(0,0,0)
+GREEN = pygame.color.Color(0,255,0)
+WHITE = pygame.color.Color(255,255,255)
+
+# set up the player and food data structure
+foodCounter = 0
+NEWFOOD = 40
+FOODSIZE = 20
+player = pygame.Rect(300,100,50,50)
+
+foods = []
+for i in range(20):
+   foods.append(pygame.Rect(random.randint(0,WINDOWWIDTH - FOODSIZE),random.randint(0,WINDOWHEIGHT - FOODSIZE),FOODSIZE,FOODSIZE))
+
+# set up the movement variables
+
+moveLeft = False
+moveRight = False
+moveUp = False
+moveDown = False
+
+MOVESPEED = 6
+
+def func():
+   windowSurface.fill(BLACK)
+   # check for events
+   global moveLeft, moveRight, moveUp, moveDown
+   for event in pygame.event.get():
+      if event.type == KEYDOWN:
+            # change the keyboard variables
+            if event.key == K_LEFT or event.key == ord('a'):
+               moveRight = False
+               moveLeft = True
+            if event.key == K_RIGHT or event.key == ord('d'):
+               moveLeft = False
+               moveRight = True
+            if event.key == K_UP or event.key == ord('w'):
+               moveDown = False
+               moveUp = True
+            if event.key == K_DOWN or event.key == ord('s'):
+               moveDown = True
+               moveUp = False
+   if moveRight:
+      player.left += MOVESPEED
+   if moveLeft:
+      player.left -= MOVESPEED
+   if moveUp:
+      player.top -= MOVESPEED
+   if moveDown:
+      player.top += MOVESPEED
+
+   pygame.draw.rect(windowSurface,WHITE,player)
+
+   # check if the player has intersected with any food squares.
+   for food in foods[:]:
+      if player.colliderect(food):
+         foods.remove(food)
+
+   # draw the food
+   for i in range(len(foods)):
+      pygame.draw.rect(windowSurface,GREEN,foods[i])
+
+   # draw the window onto the screen
+   pygame.display.update()
+
+
+timer.set_interval(func,30)
+</textarea>
+</div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">random</span>
 <span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
 

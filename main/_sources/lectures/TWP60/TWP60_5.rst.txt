@@ -16,6 +16,96 @@ Sounds and Sprites
    :alt: 
 
 
+.. activecode:: ac_l60_5
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import load, timer
+    load('../../_static/game.js')
+    load('../../_static/pygame.brython.js')
+
+    ^^^^
+
+    # Sprites
+
+    import pygame
+    import random
+    
+    # GLOBAL VARIABLES
+    COLOR = pygame.color.Color(255, 100, 98)
+    SURFACE_COLOR = pygame.color.Color(167, 255, 100)
+    WIDTH = 500
+    HEIGHT = 300
+    
+    # Object class
+    class Sprite(pygame.sprite.Sprite):
+       def __init__(self, color, height, width):
+          super().__init__()
+    
+          self.image = pygame.Surface([width, height])
+          self.image.fill(SURFACE_COLOR)
+          self.image.set_colorkey(COLOR)
+    
+          pygame.draw.rect(self.image,color,pygame.Rect(0, 0, width, height))
+    
+          self.rect = self.image.get_rect()
+    
+    
+    pygame.init()
+    
+    RED = pygame.color.Color(255, 0, 0)
+    
+    size = (WIDTH, HEIGHT)
+    screen = pygame.display.set_mode(size)    
+    all_sprites_list = pygame.sprite.Group()
+    
+    object_ = Sprite(RED, 50, 30)
+    object_.rect.x = 50
+    object_.rect.y = 50
+    
+    all_sprites_list.add(object_)
+ 
+ 
+    
+    def func():
+       all_sprites_list.update()
+       screen.fill(SURFACE_COLOR)
+       all_sprites_list.draw(screen)
+       pygame.display.flip()
+       
+       
+    timer.set_interval(func,60)
+
+
+
+.. activecode:: ac_l60_51
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import load, timer
+    load('../../_static/game.js')
+    load('../../_static/pygame.brython.js')
+    
+    ^^^^
+
+    # Sounds
+    from pygame import mixer
+    
+    # Starting the mixer
+    mixer.init()
+    
+    # Loading the song
+    mixer.music.load("../../audio/Example04_Tour01_Line01.wav")
+    
+    # Setting the volume
+    mixer.music.set_volume(0.7)
+    
+    # Start playing the song
+    mixer.music.play()
+  
+
+
+
 .. code-block:: python
 
 
