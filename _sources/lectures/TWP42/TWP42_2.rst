@@ -76,7 +76,12 @@ Accediendo a la base alumnos.bd
 .. activecode:: ac_42_2_2
    :language: python3
    :python3_interpreter: brython
+   
+   ~~~~
+   import sys
+   sys.path.append("../../_static")
 
+   ^^^^
    from sqlite3 import connect
    con = connect('alumnos.bd')
    cur = con.cursor()
