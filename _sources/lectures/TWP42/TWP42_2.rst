@@ -1,6 +1,25 @@
 Conceptos básicos de SQL
 ========================
 
+.. raw:: html
+
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js'></script>
+
+   <script id="create-db">
+
+      config = {
+         locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
+      }
+
+      function getData(config){
+         return initSqlJs(config).then(function(SQL){
+
+         window.Database = new SQL.Database();  
+         });
+      }
+
+      getData(config);
+   </script>
 
 .. image:: ../img/TWP42_003.jpeg
    :height: 12.571cm
@@ -30,39 +49,56 @@ Nociones de bases de datos
 Crear un base de estudiantes
 ----------------------------
 
+.. activecode:: ac_42_2_1
+   :language: python3
+   :python3_interpreter: brython
 
-.. code-block :: python
+   ~~~~
+   import sys
+   sys.path.append("../../_static")
 
-   import sqlite3
-   con = sqlite3.connect('alumnos.bd')
+   ^^^^
+   # el siguiente código crea una tabla
+   # llamada alumnos en la base de datos alomnos.bd
+   from sqlite3 import connect
+   con = connect('alumnos.bd')
    cur = con.cursor()
-   cur.execute('''create table alumnos(login varchar(8),ra integer)''')
+
+   # la tabla tiene dos columnas: login_id y pass
+   cur.execute('''create table alumnos(login_id varchar(8),pass integer)''')
    cur.close()
-   con.close() 
+   con.close()
 
 
 Accediendo a la base alumnos.bd
 -------------------------------
 
+.. activecode:: ac_42_2_2
+   :language: python3
+   :python3_interpreter: brython
 
-.. code-block :: python
-
-   import sqlite3
-   con = sqlite3.connect('alumnos.bd')
+   from sqlite3 import connect
+   con = connect('alumnos.bd')
    cur = con.cursor()
-   cur.execute('insert into alumnos values("masanori",42)')
+
+   # insertar valores en la tabla de alumnos
+   cur.execute('insert into alumnos values("masanori",421)')
    cur.execute('insert into alumnos values("emengarda",666)')
+
+   # selecciona todo el contenido de la tabla de alumnos
    cur.execute('select * from alumnos')
+
+   result = cur.fetchall()
+
+   if(result!=None):
+      for res in result:
+         print("login    :",res['login_id'])
+         print("ra :",res['pass'])
+
    cur.close()
-   con.commit()
-   con.close() 
+   con.close()
 
 
-Resultado:
-----------
 
-.. image:: ../img/TWP42_008.png
-   :height: 2.724cm
-   :width: 10.212cm
-   :align: center
-   :alt: 
+
+
