@@ -31,7 +31,7 @@ class Cursor:
     
     # the below function returns the result of the query
     def fetchall(self): 
-        return formato_datos(self.result)
+        return formato_datos(self.result.to_dict())
 
 
     def close(self):
