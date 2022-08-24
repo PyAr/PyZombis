@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Conceptos básicos de SQL &#8212; PyZombis main@8153ec6</title>
+    <title>2. Conceptos básicos de SQL &#8212; PyZombis main@c61bfa5</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
@@ -23,11 +23,11 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=700db7378411b25a09f9"></script>
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@8153ec6
+          PyZombis main@c61bfa5
         </a>
       </div>
     </div>
@@ -326,7 +326,23 @@ window.addEventListener('load', (event) => {
   
   <div class="section" id="conceptos-basicos-de-sql">
 <h1><span class="section-number">2. </span>Conceptos básicos de SQL<a class="headerlink" href="#conceptos-basicos-de-sql" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../../_images/TWP42_003.jpeg"><img alt="" class="align-center" src="../../_images/TWP42_003.jpeg" style="width: 10.861cm; height: 12.571cm;" /></a>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js'></script>
+
+<script id="create-db">
+
+   config = {
+      locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
+   }
+
+   function getData(config){
+      return initSqlJs(config).then(function(SQL){
+
+      window.Database = new SQL.Database();
+      });
+   }
+
+   getData(config);
+</script><a class="reference internal image-reference" href="../../_images/TWP42_003.jpeg"><img alt="" class="align-center" src="../../_images/TWP42_003.jpeg" style="width: 10.861cm; height: 12.571cm;" /></a>
 <div class="section" id="nociones-de-bases-de-datos">
 <h2><span class="section-number">2.1. </span>Nociones de bases de datos<a class="headerlink" href="#nociones-de-bases-de-datos" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../../_images/TWP42_004.jpeg"><img alt="" class="align-center" src="../../_images/TWP42_004.jpeg" style="width: 14.001cm; height: 14.001cm;" /></a>
@@ -334,32 +350,75 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="crear-un-base-de-estudiantes">
 <h2><span class="section-number">2.2. </span>Crear un base de estudiantes<a class="headerlink" href="#crear-un-base-de-estudiantes" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
-<span class="n">con</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;alumnos.bd&#39;</span><span class="p">)</span>
-<span class="n">cur</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;create table alumnos(login varchar(8),ra integer)&#39;&#39;&#39;</span><span class="p">)</span>
-<span class="n">cur</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="n">con</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_42_2_1 data-question_label="2.2.1">
+<div id=ac_42_2_1_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_42_2_1_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+import sys
+sys.path.append("../../_static")
+
+^^^^
+# el siguiente código crea una tabla
+# llamada alumnos en la base de datos alomnos.bd
+from sqlite3 import connect
+con = connect('alumnos.bd')
+cur = con.cursor()
+
+# la tabla tiene dos columnas: login_id y pass
+cur.execute('''create table alumnos(login_id varchar(8),pass integer)''')
+cur.close()
+con.close()
+</textarea>
+</div>
 </div>
 </div>
 <div class="section" id="accediendo-a-la-base-alumnos-bd">
 <h2><span class="section-number">2.3. </span>Accediendo a la base alumnos.bd<a class="headerlink" href="#accediendo-a-la-base-alumnos-bd" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
-<span class="n">con</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;alumnos.bd&#39;</span><span class="p">)</span>
-<span class="n">cur</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;insert into alumnos values(&quot;masanori&quot;,42)&#39;</span><span class="p">)</span>
-<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;insert into alumnos values(&quot;emengarda&quot;,666)&#39;</span><span class="p">)</span>
-<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;select * from alumnos&#39;</span><span class="p">)</span>
-<span class="n">cur</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="n">con</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-<span class="n">con</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_42_2_2 data-question_label="2.3.1">
+<div id=ac_42_2_2_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_42_2_2_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+import sys
+sys.path.append("../../_static")
+
+^^^^
+from sqlite3 import connect
+con = connect('alumnos.bd')
+cur = con.cursor()
+
+# insertar valores en la tabla de alumnos
+cur.execute('insert into alumnos values("masanori",421)')
+cur.execute('insert into alumnos values("emengarda",666)')
+
+# selecciona todo el contenido de la tabla de alumnos
+cur.execute('select * from alumnos')
+
+result = cur.fetchall()
+
+if(result!=None):
+   for res in result:
+      print("login    :",res['login_id'])
+      print("ra :",res['pass'])
+
+cur.close()
+con.close()
+</textarea>
 </div>
 </div>
-<div class="section" id="resultado">
-<h2><span class="section-number">2.4. </span>Resultado:<a class="headerlink" href="#resultado" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/TWP42_008.png"><img alt="" class="align-center" src="../../_images/TWP42_008.png" style="width: 10.212cm; height: 2.724cm;" /></a>
 </div>
 </div>
 
