@@ -3498,6 +3498,7 @@ var _PRELOADING = false;
 exports.load = function(key) {
    var img;
    if (typeof key === 'string') {
+      console.log("CACHE at load", CACHE);
       img = CACHE[key];
       if (!img) {
 			throw new Error('Missing "' + key + '", gamejs.preload() all images before trying to load them.');
@@ -3564,8 +3565,23 @@ exports.preload = function(imgIdents) {
       throw new Error('Error loading ' + this.src);
    }
 
+   function loaded() {
+    console.log('loaded');
+   }
+
+   function waitForImage(imgElem) {
+      return new Promise(res => {
+          if (imgElem.complete) {
+              return res();
+          }
+          imgElem.onload = () => res();
+          imgElem.onerror = () => res();
+      });
+    }
+
    var key;
-   for (key in imgIdents) {
+   for (var i=0;i<imgIdents.length;i++) {
+      key = imgIdents[i];
       var lowerKey = key.toLowerCase();
       if (lowerKey.indexOf('.png') == -1 &&
             lowerKey.indexOf('.jpg') == -1 &&
@@ -3575,15 +3591,27 @@ exports.preload = function(imgIdents) {
          continue;
       }
       var img = new Image();
-      img.addEventListener('load', successHandler, true);
-      img.addEventListener('error', errorHandler, true);
-      img.src = imgIdents[key];
+      
+      // img.addEventListener('load', successHandler, true);
+      // img.addEventListener('error', errorHandler, true);
+
+      //wait for image to load then proceed
+
+      (async () => {
+
+        img.src = key;
+        await waitForImage(img);
+        console.log('image loaded:-', key); 
+      })();
+      
       img.gamejsKey = key;
+      CACHE[key] = img;
       countTotal++;
    }
    if (countTotal > 0) {
       _PRELOADING = true;
    }
+   console.log("CACHE", CACHE);
    return getProgress;
 };
 
