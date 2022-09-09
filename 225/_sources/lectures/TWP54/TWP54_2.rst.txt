@@ -1,0 +1,50 @@
+Se lanza una excepción
+======================
+
+.. image:: ../img/TWP54_004.jpg
+   :height: 11.211cm
+   :width: 22.859cm
+   :align: center
+   :alt: 
+
+
+Atrapando la excepción
+----------------------
+
+.. image:: ../img/TWP54_005.jpg
+   :height: 14.432cm
+   :width: 22.771cm
+   :align: center
+   :alt: 
+
+
+Manejo de excepciones
+---------------------
+
+.. code-block :: python
+
+   def salvar_dados():
+      try:
+         fileD = open("encomendas.txt","a")
+         fileD.write("Destino:\n")
+         fileD.write("%s\n" %destino.get())
+         fileD.write("Descripcion:\n")
+         fileD.write("%s\n" %descripcion.get())
+         fileD.write("Habla:\n")
+         fileD.write("%s\n" %Habla.get("1.0",END))
+         destino.set(None)
+         descricao.delete(0,END)
+         endereco.delete("1.0",END)
+      except Excepción como excepciones:
+         app.title('archivo de grabación %s' %excepcion)
+
+
+
++ Obs.: para você testar a exceção deverá alterar as propriedades do arquivo
+
+
+.. image:: ../img/TWP54_007.jpg
+   :height: 7.611cm
+   :width: 22.859cm
+   :align: center
+   :alt: 
