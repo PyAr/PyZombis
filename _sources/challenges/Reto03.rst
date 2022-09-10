@@ -4,12 +4,12 @@ Reto Pygame -Tirador de zombies
 
 .. raw:: html
 
-   <script src='../../_static/game.js'></script>
+   <script src='../_static/game.js'></script>
 
    <script type="module">
       window.gamejs.init();
-      window.gamejs.image.preload(["../../_static/zomb.png", "../../_static/bg2.jpg", '../../_static/human.jpg', '../../_static/BlueBar1.jpg',
- '../../_static/bullet (1).png', '../../_static/blast.png',  "../../_static/bg1.jpg"]);
+      window.gamejs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.jpg', '../_static/BlueBar1.jpg',
+ '../_static/bullet (1).png', '../_static/blast.png',  "../_static/bg1.jpg"]);
    </script>
 
 
@@ -18,11 +18,11 @@ Reto Pygame -Tirador de zombies
     :python3_interpreter: brython
 
     from browser import load, timer, window
-    load('../../_static/game.js')
-    load('../../_static/pygame.brython.js')
+    load('../_static/game.js')
+    load('../_static/pygame.brython.js')
     gjs = window.gamejs
-    gjs.image.preload(["../../_static/zomb.png", "../../_static/bg2.jpg", '../../_static/human.jpg', '../../_static/BlueBar1.jpg',\
-    '../../_static/bullet (1).png', '../../_static/blast.png',  "../../_static/bg1.jpg"])
+    gjs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.jpg', '../_static/BlueBar1.jpg',\
+    '../_static/bullet (1).png', '../_static/blast.png',  "../_static/bg1.jpg"])
     gjs.ready()
 
     ^^^^
@@ -79,21 +79,21 @@ Reto Pygame -Tirador de zombies
                 y=400
             elif y >= 550:
                 y=550
-            scr.blit(pygame.image.load('../../_static/human.jpg'), (x, y))
+            scr.blit(pygame.image.load('../_static/human.jpg'), (x, y))
 
         def enemy(self):
             for i in range(8):
-                self.enemyImg.append(pygame.image.load('../../_static/zomb.png'))
+                self.enemyImg.append(pygame.image.load('../_static/zomb.png'))
                 self.enemyX.append(random.randint(0, 500))
                 self.enemyY.append(random.randint(5, 60))
                 self.enemyX1.append(10)
                 self.enemyY1.append(40)
                 self.bulY1.append(2)
-                self.enemyBullet.append(pygame.image.load('../../_static/BlueBar1.jpg')) 
+                self.enemyBullet.append(pygame.image.load('../_static/BlueBar1.jpg')) 
 
         def bullet(self, x, y, scr):
             self.bulletState='fire'
-            scr.blit(pygame.image.load('../../_static/bullet (1).png'), (x+8, y))
+            scr.blit(pygame.image.load('../_static/bullet (1).png'), (x+8, y))
 
         def collision_e_b(self, X, Y, i):
             dist=math.sqrt((self.enemyX[i]-X)**2+(self.enemyY[i]-Y)**2)
@@ -108,13 +108,13 @@ Reto Pygame -Tirador de zombies
         def collision_enemyBul_S(self,enemybulX,enemyBulY,shooterX,shooterY):
             dist=math.sqrt((enemybulX-shooterX)**2+(enemyBulY-shooterY)**2)
             if dist <=24 : 
-                scr.blit(pygame.image.load('../../_static/blast.png'),(self.shooterX,self.shooterY))
+                scr.blit(pygame.image.load('../_static/blast.png'),(self.shooterX,self.shooterY))
                 return True
             else: return False
 
 
     def over():
-        scr.blit(pygame.image.load('../../_static/bg2.jpg'),(0,0))
+        scr.blit(pygame.image.load('../_static/bg2.jpg'),(0,0))
         scr.blit(game,(50,int(600/2)))                      
         pygame.display.update()
 
@@ -135,8 +135,8 @@ Reto Pygame -Tirador de zombies
 
 
     def func():    
-        scr.blit(pygame.image.load('../../_static/bg2.jpg'),(0,0))
-        scr.blit(pygame.image.load('../../_static/BlueBar1.jpg'),(p1.enemybulX+15,p1.enemyBulY+12))
+        scr.blit(pygame.image.load('../_static/bg2.jpg'),(0,0))
+        scr.blit(pygame.image.load('../_static/BlueBar1.jpg'),(p1.enemybulX+15,p1.enemyBulY+12))
         p1.enemyBulY+=24
 
         if p1.enemyBulY>=600:
@@ -181,7 +181,7 @@ Reto Pygame -Tirador de zombies
             col = p1.collision_e_b(p1.bulletX, p1.bulletY, i)
             if p1.bulletState == 'fire':
                 if col:
-                    scr.blit(pygame.image.load('../../_static/blast.png'),(p1.bulletX,p1.bulletY))
+                    scr.blit(pygame.image.load('../_static/blast.png'),(p1.bulletX,p1.bulletY))
                     p1.score_value += 1
                     p1.bulletY = 500
                     p1.bulletState='Ready'
@@ -192,7 +192,7 @@ Reto Pygame -Tirador de zombies
             col2 = p1.collision_E_S(p1.shooterX, p1.shooterY, i)
             if col2:
                 # scr.blit(pygame.image.load('Icons\\bgover.png'),(550,600))
-                scr.blit(pygame.image.load('../../_static/blast.png'),(p1.shooterX,p1.shooterY))
+                scr.blit(pygame.image.load('../_static/blast.png'),(p1.shooterX,p1.shooterY))
                 over_helper()
 
 
@@ -206,8 +206,8 @@ Reto Pygame -Tirador de zombies
             #-------Collision of EnemyBul and Shooter-------<
             col3= p1.collision_enemyBul_S(p1.enemybulX,p1.enemyBulY,p1.shooterX,p1.shooterY) 
             if col3:
-                scr.blit(pygame.image.load('../../_static/bg2.jpg'),(550,600))
-                scr.blit(pygame.image.load('../../_static/blast.png'),(p1.shooterX,p1.shooterY))
+                scr.blit(pygame.image.load('../_static/bg2.jpg'),(550,600))
+                scr.blit(pygame.image.load('../_static/blast.png'),(p1.shooterX,p1.shooterY))
                 over_helper()
                 # break
         
