@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title><title><no title></title></title>
+  <meta http-equiv="content-type" content="text/html; charset=None">
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css">
+</head>
+<body>
+<h2><title><no title></title></h2>
+
+<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">.</span><span class="nc">iframe-interpreter-container</span> <span class="p">{</span>
+      <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+      <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+      <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+      <span class="k">padding-top</span><span class="p">:</span> <span class="mi">20</span><span class="kt">%</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="p">.</span><span class="nc">responsive-iframe</span> <span class="p">{</span>
+      <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+      <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+      <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+      <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;iframe-interpreter-container&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;iframe-brython-console&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;responsive-iframe&quot;</span> <span class="na">srcdoc</span><span class="o">=</span><span class="s">&#39;</span>
+<span class="s">    &lt;html&gt;</span>
+<span class="s">    &lt;head&gt;</span>
+<span class="s">        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/brython@3.9.4/brython.min.js&quot;&gt;&lt;/script&gt;</span>
+<span class="s">        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/brython@3.9.4/brython_stdlib.min.js&quot;&gt;&lt;/script&gt;</span>
+<span class="s">        &lt;style&gt;</span>
+
+<span class="s">            .codearea {</span>
+<span class="s">                background-color: #000;</span>
+<span class="s">                color: #fff;</span>
+<span class="s">                font-family: consolas, courier;</span>
+<span class="s">                width: 100%;</span>
+<span class="s">                min-height: 75px;</span>
+<span class="s">            }</span>
+<span class="s">        &lt;/style&gt;</span>
+<span class="s">    &lt;/head&gt;</span>
+<span class="s">    &lt;script&gt;</span>
+<span class="s">        function scrollTop() {</span>
+<span class="s">            topWindow = document.defaultView.parent;</span>
+<span class="s">            topWindow.scrollTo(0, 0);</span>
+<span class="s">          }</span>
+<span class="s">    &lt;/script&gt;</span>
+<span class="s">    &lt;body onload=&quot;brython()&quot;&gt;</span>
+<span class="s">        &lt;div&gt;</span>
+<span class="s">            &lt;textarea id=&quot;code&quot; class=&quot;codearea&quot; rows=&quot;12&quot; cols=&quot;100&quot; spellcheck=&quot;false&quot;&gt;&lt;/textarea&gt;</span>
+<span class="s">            &lt;script type=&quot;text/python3&quot;&gt;</span>
+<span class="s">                from interpreter import Interpreter</span>
+<span class="s">                Interpreter(&quot;code&quot;)</span>
+<span class="s">            &lt;/script&gt;</span>
+<span class="s">            &lt;script type=&quot;text/python3&quot;&gt;</span>
+<span class="s">                from browser import document, html</span>
+<span class="s">                document &lt;= html.SCRIPT(&quot;scrollTop();&quot;)</span>
+<span class="s">            &lt;/script&gt;</span>
+<span class="s">        &lt;/div&gt;</span>
+<span class="s">    &lt;/body&gt;</span>
+<span class="s">    &lt;/html&gt;</span>
+<span class="s">&#39;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</body>
+</html>
