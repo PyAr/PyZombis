@@ -1,8 +1,3 @@
-from turtle import width
-import pytest
-import requests
-import json
-
 
 def test_l60_1(page):
     page.goto("lectures/TWP60/TWP60_1.html")
@@ -58,6 +53,7 @@ def test_l60_4(page):
     assert width == "500"
     height = iframe.get_attribute("canvas", "height")
     assert height == "300"
+
 
 def test_l60_5(page):
     page.goto("lectures/TWP60/TWP60_5.html")
