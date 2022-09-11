@@ -1,0 +1,18 @@
+Palabras reservadas
+===================
+
++ Existen palabras reservadas en Python.
++ Estas palabras no se pueden usar para declarar una variable, ni una función.
++ En el ejercicio de la conversión las palabras ``float``, ``input`` y ``print`` son palabras reservadas.
+
+.. activecode:: ac_l40_3
+    :nocodelens:
+
+    Este programa le permite ver la lista completa de todas las palabras reservadas que existen en Python.
+    Ejecute el programa para verlas.
+    ~~~~
+    import keyword
+    print(keyword.kwlist)
+
++ Aqui no se incluyen las funciones como ``float()``, ``input()``, ``int()``, pero estas también son palabras que cumplen con la restricción.
++ Podemos ver directivas como ``if``, ``else``, ``elif``, que ya hemos usando anteriormente.
