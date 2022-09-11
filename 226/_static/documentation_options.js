@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '4365040f2ab355f78360fe01569d25c4c7c33e82-Pygame_E2E_Tests',
+    VERSION: 'a990b71955681626a360315776b4f007f26ab0a9-Pygame_E2E_Tests',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
