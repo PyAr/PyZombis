@@ -71,3 +71,4 @@ Contenidos:
    quiz/QuizExtras2.rst
    challenges/Reto01.rst
    challenges/Reto02.rst
+   challenges/Reto03.rst
