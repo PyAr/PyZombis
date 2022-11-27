@@ -9,7 +9,7 @@ Reto Pygame -Tirador de zombies
    <script type="module">
       window.gamejs.init();
       window.gamejs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.jpg', '../_static/BlueBar1.jpg',
- '../_static/bullet (1).png', '../_static/blast.png',  "../_static/bg1.jpg"]);
+ '../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"]);
    </script>
 
 
@@ -22,7 +22,7 @@ Reto Pygame -Tirador de zombies
     load('../_static/pygame.brython.js')
     gjs = window.gamejs
     gjs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.jpg', '../_static/BlueBar1.jpg',\
-    '../_static/bullet (1).png', '../_static/blast.png',  "../_static/bg1.jpg"])
+    '../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"])
     gjs.ready()
 
     ^^^^
