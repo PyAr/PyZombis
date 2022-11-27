@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reto Pygame -Tirador de zombies &#8212; PyZombis main@d70b5d1</title>
+    <title>Reto Pygame -Tirador de zombies &#8212; PyZombis main@451d039</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
@@ -91,7 +91,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis main@d70b5d1
+          PyZombis main@451d039
         </a>
       </div>
     </div>
@@ -319,7 +319,7 @@ window.addEventListener('load', (event) => {
 
   <script type="module">
      window.gamejs.init();
-     window.gamejs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.jpg', '../_static/BlueBar1.jpg',
+     window.gamejs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.png', '../_static/BlueBar1.jpg',
 '../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"]);
   </script>
 <div class="runestone explainer ac_section alert alert-warning">
@@ -336,7 +336,7 @@ from browser import load, timer, window
 load('../_static/game.js')
 load('../_static/pygame.brython.js')
 gjs = window.gamejs
-gjs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.jpg', '../_static/BlueBar1.jpg',\
+gjs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.png', '../_static/BlueBar1.jpg',\
 '../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"])
 gjs.ready()
 
@@ -394,7 +394,7 @@ class Chaser:
             y=400
         elif y >= 550:
             y=550
-        scr.blit(pygame.image.load('../_static/human.jpg'), (x, y))
+        scr.blit(pygame.image.load('../_static/human.png'), (x, y))
 
     def enemy(self):
         for i in range(8):
@@ -408,7 +408,7 @@ class Chaser:
 
     def bullet(self, x, y, scr):
         self.bulletState='fire'
-        scr.blit(pygame.image.load('../_static/bullet (1).png'), (x+8, y))
+        scr.blit(pygame.image.load('../_static/bullet.png'), (x+8, y))
 
     def collision_e_b(self, X, Y, i):
         dist=math.sqrt((self.enemyX[i]-X)**2+(self.enemyY[i]-Y)**2)

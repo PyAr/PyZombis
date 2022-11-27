@@ -8,7 +8,7 @@ Reto Pygame -Tirador de zombies
 
    <script type="module">
       window.gamejs.init();
-      window.gamejs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.jpg', '../_static/BlueBar1.jpg',
+      window.gamejs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.png', '../_static/BlueBar1.jpg',
  '../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"]);
    </script>
 
@@ -21,7 +21,7 @@ Reto Pygame -Tirador de zombies
     load('../_static/game.js')
     load('../_static/pygame.brython.js')
     gjs = window.gamejs
-    gjs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.jpg', '../_static/BlueBar1.jpg',\
+    gjs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.png', '../_static/BlueBar1.jpg',\
     '../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"])
     gjs.ready()
 
@@ -79,7 +79,7 @@ Reto Pygame -Tirador de zombies
                 y=400
             elif y >= 550:
                 y=550
-            scr.blit(pygame.image.load('../_static/human.jpg'), (x, y))
+            scr.blit(pygame.image.load('../_static/human.png'), (x, y))
 
         def enemy(self):
             for i in range(8):
@@ -93,7 +93,7 @@ Reto Pygame -Tirador de zombies
 
         def bullet(self, x, y, scr):
             self.bulletState='fire'
-            scr.blit(pygame.image.load('../_static/bullet (1).png'), (x+8, y))
+            scr.blit(pygame.image.load('../_static/bullet.png'), (x+8, y))
 
         def collision_e_b(self, X, Y, i):
             dist=math.sqrt((self.enemyX[i]-X)**2+(self.enemyY[i]-Y)**2)
