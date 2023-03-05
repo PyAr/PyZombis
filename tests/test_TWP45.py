@@ -17,6 +17,22 @@ def test_l45_1(page):
     # Test the src attribute from image matches the Facebook URL
     assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
 
+def test_l45_2(page):
+    import urllib.request
+    import json
+
+    #Go to TWP45_2 page
+    page.goto("lectures/TWP45/TWP45_2.html")
+    
+    #Retrieves data using the Reddit API
+    url="https://api.allorigins.win/raw?url=https://www.reddit.com/r/Python/.json"
+    resp = urllib.request.urlopen(url).read()
+    texto = json.loads(resp)
+    
+    #Verify if any data has been retrieved
+    assert texto["data"] != None
+
+
 
 @pytest.mark.vcr()
 def test_l45_3(page):
