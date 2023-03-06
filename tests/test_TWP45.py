@@ -18,20 +18,17 @@ def test_l45_1(page):
     assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
 
 def test_l45_2(page):
-    import urllib.request
-    import json
-
+    import time
+    
     #Go to TWP45_2 page
     page.goto("lectures/TWP45/TWP45_2.html")
+    # Click Save & Run
+    page.click("text=Save & Run")
+    #Allows the API sufficient time to retrieve the data
+    time.sleep(20)
     
-    #Retrieves data using the Reddit API
-    url="https://api.allorigins.win/raw?url=https://www.reddit.com/r/Python/.json"
-    resp = urllib.request.urlopen(url).read()
-    texto = json.loads(resp)
-    
-    #Verify if any data has been retrieved
-    assert texto["data"] != None
-
+    #Verifies whether the API's result is null or not
+    assert page.query_selector('//*[@id="ac_l45_2"]/div/div[5]/pre').inner_text() != ''
 
 
 @pytest.mark.vcr()
