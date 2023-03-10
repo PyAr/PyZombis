@@ -11,19 +11,21 @@ En este ejercicio vamos a acceder a Reddit para obetener datos como los de la si
 
 .. activecode:: ac_l45_2
     :nocodelens:
-    :language: python
+    :language: python3
+    :python3_interpreter: brython
 
-    import urllib.request
+    ~~~~
+    import sys
+    sys.path.append("../../_static")
+
+    ^^^^
+    from urllibProxy import urllibConnect
     import json
-
-    #Los servidores proxy de CORS sortean las restricciones de la 
-    #Política del mismo origen, lo que permite que las páginas web 
-    #realicen solicitudes de origen cruzado y accedan a recursos.
-    proxy = "https://api.allorigins.win/raw?url="
 
     # La url de Reddit a la que accederemos
     url = "https://www.reddit.com/r/Python/.json"
-    resp = urllib.request.urlopen(proxy+url).read()
+
+    resp = urllibConnect(url).read()
     
     # La respuesta se da en formato json, se debe transformar a  
     # un diccionario de Python con json.loads
