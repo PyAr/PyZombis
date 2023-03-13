@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Obtener datos de Reddit &#8212; PyZombis TWP_45_2@77613cf</title>
+    <title>2. Obtener datos de Reddit &#8212; PyZombis TWP_45_2@dfa2b6f</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis TWP_45_2@77613cf
+          PyZombis TWP_45_2@dfa2b6f
         </a>
       </div>
     </div>
@@ -343,13 +343,14 @@ import sys
 sys.path.append("../../_static")
 
 ^^^^
-from urllibProxy import urllibConnect
+import urllib.request
+from urllibProxy import urllibConnectProxy
 import json
 
 # La url de Reddit a la que accederemos
 url = "https://www.reddit.com/r/Python/.json"
 
-resp = urllibConnect(url).read()
+resp = urllib.request.urlopen(url).read()
 
 # La respuesta se da en formato json, se debe transformar a
 # un diccionario de Python con json.loads
