@@ -19,13 +19,14 @@ En este ejercicio vamos a acceder a Reddit para obetener datos como los de la si
     sys.path.append("../../_static")
 
     ^^^^
-    from urllibProxy import urllibConnect
+    import urllib.request
+    from urllibProxy import urllibConnectProxy
     import json
 
     # La url de Reddit a la que accederemos
     url = "https://www.reddit.com/r/Python/.json"
 
-    resp = urllibConnect(url).read()
+    resp = urllib.request.urlopen(url).read()
     
     # La respuesta se da en formato json, se debe transformar a  
     # un diccionario de Python con json.loads
