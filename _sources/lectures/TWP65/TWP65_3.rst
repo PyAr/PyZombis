@@ -98,3 +98,11 @@ Accesorios
 + Train Counter Game
 + Quiz Builder
 + EcardsOnMap (es grande...)
+
+PyScript Demo
+-------------
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/pyscript.html
