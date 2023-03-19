@@ -8,11 +8,21 @@
 
             <body>
                 <textarea id="inp" rows="15" cols="50"></textarea><br>
-                <button onClick="write_to_page()" id="manual">Run</button>
-                <!-- indent needs 21 spaces -->
+                <button onClick="write_to_page()" id="manual"> Run </button>
             <script>
+                document.getElementById("inp").addEventListener("keydown", function(e) {
+                    if (e.key == "Tab") {
+                      e.preventDefault();
+                      var start = this.selectionStart;
+                      var end = this.selectionEnd;
+            
+                      this.value = this.value.substring(0, start) +
+                        "                     " + this.value.substring(end);
+                      this.selectionStart =
+                        this.selectionEnd = start + 21;
+                    }
+                  });
                 var myPyScript;
-
                 function write_to_page() {
                         var text = document.getElementById("inp").value;
                         let div = document.createElement("div");
