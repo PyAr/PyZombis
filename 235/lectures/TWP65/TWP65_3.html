@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Cuentas visitantes &#8212; PyZombis feat/pyscript@2ea9f6b</title>
+    <title>3. Cuentas visitantes &#8212; PyZombis feat/pyscript@6c162e5</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/pyscript@2ea9f6b
+          PyZombis feat/pyscript@6c162e5
         </a>
       </div>
     </div>
@@ -410,17 +410,92 @@ window.addEventListener('load', (event) => {
 <div class="section" id="pyscript-demo">
 <h2><span class="section-number">3.3. </span>PyScript Demo<a class="headerlink" href="#pyscript-demo" title="Permalink to this headline">¶</a></h2>
 <div>
-    <iframe width='700' height="500" srcdoc='
+    <iframe width='700' height="700" srcdoc='
         <html lang="en">
             <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
             <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+            <style>    
+                .flex{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: stretch;
+                }  
+                .btn {
+                    margin: 10px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #000;
+                    background: #282a3a;
+                    color: #FFF;
+                    font-size: 20px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                .editor {
+                    display: inline-flex;
+                    gap: 10px;
+                    font-family: monospace;
+                    line-height: 21px;
+                    background: #282a3a;
+                    border-radius: 2px;
+                    padding: 20px 10px;
+                }
+
+                .line-numbers {
+                    width: 20px;
+                    text-align: right;
+                }
+
+                .line-numbers span {
+                    counter-increment:  linenumber;
+                }
+
+                .line-numbers span::before {
+                    content: counter(linenumber);
+                    display: block;
+                    color: #506882;
+                }
+
+                textarea {
+                    line-height: 21px;
+                    overflow-y: hidden;
+                    padding: 0;
+                    border: 0;
+                    background: #282a3a;
+                    color: #FFF;
+                    min-width: 500px;
+                    outline: none;
+                    resize: none;
+                }
+            </style>
             </head>
 
             <body>
-                <textarea id="inp" rows="15" cols="50"></textarea><br>
-                <button onClick="write_to_page()" id="manual"> Run </button>
+                <div class="flex">
+                    <div class="editor">
+                        <div class="line-numbers">
+                        <span></span>
+                        </div>
+                        <textarea id="inp" rows="15" cols="50"></textarea>
+                    </div><br>
+                    <button type="button" onClick="write_to_page()" id="run" class="btn btn-primary"> Run </button>
+                </div>
             <script>
+                const textarea = document.querySelector("textarea")
+                const lineNumbers = document.querySelector(".line-numbers")
+
+                textarea.addEventListener("keyup", event => {
+                    const numberOfLines = event.target.value.split("\n").length
+
+                    lineNumbers.innerHTML = Array(numberOfLines)
+                    .fill("<span></span>")
+                    .join("")
+                })
                 document.getElementById("inp").addEventListener("keydown", function(e) {
                     if (e.key == "Tab") {
                       e.preventDefault();

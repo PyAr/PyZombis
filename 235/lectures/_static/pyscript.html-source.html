@@ -11,17 +11,92 @@
 <h2><title><no title></title></h2>
 
 <div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-    <span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">&#39;700&#39;</span> <span class="na">height=</span><span class="s">&quot;500&quot;</span> <span class="na">srcdoc=</span><span class="s">&#39;</span>
+    <span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">&#39;700&#39;</span> <span class="na">height=</span><span class="s">&quot;700&quot;</span> <span class="na">srcdoc=</span><span class="s">&#39;</span>
 <span class="s">        &lt;html lang=</span><span class="err">&quot;</span><span class="s">en</span><span class="err">&quot;</span><span class="s">&gt;</span>
 <span class="s">            &lt;head&gt;</span>
+<span class="s">            &lt;link rel=</span><span class="err">&quot;</span><span class="s">stylesheet</span><span class="err">&quot;</span><span class="s"> href=</span><span class="err">&quot;</span><span class="s">https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css</span><span class="err">&quot;</span><span class="s">&gt;</span>
 <span class="s">            &lt;link rel=</span><span class="err">&quot;</span><span class="s">stylesheet</span><span class="err">&quot;</span><span class="s"> href=</span><span class="err">&quot;</span><span class="s">https://pyscript.net/latest/pyscript.css</span><span class="err">&quot;</span><span class="s"> /&gt;</span>
 <span class="s">            &lt;script defer src=</span><span class="err">&quot;</span><span class="s">https://pyscript.net/latest/pyscript.js</span><span class="err">&quot;</span><span class="s">&gt;&lt;/script&gt;</span>
+<span class="s">            &lt;style&gt;    </span>
+<span class="s">                .flex{</span>
+<span class="s">                    display: flex;</span>
+<span class="s">                    flex-direction: column;</span>
+<span class="s">                    flex-wrap: nowrap;</span>
+<span class="s">                    justify-content: center;</span>
+<span class="s">                    align-items: center;</span>
+<span class="s">                    align-content: stretch;</span>
+<span class="s">                }  </span>
+<span class="s">                .btn {</span>
+<span class="s">                    margin: 10px;</span>
+<span class="s">                    padding: 10px;</span>
+<span class="s">                    border-radius: 5px;</span>
+<span class="s">                    border: 1px solid #000;</span>
+<span class="s">                    background: #282a3a;</span>
+<span class="s">                    color: #FFF;</span>
+<span class="s">                    font-size: 20px;</span>
+<span class="s">                    font-weight: bold;</span>
+<span class="s">                    cursor: pointer;</span>
+<span class="s">                }</span>
+<span class="s">                .editor {</span>
+<span class="s">                    display: inline-flex;</span>
+<span class="s">                    gap: 10px;</span>
+<span class="s">                    font-family: monospace;</span>
+<span class="s">                    line-height: 21px;</span>
+<span class="s">                    background: #282a3a;</span>
+<span class="s">                    border-radius: 2px;</span>
+<span class="s">                    padding: 20px 10px;</span>
+<span class="s">                }</span>
+
+<span class="s">                .line-numbers {</span>
+<span class="s">                    width: 20px;</span>
+<span class="s">                    text-align: right;</span>
+<span class="s">                }</span>
+
+<span class="s">                .line-numbers span {</span>
+<span class="s">                    counter-increment:  linenumber;</span>
+<span class="s">                }</span>
+
+<span class="s">                .line-numbers span::before {</span>
+<span class="s">                    content: counter(linenumber);</span>
+<span class="s">                    display: block;</span>
+<span class="s">                    color: #506882;</span>
+<span class="s">                }</span>
+
+<span class="s">                textarea {</span>
+<span class="s">                    line-height: 21px;</span>
+<span class="s">                    overflow-y: hidden;</span>
+<span class="s">                    padding: 0;</span>
+<span class="s">                    border: 0;</span>
+<span class="s">                    background: #282a3a;</span>
+<span class="s">                    color: #FFF;</span>
+<span class="s">                    min-width: 500px;</span>
+<span class="s">                    outline: none;</span>
+<span class="s">                    resize: none;</span>
+<span class="s">                }</span>
+<span class="s">            &lt;/style&gt;</span>
 <span class="s">            &lt;/head&gt;</span>
 
 <span class="s">            &lt;body&gt;</span>
-<span class="s">                &lt;textarea id=</span><span class="err">&quot;</span><span class="s">inp</span><span class="err">&quot;</span><span class="s"> rows=</span><span class="err">&quot;</span><span class="s">15</span><span class="err">&quot;</span><span class="s"> cols=</span><span class="err">&quot;</span><span class="s">50</span><span class="err">&quot;</span><span class="s">&gt;&lt;/textarea&gt;&lt;br&gt;</span>
-<span class="s">                &lt;button onClick=</span><span class="err">&quot;</span><span class="s">write_to_page()</span><span class="err">&quot;</span><span class="s"> id=</span><span class="err">&quot;</span><span class="s">manual</span><span class="err">&quot;</span><span class="s">&gt; Run &lt;/button&gt;</span>
+<span class="s">                &lt;div class=</span><span class="err">&quot;</span><span class="s">flex</span><span class="err">&quot;</span><span class="s">&gt;</span>
+<span class="s">                    &lt;div class=</span><span class="err">&quot;</span><span class="s">editor</span><span class="err">&quot;</span><span class="s">&gt;</span>
+<span class="s">                        &lt;div class=</span><span class="err">&quot;</span><span class="s">line-numbers</span><span class="err">&quot;</span><span class="s">&gt;</span>
+<span class="s">                        &lt;span&gt;&lt;/span&gt;</span>
+<span class="s">                        &lt;/div&gt;</span>
+<span class="s">                        &lt;textarea id=</span><span class="err">&quot;</span><span class="s">inp</span><span class="err">&quot;</span><span class="s"> rows=</span><span class="err">&quot;</span><span class="s">15</span><span class="err">&quot;</span><span class="s"> cols=</span><span class="err">&quot;</span><span class="s">50</span><span class="err">&quot;</span><span class="s">&gt;&lt;/textarea&gt;</span>
+<span class="s">                    &lt;/div&gt;&lt;br&gt;</span>
+<span class="s">                    &lt;button type=</span><span class="err">&quot;</span><span class="s">button</span><span class="err">&quot;</span><span class="s"> onClick=</span><span class="err">&quot;</span><span class="s">write_to_page()</span><span class="err">&quot;</span><span class="s"> id=</span><span class="err">&quot;</span><span class="s">run</span><span class="err">&quot;</span><span class="s"> class=</span><span class="err">&quot;</span><span class="s">btn btn-primary</span><span class="err">&quot;</span><span class="s">&gt; Run &lt;/button&gt;</span>
+<span class="s">                &lt;/div&gt;</span>
 <span class="s">            &lt;script&gt;</span>
+<span class="s">                const textarea = document.querySelector(</span><span class="err">&quot;</span><span class="s">textarea</span><span class="err">&quot;</span><span class="s">)</span>
+<span class="s">                const lineNumbers = document.querySelector(</span><span class="err">&quot;</span><span class="s">.line-numbers</span><span class="err">&quot;</span><span class="s">)</span>
+
+<span class="s">                textarea.addEventListener(</span><span class="err">&quot;</span><span class="s">keyup</span><span class="err">&quot;</span><span class="s">, event =&gt; {</span>
+<span class="s">                    const numberOfLines = event.target.value.split(</span><span class="err">&quot;</span><span class="s">\n</span><span class="err">&quot;</span><span class="s">).length</span>
+
+<span class="s">                    lineNumbers.innerHTML = Array(numberOfLines)</span>
+<span class="s">                    .fill(</span><span class="err">&quot;</span><span class="s">&lt;span&gt;&lt;/span&gt;</span><span class="err">&quot;</span><span class="s">)</span>
+<span class="s">                    .join(</span><span class="err">&quot;&quot;</span><span class="s">)</span>
+<span class="s">                })</span>
 <span class="s">                document.getElementById(</span><span class="err">&quot;</span><span class="s">inp</span><span class="err">&quot;</span><span class="s">).addEventListener(</span><span class="err">&quot;</span><span class="s">keydown</span><span class="err">&quot;</span><span class="s">, function(e) {</span>
 <span class="s">                    if (e.key == </span><span class="err">&quot;</span><span class="s">Tab</span><span class="err">&quot;</span><span class="s">) {</span>
 <span class="s">                      e.preventDefault();</span>

@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '2ea9f6be3e574599a085ea75f8367baa6d101879-feat/pyscript',
+    VERSION: '6c162e54673c464ae5802f5b4eaf37eb980f65e5-feat/pyscript',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
