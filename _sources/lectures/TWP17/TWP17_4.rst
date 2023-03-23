@@ -4,7 +4,6 @@ Algunos ejemplos
 + Haga un programa que lea un vector de 5 números enteros y muestre vector.
 
 ..  activecode:: ac_l17_4a
-    :nocodelens:
     :stdin:
 
     vector = []
@@ -19,7 +18,6 @@ Algunos ejemplos
 + Haga un programa que lea un vector de diez números reales y los muestre en orden inverso
 
 ..  activecode:: ac_l17_4b
-    :nocodelens:
     :stdin:
 
     vector = []
@@ -36,7 +34,6 @@ Algunos ejemplos
 + Haga un programa que lea cuatro notas, muestre las notas y el promedio en pantalla
 
 ..  activecode:: ac_l17_4c
-    :nocodelens:
     :stdin:
 
     notas = []
@@ -56,7 +53,6 @@ Algunos ejemplos
 + Otra forma de hacer lo mismo.
 
 ..  activecode:: ac_l17_4d
-    :nocodelens:
     :stdin:
 
     notas = []
@@ -74,7 +70,6 @@ Algunos ejemplos
 + Haga un programa que lea un vector de 10 caracteres en minúscula, y diga cuántas consonantes se leyeron.
 
 ..  activecode:: ac_l17_4e
-    :nocodelens:
     :stdin:
 
     letras = []

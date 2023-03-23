@@ -9,7 +9,6 @@ Acumuladores
 
 
 .. activecode:: ac_l15_4a
-   :nocodelens:
    :stdin:
     
    n = 1
@@ -26,7 +25,6 @@ Acumuladores
 
 
 .. activecode:: ac_l15_4b
-   :nocodelens:
    :stdin:
 
    n = 0
@@ -54,7 +52,6 @@ Acumuladores
 + Calcular el factorial de un número entero ``n``
 
 .. activecode:: ac_l15_4c
-   :nocodelens:
    :stdin:
 
    i = 1
