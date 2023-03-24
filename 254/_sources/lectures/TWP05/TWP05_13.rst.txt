@@ -1,0 +1,17 @@
+Cambiar variables a lo largo del tiempo
+=======================================
+
++ Un programa se ejecuta línea por línea.
++ Por lo tanto, las variables pueden cambiar a lo largo de la ejecución de su
+  programa
+
+.. codelens:: cl_l05_13
+    
+    deuda = 0 
+    compra = 100
+    deuda = deuda + compra
+    compra = 200
+    deuda = deuda + compra
+    compra = 300
+    deuda = deuda + compra
+    print(deuda)
