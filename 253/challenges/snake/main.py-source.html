@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title><title><no title></title></title>
+  <meta http-equiv="content-type" content="text/html; charset=None">
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css">
+</head>
+<body>
+<h2><title><no title></title></h2>
+
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygame</span>
+<span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="n">successes</span><span class="p">,</span> <span class="n">failures</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2"> successes and </span><span class="si">{1}</span><span class="s2"> failures&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">successes</span><span class="p">,</span> <span class="n">failures</span><span class="p">))</span>
+
+
+<span class="n">screen</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="mi">720</span><span class="p">,</span> <span class="mi">480</span><span class="p">))</span>
+<span class="n">clock</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">Clock</span><span class="p">()</span>
+<span class="n">FPS</span> <span class="o">=</span> <span class="mi">60</span> 
+
+<span class="n">BLACK</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">WHITE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+
+<span class="n">rect</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">))</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Surface</span><span class="p">((</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">))</span>
+<span class="n">image</span> <span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">WHITE</span><span class="p">)</span>  
+<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">clock</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="n">FPS</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">QUIT</span><span class="p">:</span>
+                <span class="n">quit</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">KEYDOWN</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_w</span><span class="p">:</span>
+                    <span class="n">rect</span><span class="o">.</span><span class="n">move_ip</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_s</span><span class="p">:</span>
+                    <span class="n">rect</span><span class="o">.</span><span class="n">move_ip</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_a</span><span class="p">:</span>
+                    <span class="n">rect</span><span class="o">.</span><span class="n">move_ip</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_d</span><span class="p">:</span>
+                    <span class="n">rect</span><span class="o">.</span><span class="n">move_ip</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">BLACK</span><span class="p">)</span>
+        <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">rect</span><span class="p">)</span>
+        <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span> 
+        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
+
+<span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+</body>
+</html>

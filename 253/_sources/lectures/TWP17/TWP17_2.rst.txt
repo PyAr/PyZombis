@@ -1,0 +1,38 @@
+Tren de datos
+=============
+
+..  image:: ../img/TWP17_004.jpg
+    :height: 12.8cm
+    :width: 16.244cm
+    :align: center
+    :alt:
+
+
+..  image:: ../img/TWP17_005.png
+    :height: 8.2cm
+    :width: 24.756cm
+    :align: center
+    :alt:
+
+
++ El tren de datos ``my_array`` es una variable única.
+
+Puedo enganchar vagones
+-----------------------
+
+..  image:: ../img/TWP17_006.png
+    :height: 10cm
+    :width: 25.303cm
+    :align: center
+    :alt:
+
++ ¿Cómo puedo agregar un vagón con "Bettys"?
+
+Puedo unir los vagones con el método ``append()``
+-------------------------------------------------
+
+..  image:: ../img/TWP17_007.png
+    :height: 8cm
+    :width: 24.242cm
+    :align: center
+    :alt:
