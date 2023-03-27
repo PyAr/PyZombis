@@ -1,0 +1,86 @@
+Impresión de 1 a 3
+===================
+
+
+Forma  simple
+*************
+
+.. codelens:: cl_l15_2a
+
+   print(1)
+   print(2)
+   print(3)
+
+
+Usando una variable
+*******************
+
+.. codelens:: cl_l15_2b
+
+   x = 1
+   print(x)
+   x = 2
+   print(x)
+   x = 3
+   print(x)
+
+
+Incrementando la variable
+*************************
+
+.. codelens:: cl_l15_2c
+
+   x = 1
+   print(x)
+   x = x + 1
+   print(x)
+   x = x + 1
+   print(x)
+
+Usando ``while``
+****************
+
+.. codelens:: cl_l15_2d
+
+   x = 1
+   while x <= 3:
+       print(x)
+       x = x +1
+
+
+.. image:: ../img/TWP15_007.jpeg
+   :height: 14.804cm
+   :width: 22.181cm
+   :align: center
+   :alt: 
+
+
+Prueba de escritorio
+--------------------
+
+.. code-block:: python
+
+   x = 1
+   while x <= 3:
+       print(x)
+       x = x + 1
+
+.. table:: **Prueba de escritorio**
+   :widths: auto
+   :align: left
+
+   ====== ========
+     x    Pantalla
+   ====== ========
+   -1-    1
+   -2-    2
+   -3-    3
+   4
+   ====== ========
+
+.. codelens:: cl_l15_2e
+
+   x = 1
+   while x <= 3:
+       print(x)
+       x = x + 1
