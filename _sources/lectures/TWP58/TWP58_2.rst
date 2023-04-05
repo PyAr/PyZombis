@@ -99,3 +99,10 @@ Recuerda
 + class – comienza la definición de una clase
 + self – autoasignado al objeto actual
 + __init__() Se llama al crear el objeto
+
+.. poll:: TWP58
+   :scale: 10
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 10 (excelente), 
+   ¿como calificaría este cápitulo?

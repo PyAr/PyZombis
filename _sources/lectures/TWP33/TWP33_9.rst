@@ -66,3 +66,10 @@ Herramientas de Python
 + El método ``text.find()`` busca una subcadena.
 + ``float()`` convierte algo a un punto flotante.
 + Bibliotecas: ``urllib.request`` y ``time``.
+
+.. poll:: TWP33
+   :scale: 10
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 10 (excelente), 
+   ¿como calificaría este cápitulo?

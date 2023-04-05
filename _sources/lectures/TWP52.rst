@@ -272,3 +272,10 @@ revisión
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture19
+
+.. poll:: TWP52
+   :scale: 10
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 10 (excelente), 
+   ¿como calificaría este cápitulo?

@@ -57,3 +57,10 @@ Resultado
    :width: 22.859cm
    :align: center
    :alt: 
+
+.. poll:: TWP47
+   :scale: 10
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 10 (excelente), 
+   ¿como calificaría este cápitulo?

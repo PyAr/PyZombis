@@ -338,3 +338,10 @@ Agrupación de datos
   
    # cerrar el cursor
    cursor.close() 
+
+.. poll:: TWP42
+   :scale: 10
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 10 (excelente), 
+   ¿como calificaría este cápitulo?   

@@ -29,3 +29,10 @@ Ahora solo faltan tus ejercicios
 
 
 “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein
+
+.. poll:: TWP30
+   :scale: 10
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 10 (excelente), 
+   ¿como calificaría este cápitulo?

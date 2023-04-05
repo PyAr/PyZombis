@@ -142,3 +142,10 @@ Recuerda
     + Uso de la biblioteca de terceros: ``pygame`` y ``tkinter``.
 + Para manejar los eventos se usa un controlador de eventos.
     + Controlador de eventos: función que se ejecuta cuando ocurre el evento.
+
+.. poll:: TWP50
+   :scale: 10
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 10 (excelente), 
+   ¿como calificaría este cápitulo?
