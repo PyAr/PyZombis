@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: 'fa75b9d34ce8866df6b6c94918e155e7cebefb8d-Lecture_Polling',
+    VERSION: 'e0fef927f911c6024c9b6d5d20f67946ea0a3351-Lecture_Polling',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
