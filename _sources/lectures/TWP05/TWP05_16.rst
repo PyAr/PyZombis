@@ -32,3 +32,10 @@ Utilice el intérprete de modo interactivo aquí abajo para solucionar los sigui
    :alt: 
 
 “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
+
+.. poll:: TWP05
+   :scale: 10
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 10 (excelente), 
+   ¿como calificaría este cápitulo?
