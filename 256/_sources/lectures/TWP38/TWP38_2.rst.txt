@@ -1,0 +1,61 @@
+Python
+======
+
+.. codelens:: cl_l38_2a
+         
+    print("hola mundo!")
+    print(2 + 3)
+    print("2 + 3 = ", 2 + 3)
+
+
++ Por lo general, queremos repetir una serie de comandos varias veces
++ Una forma de hacer esto es usar una función
+
+.. codelens:: cl_l38_2b
+
+    def amo_dos_puntos():
+        print("Yo amo:!")
+        print('Dos puntos == ":"')
+
+
+    amo_dos_puntos()
+
+
++ ¡No olvide los paréntesis cuando llames a la función!
++ Si olvida los paréntesis, python devolverá la dirección en
+  memoria donde se encuentra definida la función.
+
+.. codelens:: cl_l38_2c
+         
+    def amo_dos_puntos():
+        print("Yo amo:!")
+        print('Dos puntos == ":"')
+
+
+    print(amo_dos_puntos)
+    print(print)
+
+
++ Podemos poner parámetros en una función
+
+.. codelens:: cl_l38_2d
+         
+    def suma(a, b):
+        return a + b
+
+
+    print(suma("aguacate", "jabuticaba"))
+    print(suma(2, 3))
+    print(suma(3.14, 2.71))
+
+
++ Las funciones dejan de existir en cuanto sale del intérprete
+  Python
++ Por lo tanto, los programas generalmente se componen de módulos, que son
+  archivos guardados en el disco
++ Un módulo es un archivo de texto que contiene un programa de Python
++ Puede editar los módulos en un entorno de desarrollo, que
+  resalta palabras reservadas, realiza identificación automática, etc.
++ Guardamos un programa llamado ``caos.py``
++ No olvides la extensión ``.py``
++ Podemos ejecutar el programa con el botón de ``Run``
