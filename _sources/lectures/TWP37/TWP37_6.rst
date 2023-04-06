@@ -102,7 +102,7 @@ Usando y ordenando un diccionario
         print(f"{puntuaciones[participante]} obtuvo un puntaje de {participante:.2f}")
 
 .. poll:: TWP37
-   :scale: 10
+   :scale: 4
    :allowcomment:
 
    En una escala del 1 (a mejorar) al 10 (excelente), 

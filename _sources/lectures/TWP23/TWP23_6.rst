@@ -47,7 +47,7 @@
 “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
 
 .. poll:: TWP23
-   :scale: 10
+   :scale: 4
    :allowcomment:
 
    En una escala del 1 (a mejorar) al 10 (excelente), 
