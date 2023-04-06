@@ -51,7 +51,7 @@ Múltiple herencia y ¿Qué objeto es?
     print(isinstance(eth0, USB))
 
 .. poll:: TWP25
-   :scale: 10
+   :scale: 4
    :allowcomment:
 
    En una escala del 1 (a mejorar) al 10 (excelente), 

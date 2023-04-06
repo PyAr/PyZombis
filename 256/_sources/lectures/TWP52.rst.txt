@@ -274,7 +274,7 @@ revisión
    :identifier: lecture19
 
 .. poll:: TWP52
-   :scale: 10
+   :scale: 4
    :allowcomment:
 
    En una escala del 1 (a mejorar) al 10 (excelente), 
