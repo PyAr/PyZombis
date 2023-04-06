@@ -277,5 +277,5 @@ revisión
    :scale: 4
    :allowcomment:
 
-   En una escala del 1 (a mejorar) al 10 (excelente), 
+   En una escala del 1 (a mejorar) al 4 (excelente), 
    ¿como calificaría este cápitulo?
