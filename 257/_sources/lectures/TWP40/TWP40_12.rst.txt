@@ -1,0 +1,22 @@
+División entera en lenguajes de programación antiguos
+=====================================================
+
++ Los lenguaje más antiguos generan un resultado completo en la división de enteros.
++ ``10/3`` será igual a 3
++ Al calcular Fahrenheit a Celsius, tendré que modificarlo un poco mi programa si uso C o Java.
+
+
+Conversión de grados usando C
+-----------------------------
+
+.. code-block:: c
+
+    #include <stdio.h>
+
+        int main(void){
+            float F, C;
+            printf("Farenheit: ");
+            scanf("%f", &F);
+            C = 5.0 * (F - 32.0) / 9.0;
+            printf("Celsius: %2.1f\n", C);
+        }

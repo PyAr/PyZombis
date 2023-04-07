@@ -1,0 +1,42 @@
+Dojo de codificación
+====================
+
+.. image:: ../img/TWP18_015.jpeg
+    :height: 14.251cm
+    :width: 19.001cm
+    :align: center
+    :alt: 
+
++ Desarrollo basado en pruebas
++ Pasos de bebé
++ Programación de pares
+
+
+Desarrollo basado en pruebas
+----------------------------
+
+.. image:: ../img/TWP18_016.png
+    :height: 11.032cm
+    :width: 17.726cm
+    :align: center
+    :alt: 
+
+
+Pasos de bebé
+-------------
+
+.. image:: ../img/TWP18_017.jpeg
+    :height: 12.624cm
+    :width: 17.704cm
+    :align: center
+    :alt: 
+
+
+Programación en pareja
+----------------------
+
+.. image:: ../img/TWP18_018.png
+    :height: 13.711cm
+    :width: 18.201cm
+    :align: center
+    :alt: 
