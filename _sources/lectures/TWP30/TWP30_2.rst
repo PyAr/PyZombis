@@ -71,3 +71,18 @@ Tenga en cuenta que en el siguiente programa:
 + El símbolo de dos puntos (``:``) es el operador que abre un bloque de indentación. Va después de las directivas (ej: ``if numero == 42:`` y ``else:``) 
 
 **Nota:** Estos son los colores de los bloques de código que haz visto durante el curso, pero estos colores pueden variar dependiendo de la herramienta que se use para programar.
+
+.. parsonsprob:: ac_l30_2a
+    :adaptive:
+    :numbered: left
+
+    Construya el código anterior usando este ejercicio de arrastrar y soltar.(Use la función de ayuda si está atascado)
+    -----
+    print("Bienvenido!")
+    g = input("Ingrese un número: ")
+    numero = int(g)
+    if numero == 42:
+       print("¡Ganaste!")
+    else:
+       print("¡Tú perdiste!")
+    print("¡Fin del juego!")
