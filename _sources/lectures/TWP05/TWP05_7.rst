@@ -1,26 +1,26 @@
-Variables numéricas
+Numberic Variables
 ===================
 
-+ Los enteros no tienen decimales: ``42``, ``-7``
-+ Los valores del tipo entero en Python se llaman ``int``
-+ Los números en coma flotante tienen decimales: ``1.0``, ``3.1415``,
++ Integers do not have decimals: ``42``, ``-7``
++ Values ​​of the integer type in Python are called ``int``
++ Floating point numbers have decimal places: ``1.0``, ``3.1415``,
   ``1234.56``
-+ Tenga en cuenta que ``1.0``, incluso teniendo cero en la parte decimal, es un número en
-  punto flotante
-+ Los valores de tipo coma flotante en Python se llaman ``float``.
++ Note that ``1.0``, even having zero in the decimal part, it is a number in
+  floating point
++ Floating point values ​​in Python are called ``float``.
 
 
-Representación de valores numéricos
+Representation of numerical values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+ Internamente todos los números son representados con el
-  sistema binario
-+ Este sistema permite solo los dígitos ``0`` o ``1``
-+ Los números en punto flotante pueden no tener una correcta representación
-  en el sistema binario
-+ Tecleando en el intérprete ``3 * 0.1`` tendremos como respuesta: ``0.30000000000000004``
++ Internally all numbers are represented with the
+  binary system
++ This system allows only digits ``0`` either ``1``
++ Floating point numbers may not have a correct representation
+  in the binary system
++ Typing in the interpreter ``3 * 0.1`` we will have as an answer: ``0.30000000000000004``
 
-**¡Pruebelo aquí!**
+**Try it here!**
 
 .. only:: html
 
