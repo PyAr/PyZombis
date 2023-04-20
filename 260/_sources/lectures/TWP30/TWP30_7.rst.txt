@@ -1,0 +1,31 @@
+Herramientas de Python
+======================
+
++ Condiciones: ``if``, ``elif``, ``else``
++ Ciclo: ``while``
++ Operador de asignación: ``=``
++ Operador de igualdad: ``==``
++ Operador diferente de: ``!=``
++ Mostrar un mensaje: ``print()``
++ Leer una entrada del usuario: ``input()``
++ Convertir a entero: ``int()``
++ Sortear un entero: ``randint()``
+
+Estas son algunas de las herramientas. ¡Existen muchas más!
+
+Ahora solo faltan tus ejercicios
+--------------------------------
+
+.. image:: ../img/TWP05_041.jpeg
+    :height: 12.571cm
+    :width: 9.411cm
+    :align: center
+    :alt: 
+
+
+.. raw:: html
+
+    <br/>
+
+
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote ”. - Einstein

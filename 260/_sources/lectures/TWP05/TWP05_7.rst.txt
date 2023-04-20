@@ -1,0 +1,28 @@
+Numberic Variables
+===================
+
++ Integers do not have decimals: ``42``, ``-7``
++ Values ​​of the integer type in Python are called ``int``
++ Floating point numbers have decimal places: ``1.0``, ``3.1415``,
+  ``1234.56``
++ Note that ``1.0``, even having zero in the decimal part, it is a number in
+  floating point
++ Floating point values ​​in Python are called ``float``.
+
+
+Representation of numerical values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++ Internally all numbers are represented with the
+  binary system
++ This system allows only digits ``0`` either ``1``
++ Floating point numbers may not have a correct representation
+  in the binary system
++ Typing in the interpreter ``3 * 0.1`` we will have as an answer: ``0.30000000000000004``
+
+**Try it here!**
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/interpreter.html
