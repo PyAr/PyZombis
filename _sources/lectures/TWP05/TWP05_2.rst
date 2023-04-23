@@ -1,35 +1,35 @@
-Primer mensaje de error
+First Error Message
 =========================
 
-+ Las letras mayúsculas y minúsculas son diferentes
-+ ``print()`` es diferente de ``Print()``
++ Uppercase letters and lowercase letters are different
++ ``print()`` is different from ``Print()``
 
 .. code-block:: python
 
-    >>> Print ("¡hola mundo!")
+    >>> Print ("Hello world!")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     NameError: name 'Print' is not defined
 
-**¡Ahora inténtelo por su propia cuenta!**
+**Now try it in your own account!**
 
 .. raw:: html
    :file: ../_static/interpreter.html
 
 
-+ Si no usamos comillas, la computadora interpretará nuestro mensaje
-  como un comando de Python, generando un error de sintaxis
-+ ``"hola mundo"`` es diferente de ``hola mundo``
++ If you don't use quotation marks, the computer interprets our message
+  as a Python command, generating a syntax error
++ ``"Hello world"`` is different from ``Hello world``
 
 .. code-block:: python
 
-    >>> print (hola mundo)
+    >>> print (Hello world)
       File "<stdin>", line 1
-        print (hola mundo)
+        print (Hello world)
                         ^
     SyntaxError: invalid syntax
 
-**¡Ahora inténtelo por su propia cuenta!**
+**Now try it in your own account!**
 
 .. only:: html
 
@@ -37,18 +37,18 @@ Primer mensaje de error
       :file: ../_static/interpreter.html
 
 
-+ En la versión de Python que usamos (Python 3), los paréntesis no son opcionales al usar ``print()``
-+ ``print("hola mundo")`` es diferente de ``print "hola mundo"``
++ In the Python version we are using (Python 3), the parentheses are not optional when using ``print()``
++ ``print("Hello world")`` is different than ``print "Hello world"``
 
 .. code-block:: python
 
-    >>> print "hola mundo"
+    >>> print "Hello world"
       File "<stdin>", line 1
-        print "hola mundo"
+        print "Hello world"
               ^
     SyntaxError: missing parenthesis in call to 'print'
 
-**¡Ahora inténtelo por su propia cuenta!**
+**Now try it in your own account!**
 
 .. only:: html
 
@@ -56,19 +56,19 @@ Primer mensaje de error
       :file: ../_static/interpreter.html
 
 
-+ Los espacios iniciales tienen un significado en Python que veremos
-  más adelante, en este caso genera nuevamente un error de sintaxis
-+ Estos espacios se llaman indentaciones o sangrías
++ Indent spaces have a significance in Python we will see
+  later, in this case it generates a syntax error again
++ These spaces are called indentations
 
 .. code-block:: python
 
-    >>>   print("primer mensaje!")
+    >>>   print("first message!")
       File "<stdin>", line 1
-        print "hola mundo"
+        print "Hello world"
       ^      
     SyntaxError: unexpected indent
 
-**¡Ahora inténtelo por su propia cuenta!**
+**Now try it in your own account!**
 
 .. only:: html
 
