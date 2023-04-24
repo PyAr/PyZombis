@@ -18,6 +18,18 @@ Versión preliminar en linea:
 
 Dev tutorial: https://github.com/PyAr/PyZombis/wiki/Development-HOW-TO
 
+### Docker Environment
+
+To run the project in a Docker environment, run the following;
+
+```
+docker build . -t pyzombis
+docker run -p 127.0.0.1:4000:4000/tcp pyzombis
+
+```
+
+Open your browser and access the resources on 127.0.0.1:4000
+
 ## Licencia
 
 Esta obra, basada originalmente en el trabajo de Fernando Masanori Ashikaga
