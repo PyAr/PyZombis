@@ -1,0 +1,77 @@
+Leer el archivo ``surf.txt``
+============================
+
+..  datafile:: surf.txt
+    :hide: 
+      
+    Johny 8.65
+    Juan 9.12
+    Joseph 8.45
+    Stacey 7.81
+    Aideen 8.05
+    Zack 7.21
+    Aaron 8.31
+
+..  activecode:: ac_l37_2a
+    :nocodelens:
+    :datafile: surf.txt
+    :stdin:
+
+    archivo = open("surf.txt")
+    for linea in archivo:
+        print(linea.strip())
+    archivo.close()
+
+
+Fragmentador for
+----------------
+
+..  image:: ../img/TWP37_007.jpg
+    :height: 12.627cm
+    :width: 13cm
+    :align: center
+    :alt:
+
+
+Descubre quién obtuvo la puntuación más alta
+--------------------------------------------
+
+..  image:: ../img/TWP37_008.jpg
+    :height: 14.824cm
+    :width: 11cm
+    :align: center
+    :alt:
+
+
+El método ``split`` corta la cadena
+-----------------------------------
+
+..  image:: ../img/TWP37_010.jpg
+    :height: 12.571cm
+    :width: 21.839cm
+    :align: center
+    :alt:
+
+..  image:: ../img/TWP37_011.jpg
+    :height: 12.571cm
+    :width: 21.839cm
+    :align: center
+    :alt:
+
+
+Encontrando el 1º lugar
+-----------------------
+
+..  activecode:: ac_l37_2b
+    :nocodelens:
+    :datafile: surf.txt
+    :stdin:
+   
+    archivo = open("surf.txt")
+    mayor = 0
+    for linea in archivo:
+        nombre, puntos = linea.split()
+        if float(puntos) > mayor:
+            mayor = float(puntos)
+    archivo.close()
+    print(mayor)
