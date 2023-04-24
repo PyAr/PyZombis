@@ -1,0 +1,44 @@
+¿Qué tipos de errores?
+======================
+
++ Errores de sintaxis: un lenguaje de programación es formal, diferente de los lenguajes naturales, tiene una sintaxis rígida
++ Errores de tiempo de ejecución
++ Errores semánticos (más difíciles de encontrar)
+
+
+¿Cómo encontrar y manejar errores?
+----------------------------------
+
++ Sintáctica: mucha atención y práctica
++ En tiempo de ejecución: manejo de excepciones
++ Semántica: prueba de escritorio o simulación
+
+
+Entonces, ¿cómo ejecutas tu código?
+-----------------------------------
+
++ Hay dos cosas para ejecutar el programa de adivinación: un editor y un intérprete
++ El editor guarda el código escrito en un archivo en el disco
+
+.. image:: ../img/TWP30_004.png
+    :height: 4.867cm
+    :width: 10.979cm
+    :align: center
+    :alt: 
+
++ Las computadoras no pueden procesar texto porque solo entienden binario (ceros y unos)
++ El intérprete convierte el código fuente en un archivo binario para la computadora
+
+.. image:: ../img/TWP30_005.png
+    :height: 5.921cm
+    :width: 13.2cm
+    :align: center
+    :alt: 
+
+
++ El intérprete de Python funciona en dos modos: interactivo y de edición.
++ El modo interactivo es ideal para probar comandos y obtener respuestas instantáneas
++ Sin embargo, el modo de edición es el más utilizado para desarrollar los programas.
+   + Los nombres de archivo generalmente terminan con ".py"
+   + Si usa otra extensión, perderá colores ...
++ Un programa es más que una lista de comandos

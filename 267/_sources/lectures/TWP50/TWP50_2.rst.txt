@@ -1,0 +1,43 @@
+Show de preguntas Zombis
+========================
+
++ Comencemos con la lógica del programa utilizando una interfaz de texto.
++ Recuerda los requerimientos:
+    + La *opción 1* es para la respuesta correcta y la *opción 2* para la respuesta incorrecta.
+    + Contar cuántas respuestas correctas e incorrectas hubo.
+    + La *opción 0* es para terminar.
+
+.. activecode:: ac_l50_2
+    :nocodelens:
+
+    correctas = incorrectas = 0
+
+    opcion = int(input("Seleccione: 1) Correcto 2) Incorrecto 0) Terminar"))
+
+    # Mientras la opción no se cero acumular los valores
+    while opcion != 0:
+        if opcion == 1:
+            correctas = correctas + 1
+        if opcion == 2:
+            incorrectas = incorrectas + 1
+        opcion = int(input("Seleccione: 1) Correcto 2) Incorrecto 0) Terminar"))
+
+    print(f"Correctas:{correctas} Incorrectas:{incorrectas}")
+
++ Resultado
+
+.. image:: ../img/TWP50_006.png
+    :height: 7.989cm
+    :width: 15.027cm
+    :align: center
+    :alt:
+
+.. image:: ../img/TWP50_003.png
+    :height: 7.01cm
+    :width: 6.825cm
+    :align: center
+    :alt:
+
++ ¡Perfecto! el jefe está contento funciona de maravilla.
++ Faltaría el requerimiento de los sonidos.
++ Sin embargo... ¿La interfaz de texto es nueva?
