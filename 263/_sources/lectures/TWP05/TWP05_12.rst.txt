@@ -1,0 +1,86 @@
+Operaciones con strings
+=======================
+
++ Las operaciones básicas son corte, concatenación y composición.
++ La operación corte le permite usar parte de la cadena
++ La operación concatenación en cambio sirve para unir dos o más cadenas
++ Por último la composición se usa mucho cuando enviamos mensajes a la pantalla
+  y consiste en usar cadenas como patrones donde podemos insertar datos
+
+
+Concatenación
+-------------
+
+.. codelens:: cl_l05_12a
+    
+    a = "Papa"
+    b = "cuando nace"
+    print(a + b)
+    print(a * 3)
+
+Corte
+-----
+
++ Podemos realizar la operación de corte utilizando ``[indice_comienzo:indice_fin]``
+
+.. codelens:: cl_l05_12b
+    
+    x = "0123456789"
+    print(x[0:2])
+    print(x[1:2])
+    print(x[2:4])
+    print(x[0:5])
+    print(x[1:8])
+
++ Podemos omitir índices, sustituyendo el índice correspondiente y
+  también podemos tener índices negativos: -1 último, -2 penúltimo
+
+.. codelens:: cl_l05_12c
+    
+    x = "0123456789"
+    print(x[:2])
+    print(x[4:])
+    print(x[4:-1])
+    print(x[-4:-1])
+    print(x[:])
+
+Composición
+-----------
+
++ Unir cadenas múltiples no siempre es práctico
++ Podemos usar marcadores de posición para reemplazar valores dentro de cadenas
+
+.. codelens:: cl_l05_12d
+    
+    edad = 20
+    print("Juan tiene %d años" % edad)
+
++ Los marcadores principales son ``%d`` para números enteros, ``%s`` para
+  cadenas y ``%f`` para números de punto flotante
++ % 03d completo con ceros adicionales
++ % 3d significa tres posiciones sin ceros adicionales
+
+.. codelens:: cl_l05_12e
+    
+    edad = 20
+    print("[%03d]" % edad)
+    print("[%3d]" % edad)
+
++ ``%5.2f`` significa 5 caracteres en total y 2 decimales
+
+.. codelens:: cl_l05_12f
+    
+    print("$%5.2f pesos" % 23)
+
+f-strings
+---------
+
++ Otra manera de unir cadenas es mediante las f-strings
++ Todo lo que esté entre llaves {} se reemplazará si se definió anteriormente. En el ejemplo .2f significa dos lugares decimales.
+
+.. activecode:: ac_l05_12
+   :nocodelens:
+   :stdin:
+
+   precio = 10.123
+   print(f"El precio es: ${precio:.2f}")
