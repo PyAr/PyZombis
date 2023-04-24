@@ -1,0 +1,18 @@
+apiVersion: skaffold/v4beta4
+kind: Config
+metadata:
+  name: pyzombis
+build:
+  artifacts:
+    - image: web
+      docker:
+        dockerfile: Dockerfile
+deploy:
+  docker:
+    images: [web]
+portForward:
+- resourceType: deployment
+  resourceName: myDep
+  namespace: mynamespace
+  port: 4000
+  localPort: 4000
