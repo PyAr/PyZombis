@@ -7,7 +7,7 @@ Exercise List “again”
    :nocodelens:
    :stdin:
 
-   print("¡Welcome to my program!")
+   print("Welcome to my program!")
    print("Always come back!")
 
 + Conditions -- if
@@ -72,7 +72,7 @@ Exercise List “again”
       price = 0.08
    print("phone account : $%6.2f" % (minutes * price))
 
-.. image:: ../img/TWP05441.jpeg
+.. image:: ../img/TWP05_041.jpeg
     :height: 12.571cm
     :width: 9.411cm
     :align: center
