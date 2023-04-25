@@ -5,7 +5,7 @@ Notas de surfistas
 ------------------
 
 + La Federación de Surf tiene los siguientes datos: número del surfista,
-  nombre, país, grado promedio, estilo, edad.
+  name, country, grado promedio, Style, Age.
 + ¿Cómo usar estos datos?
 + Por ejemplo, quiero conocer a todos los surfistas mayores de 25
 + ¡Usando una base de datos! En este caso, SQL.
@@ -29,14 +29,14 @@ Notas de surfistas
 + Previamente fue creada una base de datos con una tabla llamada ``surfers``.
 + Esta tabla tiene la información de los participantes del torneo de surf organizada en las siguientes columnas: ``id``, ``name``, ``country``, ``media``, ``style``, ``age``.
 + ``id`` es un número entero que identifica al concursante.
-+ ``nombre`` es una string con su nombre y su apodo (si tiene uno).
-+ ``country`` muestra el país que está representando en el torneo.
++ ``name`` es una string con su name y su apodo (si tiene uno).
++ ``country`` muestra el country que está representando en el torneo.
 + ``media`` es el promedio de puntos obtenidos en el torneo.
-+ ``style`` es el estilo que tiene su tabla de surf.
-+ ``age`` es un número entero que muestra la edad del concursante.
++ ``style`` es el Style que tiene su tabla de surf.
++ ``age`` es un número entero que muestra la Age del concursante.
       
 
-.. activecode:: ac_42_1
+.. activecode:: ac_42_1_en
    :language: python3
    :python3_interpreter: brython
 
