@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP52.rst:3
+msgid "MVC"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:15 ../_sources/lectures/TWP52.rst:28
+#: ../_sources/lectures/TWP52.rst:49 ../_sources/lectures/TWP52.rst:88
+#: ../_sources/lectures/TWP52.rst:99 ../_sources/lectures/TWP52.rst:112
+#: ../_sources/lectures/TWP52.rst:123 ../_sources/lectures/TWP52.rst:134
+#: ../_sources/lectures/TWP52.rst:145 ../_sources/lectures/TWP52.rst:247
+msgid "HEAD-Ex Logística y Transporte"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:77 ../_sources/lectures/TWP52.rst:168
+#: ../_sources/lectures/TWP52.rst:179 ../_sources/lectures/TWP52.rst:192
+#: ../_sources/lectures/TWP52.rst:219
+msgid "HEAD-Ex Logística e Transporte"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:101
+msgid "Radio Buttons"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:153
+msgid "Modelo son los datos almacenados"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:154
+msgid "Vision es el botón de radio presentado"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:155
+msgid "Control es el código tkinter que gestiona todo esto"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:188
+msgid "Y ahora??"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:258
+msgid "revisión"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:262
+msgid "MVC - Modelo, Visión, Control"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:263
+msgid "Entry()"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:264
+msgid "Texto()"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:265
+msgid "StringVar()"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:266
+msgid "RadioButton()"
+msgstr ""
+
+#: ../_sources/lectures/TWP52.rst:267
+msgid "OptionMenu()"
+msgstr ""
+

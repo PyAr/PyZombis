@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP20/TWP20_4.rst:2
+msgid "Números aleatorios"
+msgstr ""
+
+#: ../_sources/lectures/TWP20/TWP20_4.rst:23
+msgid ""
+"Se define una función de \"codificación\" que devuelve las letras en una "
+"cadena mezclados."
+msgstr ""
+
+#: ../_sources/lectures/TWP20/TWP20_4.rst:24
+msgid ""
+"**Nota**: Se usa la función ``list()`` para convertir una cadena en una "
+"lista."
+msgstr ""
+
+#: ../_sources/lectures/TWP20/TWP20_4.rst:42
+msgid "Genere una lista de 15 enteros aleatorios entre 10 y 100."
+msgstr ""
+
+#: ../_sources/lectures/TWP20/TWP20_4.rst:56
+msgid ""
+"Genere una lista de 15 enteros aleatorios entre 10 y 100 que son "
+"distintos el uno del otro."
+msgstr ""
+

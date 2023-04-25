@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/quiz/Quiz6.rst:3
+msgid "Quiz - 6"
+msgstr ""
+
+#: ../_sources/quiz/Quiz6.rst:17
+msgid ""
+"Desarrolle la función ``dormir`` que toma dos parámetros, ``dia_semana`` "
+"y ``dia_festivo``. Ambos parámetros toman valores booleanos, es decir "
+"pueden ser ``True`` o ``False``. La función actúa de la siguiente manera:"
+" usted puede dormir cuando sea día festivo o cuando no sea un día entre "
+"semana. ``dormir`` devolverá ``True`` o ``False`` si usted va a dormir o "
+"no. |br| |br| Ejemplos: |br| ``dormir(False, False)`` -> ``True`` |br| "
+"``dormir(True, False)`` -> ``False`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz6.rst:51
+msgid ""
+"Desarrolle la función ``alumnos_en_problemas`` que toma dos parámetros, "
+"``a_sonrie`` y ``b_sonrie``. a y b representan dos estudiantes. "
+"``a_sonrie`` y ``b_sonrie`` indican si a y b sonríen. Cuando ambos "
+"sonríen o ambos no están sonriendo tenemos problemas. "
+"``alumnos_en_problemas`` debe devolver ``True`` cuando hay problemas. De "
+"lo contrario, devolverá ``False``. |br| |br| Ejemplos: |br| "
+"``alumnos_en_problemas(True, True)`` -> ``True`` |br| "
+"``alumnos_en_problemas(False, True)`` -> ``False`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz6.rst:85
+msgid ""
+"Desarrolle la función ``suma_doble`` que toma dos parámetros, ``a`` y "
+"``b``. Ambos son números enteros. La función debe devolver la suma de "
+"``a`` y ``b``. Sin embargo, si los números son iguales, devuelve el doble"
+" de la suma. |br| |br| Ejemplos: |br| ``suma_doble(1, 2)`` -> ``3`` |br| "
+"``suma_doble(2, 2)`` -> ``8`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz6.rst:118
+msgid ""
+"Desarrolle la función ``diferencia_absoluta_21`` que toma un parámetro, "
+"``n``, y devuelve la diferencia absoluta entre ``n`` y 21 solo si ``n`` "
+"es menor o igual a 21. Si es mayor, entonces devuelve el doble de la "
+"diferencia absoluta entre el número y 21. **Recuerde**: ``abs(x)`` "
+"devuelve el valor absoluto de x. |br| |br| Ejemplos: |br| "
+"``diferencia_absoluta_21(19)`` -> ``2`` |br| "
+"``diferencia_absoluta_21(25)`` -> ``8`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz6.rst:153
+msgid ""
+"Desarrolle la función ``problemas_con_loro`` que toma dos parámetros, "
+"``hablando`` que puede ser ``True`` o ``False``, y ``hora`` que toma un "
+"valor entre 0 y 23. Tenemos un loro, y hay problemas si el loro está "
+"hablando antes de las 7 horas o después de las 20 horas. Devolver "
+"``True`` si hay problemas o ``False`` si no los hay. |br| |br| Ejemplos: "
+"|br| ``problemas_con_loro(True, 6)`` -> ``True`` |br| "
+"``problemas_con_loro(True, 20)`` -> ``False`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz6.rst:189
+msgid ""
+"Desarrolle la función ``es_diez`` que toma dos parámetros, ``a`` y ``b``."
+" Devuelve ``True`` si uno de los parámetros es 10, o si la suma de ambos "
+"es 10. De lo contrario, devuelve ``False``. |br| |br| Ejemplos: |br| "
+"``es_diez(9,10)`` -> ``True`` |br| ``es_diez(1,9)`` -> ``True`` |br| "
+"``es_diez(8,3)`` -> ``False`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz6.rst:226
+msgid ""
+"Desarrolle la función ``distancia_10`` que toma a ``n`` como parámetro, "
+"el cual es un número entero. Devuelve ``True`` si la diferencia absoluta "
+"entre ``n`` y 100 o ``n`` y 200 es menor o igual que 10. |br| |br| "
+"Ejemplos: |br| ``distancia_10(93)`` -> ``True`` |br| ``distancia_10(90)``"
+" -> ``True`` |br| ``distancia_10(89)`` -> ``False`` |br| "
+"``distancia_10(210)`` -> ``True`` |br| ``distancia_10(211)`` -> ``False``"
+" |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz6.rst:272
+msgid ""
+"Desarrolle la función ``remover_iesimo`` que recibe una cadena ``s`` no "
+"vacía y un entero positivo ``i``, y devuelva la cadena original sin el "
+"i-ésimo carácter. |br| |br| Ejemplos: |br| ``remover_iesimo(\"Hello\", "
+"1)`` -> ``\"ello\"`` |br| ``remover_iesimo(\"Hi\", 2)`` -> ``\"H\"`` |br|"
+" ``remover_iesimo(\"PyZombiess\", 10)`` -> ``\"PyZombies\"`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz6.rst:310
+msgid ""
+"Desarrolle la función ``intercambiar`` que toma a ``s`` como parámetro, "
+"representando una cadena. Si ``s`` tiene un tamaño menor o igual a 1, se "
+"devuelve la misma cadena. De lo contrario, la primera y última letra de "
+"``s`` se intercambian. |br| |br| Ejemplos: |br| "
+"``intercambiar(\"codigo\")`` -> ``\"oodigc\"`` |br| "
+"``intercambiar(\"a\")`` -> ``\"a\"`` |br| ``intercambiar(\"ab\")`` -> "
+"``\"ba\"`` |br|"
+msgstr ""
+

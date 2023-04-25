@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:2
+msgid "Modo interactivo y modo edición"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:5
+msgid "Intérprete de Python"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:7
+msgid ""
+"El intérprete es un programa que acepta comandos escritos en Python y los"
+" ejecuta línea por línea"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:9
+msgid ""
+"El intérprete verifica que hayamos escrito el programa correctamente, "
+"mostrando mensajes de error si hay un problema"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:11
+msgid "Hay dos modos del intérprete de Python: modo interactivo y modo edición"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:12
+msgid "En los ejemplos anteriores usamos el modo interactivo"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:13
+msgid ""
+"Una ventaja del modo interactivo es poder probar los comandos y obtener "
+"la respuesta al instante"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:18
+msgid "Calculadora en el intérprete"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:39
+msgid ""
+"**¡Ahora inténtelo por su propia cuenta!** Escriba estas operaciones en "
+"el intérprete y use el modo interactivo como una calculadora"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:49
+msgid "Modo de edición"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:54
+msgid ""
+"Intente dar un enter dentro del bloque en modo de edición. Note que no "
+"sucede nada al escribir enter al final de la línea. En modo de edición es"
+" necesario \"ejecutar\" el programa (Para esto presione el botón de Run)."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:62
+msgid "Precauciones al escribir programas"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:64
+msgid "Las letras mayúsculas y minúsculas son diferentes"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:65
+msgid ""
+"Las comillas son muy importantes y no deben pasarse por alto. Cada vez "
+"que abres comillas, no olvides cerrarlas"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:67
+msgid ""
+"Los paréntesis no son opcionales en Python. Cada paréntesis abierto debe "
+"estar cerrado"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_3.rst:69
+msgid ""
+"Los espacios son muy importantes. El lenguaje Python se basa en cantidad "
+"de espacios en blanco antes del comienzo de cada línea para realizar "
+"diferentes operaciones. Esto se le conoce como indentación."
+msgstr ""
+

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP45/TWP45_4.rst:2
+msgid "Probando la API de University Domains"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_4.rst:4
+msgid ""
+"`University Domains and Names Data List & API <https://github.com/Hipo"
+"/university-domains-list>`_ es una API que contiene  dominios, nombres y "
+"países de la mayoría de las universidades del mundo."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_4.rst:11
+msgid ""
+"Veamos un ejemplo de cómo usar esta API. Le vamos a pedir las "
+"universidades de Turquía que tengan en su nombre la palabra "
+"**\"middle\"**."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_4.rst:32
+msgid "Busquemos todas las universidades en Colombia."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_4.rst:56
+msgid "Aprendizajes"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_4.rst:58
+msgid "Accedemos a **APIs** para buscar información que nos es útil."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_4.rst:59
+msgid ""
+"Podemos solicitar la información con dos librerías de Python: ``urllib`` "
+"o ``requests``."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_4.rst:60
+msgid ""
+"La librería ``json`` de Pyhton nos ayuda a transformar la respuesta de la"
+" API en un objeto de Python, ya sea diccionario o lista, con el método "
+"``loads``, mientras que el método ``dumps`` hace lo contrario; transforma"
+" un objeto de Python en una cadena con formato JSON."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_4.rst:63
+msgid ""
+"El método ``dumps`` de ``json`` es útil si queremos visualizar la "
+"respuesta de una API de manera legible. Esto se logra con el argumento "
+"``indent``."
+msgstr ""
+

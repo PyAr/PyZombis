@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP40/TWP40_2.rst:2
+msgid "Variables"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_2.rst:4
+msgid ""
+"Las variables son referencias a regiones de memoria que definiste para "
+"usarla en el programa."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_2.rst:5
+msgid ""
+"Las variables ``F`` y ``C`` del ejemplo anterior son referencias a "
+"regiones de memoria."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_2.rst:6
+msgid "Las variables ``F`` y ``f`` son diferentes, al igual que ``C`` y ``c``."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_2.rst:7
+msgid "``\"F\"`` o ``\"C\"`` no son variables."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_2.rst:10
+msgid "Variables con valores definidos e indefinidos"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_2.rst:12
+msgid ""
+"Solo se puede usar el contenido de una variable si ya tiene un valor "
+"*definido* antes."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_2.rst:13
+msgid ""
+"Si se usa variable que no tiene valor definido o se encuentra "
+"*indefinido* daría como resultado un error como el siguiente."
+msgstr ""
+

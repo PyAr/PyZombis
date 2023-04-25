@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:2
+msgid "Cuentas visitantes"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:5
+msgid "Editar controlador default.py"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:24
+msgid "Vista default/index"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:44
+msgid "Diferentes visitantes tienen diferentes contadores"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:48
+msgid "Dos paginas"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:50
+msgid "Crearemos dos páginas"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:51
+msgid "El primero pide el nombre en un formulario"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:52
+msgid "Luego seremos redirigidos a la segunda"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:53
+msgid "El segundo dará un saludo con el nombre"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:54
+msgid "Incluir en el controlador default.py"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:68
+msgid "Crea la visión default/primeira"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:71
+#: ../_sources/lectures/TWP65/TWP65_3.rst:87
+msgid "{{extend 'layout.html'}}"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:73
+msgid "Qual é o seu nome?"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:75
+msgid "<form action=\"segunda\">"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:77
+msgid "<input name=\"nome\" />"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:79
+msgid "<input type=\"submit\" />"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:81
+msgid "</form>"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:84
+msgid "Crea la visión default/segunda"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:89
+msgid "<h1>Olá {{=request.vars.nome}}</h1>"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:93
+msgid "Accesorios"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:95
+msgid "`Web2py Appliances <http://www.web2py.com/appliances>`_"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:96
+msgid "Email Contact Form"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:97
+msgid "Sudoku Solver"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:98
+msgid "Train Counter Game"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:99
+msgid "Quiz Builder"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_3.rst:100
+msgid "EcardsOnMap (es grande...)"
+msgstr ""
+
