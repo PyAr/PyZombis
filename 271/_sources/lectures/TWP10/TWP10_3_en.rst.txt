@@ -7,7 +7,7 @@
 
     a = 8
     b = 5
-   if a > b:
+    if a > b:
         print("The first number is the largest")
     if b > a:
         print("The second number is the biggest!")
@@ -25,10 +25,10 @@ Check if a car is new or old:
 
 .. codelens:: cl_l10_3b_en
 
-    anio_creacion = 10
-    if anio_creacion <= 3:
+    years_old = 10
+    if years_old <= 3:
         print("his car is new")
-    if anio_creacion > 3:
+    if years_old > 3:
         print("his car is old")
 
 + Ask the speed of a car, assuming it is an integer.
