@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:2
+msgid "Estructuras anidadas"
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:4
+msgid "Considere la compañía telefónica \"Chao\". Por debajo de 200 minutos, la empresa cobra ``$0.20`` por minuto. Entre 200 y 400 minutos, el precio es de ``$0.18``. Por encima de 400 minutos, el precio por minuto es de ``$0.15``. Calcular tu factura de teléfono con estas condiciones."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:5
+msgid "Las condiciones de la compañía, puede verse representado visualmente con la ruta de una carretera como la siguiente imagen."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:13
+msgid "Pueden crearse condiciones anidadas."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:14
+msgid "Recuerda identar las porciones de código que se encuentren anidadas."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:28
+msgid "Note la doble identación para cumplir la segunda condición."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:29
+msgid "Ahora modificamos el programa de la compañía \"Chao\" para una promoción dónde la tarifa es de ``$0.08`` cuando usa más de 800 minutos."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:46
+msgid "Note que las estructuras anidadas pueden crecer."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:47
+msgid "Python dada sus características proporciona la clausula ``elif``."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_5.rst:48
+msgid "Se utiliza para verificar múltiples condiciones."
+msgstr ""

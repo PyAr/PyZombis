@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:2
+msgid "Construcción del archivo"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:4
+msgid "Las líneas que comienzan con **\"#\"** se llaman comentarios"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:5
+msgid "Están destinados a ser leídos por humanos y Python los ignora"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:6
+msgid "Python omite todo el texto desde el **\"#\"** hasta el final de la línea"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:13
+msgid "``x`` es un ejemplo de una variable"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:14
+msgid "En ``x`` asignaremos un valor al que se puede hacer referencia más adelante"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:15
+msgid "Se mostrará el mensaje entre comillas y la respuesta se almacenará en ``x``"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:21
+msgid "Hay comandos de bucle o ciclos como el comando ``for``"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:22
+msgid "Un bucle o ciclo se usa para repetir un bloque de código varias veces"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:23
+msgid "En este ejemplo, el siguiente bloque se repetirá 10 veces"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:29
+msgid "Llamamos **sangría** a los espacios al comienzo de la línea"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:30
+msgid "En Python, la sangría delimita el bloque que se ejecutará"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:31
+msgid "El cálculo ``3.9 * x * (1-x)`` se realizará en la CPU y se asignará a la variable ``x``"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:35
+msgid "Resultado"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_3.rst:50
+msgid "El programa de caos devuelve valores muy diferentes, incluso cuando la entrada es similar"
+msgstr ""

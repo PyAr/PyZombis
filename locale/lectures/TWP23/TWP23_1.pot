@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:2
+msgid "Archivos"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:4
+msgid "Hasta ahora nuestros datos desaparecieron al salir de IDLE"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:5
+msgid "Los archivos son para almacenamiento permanente"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:6
+msgid "Un archivo es un área de disco donde podemos leer o escribir informacion"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:7
+msgid "Accedemos al archivo por su nombre"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:8
+msgid "Para acceder a un archivo necesita abrirlo"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:9
+msgid "Al abrir el archivo informamos su nombre, directorio donde está  (si necesario) y qué operaciones realizaremos: lectura y / o escritura"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:10
+msgid "La función que abre los archivos está abierta y los modos son: r - lectura, w - escritura, a - agregar, b - binario,(actualizar)"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:11
+msgid "Los métodos para leer o escribir son ``read()`` y ``write()``"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:12
+msgid "Los archivos deben cerrarse con ``close()``"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:33
+msgid "Pruebe el programa anterior:"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:46
+msgid "Al ejecutar el programa anterior se modifica el archivo ``numeros.txt``."
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:47
+msgid "El modo w crea el archivo si no existe, si existe será eliminado y reescrito"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:55
+msgid "Ya escribió en el archivo ``\"numeros.txt\"``. Ahora va a leer los datos que ha escrito:"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:63
+msgid "``readlines()`` genera una lista donde cada elemento es una línea de lectura."
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:64
+msgid "El archivo ``numeros.txt`` ahora tiene escrito números, cada número en una línea diferente. Este cambio de línea fue inscrito con el carácter especial ``\\n``."
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:66
+msgid "Si queremos eliminar este carácter del final, podemos usar ``print(linea.rstrip())``. Pruebe imprimir de esta manera las líneas de texto."
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:71
+msgid "Pythonic way"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:88
+msgid "El código anterior hace lo mismo para la forma pitónica."
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:89
+msgid "En la diapositiva anterior vimos cómo los programadores normales leen"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:90
+msgid "Python es genial, porque siempre puedes ir más profundo"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_1.rst:91
+msgid "Python es simple, pero difícil de agotar"
+msgstr ""

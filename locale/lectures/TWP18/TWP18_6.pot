@@ -1,0 +1,29 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP18/TWP18_6.rst:2
+msgid "Funciones ``split`` y ``join``"
+msgstr ""
+
+#: ../_sources/lectures/TWP18/TWP18_6.rst:17
+msgid "Ejercicio"
+msgstr ""
+
+#: ../_sources/lectures/TWP18/TWP18_6.rst:24
+msgid "Haga un programa que solicite la fecha de nacimiento en formato \"dd/mm/aaaa\" y convierta esta fecha a formato \"<día> de <mes> de <año>\" usando la lista ``meses`` que ya está escrita. Guardar el resultado en la variable ``fecha_de_nacimiento`` e imprimir esta variable. Recordar que ``.split()`` regresa una lista y se le puede pasar como argumento el caracter con el cual separar un string. Guardar el día, mes y el año en formato de cadena en las variables ``dia``, ``mes`` y ``anio``."
+msgstr ""

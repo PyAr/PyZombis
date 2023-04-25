@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP30/TWP30_6.rst:2
+msgid "Sortear el número a adivinar"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_6.rst:46
+msgid "¡Ahora sí!"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_6.rst:55
+msgid "Resumen"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_6.rst:57
+msgid "¡Creaste un juego!"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_6.rst:58
+msgid "Los comandos hacen cosas"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_6.rst:59
+msgid "Las condicionales deciden las cosas"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_6.rst:60
+msgid "Los ciclos repiten cosas"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_6.rst:61
+msgid "Las condiciones te ayudan a decidir si algo es verdadero o falso"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_6.rst:62
+msgid "La asignación define un nombre para un valor."
+msgstr ""

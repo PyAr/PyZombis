@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP17/TWP17_3.rst:2
+msgid "Sintaxis de una lista"
+msgstr ""
+
+#: ../_sources/lectures/TWP17/TWP17_3.rst:4
+msgid "Una lista vacía"
+msgstr ""
+
+#: ../_sources/lectures/TWP17/TWP17_3.rst:10
+msgid "Una lista con tres notas."
+msgstr ""
+
+#: ../_sources/lectures/TWP17/TWP17_3.rst:16
+msgid "Accediendo a una nota."
+msgstr ""
+
+#: ../_sources/lectures/TWP17/TWP17_3.rst:23
+msgid "Cambiar la primera nota"
+msgstr ""
+
+#: ../_sources/lectures/TWP17/TWP17_3.rst:31
+msgid "Promedio de 5 notas"
+msgstr ""
+
+#: ../_sources/lectures/TWP17/TWP17_3.rst:43
+msgid "**Nota**: ``x += 1`` es lo mismo que ``x = x + 1``"
+msgstr ""

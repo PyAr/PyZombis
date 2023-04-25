@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:9
+msgid "Las partes de tu programa"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:12
+msgid "Adivinando números"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:29
+msgid "Las partes del programa"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:31
+msgid "Ahora analizemos las partes del código anterior"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:61
+msgid "Tenga en cuenta que en el siguiente programa:"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:63
+msgid "Las partes en azul son :blue:`funciones` (ej: **print()**)"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:64
+msgid "Las partes en rojo son :red:`strings o cadenas` (ej: **\"¡Bienvenido!\"**)"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:65
+msgid "Las partes en verde son :green:`números` (ej: **42**)"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:66
+msgid "Las partes en púrpura son :purple:`directivas` (ej: **if** y **else**)"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:67
+msgid "Las partes en amarillo son :yellow:`indentaciones o sangría` (\"Cada uno en su bloque\")"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:68
+msgid "Las partes en negro son :black:`variables` (ej: **g** y **numero**)"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:69
+msgid "El símbolo de igual (``=``) es el operador de asignación y se usa para asignar valores a variables (ej: ``numero = int(g)`` La variable 'número' recibe un entero de g))"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:70
+msgid "El símbolo de doble igual (``==``) es el operador de comparación y se usa para comparar dos variables o valores (ej: ``numero == 42`` ¿el número es igual a 42?)"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:71
+msgid "El símbolo de dos puntos (``:``) es el operador que abre un bloque de indentación. Va después de las directivas (ej: ``if numero == 42:`` y ``else:``)"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:73
+msgid "**Nota:** Estos son los colores de los bloques de código que haz visto durante el curso, pero estos colores pueden variar dependiendo de la herramienta que se use para programar."
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_2.rst:79
+msgid "Construya el código anterior usando este ejercicio de arrastrar y soltar.(Use la función de ayuda si está atascado)"
+msgstr ""

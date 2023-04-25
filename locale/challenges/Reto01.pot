@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/challenges/Reto01.rst:3
+msgid "Reto Ahorcado"
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:5
+msgid "Este reto consiste en crear el juego de **ahorcado** a partir de código Python."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:11
+msgid "Primero haremos los distintos dibujos del ahorcado con cadenas de texto."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:16
+msgid "En la lista ``dibujos`` colocaremos las cadenas de texto que representan los dibujos del ahorcado."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:90
+msgid "Va a resolver el reto de manera progresiva."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:95
+msgid "Cree dos variables, una llamada ``correctas`` y la otra ``incorrectas``. Ambas asígnelas a una cadena vacía."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:116
+msgid "¿Recuerda la lección de las APIs? Vamos a aplicar lo aprendido de esa lección."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:121
+msgid "Para poder jugar ahorcado necesitamos palabras para adivinar. En este caso vamos a recuperar esas palabras de la API de University Domains. Estas palabras serán ciudades del mundo. Con la librería ``requests`` acceda a la API de University Domains. La url es la siguiente http://universities.hipolabs.com/search Desarrolle la función ``escoger`` que escoja de manera **aleatoria** una ciudad dentro de las ciudades de la lista ``ciudades``. Esta ciudad será devuelta por la función. Cabe aclarar que el nombre de cada ciudad está en inglés."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:167
+msgid "Ahora definamos otra función para imprimir el ahorcado."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:173
+msgid "La función ``imprimir_ahorcado`` imprime el dibujo del ahorcado correspondiente al número de letras incorrectas y correctas hasta el momento. Toma un único parámetro ``p_aleatoria`` que representa la palabra a adivinar."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:188
+msgid "Es momento de crear la función principal de nuestro programa, la cuál pide al usuario una letra para adivinar."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:194
+msgid "Desarrolle la función ``adivinar``. Recibe como parámetro una cadena (``letras``) con todas las letras ya probadas (correctas + incorrectas). Devuelve una letra minúscula que no se ha probado antes. Si el usuario ingresa más de una letra u otro carácter especial, se debe imprimir un mensaje alertando al usuario de su error. Por ejemplo: ``\"Caracter inválido\"`` Esta función tendrá un bucle que hará que todos los datos sean coherentes y solo pasará a tu programa principal la letra minúscula que no se probó antes. Guarde lo ingresado por el usuario en la variable ``x``. **Nota**: La función se va a ejecutar una vez y pedirá que se ingrese una letra para verificar si pasa las pruebas unitarias."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:234
+msgid "Hagamos posible que el usuario decida si quiere volver a jugar o no."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:239
+msgid "Desarrolle la función ``jugar_nuevamente`` que pregunte al usuario si quiere volver a jugar. La respuesta debe ser una *s* o *n* (S/N). Sin importar si el usuario ingresa la respuesta en mayúscula o minúscula, el programa debe transformarla a minúscula. La función devuelve ``True`` o ``False`` dependiendo de la respuesta. **Nota**: La función se va a ejecutar dos veces para verificar si pasa las pruebas unitarias. En la consola verá instrucciones sobre qué ingresar para cada prueba."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:279
+msgid "Ahora desarrolle la función ``ganar``. Ésta toma dos parámetros: ``p_aleatoria`` que representa la palabra a adivinar, y ``letras_adivinadas``. Debe devolver ``True`` si todas las letras de ``p_aleatoria`` están en la cadena ``letras_adivinadas``. De lo contrario, devuelve False."
+msgstr ""
+
+#: ../_sources/challenges/Reto01.rst:301
+msgid "Ya ha definido todas las funciones y variables necesarias para el programa. Si ha llegado hasta aquí, debió haber cumplido con todo y haber pasado todas las pruebas unitarias. De ser así, puede correr el siguiente programa para probar su juego. El tiempo que tiene para jugar son 5 minutos."
+msgstr ""

@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP10/TWP10_4.rst:2
+msgid "``if`` / ``else``"
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_4.rst:4
+msgid "¿Qué hacer cuando la condición ``if`` es falsa?."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_4.rst:5
+msgid "La clausula ``else`` significa en caso contrario."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_4.rst:6
+msgid "Se suele usar cuando para indicar condiciones complementarias."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_4.rst:7
+msgid "Las condiciones if / else pueden verse como un carro al llegar a una bifurcación en la ruta."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_4.rst:8
+msgid "Dependiendo del resultado de una condición el carro puede ir por la ruta de arriba o por la ruta de abajo."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_4.rst:16
+msgid "Los dos códigos a continuación hacen lo mismo pero uno usando condiciones if / else"
+msgstr ""

@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/quiz/Quiz1.rst:3
+msgid "Quiz - 1"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:17
+msgid "Haga un programa que pida dos números enteros e imprima la suma de esos dos números. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:44
+msgid "Escriba un programa que lea un valor en metros y lo muestre convertido a milimetros. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:70
+msgid "Escriba un programa que lea el número de días, horas, minutos y segundos del usuario. Calcular el total en segundos. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:98
+msgid "Haz un programa que calcule un aumento de salario. Debe solicitar el monto del salario y el porcentaje del aumento. Muestra el monto del aumento y el nuevo salario. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:128
+msgid "Solicite el precio de un comerciante y el porcentaje de descuento. Muestre el monto del descuento y el precio a pagar. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:157
+msgid "Calcule el tiempo de un viaje en auto. Pregunte por la distancia a recorrer y la velocidad media esperada para el viaje. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:186
+msgid "Convierta una temperatura escrita en Celsius a Fahrenheit. F = (9 * C) / 5 + 32 |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:214
+msgid "Ahora haga lo contrario, de Fahrenheit a Celsius. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:242
+msgid "Escriba un programa que pregunte por la cantidad de kilómetros recorridos por un automóvil alquilado, así como el número de días que ha estado alquilado el coche. Calcule el precio a pagar, sabiendo que el coche cuesta R $ 60,00 por día y R $ 0,15 por km recorrido. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:273
+msgid "Escribe un programa para calcular la reducción en la vida útil de un fumador. Preguntar cantidad de cigarrillos fumados por día y cuántos años ha fumado. Considere que un fumador pierde 10 minutos de vida por cada cigarrillo, calcula cuántos días de vida perderá un fumador. Mostrar los días totales. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz1.rst:305
+msgid "Sabiendo que  ``str()`` convierte valores numéricos en cadenas, calcule cuántos dígitos hay en 2 elevados a un millón. |br|"
+msgstr ""

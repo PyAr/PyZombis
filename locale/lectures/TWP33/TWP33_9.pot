@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:2
+msgid "Biblioteca ``time``"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:4
+msgid "Tiempo actual en segundos ``time.clock()``"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:5
+msgid "¿Estoy en verano? ``time.daylight()``"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:6
+msgid "Duerme unos segundos, ``time.sleep(segundos)``"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:7
+msgid "Zona horaria ``time.timezone()``"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:11
+msgid "10 segundos entre cada acceso"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:52
+msgid "Resumen"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:54
+msgid "Los ``string`` son cadenas de caracteres."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:55
+msgid "Accedemos a los caracteres individuales por el índice, que comienza con cero."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:56
+msgid "Los métodos son funciones integradas en variables."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:57
+msgid "Hay bibliotecas de programación con código listo."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:58
+msgid "Los datos tienen un tipo, como ``int`` o ``string``."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:62
+msgid "Herramientas de Python"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:64
+msgid "``texto[4]`` accede al quinto carácter."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:65
+msgid "``texto[4:9]`` accede del quinto al noveno carácter."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:66
+msgid "El método ``text.find()`` busca una subcadena."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:67
+msgid "``float()`` convierte algo a un punto flotante."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_9.rst:68
+msgid "Bibliotecas: ``urllib.request`` y ``time``."
+msgstr ""
