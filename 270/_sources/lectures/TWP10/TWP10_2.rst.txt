@@ -1,0 +1,12 @@
+“¿Correr o no correr? Esa es la cuestión..."
+============================================
+
++ En general no ejecuto todas las líneas del programa.
++ Ir a través de las líneas de un programa es como viajar en automóvil en una ciudad.
++ Hay puntos dónde decidimos qué camino elegir.
+
+.. image:: ../img/TWP10_004.png
+    :height: 13.389cm
+    :width: 20.001cm
+    :align: center
+    :alt:
