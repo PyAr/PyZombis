@@ -1,0 +1,51 @@
+Lista de Ejercicios
+===================
+
+Utilice el intérprete de modo interactivo aquí abajo para solucionar los siguientes ejercicios.
+
+#. Su salario actual es de $6500. Calcule su nuevo salario con un aumento del 5%
+#. Muestre su nombre en la pantalla
+#. Calcule la suma de tres variables
+#. ¿Qué sucede si escribo textos en las tres variables anteriores?
+#. Indique el tipo de los siguientes valores: ``5``, ``5.0``, ``4.3``, ``-2``, ``100``, ``1.333``, ``"10"``
+#. Experimente en el intérprete interactivo de Python utilizar ``type(x)`` donde ``x`` es cada uno de los valores anteriores
+#. ¿Es posible calcular 2 elevado a un millón?
+#. Pruebe asignar a una variable ``saludo`` la cadena de caracteres ``'hola'`` (string).
+#. Solicite que el usuario ingrese su nombre, y guardelo en otra variable ``nombre``
+#. ¿Es posible unir ambas cadenas de caracteres (strings) ``saludo`` y ``nombre``?
+#. Intente obtener la longitud de las cadena de caracteres con ``len(x)``
+
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/interpreter.html
+
+.. raw:: html
+   
+   <br/>
+
+.. reveal:: cl_l05_16a
+
+   #. Para calcular un aumento del 5% podemos multiplicar nuestro valor por 1.05, por lo que tenemos: ``6500*1.05 = 6825.0``. Entonces, después del aumento, su salario será de $6825.
+   #. ``print("tu nombre")``
+   #. Suponga las variables ``x = 1``, ``y = 2`` y ``z = 3``. Para sumarlas es necesario usar el símbolo + de la siguiente manera: ``x + y + z``. Que resulta en el valor 6.
+   #. Supongamos ahora que las variables son ``x = "Me"``, ``y = "gusta"`` y ``z = "Python"``. Si sumamos estas variables tendremos la respuesta: "MegustaPython".
+   #. Las respuestas correctas son int, float, float, int, int, float y str.
+   #. Para conocer el tipo de una variable usamos el método ``type`` de la siguiente manera: ``type(5)``. Este código devolverá ``<class 'int'>`` indicando que esta variable es de tipo entero.
+   #. Es posible, para eso solo haz ``2**1000000`` y tendrás el resultado.
+   #. Para crear una variable de tipo string, podemos escribir su valor entre comillas simples o dobles: ``saludo = "Hello"`` o ``saludo = 'Hello'``.
+   #. ``nombre = input("Escribe tu nombre: ")``
+   #. Sí. Cuando agregamos dos cadenas, Python las concatena. Supongamos las variables ``x = "saludo"`` e ``y = "nombre"``. Si sumamos ``x + y`` tendremos como respuesta “saludonombre”.
+   #. Supongamos que queremos la longitud de la cadena “saludo”. Para saber esto hacemos ``len(saludo)`` cuyo resultado es 6.
+   
+
+   
+.. image:: ../img/TWP05_041.jpeg
+   :height: 12.571cm
+   :width: 9.411cm
+   :align: center
+   :alt: 
+
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
+
