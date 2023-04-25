@@ -295,6 +295,9 @@ html_show_sourcelink = False
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 # html_file_suffix = None
 
+# for gettext & activecode:
+html_context = {"course_id": 0}
+
 # Output file base name for HTML help builder.
 htmlhelp_basename = "PythonCoursewareProjectdoc"
 
