@@ -5,12 +5,12 @@
 
 .. codelens:: cl_l10_3a_en
 
-    a  = 8
-    b  = 5
-    if   a  > b:
+    a = 8
+    b = 5
+   if a > b:
         print("The first number is the largest")
-    if b  > a:
-        print("¡The second number is the biggest!")
+    if b > a:
+        print("The second number is the biggest!")
 
 
 Two points and indentation
@@ -21,9 +21,9 @@ Two points and indentation
 
 
 Check if a car is new or old:
-+ If the car is at least three years old, it&#39;s new, it is old otherwise.
++ If the car is at least three years old, it's new, it is old otherwise.
 
-.. codelens:: cl_l10_3b
+.. codelens:: cl_l10_3b_en
 
     anio_creacion = 10
     if anio_creacion <= 3:
@@ -35,11 +35,10 @@ Check if a car is new or old:
 + In case the speed exceeds 110 km/h, display a message saying that the user has been fined.
 + Show the amount of the fine if you are fined, charging ``$5.00`` for each km above the 110 km/h.
 
-.. codelens:: cl_l10_3c
+.. codelens:: cl_l10_3c_en
 
     speed = 120
     if speed > 110:
         print("you have been fined")
-        MORE = (speed - 110) * 5
-        print("Value of the fine : $%5.2f " % MORE)
-
+        fine = (speed - 110) * 5
+        print("Value of the fine : $%5.2f " % fine)
