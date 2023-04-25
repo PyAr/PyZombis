@@ -14,7 +14,7 @@
 
 
 Two points and indentation
-*****************************
+**************************
 
 + Note that in Python it is mandatory to complete any condition (if) with ``:``.
 + Also remember to indent the code blocks inside the conditions, it is mandatory.
