@@ -1,8 +1,8 @@
 Changing variables over time
-===========================
+=============================
 
 + A program is executed line by line.
-+ Therefore, variables can change during the execution of your program.
++ Therefore, the variables can change throughout the execution of your program.
 
 .. codelens:: cl_l05_13
     
