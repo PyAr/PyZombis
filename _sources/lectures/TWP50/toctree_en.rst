@@ -1,6 +1,6 @@
-==============
-Bases de datos
-==============
+================
+Interfaz gráfica
+================
 
 
 .. image:: ../img/TWP10_001.jpeg
@@ -15,6 +15,7 @@ Bases de datos
    :maxdepth: 1
    :numbered:
 
-   TWP42_1_en.rst
-   TWP42_2_en.rst
-   TWP42_3_en.rst
+   TWP50_1_en.rst
+   TWP50_2_en.rst
+   TWP50_3_en.rst
+   TWP50_4_en.rst

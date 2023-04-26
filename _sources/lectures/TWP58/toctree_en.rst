@@ -1,6 +1,6 @@
-==============
-Bases de datos
-==============
+=====================================
+DJ Mix 2 revisión orientada a objetos
+=====================================
 
 
 .. image:: ../img/TWP10_001.jpeg
@@ -15,6 +15,5 @@ Bases de datos
    :maxdepth: 1
    :numbered:
 
-   TWP42_1_en.rst
-   TWP42_2_en.rst
-   TWP42_3_en.rst
+   TWP58_1_en.rst
+   TWP58_2_en.rst

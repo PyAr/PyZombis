@@ -1,6 +1,6 @@
-==============
-Bases de datos
-==============
+===========
+Condiciones
+===========
 
 
 .. image:: ../img/TWP10_001.jpeg
@@ -15,6 +15,10 @@ Bases de datos
    :maxdepth: 1
    :numbered:
 
-   TWP42_1_en.rst
-   TWP42_2_en.rst
-   TWP42_3_en.rst
+   TWP10_1_en.rst
+   TWP10_2_en.rst
+   TWP10_3_en.rst
+   TWP10_4_en.rst
+   TWP10_5_en.rst
+   TWP10_6_en.rst
+   TWP10_7_en.rst

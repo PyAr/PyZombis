@@ -1,6 +1,6 @@
-==============
-Bases de datos
-==============
+========
+DJ Mix 1
+========
 
 
 .. image:: ../img/TWP10_001.jpeg
@@ -15,6 +15,6 @@ Bases de datos
    :maxdepth: 1
    :numbered:
 
-   TWP42_1_en.rst
-   TWP42_2_en.rst
-   TWP42_3_en.rst
+   TWP56_1_en.rst
+   TWP56_2_en.rst
+   TWP56_3_en.rst

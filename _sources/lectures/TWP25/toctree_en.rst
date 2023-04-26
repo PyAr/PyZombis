@@ -1,6 +1,6 @@
-==============
-Bases de datos
-==============
+================
+Clases y objetos
+================
 
 
 .. image:: ../img/TWP10_001.jpeg
@@ -15,6 +15,8 @@ Bases de datos
    :maxdepth: 1
    :numbered:
 
-   TWP42_1_en.rst
-   TWP42_2_en.rst
-   TWP42_3_en.rst
+   TWP25_1_en.rst
+   TWP25_2_en.rst
+   TWP25_3_en.rst
+   TWP25_4_en.rst
+   TWP25_5_en.rst

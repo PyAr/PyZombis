@@ -1,6 +1,6 @@
-==============
-Bases de datos
-==============
+======
+Pygame
+======
 
 
 .. image:: ../img/TWP10_001.jpeg
@@ -15,6 +15,8 @@ Bases de datos
    :maxdepth: 1
    :numbered:
 
-   TWP42_1_en.rst
-   TWP42_2_en.rst
-   TWP42_3_en.rst
+   TWP60_1_en.rst
+   TWP60_2_en.rst
+   TWP60_3_en.rst
+   TWP60_4_en.rst
+   TWP60_5_en.rst

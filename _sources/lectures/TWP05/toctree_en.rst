@@ -1,5 +1,5 @@
 ============================
-Variables and Data Input
+Variables y entrada de datos
 ============================
 
 
@@ -11,28 +11,23 @@ Variables and Data Input
 
 
 .. toctree::
-   :caption: Content
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP05_1.rst
-   TWP05_2.rst
-   TWP05_3.rst
-   TWP05_4.rst
-   TWP05_5.rst
-   TWP05_6.rst
-   TWP05_7.rst
-   TWP05_8.rst
-   TWP05_9.rst
-   TWP05_10.rst
-   TWP05_11.rst
-   TWP05_12.rst
-   TWP05_13.rst
-   TWP05_14.rst
-   TWP05_15.rst
-   TWP05_16.rst
-
-
-.. code:: python
-
-   # Python code for variables and data input
+   TWP05_1_en.rst
+   TWP05_2_en.rst
+   TWP05_3_en.rst
+   TWP05_4_en.rst
+   TWP05_5_en.rst
+   TWP05_6_en.rst
+   TWP05_7_en.rst
+   TWP05_8_en.rst
+   TWP05_9_en.rst
+   TWP05_10_en.rst
+   TWP05_11_en.rst
+   TWP05_12_en.rst
+   TWP05_13_en.rst
+   TWP05_14_en.rst
+   TWP05_15_en.rst
+   TWP05_16_en.rst
