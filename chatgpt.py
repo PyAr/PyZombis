@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import openai
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -26,5 +27,12 @@ for root, dir, files in os.walk('_sources/lectures'):
         if not formatted_path.endswith('_en'):
           formatted_path = formatted_path+'_en.rst'
           if '--translate' in sys.argv:
+            t0 = time.time()
             translation = chatgpt_translator(text) 
+            t1 = time.time()
             open(formatted_path, 'w').write(translation)
+            elapsed = t1 - t0
+            print("time elapsed", elapsed, formatted_path)
+            if elapsed < 20:
+              # chatgpt limits requests to 3 per minute. So we have to wait to process the next request
+              time.sleep(21 - elapsed)
