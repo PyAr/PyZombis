@@ -8,13 +8,13 @@
     a = 8
     b = 5
     if a > b:
-        print("The first number is the largest")
+        print("The first number is the largest!")
     if b > a:
         print("The second number is the biggest!")
 
 
 Two points and indentation
-*****************************
+**************************
 
 + Note that in Python it is mandatory to complete any condition (if) with ``:``.
 + Also remember to indent the code blocks inside the conditions, it is mandatory.
