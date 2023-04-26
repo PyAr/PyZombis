@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>More SQL concepts &#8212; PyZombis i18n-chatgpt@6deb98c</title>
+    <title>More SQL Concepts &#8212; PyZombis i18n-chatgpt@796fdf3</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis i18n-chatgpt@6deb98c
+          PyZombis i18n-chatgpt@796fdf3
         </a>
       </div>
     </div>
@@ -299,7 +299,7 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="more-sql-concepts">
-<h1>More SQL concepts<a class="headerlink" href="#more-sql-concepts" title="Permalink to this headline">¶</a></h1>
+<h1>More SQL Concepts<a class="headerlink" href="#more-sql-concepts" title="Permalink to this headline">¶</a></h1>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js'></script>
 
 <script type="module">
@@ -312,22 +312,14 @@ window.addEventListener('load', (event) => {
    const [SQL, buf] = await Promise.all([sqlPromise, dataPromise])
    window.Database = new SQL.Database(new Uint8Array(buf));
 </script><div class="section" id="chinook-database-schema">
-<h2>Chinook database schema<a class="headerlink" href="#chinook-database-schema" title="Permalink to this headline">¶</a></h2>
+<h2>Chinook Database schema<a class="headerlink" href="#chinook-database-schema" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>The Chinook data model represents a digital media store, including tables for artists, albums, media tracks, invoices, and customers.</p></li>
 </ul>
 <a class="reference internal image-reference" href="../../_images/TWP42_009.png"><img alt="" class="align-center" src="../../_images/TWP42_009.png" style="width: 15.0cm; height: 20.0cm;" /></a>
 </div>
-<div class="section" id="selecting-different-tables-from-databases">
-<h2>Selecting different tables from databases<a class="headerlink" href="#selecting-different-tables-from-databases" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 32)</p>
-<p>Title underline too short.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Selecting</span> <span class="n">different</span> <span class="n">tables</span> <span class="kn">from</span> <span class="nn">databases</span>
-<span class="o">----------------------------------</span>
-</pre></div>
-</div>
-</div>
+<div class="section" id="selecting-different-tables-from-the-databases">
+<h2>Selecting different tables from the databases<a class="headerlink" href="#selecting-different-tables-from-the-databases" title="Permalink to this headline">¶</a></h2>
 <div class="system-message">
 <p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 33)</p>
 <p>Duplicate ID – see lectures/TWP42/TWP42_3, line 37</p>
@@ -343,11 +335,11 @@ window.addEventListener('load', (event) => {
    <span class="o">^^^^</span>
    <span class="kn">from</span> <span class="nn">sqlite3</span> <span class="kn">import</span> <span class="n">connect</span>
 
-   <span class="c1"># connecting to the chinook database</span>
+   <span class="c1"># connect to the Chinook database</span>
    <span class="n">database</span> <span class="o">=</span> <span class="n">connect</span><span class="p">(</span><span class="s1">&#39;Chinook_Sqlite.sqlite&#39;</span><span class="p">)</span>
    <span class="n">cursor</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 
-   <span class="c1"># choose a specific column from a table</span>
+   <span class="c1"># choose a particular column from a table</span>
    <span class="c1"># limit the results to the first 30 rows</span>
    <span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;select * from Track limit 30;&#39;</span>
 
@@ -378,10 +370,10 @@ window.addEventListener('load', (event) => {
    :language: python3
    :python3_interpreter: brython
 
-   The ``ORDER BY`` clause is used to sort a set of results in a query. SQLite stores data in tables in
-   an unspecified order. This means that the rows in the table may or may not be in the order they were inserted. If you use the
-   ``SELECT`` statement to query data from a table, the order of the rows in the result set is not specified. To
-   sort the result set, add the ``ORDER BY`` clause to the ``SELECT`` statement like this:
+   The ``ORDER BY`` clause is used to sort a set of results from a query. SQLite stores data in tables in
+   an unspecified order. It means that table rows may or may not be in the order they were inserted into the table. If you use the
+   ``SELECT`` statement to query data from a table, the order of the rows in the result set is unspecified. To sort the result set, add
+   the ``ORDER BY`` clause to the ``SELECT`` statement like this:
 
    ``ORDER BY column_name [ASC | DESC]``
    ~~~~
@@ -391,11 +383,11 @@ window.addEventListener('load', (event) => {
    ^^^^
    from sqlite3 import connect
 
-   # connecting to the chinook database
+   # connect to the Chinook database
    database = connect(&#39;Chinook_Sqlite.sqlite&#39;)
    cursor = database.cursor()
 
-   # sort rows according to the milliseconds column
+   # sort the rows according to the miliseconds column
    query = &#39;&#39;&#39;select name, milliseconds, albumid from Track
    ORDER BY milliseconds ASC limit 30;&#39;&#39;&#39;
 
@@ -417,11 +409,19 @@ window.addEventListener('load', (event) => {
 </div>
 </div>
 </div>
-<div class="section" id="filtering-data">
-<h2>Filtering data<a class="headerlink" href="#filtering-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="data-filtering">
+<h2>Data filtering<a class="headerlink" href="#data-filtering" title="Permalink to this headline">¶</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 111)</p>
+<p>Title underline too short.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Data</span> <span class="n">filtering</span>
+<span class="o">------------</span>
+</pre></div>
+</div>
+</div>
 <ul class="simple">
-<li><p>We have already seen some ways of archiving data, such as the LIMIT clause.</p></li>
-<li><p>In the following section, we will see some more ways to filter data, specifically the WHERE, IN, BETWEEN, and LIKE clauses.</p></li>
+<li><p>We have already seen some ways of archiving data, e.g., the <cite>LIMIT</cite> clause.</p></li>
+<li><p>In the following section, we will see some more ways to filter data, specifically the <cite>WHERE</cite>, <cite>IN</cite>, <cite>BETWEEN</cite>, and <cite>LIKE</cite> clauses.</p></li>
 </ul>
 <div class="system-message">
 <p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 116)</p>
@@ -430,8 +430,8 @@ window.addEventListener('load', (event) => {
    :language: python3
    :python3_interpreter: brython
 
-   In this section, we will learn how to use the ``WHERE`` clause. The ``WHERE`` clause is an optional clause of the ``SELECT`` statement.
-   It appears after the ``FROM`` clause as the following statement:
+   This block teaches us how to use the `WHERE` clause. The `WHERE` clause is an optional clause of the `SELECT` statement.
+   It appears after the `FROM` clause as the following statement:
 
    ``WHERE column_name [= | != | &lt; | &lt;= | &gt; | &gt;=] value``
    ~~~~
@@ -441,7 +441,7 @@ window.addEventListener('load', (event) => {
    ^^^^
    from sqlite3 import connect
 
-   # connecting to the chinook database
+   # connect to the Chinook database
    database = connect(&#39;Chinook_Sqlite.sqlite&#39;)
    cursor = database.cursor()
 
@@ -471,10 +471,10 @@ window.addEventListener('load', (event) => {
    :language: python3
    :python3_interpreter: brython
 
-   In this section, we will learn how to use the ``BETWEEN`` operator. The ``BETWEEN`` operator is a logical operator that checks
-   whether a value is within a range of values. If the value is in the specified range, the ``BETWEEN`` operator returns
-   true. The ``BETWEEN`` operator can be used in the ``WHERE`` clause of ``SELECT``, ``DELETE``, ``UPDATE``, and ``REPLACE`` statements.
-   The following statement shows an example of the ``BETWEEN`` clause:
+   In this block, we will learn how to use the ``BETWEEN`` clause. The ``BETWEEN`` operator is a logical operator that checks
+   whether a value is within a range of values. If the value is in the specified range, the ``BETWEEN`` operator returns true. The
+   ``BETWEEN`` operator can be used in the ``WHERE`` clause of ``SELECT``, ``DELETE``, ``UPDATE``, and ``REPLACE`` statements. The
+   following statement shows an example of the ``BETWEEN`` clause:
 
    ``BETWEEN value1 AND value2``
    ~~~~
@@ -484,7 +484,199 @@ window.addEventListener('load', (event) => {
    ^^^^
    from sqlite3 import connect
 
-   # connecting to
+   # Connect to Chinook database
+   database = connect(&#39;Chinook_Sqlite.sqlite&#39;)
+   cursor = database.cursor()
+
+   query = &#39;&#39;&#39;select InvoiceId, BillingAddress, Total from
+   Invoice WHERE Total BETWEEN 14.91 and 18.86 ORDER BY Total;&#39;&#39;&#39;
+
+   cursor.execute(query)
+   # Get the data
+   rows = cursor.fetchall()
+   # Print the data
+   if rows:
+      for i in range(len(rows)):
+         for k in rows[i].keys():
+               print(k, &quot;:&quot;, rows[i][k])
+         print()
+
+   # Close the cursor
+   cursor.close()
+
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 190)</p>
+<p>Duplicate ID – see lectures/TWP42/TWP42_3, line 194</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: ac_42_3c3
+   :language: python3
+   :python3_interpreter: brython
+
+   In this block, we will learn how to use the SQLite IN operator to determine whether a value matches any value in a list
+   of values or the result of a subquery. The SQLite IN operator determines whether a value matches any value in a
+   list or a subquery result. The syntax of the IN operator is as follows:
+
+   ``IN (value1, value2, ..., valueN)``
+   ~~~~
+   import sys
+   sys.path.append(&quot;../../_static&quot;)
+
+   ^^^^
+   from sqlite3 import connect
+
+   # Connect to Chinook database
+   database = connect(&#39;Chinook_Sqlite.sqlite&#39;)
+   cursor = database.cursor()
+
+   query = &#39;&#39;&#39;select TrackId, Name, AlbumId from Track
+   WHERE AlbumId IN (16, 17, 18) ORDER BY AlbumId;&#39;&#39;&#39;
+
+   cursor.execute(query)
+   # Get the data
+   rows = cursor.fetchall()
+   # Print the data
+   if rows:
+      for i in range(len(rows)):
+         for k in rows[i].keys():
+               print(k, &quot;:&quot;, rows[i][k])
+         print()
+
+   # Close the cursor
+   cursor.close()
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 226)</p>
+<p>Duplicate ID – see lectures/TWP42/TWP42_3, line 230</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: ac_42_3c4
+   :language: python3
+   :python3_interpreter: brython
+
+   In this section, we will learn about the LIKE clause. The LIKE clause is a search operator that allows you to search for a character string
+   within another character string. The syntax of the LIKE clause is as follows:
+
+   ``LIKE &#39;%value%&#39;``
+   ~~~~
+   import sys
+   sys.path.append(&quot;../../_static&quot;)
+
+   ^^^^
+   from sqlite3 import connect
+
+   # Connect to Chinook database
+   database = connect(&#39;Chinook_Sqlite.sqlite&#39;)
+   cursor = database.cursor()
+
+   query = &#39;&#39;&#39;select TrackId, Name from Track WHERE name LIKE &#39;Wild%&#39;;&#39;&#39;&#39;
+
+   cursor.execute(query)
+   # Get the data
+   rows = cursor.fetchall()
+   # Print the data
+   if rows:
+      for i in range(len(rows)):
+         for k in rows[i].keys():
+               print(k, &quot;:&quot;, rows[i][k])
+         print()
+
+   # Close the cursor
+   cursor.close()
+
+   Grouping of data
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 261)</p>
+<p>Explicit markup ends without a blank line; unexpected unindent.</p>
+</div>
+<hr class="docutils" />
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 263)</p>
+<p>Duplicate ID – see lectures/TWP42/TWP42_3, line 268</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: ac_42_4a
+   :language: python3
+   :python3_interpreter: brython
+
+   In this section, we will learn how to use the ``GROUP BY`` clause of SQLite to create a summary row set from a row set.
+   The ``GROUP BY`` clause is an optional clause of the ``SELECT`` statement. The ``GROUP BY`` clause groups a selected set of rows into summary rows
+   by values of one or more columns. The ``GROUP BY`` clause returns one row for each group. For each group, you can apply an aggregate function such as
+   ``MIN``, ``MAX``, ``SUM``, ``COUNT``, or ``AVG`` to provide more information about each group. The following statement illustrates the syntax of the ``GROUP BY`` clause of SQLite:
+
+   ``GROUP BY column1, column2, ...``
+   ~~~~
+   import sys
+   sys.path.append(&quot;../../_static&quot;)
+
+   ^^^^
+   from sqlite3 import connect
+
+   # connect to the chinook database
+   database = connect(&#39;Chinook_Sqlite.sqlite&#39;)
+   cursor = database.cursor()
+
+   query = &#39;select albumid, COUNT(trackid) FROM Track GROUP BY albumid;&#39;
+
+   cursor.execute(query)
+   # get the data
+   lines = cursor.fetchall()
+   # print the data
+   if lines:
+      for i in range(len(lines)):
+         for k in lines[i].keys():
+               print(k,&quot;:&quot;,lines[i][k])
+         print()
+
+   # close the cursor
+   cursor.close()
+
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 300)</p>
+<p>Duplicate ID – see lectures/TWP42/TWP42_3, line 306</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: ac_42_4b
+   :language: python3
+   :python3_interpreter: brython
+
+   Here we will learn how to use the SQLite ``HAVING`` clause to specify a filter condition for a group or aggregate.
+   The SQLite ``HAVING`` clause is an optional clause of the ``SELECT`` statement. The ``HAVING`` clause specifies a search condition for a group.
+   We often use the ``HAVING`` clause with the ``GROUP BY`` clause. The ``GROUP BY`` clause groups a set of rows into a set of summary rows or groups.
+   Then, the ``HAVING`` clause filters groups based on a specific condition. If we use the HAVING clause, we must include the ``GROUP BY`` clause; otherwise, an error will occur.
+
+   The following illustrates the syntax of the ``HAVING`` clause:
+
+   ``HAVING condition``
+   ~~~~
+   import sys
+   sys.path.append(&quot;../../_static&quot;)
+
+   ^^^^
+   from sqlite3 import connect
+
+   # connect to the chinook database
+   database = connect(&#39;Chinook_Sqlite.sqlite&#39;)
+   cursor = database.cursor()
+
+   query = &#39;&#39;&#39;select albumid, COUNT(trackid) FROM Track GROUP BY albumid
+   HAVING COUNT(albumid) BETWEEN 18 AND 20;&#39;&#39;&#39;
+
+   cursor.execute(query)
+   # get the data
+   lines = cursor.fetchall()
+   # print the data
+   if lines:
+      for i in range(len(lines)):
+         for k in lines[i].keys():
+               print(k,&quot;:&quot;,lines[i][k])
+         print()
+
+   # close the cursor
+   cursor.close()
 </pre></div>
 </div>
 </div>
