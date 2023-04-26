@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic concepts of SQL &#8212; PyZombis main@1483295</title>
+    <title>Basic concepts of SQL &#8212; PyZombis main@47ac164</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@1483295
+          PyZombis main@47ac164
         </a>
       </div>
     </div>
@@ -324,68 +324,73 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="creating-a-student-database">
 <h2>Creating a student database<a class="headerlink" href="#creating-a-student-database" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_2_en.rst</span>, line 52)</p>
-<p>Duplicate ID – see lectures/TWP42/TWP42_2, line 56</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span> <span class="p">::</span> <span class="n">ac_42_2_1</span>
-   <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-   <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-   <span class="o">~~~~</span>
-   <span class="kn">import</span> <span class="nn">sys</span>
-   <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;../../_static&quot;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_42_2_1_en data-question_label="1">
+<div id=ac_42_2_1_en_question class="ac_question col-md-12">
 
-   <span class="o">^^^^</span>
-   <span class="c1"># the following code creates a table</span>
-   <span class="c1"># called students in the database students.bd</span>
-   <span class="kn">from</span> <span class="nn">sqlite3</span> <span class="kn">import</span> <span class="n">connect</span>
-   <span class="n">con</span> <span class="o">=</span> <span class="n">connect</span><span class="p">(</span><span class="s1">&#39;students.bd&#39;</span><span class="p">)</span>
-   <span class="n">cur</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</div>
+<textarea data-lang="python3" id="ac_42_2_1_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+import sys
+sys.path.append("../../_static")
 
-   <span class="c1"># the table has two columns: login_id and pass</span>
-   <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;create table students(login_id varchar(8),pass integer)&#39;&#39;&#39;</span><span class="p">)</span>
-   <span class="n">cur</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-   <span class="n">con</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+^^^^
+# the following code creates a table
+# called students in the database students.bd
+from sqlite3 import connect
+con = connect('students.bd')
+cur = con.cursor()
 
-</pre></div>
+# the table has two columns: login_id and pass
+cur.execute('''create table students(login_id varchar(8),pass integer)''')
+cur.close()
+con.close()
+</textarea>
 </div>
 </div>
 </div>
 <div class="section" id="accessing-the-students-bd-database">
 <h2>Accessing the students.bd database<a class="headerlink" href="#accessing-the-students-bd-database" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_2_en.rst</span>, line 76)</p>
-<p>Duplicate ID – see lectures/TWP42/TWP42_2, line 80</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span> <span class="p">::</span> <span class="n">ac_42_2_2</span>
-   <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-   <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-   <span class="o">~~~~</span>
-   <span class="kn">import</span> <span class="nn">sys</span>
-   <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;../../_static&quot;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_42_2_2_en data-question_label="2">
+<div id=ac_42_2_2_en_question class="ac_question col-md-12">
 
-   <span class="o">^^^^</span>
-   <span class="kn">from</span> <span class="nn">sqlite3</span> <span class="kn">import</span> <span class="n">connect</span>
-   <span class="n">con</span> <span class="o">=</span> <span class="n">connect</span><span class="p">(</span><span class="s1">&#39;students.bd&#39;</span><span class="p">)</span>
-   <span class="n">cur</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</div>
+<textarea data-lang="python3" id="ac_42_2_2_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+import sys
+sys.path.append("../../_static")
 
-   <span class="c1"># insert values into the students table</span>
-   <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;insert into students values(&quot;masanori&quot;,421)&#39;</span><span class="p">)</span>
-   <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;insert into students values(&quot;emengarda&quot;,666)&#39;</span><span class="p">)</span>
+^^^^
+from sqlite3 import connect
+con = connect('students.bd')
+cur = con.cursor()
 
-   <span class="c1"># select all the contents of the students table</span>
-   <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;select * from students&#39;</span><span class="p">)</span>
+# insert values into the students table
+cur.execute('insert into students values("masanori",421)')
+cur.execute('insert into students values("emengarda",666)')
 
-   <span class="n">result</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+# select all the contents of the students table
+cur.execute('select * from students')
 
-   <span class="k">if</span><span class="p">(</span><span class="n">result</span><span class="o">!=</span><span class="kc">None</span><span class="p">):</span>
-      <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
-         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;login    :&quot;</span><span class="p">,</span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;login_id&#39;</span><span class="p">])</span>
-         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ra :&quot;</span><span class="p">,</span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;pass&#39;</span><span class="p">])</span>
+result = cur.fetchall()
 
-   <span class="n">cur</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-   <span class="n">con</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
+if(result!=None):
+   for res in result:
+      print("login    :",res['login_id'])
+      print("ra :",res['pass'])
+
+cur.close()
+con.close()
+</textarea>
 </div>
 </div>
 </div>

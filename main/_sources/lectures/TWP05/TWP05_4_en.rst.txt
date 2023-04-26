@@ -4,7 +4,7 @@ Concepts about variables and assignment
 + Variables are used to store values ​​and name an area of ​​the computer's memory
 + The symbol for assignment is the equals sign (``=``)
 
-.. codelens:: cl_l05_4a
+.. codelens:: cl_l05_4a_en
     
     a = 2
     b = 3
@@ -29,7 +29,7 @@ Other alternatives
 + You may wonder why we create two variables, ``a`` and ``b``, to add two numbers?
 + We could have achieved the same result in several ways.
 
-.. codelens:: cl_l05_4b
+.. codelens:: cl_l05_4b_en
     
     print(2 + 3)
     print(5)

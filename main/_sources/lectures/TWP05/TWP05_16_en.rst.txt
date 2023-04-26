@@ -25,7 +25,7 @@ Use the interactive interpreter below to solve the following exercises.
    
    <br/>
 
-.. reveal:: cl_l05_16a
+.. reveal:: cl_l05_16a_en
 
    #. To calculate a 5% increase we can multiply our value by 1.05, so we have: ``6500*1.05 = 6825.0``. Then, after the increase, your salary will be $6825.
    #. ``print("your name")``

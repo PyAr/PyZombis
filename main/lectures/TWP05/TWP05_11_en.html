@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>String Variable &#8212; PyZombis main@1483295</title>
+    <title>String Variable &#8212; PyZombis main@47ac164</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@1483295
+          PyZombis main@47ac164
         </a>
       </div>
     </div>
@@ -305,30 +305,48 @@ window.addEventListener('load', (event) => {
 <li><p>We call strings a sequence of symbols such as letters, numbers, punctuation marks, etc.</p></li>
 <li><p>To differentiate its commands from a string, we use quotation marks at the beginning and end</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_11_en.rst</span>, line 8)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_11, line 14</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_11a</span>
 
-    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Joaquin and Maria eat bread&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+        <div class="pytutorVisualizer" id="cl_l05_11a_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (cl_l05_11a_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_11a_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_11a_en"] = {"code": "text = \"Joaquin and Maria eat bread\"\nprint(text)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": "Joaquin and Maria eat bread\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>Note that there is no problem using spaces to separate words</p></li>
 <li><p>A string has an associated length</p></li>
 <li><p>We can obtain the size through the <code class="docutils literal notranslate"><span class="pre">len</span></code> function built into Python</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_11_en.rst</span>, line 17)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_11, line 23</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_11b</span>
 
-    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Joaquin and Maria eat bread&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+        <div class="pytutorVisualizer" id="cl_l05_11b_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (cl_l05_11b_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_11b_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_11b_en"] = {"code": "text = \"Joaquin and Maria eat bread\"\nprint(len(text))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": "27\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>We can access the characters in the string using an integer
@@ -336,33 +354,47 @@ to represent their position in the string</p></li>
 <li><p>This number is called an index and we start counting from zero</p></li>
 <li><p>We access the character providing the index between brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code></p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_11_en.rst</span>, line 27)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_11, line 33</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_11c</span>
 
-    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Joaquin and Maria eat bread&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="mi">10</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="mi">15</span><span class="p">])</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+        <div class="pytutorVisualizer" id="cl_l05_11c_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (cl_l05_11c_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_11c_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_11c_en"] = {"code": "text = \"Joaquin and Maria eat bread\"\nprint(text[0])\nprint(text[2])\nprint(text[5])\nprint(text[10])\nprint(text[15])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": "J\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": "J\na\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": "J\na\ni\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": "J\na\ni\nd\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"text": "Joaquin and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": "J\na\ni\nd\ni\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p><strong>Caution</strong>: we cannot access an index greater than the amount of
 characters in the string</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_11_en.rst</span>, line 39)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_11, line 45</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_11d</span>
 
-    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Juan and Maria eat bread&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="mi">22</span><span class="p">])</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="4">
+        <div class="pytutorVisualizer" id="cl_l05_11d_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 4 (cl_l05_11d_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_11d_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_11d_en"] = {"code": "text = \"Juan and Maria eat bread\"\nprint(text[22])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"text": "Juan and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"text": "Juan and Maria eat bread"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": "a\n"}]};
+</script>
 </div>
 </div>
 

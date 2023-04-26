@@ -6,7 +6,7 @@ Logical Operators
 Using the ``not`` operator
 **************************
 
-.. codelens:: cl_l05_9a
+.. codelens:: cl_l05_9a_en
     
     print(not True)
     print(not False)
@@ -14,7 +14,7 @@ Using the ``not`` operator
 Using the ``and`` operator
 **************************
 
-.. codelens:: cl_l05_9b
+.. codelens:: cl_l05_9b_en
     
     print(True and True)
     print(True and False)
@@ -24,7 +24,7 @@ Using the ``and`` operator
 Using the ``or`` operator
 *************************
 
-.. codelens:: cl_l05_9c
+.. codelens:: cl_l05_9c_en
     
     print(True or True)
     print(True or False)

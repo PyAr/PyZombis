@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logical expressions &#8212; PyZombis main@1483295</title>
+    <title>Logical expressions &#8212; PyZombis main@47ac164</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@1483295
+          PyZombis main@47ac164
         </a>
       </div>
     </div>
@@ -305,32 +305,48 @@ window.addEventListener('load', (event) => {
 <li><p>The evaluation order is: <code class="docutils literal notranslate"><span class="pre">not</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">and</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">or</span></code>. This means that in an expression, the <code class="docutils literal notranslate"><span class="pre">not</span></code> logical operator is evaluated first, then <code class="docutils literal notranslate"><span class="pre">and</span></code>, and finally <code class="docutils literal notranslate"><span class="pre">or</span></code>.</p></li>
 </ul>
 <p>Let’s see an example:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_10_en.rst</span>, line 9)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_10, line 14</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_10a</span>
 
-   <span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">False</span> <span class="ow">or</span> <span class="kc">False</span> <span class="ow">and</span> <span class="kc">True</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span> <span class="ow">and</span> <span class="kc">True</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">False</span> <span class="ow">and</span> <span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+        <div class="pytutorVisualizer" id="cl_l05_10a_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (cl_l05_10a_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_10a_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_10a_en"] = {"code": "print(not False or False and True)\nprint(False or True and True)\nprint(not False and True or False)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "True\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "True\nTrue\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "True\nTrue\nTrue\n"}]};
+</script>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>The conditions for granting a motorcycle purchase loan are: having a salary greater than $1,000.00 and being over 18 years old. Check if José can get the loan:</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_10_en.rst</span>, line 20)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_10, line 27</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_10b</span>
 
-    <span class="n">salary</span> <span class="o">=</span> <span class="mf">500.0</span>
-    <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">salary</span> <span class="o">&gt;</span> <span class="mi">1000</span> <span class="ow">and</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">18</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+        <div class="pytutorVisualizer" id="cl_l05_10b_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (cl_l05_10b_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_10b_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_10b_en"] = {"code": "salary = 500.0\nage = 20\nprint(salary > 1000 and age > 18)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"salary": ["SPECIAL_FLOAT", "500.0"]}, "ordered_globals": ["salary"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"salary": ["SPECIAL_FLOAT", "500.0"], "age": 20}, "ordered_globals": ["salary", "age"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"salary": ["SPECIAL_FLOAT", "500.0"], "age": 20}, "ordered_globals": ["salary", "age"], "stack_to_render": [], "heap": {}, "stdout": "False\n"}]};
+</script>
 </div>
 </div>
 <div class="section" id="id1">
@@ -338,17 +354,24 @@ window.addEventListener('load', (event) => {
 <ul class="simple">
 <li><p>Check if a student passed given that they obtained an average score of 5.8 in the exercise program and obtained an average score of 7 in the tests:</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_10_en.rst</span>, line 31)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_10, line 39</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_10c</span>
 
-    <span class="n">ep</span> <span class="o">=</span> <span class="mf">5.8</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="mi">7</span>
-    <span class="n">passed</span> <span class="o">=</span> <span class="n">ep</span> <span class="o">&gt;=</span> <span class="mi">6</span> <span class="ow">and</span> <span class="n">p</span> <span class="o">&gt;=</span> <span class="mi">6</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">passed</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+        <div class="pytutorVisualizer" id="cl_l05_10c_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (cl_l05_10c_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_10c_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_10c_en"] = {"code": "ep = 5.8\np = 7\npassed = ep >= 6 and p >= 6\nprint(passed)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"ep": 5.8}, "ordered_globals": ["ep"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"ep": 5.8, "p": 7}, "ordered_globals": ["ep", "p"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"ep": 5.8, "p": 7, "passed": false}, "ordered_globals": ["ep", "p", "passed"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"ep": 5.8, "p": 7, "passed": false}, "ordered_globals": ["ep", "p", "passed"], "stack_to_render": [], "heap": {}, "stdout": "False\n"}]};
+</script>
 </div>
 </div>
 </div>

@@ -28,7 +28,7 @@ Relational Operators
 Examples:
 ---------
 
-.. codelens:: cl_l05_8a
+.. codelens:: cl_l05_8a_en
     
     a = 1
     b = 5   
@@ -48,7 +48,7 @@ Important Example
 
 + >= or <= for equal values
 
-.. codelens:: cl_l05_8b
+.. codelens:: cl_l05_8b_en
     
     print(5 >= 5)   
     print(5 <= 5)  
@@ -58,7 +58,7 @@ Example
 
 + We can use relational operators to initialize logical variables
 
-.. codelens:: cl_l05_8c
+.. codelens:: cl_l05_8c_en
     
     grade = 8   
     average = 6   

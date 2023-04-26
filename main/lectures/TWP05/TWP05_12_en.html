@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>String Operations &#8212; PyZombis main@1483295</title>
+    <title>String Operations &#8212; PyZombis main@47ac164</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@1483295
+          PyZombis main@47ac164
         </a>
       </div>
     </div>
@@ -309,17 +309,24 @@ and consists of using strings as templates where we can insert data</p></li>
 </ul>
 <div class="section" id="concatenation">
 <h2>Concatenation<a class="headerlink" href="#concatenation" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_12_en.rst</span>, line 14)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_12, line 18</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_12a</span>
 
-    <span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Potato&quot;</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;when born&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+        <div class="pytutorVisualizer" id="cl_l05_12a_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (cl_l05_12a_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_12a_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_12a_en"] = {"code": "a = \"Potato\"\nb = \"when born\"\nprint(a + b)\nprint(a * 3)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"a": "Potato"}, "ordered_globals": ["a"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"a": "Potato", "b": "when born"}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"a": "Potato", "b": "when born"}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": "Potatowhen born\n"}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"a": "Potato", "b": "when born"}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": "Potatowhen born\nPotatoPotatoPotato\n"}]};
+</script>
 </div>
 </div>
 <div class="section" id="slicing">
@@ -327,37 +334,47 @@ and consists of using strings as templates where we can insert data</p></li>
 <ul class="simple">
 <li><p>We can perform the slicing operation using <code class="docutils literal notranslate"><span class="pre">[start_index:end_index]</span></code></p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_12_en.rst</span>, line 26)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_12, line 30</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_12b</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">8</span><span class="p">])</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+        <div class="pytutorVisualizer" id="cl_l05_12b_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (cl_l05_12b_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_12b_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_12b_en"] = {"code": "x = \"0123456789\"\nprint(x[0:2])\nprint(x[1:2])\nprint(x[2:4])\nprint(x[0:5])\nprint(x[1:8])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n1\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n1\n23\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n1\n23\n01234\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n1\n23\n01234\n1234567\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>We can omit indices, replacing the corresponding index, and
 we can also have negative indices: -1 last, -2 penultimate</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_12_en.rst</span>, line 38)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_12, line 42</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_12c</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">4</span><span class="p">:])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[:])</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+        <div class="pytutorVisualizer" id="cl_l05_12c_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (cl_l05_12c_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_12c_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_12c_en"] = {"code": "x = \"0123456789\"\nprint(x[:2])\nprint(x[4:])\nprint(x[4:-1])\nprint(x[-4:-1])\nprint(x[:])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n456789\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n456789\n45678\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n456789\n45678\n678\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n456789\n45678\n678\n0123456789\n"}]};
+</script>
 </div>
 </div>
 <div class="section" id="formatting">
@@ -366,15 +383,24 @@ we can also have negative indices: -1 last, -2 penultimate</p></li>
 <li><p>Joining multiple strings is not always practical</p></li>
 <li><p>We can use placeholders to replace values within strings</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_12_en.rst</span>, line 53)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_12, line 57</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_12d</span>
 
-    <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Juan is </span><span class="si">%d</span><span class="s2"> years old&quot;</span> <span class="o">%</span> <span class="n">age</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="4">
+        <div class="pytutorVisualizer" id="cl_l05_12d_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 4 (cl_l05_12d_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_12d_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_12d_en"] = {"code": "age = 20\nprint(\"Juan is %d years old\" % age)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"age": 20}, "ordered_globals": ["age"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"age": 20}, "ordered_globals": ["age"], "stack_to_render": [], "heap": {}, "stdout": "Juan is 20 years old\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>The main placeholders are <code class="docutils literal notranslate"><span class="pre">%d</span></code> for integers, <code class="docutils literal notranslate"><span class="pre">%s</span></code> for
@@ -382,28 +408,46 @@ strings, and <code class="docutils literal notranslate"><span class="pre">%f</sp
 <li><p>% 03d complete with additional zeros</p></li>
 <li><p>% 3d means three positions without additional zeros</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_12_en.rst</span>, line 63)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_12, line 67</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_12e</span>
 
-    <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[</span><span class="si">%03d</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="n">age</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[</span><span class="si">%3d</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="n">age</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5">
+        <div class="pytutorVisualizer" id="cl_l05_12e_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5 (cl_l05_12e_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_12e_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_12e_en"] = {"code": "age = 20\nprint(\"[%03d]\" % age)\nprint(\"[%3d]\" % age)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"age": 20}, "ordered_globals": ["age"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"age": 20}, "ordered_globals": ["age"], "stack_to_render": [], "heap": {}, "stdout": "[020]\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"age": 20}, "ordered_globals": ["age"], "stack_to_render": [], "heap": {}, "stdout": "[020]\n[ 20]\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">%5.2f</span></code> means 5 characters in total and 2 decimals</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_12_en.rst</span>, line 71)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_12, line 75</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_12f</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;$</span><span class="si">%5.2f</span><span class="s2"> pesos&quot;</span> <span class="o">%</span> <span class="mi">23</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="6">
+        <div class="pytutorVisualizer" id="cl_l05_12f_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 6 (cl_l05_12f_en)</span> </p>
+    </div>
+
+<script>
+var cl_l05_12f_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l05_12f_en"] = {"code": "print(\"$%5.2f pesos\" % 23)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 1, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "$23.00 pesos\n"}]};
+</script>
 </div>
 </div>
 <div class="section" id="f-strings">
