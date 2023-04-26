@@ -1,0 +1,50 @@
+Construcción del archivo
+========================
+
++ Las líneas que comienzan con **"#"** se llaman comentarios
++ Están destinados a ser leídos por humanos y Python los ignora
++ Python omite todo el texto desde el **"#"** hasta el final de la línea
+
+.. code-block:: python
+
+   # Archivo caos.py
+   # Un programa que ilustra la Teoria del caos
+
++ ``x`` es un ejemplo de una variable
++ En ``x`` asignaremos un valor al que se puede hacer referencia más adelante
++ Se mostrará el mensaje entre comillas y la respuesta se almacenará en ``x``
+
+.. code-block:: python
+
+   x = eval(input("Ingrese un número entre 0 y 1:"))
+
++ Hay comandos de bucle o ciclos como el comando ``for``
++ Un bucle o ciclo se usa para repetir un bloque de código varias veces
++ En este ejemplo, el siguiente bloque se repetirá 10 veces
+
+.. code-block:: python
+
+   for i in range(10):
+
++ Llamamos **sangría** a los espacios al comienzo de la línea 
++ En Python, la sangría delimita el bloque que se ejecutará
++ El cálculo ``3.9 * x * (1-x)`` se realizará en la CPU y se asignará a la variable
+  ``x``
+
+Resultado
+---------
+
+.. activecode:: ac_l38_3
+    :language: python3
+    :python3_interpreter: brython
+
+    # Archivo caos.py
+    # Un programa que ilustra la Teoria del caos
+    print("Este programa ilustra el comportamiento caótico.")
+    x = eval(input("Ingrese un número entre 0 y 1:"))
+    for i in range(10):
+        x = 3.9 * x * (1 - x)
+        print("%2.3f" % x)
+
+
++ El programa de caos devuelve valores muy diferentes, incluso cuando la entrada es similar

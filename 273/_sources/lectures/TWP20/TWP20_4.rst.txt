@@ -1,0 +1,68 @@
+Números aleatorios
+==================
+
+.. codelens:: cl_l20_4a
+         
+    import random
+
+    print(random.randint(1, 100))
+    print(random.randint(1, 100))
+    alumnos = ["José",
+                "Juan",
+                "Pedro",
+                "Lucas",
+                "Thiago"]
+    print(random.choice(alumnos))
+    print(random.choice(alumnos))
+    random.shuffle(alumnos)
+    print(alumnos)
+    random.shuffle(alumnos)
+    print(alumnos)
+
+
++ Se define una función de "codificación" que devuelve las letras en una cadena mezclados.
++ **Nota**: Se usa la función ``list()`` para convertir una cadena en una lista.
+
+.. codelens:: cl_l20_4b
+         
+    import random
+
+
+    def codificación(s):
+
+        lista = list(s)
+        random.shuffle(lista)
+        return "".join(lista)
+
+
+    print(codificación("palmeras"))
+    print(codificación("palmeras"))
+
+
++ Genere una lista de 15 enteros aleatorios entre 10 y 100.
+
+.. codelens:: cl_l20_4c
+         
+    import random
+
+    lista = []
+    for k in range(15):
+        lista.append(
+            random.randint(10, 100)
+            )
+    print(lista)
+
+
++ Genere una lista de 15 enteros aleatorios entre 10 y 100 que son distintos el uno del otro.
+
+.. codelens:: cl_l20_4d
+         
+    import random
+
+    lista = []
+    while len(lista) < 15:
+        x = random.randint(10, 100)
+        if x not in lista:
+            lista.append(x)
+    lista.sort()
+    print(lista)
