@@ -49,7 +49,7 @@ Notions of databases
 Creating a student database
 ----------------------------
 
-.. activecode :: ac_42_2_1
+.. activecode :: ac_42_2_1_en
    :language: python3
    :python3_interpreter: brython
 
@@ -73,7 +73,7 @@ Creating a student database
 Accessing the students.bd database
 ----------------------------------
 
-.. activecode :: ac_42_2_2
+.. activecode :: ac_42_2_2_en
    :language: python3
    :python3_interpreter: brython
    

@@ -6,7 +6,7 @@ Logical expressions
 
 Let's see an example:
 
-.. codelens:: cl_l05_10a
+.. codelens:: cl_l05_10a_en
 
    print(not False or False and True)
    print(False or True and True)
@@ -17,7 +17,7 @@ Example
 
 + The conditions for granting a motorcycle purchase loan are: having a salary greater than $1,000.00 and being over 18 years old. Check if José can get the loan:
 
-.. codelens:: cl_l05_10b
+.. codelens:: cl_l05_10b_en
     
     salary = 500.0
     age = 20
@@ -28,7 +28,7 @@ Example
 
 + Check if a student passed given that they obtained an average score of 5.8 in the exercise program and obtained an average score of 7 in the tests:
 
-.. codelens:: cl_l05_10c
+.. codelens:: cl_l05_10c_en
     
     ep = 5.8
     p = 7
