@@ -8,6 +8,8 @@ COPY ./requirements.txt /var/www/
 
 RUN pip install -r requirements.txt
 
+RUN pip install openai
+
 COPY . /var/www/
 
 RUN runestone build
