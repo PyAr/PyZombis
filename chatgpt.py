@@ -14,22 +14,17 @@ def chatgpt_translator(text):
   return completion.choices[0].message.content
 
 
-for root, dir, files in os.walk('_sources/lectures/TWP42'):
-  for filename in files:
-    full_path = os.path.join(root, filename)
-    text = open(full_path).read()
-    formatted_path = os.path.splitext(full_path)[0]
-    # print(formatted_path)
-    if not formatted_path.endswith('_en'):
-      formatted_path = formatted_path+'_en.rst'
-      translation = chatgpt_translator(text) 
-      open(formatted_path, 'w').write(translation)
-
-# print("translating: ")
-# print(text)
-
-
-
-# print(completion.choices[0].message.content)
-
-# open(sys.argv[1]+"en.rst").write(completion.choices[0].message.content)
+for root, dir, files in os.walk('_sources/lectures'):
+  for directory in dir:
+    if not '--all' in sys.argv and not directory == "TWP05":
+      continue
+    for filename in os.listdir(os.path.join(root, directory)):
+      if filename.endswith('rst') and not filename.endswith('en.rst'):
+        full_path = os.path.join(root, directory, filename)
+        text = open(full_path).read()
+        formatted_path = os.path.splitext(full_path)[0]
+        if not formatted_path.endswith('_en'):
+          formatted_path = formatted_path+'_en.rst'
+          if '--translate' in sys.argv:
+            translation = chatgpt_translator(text) 
+            open(formatted_path, 'w').write(translation)
