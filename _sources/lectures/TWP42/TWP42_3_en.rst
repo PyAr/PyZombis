@@ -30,7 +30,7 @@ Chinook Database schema
 
 Selecting different tables from the databases
 -----------------------------------------------
-.. activecode:: ac_42_3a
+.. activecode:: ac_42_3a_en
    :language: python3
    :python3_interpreter: brython
 
@@ -67,7 +67,7 @@ Selecting different tables from the databases
 
 Sorting rows
 -------------
-.. activecode:: ac_42_3b
+.. activecode:: ac_42_3b_en
    :language: python3
    :python3_interpreter: brython
 
@@ -113,7 +113,7 @@ Data filtering
 + We have already seen some ways of archiving data, e.g., the `LIMIT` clause.
 + In the following section, we will see some more ways to filter data, specifically the `WHERE`, `IN`, `BETWEEN`, and `LIKE` clauses.
 
-.. activecode:: ac_42_3c1
+.. activecode:: ac_42_3c1_en
    :language: python3
    :python3_interpreter: brython
 
@@ -149,7 +149,7 @@ Data filtering
    cursor.close()    
 
 
-.. activecode:: ac_42_3c2
+.. activecode:: ac_42_3c2_en
    :language: python3
    :python3_interpreter: brython
 
@@ -187,7 +187,7 @@ Data filtering
    cursor.close()
 
 
-.. activecode:: ac_42_3c3
+.. activecode:: ac_42_3c3_en
    :language: python3
    :python3_interpreter: brython
    
@@ -223,7 +223,7 @@ Data filtering
    # Close the cursor
    cursor.close() 
 
-.. activecode:: ac_42_3c4
+.. activecode:: ac_42_3c4_en
    :language: python3
    :python3_interpreter: brython
    
@@ -260,7 +260,7 @@ Data filtering
    Grouping of data
 ----------------
 
-.. activecode:: ac_42_4a
+.. activecode:: ac_42_4a_en
    :language: python3
    :python3_interpreter: brython
    
@@ -297,7 +297,7 @@ Data filtering
    cursor.close() 
 
 
-.. activecode:: ac_42_4b
+.. activecode:: ac_42_4b_en
    :language: python3
    :python3_interpreter: brython
    

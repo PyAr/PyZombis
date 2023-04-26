@@ -5,7 +5,7 @@ String Variable
 + We call strings a sequence of symbols such as letters, numbers, punctuation marks, etc.
 + To differentiate its commands from a string, we use quotation marks at the beginning and end
 
-.. codelens:: cl_l05_11a
+.. codelens:: cl_l05_11a_en
     
     text = "Joaquin and Maria eat bread"
     print(text)
@@ -14,7 +14,7 @@ String Variable
 + A string has an associated length
 + We can obtain the size through the ``len`` function built into Python
 
-.. codelens:: cl_l05_11b
+.. codelens:: cl_l05_11b_en
     
     text = "Joaquin and Maria eat bread"
     print(len(text))
@@ -24,7 +24,7 @@ String Variable
 + This number is called an index and we start counting from zero
 + We access the character providing the index between brackets ``[]``
 
-.. codelens:: cl_l05_11c
+.. codelens:: cl_l05_11c_en
     
     text = "Joaquin and Maria eat bread"
     print(text[0])
@@ -36,7 +36,7 @@ String Variable
 + **Caution**: we cannot access an index greater than the amount of
   characters in the string
 
-.. codelens:: cl_l05_11d
+.. codelens:: cl_l05_11d_en
     
     text = "Juan and Maria eat bread"
     print(text[22])

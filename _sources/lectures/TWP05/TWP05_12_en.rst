@@ -11,7 +11,7 @@ String Operations
 Concatenation
 -------------
 
-.. codelens:: cl_l05_12a
+.. codelens:: cl_l05_12a_en
     
     a = "Potato"
     b = "when born"
@@ -23,7 +23,7 @@ Slicing
 
 + We can perform the slicing operation using ``[start_index:end_index]``
 
-.. codelens:: cl_l05_12b
+.. codelens:: cl_l05_12b_en
     
     x = "0123456789"
     print(x[0:2])
@@ -35,7 +35,7 @@ Slicing
 + We can omit indices, replacing the corresponding index, and
   we can also have negative indices: -1 last, -2 penultimate
 
-.. codelens:: cl_l05_12c
+.. codelens:: cl_l05_12c_en
     
     x = "0123456789"
     print(x[:2])
@@ -50,7 +50,7 @@ Formatting
 + Joining multiple strings is not always practical
 + We can use placeholders to replace values within strings
 
-.. codelens:: cl_l05_12d
+.. codelens:: cl_l05_12d_en
     
     age = 20
     print("Juan is %d years old" % age)
@@ -60,7 +60,7 @@ Formatting
 + % 03d complete with additional zeros
 + % 3d means three positions without additional zeros
 
-.. codelens:: cl_l05_12e
+.. codelens:: cl_l05_12e_en
     
     age = 20
     print("[%03d]" % age)
@@ -68,7 +68,7 @@ Formatting
 
 + ``%5.2f`` means 5 characters in total and 2 decimals
 
-.. codelens:: cl_l05_12f
+.. codelens:: cl_l05_12f_en
     
     print("$%5.2f pesos" % 23)
 
