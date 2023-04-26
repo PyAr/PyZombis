@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: 'f46a0f6c8a6cac68950fca611edb8c06d936a1e3-i18n-chatgpt',
+    VERSION: 'caf7cf6583dd02ee4a2226be3c1b5f86c7ee4b37-i18n-chatgpt',
     LANGUAGE: 'pt',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
