@@ -1,0 +1,60 @@
+Nueva sugerencia de programa
+============================
+
+Starbuzz no tiene granos
+------------------------
+
++ El director de Starbuzz quiere una opción para comprar rápidamente, sin esperar
+  a que baje el precio
++ Al ejecutar el programa, te preguntaré si quieres comprar ahora o no
++ Si el usuario responde que sí, tomaré el precio actual y compraré
++ Si no, esperaré reducirlo a menos de 4.74
+
+Nueva sugerencia de programa
+----------------------------
+
+.. activecode:: ac_l35_2
+    :nocodelens:
+    :stdin:
+
+    import urllib.request
+    
+    opcion = input("¿Quieres comprar ahora? (S/N)")
+    if opcion.lower() == "s":
+        pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+        texto = pagina.read()
+        # El método .find() devuelve la posición de la primer ocurrencia
+        # de la cadena que se le pase como parámetro.
+        donde = texto.find("$")
+        # el valor de donde es un número entero, representando 
+        # la posición de $ en la cadena texto.
+        # Podemos obtener el precio si sacamos el pedazo de la cadena texto
+        # en donde se encuentra el precio.
+        inicio = donde + 1
+        fin = inicio + 4
+        # Obtenemos el precio con los índices correspondientes
+        precio = float(texto[inicio:fin])
+        print("¡Comprar! Precio: %5.2f" % precio)
+    else:
+        precio = 99.99
+        while precio >= 4.74:
+            pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+            texto = pagina.read()
+            donde = texto.find("$")
+            inicio = donde + 1
+            fin = inicio + 4
+            precio = float(texto[inicio:fin])
+        print("¡Comprar! Precio: %5.2f" % precio)
+
+
+Programa feo ...
+----------------
+
+
++ No duplique su código ...
++ Esto conduce a un exceso de código, lo que hace que el mantenimiento de su código
+  dificil
++ Intente reutilizar su código
++ Definiendo funciones reutilizaremos código
++ ¿Cuál es la diferencia?
++ Si tengo que cambiar algo, lo cambiaré en un solo lugar
