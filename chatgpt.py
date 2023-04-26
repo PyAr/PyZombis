@@ -17,7 +17,7 @@ def chatgpt_translator(text):
 
 for root, dir, files in os.walk('_sources/lectures'):
   for directory in dir:
-    if not '--all' in sys.argv and not directory == "TWP05":
+    if not '--all' in sys.argv and not directory == "TWP42":
       continue
     for filename in os.listdir(os.path.join(root, directory)):
       if filename.endswith('rst') and not filename.endswith('en.rst'):
@@ -26,7 +26,7 @@ for root, dir, files in os.walk('_sources/lectures'):
         formatted_path = os.path.splitext(full_path)[0]
         if not formatted_path.endswith('_en'):
           formatted_path = formatted_path+'_en.rst'
-          if '--translate' in sys.argv:
+          if '--translate' in sys.argv and not os.path.exists(formatted_path):
             t0 = time.time()
             translation = chatgpt_translator(text) 
             t1 = time.time()
