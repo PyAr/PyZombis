@@ -1,9 +1,8 @@
 Logical expressions
 ===================
 
-+ We can combine logical operators to form complex logical expressions.
-+ The order of evaluation is: ``not`` > ``and`` > ``or``. This means that in an 
-  expression, the ``not`` operator is evaluated first, then ``and``, and lastly ``or``. 
++ We can combine logical operators to form complex logical expressions
++ The evaluation order is: ``not`` > ``and`` > ``or``. This means that in an expression, the ``not`` logical operator is evaluated first, then ``and``, and finally ``or``.
 
 Let's see an example:
 
@@ -16,9 +15,7 @@ Let's see an example:
 Example
 -------
 
-+ The conditions to grant a loan for the purchase of a motorcycle are: having a
-  salary greater than $1,000.00 and being over 18 years old. Check if José can obtain the
-  loan.
++ The conditions for granting a motorcycle purchase loan are: having a salary greater than $1,000.00 and being over 18 years old. Check if José can get the loan:
 
 .. codelens:: cl_l05_10b
     
@@ -29,8 +26,7 @@ Example
 Example
 -------
 
-+ Check if a student passed, given that they obtained an average score of 5.8 in
-  the exercise program and obtained an average score of 7 in the tests.
++ Check if a student passed given that they obtained an average score of 5.8 in the exercise program and obtained an average score of 7 in the tests:
 
 .. codelens:: cl_l05_10c
     

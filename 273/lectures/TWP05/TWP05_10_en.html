@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logical expressions &#8212; PyZombis i18n-chatgpt@6d1bdef</title>
+    <title>Logical expressions &#8212; PyZombis i18n-chatgpt@6deb98c</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
-    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
-    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
     <link rel="stylesheet" type="text/css" href="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.css?v=6ab2699256a7cd2f2dee" />
@@ -23,11 +23,11 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=700db7378411b25a09f9"></script>
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis i18n-chatgpt@6d1bdef
+          PyZombis i18n-chatgpt@6deb98c
         </a>
       </div>
     </div>
@@ -301,13 +301,12 @@ window.addEventListener('load', (event) => {
   <div class="section" id="logical-expressions">
 <h1>Logical expressions<a class="headerlink" href="#logical-expressions" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>We can combine logical operators to form complex logical expressions.</p></li>
-<li><p>The order of evaluation is: <code class="docutils literal notranslate"><span class="pre">not</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">and</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">or</span></code>. This means that in an
-expression, the <code class="docutils literal notranslate"><span class="pre">not</span></code> operator is evaluated first, then <code class="docutils literal notranslate"><span class="pre">and</span></code>, and lastly <code class="docutils literal notranslate"><span class="pre">or</span></code>.</p></li>
+<li><p>We can combine logical operators to form complex logical expressions</p></li>
+<li><p>The evaluation order is: <code class="docutils literal notranslate"><span class="pre">not</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">and</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">or</span></code>. This means that in an expression, the <code class="docutils literal notranslate"><span class="pre">not</span></code> logical operator is evaluated first, then <code class="docutils literal notranslate"><span class="pre">and</span></code>, and finally <code class="docutils literal notranslate"><span class="pre">or</span></code>.</p></li>
 </ul>
 <p>Let’s see an example:</p>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_10_en.rst</span>, line 10)</p>
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_10_en.rst</span>, line 9)</p>
 <p>Duplicate ID – see lectures/TWP05/TWP05_10, line 14</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_10a</span>
 
@@ -320,12 +319,10 @@ expression, the <code class="docutils literal notranslate"><span class="pre">not
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>The conditions to grant a loan for the purchase of a motorcycle are: having a
-salary greater than $1,000.00 and being over 18 years old. Check if José can obtain the
-loan.</p></li>
+<li><p>The conditions for granting a motorcycle purchase loan are: having a salary greater than $1,000.00 and being over 18 years old. Check if José can get the loan:</p></li>
 </ul>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_10_en.rst</span>, line 23)</p>
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_10_en.rst</span>, line 20)</p>
 <p>Duplicate ID – see lectures/TWP05/TWP05_10, line 27</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_10b</span>
 
@@ -339,11 +336,10 @@ loan.</p></li>
 <div class="section" id="id1">
 <h2>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Check if a student passed, given that they obtained an average score of 5.8 in
-the exercise program and obtained an average score of 7 in the tests.</p></li>
+<li><p>Check if a student passed given that they obtained an average score of 5.8 in the exercise program and obtained an average score of 7 in the tests:</p></li>
 </ul>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_10_en.rst</span>, line 35)</p>
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_10_en.rst</span>, line 31)</p>
 <p>Duplicate ID – see lectures/TWP05/TWP05_10, line 39</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l05_10c</span>
 
