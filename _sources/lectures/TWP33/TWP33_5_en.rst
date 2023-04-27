@@ -4,7 +4,7 @@ Python data is intelligent
 + Programming languages provide built-in functionalities in data to assist you.
 + Python data is intelligent: it can do things.
 
-.. codelens:: cl_l33_5a
+.. codelens:: cl_l33_5a_en
          
     text = "anita lava la tina"
     print(text.upper())
@@ -15,7 +15,7 @@ Python data is intelligent
 
 + ``find`` method for strings
 
-.. codelens:: cl_l33_5b
+.. codelens:: cl_l33_5b_en
          
     text = "Palmeras"
     print(text.find("P"))

@@ -6,7 +6,7 @@ Multiple Inheritance and What Object is It?
 + Python has the ``isinstance`` function.
 + It allows you to check if an instance of a class is actually of a given class.
 
-..  codelens:: cl_l25_5
+..  codelens:: cl_l25_5_en
 
     class Ethernet:
         def __init__(self, name, mac_address):

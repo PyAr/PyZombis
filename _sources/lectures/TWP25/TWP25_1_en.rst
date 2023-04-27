@@ -5,7 +5,7 @@ Classes and objects
 + An object is a variable whose type is a class, that is, an object is an instance of a class.
 + We will only see the basic concepts of object-oriented programming.
 
-..  codelens:: cl_l25_1a
+..  codelens:: cl_l25_1a_en
     
     class Television:
         def __init__(self):
@@ -31,7 +31,7 @@ Classes and objects
 + Whenever we want to create attributes of an object, we must associate them with itself using ``self``.
 + Otherwise, if we only write ``connected = False``, ``connected`` would be just a local variable of the method and not an attribute.
 
-..  codelens:: cl_l25_1b
+..  codelens:: cl_l25_1b_en
     
     class Television:
         def __init__(self):

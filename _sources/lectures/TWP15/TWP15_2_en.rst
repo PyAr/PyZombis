@@ -5,7 +5,7 @@ Printing from 1 to 3
 Simple way
 **********
 
-.. codelens:: cl_l15_2a
+.. codelens:: cl_l15_2a_en
 
    print(1)
    print(2)
@@ -15,7 +15,7 @@ Simple way
 Using a variable
 *****************
 
-.. codelens:: cl_l15_2b
+.. codelens:: cl_l15_2b_en
 
    x = 1
    print(x)
@@ -28,7 +28,7 @@ Using a variable
 Incrementing the variable
 **************************
 
-.. codelens:: cl_l15_2c
+.. codelens:: cl_l15_2c_en
 
    x = 1
    print(x)
@@ -40,7 +40,7 @@ Incrementing the variable
 Using ``while``
 ****************
 
-.. codelens:: cl_l15_2d
+.. codelens:: cl_l15_2d_en
 
    x = 1
    while x <= 3:
@@ -78,7 +78,7 @@ Desk checking
    4
    ====== ========
 
-.. codelens:: cl_l15_2e
+.. codelens:: cl_l15_2e_en
 
    x = 1
    while x <= 3:

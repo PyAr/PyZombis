@@ -3,7 +3,7 @@ Building
 
 + Apartment building
 
-..  codelens:: cl_l17_1a
+..  codelens:: cl_l17_1a_en
 
     ground_floor_building = "Souza Family"
     first_floor_building = "Brito Family"
@@ -12,7 +12,7 @@ Building
 
 + We can associate the ground floor with the ground floor, the first floor with floor 1, and so on.
 
-..  codelens:: cl_l17_1b
+..  codelens:: cl_l17_1b_en
 
     building = ["Souza Family", 
                 "Brito Family", 

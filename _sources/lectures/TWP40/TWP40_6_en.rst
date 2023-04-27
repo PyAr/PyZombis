@@ -4,7 +4,7 @@ Variable Assignment
 + Assigning a variable is usually done in the following format ``<variable>`` = ``<expression>``
 + The ``<expression>`` is calculated by the processor and modifies the value in the memory referenced by ``<variable>``.
 
-.. codelens:: cl_l40_6a
+.. codelens:: cl_l40_6a_en
          
     x = 5
     celsius = 5
@@ -13,7 +13,7 @@ Variable Assignment
 
 + You can assign values to the same variable several times.
 
-.. codelens:: cl_l40_6b
+.. codelens:: cl_l40_6b_en
          
     x = 0
     print(x)

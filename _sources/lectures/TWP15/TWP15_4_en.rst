@@ -40,7 +40,7 @@ Accumulators
 
 + Calculate the factorial of ten
 
-.. codelens:: cl_l15_4
+.. codelens:: cl_l15_4_en
 
    i = 1
    fact = 1

@@ -3,7 +3,7 @@ Slicing
 
 + Slice from the first index to the one before the second
 
-.. codelens:: cl_l18_2a
+.. codelens:: cl_l18_2a_en
          
     x = "0123456789"
     print(x[0:2])
@@ -17,7 +17,7 @@ Slicing
   we can also have negative indices: -1 is the last one, -2 the penultimate
 
 
-.. codelens:: cl_l18_2b
+.. codelens:: cl_l18_2b_en
          
     x = "0123456789"
     print(x[:2])
@@ -33,7 +33,7 @@ Slice increment
 + I can use an increment when slicing the string
 
 
-.. codelens:: cl_l18_2c
+.. codelens:: cl_l18_2c_en
        
     texto = "papa cuando nace"
     print(texto[::2])

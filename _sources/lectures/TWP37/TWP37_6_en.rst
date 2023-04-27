@@ -73,7 +73,7 @@ Using and sorting a dictionary
 
 + Using a dictionary and seeing all its elements iteratively.
 
-..  codelens:: cl_l37_6
+..  codelens:: cl_l37_6_en
 
     scores = {}
     scores[9.12] = "Juan"
