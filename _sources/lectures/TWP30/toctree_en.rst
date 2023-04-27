@@ -1,5 +1,5 @@
 ==================
-Revisión general 1
+General Revision 1
 ==================
 
 
@@ -11,14 +11,18 @@ Revisión general 1
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Content
    :maxdepth: 1
    :numbered:
 
-   TWP30_1_en.rst
-   TWP30_2_en.rst
-   TWP30_3_en.rst
-   TWP30_4_en.rst
-   TWP30_5_en.rst
-   TWP30_6_en.rst
-   TWP30_7_en.rst
+   TWP30_1.rst
+   TWP30_2.rst
+   TWP30_3.rst
+   TWP30_4.rst
+   TWP30_5.rst
+   TWP30_6.rst
+   TWP30_7.rst
+
+```python
+# Python code goes here
+```

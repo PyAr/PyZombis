@@ -1,5 +1,5 @@
 ======
-Listas
+Lists
 ======
 
 
@@ -11,12 +11,14 @@ Listas
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Contents
    :maxdepth: 1
    :numbered:
 
-   TWP17_1_en.rst
-   TWP17_2_en.rst
-   TWP17_3_en.rst
-   TWP17_4_en.rst
-   TWP17_5_en.rst
+   TWP17_1.rst
+   TWP17_2.rst
+   TWP17_3.rst
+   TWP17_4.rst
+   TWP17_5.rst
+
+Python code is not included in this snippet.

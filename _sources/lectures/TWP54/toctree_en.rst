@@ -1,5 +1,5 @@
 ===========
-Excepciones
+Exceptions
 ===========
 
 
@@ -11,10 +11,10 @@ Excepciones
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Contents
    :maxdepth: 1
    :numbered:
 
-   TWP54_1_en.rst
-   TWP54_2_en.rst
-   TWP54_3_en.rst
+   TWP54_1.rst
+   TWP54_2.rst
+   TWP54_3.rst

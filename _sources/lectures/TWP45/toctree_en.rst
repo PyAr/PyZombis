@@ -1,5 +1,5 @@
 ====================
-Hackeando con Python
+Hacking with Python
 ====================
 
 .. image:: ../img/TWP10_001.jpeg
@@ -10,11 +10,11 @@ Hackeando con Python
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Contents
    :maxdepth: 1
    :numbered:
 
-   TWP45_1_en.rst
-   TWP45_2_en.rst
-   TWP45_3_en.rst
-   TWP45_4_en.rst
+   TWP45_1.rst
+   TWP45_2.rst
+   TWP45_3.rst
+   TWP45_4.rst

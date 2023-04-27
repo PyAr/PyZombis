@@ -1,5 +1,5 @@
 =======================
-Archivos y diccionarios
+Files and Dictionaries
 =======================
 
 
@@ -11,13 +11,19 @@ Archivos y diccionarios
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Contents
    :maxdepth: 1
    :numbered:
 
-   TWP23_1_en.rst
-   TWP23_2_en.rst
-   TWP23_3_en.rst
-   TWP23_4_en.rst
-   TWP23_5_en.rst
-   TWP23_6_en.rst
+   TWP23_1.rst
+   TWP23_2.rst
+   TWP23_3.rst
+   TWP23_4.rst
+   TWP23_5.rst
+   TWP23_6.rst
+
+
+Python Code
+-----------
+
+This section contains Python code that demonstrates the concept of working with files and dictionaries.

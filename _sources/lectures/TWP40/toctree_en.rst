@@ -1,5 +1,5 @@
 ==================
-Revisión general 3
+General Revision 3
 ==================
 
 
@@ -11,19 +11,21 @@ Revisión general 3
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Contents
    :maxdepth: 1
    :numbered:
 
-   TWP40_1_en.rst
-   TWP40_2_en.rst
-   TWP40_3_en.rst
-   TWP40_4_en.rst
-   TWP40_5_en.rst
-   TWP40_6_en.rst
-   TWP40_7_en.rst
-   TWP40_8_en.rst
-   TWP40_9_en.rst
-   TWP40_10_en.rst
-   TWP40_11_en.rst
-   TWP40_12_en.rst
+   TWP40_1.rst
+   TWP40_2.rst
+   TWP40_3.rst
+   TWP40_4.rst
+   TWP40_5.rst
+   TWP40_6.rst
+   TWP40_7.rst
+   TWP40_8.rst
+   TWP40_9.rst
+   TWP40_10.rst
+   TWP40_11.rst
+   TWP40_12.rst
+
+Python code is not present in the snippet.

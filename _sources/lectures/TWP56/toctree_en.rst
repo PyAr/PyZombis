@@ -11,10 +11,14 @@ DJ Mix 1
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Content
    :maxdepth: 1
    :numbered:
 
-   TWP56_1_en.rst
-   TWP56_2_en.rst
-   TWP56_3_en.rst
+   TWP56_1.rst
+   TWP56_2.rst
+   TWP56_3.rst
+
+Python code:
+
+N/A (There is no Python code present in the original snippet)
