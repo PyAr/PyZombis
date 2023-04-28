@@ -9,7 +9,7 @@ Dictionaries
     + If the key already exists: the associated value changes
     + If the key does not exist: the new key is added
 
-.. codelens:: cl_l23_5a
+.. codelens:: cl_l23_5a_en
          
     d = {}
     d["a"] = "alpha"
@@ -19,7 +19,7 @@ Dictionaries
     print(d["a"])
 
 
-.. activecode:: ac_l23_5
+.. activecode:: ac_l23_5_en
     :nocodelens:
     :stdin:
 
@@ -34,7 +34,7 @@ Dictionaries
     # a "x" key in the dictionary
     print(d["x"])
 
-.. codelens:: cl_l23_5b
+.. codelens:: cl_l23_5b_en
          
     d = {}
     d["a"] = "alpha"

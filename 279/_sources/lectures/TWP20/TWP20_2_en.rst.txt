@@ -6,7 +6,7 @@ Functions ``def``
 + I use ``def`` to define the function and ``return`` to return a value.
 + There are functions that do not return anything.
 
-.. codelens:: cl_l20_2a
+.. codelens:: cl_l20_2a_en
          
     def is_even(x):
         return x % 2 == 0
@@ -25,7 +25,7 @@ Example
 
 + Define a function ``factorial``
 
-.. codelens:: cl_l20_2b
+.. codelens:: cl_l20_2b_en
          
     def factorial(n):
         f = 1

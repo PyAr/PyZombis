@@ -1,7 +1,7 @@
 Final version of the Zombies question show
 ==========================================
 
-.. activecode:: ac_l50_4a
+.. activecode:: ac_l50_4a_en
     :nocodelens:
     :language: python3
     :python3_interpreter: brython
@@ -62,7 +62,7 @@ Final version of the Zombies question show
 + Let's change the window to add a label that changes its value.
 + The value will increase every time the respective button is pressed.
 
-.. activecode:: ac_l50_4b
+.. activecode:: ac_l50_4b_en
     :nocodelens:
     :language: python3
     :python3_interpreter: brython

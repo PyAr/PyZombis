@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Window &#8212; PyZombis toc-english2@836e635</title>
+    <title>Basic Window &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -316,25 +316,28 @@ window.addEventListener('load', (event) => {
 </ul>
 <div class="section" id="window-with-brython">
 <h2>Window with Brython<a class="headerlink" href="#window-with-brython" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP50/TWP50_3_en.rst</span>, line 20)</p>
-<p>Duplicate ID – see lectures/TWP50/TWP50_3, line 24</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l50_3a</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">document</span><span class="p">,</span> <span class="n">html</span>
-    <span class="kn">from</span> <span class="nn">browser.widgets.dialog</span> <span class="kn">import</span> <span class="n">Dialog</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l50_3a_en data-question_label="1">
+<div id=ac_l50_3a_en_question class="ac_question col-md-12">
 
-    <span class="c1"># Creating a dialog with a title</span>
-    <span class="n">d</span> <span class="o">=</span> <span class="n">Dialog</span><span class="p">(</span><span class="s2">&quot;Zombie Question Show&quot;</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</div>
+<textarea data-lang="python3" id="ac_l50_3a_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import document, html
+from browser.widgets.dialog import Dialog
 
-    <span class="c1"># Adding elements such as buttons and titles</span>
-    <span class="n">d</span><span class="o">.</span><span class="n">panel</span> <span class="o">&lt;=</span> <span class="n">html</span><span class="o">.</span><span class="n">H3</span><span class="p">(</span><span class="s2">&quot;Press the buttons&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;window_title&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">textAlign</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">))</span>
-    <span class="n">d</span><span class="o">.</span><span class="n">panel</span> <span class="o">&lt;=</span> <span class="n">html</span><span class="o">.</span><span class="n">BUTTON</span><span class="p">(</span><span class="s2">&quot;Correct&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;btn_correct&quot;</span><span class="p">)</span>
-    <span class="n">d</span><span class="o">.</span><span class="n">panel</span> <span class="o">&lt;=</span> <span class="n">html</span><span class="o">.</span><span class="n">BUTTON</span><span class="p">(</span><span class="s2">&quot;Incorrect&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;btn_incorrect&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">marginLeft</span><span class="o">=</span><span class="s2">&quot;5em&quot;</span><span class="p">))</span>
-</pre></div>
+# Creating a dialog with a title
+d = Dialog("Zombie Question Show", top=20, left=20)
+
+# Adding elements such as buttons and titles
+d.panel <= html.H3("Press the buttons", id="window_title", style=dict(textAlign="center"))
+d.panel <= html.BUTTON("Correct", id="btn_correct")
+d.panel <= html.BUTTON("Incorrect", id="btn_incorrect", style=dict(marginLeft="5em"))
+</textarea>
 </div>
 </div>
 <ul class="simple">
@@ -352,27 +355,30 @@ window.addEventListener('load', (event) => {
 <li><p>We will create a new window with a button and we will capture or link an event.</p></li>
 <li><p>We will show a message on the screen every time the user presses the button.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP50/TWP50_3_en.rst</span>, line 50)</p>
-<p>Duplicate ID – see lectures/TWP50/TWP50_3, line 54</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l50_3b</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">document</span><span class="p">,</span> <span class="n">html</span>
-    <span class="kn">from</span> <span class="nn">browser.widgets.dialog</span> <span class="kn">import</span> <span class="n">Dialog</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l50_3b_en data-question_label="2">
+<div id=ac_l50_3b_en_question class="ac_question col-md-12">
 
-    <span class="n">d</span> <span class="o">=</span> <span class="n">Dialog</span><span class="p">(</span><span class="s2">&quot;Test capturing an event&quot;</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</div>
+<textarea data-lang="python3" id="ac_l50_3b_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import document, html
+from browser.widgets.dialog import Dialog
 
-    <span class="n">d</span><span class="o">.</span><span class="n">panel</span> <span class="o">&lt;=</span> <span class="n">html</span><span class="o">.</span><span class="n">BUTTON</span><span class="p">(</span><span class="s2">&quot;Press me!&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;btn_press&quot;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="s2">&quot;auto&quot;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s2">&quot;block&quot;</span><span class="p">))</span>
+d = Dialog("Test capturing an event", top=20, left=20)
 
-    <span class="c1"># Event handling function, showing a message</span>
-    <span class="k">def</span> <span class="nf">press_button</span><span class="p">(</span><span class="n">ev</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You pressed the button&quot;</span><span class="p">)</span>
+d.panel <= html.BUTTON("Press me!", id="btn_press", style=dict(margin="auto", display="block"))
 
-    <span class="n">document</span><span class="p">[</span><span class="s2">&quot;btn_press&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="n">press_button</span><span class="p">)</span>
-</pre></div>
+# Event handling function, showing a message
+def press_button(ev):
+    print("You pressed the button")
+
+document["btn_press"].bind("click", press_button)
+</textarea>
 </div>
 </div>
 <ul class="simple">

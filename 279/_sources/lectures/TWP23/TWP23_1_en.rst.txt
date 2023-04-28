@@ -25,7 +25,7 @@ Files
     :edit:
 
 
-.. activecode:: ac_l23_1a
+.. activecode:: ac_l23_1a_en
     :nocodelens:
     :datafile: numeros.txt
     :enabledownload:
@@ -47,7 +47,7 @@ Files
 + The `w` mode creates the file if it does not exist, if it exists it will be deleted and rewritten.
 
 
-.. activecode:: ac_l23_1b
+.. activecode:: ac_l23_1b_en
     :nocodelens:
     :datafile: numeros.txt
     :enabledownload:
@@ -75,7 +75,7 @@ Pythonic way
     with open("numeros.txt", "r") as f:
         print(f.read())
 
-.. activecode:: ac_l23_1c
+.. activecode:: ac_l23_1c_en
     :nocodelens:
     :datafile: numeros.txt
     :enabledownload:

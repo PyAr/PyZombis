@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Operations declaration and inheritance &#8212; PyZombis toc-english2@836e635</title>
+    <title>Operations declaration and inheritance &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -314,74 +314,80 @@ window.addEventListener('load', (event) => {
 </ul>
 <div class="section" id="client-class-and-improved-account-class">
 <h2>Client Class and Improved Account Class<a class="headerlink" href="#client-class-and-improved-account-class" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP25/TWP25_3_en.rst</span>, line 11)</p>
-<p>Duplicate ID – see lectures/TWP25/TWP25_3, line 15</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l25_3a</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="k">class</span> <span class="nc">Client</span><span class="p">:</span>
-        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">phone</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">phone</span> <span class="o">=</span> <span class="n">phone</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l25_3a_en data-question_label="1">
+<div id=ac_l25_3a_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l25_3a_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+class Client:
+    def __init__(self, name, phone):
+        self.name = name
+        self.phone = phone
 
 
-    <span class="k">class</span> <span class="nc">Account</span><span class="p">:</span>
-        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">clients</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="n">balance</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">clients</span> <span class="o">=</span> <span class="n">clients</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">operations</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">deposit</span><span class="p">(</span><span class="n">balance</span><span class="p">)</span>
+class Account:
+    def __init__(self, clients, number, balance=0):
+        self.balance = 0
+        self.clients = clients
+        self.number = number
+        self.operations = []
+        self.deposit(balance)
 
-        <span class="k">def</span> <span class="nf">summary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Account number: </span><span class="si">%s</span><span class="s2"> </span><span class="se">\n</span><span class="s2">Balance: </span><span class="si">%10.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">number</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="p">))</span>
+    def summary(self):
+        print("Account number: %s \nBalance: %10.2f" % (self.number, self.balance))
 
-        <span class="k">def</span> <span class="nf">withdraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">&gt;=</span> <span class="n">amount</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">-=</span> <span class="n">amount</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">operations</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Withdrawal&quot;</span><span class="p">,</span> <span class="n">amount</span><span class="p">])</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not enough funds for withdrawal&quot;</span><span class="p">)</span>
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+            self.operations.append(["Withdrawal", amount])
+        else:
+            print("Not enough funds for withdrawal")
 
-        <span class="k">def</span> <span class="nf">deposit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">+=</span> <span class="n">amount</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">operations</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Deposit&quot;</span><span class="p">,</span> <span class="n">amount</span><span class="p">])</span>
+    def deposit(self, amount):
+        self.balance += amount
+        self.operations.append(["Deposit", amount])
 
-        <span class="k">def</span> <span class="nf">statement</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Account Statement </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">number</span><span class="p">)</span>
-            <span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">operations</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%10s</span><span class="s2"> </span><span class="si">%10.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">op</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">op</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%10s</span><span class="s2"> </span><span class="si">%10.2f</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="s2">&quot;Balance&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="p">))</span>
-
-</pre></div>
+    def statement(self):
+        print("Account Statement %s" % self.number)
+        for op in self.operations:
+            print("%10s %10.2f" % (op[0], op[1]))
+        print("%10s %10.2f\n" % ("Balance", self.balance))
+</textarea>
 </div>
 </div>
 <div class="section" id="using-the-client-and-improved-account-classes">
 <h3>Using the Client and Improved Account Classes<a class="headerlink" href="#using-the-client-and-improved-account-classes" title="Permalink to this headline">¶</a></h3>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP25/TWP25_3_en.rst</span>, line 53)</p>
-<p>Duplicate ID – see lectures/TWP25/TWP25_3, line 57</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l25_3b</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">include</span><span class="p">:</span> <span class="n">ac_l25_3a</span>
 
-    <span class="n">juan</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;Juan de Silva&quot;</span><span class="p">,</span> <span class="s2">&quot;777-1234&quot;</span><span class="p">)</span>
-    <span class="n">maria</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;Maria de Silva&quot;</span><span class="p">,</span> <span class="s2">&quot;555-4321&quot;</span><span class="p">)</span>
-    <span class="n">account_1</span> <span class="o">=</span> <span class="n">Account</span><span class="p">([</span><span class="n">juan</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
-    <span class="n">account_2</span> <span class="o">=</span> <span class="n">Account</span><span class="p">([</span><span class="n">maria</span><span class="p">,</span> <span class="n">juan</span><span class="p">],</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l25_3b_en data-question_label="2">
+<div id=ac_l25_3b_en_question class="ac_question col-md-12">
 
-    <span class="n">account_1</span><span class="o">.</span><span class="n">withdraw</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-    <span class="n">account_2</span><span class="o">.</span><span class="n">deposit</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
-    <span class="n">account_1</span><span class="o">.</span><span class="n">withdraw</span><span class="p">(</span><span class="mi">190</span><span class="p">)</span>
-    <span class="n">account_2</span><span class="o">.</span><span class="n">deposit</span><span class="p">(</span><span class="mf">95.15</span><span class="p">)</span>
-    <span class="n">account_2</span><span class="o">.</span><span class="n">withdraw</span><span class="p">(</span><span class="mi">250</span><span class="p">)</span>
+</div>
+<textarea data-lang="python" id="ac_l25_3b_en_editor" 
+     data-include="ac_l25_3a" data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+juan = Client("Juan de Silva", "777-1234")
+maria = Client("Maria de Silva", "555-4321")
+account_1 = Account([juan], 1, 1000)
+account_2 = Account([maria, juan], 2, 500)
 
-    <span class="n">account_1</span><span class="o">.</span><span class="n">statement</span><span class="p">()</span>
-    <span class="n">account_2</span><span class="o">.</span><span class="n">statement</span><span class="p">()</span>
-</pre></div>
+account_1.withdraw(50)
+account_2.deposit(300)
+account_1.withdraw(190)
+account_2.deposit(95.15)
+account_2.withdraw(250)
+
+account_1.statement()
+account_2.statement()
+</textarea>
 </div>
 </div>
 </div>
@@ -404,27 +410,29 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="special-account-class">
 <h2>Special Account Class<a class="headerlink" href="#special-account-class" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP25/TWP25_3_en.rst</span>, line 83)</p>
-<p>Duplicate ID – see lectures/TWP25/TWP25_3, line 87</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l25_3c</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">include</span><span class="p">:</span> <span class="n">ac_l25_3a</span>
 
-    <span class="k">class</span> <span class="nc">SpecialAccount</span><span class="p">(</span><span class="n">Account</span><span class="p">):</span>
-        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">clients</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="n">balance</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-            <span class="n">Account</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">clients</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="n">balance</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">limit</span> <span class="o">=</span> <span class="n">limit</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l25_3c_en data-question_label="3">
+<div id=ac_l25_3c_en_question class="ac_question col-md-12">
 
-        <span class="k">def</span> <span class="nf">withdraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">limit</span> <span class="o">&gt;=</span> <span class="n">amount</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">-=</span> <span class="n">amount</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">operations</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Withdrawal&quot;</span><span class="p">,</span> <span class="n">amount</span><span class="p">])</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not enough funds for withdrawal&quot;</span><span class="p">)</span>
+</div>
+<textarea data-lang="python" id="ac_l25_3c_en_editor" 
+     data-include="ac_l25_3a" data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+class SpecialAccount(Account):
+    def __init__(self, clients, number, balance=0, limit=0):
+        Account.__init__(self, clients, number, balance)
+        self.limit = limit
 
-</pre></div>
+    def withdraw(self, amount):
+        if self.balance + self.limit >= amount:
+            self.balance -= amount
+            self.operations.append(["Withdrawal", amount])
+        else:
+            print("Not enough funds for withdrawal")
+</textarea>
 </div>
 </div>
 <ul class="simple">
@@ -452,28 +460,31 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="using-all-classes">
 <h2>Using all classes<a class="headerlink" href="#using-all-classes" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP25/TWP25_3_en.rst</span>, line 116)</p>
-<p>Duplicate ID – see lectures/TWP25/TWP25_3, line 120</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l25_3d</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">include</span><span class="p">:</span> <span class="n">ac_l25_3a</span><span class="p">,</span> <span class="n">ac_l25_3c</span>
 
-    <span class="n">juan</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;Juan de Silva&quot;</span><span class="p">,</span> <span class="s2">&quot;777-1234&quot;</span><span class="p">)</span>
-    <span class="n">maria</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;Maria de Silva&quot;</span><span class="p">,</span> <span class="s2">&quot;555-4321&quot;</span><span class="p">)</span>
-    <span class="n">account_1</span> <span class="o">=</span> <span class="n">Account</span><span class="p">([</span><span class="n">juan</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
-    <span class="n">account_2</span> <span class="o">=</span> <span class="n">SpecialAccount</span><span class="p">([</span><span class="n">maria</span><span class="p">,</span> <span class="n">juan</span><span class="p">],</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l25_3d_en data-question_label="4">
+<div id=ac_l25_3d_en_question class="ac_question col-md-12">
 
-    <span class="n">account_1</span><span class="o">.</span><span class="n">withdraw</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-    <span class="n">account_2</span><span class="o">.</span><span class="n">deposit</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
-    <span class="n">account_1</span><span class="o">.</span><span class="n">withdraw</span><span class="p">(</span><span class="mi">190</span><span class="p">)</span>
-    <span class="n">account_2</span><span class="o">.</span><span class="n">deposit</span><span class="p">(</span><span class="mf">95.15</span><span class="p">)</span>
-    <span class="n">account_2</span><span class="o">.</span><span class="n">withdraw</span><span class="p">(</span><span class="mi">1500</span><span class="p">)</span>
+</div>
+<textarea data-lang="python" id="ac_l25_3d_en_editor" 
+     data-include="ac_l25_3a ac_l25_3c" data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+juan = Client("Juan de Silva", "777-1234")
+maria = Client("Maria de Silva", "555-4321")
+account_1 = Account([juan], 1, 1000)
+account_2 = SpecialAccount([maria, juan], 2, 500, 1000)
 
-    <span class="n">account_1</span><span class="o">.</span><span class="n">statement</span><span class="p">()</span>
-    <span class="n">account_2</span><span class="o">.</span><span class="n">statement</span><span class="p">()</span>
-</pre></div>
+account_1.withdraw(50)
+account_2.deposit(300)
+account_1.withdraw(190)
+account_2.deposit(95.15)
+account_2.withdraw(1500)
+
+account_1.statement()
+account_2.statement()
+</textarea>
 </div>
 </div>
 </div>

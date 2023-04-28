@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nested Structures &#8212; PyZombis toc-english2@836e635</title>
+    <title>Nested Structures &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -309,46 +309,47 @@ window.addEventListener('load', (event) => {
 <li><p>Nested conditions can be created.</p></li>
 <li><p>Remember to indent nested portions of code.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP10/TWP10_5_en.rst</span>, line 16)</p>
-<p>Duplicate ID – see lectures/TWP10/TWP10_5, line 20</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l10_5a</span>
 
-    <span class="n">minutes</span> <span class="o">=</span> <span class="mi">800</span>
-    <span class="k">if</span> <span class="n">minutes</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">:</span>
-        <span class="n">price</span> <span class="o">=</span> <span class="mf">0.20</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">minutes</span> <span class="o">&lt;=</span> <span class="mi">400</span><span class="p">:</span>
-            <span class="n">price</span> <span class="o">=</span> <span class="mf">0.18</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">price</span> <span class="o">=</span> <span class="mf">0.15</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Telephone bill : $</span><span class="si">%6.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">minutes</span> <span class="o">*</span> <span class="n">price</span><span class="p">))</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+        <div class="pytutorVisualizer" id="cl_l10_5a_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (cl_l10_5a_en)</span> </p>
+    </div>
+
+<script>
+var cl_l10_5a_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l10_5a_en"] = {"code": "minutes = 800\nif minutes < 200:\n    price = 0.20\nelse:\n    if minutes <= 400:\n        price = 0.18\n    else:\n        price = 0.15\nprint(\"Telephone bill : $%6.2f\" % (minutes * price))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"minutes": 800}, "ordered_globals": ["minutes"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"minutes": 800}, "ordered_globals": ["minutes"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"minutes": 800}, "ordered_globals": ["minutes"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"minutes": 800, "price": 0.15}, "ordered_globals": ["minutes", "price"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 9, "event": "return", "func_name": "<module>", "globals": {"minutes": 800, "price": 0.15}, "ordered_globals": ["minutes", "price"], "stack_to_render": [], "heap": {}, "stdout": "Telephone bill : $120.00\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>Note the double indentation to satisfy the second condition.</p></li>
 <li><p>Now we modify the “Chao” company program for a promotion where the rate is <code class="docutils literal notranslate"><span class="pre">$0.08</span></code> when you use more than 800 minutes.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP10/TWP10_5_en.rst</span>, line 31)</p>
-<p>Duplicate ID – see lectures/TWP10/TWP10_5, line 35</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l10_5b</span>
 
-    <span class="n">minutes</span> <span class="o">=</span> <span class="mi">1000</span>
-    <span class="k">if</span> <span class="n">minutes</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">:</span>
-        <span class="n">price</span> <span class="o">=</span> <span class="mf">0.2</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">minutes</span> <span class="o">&lt;=</span> <span class="mi">400</span><span class="p">:</span>
-            <span class="n">price</span> <span class="o">=</span> <span class="mf">0.18</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">minutes</span> <span class="o">&lt;=</span> <span class="mi">800</span><span class="p">:</span>
-                <span class="n">price</span> <span class="o">=</span> <span class="mf">0.15</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">price</span> <span class="o">=</span> <span class="mf">0.08</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Telephone bill : $</span><span class="si">%6.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">minutes</span> <span class="o">*</span> <span class="n">price</span><span class="p">))</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+        <div class="pytutorVisualizer" id="cl_l10_5b_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (cl_l10_5b_en)</span> </p>
+    </div>
+
+<script>
+var cl_l10_5b_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l10_5b_en"] = {"code": "minutes = 1000\nif minutes < 200:\n    price = 0.2\nelse:\n    if minutes <= 400:\n        price = 0.18\n    else:\n        if minutes <= 800:\n            price = 0.15\n        else:\n            price = 0.08\nprint(\"Telephone bill : $%6.2f\" % (minutes * price))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"minutes": 1000}, "ordered_globals": ["minutes"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"minutes": 1000}, "ordered_globals": ["minutes"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"minutes": 1000}, "ordered_globals": ["minutes"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"minutes": 1000}, "ordered_globals": ["minutes"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"minutes": 1000, "price": 0.08}, "ordered_globals": ["minutes", "price"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 12, "event": "return", "func_name": "<module>", "globals": {"minutes": 1000, "price": 0.08}, "ordered_globals": ["minutes", "price"], "stack_to_render": [], "heap": {}, "stdout": "Telephone bill : $ 80.00\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>Note that nested structures can grow.</p></li>

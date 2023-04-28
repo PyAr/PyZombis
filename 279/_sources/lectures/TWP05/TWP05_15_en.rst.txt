@@ -4,7 +4,7 @@ Data Input
 + Up until now our programs have worked with known values.
 + We will begin to obtain the values during the execution of the programs.
 
-.. activecode:: ac_l05_15a
+.. activecode:: ac_l05_15a_en
    :nocodelens:
    :stdin:
 
@@ -19,7 +19,7 @@ Data Input Conversion
 + We use the ``int()`` and ``float()`` functions to convert a value to an integer or
   a floating-point value respectively.
 
-.. activecode:: ac_l05_15b
+.. activecode:: ac_l05_15b_en
    :nocodelens:
    :stdin:
 

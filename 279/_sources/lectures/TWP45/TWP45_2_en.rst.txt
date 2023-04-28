@@ -9,7 +9,7 @@ In this exercise we are going to access Reddit to obtain data like the one in th
     :align: center
     :alt:
 
-.. activecode:: ac_l45_2
+.. activecode:: ac_l45_2_en
     :nocodelens:
     :language: python
 

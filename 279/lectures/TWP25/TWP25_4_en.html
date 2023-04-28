@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Other examples of OOP &#8212; PyZombis toc-english2@836e635</title>
+    <title>Other examples of OOP &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -303,48 +303,55 @@ window.addEventListener('load', (event) => {
 <ul class="simple">
 <li><p>We can create a class <code class="docutils literal notranslate"><span class="pre">Person</span></code> with basic attributes.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP25/TWP25_4_en.rst</span>, line 6)</p>
-<p>Duplicate ID – see lectures/TWP25/TWP25_4, line 10</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l25_4a</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="kn">import</span> <span class="nn">datetime</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l25_4a_en data-question_label="1">
+<div id=ac_l25_4a_en_question class="ac_question col-md-12">
 
-
-    <span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
-        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">birthdate</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">birthdate</span> <span class="o">=</span> <span class="n">birthdate</span>
-
-        <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-            <span class="n">delta</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">birthdate</span>
-            <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">delta</span><span class="o">.</span><span class="n">days</span> <span class="o">/</span> <span class="mi">365</span><span class="p">)</span>
-
-        <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">, </span><span class="si">%d</span><span class="s2"> years old&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">())</span>
+</div>
+<textarea data-lang="python" id="ac_l25_4a_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+import datetime
 
 
-    <span class="n">masanori</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Fernando Masanori&quot;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">1980</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">masanori</span><span class="o">.</span><span class="n">age</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">masanori</span><span class="p">)</span>
-</pre></div>
+class Person:
+    def __init__(self, name, birthdate):
+        self.name = name
+        self.birthdate = birthdate
+
+    def age(self):
+        delta = datetime.date.today() - self.birthdate
+        return int(delta.days / 365)
+
+    def __str__(self):
+        return "%s, %d years old" % (self.name, self.age())
+
+
+masanori = Person("Fernando Masanori", datetime.date(1980, 9, 1))
+print(masanori.age())
+print(masanori)
+</textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p>You can use the implementation of the class <code class="docutils literal notranslate"><span class="pre">Person</span></code> to create an object with your name.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP25/TWP25_4_en.rst</span>, line 32)</p>
-<p>Duplicate ID – see lectures/TWP25/TWP25_4, line 36</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l25_4b</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">include</span><span class="p">:</span> <span class="n">ac_l25_4a</span>
 
-    <span class="c1"># Create an object with your name</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l25_4b_en data-question_label="2">
+<div id=ac_l25_4b_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l25_4b_en_editor" 
+     data-include="ac_l25_4a" data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+# Create an object with your name
+</textarea>
 </div>
 </div>
 </div>

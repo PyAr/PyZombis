@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testing the University Domains API &#8212; PyZombis toc-english2@836e635</title>
+    <title>Testing the University Domains API &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -302,62 +302,64 @@ window.addEventListener('load', (event) => {
 <h1>Testing the University Domains API<a class="headerlink" href="#testing-the-university-domains-api" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://github.com/Hipo/university-domains-list">University Domains and Names Data List &amp; API</a> is an API that contains
 domains, names, and countries of most universities around the world.</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP45/TWP45_4_en.rst</span>, line 7)</p>
-<p>Duplicate ID – see lectures/TWP45/TWP45_4, line 11</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l45_4a</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="n">Let</span><span class="s1">&#39;s see an example of how to use this API. We will ask for universities in Turkey that have</span>
-    <span class="n">the</span> <span class="n">word</span> <span class="o">**</span><span class="s2">&quot;middle&quot;</span><span class="o">**</span> <span class="ow">in</span> <span class="n">their</span> <span class="n">name</span><span class="o">.</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_4a_en data-question_label="1">
+<div id=ac_l45_4a_en_question class="ac_question col-md-12">
+<p>Let’s see an example of how to use this API. We will ask for universities in Turkey that have
+the word <strong>“middle”</strong> in their name.</p>
 
-    <span class="o">~~~~</span>
-    <span class="kn">import</span> <span class="nn">urllib.request</span>
-    <span class="kn">import</span> <span class="nn">urllib.parse</span>
-    <span class="kn">import</span> <span class="nn">json</span>
+</div>
+<textarea data-lang="python3" id="ac_l45_4a_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+import urllib.request
+import urllib.parse
+import json
 
-    <span class="n">api_url</span> <span class="o">=</span> <span class="s2">&quot;https://cors.bridged.cc/http://universities.hipolabs.com/search?&quot;</span>
-    <span class="n">params</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlencode</span><span class="p">({</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;middle&quot;</span><span class="p">,</span> <span class="s2">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;turkey&quot;</span><span class="p">})</span>
+api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search?"
+params = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
 
-    <span class="n">request</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">api_url</span> <span class="o">+</span> <span class="n">params</span><span class="p">)</span>
-    <span class="n">json_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+request = urllib.request.urlopen(api_url + params)
+json_data = json.loads(request.read())
 
-    <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">json_data</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
-
-</pre></div>
+print(json.dumps(json_data, indent=4))
+</textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP45/TWP45_4_en.rst</span>, line 28)</p>
-<p>Duplicate ID – see lectures/TWP45/TWP45_4, line 32</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l45_4b</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python</span>
 
-    <span class="n">Let</span><span class="s1">&#39;s find all the universities in Colombia.</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l45_4b_en data-question_label="2">
+<div id=ac_l45_4b_en_question class="ac_question col-md-12">
+<p>Let’s find all the universities in Colombia.</p>
 
-    <span class="o">~~~~</span>
-    <span class="kn">import</span> <span class="nn">requests</span>
-    <span class="kn">import</span> <span class="nn">json</span>
+</div>
+<textarea data-lang="python" id="ac_l45_4b_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import requests
+import json
 
-    <span class="n">api_url</span> <span class="o">=</span> <span class="s2">&quot;https://cors.bridged.cc/http://universities.hipolabs.com/search&quot;</span>
-    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;colombia&quot;</span><span class="p">}</span>
+api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search"
+params = {"country": "colombia"}
 
-    <span class="n">request</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">api_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
-    <span class="n">request</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+request = requests.get(api_url, params=params)
+request = json.loads(request.text)
 
-    <span class="n">universities</span> <span class="o">=</span> <span class="p">[]</span>
+universities = []
 
-    <span class="k">for</span> <span class="n">university</span> <span class="ow">in</span> <span class="n">request</span><span class="p">:</span>
-        <span class="n">universities</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">university</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>
+for university in request:
+    universities.append(university["name"])
 
-        <span class="nb">print</span><span class="p">(</span><span class="n">university</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>
+    print(university["name"])
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;----------------------------------------------&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;There are </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">universities</span><span class="p">)</span><span class="si">}</span><span class="s2"> registered universities&quot;</span><span class="p">)</span>
-
-</pre></div>
+print("----------------------------------------------")
+print(f"There are {len(universities)} registered universities")
+</textarea>
 </div>
 </div>
 <div class="section" id="learnings">

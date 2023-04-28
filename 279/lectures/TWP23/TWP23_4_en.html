@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML &#8212; PyZombis toc-english2@836e635</title>
+    <title>HTML &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -323,36 +323,37 @@ window.addEventListener('load', (event) => {
 <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_4_en.rst</span>, line 29)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_4, line 33</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l23_4</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">datafile</span><span class="p">:</span> <span class="n">hello</span><span class="o">.</span><span class="n">html</span>
 
-    <span class="n">Test</span> <span class="n">the</span> <span class="n">program</span> <span class="n">above</span><span class="o">.</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l23_4_en data-question_label="1">
+<div id=ac_l23_4_en_question class="ac_question col-md-12">
+<p>Test the program above.</p>
 
-    <span class="o">~~~~</span>
-    <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;hello.html&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-    <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
-        <span class="sd">&quot;&quot;&quot;&lt;!DOCTYPE html&gt;</span>
-<span class="sd">    &lt;html lang=&quot;en&quot;&gt;</span>
-<span class="sd">    &lt;head&gt;</span>
-<span class="sd">        &lt;meta charset = &quot;utf-8&quot;&gt;</span>
-<span class="sd">        &lt;title&gt;Page Title&lt;/title&gt;</span>
-<span class="sd">    &lt;/head&gt;</span>
-<span class="sd">    &lt;body&gt;</span>
-<span class="sd">        Hello!</span>
-<span class="sd">    &lt;/body&gt;</span>
-<span class="sd">    &lt;/html&gt;&quot;&quot;&quot;</span>
-    <span class="p">)</span>
-    <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</div>
+<textarea data-lang="python" id="ac_l23_4_en_editor" 
+      data-timelimit=25000     
+    data-audio=''  data-datafile='hello.html'    
+           data-wasm=/_static
+      style="visibility: hidden;">
+file = open("hello.html", "w")
+file.write(
+    """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
+    <title>Page Title</title>
+</head>
+<body>
+    Hello!
+</body>
+</html>"""
+)
+file.close()
 
 
-    <span class="o">====</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data has been written to the file hello.html&quot;</span><span class="p">)</span>
-
-</pre></div>
+====
+print("Data has been written to the file hello.html")
+</textarea>
 </div>
 </div>
 

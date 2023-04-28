@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Counters &#8212; PyZombis toc-english2@836e635</title>
+    <title>Counters &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -303,87 +303,104 @@ window.addEventListener('load', (event) => {
 <ul class="simple">
 <li><p>Now print from 1 to a number entered by the user</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP15/TWP15_3_en.rst</span>, line 6)</p>
-<p>Duplicate ID – see lectures/TWP15/TWP15_3, line 10</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l15_3a</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-   <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-   <span class="n">end</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the last number: &quot;</span><span class="p">))</span>
-   <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-   <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">end</span><span class="p">:</span>
-       <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-       <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l15_3a_en data-question_label="1">
+<div id=ac_l15_3a_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l15_3a_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+end = int(input("Enter the last number: "))
+x = 1
+while x <= end:
+    print(x)
+    x = x + 1
+</textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p>Print even numbers between 0 and a number given by the user using <code class="docutils literal notranslate"><span class="pre">if</span></code></p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP15/TWP15_3_en.rst</span>, line 18)</p>
-<p>Duplicate ID – see lectures/TWP15/TWP15_3, line 22</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l15_3b</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-   <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-   <span class="n">end</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the last number: &quot;</span><span class="p">))</span>
-   <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
-   <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">end</span><span class="p">:</span>
-       <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-           <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-       <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l15_3b_en data-question_label="2">
+<div id=ac_l15_3b_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l15_3b_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+end = int(input("Enter the last number: "))
+x = 0
+while x <= end:
+    if x%2 == 0:
+        print(x)
+    x = x + 1
+</textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p>Print even numbers between 0 and a provided number without using
 <code class="docutils literal notranslate"><span class="pre">if</span></code></p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP15/TWP15_3_en.rst</span>, line 33)</p>
-<p>Duplicate ID – see lectures/TWP15/TWP15_3, line 37</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l15_3c</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-   <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-   <span class="n">end</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the last number: &quot;</span><span class="p">))</span>
-   <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
-   <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">end</span><span class="p">:</span>
-       <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-       <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l15_3c_en data-question_label="3">
+<div id=ac_l15_3c_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l15_3c_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+end = int(input("Enter the last number: "))
+x = 0
+while x <= end:
+    print(x)
+    x = x + 2
+</textarea>
 </div>
 </div>
 <div class="section" id="some-exercises">
 <h2>Some Exercises<a class="headerlink" href="#some-exercises" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP15/TWP15_3_en.rst</span>, line 47)</p>
-<p>Duplicate ID – see lectures/TWP15/TWP15_3, line 51</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l15_3d</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
 
-   <span class="n">Modify</span> <span class="n">the</span> <span class="n">previous</span> <span class="n">program</span> <span class="n">to</span> <span class="nb">print</span> <span class="kn">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">the</span> <span class="n">number</span> <span class="n">entered</span> <span class="n">by</span>
-   <span class="n">the</span> <span class="n">user</span><span class="p">,</span> <span class="n">but</span> <span class="n">this</span> <span class="n">time</span> <span class="n">only</span> <span class="n">the</span> <span class="n">odd</span> <span class="n">numbers</span><span class="o">.</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l15_3d_en data-question_label="4">
+<div id=ac_l15_3d_en_question class="ac_question col-md-12">
+<p>Modify the previous program to print from 1 to the number entered by
+the user, but this time only the odd numbers.</p>
 
-   <span class="o">~~~~</span>
+</div>
+<textarea data-lang="python" id="ac_l15_3d_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
 
-</pre></div>
+</textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP15/TWP15_3_en.rst</span>, line 56)</p>
-<p>Duplicate ID – see lectures/TWP15/TWP15_3, line 60</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l15_3e</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
 
-   <span class="n">Write</span> <span class="n">a</span> <span class="n">program</span> <span class="n">that</span> <span class="n">prints</span> <span class="n">the</span> <span class="n">first</span> <span class="mi">10</span> <span class="n">multiples</span> <span class="n">of</span> <span class="mf">3.</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l15_3e_en data-question_label="5">
+<div id=ac_l15_3e_en_question class="ac_question col-md-12">
+<p>Write a program that prints the first 10 multiples of 3.</p>
 
-   <span class="o">~~~~</span>
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l15_3e_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+
+</textarea>
 </div>
 </div>
 </div>

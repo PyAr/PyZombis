@@ -4,7 +4,7 @@ Quotes of various types
 + Can I use single, double or triple quotes?
 
 
-.. codelens:: cl_l18_1
+.. codelens:: cl_l18_1_en
          
     x = 'avocado'
     print(x)

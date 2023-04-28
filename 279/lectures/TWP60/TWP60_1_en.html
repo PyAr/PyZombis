@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pygame Hello World &#8212; PyZombis toc-english2@836e635</title>
+    <title>Pygame Hello World &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -310,62 +310,65 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="id1">
 <h2>Pygame Hello World<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_1_en.rst</span>, line 25)</p>
-<p>Duplicate ID – see lectures/TWP60/TWP60_1, line 32</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l60_1</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">load</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/game.js&#39;</span><span class="p">)</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/pygame.brython.js&#39;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_1_en data-question_label="1">
+<div id=ac_l60_1_en_question class="ac_question col-md-12">
 
-    <span class="o">^^^^</span>
+</div>
+<textarea data-lang="python3" id="ac_l60_1_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
 
-    <span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span>
-    <span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
-    <span class="kn">from</span> <span class="nn">pygame.color</span> <span class="kn">import</span> <span class="o">*</span>
+^^^^
 
-    <span class="c1"># set up pygame</span>
-    <span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+import pygame, sys
+from pygame.locals import *
+from pygame.color import *
 
-    <span class="c1"># set up the window</span>
-    <span class="n">windowSurface</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="mi">500</span><span class="p">,</span><span class="mi">400</span><span class="p">))</span>
+# set up pygame
+pygame.init()
 
-    <span class="c1"># set up the colors</span>
-    <span class="n">BLACK</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">WHITE</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
-    <span class="n">RED</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">GREEN</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">BLUE</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+# set up the window
+windowSurface = pygame.display.set_mode((500,400))
 
-    <span class="c1"># set up fonts</span>
-    <span class="n">basicFont</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">SysFont</span><span class="p">(</span><span class="s1">&#39;timesnewroman&#39;</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+# set up the colors
+BLACK = Color(0,0,0)
+WHITE = Color(255,255,255)
+RED = Color(255,0,0)
+GREEN = Color(0,255,0)
+BLUE = Color(0,0,255)
 
-    <span class="c1"># set up the text</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">basicFont</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">,</span><span class="kc">False</span><span class="p">,</span><span class="n">BLACK</span><span class="p">,</span><span class="n">WHITE</span><span class="p">)</span>
-    <span class="n">textRect</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+# set up fonts
+basicFont = pygame.font.SysFont('timesnewroman',30)
 
-    <span class="n">textRect</span><span class="o">.</span><span class="n">centerx</span> <span class="o">=</span> <span class="n">windowSurface</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span><span class="o">.</span><span class="n">centerx</span>
-    <span class="n">textRect</span><span class="o">.</span><span class="n">centery</span> <span class="o">=</span> <span class="n">windowSurface</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span><span class="o">.</span><span class="n">centery</span>
+# set up the text
+text = basicFont.render("Hello world!",False,BLACK,WHITE)
+textRect = text.get_rect()
 
-    <span class="c1"># draw the white background onto the surface</span>
-    <span class="n">windowSurface</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">WHITE</span><span class="p">)</span>
+textRect.centerx = windowSurface.get_rect().centerx
+textRect.centery = windowSurface.get_rect().centery
 
-    <span class="c1"># draw a green polygon onto the surface</span>
-    <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span><span class="n">GREEN</span><span class="p">,((</span><span class="mi">146</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span><span class="mi">291</span><span class="p">,</span><span class="mi">106</span><span class="p">),(</span><span class="mi">236</span><span class="p">,</span><span class="mi">277</span><span class="p">)))</span>
+# draw the white background onto the surface
+windowSurface.fill(WHITE)
 
-    <span class="c1"># draw some blue lines onto the surface</span>
-    <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span><span class="n">BLUE</span><span class="p">,(</span><span class="mi">60</span><span class="p">,</span><span class="mi">60</span><span class="p">),(</span><span class="mi">120</span><span class="p">,</span><span class="mi">60</span><span class="p">),</span><span class="mi">4</span><span class="p">)</span>
-    <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span><span class="n">BLUE</span><span class="p">,(</span><span class="mi">120</span><span class="p">,</span><span class="mi">60</span><span class="p">),(</span><span class="mi">60</span><span class="p">,</span><span class="mi">120</span><span class="p">))</span>
-    <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span><span class="n">BLUE</span><span class="p">,(</span><span class="mi">60</span><span class="p">,</span><span class="mi">120</span><span class="p">),(</span><span class="mi">120</span><span class="p">,</span><span class="mi">120</span><span class="p">),</span><span class="mi">4</span><span class="p">)</span>
+# draw a green polygon onto the surface
+pygame.draw.polygon(windowSurface,GREEN,((146,0),(291,106),(236,277)))
 
-    <span class="c1"># draw a blue circle onto the surface</span>
-    <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span><span class="n">BLUE</span><span class="p">,(</span><span class="mi">300</span><span class="p">,</span><span class="mi">50</span><span class="p">),</span><span class="mi">20</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">windowSurface</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">textRect</span><span class="p">)</span>
+# draw some blue lines onto the surface
+pygame.draw.line(windowSurface,BLUE,(60,60),(120,60),4)
+pygame.draw.line(windowSurface,BLUE,(120,60),(60,120))
+pygame.draw.line(windowSurface,BLUE,(60,120),(120,120),4)
 
-</pre></div>
+# draw a blue circle onto the surface
+pygame.draw.circle(windowSurface,BLUE,(300,50),20,0)
+windowSurface.blit(text, textRect)
+</textarea>
 </div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span>

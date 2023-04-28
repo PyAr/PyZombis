@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Repetitions &#8212; PyZombis toc-english2@836e635</title>
+    <title>Repetitions &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -301,52 +301,55 @@ window.addEventListener('load', (event) => {
   <div class="section" id="repetitions">
 <h1>Repetitions<a class="headerlink" href="#repetitions" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../../_images/TWP15_001.jpg"><img alt="" class="align-center" src="../../_images/TWP15_001.jpg" style="width: 16.801cm; height: 15.602cm;" /></a>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP30/TWP30_5_en.rst</span>, line 10)</p>
-<p>Duplicate ID – see lectures/TWP30/TWP30_5, line 15</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l30_5</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">document</span> <span class="k">as</span> <span class="n">doc</span>
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">html</span>
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">timer</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l30_5_en data-question_label="1">
+<div id=ac_l30_5_en_question class="ac_question col-md-12">
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome!&quot;</span><span class="p">)</span>
-    <span class="n">number</span> <span class="o">=</span> <span class="mi">0</span>
+</div>
+<textarea data-lang="python3" id="ac_l30_5_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import document as doc
+from browser import html
+from browser import timer
 
-    <span class="n">doc</span> <span class="o">&lt;=</span> <span class="n">html</span><span class="o">.</span><span class="n">DIV</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;div_game&quot;</span><span class="p">)</span>
+print("Welcome!")
+number = 0
 
-    <span class="c1"># Create the button to play</span>
-    <span class="n">doc</span><span class="p">[</span><span class="s2">&quot;div_game&quot;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">html</span><span class="o">.</span><span class="n">BUTTON</span><span class="p">(</span><span class="s2">&quot;Play&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;btn_play&quot;</span><span class="p">)</span>
+doc <= html.DIV(id="div_game")
 
-    <span class="c1"># Define what the button will do when pressed</span>
-    <span class="k">def</span> <span class="nf">guess</span><span class="p">():</span>
+# Create the button to play
+doc["div_game"] <= html.BUTTON("Play", id="btn_play")
 
-        <span class="k">global</span> <span class="n">number</span>
-        <span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Guess the number: &quot;</span><span class="p">))</span>
-        <span class="k">if</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">42</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You won!&quot;</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">42</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;High&quot;</span><span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Low&quot;</span><span class="p">)</span>
+# Define what the button will do when pressed
+def guess():
 
-        <span class="k">if</span> <span class="n">number</span> <span class="o">!=</span> <span class="mi">42</span><span class="p">:</span>
-            <span class="c1"># If the number was not guessed, repeat the function after</span>
-            <span class="c1"># 3 seconds</span>
-            <span class="n">timer</span><span class="o">.</span><span class="n">set_timeout</span><span class="p">(</span><span class="n">guess</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
+    global number
+    number = int(input("Guess the number: "))
+    if number == 42:
+        print("You won!")
+    else:
+        if number > 42:
+            print("High")
+        else:
+            print("Low")
+
+    if number != 42:
+        # If the number was not guessed, repeat the function after
+        # 3 seconds
+        timer.set_timeout(guess, 3000)
 
 
-    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="n">ev</span><span class="p">):</span>
-        <span class="n">guess</span><span class="p">()</span>
+def start(ev):
+    guess()
 
-    <span class="c1"># When the button is pressed, it will call the start function,</span>
-    <span class="c1"># which in turn will call guess</span>
-    <span class="n">doc</span><span class="p">[</span><span class="s2">&quot;btn_play&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="n">start</span><span class="p">)</span>
-
-</pre></div>
+# When the button is pressed, it will call the start function,
+# which in turn will call guess
+doc["btn_play"].bind("click", start)
+</textarea>
 </div>
 </div>
 <a class="reference internal image-reference" href="../../_images/TWP15_007.png"><img alt="" class="align-center" src="../../_images/TWP15_007.png" style="width: 22.181cm; height: 14.804cm;" /></a>

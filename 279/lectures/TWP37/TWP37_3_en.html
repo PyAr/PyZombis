@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The marker… &#8212; PyZombis toc-english2@836e635</title>
+    <title>The marker… &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -319,35 +319,38 @@ window.addEventListener('load', (event) => {
 </pre></div>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP37/TWP37_3_en.rst</span>, line 26)</p>
-<p>Duplicate ID – see lectures/TWP37/TWP37_3, line 30</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l37_3</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">datafile</span><span class="p">:</span> <span class="n">surf2</span><span class="o">.</span><span class="n">txt</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;surf2.txt&quot;</span><span class="p">)</span>
-    <span class="n">first</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">second</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">third</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
-        <span class="n">name</span><span class="p">,</span> <span class="n">points</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-        <span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">first</span><span class="p">:</span>
-            <span class="n">third</span> <span class="o">=</span> <span class="n">second</span>
-            <span class="n">second</span> <span class="o">=</span> <span class="n">first</span>
-            <span class="n">first</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="nb">float</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">second</span><span class="p">:</span>
-            <span class="n">third</span> <span class="o">=</span> <span class="n">second</span>
-            <span class="n">second</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="nb">float</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">third</span><span class="p">:</span>
-            <span class="n">third</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
-    <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l37_3_en data-question_label="1">
+<div id=ac_l37_3_en_question class="ac_question col-md-12">
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">first</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">second</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">third</span><span class="p">)</span>
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l37_3_en_editor" 
+      data-timelimit=25000     
+    data-audio=''  data-datafile='surf2.txt' data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+file = open("surf2.txt")
+first = 0
+second = 0
+third = 0
+for line in file:
+    name, points = line.split()
+    if float(points) > first:
+        third = second
+        second = first
+        first = float(points)
+    elif float(points) > second:
+        third = second
+        second = float(points)
+    elif float(points) > third:
+        third = float(points)
+file.close()
+
+print("%.2f" % first)
+print("%.2f" % second)
+print("%.2f" % third)
+</textarea>
 </div>
 </div>
 </div>

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Input &#8212; PyZombis toc-english2@836e635</title>
+    <title>Data Input &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -304,17 +304,20 @@ window.addEventListener('load', (event) => {
 <li><p>Up until now our programs have worked with known values.</p></li>
 <li><p>We will begin to obtain the values during the execution of the programs.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_15_en.rst</span>, line 7)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_15, line 11</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l05_15a</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-   <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-   <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Write your name: &quot;</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l05_15a_en data-question_label="1">
+<div id=ac_l05_15a_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l05_15a_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+name = input("Write your name: ")
+print(f"Hello {name}!")
+</textarea>
 </div>
 </div>
 <div class="section" id="data-input-conversion">
@@ -324,18 +327,21 @@ window.addEventListener('load', (event) => {
 <li><p>We use the <code class="docutils literal notranslate"><span class="pre">int()</span></code> and <code class="docutils literal notranslate"><span class="pre">float()</span></code> functions to convert a value to an integer or
 a floating-point value respectively.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_15_en.rst</span>, line 22)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_15, line 26</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l05_15b</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-   <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-   <span class="n">unit_value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Value of a donut: &quot;</span><span class="p">))</span>
-   <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Number of donuts: &quot;</span><span class="p">))</span>
-   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total value: $</span><span class="si">{</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="n">unit_value</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l05_15b_en data-question_label="2">
+<div id=ac_l05_15b_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l05_15b_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+unit_value = float(input("Value of a donut: "))
+n = int(input("Number of donuts: "))
+print(f"Total value: ${(n * unit_value)}")
+</textarea>
 </div>
 </div>
 </div>

@@ -11,7 +11,7 @@ Crypto
     are changed to "*".
 
 
-.. activecode:: ac_l23_2a
+.. activecode:: ac_l23_2a_en
     :nocodelens:
     :datafile: message.txt, crypto.txt 
 
@@ -47,7 +47,7 @@ Crypto
 Exercise
 ---------
 
-.. activecode:: ac_l23_2b
+.. activecode:: ac_l23_2b_en
     :nocodelens:
     :datafile: message.txt, crypto.txt
 

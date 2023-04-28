@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Last Exercise &#8212; PyZombis toc-english2@836e635</title>
+    <title>Last Exercise &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -4040,39 +4040,39 @@ including how to make donations to the Project Gutenberg Literary
 Archive Foundation, how to help produce our new eBooks, and how to
 subscribe to our email newsletter to hear about new eBooks.
 </pre></div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_6_en.rst</span>, line 10)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_6, line 14</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: ac_l23_6
-    :nocodelens:
-    :available_files: alice_file.txt
-    :Language: python
 
-    Create a program that reads the file ``alice_file.txt`` and counts the number of occurrences of each word in the text. Note:
-    to remove special characters, use ``import string`` and ``string.punctuation``.
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l23_6_en data-question_label="2">
+<div id=ac_l23_6_en_question class="ac_question col-md-12">
+<p>Create a program that reads the file <code class="docutils literal notranslate"><span class="pre">alice_file.txt</span></code> and counts the number of occurrences of each word in the text. Note:
+to remove special characters, use <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">string</span></code> and <code class="docutils literal notranslate"><span class="pre">string.punctuation</span></code>.</p>
 
-    ~~~~
-    import string
+</div>
+<textarea data-lang="python" id="ac_l23_6_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+import string
 
-    file = open(&quot;alice_file.txt&quot;, &quot;r&quot;)
-    text = file.read()
-    text = text.lower()
+file = open("alice_file.txt", "r")
+text = file.read()
+text = text.lower()
 
-    for c in string.punctuation:
-        text = text.replace(c, &quot; &quot;)
-    text = text.split()
+for c in string.punctuation:
+    text = text.replace(c, " ")
+text = text.split()
 
-    dic = {}
-    for word in text:
-        if word not in dic:
-            dic[word] = 1
-        else:
-            dic[word] += 1
+dic = {}
+for word in text:
+    if word not in dic:
+        dic[word] = 1
+    else:
+        dic[word] += 1
 
-    print(&quot;Alice appears %s times&quot; % dic[&quot;alice&quot;])
-    file.close()
-
-</pre></div>
+print("Alice appears %s times" % dic["alice"])
+file.close()
+</textarea>
 </div>
 </div>
 <a class="reference internal image-reference" href="../../_images/TWP05_041.jpeg"><img alt="" class="align-center" src="../../_images/TWP05_041.jpeg" style="width: 9.411cm; height: 12.571cm;" /></a>

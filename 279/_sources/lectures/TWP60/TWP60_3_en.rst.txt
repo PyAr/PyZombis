@@ -30,7 +30,7 @@ Pygame Collision Detection
          return False
 
 
-.. activecode:: ac_l60_3
+.. activecode:: ac_l60_3_en
     :language: python3
     :python3_interpreter: brython
 

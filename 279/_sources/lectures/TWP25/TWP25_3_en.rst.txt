@@ -8,7 +8,7 @@ Operations declaration and inheritance
 Client Class and Improved Account Class
 ---------------------------------------
 
-..  activecode:: ac_l25_3a
+..  activecode:: ac_l25_3a_en
     :nocodelens:
     :stdin:
 
@@ -50,7 +50,7 @@ Client Class and Improved Account Class
 Using the Client and Improved Account Classes
 *************************************************
 
-..  activecode:: ac_l25_3b
+..  activecode:: ac_l25_3b_en
     :nocodelens:
     :stdin:
     :include: ac_l25_3a
@@ -80,7 +80,7 @@ Inheritance
 Special Account Class
 ---------------------
 
-..  activecode:: ac_l25_3c
+..  activecode:: ac_l25_3c_en
     :nocodelens:
     :stdin:
     :include: ac_l25_3a
@@ -113,7 +113,7 @@ Advantages of Inheritance
 Using all classes
 ---------------------------
 
-..  activecode:: ac_l25_3d
+..  activecode:: ac_l25_3d_en
     :nocodelens:
     :stdin:
     :include: ac_l25_3a, ac_l25_3c

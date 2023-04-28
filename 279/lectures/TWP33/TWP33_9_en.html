@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Library time &#8212; PyZombis toc-english2@836e635</title>
+    <title>Library time &#8212; PyZombis toc-english2@5318635</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@836e635
+          PyZombis toc-english2@5318635
         </a>
       </div>
     </div>
@@ -308,47 +308,50 @@ window.addEventListener('load', (event) => {
 </ul>
 <div class="section" id="seconds-between-each-access">
 <h2>10 seconds between each access<a class="headerlink" href="#seconds-between-each-access" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP33/TWP33_9_en.rst</span>, line 13)</p>
-<p>Duplicate ID – see lectures/TWP33/TWP33_9, line 17</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l33_9</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
-    <span class="kn">import</span> <span class="nn">time</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l33_9_en data-question_label="1">
+<div id=ac_l33_9_en_question class="ac_question col-md-12">
 
-    <span class="c1"># This is used to increase the program duration to 3 minutes.</span>
-    <span class="kn">import</span> <span class="nn">sys</span>
-    <span class="n">sys</span><span class="o">.</span><span class="n">setExecutionLimit</span><span class="p">(</span><span class="mi">180000</span><span class="p">)</span>
+</div>
+<textarea data-lang="python" id="ac_l33_9_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+from urllib.request import urlopen
+import time
 
-    <span class="n">LOYALTY_PRICES_URL</span> <span class="o">=</span> <span class="s2">&quot;https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices-loyalty.html&quot;</span>
-    <span class="n">price</span> <span class="o">=</span> <span class="mf">99.99</span>
-    <span class="n">limit</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">availability</span> <span class="o">=</span> <span class="kc">True</span>
-    <span class="k">while</span> <span class="n">price</span> <span class="o">&gt;=</span> <span class="mf">4.74</span> <span class="ow">or</span> <span class="n">limit</span> <span class="o">&lt;=</span><span class="mi">15</span><span class="p">:</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">page</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">LOYALTY_PRICES_URL</span><span class="p">)</span>
-        <span class="k">except</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;URL not available at this time.&quot;</span><span class="p">)</span>
-            <span class="n">availability</span> <span class="o">=</span> <span class="kc">False</span>
-            <span class="k">break</span>
-        <span class="n">page</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">LOYALTY_PRICES_URL</span><span class="p">)</span>
-        <span class="n">text</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-        <span class="n">location</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;&gt;$&quot;</span><span class="p">)</span>
-        <span class="n">start</span> <span class="o">=</span> <span class="n">location</span> <span class="o">+</span> <span class="mi">2</span>
-        <span class="n">end</span> <span class="o">=</span> <span class="n">start</span> <span class="o">+</span> <span class="mi">4</span>
-        <span class="n">price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">])</span>
-        <span class="k">if</span> <span class="n">price</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Waiting 10 seconds... Current price: </span><span class="si">%5.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">price</span><span class="p">)</span>
-            <span class="n">limit</span> <span class="o">+=</span> <span class="mi">1</span>
-            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">limit</span> <span class="o">==</span> <span class="mi">16</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;They don&#39;t want to lower the price. Buy it for </span><span class="si">%5.2f</span><span class="s2"> pesos&quot;</span> <span class="o">%</span> <span class="n">price</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">limit</span> <span class="o">&lt;</span> <span class="mi">7</span> <span class="ow">and</span> <span class="n">availability</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Buy! price: </span><span class="si">%5.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">price</span><span class="p">)</span>
+# This is used to increase the program duration to 3 minutes.
+import sys
+sys.setExecutionLimit(180000)
 
-</pre></div>
+LOYALTY_PRICES_URL = "https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices-loyalty.html"
+price = 99.99
+limit = 0
+availability = True
+while price >= 4.74 or limit <=15:
+    try:
+        page = urlopen(LOYALTY_PRICES_URL)
+    except:
+        print("URL not available at this time.")
+        availability = False
+        break
+    page = urlopen(LOYALTY_PRICES_URL)
+    text = page.read()
+    location = text.find(">$")
+    start = location + 2
+    end = start + 4
+    price = float(text[start:end])
+    if price >= 4.74:
+        print("Waiting 10 seconds... Current price: %5.2f" % price)
+        limit += 1
+        time.sleep(10)
+if limit == 16:
+    print("They don't want to lower the price. Buy it for %5.2f pesos" % price)
+elif limit < 7 and availability == True:
+    print("Buy! price: %5.2f" % price)
+</textarea>
 </div>
 </div>
 </div>

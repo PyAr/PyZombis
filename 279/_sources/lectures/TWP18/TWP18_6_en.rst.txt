@@ -1,7 +1,7 @@
 Functions ``split`` and ``join``
 =================================
 
-.. codelens:: cl_l18_6
+.. codelens:: cl_l18_6_en
 
     text = "potato when born"
     print(text.split())
@@ -16,7 +16,7 @@ Functions ``split`` and ``join``
 Exercise
 --------
 
-.. activecode:: ac_l18_6
+.. activecode:: ac_l18_6_en
     :nocodelens:
     :stdin:
 
