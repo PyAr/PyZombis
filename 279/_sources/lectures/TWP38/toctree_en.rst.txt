@@ -1,5 +1,5 @@
 ==================
-General Review 2
+Revisión general 2
 ==================
 
 
@@ -11,13 +11,11 @@ General Review 2
 
 
 .. toctree::
-   :caption: Contents
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP38_1.rst
-   TWP38_2.rst
-   TWP38_3.rst
-   TWP38_4.rst
-
-Translated Python code is not available in the original Spanish snippet, so it cannot be translated.
+   TWP38_1_en.rst
+   TWP38_2_en.rst
+   TWP38_3_en.rst
+   TWP38_4_en.rst

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nested Structures &#8212; PyZombis toc-english2@5318635</title>
+    <title>5. Nested Structures &#8212; PyZombis toc-english2@0177bf5</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6. elif" href="TWP10_6_en.html" />
+    <link rel="prev" title="4. if / else" href="TWP10_4_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@5318635
+          PyZombis toc-english2@0177bf5
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">4. </span><code class="docutils literal notranslate"><span class="pre">if</span></code> / <code class="docutils literal notranslate"><span class="pre">else</span></code>" data-toggle="tooltip">
+    <a href="TWP10_4_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">6. </span><code class="docutils literal notranslate"><span class="pre">elif</span></code>' data-toggle="tooltip" >              
+    <a href="TWP10_6_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 4.  if  / else ' data-toggle="tooltip">
+  <a href="TWP10_4_en.html" aria-label="Previous - 4.  if  / else ">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 6.  elif ' data-toggle="tooltip" >
+    <a href="TWP10_6_en.html" aria-label="Next - 6.  elif ">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,7 +325,7 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="nested-structures">
-<h1>Nested Structures<a class="headerlink" href="#nested-structures" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">5. </span>Nested Structures<a class="headerlink" href="#nested-structures" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>Consider the telephone company “Chao”. Below 200 minutes, the company charges <code class="docutils literal notranslate"><span class="pre">$0.20</span></code> per minute. Between 200 and 400 minutes, the price is <code class="docutils literal notranslate"><span class="pre">$0.18</span></code>. Above 400 minutes, the price per minute is <code class="docutils literal notranslate"><span class="pre">$0.15</span></code>. Calculate your phone bill with these conditions.</p></li>
 <li><p>The company’s conditions can be visually represented by the path of a road like the following image.</p></li>
@@ -311,11 +337,11 @@ window.addEventListener('load', (event) => {
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5.1">
         <div class="pytutorVisualizer" id="cl_l10_5a_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (cl_l10_5a_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5.1 (cl_l10_5a_en)</span> </p>
     </div>
 
 <script>
@@ -334,11 +360,11 @@ allTraceData["cl_l10_5a_en"] = {"code": "minutes = 800\nif minutes < 200:\n    p
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5.2">
         <div class="pytutorVisualizer" id="cl_l10_5b_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (cl_l10_5b_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5.2 (cl_l10_5b_en)</span> </p>
     </div>
 
 <script>
@@ -364,6 +390,18 @@ allTraceData["cl_l10_5b_en"] = {"code": "minutes = 1000\nif minutes < 200:\n    
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 4.  if  / else ' data-toggle="tooltip">
+  <a href="TWP10_4_en.html" aria-label="Previous - 4.  if  / else ">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 6.  elif ' data-toggle="tooltip" >
+    <a href="TWP10_6_en.html" aria-label="Next - 6.  elif ">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

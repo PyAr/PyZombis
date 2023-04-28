@@ -1,5 +1,5 @@
 ================
-Graphical Interface
+Interfaz gráfica
 ================
 
 
@@ -11,23 +11,11 @@ Graphical Interface
 
 
 .. toctree::
-   :caption: Contents
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP50_1.rst
-   TWP50_2.rst
-   TWP50_3.rst
-   TWP50_4.rst
-
-.. code-block:: python
-
-    # Python code for graphical interface
-    import tkinter as tk
-
-    root = tk.Tk()
-    root.title("Graphical Interface")
-
-    # Add widgets here
-
-    root.mainloop()
+   TWP50_1_en.rst
+   TWP50_2_en.rst
+   TWP50_3_en.rst
+   TWP50_4_en.rst

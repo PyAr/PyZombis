@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testing the TasteDive API &#8212; PyZombis toc-english2@5318635</title>
+    <title>3. Testing the TasteDive API &#8212; PyZombis toc-english2@0177bf5</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. Testing the University Domains API" href="TWP45_4_en.html" />
+    <link rel="prev" title="2. Get data from Reddit" href="TWP45_2_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis toc-english2@5318635
+          PyZombis toc-english2@0177bf5
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">2. </span>Get data from Reddit" data-toggle="tooltip">
+    <a href="TWP45_2_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">4. </span>Testing the University Domains API' data-toggle="tooltip" >              
+    <a href="TWP45_4_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. Get data from Reddit' data-toggle="tooltip">
+  <a href="TWP45_2_en.html" aria-label="Previous - 2. Get data from Reddit">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 4. Testing the University Domains API' data-toggle="tooltip" >
+    <a href="TWP45_4_en.html" aria-label="Next - 4. Testing the University Domains API">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,7 +325,7 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="testing-the-tastedive-api">
-<h1>Testing the TasteDive API<a class="headerlink" href="#testing-the-tastedive-api" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3. </span>Testing the TasteDive API<a class="headerlink" href="#testing-the-tastedive-api" title="Permalink to this headline">¶</a></h1>
 <p>TasteDive is a tool that:</p>
 <blockquote>
 <div><p>helps you discover new music, movies, TV shows, books, authors, games,
@@ -310,7 +336,7 @@ podcasts, and people with shared interests.
 The documentation for the <a class="reference external" href="https://tastedive.com/read/api">TasteDive API</a>.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_3a_en data-question_label="1">
+<div data-component="activecode" id=ac_l45_3a_en data-question_label="3.1">
 <div id=ac_l45_3a_en_question class="ac_question col-md-12">
 <p>In this case, we will use the <code class="docutils literal notranslate"><span class="pre">requests</span></code> library to make the API request. The base url
 is <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar&quot;</span></code>. To this url, a parameter <code class="docutils literal notranslate"><span class="pre">q</span></code> with the
@@ -351,7 +377,7 @@ transforms into a Python dictionary. However, it is not entirely readable. This 
 <code class="docutils literal notranslate"><span class="pre">json.dumps</span></code>.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_3b_en data-question_label="2">
+<div data-component="activecode" id=ac_l45_3b_en data-question_label="3.2">
 <div id=ac_l45_3b_en_question class="ac_question col-md-12">
 <p>Now, we will request information about the band Coldplay. This time we will print the data in a
 readable format. We will use <code class="docutils literal notranslate"><span class="pre">urllib</span></code> to make the request.</p>
@@ -388,7 +414,7 @@ print(len(data["Similar"]["Results"]))
 <p>The following exercise comes with automatic grading.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_3c_en data-question_label="3">
+<div data-component="activecode" id=ac_l45_3c_en data-question_label="3.3">
 <div id=ac_l45_3c_en_question class="ac_question col-md-12">
 <p>Now we will ask TasteDive for the movie Coco. Then the dictionary <code class="docutils literal notranslate"><span class="pre">parameters</span></code> should have the
 value <code class="docutils literal notranslate"><span class="pre">&quot;Coco&quot;</span></code> assigned to the key <code class="docutils literal notranslate"><span class="pre">&quot;q&quot;</span></code>. Additionally, this time we only want 5 results instead of 20.
@@ -475,6 +501,18 @@ myTests().main()
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. Get data from Reddit' data-toggle="tooltip">
+  <a href="TWP45_2_en.html" aria-label="Previous - 2. Get data from Reddit">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 4. Testing the University Domains API' data-toggle="tooltip" >
+    <a href="TWP45_4_en.html" aria-label="Next - 4. Testing the University Domains API">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
