@@ -48,4 +48,4 @@ if __name__ == "__main__":
         exit()
     else:
         filename = sys.argv[1]
-        fix_duplicate_id(filename)
+        rename_TOC_items(filename)
