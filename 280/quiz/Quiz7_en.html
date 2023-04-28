@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - 7 &#8212; PyZombis translations@1103727</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+    <link rel="stylesheet" type="text/css" href="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.css?v=6ab2699256a7cd2f2dee" />
+    <link rel="stylesheet" type="text/css" href="../_static/runestone.css?v=0ddbfb97cbf8a612e45f" />
+
+
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
+    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=700db7378411b25a09f9"></script>
+    <script src="../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+
+<script>
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'PyZombis';
+    eBookConfig.basecourse = 'PyZombis';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.enableCompareMe = eBookConfig.useRunestoneServices;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../_static/img/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">
+          
+          PyZombis translations@1103727
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='../genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/assignments/chooseAssignment.html'>Assignments</a></li>
+            <li><a href='/runestone/assignments/practice'>Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link"><a href='/runestone/admin/index'>Instructor's Page</a></li>
+            
+            <li><a href='/runestone/dashboard/studentreport'>Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()" />
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode" >Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=Quiz7_en'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  document.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
+<!-- Ad Serving for Runestone Campaign -->
+
+
+  
+  <div class="section" id="quiz-7">
+<h1>Quiz - 7<a class="headerlink" href="#quiz-7" title="Permalink to this headline">¶</a></h1>
+<div id='quiz7' data-component="tabbedStuff"  class='alert alert-warning'><div data-component="tab" data-tabname="Exercise 1" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 14)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 18</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_1
+    :nocodelens:
+
+    Develop the function ``multi_cadena`` that receives as parameters a string ``s`` and a positive integer ``n`` and returns a new string that contains ``n`` copies of the original string |br| |br|
+    Examples:|br|
+    ``multi_cadena(&quot;Hola&quot;, 2)`` -&gt; ``&quot;HolaHola&quot;`` |br|
+    ``multi_cadena(&quot;Hola&quot;, 5)`` -&gt; ``&quot;HolaHolaHolaHolaHola&quot;``
+
+    ~~~~
+    def multi_cadena(s, n):
+
+
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(multi_cadena(&quot;Hola&quot;, 2), &quot;HolaHola&quot;, &quot;Expected: HolaHola&quot;)
+            self.assertEqual(
+                    multi_cadena(&quot;Hola&quot;, 3), &quot;HolaHolaHola&quot;, &quot;Expected: HolaHolaHola&quot;
+            )
+            self.assertEqual(multi_cadena(&quot;Hi&quot;, 1), &quot;Hi&quot;, &quot;Expected: Hi&quot;)
+            self.assertEqual(multi_cadena(&quot;Hi&quot;, 0), &quot;&quot;, &quot;Expected: &#39;&#39;&quot;)
+            self.assertEqual(multi_cadena(&quot;Hi&quot;, 5), &quot;HiHiHiHiHi&quot;, &quot;Expected: HiHiHiHiHi&quot;)
+            self.assertEqual(
+                    multi_cadena(&quot;Oh Boy!&quot;, 2), &quot;Oh Boy!Oh Boy!&quot;, &quot;Expected: Oh Boy!Oh Boy!&quot;
+            )
+            self.assertEqual(multi_cadena(&quot;x&quot;, 4), &quot;xxxx&quot;, &quot;Expected: xxxx&quot;)
+            self.assertEqual(multi_cadena(&quot;&quot;, 4), &quot;&quot;, &quot;Expected: &#39;&#39;&quot;)
+            self.assertEqual(multi_cadena(&quot;code&quot;, 2), &quot;codecode&quot;, &quot;Expected: codecode&quot;)
+            self.assertEqual(
+                    multi_cadena(&quot;code&quot;, 3), &quot;codecodecode&quot;, &quot;Expected: codecodecode&quot;
+            )
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 2" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 56)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 60</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_2
+    :nocodelens:
+
+    Develop the function ``expandir_cadena`` that receives a string ``s`` and returns a new string following the pattern described in the examples |br| |br|
+    Examples:|br|
+    ``expandir_cadena(&quot;Code&quot;)`` -&gt; ``&quot;CCoCodCode&quot;`` |br|
+    ``expandir_cadena(&quot;abc&quot;)`` -&gt; ``&quot;aababc&quot;`` |br|
+    ``expandir_cadena(&quot;ab&quot;)`` -&gt; ``&quot;aab&quot;`` |br|
+
+    ~~~~
+    def expandir_cadena(s):
+
+
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(expandir_cadena(&quot;Code&quot;), &quot;CCoCodCode&quot;, &quot;Expected: CCoCodCode&quot;)
+            self.assertEqual(expandir_cadena(&quot;abc&quot;), &quot;aababc&quot;, &quot;Expected: aababc&quot;)
+            self.assertEqual(expandir_cadena(&quot;ab&quot;), &quot;aab&quot;, &quot;Expected: aab&quot;)
+            self.assertEqual(expandir_cadena(&quot;x&quot;), &quot;x&quot;, &quot;Expected: x&quot;)
+            self.assertEqual(expandir_cadena(&quot;fade&quot;), &quot;ffafadfade&quot;, &quot;Expected: ffafadfade&quot;)
+            self.assertEqual(
+                expandir_cadena(&quot;There&quot;), &quot;TThTheTherThere&quot;, &quot;Expected: TThTheTherThere&quot;
+            )
+            self.assertEqual(
+                expandir_cadena(&quot;Kitten&quot;),
+                &quot;KKiKitKittKitteKitten&quot;,
+                &quot;Expected: KKiKitKittKitteKitten&quot;,
+            )
+            self.assertEqual(expandir_cadena(&quot;Bye&quot;), &quot;BByBye&quot;, &quot;Expected: BByBye&quot;)
+            self.assertEqual(expandir_cadena(&quot;Good&quot;), &quot;GGoGooGood&quot;, &quot;Expected: GGoGooGood&quot;)
+            self.assertEqual(expandir_cadena(&quot;Bad&quot;), &quot;BBaBad&quot;, &quot;Expected: BBaBad&quot;)
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 3" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 99)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 103</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_3
+    :nocodelens:
+
+
+    Develop the function ``contar_apariciones_9`` that receives as parameter a non-empty list of integers ``numeros`` and returns how many times the number 9 appears in the list |br| |br|
+    Example: ``contar_apariciones_9([1, 99, 9])`` -&gt; ``1``
+
+    ~~~~
+    def contar_apariciones_9(numeros):
+
+
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(contar_apariciones_9([1, 99, 9]), 1, &quot;Expected: 1&quot;)
+            self.assertEqual(contar_apariciones_9([1, 9, 9]), 2, &quot;Expected: 2&quot;)
+            self.assertEqual(contar_apariciones_9([1, 9, 9, 3, 9]), 3, &quot;Expected: 3&quot;)
+            self.assertEqual(contar_apariciones_9([1, 2, 3]), 0, &quot;Expected: 0&quot;)
+            self.assertEqual(contar_apariciones_9([1]), 0, &quot;Expected: 1&quot;)
+            self.assertEqual(contar_apariciones_9([4, 2, 4, 3, 1]), 0, &quot;Expected: 0&quot;)
+            self.assertEqual(contar_apariciones_9([9, 2, 99, 3, 1]), 1, &quot;Expected: 1&quot;)
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 4" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 130)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 135</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_4
+    :nocodelens:
+
+
+    Develop the function ``verificar_comienzo_9`` that receives a list of integer numbers ``numeros`` and verifies if at least one of the first four numbers is a 9 |br| |br|
+    Examples:|br|
+    ``verificar_comienzo_9([1, 2, 9, 3, 4])`` -&gt; ``True`` |br|
+    ``verificar_comienzo_9([1, 2, 3, 4, 9])`` -&gt; ``False`` |br|
+    ``verificar_comienzo_9([1, 2, 3, 4, 5])`` -&gt; ``False`` |br|
+    ``verificar_comienzo_9([1, 2, 9])`` -&gt; ``True`` |br|
+
+    ~~~~
+    def verificar_comienzo_9(numeros):
+
+
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(verificar_comienzo_9([1, 2, 9, 3, 4]), True, &quot;Expected: True&quot;)
+            self.assertEqual(verificar_comienzo_9([1, 2, 3, 4, 9]), False, &quot;Expected: False&quot;)
+            self.assertEqual(verificar_comienzo_9([1, 2, 3, 4, 5]), False, &quot;Expected: False&quot;)
+            self.assertEqual(verificar_comienzo_9([9, 2, 3]), True, &quot;Expected: True&quot;)
+            self.assertEqual(verificar_comienzo_9([1, 9, 9]), True, &quot;Expected: True&quot;)
+            self.assertEqual(verificar_comienzo_9([1, 2, 3]), False, &quot;Expected: False&quot;)
+            self.assertEqual(verificar_comienzo_9([1, 9]), True, &quot;Expected: True&quot;)
+            self.assertEqual(verificar_comienzo_9([5, 5]), False, &quot;Expected: False&quot;)
+            self.assertEqual(verificar_comienzo_9([2]), False, &quot;Expected: False&quot;)
+            self.assertEqual(verificar_comienzo_9([9]), True, &quot;Expected: True&quot;)
+            self.assertEqual(verificar_comienzo_9([]), False, &quot;Expected: False&quot;)
+            self.assertEqual(verificar_comienzo_9([3, 9, 2, 3, 3]), True, &quot;Expected: True&quot;)
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 5" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 171)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 176</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_5
+    :nocodelens:
+
+
+    Develop the function ``hola_usuario`` that receives as a parameter a string ``nombre`` that represents a user&#39;s name and returns a greeting using this name |br| |br|
+    Examples: |br|
+    ``hola_usuario(&quot;Bob&quot;)`` -&gt; ``&quot;¡Hola Bob!&quot;`` |br|
+    ``hola_usuario(&quot;Alice&quot;)`` -&gt; ``&quot;¡Hola Alice!&quot;`` |br|
+    ``hola_usuario(&quot;X&quot;)`` -&gt; ``&quot;¡Hola X!&quot;`` |br|
+
+    ~~~~
+    def hola_usuario(nombre):
+
+
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(hola_usuario(&quot;Bob&quot;), &quot;¡Hola Bob!&quot;, &quot;Expected: ¡Hola Bob!&quot;)
+            self.assertEqual(hola_usuario(&quot;Alice&quot;), &quot;¡Hola Alice!&quot;, &quot;Expected: ¡Hola Alice!&quot;)
+            self.assertEqual(hola_usuario(&quot;X&quot;), &quot;¡Hola X!&quot;, &quot;Expected: ¡Hola X!&quot;)
+            self.assertEqual(hola_usuario(&quot;Hola&quot;), &quot;¡Hola Hola!&quot;, &quot;Expected: ¡Hola Hola!&quot;)
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 6" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 202)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 208</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_6
+    :nocodelens:
+
+    Develop the function ``crear_etiquetas`` that receives two strings ``etiqueta`` and ``palabra`` and returns a new formatted string following the pattern of the examples |br| |br|
+    Examples: |br|
+    ``crear_etiquetas(&quot;i&quot;, &quot;Yay&quot;)`` -&gt; ``&quot;&lt;i&gt;Yay&lt;/i&gt;&quot;`` |br|
+    ``crear_etiquetas(&quot;i&quot;, &quot;Hello&quot;)`` -&gt; ``&quot;&lt;i&gt;Hello&lt;/i&gt;&quot;`` |br|
+    ``crear_etiquetas(&quot;cite&quot;, &quot;Yay&quot;)`` -&gt; ``&quot;&lt;cite&gt;Yay&lt;/cite&gt;&quot;`` |br|
+
+    ~~~~
+    def crear_etiquetas(etiqueta, palabra):
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(crear_etiquetas(&quot;i&quot;, &quot;Yay&quot;), &quot;&lt;i&gt;Yay&lt;/i&gt;&quot;, &quot;Expected: &lt;i&gt;Yay&lt;/i&gt;&quot;)
+            self.assertEqual(crear_etiquetas(&quot;i&quot;, &quot;Hello&quot;), &quot;&lt;i&gt;Hello&lt;/i&gt;&quot;, &quot;Expected:&lt;i&gt;Hello&lt;/i&gt;&quot;)
+            self.assertEqual(
+                crear_etiquetas(&quot;cite&quot;, &quot;Yay&quot;),
+                &quot;&lt;cite&gt;Yay&lt;/cite&gt;&quot;,
+                &quot;Expected: &lt;cite&gt;Yay&lt;/cite&gt;&quot;,
+            )
+            self.assertEqual(
+                crear_etiquetas(&quot;address&quot;, &quot;here&quot;),
+                &quot;&lt;address&gt;here&lt;/address&gt;&quot;,
+                &quot;Expected: &lt;address&gt;here&lt;/address&gt;&quot;,
+            )
+            self.assertEqual(
+                crear_etiquetas(&quot;body&quot;, &quot;Heart&quot;),
+                &quot;&lt;body&gt;Heart&lt;/body&gt;&quot;,
+                &quot;Expected: &lt;body&gt;Heart&lt;/body&gt;&quot;,
+            )
+            self.assertEqual(crear_etiquetas(&quot;i&quot;, &quot;i&quot;), &quot;&lt;i&gt;i&lt;/i&gt;&quot;, &quot;Expected: &lt;i&gt;i&lt;/i&gt;&quot;)
+            self.assertEqual(crear_etiquetas(&quot;i&quot;, &quot;&quot;), &quot;&lt;i&gt;&lt;/i&gt;&quot;, &quot;Expected: &lt;i&gt;&lt;/i&gt;&quot;)
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 7" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 246)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 255</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_7
+    :nocodelens:
+
+    Develop the function ``repetir_letras`` that receives a string ``s`` of at least two characters and returns a new string with the last two letters repeated three times |br| |br|
+    Examples: |br|
+    ``repetir_letras(&quot;Hello&quot;)`` -&gt; ``&quot;lololo&quot;`` |br|
+    ``repetir_letras(&quot;abb&quot;)`` -&gt; ``&quot;bbbbbb&quot;`` |br|
+    ``repetir_letras(&quot;Hi&quot;)`` -&gt; ``&quot;HiHiHi&quot;``  |br|
+
+    ~~~~
+    def repetir_letras(s):
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(repetir_letras(&quot;Hello&quot;), &quot;lololo&quot;, &quot;Expected: lololo&quot;)
+            self.assertEqual(repetir_letras(&quot;ab&quot;), &quot;ababab&quot;, &quot;Expected: ababab&quot;)
+            self.assertEqual(repetir_letras(&quot;Hi&quot;), &quot;HiHiHi&quot;, &quot;Expected: HiHiHi&quot;)
+            self.assertEqual(repetir_letras(&quot;Candy&quot;), &quot;dydydy&quot;, &quot;Expected: dydydy&quot;)
+            self.assertEqual(repetir_letras(&quot;Code&quot;), &quot;dedede&quot;, &quot;Expected: dedede&quot;)
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 8" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 276)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 288</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_8
+    :nocodelens:
+
+    Develop the function ``otra_repetir_letras`` (variation of the Exercise 7 function) that receives a string ``s`` of at least two characters and a positive integer ``n`` and returns a new string with the last two letters repeated ``n`` times |br| |br|
+    Examples: |br|
+    ``otra_repetir_letras(&quot;Hello&quot;, 3)`` -&gt; ``&quot;lololo&quot;`` |br|
+    ``otra_repetir_letras(&quot;abb&quot;, 1)`` -&gt; ``&quot;bb&quot;`` |br|
+    ``otra_repetir_letras(&quot;Hi&quot;, 5)`` -&gt; ``&quot;HiHiHiHiHi&quot;``  |br|
+
+    ~~~~
+    def otra_repetir_letras(s, n):
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(otra_repetir_letras(&quot;Hello&quot;, 3), &quot;lololo&quot;, &quot;Expected: lololo&quot;)
+            self.assertEqual(otra_repetir_letras(&quot;ab&quot;, 2), &quot;abab&quot;, &quot;Expected: abab&quot;)
+            self.assertEqual(otra_repetir_letras(&quot;Hi&quot;, 6), &quot;HiHiHiHiHiHi&quot;, &quot;Expected: HiHiHi&quot;)
+            self.assertEqual(otra_repetir_letras(&quot;Candy&quot;, 1), &quot;dy&quot;, &quot;Expected: dy&quot;)
+            self.assertEqual(otra_repetir_letras(&quot;Code&quot;, 0), &quot;&quot;, &quot;Expected: &#39;&#39;&quot;)
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 9" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 306)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 321</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_9
+    :nocodelens:
+
+    Develop the function ``primera_mitad`` that receives a string ``s`` and returns the first half of the original string |br| |br|
+    Examples:|br|
+    ``primera_mitad(&quot;WooHoo&quot;)`` -&gt; ``&quot;Woo&quot;`` |br|
+    ``primera_mitad(&quot;HelloThere&quot;)`` -&gt; ``&quot;Hello&quot;`` |br|
+    ``primera_mitad(&quot;abcdef&quot;)`` -&gt; ``&quot;abc&quot;`` |br|
+
+    ~~~~
+    def primera_mitad(s):
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(primera_mitad(&quot;WooHoo&quot;), &quot;Woo&quot;, &quot;Expected: Woo&quot;)
+            self.assertEqual(primera_mitad(&quot;HelloThere&quot;), &quot;Hello&quot;, &quot;Expected: Hello&quot;)
+            self.assertEqual(primera_mitad(&quot;abcdef&quot;), &quot;abc&quot;, &quot;Expected: abc&quot;)
+            self.assertEqual(primera_mitad(&quot;&quot;), &quot;&quot;, &quot;Expected: &quot;)
+            self.assertEqual(primera_mitad(&quot;ab&quot;), &quot;a&quot;, &quot;Expected: a&quot;)
+            self.assertEqual(primera_mitad(&quot;0123456789&quot;), &quot;01234&quot;, &quot;Expected: 01234&quot;)
+            self.assertEqual(primera_mitad(&quot;kitten&quot;), &quot;kit&quot;, &quot;Expected: kit&quot;)
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 10" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 337)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 356</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_10
+    :nocodelens:
+
+
+    Develop the function ``remove_first_last`` that receives a string ``s`` of at least two characters and returns a string without the first or last character. |br| |br|
+    Examples: |br|
+    ``remove_first_last(&quot;Hello&quot;)`` -&gt; ``&quot;ell&quot;`` |br|
+    ``remove_first_last(&quot;python&quot;)`` -&gt; ``&quot;ytho&quot;`` |br|
+    ``remove_first_last(&quot;coding&quot;)`` -&gt; ``&quot;odin&quot;`` |br|
+
+    ~~~~
+    def remove_first_last(s):
+
+
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(remove_first_last(&quot;Hello&quot;), &quot;ell&quot;, &quot;Expected: ell&quot;)
+            self.assertEqual(remove_first_last(&quot;Python&quot;), &quot;ytho&quot;, &quot;Expected: ytho&quot;)
+            self.assertEqual(
+                remove_first_last(&quot;coding&quot;), &quot;odin&quot;, &quot;Expected: odin&quot;
+            )
+            self.assertEqual(remove_first_last(&quot;code&quot;), &quot;od&quot;, &quot;Expected: od&quot;)
+            self.assertEqual(remove_first_last(&quot;ab&quot;), &quot;&quot;, &quot;Expected: &quot;)
+            self.assertEqual(
+                remove_first_last(&quot; PyZombies &quot;),
+                &quot;PyZombies&quot;,
+                &quot;Expected: PyZombies&quot;,
+            )
+            self.assertEqual(
+                remove_first_last(&quot;Chocolate!&quot;),
+                &quot;hocolate&quot;,
+                &quot;Expected: hocolate&quot;,
+            )
+            self.assertEqual(remove_first_last(&quot;kitten&quot;), &quot;itte&quot;, &quot;Expected: itte&quot;)
+            self.assertEqual(remove_first_last(&quot;woohoo&quot;), &quot;ooho&quot;, &quot;Expected: ooho&quot;)
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 11" >
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz7_en.rst</span>, line 384)</p>
+<p>Duplicate ID – see quiz/Quiz7, line 393</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q7_11
+    :nocodelens:
+
+
+    Develop the function ``rotate_left_2`` that receives a string ``s`` of at least two characters and returns the original string rotated 2 positions to the left. |br| |br|
+    Examples: |br|
+    ``rotate_left_2(&quot;Hello&quot;)`` -&gt; ``&quot;lloHe&quot;`` |br|
+    ``rotate_left_2(&quot;Hi&quot;)`` -&gt; ``&quot;Hi&quot;`` |br|
+
+    ~~~~
+    def rotate_left_2(s):
+
+
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(
+                rotate_left_2(&quot;Hello&quot;), &quot;lloHe&quot;, &quot;Expected: lloHe&quot;
+            )
+            self.assertEqual(
+                rotate_left_2(&quot;python&quot;), &quot;thonpy&quot;, &quot;Expected: thonpy&quot;
+            )
+            self.assertEqual(rotate_left_2(&quot;Hi&quot;), &quot;Hi&quot;, &quot;Expected: Hi&quot;)
+            self.assertEqual(rotate_left_2(&quot;code&quot;), &quot;deco&quot;, &quot;Expected: deco&quot;)
+            self.assertEqual(rotate_left_2(&quot;cat&quot;), &quot;tca&quot;, &quot;Expected: tca&quot;)
+            self.assertEqual(
+                rotate_left_2(&quot;12345&quot;), &quot;34512&quot;, &quot;Expected: 34512&quot;
+            )
+            self.assertEqual(
+                rotate_left_2(&quot;Chocolate&quot;),
+                &quot;ocolateCh&quot;,
+                &quot;Expected: ocolateCh&quot;,
+            )
+            self.assertEqual(
+                rotate_left_2(&quot;bricks&quot;), &quot;icksbr&quot;, &quot;Expected: icksbr&quot;
+            )
+            self.assertEqual(
+                rotate_left_2(&quot;isPyzomb&quot;),
+                &quot;PyZombies&quot;,
+                &quot;Expected: PyZombies&quot;,
+            )
+
+
+    myTests().main()
+</pre></div>
+</div>
+</div>
+</div>
+    </div>
+
+</div>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
+  </div>
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      
+      <span id='numuserspan'></span><span class='loggedinuser'></span>
+      
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> 
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  </body>
+</html>

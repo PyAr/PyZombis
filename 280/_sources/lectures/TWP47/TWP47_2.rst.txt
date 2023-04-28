@@ -1,0 +1,88 @@
+Venta Salgados por turnos
+=========================
+
+Venta Salgados Tarde / Noche
+----------------------------
+
+.. code-block:: python
+   
+   def guardar_transacción(precio, tarjeta_de_credito, descripcion):
+      file = open('transacoes.txt',"a")
+      file.write("%16s%07d%16s\n" %(tarjeta_de_credito,precio*100,descripcion))
+      file.close()
+
+   articulos = ["Esfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
+
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion	 += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("eliga una opcion "))
+      if elegir == opcion:
+         #la última opción Finalizar
+         corriendo = False
+      else:
+         tarjeta = input("Número de tarjeta de crédit")
+         guardar_transacción(precios[elegir-1],tarjeta,articulos[elegir-1]) 
+
+
+
++ Formato corregido por el alumno!
+
+
+Venta Salgados Mañana
+---------------------
+
+.. code-block:: python
+   
+   def guardar_transacción(precio, tarjeta_de_credito, descripcion):
+      file = open('transacoes.txt',"a")
+      file.write("%16s%07d%16s\n" %(tarjeta_de_credito,precio*100,descripcion))
+      file.close()
+
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
+
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Eliga una opcion: "))
+      if elegir == opcion:
+         #eligió la última opción
+         corriendo = False
+      else:
+         tarjeta = input("Número de tarjeta de crédito: ")
+         guardar_transacción(precios[elegir-1],tarjeta,articulos[elegir-1]) 
+
++ Productos modificados, ¡pero olvidé el formato!
+
+
+Módulo banco.py
+---------------
+
+
+.. image:: ../img/TWP47_011.jpg
+   :height: 12.571cm
+   :width: 18.267cm
+   :align: center
+   :alt: 
+
+
+.. code-block:: python
+   
+   def salva_transacao(precio, tarjeta_de_credito, descripcion):
+      file = open('transacoes.txt',"a")
+      file.write("%16s%07d%16s\n" %(tarjeta_de_credito,precio*100,descripcion))
+      file.close()
+
+
+
++ Nota: dejar en el mismo directorio que los programas de mañana y tarde / noche
