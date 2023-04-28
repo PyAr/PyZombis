@@ -7,7 +7,7 @@ Accumulators
 + Calculation of the sum of ten integer numbers
 
 
-.. activecode:: ac_l15_4a
+.. activecode:: ac_l15_4a_en
    :nocodelens:
    :stdin:
     
@@ -24,7 +24,7 @@ Accumulators
 + Average of 10 integer numbers
 
 
-.. activecode:: ac_l15_4b
+.. activecode:: ac_l15_4b_en
    :nocodelens:
    :stdin:
 
@@ -40,7 +40,7 @@ Accumulators
 
 + Calculate the factorial of ten
 
-.. codelens:: cl_l15_4
+.. codelens:: cl_l15_4_en
 
    i = 1
    fact = 1
@@ -52,7 +52,7 @@ Accumulators
 
 + Calculate the factorial of an integer number ``n``
 
-.. activecode:: ac_l15_4c
+.. activecode:: ac_l15_4c_en
    :nocodelens:
    :stdin:
 

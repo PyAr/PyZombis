@@ -2,7 +2,7 @@ Multiple assignment
 ===================
 
 
-.. activecode:: ac_l40_8
+.. activecode:: ac_l40_8_en
     :language: python3
     :python3_interpreter: brython
 
@@ -19,7 +19,7 @@ Multiple assignment
 
 + To swap variables, the following sequence does not work!
 
-.. codelens:: cl_l40_8a
+.. codelens:: cl_l40_8a_en
 
     x = 4
     y = 5
@@ -28,7 +28,7 @@ Multiple assignment
 
 + One solution would be to use a ``temp`` variable.
 
-.. codelens:: cl_l40_8b
+.. codelens:: cl_l40_8b_en
 
     x = 4
     y = 5
@@ -38,7 +38,7 @@ Multiple assignment
 
 + Multiple assignment can also be used, which is more elegant.
 
-.. codelens:: cl_l40_8c
+.. codelens:: cl_l40_8c_en
 
     x = 4
     y = 5

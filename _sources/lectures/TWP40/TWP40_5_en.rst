@@ -9,7 +9,7 @@ End-of-line character
 + The ``print`` command adds a line break as a character by default.
 + The end-of-line character can be replaced using ``end`` in the ``print`` command.
 
-.. codelens:: cl_l40_5
+.. codelens:: cl_l40_5_en
          
     for x in "avocado":
         if x in "ae":

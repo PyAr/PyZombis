@@ -11,7 +11,7 @@ The parts of your program
 Guessing numbers
 ------------------
 
-.. activecode:: ac_l30_2
+.. activecode:: ac_l30_2_en
     :nocodelens:
     :stdin:
 

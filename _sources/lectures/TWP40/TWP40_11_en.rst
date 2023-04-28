@@ -7,7 +7,7 @@ Basic Numbers
     + Operations with integers are much faster.
     + Floating-point numbers are approximations: their precision has a limit.
 
-.. codelens:: cl_l40_11a
+.. codelens:: cl_l40_11a_en
          
     print(type(3))
     print(type(3.14))
@@ -41,7 +41,7 @@ Operator Table
 Numeric Operators
 -----------------
 
-.. codelens:: cl_l40_11b
+.. codelens:: cl_l40_11b_en
          
     print(3 + 4)
     print(3.0 + 4.0)

@@ -3,7 +3,7 @@
 
 + The ``elif`` clause replaces both ``else`` and ``if``.
 
-.. codelens:: cl_l10_6
+.. codelens:: cl_l10_6_en
 
     minutes = 1000
     if minutes < 200:

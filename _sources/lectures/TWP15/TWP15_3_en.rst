@@ -3,7 +3,7 @@ Counters
 
 + Now print from 1 to a number entered by the user
 
-.. activecode:: ac_l15_3a
+.. activecode:: ac_l15_3a_en
    :nocodelens:
    :stdin:
 
@@ -15,7 +15,7 @@ Counters
 
 + Print even numbers between 0 and a number given by the user using ``if``
 
-.. activecode:: ac_l15_3b
+.. activecode:: ac_l15_3b_en
    :nocodelens:
    :stdin:
 
@@ -30,7 +30,7 @@ Counters
 + Print even numbers between 0 and a provided number without using
   ``if``
 
-.. activecode:: ac_l15_3c
+.. activecode:: ac_l15_3c_en
    :nocodelens:
    :stdin:
 
@@ -44,7 +44,7 @@ Counters
 Some Exercises
 --------------
 
-.. activecode:: ac_l15_3d
+.. activecode:: ac_l15_3d_en
    :nocodelens:
 
    Modify the previous program to print from 1 to the number entered by 
@@ -53,7 +53,7 @@ Some Exercises
    ~~~~
 
 
-.. activecode:: ac_l15_3e
+.. activecode:: ac_l15_3e_en
    :nocodelens:
 
    Write a program that prints the first 10 multiples of 3.

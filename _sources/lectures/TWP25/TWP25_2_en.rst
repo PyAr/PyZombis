@@ -7,7 +7,7 @@ Class Client and Class Account
 + The checking account shows a balance and a statement of withdrawal and deposit operations.
 + There are no special accounts, so the client cannot withdraw more than they have in balance.
 
-..  activecode:: ac_l25_2a
+..  activecode:: ac_l25_2a_en
     :nocodelens:
     :stdin:
 
@@ -38,7 +38,7 @@ Class Client and Class Account
 Using the Client and Account classes
 ------------------------------------
 
-..  activecode:: ac_l25_2b
+..  activecode:: ac_l25_2b_en
     :nocodelens:
     :stdin:
     :include: ac_l25_2a

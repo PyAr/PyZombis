@@ -13,7 +13,7 @@ Starbuzz has no beans
 New program suggestion
 ----------------------------
 
-.. activecode:: ac_l35_2
+.. activecode:: ac_l35_2_en
     :nocodelens:
     :stdin:
 

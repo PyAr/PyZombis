@@ -11,7 +11,7 @@ Strings are different from numbers
 Convert to ``float``
 --------------------
 
-.. activecode:: ac_l33_7a
+.. activecode:: ac_l33_7a_en
     :nocodelens:
     :stdin:
    
@@ -38,7 +38,7 @@ Can you keep testing the price?
 Can you keep trying?
 --------------------
 
-.. activecode:: ac_l33_7b
+.. activecode:: ac_l33_7b_en
     :nocodelens:
     :stdin:
    
