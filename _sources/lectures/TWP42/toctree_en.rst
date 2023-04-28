@@ -1,6 +1,7 @@
 ==============
-Databases
+Bases de datos
 ==============
+
 
 .. image:: ../img/TWP10_001.jpeg
     :height: 14.925cm
@@ -10,10 +11,10 @@ Databases
 
 
 .. toctree::
-   :caption: Content
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP42_1.rst
-   TWP42_2.rst
-   TWP42_3.rst
+   TWP42_1_en.rst
+   TWP42_2_en.rst
+   TWP42_3_en.rst

@@ -1,5 +1,5 @@
 =======================
-for, random and functions
+for, random y funciones
 =======================
 
 
@@ -11,14 +11,12 @@ for, random and functions
 
 
 .. toctree::
-   :caption: Content
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP20_1.rst
-   TWP20_2.rst
-   TWP20_3.rst
-   TWP20_4.rst
-   TWP20_5.rst
-
-Translated Python code cannot be provided as it was not included in the original Spanish text.
+   TWP20_1_en.rst
+   TWP20_2_en.rst
+   TWP20_3_en.rst
+   TWP20_4_en.rst
+   TWP20_5_en.rst
