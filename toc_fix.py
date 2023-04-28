@@ -37,6 +37,14 @@ def walk_files():
 
                     source_path = os.path.join(root, directory, sfile)
                     destination_path = os.path.join(root, directory, dfile)
+
+                    # check if destination file already exist 
+                    if os.path.isfile(destination_path) == True:
+                        print(f'{destination_path} already exist, skipping.')
+                    else:
+                        print(f'{destination_path} does not yet exist, creating.')
+                        
+                    #open language toctree and update rst items to include the lang suffix
                     shutil.copy(source_path, destination_path)
                     rename_TOC_items(destination_path)
 
@@ -44,7 +52,7 @@ if __name__ == "__main__":
     if '--all' in sys.argv:
         walk_files()
     elif (len(sys.argv) != 2):
-        print(f"usage: {sys.argv[0]} <filename>")
+        print(f"usage: {sys.argv[0]} <filename> or --all")
         exit()
     else:
         filename = sys.argv[1]
