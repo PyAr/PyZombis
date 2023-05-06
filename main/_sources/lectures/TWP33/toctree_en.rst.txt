@@ -1,5 +1,5 @@
 ==================
-String Review
+Revisión de String
 ==================
 
 
@@ -10,23 +10,23 @@ String Review
     :alt:
 
 
-+ Communicating without words can be difficult.
-+ Among the various types of data, one of the most important is strings or ``string``.
-+ **Note**: manipulating strings in some programming languages is not so easy.
-+ Let's find where the information is in a text.
-+ And we will learn one of the most important object-oriented concepts: methods
++ Es difícil comunicarse sin palabras.
++ Entre los diversos tipos de datos, uno de los más importantes son las cadenas o ``string``.
++ **Nota**: no es tan fácil manipular cadenas en algunos lenguajes de programación.
++ Busquemos dónde está la información en un texto.
++ Y aprenderemos uno de los conceptos más importantes de orientación a la objetos: métodos
 
 .. toctree::
-   :caption: Content
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP33_1.rst
-   TWP33_2.rst
-   TWP33_3.rst
-   TWP33_4.rst
-   TWP33_5.rst
-   TWP33_6.rst
-   TWP33_7.rst
-   TWP33_8.rst
-   TWP33_9.rst
+   TWP33_1_en.rst
+   TWP33_2_en.rst
+   TWP33_3_en.rst
+   TWP33_4_en.rst
+   TWP33_5_en.rst
+   TWP33_6_en.rst
+   TWP33_7_en.rst
+   TWP33_8_en.rst
+   TWP33_9_en.rst

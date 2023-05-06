@@ -16,7 +16,7 @@ Sounds and Sprites
    :alt: 
 
 
-.. activecode:: ac_l60_5
+.. activecode:: ac_l60_5_en
     :language: python3
     :python3_interpreter: brython
 
@@ -78,7 +78,7 @@ Sounds and Sprites
 
 
 
-.. activecode:: ac_l60_51
+.. activecode:: ac_l60_5_en1_en
     :language: python3
     :python3_interpreter: brython
 

@@ -1,7 +1,7 @@
 Conditions
 ==========
 
-.. codelens:: cl_l10_1
+.. codelens:: cl_l10_1_en
 
     print("Welcome to my program!")
     print("Come back always!")

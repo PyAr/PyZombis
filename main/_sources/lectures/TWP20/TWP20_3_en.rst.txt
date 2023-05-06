@@ -3,7 +3,7 @@ Local and Global Variables
 
 + **Note**: The scope of ``a`` in the example below is different in the two cases. In other words, the two variables ``a`` are different.
 
-.. codelens:: cl_l20_3a
+.. codelens:: cl_l20_3a_en
 
     a = 5
 
@@ -18,7 +18,7 @@ Local and Global Variables
 
 + In this case, we use the keyword global. So, the variable ``a`` inside the function is the same as the variable defined earlier, that is, it is the global variable.
 
-.. codelens:: cl_l20_3b
+.. codelens:: cl_l20_3b_en
 
     a = 5
 

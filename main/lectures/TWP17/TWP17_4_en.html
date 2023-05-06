@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Some examples &#8212; PyZombis main@281eb94</title>
+    <title>4. Some examples &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="5. Exercise List “again”" href="TWP17_5_en.html" />
+    <link rel="prev" title="3. Syntax of a List" href="TWP17_3_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">3. </span>Syntax of a List" data-toggle="tooltip">
+    <a href="TWP17_3_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">5. </span>Exercise List “again”' data-toggle="tooltip" >              
+    <a href="TWP17_5_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 3. Syntax of a List' data-toggle="tooltip">
+  <a href="TWP17_3_en.html" aria-label="Previous - 3. Syntax of a List">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 5. Exercise List “again”' data-toggle="tooltip" >
+    <a href="TWP17_5_en.html" aria-label="Next - 5. Exercise List “again”">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,124 +325,142 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="some-examples">
-<h1>Some examples<a class="headerlink" href="#some-examples" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">4. </span>Some examples<a class="headerlink" href="#some-examples" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>Make a program that reads a vector of 5 integers and displays the vector.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP17/TWP17_4_en.rst</span>, line 6)</p>
-<p>Duplicate ID – see lectures/TWP17/TWP17_4, line 10</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l17_4a</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">vector</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">))</span>
-        <span class="n">vector</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Read vector:&quot;</span><span class="p">,</span> <span class="n">vector</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l17_4a_en data-question_label="4.1">
+<div id=ac_l17_4a_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l17_4a_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+vector = []
+i = 1
+while i <= 5:
+    n = int(input("Enter a number: "))
+    vector.append(n)
+    i = i + 1
+print("Read vector:", vector)
+</textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p>Make a program that reads a vector of ten real numbers and displays them in reverse order.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP17/TWP17_4_en.rst</span>, line 21)</p>
-<p>Duplicate ID – see lectures/TWP17/TWP17_4, line 25</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l17_4b</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">vector</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
-        <span class="n">n</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">))</span>
-        <span class="n">vector</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">9</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">vector</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-        <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l17_4b_en data-question_label="4.2">
+<div id=ac_l17_4b_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l17_4b_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+vector = []
+i = 1
+while i <= 10:
+    n = float(input("Enter a number: "))
+    vector.append(n)
+    i += 1
+i = 9
+while i >= 0:
+    print(vector[i])
+    i -= 1
+</textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p>Make a program that reads four grades, displays the grades, and the average on the screen.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP17/TWP17_4_en.rst</span>, line 38)</p>
-<p>Duplicate ID – see lectures/TWP17/TWP17_4, line 42</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l17_4c</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">grades</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">:</span>
-        <span class="n">n</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Grade: &quot;</span><span class="p">))</span>
-        <span class="n">grades</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
-        <span class="n">suma</span> <span class="o">+=</span> <span class="n">grades</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grades:&quot;</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average: </span><span class="si">%4.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">suma</span> <span class="o">/</span> <span class="mi">4</span><span class="p">))</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l17_4c_en data-question_label="4.3">
+<div id=ac_l17_4c_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l17_4c_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+grades = []
+i = 1
+while i <= 4:
+    n = float(input("Grade: "))
+    grades.append(n)
+    i += 1
+suma = 0
+i = 0
+while i <= 3:
+    suma += grades[i]
+    i += 1
+print("Grades:", grades)
+print("Average: %4.2f" % (suma / 4))
+</textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p>Another way of doing the same thing.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP17/TWP17_4_en.rst</span>, line 58)</p>
-<p>Duplicate ID – see lectures/TWP17/TWP17_4, line 62</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l17_4d</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-   <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">grades</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">:</span>
-        <span class="n">n</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Grade: &quot;</span><span class="p">))</span>
-        <span class="n">grades</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-        <span class="n">suma</span> <span class="o">+=</span> <span class="n">n</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grades:&quot;</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average: </span><span class="si">%4.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">suma</span> <span class="o">/</span> <span class="mi">4</span><span class="p">))</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l17_4d_en data-question_label="4.4">
+<div id=ac_l17_4d_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l17_4d_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+ grades = []
+ i = 1
+ suma = 0
+ while i <= 4:
+     n = float(input("Grade: "))
+     grades.append(n)
+     suma += n
+     i += 1
+ print("Grades:", grades)
+ print("Average: %4.2f" % (suma / 4))
+</textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p>Make a program that reads a vector of 10 lowercase characters, and tells how many consonants were read.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP17/TWP17_4_en.rst</span>, line 76)</p>
-<p>Duplicate ID – see lectures/TWP17/TWP17_4, line 80</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l17_4e</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">letters</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
-        <span class="n">letters</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Letter: &quot;</span><span class="p">))</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">9</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">letters</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s2">&quot;aeiou&quot;</span><span class="p">:</span>
-            <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> consonants were read&quot;</span> <span class="o">%</span> <span class="n">cont</span><span class="p">)</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l17_4e_en data-question_label="4.5">
+<div id=ac_l17_4e_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l17_4e_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+letters = []
+i = 1
+while i <= 10:
+    letters.append(input("Letter: "))
+    i += 1
+i = 0
+cont = 0
+while i <= 9:
+    if letters[i] not in "aeiou":
+        cont += 1
+    i += 1
+print("%d consonants were read" % cont)
+</textarea>
 </div>
 </div>
 </div>
@@ -427,6 +471,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 3. Syntax of a List' data-toggle="tooltip">
+  <a href="TWP17_3_en.html" aria-label="Previous - 3. Syntax of a List">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 5. Exercise List “again”' data-toggle="tooltip" >
+    <a href="TWP17_5_en.html" aria-label="Next - 5. Exercise List “again”">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

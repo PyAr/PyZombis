@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exit Commands &#8212; PyZombis main@281eb94</title>
+    <title>5. Exit Commands &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6. Variable Assignment" href="TWP40_6_en.html" />
+    <link rel="prev" title="4. Literals or Constants" href="TWP40_4_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">4. </span>Literals or Constants" data-toggle="tooltip">
+    <a href="TWP40_4_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">6. </span>Variable Assignment' data-toggle="tooltip" >              
+    <a href="TWP40_6_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 4. Literals or Constants' data-toggle="tooltip">
+  <a href="TWP40_4_en.html" aria-label="Previous - 4. Literals or Constants">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 6. Variable Assignment' data-toggle="tooltip" >
+    <a href="TWP40_6_en.html" aria-label="Next - 6. Variable Assignment">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,28 +325,34 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="exit-commands">
-<h1>Exit Commands<a class="headerlink" href="#exit-commands" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">5. </span>Exit Commands<a class="headerlink" href="#exit-commands" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>The command or instruction <code class="docutils literal notranslate"><span class="pre">print</span></code> serves to display information to the user.</p></li>
 </ul>
 <div class="section" id="end-of-line-character">
-<h2>End-of-line character<a class="headerlink" href="#end-of-line-character" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">5.1. </span>End-of-line character<a class="headerlink" href="#end-of-line-character" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>The <code class="docutils literal notranslate"><span class="pre">print</span></code> command adds a line break as a character by default.</p></li>
 <li><p>The end-of-line character can be replaced using <code class="docutils literal notranslate"><span class="pre">end</span></code> in the <code class="docutils literal notranslate"><span class="pre">print</span></code> command.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP40/TWP40_5_en.rst</span>, line 12)</p>
-<p>Duplicate ID – see lectures/TWP40/TWP40_5, line 16</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l40_5</span>
 
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="s2">&quot;avocado&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="s2">&quot;ae&quot;</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5.1.1">
+        <div class="pytutorVisualizer" id="cl_l40_5_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5.1.1 (cl_l40_5_en)</span> </p>
+    </div>
+
+<script>
+var cl_l40_5_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_5_en"] = {"code": "for x in \"avocado\":\n    if x in \"ae\":\n        print(x, end=\" \")\n    else:\n        print(\"*\", end=\" \")", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "v"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a "}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "v"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "v"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "o"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * "}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "o"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "o"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "c"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * "}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "c"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "c"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * "}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "a"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * a "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "d"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * a "}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "d"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * a "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "d"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * a * "}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "o"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * a * "}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "o"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * a * "}, {"line": 1, "event": "step_line", "func_name": "<module>", "globals": {"x": "o"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * a * * "}, {"line": 1, "event": "return", "func_name": "<module>", "globals": {"x": "o"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "a * * * a * * "}]};
+</script>
 </div>
 </div>
 </div>
@@ -331,6 +363,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 4. Literals or Constants' data-toggle="tooltip">
+  <a href="TWP40_4_en.html" aria-label="Previous - 4. Literals or Constants">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 6. Variable Assignment' data-toggle="tooltip" >
+    <a href="TWP40_6_en.html" aria-label="Next - 6. Variable Assignment">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

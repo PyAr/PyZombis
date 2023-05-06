@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pygame Input &#8212; PyZombis main@281eb94</title>
+    <title>4. Pygame Input &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="5. Sounds and Sprites" href="TWP60_5_en.html" />
+    <link rel="prev" title="3. Pygame Collision Detection" href="TWP60_3_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">3. </span>Pygame Collision Detection" data-toggle="tooltip">
+    <a href="TWP60_3_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">5. </span>Sounds and Sprites' data-toggle="tooltip" >              
+    <a href="TWP60_5_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 3. Pygame Collision Detection' data-toggle="tooltip">
+  <a href="TWP60_3_en.html" aria-label="Previous - 3. Pygame Collision Detection">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 5. Sounds and Sprites' data-toggle="tooltip" >
+    <a href="TWP60_5_en.html" aria-label="Next - 5. Sounds and Sprites">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,104 +325,107 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="pygame-input">
-<h1>Pygame Input<a class="headerlink" href="#pygame-input" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">4. </span>Pygame Input<a class="headerlink" href="#pygame-input" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../../_images/TWP60_017.png"><img alt="" class="align-center" src="../../_images/TWP60_017.png" style="width: 11.085cm; height: 11.614cm;" /></a>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_4_en.rst</span>, line 10)</p>
-<p>Duplicate ID – see lectures/TWP60/TWP60_4, line 14</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l60_4</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">load</span><span class="p">,</span> <span class="n">document</span><span class="p">,</span><span class="n">timer</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/game.js&#39;</span><span class="p">)</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/pygame.brython.js&#39;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_4_en data-question_label="4.1">
+<div id=ac_l60_4_en_question class="ac_question col-md-12">
 
-    <span class="o">^^^^</span>
-    <span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">random</span>
-    <span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+</div>
+<textarea data-lang="python3" id="ac_l60_4_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, document,timer
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
 
-    <span class="c1"># set up pygame</span>
-    <span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
-    <span class="n">gamejs</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">gamejs</span>
-    <span class="n">gamejs</span><span class="o">.</span><span class="n">ready</span><span class="p">()</span>
+^^^^
+import pygame, sys, random
+from pygame.locals import *
 
-    <span class="c1"># set up the window</span>
-    <span class="n">WINDOWWIDTH</span> <span class="o">=</span> <span class="mi">500</span>
-    <span class="n">WINDOWHEIGHT</span> <span class="o">=</span> <span class="mi">300</span>
-    <span class="n">windowSurface</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="n">WINDOWWIDTH</span><span class="p">,</span><span class="n">WINDOWHEIGHT</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span>
-    <span class="c1">#pygame.display.set_caption(&#39;Input&#39;)</span>
+# set up pygame
+pygame.init()
+gamejs = window.gamejs
+gamejs.ready()
 
-    <span class="c1"># set up the colors</span>
-    <span class="n">BLACK</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">GREEN</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">WHITE</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+# set up the window
+WINDOWWIDTH = 500
+WINDOWHEIGHT = 300
+windowSurface = pygame.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),0,32)
+#pygame.display.set_caption('Input')
 
-    <span class="c1"># set up the player and food data structure</span>
-    <span class="n">foodCounter</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">NEWFOOD</span> <span class="o">=</span> <span class="mi">40</span>
-    <span class="n">FOODSIZE</span> <span class="o">=</span> <span class="mi">20</span>
-    <span class="n">player</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span>
+# set up the colors
+BLACK = pygame.color.Color(0,0,0)
+GREEN = pygame.color.Color(0,255,0)
+WHITE = pygame.color.Color(255,255,255)
 
-    <span class="n">foods</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
-       <span class="n">foods</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">WINDOWWIDTH</span> <span class="o">-</span> <span class="n">FOODSIZE</span><span class="p">),</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">WINDOWHEIGHT</span> <span class="o">-</span> <span class="n">FOODSIZE</span><span class="p">),</span><span class="n">FOODSIZE</span><span class="p">,</span><span class="n">FOODSIZE</span><span class="p">))</span>
+# set up the player and food data structure
+foodCounter = 0
+NEWFOOD = 40
+FOODSIZE = 20
+player = pygame.Rect(300,100,50,50)
 
-    <span class="c1"># set up the movement variables</span>
+foods = []
+for i in range(20):
+   foods.append(pygame.Rect(random.randint(0,WINDOWWIDTH - FOODSIZE),random.randint(0,WINDOWHEIGHT - FOODSIZE),FOODSIZE,FOODSIZE))
 
-    <span class="n">moveLeft</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">moveRight</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">moveUp</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">moveDown</span> <span class="o">=</span> <span class="kc">False</span>
+# set up the movement variables
 
-    <span class="n">MOVESPEED</span> <span class="o">=</span> <span class="mi">6</span>
+moveLeft = False
+moveRight = False
+moveUp = False
+moveDown = False
 
-    <span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
-       <span class="n">windowSurface</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">BLACK</span><span class="p">)</span>
-       <span class="c1"># check for events</span>
-       <span class="k">global</span> <span class="n">moveLeft</span><span class="p">,</span> <span class="n">moveRight</span><span class="p">,</span> <span class="n">moveUp</span><span class="p">,</span> <span class="n">moveDown</span>
-       <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
-          <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span><span class="p">:</span>
-                <span class="c1"># change the keyboard variables</span>
-                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_LEFT</span> <span class="ow">or</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">):</span>
-                   <span class="n">moveRight</span> <span class="o">=</span> <span class="kc">False</span>
-                   <span class="n">moveLeft</span> <span class="o">=</span> <span class="kc">True</span>
-                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_RIGHT</span> <span class="ow">or</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">):</span>
-                   <span class="n">moveLeft</span> <span class="o">=</span> <span class="kc">False</span>
-                   <span class="n">moveRight</span> <span class="o">=</span> <span class="kc">True</span>
-                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_UP</span> <span class="ow">or</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">):</span>
-                   <span class="n">moveDown</span> <span class="o">=</span> <span class="kc">False</span>
-                   <span class="n">moveUp</span> <span class="o">=</span> <span class="kc">True</span>
-                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_DOWN</span> <span class="ow">or</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">):</span>
-                   <span class="n">moveDown</span> <span class="o">=</span> <span class="kc">True</span>
-                   <span class="n">moveUp</span> <span class="o">=</span> <span class="kc">False</span>
-       <span class="k">if</span> <span class="n">moveRight</span><span class="p">:</span>
-          <span class="n">player</span><span class="o">.</span><span class="n">left</span> <span class="o">+=</span> <span class="n">MOVESPEED</span>
-       <span class="k">if</span> <span class="n">moveLeft</span><span class="p">:</span>
-          <span class="n">player</span><span class="o">.</span><span class="n">left</span> <span class="o">-=</span> <span class="n">MOVESPEED</span>
-       <span class="k">if</span> <span class="n">moveUp</span><span class="p">:</span>
-          <span class="n">player</span><span class="o">.</span><span class="n">top</span> <span class="o">-=</span> <span class="n">MOVESPEED</span>
-       <span class="k">if</span> <span class="n">moveDown</span><span class="p">:</span>
-          <span class="n">player</span><span class="o">.</span><span class="n">top</span> <span class="o">+=</span> <span class="n">MOVESPEED</span>
+MOVESPEED = 6
 
-       <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span><span class="n">WHITE</span><span class="p">,</span><span class="n">player</span><span class="p">)</span>
+def func():
+   windowSurface.fill(BLACK)
+   # check for events
+   global moveLeft, moveRight, moveUp, moveDown
+   for event in pygame.event.get():
+      if event.type == KEYDOWN:
+            # change the keyboard variables
+            if event.key == K_LEFT or event.key == ord('a'):
+               moveRight = False
+               moveLeft = True
+            if event.key == K_RIGHT or event.key == ord('d'):
+               moveLeft = False
+               moveRight = True
+            if event.key == K_UP or event.key == ord('w'):
+               moveDown = False
+               moveUp = True
+            if event.key == K_DOWN or event.key == ord('s'):
+               moveDown = True
+               moveUp = False
+   if moveRight:
+      player.left += MOVESPEED
+   if moveLeft:
+      player.left -= MOVESPEED
+   if moveUp:
+      player.top -= MOVESPEED
+   if moveDown:
+      player.top += MOVESPEED
 
-       <span class="c1"># check if the player has intersected with any food squares.</span>
-       <span class="k">for</span> <span class="n">food</span> <span class="ow">in</span> <span class="n">foods</span><span class="p">[:]:</span>
-          <span class="k">if</span> <span class="n">player</span><span class="o">.</span><span class="n">colliderect</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
-             <span class="n">foods</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
+   pygame.draw.rect(windowSurface,WHITE,player)
 
-       <span class="c1"># draw the food</span>
-       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">foods</span><span class="p">)):</span>
-          <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span><span class="n">GREEN</span><span class="p">,</span><span class="n">foods</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+   # check if the player has intersected with any food squares.
+   for food in foods[:]:
+      if player.colliderect(food):
+         foods.remove(food)
 
-       <span class="c1"># draw the window onto the screen</span>
-       <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+   # draw the food
+   for i in range(len(foods)):
+      pygame.draw.rect(windowSurface,GREEN,foods[i])
+
+   # draw the window onto the screen
+   pygame.display.update()
 
 
-    <span class="n">timer</span><span class="o">.</span><span class="n">set_interval</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
-
-</pre></div>
+timer.set_interval(func,30)
+</textarea>
 </div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">random</span>
@@ -482,6 +511,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 3. Pygame Collision Detection' data-toggle="tooltip">
+  <a href="TWP60_3_en.html" aria-label="Previous - 3. Pygame Collision Detection">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 5. Sounds and Sprites' data-toggle="tooltip" >
+    <a href="TWP60_5_en.html" aria-label="Next - 5. Sounds and Sprites">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

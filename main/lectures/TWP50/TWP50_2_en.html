@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zombie Questions Show &#8212; PyZombis main@281eb94</title>
+    <title>2. Zombie Questions Show &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3. Basic Window" href="TWP50_3_en.html" />
+    <link rel="prev" title="1. Introduction to a Graphical User Interface" href="TWP50_1_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">1. </span>Introduction to a Graphical User Interface" data-toggle="tooltip">
+    <a href="TWP50_1_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">3. </span>Basic Window' data-toggle="tooltip" >              
+    <a href="TWP50_3_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 1. Introduction to a Graphical User Interface' data-toggle="tooltip">
+  <a href="TWP50_1_en.html" aria-label="Previous - 1. Introduction to a Graphical User Interface">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 3. Basic Window' data-toggle="tooltip" >
+    <a href="TWP50_3_en.html" aria-label="Next - 3. Basic Window">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,7 +325,7 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="zombie-questions-show">
-<h1>Zombie Questions Show<a class="headerlink" href="#zombie-questions-show" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Zombie Questions Show<a class="headerlink" href="#zombie-questions-show" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>Let’s start with the program logic using a text interface.</p></li>
 <li><dl class="simple">
@@ -312,26 +338,31 @@ window.addEventListener('load', (event) => {
 </dl>
 </li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP50/TWP50_2_en.rst</span>, line 10)</p>
-<p>Duplicate ID – see lectures/TWP50/TWP50_2, line 14</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l50_2</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
 
-    <span class="n">correctas</span> <span class="o">=</span> <span class="n">incorrectas</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l50_2_en data-question_label="2.1">
+<div id=ac_l50_2_en_question class="ac_question col-md-12">
 
-    <span class="n">opcion</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Select: 1) Correct 2) Incorrect 0) Terminate&quot;</span><span class="p">))</span>
+</div>
+<textarea data-lang="python" id="ac_l50_2_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+correctas = incorrectas = 0
 
-    <span class="c1"># While the option is not zero, accumulate the values</span>
-    <span class="k">while</span> <span class="n">opcion</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">opcion</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">correctas</span> <span class="o">=</span> <span class="n">correctas</span> <span class="o">+</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="n">opcion</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-            <span class="n">incorrectas</span> <span class="o">=</span> <span class="n">incorrectas</span> <span class="o">+</span> <span class="mi">1</span>
-        <span class="n">opcion</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Select: 1) Correct 2) Incorrect 0) Terminate&quot;</span><span class="p">))</span>
+opcion = int(input("Select: 1) Correct 2) Incorrect 0) Terminate"))
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Correct:</span><span class="si">{</span><span class="n">correctas</span><span class="si">}</span><span class="s2"> Incorrect:</span><span class="si">{</span><span class="n">incorrectas</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
+# While the option is not zero, accumulate the values
+while opcion != 0:
+    if opcion == 1:
+        correctas = correctas + 1
+    if opcion == 2:
+        incorrectas = incorrectas + 1
+    opcion = int(input("Select: 1) Correct 2) Incorrect 0) Terminate"))
+
+print(f"Correct:{correctas} Incorrect:{incorrectas}")
+</textarea>
 </div>
 </div>
 <ul class="simple">
@@ -352,6 +383,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 1. Introduction to a Graphical User Interface' data-toggle="tooltip">
+  <a href="TWP50_1_en.html" aria-label="Previous - 1. Introduction to a Graphical User Interface">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 3. Basic Window' data-toggle="tooltip" >
+    <a href="TWP50_3_en.html" aria-label="Next - 3. Basic Window">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

@@ -1,6 +1,6 @@
-======================================
-DJ Mix 2 Object-Oriented Review
-======================================
+=====================================
+DJ Mix 2 revisión orientada a objetos
+=====================================
 
 
 .. image:: ../img/TWP10_001.jpeg
@@ -11,13 +11,9 @@ DJ Mix 2 Object-Oriented Review
 
 
 .. toctree::
-   :caption: Contents
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP58_1.rst
-   TWP58_2.rst
-
-Python Code:
-
-N/A (there is no Python code provided in this snippet)
+   TWP58_1_en.rst
+   TWP58_2_en.rst

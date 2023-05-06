@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sounds and Sprites &#8212; PyZombis main@281eb94</title>
+    <title>5. Sounds and Sprites &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Introducción al desarrollo web" href="../TWP65/toctree_en.html" />
+    <link rel="prev" title="4. Pygame Input" href="TWP60_4_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">4. </span>Pygame Input" data-toggle="tooltip">
+    <a href="TWP60_4_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Introducción al desarrollo web' data-toggle="tooltip" >              
+    <a href="../TWP65/toctree_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 4. Pygame Input' data-toggle="tooltip">
+  <a href="TWP60_4_en.html" aria-label="Previous - 4. Pygame Input">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Introducción al desarrollo web' data-toggle="tooltip" >
+    <a href="../TWP65/toctree_en.html" aria-label="Next - Introducción al desarrollo web">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,107 +325,110 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="sounds-and-sprites">
-<h1>Sounds and Sprites<a class="headerlink" href="#sounds-and-sprites" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">5. </span>Sounds and Sprites<a class="headerlink" href="#sounds-and-sprites" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../../_images/TWP60_022.png"><img alt="" class="align-center" src="../../_images/TWP60_022.png" style="width: 13.202cm; height: 6.164cm;" /></a>
 <a class="reference internal image-reference" href="../../_images/TWP60_023.png"><img alt="" class="align-center" src="../../_images/TWP60_023.png" style="width: 13.546cm; height: 11.561cm;" /></a>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_5_en.rst</span>, line 19)</p>
-<p>Duplicate ID – see lectures/TWP60/TWP60_5, line 23</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l60_5</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">load</span><span class="p">,</span> <span class="n">timer</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/game.js&#39;</span><span class="p">)</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/pygame.brython.js&#39;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_5_en data-question_label="5.1">
+<div id=ac_l60_5_en_question class="ac_question col-md-12">
 
-    <span class="o">^^^^</span>
+</div>
+<textarea data-lang="python3" id="ac_l60_5_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, timer
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
 
-    <span class="c1"># Sprites</span>
+^^^^
 
-    <span class="kn">import</span> <span class="nn">pygame</span>
-    <span class="kn">import</span> <span class="nn">random</span>
+# Sprites
 
-    <span class="c1"># GLOBAL VARIABLES</span>
-    <span class="n">COLOR</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">98</span><span class="p">)</span>
-    <span class="n">SURFACE_COLOR</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">167</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-    <span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">500</span>
-    <span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">300</span>
+import pygame
+import random
 
-    <span class="c1"># Object class</span>
-    <span class="k">class</span> <span class="nc">Sprite</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">):</span>
-       <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
-          <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+# GLOBAL VARIABLES
+COLOR = pygame.color.Color(255, 100, 98)
+SURFACE_COLOR = pygame.color.Color(167, 255, 100)
+WIDTH = 500
+HEIGHT = 300
 
-          <span class="bp">self</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Surface</span><span class="p">([</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">])</span>
-          <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">SURFACE_COLOR</span><span class="p">)</span>
-          <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">set_colorkey</span><span class="p">(</span><span class="n">COLOR</span><span class="p">)</span>
+# Object class
+class Sprite(pygame.sprite.Sprite):
+   def __init__(self, color, height, width):
+      super().__init__()
 
-          <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="p">,</span><span class="n">color</span><span class="p">,</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+      self.image = pygame.Surface([width, height])
+      self.image.fill(SURFACE_COLOR)
+      self.image.set_colorkey(COLOR)
 
-          <span class="bp">self</span><span class="o">.</span><span class="n">rect</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+      pygame.draw.rect(self.image,color,pygame.Rect(0, 0, width, height))
 
-
-    <span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
-
-    <span class="n">RED</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-
-    <span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="n">WIDTH</span><span class="p">,</span> <span class="n">HEIGHT</span><span class="p">)</span>
-    <span class="n">screen</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
-    <span class="n">all_sprites_list</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Group</span><span class="p">()</span>
-
-    <span class="n">object_</span> <span class="o">=</span> <span class="n">Sprite</span><span class="p">(</span><span class="n">RED</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
-    <span class="n">object_</span><span class="o">.</span><span class="n">rect</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">50</span>
-    <span class="n">object_</span><span class="o">.</span><span class="n">rect</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mi">50</span>
-
-    <span class="n">all_sprites_list</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">object_</span><span class="p">)</span>
+      self.rect = self.image.get_rect()
 
 
+pygame.init()
 
-    <span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
-       <span class="n">all_sprites_list</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
-       <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">SURFACE_COLOR</span><span class="p">)</span>
-       <span class="n">all_sprites_list</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">screen</span><span class="p">)</span>
-       <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+RED = pygame.color.Color(255, 0, 0)
+
+size = (WIDTH, HEIGHT)
+screen = pygame.display.set_mode(size)
+all_sprites_list = pygame.sprite.Group()
+
+object_ = Sprite(RED, 50, 30)
+object_.rect.x = 50
+object_.rect.y = 50
+
+all_sprites_list.add(object_)
 
 
-    <span class="n">timer</span><span class="o">.</span><span class="n">set_interval</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="mi">60</span><span class="p">)</span>
+
+def func():
+   all_sprites_list.update()
+   screen.fill(SURFACE_COLOR)
+   all_sprites_list.draw(screen)
+   pygame.display.flip()
 
 
-</pre></div>
+timer.set_interval(func,60)
+</textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_5_en.rst</span>, line 81)</p>
-<p>Duplicate ID – see lectures/TWP60/TWP60_5, line 85</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l60_51</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">load</span><span class="p">,</span> <span class="n">timer</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/game.js&#39;</span><span class="p">)</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/pygame.brython.js&#39;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_5_en1_en data-question_label="5.2">
+<div id=ac_l60_5_en1_en_question class="ac_question col-md-12">
 
-    <span class="o">^^^^</span>
+</div>
+<textarea data-lang="python3" id="ac_l60_5_en1_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, timer
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
 
-    <span class="c1"># Sounds</span>
-    <span class="kn">from</span> <span class="nn">pygame</span> <span class="kn">import</span> <span class="n">mixer</span>
+^^^^
 
-    <span class="c1"># Starting the mixer</span>
-    <span class="n">mixer</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+# Sounds
+from pygame import mixer
 
-    <span class="c1"># Loading the song</span>
-    <span class="n">mixer</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;../../audio/Example04_Tour01_Line01.wav&quot;</span><span class="p">)</span>
+# Starting the mixer
+mixer.init()
 
-    <span class="c1"># Setting the volume</span>
-    <span class="n">mixer</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">set_volume</span><span class="p">(</span><span class="mf">0.7</span><span class="p">)</span>
+# Loading the song
+mixer.music.load("../../audio/Example04_Tour01_Line01.wav")
 
-    <span class="c1"># Start playing the song</span>
-    <span class="n">mixer</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
+# Setting the volume
+mixer.music.set_volume(0.7)
 
-
-
-</pre></div>
+# Start playing the song
+mixer.music.play()
+</textarea>
 </div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># set up the block data structure</span>
@@ -492,6 +521,18 @@ controlled</p></li>
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 4. Pygame Input' data-toggle="tooltip">
+  <a href="TWP60_4_en.html" aria-label="Previous - 4. Pygame Input">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Introducción al desarrollo web' data-toggle="tooltip" >
+    <a href="../TWP65/toctree_en.html" aria-label="Next - Introducción al desarrollo web">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

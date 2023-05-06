@@ -12,7 +12,7 @@ New Score
     Zack 7.21
     Aaron 8.31
 
-..  activecode:: ac_l37_5a
+..  activecode:: ac_l37_5a_en
     :nocodelens:
     :datafile: surf3.txt
     :stdin:
@@ -58,7 +58,7 @@ Sorting in decreasing order
 Finally the correct positions
 -----------------------------
 
-..  activecode:: ac_l37_5b
+..  activecode:: ac_l37_5b_en
     :nocodelens:
     :datafile: surf3.txt
     :stdin:

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>String Operations &#8212; PyZombis main@281eb94</title>
+    <title>12. String Operations &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="13. Changing variables over time" href="TWP05_13_en.html" />
+    <link rel="prev" title="11. String Variable" href="TWP05_11_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">11. </span>String Variable" data-toggle="tooltip">
+    <a href="TWP05_11_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">13. </span>Changing variables over time' data-toggle="tooltip" >              
+    <a href="TWP05_13_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 11. String Variable' data-toggle="tooltip">
+  <a href="TWP05_11_en.html" aria-label="Previous - 11. String Variable">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 13. Changing variables over time' data-toggle="tooltip" >
+    <a href="TWP05_13_en.html" aria-label="Next - 13. Changing variables over time">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,7 +325,7 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="string-operations">
-<h1>String Operations<a class="headerlink" href="#string-operations" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">12. </span>String Operations<a class="headerlink" href="#string-operations" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>The basic operations are slicing, concatenation, and formatting.</p></li>
 <li><p>Slicing allows you to use part of a string</p></li>
@@ -308,14 +334,14 @@ window.addEventListener('load', (event) => {
 and consists of using strings as templates where we can insert data</p></li>
 </ul>
 <div class="section" id="concatenation">
-<h2>Concatenation<a class="headerlink" href="#concatenation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.1. </span>Concatenation<a class="headerlink" href="#concatenation" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.1.1">
         <div class="pytutorVisualizer" id="cl_l05_12a_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (cl_l05_12a_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.1.1 (cl_l05_12a_en)</span> </p>
     </div>
 
 <script>
@@ -330,17 +356,17 @@ allTraceData["cl_l05_12a_en"] = {"code": "a = \"Potato\"\nb = \"when born\"\npri
 </div>
 </div>
 <div class="section" id="slicing">
-<h2>Slicing<a class="headerlink" href="#slicing" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.2. </span>Slicing<a class="headerlink" href="#slicing" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We can perform the slicing operation using <code class="docutils literal notranslate"><span class="pre">[start_index:end_index]</span></code></p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.2.1">
         <div class="pytutorVisualizer" id="cl_l05_12b_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (cl_l05_12b_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.2.1 (cl_l05_12b_en)</span> </p>
     </div>
 
 <script>
@@ -359,11 +385,11 @@ we can also have negative indices: -1 last, -2 penultimate</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.2.2">
         <div class="pytutorVisualizer" id="cl_l05_12c_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (cl_l05_12c_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.2.2 (cl_l05_12c_en)</span> </p>
     </div>
 
 <script>
@@ -378,18 +404,18 @@ allTraceData["cl_l05_12c_en"] = {"code": "x = \"0123456789\"\nprint(x[:2])\nprin
 </div>
 </div>
 <div class="section" id="formatting">
-<h2>Formatting<a class="headerlink" href="#formatting" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.3. </span>Formatting<a class="headerlink" href="#formatting" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Joining multiple strings is not always practical</p></li>
 <li><p>We can use placeholders to replace values within strings</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="4">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.3.1">
         <div class="pytutorVisualizer" id="cl_l05_12d_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 4 (cl_l05_12d_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.3.1 (cl_l05_12d_en)</span> </p>
     </div>
 
 <script>
@@ -410,11 +436,11 @@ strings, and <code class="docutils literal notranslate"><span class="pre">%f</sp
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.3.2">
         <div class="pytutorVisualizer" id="cl_l05_12e_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5 (cl_l05_12e_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.3.2 (cl_l05_12e_en)</span> </p>
     </div>
 
 <script>
@@ -432,11 +458,11 @@ allTraceData["cl_l05_12e_en"] = {"code": "age = 20\nprint(\"[%03d]\" % age)\npri
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="6">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="12.3.3">
         <div class="pytutorVisualizer" id="cl_l05_12f_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 6 (cl_l05_12f_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 12.3.3 (cl_l05_12f_en)</span> </p>
     </div>
 
 <script>
@@ -451,21 +477,25 @@ allTraceData["cl_l05_12f_en"] = {"code": "print(\"$%5.2f pesos\" % 23)", "trace"
 </div>
 </div>
 <div class="section" id="f-strings">
-<h2>f-strings<a class="headerlink" href="#f-strings" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.4. </span>f-strings<a class="headerlink" href="#f-strings" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Another way to join strings is through f-strings</p></li>
 <li><p>Everything inside braces {} will be replaced if previously defined. In the example, .2f means two decimal places.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_12_en.rst</span>, line 81)</p>
-<p>Duplicate ID – see lectures/TWP05/TWP05_12, line 85</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l05_12</span>
-   <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-   <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-   <span class="n">price</span> <span class="o">=</span> <span class="mf">10.123</span>
-   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The price is: $</span><span class="si">{</span><span class="n">price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l05_12_en data-question_label="12.4.1">
+<div id=ac_l05_12_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l05_12_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+price = 10.123
+print(f"The price is: ${price:.2f}")
+</textarea>
 </div>
 </div>
 </div>
@@ -477,6 +507,18 @@ allTraceData["cl_l05_12f_en"] = {"code": "print(\"$%5.2f pesos\" % 23)", "trace"
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 11. String Variable' data-toggle="tooltip">
+  <a href="TWP05_11_en.html" aria-label="Previous - 11. String Variable">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 13. Changing variables over time' data-toggle="tooltip" >
+    <a href="TWP05_13_en.html" aria-label="Next - 13. Changing variables over time">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

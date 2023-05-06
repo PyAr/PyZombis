@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Functions split and join &#8212; PyZombis main@281eb94</title>
+    <title>6. Functions split and join &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7. Coding Dojo" href="TWP18_7_en.html" />
+    <link rel="prev" title="5. Functions find and replace" href="TWP18_5_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">5. </span>Functions <code class="docutils literal notranslate"><span class="pre">find</span></code> and <code class="docutils literal notranslate"><span class="pre">replace</span></code>" data-toggle="tooltip">
+    <a href="TWP18_5_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">7. </span>Coding Dojo' data-toggle="tooltip" >              
+    <a href="TWP18_7_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 5. Functions  find  and replace ' data-toggle="tooltip">
+  <a href="TWP18_5_en.html" aria-label="Previous - 5. Functions  find  and replace ">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 7. Coding Dojo' data-toggle="tooltip" >
+    <a href="TWP18_7_en.html" aria-label="Next - 7. Coding Dojo">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,74 +325,78 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="functions-split-and-join">
-<h1>Functions <code class="docutils literal notranslate"><span class="pre">split</span></code> and <code class="docutils literal notranslate"><span class="pre">join</span></code><a class="headerlink" href="#functions-split-and-join" title="Permalink to this headline">¶</a></h1>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_6_en.rst</span>, line 4)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_6, line 8</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l18_6</span>
+<h1><span class="section-number">6. </span>Functions <code class="docutils literal notranslate"><span class="pre">split</span></code> and <code class="docutils literal notranslate"><span class="pre">join</span></code><a class="headerlink" href="#functions-split-and-join" title="Permalink to this headline">¶</a></h1>
 
-    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;potato when born&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
-    <span class="n">date</span> <span class="o">=</span> <span class="s2">&quot;02/21/2011&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">))</span>
-    <span class="n">ip</span> <span class="o">=</span> <span class="s2">&quot;198.188.10.144&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">ip</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">))</span>
-    <span class="n">places</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Palmeiras&quot;</span><span class="p">,</span> <span class="s2">&quot;Santos&quot;</span><span class="p">,</span> <span class="s2">&quot;Corinthians&quot;</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">places</span><span class="p">))</span>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="6.1">
+        <div class="pytutorVisualizer" id="cl_l18_6_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 6.1 (cl_l18_6_en)</span> </p>
+    </div>
 
-</pre></div>
-</div>
+<script>
+var cl_l18_6_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l18_6_en"] = {"code": "text = \"potato when born\"\nprint(text.split())\ndate = \"02/21/2011\"\nprint(date.split(\"/\"))\nip = \"198.188.10.144\"\nprint(ip.split(\".\"))\nplaces = [\"Palmeiras\", \"Santos\", \"Corinthians\"]\nprint(\"/\".join(places))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"text": "potato when born"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"text": "potato when born"}, "ordered_globals": ["text"], "stack_to_render": [], "heap": {}, "stdout": "['potato', 'when', 'born']\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"text": "potato when born", "date": "02/21/2011"}, "ordered_globals": ["text", "date"], "stack_to_render": [], "heap": {}, "stdout": "['potato', 'when', 'born']\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"text": "potato when born", "date": "02/21/2011"}, "ordered_globals": ["text", "date"], "stack_to_render": [], "heap": {}, "stdout": "['potato', 'when', 'born']\n['02', '21', '2011']\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"text": "potato when born", "date": "02/21/2011", "ip": "198.188.10.144"}, "ordered_globals": ["text", "date", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['potato', 'when', 'born']\n['02', '21', '2011']\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"text": "potato when born", "date": "02/21/2011", "ip": "198.188.10.144"}, "ordered_globals": ["text", "date", "ip"], "stack_to_render": [], "heap": {}, "stdout": "['potato', 'when', 'born']\n['02', '21', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"text": "potato when born", "date": "02/21/2011", "ip": "198.188.10.144", "places": ["REF", 1]}, "ordered_globals": ["text", "date", "ip", "places"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corinthians"]}, "stdout": "['potato', 'when', 'born']\n['02', '21', '2011']\n['198', '188', '10', '144']\n"}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"text": "potato when born", "date": "02/21/2011", "ip": "198.188.10.144", "places": ["REF", 1]}, "ordered_globals": ["text", "date", "ip", "places"], "stack_to_render": [], "heap": {"1": ["LIST", "Palmeiras", "Santos", "Corinthians"]}, "stdout": "['potato', 'when', 'born']\n['02', '21', '2011']\n['198', '188', '10', '144']\nPalmeiras/Santos/Corinthians\n"}]};
+</script>
 </div>
 <div class="section" id="exercise">
-<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_6_en.rst</span>, line 19)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_6, line 24</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: ac_l18_6
-    :nocodelens:
-    :stdin:
+<h2><span class="section-number">6.1. </span>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
 
-    Write a program that asks for a birth date in the format &quot;dd/mm/yyyy&quot; and
-    converts this date to the format &quot;&lt;day&gt; of &lt;month&gt; of &lt;year&gt;&quot; using the pre-written list
-    ``months``. Save the result in the variable ``birth_date`` and print this variable. Remember
-    that ``.split()`` returns a list and you can pass the character to separate a string as an argument.
-    Save the day, month and year in string format in the variables ``day``, ``month`` and ``year``.
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l18_6_en data-question_label="6.1.1">
+<div id=ac_l18_6_en_question class="ac_question col-md-12">
+<p>Write a program that asks for a birth date in the format “dd/mm/yyyy” and
+converts this date to the format “&lt;day&gt; of &lt;month&gt; of &lt;year&gt;” using the pre-written list
+<code class="docutils literal notranslate"><span class="pre">months</span></code>. Save the result in the variable <code class="docutils literal notranslate"><span class="pre">birth_date</span></code> and print this variable. Remember
+that <code class="docutils literal notranslate"><span class="pre">.split()</span></code> returns a list and you can pass the character to separate a string as an argument.
+Save the day, month and year in string format in the variables <code class="docutils literal notranslate"><span class="pre">day</span></code>, <code class="docutils literal notranslate"><span class="pre">month</span></code> and <code class="docutils literal notranslate"><span class="pre">year</span></code>.</p>
 
-    ~~~~
-    date = input(&quot;date (dd/mm/yyyy): &quot;).split(&quot;/&quot;)
-    months = [
-        &quot;January&quot;,
-        &quot;February&quot;,
-        &quot;March&quot;,
-        &quot;April&quot;,
-        &quot;May&quot;,
-        &quot;June&quot;,
-        &quot;July&quot;,
-        &quot;August&quot;,
-        &quot;September&quot;,
-        &quot;October&quot;,
-        &quot;November&quot;,
-        &quot;December&quot;,
-    ]
+</div>
+<textarea data-lang="python" id="ac_l18_6_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+date = input("date (dd/mm/yyyy): ").split("/")
+months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+]
 
-    ====
-    from unittest.gui import TestCaseGui
-
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-            self.assertEqual(
-                birth_date,
-                &quot;{} of {} of {}&quot;.format(day, months[int(month) - 1], year),
-                &quot;Testing that birth_date is assigned correctly&quot;,
-            )
-            self.assertEqual(day, date[0], &quot;Testing that day is assigned correctly&quot;)
-            self.assertEqual(month, date[1], &quot;Testing that month is assigned correctly&quot;)
-            self.assertEqual(year, date[2], &quot;Testing that year is assigned correctly&quot;)
+====
+from unittest.gui import TestCaseGui
 
 
-    myTests().main()
-</pre></div>
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(
+            birth_date,
+            "{} of {} of {}".format(day, months[int(month) - 1], year),
+            "Testing that birth_date is assigned correctly",
+        )
+        self.assertEqual(day, date[0], "Testing that day is assigned correctly")
+        self.assertEqual(month, date[1], "Testing that month is assigned correctly")
+        self.assertEqual(year, date[2], "Testing that year is assigned correctly")
+
+
+myTests().main()
+</textarea>
 </div>
 </div>
 </div>
@@ -378,6 +408,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 5. Functions  find  and replace ' data-toggle="tooltip">
+  <a href="TWP18_5_en.html" aria-label="Previous - 5. Functions  find  and replace ">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 7. Coding Dojo' data-toggle="tooltip" >
+    <a href="TWP18_7_en.html" aria-label="Next - 7. Coding Dojo">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

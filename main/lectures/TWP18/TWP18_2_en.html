@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slicing &#8212; PyZombis main@281eb94</title>
+    <title>2. Slicing &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3. Concatenation" href="TWP18_3_en.html" />
+    <link rel="prev" title="1. Quotes of various types" href="TWP18_1_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">1. </span>Quotes of various types" data-toggle="tooltip">
+    <a href="TWP18_1_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">3. </span>Concatenation' data-toggle="tooltip" >              
+    <a href="TWP18_3_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 1. Quotes of various types' data-toggle="tooltip">
+  <a href="TWP18_1_en.html" aria-label="Previous - 1. Quotes of various types">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 3. Concatenation' data-toggle="tooltip" >
+    <a href="TWP18_3_en.html" aria-label="Next - 3. Concatenation">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,77 +325,96 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="slicing">
-<h1>Slicing<a class="headerlink" href="#slicing" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Slicing<a class="headerlink" href="#slicing" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>Slice from the first index to the one before the second</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_2_en.rst</span>, line 6)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_2, line 10</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l18_2a</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">8</span><span class="p">])</span>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2.1">
+        <div class="pytutorVisualizer" id="cl_l18_2a_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2.1 (cl_l18_2a_en)</span> </p>
+    </div>
 
-</pre></div>
-</div>
+<script>
+var cl_l18_2a_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l18_2a_en"] = {"code": "x = \"0123456789\"\nprint(x[0:2])\nprint(x[1:2])\nprint(x[2:4])\nprint(x[0:5])\nprint(x[1:8])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n1\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n1\n23\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n1\n23\n01234\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n1\n23\n01234\n1234567\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>We can omit indices by substituting the corresponding end and
 we can also have negative indices: -1 is the last one, -2 the penultimate</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_2_en.rst</span>, line 20)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_2, line 24</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l18_2b</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">4</span><span class="p">:])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[:])</span>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2.2">
+        <div class="pytutorVisualizer" id="cl_l18_2b_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2.2 (cl_l18_2b_en)</span> </p>
+    </div>
 
-</pre></div>
-</div>
+<script>
+var cl_l18_2b_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l18_2b_en"] = {"code": "x = \"0123456789\"\nprint(x[:2])\nprint(x[4:])\nprint(x[4:-1])\nprint(x[-4:-1])\nprint(x[:])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n456789\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n456789\n45678\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n456789\n45678\n678\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"x": "0123456789"}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": "01\n456789\n45678\n678\n0123456789\n"}]};
+</script>
 </div>
 <div class="section" id="slice-increment">
-<h2>Slice increment<a class="headerlink" href="#slice-increment" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.1. </span>Slice increment<a class="headerlink" href="#slice-increment" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>I can use an increment when slicing the string</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_2_en.rst</span>, line 36)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_2, line 40</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l18_2c</span>
 
-    <span class="n">texto</span> <span class="o">=</span> <span class="s2">&quot;papa cuando nace&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">texto</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">texto</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2.1.1">
+        <div class="pytutorVisualizer" id="cl_l18_2c_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2.1.1 (cl_l18_2c_en)</span> </p>
+    </div>
 
-</pre></div>
-</div>
+<script>
+var cl_l18_2c_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l18_2c_en"] = {"code": "texto = \"papa cuando nace\"\nprint(texto[::2])\nprint(texto[::-1])", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"texto": "papa cuando nace"}, "ordered_globals": ["texto"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"texto": "papa cuando nace"}, "ordered_globals": ["texto"], "stack_to_render": [], "heap": {}, "stdout": "pp unonc\n"}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"texto": "papa cuando nace"}, "ordered_globals": ["texto"], "stack_to_render": [], "heap": {}, "stdout": "pp unonc\necan odnauc apap\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>Check if a word is a palindrome</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_2_en.rst</span>, line 46)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_2, line 50</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l18_2</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Word: &quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">word</span> <span class="o">==</span> <span class="n">word</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> is a palindrome&quot;</span> <span class="o">%</span> <span class="n">word</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> is not a palindrome&quot;</span> <span class="o">%</span> <span class="n">word</span><span class="p">)</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l18_2_en data-question_label="2.1.2">
+<div id=ac_l18_2_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python" id="ac_l18_2_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+word = input("Word: ")
+if word == word[::-1]:
+    print("%s is a palindrome" % word)
+else:
+    print("%s is not a palindrome" % word)
+</textarea>
 </div>
 </div>
 </div>
@@ -381,6 +426,18 @@ we can also have negative indices: -1 is the last one, -2 the penultimate</p></l
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 1. Quotes of various types' data-toggle="tooltip">
+  <a href="TWP18_1_en.html" aria-label="Previous - 1. Quotes of various types">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 3. Concatenation' data-toggle="tooltip" >
+    <a href="TWP18_3_en.html" aria-label="Next - 3. Concatenation">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

@@ -1,7 +1,7 @@
 Cut
 ===
 
-.. codelens:: cl_l33_3
+.. codelens:: cl_l33_3_en
          
     text = "Palms"
     print(text[2:5])
@@ -17,7 +17,7 @@ Cut
     :align: center
     :alt:
 
-.. activecode:: ac_l33_3a
+.. activecode:: ac_l33_3a_en
     :nocodelens:
     :stdin:
 
@@ -50,7 +50,7 @@ There are no stupid questions
 + Can I access a page directly in the browser?
 + Yes, run the code below which uses ``import antigravity``.
 
-.. activecode:: ac_l33_3b
+.. activecode:: ac_l33_3b_en
     :language: python3
     :python3_interpreter: brython
 

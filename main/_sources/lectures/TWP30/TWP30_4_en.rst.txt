@@ -1,7 +1,7 @@
 The program is a network of roads
 =================================
 
-.. codelens:: cl_l30_4
+.. codelens:: cl_l30_4_en
 
     print("Welcome to my program!")
     print("Come back anytime!")
@@ -41,7 +41,7 @@ Tips
     :align: center
     :alt: 
 
-.. activecode:: ac_l30_4
+.. activecode:: ac_l30_4_en
     :nocodelens:
     :stdin:
 

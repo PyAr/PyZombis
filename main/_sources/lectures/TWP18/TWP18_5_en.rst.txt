@@ -2,7 +2,7 @@ Functions ``find`` and ``replace``
 ==================================
 
 
-.. codelens:: cl_l18_5
+.. codelens:: cl_l18_5_en
     
     s = "one tiger, two tigers, three tigers"
     print(s.find("tiger"))

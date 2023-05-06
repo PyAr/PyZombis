@@ -12,7 +12,7 @@ Variables with defined and undefined values
 + You can only use the content of a variable if it already has a *defined* value.
 + If you use a variable that has no defined value or is *undefined*, it would result in an error like the following.
 
-.. activecode:: ac_l40_2
+.. activecode:: ac_l40_2_en
     :nocodelens:
     :stdin:
 

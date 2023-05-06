@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pygame Collision Detection &#8212; PyZombis main@281eb94</title>
+    <title>3. Pygame Collision Detection &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. Pygame Input" href="TWP60_4_en.html" />
+    <link rel="prev" title="2. Pygame Animation" href="TWP60_2_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">2. </span>Pygame Animation" data-toggle="tooltip">
+    <a href="TWP60_2_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">4. </span>Pygame Input' data-toggle="tooltip" >              
+    <a href="TWP60_4_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. Pygame Animation' data-toggle="tooltip">
+  <a href="TWP60_2_en.html" aria-label="Previous - 2. Pygame Animation">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 4. Pygame Input' data-toggle="tooltip" >
+    <a href="TWP60_4_en.html" aria-label="Next - 4. Pygame Input">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,7 +325,7 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="pygame-collision-detection">
-<h1>Pygame Collision Detection<a class="headerlink" href="#pygame-collision-detection" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3. </span>Pygame Collision Detection<a class="headerlink" href="#pygame-collision-detection" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../../_images/TWP60_014.png"><img alt="" class="align-center" src="../../_images/TWP60_014.png" style="width: 4.772in; height: 3.327in;" /></a>
 <a class="reference internal image-reference" href="../../_images/TWP60_015.png"><img alt="" class="align-center" src="../../_images/TWP60_015.png" style="width: 4.427in; height: 2.904in;" /></a>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">doRectsOverlap</span><span class="p">(</span><span class="n">rect1</span><span class="p">,</span><span class="n">rect2</span><span class="p">):</span>
@@ -317,104 +343,108 @@ window.addEventListener('load', (event) => {
       <span class="k">return</span> <span class="kc">False</span>
 </pre></div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_3_en.rst</span>, line 33)</p>
-<p>Duplicate ID – see lectures/TWP60/TWP60_3, line 37</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l60_3</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">load</span><span class="p">,</span> <span class="n">document</span><span class="p">,</span><span class="n">timer</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/game.js&#39;</span><span class="p">)</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/pygame.brython.js&#39;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_3_en data-question_label="3.1">
+<div id=ac_l60_3_en_question class="ac_question col-md-12">
 
-    <span class="o">^^^^</span>
-    <span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span> <span class="o">,</span> <span class="nn">time</span>
-    <span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
-    <span class="kn">from</span> <span class="nn">pygame.color</span> <span class="kn">import</span> <span class="o">*</span>
-    <span class="kn">import</span> <span class="nn">random</span>
+</div>
+<textarea data-lang="python3" id="ac_l60_3_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, document,timer
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
 
-    <span class="c1">#set up the colors</span>
-    <span class="n">BLACK</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">WHITE</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
-    <span class="n">RED</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">GREEN</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">BLUE</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
-    <span class="n">LIGHT_BLUE</span><span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">153</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
-    <span class="c1"># set up pygame</span>
-    <span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+^^^^
+import pygame, sys , time
+from pygame.locals import *
+from pygame.color import *
+import random
 
-    <span class="c1">#set up fonts</span>
-    <span class="n">rectFont</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">SysFont</span><span class="p">(</span><span class="s1">&#39;timesnewroman&#39;</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
-    <span class="n">pointFont</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">SysFont</span><span class="p">(</span><span class="s1">&#39;timesnewroman&#39;</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+#set up the colors
+BLACK = Color(0,0,0)
+WHITE = Color(255,255,255)
+RED = Color(255,0,0)
+GREEN = Color(0,255,0)
+BLUE = Color(0,0,255)
+LIGHT_BLUE= Color(153,255,255)
+# set up pygame
+pygame.init()
 
-    <span class="c1"># set up the window</span>
-    <span class="n">WINDOWWIDTH</span> <span class="o">=</span> <span class="mi">560</span>
-    <span class="n">WINDOWHEIGHT</span> <span class="o">=</span> <span class="mi">350</span>
-    <span class="n">windowSurface</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="n">WINDOWWIDTH</span><span class="p">,</span><span class="n">WINDOWHEIGHT</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span>
+#set up fonts
+rectFont = pygame.font.SysFont('timesnewroman',10)
+pointFont = pygame.font.SysFont('timesnewroman',10)
 
-    <span class="k">def</span> <span class="nf">doRectsOverlap</span><span class="p">(</span><span class="n">rect1</span><span class="p">,</span><span class="n">rect2</span><span class="p">):</span>
-       <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="p">[(</span><span class="n">rect1</span><span class="p">,</span><span class="n">rect2</span><span class="p">),(</span><span class="n">rect2</span><span class="p">,</span><span class="n">rect1</span><span class="p">)]:</span>
-          <span class="c1"># Check if a&#39;s corners are inside b</span>
-          <span class="k">if</span> <span class="p">((</span><span class="n">isPointInsideRect</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">left</span><span class="p">,</span><span class="n">a</span><span class="o">.</span><span class="n">top</span><span class="p">,</span><span class="n">b</span><span class="p">))</span> <span class="ow">or</span> <span class="p">(</span><span class="n">isPointInsideRect</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">left</span><span class="p">,</span><span class="n">a</span><span class="o">.</span><span class="n">bottom</span><span class="p">,</span><span class="n">b</span><span class="p">))</span> <span class="ow">or</span> <span class="p">(</span><span class="n">isPointInsideRect</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">right</span><span class="p">,</span><span class="n">a</span><span class="o">.</span><span class="n">top</span><span class="p">,</span><span class="n">b</span><span class="p">))</span> <span class="ow">or</span> <span class="p">(</span><span class="n">isPointInsideRect</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">right</span><span class="p">,</span><span class="n">a</span><span class="o">.</span><span class="n">bottom</span><span class="p">,</span><span class="n">b</span><span class="p">))):</span>
-             <span class="k">return</span> <span class="kc">True</span>
+# set up the window
+WINDOWWIDTH = 560
+WINDOWHEIGHT = 350
+windowSurface = pygame.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),0,32)
 
-       <span class="k">return</span> <span class="kc">False</span>
+def doRectsOverlap(rect1,rect2):
+   for a,b in [(rect1,rect2),(rect2,rect1)]:
+      # Check if a's corners are inside b
+      if ((isPointInsideRect(a.left,a.top,b)) or (isPointInsideRect(a.left,a.bottom,b)) or (isPointInsideRect(a.right,a.top,b)) or (isPointInsideRect(a.right,a.bottom,b))):
+         return True
 
-    <span class="k">def</span> <span class="nf">isPointInsideRect</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">rect</span><span class="p">):</span>
-       <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">rect</span><span class="o">.</span><span class="n">left</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="n">rect</span><span class="o">.</span><span class="n">right</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">y</span> <span class="o">&gt;</span> <span class="n">rect</span><span class="o">.</span><span class="n">top</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">y</span> <span class="o">&lt;</span> <span class="n">rect</span><span class="o">.</span><span class="n">bottom</span><span class="p">):</span>
-          <span class="k">return</span> <span class="kc">True</span>
-       <span class="k">else</span><span class="p">:</span>
-          <span class="k">return</span> <span class="kc">False</span>
+   return False
+
+def isPointInsideRect(x,y,rect):
+   if (x > rect.left) and (x < rect.right) and (y > rect.top) and (y < rect.bottom):
+      return True
+   else:
+      return False
 
 
-    <span class="c1">#define 4 rectangles</span>
-    <span class="n">r1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rect&#39;</span><span class="p">:</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">),</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s2">&quot;Rect1&quot;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="n">RED</span><span class="p">}</span>
-    <span class="n">r2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rect&#39;</span><span class="p">:</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">60</span><span class="p">),</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s2">&quot;Rect2&quot;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="n">GREEN</span><span class="p">}</span>
-    <span class="n">r3</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rect&#39;</span><span class="p">:</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">40</span><span class="p">),</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s2">&quot;Rect3&quot;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="n">BLUE</span><span class="p">}</span>
-    <span class="n">r4</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rect&#39;</span><span class="p">:</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">),</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s2">&quot;Rect4&quot;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="n">LIGHT_BLUE</span><span class="p">}</span>
-    <span class="n">rects</span> <span class="o">=</span> <span class="p">[</span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="p">,</span><span class="n">r3</span><span class="p">,</span><span class="n">r4</span><span class="p">]</span>
+#define 4 rectangles
+r1 = {'rect':pygame.Rect(300,80,50,50),'name':"Rect1",'color':RED}
+r2 = {'rect':pygame.Rect(250,200,60,60),'name':"Rect2",'color':GREEN}
+r3 = {'rect':pygame.Rect(100,150,80,40),'name':"Rect3",'color':BLUE}
+r4 = {'rect':pygame.Rect(200,150,60,70),'name':"Rect4",'color':LIGHT_BLUE}
+rects = [r1,r2,r3,r4]
 
-    <span class="n">windowSurface</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">BLACK</span><span class="p">)</span>
-    <span class="c1">#draw rectangles</span>
-    <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">rects</span><span class="p">:</span>
-       <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span> <span class="n">r</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">],</span> <span class="n">r</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">])</span>
-       <span class="n">text</span> <span class="o">=</span> <span class="n">rectFont</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="kc">False</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">,</span> <span class="n">r</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">])</span>
-       <span class="n">textRect</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
-       <span class="n">textRect</span><span class="o">.</span><span class="n">centerx</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">left</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">width</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
-       <span class="n">textRect</span><span class="o">.</span><span class="n">centery</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">top</span> <span class="o">+</span> <span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">height</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
-       <span class="n">windowSurface</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">textRect</span><span class="p">)</span>
+windowSurface.fill(BLACK)
+#draw rectangles
+for r in rects:
+   pygame.draw.rect(windowSurface, r['color'], r['rect'])
+   text = rectFont.render(r['name'], False, BLACK, r['color'])
+   textRect = text.get_rect()
+   textRect.centerx = r['rect'].left + (r['rect'].width)//2
+   textRect.centery = r['rect'].top + (r['rect'].height)//2
+   windowSurface.blit(text, textRect)
 
-    <span class="c1">#draw random points</span>
-    <span class="n">point_size</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="n">num_points</span> <span class="o">=</span> <span class="mi">10</span>
-    <span class="n">points</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_points</span><span class="p">):</span>
-       <span class="n">points</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;pos&#39;</span><span class="p">:(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">WINDOWWIDTH</span> <span class="o">-</span> <span class="n">point_size</span><span class="o">*</span><span class="mi">10</span><span class="p">),</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">WINDOWHEIGHT</span> <span class="o">-</span> <span class="n">point_size</span><span class="o">*</span><span class="mi">10</span><span class="p">)),</span><span class="s1">&#39;name&#39;</span><span class="p">:(</span><span class="s2">&quot;P&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))})</span>
+#draw random points
+point_size = 5
+num_points = 10
+points = []
+for i in range(num_points):
+   points.append({'pos':(random.randint(0,WINDOWWIDTH - point_size*10),random.randint(0,WINDOWHEIGHT - point_size*10)),'name':("P"+str(i))})
 
-    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">points</span><span class="p">:</span>
-       <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span> <span class="n">WHITE</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;pos&#39;</span><span class="p">],</span> <span class="n">point_size</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-       <span class="n">text</span> <span class="o">=</span> <span class="n">pointFont</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="kc">False</span><span class="p">,</span> <span class="n">WHITE</span><span class="p">,</span> <span class="n">BLACK</span><span class="p">)</span>
-       <span class="n">textRect</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
-       <span class="n">textRect</span><span class="o">.</span><span class="n">centerx</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;pos&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-       <span class="n">textRect</span><span class="o">.</span><span class="n">centery</span> <span class="o">=</span>  <span class="n">p</span><span class="p">[</span><span class="s1">&#39;pos&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">point_size</span> <span class="o">+</span><span class="mi">5</span><span class="p">)</span>
-       <span class="n">windowSurface</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">textRect</span><span class="p">)</span>
+for p in points:
+   pygame.draw.circle(windowSurface, WHITE, p['pos'], point_size, 0)
+   text = pointFont.render(p['name'], False, WHITE, BLACK)
+   textRect = text.get_rect()
+   textRect.centerx = p['pos'][0]
+   textRect.centery =  p['pos'][1] - (point_size +5)
+   windowSurface.blit(text, textRect)
 
-    <span class="c1">#check overlap between rectangles</span>
-    <span class="n">rects_copy</span> <span class="o">=</span> <span class="n">rects</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">rect1</span> <span class="ow">in</span> <span class="n">rects</span><span class="p">:</span>
-       <span class="k">for</span> <span class="n">rect2</span> <span class="ow">in</span> <span class="n">rects_copy</span><span class="p">:</span>
-          <span class="k">if</span><span class="p">(</span><span class="n">rect1</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">!=</span><span class="n">rect2</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]):</span>
-                <span class="k">if</span><span class="p">(</span><span class="n">doRectsOverlap</span><span class="p">(</span><span class="n">rect1</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">],</span><span class="n">rect2</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">])):</span>
-                   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> and </span><span class="si">{}</span><span class="s2"> are overlapping.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rect1</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span><span class="n">rect2</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
-       <span class="n">rects_copy</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">rect1</span><span class="p">)</span>
+#check overlap between rectangles
+rects_copy = rects.copy()
+for rect1 in rects:
+   for rect2 in rects_copy:
+      if(rect1['name']!=rect2['name']):
+            if(doRectsOverlap(rect1['rect'],rect2['rect'])):
+               print("{} and {} are overlapping.\n".format(rect1['name'],rect2['name']))
+   rects_copy.remove(rect1)
 
-    <span class="c1"># check if any point is inside a rectangles</span>
-    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">points</span><span class="p">:</span>
-       <span class="k">for</span> <span class="n">rect</span> <span class="ow">in</span> <span class="n">rects</span><span class="p">:</span>
-          <span class="k">if</span><span class="p">(</span><span class="n">isPointInsideRect</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;pos&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;pos&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">rect</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">])):</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Point </span><span class="si">{}</span><span class="s2"> is inside rectangle </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">rect</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
-</pre></div>
+# check if any point is inside a rectangles
+for p in points:
+   for rect in rects:
+      if(isPointInsideRect(p['pos'][0], p['pos'][1], rect['rect'])):
+            print("Point {} is inside rectangle {}".format(p['name'], rect['name']))
+</textarea>
 </div>
 </div>
 </div>
@@ -425,6 +455,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. Pygame Animation' data-toggle="tooltip">
+  <a href="TWP60_2_en.html" aria-label="Previous - 2. Pygame Animation">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 4. Pygame Input' data-toggle="tooltip" >
+    <a href="TWP60_4_en.html" aria-label="Next - 4. Pygame Input">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

@@ -3,7 +3,7 @@ Some examples
 
 + Make a program that reads a vector of 5 integers and displays the vector.
 
-..  activecode:: ac_l17_4a
+..  activecode:: ac_l17_4a_en
     :nocodelens:
     :stdin:
 
@@ -18,7 +18,7 @@ Some examples
 
 + Make a program that reads a vector of ten real numbers and displays them in reverse order.
 
-..  activecode:: ac_l17_4b
+..  activecode:: ac_l17_4b_en
     :nocodelens:
     :stdin:
 
@@ -35,7 +35,7 @@ Some examples
 
 + Make a program that reads four grades, displays the grades, and the average on the screen.
 
-..  activecode:: ac_l17_4c
+..  activecode:: ac_l17_4c_en
     :nocodelens:
     :stdin:
 
@@ -55,7 +55,7 @@ Some examples
 
 + Another way of doing the same thing.
 
-.. activecode:: ac_l17_4d
+.. activecode:: ac_l17_4d_en
    :nocodelens:
    :stdin:
 
@@ -73,7 +73,7 @@ Some examples
 
 + Make a program that reads a vector of 10 lowercase characters, and tells how many consonants were read.
 
-..  activecode:: ac_l17_4e
+..  activecode:: ac_l17_4e_en
     :nocodelens:
     :stdin:
 

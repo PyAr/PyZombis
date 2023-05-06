@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crypto &#8212; PyZombis main@281eb94</title>
+    <title>2. Crypto &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3. Validate IP Address" href="TWP23_3_en.html" />
+    <link rel="prev" title="1. Files" href="TWP23_1_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">1. </span>Files" data-toggle="tooltip">
+    <a href="TWP23_1_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">3. </span>Validate IP Address' data-toggle="tooltip" >              
+    <a href="TWP23_3_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 1. Files' data-toggle="tooltip">
+  <a href="TWP23_1_en.html" aria-label="Previous - 1. Files">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 3. Validate IP Address' data-toggle="tooltip" >
+    <a href="TWP23_3_en.html" aria-label="Next - 3. Validate IP Address">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,7 +325,7 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="crypto">
-<h1>Crypto<a class="headerlink" href="#crypto" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Crypto<a class="headerlink" href="#crypto" title="Permalink to this headline">¶</a></h1>
 
 <div class="runestone datafile">
 <div class="datafile_caption">Data file: <code>message.txt</code></div>
@@ -309,36 +335,37 @@ you are modifying
 so that all vowels
 are changed to "*".
 </pre></div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_2_en.rst</span>, line 14)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_2, line 18</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: ac_l23_2a
-    :nocodelens:
-    :datafile: message.txt, crypto.txt
 
-    Read the file ``&quot;message.txt&quot;`` and write the file ``&quot;crypto.txt&quot;`` which
-    should have the same text as the first file, but with vowels replaced by
-    ``&quot;*&quot;``.
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l23_2a_en data-question_label="2.2">
+<div id=ac_l23_2a_en_question class="ac_question col-md-12">
+<p>Read the file <code class="docutils literal notranslate"><span class="pre">&quot;message.txt&quot;</span></code> and write the file <code class="docutils literal notranslate"><span class="pre">&quot;crypto.txt&quot;</span></code> which
+should have the same text as the first file, but with vowels replaced by
+<code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code>.</p>
 
-    ~~~~
-    text = open(&quot;message.txt&quot;, &quot;r&quot;)
-    output = open(&quot;crypto.txt&quot;, &quot;w&quot;)
+</div>
+<textarea data-lang="python" id="ac_l23_2a_en_editor" 
+      data-timelimit=25000     
+    data-audio=''  data-datafile='message.txt, crypto.txt'    
+           data-wasm=/_static
+      style="visibility: hidden;">
+text = open("message.txt", "r")
+output = open("crypto.txt", "w")
 
-    for line in text.readlines():
-        for letter in line:
-            if letter in &quot;aeiouAEIOU&quot;:
-                output.write(&quot;*&quot;)
-            else:
-                output.write(letter)
+for line in text.readlines():
+    for letter in line:
+        if letter in "aeiouAEIOU":
+            output.write("*")
+        else:
+            output.write(letter)
 
-    text.close()
-    output.close()
+text.close()
+output.close()
 
 
-    ====
-    print(&quot;Data has been written to the file crypto.txt&quot;)
-
-</pre></div>
+====
+print("Data has been written to the file crypto.txt")
+</textarea>
 </div>
 </div>
 <div class="system-message">
@@ -353,58 +380,59 @@ are changed to "*".
 </div>
 </div>
 <div class="section" id="exercise">
-<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_2_en.rst</span>, line 50)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_2, line 54</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: ac_l23_2b
-    :nocodelens:
-    :datafile: message.txt, crypto.txt
+<h2><span class="section-number">2.1. </span>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
 
-    As you can see, the previous code did not change some vowels
-    in the file ``&quot;message.txt&quot;``. This is due to capital letters or accents.
-    Your task is to modify the previous program so that it changes **ALL** vowels
-    to ``&quot;*&quot;``. **Remember**: the ``.lower()`` method returns a string
-    with all its characters turned into lowercase letters. This time, you will write to
-    the file ``&quot;crypto2.txt&quot;``.
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l23_2b_en data-question_label="2.1.1">
+<div id=ac_l23_2b_en_question class="ac_question col-md-12">
+<p>As you can see, the previous code did not change some vowels
+in the file <code class="docutils literal notranslate"><span class="pre">&quot;message.txt&quot;</span></code>. This is due to capital letters or accents.
+Your task is to modify the previous program so that it changes <strong>ALL</strong> vowels
+to <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code>. <strong>Remember</strong>: the <code class="docutils literal notranslate"><span class="pre">.lower()</span></code> method returns a string
+with all its characters turned into lowercase letters. This time, you will write to
+the file <code class="docutils literal notranslate"><span class="pre">&quot;crypto2.txt&quot;</span></code>.</p>
 
-    ~~~~
-    text = open(&quot;message.txt&quot;, &quot;r&quot;)
-    output = open(&quot;crypto2.txt&quot;, &quot;w&quot;)
+</div>
+<textarea data-lang="python" id="ac_l23_2b_en_editor" 
+      data-timelimit=25000     
+    data-audio=''  data-datafile='message.txt, crypto.txt'    
+           data-wasm=/_static
+      style="visibility: hidden;">
+text = open("message.txt", "r")
+output = open("crypto2.txt", "w")
 
-    # Modify the program
+# Modify the program
 
-    for line in text.readlines():
-        for letter in line:
-            if letter in &quot;aeiouAEIOU&quot;:
-                output.write(&quot;*&quot;)
-            else:
-                output.write(letter)
+for line in text.readlines():
+    for letter in line:
+        if letter in "aeiouAEIOU":
+            output.write("*")
+        else:
+            output.write(letter)
 
-    text.close()
-    output.close()
-
-
-    ====
-    from unittest.gui import TestCaseGui
+text.close()
+output.close()
 
 
-    class myTests(TestCaseGui):
-        def testOne(self):
-            file = open(&quot;crypto2.txt&quot;, &quot;r&quot;)
-            text = &quot;&quot;&quot;*st* *s th* t*xt f*l*
-    y** **r m*d*fying
-    s* th*t *ll v*w*ls
-    *r* ch*ng*d t* &quot;*&quot;.&quot;&quot;&quot;
-
-            self.assertEqual(file.read().replace(&quot;\n&quot;, &quot; &quot;).rstrip(), text.strip(), f&quot;Expected: {text}&quot;)
+====
+from unittest.gui import TestCaseGui
 
 
-    print(&quot;Data has been written to the file crypto2.txt&quot;)
+class myTests(TestCaseGui):
+    def testOne(self):
+        file = open("crypto2.txt", "r")
+        text = """*st* *s th* t*xt f*l*
+y** **r m*d*fying
+s* th*t *ll v*w*ls
+*r* ch*ng*d t* "*"."""
 
-    myTests().main()
+        self.assertEqual(file.read().replace("\n", " ").rstrip(), text.strip(), f"Expected: {text}")
 
-</pre></div>
+
+print("Data has been written to the file crypto2.txt")
+
+myTests().main()
+</textarea>
 </div>
 </div>
 <div class="system-message">
@@ -426,6 +454,18 @@ are changed to "*".
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 1. Files' data-toggle="tooltip">
+  <a href="TWP23_1_en.html" aria-label="Previous - 1. Files">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 3. Validate IP Address' data-toggle="tooltip" >
+    <a href="TWP23_3_en.html" aria-label="Next - 3. Validate IP Address">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

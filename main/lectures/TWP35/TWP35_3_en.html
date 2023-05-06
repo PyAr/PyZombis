@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Program with functions &#8212; PyZombis main@281eb94</title>
+    <title>3. Program with functions &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. JSON" href="TWP35_4_en.html" />
+    <link rel="prev" title="2. New program suggestion" href="TWP35_2_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">2. </span>New program suggestion" data-toggle="tooltip">
+    <a href="TWP35_2_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">4. </span>JSON' data-toggle="tooltip" >              
+    <a href="TWP35_4_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. New program suggestion' data-toggle="tooltip">
+  <a href="TWP35_2_en.html" aria-label="Previous - 2. New program suggestion">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 4. JSON' data-toggle="tooltip" >
+    <a href="TWP35_4_en.html" aria-label="Next - 4. JSON">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,9 +325,9 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="program-with-functions">
-<h1>Program with functions<a class="headerlink" href="#program-with-functions" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3. </span>Program with functions<a class="headerlink" href="#program-with-functions" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1. </span>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Functions are shareable codes</p></li>
 <li><p>I define a name and call the function throughout the program</p></li>
@@ -310,42 +336,45 @@ window.addEventListener('load', (event) => {
 </ul>
 </div>
 <div class="section" id="id1">
-<h2>Program with functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP35/TWP35_3_en.rst</span>, line 15)</p>
-<p>Duplicate ID – see lectures/TWP35/TWP35_3, line 20</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l35_3</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
+<h2><span class="section-number">3.2. </span>Program with functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 
-    <span class="kn">import</span> <span class="nn">urllib.request</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l35_3_en data-question_label="3.2.1">
+<div id=ac_l35_3_en_question class="ac_question col-md-12">
 
-
-    <span class="k">def</span> <span class="nf">capture_price</span><span class="p">():</span>
-        <span class="n">page</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s2">&quot;https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html&quot;</span><span class="p">)</span>
-        <span class="n">text</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-        <span class="n">where</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;$&quot;</span><span class="p">)</span>
-        <span class="n">start</span> <span class="o">=</span> <span class="n">where</span> <span class="o">+</span> <span class="mi">1</span>
-        <span class="n">end</span> <span class="o">=</span> <span class="n">start</span> <span class="o">+</span> <span class="mi">4</span>
-        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">])</span>
+</div>
+<textarea data-lang="python" id="ac_l35_3_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+import urllib.request
 
 
-    <span class="n">option</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Do you want to buy now? (Y/N)&quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">option</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
-        <span class="n">price</span> <span class="o">=</span> <span class="n">capture_price</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Buy! Price: </span><span class="si">%5.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">price</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">price</span> <span class="o">=</span> <span class="mf">99.99</span>
-        <span class="k">while</span> <span class="n">price</span> <span class="o">&gt;=</span> <span class="mf">4.74</span><span class="p">:</span>
-            <span class="n">price</span> <span class="o">=</span> <span class="n">capture_price</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Buy! Price: </span><span class="si">%5.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">price</span><span class="p">)</span>
+def capture_price():
+    page = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+    text = page.read()
+    where = text.find("$")
+    start = where + 1
+    end = start + 4
+    return float(text[start:end])
 
-</pre></div>
+
+option = input("Do you want to buy now? (Y/N)")
+if option.lower() == "y":
+    price = capture_price()
+    print("Buy! Price: %5.2f" % price)
+else:
+    price = 99.99
+    while price >= 4.74:
+        price = capture_price()
+    print("Buy! Price: %5.2f" % price)
+</textarea>
 </div>
 </div>
 </div>
 <div class="section" id="there-are-no-stupid-questions">
-<h2>There are no stupid questions<a class="headerlink" href="#there-are-no-stupid-questions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.3. </span>There are no stupid questions<a class="headerlink" href="#there-are-no-stupid-questions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Is the return command the same as printing? No, <code class="docutils literal notranslate"><span class="pre">print()</span></code> shows something on the screen,
 while <code class="docutils literal notranslate"><span class="pre">return</span></code> returns a value to the function caller.</p></li>
@@ -363,6 +392,18 @@ logic of the function.</p></li>
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. New program suggestion' data-toggle="tooltip">
+  <a href="TWP35_2_en.html" aria-label="Previous - 2. New program suggestion">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 4. JSON' data-toggle="tooltip" >
+    <a href="TWP35_4_en.html" aria-label="Next - 4. JSON">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

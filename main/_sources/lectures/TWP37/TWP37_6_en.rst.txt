@@ -25,7 +25,7 @@ Using another list
     Zack 7.21
     Aaron 8.31
 
-..  activecode:: ac_l37_6a
+..  activecode:: ac_l37_6a_en
     :nocodelens:
     :datafile: surf4.txt
     :stdin:
@@ -73,7 +73,7 @@ Using and sorting a dictionary
 
 + Using a dictionary and seeing all its elements iteratively.
 
-..  codelens:: cl_l37_6
+..  codelens:: cl_l37_6_en
 
     scores = {}
     scores[9.12] = "Juan"
@@ -85,7 +85,7 @@ Using and sorting a dictionary
 
 + Using a dictionary for the championship.
 
-..  activecode:: ac_l37_6b
+..  activecode:: ac_l37_6b_en
     :nocodelens:
     :datafile: surf4.txt
     :stdin:

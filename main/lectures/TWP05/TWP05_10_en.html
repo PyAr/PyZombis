@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logical expressions &#8212; PyZombis main@281eb94</title>
+    <title>10. Logical expressions &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11. String Variable" href="TWP05_11_en.html" />
+    <link rel="prev" title="9. Logical Operators" href="TWP05_9_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">9. </span>Logical Operators" data-toggle="tooltip">
+    <a href="TWP05_9_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">11. </span>String Variable' data-toggle="tooltip" >              
+    <a href="TWP05_11_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 9. Logical Operators' data-toggle="tooltip">
+  <a href="TWP05_9_en.html" aria-label="Previous - 9. Logical Operators">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 11. String Variable' data-toggle="tooltip" >
+    <a href="TWP05_11_en.html" aria-label="Next - 11. String Variable">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,7 +325,7 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="logical-expressions">
-<h1>Logical expressions<a class="headerlink" href="#logical-expressions" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">10. </span>Logical expressions<a class="headerlink" href="#logical-expressions" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>We can combine logical operators to form complex logical expressions</p></li>
 <li><p>The evaluation order is: <code class="docutils literal notranslate"><span class="pre">not</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">and</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">or</span></code>. This means that in an expression, the <code class="docutils literal notranslate"><span class="pre">not</span></code> logical operator is evaluated first, then <code class="docutils literal notranslate"><span class="pre">and</span></code>, and finally <code class="docutils literal notranslate"><span class="pre">or</span></code>.</p></li>
@@ -307,11 +333,11 @@ window.addEventListener('load', (event) => {
 <p>Let’s see an example:</p>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="1">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="10.1">
         <div class="pytutorVisualizer" id="cl_l05_10a_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 1 (cl_l05_10a_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 10.1 (cl_l05_10a_en)</span> </p>
     </div>
 
 <script>
@@ -325,17 +351,17 @@ allTraceData["cl_l05_10a_en"] = {"code": "print(not False or False and True)\npr
 </script>
 </div>
 <div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">10.1. </span>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>The conditions for granting a motorcycle purchase loan are: having a salary greater than $1,000.00 and being over 18 years old. Check if José can get the loan:</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="2">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="10.1.1">
         <div class="pytutorVisualizer" id="cl_l05_10b_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 2 (cl_l05_10b_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 10.1.1 (cl_l05_10b_en)</span> </p>
     </div>
 
 <script>
@@ -350,17 +376,17 @@ allTraceData["cl_l05_10b_en"] = {"code": "salary = 500.0\nage = 20\nprint(salary
 </div>
 </div>
 <div class="section" id="id1">
-<h2>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">10.2. </span>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Check if a student passed given that they obtained an average score of 5.8 in the exercise program and obtained an average score of 7 in the tests:</p></li>
 </ul>
 
 <div class="runestone" style="max-width: none;">
-    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="10.2.1">
         <div class="pytutorVisualizer" id="cl_l05_10c_en"
            data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
         </div>
-        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3 (cl_l05_10c_en)</span> </p>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 10.2.1 (cl_l05_10c_en)</span> </p>
     </div>
 
 <script>
@@ -382,6 +408,18 @@ allTraceData["cl_l05_10c_en"] = {"code": "ep = 5.8\np = 7\npassed = ep >= 6 and 
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 9. Logical Operators' data-toggle="tooltip">
+  <a href="TWP05_9_en.html" aria-label="Previous - 9. Logical Operators">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 11. String Variable' data-toggle="tooltip" >
+    <a href="TWP05_11_en.html" aria-label="Next - 11. String Variable">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

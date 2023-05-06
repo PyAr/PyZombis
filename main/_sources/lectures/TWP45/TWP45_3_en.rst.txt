@@ -10,7 +10,7 @@ TasteDive is a tool that:
 In the following exercise, we will use the TasteDive API to search for works or artists similar to another of our choice.
 The documentation for the `TasteDive API <https://tastedive.com/read/api>`_.
 
-.. activecode:: ac_l45_3a
+.. activecode:: ac_l45_3a_en
     :nocodelens:
     :language: python
 
@@ -46,7 +46,7 @@ In the previous example, you could see that the API returns text, which if passe
 transforms into a Python dictionary. However, it is not entirely readable. This can be solved with 
 ``json.dumps``.
 
-.. activecode:: ac_l45_3b
+.. activecode:: ac_l45_3b_en
     :language: python3
     :python3_interpreter: brython
     
@@ -78,7 +78,7 @@ transforms into a Python dictionary. However, it is not entirely readable. This 
 
 The following exercise comes with automatic grading.
 
-.. activecode:: ac_l45_3c
+.. activecode:: ac_l45_3c_en
     :nocodelens:
     :language: python
 

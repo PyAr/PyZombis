@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Local and Global Variables &#8212; PyZombis main@281eb94</title>
+    <title>3. Local and Global Variables &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. Random numbers" href="TWP20_4_en.html" />
+    <link rel="prev" title="2. Functions def" href="TWP20_2_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">2. </span>Functions <code class="docutils literal notranslate"><span class="pre">def</span></code>" data-toggle="tooltip">
+    <a href="TWP20_2_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">4. </span>Random numbers' data-toggle="tooltip" >              
+    <a href="TWP20_4_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. Functions  def ' data-toggle="tooltip">
+  <a href="TWP20_2_en.html" aria-label="Previous - 2. Functions  def ">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 4. Random numbers' data-toggle="tooltip" >
+    <a href="TWP20_4_en.html" aria-label="Next - 4. Random numbers">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,49 +325,50 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="local-and-global-variables">
-<h1>Local and Global Variables<a class="headerlink" href="#local-and-global-variables" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3. </span>Local and Global Variables<a class="headerlink" href="#local-and-global-variables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p><strong>Note</strong>: The scope of <code class="docutils literal notranslate"><span class="pre">a</span></code> in the example below is different in the two cases. In other words, the two variables <code class="docutils literal notranslate"><span class="pre">a</span></code> are different.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP20/TWP20_3_en.rst</span>, line 6)</p>
-<p>Duplicate ID – see lectures/TWP20/TWP20_3, line 10</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l20_3a</span>
 
-    <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3.1">
+        <div class="pytutorVisualizer" id="cl_l20_3a_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3.1 (cl_l20_3a_en)</span> </p>
+    </div>
 
-    <span class="k">def</span> <span class="nf">change_and_print</span><span class="p">():</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="mi">7</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Value of &#39;a&#39; inside the function: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="p">)</span>
+<script>
+var cl_l20_3a_en_vis;
 
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Value of &#39;a&#39; before changing: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="p">)</span>
-    <span class="n">change_and_print</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Value of &#39;a&#39; after changing: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="p">)</span>
-</pre></div>
-</div>
+allTraceData["cl_l20_3a_en"] = {"code": "a = 5\n\ndef change_and_print():\n    a = 7\n    print(\"Value of 'a' inside the function: %d\" % a)\n\n\nprint(\"Value of 'a' before changing: %d\" % a)\nchange_and_print()\nprint(\"Value of 'a' after changing: %d\" % a)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"a": 5}, "ordered_globals": ["a"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of 'a' before changing: 5\n"}, {"line": 3, "event": "call", "func_name": "change_and_print", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [{"func_name": "change_and_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "change_and_print_f1"}], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of 'a' before changing: 5\n"}, {"line": 4, "event": "step_line", "func_name": "change_and_print", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [{"func_name": "change_and_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "change_and_print_f1"}], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of 'a' before changing: 5\n"}, {"line": 5, "event": "step_line", "func_name": "change_and_print", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [{"func_name": "change_and_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": 7}, "ordered_varnames": ["a"], "is_zombie": false, "is_highlighted": true, "unique_hash": "change_and_print_f1"}], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of 'a' before changing: 5\n"}, {"line": 5, "event": "return", "func_name": "change_and_print", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [{"func_name": "change_and_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"a": 7, "__return__": null}, "ordered_varnames": ["a", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "change_and_print_f1"}], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of 'a' before changing: 5\nValue of 'a' inside the function: 7\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of 'a' before changing: 5\nValue of 'a' inside the function: 7\n"}, {"line": 10, "event": "return", "func_name": "<module>", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of 'a' before changing: 5\nValue of 'a' inside the function: 7\nValue of 'a' after changing: 5\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>In this case, we use the keyword global. So, the variable <code class="docutils literal notranslate"><span class="pre">a</span></code> inside the function is the same as the variable defined earlier, that is, it is the global variable.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP20/TWP20_3_en.rst</span>, line 21)</p>
-<p>Duplicate ID – see lectures/TWP20/TWP20_3, line 25</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l20_3b</span>
 
-    <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="3.2">
+        <div class="pytutorVisualizer" id="cl_l20_3b_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 3.2 (cl_l20_3b_en)</span> </p>
+    </div>
 
-    <span class="k">def</span> <span class="nf">change_and_print</span><span class="p">():</span>
-        <span class="k">global</span> <span class="n">a</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="mi">7</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Value of a inside the function: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="p">)</span>
+<script>
+var cl_l20_3b_en_vis;
 
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Value of a before changing: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="p">)</span>
-    <span class="n">change_and_print</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Value of a after changing: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="p">)</span>
-</pre></div>
-</div>
+allTraceData["cl_l20_3b_en"] = {"code": "a = 5\n\ndef change_and_print():\n    global a\n    a = 7\n    print(\"Value of a inside the function: %d\" % a)\n\n\nprint(\"Value of a before changing: %d\" % a)\nchange_and_print()\nprint(\"Value of a after changing: %d\" % a)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"a": 5}, "ordered_globals": ["a"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": ""}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of a before changing: 5\n"}, {"line": 3, "event": "call", "func_name": "change_and_print", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [{"func_name": "change_and_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "change_and_print_f1"}], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of a before changing: 5\n"}, {"line": 5, "event": "step_line", "func_name": "change_and_print", "globals": {"a": 5, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [{"func_name": "change_and_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "change_and_print_f1"}], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of a before changing: 5\n"}, {"line": 6, "event": "step_line", "func_name": "change_and_print", "globals": {"a": 7, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [{"func_name": "change_and_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {}, "ordered_varnames": [], "is_zombie": false, "is_highlighted": true, "unique_hash": "change_and_print_f1"}], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of a before changing: 5\n"}, {"line": 6, "event": "return", "func_name": "change_and_print", "globals": {"a": 7, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [{"func_name": "change_and_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"__return__": null}, "ordered_varnames": ["__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "change_and_print_f1"}], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of a before changing: 5\nValue of a inside the function: 7\n"}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"a": 7, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of a before changing: 5\nValue of a inside the function: 7\n"}, {"line": 11, "event": "return", "func_name": "<module>", "globals": {"a": 7, "change_and_print": ["REF", 1]}, "ordered_globals": ["a", "change_and_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "change_and_print()", null]}, "stdout": "Value of a before changing: 5\nValue of a inside the function: 7\nValue of a after changing: 7\n"}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>Observe the difference in the outputs in examples 9 and 10.</p></li>
@@ -354,6 +381,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. Functions  def ' data-toggle="tooltip">
+  <a href="TWP20_2_en.html" aria-label="Previous - 2. Functions  def ">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 4. Random numbers' data-toggle="tooltip" >
+    <a href="TWP20_4_en.html" aria-label="Next - 4. Random numbers">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

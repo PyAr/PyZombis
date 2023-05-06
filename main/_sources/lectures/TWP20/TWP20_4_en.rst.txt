@@ -1,7 +1,7 @@
 Random numbers
 ==============
 
-.. codelens:: cl_l20_4a
+.. codelens:: cl_l20_4a_en
          
     import random
 
@@ -23,7 +23,7 @@ Random numbers
 + A "codification" function is defined which returns the letters in a string shuffled.
 + **Note:** the ``list()`` function is used to convert a string into a list.
 
-.. codelens:: cl_l20_4b
+.. codelens:: cl_l20_4b_en
          
     import random
 
@@ -41,7 +41,7 @@ Random numbers
 
 + Generate a list of 15 random integers between 10 and 100.
 
-.. codelens:: cl_l20_4c
+.. codelens:: cl_l20_4c_en
          
     import random
 
@@ -55,7 +55,7 @@ Random numbers
 
 + Generate a list of 15 distinct random integers between 10 and 100.
 
-.. codelens:: cl_l20_4d
+.. codelens:: cl_l20_4d_en
          
     import random
 

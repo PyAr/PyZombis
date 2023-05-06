@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pygame Animation &#8212; PyZombis main@281eb94</title>
+    <title>2. Pygame Animation &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3. Pygame Collision Detection" href="TWP60_3_en.html" />
+    <link rel="prev" title="1. Pygame Hello World" href="TWP60_1_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">1. </span>Pygame Hello World" data-toggle="tooltip">
+    <a href="TWP60_1_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">3. </span>Pygame Collision Detection' data-toggle="tooltip" >              
+    <a href="TWP60_3_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 1. Pygame Hello World' data-toggle="tooltip">
+  <a href="TWP60_1_en.html" aria-label="Previous - 1. Pygame Hello World">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 3. Pygame Collision Detection' data-toggle="tooltip" >
+    <a href="TWP60_3_en.html" aria-label="Next - 3. Pygame Collision Detection">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,123 +325,126 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="pygame-animation">
-<h1>Pygame Animation<a class="headerlink" href="#pygame-animation" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Pygame Animation<a class="headerlink" href="#pygame-animation" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../../_images/TWP60_007.png"><img alt="" class="align-center" src="../../_images/TWP60_007.png" style="width: 11.217cm; height: 11.826cm;" /></a>
 <a class="reference internal image-reference" href="../../_images/TWP60_008.png"><img alt="" class="align-center" src="../../_images/TWP60_008.png" style="width: 10.503cm; height: 11.747cm;" /></a>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_2_en.rst</span>, line 16)</p>
-<p>Duplicate ID – see lectures/TWP60/TWP60_2, line 23</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l60_2</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">load</span><span class="p">,</span> <span class="n">document</span><span class="p">,</span><span class="n">timer</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/game.js&#39;</span><span class="p">)</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../../_static/pygame.brython.js&#39;</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_2_en data-question_label="2.1">
+<div id=ac_l60_2_en_question class="ac_question col-md-12">
 
-    <span class="o">^^^^</span>
+</div>
+<textarea data-lang="python3" id="ac_l60_2_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, document,timer
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
 
-    <span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">time</span>
-    <span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
-    <span class="kn">from</span> <span class="nn">pygame.color</span> <span class="kn">import</span> <span class="o">*</span>
+^^^^
 
-    <span class="c1"># set up the colors</span>
-    <span class="n">BLACK</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">WHITE</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
-    <span class="n">RED</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">GREEN</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">BLUE</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+import pygame, sys, time
+from pygame.locals import *
+from pygame.color import *
 
-    <span class="c1"># set up pygame</span>
-    <span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+# set up the colors
+BLACK = Color(0,0,0)
+WHITE = Color(255,255,255)
+RED = Color(255,0,0)
+GREEN = Color(0,255,0)
+BLUE = Color(0,0,255)
 
-    <span class="c1"># set up the window</span>
-    <span class="n">WINDOWWIDTH</span> <span class="o">=</span> <span class="mi">500</span>
-    <span class="n">WINDOWHEIGHT</span> <span class="o">=</span> <span class="mi">300</span>
-    <span class="n">windowSurface</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="n">WINDOWWIDTH</span><span class="p">,</span><span class="n">WINDOWHEIGHT</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span>
+# set up pygame
+pygame.init()
 
-    <span class="c1"># set up the direction variables</span>
-    <span class="n">DOWNLEFT</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">DOWNRIGHT</span> <span class="o">=</span> <span class="mi">3</span>
-    <span class="n">UPLEFT</span> <span class="o">=</span> <span class="mi">7</span>
-    <span class="n">UPRIGHT</span> <span class="o">=</span> <span class="mi">9</span>
+# set up the window
+WINDOWWIDTH = 500
+WINDOWHEIGHT = 300
+windowSurface = pygame.display.set_mode((WINDOWWIDTH,WINDOWHEIGHT),0,32)
 
-    <span class="n">MOVESPEED</span> <span class="o">=</span> <span class="mi">4</span>
+# set up the direction variables
+DOWNLEFT = 1
+DOWNRIGHT = 3
+UPLEFT = 7
+UPRIGHT = 9
 
-    <span class="c1"># set up the block data structure</span>
-    <span class="n">b1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rect&#39;</span><span class="p">:</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="n">RED</span><span class="p">,</span><span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="n">UPRIGHT</span><span class="p">}</span>
-    <span class="n">b2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rect&#39;</span><span class="p">:</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="n">BLUE</span><span class="p">,</span><span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="n">UPLEFT</span><span class="p">}</span>
-    <span class="n">b3</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;rect&#39;</span><span class="p">:</span><span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">60</span><span class="p">),</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="n">GREEN</span><span class="p">,</span><span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="n">DOWNLEFT</span><span class="p">}</span>
-    <span class="n">blocks</span> <span class="o">=</span> <span class="p">[</span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">]</span>
+MOVESPEED = 4
 
-    <span class="k">def</span> <span class="nf">draw</span><span class="p">():</span>
-       <span class="c1"># draw the black background onto the surface</span>
-       <span class="n">windowSurface</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">BLACK</span><span class="p">)</span>
+# set up the block data structure
+b1 = {'rect':pygame.Rect(300,80,50,100),'color':RED,'dir':UPRIGHT}
+b2 = {'rect':pygame.Rect(200,200,20,20),'color':BLUE,'dir':UPLEFT}
+b3 = {'rect':pygame.Rect(100,150,60,60),'color':GREEN,'dir':DOWNLEFT}
+blocks = [b1,b2,b3]
 
-       <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">blocks</span><span class="p">:</span>
-          <span class="c1"># move the block data structure</span>
-          <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">DOWNLEFT</span><span class="p">:</span>
-             <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">left</span> <span class="o">-=</span> <span class="n">MOVESPEED</span>
-             <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">top</span> <span class="o">+=</span> <span class="n">MOVESPEED</span>
+def draw():
+   # draw the black background onto the surface
+   windowSurface.fill(BLACK)
 
-          <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">DOWNRIGHT</span><span class="p">:</span>
-             <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">left</span> <span class="o">+=</span> <span class="n">MOVESPEED</span>
-             <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">top</span> <span class="o">+=</span> <span class="n">MOVESPEED</span>
+   for b in blocks:
+      # move the block data structure
+      if b['dir'] == DOWNLEFT:
+         b['rect'].left -= MOVESPEED
+         b['rect'].top += MOVESPEED
 
-          <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">UPLEFT</span><span class="p">:</span>
-             <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">left</span> <span class="o">-=</span> <span class="n">MOVESPEED</span>
-             <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">top</span> <span class="o">-=</span> <span class="n">MOVESPEED</span>
+      if b['dir'] == DOWNRIGHT:
+         b['rect'].left += MOVESPEED
+         b['rect'].top += MOVESPEED
 
-          <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">UPRIGHT</span><span class="p">:</span>
-             <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">left</span> <span class="o">+=</span> <span class="n">MOVESPEED</span>
-             <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">top</span> <span class="o">-=</span> <span class="n">MOVESPEED</span>
+      if b['dir'] == UPLEFT:
+         b['rect'].left -= MOVESPEED
+         b['rect'].top -= MOVESPEED
 
-          <span class="c1"># check if the block has moved out of the window</span>
-          <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">top</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-             <span class="c1"># block has moved past the top</span>
-             <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">UPLEFT</span><span class="p">:</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">DOWNLEFT</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">RED</span>
-             <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">UPRIGHT</span><span class="p">:</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">DOWNRIGHT</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">RED</span>
+      if b['dir'] == UPRIGHT:
+         b['rect'].left += MOVESPEED
+         b['rect'].top -= MOVESPEED
 
-          <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">bottom</span> <span class="o">&gt;</span> <span class="n">WINDOWHEIGHT</span><span class="p">:</span>
-             <span class="c1"># block has moved past the bottom</span>
-             <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">DOWNLEFT</span><span class="p">:</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">UPLEFT</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">WHITE</span>
-             <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">DOWNRIGHT</span><span class="p">:</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">UPRIGHT</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">WHITE</span>
+      # check if the block has moved out of the window
+      if b['rect'].top < 0:
+         # block has moved past the top
+         if b['dir'] == UPLEFT:
+            b['dir'] = DOWNLEFT
+            b['color'] = RED
+         if b['dir'] == UPRIGHT:
+            b['dir'] = DOWNRIGHT
+            b['color'] = RED
 
-          <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">left</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-             <span class="c1"># block has moved past the left side</span>
-             <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">DOWNLEFT</span><span class="p">:</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">DOWNRIGHT</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">GREEN</span>
-             <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">UPLEFT</span><span class="p">:</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">UPRIGHT</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">GREEN</span>
+      if b['rect'].bottom > WINDOWHEIGHT:
+         # block has moved past the bottom
+         if b['dir'] == DOWNLEFT:
+            b['dir'] = UPLEFT
+            b['color'] = WHITE
+         if b['dir'] == DOWNRIGHT:
+            b['dir'] = UPRIGHT
+            b['color'] = WHITE
 
-          <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">right</span> <span class="o">&gt;</span> <span class="n">WINDOWWIDTH</span><span class="p">:</span>
-             <span class="c1"># block has moved past the right side</span>
-             <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">DOWNRIGHT</span><span class="p">:</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">DOWNLEFT</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">BLUE</span>
-             <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">UPRIGHT</span><span class="p">:</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">UPLEFT</span>
-                <span class="n">b</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">BLUE</span>
+      if b['rect'].left < 0:
+         # block has moved past the left side
+         if b['dir'] == DOWNLEFT:
+            b['dir'] = DOWNRIGHT
+            b['color'] = GREEN
+         if b['dir'] == UPLEFT:
+            b['dir'] = UPRIGHT
+            b['color'] = GREEN
 
-          <span class="c1"># draw the block onto the surface</span>
-          <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">windowSurface</span><span class="p">,</span> <span class="n">b</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">],</span><span class="n">b</span><span class="p">[</span><span class="s1">&#39;rect&#39;</span><span class="p">])</span>
+      if b['rect'].right > WINDOWWIDTH:
+         # block has moved past the right side
+         if b['dir'] == DOWNRIGHT:
+            b['dir'] = DOWNLEFT
+            b['color'] = BLUE
+         if b['dir'] == UPRIGHT:
+            b['dir'] = UPLEFT
+            b['color'] = BLUE
 
-       <span class="c1"># draw the window onto the screen</span>
-       <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+      # draw the block onto the surface
+      pygame.draw.rect(windowSurface, b['color'],b['rect'])
 
-    <span class="n">timer</span><span class="o">.</span><span class="n">set_interval</span><span class="p">(</span><span class="n">draw</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span>
+   # draw the window onto the screen
+   pygame.display.update()
 
-</pre></div>
+timer.set_interval(draw,50)
+</textarea>
 </div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span> <span class="o">,</span> <span class="nn">time</span>
@@ -515,6 +544,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 1. Pygame Hello World' data-toggle="tooltip">
+  <a href="TWP60_1_en.html" aria-label="Previous - 1. Pygame Hello World">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 3. Pygame Collision Detection' data-toggle="tooltip" >
+    <a href="TWP60_3_en.html" aria-label="Next - 3. Pygame Collision Detection">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

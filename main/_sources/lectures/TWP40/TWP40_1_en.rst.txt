@@ -46,7 +46,7 @@ Example: Fahrenheit to Celsius temperature converter
 + Implementation of the problem:
     + Tests: 32F = 0C and 100F = 37.8C
 
-.. activecode:: ac_l40_1
+.. activecode:: ac_l40_1_en
     :nocodelens:
     :stdin:
 

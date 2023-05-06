@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multiple assignment &#8212; PyZombis main@281eb94</title>
+    <title>8. Multiple assignment &#8212; PyZombis main@765ab40</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -33,6 +33,8 @@
     <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9. Ways to iterate" href="TWP40_9_en.html" />
+    <link rel="prev" title="7. Reading and homework" href="TWP40_7_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@281eb94
+          PyZombis main@765ab40
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">7. </span>Reading and homework" data-toggle="tooltip">
+    <a href="TWP40_7_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - <span class="section-number">9. </span>Ways to iterate' data-toggle="tooltip" >              
+    <a href="TWP40_9_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 7. Reading and homework' data-toggle="tooltip">
+  <a href="TWP40_7_en.html" aria-label="Previous - 7. Reading and homework">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 9. Ways to iterate' data-toggle="tooltip" >
+    <a href="TWP40_9_en.html" aria-label="Next - 9. Ways to iterate">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -299,71 +325,95 @@ window.addEventListener('load', (event) => {
 
   
   <div class="section" id="multiple-assignment">
-<h1>Multiple assignment<a class="headerlink" href="#multiple-assignment" title="Permalink to this headline">¶</a></h1>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP40/TWP40_8_en.rst</span>, line 5)</p>
-<p>Duplicate ID – see lectures/TWP40/TWP40_8, line 9</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l40_8</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
+<h1><span class="section-number">8. </span>Multiple assignment<a class="headerlink" href="#multiple-assignment" title="Permalink to this headline">¶</a></h1>
 
-    <span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">,</span> <span class="n">n3</span><span class="p">,</span> <span class="n">n4</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter 4 grades separated by commas: &quot;</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean:&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span> <span class="o">+</span> <span class="n">n3</span> <span class="o">+</span> <span class="n">n4</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="n">suma</span><span class="p">,</span> <span class="n">difference</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">suma</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">difference</span><span class="p">)</span>
-    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l40_8_en data-question_label="8.1">
+<div id=ac_l40_8_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python3" id="ac_l40_8_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+n1, n2, n3, n4 = eval(input("Enter 4 grades separated by commas: "))
+print("Mean:", (n1 + n2 + n3 + n4) / 4)
+x = 4
+y = 5
+suma, difference = x + y, x - y
+print(suma)
+print(difference)
+x, y = y, x
+print(x, y)
+</textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p>To swap variables, the following sequence does not work!</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP40/TWP40_8_en.rst</span>, line 22)</p>
-<p>Duplicate ID – see lectures/TWP40/TWP40_8, line 26</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l40_8a</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">y</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="8.2">
+        <div class="pytutorVisualizer" id="cl_l40_8a_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 8.2 (cl_l40_8a_en)</span> </p>
+    </div>
+
+<script>
+var cl_l40_8a_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_8a_en"] = {"code": "x = 4\ny = 5\nx = y\ny = x", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 4}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 4, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 5, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"x": 5, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>One solution would be to use a <code class="docutils literal notranslate"><span class="pre">temp</span></code> variable.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP40/TWP40_8_en.rst</span>, line 31)</p>
-<p>Duplicate ID – see lectures/TWP40/TWP40_8, line 35</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l40_8b</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="n">temp</span> <span class="o">=</span> <span class="n">x</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">y</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">temp</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="8.3">
+        <div class="pytutorVisualizer" id="cl_l40_8b_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 8.3 (cl_l40_8b_en)</span> </p>
+    </div>
+
+<script>
+var cl_l40_8b_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_8b_en"] = {"code": "x = 4\ny = 5\ntemp = x\nx = y\ny = temp", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 4}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 4, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 4, "y": 5, "temp": 4}, "ordered_globals": ["x", "y", "temp"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"x": 5, "y": 5, "temp": 4}, "ordered_globals": ["x", "y", "temp"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"x": 5, "y": 4, "temp": 4}, "ordered_globals": ["x", "y", "temp"], "stack_to_render": [], "heap": {}, "stdout": ""}]};
+</script>
 </div>
 <ul class="simple">
 <li><p>Multiple assignment can also be used, which is more elegant.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP40/TWP40_8_en.rst</span>, line 41)</p>
-<p>Duplicate ID – see lectures/TWP40/TWP40_8, line 45</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">codelens</span><span class="p">::</span> <span class="n">cl_l40_8c</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span>
-</pre></div>
-</div>
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="8.4">
+        <div class="pytutorVisualizer" id="cl_l40_8c_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 8.4 (cl_l40_8c_en)</span> </p>
+    </div>
+
+<script>
+var cl_l40_8c_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l40_8c_en"] = {"code": "x = 4\ny = 5\nx, y = y, x", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"x": 4}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 4, "y": 5}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"x": 5, "y": 4}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}]};
+</script>
 </div>
 </div>
 
@@ -373,6 +423,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 7. Reading and homework' data-toggle="tooltip">
+  <a href="TWP40_7_en.html" aria-label="Previous - 7. Reading and homework">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - 9. Ways to iterate' data-toggle="tooltip" >
+    <a href="TWP40_9_en.html" aria-label="Next - 9. Ways to iterate">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

@@ -13,7 +13,7 @@ Pygame Animation
    :align: center
    :alt:
 
-.. activecode:: ac_l60_2
+.. activecode:: ac_l60_2_en
     :language: python3
     :python3_interpreter: brython
 
