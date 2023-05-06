@@ -3,7 +3,7 @@ Other examples of OOP
 
 + We can create a class ``Person`` with basic attributes.
 
-..  activecode:: ac_l25_4a
+..  activecode:: ac_l25_4a_en
     :nocodelens:
     :stdin:
          
@@ -29,7 +29,7 @@ Other examples of OOP
 
 + You can use the implementation of the class ``Person`` to create an object with your name.
 
-..  activecode:: ac_l25_4b
+..  activecode:: ac_l25_4b_en
     :nocodelens:
     :stdin:
     :include: ac_l25_4a

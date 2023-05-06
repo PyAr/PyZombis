@@ -2,7 +2,7 @@ Raffle the number to guess
 ============================
 
 
-.. activecode:: ac_l30_6
+.. activecode:: ac_l30_6_en
     :language: python3
     :python3_interpreter: brython
 

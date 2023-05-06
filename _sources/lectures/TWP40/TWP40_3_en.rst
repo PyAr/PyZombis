@@ -5,7 +5,7 @@ Reserved Words
 + These words cannot be used to declare a variable or function.
 + In the conversion exercise, the words ``float``, ``input``, and ``print`` are reserved words.
 
-.. activecode:: ac_l40_3
+.. activecode:: ac_l40_3_en
     :nocodelens:
 
     This program allows you to see a complete list of all reserved words in Python.

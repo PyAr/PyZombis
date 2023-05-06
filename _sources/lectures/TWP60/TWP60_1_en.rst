@@ -22,7 +22,7 @@ Bibliography
 Pygame Hello World
 ------------------
 
-.. activecode:: ac_l60_1
+.. activecode:: ac_l60_1_en
     :language: python3
     :python3_interpreter: brython
 

@@ -7,7 +7,7 @@ Zombie Questions Show
     + Count how many correct and incorrect answers there were.
     + *Option 0* is to terminate.
 
-.. activecode:: ac_l50_2
+.. activecode:: ac_l50_2_en
     :nocodelens:
 
     correctas = incorrectas = 0

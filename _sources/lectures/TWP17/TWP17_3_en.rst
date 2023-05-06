@@ -3,26 +3,26 @@ Syntax of a List
 
 + An empty list
 
-..  codelens:: cl_l17_3a
+..  codelens:: cl_l17_3a_en
 
     lista = []
 
 + A list with three grades.
 
-..  codelens:: cl_l17_3b
+..  codelens:: cl_l17_3b_en
 
     grades = [7.5, 9, 8.3]
 
 + Accessing a grade.
 
-..  codelens:: cl_l17_3c
+..  codelens:: cl_l17_3c_en
 
     grades = [7.5, 9, 8.3]
     print(grades[0])
 
 + Changing the first grade.
 
-..  codelens:: cl_l17_3d
+..  codelens:: cl_l17_3d_en
          
     grades = [7.5, 9, 8.3]
     grades[0] = 8.7
@@ -30,7 +30,7 @@ Syntax of a List
 
 + Average of 5 grades.
 
-..  codelens:: cl_l17_3e
+..  codelens:: cl_l17_3e_en
 
     grades = [6, 7, 5, 8, 9]
     sum = 0

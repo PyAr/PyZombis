@@ -12,7 +12,7 @@ Reading the file ``surf.txt``
     Zack 7.21
     Aaron 8.31
 
-..  activecode:: ac_l37_2a
+..  activecode:: ac_l37_2a_en
     :nocodelens:
     :datafile: surf.txt
     :stdin:
@@ -62,7 +62,7 @@ The ``split`` method breaks up the string
 Finding the 1st place
 ---------------------
 
-..  activecode:: ac_l37_2b
+..  activecode:: ac_l37_2b_en
     :nocodelens:
     :datafile: surf.txt
     :stdin:

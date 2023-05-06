@@ -1,4 +1,5 @@
-Introduction to web development
+==============================
+Introducción al desarrollo web
 ==============================
 
 
@@ -10,12 +11,10 @@ Introduction to web development
 
 
 .. toctree::
-   :caption: Contents
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP65_1.rst
-   TWP65_2.rst
-   TWP65_3.rst
-
-Python code not provided.
+   TWP65_1_en.rst
+   TWP65_2_en.rst
+   TWP65_3_en.rst

@@ -1,5 +1,5 @@
 =======
-Modules
+Módulos
 =======
 
 
@@ -11,14 +11,12 @@ Modules
 
 
 .. toctree::
-   :caption: Contents
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP47_1.rst
-   TWP47_2.rst
-   TWP47_3.rst
-   TWP47_4.rst
-   TWP47_5.rst 
-
-Translated Python code can not be provided as the given snippet does not contain any code.
+   TWP47_1_en.rst
+   TWP47_2_en.rst
+   TWP47_3_en.rst
+   TWP47_4_en.rst
+   TWP47_5_en.rst

@@ -28,7 +28,7 @@ Exercise
         + 1000 dollars investment and 3% annual interest rate
         + 1000 dollars investment and 10% annual interest rate
 
-.. activecode:: ac_l40_10
+.. activecode:: ac_l40_10_en
     :nocodelens:
     :stdin:
 

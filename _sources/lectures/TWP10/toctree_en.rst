@@ -1,5 +1,5 @@
 ===========
-Conditions
+Condiciones
 ===========
 
 
@@ -11,16 +11,14 @@ Conditions
 
 
 .. toctree::
-   :caption: Contents
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP10_1.rst
-   TWP10_2.rst
-   TWP10_3.rst
-   TWP10_4.rst
-   TWP10_5.rst
-   TWP10_6.rst
-   TWP10_7.rst
-
-The above code snippet is already in reStructuredText format and there is no Python code in it. It includes an image and a table of contents for different files.
+   TWP10_1_en.rst
+   TWP10_2_en.rst
+   TWP10_3_en.rst
+   TWP10_4_en.rst
+   TWP10_5_en.rst
+   TWP10_6_en.rst
+   TWP10_7_en.rst

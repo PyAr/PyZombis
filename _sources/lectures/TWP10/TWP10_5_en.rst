@@ -13,7 +13,7 @@ Nested Structures
 + Nested conditions can be created.
 + Remember to indent nested portions of code.
 
-.. codelens:: cl_l10_5a
+.. codelens:: cl_l10_5a_en
 
     minutes = 800
     if minutes < 200:
@@ -28,7 +28,7 @@ Nested Structures
 + Note the double indentation to satisfy the second condition.
 + Now we modify the "Chao" company program for a promotion where the rate is ``$0.08`` when you use more than 800 minutes.
 
-.. codelens:: cl_l10_5b
+.. codelens:: cl_l10_5b_en
 
     minutes = 1000
     if minutes < 200:

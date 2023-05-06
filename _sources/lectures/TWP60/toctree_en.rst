@@ -11,14 +11,12 @@ Pygame
 
 
 .. toctree::
-   :caption: Contents
+   :caption: Contenido
    :maxdepth: 1
    :numbered:
 
-   TWP60_1.rst
-   TWP60_2.rst
-   TWP60_3.rst
-   TWP60_4.rst
-   TWP60_5.rst
-
-Python code is not included in this snippet.
+   TWP60_1_en.rst
+   TWP60_2_en.rst
+   TWP60_3_en.rst
+   TWP60_4_en.rst
+   TWP60_5_en.rst

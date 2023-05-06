@@ -13,16 +13,18 @@ def fix_duplicate_id(filename, lang="en"):
         content = inp.read()
 
     # Handle activecode IDs updates
-    actRegex = re.compile(r'\s(ac_\d{1,2}_.*)\b')
+    actRegex = re.compile(r'activecode:: ac_.*')
 
     for entry in set(actRegex.findall(content)):
-        content = content.replace(entry, entry+'_'+lang)
+        if not entry.endswith('_'+lang):
+            content = content.replace(entry, entry+'_'+lang)
 
     # Handle codelens and reveal IDs updates
-    actRegex = re.compile(r'\s(cl_l\d{1,2}_.*)\b')
+    actRegex = re.compile(r'codelens:: cl_.*')
 
     for entry in set(actRegex.findall(content)):
-        content = content.replace(entry, entry+'_'+lang)
+        if not entry.endswith('_'+lang):
+            content = content.replace(entry, entry+'_'+lang)
 
     with open(filename, "w") as outp:
         outp.write(content)

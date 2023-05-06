@@ -1,7 +1,7 @@
 Python
 ======
 
-.. codelens:: cl_l38_2a
+.. codelens:: cl_l38_2a_en
          
     print("hello world!")
     print(2 + 3)
@@ -11,7 +11,7 @@ Python
 + Usually, we want to repeat a series of commands several times
 + One way to do this is to use a function
 
-.. codelens:: cl_l38_2b
+.. codelens:: cl_l38_2b_en
 
     def love_colon():
         print("I love:")
@@ -25,7 +25,7 @@ Python
 + If you forget the parentheses, Python will return the memory address
   where the function is defined.
 
-.. codelens:: cl_l38_2c
+.. codelens:: cl_l38_2c_en
          
     def love_colon():
         print("I love:")
@@ -38,7 +38,7 @@ Python
 
 + We can put parameters in a function
 
-.. codelens:: cl_l38_2d
+.. codelens:: cl_l38_2d_en
          
     def add(a, b):
         return a + b

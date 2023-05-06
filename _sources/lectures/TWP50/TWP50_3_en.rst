@@ -17,7 +17,7 @@ Basic Window
 Window with Brython
 -------------------
 
-.. activecode:: ac_l50_3a
+.. activecode:: ac_l50_3a_en
     :nocodelens:
     :language: python3
     :python3_interpreter: brython
@@ -47,7 +47,7 @@ Capturing an Event
 + We will create a new window with a button and we will capture or link an event.
 + We will show a message on the screen every time the user presses the button.
 
-.. activecode:: ac_l50_3b
+.. activecode:: ac_l50_3b_en
     :nocodelens:
     :language: python3
     :python3_interpreter: brython

@@ -15,7 +15,7 @@
 
 + The two codes below do the same thing but one uses if / else conditions.
 
-.. codelens:: cl_l10_4a
+.. codelens:: cl_l10_4a_en
 
     creation_year = 1
     if creation_year <= 3:
@@ -23,7 +23,7 @@
     if creation_year > 3:
         print("Your car is old")
 
-.. codelens:: cl_l10_4b
+.. codelens:: cl_l10_4b_en
 
     creation_year = 1
     if creation_year <= 3:

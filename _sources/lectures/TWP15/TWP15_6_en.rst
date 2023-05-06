@@ -4,7 +4,7 @@ Nested loops
 + Prints multiplication tables from 1 to 10
 
 
-.. activecode:: ac_l15_6
+.. activecode:: ac_l15_6_en
    :nocodelens:
    :stdin:
 
