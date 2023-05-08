@@ -121,8 +121,8 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             Para poder jugar ahorcado necesitamos palabras para adivinar. En este caso vamos a 
             recuperar esas palabras de la API de University Domains. Estas palabras serán ciudades
             del mundo. 
-            Con la librería ``requests`` acceda a la API de University Domains. La url es la siguiente 
-            http://universities.hipolabs.com/search 
+            Con la librería ``requests`` acceda a la API de Countries and Cities. La url es la siguiente 
+            https://documenter.getpostman.com/view/1134062/T1LJjU52#intro .
             Desarrolle la función ``escoger`` que escoja de manera **aleatoria** una ciudad dentro de las ciudades de la 
             lista ``ciudades``. Esta ciudad será devuelta por la función. Cabe aclarar que el nombre de cada ciudad 
             está en inglés.
@@ -132,15 +132,18 @@ Este reto consiste en crear el juego de **ahorcado** a partir de código Python.
             import json
             from random import choice
 
-            api_url = "http://universities.hipolabs.com/search"
+            api_url = "https://countriesnow.space/api/v0.1/countries"
+            
+            pais = 'Spain'
 
             solicitud = requests.get(api_url)
             datos = json.loads(solicitud.text)
 
             ciudades = []
-            for universidad in datos:
-                if universidad["country"] not in ciudades:
-                    ciudades.append(universidad["country"].lower().replace(" ", ""))
+            for item in datos['data']:
+                if item['country']== pais:
+                    ciudades.append(item['cities'])
+            ciudades = ciudades[0]
 
             def escoger(ciudades):
                 # Desarrolle la función
