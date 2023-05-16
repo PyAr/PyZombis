@@ -1,0 +1,29 @@
+Repeticiones anidadas
+=====================
+
+
++ Imprime las tablas de multiplicar del 1 al 10
+
+
+.. activecode:: ac_l15_6
+   :nocodelens:
+   :stdin:
+
+   tabla_de_multiplicar = 1
+   while tabla_de_multiplicar <= 10:
+       n = 1
+       print("\nTabla de multiplicar del %d" %tabla_de_multiplicar)
+       while  n <= 10:
+           print("%d x %d = %d" %(tabla_de_multiplicar, n, tabla_de_multiplicar * n))
+           n = n + 1
+       tabla_de_multiplicar = tabla_de_multiplicar + 1
+
+
+.. image:: ../img/TWP05_041.jpeg
+   :height: 12.571cm
+   :width: 9.411cm
+   :align: center
+   :alt: 
+
+
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein

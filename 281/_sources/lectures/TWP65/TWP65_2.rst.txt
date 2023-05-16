@@ -1,0 +1,56 @@
+Hello World
+===========
+
+
++ Habilite la opción "No usar servidor proxy para servidores locales"
++ web2py.exe en el directorio descomprimido
++ Establecer una contraseña de administrador
++ Haga clic en "Interfaz administrativa"
++ Ingrese la contraseña que configuró
++ Tres opciones: administrador, ejemplos y bienvenida
++ Luego aprenderemos a usar electrodomésticos
++ Nueva aplicación básica: "Hola Mundo"
++ Edite el controlador default.py
+
+.. code-block:: python
+
+
+  def index():
+    return "Mi primer mensaje"
+
+
++ ctrl+S
++ Regrese y haga clic en Hello World
+
+
++ Edite el controlador nuevamente default.py
+
+.. code-block:: python
+    
+  def index():
+    return dict(msg="FATEC SJC")
+
+
++ ctrl+S
++ Ahora editemos la vista default/index
+
+
++ Borra todo y cambia la vista default/index
+
+.. code-block:: html
+
+
+  <html>
+
+    <head></head>
+
+    <body>
+
+      <h1>{{=msg}}</h1>
+
+    </body>
+
+  </html>
+
+
++ ctrl+S

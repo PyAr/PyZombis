@@ -1,0 +1,47 @@
+Último Ejercicio
+================
+
+
+.. datafile:: alice_archivo.txt
+    :fromfile: ../_static/alice.txt
+    :hide:
+
+
+.. activecode:: ac_l23_6
+    :nocodelens:
+    :available_files: alice_archivo.txt
+    :Language: python
+
+    Haga un programa que lea el archivo ``alice_archivo.txt`` y cuente el número de ocurrencias de cada palabra en el texto. Nota: 
+    para conocer los caracteres especiales use ``import string`` y use ``string.punctuation``.
+    
+    ~~~~
+    import string
+
+    archivo = open("alice_archivo.txt", "r")
+    texto = archivo.read()
+    texto = texto.lower()
+
+    for c in string.punctuation:
+        texto = texto.replace(c, " ")
+    texto = texto.split()
+
+    dic = {}
+    for palabra in texto:
+        if palabra not in dic:
+            dic[palabra] = 1
+        else:
+            dic[palabra] += 1
+
+    print("Aparece Alice %s veces" % dic["alice"])
+    archivo.close()
+
+
+.. image:: ../img/TWP05_041.jpeg
+    :height: 12.571cm
+    :width: 9.411cm
+    :align: center
+    :alt: 
+
+
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
