@@ -10,14 +10,14 @@ Desktop testing or simulation
    :widths: auto
    :align: left
 
-   ====== ====== ========
+   ===== ======== ======
    debt  purchase Screen
-   ====== ====== ========
+   ===== ======== ======
    -0-    -100-    600
    -100-  -200-
-   -300-    300
-   600
-   ====== ====== ========
+   -300-   300
+    600
+   ===== ======== ======
 
 
 Don't rush desktop testing

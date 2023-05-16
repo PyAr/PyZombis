@@ -11,7 +11,7 @@ Quiz - 4
 
     .. tab:: Exercise 1
 
-        .. activecode:: q4_1
+        .. activecode:: q4_1_en
             :nocodelens:
             
             Develop the function ``valores_extremos`` which takes the parameter ``numeros``, representing a list of **10** random numbers between 0-100. 
@@ -54,7 +54,7 @@ Quiz - 4
 
     .. tab:: Exercise 2
 
-        .. activecode:: q4_2
+        .. activecode:: q4_2_en
             :nocodelens:
 
             Develop the function ``pares_e_impares`` which takes the parameter ``numeros``. ``numeros`` represents a list of **20** random numbers between 1-100. 
@@ -101,7 +101,7 @@ Quiz - 4
 
     .. tab:: Exercise 3
 
-        .. activecode:: q4_3
+        .. activecode:: q4_3_en
             :nocodelens:
 
             Develop the function ``intercalar_listas`` which takes two parameters, ``l1`` and ``l2``, representing lists of **10** random numbers between 1-100.
@@ -143,7 +143,7 @@ Quiz - 4
 
     .. tab:: Exercise 4
 
-        .. activecode:: q4_4
+        .. activecode:: q4_4_en
             :nocodelens:
 
             The function ``buscar_palabras`` will be passed the following ``texto`` as argument: |br|
@@ -182,7 +182,7 @@ Quiz - 4
 
     .. tab:: Exercise 5
 
-        .. activecode:: q4_5
+        .. activecode:: q4_5_en
             :nocodelens:
 
             Now you will develop the function ``buscar_palabras_2``, which will be passed the previous text as a parameter. Again you will separate the 

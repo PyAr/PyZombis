@@ -41,7 +41,7 @@ Exercise
 
 FAQs
 --------------------
-.. mchoice:: feedback_l40_10_1
+.. mchoice:: feedback_l40_10_1_en
     :random:
     :answer_a: Helps us build the correct product without waste or redundancy
     :feedback_a: It often makes sense to write the test first and then write as much code as necessary to allow the test to pass.
@@ -55,7 +55,7 @@ FAQs
 
     Why is defining some tests before implementation a good programming practice?
 
-.. mchoice:: feedback_l40_10_2
+.. mchoice:: feedback_l40_10_2_en
     :random:
     :answer_a: Allows testing of the program's logical flow before coding it.
     :feedback_a: Writing pseudocode in the design stage provides several benefits, including the ability to test the logic and structure of the program before writing any actual code.

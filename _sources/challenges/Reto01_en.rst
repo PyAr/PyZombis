@@ -1,6 +1,6 @@
-=============
+=================
 Hangman Challenge
-=============
+=================
 
 This challenge consists in creating the **hangman** game from Python code.
 
@@ -10,7 +10,7 @@ This challenge consists in creating the **hangman** game from Python code.
 
         First, we'll make the different hangman drawings with text strings.
 
-        .. activecode:: ac_r01_1
+        .. activecode:: ac_r01_1_en
             :nocodelens:
 
             In the ``drawings`` list we will place the text strings that represent
@@ -89,7 +89,7 @@ This challenge consists in creating the **hangman** game from Python code.
 
         We will solve the challenge progressively.
 
-        .. activecode:: ac_r01_2
+        .. activecode:: ac_r01_2_en
             :nocodelens:
 
             Create two variables, one called "correct" and the other "incorrect". Both should be assigned to
@@ -115,7 +115,7 @@ This challenge consists in creating the **hangman** game from Python code.
 
         Do you remember the lesson on APIs? Let's apply what we learned from that lesson.
 
-        .. activecode:: ac_r01_3
+        .. activecode:: ac_r01_3_en
             :nocodelens:
 
             To play hangman we need words to guess. In this case we will retrieve those words from the University Domains API. 
@@ -165,7 +165,7 @@ This challenge consists in creating the **hangman** game from Python code.
 
         Let's define another function to print the hangman.
 
-        .. activecode:: ac_r01_4
+        .. activecode:: ac_r01_4_en
             :nocodelens:
             :include: ac_r01_1, ac_r01_2, ac_r01_3
 
@@ -187,7 +187,7 @@ This challenge consists in creating the **hangman** game from Python code.
         It's time to create the main function of our program, which asks the user for a 
         letter to guess.
 
-        .. activecode:: ac_r01_5
+        .. activecode:: ac_r01_5_en
             :nocodelens:
         
             Develop the ``guess`` function. It receives a string as a parameter (``letters``) with all the letters already
@@ -231,7 +231,7 @@ This challenge consists in creating the **hangman** game from Python code.
 
         Let's make it possible for the user to decide whether or not they want to play again.
 
-        .. activecode:: ac_r01_6
+        .. activecode:: ac_r01_6_en
             :nocodelens:
 
             Develop the ``play_again`` function that asks the user if they want to play again. The answer should be *s* or *n* (S/N). 
@@ -270,7 +270,7 @@ This challenge consists in creating the **hangman** game from Python code.
 
     .. tab:: Exercise 7
 
-        .. activecode:: ac_r01_7
+        .. activecode:: ac_r01_7_en
             :nocodelens:
 
             Now develop the ``win`` function. It takes two parameters: ``p_aleatoria``, which represents the word to be guessed, and ``letras_adivinadas``. It should return ``True`` if all the letters of ``p_aleatoria`` are in the ``letras_adivinadas`` string. Otherwise, it returns False.
@@ -295,7 +295,7 @@ This challenge consists in creating the **hangman** game from Python code.
             
         You have already defined all the necessary functions and variables for the program. If you have made it this far, you should have completed everything and passed all the unit tests. If so, you can run the following program to test your game. You have 5 minutes to play.
 
-        .. activecode:: ac_r01_8
+        .. activecode:: ac_r01_8_en
             :nocodelens:
             :include: ac_r01_1, ac_r01_2, ac_r01_3, ac_r01_4, ac_r01_5, ac_r01_6, ac_r01_7
 

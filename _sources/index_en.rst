@@ -34,21 +34,21 @@ Contenidos:
    lectures/TWP58/toctree_en
    lectures/TWP60/toctree_en
    lectures/TWP65/toctree_en
-   quiz/Quiz1.rst
-   quiz/Quiz2.rst
-   quiz/Quiz3.rst
-   quiz/Quiz4.rst
-   quiz/Quiz5.rst
-   quiz/Quiz6.rst
-   quiz/Quiz7.rst
-   quiz/Quiz8.rst
-   quiz/Quiz9.rst
-   quiz/Quiz10.rst
-   quiz/Quiz11.rst
-   quiz/Quiz12.rst
-   quiz/Quiz13.rst
-   quiz/QuizExtras.rst
-   quiz/QuizExtras2.rst
-   challenges/Reto01.rst
+   quiz/Quiz1_en.rst
+   quiz/Quiz2_en.rst
+   quiz/Quiz3_en.rst
+   quiz/Quiz4_en.rst
+   quiz/Quiz5_en.rst
+   quiz/Quiz6_en.rst
+   quiz/Quiz7_en.rst
+   quiz/Quiz8_en.rst
+   quiz/Quiz9_en.rst
+   quiz/Quiz10_en.rst
+   quiz/Quiz11_en.rst
+   quiz/Quiz12_en.rst
+   quiz/Quiz13_en.rst
+   quiz/QuizExtras_en.rst
+   quiz/QuizExtras2_en.rst
+   challenges/Reto01_en.rst
    challenges/Reto02.rst
-   challenges/Reto03.rst
+   challenges/Reto03_en.rst

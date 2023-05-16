@@ -1,5 +1,5 @@
 Operations declaration and inheritance
-=====================================
+======================================
 
 + Add the method ``statement`` to the ``Account`` class that prints a list of deposit and withdrawal operations.
 + Change the ``__init__`` method to use the ``deposit`` method to initialize the balance.
@@ -70,7 +70,7 @@ Using the Client and Improved Account Classes
     account_2.statement()
 
 Inheritance
---------
+-----------
 
 + Object inheritance allows us to modify our classes by adding or modifying attributes and methods based on the previous class.
 + We will create special accounts where we can withdraw more money than the balance, up to a certain limit.
@@ -104,14 +104,14 @@ Special Account Class
 + Note that we are completely overriding the ``withdraw`` method in ``SpecialAccount``.
 
 Advantages of Inheritance
------------------------
+-------------------------
 
 + We have made minimal changes to our program, maintaining previous functionality and adding new features.
 + It was possible to reuse account methods.
 + Therefore, the definition of the ``SpecialAccount`` class was much simpler, including only the different behavior.
 
 Using all classes
----------------------------
+-----------------
 
 ..  activecode:: ac_l25_3d_en
     :nocodelens:

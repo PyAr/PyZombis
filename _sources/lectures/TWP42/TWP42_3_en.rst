@@ -108,7 +108,7 @@ Sorting rows
 
 
 Data filtering
-------------
+--------------
 
 + We have already seen some ways of archiving data, e.g., the `LIMIT` clause.
 + In the following section, we will see some more ways to filter data, specifically the `WHERE`, `IN`, `BETWEEN`, and `LIKE` clauses.
@@ -257,7 +257,7 @@ Data filtering
    # Close the cursor
    cursor.close()
 
-   Grouping of data
+Grouping of data
 ----------------
 
 .. activecode:: ac_42_4a_en
