@@ -10,7 +10,7 @@ Quiz - 11
 
     .. tab:: Exercise 1
 
-        ..  activecode:: q11_1
+        ..  activecode:: q11_1_en
             :nocodelens:
 
             Develop the function ``verbo`` that receives a string ``s`` as a parameter. If the length of the string is at least 3, it should return the original string concatenated with ``"ing"`` at the end. If the string ``s`` already ends with ``"ing"``, concatenate the string ``"ly"``. If the length of the string is less than 3, it returns the original string. |br| |br|
@@ -45,7 +45,7 @@ Quiz - 11
 
     .. tab:: Exercise 2
 
-        ..  activecode:: q11_2
+        ..  activecode:: q11_2_en
             :nocodelens:
 
             Develop the function ``no_es_malo`` that receives a string ``s`` as a parameter. The function must search for the first occurrence of the string ``"no es"`` and the last occurrence of the string ``"malo"`` or the string ``"mala"``, if either appears after the first one, replace ``"no es" ... "malo"`` or ``"no es" ... "mala"`` with the strings ``"es bueno"`` or ``"es buena"`` respectively, then return the result. |br| |br|
@@ -105,7 +105,7 @@ Quiz - 11
 
     .. tab:: Exercise 3
 
-        .. activecode:: q11_3
+        .. activecode:: q11_3_en
             :nocodelens:
 
             Develop the function ``inicio_final`` that receives two strings ``a`` and ``b``. The strings have to be divided into two, if either of the strings has an odd number of characters, the first half will be the longest substring (for example ``dog`` will be divided into: ``do`` and ``g``). Given the two strings, return a new string formed as follows ``a_start + b_start + a_end + b_end``. |br| |br|
@@ -146,7 +146,7 @@ Quiz - 11
 
     .. tab:: Exercise 4
 
-        .. activecode:: q11_4
+        .. activecode:: q11_4_en
             :nocodelens:
 
             Develop the function ``cuantos_ceros`` that given a positive integer ``n``, returns the number of zeros at the end of the integer. |br| |br|
@@ -183,7 +183,7 @@ Quiz - 11
 
     .. tab:: Exercise 5
 
-        .. activecode:: q11_5
+        .. activecode:: q11_5_en
             :nocodelens:
 
             Develop the function ``contar_2`` that receives a positive integer ``n`` greater than 0. The function must return the number of times the digit 2 appears in the interval``[0, n-1]``. |br| |br|
@@ -216,7 +216,7 @@ Quiz - 11
 
     .. tab:: Exercise 6
 
-        .. activecode:: q11_6
+        .. activecode:: q11_6_en
             :nocodelens:
 
             Develop the function ``inicio_potencia`` that receives a positive integer ``n`` greater than 0. The function must return the first power of 2 that starts with ``n``. |br| |br|
