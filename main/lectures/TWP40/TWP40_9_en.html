@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>9. Ways to iterate &#8212; PyZombis main@765ab40</title>
+    <title>9. Ways to iterate &#8212; PyZombis main@641a982</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
@@ -23,9 +23,9 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@765ab40
+          PyZombis main@641a982
         </a>
       </div>
     </div>
@@ -330,24 +330,28 @@ window.addEventListener('load', (event) => {
 <li><p>There are various ways to iterate.</p></li>
 <li><p>All of them follow the pattern <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">&lt;var&gt;</span> <span class="pre">in</span> <span class="pre">&lt;sequence&gt;</span></code>.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP40/TWP40_9_en.rst</span>, line 8)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_3_en, line 11</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">python</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)))</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l40_9_en data-question_label="9.1">
+<div id=ac_l40_9_en_question class="ac_question col-md-12">
 
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</div>
+<textarea data-lang="python" id="ac_l40_9_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+print(list(range(10)))
 
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+for k in range(10):
+    print(k, end=" ")
 
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="s2">&quot;avocado&quot;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="n">k</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-</pre></div>
+for k in [0, 1, 2, 3]:
+    print(k, end=" ")
+
+for k in "avocado":
+    print(k + k, end=" ")
+</textarea>
 </div>
 </div>
 </div>

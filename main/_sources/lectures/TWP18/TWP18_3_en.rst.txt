@@ -4,7 +4,7 @@ Concatenation
 A string cannot be modified
 --------------------------------
 
-.. activecode:: python
+.. activecode:: ac_l18_3a_en
     :nocodelens:
     :stdin:
 
@@ -17,7 +17,7 @@ I can create new strings
 + Using concatenation solves this problem
 
 
-.. activecode:: python
+.. activecode:: ac_l18_3b_en
     :nocodelens:
     :stdin:
 
@@ -30,7 +30,7 @@ I can create new strings
   The ``lower`` function transforms the letters to lowercase.
 
 
-.. activecode:: python
+.. activecode:: ac_l18_3c_en
     :nocodelens:
     :stdin:
 
@@ -49,7 +49,7 @@ I can create new strings
 Exercise
 ---------
 
-.. activecode:: python
+.. activecode:: ac_l18_3d_en
     :nocodelens:
     :stdin:
 

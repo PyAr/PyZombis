@@ -11,7 +11,7 @@ Quiz - 12
 
     .. tab:: Exercise 1
 
-        .. activecode:: q12_1
+        .. activecode:: q12_1_en
             :nocodelens:
 
             Develop the function ``ends_equal`` that, given a list of strings ``words``, returns the number of strings
@@ -40,7 +40,7 @@ Quiz - 12
 
     .. tab:: Exercise 2
 
-        .. activecode:: q12_2
+        .. activecode:: q12_2_en
             :nocodelens:
 
             Develop the function ``x_before`` that, given a list of strings ``words``, returns 
@@ -84,7 +84,7 @@ Quiz - 12
 
     .. tab:: Exercise 3
 
-        .. activecode:: q12_3
+        .. activecode:: q12_3_en
             :nocodelens:
 
             Develop the function ``sort_tuples`` that, given a non-empty list of tuples, returns another list 

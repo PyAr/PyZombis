@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Concatenation &#8212; PyZombis main@765ab40</title>
+    <title>3. Concatenation &#8212; PyZombis main@641a982</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
@@ -23,9 +23,9 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@765ab40
+          PyZombis main@641a982
         </a>
       </div>
     </div>
@@ -330,11 +330,11 @@ window.addEventListener('load', (event) => {
 <h2><span class="section-number">3.1. </span>A string cannot be modified<a class="headerlink" href="#a-string-cannot-be-modified" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=python data-question_label="3.1.1">
-<div id=python_question class="ac_question col-md-12">
+<div data-component="activecode" id=ac_l18_3a_en data-question_label="3.1.1">
+<div id=ac_l18_3a_en_question class="ac_question col-md-12">
 
 </div>
-<textarea data-lang="python" id="python_editor" 
+<textarea data-lang="python" id="ac_l18_3a_en_editor" 
       data-timelimit=25000     
     data-audio=''   data-stdin=''   
            data-wasm=/_static
@@ -350,78 +350,86 @@ texto[0] = "@"
 <ul class="simple">
 <li><p>Using concatenation solves this problem</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_3_en.rst</span>, line 20)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_3_en, line 11</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">python</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">texto</span> <span class="o">=</span> <span class="s2">&quot;Hello world&quot;</span>
-    <span class="n">texto</span> <span class="o">=</span> <span class="s2">&quot;@&quot;</span> <span class="o">+</span> <span class="n">texto</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">texto</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l18_3b_en data-question_label="3.2.1">
+<div id=ac_l18_3b_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l18_3b_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+texto = "Hello world"
+texto = "@" + texto[1:]
+print(texto)
+</textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p>Example of a program that reads a word and replaces the vowels with <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code>.
 The <code class="docutils literal notranslate"><span class="pre">lower</span></code> function transforms the letters to lowercase.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_3_en.rst</span>, line 33)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_3_en, line 11</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">python</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">palabra</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Word: &quot;</span><span class="p">)</span>
-    <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">intercambio</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="k">while</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">palabra</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">palabra</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="s2">&quot;aeiou&quot;</span><span class="p">:</span>
-            <span class="n">intercambio</span> <span class="o">=</span> <span class="n">intercambio</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">intercambio</span> <span class="o">=</span> <span class="n">intercambio</span> <span class="o">+</span> <span class="n">palabra</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
-        <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;New word </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">intercambio</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l18_3c_en data-question_label="3.2.2">
+<div id=ac_l18_3c_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l18_3c_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+palabra = input("Word: ")
+k = 0
+intercambio = ""
+while k < len(palabra):
+    if palabra[k].lower() in "aeiou":
+        intercambio = intercambio + "*"
+    else:
+        intercambio = intercambio + palabra[k]
+    k += 1
+print("New word %s" % intercambio)
+</textarea>
 </div>
 </div>
 </div>
 <div class="section" id="exercise">
 <h2><span class="section-number">3.3. </span>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_3_en.rst</span>, line 52)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_3_en, line 11</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">python</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="c1"># Now create a program that reads a word, saves it in the variable &quot;palabra&quot;,</span>
-    <span class="c1"># and replaces the consonants with &quot;*&quot;. Save the result in the variable &quot;intercambio&quot;.</span>
-    <span class="c1"># You can use the previous program as a reference.</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l18_3d_en data-question_label="3.3.1">
+<div id=ac_l18_3d_en_question class="ac_question col-md-12">
+<p># Now create a program that reads a word, saves it in the variable “palabra”,
+# and replaces the consonants with “*”. Save the result in the variable “intercambio”.
+# You can use the previous program as a reference.</p>
 
-    <span class="o">~~~~</span>
-    <span class="c1"># Use the input function to read the word from the user.</span>
-
-
-    <span class="o">====</span>
-    <span class="kn">from</span> <span class="nn">unittest.gui</span> <span class="kn">import</span> <span class="n">TestCaseGui</span>
+</div>
+<textarea data-lang="python" id="ac_l18_3d_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+# Use the input function to read the word from the user.
 
 
-    <span class="k">class</span> <span class="nc">myTests</span><span class="p">(</span><span class="n">TestCaseGui</span><span class="p">):</span>
-        <span class="k">def</span> <span class="nf">testOne</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span>
-                <span class="n">intercambio</span><span class="p">,</span>
-                <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;*&quot;</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s2">&quot;aeiou&quot;</span> <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">palabra</span><span class="p">]),</span>
-                <span class="s2">&quot;Testing that intercambio is correctly assigned&quot;</span><span class="p">,</span>
-            <span class="p">)</span>
+====
+from unittest.gui import TestCaseGui
 
 
-    <span class="n">myTests</span><span class="p">()</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
-</pre></div>
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(
+            intercambio,
+            "".join(["*" if c.lower() not in "aeiou" else c for c in palabra]),
+            "Testing that intercambio is correctly assigned",
+        )
+
+
+myTests().main()
+</textarea>
 </div>
 </div>
 </div>

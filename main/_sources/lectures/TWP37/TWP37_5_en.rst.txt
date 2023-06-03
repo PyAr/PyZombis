@@ -48,7 +48,7 @@ Sorting in decreasing order
 
 
 ``sort`` and ``reverse`` methods
-------------------------------
+--------------------------------
 
 + The ``sort`` method sorts the data.
 + The use of ``reverse`` keeps them in descending order.

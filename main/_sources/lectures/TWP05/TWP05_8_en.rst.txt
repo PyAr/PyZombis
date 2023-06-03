@@ -12,16 +12,16 @@ Relational Operators
 .. table:: **Relational Operators**
    :widths: auto
 
-   ======== ============== ==============================
-   Operator Operation      Mathematical equivalent symbol
-   ======== ============== ==============================
-   ==       equal          =
-   >        greater than   >
-   <        less than      <
-   !=       not equal      <>
-   >=       greater or equal  >=
-   <=       less or equal  <=
-   ======== ============== ==============================
+   ======== ================ ==============================
+   Operator Operation        Mathematical equivalent symbol
+   ======== ================ ==============================
+   ==       equal            =
+   >        greater than     >
+   <        less than        <
+   !=       not equal        <>
+   >=       greater or equal >=
+   <=       less or equal    <=
+   ======== ================ ==============================
  
 + Note that the equality operator is two equals (``==``)
 

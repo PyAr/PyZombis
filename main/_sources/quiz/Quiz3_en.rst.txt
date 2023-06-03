@@ -11,7 +11,7 @@ Quiz - 3
 
    .. tab:: Exercise 1
 
-      .. activecode:: q3_1
+      .. activecode:: q3_1_en
          :nocodelens:
 
          We say that a natural number is triangular if it is the product of three consecutive natural numbers. |br| |br|
@@ -40,7 +40,7 @@ Quiz - 3
 
    .. tab:: Exercise 2
    
-      .. activecode:: q3_2
+      .. activecode:: q3_2_en
          :nocodelens:
 
          Indicate how to make change using the minimum number of bills. 
@@ -75,7 +75,7 @@ Quiz - 3
 
    .. tab:: Exercise 3
 
-      .. activecode:: q3_3
+      .. activecode:: q3_3_en
          :nocodelens:
 
          Check whether a positive integer ``n`` is prime. |br|
@@ -104,7 +104,7 @@ Quiz - 3
    
    .. tab:: Exercise 4
 
-      .. activecode:: q3_4
+      .. activecode:: q3_4_en
          :nocodelens:
 
          Given a positive integer ``n``, determine its prime factorization 
@@ -138,7 +138,7 @@ Quiz - 3
 
    .. tab:: Exercise 5
 
-      .. activecode:: q3_5
+      .. activecode:: q3_5_en
          :nocodelens:
 
          Make a program that asks for a positive integer ``n`` and shows it inverted. 

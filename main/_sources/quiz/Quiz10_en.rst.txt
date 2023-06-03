@@ -11,7 +11,7 @@ Quiz - 10
 
     .. tab:: Exercise 1
 
-        .. activecode:: q10_1
+        .. activecode:: q10_1_en
             :nocodelens:
 
             Develop the function ``cuantas_donas`` that takes ``n``, a positive integer, as a parameter, 
@@ -52,7 +52,7 @@ Quiz - 10
 
     .. tab:: Exercise 2
 
-        .. activecode:: q10_2
+        .. activecode:: q10_2_en
             :nocodelens:
 
             Develop the function ``cadena_de_extremos`` that, given a string ``s``, 
@@ -86,7 +86,7 @@ Quiz - 10
 
     .. tab:: Exercise 3
 
-        .. activecode:: q10_3
+        .. activecode:: q10_3_en
             :nocodelens:
 
             Develop the function ``remplazar_primer_caracter`` that, given a string ``s``, 
@@ -120,7 +120,7 @@ Quiz - 10
 
     .. tab:: Exercise 4
 
-        .. activecode:: q10_4
+        .. activecode:: q10_4_en
             :nocodelens:
 
             Develop the function ``combinar_dos_cadenas`` that takes two strings as 
@@ -163,7 +163,7 @@ Quiz - 10
     .. tab:: Exercise 5
 
 
-        .. activecode:: q10_5
+        .. activecode:: q10_5_en
             :nocodelens:
 
             Develop the function ``es_palindromo`` that takes a string ``s`` as 
@@ -197,7 +197,7 @@ Quiz - 10
 
     .. tab:: Exercise 6
 
-        .. activecode:: q10_6
+        .. activecode:: q10_6_en
             :nocodelens:
 
             Develop the function ``contar_ocurrencias`` that takes two parameters: 

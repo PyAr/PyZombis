@@ -11,7 +11,7 @@ Quiz - Extras 2
 
     .. tab:: Exercise 1
 
-        ..  activecode:: qExtra2_1
+        ..  activecode:: qExtra2_1_en
             :nocodelens:
 
             A primary school is planning a field trip to the zoo for some of its students. For this, the school can only spend exactly ``budget`` units. It is known that the entry to the zoo costs 5 units for children under 12 years old and 7 units for those who are 12 years old or older. Develop the function ``maximo_estudiantes`` that receives ``budget``, a positive integer that indicates the budget that the school intends to spend. The function should return a tuple ``(p, g)`` with the maximum number of small and large students that the school can take to the zoo considering all values as integers. |br| |br|
@@ -42,7 +42,7 @@ Quiz - Extras 2
 
     .. tab:: Exercise 2
 
-        ..  activecode:: qExtra2_2
+        ..  activecode:: qExtra2_2_en
             :nocodelens:
 
             Develop the function ``a_romano``, which receives a positive integer ``n`` greater than zero. The function should return the conversion of the number from Arabic to Roman numerals. The function should return a string that represents the number in Roman numerals. |br| |br|
@@ -82,7 +82,7 @@ Quiz - Extras 2
 
     .. tab:: Exercise 3
 
-        ..  activecode:: qExtra2_3
+        ..  activecode:: qExtra2_3_en
             :nocodelens:
 
             Develop the function ``calcular_pi``, which receives a positive parameter ``n`` greater than 0. The function should calculate the approximate value of ``pi`` with ``n`` terms, according to the following formula. |br|

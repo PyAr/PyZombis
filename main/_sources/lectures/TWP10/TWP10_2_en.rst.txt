@@ -6,7 +6,7 @@
 + There are points where we decide which path to choose.
 
 .. image:: ../img/TWP10_004.png
-    :height: 5.28 inches
-    :width: 7.87 inches
+    :height: 13.389cm
+    :width: 20.001cm
     :align: center
     :alt: Python code snippet.

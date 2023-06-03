@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pygame Challenge - Zombie Shooter &#8212; PyZombis main@765ab40</title>
+    <title>Pygame Challenge - Zombie Shooter &#8212; PyZombis main@641a982</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
@@ -23,9 +23,9 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
@@ -33,6 +33,7 @@
     <script src="../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Hangman Challenge" href="Reto01_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +91,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis main@765ab40
+          PyZombis main@641a982
         </a>
       </div>
     </div>
@@ -240,6 +241,14 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - Hangman Challenge" data-toggle="tooltip">
+    <a href="Reto01_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+    <li class="divider-vertical"></li>
+  
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +277,12 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Hangman Challenge' data-toggle="tooltip">
+  <a href="Reto01_en.html" aria-label="Previous - Hangman Challenge">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
 
 <script>
 window.addEventListener('load', (event) => {
@@ -300,255 +315,250 @@ window.addEventListener('load', (event) => {
   
   <div class="section" id="pygame-challenge-zombie-shooter">
 <h1>Pygame Challenge - Zombie Shooter<a class="headerlink" href="#pygame-challenge-zombie-shooter" title="Permalink to this headline">¶</a></h1>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/challenges/Reto03_en.rst</span>, line 1)</p>
-<p>Title overline too short.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">================================</span>
-<span class="n">Pygame</span> <span class="n">Challenge</span> <span class="o">-</span> <span class="n">Zombie</span> <span class="n">Shooter</span>
-<span class="o">================================</span>
-</pre></div>
-</div>
-</div>
   <script src='../_static/game.js'></script>
 
   <script type="module">
      window.gamejs.init();
      window.gamejs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.png', '../_static/BlueBar1.jpg',
 '../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"]);
-  </script><div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/challenges/Reto03_en.rst</span>, line 16)</p>
-<p>Duplicate ID – see challenges/Reto03, line 20</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_r03_1</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python3</span>
-    <span class="p">:</span><span class="n">python3_interpreter</span><span class="p">:</span> <span class="n">brython</span>
+  </script>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_r03_1_en data-question_label="1">
+<div id=ac_r03_1_en_question class="ac_question col-md-12">
 
-    <span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">load</span><span class="p">,</span> <span class="n">timer</span><span class="p">,</span> <span class="n">window</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/game.js&#39;</span><span class="p">)</span>
-    <span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/pygame.brython.js&#39;</span><span class="p">)</span>
-    <span class="n">gjs</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">gamejs</span>
-    <span class="n">gjs</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">preload</span><span class="p">([</span><span class="s2">&quot;../_static/zomb.png&quot;</span><span class="p">,</span> <span class="s2">&quot;../_static/bg2.jpg&quot;</span><span class="p">,</span> <span class="s1">&#39;../_static/human.png&#39;</span><span class="p">,</span> <span class="s1">&#39;../_static/BlueBar1.jpg&#39;</span><span class="p">,</span>\
-    <span class="s1">&#39;../_static/bullet.png&#39;</span><span class="p">,</span> <span class="s1">&#39;../_static/blast.png&#39;</span><span class="p">,</span>  <span class="s2">&quot;../_static/bg1.jpg&quot;</span><span class="p">])</span>
-    <span class="n">gjs</span><span class="o">.</span><span class="n">ready</span><span class="p">()</span>
+</div>
+<textarea data-lang="python3" id="ac_r03_1_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, timer, window
+load('../_static/game.js')
+load('../_static/pygame.brython.js')
+gjs = window.gamejs
+gjs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.png', '../_static/BlueBar1.jpg',\
+'../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"])
+gjs.ready()
 
-    <span class="o">^^^^</span>
-    <span class="kn">import</span> <span class="nn">pygame</span>
-    <span class="kn">from</span> <span class="nn">pygame.color</span> <span class="kn">import</span> <span class="o">*</span>
-    <span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
-    <span class="kn">import</span> <span class="nn">random</span>
-    <span class="kn">import</span> <span class="nn">math</span>
+^^^^
+import pygame
+from pygame.color import *
+from pygame.locals import *
+import random
+import math
 
-    <span class="n">timer1</span><span class="o">=</span><span class="kc">None</span>
+timer1=None
 
-    <span class="k">class</span> <span class="nc">Chaser</span><span class="p">:</span>
-        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+class Chaser:
+    def __init__(self):
 
-            <span class="bp">self</span><span class="o">.</span><span class="n">running</span><span class="o">=</span><span class="kc">True</span>
-            <span class="c1">#----shooter----&lt;</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">shooterX</span> <span class="o">=</span> <span class="mi">235</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">shooterY</span> <span class="o">=</span> <span class="mi">500</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">shooterX1</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">shooterY1</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="c1">#----Enemy-------&lt;</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">enemyImg</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">enemyX</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">enemyY</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">enemyX1</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">enemyY1</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">enemyBullet</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">enemyBulY</span><span class="o">=</span><span class="mi">0</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">bulY1</span><span class="o">=</span><span class="p">[]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">enemybulX</span><span class="o">=</span><span class="mi">0</span>
-            <span class="c1">#---bullet----&lt;</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">bulletY</span> <span class="o">=</span> <span class="mi">500</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">bulletX</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">bulletX1</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">bulletY1</span> <span class="o">=</span> <span class="mi">30</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">bulletState</span> <span class="o">=</span> <span class="s1">&#39;Ready&#39;</span>
-            <span class="c1">#-----score----&lt;</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">score_value</span><span class="o">=</span><span class="mi">0</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span>
-
-
-        <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scr</span><span class="p">):</span>
-            <span class="n">font</span><span class="o">=</span><span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">SysFont</span><span class="p">(</span><span class="s1">&#39;timesnewroman&#39;</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
-            <span class="n">score</span><span class="o">=</span><span class="n">font</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="s1">&#39;Score: &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">score_value</span><span class="p">),</span><span class="kc">True</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">),</span><span class="n">Color</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">))</span>
-            <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">score</span><span class="p">,(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+        self.running=True
+        #----shooter----<
+        self.shooterX = 235
+        self.shooterY = 500
+        self.shooterX1 = 0
+        self.shooterY1 = 0
+        #----Enemy-------<
+        self.enemyImg = []
+        self.enemyX = []
+        self.enemyY = []
+        self.enemyX1 = []
+        self.enemyY1 = []
+        self.enemyBullet = []
+        self.enemyBulY=0
+        self.bulY1=[]
+        self.enemybulX=0
+        #---bullet----<
+        self.bulletY = 500
+        self.bulletX = 0
+        self.bulletX1 = 0
+        self.bulletY1 = 30
+        self.bulletState = 'Ready'
+        #-----score----<
+        self.score_value=0
+        self.j=0
 
 
-        <span class="k">def</span> <span class="nf">shooter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">scr</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">500</span><span class="p">:</span>
-                <span class="n">x</span> <span class="o">=</span> <span class="mi">500</span>
-            <span class="k">elif</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="mi">400</span><span class="p">:</span>
-                <span class="n">y</span><span class="o">=</span><span class="mi">400</span>
-            <span class="k">elif</span> <span class="n">y</span> <span class="o">&gt;=</span> <span class="mi">550</span><span class="p">:</span>
-                <span class="n">y</span><span class="o">=</span><span class="mi">550</span>
-            <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/human.png&#39;</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
-
-        <span class="k">def</span> <span class="nf">enemy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">enemyImg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/zomb.png&#39;</span><span class="p">))</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">enemyX</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">))</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">enemyY</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">))</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">enemyX1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">enemyY1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">bulY1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">enemyBullet</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/BlueBar1.jpg&#39;</span><span class="p">))</span>
-
-        <span class="k">def</span> <span class="nf">bullet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">scr</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">bulletState</span><span class="o">=</span><span class="s1">&#39;fire&#39;</span>
-            <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/bullet.png&#39;</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">8</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
-
-        <span class="k">def</span> <span class="nf">collision_e_b</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-            <span class="n">dist</span><span class="o">=</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">X</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">Y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">dist</span> <span class="o">&lt;=</span><span class="mi">30</span><span class="p">:</span> <span class="k">return</span> <span class="kc">True</span>
-            <span class="k">else</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
-
-        <span class="k">def</span> <span class="nf">collision_E_S</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-            <span class="n">dist</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">x</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="p">(</span><span class="n">y</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">dist</span> <span class="o">&lt;=</span> <span class="mi">35</span><span class="p">:</span> <span class="k">return</span> <span class="kc">True</span>
-            <span class="k">else</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
-
-        <span class="k">def</span> <span class="nf">collision_enemyBul_S</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">enemybulX</span><span class="p">,</span><span class="n">enemyBulY</span><span class="p">,</span><span class="n">shooterX</span><span class="p">,</span><span class="n">shooterY</span><span class="p">):</span>
-            <span class="n">dist</span><span class="o">=</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">enemybulX</span><span class="o">-</span><span class="n">shooterX</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="p">(</span><span class="n">enemyBulY</span><span class="o">-</span><span class="n">shooterY</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">dist</span> <span class="o">&lt;=</span><span class="mi">24</span> <span class="p">:</span>
-                <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/blast.png&#39;</span><span class="p">),(</span><span class="bp">self</span><span class="o">.</span><span class="n">shooterX</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">shooterY</span><span class="p">))</span>
-                <span class="k">return</span> <span class="kc">True</span>
-            <span class="k">else</span><span class="p">:</span> <span class="k">return</span> <span class="kc">False</span>
+    def score(self, scr):
+        font=pygame.font.SysFont('timesnewroman',30)
+        score=font.render('Score: '+ str(self.score_value),True, Color(255,255,255),Color(200,100,100))
+        scr.blit(score,(10,10))
 
 
-    <span class="k">def</span> <span class="nf">over</span><span class="p">():</span>
-        <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/bg2.jpg&#39;</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
-        <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">game</span><span class="p">,(</span><span class="mi">50</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="mi">600</span><span class="o">/</span><span class="mi">2</span><span class="p">)))</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+    def shooter(self, x, y, scr):
+        if x <= 0:
+            x = 0
+        elif x >= 500:
+            x = 500
+        elif y <= 400:
+            y=400
+        elif y >= 550:
+            y=550
+        scr.blit(pygame.image.load('../_static/human.png'), (x, y))
 
-    <span class="k">def</span> <span class="nf">over_helper</span><span class="p">():</span>
-        <span class="k">global</span> <span class="n">timer1</span>
-        <span class="n">timer</span><span class="o">.</span><span class="n">clear_interval</span><span class="p">(</span><span class="n">timer1</span><span class="p">)</span>
-        <span class="n">timer1</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="n">over</span><span class="p">()</span>
+    def enemy(self):
+        for i in range(8):
+            self.enemyImg.append(pygame.image.load('../_static/zomb.png'))
+            self.enemyX.append(random.randint(0, 500))
+            self.enemyY.append(random.randint(5, 60))
+            self.enemyX1.append(10)
+            self.enemyY1.append(40)
+            self.bulY1.append(2)
+            self.enemyBullet.append(pygame.image.load('../_static/BlueBar1.jpg'))
+
+    def bullet(self, x, y, scr):
+        self.bulletState='fire'
+        scr.blit(pygame.image.load('../_static/bullet.png'), (x+8, y))
+
+    def collision_e_b(self, X, Y, i):
+        dist=math.sqrt((self.enemyX[i]-X)**2+(self.enemyY[i]-Y)**2)
+        if dist <=30: return True
+        else: return False
+
+    def collision_E_S(self, x, y, i):
+        dist = math.sqrt((x-self.enemyX[i])**2+(y-self.enemyY[i])**2)
+        if dist <= 35: return True
+        else: return False
+
+    def collision_enemyBul_S(self,enemybulX,enemyBulY,shooterX,shooterY):
+        dist=math.sqrt((enemybulX-shooterX)**2+(enemyBulY-shooterY)**2)
+        if dist <=24 :
+            scr.blit(pygame.image.load('../_static/blast.png'),(self.shooterX,self.shooterY))
+            return True
+        else: return False
 
 
+def over():
+    scr.blit(pygame.image.load('../_static/bg2.jpg'),(0,0))
+    scr.blit(game,(50,int(600/2)))
+    pygame.display.update()
 
-    <span class="n">scr</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="mi">550</span><span class="p">,</span> <span class="mi">600</span><span class="p">))</span>
-    <span class="n">font</span><span class="o">=</span><span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">SysFont</span><span class="p">(</span><span class="s1">&#39;timesnewroman&#39;</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
-    <span class="n">game</span><span class="o">=</span><span class="n">font</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="s1">&#39;Game Over -</span><span class="se">\n</span><span class="s1"> Press run to Play Again&#39;</span><span class="p">,</span><span class="kc">True</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">230</span><span class="p">,</span><span class="mi">220</span><span class="p">,</span><span class="mi">170</span><span class="p">))</span>
-    <span class="n">p1</span><span class="o">=</span> <span class="n">Chaser</span><span class="p">()</span>
-    <span class="n">p1</span><span class="o">.</span><span class="n">enemy</span><span class="p">()</span>
-    <span class="n">p1</span><span class="o">.</span><span class="n">enemybulX</span><span class="o">=</span><span class="n">p1</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">)]</span>
-
-
-    <span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
-        <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/bg2.jpg&#39;</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
-        <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/BlueBar1.jpg&#39;</span><span class="p">),(</span><span class="n">p1</span><span class="o">.</span><span class="n">enemybulX</span><span class="o">+</span><span class="mi">15</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">enemyBulY</span><span class="o">+</span><span class="mi">12</span><span class="p">))</span>
-        <span class="n">p1</span><span class="o">.</span><span class="n">enemyBulY</span><span class="o">+=</span><span class="mi">24</span>
-
-        <span class="k">if</span> <span class="n">p1</span><span class="o">.</span><span class="n">enemyBulY</span><span class="o">&gt;=</span><span class="mi">600</span><span class="p">:</span>
-            <span class="n">p1</span><span class="o">.</span><span class="n">enemyBulY</span><span class="o">=</span><span class="n">p1</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">)]</span>
-            <span class="n">p1</span><span class="o">.</span><span class="n">enemybulX</span><span class="o">=</span><span class="n">p1</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">)]</span>
-
-        <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
-            <span class="c1">#---Shooter Movement------&lt;</span>
-            <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">KEYDOWN</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_LEFT</span><span class="p">:</span>
-                    <span class="n">p1</span><span class="o">.</span><span class="n">shooterX1</span> <span class="o">-=</span> <span class="mi">15</span>
-                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_RIGHT</span><span class="p">:</span>
-                    <span class="n">p1</span><span class="o">.</span><span class="n">shooterX1</span> <span class="o">+=</span> <span class="mi">15</span>
-                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_UP</span><span class="p">:</span>
-                    <span class="n">p1</span><span class="o">.</span><span class="n">shooterY1</span><span class="o">-=</span><span class="mi">15</span>
-                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_DOWN</span><span class="p">:</span>
-                    <span class="n">p1</span><span class="o">.</span><span class="n">shooterY1</span><span class="o">+=</span><span class="mi">15</span>
-                <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_SPACE</span><span class="p">:</span>
-                    <span class="k">if</span> <span class="n">p1</span><span class="o">.</span><span class="n">bulletState</span> <span class="o">==</span> <span class="s1">&#39;Ready&#39;</span><span class="p">:</span>
-                        <span class="n">p1</span><span class="o">.</span><span class="n">bulletX</span> <span class="o">=</span> <span class="n">p1</span><span class="o">.</span><span class="n">shooterX</span>
-                        <span class="n">p1</span><span class="o">.</span><span class="n">bulletY</span> <span class="o">=</span> <span class="n">p1</span><span class="o">.</span><span class="n">shooterY</span>
-                        <span class="n">p1</span><span class="o">.</span><span class="n">bullet</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">bulletX</span><span class="p">,</span> <span class="n">p1</span><span class="o">.</span><span class="n">bulletY</span><span class="p">,</span> <span class="n">scr</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">KEYUP</span><span class="p">:</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">shooterX1</span> <span class="o">=</span> <span class="mi">0</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">shooterY1</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="n">p1</span><span class="o">.</span><span class="n">shooterX</span> <span class="o">+=</span> <span class="n">p1</span><span class="o">.</span><span class="n">shooterX1</span>
-        <span class="n">p1</span><span class="o">.</span><span class="n">shooterY</span> <span class="o">+=</span> <span class="n">p1</span><span class="o">.</span><span class="n">shooterY1</span>
-        <span class="n">p1</span><span class="o">.</span><span class="n">shooter</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterX</span><span class="p">,</span> <span class="n">p1</span><span class="o">.</span><span class="n">shooterY</span><span class="p">,</span> <span class="n">scr</span><span class="p">)</span>
-
-        <span class="c1"># ------Enemy-----&lt;</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
-            <span class="n">p1</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">p1</span><span class="o">.</span><span class="n">enemyX1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-            <span class="k">if</span> <span class="n">p1</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">enemyX1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">14</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">p1</span><span class="o">.</span><span class="n">enemyY1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-            <span class="k">elif</span> <span class="n">p1</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">500</span><span class="p">:</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">enemyX1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=-</span> <span class="mi">14</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">p1</span><span class="o">.</span><span class="n">enemyY1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-            <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">enemyImg</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">p1</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
-
-            <span class="c1">#-------collision of bullet and enemy--------&lt;</span>
-            <span class="n">col</span> <span class="o">=</span> <span class="n">p1</span><span class="o">.</span><span class="n">collision_e_b</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">bulletX</span><span class="p">,</span> <span class="n">p1</span><span class="o">.</span><span class="n">bulletY</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">p1</span><span class="o">.</span><span class="n">bulletState</span> <span class="o">==</span> <span class="s1">&#39;fire&#39;</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">col</span><span class="p">:</span>
-                    <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/blast.png&#39;</span><span class="p">),(</span><span class="n">p1</span><span class="o">.</span><span class="n">bulletX</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">bulletY</span><span class="p">))</span>
-                    <span class="n">p1</span><span class="o">.</span><span class="n">score_value</span> <span class="o">+=</span> <span class="mi">1</span>
-                    <span class="n">p1</span><span class="o">.</span><span class="n">bulletY</span> <span class="o">=</span> <span class="mi">500</span>
-                    <span class="n">p1</span><span class="o">.</span><span class="n">bulletState</span><span class="o">=</span><span class="s1">&#39;Ready&#39;</span>
-                    <span class="n">p1</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
-                    <span class="n">p1</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">60</span><span class="p">)</span>
-
-            <span class="c1">#-------collision of Shooter and enemy--------&lt;</span>
-            <span class="n">col2</span> <span class="o">=</span> <span class="n">p1</span><span class="o">.</span><span class="n">collision_E_S</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterX</span><span class="p">,</span> <span class="n">p1</span><span class="o">.</span><span class="n">shooterY</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">col2</span><span class="p">:</span>
-                <span class="c1"># scr.blit(pygame.image.load(&#39;Icons\\bgover.png&#39;),(550,600))</span>
-                <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/blast.png&#39;</span><span class="p">),(</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterX</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterY</span><span class="p">))</span>
-                <span class="n">over_helper</span><span class="p">()</span>
+def over_helper():
+    global timer1
+    timer.clear_interval(timer1)
+    timer1 = None
+    over()
 
 
 
+scr = pygame.display.set_mode((550, 600))
+font=pygame.font.SysFont('timesnewroman',30)
+game=font.render('Game Over -\n Press run to Play Again',True, Color(230,220,170))
+p1= Chaser()
+p1.enemy()
+p1.enemybulX=p1.enemyX[random.randint(0,7)]
 
-            <span class="c1">#------Collision of Bottom and Enemy--------&lt;</span>
-            <span class="k">if</span> <span class="n">p1</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">600</span><span class="p">:</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">60</span><span class="p">)</span>
 
-            <span class="c1">#-------Collision of EnemyBul and Shooter-------&lt;</span>
-            <span class="n">col3</span><span class="o">=</span> <span class="n">p1</span><span class="o">.</span><span class="n">collision_enemyBul_S</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">enemybulX</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">enemyBulY</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterX</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterY</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">col3</span><span class="p">:</span>
-                <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/bg2.jpg&#39;</span><span class="p">),(</span><span class="mi">550</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
-                <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/blast.png&#39;</span><span class="p">),(</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterX</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterY</span><span class="p">))</span>
-                <span class="n">over_helper</span><span class="p">()</span>
+def func():
+    scr.blit(pygame.image.load('../_static/bg2.jpg'),(0,0))
+    scr.blit(pygame.image.load('../_static/BlueBar1.jpg'),(p1.enemybulX+15,p1.enemyBulY+12))
+    p1.enemyBulY+=24
+
+    if p1.enemyBulY>=600:
+        p1.enemyBulY=p1.enemyY[random.randint(0,7)]
+        p1.enemybulX=p1.enemyX[random.randint(0,7)]
+
+    for event in pygame.event.get():
+        #---Shooter Movement------<
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                p1.shooterX1 -= 15
+            if event.key == pygame.K_RIGHT:
+                p1.shooterX1 += 15
+            if event.key == pygame.K_UP:
+                p1.shooterY1-=15
+            if event.key == pygame.K_DOWN:
+                p1.shooterY1+=15
+            if event.key == pygame.K_SPACE:
+                if p1.bulletState == 'Ready':
+                    p1.bulletX = p1.shooterX
+                    p1.bulletY = p1.shooterY
+                    p1.bullet(p1.bulletX, p1.bulletY, scr)
+        if event.type == pygame.KEYUP:
+            p1.shooterX1 = 0
+            p1.shooterY1 = 0
+    p1.shooterX += p1.shooterX1
+    p1.shooterY += p1.shooterY1
+    p1.shooter(p1.shooterX, p1.shooterY, scr)
+
+    # ------Enemy-----<
+    for i in range(8):
+        p1.enemyX[i] += p1.enemyX1[i]
+        if p1.enemyX[i] <= 0:
+            p1.enemyX1[i] = 14
+            p1.enemyY[i] += p1.enemyY1[i]
+        elif p1.enemyX[i] >= 500:
+            p1.enemyX1[i] =- 14
+            p1.enemyY[i] += p1.enemyY1[i]
+        scr.blit(p1.enemyImg[i], (p1.enemyX[i], p1.enemyY[i]))
+
+        #-------collision of bullet and enemy--------<
+        col = p1.collision_e_b(p1.bulletX, p1.bulletY, i)
+        if p1.bulletState == 'fire':
+            if col:
+                scr.blit(pygame.image.load('../_static/blast.png'),(p1.bulletX,p1.bulletY))
+                p1.score_value += 1
+                p1.bulletY = 500
+                p1.bulletState='Ready'
+                p1.enemyX[i] = random.randint(0,500)
+                p1.enemyY[i] = random.randint(5,60)
+
+        #-------collision of Shooter and enemy--------<
+        col2 = p1.collision_E_S(p1.shooterX, p1.shooterY, i)
+        if col2:
+            # scr.blit(pygame.image.load('Icons\\bgover.png'),(550,600))
+            scr.blit(pygame.image.load('../_static/blast.png'),(p1.shooterX,p1.shooterY))
+            over_helper()
 
 
 
 
-            <span class="c1">#------Collision of Bottom and Enemy--------&lt;</span>
-            <span class="k">if</span> <span class="n">p1</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">600</span><span class="p">:</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">enemyX</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
-                <span class="n">p1</span><span class="o">.</span><span class="n">enemyY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">60</span><span class="p">)</span>
+        #------Collision of Bottom and Enemy--------<
+        if p1.enemyY[i] >= 600:
+            p1.enemyX[i] = random.randint(0,500)
+            p1.enemyY[i] = random.randint(5,60)
 
-            <span class="c1">#-------Collision of EnemyBul and Shooter-------&lt;</span>
-            <span class="n">col3</span><span class="o">=</span> <span class="n">p1</span><span class="o">.</span><span class="n">collision_enemyBul_S</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">enemybulX</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">enemyBulY</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterX</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterY</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">col3</span><span class="p">:</span>
-                <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/bg2.jpg&#39;</span><span class="p">),(</span><span class="mi">550</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
-                <span class="n">scr</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../_static/blast.png&#39;</span><span class="p">),(</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterX</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="n">shooterY</span><span class="p">))</span>
-                <span class="n">over_helper</span><span class="p">()</span>
-                <span class="c1"># break</span>
-
-        <span class="c1">#--------Shooter Bullet------&lt;</span>
-        <span class="k">if</span> <span class="n">p1</span><span class="o">.</span><span class="n">bulletY</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">p1</span><span class="o">.</span><span class="n">bulletY</span> <span class="o">=</span> <span class="mi">480</span>
-            <span class="n">p1</span><span class="o">.</span><span class="n">bulletState</span> <span class="o">=</span> <span class="s1">&#39;Ready&#39;</span>
-        <span class="k">if</span> <span class="n">p1</span><span class="o">.</span><span class="n">bulletState</span> <span class="o">==</span> <span class="s1">&#39;fire&#39;</span><span class="p">:</span>
-            <span class="n">p1</span><span class="o">.</span><span class="n">bullet</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">bulletX</span><span class="p">,</span> <span class="n">p1</span><span class="o">.</span><span class="n">bulletY</span><span class="p">,</span> <span class="n">scr</span><span class="p">)</span>
-            <span class="n">p1</span><span class="o">.</span><span class="n">bulletY</span> <span class="o">-=</span> <span class="n">p1</span><span class="o">.</span><span class="n">bulletY1</span>
-
-        <span class="n">p1</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">scr</span><span class="p">)</span>
-        <span class="n">p1</span><span class="o">.</span><span class="n">j</span><span class="o">+=</span><span class="mi">1</span>
-        <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+        #-------Collision of EnemyBul and Shooter-------<
+        col3= p1.collision_enemyBul_S(p1.enemybulX,p1.enemyBulY,p1.shooterX,p1.shooterY)
+        if col3:
+            scr.blit(pygame.image.load('../_static/bg2.jpg'),(550,600))
+            scr.blit(pygame.image.load('../_static/blast.png'),(p1.shooterX,p1.shooterY))
+            over_helper()
 
 
 
-    <span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
 
-    <span class="n">timer1</span> <span class="o">=</span> <span class="n">timer</span><span class="o">.</span><span class="n">set_interval</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="mi">80</span><span class="p">)</span>
-</pre></div>
+        #------Collision of Bottom and Enemy--------<
+        if p1.enemyY[i] >= 600:
+            p1.enemyX[i] = random.randint(0,500)
+            p1.enemyY[i] = random.randint(5,60)
+
+        #-------Collision of EnemyBul and Shooter-------<
+        col3= p1.collision_enemyBul_S(p1.enemybulX,p1.enemyBulY,p1.shooterX,p1.shooterY)
+        if col3:
+            scr.blit(pygame.image.load('../_static/bg2.jpg'),(550,600))
+            scr.blit(pygame.image.load('../_static/blast.png'),(p1.shooterX,p1.shooterY))
+            over_helper()
+            # break
+
+    #--------Shooter Bullet------<
+    if p1.bulletY <= 0:
+        p1.bulletY = 480
+        p1.bulletState = 'Ready'
+    if p1.bulletState == 'fire':
+        p1.bullet(p1.bulletX, p1.bulletY, scr)
+        p1.bulletY -= p1.bulletY1
+
+    p1.score(scr)
+    p1.j+=1
+    pygame.display.update()
+
+
+
+pygame.init()
+
+timer1 = timer.set_interval(func,80)
+</textarea>
 </div>
 </div>
 </div>
@@ -559,6 +569,12 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Hangman Challenge' data-toggle="tooltip">
+  <a href="Reto01_en.html" aria-label="Previous - Hangman Challenge">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
 
 <script>
 window.addEventListener('load', (event) => {

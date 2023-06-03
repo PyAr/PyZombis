@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>7. Numeric variables &#8212; PyZombis main@765ab40</title>
+    <title>7. Numeric variables &#8212; PyZombis main@641a982</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
@@ -23,9 +23,9 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@765ab40
+          PyZombis main@641a982
         </a>
       </div>
     </div>
@@ -329,28 +329,20 @@ window.addEventListener('load', (event) => {
 <ul class="simple">
 <li><p>Integers do not have decimal places: <code class="docutils literal notranslate"><span class="pre">42</span></code>, <code class="docutils literal notranslate"><span class="pre">-7</span></code></p></li>
 <li><p>Values of type integer in Python are called <code class="docutils literal notranslate"><span class="pre">int</span></code></p></li>
-<li><p>Floating point numbers have decimal places: <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">3.1415</span></code>,</p></li>
+<li><p>Floating point numbers have decimal places: <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, <code class="docutils literal notranslate"><span class="pre">3.1415</span></code>,
+<code class="docutils literal notranslate"><span class="pre">1234.56</span></code></p></li>
+<li><p>Note that <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, even though it has a zero in the decimal part, is a floating point number</p></li>
+<li><p>Values of type floating point in Python are called <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_7_en.rst</span>, line 7)</p>
-<p>Bullet list ends without a blank line; unexpected unindent.</p>
-</div>
-<p>  <code class="docutils literal notranslate"><span class="pre">1234.56</span></code>
-+ Note that <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, even though it has a zero in the decimal part, is a floating point number
-+ Values of type floating point in Python are called <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
 <div class="section" id="representation-of-numeric-values">
 <h2><span class="section-number">7.1. </span>Representation of numeric values<a class="headerlink" href="#representation-of-numeric-values" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Internally, all numbers are represented with the binary system</p></li>
 <li><p>This system only allows the digits <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code></p></li>
-<li><p>Floating point numbers may not have a proper representation</p></li>
+<li><p>Floating point numbers may not have a proper representation
+in the binary system</p></li>
+<li><p>Typing in the interpreter <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">*</span> <span class="pre">0.1</span></code> will give us a response of: <code class="docutils literal notranslate"><span class="pre">0.30000000000000004</span></code></p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP05/TWP05_7_en.rst</span>, line 18)</p>
-<p>Bullet list ends without a blank line; unexpected unindent.</p>
-</div>
-<p>  in the binary system
-+ Typing in the interpreter <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">*</span> <span class="pre">0.1</span></code> will give us a response of: <code class="docutils literal notranslate"><span class="pre">0.30000000000000004</span></code></p>
 <p><strong>Try it here!</strong></p>
 <style>
     .iframe-interpreter-container {

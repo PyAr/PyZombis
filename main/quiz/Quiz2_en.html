@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 2 &#8212; PyZombis main@765ab40</title>
+    <title>Quiz - 2 &#8212; PyZombis main@641a982</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
@@ -23,9 +23,9 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
@@ -33,6 +33,8 @@
     <script src="../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quiz - 3" href="Quiz3_en.html" />
+    <link rel="prev" title="Quiz - 1" href="Quiz1_en.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +92,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis main@765ab40
+          PyZombis main@641a982
         </a>
       </div>
     </div>
@@ -240,6 +242,18 @@
         
         <!-- 
           
+  <li id="relations-prev" title="Previous Chapter - Quiz - 1" data-toggle="tooltip">
+    <a href="Quiz1_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Quiz - 3' data-toggle="tooltip" >              
+    <a href="Quiz3_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script>
   opts = {'placement':'bottom',
@@ -268,6 +282,18 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Quiz - 1' data-toggle="tooltip">
+  <a href="Quiz1_en.html" aria-label="Previous - Quiz - 1">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 3' data-toggle="tooltip" >
+    <a href="Quiz3_en.html" aria-label="Next - Quiz - 3">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {
@@ -301,304 +327,329 @@ window.addEventListener('load', (event) => {
   <div class="section" id="quiz-2">
 <h1>Quiz - 2<a class="headerlink" href="#quiz-2" title="Permalink to this headline">¶</a></h1>
 <div id='quiz2' data-component="tabbedStuff"  class='alert alert-warning'><div data-component="tab" data-tabname="Exercise 1" >
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz2_en.rst</span>, line 14)</p>
-<p>Duplicate ID – see quiz/Quiz2, line 18</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q2_1
-    :nocodelens:
 
-    Develop the function ``es_triangulo`` that receives three positive integers ``a``, ``b``, and ``c``. They represent the sides of a triangle. The function should verify that a triangle is formed with the given parameters. If the given parameters form a triangle, the function should return a string indicating its type, i.e., ``&quot;Equilátero&quot;``, ``&quot;Isósceles&quot;``, or ``&quot;Escaleno&quot;``, otherwise, the function should return the string, ``&quot;No es triángulo&quot;``.|br|
-    **Note**: remember that it is not a triangle when the longest side is greater than or equal to the sum of the other two. |br| |br|
-    Examples: |br|
-    ``es_triangulo(2, 2, 2)`` -&gt; ``&quot;Equilátero&quot;`` |br|
-    ``es_triangulo(3, 2, 2)`` -&gt; ``&quot;Isósceles&quot;`` |br|
-    ``es_triangulo(4, 2, 6)`` -&gt; ``&quot;No es triángulo&quot;`` |br|
-    ``es_triangulo(2, 1, 8)`` -&gt; ``&quot;No es triángulo&quot;`` |br|
-    ~~~~
-    def es_triangulo(a, b, c):
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_1_en data-question_label="1">
+<div id=q2_1_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">es_triangulo</span></code> that receives three positive integers <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code>. They represent the sides of a triangle. The function should verify that a triangle is formed with the given parameters. If the given parameters form a triangle, the function should return a string indicating its type, i.e., <code class="docutils literal notranslate"><span class="pre">&quot;Equilátero&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;Isósceles&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;Escaleno&quot;</span></code>, otherwise, the function should return the string, <code class="docutils literal notranslate"><span class="pre">&quot;No</span> <span class="pre">es</span> <span class="pre">triángulo&quot;</span></code>.|br|
+<strong>Note</strong>: remember that it is not a triangle when the longest side is greater than or equal to the sum of the other two. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">es_triangulo(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Equilátero&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_triangulo(3,</span> <span class="pre">2,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Isósceles&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_triangulo(4,</span> <span class="pre">2,</span> <span class="pre">6)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;No</span> <span class="pre">es</span> <span class="pre">triángulo&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_triangulo(2,</span> <span class="pre">1,</span> <span class="pre">8)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;No</span> <span class="pre">es</span> <span class="pre">triángulo&quot;</span></code> <br /></p>
 
-
-    ====
-    from unittest.gui import TestCaseGui
-
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-
-            self.assertEqual(es_triangulo(2, 2, 2), &quot;Equilátero&quot;, &quot;Expected: Equilátero&quot;)
-            self.assertEqual(es_triangulo(2, 1, 2), &quot;Isósceles&quot;, &quot;Expected: Isósceles&quot;)
-            self.assertEqual(es_triangulo(2, 1, 3), &quot;No es triángulo&quot;, &quot;Expected: No es triángulo&quot;)
-            self.assertEqual(es_triangulo(2, 1, 8), &quot;No es triángulo&quot;, &quot;Expected: No es triángulo&quot;)
-            self.assertEqual(es_triangulo(4, 2, 1), &quot;No es triángulo&quot;, &quot;Expected: No es triángulo&quot;)
-            self.assertEqual(es_triangulo(4, 1000, 1000), &quot;Isósceles&quot;, &quot;Expected: Isósceles&quot;)
-            self.assertEqual(es_triangulo(10000, 10000, 10000), &quot;Equilátero&quot;, &quot;Expected: Equilátero&quot;)
-            self.assertEqual(es_triangulo(3, 2, 2), &quot;Isósceles&quot;, &quot;Expected: Isósceles&quot;)
-            self.assertEqual(es_triangulo(10000, 1, 9999), &quot;No es triángulo&quot;, &quot;Expected: No es triángulo&quot;)
+</div>
+<textarea data-lang="python" id="q2_1_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def es_triangulo(a, b, c):
 
 
-    myTests().main()
-</pre></div>
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(es_triangulo(2, 2, 2), "Equilátero", "Expected: Equilátero")
+        self.assertEqual(es_triangulo(2, 1, 2), "Isósceles", "Expected: Isósceles")
+        self.assertEqual(es_triangulo(2, 1, 3), "No es triángulo", "Expected: No es triángulo")
+        self.assertEqual(es_triangulo(2, 1, 8), "No es triángulo", "Expected: No es triángulo")
+        self.assertEqual(es_triangulo(4, 2, 1), "No es triángulo", "Expected: No es triángulo")
+        self.assertEqual(es_triangulo(4, 1000, 1000), "Isósceles", "Expected: Isósceles")
+        self.assertEqual(es_triangulo(10000, 10000, 10000), "Equilátero", "Expected: Equilátero")
+        self.assertEqual(es_triangulo(3, 2, 2), "Isósceles", "Expected: Isósceles")
+        self.assertEqual(es_triangulo(10000, 1, 9999), "No es triángulo", "Expected: No es triángulo")
+
+
+myTests().main()
+</textarea>
 </div>
 </div>
 </div><div data-component="tab" data-tabname="Exercise 2" >
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz2_en.rst</span>, line 51)</p>
-<p>Duplicate ID – see quiz/Quiz2, line 55</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q2_2
-    :nocodelens:
 
-    Develop the function ``es_bisiesto`` that receives the parameter ``anio`` which is a positive integer greater than zero and represents a year. The function should verify if the given parameter is a leap year, therefore, it should return ``True`` if it is, or ``False`` otherwise. A year is a leap year if it is divisible by 400, or also if it is divisible by 4 but not divisible by 100. |br| |br|
-    Examples: |br|
-    ``es_bisiesto(2014)`` -&gt; ``False`` |br|
-    ``es_bisiesto(2016)`` -&gt; ``True`` |br|
-    ``es_bisiesto(1900)`` -&gt; ``False`` |br|
-    ``es_bisiesto(2000)`` -&gt; ``True`` |br|
-    ~~~~
-    def es_bisiesto(anio):
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_2_en data-question_label="2">
+<div id=q2_2_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">es_bisiesto</span></code> that receives the parameter <code class="docutils literal notranslate"><span class="pre">anio</span></code> which is a positive integer greater than zero and represents a year. The function should verify if the given parameter is a leap year, therefore, it should return <code class="docutils literal notranslate"><span class="pre">True</span></code> if it is, or <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise. A year is a leap year if it is divisible by 400, or also if it is divisible by 4 but not divisible by 100. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">es_bisiesto(2014)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_bisiesto(2016)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_bisiesto(1900)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_bisiesto(2000)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
 
-
-    ====
-    from unittest.gui import TestCaseGui
-
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-
-            self.assertEqual(es_bisiesto(2000), True, &quot;Expected: True&quot;)
-            self.assertEqual(es_bisiesto(2001), False, &quot;Expected: False&quot;)
-            self.assertEqual(es_bisiesto(2020), True, &quot;Expected: True&quot;)
-            self.assertEqual(es_bisiesto(2016), True, &quot;Expected: True&quot;)
-            self.assertEqual(es_bisiesto(2400), True, &quot;Expected: True&quot;)
-            self.assertEqual(es_bisiesto(1952), True, &quot;Expected: True&quot;)
-            self.assertEqual(es_bisiesto(1900), False, &quot;Expected: False&quot;)
-            self.assertEqual(es_bisiesto(2200), False, &quot;Expected: False&quot;)
-            self.assertEqual(es_bisiesto(2100), False, &quot;Expected: False&quot;)
+</div>
+<textarea data-lang="python" id="q2_2_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def es_bisiesto(anio):
 
 
-    myTests().main()
-</pre></div>
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(es_bisiesto(2000), True, "Expected: True")
+        self.assertEqual(es_bisiesto(2001), False, "Expected: False")
+        self.assertEqual(es_bisiesto(2020), True, "Expected: True")
+        self.assertEqual(es_bisiesto(2016), True, "Expected: True")
+        self.assertEqual(es_bisiesto(2400), True, "Expected: True")
+        self.assertEqual(es_bisiesto(1952), True, "Expected: True")
+        self.assertEqual(es_bisiesto(1900), False, "Expected: False")
+        self.assertEqual(es_bisiesto(2200), False, "Expected: False")
+        self.assertEqual(es_bisiesto(2100), False, "Expected: False")
+
+
+myTests().main()
+</textarea>
 </div>
 </div>
 </div><div data-component="tab" data-tabname="Exercise 3" >
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz2_en.rst</span>, line 87)</p>
-<p>Duplicate ID – see quiz/Quiz2, line 91</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q2_3
-    :nocodelens:
 
-    Juan Pablo the fisherman, is a good man who works every day of the week. At the end of each work day, Juan must report to the state. Every time he brings a weight of fish greater than established by fishing regulations (50 kilograms) he must pay a fine of 4.00 units per additional kilogram. To keep track, he bought a computer to monitor his work income and asked you to make the function called `generate_report` that receives a list of positive floats `weights`, which represent the amount that Juan fished each day of the week. The function should return an array of tuples, where each tuple should be a pair of the form `(additional, fine)`, which represent the amount of additional kilograms that Juan fished during a day and the fine he had to pay respectively. If he did not pay a fine, the result will be `0.0` in both cases. |br| |br|
-    Examples: |br|
-    ``generate_report([25.5, 50.5, 60.25, 15, 100, 50, 30.50])`` -&gt; ``[(0.0, 0.0), (0.5, 2.0), (10.25, 41.0), (0.0, 0.0), (50.0, 200.0), (0.0, 0.0), (0.0, 0.0)]``
-    ~~~~
-    def generate_report(weights):
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_3_en data-question_label="3">
+<div id=q2_3_en_question class="ac_question col-md-12">
+<p>Juan Pablo the fisherman, is a good man who works every day of the week. At the end of each work day, Juan must report to the state. Every time he brings a weight of fish greater than established by fishing regulations (50 kilograms) he must pay a fine of 4.00 units per additional kilogram. To keep track, he bought a computer to monitor his work income and asked you to make the function called <cite>generate_report</cite> that receives a list of positive floats <cite>weights</cite>, which represent the amount that Juan fished each day of the week. The function should return an array of tuples, where each tuple should be a pair of the form <cite>(additional, fine)</cite>, which represent the amount of additional kilograms that Juan fished during a day and the fine he had to pay respectively. If he did not pay a fine, the result will be <cite>0.0</cite> in both cases. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">generate_report([25.5,</span> <span class="pre">50.5,</span> <span class="pre">60.25,</span> <span class="pre">15,</span> <span class="pre">100,</span> <span class="pre">50,</span> <span class="pre">30.50])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[(0.0,</span> <span class="pre">0.0),</span> <span class="pre">(0.5,</span> <span class="pre">2.0),</span> <span class="pre">(10.25,</span> <span class="pre">41.0),</span> <span class="pre">(0.0,</span> <span class="pre">0.0),</span> <span class="pre">(50.0,</span> <span class="pre">200.0),</span> <span class="pre">(0.0,</span> <span class="pre">0.0),</span> <span class="pre">(0.0,</span> <span class="pre">0.0)]</span></code></p>
 
-
-    ====
-    from unittest.gui import TestCaseGui
-
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-
-            self.assertEqual(
-                generate_report([25.5, 50.5, 60.25, 15.0, 100.0, 50.0, 30.50]),
-                [(0.0, 0.0), (0.5, 2.0), (10.25, 41.0), (0.0, 0.0), (50.0, 200.0), (0.0, 0.0), (0.0, 0.0)],
-                &quot;Expected: [(0.0, 0.0), (0.5, 2.0), (10.25, 41.0), (0.0, 0.0), (50.0, 200.0), (0.0, 0.0), (0.0, 0.0)]&quot;,
-            )
-            self.assertEqual(
-                generate_report([5.55, 50.0, 10.25, 15.0, 0.0, 50.0, 51.0]),
-                [(0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (1.0, 4.0)],
-                &quot;Expected: [(0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (1.0, 4.0)]&quot;,
-            )
+</div>
+<textarea data-lang="python" id="q2_3_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def generate_report(weights):
 
 
-    myTests().main()
-</pre></div>
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(
+            generate_report([25.5, 50.5, 60.25, 15.0, 100.0, 50.0, 30.50]),
+            [(0.0, 0.0), (0.5, 2.0), (10.25, 41.0), (0.0, 0.0), (50.0, 200.0), (0.0, 0.0), (0.0, 0.0)],
+            "Expected: [(0.0, 0.0), (0.5, 2.0), (10.25, 41.0), (0.0, 0.0), (50.0, 200.0), (0.0, 0.0), (0.0, 0.0)]",
+        )
+        self.assertEqual(
+            generate_report([5.55, 50.0, 10.25, 15.0, 0.0, 50.0, 51.0]),
+            [(0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (1.0, 4.0)],
+            "Expected: [(0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (1.0, 4.0)]",
+        )
+
+
+myTests().main()
+</textarea>
 </div>
 </div>
 </div><div data-component="tab" data-tabname="Exercise 4" >
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz2_en.rst</span>, line 121)</p>
-<p>Duplicate ID – see quiz/Quiz2, line 125</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q2_4
-    :nocodelens:
 
-    Develop the function ``mayor_tres`` that receives three integers ``a``, ``b`` and ``c``. The function must return the highest of the three numbers, without using the functions ``max`` or ``min``. |br| |br|
-    Examples: |br|
-    ``mayor_tres(5, 2, 3)`` -&gt; ``5`` |br|
-    ``mayor_tres(-5, 0, -2)`` -&gt; ``0`` |br|
-    ~~~~
-    def mayor_tres(a, b, c):
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_4_en data-question_label="4">
+<div id=q2_4_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">mayor_tres</span></code> that receives three integers <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> and <code class="docutils literal notranslate"><span class="pre">c</span></code>. The function must return the highest of the three numbers, without using the functions <code class="docutils literal notranslate"><span class="pre">max</span></code> or <code class="docutils literal notranslate"><span class="pre">min</span></code>. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_tres(5,</span> <span class="pre">2,</span> <span class="pre">3)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">5</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_tres(-5,</span> <span class="pre">0,</span> <span class="pre">-2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">0</span></code> <br /></p>
 
-
-    ====
-    from unittest.gui import TestCaseGui
-
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-
-            self.assertEqual(mayor_tres(1, 2, 3), 3, &quot;Expected: 3&quot;)
-            self.assertEqual(mayor_tres(9, 2, 3), 9, &quot;Expected: 9&quot;)
-            self.assertEqual(mayor_tres(-9, 2, 1), 2, &quot;Expected: 2&quot;)
-            self.assertEqual(mayor_tres(1, 1, 1), 1, &quot;Expected: 1&quot;)
-            self.assertEqual(mayor_tres(5, 5, 4), 5, &quot;Expected: 5&quot;)
+</div>
+<textarea data-lang="python" id="q2_4_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def mayor_tres(a, b, c):
 
 
-    myTests().main()
-</pre></div>
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(mayor_tres(1, 2, 3), 3, "Expected: 3")
+        self.assertEqual(mayor_tres(9, 2, 3), 9, "Expected: 9")
+        self.assertEqual(mayor_tres(-9, 2, 1), 2, "Expected: 2")
+        self.assertEqual(mayor_tres(1, 1, 1), 1, "Expected: 1")
+        self.assertEqual(mayor_tres(5, 5, 4), 5, "Expected: 5")
+
+
+myTests().main()
+</textarea>
 </div>
 </div>
 </div><div data-component="tab" data-tabname="Exercise 5" >
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz2_en.rst</span>, line 151)</p>
-<p>Duplicate ID – see quiz/Quiz2, line 155</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q2_5
-    :nocodelens:
 
-    Develop the function ``mayor_menor_tres`` that receives three integers ``a``, ``b`` and ``c``. The function must return a tuple of the form ``(mayor, menor)`` that represent the highest and the lowest of the three numbers, without using the functions ``max`` or ``min``. |br| |br|
-    Examples: |br|
-    ``mayor_menor_tres(5, 2, 3)`` -&gt; ``(2, 5)`` |br|
-    ``mayor_menor_tres(-5, 0, -2)`` -&gt; ``(-2, 0)`` |br|
-    ~~~~
-    def mayor_menor_tres(a, b, c):
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_5_en data-question_label="5">
+<div id=q2_5_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">mayor_menor_tres</span></code> that receives three integers <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> and <code class="docutils literal notranslate"><span class="pre">c</span></code>. The function must return a tuple of the form <code class="docutils literal notranslate"><span class="pre">(mayor,</span> <span class="pre">menor)</span></code> that represent the highest and the lowest of the three numbers, without using the functions <code class="docutils literal notranslate"><span class="pre">max</span></code> or <code class="docutils literal notranslate"><span class="pre">min</span></code>. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_menor_tres(5,</span> <span class="pre">2,</span> <span class="pre">3)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">5)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_menor_tres(-5,</span> <span class="pre">0,</span> <span class="pre">-2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(-2,</span> <span class="pre">0)</span></code> <br /></p>
 
-
-    ====
-    from unittest.gui import TestCaseGui
-
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-
-            self.assertEqual(mayor_menor_tres(1, 2, 3), (1, 3), &quot;Expected: (1, 3)&quot;)
-            self.assertEqual(mayor_menor_tres(9, 2, 3), (2, 9), &quot;Expected: (2, 9)&quot;)
-            self.assertEqual(mayor_menor_tres(-9, 2, 1), (-9, 2), &quot;Expected: (-9, 2)&quot;)
-            self.assertEqual(mayor_menor_tres(1, 1, 1), (1, 1), &quot;se Esperado: (1, 1)&quot;)
-            self.assertEqual(mayor_menor_tres(5, 5, 4), (4, 5), &quot;Expected: (4, 5)&quot;)
+</div>
+<textarea data-lang="python" id="q2_5_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def mayor_menor_tres(a, b, c):
 
 
-    myTests().main()
-</pre></div>
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(mayor_menor_tres(1, 2, 3), (1, 3), "Expected: (1, 3)")
+        self.assertEqual(mayor_menor_tres(9, 2, 3), (2, 9), "Expected: (2, 9)")
+        self.assertEqual(mayor_menor_tres(-9, 2, 1), (-9, 2), "Expected: (-9, 2)")
+        self.assertEqual(mayor_menor_tres(1, 1, 1), (1, 1), "se Esperado: (1, 1)")
+        self.assertEqual(mayor_menor_tres(5, 5, 4), (4, 5), "Expected: (4, 5)")
+
+
+myTests().main()
+</textarea>
 </div>
 </div>
 </div><div data-component="tab" data-tabname="Exercise 6" >
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz2_en.rst</span>, line 181)</p>
-<p>Duplicate ID – see quiz/Quiz2, line 185</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q2_6
-    :nocodelens:
 
-    An employee of a company receives a monthly gross salary calculated by the amount of hours worked multiplied by its value. From this ``salary``, the month&#39;s ``11%`` for taxes, ``8%`` for health insurance, and ``5%`` for payment to the union are deducted. Develop the function ``calcular_salario`` that receives a float ``valor_hora`` and an integer ``cantidad_horas`` that represent how much he earns per hour and the amount of hours worked during the month. The function must return a dictionary of the form: |br|
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_6_en data-question_label="6">
+<div id=q2_6_en_question class="ac_question col-md-12">
+<p>An employee of a company receives a monthly gross salary calculated by the amount of hours worked multiplied by its value. From this <code class="docutils literal notranslate"><span class="pre">salary</span></code>, the month’s <code class="docutils literal notranslate"><span class="pre">11%</span></code> for taxes, <code class="docutils literal notranslate"><span class="pre">8%</span></code> for health insurance, and <code class="docutils literal notranslate"><span class="pre">5%</span></code> for payment to the union are deducted. Develop the function <code class="docutils literal notranslate"><span class="pre">calcular_salario</span></code> that receives a float <code class="docutils literal notranslate"><span class="pre">valor_hora</span></code> and an integer <code class="docutils literal notranslate"><span class="pre">cantidad_horas</span></code> that represent how much he earns per hour and the amount of hours worked during the month. The function must return a dictionary of the form: <br /></p>
+<p><code class="docutils literal notranslate"><span class="pre">{&quot;salario_bruto&quot;:</span> <span class="pre">A,</span> <span class="pre">&quot;impuestos&quot;:</span> <span class="pre">B,</span></code> <br /> <code class="docutils literal notranslate"><span class="pre">&quot;seguro_medico&quot;:</span> <span class="pre">C,</span> <span class="pre">&quot;sindicato&quot;:</span> <span class="pre">E,</span> <span class="pre">&quot;salario_neto&quot;:</span> <span class="pre">F}</span></code>. <br /></p>
+<p>Where A, B, C, and D represent the amount of money corresponding to each item. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">calcular_salario(15.0,</span> <span class="pre">120)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">{&quot;salario_bruto&quot;:</span> <span class="pre">1800.00,</span> <span class="pre">&quot;impuestos&quot;:</span> <span class="pre">198.00,</span></code> <br /> <code class="docutils literal notranslate"><span class="pre">&quot;seguro_medico&quot;:</span> <span class="pre">144.0,</span> <span class="pre">&quot;sindicato&quot;:</span> <span class="pre">90.0,</span> <span class="pre">&quot;salario_neto&quot;:</span> <span class="pre">1368.00}</span></code>. <br /></p>
 
-    ``{&quot;salario_bruto&quot;: A, &quot;impuestos&quot;: B,`` |br| ``&quot;seguro_medico&quot;: C, &quot;sindicato&quot;: E, &quot;salario_neto&quot;: F}``. |br|
-
-    Where A, B, C, and D represent the amount of money corresponding to each item. |br| |br|
-    Examples: |br|
-    ``calcular_salario(15.0, 120)`` -&gt; ``{&quot;salario_bruto&quot;: 1800.00, &quot;impuestos&quot;: 198.00,`` |br| ``&quot;seguro_medico&quot;: 144.0, &quot;sindicato&quot;: 90.0, &quot;salario_neto&quot;: 1368.00}``. |br|
-    ~~~~
-    def calcular_salario(valor_hora, cantidad_horas):
-
-
-    ====
-    from unittest.gui import TestCaseGui
-    import random
+</div>
+<textarea data-lang="python" id="q2_6_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def calcular_salario(valor_hora, cantidad_horas):
 
 
-    class myTests(TestCaseGui):
-        def get_expected_dictionary(self, salary):
-            result = {
-                &quot;salario_bruto&quot;: salary,
-                &quot;impuestos&quot;: salary * 0.11,
-                &quot;seguro_medico&quot;: salary * 0.08,
-                &quot;sindicato&quot;: salary * 0.05,
-            }
-            result[&quot;salario_neto&quot;] = (salary - result[&quot;impuestos&quot;] -
-                result[&quot;seguro_medico&quot;] - result[&quot;sindicato&quot;])
-            return result
-
-        def testOne(self):
-            test_numbers = 10
-            min_hour = 50
-            max_hour = 200
-            min_price_hour = 7
-            max_price_hour = 30
-            for test in range(test_numbers):
-                hour = random.randint(min_hour, max_hour)
-                price = round(random.uniform(min_price_hour, max_price_hour), 2)
-                salary = price * hour
-                expected = self.get_expected_dictionary(salary)
-                result = calcular_salario(price, hour)
-                current_test = test + 1
-
-                self.assertEqual(
-                    round(result[&quot;salario_bruto&quot;], 2),
-                    round(expected[&quot;salario_bruto&quot;], 2),
-                    f&quot;Test #{current_test} - Expected gross salary: {round(expected[&#39;salario_bruto&#39;], 2)}&quot;,
-                )
-                self.assertEqual(
-                    round(result[&quot;impuestos&quot;], 2),
-                    round(expected[&quot;impuestos&quot;], 2),
-                    f&quot;Test #{current_test} - Expected taxes: {round(expected[&#39;impuestos&#39;], 2)}&quot;,
-                )
-                self.assertEqual(
-                    round(result[&quot;seguro_medico&quot;], 2),
-                    round(expected[&quot;seguro_medico&quot;], 2),
-                    f&quot;Test #{current_test} - Expected health insurance: {round(expected[&#39;seguro_medico&#39;], 2)}&quot;,
-                )
-                self.assertEqual(
-                    round(result[&quot;sindicato&quot;], 2),
-                    round(expected[&quot;sindicato&quot;], 2),
-                    f&quot;Test #{current_test} - Expected union payment: {round(expected[&#39;sindicato&#39;], 2)}&quot;,
-                )
-                self.assertEqual(
-                    round(result[&quot;salario_neto&quot;], 2),
-                    round(expected[&quot;salario_neto&quot;], 2),
-                    f&quot;Test #{current_test} - Expected net salary: {round(expected[&#39;salario_neto&#39;], 2)}&quot;,
-                )
+====
+from unittest.gui import TestCaseGui
+import random
 
 
-    myTests().main()
-</pre></div>
+class myTests(TestCaseGui):
+    def get_expected_dictionary(self, salary):
+        result = {
+            "salario_bruto": salary,
+            "impuestos": salary * 0.11,
+            "seguro_medico": salary * 0.08,
+            "sindicato": salary * 0.05,
+        }
+        result["salario_neto"] = (salary - result["impuestos"] -
+            result["seguro_medico"] - result["sindicato"])
+        return result
+
+    def testOne(self):
+        test_numbers = 10
+        min_hour = 50
+        max_hour = 200
+        min_price_hour = 7
+        max_price_hour = 30
+        for test in range(test_numbers):
+            hour = random.randint(min_hour, max_hour)
+            price = round(random.uniform(min_price_hour, max_price_hour), 2)
+            salary = price * hour
+            expected = self.get_expected_dictionary(salary)
+            result = calcular_salario(price, hour)
+            current_test = test + 1
+
+            self.assertEqual(
+                round(result["salario_bruto"], 2),
+                round(expected["salario_bruto"], 2),
+                f"Test #{current_test} - Expected gross salary: {round(expected['salario_bruto'], 2)}",
+            )
+            self.assertEqual(
+                round(result["impuestos"], 2),
+                round(expected["impuestos"], 2),
+                f"Test #{current_test} - Expected taxes: {round(expected['impuestos'], 2)}",
+            )
+            self.assertEqual(
+                round(result["seguro_medico"], 2),
+                round(expected["seguro_medico"], 2),
+                f"Test #{current_test} - Expected health insurance: {round(expected['seguro_medico'], 2)}",
+            )
+            self.assertEqual(
+                round(result["sindicato"], 2),
+                round(expected["sindicato"], 2),
+                f"Test #{current_test} - Expected union payment: {round(expected['sindicato'], 2)}",
+            )
+            self.assertEqual(
+                round(result["salario_neto"], 2),
+                round(expected["salario_neto"], 2),
+                f"Test #{current_test} - Expected net salary: {round(expected['salario_neto'], 2)}",
+            )
+
+
+myTests().main()
+</textarea>
 </div>
 </div>
 </div><div data-component="tab" data-tabname="Exercise 7" >
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/quiz/Quiz2_en.rst</span>, line 258)</p>
-<p>Duplicate ID – see quiz/Quiz2, line 262</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: q2_7
-    :nocodelens:
 
-    The paint sold at your trusted hardware store has a coverage of 1 liter per every 3 square meters and the paint is sold only in cans of 18 liters that cost each one ``80.00`` units. Develop the function ``puedo_pintar`` that receives an amount in square meters of an area to be painted as a positive integer ``area``. The function should return a tuple with the amount of cans of paint that need to be bought to cover the entire area, as well as their total price, that is, using the form ``(amount_cans, total_price)``. |br|
-    **Note**: only an integer number of cans of paint is sold. |br| |br|
-    Examples: |br|
-    ``puedo_pintar(10)`` -&gt; ``(1, 80.00)`` |br|
-    ``puedo_pintar(100)`` -&gt; ``(2, 160.00)`` |br|
-    ``puedo_pintar(54)`` -&gt; ``(1, 80.00)`` |br|
-    ``puedo_pintar(55)`` -&gt; ``(2, 160.00)`` |br|
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_7_en data-question_label="7">
+<div id=q2_7_en_question class="ac_question col-md-12">
+<p>The paint sold at your trusted hardware store has a coverage of 1 liter per every 3 square meters and the paint is sold only in cans of 18 liters that cost each one <code class="docutils literal notranslate"><span class="pre">80.00</span></code> units. Develop the function <code class="docutils literal notranslate"><span class="pre">puedo_pintar</span></code> that receives an amount in square meters of an area to be painted as a positive integer <code class="docutils literal notranslate"><span class="pre">area</span></code>. The function should return a tuple with the amount of cans of paint that need to be bought to cover the entire area, as well as their total price, that is, using the form <code class="docutils literal notranslate"><span class="pre">(amount_cans,</span> <span class="pre">total_price)</span></code>. <br />
+<strong>Note</strong>: only an integer number of cans of paint is sold. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">puedo_pintar(10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">80.00)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">puedo_pintar(100)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">160.00)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">puedo_pintar(54)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">80.00)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">puedo_pintar(55)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">160.00)</span></code> <br /></p>
 
-    ~~~~
-    def puedo_pintar(area):
+</div>
+<textarea data-lang="python" id="q2_7_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+      style="visibility: hidden;">
+def puedo_pintar(area):
 
-    ====
-    from unittest.gui import TestCaseGui
-
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-
-            self.assertEqual(puedo_pintar(10), (1, 80.00), &quot;Expected: (1, 80.00)&quot;)
-            self.assertEqual(puedo_pintar(100), (2, 160.00), &quot;Expected: (2, 160.00)&quot;)
-            self.assertEqual(puedo_pintar(54), (1, 80.00), &quot;Expected: (1, 80.00)&quot;)
-            self.assertEqual(puedo_pintar(55), (2, 160.00), &quot;Expected: (2, 160.00)&quot;)
-            self.assertEqual(puedo_pintar(1000), (19, 1520.00), &quot;Expected: (19, 1520.00)&quot;)
-            self.assertEqual(puedo_pintar(500), (10, 800.00), &quot;Expected: (10, 800.00)&quot;)
-            self.assertEqual(puedo_pintar(250), (5, 400.00), &quot;Expected: (5, 400.00)&quot;)
-            self.assertEqual(puedo_pintar(125), (3, 240.00), &quot;Expected: (3, 240.00)&quot;)
+====
+from unittest.gui import TestCaseGui
 
 
-    myTests().main()
-</pre></div>
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(puedo_pintar(10), (1, 80.00), "Expected: (1, 80.00)")
+        self.assertEqual(puedo_pintar(100), (2, 160.00), "Expected: (2, 160.00)")
+        self.assertEqual(puedo_pintar(54), (1, 80.00), "Expected: (1, 80.00)")
+        self.assertEqual(puedo_pintar(55), (2, 160.00), "Expected: (2, 160.00)")
+        self.assertEqual(puedo_pintar(1000), (19, 1520.00), "Expected: (19, 1520.00)")
+        self.assertEqual(puedo_pintar(500), (10, 800.00), "Expected: (10, 800.00)")
+        self.assertEqual(puedo_pintar(250), (5, 400.00), "Expected: (5, 400.00)")
+        self.assertEqual(puedo_pintar(125), (3, 240.00), "Expected: (3, 240.00)")
+
+
+myTests().main()
+</textarea>
 </div>
 </div>
 </div>
@@ -612,6 +663,18 @@ window.addEventListener('load', (event) => {
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Quiz - 1' data-toggle="tooltip">
+  <a href="Quiz1_en.html" aria-label="Previous - Quiz - 1">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 3' data-toggle="tooltip" >
+    <a href="Quiz3_en.html" aria-label="Next - Quiz - 3">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
 
 <script>
 window.addEventListener('load', (event) => {

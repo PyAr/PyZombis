@@ -11,7 +11,7 @@ Quiz - 5
 
     .. tab:: Exercise 1_1
 
-        ..  clickablearea:: q5_1
+        ..  clickablearea:: q5_1_en
             :question: The following program declares a variable in the wrong place in the code. Your task is to select the incorrect declaration and select the correct line where it should go. 
             :iscode:
             :feedback: Remember, you cannot use a variable without declaring it previously.
@@ -29,7 +29,7 @@ Quiz - 5
 
     .. tab:: Exercise 1_2
 
-        ..  activecode:: q5_2
+        ..  activecode:: q5_2_en
             :nocodelens:
 
             Translate the previous program (with the declaration in the right place) to Python using the following code block. |br|
@@ -40,7 +40,7 @@ Quiz - 5
 
     .. tab:: Exercise 1_3
 
-        ..  fillintheblank:: q5_3
+        ..  fillintheblank:: q5_3_en
 
             What does the previous program print?
 
@@ -62,7 +62,7 @@ Quiz - 5
     
     .. tab:: Exercise 2_2
 
-        ..  activecode:: q5_4
+        ..  activecode:: q5_4_en
             :nocodelens:
 
             Translate the previous program to Python using the following code block. |br|
@@ -74,7 +74,7 @@ Quiz - 5
 
     .. tab:: Exercise 2_3
 
-        ..  fillintheblank:: q5_5
+        ..  fillintheblank:: q5_5_en
 
             How many times does the previous program print ``"Hello"``?
 
@@ -86,7 +86,7 @@ Quiz - 5
 
     .. tab:: Exercise 3_1
 
-        ..  activecode:: q5_6
+        ..  activecode:: q5_6_en
             :nocodelens:
             
             Develop the function ``pares_divisibles_7`` which receives two positive integers, ``inicio`` and ``fin``, that represent the start and end of a range of numbers. The function must return the amount of numbers that are even and also divisible by 7. |br| |br|
@@ -118,7 +118,7 @@ Quiz - 5
 
     .. tab:: Exercise 3_2
 
-        ..  fillintheblank:: q5_7
+        ..  fillintheblank:: q5_7_en
 
             Use the function created in the previous exercise to answer How many numbers are even and also divisible by 7 between 1067 and 3627 (inclusive)?
 
@@ -130,7 +130,7 @@ Quiz - 5
 
     .. tab:: Exercise 4_1
 
-        ..  activecode:: q5_8
+        ..  activecode:: q5_8_en
             :nocodelens:
 
             Daniela is a very superstitious person. For her, a number is **lucky** if it contains the digit ``2`` but not the ``7``. She is also very curious and wants to know how many **lucky** numbers are in a range of numbers (including the ends)?. That's why she has asked you to make the function called ``cuantos_tienen_suerte`` which receives two positive integers, ``inicio`` and ``fin``, that represent the start and end of a range of numbers. The function must return the amount of numbers that are **lucky**. |br| |br|
@@ -164,7 +164,7 @@ Quiz - 5
 
     .. tab:: Exercise 4_2
 
-        ..  fillintheblank:: q5_9
+        ..  fillintheblank:: q5_9_en
 
             Use the function created in the previous exercise (**MANDATORY** to have finished it before and passed all tests) to answer How many **lucky** numbers are there between 18644 and 33087 (inclusive)?
 
@@ -176,8 +176,8 @@ Quiz - 5
 
     .. tab:: Exercise 5_1
 
-        .. activecode :: q5_10
-            : nocodelens:
+        .. activecode:: q5_10_en
+            :nocodelens:
 
             In the quiet rural village of *Ponteironuloville*, all phones have 6 digits. The telephone company establishes the following rules about numbers: | br |
 
@@ -224,9 +224,9 @@ Quiz - 5
     
     .. tab:: Exercise 5_2
 
-        ..  activecode:: q5_11
+        ..  activecode:: q5_11_en
             :nocodelens:
-            :include: q5_10
+            :include: q5_10_en
 
             Knowing that the ``split()`` function divides a string into multiple strings, use the function created in the previous exercise (**MANDATORY** to have finished it before and passed all tests) to complete the ``count_valid`` function that returns the number of valid numbers from the list of numbers given in the following block of code. |br| |br|
             **Note**: the list of numbers is a string, wisely use the ``split()`` function to obtain a list of strings.
@@ -267,7 +267,7 @@ Quiz - 5
 
     .. tab:: Exercise 5_3
 
-        ..  fillintheblank:: q5_12
+        ..  fillintheblank:: q5_12_en
 
             Use the function created in the previous exercise to answer how many numbers from the list are valid according to the rules of *Ponteironuloville*?
 

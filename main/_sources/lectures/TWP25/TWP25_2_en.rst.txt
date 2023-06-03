@@ -1,5 +1,5 @@
 Class Client and Class Account
-=============================
+==============================
 
 + You will automate the TATU bank, controlling the balance of checking accounts.
 + Each checking account can have one or more clients as holders.

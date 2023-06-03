@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. More SQL Concepts &#8212; PyZombis main@765ab40</title>
+    <title>3. More SQL Concepts &#8212; PyZombis main@641a982</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
@@ -23,9 +23,9 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
-    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@765ab40
+          PyZombis main@641a982
         </a>
       </div>
     </div>
@@ -437,14 +437,6 @@ cursor.close()
 </div>
 <div class="section" id="data-filtering">
 <h2><span class="section-number">3.4. </span>Data filtering<a class="headerlink" href="#data-filtering" title="Permalink to this headline">¶</a></h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 111)</p>
-<p>Title underline too short.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Data</span> <span class="n">filtering</span>
-<span class="o">------------</span>
-</pre></div>
-</div>
-</div>
 <ul class="simple">
 <li><p>We have already seen some ways of archiving data, e.g., the <cite>LIMIT</cite> clause.</p></li>
 <li><p>In the following section, we will see some more ways to filter data, specifically the <cite>WHERE</cite>, <cite>IN</cite>, <cite>BETWEEN</cite>, and <cite>LIKE</cite> clauses.</p></li>
@@ -616,19 +608,15 @@ if rows:
 
 # Close the cursor
 cursor.close()
-
-Grouping of data
 </textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP42/TWP42_3_en.rst</span>, line 261)</p>
-<p>Explicit markup ends without a blank line; unexpected unindent.</p>
 </div>
-<hr class="docutils" />
+<div class="section" id="grouping-of-data">
+<h2><span class="section-number">3.5. </span>Grouping of data<a class="headerlink" href="#grouping-of-data" title="Permalink to this headline">¶</a></h2>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_42_4a_en data-question_label="3.4.5">
+<div data-component="activecode" id=ac_42_4a_en data-question_label="3.5.1">
 <div id=ac_42_4a_en_question class="ac_question col-md-12">
 <p>In this section, we will learn how to use the <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> clause of SQLite to create a summary row set from a row set.
 The <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> clause is an optional clause of the <code class="docutils literal notranslate"><span class="pre">SELECT</span></code> statement. The <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> clause groups a selected set of rows into summary rows
@@ -671,7 +659,7 @@ cursor.close()
 </div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_42_4b_en data-question_label="3.4.6">
+<div data-component="activecode" id=ac_42_4b_en data-question_label="3.5.2">
 <div id=ac_42_4b_en_question class="ac_question col-md-12">
 <p>Here we will learn how to use the SQLite <code class="docutils literal notranslate"><span class="pre">HAVING</span></code> clause to specify a filter condition for a group or aggregate.
 The SQLite <code class="docutils literal notranslate"><span class="pre">HAVING</span></code> clause is an optional clause of the <code class="docutils literal notranslate"><span class="pre">SELECT</span></code> statement. The <code class="docutils literal notranslate"><span class="pre">HAVING</span></code> clause specifies a search condition for a group.

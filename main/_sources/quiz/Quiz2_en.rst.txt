@@ -11,7 +11,7 @@ Quiz - 2
 
     .. tab:: Exercise 1
 
-        .. activecode:: q2_1
+        .. activecode:: q2_1_en
             :nocodelens:
 
             Develop the function ``es_triangulo`` that receives three positive integers ``a``, ``b``, and ``c``. They represent the sides of a triangle. The function should verify that a triangle is formed with the given parameters. If the given parameters form a triangle, the function should return a string indicating its type, i.e., ``"Equilátero"``, ``"Isósceles"``, or ``"Escaleno"``, otherwise, the function should return the string, ``"No es triángulo"``.|br|
@@ -48,7 +48,7 @@ Quiz - 2
 
     .. tab:: Exercise 2
 
-        .. activecode:: q2_2
+        .. activecode:: q2_2_en
             :nocodelens:
 
             Develop the function ``es_bisiesto`` that receives the parameter ``anio`` which is a positive integer greater than zero and represents a year. The function should verify if the given parameter is a leap year, therefore, it should return ``True`` if it is, or ``False`` otherwise. A year is a leap year if it is divisible by 400, or also if it is divisible by 4 but not divisible by 100. |br| |br|
@@ -84,7 +84,7 @@ Quiz - 2
 
     .. tab:: Exercise 3
 
-        .. activecode:: q2_3
+        .. activecode:: q2_3_en
             :nocodelens:
 
             Juan Pablo the fisherman, is a good man who works every day of the week. At the end of each work day, Juan must report to the state. Every time he brings a weight of fish greater than established by fishing regulations (50 kilograms) he must pay a fine of 4.00 units per additional kilogram. To keep track, he bought a computer to monitor his work income and asked you to make the function called `generate_report` that receives a list of positive floats `weights`, which represent the amount that Juan fished each day of the week. The function should return an array of tuples, where each tuple should be a pair of the form `(additional, fine)`, which represent the amount of additional kilograms that Juan fished during a day and the fine he had to pay respectively. If he did not pay a fine, the result will be `0.0` in both cases. |br| |br|
@@ -118,7 +118,7 @@ Quiz - 2
 
     .. tab:: Exercise 4
 
-        .. activecode:: q2_4
+        .. activecode:: q2_4_en
             :nocodelens:
 
             Develop the function ``mayor_tres`` that receives three integers ``a``, ``b`` and ``c``. The function must return the highest of the three numbers, without using the functions ``max`` or ``min``. |br| |br|
@@ -148,7 +148,7 @@ Quiz - 2
 
     .. tab:: Exercise 5
 
-        .. activecode:: q2_5
+        .. activecode:: q2_5_en
             :nocodelens:
 
             Develop the function ``mayor_menor_tres`` that receives three integers ``a``, ``b`` and ``c``. The function must return a tuple of the form ``(mayor, menor)`` that represent the highest and the lowest of the three numbers, without using the functions ``max`` or ``min``. |br| |br|
@@ -178,7 +178,7 @@ Quiz - 2
 
     .. tab:: Exercise 6
 
-        .. activecode:: q2_6
+        .. activecode:: q2_6_en
             :nocodelens:
 
             An employee of a company receives a monthly gross salary calculated by the amount of hours worked multiplied by its value. From this ``salary``, the month's ``11%`` for taxes, ``8%`` for health insurance, and ``5%`` for payment to the union are deducted. Develop the function ``calcular_salario`` that receives a float ``valor_hora`` and an integer ``cantidad_horas`` that represent how much he earns per hour and the amount of hours worked during the month. The function must return a dictionary of the form: |br|
@@ -255,7 +255,7 @@ Quiz - 2
 
     .. tab:: Exercise 7
 
-        .. activecode:: q2_7
+        .. activecode:: q2_7_en
             :nocodelens:
 
             The paint sold at your trusted hardware store has a coverage of 1 liter per every 3 square meters and the paint is sold only in cans of 18 liters that cost each one ``80.00`` units. Develop the function ``puedo_pintar`` that receives an amount in square meters of an area to be painted as a positive integer ``area``. The function should return a tuple with the amount of cans of paint that need to be bought to cover the entire area, as well as their total price, that is, using the form ``(amount_cans, total_price)``. |br|
