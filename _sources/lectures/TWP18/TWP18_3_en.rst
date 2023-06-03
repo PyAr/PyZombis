@@ -30,7 +30,7 @@ I can create new strings
   The ``lower`` function transforms the letters to lowercase.
 
 
-.. activecode:: ac_l18_3a_en
+.. activecode:: ac_l18_3c_en
     :nocodelens:
     :stdin:
 
