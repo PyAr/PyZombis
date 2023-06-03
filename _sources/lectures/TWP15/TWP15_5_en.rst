@@ -5,8 +5,7 @@ Interrupting the repetition
 + Calculate the sum of integers until zero is entered
 
 
-.. activecode:: python
-   :class: python
+.. activecode:: ac_l15_5a_en
    :nocodelens:
    :stdin:
 
@@ -23,8 +22,7 @@ Interrupting the repetition
 + Calculate the average of entered numbers until zero is entered
 
 
-.. activecode:: python
-   :class: python
+.. activecode:: ac_l15_5b_en
    :nocodelens:
    :stdin:
 

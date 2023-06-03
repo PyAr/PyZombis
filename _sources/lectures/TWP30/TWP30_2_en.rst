@@ -9,7 +9,7 @@ The parts of your program
 =========================
 
 Guessing numbers
-------------------
+----------------
 
 .. activecode:: ac_l30_2_en
     :nocodelens:
@@ -26,7 +26,7 @@ Guessing numbers
     
 
 The parts of the program
------------------------
+------------------------
 
 Now let's analyze the parts of the previous code
 

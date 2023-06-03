@@ -10,7 +10,7 @@ Quiz - Extras
 
     .. tab:: Exercise 1
 
-        .. activecode:: qExtra_1
+        .. activecode:: qExtra_1_en
             :nocodelens:
 
             **Josephus problem**. Imagine you have ``n`` people arranged in a circle. Suppose these people are numbered from 1 to ``n`` clockwise. Starting with person number **1**, 
@@ -36,7 +36,7 @@ Quiz - Extras
 
     .. tab:: Exercise 2
 
-        .. activecode:: qExtra_2
+        .. activecode:: qExtra_2_en
             :nocodelens:
 
             Implement the **Sieve of Eratosthenes** algorithm. |br|
@@ -69,7 +69,7 @@ Quiz - Extras
 
     .. tab:: Exercise 3
 
-        .. activecode:: qExtra_3
+        .. activecode:: qExtra_3_en
             :nocodelens:
 
             **Project Euler Problem 2**. `Problem <https://projecteuler.net/problem=2>`_ |br|
@@ -109,7 +109,7 @@ Quiz - Extras
 
     .. tab:: Exercise 4
 
-        .. activecode:: qExtra_4
+        .. activecode:: qExtra_4_en
             :nocodelens:
 
             In the book "The Man Who Counted," by *Malba Tahan*, a character wanted to win the grains of wheat that were distributed on a chessboard as follows: 
@@ -136,7 +136,7 @@ Quiz - Extras
 
     .. tab:: Exercise 5
 
-        .. activecode:: qExtra_5
+        .. activecode:: qExtra_5_en
             :nocodelens:
 
             You are given ``n`` tiles with dimensions of 10cm x 10cm. With them, you must assemble a set of squares using all the given tiles. To do this, you must follow the following rules:

@@ -11,7 +11,7 @@ Quiz - 13
 
     .. tab:: Exercise 1
 
-        ..  activecode:: q13_1
+        ..  activecode:: q13_1_en
             :nocodelens:
 
             Develop the function ``remove_duplicates`` that receives a list ``numbers`` of integers. The function should return a list without repeated elements and sorted in ascending order. |br| |br|
@@ -46,7 +46,7 @@ Quiz - 13
 
     .. tab:: Exercise 2
 
-        ..  activecode:: q13_2
+        ..  activecode:: q13_2_en
             :nocodelens:
 
             Develop the function ``encrypt`` that receives a string ``phrase``. The function should return a new encrypted string, following these rules: |br|

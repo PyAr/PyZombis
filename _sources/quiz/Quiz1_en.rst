@@ -11,7 +11,7 @@ Quiz - 1
 
     .. tab:: Exercise 1
 
-        .. activecode:: q1_1
+        .. activecode:: q1_1_en
             :nocodelens:
 
             Make a program that asks for two integer numbers and prints the sum of those two numbers. |br|
@@ -38,7 +38,7 @@ Quiz - 1
 
     .. tab:: Exercise 2
 
-        .. activecode:: q1_2
+        .. activecode:: q1_2_en
             :nocodelens:
     
             Write a program that reads a value in meters and shows it converted to millimeters. |br|
@@ -64,7 +64,7 @@ Quiz - 1
 
     .. tab:: Exercise 3
 
-        .. activecode:: q1_3
+        .. activecode:: q1_3_en
             :nocodelens:
 
             Write a program that reads the number of days, hours, minutes, and seconds from 
@@ -92,7 +92,7 @@ Quiz - 1
 
     .. tab:: Exercise 4
 
-        .. activecode:: q1_4
+        .. activecode:: q1_4_en
             :nocodelens:
     
             Make a program that calculates a salary increase. It should request the 
@@ -122,7 +122,7 @@ Quiz - 1
 
     .. tab:: Exercise 5
 
-        .. activecode:: q1_5
+        .. activecode:: q1_5_en
             :nocodelens:
     
             Request the price from a merchant and the percentage of the discount. 
@@ -151,7 +151,7 @@ Quiz - 1
 
     .. tab:: Exercise 6
 
-        .. activecode:: q1_6
+        .. activecode:: q1_6_en
             :nocodelens:
 
             Calculate the duration of a car trip. Ask for the distance to be covered 
@@ -180,7 +180,7 @@ Quiz - 1
 
     .. tab:: Exercise 7
 
-        .. activecode:: q1_7
+        .. activecode:: q1_7_en
             :nocodelens:
 
             Convert a temperature written in Celsius to Fahrenheit. F = (9 * C) / 5 + 32 |br|
@@ -208,7 +208,7 @@ Quiz - 1
 
     .. tab:: Exercise 8
 
-        .. activecode:: q1_8
+        .. activecode:: q1_8_en
             :nocodelens:
 
             Now do the opposite, from Fahrenheit to Celsius. |br|
@@ -236,7 +236,7 @@ Quiz - 1
 
     .. tab:: Exercise 9
 
-        .. activecode:: q1_9
+        .. activecode:: q1_9_en
             :nocodelens:
 
             Write a program that asks for the number of kilometers traveled 
@@ -267,7 +267,7 @@ Quiz - 1
 
     .. tab:: Exercise 10
 
-        .. activecode:: q1_10
+        .. activecode:: q1_10_en
             :nocodelens:
 
             Write a program to calculate the reduction in the lifespan of a smoker. 
@@ -299,7 +299,7 @@ Quiz - 1
 
     .. tab:: Exercise 11
 
-        .. activecode:: q1_11
+        .. activecode:: q1_11_en
             :nocodelens:
 
             Knowing that ``str()`` converts numerical values to strings, 

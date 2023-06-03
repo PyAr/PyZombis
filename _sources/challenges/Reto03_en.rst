@@ -1,6 +1,6 @@
-================================
+=================================
 Pygame Challenge - Zombie Shooter
-================================
+=================================
 
 .. raw:: html
 
@@ -13,7 +13,7 @@ Pygame Challenge - Zombie Shooter
    </script>
 
 
-.. activecode:: ac_r03_1
+.. activecode:: ac_r03_1_en
     :language: python3
     :python3_interpreter: brython
 

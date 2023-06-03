@@ -4,7 +4,7 @@ Variable names
 + In Python, variable names must start with a letter or underscore ``_``
 + Accents are allowed!
 + Examples of valid names: ``price``, ``action``, ``salary``, ``_x``,
-  ``year_2011``, ``average_salary``
+  ``year_2011``, ``average_salary``
 
 .. code-block:: python
 

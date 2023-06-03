@@ -11,7 +11,7 @@ Quiz - 7
 
     .. tab:: Exercise 1
 
-        .. activecode:: q7_1
+        .. activecode:: q7_1_en
             :nocodelens:
 
             Develop the function ``multi_cadena`` that receives as parameters a string ``s`` and a positive integer ``n`` and returns a new string that contains ``n`` copies of the original string |br| |br|
@@ -53,7 +53,7 @@ Quiz - 7
 
     .. tab:: Exercise 2
 
-        .. activecode:: q7_2
+        .. activecode:: q7_2_en
             :nocodelens:
 
             Develop the function ``expandir_cadena`` that receives a string ``s`` and returns a new string following the pattern described in the examples |br| |br|
@@ -96,7 +96,7 @@ Quiz - 7
 
     .. tab:: Exercise 3
 
-        .. activecode:: q7_3
+        .. activecode:: q7_3_en
             :nocodelens:
 
 
@@ -127,7 +127,7 @@ Quiz - 7
 
     .. tab:: Exercise 4
 
-        .. activecode:: q7_4
+        .. activecode:: q7_4_en
             :nocodelens:
 
 
@@ -168,7 +168,7 @@ Quiz - 7
 
     .. tab:: Exercise 5
 
-        .. activecode:: q7_5
+        .. activecode:: q7_5_en
             :nocodelens:
 
 
@@ -199,7 +199,7 @@ Quiz - 7
 
     .. tab:: Exercise 6
 
-        .. activecode:: q7_6
+        .. activecode:: q7_6_en
             :nocodelens:
 
             Develop the function ``crear_etiquetas`` that receives two strings ``etiqueta`` and ``palabra`` and returns a new formatted string following the pattern of the examples |br| |br|
@@ -243,7 +243,7 @@ Quiz - 7
 
     .. tab:: Exercise 7
 
-        .. activecode:: q7_7
+        .. activecode:: q7_7_en
             :nocodelens:
 
             Develop the function ``repetir_letras`` that receives a string ``s`` of at least two characters and returns a new string with the last two letters repeated three times |br| |br|
@@ -273,7 +273,7 @@ Quiz - 7
 
     .. tab:: Exercise 8
 
-        .. activecode:: q7_8
+        .. activecode:: q7_8_en
             :nocodelens:
 
             Develop the function ``otra_repetir_letras`` (variation of the Exercise 7 function) that receives a string ``s`` of at least two characters and a positive integer ``n`` and returns a new string with the last two letters repeated ``n`` times |br| |br|
@@ -303,7 +303,7 @@ Quiz - 7
 
     .. tab:: Exercise 9
 
-        .. activecode:: q7_9
+        .. activecode:: q7_9_en
             :nocodelens:
 
             Develop the function ``primera_mitad`` that receives a string ``s`` and returns the first half of the original string |br| |br|
@@ -334,7 +334,7 @@ Quiz - 7
 
     .. tab:: Exercise 10
 
-        .. activecode:: q7_10
+        .. activecode:: q7_10_en
             :nocodelens:
 
 
@@ -381,7 +381,7 @@ Quiz - 7
 
     .. tab:: Exercise 11
 
-        .. activecode:: q7_11
+        .. activecode:: q7_11_en
             :nocodelens:
 
 

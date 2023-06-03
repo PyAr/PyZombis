@@ -11,7 +11,7 @@ Quiz - 9
 
     .. tab:: Exercise 1
 
-        ..  activecode:: q9_1
+        ..  activecode:: q9_1_en
             :nocodelens:
 
             Develop the function ``near_ten`` that receives an integer ``n`` and returns ``True`` when ``n`` is a multiple of 10, or when ``n`` is one or two units away from it. Otherwise, return ``False``. |br| |br|
@@ -51,7 +51,7 @@ Quiz - 9
 
     .. tab:: Exercise 2
 
-        .. activecode:: q9_2
+        .. activecode:: q9_2_en
             :nocodelens:
 
             Develop a function called "suma_loca" that receives three integers "a", "b", and "c". The function must return the sum of the three numbers with the condition that if any number appears twice, it will not be counted in the sum. |br| |br|
@@ -84,7 +84,7 @@ Quiz - 9
             
     .. tab:: Exercise 3
 
-        .. activecode:: q9_3
+        .. activecode:: q9_3_en
             :nocodelens:
 
             Develop the function called "suma_con_suerte" that receives three integers "a", "b", and "c". The function must return the sum of the three numbers with the condition that if one of the numbers is **13**, it won't count in the sum, as well as all the numbers to its right. |br| |br|
@@ -120,7 +120,7 @@ Quiz - 9
             
     .. tab:: Exercise 4
 
-        .. activecode:: q9_4
+        .. activecode:: q9_4_en
             :nocodelens:
 
             Develop the function called "caracteres_dobles" that receives a string "s" and should return the original string duplicated. |br| |br|
@@ -154,7 +154,7 @@ Quiz - 9
     
     .. tab:: Exercise 5
 
-        .. activecode:: q9_5
+        .. activecode:: q9_5_en
             :nocodelens:
 
             Develop the function ``count_greeting`` which receives a string ``s`` as a parameter and returns the number of times the string ``"hello"`` appears in ``s``. |br| |br|
@@ -190,7 +190,7 @@ Quiz - 9
 
     .. tab:: Exercise 6
 
-        .. activecode:: q9_6
+        .. activecode:: q9_6_en
             :nocodelens:
 
             Develop the function ``cat_dog`` which receives a string ``s`` as a parameter and returns ``True`` if the string ``"cat"`` and the string ``"dog"`` appear the same number of times in the string ``s`` or returns ``False`` otherwise. | br | | br |
@@ -229,7 +229,7 @@ Quiz - 9
 
     .. tab:: Exercise 7
 
-        .. activecode:: q9_7
+        .. activecode:: q9_7_en
             :nocodelens:
 
             Develop the function ``count_code`` which receives a string ``s`` as a parameter and returns the number of times the string ``"code"`` appears in ``s``, but with the condition that the letter ``'d'`` can be exchanged for any other letter. Thus, the strings ``"coze"`` and ``"coze"`` should be counted equally. |br| |br|
@@ -269,7 +269,7 @@ Quiz - 9
 
     .. tab:: Exercise 8
 
-        .. activecode:: q9_8
+        .. activecode:: q9_8_en
             :nocodelens:
 
             Knowing that the function ``lower()`` converts the characters of a string to lowercase. Develop a function called ``end_equals`` that receives two strings ``a`` and ``b`` as parameters. The function will return ``True`` if the string ``b`` is found at the end of string ``a`` or if the string ``a`` is found at the end of string ``b``. |br| |br|
@@ -308,7 +308,7 @@ Quiz - 9
 
     .. tab:: Exercise 9
 
-        .. activecode:: q9_9
+        .. activecode:: q9_9_en
             :nocodelens:
 
             Develop the function ``count_pairs`` that receives a list ``numbers`` of integers and returns the number of even numbers in the list. |br| |br|
@@ -343,8 +343,8 @@ Quiz - 9
     
     .. tab:: Exercise 10
 
-        .. activecode :: q9_10
-            : nocodelens:
+        .. activecode:: q9_10_en
+            :nocodelens:
 
             Develop the function `` suma_con_mas_suerte '' that receives a list `` numbers '' of integers and returns the sum of the numbers in the list with the condition that if one of the numbers is ** 13 ** , this is not counted in the sum as well as all numbers that are to its right. | br | | br |
             Examples: | br |
@@ -387,7 +387,7 @@ Quiz - 9
 
     .. tab:: Exercise 11
 
-        .. activecode:: q9_11
+        .. activecode:: q9_11_en
             :nocodelens:
 
             Develop the function ``tiene_2`` that receives a list ``numeros`` of integers as parameter and returns ``True`` if there are two consecutive equal numbers in the list, and ``False`` otherwise. |br| |br|
@@ -427,7 +427,7 @@ Quiz - 9
 
     .. tab:: Exercise 12
 
-        .. activecode:: q9_12
+        .. activecode:: q9_12_en
             :nocodelens:
 
             Develop the function ``suma_en_lista`` that receives two parameters, an integer ``n`` and a list ``numeros`` of numbers. The function should return ``True`` if there are two different elements in the list whose sum is ``n``, and ``False`` otherwise. |br| |br|
@@ -465,7 +465,7 @@ Quiz - 9
 
     .. tab:: Exercise 13
 
-        .. activecode:: q9_13
+        .. activecode:: q9_13_en
             :nocodelens:
             
             In a construction it is desired to build a row of bricks. There are small bricks and large bricks. Small bricks are 1 unit in length while large bricks are 5 units in length. Develop the function ``build_row`` which receives three parameters, ``num_small_bricks``, ``num_large_bricks``, and ``row_length``. These parameters are integer numbers that represent the quantity of small bricks, quantity of large bricks, and the length of the row you want to build, respectively. The function must return ``True`` if it is possible to build the row, or ``False`` otherwise. |br| |br|

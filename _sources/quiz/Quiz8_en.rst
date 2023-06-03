@@ -11,7 +11,7 @@ Quiz - 8
 
    .. tab:: Exercise 1
 
-      .. activecode:: q8_1
+      .. activecode:: q8_1_en
          :nocodelens:
       
          Define a function ``first_or_last_6`` that checks whether 6 is the first 
@@ -46,7 +46,7 @@ Quiz - 8
 
    .. tab:: Exercise 2
 
-      .. activecode:: q8_2
+      .. activecode:: q8_2_en
          :nocodelens:
       
          Define a function ``same_ends`` that takes a list ``numbers`` as a parameter, 
@@ -84,7 +84,7 @@ Quiz - 8
 
    .. tab:: Exercise 3
 
-      .. activecode:: q8_3
+      .. activecode:: q8_3_en
          :nocodelens:
       
          Define a function ``common_ends`` that takes two lists ``a`` and ``b`` 
@@ -135,7 +135,7 @@ Quiz - 8
 
    .. tab:: Exercise 4
 
-      .. activecode:: q8_4
+      .. activecode:: q8_4_en
          :nocodelens:
 
          Define a function called ``mayor_extremo`` that takes the list "numeros" as parameter, compares the ends of the list and returns a new list of the same size where all elements are the greatest magnitude extreme. |br| |br|
@@ -201,7 +201,7 @@ Quiz - 8
 
    .. tab:: Exercise 5
 
-      .. activecode:: q8_5
+      .. activecode:: q8_5_en
          :nocodelens:
 
          Define a function called ``sumar_primeros_dos`` that takes the integer list ``numeros`` of any length as parameter and returns the sum of the first two elements. If the list has less than two elements, add 0s. |br| |br|
@@ -241,7 +241,7 @@ Quiz - 8
 
    .. tab:: Exercise 6
 
-      .. activecode:: q8_6
+      .. activecode:: q8_6_en
          :nocodelens:
 
          Define a function called ``al_medio`` that takes two integer lists ``a`` and ``b`` as parameters, and returns a list of size 2 that contains the middle elements of ``a`` and ``b``. Assume that the lists have an odd length. |br| |br|
@@ -297,7 +297,7 @@ Quiz - 8
         
    .. tab:: Exercise 7
 
-      .. activecode:: q8_7
+      .. activecode:: q8_7_en
          :nocodelens:
 
          Define a function ``fancy_date``. The function will take two parameters, 
@@ -307,10 +307,11 @@ Quiz - 8
          Your clothes score will determine if you get a table at the restaurant or not, according to the following rules: |br|
 
          - If the score of one of the two clothing is less than or equal to 2, 
-         they will not be entitled to a table (``0``). |br|
+           they will not be entitled to a table (``0``). |br|
          - If the scores are higher, then if one of them is very 
-         elegant (score >= 8) they will be entitled to a table (``2``). |br|
+           elegant (score >= 8) they will be entitled to a table (``2``). |br|
          - Otherwise, the answer is maybe (``1``). |br|
+        
         
          So ``fancy_date`` returns a number between 0, 1, and 2, which mean No, Maybe, and Yes, respectively. |br| |br|
          Examples: |br|   
@@ -347,7 +348,7 @@ Quiz - 8
 
    .. tab:: Exercise 8
 
-      .. activecode:: q8_8
+      .. activecode:: q8_8_en
          :nocodelens:
       
          The *squirrels* soccer team normally plays when the temperature is 
@@ -392,7 +393,7 @@ Quiz - 8
 
    .. tab:: Exercise 9
 
-      .. activecode:: q8_9
+      .. activecode:: q8_9_en
          :nocodelens:
         
          Let's simulate a speedometer that applies a fine if the maximum speed is exceeded:
@@ -450,7 +451,7 @@ Quiz - 8
 
    .. tab:: Exercise 10
 
-      .. activecode:: q8_10
+      .. activecode:: q8_10_en
         :nocodelens:
                 
         Define a function ``set_alarm`` that takes two parameters: The first parameter 

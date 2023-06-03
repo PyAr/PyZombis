@@ -1,5 +1,5 @@
 Visitor Accounts
-==================
+================
 
 
 + Edit default.py controller
@@ -45,7 +45,7 @@ Visitor Accounts
 
 
 Two pages
------------
+---------
 
 + We will create two pages
 + The first asks for the name in a form
@@ -90,7 +90,7 @@ What is your name?
 
 
 Accessories
-----------
+-----------
 
 + `Web2py Appliances <http://www.web2py.com/appliances>`_
 + Email Contact Form

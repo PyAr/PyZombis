@@ -11,7 +11,7 @@ Quiz - 6
 
    .. tab:: Exercise 1
 
-      .. activecode:: q6_1
+      .. activecode:: q6_1_en
          :nocodelens:
 
          Develop the function ``sleep`` that takes two parameters, 
@@ -44,7 +44,7 @@ Quiz - 6
 
    .. tab:: Exercise 2
 
-      .. activecode:: q6_2
+      .. activecode:: q6_2_en
          :nocodelens:
 
          Develop the function ``students_in_trouble`` that takes two parameters,
@@ -78,7 +78,7 @@ Quiz - 6
 
    .. tab:: Exercise 3
 
-      .. activecode:: q6_3
+      .. activecode:: q6_3_en
          :nocodelens:
 
          Develop the function ``double_sum`` that takes two parameters, ``a`` and ``b``.
@@ -110,7 +110,7 @@ Quiz - 6
 
    .. tab:: Exercise 4
 
-      .. activecode:: q6_4
+      .. activecode:: q6_4_en
          :nocodelens:
 
          Develop the function ``absolute_difference_21`` that takes a parameter, ``n``, 
@@ -145,7 +145,7 @@ Quiz - 6
 
    .. tab:: Exercise 5
 
-      .. activecode:: q6_5
+      .. activecode:: q6_5_en
          :nocodelens:
 
          Develop the function ``parrot_trouble`` that takes two parameters, 
@@ -181,7 +181,7 @@ Quiz - 6
 
    .. tab:: Exercise 6
 
-      .. activecode:: q6_6
+      .. activecode:: q6_6_en
          :nocodelens:
 
          Develop the function ``makes10`` that takes two parameters, ``a`` and ``b``. 
@@ -218,7 +218,7 @@ Quiz - 6
 
    .. tab:: Exercise 7
 
-      .. activecode:: q6_7
+      .. activecode:: q6_7_en
          :nocodelens:
 
          Develop the function ``near_hundred`` that takes ``n`` 
@@ -263,7 +263,7 @@ Quiz - 6
 
    .. tab:: Exercise 8
 
-      .. activecode:: q6_8
+      .. activecode:: q6_8_en
          :nocodelens:
 
          Develop the function ``remover_iesimo`` that receives a non-empty string ``s`` and a positive integer ``i``, and returns the original string without the i-th character. |br| |br| 
@@ -299,7 +299,7 @@ Quiz - 6
 
    .. tab:: Exercise 9
 
-      .. activecode:: q6_9
+      .. activecode:: q6_9_en
          :nocodelens:
 
          Develop the function ``intercambiar`` that takes ``s`` as a parameter, representing a string. If ``s`` has a length of 1 or less, the same string is returned. Otherwise, the first and last letter of ``s`` are exchanged. |br| |br| 
