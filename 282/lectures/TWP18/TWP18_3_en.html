@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Concatenation &#8212; PyZombis duplicatIds@7bc9372</title>
+    <title>3. Concatenation &#8212; PyZombis duplicatIds@9173167</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis duplicatIds@7bc9372
+          PyZombis duplicatIds@9173167
         </a>
       </div>
     </div>
@@ -371,25 +371,28 @@ print(texto)
 <li><p>Example of a program that reads a word and replaces the vowels with <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code>.
 The <code class="docutils literal notranslate"><span class="pre">lower</span></code> function transforms the letters to lowercase.</p></li>
 </ul>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP18/TWP18_3_en.rst</span>, line 33)</p>
-<p>Duplicate ID – see lectures/TWP18/TWP18_3_en, line 11</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">ac_l18_3a_en</span>
-    <span class="p">:</span><span class="n">nocodelens</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">stdin</span><span class="p">:</span>
 
-    <span class="n">palabra</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Word: &quot;</span><span class="p">)</span>
-    <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">intercambio</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="k">while</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">palabra</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">palabra</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="s2">&quot;aeiou&quot;</span><span class="p">:</span>
-            <span class="n">intercambio</span> <span class="o">=</span> <span class="n">intercambio</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">intercambio</span> <span class="o">=</span> <span class="n">intercambio</span> <span class="o">+</span> <span class="n">palabra</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
-        <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;New word </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">intercambio</span><span class="p">)</span>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l18_3c_en data-question_label="3.2.2">
+<div id=ac_l18_3c_en_question class="ac_question col-md-12">
 
-</pre></div>
+</div>
+<textarea data-lang="python" id="ac_l18_3c_en_editor" 
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
+           data-wasm=/_static
+      style="visibility: hidden;">
+palabra = input("Word: ")
+k = 0
+intercambio = ""
+while k < len(palabra):
+    if palabra[k].lower() in "aeiou":
+        intercambio = intercambio + "*"
+    else:
+        intercambio = intercambio + palabra[k]
+    k += 1
+print("New word %s" % intercambio)
+</textarea>
 </div>
 </div>
 </div>
