@@ -1,0 +1,54 @@
+Nuevo programa por turnos
+=========================
+
+Nuevo programa de la mañana
+---------------------------
+
+
+.. code-block:: python
+   
+   from banco import *
+
+   articulos = ["Bauru","X ensalada","Calafrango"]
+   precios = [2.50,3.0,2.20]
+   corriendo = True
+
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcao += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Elija una opcion: "))
+      if elegir == opcion:
+         # eligió la última opción Finalizar
+         corriendo = False
+      else:
+         tarjeta = input("Número de tarjeta de crédito: ")
+         guardar_transacción(precios[elegir-1],tarjeta,articulos[elegir-1]) 
+
+Nuevo programa de tarde / noche
+-------------------------------
+
+
+.. code-block:: python
+   
+   from banco import *
+
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
+
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Elige una opcion: "))
+      if elegir == opcion:
+        # eligió la última opción Finalizar
+         corriendo = False
+      else:
+         tarjeta = input("Número de tarjeta de crédito: ")
+         guardar_transacción(precios[elegir-1],cartao,articulos[elegir-1]) 

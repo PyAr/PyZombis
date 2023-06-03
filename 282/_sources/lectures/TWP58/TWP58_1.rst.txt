@@ -1,0 +1,39 @@
+POO - Programación Orientada a Objetos
+======================================
+
+.. image:: ../img/TWP58_002.jpeg
+   :height: 4.629cm
+   :width: 13.81cm
+   :align: center
+   :alt: 
+
+
++ Tenemos DJ Mix para una canción
++ Ahora necesitamos varios
++ KISS – Kept It Simple Stupid
++ ¡No duplicaremos el código!
+
+
+.. image:: ../img/TWP58_003.jpg
+   :height: 13.704cm
+   :width: 9.736cm
+   :align: center
+   :alt: 
+
+
+Vamos a juntar todos los objetos en un Frame
+--------------------------------------------
+
+
+.. image:: ../img/TWP58_004.jpg
+   :height: 10.966cm
+   :width: 22.859cm
+   :align: center
+   :alt: 
+
+
+.. image:: ../img/TWP58_005.jpg
+   :height: 14.21cm
+   :width: 13.435cm
+   :align: center
+   :alt: 
