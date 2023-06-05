@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Files &#8212; PyZombis fix/no-break-space@812b107</title>
+    <title>1. Files &#8212; PyZombis fix/no-break-space@0c56f61</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis fix/no-break-space@812b107
+          PyZombis fix/no-break-space@0c56f61
         </a>
       </div>
     </div>
@@ -337,79 +337,74 @@ window.addEventListener('load', (event) => {
 <li><p>The methods to read or write are <cite>read()</cite> and <cite>write()</cite></p></li>
 <li><p>Files must be closed with <cite>close()</cite></p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;numeros.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">31</span><span class="p">):</span>
-    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">numero</span><span class="p">)</span>
-<span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archive</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;numbers.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">numbers</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">31</span><span class="p">):</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">numbers</span><span class="p">)</span>
+<span class="n">archive</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_1_en.rst</span>, line 22)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_1, line 26</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">datafile</span><span class="p">::</span> <span class="n">numeros</span><span class="o">.</span><span class="n">txt</span>
-    <span class="p">:</span><span class="n">cols</span><span class="p">:</span> <span class="mi">20</span>
-    <span class="p">:</span><span class="n">rows</span><span class="p">:</span> <span class="mi">10</span>
-    <span class="p">:</span><span class="n">edit</span><span class="p">:</span>
+
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>numbers.txt</code></div>
+<pre data-component="datafile" id=numbers.txt  data-edit="true" data-rows="10" data-cols="20">
 
 </pre></div>
-</div>
-</div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l23_1a_en data-question_label="1.1">
+<div data-component="activecode" id=ac_l23_1a_en data-question_label="1.2">
 <div id=ac_l23_1a_en_question class="ac_question col-md-12">
 <p>Try the previous program:</p>
 
 </div>
 <textarea data-lang="python" id="ac_l23_1a_en_editor" 
       data-timelimit=25000   data-enabledownload="true"  
-    data-audio=''  data-datafile='numeros.txt'    
+    data-audio=''  data-datafile='numbers.txt'    
            data-wasm=/_static
       style="visibility: hidden;">
-archivo = open("numeros.txt", "w")
-for numero in range(1, 31):
-    archivo.write("%d\n" % numero)
-archivo.close()
+archive = open("numbers.txt", "w")
+for numbers in range(1, 31):
+    archive.write("%d\n" % numbers)
+archive.close()
 
 
 ====
-print("Data has been written to the file numeros.txt")
+print("Data has been written to the file numbers.txt")
 </textarea>
 </div>
 </div>
 <ul class="simple">
-<li><p>When executing the previous program, the file <cite>numeros.txt</cite> is modified.</p></li>
+<li><p>When executing the previous program, the file <cite>numbers.txt</cite> is modified.</p></li>
 <li><p>The <cite>w</cite> mode creates the file if it does not exist, if it exists it will be deleted and rewritten.</p></li>
 </ul>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l23_1b_en data-question_label="1.2">
+<div data-component="activecode" id=ac_l23_1b_en data-question_label="1.3">
 <div id=ac_l23_1b_en_question class="ac_question col-md-12">
-<p>You have already written to the file <code class="docutils literal notranslate"><span class="pre">&quot;numeros.txt&quot;</span></code>. Now you are going to read the data you have written:</p>
+<p>You have already written to the file <code class="docutils literal notranslate"><span class="pre">&quot;numbers.txt&quot;</span></code>. Now you are going to read the data you have written:</p>
 
 </div>
 <textarea data-lang="python" id="ac_l23_1b_en_editor" 
       data-timelimit=25000   data-enabledownload="true"  
-    data-audio=''  data-datafile='numeros.txt'    
+    data-audio=''  data-datafile='numbers.txt'    
            data-wasm=/_static
       style="visibility: hidden;">
-archivo = open("numeros.txt", "r")
-for linea in archivo.readlines():
-    print(linea)
-archivo.close()
+archive = open("numbers.txt", "r")
+for line in archive.readlines():
+    print(line)
+archive.close()
 </textarea>
 </div>
 </div>
 <ul class="simple">
 <li><p><cite>readlines()</cite> generates a list where each element is a read line.</p></li>
-<li><p>The <cite>numeros.txt</cite> file now has written numbers, each number on a different line.
+<li><p>The <cite>numbers.txt</cite> file now has written numbers, each number on a different line.
 This line break was written with the special character <cite>n</cite>.</p></li>
-<li><p>If we want to remove this character from the end, we can use <cite>print(linea.rstrip())</cite>.
+<li><p>If we want to remove this character from the end, we can use <cite>print(line.rstrip())</cite>.
 Try to print the text lines in this way.</p></li>
 </ul>
 <div class="section" id="pythonic-way">
 <h2><span class="section-number">1.1. </span>Pythonic way<a class="headerlink" href="#pythonic-way" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;numeros.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;numbers.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -421,10 +416,10 @@ Try to print the text lines in this way.</p></li>
 </div>
 <textarea data-lang="python" id="ac_l23_1c_en_editor" 
       data-timelimit=25000   data-enabledownload="true"  
-    data-audio=''  data-datafile='numeros.txt'    
+    data-audio=''  data-datafile='numbers.txt'    
            data-wasm=/_static
       style="visibility: hidden;">
-with open("numeros.txt", "r") as f:
+with open("numbers.txt", "r") as f:
     print(f.read())
 </textarea>
 </div>

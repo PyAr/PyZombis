@@ -1,7 +1,7 @@
 New Score
 =========
 
-..  datafile:: surf3.txt
+..  datafile:: surf3_en.txt
     :hide: 
       
     Johny 8.65
@@ -14,10 +14,10 @@ New Score
 
 ..  activecode:: ac_l37_5a_en
     :nocodelens:
-    :datafile: surf3.txt
+    :datafile: surf3_en.txt
     :stdin:
    
-    file = open("surf3.txt")
+    file = open("surf3_en.txt")
     scores = []
 
     for line in file:
@@ -60,10 +60,10 @@ Finally the correct positions
 
 ..  activecode:: ac_l37_5b_en
     :nocodelens:
-    :datafile: surf3.txt
+    :datafile: surf3_en.txt
     :stdin:
    
-    file = open("surf3.txt")
+    file = open("surf3_en.txt")
     scores = []
 
     for line in file:
