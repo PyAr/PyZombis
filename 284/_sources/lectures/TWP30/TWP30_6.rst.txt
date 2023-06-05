@@ -1,0 +1,62 @@
+Sortear el número a adivinar
+============================
+
+
+.. activecode:: ac_l30_6
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import document as doc
+    from browser import html
+    from browser import timer
+    from random import randint
+
+    print("¡Bienvenido!")
+    azar = randint(1, 100)
+    numero = 0
+
+    doc <= html.DIV(id="div_juego_2")
+
+    # Creamos una caja de texto donde ingresar el número que queramos
+    doc["div_juego_2"] <= html.INPUT(id="inp_adivinar", placeholder="Adivine el número", type="number")
+    # Creamos el botón para adivinar
+    doc["div_juego_2"] <= html.BUTTON("Enviar adivinanza", id="btn_adivinar") + html.BR()
+
+    def confirmar_adivinanza(e):
+        global numero
+        numero = int(doc["inp_adivinar"].value)
+
+        if numero == azar:
+            print("¡Ganaste!")
+            print("¡Fin del juego!")
+            # Si el número es adivinado, el botón desaparece y el juego 
+            # termina
+            doc["btn_adivinar"].style.display = "none"
+        else:
+            if numero > azar:
+                print("Alto")
+            else:
+                print("Bajo")
+
+    # Al apretar el botón, invoca a la función confirmar_adivinanza
+    doc["btn_adivinar"].bind("click", confirmar_adivinanza)
+
+
+¡Ahora sí!
+----------
+
+.. image:: ../img/TWP30_012.jpg
+    :height: 10.873cm
+    :width: 14.154cm
+    :alt: 
+
+
+Resumen
+-------
+
++ ¡Creaste un juego!
++ Los comandos hacen cosas
++ Las condicionales deciden las cosas
++ Los ciclos repiten cosas
++ Las condiciones te ayudan a decidir si algo es verdadero o falso
++ La asignación define un nombre para un valor.
