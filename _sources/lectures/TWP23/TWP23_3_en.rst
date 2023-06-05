@@ -1,7 +1,7 @@
 Validate IP Address
 ====================
 
-.. datafile:: IPS.txt  
+.. datafile:: IPS_en.txt  
     :cols: 20
     :rows: 12
 
@@ -17,7 +17,7 @@ Validate IP Address
 
 .. activecode:: ac_l23_3_en
     :nocodelens:
-    :datafile: Validos.txt, Invalidos.txt
+    :datafile: valid.txt, Invalid.txt
 
     def ip_ok(ip):
         ip = ip.split(".")
@@ -27,9 +27,9 @@ Validate IP Address
         return True
 
 
-    ips = open("IPS.txt")
-    validos = open("Validos.txt", "w")
-    invalidos = open("Invalidos.txt", "w")
+    ips = open("IPS_en.txt")
+    validos = open("valid.txt", "w")
+    invalidos = open("Invalid.txt", "w")
     for linea in ips.readlines():
         if ip_ok(linea):
             validos.write(linea)
@@ -42,10 +42,10 @@ Validate IP Address
 
 
     ====
-    print("Data has been written in the Validos.txt and Invalidos.txt files")
+    print("Data has been written in the valid.txt and Invalid.txt files")
 
 
-.. datafile:: Validos.txt
+.. datafile:: valid.txt
     :edit:
     :cols: 15
     :rows: 7
@@ -53,7 +53,7 @@ Validate IP Address
     Valid
 
 
-.. datafile:: Invalidos.txt
+.. datafile:: Invalid.txt
     :edit:
     :cols: 15
     :rows: 7

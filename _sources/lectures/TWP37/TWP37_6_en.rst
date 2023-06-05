@@ -14,7 +14,7 @@ Using another list
 + We can use two lists to find out.
 + The ``names`` and ``scores`` lists to save the names and scores obtained by the participants respectively.
 
-..  datafile:: surf4.txt
+..  datafile:: surf4_en.txt
     :hide: 
       
     Johny 8.65
@@ -27,10 +27,10 @@ Using another list
 
 ..  activecode:: ac_l37_6a_en
     :nocodelens:
-    :datafile: surf4.txt
+    :datafile: surf4_en.txt
     :stdin:
 
-    file = open("surf4.txt")
+    file = open("surf4_en.txt")
     scores = []
     names = []
 
@@ -87,10 +87,10 @@ Using and sorting a dictionary
 
 ..  activecode:: ac_l37_6b_en
     :nocodelens:
-    :datafile: surf4.txt
+    :datafile: surf4_en.txt
     :stdin:
 
-    file = open("surf4.txt")
+    file = open("surf4_en.txt")
     scores = {}
 
     for line in file:
