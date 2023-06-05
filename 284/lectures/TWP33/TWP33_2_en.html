@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. How to get only the price? &#8212; PyZombis fix/no-break-space@01339f9</title>
+    <title>2. How to get only the price? &#8212; PyZombis fix/no-break-space@812b107</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -92,7 +92,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis fix/no-break-space@01339f9
+          PyZombis fix/no-break-space@812b107
         </a>
       </div>
     </div>
@@ -330,13 +330,6 @@ window.addEventListener('load', (event) => {
 <a class="reference internal image-reference" href="../../_images/TWP33_007.jpg"><img alt="" class="align-center" src="../../_images/TWP33_007.jpg" style="width: 16.051cm; height: 5cm;" /></a>
 <a class="reference internal image-reference" href="../../_images/TWP33_008.jpg"><img alt="" class="align-center" src="../../_images/TWP33_008.jpg" style="width: 16.483cm; height: 8.323cm;" /></a>
 <a class="reference internal image-reference" href="../../_images/TWP33_009.jpg"><img alt="" class="align-center" src="../../_images/TWP33_009.jpg" style="width: 17.805cm; height: 7.317cm;" /></a>
-<p>Python code:</p>
-<p>To obtain only the price, we can use indexing to extract the value from the string after the “Precio:” label. Assuming the variable <cite>text</cite> contains the text to be analyzed:</p>
-<p><code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">price_index</span> <span class="pre">=</span> <span class="pre">text.find(&quot;Precio:&quot;)</span>
-<span class="pre">price</span> <span class="pre">=</span> <span class="pre">text[price_index+len(&quot;Precio:&quot;):].strip()</span>
-<span class="pre">`</span></code></p>
-<p>The <cite>find()</cite> method returns the index of the substring “Precio:”, which we then add the length of “Precio:” to get the starting index of the price value. We then use <cite>strip()</cite> to remove any leading or trailing white space that may be present in the extracted text. The result will be stored in the variable <cite>price</cite>.</p>
 </div>
 
 
