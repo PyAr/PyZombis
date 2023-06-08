@@ -1,7 +1,7 @@
-Reading the file ``surf.txt``
-=============================
+Reading the file ``surf_en.txt``
+================================
 
-..  datafile:: surf.txt
+..  datafile:: surf_en.txt
     :hide: 
       
     Johny 8.65
@@ -14,10 +14,10 @@ Reading the file ``surf.txt``
 
 ..  activecode:: ac_l37_2a_en
     :nocodelens:
-    :datafile: surf.txt
+    :datafile: surf_en.txt
     :stdin:
 
-    file = open("surf.txt")
+    file = open("surf_en.txt")
     for line in file:
         print(line.strip())
     file.close()
@@ -64,10 +64,10 @@ Finding the 1st place
 
 ..  activecode:: ac_l37_2b_en
     :nocodelens:
-    :datafile: surf.txt
+    :datafile: surf_en.txt
     :stdin:
    
-    file = open("surf.txt")
+    file = open("surf_en.txt")
     highest_score = 0
     for line in file:
         name, score = line.split()
