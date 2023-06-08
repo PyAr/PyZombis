@@ -64,7 +64,7 @@ def test_l42_2(page):
     page.goto("lectures/TWP42/TWP42_2.html")
 
     page.click("text=4​ >> pre[role=\"presentation\"]")
-    page.fill("text=RunLoad History21 1from sqlite3 import connect2con = connect('alumnos.bd')3cur = >> textarea", "cur.execute('''create table alumnos(login_id varchar(8),pass integer)''')")
+    page.fill("text=RunResetLoad History21 1from sqlite3 import connect2con = connect('alumnos.bd')3cur = >> textarea", "cur.execute('''create table alumnos(login_id varchar(8),pass integer)''')")
     # Click button:has-text("Run")
     page.click("#ac_42_2_2 >> *css=button >> text=Run")
 
