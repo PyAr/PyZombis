@@ -72,7 +72,7 @@ Note that in the following program:
 
 **Note:** These are the colors of the code blocks that you have seen during the course, but these colors may vary depending on the programming tool used.
 
-.. parsonsprob:: ac_l30_2a
+.. parsonsprob:: ac_l30_2a_en
     :adaptive:
     :numbered: left
 

@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Reading the file surf.txt &#8212; PyZombis main@c977bef</title>
+    <title>2. Reading the file surf_en.txt &#8212; PyZombis main@839d408</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
@@ -21,9 +21,9 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
-    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
     <script src="../../_static/runtime.bundle.js?v=1654bbde73e12a3366eb"></script>
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@c977bef
+          PyZombis main@839d408
         </a>
       </div>
     </div>
@@ -322,36 +322,32 @@ window.addEventListener('load', (event) => {
 
 
   
-  <div class="section" id="reading-the-file-surf-txt">
-<h1><span class="section-number">2. </span>Reading the file <code class="docutils literal notranslate"><span class="pre">surf.txt</span></code><a class="headerlink" href="#reading-the-file-surf-txt" title="Permalink to this headline">¶</a></h1>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP37/TWP37_2_en.rst</span>, line 4)</p>
-<p>Duplicate ID – see lectures/TWP37/TWP37_2, line 8</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span>  <span class="n">datafile</span><span class="p">::</span> <span class="n">surf</span><span class="o">.</span><span class="n">txt</span>
-    <span class="p">:</span><span class="n">hide</span><span class="p">:</span>
+  <div class="section" id="reading-the-file-surf-en-txt">
+<h1><span class="section-number">2. </span>Reading the file <code class="docutils literal notranslate"><span class="pre">surf_en.txt</span></code><a class="headerlink" href="#reading-the-file-surf-en-txt" title="Permalink to this headline">¶</a></h1>
 
-    <span class="n">Johny</span> <span class="mf">8.65</span>
-    <span class="n">Juan</span> <span class="mf">9.12</span>
-    <span class="n">Joseph</span> <span class="mf">8.45</span>
-    <span class="n">Stacey</span> <span class="mf">7.81</span>
-    <span class="n">Aideen</span> <span class="mf">8.05</span>
-    <span class="n">Zack</span> <span class="mf">7.21</span>
-    <span class="n">Aaron</span> <span class="mf">8.31</span>
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>surf_en.txt</code></div>
+<pre data-component="datafile" id=surf_en.txt data-hidden data-edit="false" data-rows="20" data-cols="11">
+Johny 8.65
+Juan 9.12
+Joseph 8.45
+Stacey 7.81
+Aideen 8.05
+Zack 7.21
+Aaron 8.31
 </pre></div>
-</div>
-</div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l37_2a_en data-question_label="2.1">
+<div data-component="activecode" id=ac_l37_2a_en data-question_label="2.2">
 <div id=ac_l37_2a_en_question class="ac_question col-md-12">
 
 </div>
 <textarea data-lang="python" id="ac_l37_2a_en_editor" 
       data-timelimit=25000     
-    data-audio=''  data-datafile='surf.txt' data-stdin=''   
+    data-audio=''  data-datafile='surf_en.txt' data-stdin=''   
            data-wasm=/_static
       style="visibility: hidden;">
-file = open("surf.txt")
+file = open("surf_en.txt")
 for line in file:
     print(line.strip())
 file.close()
@@ -381,10 +377,10 @@ file.close()
 </div>
 <textarea data-lang="python" id="ac_l37_2b_en_editor" 
       data-timelimit=25000     
-    data-audio=''  data-datafile='surf.txt' data-stdin=''   
+    data-audio=''  data-datafile='surf_en.txt' data-stdin=''   
            data-wasm=/_static
       style="visibility: hidden;">
-file = open("surf.txt")
+file = open("surf_en.txt")
 highest_score = 0
 for line in file:
     name, score = line.split()

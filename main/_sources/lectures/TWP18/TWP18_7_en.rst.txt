@@ -40,7 +40,3 @@ Pair programming
     :width: 18.201cm
     :align: center
     :alt: 
-
-Python code:
-
-This snippet does not contain any Python code in Spanish or English.
