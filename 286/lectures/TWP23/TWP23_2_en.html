@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Crypto &#8212; PyZombis feat/babynames@0ccbba3</title>
+    <title>2. Crypto &#8212; PyZombis feat/babynames@ddc5b89</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -14,8 +14,6 @@
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
-    <link rel="stylesheet" type="text/css" href="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.css?v=6ab2699256a7cd2f2dee" />
-    <link rel="stylesheet" type="text/css" href="../../_static/runestone.css?v=0ddbfb97cbf8a612e45f" />
 
 
 
@@ -28,9 +26,9 @@
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
-    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=700db7378411b25a09f9"></script>
-    <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
+    <script src="../../_static/runtime.bundle.js?v=1654bbde73e12a3366eb"></script>
+    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="3. Validate IP Address" href="TWP23_3_en.html" />
@@ -92,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/babynames@0ccbba3
+          PyZombis feat/babynames@ddc5b89
         </a>
       </div>
     </div>
@@ -339,18 +337,18 @@ are changed to "*".
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_l23_2a_en data-question_label="2.2">
 <div id=ac_l23_2a_en_question class="ac_question col-md-12">
-<p>Read the file <code class="docutils literal notranslate"><span class="pre">&quot;message.txt&quot;</span></code> and write the file <code class="docutils literal notranslate"><span class="pre">&quot;crypto.txt&quot;</span></code> which
+<p>Read the file <code class="docutils literal notranslate"><span class="pre">&quot;message.txt&quot;</span></code> and write the file <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">crypto_en.txt&quot;</span></code> which
 should have the same text as the first file, but with vowels replaced by
 <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code>.</p>
 
 </div>
 <textarea data-lang="python" id="ac_l23_2a_en_editor" 
       data-timelimit=25000     
-    data-audio=''  data-datafile='message.txt, crypto.txt'    
+    data-audio=''  data-datafile='message.txt,  crypto_en.txt'    
            data-wasm=/_static
       style="visibility: hidden;">
 text = open("message.txt", "r")
-output = open("crypto.txt", "w")
+output = open(" crypto_en.txt", "w")
 
 for line in text.readlines():
     for letter in line:
@@ -364,21 +362,16 @@ output.close()
 
 
 ====
-print("Data has been written to the file crypto.txt")
+print("Data has been written to the file  crypto_en.txt")
 </textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_2_en.rst</span>, line 41)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_2, line 45</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">datafile</span><span class="p">::</span> <span class="n">crypto</span><span class="o">.</span><span class="n">txt</span>
-    <span class="p">:</span><span class="n">cols</span><span class="p">:</span> <span class="mi">20</span>
-    <span class="p">:</span><span class="n">rows</span><span class="p">:</span> <span class="mi">10</span>
-    <span class="p">:</span><span class="n">edit</span><span class="p">:</span>
+
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>crypto_en.txt</code></div>
+<pre data-component="datafile" id=crypto_en.txt  data-edit="true" data-rows="10" data-cols="20">
 
 </pre></div>
-</div>
-</div>
 <div class="section" id="exercise">
 <h2><span class="section-number">2.1. </span>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
 
@@ -390,16 +383,16 @@ in the file <code class="docutils literal notranslate"><span class="pre">&quot;m
 Your task is to modify the previous program so that it changes <strong>ALL</strong> vowels
 to <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code>. <strong>Remember</strong>: the <code class="docutils literal notranslate"><span class="pre">.lower()</span></code> method returns a string
 with all its characters turned into lowercase letters. This time, you will write to
-the file <code class="docutils literal notranslate"><span class="pre">&quot;crypto2.txt&quot;</span></code>.</p>
+the file <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">crypto2_en.txt&quot;</span></code>.</p>
 
 </div>
 <textarea data-lang="python" id="ac_l23_2b_en_editor" 
       data-timelimit=25000     
-    data-audio=''  data-datafile='message.txt, crypto.txt'    
+    data-audio=''  data-datafile='message.txt,  crypto_en.txt'    
            data-wasm=/_static
       style="visibility: hidden;">
 text = open("message.txt", "r")
-output = open("crypto2.txt", "w")
+output = open(" crypto2_en.txt", "w")
 
 # Modify the program
 
@@ -420,7 +413,7 @@ from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
     def testOne(self):
-        file = open("crypto2.txt", "r")
+        file = open(" crypto2_en.txt", "r")
         text = """*st* *s th* t*xt f*l*
 y** **r m*d*fying
 s* th*t *ll v*w*ls
@@ -429,22 +422,18 @@ s* th*t *ll v*w*ls
         self.assertEqual(file.read().replace("\n", " ").rstrip(), text.strip(), f"Expected: {text}")
 
 
-print("Data has been written to the file crypto2.txt")
+print("Data has been written to the file  crypto2_en.txt")
 
 myTests().main()
 </textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_2_en.rst</span>, line 98)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_2, line 99</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">datafile</span><span class="p">::</span> <span class="n">crypto2</span><span class="o">.</span><span class="n">txt</span>
-    <span class="p">:</span><span class="n">cols</span><span class="p">:</span> <span class="mi">20</span>
-    <span class="p">:</span><span class="n">rows</span><span class="p">:</span> <span class="mi">10</span>
-    <span class="p">:</span><span class="n">edit</span><span class="p">:</span>
+
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>crypto2_en.txt</code></div>
+<pre data-component="datafile" id=crypto2_en.txt  data-edit="true" data-rows="10" data-cols="20">
+
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 

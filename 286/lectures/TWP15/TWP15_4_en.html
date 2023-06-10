@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4. Accumulators &#8212; PyZombis feat/babynames@0ccbba3</title>
+    <title>4. Accumulators &#8212; PyZombis feat/babynames@ddc5b89</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -14,8 +14,6 @@
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
-    <link rel="stylesheet" type="text/css" href="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.css?v=6ab2699256a7cd2f2dee" />
-    <link rel="stylesheet" type="text/css" href="../../_static/runestone.css?v=0ddbfb97cbf8a612e45f" />
 
 
 
@@ -28,9 +26,9 @@
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
-    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=700db7378411b25a09f9"></script>
-    <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
+    <script src="../../_static/runtime.bundle.js?v=1654bbde73e12a3366eb"></script>
+    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="5. Interrupting the repetition" href="TWP15_5_en.html" />
@@ -92,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/babynames@0ccbba3
+          PyZombis feat/babynames@ddc5b89
         </a>
       </div>
     </div>
@@ -343,19 +341,16 @@ the added value is constant, and for accumulators, it is variable.</p></li>
            data-wasm=/_static
       style="visibility: hidden;">
 n = 1
+suma = 0
+while n <= 10:
+    x = int (input ("Enter the last %d number: "% n))
+    suma = suma + x
+    n = n + 1
+
+print ("suma: %d"% suma)
 </textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP15/TWP15_4_en.rst</span>, line 15)</p>
-<p>Explicit markup ends without a blank line; unexpected unindent.</p>
-</div>
-<p>   suma = 0
-   while n &lt;= 10:
-       x = int (input (“Enter the last %d number: “% n))
-       suma = suma + x
-       n = n + 1</p>
-<p>   print (“suma: %d”% suma)</p>
 <ul class="simple">
 <li><p>Average of 10 integer numbers</p></li>
 </ul>
@@ -366,28 +361,21 @@ n = 1
 
 </div>
 <textarea data-lang="python" id="ac_l15_4b_en_editor" 
-      data-timelimit=25000  data-codelens="true"   
-    data-audio=''      
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
            data-wasm=/_static
       style="visibility: hidden;">
+n = 0
+suma = 0
+while n <10:
+    x = int (input ("Enter the last %d number: "% (n + 1)))
+    suma = suma + x
+    n = n + 1
 
-
+print ("Average: %5.2f"% (suma / n))
 </textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP15/TWP15_4_en.rst</span>, line 28)</p>
-<p>Explicit markup ends without a blank line; unexpected unindent.</p>
-</div>
-<p>   :nocodelens:
-   :stdin:</p>
-<p>   n = 0
-   suma = 0
-   while n &lt;10:
-       x = int (input (“Enter the last %d number: “% (n + 1)))
-       suma = suma + x
-       n = n + 1</p>
-<p>   print (“Average: %5.2f”% (suma / n))</p>
 <ul class="simple">
 <li><p>Calculate the factorial of ten</p></li>
 </ul>
@@ -407,15 +395,9 @@ if (allTraceData === undefined) {
    var allTraceData = {};
 }
 
-allTraceData["cl_l15_4_en"] = {"code": "\n", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 1, "event": "return", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}]};
+allTraceData["cl_l15_4_en"] = {"code": "i = 1\nfact = 1\nwhile i <= 10:\n    fact = fact * i\n    i = i + 1\nprint (\"Fact(10) =% d\"% fact)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 1, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 1, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 1, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 2, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 2, "fact": 1}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 2, "fact": 2}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 3, "fact": 2}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 3, "fact": 2}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 3, "fact": 6}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 4, "fact": 6}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 4, "fact": 6}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 4, "fact": 24}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 5, "fact": 24}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 5, "fact": 24}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 5, "fact": 120}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 6, "fact": 120}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 6, "fact": 120}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 6, "fact": 720}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 7, "fact": 720}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 7, "fact": 720}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 7, "fact": 5040}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 8, "fact": 5040}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 8, "fact": 5040}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 8, "fact": 40320}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 9, "fact": 40320}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 9, "fact": 40320}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 9, "fact": 362880}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 10, "fact": 362880}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 10, "fact": 362880}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 10, "fact": 3628800}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 11, "fact": 3628800}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"i": 11, "fact": 3628800}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"i": 11, "fact": 3628800}, "ordered_globals": ["i", "fact"], "stack_to_render": [], "heap": {}, "stdout": "Fact(10) = 3628800\n"}]};
 </script>
 </div>
-<p>   i = 1
-   fact = 1
-   while i &lt;= 10:
-       fact = fact * i
-       i = i + 1
-   print (“Fact(10) =% d”% fact)</p>
 <ul class="simple">
 <li><p>Calculate the factorial of an integer number <code class="docutils literal notranslate"><span class="pre">n</span></code></p></li>
 </ul>
@@ -426,28 +408,21 @@ allTraceData["cl_l15_4_en"] = {"code": "\n", "trace": [{"line": 1, "event": "ste
 
 </div>
 <textarea data-lang="python" id="ac_l15_4c_en_editor" 
-      data-timelimit=25000  data-codelens="true"   
-    data-audio=''      
+      data-timelimit=25000     
+    data-audio=''   data-stdin=''   
            data-wasm=/_static
       style="visibility: hidden;">
+i = 1
+fact = 1
+n = int (input ("Enter n: "))
+while i <= n:
+    fact = fact * i
+    i = i + 1
 
-
+print ("Fact(%d) =% d"% (n, fact))
 </textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP15/TWP15_4_en.rst</span>, line 56)</p>
-<p>Explicit markup ends without a blank line; unexpected unindent.</p>
-</div>
-<p>   :nocodelens:
-   :stdin:</p>
-<p>   i = 1
-   fact = 1
-   n = int (input (“Enter n: “))
-   while i &lt;= n:
-       fact = fact * i
-       i = i + 1</p>
-<p>   print (“Fact(%d) =% d”% (n, fact))</p>
 </div>
 
 

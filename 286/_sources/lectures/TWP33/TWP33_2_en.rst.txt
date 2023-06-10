@@ -28,13 +28,3 @@ How to get only the price?
     :alt:
 
 
-Python code:
-
-To obtain only the price, we can use indexing to extract the value from the string after the "Precio:" label. Assuming the variable `text` contains the text to be analyzed:
-
-```
-price_index = text.find("Precio:")
-price = text[price_index+len("Precio:"):].strip()
-```
-
-The `find()` method returns the index of the substring "Precio:", which we then add the length of "Precio:" to get the starting index of the price value. We then use `strip()` to remove any leading or trailing white space that may be present in the extracted text. The result will be stored in the variable `price`.
