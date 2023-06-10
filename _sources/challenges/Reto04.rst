@@ -8,6 +8,7 @@ Google babynames exercise
 
 
 .. activecode:: ret04
+    :nocodelens:
 
     Given a file name for baby.html, returns a list starting 
     with the year string
@@ -31,7 +32,6 @@ Google babynames exercise
     ... 
 
     ~~~~
-
     import re
     import sys
 
