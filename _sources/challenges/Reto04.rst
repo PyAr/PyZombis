@@ -177,7 +177,7 @@ PyMaze
 
     pygame.init()
 
-    #timer1 = timer.set_interval(run, 100)
+    timer1 = timer.set_interval(run, 100)
 
     def solveMaze( maze ):
         
@@ -207,7 +207,7 @@ PyMaze
             # BACKTRACK: unmark x, y as part of solution path
             return False
 
-    solveMaze(maze)
+    print(solveMaze(maze))
 
     ====
 
