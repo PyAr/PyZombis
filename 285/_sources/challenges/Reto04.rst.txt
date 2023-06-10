@@ -5,7 +5,10 @@ PyMaze
 .. raw:: html
 
    <script src='../_static/game.js'></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js">
+    </script>
    <script type="module">
       window.gamejs.init();
       window.gamejs.image.preload(["../_static/zomb.png", '../_static/human.png', '../_static/dest.png']);
@@ -16,6 +19,7 @@ PyMaze
     :language: python3
     :python3_interpreter: brython
 
+    ~~~~
     from browser import load, timer, window
     load('../_static/game.js')
     load('../_static/pygame.brython.js')
@@ -39,12 +43,14 @@ PyMaze
                         [0,1,0,0,0,0,0,0,1,0,1],
                         [0,1,0,1,1,1,1,0,2,0,1],
                         [0,1,0,2,0,0,1,0,1,0,1],
-                        [0,1,0,1,0,0,1,0,1,0,1],
+                        [0,1,0,0,0,0,1,0,1,0,1],
                         [0,1,1,1,1,0,1,0,0,0,1],
-                        [0,1,0,0,0,0,0,0,1,1,1],
+                        [0,1,0,0,0,0,0,0,0,1,1],
                         [0,1,1,0,1,1,1,1,0,1,1],
                         [0,0,0,0,0,0,0,0,0,0,1],
                         [1,1,1,1,1,1,1,1,1,3,1]];
+        def update_maze(self,newmaze):
+            self.maze=newmaze
 
         def draw(self,screen):
             for i in range(11):
@@ -78,6 +84,23 @@ PyMaze
             else:
                 return False
         
+        def isDest(self,x,y):
+            if self.maze[y][x]==3:
+                return True
+            else:
+                return False
+        
+        def isOut(self,x,y):
+            if x<0 or x>10 or y<0 or y>10:
+                return True
+            else:
+                return False
+        
+        def isSafe(self,x,y):
+            if self.maze[x][y]==0 or self.maze[x][y]==3:
+                return True
+            else:
+                return False
 
 
     class Player:
@@ -99,14 +122,25 @@ PyMaze
 
         def move(self,x,y,screen,maze):
 
-            if maze.isZombie(self.x+x,self.y+y)==True:
+            newX=self.x+x
+            newY=self.y+y
+
+            if maze.isOut(newX,newY):
+                return
+            elif maze.isWall(newX,newY):
+                return
+            elif maze.isZombie(newX,newY):
+                over()
+                timer.clear_interval(timer1)
+            elif maze.isDest(newX,newY):
                 over()
                 timer.clear_interval(timer1)
             else:
-                if maze.isWall(self.x+x,self.y+y)==False:
-                    self.x+=(x)
-                    self.y+=(y)
-                    self.draw(screen,maze)
+                self.x=newX
+                self.y=newY
+                maze.draw(screen)
+                screen.blit(self.image,(self.x*50,self.y*50))
+                return
             
         
 
@@ -143,4 +177,39 @@ PyMaze
 
     pygame.init()
 
-    timer1 = timer.set_interval(run, 100)
+    #timer1 = timer.set_interval(run, 100)
+
+    def solveMaze( maze ):
+        
+        return solveMazeUtil(maze, 0, 0)
+        
+    # A recursive utility function to solve Maze problem
+    def solveMazeUtil(maze, x, y):
+        
+        # if (x, y is goal) return True
+        if maze.maze[x][y]==3:
+            return True
+            
+        # Check if maze[x][y] is valid
+        if maze.isSafe(x, y) == True:
+            # mark x, y as part of solution path
+            
+            # Move forward in x direction
+            if solveMazeUtil(maze, x + 1, y) == True:
+                return True
+                
+            # If moving in x direction doesn't give solution
+            # then Move down in y direction
+            if solveMazeUtil(maze, x, y + 1) == True:
+                return True
+            
+            # If none of the above movements work then
+            # BACKTRACK: unmark x, y as part of solution path
+            return False
+
+    solveMaze(maze)
+
+    ====
+
+            
+

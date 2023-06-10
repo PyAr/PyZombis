@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: 'fed703f648e7d7b0fd2d0c2085a243916a18c6f3-feat/pymaze',
+    VERSION: '361aa84466612620ae927ca855b682a6bfefd32a-feat/pymaze',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',

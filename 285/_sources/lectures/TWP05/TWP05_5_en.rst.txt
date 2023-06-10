@@ -8,26 +8,26 @@ Variable names
 
 .. code-block:: python
 
-    >>> a = 2
-    >>> price = 500
-    >>> print(a)
-    2
-    >>> print(price)
-    500
+    >>> a = 2
+    >>> price = 500
+    >>> print(a)
+    2
+    >>> print(price)
+    500
 
 + Examples of invalid names: ``average salary``, ``3x``, ``1st``, ``@``, ``$``
 
 .. code-block:: python
 
-    >>> 3x = "text"
-      File "<stdin>", line 1
-        3x = "text"
-        ^
-    SyntaxError: invalid syntax
+    >>> 3x = "text"
+        File "<stdin>", line 1
+        3x = "text"
+         ^
+    SyntaxError: invalid syntax
 
 **Define valid and invalid variables below**
 
 .. only:: html
 
-   .. raw:: html
-      :file: ../_static/interpreter.html
+    .. raw:: html
+        :file: ../_static/interpreter.html

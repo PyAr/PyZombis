@@ -18,6 +18,3 @@ Repetitions
    :align: center
    :alt: 
 
-```python
-
-```

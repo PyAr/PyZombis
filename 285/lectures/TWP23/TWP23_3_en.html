@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Validate IP Address &#8212; PyZombis feat/pymaze@fed703f</title>
+    <title>3. Validate IP Address &#8212; PyZombis feat/pymaze@361aa84</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -14,8 +14,6 @@
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
-    <link rel="stylesheet" type="text/css" href="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.css?v=6ab2699256a7cd2f2dee" />
-    <link rel="stylesheet" type="text/css" href="../../_static/runestone.css?v=0ddbfb97cbf8a612e45f" />
 
 
 
@@ -28,9 +26,9 @@
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
-    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=700db7378411b25a09f9"></script>
-    <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
+    <script src="../../_static/runtime.bundle.js?v=1654bbde73e12a3366eb"></script>
+    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="4. HTML" href="TWP23_4_en.html" />
@@ -92,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/pymaze@fed703f
+          PyZombis feat/pymaze@361aa84
         </a>
       </div>
     </div>
@@ -326,34 +324,28 @@ window.addEventListener('load', (event) => {
   
   <div class="section" id="validate-ip-address">
 <h1><span class="section-number">3. </span>Validate IP Address<a class="headerlink" href="#validate-ip-address" title="Permalink to this headline">¶</a></h1>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_3_en.rst</span>, line 4)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_3, line 8</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">datafile</span><span class="p">::</span> <span class="n">IPS</span><span class="o">.</span><span class="n">txt</span>
-    <span class="p">:</span><span class="n">cols</span><span class="p">:</span> <span class="mi">20</span>
-    <span class="p">:</span><span class="n">rows</span><span class="p">:</span> <span class="mi">12</span>
 
-    <span class="mf">200.135</span><span class="o">.</span><span class="mf">80.9</span>
-    <span class="mf">192.168</span><span class="o">.</span><span class="mf">1.1</span>
-    <span class="mf">8.35</span><span class="o">.</span><span class="mf">67.74</span>
-    <span class="mf">257.32</span><span class="o">.</span><span class="mf">4.5</span>
-    <span class="mf">85.345</span><span class="o">.</span><span class="mf">1.2</span>
-    <span class="mf">1.2</span><span class="o">.</span><span class="mf">3.4</span>
-    <span class="mf">9.8</span><span class="o">.</span><span class="mf">284.5</span>
-    <span class="mf">192.168</span><span class="o">.</span><span class="mf">0.256</span>
-
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>IPS_en.txt</code></div>
+<pre data-component="datafile" id=IPS_en.txt  data-edit="false" data-rows="12" data-cols="20">
+200.135.80.9
+192.168.1.1
+8.35.67.74
+257.32.4.5
+85.345.1.2
+1.2.3.4
+9.8.284.5
+192.168.0.256
 </pre></div>
-</div>
-</div>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l23_3_en data-question_label="3.1">
+<div data-component="activecode" id=ac_l23_3_en data-question_label="3.2">
 <div id=ac_l23_3_en_question class="ac_question col-md-12">
 
 </div>
 <textarea data-lang="python" id="ac_l23_3_en_editor" 
       data-timelimit=25000     
-    data-audio=''  data-datafile='Validos.txt, Invalidos.txt'    
+    data-audio=''  data-datafile='valid.txt, Invalid.txt'    
            data-wasm=/_static
       style="visibility: hidden;">
 def ip_ok(ip):
@@ -364,9 +356,9 @@ def ip_ok(ip):
     return True
 
 
-ips = open("IPS.txt")
-validos = open("Validos.txt", "w")
-invalidos = open("Invalidos.txt", "w")
+ips = open("IPS_en.txt")
+validos = open("valid.txt", "w")
+invalidos = open("Invalid.txt", "w")
 for linea in ips.readlines():
     if ip_ok(linea):
         validos.write(linea)
@@ -379,35 +371,22 @@ invalidos.close()
 
 
 ====
-print("Data has been written in the Validos.txt and Invalidos.txt files")
+print("Data has been written in the valid.txt and Invalid.txt files")
 </textarea>
 </div>
 </div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_3_en.rst</span>, line 48)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_3, line 52</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">datafile</span><span class="p">::</span> <span class="n">Validos</span><span class="o">.</span><span class="n">txt</span>
-    <span class="p">:</span><span class="n">edit</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">cols</span><span class="p">:</span> <span class="mi">15</span>
-    <span class="p">:</span><span class="n">rows</span><span class="p">:</span> <span class="mi">7</span>
 
-    <span class="n">Valid</span>
-
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>valid.txt</code></div>
+<pre data-component="datafile" id=valid.txt  data-edit="true" data-rows="7" data-cols="15">
+Valid
 </pre></div>
-</div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP23/TWP23_3_en.rst</span>, line 56)</p>
-<p>Duplicate ID – see lectures/TWP23/TWP23_3, line 60</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">datafile</span><span class="p">::</span> <span class="n">Invalidos</span><span class="o">.</span><span class="n">txt</span>
-    <span class="p">:</span><span class="n">edit</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">cols</span><span class="p">:</span> <span class="mi">15</span>
-    <span class="p">:</span><span class="n">rows</span><span class="p">:</span> <span class="mi">7</span>
 
-    <span class="n">Invalid</span>
+<div class="runestone datafile">
+<div class="datafile_caption">Data file: <code>Invalid.txt</code></div>
+<pre data-component="datafile" id=Invalid.txt  data-edit="true" data-rows="7" data-cols="15">
+Invalid
 </pre></div>
-</div>
-</div>
 </div>
 
 

@@ -25,20 +25,3 @@ Representation of numeric values
    .. raw:: html
       :file: ../_static/interpreter.html
 
-Python code:
-```python
-# Declaring an integer variable
-a = 42
-print(a)  # Output: 42
-print(type(a))  # Output: <class 'int'>
-
-# Declaring a floating point variable
-b = 1.0
-print(b)  # Output: 1.0
-print(type(b))  # Output: <class 'float'>
-
-# Operations with numbers
-x = 3
-y = 0.1
-print(x * y)  # Output: 0.30000000000000004
-```

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. How to get only the price? &#8212; PyZombis feat/pymaze@fed703f</title>
+    <title>2. How to get only the price? &#8212; PyZombis feat/pymaze@361aa84</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
@@ -14,8 +14,6 @@
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
-    <link rel="stylesheet" type="text/css" href="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.css?v=6ab2699256a7cd2f2dee" />
-    <link rel="stylesheet" type="text/css" href="../../_static/runestone.css?v=0ddbfb97cbf8a612e45f" />
 
 
 
@@ -28,9 +26,9 @@
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=c0391f13c957789bc8fb"></script>
-    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=700db7378411b25a09f9"></script>
-    <script src="../../_static/runestone.bundle.js?v=dac904eec8b4456305b9"></script>
+    <script src="../../_static/runtime.bundle.js?v=1654bbde73e12a3366eb"></script>
+    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="3. Cut" href="TWP33_3_en.html" />
@@ -92,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/pymaze@fed703f
+          PyZombis feat/pymaze@361aa84
         </a>
       </div>
     </div>
@@ -330,13 +328,6 @@ window.addEventListener('load', (event) => {
 <a class="reference internal image-reference" href="../../_images/TWP33_007.jpg"><img alt="" class="align-center" src="../../_images/TWP33_007.jpg" style="width: 16.051cm; height: 5cm;" /></a>
 <a class="reference internal image-reference" href="../../_images/TWP33_008.jpg"><img alt="" class="align-center" src="../../_images/TWP33_008.jpg" style="width: 16.483cm; height: 8.323cm;" /></a>
 <a class="reference internal image-reference" href="../../_images/TWP33_009.jpg"><img alt="" class="align-center" src="../../_images/TWP33_009.jpg" style="width: 17.805cm; height: 7.317cm;" /></a>
-<p>Python code:</p>
-<p>To obtain only the price, we can use indexing to extract the value from the string after the “Precio:” label. Assuming the variable <cite>text</cite> contains the text to be analyzed:</p>
-<p><code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">price_index</span> <span class="pre">=</span> <span class="pre">text.find(&quot;Precio:&quot;)</span>
-<span class="pre">price</span> <span class="pre">=</span> <span class="pre">text[price_index+len(&quot;Precio:&quot;):].strip()</span>
-<span class="pre">`</span></code></p>
-<p>The <cite>find()</cite> method returns the index of the substring “Precio:”, which we then add the length of “Precio:” to get the starting index of the price value. We then use <cite>strip()</cite> to remove any leading or trailing white space that may be present in the extracted text. The result will be stored in the variable <cite>price</cite>.</p>
 </div>
 
 
