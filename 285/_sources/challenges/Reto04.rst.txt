@@ -2,6 +2,24 @@
 PyMaze
 ======
 
+Goals:
+------
+
+- **Complete the solveMaze function**
+
+    Description:
+
+    - This function takes maze object as input and determines if there is a path from start(0,0) to end(3)
+    - 1 is a wall
+    - 2 is a Zombie 
+    - 3 is destination
+    - 0 is all the free path
+
+- **Complete the run function which handles key events to move player in maze**
+
+- Complete the `playMusic` function which takes audio from file `solveMaze.ogg` and plays on running the code
+    - file path for solveMusic is `../../audio/solveMaze.ogg`
+
 .. raw:: html
 
    <script src='../_static/game.js'></script>
@@ -15,10 +33,12 @@ PyMaze
    </script>
 
 
+
 .. activecode:: ac_l66
     :language: python3
     :python3_interpreter: brython
 
+    
     ~~~~
     from browser import load, timer, window
     load('../_static/game.js')
@@ -31,72 +51,84 @@ PyMaze
     import pygame
     from pygame.color import *
     from pygame.locals import *
+    from pygame import mixer
+
 
     # game which has a maze and a player
     # player has to reach the end of the maze
     class Maze:
 
-        def __init__(self):
-            self.maze = [
-                        [0,0,0,0,0,0,0,0,1,0,1],
-                        [1,1,0,1,1,1,1,1,1,0,1],
-                        [0,1,0,0,0,0,0,0,1,0,1],
-                        [0,1,0,1,1,1,1,0,2,0,1],
-                        [0,1,0,2,0,0,1,0,1,0,1],
-                        [0,1,0,0,0,0,1,0,1,0,1],
-                        [0,1,1,1,1,0,1,0,0,0,1],
-                        [0,1,0,0,0,0,0,0,0,1,1],
-                        [0,1,1,0,1,1,1,1,0,1,1],
-                        [0,0,0,0,0,0,0,0,0,0,1],
-                        [1,1,1,1,1,1,1,1,1,3,1]];
-        def update_maze(self,newmaze):
-            self.maze=newmaze
+        def __init__(self,maze=None):
+            self.maze = maze
+            self.rows = self.maze.__len__()
+            self.cols = self.maze[0].__len__()
+
 
         def draw(self,screen):
-            for i in range(11):
-                for j in range(11):
+
+            rows = self.rows
+            cols = self.cols
+            for i in range(rows):
+                for j in range(cols):
+
                     if self.maze[i][j]==1:
                         pygame.draw.rect(screen,Color(0,0,0),pygame.Rect(j*50,i*50,50,50))
+
                     else:
+
                         if self.maze[i][j]==2:
-                            # draw zombie transformed to 50x50
+
                             zomb = pygame.image.load('../_static/zomb.png')
                             zomb = pygame.transform.scale(zomb,(50,50))
                             screen.blit(zomb,(j*50,i*50))
+
                         else:
+
                             if self.maze[i][j]==3:
-                                # draw destination transformed to 50x50
+                            
                                 dest = pygame.image.load('../_static/dest.png')
                                 dest = pygame.transform.scale(dest,(50,50))
                                 screen.blit(dest,(j*50,i*50))
+
                             else:
+
                                 pygame.draw.rect(screen,Color(255,255,255),pygame.Rect(j*50,i*50,50,50))
 
+
         def isWall(self,x,y):
+
             if self.maze[y][x]==1:
                 return True
             else:
                 return False
         
+
         def isZombie(self,x,y):
+
             if self.maze[y][x]==2:
                 return True
             else:
                 return False
         
+
         def isDest(self,x,y):
+
             if self.maze[y][x]==3:
                 return True
             else:
                 return False
         
+
         def isOut(self,x,y):
-            if x<0 or x>10 or y<0 or y>10:
+        
+            if x<0 or x>=self.cols or y<0 or y>=self.rows:
                 return True
             else:
                 return False
         
+
         def isSafe(self,x,y):
+
             if self.maze[x][y]==0 or self.maze[x][y]==3:
                 return True
             else:
@@ -120,6 +152,7 @@ PyMaze
             maze.draw(screen)
             screen.blit(self.image,(self.x*50,self.y*50))
 
+
         def move(self,x,y,screen,maze):
 
             newX=self.x+x
@@ -142,10 +175,6 @@ PyMaze
                 screen.blit(self.image,(self.x*50,self.y*50))
                 return
             
-        
-
-
-    
 
     scr = pygame.display.set_mode((550, 550))
     font=pygame.font.SysFont('timesnewroman',30)
@@ -155,61 +184,92 @@ PyMaze
         scr.blit(game,(0,0))
         pygame.display.update()
 
-    maze = Maze()
-    #maze.draw(scr)
+
+    playerMaze =    [
+        [0,0,0,0,0,0,0,0,1,0,1],
+        [1,1,0,1,1,1,1,1,1,0,1],
+        [0,1,0,0,0,0,0,0,1,0,1],
+        [0,1,0,1,1,1,1,0,2,0,1],
+        [0,1,0,2,0,0,1,0,1,0,1],
+        [0,1,0,0,0,0,1,0,1,0,1],
+        [0,1,1,1,1,0,1,0,0,0,1],
+        [0,1,0,0,0,0,0,0,0,1,1],
+        [0,1,1,0,1,1,1,1,0,1,1],
+        [0,0,0,0,0,0,0,0,0,0,1],
+        [1,1,1,1,1,1,1,1,1,3,1]];
+
+    maze = Maze(playerMaze)
     player=Player()
     player.draw(scr,maze)
 
     def run():
-
-        for event in pygame.event.get():
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LEFT:
-                    player.move(-1,0,scr,maze)
-                if event.key == pygame.K_RIGHT:
-                    player.move(1,0,scr,maze)
-                if event.key == pygame.K_UP:
-                    player.move(0,-1,scr,maze)
-                if event.key == pygame.K_DOWN:
-                    player.move(0,1,scr,maze)
+        # Event handlers for Key events here
         
+
         pygame.display.update()
 
+
+
+    def playMusic():
+        # Play music here using pygame.mixer
+
+
+
     pygame.init()
+    
+    
 
     timer1 = timer.set_interval(run, 100)
 
     def solveMaze( maze ):
-        
-        return solveMazeUtil(maze, 0, 0)
-        
-    # A recursive utility function to solve Maze problem
-    def solveMazeUtil(maze, x, y):
-        
-        # if (x, y is goal) return True
-        if maze.maze[x][y]==3:
-            return True
-            
-        # Check if maze[x][y] is valid
-        if maze.isSafe(x, y) == True:
-            # mark x, y as part of solution path
-            
-            # Move forward in x direction
-            if solveMazeUtil(maze, x + 1, y) == True:
-                return True
-                
-            # If moving in x direction doesn't give solution
-            # then Move down in y direction
-            if solveMazeUtil(maze, x, y + 1) == True:
-                return True
-            
-            # If none of the above movements work then
-            # BACKTRACK: unmark x, y as part of solution path
-            return False
-
-    print(solveMaze(maze))
-
+    
+    
+    
     ====
+    
+    import unittest
+    
+    class gradeMaze(unittest.TestCase):
+
+        # This testcase has a solution, so it should return true
+        def testOne(self): 
+            newMaze = [
+                        [0,0,0,0,0,0,1,0,0,0,1],
+                        [1,1,2,1,1,0,1,1,1,1,0],
+                        [0,1,0,0,0,0,0,0,0,1,0],
+                        [0,1,0,1,1,2,1,1,0,1,0],
+                        [0,1,0,1,0,0,0,1,0,1,0],
+                        [0,1,0,1,0,1,0,1,0,0,3],
+                        [0,1,0,1,0,1,0,1,1,1,0],
+                        [0,1,0,1,0,1,0,1,0,1,0],
+                        [0,1,0,1,0,1,0,1,0,1,0],
+                        [0,1,0,1,0,1,0,1,0,1,0],
+                        [0,1,1,1,0,1,0,1,1,1,0]];
+            testMaze = Maze(newMaze)
+
+            self.assertEqual(solveMaze(testMaze),True)
+        
+        # This testcase has no solution, so it should return false
+        def testTwo(self): 
+            newMaze = [
+                        [0,0,0,0,0,0,1,0,0,0,1],
+                        [0,1,1,1,1,0,1,1,1,1,0],
+                        [0,1,0,0,0,0,0,0,0,1,0],
+                        [0,1,0,1,1,1,1,1,0,1,0],
+                        [0,1,0,1,0,0,0,1,0,1,0],
+                        [0,1,0,1,0,1,0,1,0,0,1],
+                        [1,1,0,1,0,1,0,1,1,1,0],
+                        [0,1,0,1,0,1,0,1,0,1,0],
+                        [0,1,0,1,0,1,0,1,0,1,0],
+                        [0,1,0,1,0,1,0,1,0,1,0],
+                        [0,1,1,1,0,1,0,1,1,1,3]];
+            testMaze = Maze(newMaze)
+
+            self.assertEqual(solveMaze(testMaze),False)
+
+
+    suite = unittest.TestLoader().loadTestsFromTestCase(gradeMaze)
+    unittest.TextTestRunner(verbosity=0).run(suite) 
 
             
 
