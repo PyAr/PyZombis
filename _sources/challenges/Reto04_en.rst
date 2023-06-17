@@ -1,24 +1,24 @@
-===========
-Reto PyMaze
-===========
+======
+PyMaze
+======
 
-Objetivos:
-----------
+Goals:
+------
 
-- **Completa la función solveMaze**
+- **Complete the solveMaze function**
 
-     Descripción:
+    Description:
 
-     - Esta función toma el objeto laberinto como entrada y determina si hay una ruta desde el inicio (0,0) hasta el final (3)
-     - 1 es una pared
-     - 2 es un zombi
-     - 3 es el destino/fin
-     - 0 es todo el camino libre
+    - This function takes maze object as input and determines if there is a path from start(0,0) to end(3)
+    - 1 is a wall
+    - 2 is a Zombie 
+    - 3 is destination
+    - 0 is all the free path
 
-- **Completa la función de ejecución, que maneja eventos clave para mover a un jugador en el laberinto**
+- **Complete the run function which handles key events to move player in maze**
 
-- Complete la función `playMusic`, que toma el audio del archivo `solveMaze.ogg` y lo reproduce al ejecutar el código
-     - la ruta del archivo para solveMusic es `../../audio/solveMaze.ogg`
+- Complete the `playMusic` function which takes audio from file `solveMaze.ogg` and plays on running the code
+    - file path for solveMusic is `../../audio/solveMaze.ogg`
 
 .. raw:: html
 
@@ -34,7 +34,7 @@ Objetivos:
 
 
 
-.. activecode:: ac_r04
+.. activecode:: ac_r04_en
     :language: python3
     :python3_interpreter: brython
 
@@ -203,7 +203,7 @@ Objetivos:
     player.draw(scr,maze)
 
     def run():
-        # Controladores de eventos para eventos clave aquí
+        # Event handlers for Key events here
         
 
         pygame.display.update()
@@ -211,7 +211,7 @@ Objetivos:
 
 
     def playMusic():
-        # Reproduce música aquí usando pygame.mixer
+        # Play music here using pygame.mixer
 
 
 
