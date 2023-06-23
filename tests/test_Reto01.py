@@ -124,32 +124,33 @@ def test_r01_en(page):
     page.hover("#ac_r01_2_en >> text=You passed:")
     assert page.inner_text("#ac_r01_2_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
-    # # ac_r01_3_en
-    # page.click("text=Exercise 3")
+    # ac_r01_3_en
+    page.click("text=Exercise 3")
 
-    # # request data for the exercise to the .yaml file
-    # res = requests.get("http://universities.hipolabs.com/search")
-    # datos = json.loads(res.text)
-    # countries = [universidad["country"].lower().replace(" ", "") for universidad in datos]
+    # request data for the exercise to the .yaml file
+    res = requests.get("http://universities.hipolabs.com/search")
+    datos = json.loads(res.text)
+    countries = [universidad["country"].lower().replace(" ", "") for universidad in datos]
 
-    # page.click("#ac_r01_3_en >> text=api_url =")
-    # page.keyboard.press("ArrowDown")
-    # for i in range(8):
-    #     page.keyboard.press("Control+Shift+ArrowDown")
-    # page.keyboard.press("Backspace")
+    page.click("#ac_r01_3_en >> text=api_url =")
+    page.keyboard.press("ArrowDown")
+    for i in range(8):
+        page.keyboard.press("Control+Shift+ArrowDown")
+    page.keyboard.press("Backspace")
 
-    # page.keyboard.type(f"cities = {countries[:10]}")
+    page.keyboard.type(f"cities = {countries[:10]}")
     
-    # page.click("text=def choose(cities):")
-    # page.keyboard.press("ArrowDown")
-    # page.keyboard.press("Tab")
-    # page.keyboard.type("return choice(cities)")
+    page.click("text=def choose(cities):")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Enter")
+    page.keyboard.press("Tab")
+    page.keyboard.type("return choice(cities)")
 
-    # page.click("#ac_r01_3_en >> text=Save & Run")
+    page.click("#ac_r01_3_en >> text=Save & Run")
 
-    # # Make sure it passed all unit tests
-    # page.hover("#ac_r01_3_en >> text=You passed:")
-    # assert page.inner_text("#ac_r01_3_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    # Make sure it passed all unit tests
+    page.hover("#ac_r01_3_en >> text=You passed:")
+    assert page.inner_text("#ac_r01_3_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_r01_4_en
     page.click("text=Exercise 4")
