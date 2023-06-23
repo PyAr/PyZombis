@@ -23,3 +23,28 @@ def test_quizExtra_4(page):
     # Test it passed all unit tests
     page.hover("#qExtra_4 >> text=You passed:")
     assert page.inner_text("#qExtra_4 >> text=You passed:") == "You passed: 100.0% of the tests"
+
+def test_quizExtra_4_en(page):
+    page.goto("quiz/QuizExtras_en.html")
+
+    # Do the exercise
+    page.click("text=Exercise 4")
+    page.click("text=def sum_grains(n):")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
+
+    # Code to type
+    instructions = ["sum = 0", "for n in range(1, 65):", "m = int(pow(2, n - 1))", "sum = sum + m"]
+    for inst in instructions:
+        page.keyboard.type(inst)
+        page.keyboard.press("Enter")
+    for i in range(4):
+        page.keyboard.press("Backspace")
+    page.keyboard.type("return sum")
+
+    # Click button:has-text("Run")
+    page.click("#qExtra_4_en >> *css=button >> text=Run")
+
+    # Test it passed all unit tests
+    page.hover("#qExtra_4_en >> text=You passed:")
+    assert page.inner_text("#qExtra_4_en >> text=You passed:") == "You passed: 100.0% of the tests"
