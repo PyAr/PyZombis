@@ -15,3 +15,19 @@ def test_quiz12_1(page):
 
     page.hover("#q12_1 >> text=You passed:")
     assert page.inner_text("#q12_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+
+def test_quiz12_1_en(page):
+
+    page.goto("quiz/Quiz12_en.html")
+
+    page.click("text=def ends_equal(words):")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
+    page.keyboard.type(
+        "return len([word for word in words if len(word) >= 2 and word[0] == word[-1]])",
+    )
+
+    page.click("#q12_1_en >> *css=button >> text=Run")
+
+    page.hover("#q12_1_en >> text=You passed:")
+    assert page.inner_text("#q12_1_en >> text=You passed:") == "You passed: 100.0% of the tests"
