@@ -1,4 +1,3 @@
-
 def test_l60_1(page):
     page.goto("lectures/TWP60/TWP60_1.html")
     # Click button:has-text("Run")
