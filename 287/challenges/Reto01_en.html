@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hangman Challenge &#8212; PyZombis feat/e2etests@13b3348</title>
+    <title>Hangman Challenge &#8212; PyZombis feat/e2etests@750e4e9</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis feat/e2etests@13b3348
+          PyZombis feat/e2etests@750e4e9
         </a>
       </div>
     </div>
@@ -507,7 +507,7 @@ the number of correct and incorrect letters so far. It takes a single parameter
 
 </div>
 <textarea data-lang="python" id="ac_r01_4_en_editor" 
-     data-include="ac_r01_1 ac_r01_2 ac_r01_3" data-timelimit=25000     
+     data-include="ac_r01_1_en ac_r01_2_en ac_r01_3_en" data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
@@ -655,7 +655,7 @@ myTests().main()
 
 </div>
 <textarea data-lang="python" id="ac_r01_8_en_editor" 
-     data-include="ac_r01_1 ac_r01_2 ac_r01_3 ac_r01_4 ac_r01_5 ac_r01_6 ac_r01_7" data-timelimit=25000     
+     data-include="ac_r01_1_en ac_r01_2_en ac_r01_3_en ac_r01_4_en ac_r01_5_en ac_r01_6_en ac_r01_7_en" data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
       style="visibility: hidden;">
@@ -668,24 +668,24 @@ p_aleatoria = choose(cities)
 while True:
     print_hangman(p_aleatoria)
     time.sleep(2)
-    x = guess(corrects + incorrects)
+    x = guess(correct + incorrect)
     if x in p_aleatoria:
-        corrects = corrects + x
+        correct = correct + x
     else:
-        incorrects = incorrects + x
-    if len(incorrects) == len(drawings):
+        incorrect = incorrect + x
+    if len(incorrect) == len(drawings):
         print(f"You were hanged, the word was {p_aleatoria}")
         time.sleep(1)
         if play_again():
-            corrects = incorrects = ""
+            correct = incorrect = ""
             p_aleatoria = choose(cities)
         else:
             break
-    elif win(p_aleatoria, corrects):
+    elif win(p_aleatoria, correct):
         print(f"You guessed the word: {p_aleatoria}")
         time.sleep(1)
         if play_again():
-            corrects = incorrects = ""
+            correct = incorrect = ""
             p_aleatoria = choose(cities)
         else:
             break
