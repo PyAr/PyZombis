@@ -95,7 +95,7 @@ def test_r01(page):
     page.hover("#ac_r01_7 >> text=You passed:")
     assert page.inner_text("#ac_r01_7 >> text=You passed:") == "You passed: 100.0% of the tests"
 
-    # ac_8
+#     # ac_8
     page.click("text=Ejercicio 8")
     page.click("#ac_r01_8 >> text=Save & Run")
     # Handle dialogs
@@ -176,22 +176,30 @@ def test_r01_en(page):
     page.hover("#ac_r01_5_en >> text=You passed:")
     assert page.inner_text("#ac_r01_5_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
-    # # ac_r01_6_en
-    # page.click("text=Exercise 6")
-    # page.wait_for_load_state()
-    # page.click("#ac_r01_6_en >> text=return")
-    # page.keyboard.press("Control+ArrowRight")
-    # page.keyboard.type(" input('jugar de nuevo S/N: ').lower() == 's'")
-    # page.keyboard.press("Enter")
-    # page.click("#ac_r01_6_en >> text=Save & Run")
-    # # Handle dialogs
-    # with page.expect_event("dialog") as prompt1:
-    #     page.once("dialog", lambda dialog: dialog.accept("S"))
-    # with page.expect_event("dialog") as prompt2:
-    #     page.once("dialog", lambda dialog: dialog.accept("n"))
-    # # Ensure it passed all of the tests
-    # page.hover("#ac_r01_6_en >> text=You passed:")
-    # assert page.inner_text("#ac_r01_6_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    # ac_r01_6_en
+    page.click("text=Exercise 6")
+
+    page.click("#ac_r01_6_en >> text=def play_again():")
+
+    page.keyboard.press("Control+A")
+    page.keyboard.press("Backspace")
+
+    page.fill("#ac_r01_6_en textarea", "def play_again():")
+    # Press Enter
+    page.press("#ac_r01_6_en textarea", "Enter")
+    # Fill #ac_r01_6_en textarea
+    page.type("#ac_r01_6_en textarea", "return input('meow').lower() == 's'")
+
+    page.click("#ac_r01_6_en >> text=Save & Run")
+
+    # Handle dialogs
+    with page.expect_event("dialog") as prompt1:
+        page.once("dialog", lambda dialog: dialog.accept("S"))
+    with page.expect_event("dialog") as prompt2:
+        page.once("dialog", lambda dialog: dialog.accept("n"))
+    # Ensure it passed all of the tests
+    page.hover("#ac_r01_6_en >> text=You passed:")
+    assert page.inner_text("#ac_r01_6_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_r01_7_en
     page.click("text=Exercise 7")
@@ -204,16 +212,16 @@ def test_r01_en(page):
     page.hover("#ac_r01_7_en >> text=You passed:")
     assert page.inner_text("#ac_r01_7_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
-    # # ac_r01_8_en
-    # page.click("text=Exercise 8")
-    # page.click("#ac_r01_8_en >> text=Save & Run")
-    # # Handle dialogs
-    # i = 0
-    # while page.is_hidden("#ac_r01_8_stdout >> text=You were hanged"):
-    #     with page.expect_event("dialog") as prompt:
-    #         page.once("dialog", lambda dialog: dialog.accept(string.ascii_lowercase[i]))
-    #     i += 1
-    # page.hover("#ac_r01_8_en_stdout >> text=You were hanged")
-    # assert page.is_visible("#ac_r01_8_en_stdout >> text=You were hanged") == True
+    # ac_r01_8_en
+    page.click("text=Exercise 8")
+    page.click("#ac_r01_8_en >> text=Save & Run")
+    # Handle dialogs
+    i = 0
+    while page.is_hidden("#ac_r01_8_en_stdout >> text=You were hanged"):
+        with page.expect_event("dialog") as prompt:
+            page.once("dialog", lambda dialog: dialog.accept(string.ascii_lowercase[i]))
+        i += 1
+    page.hover("#ac_r01_8_en_stdout >> text=You were hanged")
+    assert page.is_visible("#ac_r01_8_en_stdout >> text=You were hanged") == True
 
 
