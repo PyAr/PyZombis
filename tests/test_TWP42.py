@@ -245,11 +245,11 @@ Name : Wild Honey
 #     assert output == res
 
     
-# def test_l42_2(page):
+# def test_l42_2_en(page):
 #     page.goto("lectures/TWP42/TWP42_2_en.html")
 
-#     page.click("text=4 >> pre[role=\"presentation\"]")
-#     page.fill("text=RunResetLoad History21 1from sqlite3 import connect2con = connect('students.bd')3cur = >> textarea", "cur.execute('''create table alumnos(login_id varchar(8),pass integer)''')")
+#     # page.click("text=4 >> pre[role=\"presentation\"]")
+#     # page.fill("text=RunResetLoad History21 1from sqlite3 import connect2con = connect('students.bd')3cur = >> textarea", "cur.execute('''create table alumnos(login_id varchar(8),pass integer)''')")
 #     # Click button:has-text("Run")
 #     page.click("#ac_42_2_2_en >> *css=button >> text=Run")
 
@@ -264,7 +264,7 @@ Name : Wild Honey
 
 #     assert output == res
 
-# def test_l42_3_1(page):
+def test_l42_3_1_en(page):
     page.goto("lectures/TWP42/TWP42_3_en.html")
     page.click("pre[role=\"presentation\"]:has-text(\"query = 'select * from Track limit 30;'\")")
     page.keyboard.press("ArrowDown")
@@ -292,7 +292,7 @@ UnitPrice : 0.99
     assert output == res
 
 
-# def test_l42_3_2(page):
+# def test_l42_3_2_en(page):
 #     page.goto("lectures/TWP42/TWP42_3_en.html")
 #     # page.click("#Sorting rows >> text=10​ >> pre[role=\"presentation\"]")
 #     # Press ArrowUp with modifiers
@@ -300,7 +300,7 @@ UnitPrice : 0.99
 #     # Click text=The ORDER BY clause is used to sort a set of results from a query. SQLite stores
 #     page.click("text=The ORDER BY clause is used to sort a set of results from a query. SQLite stores")
 #     # Click #ac_42_3b_en >> text=Run
-   
+#     page.click("#ac_42_3b_en >> *css=button >> text=Run")
 #     iframe = page.query_selector('//*[@id="ac_42_3b_en"]/div/div[5]/iframe')
 #     output = iframe.text_content('code')
 
@@ -313,7 +313,7 @@ UnitPrice : 0.99
 #     assert output == res
 
 
-def test_l42_3_3(page):
+def test_l42_3_3_en(page):
     page.goto("lectures/TWP42/TWP42_3_en.html")
     page.click("text=9​ >> pre[role=\"presentation\"]")
     # Press ArrowUp with modifiers
@@ -339,7 +339,7 @@ AlbumId : 1
     assert output == res
 
 
-def test_l42_3_4(page):
+def test_l42_3_4_en(page):
     page.goto("lectures/TWP42/TWP42_3_en.html")
     # Click button:has-text("Run")
     page.click("#ac_42_3c4_en >> *css=button >> text=Run")    
