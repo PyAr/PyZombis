@@ -19,7 +19,7 @@ Surfer Notes
       locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
       });
 
-      const dataPromise = fetch("../../_static/surfers.db").then(res => res.arrayBuffer());
+      const dataPromise = fetch("../../_static/surfers_en.db").then(res => res.arrayBuffer());
       const [SQL, buf] = await Promise.all([sqlPromise, dataPromise])
       window.Database = new SQL.Database(new Uint8Array(buf));  
    </script>
@@ -53,7 +53,7 @@ Surfer Notes
    from sqlite3 import connect
 
    # initiate the connection and connect to the predefined surfers table
-   database = connect('surfers.db')
+   database = connect('surfers_en.db')
 
    
    # create a cursor and execute the query
@@ -69,7 +69,7 @@ Surfer Notes
          print("ID    :",row['id'])
          print("Name :",row['name'])
          print("Country  :",row['country'])
-         print("Average  :",row['average'])
+         print("Average  :",row['media'])
          print("Style :",row['style'])
          print("Age  :",row['age'])
          print()
