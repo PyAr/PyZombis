@@ -59,19 +59,19 @@ def test_l45_3(page):
     assert page.inner_text("#ac_l45_3c >> text=You passed:") == "You passed: 100.0% of the tests"
 
 
-# def test_l45_1_en(page):
-#     page.goto("lectures/TWP45/TWP45_1_en.html")
-#     # Run the exercise
-#     page.click("#ac_l45_1_en >> *css=button >> text=Run")
+def test_l45_1_en(page):
+    page.goto("lectures/TWP45/TWP45_1_en.html")
+    # Run the exercise
+    page.click("#ac_l45_1_en >> *css=button >> text=Run")
 
-#     # Select the output iframe
-#     iframe = page.query_selector('//*[@id="ac_l45_1_en"]/div/div[5]/iframe').content_frame()
-#     iframe.fill("#input_user", "ACDC")
-#     iframe.click("#button_show")
-#     img_src = iframe.get_attribute("#img_obtained", "src")
+    # Select the output iframe
+    iframe = page.query_selector('//*[@id="ac_l45_1_en"]/div/div[5]/iframe').content_frame()
+    iframe.fill("#input_user", "ACDC")
+    iframe.click("#button_show")
+    img_src = iframe.get_attribute("#img_obtained", "src")
 
-#     # Test the src attribute from image matches the Facebook URL
-#     assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
+    # Test the src attribute from image matches the Facebook URL
+    assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
 
 
 @pytest.mark.vcr()
