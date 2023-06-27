@@ -95,7 +95,7 @@ def test_r01(page):
     page.hover("#ac_r01_7 >> text=You passed:")
     assert page.inner_text("#ac_r01_7 >> text=You passed:") == "You passed: 100.0% of the tests"
 
-#     # ac_8
+    # ac_8
     page.click("text=Ejercicio 8")
     page.click("#ac_r01_8 >> text=Save & Run")
     # Handle dialogs

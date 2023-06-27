@@ -22,8 +22,7 @@ def test_TWP23_ac_5_en(page):
 
     # Do the exercise
     page.click("#ac_l23_2b_en >> text=aeiou")
-    # page.press("#ac_l23_2b_en >> text=aeiou", "ArrowUp")
-    # page.press("#ac_l23_2b_en >> text=aeiou", "ArrowRight")
+    
     page.press("#ac_l23_2b_en >> text=aeiou", "ArrowUp")
     page.press("#ac_l23_2b_en >> text=aeiou", "ArrowLeft")
     page.type("#ac_l23_2b_en >> text=aeiou", ".lower()")
