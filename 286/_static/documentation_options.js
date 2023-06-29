@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '588f57e6432414dc5282146d32c9940b40fb9374-feat/babynames',
+    VERSION: 'ff812c9952b2fb2717380bb9b091e22d3d9f53a3-feat/babynames',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
