@@ -1,10 +1,10 @@
 =========
-something
+PyScript
 =========
 
---------------
-something else
---------------
+----------------------
+New Pyscript Component
+----------------------
 
 
 .. raw:: html

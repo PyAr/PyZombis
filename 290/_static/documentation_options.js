@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: 'b1e321d5abf901b097a4647d5d27d315fb7d3691-feat/pysc',
+    VERSION: '6b27abe34f6d70c36cb829b76b1704310968e163-feat/pysc',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
