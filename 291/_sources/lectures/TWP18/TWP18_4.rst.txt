@@ -1,0 +1,13 @@
+Verificación parcial de strings
+===============================
+
+
+.. codelens:: cl_l18_4
+         
+    archivo = "prog.py"
+    print(archivo.startswith("p"))
+    print(archivo.endswith("p"))
+    contestar = "Si"
+    print(contestar.lower())
+    print(contestar.upper())
+    print(contestar.lower() in "si no yes no")
