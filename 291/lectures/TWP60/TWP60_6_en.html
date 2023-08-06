@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Keyboard Events &#8212; PyZombis feat/pygame-lectures@5481956</title>
+    <title>6. Keyboard Events &#8212; PyZombis feat/pygame-lectures@928dde2</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
 
@@ -21,11 +21,11 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
-    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/runtime.bundle.js?v=1654bbde73e12a3366eb"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/pygame-lectures@5481956
+          PyZombis feat/pygame-lectures@928dde2
         </a>
       </div>
     </div>
@@ -324,7 +324,11 @@ window.addEventListener('load', (event) => {
   
   <div class="section" id="keyboard-events">
 <h1><span class="section-number">6. </span>Keyboard Events<a class="headerlink" href="#keyboard-events" title="Permalink to this headline">¶</a></h1>
-<p>Event in pygame are handled through the pygame.event module.
+<script src='../_static/game.js'></script>
+
+<script type="module">
+   window.gamejs.init();
+</script><p>Event in pygame are handled through the pygame.event module.
 The pygame.event.get() method gets all the events from the event queue.
 The event queue is a list of event objects that are sent to the program by the window manager
 or by the pygame program itself.
@@ -354,9 +358,11 @@ The event types are listed below:</p>
     data-audio=''      
            data-wasm=/_static
      data-python3_interpreter='brython' style="visibility: hidden;">
-from browser import load, timer
+from browser import load, timer, window
 load('../../_static/game.js')
 load('../../_static/pygame.brython.js')
+gjs = window.gamejs
+gjs.ready()
 
 ^^^^
 import pygame
@@ -370,40 +376,44 @@ BLACK = pygame.color.Color('black')
 WHITE = pygame.color.Color('white')
 GREEN = pygame.color.Color('green')
 
-screen = pygame.display.set_mode((250, 250))
+screen = pygame.display.set_mode((400,300))
 screen.fill(WHITE)
+pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))
+
+global blockX
+global blockY
+blockX = 100
+blockY = 100
 
 def main():
-    # set up the block
-    block = pygame.Rect(100, 100, 50, 50)
 
-    # draw the white background onto the surface
-
-
-    # draw a green box onto the surface
-    pygame.draw.rect(screen, GREEN, block)
 
     # keyboard event loop
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
-            print('key down')
             if event.key == pygame.K_LEFT:
-                print('left arrow pressed')
-                block.left -= 10
+                global blockX
+                blockX -= 10
             if event.key == pygame.K_RIGHT:
-                print('right arrow pressed')
-                block.left += 10
+                global blockX
+                blockX += 10
             if event.key == pygame.K_UP:
-                print('up arrow pressed')
-                block.top -= 10
+                global blockY
+                blockY -= 10
             if event.key == pygame.K_DOWN:
-                print('down arrow pressed')
-                block.top += 10
+                global blockY
+                blockY += 10
 
 
+
+        screen.fill(WHITE)
+        pygame.draw.rect(screen, GREEN, pygame.Rect(blockX, blockY, 50, 50))
 
         # draw the window onto the screen
         pygame.display.update()
+
+
+
 
 pygame.init()
 

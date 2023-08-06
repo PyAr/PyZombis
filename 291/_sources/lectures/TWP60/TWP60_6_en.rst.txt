@@ -1,6 +1,14 @@
 Keyboard Events
 ================
 
+.. raw:: html
+
+   <script src='../_static/game.js'></script>
+
+   <script type="module">
+      window.gamejs.init();
+   </script>
+
 Event in pygame are handled through the pygame.event module.
 The pygame.event.get() method gets all the events from the event queue. 
 The event queue is a list of event objects that are sent to the program by the window manager 
@@ -26,9 +34,11 @@ KEYUP is an event type that is fired when a key is released. like when you lift 
     :language: python3
     :python3_interpreter: brython
 
-    from browser import load, timer
+    from browser import load, timer, window
     load('../../_static/game.js')
     load('../../_static/pygame.brython.js')
+    gjs = window.gamejs
+    gjs.ready()
 
     ^^^^
     import pygame
@@ -42,40 +52,44 @@ KEYUP is an event type that is fired when a key is released. like when you lift 
     WHITE = pygame.color.Color('white')
     GREEN = pygame.color.Color('green')
     
-    screen = pygame.display.set_mode((250, 250))
+    screen = pygame.display.set_mode((400,300))
     screen.fill(WHITE)
+    pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))
+
+    global blockX
+    global blockY
+    blockX = 100
+    blockY = 100
 
     def main():
-        # set up the block
-        block = pygame.Rect(100, 100, 50, 50)
 
-        # draw the white background onto the surface
-        
-
-        # draw a green box onto the surface
-        pygame.draw.rect(screen, GREEN, block)
 
         # keyboard event loop
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:
-                print('key down')
                 if event.key == pygame.K_LEFT:
-                    print('left arrow pressed')
-                    block.left -= 10
+                    global blockX
+                    blockX -= 10
                 if event.key == pygame.K_RIGHT:
-                    print('right arrow pressed')
-                    block.left += 10
+                    global blockX
+                    blockX += 10
                 if event.key == pygame.K_UP:
-                    print('up arrow pressed')
-                    block.top -= 10
+                    global blockY
+                    blockY -= 10
                 if event.key == pygame.K_DOWN:
-                    print('down arrow pressed')
-                    block.top += 10
+                    global blockY
+                    blockY += 10
+
                 
             
+            screen.fill(WHITE)
+            pygame.draw.rect(screen, GREEN, pygame.Rect(blockX, blockY, 50, 50))
 
             # draw the window onto the screen
             pygame.display.update()
+                
+            
+
 
     pygame.init()
 
