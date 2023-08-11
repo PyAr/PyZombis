@@ -75,7 +75,6 @@ KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando
                 if event.key == pygame.K_DOWN:
                     blockY += 10
 
-                
             
             screen.fill(WHITE)
             pygame.draw.rect(screen, GREEN, pygame.Rect(blockX, blockY, 50, 50))
@@ -91,11 +90,11 @@ KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando
     timer1 = timer.set_interval(main,80)
 
         
-MOUSEMOTION is an event type that is fired when the mouse is moved.
+MOUSEMOTION es un tipo de evento que se dispara cuando se mueve el mouse.
 
-MOUSEBUTTONDOWN is an event type that is fired when a mouse button is pressed down.
+MOUSEBUTTONDOWN es un tipo de evento que se activa cuando se presiona un botón del mouse.
 
-MOUSEBUTTONUP is an event type that is fired when a mouse button is released.
+MOUSEBUTTONUP es un tipo de evento que se activa cuando se suelta un botón del mouse.
 
 .. activecode:: ac_l60_6_2
     :language: python3
@@ -111,11 +110,11 @@ MOUSEBUTTONUP is an event type that is fired when a mouse button is released.
     import pygame
     from pygame.locals import *
 
-    # Pygame to show mouse events
-    # If mouse is moving, we will display the text "Mouse is moving"
-    # If mouse is clicked, we will display the text "Mouse is clicked"
-    # If mouse is released, we will display the text "Mouse is released"
-    # We will also display the mouse position and which button is clicked
+    # Pygame para mostrar eventos del mouse
+    # Si el mouse se está moviendo, mostraremos el texto "El mouse se está moviendo"
+    # Si se hace clic con el mouse, mostraremos el texto "Se hace clic con el mouse"
+    # Si se suelta el mouse, mostraremos el texto "Se suelta el mouse"
+    # También mostraremos la posición del mouse y en qué botón se hace clic
 
     BLACK = pygame.color.Color('black')
     WHITE = pygame.color.Color('white')
@@ -125,11 +124,11 @@ MOUSEBUTTONUP is an event type that is fired when a mouse button is released.
     screen.fill(GREEN)
 
     font=pygame.font.SysFont('timesnewroman',30)
-    left_key = font.render('Left mouse button clicked',True,BLACK)
-    right_key = font.render('Right mouse button clicked',True,BLACK)
-    mouse = font.render('Mouse is moving',True,BLACK)
-    button_down = font.render('Mouse button is pressed down',True,BLACK)
-    mouse_pos = font.render('Mouse position is : ',True,BLACK)
+    left_key = font.render('se hace clic en el botón izquierdo del ratón,True,BLACK)
+    right_key = font.render('se hace clic en el botón derecho del ratón',True,BLACK)
+    mouse = font.render('El mouse se está moviendo',True,BLACK)
+    button_down = font.render('Se suelta el mouse',True,BLACK)
+    mouse_pos = font.render('Posición del mouse',True,BLACK)
 
     def main():
 
