@@ -1,5 +1,5 @@
-Events
-================
+Eventos
+=======
 
 .. raw:: html
 
@@ -9,27 +9,26 @@ Events
       window.gamejs.init();
    </script>
 
-Event in pygame are handled through the pygame.event module.
-The pygame.event.get() method gets all the events from the event queue. 
-The event queue is a list of event objects that are sent to the program by the window manager 
-or by the pygame program itself.
-The pygame.event.get() method returns a list of pygame.event.Event objects.
-Each Event object has an event type stored in the type attribute. 
-The type attribute can be compared to the constants defined in the pygame.locals module.
-The pygame.locals module defines constants for the event types.
-The event types are used to determine what type of event has occurred. 
-The event types are listed below:
+Los eventos en pygame se manejan a través del módulo pygame.event.
+El método pygame.event.get() obtiene todos los eventos de la cola de eventos.
+La cola de eventos es una lista de objetos de eventos enviados al programa por el administrador de ventanas.
+o el propio programa pygame.
+El método pygame.event.get() devuelve una lista de objetos pygame.event.Event.
+Cada objeto de evento tiene un tipo de evento almacenado en el atributo de tipo.
+El atributo de tipo se puede comparar con las constantes definidas en el módulo pygame.locals.
+El módulo pygame.locals define constantes para los tipos de eventos.
+Los tipos de eventos se utilizan para determinar qué tipo de evento ha ocurrido.
+Los tipos de eventos se enumeran a continuación:
 
-+ KEYDOWN
 + KEYUP
++ KEYDOWN
 + MOUSEMOTION
-+ MOUSEBUTTONDOWN
 + MOUSEBUTTONUP
++ MOUSEBUTTONDOWN
 
-KEYDOWN is an event type that is fired when a key is pressed down. like when you press a key on the keyboard.
+KEYDOWN es un tipo de evento que se dispara cuando se presiona una tecla. como cuando presionas una tecla en el teclado.
 
-KEYUP is an event type that is fired when a key is released. like when you lift your finger off a key.
-
+KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando quitas el dedo de una tecla.
 .. activecode:: ac_l60_6_en
     :language: python3
     :python3_interpreter: brython
@@ -77,6 +76,7 @@ KEYUP is an event type that is fired when a key is released. like when you lift 
                     blockY -= 10
                 if event.key == pygame.K_DOWN:
                     blockY += 10
+
                 
             
             screen.fill(WHITE)
@@ -93,4 +93,5 @@ KEYUP is an event type that is fired when a key is released. like when you lift 
     timer1 = timer.set_interval(main,80)
 
         
+
 
