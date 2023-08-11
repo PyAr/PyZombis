@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Eventos &#8212; PyZombis feat/pygame-lectures@d39460b</title>
+    <title>6. Eventos &#8212; PyZombis feat/pygame-lectures@1357ace</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/pygame-lectures@d39460b
+          PyZombis feat/pygame-lectures@1357ace
         </a>
       </div>
     </div>
@@ -429,6 +429,78 @@ pygame.display.update()</p>
 <p>pygame.init()</p>
 <p>timer1 = timer.set_interval(main,80)</p>
 </div></blockquote>
+<p>MOUSEMOTION es un tipo de evento que se dispara cuando se mueve el mouse.</p>
+<p>MOUSEBUTTONDOWN es un tipo de evento que se activa cuando se presiona un botón del mouse.</p>
+<p>MOUSEBUTTONUP es un tipo de evento que se activa cuando se suelta un botón del mouse.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_6_2 data-question_label="6.1">
+<div id=ac_l60_6_2_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l60_6_2_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, timer, window
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
+gjs = window.gamejs
+gjs.ready()
+
+^^^^
+import pygame
+from pygame.locals import *
+
+# Pygame para mostrar eventos del mouse
+# Si el mouse se está moviendo, mostraremos el texto "El mouse se está moviendo"
+# Si se hace clic con el mouse, mostraremos el texto "Se hace clic con el mouse"
+# Si se suelta el mouse, mostraremos el texto "Se suelta el mouse"
+# También mostraremos la posición del mouse y en qué botón se hace clic
+
+BLACK = pygame.color.Color('black')
+WHITE = pygame.color.Color('white')
+GREEN = pygame.color.Color('green')
+
+screen = pygame.display.set_mode((800,800))
+screen.fill(GREEN)
+
+font=pygame.font.SysFont('timesnewroman',30)
+left_key = font.render('se hace clic en el botón izquierdo del ratón,True,BLACK)
+right_key = font.render('se hace clic en el botón derecho del ratón',True,BLACK)
+mouse = font.render('El mouse se está moviendo',True,BLACK)
+button_down = font.render('Se suelta el mouse',True,BLACK)
+mouse_pos = font.render('Posición del mouse',True,BLACK)
+
+def main():
+
+    # mouse event loop
+    for event in pygame.event.get():
+        screen.fill(GREEN)
+        if event.type == pygame.MOUSEMOTION:
+            screen.blit(mouse,(100,100))
+            mouse_position = pygame.mouse.get_pos()
+            screen.blit(mouse_pos,(100,200))
+            screen.blit(font.render(str(mouse_position),True,BLACK),(400,200))
+        if event.type == pygame.MOUSEBUTTONUP:
+            mouse_keys = pygame.mouse.get_pressed()
+            if mouse_keys[0]:
+                screen.blit(left_key,(100,100))
+            if mouse_keys[2]:
+                screen.blit(right_key,(100,100))
+        else :
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                screen.blit(button_down,(100,100))
+
+        pygame.display.update()
+
+pygame.init()
+
+timer1 = timer.set_interval(main,80)
+</textarea>
+</div>
+</div>
 </div>
 
 
