@@ -55,8 +55,6 @@ KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando
     screen.fill(WHITE)
     pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))
 
-    global blockX
-    global blockY
     blockX = 100
     blockY = 100
 

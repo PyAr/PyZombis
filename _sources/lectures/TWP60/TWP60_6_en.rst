@@ -56,8 +56,6 @@ KEYUP is an event type that is fired when a key is released. like when you lift 
     screen.fill(WHITE)
     pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))
 
-    global blockX
-    global blockY
     blockX = 100
     blockY = 100
 
