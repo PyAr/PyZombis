@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Keyboard Events &#8212; PyZombis feat/pygame-lectures@928dde2</title>
+    <title>6. Events &#8212; PyZombis feat/pygame-lectures@d39460b</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/pygame-lectures@928dde2
+          PyZombis feat/pygame-lectures@d39460b
         </a>
       </div>
     </div>
@@ -322,8 +322,8 @@ window.addEventListener('load', (event) => {
 
 
   
-  <div class="section" id="keyboard-events">
-<h1><span class="section-number">6. </span>Keyboard Events<a class="headerlink" href="#keyboard-events" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="events">
+<h1><span class="section-number">6. </span>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h1>
 <script src='../_static/game.js'></script>
 
 <script type="module">
@@ -380,8 +380,6 @@ screen = pygame.display.set_mode((400,300))
 screen.fill(WHITE)
 pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))
 
-global blockX
-global blockY
 blockX = 100
 blockY = 100
 
@@ -391,19 +389,16 @@ def main():
     # keyboard event loop
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
+            global blockX
+            global blockY
             if event.key == pygame.K_LEFT:
-                global blockX
                 blockX -= 10
             if event.key == pygame.K_RIGHT:
-                global blockX
                 blockX += 10
             if event.key == pygame.K_UP:
-                global blockY
                 blockY -= 10
             if event.key == pygame.K_DOWN:
-                global blockY
                 blockY += 10
-
 
 
         screen.fill(WHITE)

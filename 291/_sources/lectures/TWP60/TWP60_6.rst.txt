@@ -1,0 +1,95 @@
+Eventos
+=======
+
+.. raw:: html
+
+   <script src='../_static/game.js'></script>
+
+   <script type="module">
+      window.gamejs.init();
+   </script>
+
+Los eventos en pygame se manejan a través del módulo pygame.event.
+El método pygame.event.get() obtiene todos los eventos de la cola de eventos.
+La cola de eventos es una lista de objetos de eventos enviados al programa por el administrador de ventanas.
+o el propio programa pygame.
+El método pygame.event.get() devuelve una lista de objetos pygame.event.Event.
+Cada objeto de evento tiene un tipo de evento almacenado en el atributo de tipo.
+El atributo de tipo se puede comparar con las constantes definidas en el módulo pygame.locals.
+El módulo pygame.locals define constantes para los tipos de eventos.
+Los tipos de eventos se utilizan para determinar qué tipo de evento ha ocurrido.
+Los tipos de eventos se enumeran a continuación:
+
++ KEYUP
++ KEYDOWN
++ MOUSEMOTION
++ MOUSEBUTTONUP
++ MOUSEBUTTONDOWN
+
+KEYDOWN es un tipo de evento que se dispara cuando se presiona una tecla. como cuando presionas una tecla en el teclado.
+
+KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando quitas el dedo de una tecla.
+.. activecode:: ac_l60_6_en
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import load, timer, window
+    load('../../_static/game.js')
+    load('../../_static/pygame.brython.js')
+    gjs = window.gamejs
+    gjs.ready()
+
+    ^^^^
+    import pygame
+    from pygame.locals import *
+
+    # Pygame to show keyevents
+    # green box moves with arrow keys
+
+    # set up the colors
+    BLACK = pygame.color.Color('black')
+    WHITE = pygame.color.Color('white')
+    GREEN = pygame.color.Color('green')
+    
+    screen = pygame.display.set_mode((400,300))
+    screen.fill(WHITE)
+    pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))
+
+    blockX = 100
+    blockY = 100
+
+    def main():
+
+
+        # keyboard event loop
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                global blockX
+                global blockY
+                if event.key == pygame.K_LEFT:
+                    blockX -= 10
+                if event.key == pygame.K_RIGHT:
+                    blockX += 10
+                if event.key == pygame.K_UP:
+                    blockY -= 10
+                if event.key == pygame.K_DOWN:
+                    blockY += 10
+
+                
+            
+            screen.fill(WHITE)
+            pygame.draw.rect(screen, GREEN, pygame.Rect(blockX, blockY, 50, 50))
+
+            # draw the window onto the screen
+            pygame.display.update()
+                
+            
+
+
+    pygame.init()
+
+    timer1 = timer.set_interval(main,80)
+
+        
+
+

@@ -1,4 +1,4 @@
-Keyboard Events
+Events
 ================
 
 .. raw:: html
@@ -56,8 +56,6 @@ KEYUP is an event type that is fired when a key is released. like when you lift 
     screen.fill(WHITE)
     pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))
 
-    global blockX
-    global blockY
     blockX = 100
     blockY = 100
 
@@ -67,19 +65,16 @@ KEYUP is an event type that is fired when a key is released. like when you lift 
         # keyboard event loop
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:
+                global blockX
+                global blockY
                 if event.key == pygame.K_LEFT:
-                    global blockX
                     blockX -= 10
                 if event.key == pygame.K_RIGHT:
-                    global blockX
                     blockX += 10
                 if event.key == pygame.K_UP:
-                    global blockY
                     blockY -= 10
                 if event.key == pygame.K_DOWN:
-                    global blockY
                     blockY += 10
-
                 
             
             screen.fill(WHITE)
