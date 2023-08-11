@@ -91,5 +91,70 @@ KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando
     timer1 = timer.set_interval(main,80)
 
         
+MOUSEMOTION is an event type that is fired when the mouse is moved.
+
+MOUSEBUTTONDOWN is an event type that is fired when a mouse button is pressed down.
+
+MOUSEBUTTONUP is an event type that is fired when a mouse button is released.
+
+.. activecode:: ac_l60_6_2
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import load, timer, window
+    load('../../_static/game.js')
+    load('../../_static/pygame.brython.js')
+    gjs = window.gamejs
+    gjs.ready()
+
+    ^^^^
+    import pygame
+    from pygame.locals import *
+
+    # Pygame to show mouse events
+    # If mouse is moving, we will display the text "Mouse is moving"
+    # If mouse is clicked, we will display the text "Mouse is clicked"
+    # If mouse is released, we will display the text "Mouse is released"
+    # We will also display the mouse position and which button is clicked
+
+    BLACK = pygame.color.Color('black')
+    WHITE = pygame.color.Color('white')
+    GREEN = pygame.color.Color('green')
+    
+    screen = pygame.display.set_mode((800,800))
+    screen.fill(GREEN)
+
+    font=pygame.font.SysFont('timesnewroman',30)
+    left_key = font.render('Left mouse button clicked',True,BLACK)
+    right_key = font.render('Right mouse button clicked',True,BLACK)
+    mouse = font.render('Mouse is moving',True,BLACK)
+    button_down = font.render('Mouse button is pressed down',True,BLACK)
+    mouse_pos = font.render('Mouse position is : ',True,BLACK)
+
+    def main():
+
+        # mouse event loop
+        for event in pygame.event.get():
+            screen.fill(GREEN)
+            if event.type == pygame.MOUSEMOTION:
+                screen.blit(mouse,(100,100))
+                mouse_position = pygame.mouse.get_pos()
+                screen.blit(mouse_pos,(100,200))
+                screen.blit(font.render(str(mouse_position),True,BLACK),(400,200))
+            if event.type == pygame.MOUSEBUTTONUP:
+                mouse_keys = pygame.mouse.get_pressed()
+                if mouse_keys[0]:
+                    screen.blit(left_key,(100,100))
+                if mouse_keys[2]:
+                    screen.blit(right_key,(100,100))
+            else :
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    screen.blit(button_down,(100,100))
+            
+            pygame.display.update()
+
+    pygame.init()
+
+    timer1 = timer.set_interval(main,80)
 
 
