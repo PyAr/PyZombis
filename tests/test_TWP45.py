@@ -9,7 +9,8 @@ def test_l45_1(page):
     page.click("#ac_l45_1 >> *css=button >> text=Run")
 
     # Select the output iframe
-    iframe = page.query_selector('//*[@id="ac_l45_1"]/div/div[5]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l45_1"]/div/div[5]/iframe').content_frame()
     iframe.fill("#input_usuario", "ACDC")
     iframe.click("#boton_mostrar")
     img_src = iframe.get_attribute("#img_obtenida", "src")
@@ -24,7 +25,8 @@ def test_l45_3(page):
     page.goto("lectures/TWP45/TWP45_3.html")
 
     # request data for the exercise to the .yaml file
-    res = requests.get("https://tastedive.com/api/similar?q=Coco&limit=5&info=1")
+    res = requests.get(
+        "https://tastedive.com/api/similar?q=Coco&limit=5&info=1")
     data = json.loads(res.text)
     movies = []
     pixar = 0
@@ -56,7 +58,8 @@ def test_l45_3(page):
     # Run and check it passed all tests
     page.click("#ac_l45_3c >> *css=button >> text=Run")
     page.hover("#ac_l45_3c >> text=You passed:")
-    assert page.inner_text("#ac_l45_3c >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_l45_3c >> text=You passed:") == "You passed: 100.0% of the tests"
 
 
 def test_l45_1_en(page):
@@ -65,7 +68,8 @@ def test_l45_1_en(page):
     page.click("#ac_l45_1_en >> *css=button >> text=Run")
 
     # Select the output iframe
-    iframe = page.query_selector('//*[@id="ac_l45_1_en"]/div/div[5]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l45_1_en"]/div/div[5]/iframe').content_frame()
     iframe.fill("#input_user", "ACDC")
     iframe.click("#button_show")
     img_src = iframe.get_attribute("#img_obtained", "src")
@@ -80,7 +84,8 @@ def test_l45_3_en(page):
     page.goto("lectures/TWP45/TWP45_3_en.html")
 
     # request data for the exercise to the .yaml file
-    res = requests.get("https://tastedive.com/api/similar?q=Coco&limit=5&info=1")
+    res = requests.get(
+        "https://tastedive.com/api/similar?q=Coco&limit=5&info=1")
     data = json.loads(res.text)
     movies = []
     pixar = 0
@@ -112,4 +117,5 @@ def test_l45_3_en(page):
     # Run and check it passed all tests
     page.click("#ac_l45_3c_en >> *css=button >> text=Run")
     page.hover("#ac_l45_3c_en >> text=You passed:")
-    assert page.inner_text("#ac_l45_3c_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_l45_3c_en >> text=You passed:") == "You passed: 100.0% of the tests"

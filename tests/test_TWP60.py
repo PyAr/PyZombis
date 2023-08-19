@@ -3,7 +3,8 @@ def test_l60_1(page):
     # Click button:has-text("Run")
     page.click("#ac_l60_1 >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_1"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_1"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
@@ -17,7 +18,8 @@ def test_l60_2(page):
     # Click button:has-text("Run")
     page.click("#ac_l60_2 >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_2"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_2"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
@@ -31,7 +33,8 @@ def test_l60_3(page):
     # Click button:has-text("Run")
     page.click("#ac_l60_3 >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_3"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_3"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
@@ -45,7 +48,8 @@ def test_l60_4(page):
     # Click button:has-text("Run")
     page.click("#ac_l60_4 >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_4"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_4"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
@@ -73,7 +77,8 @@ def test_l60_5(page):
     # Click button:has-text("Run")
     page.click("#ac_l60_5 >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_5"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_5"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
@@ -81,12 +86,14 @@ def test_l60_5(page):
     height = iframe.get_attribute("canvas", "height")
     assert height == "312"
 
+
 def test_l60_1_en(page):
     page.goto("lectures/TWP60/TWP60_1_en.html")
     # Click button:has-text("Run")
     page.click("#ac_l60_1_en >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_1_en"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_1_en"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
@@ -94,12 +101,14 @@ def test_l60_1_en(page):
     height = iframe.get_attribute("canvas", "height")
     assert height == "400"
 
+
 def test_l60_2_en(page):
     page.goto("lectures/TWP60/TWP60_2_en.html")
     # Click button:has-text("Run")
     page.click("#ac_l60_2_en >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_2_en"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_2_en"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
@@ -107,12 +116,14 @@ def test_l60_2_en(page):
     height = iframe.get_attribute("canvas", "height")
     assert height == "300"
 
+
 def test_l60_3_en(page):
     page.goto("lectures/TWP60/TWP60_3_en.html")
     # Click button:has-text("Run")
     page.click("#ac_l60_3_en >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_3_en"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_3_en"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
@@ -120,18 +131,21 @@ def test_l60_3_en(page):
     height = iframe.get_attribute("canvas", "height")
     assert height == "350"
 
+
 def test_l60_4_en(page):
     page.goto("lectures/TWP60/TWP60_4_en.html")
     # Click button:has-text("Run")
     page.click("#ac_l60_4_en >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_4_en"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_4_en"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
     assert width == "500"
     height = iframe.get_attribute("canvas", "height")
     assert height == "300"
+
 
 def test_l60_5_en(page):
     page.goto("lectures/TWP60/TWP60_5_en.html")
@@ -152,10 +166,12 @@ def test_l60_5_en(page):
     # Click button:has-text("Run")
     page.click("#ac_l60_5_en >> *css=button >> text=Run")
     # Click #gjs-canvas
-    iframe = page.query_selector('//*[@id="ac_l60_5_en"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_l60_5_en"]/div/div[4]/iframe').content_frame()
     id = iframe.get_attribute("canvas", "id")
     assert id == "gjs-canvas"
     width = iframe.get_attribute("canvas", "width")
     assert width == "512"
     height = iframe.get_attribute("canvas", "height")
     assert height == "312"
+    

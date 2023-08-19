@@ -13,7 +13,8 @@ def test_quiz7_1_good(page):
     page.click("#q7_1 >> *css=button >> text=Run")
 
     page.hover("#q7_1 >> text=You passed:")
-    assert page.inner_text("#q7_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q7_1 >> text=You passed:") == "You passed: 100.0% of the tests"
 
 
 def test_quiz7_1_bad(page):
@@ -31,7 +32,8 @@ def test_quiz7_1_bad(page):
     page.click("#q7_1 >> *css=button >> text=Run")
 
     page.hover("#q7_1 >> text=You passed:")
-    assert page.inner_text("#q7_1 >> text=You passed:") == "You passed: 0.0% of the tests"
+    assert page.inner_text(
+        "#q7_1 >> text=You passed:") == "You passed: 0.0% of the tests"
 
 
 def test_quiz7_1_good_en(page):
@@ -47,7 +49,9 @@ def test_quiz7_1_good_en(page):
     page.click("#q7_1_en >> *css=button >> text=Run")
 
     page.hover("#q7_1_en >> text=You passed:")
-    assert page.inner_text("#q7_1_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q7_1_en >> text=You passed:") == "You passed: 100.0% of the tests"
+
 
 def test_quiz7_1_bad_en(page):
     page.goto("quiz/Quiz7_en.html")
@@ -62,4 +66,5 @@ def test_quiz7_1_bad_en(page):
     page.click("#q7_1_en >> *css=button >> text=Run")
 
     page.hover("#q7_1_en >> text=You passed:")
-    assert page.inner_text("#q7_1_en >> text=You passed:") == "You passed: 0.0% of the tests"
+    assert page.inner_text(
+        "#q7_1_en >> text=You passed:") == "You passed: 0.0% of the tests"

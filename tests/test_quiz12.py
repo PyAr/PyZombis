@@ -14,7 +14,9 @@ def test_quiz12_1(page):
     page.click("#q12_1 >> *css=button >> text=Run")
 
     page.hover("#q12_1 >> text=You passed:")
-    assert page.inner_text("#q12_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q12_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+
 
 def test_quiz12_1_en(page):
 
@@ -30,4 +32,5 @@ def test_quiz12_1_en(page):
     page.click("#q12_1_en >> *css=button >> text=Run")
 
     page.hover("#q12_1_en >> text=You passed:")
-    assert page.inner_text("#q12_1_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q12_1_en >> text=You passed:") == "You passed: 100.0% of the tests"

@@ -3,7 +3,8 @@ def test_l42_1(page):
     # Click button:has-text("Run")
     page.click("#ac_42_1 >> *css=button >> text=Run")
 
-    iframe = page.query_selector('//*[@id="ac_42_1"]/div/div[5]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_42_1"]/div/div[5]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''ID    : 101
@@ -59,16 +60,18 @@ Edad  : 19
 
     assert output == res
 
-    
+
 def test_l42_2(page):
     page.goto("lectures/TWP42/TWP42_2.html")
 
     page.click("text=4​ >> pre[role=\"presentation\"]")
-    page.fill("text=RunResetLoad History21 1from sqlite3 import connect2con = connect('alumnos.bd')3cur = >> textarea", "cur.execute('''create table alumnos(login_id varchar(8),pass integer)''')")
+    page.fill("text=RunResetLoad History21 1from sqlite3 import connect2con = connect('alumnos.bd')3cur = >> textarea",
+              "cur.execute('''create table alumnos(login_id varchar(8),pass integer)''')")
     # Click button:has-text("Run")
     page.click("#ac_42_2_2 >> *css=button >> text=Run")
 
-    iframe = page.query_selector('//*[@id="ac_42_2_2"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_42_2_2"]/div/div[4]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''login    : masanori
@@ -79,17 +82,20 @@ ra : 666
 
     assert output == res
 
+
 def test_l42_3_1(page):
     page.goto("lectures/TWP42/TWP42_3.html")
-    page.click("pre[role=\"presentation\"]:has-text(\"query = 'select * from Track limit 30;'\")")
+    page.click(
+        "pre[role=\"presentation\"]:has-text(\"query = 'select * from Track limit 30;'\")")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Control+Shift+ArrowUp")
     page.keyboard.press("Backspace")
     page.fill("textarea", " 1'")
     page.keyboard.press("Enter")
     # Click button:has-text("Run")
-    page.click("#ac_42_3a >> *css=button >> text=Run")    
-    iframe = page.query_selector('//*[@id="ac_42_3a"]/div/div[4]/iframe').content_frame()
+    page.click("#ac_42_3a >> *css=button >> text=Run")
+    iframe = page.query_selector(
+        '//*[@id="ac_42_3a"]/div/div[4]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''TrackId : 1
@@ -111,16 +117,20 @@ def test_l42_3_2(page):
     page.goto("lectures/TWP42/TWP42_3.html")
     page.click("#ordenar-filas >> text=10​ >> pre[role=\"presentation\"]")
     # Press ArrowUp with modifiers
-    page.press("text=3.3. Ordenar filas¶ La cláusula ORDER BY se utiliza para ordenar un conjunto de  >> textarea", "Control+Shift+ArrowUp")
+    page.press("text=3.3. Ordenar filas¶ La cláusula ORDER BY se utiliza para ordenar un conjunto de  >> textarea",
+               "Control+Shift+ArrowUp")
     # Press ArrowUp with modifiers
-    page.press("text=3.3. Ordenar filas¶ La cláusula ORDER BY se utiliza para ordenar un conjunto de  >> textarea", "Control+Shift+ArrowUp")
+    page.press("text=3.3. Ordenar filas¶ La cláusula ORDER BY se utiliza para ordenar un conjunto de  >> textarea",
+               "Control+Shift+ArrowUp")
     page.keyboard.press("Backspace")
-    page.fill("text=3.3. Ordenar filas¶ La cláusula ORDER BY se utiliza para ordenar un conjunto de  >> textarea", "query = '''select name, milliseconds, albumid from Track ORDER BY milliseconds ASC limit 1 ;'''")
+    page.fill("text=3.3. Ordenar filas¶ La cláusula ORDER BY se utiliza para ordenar un conjunto de  >> textarea",
+              "query = '''select name, milliseconds, albumid from Track ORDER BY milliseconds ASC limit 1 ;'''")
 
     page.keyboard.press("Enter")
     # Click button:has-text("Run")
-    page.click("#ac_42_3b >> *css=button >> text=Run")    
-    iframe = page.query_selector('//*[@id="ac_42_3b"]/div/div[5]/iframe').content_frame()
+    page.click("#ac_42_3b >> *css=button >> text=Run")
+    iframe = page.query_selector(
+        '//*[@id="ac_42_3b"]/div/div[5]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''Name : É Uma Partida De Futebol
@@ -136,16 +146,20 @@ def test_l42_3_3(page):
     page.goto("lectures/TWP42/TWP42_3.html")
     page.click("text=9​ >> pre[role=\"presentation\"]")
     # Press ArrowUp with modifiers
-    page.press("text=3.4. Filtrado de datos¶ Ya hemos visto algunas formas de archivar datos, por ej. >> textarea", "Control+Shift+ArrowUp")
+    page.press("text=3.4. Filtrado de datos¶ Ya hemos visto algunas formas de archivar datos, por ej. >> textarea",
+               "Control+Shift+ArrowUp")
     # Press ArrowUp with modifiers
-    page.press("text=3.4. Filtrado de datos¶ Ya hemos visto algunas formas de archivar datos, por ej. >> textarea", "Control+Shift+ArrowUp")
+    page.press("text=3.4. Filtrado de datos¶ Ya hemos visto algunas formas de archivar datos, por ej. >> textarea",
+               "Control+Shift+ArrowUp")
     page.keyboard.press("Backspace")
-    page.fill("text=3.4. Filtrado de datos¶ Ya hemos visto algunas formas de archivar datos, por ej. >> textarea", "query = '''select name, milliseconds, bytes, albumid from Track WHERE albumid=1 limit 1;'''")
+    page.fill("text=3.4. Filtrado de datos¶ Ya hemos visto algunas formas de archivar datos, por ej. >> textarea",
+              "query = '''select name, milliseconds, bytes, albumid from Track WHERE albumid=1 limit 1;'''")
 
     page.keyboard.press("Enter")
     # Click button:has-text("Run")
-    page.click("#ac_42_3c1 >> *css=button >> text=Run")    
-    iframe = page.query_selector('//*[@id="ac_42_3c1"]/div/div[5]/iframe').content_frame()
+    page.click("#ac_42_3c1 >> *css=button >> text=Run")
+    iframe = page.query_selector(
+        '//*[@id="ac_42_3c1"]/div/div[5]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''Name : For Those About To Rock (We Salute You)
@@ -161,8 +175,9 @@ AlbumId : 1
 def test_l42_3_4(page):
     page.goto("lectures/TWP42/TWP42_3.html")
     # Click button:has-text("Run")
-    page.click("#ac_42_3c4 >> *css=button >> text=Run")    
-    iframe = page.query_selector('//*[@id="ac_42_3c4"]/div/div[5]/iframe').content_frame()
+    page.click("#ac_42_3c4 >> *css=button >> text=Run")
+    iframe = page.query_selector(
+        '//*[@id="ac_42_3c4"]/div/div[5]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''TrackId : 1245
@@ -184,11 +199,13 @@ Name : Wild Honey
 
     assert output == res
 
+
 def test_l42_1_en(page):
     page.goto("lectures/TWP42/TWP42_1_en.html")
 
     page.click("#ac_42_1_en >> *css=button >> text=Run")
-    iframe = page.query_selector('//*[@id="ac_42_1_en"]/div/div[5]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_42_1_en"]/div/div[5]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''ID    : 101
@@ -244,19 +261,20 @@ Age  : 19
 
     assert output == res
 
-    
+
 def test_l42_2_en(page):
     page.goto("lectures/TWP42/TWP42_2_en.html")
 
     page.click("text=2.3. Accessing the students.bd database¶")
     page.click("text=3cur = con.cursor() >> pre[role=\"presentation\"]")
     page.keyboard.press("ArrowDown")
-    page.type("text=3cur = con.cursor() >> pre[role=\"presentation\"]", "cur.execute('''create table students(login_id varchar(8),pass integer)''')")
+    page.type("text=3cur = con.cursor() >> pre[role=\"presentation\"]",
+              "cur.execute('''create table students(login_id varchar(8),pass integer)''')")
     # Click #ac_42_2_2_en >> text=Run
     page.click("#ac_42_2_2_en >> text=Run")
 
-
-    iframe = page.query_selector('//*[@id="ac_42_2_2_en"]/div/div[4]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_42_2_2_en"]/div/div[4]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''login    : masanori
@@ -267,17 +285,20 @@ ra : 666
 
     assert output == res
 
+
 def test_l42_3_1_en(page):
     page.goto("lectures/TWP42/TWP42_3_en.html")
-    page.click("pre[role=\"presentation\"]:has-text(\"query = 'select * from Track limit 30;'\")")
+    page.click(
+        "pre[role=\"presentation\"]:has-text(\"query = 'select * from Track limit 30;'\")")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Control+Shift+ArrowUp")
     page.keyboard.press("Backspace")
     page.fill("textarea", " 1'")
     page.keyboard.press("Enter")
     # Click button:has-text("Run")
-    page.click("#ac_42_3a_en >> *css=button >> text=Run")    
-    iframe = page.query_selector('//*[@id="ac_42_3a_en"]/div/div[4]/iframe').content_frame()
+    page.click("#ac_42_3a_en >> *css=button >> text=Run")
+    iframe = page.query_selector(
+        '//*[@id="ac_42_3a_en"]/div/div[4]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''TrackId : 1
@@ -302,7 +323,8 @@ def test_l42_3_2_en(page):
     # Click #ac_42_3b_en >> text=Run
     page.click("#ac_42_3b_en >> text=Run")
 
-    iframe = page.query_selector('//*[@id="ac_42_3b_en"]/div/div[5]/iframe').content_frame()
+    iframe = page.query_selector(
+        '//*[@id="ac_42_3b_en"]/div/div[5]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''Name : É Uma Partida De Futebol
@@ -434,16 +456,20 @@ def test_l42_3_3_en(page):
     page.goto("lectures/TWP42/TWP42_3_en.html")
     page.click("text=9​ >> pre[role=\"presentation\"]")
     # Press ArrowUp with modifiers
-    page.press("text=3.4. Data filtering¶ We have already seen some ways of archiving data, e.g. >> textarea", "Control+Shift+ArrowUp")
+    page.press("text=3.4. Data filtering¶ We have already seen some ways of archiving data, e.g. >> textarea",
+               "Control+Shift+ArrowUp")
     # Press ArrowUp with modifiers
-    page.press("text=3.4. Data filtering¶ We have already seen some ways of archiving data, e.g. >> textarea", "Control+Shift+ArrowUp")
+    page.press("text=3.4. Data filtering¶ We have already seen some ways of archiving data, e.g. >> textarea",
+               "Control+Shift+ArrowUp")
     page.keyboard.press("Backspace")
-    page.fill("text=3.4. Data filtering¶ We have already seen some ways of archiving data, e.g. >> textarea", "query = '''select name, milliseconds, bytes, albumid from Track WHERE albumid=1 limit 1;'''")
+    page.fill("text=3.4. Data filtering¶ We have already seen some ways of archiving data, e.g. >> textarea",
+              "query = '''select name, milliseconds, bytes, albumid from Track WHERE albumid=1 limit 1;'''")
 
     page.keyboard.press("Enter")
     # Click button:has-text("Run")
-    page.click("#ac_42_3c1_en >> *css=button >> text=Run")    
-    iframe = page.query_selector('//*[@id="ac_42_3c1_en"]/div/div[5]/iframe').content_frame()
+    page.click("#ac_42_3c1_en >> *css=button >> text=Run")
+    iframe = page.query_selector(
+        '//*[@id="ac_42_3c1_en"]/div/div[5]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''Name : For Those About To Rock (We Salute You)
@@ -459,8 +485,9 @@ AlbumId : 1
 def test_l42_3_4_en(page):
     page.goto("lectures/TWP42/TWP42_3_en.html")
     # Click button:has-text("Run")
-    page.click("#ac_42_3c4_en >> *css=button >> text=Run")    
-    iframe = page.query_selector('//*[@id="ac_42_3c4_en"]/div/div[5]/iframe').content_frame()
+    page.click("#ac_42_3c4_en >> *css=button >> text=Run")
+    iframe = page.query_selector(
+        '//*[@id="ac_42_3c4_en"]/div/div[5]/iframe').content_frame()
     output = iframe.text_content('code')
 
     res = '''TrackId : 1245

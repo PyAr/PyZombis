@@ -9,7 +9,8 @@ def test_quiz11_1(page):
     page.keyboard.press("Tab")
 
     # Code to type
-    ins = ["if len(s) >= 3:", "if s[-3:] != 'ing':", "s = s + 'ing'", "else:", "s = s + 'ly'"]
+    ins = ["if len(s) >= 3:", "if s[-3:] != 'ing':",
+           "s = s + 'ing'", "else:", "s = s + 'ly'"]
     for i in ins[:3]:
         page.keyboard.type(i)
         page.keyboard.press("Enter")
@@ -26,7 +27,9 @@ def test_quiz11_1(page):
     page.click("#q11_1 >> *css=button >> text=Run")
 
     page.hover("#q11_1 >> text=You passed:")
-    assert page.inner_text("#q11_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q11_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+
 
 def test_quiz11_1_en(page):
     page.goto("quiz/Quiz11_en.html")
@@ -36,7 +39,8 @@ def test_quiz11_1_en(page):
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
 
-    ins = ["if len(s) >= 3:", "if s[-3:] != 'ing':", "s = s + 'ing'", "else:", "s = s + 'ly'"]
+    ins = ["if len(s) >= 3:", "if s[-3:] != 'ing':",
+           "s = s + 'ing'", "else:", "s = s + 'ly'"]
     for i in ins[:3]:
         page.keyboard.type(i)
         page.keyboard.press("Enter")
@@ -52,4 +56,5 @@ def test_quiz11_1_en(page):
     page.click("#q11_1_en >> *css=button >> text=Run")
 
     page.hover("#q11_1_en >> text=You passed:")
-    assert page.inner_text("#q11_1_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q11_1_en >> text=You passed:") == "You passed: 100.0% of the tests"

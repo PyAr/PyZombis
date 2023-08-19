@@ -36,7 +36,8 @@ def test_TWP18_ac_5(page):
 
     # Check whether it passed all unit tests
     page.hover("#ac_l18_3d >> text=You passed:")
-    assert page.inner_text("#ac_l18_3d >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_l18_3d >> text=You passed:") == "You passed: 100.0% of the tests"
 
 
 def test_TWP_ac_5_en(page):
@@ -76,4 +77,5 @@ def test_TWP_ac_5_en(page):
 
     # Check whether it passed all unit tests
     page.hover("#ac_l18_3d_en >> text=You passed:")
-    assert page.inner_text("#ac_l18_3d_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_l18_3d_en >> text=You passed:") == "You passed: 100.0% of the tests"

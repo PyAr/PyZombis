@@ -14,7 +14,9 @@ def test_quizExtra2_3_bad(page):
 
     # Test it passed all unit tests
     page.hover("#qExtra2_3 >> text=You passed:")
-    assert page.inner_text("#qExtra2_3 >> text=You passed:") == "You passed: 0.0% of the tests"
+    assert page.inner_text(
+        "#qExtra2_3 >> text=You passed:") == "You passed: 0.0% of the tests"
+
 
 def test_quizExtra2_3_bad_en(page):
     page.goto("quiz/QuizExtras2_en.html")
@@ -31,4 +33,5 @@ def test_quizExtra2_3_bad_en(page):
 
     # Test it passed all unit tests
     page.hover("#qExtra2_3_en >> text=You passed:")
-    assert page.inner_text("#qExtra2_3_en >> text=You passed:") == "You passed: 0.0% of the tests"
+    assert page.inner_text(
+        "#qExtra2_3_en >> text=You passed:") == "You passed: 0.0% of the tests"

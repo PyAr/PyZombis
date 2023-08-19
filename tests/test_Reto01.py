@@ -18,7 +18,8 @@ def test_r01(page):
     page.click("#ac_r01_2 >> text=Save & Run")
     # Make sure it passed all unit tests
     page.hover("#ac_r01_2 >> text=You passed:")
-    assert page.inner_text("#ac_r01_2 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_2 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_3
     page.click("text=Ejercicio 3")
@@ -26,7 +27,8 @@ def test_r01(page):
     # request data for the exercise to the .yaml file
     res = requests.get("http://universities.hipolabs.com/search")
     datos = json.loads(res.text)
-    countries = [universidad["country"].lower().replace(" ", "") for universidad in datos]
+    countries = [universidad["country"].lower().replace(" ", "")
+                 for universidad in datos]
 
     page.click("#ac_r01_3 >> text=api_url =")
     page.keyboard.press("ArrowDown")
@@ -44,7 +46,8 @@ def test_r01(page):
     page.click("#ac_r01_3 >> text=Save & Run")
     # Make sure it passed all unit tests
     page.hover("#ac_r01_3 >> text=You passed:")
-    assert page.inner_text("#ac_r01_3 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_3 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_4
     page.click("text=Ejercicio 4")
@@ -58,7 +61,8 @@ def test_r01(page):
     page.keyboard.press("Backspace")
     page.keyboard.type("x = input('Adivine una letra: ').lower()")
     page.keyboard.press("Enter")
-    instructions = ["if x not in letras and x not in (digits + punctuation) and len(x) == 1:", "return x"]
+    instructions = [
+        "if x not in letras and x not in (digits + punctuation) and len(x) == 1:", "return x"]
     for i in instructions:
         page.keyboard.type(i)
         page.keyboard.press("Enter")
@@ -67,7 +71,8 @@ def test_r01(page):
     page.click("#ac_r01_5 >> text=Save & Run")
     # Make sure it passed all unit tests
     page.hover("#ac_r01_5 >> text=You passed:")
-    assert page.inner_text("#ac_r01_5 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_5 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_6
     page.click("text=Ejercicio 6")
@@ -82,7 +87,8 @@ def test_r01(page):
         page.once("dialog", lambda dialog: dialog.accept("n"))
     # Ensure it passed all of the tests
     page.hover("#ac_r01_6 >> text=You passed:")
-    assert page.inner_text("#ac_r01_6 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_6 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_7
     page.click("text=Ejercicio 7")
@@ -93,7 +99,8 @@ def test_r01(page):
     page.click("#ac_r01_7 >> text=Save & Run")
     # Make sure it passed all unit tests
     page.hover("#ac_r01_7 >> text=You passed:")
-    assert page.inner_text("#ac_r01_7 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_7 >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_8
     page.click("text=Ejercicio 8")
@@ -102,10 +109,12 @@ def test_r01(page):
     i = 0
     while page.is_hidden("#ac_r01_8_stdout >> text=Quedó ahorcado"):
         with page.expect_event("dialog") as prompt:
-            page.once("dialog", lambda dialog: dialog.accept(string.ascii_lowercase[i]))
+            page.once("dialog", lambda dialog: dialog.accept(
+                string.ascii_lowercase[i]))
         i += 1
     page.hover("#ac_r01_8_stdout >> text=Quedó ahorcado")
     assert page.is_visible("#ac_r01_8_stdout >> text=Quedó ahorcado") == True
+
 
 @pytest.mark.vcr()
 def test_r01_en(page):
@@ -122,7 +131,8 @@ def test_r01_en(page):
     page.click("#ac_r01_2_en >> text=Save & Run")
     # Make sure it passed all unit tests
     page.hover("#ac_r01_2_en >> text=You passed:")
-    assert page.inner_text("#ac_r01_2_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_2_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_r01_3_en
     page.click("text=Exercise 3")
@@ -130,7 +140,8 @@ def test_r01_en(page):
     # request data for the exercise to the .yaml file
     res = requests.get("http://universities.hipolabs.com/search")
     datos = json.loads(res.text)
-    countries = [universidad["country"].lower().replace(" ", "") for universidad in datos]
+    countries = [universidad["country"].lower().replace(" ", "")
+                 for universidad in datos]
 
     page.click("#ac_r01_3_en >> text=api_url =")
     page.keyboard.press("ArrowDown")
@@ -139,7 +150,7 @@ def test_r01_en(page):
     page.keyboard.press("Backspace")
 
     page.keyboard.type(f"cities = {countries[:10]}")
-    
+
     page.click("text=def choose(cities):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Enter")
@@ -150,7 +161,8 @@ def test_r01_en(page):
 
     # Make sure it passed all unit tests
     page.hover("#ac_r01_3_en >> text=You passed:")
-    assert page.inner_text("#ac_r01_3_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_3_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_r01_4_en
     page.click("text=Exercise 4")
@@ -165,7 +177,8 @@ def test_r01_en(page):
     page.keyboard.press("Backspace")
     page.keyboard.type("x = input('Guess a letter: ').lower()")
     page.keyboard.press("Enter")
-    instructions = ["if x not in letters and x not in (digits + punctuation) and len(x) == 1:", "return x"]
+    instructions = [
+        "if x not in letters and x not in (digits + punctuation) and len(x) == 1:", "return x"]
     for i in instructions:
         page.keyboard.type(i)
         page.keyboard.press("Enter")
@@ -174,7 +187,8 @@ def test_r01_en(page):
     page.click("#ac_r01_5_en >> text=Save & Run")
     # Make sure it passed all unit tests
     page.hover("#ac_r01_5_en >> text=You passed:")
-    assert page.inner_text("#ac_r01_5_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_5_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_r01_6_en
     page.click("text=Exercise 6")
@@ -199,7 +213,8 @@ def test_r01_en(page):
         page.once("dialog", lambda dialog: dialog.accept("n"))
     # Ensure it passed all of the tests
     page.hover("#ac_r01_6_en >> text=You passed:")
-    assert page.inner_text("#ac_r01_6_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_6_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_r01_7_en
     page.click("text=Exercise 7")
@@ -210,7 +225,8 @@ def test_r01_en(page):
     page.click("#ac_r01_7_en >> text=Save & Run")
     # Make sure it passed all unit tests
     page.hover("#ac_r01_7_en >> text=You passed:")
-    assert page.inner_text("#ac_r01_7_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_r01_7_en >> text=You passed:") == "You passed: 100.0% of the tests"
 
     # ac_r01_8_en
     page.click("text=Exercise 8")
@@ -219,9 +235,9 @@ def test_r01_en(page):
     i = 0
     while page.is_hidden("#ac_r01_8_en_stdout >> text=You were hanged"):
         with page.expect_event("dialog") as prompt:
-            page.once("dialog", lambda dialog: dialog.accept(string.ascii_lowercase[i]))
+            page.once("dialog", lambda dialog: dialog.accept(
+                string.ascii_lowercase[i]))
         i += 1
     page.hover("#ac_r01_8_en_stdout >> text=You were hanged")
-    assert page.is_visible("#ac_r01_8_en_stdout >> text=You were hanged") == True
-
-
+    assert page.is_visible(
+        "#ac_r01_8_en_stdout >> text=You were hanged") == True

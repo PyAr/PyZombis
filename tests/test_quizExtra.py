@@ -9,7 +9,8 @@ def test_quizExtra_4(page):
     page.keyboard.press("Tab")
 
     # Code to type
-    instructions = ["suma = 0", "for n in range(1, 65):", "m = int(pow(2, n - 1))", "suma = suma + m"]
+    instructions = [
+        "suma = 0", "for n in range(1, 65):", "m = int(pow(2, n - 1))", "suma = suma + m"]
     for inst in instructions:
         page.keyboard.type(inst)
         page.keyboard.press("Enter")
@@ -22,7 +23,9 @@ def test_quizExtra_4(page):
 
     # Test it passed all unit tests
     page.hover("#qExtra_4 >> text=You passed:")
-    assert page.inner_text("#qExtra_4 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#qExtra_4 >> text=You passed:") == "You passed: 100.0% of the tests"
+
 
 def test_quizExtra_4_en(page):
     page.goto("quiz/QuizExtras_en.html")
@@ -34,7 +37,8 @@ def test_quizExtra_4_en(page):
     page.keyboard.press("Tab")
 
     # Code to type
-    instructions = ["sum = 0", "for n in range(1, 65):", "m = int(pow(2, n - 1))", "sum = sum + m"]
+    instructions = [
+        "sum = 0", "for n in range(1, 65):", "m = int(pow(2, n - 1))", "sum = sum + m"]
     for inst in instructions:
         page.keyboard.type(inst)
         page.keyboard.press("Enter")
@@ -47,4 +51,5 @@ def test_quizExtra_4_en(page):
 
     # Test it passed all unit tests
     page.hover("#qExtra_4_en >> text=You passed:")
-    assert page.inner_text("#qExtra_4_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#qExtra_4_en >> text=You passed:") == "You passed: 100.0% of the tests"

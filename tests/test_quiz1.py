@@ -16,7 +16,9 @@ def test_quiz1_1(page):
 
     # Check it passed all unit tests
     page.hover("#q1_1 >> text=You passed:")
-    assert page.inner_text("#q1_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q1_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+
 
 def test_quiz1_1_en(page):
     page.goto("quiz/Quiz1_en.html")
@@ -33,7 +35,9 @@ def test_quiz1_1_en(page):
 
     # Check it passed all unit tests
     page.hover("#q1_1_en >> text=You passed:")
-    assert page.inner_text("#q1_1_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q1_1_en >> text=You passed:") == "You passed: 100.0% of the tests"
+
 
 def test_quiz1_2(page):
     page.goto("quiz/Quiz1.html")
@@ -51,7 +55,9 @@ def test_quiz1_2(page):
 
     # Check it passed all unit tests
     page.hover("#q1_2 >> text=You passed:")
-    assert page.inner_text("#q1_2 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q1_2 >> text=You passed:") == "You passed: 100.0% of the tests"
+
 
 def test_quiz1_2_en(page):
     page.goto("quiz/Quiz1_en.html")
@@ -69,4 +75,5 @@ def test_quiz1_2_en(page):
 
     # Check it passed all unit tests
     page.hover("#q1_2_en >> text=You passed:")
-    assert page.inner_text("#q1_2_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q1_2_en >> text=You passed:") == "You passed: 100.0% of the tests"
