@@ -36,4 +36,46 @@ def test_TWP18_ac_5(page):
 
     # Check whether it passed all unit tests
     page.hover("#ac_l18_3d >> text=You passed:")
-    assert page.inner_text("#ac_l18_3d >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_l18_3d >> text=You passed:") == "You passed: 100.0% of the tests"
+
+
+def test_TWP_ac_5_en(page):
+
+    def handle_dialog(dialog):
+        dialog.accept("palabra")
+
+    page.goto("lectures/TWP18/TWP18_3_en.html")
+
+    page.click("text=# Use the input function to read the word from the user.")
+
+    page.keyboard.press("ArrowDown")
+
+    instructions = [
+        "palabra = input('input a word: ')",
+        "intercambio = ''",
+        "for c in palabra:",
+        "if c in 'aeiou':",
+        "intercambio += c",
+    ]
+
+    for inst in instructions:
+        page.keyboard.type(inst)
+        page.keyboard.press("Enter")
+
+    for i in range(4):
+        page.keyboard.press("Backspace")
+
+    page.keyboard.type("else:")
+    page.keyboard.press("Enter")
+    page.keyboard.type("intercambio += '*'")
+
+    # Run the exercise
+    page.click("#ac_l18_3d_en >> *css=button >> text=Run")
+    # Fill prompt box
+    page.on("dialog", handle_dialog)
+
+    # Check whether it passed all unit tests
+    page.hover("#ac_l18_3d_en >> text=You passed:")
+    assert page.inner_text(
+        "#ac_l18_3d_en >> text=You passed:") == "You passed: 100.0% of the tests"

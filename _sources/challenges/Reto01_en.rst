@@ -167,7 +167,7 @@ This challenge consists in creating the **hangman** game from Python code.
 
         .. activecode:: ac_r01_4_en
             :nocodelens:
-            :include: ac_r01_1, ac_r01_2, ac_r01_3
+            :include: ac_r01_1_en, ac_r01_2_en, ac_r01_3_en
 
             The ``print_hangman`` function prints the corresponding hangman drawing according to 
             the number of correct and incorrect letters so far. It takes a single parameter
@@ -297,7 +297,7 @@ This challenge consists in creating the **hangman** game from Python code.
 
         .. activecode:: ac_r01_8_en
             :nocodelens:
-            :include: ac_r01_1, ac_r01_2, ac_r01_3, ac_r01_4, ac_r01_5, ac_r01_6, ac_r01_7
+            :include: ac_r01_1_en, ac_r01_2_en, ac_r01_3_en, ac_r01_4_en, ac_r01_5_en, ac_r01_6_en, ac_r01_7_en
 
             # This helps to increase the program duration to 5 minutes
             import sys
@@ -308,24 +308,24 @@ This challenge consists in creating the **hangman** game from Python code.
             while True:
                 print_hangman(p_aleatoria)
                 time.sleep(2)
-                x = guess(corrects + incorrects)
+                x = guess(correct + incorrect)
                 if x in p_aleatoria:
-                    corrects = corrects + x
+                    correct = correct + x
                 else:
-                    incorrects = incorrects + x
-                if len(incorrects) == len(drawings):
+                    incorrect = incorrect + x
+                if len(incorrect) == len(drawings):
                     print(f"You were hanged, the word was {p_aleatoria}")
                     time.sleep(1)
                     if play_again():
-                        corrects = incorrects = ""
+                        correct = incorrect = ""
                         p_aleatoria = choose(cities)
                     else:
                         break
-                elif win(p_aleatoria, corrects):
+                elif win(p_aleatoria, correct):
                     print(f"You guessed the word: {p_aleatoria}")
                     time.sleep(1)
                     if play_again():
-                        corrects = incorrects = ""
+                        correct = incorrect = ""
                         p_aleatoria = choose(cities)
                     else:
                         break

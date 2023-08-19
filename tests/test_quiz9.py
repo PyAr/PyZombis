@@ -14,4 +14,21 @@ def test_quiz9_11_good(page):
     page.click("#q9_11 >> *css=button >> text=Run")
 
     page.hover("#q9_11 >> text=You passed:")
-    assert page.inner_text("#q9_11 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q9_11 >> text=You passed:") == "You passed: 100.0% of the tests"
+
+
+def test_quiz9_11_good_en(page):
+    page.goto("quiz/Quiz9_en.html")
+
+    page.click("text=Exercise 11")
+    page.click("text=def tiene_2(numeros):")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
+    page.keyboard.type("return '2, 2' in str(numeros)")
+
+    page.click("#q9_11_en >> *css=button >> text=Run")
+
+    page.hover("#q9_11_en >> text=You passed:")
+    assert page.inner_text(
+        "#q9_11_en >> text=You passed:") == "You passed: 100.0% of the tests"
