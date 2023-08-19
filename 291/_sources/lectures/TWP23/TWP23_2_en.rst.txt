@@ -66,7 +66,7 @@ Exercise
 
     for line in text.readlines():
         for letter in line:
-            if letter in "aeiouAEIOU":
+            if letter in "aeiou":
                 output.write("*")
             else:
                 output.write(letter)
@@ -82,10 +82,8 @@ Exercise
     class myTests(TestCaseGui):
         def testOne(self):
             file = open(" crypto2_en.txt", "r")
-            text = """*st* *s th* t*xt f*l*
-    y** **r m*d*fying
-    s* th*t *ll v*w*ls
-    *r* ch*ng*d t* "*"."""
+            text = """th*s *s th* t*xt f*l* y** *r* m*d*fy*ng s* th*t *ll v*w*ls *r* ch*ng*d t* "*".
+                    """
 
             self.assertEqual(file.read().replace("\n", " ").rstrip(), text.strip(), f"Expected: {text}")
 

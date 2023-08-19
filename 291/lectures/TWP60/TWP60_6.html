@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Eventos &#8212; PyZombis feat/pygame-lectures@1357ace</title>
+    <title>6. Eventos &#8212; PyZombis feat/pygame-lectures@b10c4a8</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/pygame-lectures@1357ace
+          PyZombis feat/pygame-lectures@b10c4a8
         </a>
       </div>
     </div>
@@ -346,95 +346,82 @@ Los tipos de eventos se enumeran a continuación:</p>
 <li><p>MOUSEBUTTONDOWN</p></li>
 </ul>
 <p>KEYDOWN es un tipo de evento que se dispara cuando se presiona una tecla. como cuando presionas una tecla en el teclado.</p>
-<p>KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando quitas el dedo de una tecla.
-.. activecode:: ac_l60_6_en</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_6.rst</span>, line 33)</p>
-<p>Unexpected indentation.</p>
+<p>KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando quitas el dedo de una tecla.</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l60_6_en data-question_label="6.1">
+<div id=ac_l60_6_en_question class="ac_question col-md-12">
+
 </div>
-<blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">language</dt>
-<dd class="field-odd"><p>python3</p>
-</dd>
-<dt class="field-even">python3_interpreter</dt>
-<dd class="field-even"><p>brython</p>
-</dd>
-</dl>
-<p>from browser import load, timer, window
-load(‘../../_static/game.js’)
-load(‘../../_static/pygame.brython.js’)
+<textarea data-lang="python3" id="ac_l60_6_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython' style="visibility: hidden;">
+from browser import load, timer, window
+load('../../_static/game.js')
+load('../../_static/pygame.brython.js')
 gjs = window.gamejs
-gjs.ready()</p>
-<div class="system-message">
-<p class="system-message-title">System Message: SEVERE/4 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_6.rst</span>, line 42)</p>
-<p>Unexpected section title or transition.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">^^^^</span>
-</pre></div>
-</div>
-</div>
-<p>import pygame
-from pygame.locals import *</p>
-<p># Pygame to show keyevents
-# green box moves with arrow keys</p>
-<p># set up the colors
-BLACK = pygame.color.Color(‘black’)
-WHITE = pygame.color.Color(‘white’)
-GREEN = pygame.color.Color(‘green’)</p>
-<p>screen = pygame.display.set_mode((400,300))
+gjs.ready()
+
+^^^^
+import pygame
+from pygame.locals import *
+
+# Pygame to show keyevents
+# green box moves with arrow keys
+
+# set up the colors
+BLACK = pygame.color.Color('black')
+WHITE = pygame.color.Color('white')
+GREEN = pygame.color.Color('green')
+
+screen = pygame.display.set_mode((400,300))
 screen.fill(WHITE)
-pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))</p>
-<p>blockX = 100
-blockY = 100</p>
-<p>def main():</p>
-<blockquote>
-<div><p># keyboard event loop
-for event in pygame.event.get():</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_6.rst</span>, line 66)</p>
-<p>Unexpected indentation.</p>
+pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))
+
+blockX = 100
+blockY = 100
+
+def main():
+
+
+    # keyboard event loop
+    for event in pygame.event.get():
+        if event.type == pygame.KEYDOWN:
+            global blockX
+            global blockY
+            if event.key == pygame.K_LEFT:
+                blockX -= 10
+            if event.key == pygame.K_RIGHT:
+                blockX += 10
+            if event.key == pygame.K_UP:
+                blockY -= 10
+            if event.key == pygame.K_DOWN:
+                blockY += 10
+
+
+        screen.fill(WHITE)
+        pygame.draw.rect(screen, GREEN, pygame.Rect(blockX, blockY, 50, 50))
+
+        # draw the window onto the screen
+        pygame.display.update()
+
+
+
+
+pygame.init()
+
+timer1 = timer.set_interval(main,80)
+</textarea>
 </div>
-<blockquote>
-<div><dl>
-<dt>if event.type == pygame.KEYDOWN:</dt><dd><p>global blockX
-global blockY
-if event.key == pygame.K_LEFT:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_6.rst</span>, line 70)</p>
-<p>Unexpected indentation.</p>
 </div>
-<blockquote>
-<div><p>blockX -= 10</p>
-</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/PyZombis/PyZombis/_sources/lectures/TWP60/TWP60_6.rst</span>, line 71)</p>
-<p>Block quote ends without a blank line; unexpected unindent.</p>
-</div>
-<dl class="simple">
-<dt>if event.key == pygame.K_RIGHT:</dt><dd><p>blockX += 10</p>
-</dd>
-<dt>if event.key == pygame.K_UP:</dt><dd><p>blockY -= 10</p>
-</dd>
-<dt>if event.key == pygame.K_DOWN:</dt><dd><p>blockY += 10</p>
-</dd>
-</dl>
-</dd>
-</dl>
-<p>screen.fill(WHITE)
-pygame.draw.rect(screen, GREEN, pygame.Rect(blockX, blockY, 50, 50))</p>
-<p># draw the window onto the screen
-pygame.display.update()</p>
-</div></blockquote>
-</div></blockquote>
-<p>pygame.init()</p>
-<p>timer1 = timer.set_interval(main,80)</p>
-</div></blockquote>
 <p>MOUSEMOTION es un tipo de evento que se dispara cuando se mueve el mouse.</p>
 <p>MOUSEBUTTONDOWN es un tipo de evento que se activa cuando se presiona un botón del mouse.</p>
 <p>MOUSEBUTTONUP es un tipo de evento que se activa cuando se suelta un botón del mouse.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l60_6_2 data-question_label="6.1">
+<div data-component="activecode" id=ac_l60_6_2 data-question_label="6.2">
 <div id=ac_l60_6_2_question class="ac_question col-md-12">
 
 </div>

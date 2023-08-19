@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Crypto &#8212; PyZombis feat/pygame-lectures@1357ace</title>
+    <title>2. Crypto &#8212; PyZombis feat/pygame-lectures@b10c4a8</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis feat/pygame-lectures@1357ace
+          PyZombis feat/pygame-lectures@b10c4a8
         </a>
       </div>
     </div>
@@ -398,7 +398,7 @@ output = open(" crypto2_en.txt", "w")
 
 for line in text.readlines():
     for letter in line:
-        if letter in "aeiouAEIOU":
+        if letter in "aeiou":
             output.write("*")
         else:
             output.write(letter)
@@ -414,10 +414,8 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
         file = open(" crypto2_en.txt", "r")
-        text = """*st* *s th* t*xt f*l*
-y** **r m*d*fying
-s* th*t *ll v*w*ls
-*r* ch*ng*d t* "*"."""
+        text = """th*s *s th* t*xt f*l* y** *r* m*d*fy*ng s* th*t *ll v*w*ls *r* ch*ng*d t* "*".
+                """
 
         self.assertEqual(file.read().replace("\n", " ").rstrip(), text.strip(), f"Expected: {text}")
 
