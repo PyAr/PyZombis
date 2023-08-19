@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Using SQL &#8212; PyZombis main@b159eb7</title>
+    <title>1. Using SQL &#8212; PyZombis main@d2badc3</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis main@b159eb7
+          PyZombis main@d2badc3
         </a>
       </div>
     </div>
@@ -340,7 +340,7 @@ window.addEventListener('load', (event) => {
    locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.wasm`
    });
 
-   const dataPromise = fetch("../../_static/surfers.db").then(res => res.arrayBuffer());
+   const dataPromise = fetch("../../_static/surfers_en.db").then(res => res.arrayBuffer());
    const [SQL, buf] = await Promise.all([sqlPromise, dataPromise])
    window.Database = new SQL.Database(new Uint8Array(buf));
 </script><ul class="simple">
@@ -376,7 +376,7 @@ sys.path.append("../../_static")
 from sqlite3 import connect
 
 # initiate the connection and connect to the predefined surfers table
-database = connect('surfers.db')
+database = connect('surfers_en.db')
 
 
 # create a cursor and execute the query
@@ -392,7 +392,7 @@ if(rows!=None):
       print("ID    :",row['id'])
       print("Name :",row['name'])
       print("Country  :",row['country'])
-      print("Average  :",row['average'])
+      print("Average  :",row['media'])
       print("Style :",row['style'])
       print("Age  :",row['age'])
       print()
