@@ -83,3 +83,13 @@ Google babynames exercise
     myTests().main()
 
 
+|Creative Commons License|
+This work is licensed under a `Creative Commons Attribution 4.0
+International License <http://creativecommons.org/licenses/by/4.0/>`__.
+
+.. |Creative Commons License| image:: https://i.creativecommons.org/l/by/4.0/88x31.png
+   :target: http://creativecommons.org/licenses/by/4.0/
+
+
+
+Original exercise can be found at `Google Baby Names Exercise <https://developers.google.com/edu/python/exercises/baby-names?hl=en>`__.
