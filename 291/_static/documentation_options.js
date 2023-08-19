@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: 'b10c4a8db9500bb4081a44a1fc1f37482333b239-feat/pygame-lectures',
+    VERSION: '171d8c1db4ec56ea926d27a804a3171093f9ec80-feat/pygame-lectures',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',

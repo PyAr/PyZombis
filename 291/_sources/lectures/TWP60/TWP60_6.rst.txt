@@ -127,7 +127,7 @@ MOUSEBUTTONUP es un tipo de evento que se activa cuando se suelta un botón del 
     screen.fill(GREEN)
 
     font=pygame.font.SysFont('timesnewroman',30)
-    left_key = font.render('se hace clic en el botón izquierdo del ratón,True,BLACK)
+    left_key = font.render('se hace clic en el botón izquierdo del ratón',True,BLACK)
     right_key = font.render('se hace clic en el botón derecho del ratón',True,BLACK)
     mouse = font.render('El mouse se está moviendo',True,BLACK)
     button_down = font.render('Se suelta el mouse',True,BLACK)
