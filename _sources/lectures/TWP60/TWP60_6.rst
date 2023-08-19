@@ -29,6 +29,8 @@ Los tipos de eventos se enumeran a continuación:
 KEYDOWN es un tipo de evento que se dispara cuando se presiona una tecla. como cuando presionas una tecla en el teclado.
 
 KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando quitas el dedo de una tecla.
+
+
 .. activecode:: ac_l60_6_en
     :language: python3
     :python3_interpreter: brython
@@ -95,6 +97,7 @@ MOUSEMOTION es un tipo de evento que se dispara cuando se mueve el mouse.
 MOUSEBUTTONDOWN es un tipo de evento que se activa cuando se presiona un botón del mouse.
 
 MOUSEBUTTONUP es un tipo de evento que se activa cuando se suelta un botón del mouse.
+
 
 .. activecode:: ac_l60_6_2
     :language: python3
