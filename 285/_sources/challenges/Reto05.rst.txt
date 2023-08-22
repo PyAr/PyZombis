@@ -222,10 +222,10 @@ Objetivos:
 
     import unittest
 
-    class gradeMaze(unittest.TestCase):
+    class GradeMaze(unittest.TestCase):
 
         # This testcase has a solution, so it should return true
-        def testOne(self): 
+        def test_one(self): 
             newMaze = [
                         [0,0,0,0,0,0,1,0,0,0,1],
                         [1,1,2,1,1,0,1,1,1,1,0],
@@ -243,7 +243,7 @@ Objetivos:
             self.assertEqual(solve_maze(testMaze),True)
         
         # This testcase has no solution, so it should return false
-        def testTwo(self): 
+        def test_two(self): 
             newMaze = [
                         [0,0,0,0,0,0,1,0,0,0,1],
                         [0,1,1,1,1,0,1,1,1,1,0],
@@ -258,10 +258,10 @@ Objetivos:
                         [0,1,1,1,0,1,0,1,1,1,3]];
             testMaze = Maze(newMaze)
 
-            self.assertEqual(solve_maze(testMaze),False)
+            self.assertEqual(solve_maze(testMaze),False)            
 
 
-    suite = unittest.TestLoader().loadTestsFromTestCase(gradeMaze)
+    suite = unittest.TestLoader().loadTestsFromTestCase(GradeMaze)
     unittest.TextTestRunner(verbosity=0).run(suite) 
 
             

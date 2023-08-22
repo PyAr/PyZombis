@@ -5,7 +5,7 @@ PyMaze
 Goals:
 ------
 
-- **Complete the solveMaze function**
+- **Complete the solve_maze function**
 
     Description:
 
@@ -17,8 +17,8 @@ Goals:
 
 - **Complete the run function which handles key events to move player in maze**
 
-- Complete the `playMusic` function which takes audio from file `solveMaze.ogg` and plays on running the code
-    - file path for solveMusic is `../../audio/solveMaze.ogg`
+- Complete the `play_music` function which takes audio from file `solve_maze.ogg` and plays on running the code
+    - file path for solveMusic is `../../audio/solve_maze.ogg`
 
 .. raw:: html
 
@@ -71,65 +71,64 @@ Goals:
             for i in range(rows):
                 for j in range(cols):
 
-                    if self.maze[i][j]==1:
-                        pygame.draw.rect(screen,Color(0,0,0),pygame.Rect(j*50,i*50,50,50))
+                    if self.maze[i][j] == 1:
+
+                        pygame.draw.rect(screen, Color(
+                            0, 0, 0), pygame.Rect(j*50, i*50, 50, 50))
+
+                    elif self.maze[i][j] == 2:
+
+                        zomb = pygame.image.load('../_static/zomb.png')
+                        zomb = pygame.transform.scale(zomb, (50, 50))
+                        screen.blit(zomb, (j*50, i*50))
+                    
+                    elif self.maze[i][j] == 3:
+
+                        dest = pygame.image.load('../_static/dest.png')
+                        dest = pygame.transform.scale(dest, (50, 50))
+                        screen.blit(dest, (j*50, i*50))
 
                     else:
 
-                        if self.maze[i][j]==2:
+                        pygame.draw.rect(screen, Color(
+                            255, 255, 255), pygame.Rect(j*50, i*50, 50, 50))
+                    
 
-                            zomb = pygame.image.load('../_static/zomb.png')
-                            zomb = pygame.transform.scale(zomb,(50,50))
-                            screen.blit(zomb,(j*50,i*50))
+        def is_wall(self,x,y):
 
-                        else:
-
-                            if self.maze[i][j]==3:
-                            
-                                dest = pygame.image.load('../_static/dest.png')
-                                dest = pygame.transform.scale(dest,(50,50))
-                                screen.blit(dest,(j*50,i*50))
-
-                            else:
-
-                                pygame.draw.rect(screen,Color(255,255,255),pygame.Rect(j*50,i*50,50,50))
-
-
-        def isWall(self,x,y):
-
-            if self.maze[y][x]==1:
+            if self.maze[y][x] == 1:
                 return True
             else:
                 return False
         
 
-        def isZombie(self,x,y):
+        def is_zombie(self,x,y):
 
-            if self.maze[y][x]==2:
+            if self.maze[y][x] == 2:
                 return True
             else:
                 return False
         
 
-        def isDest(self,x,y):
+        def is_destination(self,x,y):
 
-            if self.maze[y][x]==3:
+            if self.maze[y][x] == 3:
                 return True
             else:
                 return False
         
 
-        def isOut(self,x,y):
+        def is_out(self,x,y):
         
-            if x<0 or x>=self.cols or y<0 or y>=self.rows:
+            if x<0 or x>=self.cols or y<0 or y >= self.rows:
                 return True
             else:
                 return False
         
 
-        def isSafe(self,x,y):
+        def is_safe(self,x,y):
 
-            if self.maze[x][y]==0 or self.maze[x][y]==3:
+            if self.maze[x][y] == 0 or self.maze[x][y] == 3:
                 return True
             else:
                 return False
@@ -140,12 +139,12 @@ Goals:
         def __init__(self):
             self.x=0
             self.y=0
-            self.image=pygame.image.load('../_static/human.png')
-            self.image=pygame.transform.scale(self.image,(50,50))
-            self.startx=0
-            self.starty=0
-            self.endx=10
-            self.endy=10
+            self.image  = pygame.image.load('../_static/human.png')
+            self.image  = pygame.transform.scale(self.image,(50,50))
+            self.startx = 0
+            self.starty = 0 
+            self.endx   = 10
+            self.endy   = 10
 
 
         def draw(self,screen,maze):
@@ -155,30 +154,30 @@ Goals:
 
         def move(self,x,y,screen,maze):
 
-            newX=self.x+x
-            newY=self.y+y
+            newX = self.x+x
+            newY = self.y+y
 
-            if maze.isOut(newX,newY):
+            if maze.is_out(newX,newY):
                 return
-            elif maze.isWall(newX,newY):
+            elif maze.is_wall(newX,newY):
                 return
-            elif maze.isZombie(newX,newY):
+            elif maze.is_zombie(newX,newY):
                 over()
                 timer.clear_interval(timer1)
-            elif maze.isDest(newX,newY):
+            elif maze.is_destination(newX,newY):
                 over()
                 timer.clear_interval(timer1)
             else:
-                self.x=newX
-                self.y=newY
+                self.x = newX
+                self.y = newY
                 maze.draw(screen)
                 screen.blit(self.image,(self.x*50,self.y*50))
                 return
             
 
-    scr = pygame.display.set_mode((550, 550))
-    font=pygame.font.SysFont('timesnewroman',30)
-    game=font.render('Game Over -\n Press run to Play Again',True, Color(0,0,0))
+    scr  = pygame.display.set_mode((550, 550))
+    font = pygame.font.SysFont('timesnewroman',30)
+    game = font.render('Game Over -\n Press run to Play Again',True, Color(0,0,0))
 
     def over():
         scr.blit(game,(0,0))
@@ -199,7 +198,7 @@ Goals:
         [1,1,1,1,1,1,1,1,1,3,1]];
 
     maze = Maze(playerMaze)
-    player=Player()
+    player = Player()
     player.draw(scr,maze)
 
     def run():
@@ -210,7 +209,7 @@ Goals:
 
 
 
-    def playMusic():
+    def play_music():
         # Play music here using pygame.mixer
 
 
@@ -221,7 +220,7 @@ Goals:
 
     timer1 = timer.set_interval(run, 100)
 
-    def solveMaze( maze ):
+    def solve_maze( maze ):
     
     
     
@@ -229,10 +228,10 @@ Goals:
     
     import unittest
     
-    class gradeMaze(unittest.TestCase):
+    class GradeMaze(unittest.TestCase):
 
         # This testcase has a solution, so it should return true
-        def testOne(self): 
+        def test_one(self): 
             newMaze = [
                         [0,0,0,0,0,0,1,0,0,0,1],
                         [1,1,2,1,1,0,1,1,1,1,0],
@@ -247,10 +246,10 @@ Goals:
                         [0,1,1,1,0,1,0,1,1,1,0]];
             testMaze = Maze(newMaze)
 
-            self.assertEqual(solveMaze(testMaze),True)
+            self.assertEqual(solve_maze(testMaze),True)
         
         # This testcase has no solution, so it should return false
-        def testTwo(self): 
+        def test_two(self): 
             newMaze = [
                         [0,0,0,0,0,0,1,0,0,0,1],
                         [0,1,1,1,1,0,1,1,1,1,0],
@@ -265,10 +264,10 @@ Goals:
                         [0,1,1,1,0,1,0,1,1,1,3]];
             testMaze = Maze(newMaze)
 
-            self.assertEqual(solveMaze(testMaze),False)
+            self.assertEqual(solve_maze(testMaze),False)
 
 
-    suite = unittest.TestLoader().loadTestsFromTestCase(gradeMaze)
+    suite = unittest.TestLoader().loadTestsFromTestCase(GradeMaze)
     unittest.TextTestRunner(verbosity=0).run(suite) 
 
             

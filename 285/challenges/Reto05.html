@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reto PyMaze &#8212; PyZombis feat/pymaze@d59f83a</title>
+    <title>Reto PyMaze &#8212; PyZombis feat/pymaze@9e79d22</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis feat/pymaze@d59f83a
+          PyZombis feat/pymaze@9e79d22
         </a>
       </div>
     </div>
@@ -549,10 +549,10 @@ def solve_maze(maze):
 
 import unittest
 
-class gradeMaze(unittest.TestCase):
+class GradeMaze(unittest.TestCase):
 
     # This testcase has a solution, so it should return true
-    def testOne(self):
+    def test_one(self):
         newMaze = [
                     [0,0,0,0,0,0,1,0,0,0,1],
                     [1,1,2,1,1,0,1,1,1,1,0],
@@ -570,7 +570,7 @@ class gradeMaze(unittest.TestCase):
         self.assertEqual(solve_maze(testMaze),True)
 
     # This testcase has no solution, so it should return false
-    def testTwo(self):
+    def test_two(self):
         newMaze = [
                     [0,0,0,0,0,0,1,0,0,0,1],
                     [0,1,1,1,1,0,1,1,1,1,0],
@@ -588,7 +588,7 @@ class gradeMaze(unittest.TestCase):
         self.assertEqual(solve_maze(testMaze),False)
 
 
-suite = unittest.TestLoader().loadTestsFromTestCase(gradeMaze)
+suite = unittest.TestLoader().loadTestsFromTestCase(GradeMaze)
 unittest.TextTestRunner(verbosity=0).run(suite)
 </textarea>
 </div>
