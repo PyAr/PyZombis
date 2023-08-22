@@ -63,6 +63,7 @@ Objetivos:
             self.rows = self.maze.__len__()
             self.cols = self.maze[0].__len__()
 
+
         def draw(self, screen):
 
             rows = self.rows
@@ -71,29 +72,27 @@ Objetivos:
                 for j in range(cols):
 
                     if self.maze[i][j] == 1:
+
                         pygame.draw.rect(screen, Color(
                             0, 0, 0), pygame.Rect(j*50, i*50, 50, 50))
 
+                    elif self.maze[i][j] == 2:
+
+                        zomb = pygame.image.load('../_static/zomb.png')
+                        zomb = pygame.transform.scale(zomb, (50, 50))
+                        screen.blit(zomb, (j*50, i*50))
+                    
+                    elif self.maze[i][j] == 3:
+
+                        dest = pygame.image.load('../_static/dest.png')
+                        dest = pygame.transform.scale(dest, (50, 50))
+                        screen.blit(dest, (j*50, i*50))
+
                     else:
 
-                        if self.maze[i][j] == 2:
-
-                            zomb = pygame.image.load('../_static/zomb.png')
-                            zomb = pygame.transform.scale(zomb, (50, 50))
-                            screen.blit(zomb, (j*50, i*50))
-
-                        else:
-
-                            if self.maze[i][j] == 3:
-
-                                dest = pygame.image.load('../_static/dest.png')
-                                dest = pygame.transform.scale(dest, (50, 50))
-                                screen.blit(dest, (j*50, i*50))
-
-                            else:
-
-                                pygame.draw.rect(screen, Color(
-                                    255, 255, 255), pygame.Rect(j*50, i*50, 50, 50))
+                        pygame.draw.rect(screen, Color(
+                            255, 255, 255), pygame.Rect(j*50, i*50, 50, 50))
+                        
 
         def is_wall(self, x, y):
 
@@ -102,12 +101,14 @@ Objetivos:
             else:
                 return False
 
+
         def is_zombie(self, x, y):
 
             if self.maze[y][x] == 2:
                 return True
             else:
                 return False
+
 
         def is_destination(self, x, y):
 
@@ -116,6 +117,7 @@ Objetivos:
             else:
                 return False
 
+
         def is_out(self, x, y):
 
             if x < 0 or x >= self.cols or y < 0 or y >= self.rows:
@@ -123,12 +125,14 @@ Objetivos:
             else:
                 return False
 
+
         def is_safe(self, x, y):
 
             if self.maze[x][y] == 0 or self.maze[x][y] == 3:
                 return True
             else:
                 return False
+
 
     class Player:
 
@@ -141,6 +145,7 @@ Objetivos:
             self.starty = 0
             self.endx = 10
             self.endy = 10
+
 
         def draw(self, screen, maze):
             maze.draw(screen)
@@ -169,6 +174,7 @@ Objetivos:
                 screen.blit(self.image, (self.x*50, self.y*50))
                 return
 
+
     scr = pygame.display.set_mode((550, 550))
     font = pygame.font.SysFont('timesnewroman', 30)
     game = font.render('Game Over -\n Press run to Play Again', True, Color(0, 0, 0))
@@ -176,6 +182,7 @@ Objetivos:
     def over():
         scr.blit(game, (0, 0))
         pygame.display.update()
+
 
     playerMaze = [
         [0, 0, 0, 0, 0,0,0,0,1,0,1],
@@ -199,8 +206,10 @@ Objetivos:
 
         pygame.display.update()
 
+
     def play_music():
         # Reproduce música aquí usando pygame.mixer
+
 
     pygame.init()
 
