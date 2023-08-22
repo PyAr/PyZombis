@@ -216,6 +216,9 @@ Objetivos:
     timer1 = timer.set_interval(run, 100)
 
     def solve_maze(maze):
+    # devuelve True si el laberinto tiene solución o
+    # el laberinto tiene una ruta desde el inicio hasta el destino
+    # más devuelve False
 
 
     ====
