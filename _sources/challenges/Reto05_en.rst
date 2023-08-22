@@ -221,6 +221,9 @@ Goals:
     timer1 = timer.set_interval(run, 100)
 
     def solve_maze( maze ):
+    # returns True if the maze is Solvable or 
+    # the maze has a route from start to destination
+    # else returns False
     
     
     
