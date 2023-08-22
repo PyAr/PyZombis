@@ -15,4 +15,24 @@ def test_TWP23_ac_5(page):
 
     # Check whether it passed all unit tests
     page.hover("#ac_l23_2b >> text=You passed:")
-    assert page.inner_text("#ac_l23_2b >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#ac_l23_2b >> text=You passed:") == "You passed: 100.0% of the tests"
+
+
+def test_TWP23_ac_5_en(page):
+    page.goto("lectures/TWP23/TWP23_2_en.html")
+
+    # Do the exercise
+    page.click("#ac_l23_2b_en >> text=aeiou")
+
+    page.press("#ac_l23_2b_en >> text=aeiou", "ArrowUp")
+    page.press("#ac_l23_2b_en >> text=aeiou", "ArrowLeft")
+    page.type("#ac_l23_2b_en >> text=aeiou", ".lower()")
+
+    # Run the exercise
+    page.click("#ac_l23_2b_en >> *css=button >> text=Run")
+
+    # Check whether it passed all unit tests
+    page.hover("#ac_l23_2b_en >> text=You passed:")
+    assert page.inner_text(
+        "#ac_l23_2b_en >> text=You passed:") == "You passed: 100.0% of the tests"

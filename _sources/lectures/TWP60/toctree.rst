@@ -20,3 +20,4 @@ Pygame
    TWP60_3.rst
    TWP60_4.rst
    TWP60_5.rst
+   TWP60_6.rst

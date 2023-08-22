@@ -13,13 +13,13 @@ Files
 
 .. code-block:: python
 
-    archivo = open("numeros.txt", "w")
-    for numero in range(1, 31):
-        archivo.write("%d\n" % numero)
-    archivo.close()
+    archive = open("numbers.txt", "w")
+    for numbers in range(1, 31):
+        archivo.write("%d\n" % numbers)
+    archive.close()
 
 
-.. datafile:: numeros.txt
+.. datafile:: numbers.txt
     :cols: 20
     :rows: 10
     :edit:
@@ -27,43 +27,43 @@ Files
 
 .. activecode:: ac_l23_1a_en
     :nocodelens:
-    :datafile: numeros.txt
+    :datafile: numbers.txt
     :enabledownload:
 
     Try the previous program:
 
     ~~~~
-    archivo = open("numeros.txt", "w")
-    for numero in range(1, 31):
-        archivo.write("%d\n" % numero)
-    archivo.close()
+    archive = open("numbers.txt", "w")
+    for numbers in range(1, 31):
+        archive.write("%d\n" % numbers)
+    archive.close()
 
 
     ====
-    print("Data has been written to the file numeros.txt")
+    print("Data has been written to the file numbers.txt")
 
 
-+ When executing the previous program, the file `numeros.txt` is modified.
++ When executing the previous program, the file `numbers.txt` is modified.
 + The `w` mode creates the file if it does not exist, if it exists it will be deleted and rewritten.
 
 
 .. activecode:: ac_l23_1b_en
     :nocodelens:
-    :datafile: numeros.txt
+    :datafile: numbers.txt
     :enabledownload:
     
-    You have already written to the file ``"numeros.txt"``. Now you are going to read the data you have written: 
+    You have already written to the file ``"numbers.txt"``. Now you are going to read the data you have written: 
 
     ~~~~
-    archivo = open("numeros.txt", "r")
-    for linea in archivo.readlines():
-        print(linea)
-    archivo.close()
+    archive = open("numbers.txt", "r")
+    for line in archive.readlines():
+        print(line)
+    archive.close()
 
 + `readlines()` generates a list where each element is a read line.
-+ The `numeros.txt` file now has written numbers, each number on a different line.
++ The `numbers.txt` file now has written numbers, each number on a different line.
   This line break was written with the special character `\n`.
-+ If we want to remove this character from the end, we can use `print(linea.rstrip())`.
++ If we want to remove this character from the end, we can use `print(line.rstrip())`.
   Try to print the text lines in this way.
 
 
@@ -72,15 +72,15 @@ Pythonic way
 
 .. code-block:: python
 
-    with open("numeros.txt", "r") as f:
+    with open("numbers.txt", "r") as f:
         print(f.read())
 
 .. activecode:: ac_l23_1c_en
     :nocodelens:
-    :datafile: numeros.txt
+    :datafile: numbers.txt
     :enabledownload:
 
-    with open("numeros.txt", "r") as f:
+    with open("numbers.txt", "r") as f:
         print(f.read())
 
 

@@ -12,7 +12,7 @@ The marker...
 Tracking 3 scores is complicated
 ------------------------------------------
 
-..  datafile:: surf2.txt
+..  datafile:: surf2_en.txt
     :hide: 
       
     Johny 8.65
@@ -25,10 +25,10 @@ Tracking 3 scores is complicated
 
 ..  activecode:: ac_l37_3_en
     :nocodelens:
-    :datafile: surf2.txt
+    :datafile: surf2_en.txt
     :stdin:
    
-    file = open("surf2.txt")
+    file = open("surf2_en.txt")
     first = 0
     second = 0
     third = 0

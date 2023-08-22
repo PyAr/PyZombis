@@ -16,4 +16,26 @@ def test_quiz6_1(page):
     page.click("#q6_1 >> *css=button >> text=Run")
 
     page.hover("#q6_1 >> text=You passed:")
-    assert page.inner_text("#q6_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+    assert page.inner_text(
+        "#q6_1 >> text=You passed:") == "You passed: 100.0% of the tests"
+
+
+def test_quiz_6_en(page):
+    page.goto("quiz/Quiz6_en.html")
+
+    page.click("text=def sleep(weekday, holiday):")
+    page.keyboard.press("ArrowDown")
+    page.keyboard.press("Tab")
+
+    page.keyboard.type("if not weekday or holiday:")
+    page.keyboard.press("Enter")
+    page.keyboard.type("return True")
+    page.keyboard.press("Enter")
+    page.keyboard.type("return False")
+
+    # Run an check it passed all unit tests
+    page.click("#q6_1_en >> *css=button >> text=Run")
+
+    page.hover("#q6_1_en >> text=You passed:")
+    assert page.inner_text(
+        "#q6_1_en >> text=You passed:") == "You passed: 100.0% of the tests"
