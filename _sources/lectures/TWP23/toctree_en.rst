@@ -1,5 +1,5 @@
 =======================
-Archivos y diccionarios
+Files and dictionaries
 =======================
 
 
