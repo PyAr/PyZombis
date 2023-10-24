@@ -1,6 +1,6 @@
-================
-Clases y objetos
-================
+===================
+Classes and Objects
+===================
 
 
 .. image:: ../img/TWP10_001.jpeg
