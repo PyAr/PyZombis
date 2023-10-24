@@ -11,8 +11,8 @@ MVC
 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 
@@ -24,8 +24,8 @@ HEAD-Ex Logística y Transporte
 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. code-block :: python
@@ -45,8 +45,8 @@ HEAD-Ex Logística y Transporte
 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. code-block :: python
@@ -73,8 +73,8 @@ HEAD-Ex Logística y Transporte
    app.mainloop()
 
 
-HEAD-Ex Logística e Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. image:: img/TWP52_005.jpg
@@ -84,8 +84,8 @@ HEAD-Ex Logística e Transporte
    :alt: 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. image:: img/TWP52_006.jpg
@@ -95,8 +95,8 @@ HEAD-Ex Logística y Transporte
    :alt: 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 + Radio Buttons
 
@@ -108,8 +108,8 @@ HEAD-Ex Logística y Transporte
    :alt: 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. image:: img/TWP52_008.jpg
@@ -119,8 +119,8 @@ HEAD-Ex Logística y Transporte
    :alt: 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. image:: img/TWP52_009.jpg
@@ -130,8 +130,8 @@ HEAD-Ex Logística y Transporte
    :alt: 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. image:: img/TWP52_013.jpg
@@ -141,8 +141,8 @@ HEAD-Ex Logística y Transporte
    :alt: 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 .. image:: img/TWP52_014.png
    :height: 4.176cm
@@ -150,9 +150,9 @@ HEAD-Ex Logística y Transporte
    :align: center
    :alt:
 
-+ Modelo son los datos almacenados
-+ Vision es el botón de radio presentado
-+ Control es el código tkinter que gestiona todo esto
++ Model is the stored data
++ Vision is the featured radio button
++ Control is the tkinter code that manages all this
 
 .. code-block :: python
 
@@ -164,9 +164,8 @@ HEAD-Ex Logística y Transporte
    Radiobutton(app, variable = destino , text = 'Seattle, WA', value = 'Seattle , WA').pack()
 
 
-HEAD-Ex Logística e Transporte
-==============================
-
+HEAD-Ex Logistics and Transportation
+====================================
 
 .. image:: img/TWP52_016.jpg
    :height: 14.578cm
@@ -175,8 +174,8 @@ HEAD-Ex Logística e Transporte
    :alt: 
 
 
-HEAD-Ex Logística e Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. image:: img/TWP52_017.png
@@ -185,11 +184,11 @@ HEAD-Ex Logística e Transporte
    :align: center
    :alt: 
 
-+ Y ahora??
++ And now??
 
 
-HEAD-Ex Logística e Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. code-block :: python
@@ -215,8 +214,8 @@ HEAD-Ex Logística e Transporte
       return destinos
 
 
-HEAD-Ex Logística e Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. code-block :: python
@@ -243,8 +242,8 @@ HEAD-Ex Logística e Transporte
 
 
 
-HEAD-Ex Logística y Transporte
-==============================
+HEAD-Ex Logistics and Transportation
+====================================
 
 
 .. image:: img/TWP52_020.jpg
@@ -254,8 +253,8 @@ HEAD-Ex Logística y Transporte
    :alt: 
 
 
-revisión
-========
+review
+======
 
 
 
