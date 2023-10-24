@@ -1,5 +1,5 @@
 ==================
-Revisión general 1
+General revision 1
 ==================
 
 
