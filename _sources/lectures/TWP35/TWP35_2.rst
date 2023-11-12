@@ -21,7 +21,7 @@ Nueva sugerencia de programa
     
     opcion = input("¿Quieres comprar ahora? (S/N)")
     if opcion.lower() == "s":
-        pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+        pagina = urllib.request.urlopen("https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices-loyalty.html")
         texto = pagina.read()
         # El método .find() devuelve la posición de la primer ocurrencia
         # de la cadena que se le pase como parámetro.
@@ -38,7 +38,7 @@ Nueva sugerencia de programa
     else:
         precio = 99.99
         while precio >= 4.74:
-            pagina = urllib.request.urlopen("https://cors.bridged.cc/http://beans.itcarlow.ie/prices-loyalty.html")
+            pagina = urllib.request.urlopen("https://api.allorigins.win/raw?url=http://beans.itcarlow.ie/prices-loyalty.html")
             texto = pagina.read()
             donde = texto.find("$")
             inicio = donde + 1
