@@ -30,8 +30,8 @@ Given the following statements:
 .. fillintheblank:: t5_2
    :casei:
 
-   Fill in the blanks to make the formula for total sales
-   
+   Fill in the blanks to make the formula for total sales which is price multiplied by activity
+
    sales = |blank|*|blank|.
 
    -   :price: Your answer is correct, good job!
