@@ -5,7 +5,7 @@ Welcome to PyZombis
 A Python Course in Spanish
 --------------------------
 
-Contenidos:
+Contents:
 
 .. toctree::
    :maxdepth: 1

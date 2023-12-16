@@ -1,6 +1,6 @@
-================
-Interfaz gráfica
-================
+========================
+Graphical User Interface
+========================
 
 
 .. image:: ../img/TWP10_001.jpeg

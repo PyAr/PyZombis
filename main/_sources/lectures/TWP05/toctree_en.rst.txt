@@ -1,5 +1,5 @@
 ============================
-Variables y entrada de datos
+Variables and Input of Data
 ============================
 
 

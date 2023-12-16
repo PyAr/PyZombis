@@ -1,6 +1,6 @@
-==============
-Bases de datos
-==============
+=========
+Databases
+=========
 
 
 .. image:: ../img/TWP10_001.jpeg
