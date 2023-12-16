@@ -1,6 +1,6 @@
-====================
-Hackeando con Python
-====================
+===================
+Hacking with Python
+===================
 
 .. image:: ../img/TWP10_001.jpeg
     :height: 14.925cm

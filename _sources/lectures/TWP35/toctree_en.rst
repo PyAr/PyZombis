@@ -1,6 +1,6 @@
-=====================
-Revisión de Funciones
-=====================
+===============
+Function Review
+===============
 
 
 .. image:: ../img/TWP10_001.jpeg

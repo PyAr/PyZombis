@@ -1,6 +1,6 @@
-===========
-Excepciones
-===========
+==========
+Exceptions
+==========
 
 
 .. image:: ../img/TWP10_001.jpeg
