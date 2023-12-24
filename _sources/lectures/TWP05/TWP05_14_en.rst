@@ -19,6 +19,25 @@ Desktop testing or simulation
     600
    ===== ======== ======
 
+Given the following statements:
+
+.. code-block:: c
+   :linenos:
+
+   price = 10
+   quantity = 20
+
+.. fillintheblank:: t5_2
+   :casei:
+
+   Fill in the blanks to make the formula for total sales which is price multiplied by activity
+
+   sales = |blank|*|blank|.
+
+   -   :price: Your answer is correct, good job!
+       :x: Your answer is incorrect, please try again.
+   -   :quantity: Your answer is correct, good job!
+       :x: Your answer is incorrect, please try again.
 
 Don't rush desktop testing
 --------------------------------

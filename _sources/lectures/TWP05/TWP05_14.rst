@@ -21,6 +21,25 @@ Prueba de escritorio o simulación
    600
    ====== ====== ========
 
+Given the following statements:
+
+.. code-block:: c
+   :linenos:
+
+   precio = 10
+   cantidad = 20
+
+.. fillintheblank:: t5_1
+   :casei:
+
+   Complete los espacios en blanco para hacer la fórmula para las ventas totales, que es el precio multiplicado por la actividad.
+
+   ventas = |blank|*|blank|.
+
+   -   :precio: Tu respuesta es correcta, ¡buen trabajo!
+       :x: Tu respuesta es incorrecta, intenta nuevamente.
+   -   :cantidad: Tu respuesta es correcta, ¡buen trabajo!
+       :x: Tu respuesta es incorrecta, intenta nuevamente.
 
 No tengas prisa por la prueba de escritorio
 -------------------------------------------
