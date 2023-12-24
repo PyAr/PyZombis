@@ -2,6 +2,15 @@
 Reto Pygame -Tirador de zombies
 ================================
 
+Este reto consiste en modificar el siguiente programa en Python para hacerlo más realista:
+
+#. los zombis no caen del cielo, deberían moverse de derecha a izquierda
+#. los zombis en general caminan en linea recta
+#. los disparos deberían ir de izquierda a derecha
+#. se debería poder disparar repetidas veces (mas seguido)
+
+Cuando este terminado comparta el código con otros mentores y compañeros para una evaluación grupal.
+
 .. raw:: html
 
    <script src='../_static/game.js'></script>
