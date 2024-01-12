@@ -54,4 +54,3 @@ Contenidos:
    challenges/Reto03.rst
    challenges/Reto04.rst
    challenges/Reto05.rst
-   challenges/Reto06.rst
