@@ -44,5 +44,4 @@ Nested Structures
     print("Telephone bill : $%6.2f" % (minutes * price))
 
 + Note that nested structures can grow.
-+ Python, given its characteristics, provides the "elif" clause.
 + It is used to check multiple conditions.
