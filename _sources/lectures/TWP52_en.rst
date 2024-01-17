@@ -258,7 +258,7 @@ review
 
 
 
-+ MVC - Model, View, Control
++ MVC - Model, View, Controller
 + Entry()
 + Texto()
 + StringVar()
