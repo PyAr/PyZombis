@@ -1,0 +1,20 @@
+Formas de iterar
+================
++ Existen diversas formas de iterar.
++ Todas siguen el siguiente patrón ``for <var> in <secuencia>``.
+
+
+.. activecode:: ac_l40_9
+    :nocodelens:
+    :stdin:
+
+    print(list(range(10)))
+
+    for k in range(10):
+        print(k, end=" ")
+
+    for k in [0, 1, 2, 3]:
+        print(k, end=" ")
+
+    for k in "aguacate":
+        print(k + k, end=" ")
