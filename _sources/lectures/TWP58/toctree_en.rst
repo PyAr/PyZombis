@@ -11,7 +11,7 @@ DJ Mix 2 revisión orientada a objetos
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Content
    :maxdepth: 1
    :numbered:
 

@@ -11,7 +11,7 @@ General review 1
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Content
    :maxdepth: 1
    :numbered:
 
