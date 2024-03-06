@@ -12,7 +12,8 @@ The documentation for the `TasteDive API <https://tastedive.com/read/api>`_.
 
 .. activecode:: ac_l45_3a_en
     :nocodelens:
-    :language: python
+    :language: python3
+    :python3_interpreter: brython
 
     In this case, we will use the ``requests`` library to make the API request. The base url 
     is ``"https://tastedive.com/api/similar"``. To this url, a parameter ``q`` with the 
@@ -20,26 +21,30 @@ The documentation for the `TasteDive API <https://tastedive.com/read/api>`_.
     Note that after the base url, a ``?`` is written to indicate that the parameters follow.
 
     ~~~~
-    import requests
+    import urllib.request
+    import urllib.parse
     import json
 
     api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    proxy = "https://api.allorigins.win/raw?url="
 
     # The parameters that will be passed to the url are written inside a dictionary
     parameters = {"q": "ariana grande"}
 
+    # We encode the parameters
+    params = urllib.parse.urlencode(parameters)
+
     # We request the data from the api
-    response = requests.get(proxy + api_url, params=parameters)
+    response = urllib.request.urlopen(proxy + api_url + '?' + params)
 
-    # Now we print the url
-    print(response.url)
-    print()
+    # We read the response
+    data = response.read()
 
-    # We transform the json-formatted data to Python data
-    data = json.loads(response.text)
+    # We parse the JSON data
+    json_data = json.loads(data)
 
-    print(data)
+    # Now we print the data
+    print(json.dumps(json_data, indent=4))
     
 
 In the previous example, you could see that the API returns text, which if passed through ``json.loads`` 
@@ -47,6 +52,7 @@ transforms into a Python dictionary. However, it is not entirely readable. This 
 ``json.dumps``.
 
 .. activecode:: ac_l45_3b_en
+    :nocodelens:
     :language: python3
     :python3_interpreter: brython
     
@@ -60,7 +66,8 @@ transforms into a Python dictionary. However, it is not entirely readable. This 
     import json
 
     api_url = "https://tastedive.com/api/similar?"
-    proxy = "https://cors.bridged.cc/"
+    proxy = "https://api.allorigins.win/raw?url="
+
     # The following line is for the url parameters
     parameters = urllib.parse.urlencode({"q": "coldplay"})
 
@@ -107,7 +114,7 @@ The following exercise comes with automatic grading.
     import json
 
     api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    proxy = "https://api.allorigins.win/raw?url="
 
     # Add the parameters
     parameters = {}
@@ -140,8 +147,8 @@ The following exercise comes with automatic grading.
         def testOne(self):
             self.assertEqual(
                 request_url,
-                "https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
-                "Testing that the url is: https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                "https://api.allorigins.win/raw?url=https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                "Testing that the url is: https://api.allorigins.win/raw?url=https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
             )
             self.assertEqual(results, 5, "Testing that results is assigned correctly.")
             self.assertEqual(len(similar_movies), 5, "Testing that similar_movies are: 5")

@@ -5,6 +5,7 @@ Testing the University Domains API
 domains, names, and countries of most universities around the world.
 
 .. activecode:: ac_l45_4a_en
+    :nocodelens:
     :language: python3
     :python3_interpreter: brython
 
@@ -16,7 +17,7 @@ domains, names, and countries of most universities around the world.
     import urllib.parse
     import json
 
-    api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search?"
+    api_url = "http://universities.hipolabs.com/search?"
     params = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
 
     request = urllib.request.urlopen(api_url + params)
@@ -35,7 +36,7 @@ domains, names, and countries of most universities around the world.
     import requests
     import json
 
-    api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search"
+    api_url = "http://universities.hipolabs.com/search?"
     params = {"country": "colombia"}
 
     request = requests.get(api_url, params=params)

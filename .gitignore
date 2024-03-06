@@ -3,7 +3,7 @@ sphinx_settings.json
 venv/
 env/
 .gitignore
-
+.venv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

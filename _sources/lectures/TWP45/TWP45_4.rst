@@ -5,6 +5,7 @@ Probando la API de University Domains
 contiene  dominios, nombres y países de la mayoría de las universidades del mundo.
 
 .. activecode:: ac_l45_4a
+    :nocodelens:
     :language: python3
     :python3_interpreter: brython
 
@@ -16,7 +17,7 @@ contiene  dominios, nombres y países de la mayoría de las universidades del mu
     import urllib.parse
     import json
 
-    api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search?"
+    api_url = "http://universities.hipolabs.com/search?"
     parametros = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
 
     solicitud = urllib.request.urlopen(api_url + parametros)
@@ -35,7 +36,7 @@ contiene  dominios, nombres y países de la mayoría de las universidades del mu
     import requests
     import json
 
-    api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search"
+    api_url = "http://universities.hipolabs.com/search?"
     parametros = {"country": "colombia"}
 
     solicitud = requests.get(api_url, params=parametros)

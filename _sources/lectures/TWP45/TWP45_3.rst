@@ -13,7 +13,8 @@ La documentación de la API de `TasteDive <https://tastedive.com/read/api>`_.
 
 .. activecode:: ac_l45_3a
     :nocodelens:
-    :language: python
+    :language: python3
+    :python3_interpreter: brython
 
     En este caso, utilizaremos la librería ``requests`` para hacer la solicitud a la API. La url base 
     es ``"https://tastedive.com/api/similar"``. A esta url se le va a pasar un parámetro ``q`` con el 
@@ -21,26 +22,30 @@ La documentación de la API de `TasteDive <https://tastedive.com/read/api>`_.
     Note que después de la url base se escribe un ``?`` para indicar que siguen los parámetros.
 
     ~~~~
-    import requests
+    import urllib.request
+    import urllib.parse
     import json
 
     api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    proxy = "https://api.allorigins.win/raw?url="
 
-    # Los parámetros que se le pasaran a la url los escribimos dentro de un diccionario
-    parametros = {"q": "ariana grande"}
+    # Los parámetros que se pasarán a la url se escriben dentro de un diccionario.
+    parámetros = {"q": "ariana grande"}
 
-    # Solicitamos a la api los datos
-    respuesta = requests.get(proxy + api_url, params=parametros)
+    #Codificamos los parámetros
+    parámetros = urllib.parse.urlencode(parámetros)
 
-    # Ahora imprimimos la url
-    print(respuesta.url)
-    print()
+    # Solicitamos los datos de la api
+    respuesta = urllib.request.urlopen(proxy + api_url + '?' + parámetros)
 
-    # Transformamos los datos de formato json a Python
-    datos = json.loads(respuesta.text)
+    # Leemos la respuesta
+    datos = respuesta.leer()
 
-    print(datos)
+    # Analizamos los datos JSON
+    json_data = json.loads(datos)
+
+    # Ahora imprimimos los datos
+    print(json.dumps(json_data, indent=4))
     
 
 En el ejemplo anterior pudo apreciar que la API regresa un texto, que si lo pasamos por ``json.loads`` 
@@ -48,6 +53,7 @@ se transforma a un diccionario de Python. Sin embargo, no es del todo legible. E
 ``json.dumps``.
 
 .. activecode:: ac_l45_3b
+    :nocodelens:
     :language: python3
     :python3_interpreter: brython
     
@@ -62,7 +68,8 @@ se transforma a un diccionario de Python. Sin embargo, no es del todo legible. E
     import json
 
     api_url = "https://tastedive.com/api/similar?"
-    proxy = "https://cors.bridged.cc/"
+    proxy = "https://api.allorigins.win/raw?url="
+
     # La siguiente línea es para los parámetros de la url.
     parametros = urllib.parse.urlencode({"q": "coldplay"})
 
@@ -111,7 +118,8 @@ El siguiente ejercicio viene con calificación automática.
     import json
 
     api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    proxy = "https://api.allorigins.win/raw?url="
+
 
     # Agregue los parámetros
     parametros = {}
@@ -144,8 +152,8 @@ El siguiente ejercicio viene con calificación automática.
         def testOne(self):
             self.assertEqual(
                 solicitud_url,
-                "https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
-                "Probando que la url sea: https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                "https://api.allorigins.win/raw?url=https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                "Probando que la url sea: https://api.allorigins.win/raw?url=https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
             )
             self.assertEqual(resultados, 5, "Probando que resultados esté asignado correctamente.")
             self.assertEqual(len(peliculas_similares), 5, "Probando que peliculas_similares sean: 5")

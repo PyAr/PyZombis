@@ -17,7 +17,7 @@ In this exercise we are going to access Reddit to obtain data like the one in th
     import json
     
     # The Reddit URL we'll access
-    url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
+    url = "https://api.allorigins.win/raw?url=http://www.reddit.com/r/Python/.json"
     resp = urllib.request.urlopen(url).read()
     
     # The response is in JSON format, it needs to be transformed 
