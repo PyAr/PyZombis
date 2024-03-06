@@ -31,3 +31,10 @@ Usando un messagebox
    :width: 13.348cm
    :align: center
    :alt: 
+
+.. poll:: TWP54
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?

@@ -31,3 +31,10 @@ Using a messagebox
    :width: 13.348cm
    :align: center
    :alt:
+
+.. poll:: TWP54E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?

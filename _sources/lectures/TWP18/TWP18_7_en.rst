@@ -40,3 +40,10 @@ Pair programming
     :width: 18.201cm
     :align: center
     :alt: 
+
+.. poll:: TWP18E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?
