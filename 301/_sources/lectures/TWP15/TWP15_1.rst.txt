@@ -1,0 +1,19 @@
+Repeticiones
+============
+
+
+.. image:: ../img/TWP15_001.jpg
+   :height: 15.602cm
+   :width: 16.801cm
+   :align: center
+   :alt: 
+
+.. raw:: html
+   
+   <br/>
+
+.. image:: ../img/TWP15_002.jpeg
+   :height: 19.049cm
+   :width: 12.668cm 
+   :align: center
+   :alt: 

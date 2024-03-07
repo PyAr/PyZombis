@@ -1,0 +1,48 @@
+Ordenar la lista sería mejor
+============================
+
+..  image:: ../img/TWP37_016.jpg
+    :height: 12.09cm
+    :width: 20.531cm
+    :align: center
+    :alt:
+
+
+Ordenar es más fácil en la memoria
+----------------------------------
+
++ Los datos del disco son persistentes: si tira del cable de la toma de corriente,  la computadora no olvidará la información grabada en el disco.
++ Los datos en la memoria son mucho más rápidos, pero no persistentes: los datos en la memoria desaparecen cuando sale de su programa o cuando el la computadora está apagada.
++ Compensación de diseño: persistencia x velocidad.
+
+
+Primero: lea los datos en la memoria
+------------------------------------
+
+..  image:: ../img/TWP37_017.jpg
+    :height: 9.55cm
+    :width: 21.457cm
+    :align: center
+    :alt:
+
+
+Wow, usemos un tren de datos
+----------------------------
+
++ Matriz, lista, vector son nombres comunes para un lote completo de datos.
++ Solo necesito una sola variable para todo el tren de datos.
+
+
+..  image:: ../img/TWP37_018.jpg
+    :height: 7.4cm
+    :width: 9.632cm
+    :align: center
+    :alt:
+
+
+Volviendo al surf ...
+---------------------
+
++ Podemos crear una lista ``puntuaciones``.
++ Para insertar cada nueva puntuación, use ``.append()``
++ El mejor puesto serán las ``puntuaciones[0]``, ``puntuaciones[1]`` y ``puntuaciones[2]``.
