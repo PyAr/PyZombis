@@ -18,7 +18,34 @@ def test_l45_1(page):
     # Test the src attribute from image matches the Facebook URL
     assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
 
+@pytest.mark.vcr()
+def test_reddit_activity(page):
+    # Go to TWP45_2 page
+    page.goto("lectures/TWP45/TWP45_2.html")
 
+    # Run the exercise
+    page.click("#ac_l45_2 >> *css=button >> text=Save & Run")
+
+    # Wait for the output iframe to load
+    page.wait_for_load_state("networkidle")
+
+    # Select the output iframe
+    iframe = page.query_selector(
+        '//*[@id="ac_l45_2"]/div/div[5]/iframe').content_frame()
+
+    # Get the Reddit titles and number of comments
+    titles = iframe.query_selector_all(".reddit-title")
+    num_comments = iframe.query_selector_all(".reddit-comments")
+
+    # Check if there are any visible Reddit titles and number of comments
+    assert len(titles) > 0, "No Reddit titles found. CORS issue detected."
+    assert len(num_comments) > 0, "No number of comments found. CORS issue detected."
+
+    # Check for any JavaScript errors in the console
+    console_errors = page.evaluate("() => window.errors")
+    assert not console_errors, f"JavaScript errors found: {console_errors}"
+
+ 
 @pytest.mark.vcr()
 def test_l45_3(page):
     # Go to TWP45 page
