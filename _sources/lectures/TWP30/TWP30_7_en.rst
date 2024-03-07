@@ -1,15 +1,15 @@
 Python Tools
 ======================
 
-+ Conditions: Utilized ``if``, ``elif``, and ``else`` for conditional statements.
-+ Looping: Employed the ``while`` keyword for loop iterations.
-+ Assignment operator: Used ``=`` for assigning values to variables.
-+ Equality operator: Checked for equality using ``==``.
-+ Inequality operator: Determined inequality with ``!=``.
-+ Message display: Output messages with the ``print()`` function.
-+ User input: Acquired user input using ``input()``.
-+ Integer conversion: Converted input to integers using ``int()``.
-+ Random integer generation: Produced random integers with ``randint()``.
++ Conditions: ``if``, ``elif``, ``else``
++ Loop: ``while``
++ Assignment operator: ``=``
++ Equality operator: ``==``
++ Inequality operator: ``!=``
++ Display a message: ``print()``
++ Read user input: ``input()``
++ Convert to integer: ``int()``
++ Generate a random integer: ``randint()``
 
 These are some of the tools. There are many more!
 
