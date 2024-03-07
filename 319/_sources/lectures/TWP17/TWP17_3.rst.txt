@@ -1,0 +1,43 @@
+Sintaxis de una lista
+=====================
+
++ Una lista vacía
+
+..  codelens:: cl_l17_3a
+
+    lista = []
+
++ Una lista con tres notas.
+
+..  codelens:: cl_l17_3b
+
+    notas = [7.5, 9, 8.3]
+
++ Accediendo a una nota.
+
+..  codelens:: cl_l17_3c
+
+    notas = [7.5, 9, 8.3]
+    print(notas[0])
+
++ Cambiar la primera nota
+
+..  codelens:: cl_l17_3d
+         
+    notas = [7.5, 9, 8.3]
+    notas[0] = 8.7
+    print(notas[0])
+
++ Promedio de 5 notas
+
+..  codelens:: cl_l17_3e
+
+    notas = [6, 7, 5, 8, 9]
+    suma = 0
+    x = 0
+    while x < 5:
+        suma += notas[x]
+        x += 1
+    print("Media : %5.2f" % (suma / x))
+
++  **Nota**: ``x += 1`` es lo mismo que ``x = x + 1``

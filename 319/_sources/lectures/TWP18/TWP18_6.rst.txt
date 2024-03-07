@@ -1,0 +1,64 @@
+Funciones ``split`` y ``join``
+==============================
+
+.. codelens:: cl_l18_6
+         
+    texto = "papa cuando nace"
+    print(texto.split())
+    fecha = "21/02/2011"
+    print(fecha.split("/"))
+    ip = "198.188.10.144"
+    print(ip.split("."))
+    lugares = ["Palmeiras", "Santos", "Corintios"]
+    print("/".join(lugares))
+
+
+Ejercicio
+---------
+
+
+.. activecode:: ac_l18_6
+    :nocodelens:
+    :stdin:
+   
+    Haga un programa que solicite la fecha de nacimiento en formato "dd/mm/aaaa" y 
+    convierta esta fecha a formato "<día> de <mes> de <año>" usando la lista ``meses`` 
+    que ya está escrita. Guardar el resultado en la variable ``fecha_de_nacimiento`` e 
+    imprimir esta variable. Recordar que ``.split()`` regresa una lista y se le puede pasar 
+    como argumento el caracter con el cual separar un string. Guardar el día, mes y el año en formato de cadena 
+    en las variables ``dia``, ``mes`` y ``anio``.
+   
+    ~~~~
+    fecha = input("fecha (dd/mm/aaaa): ").split("/")
+    meses = [
+        "enero",
+        "febrero",
+        "marzo",
+        "abril",
+        "mayo",
+        "junio",
+        "julio",
+        "agosto",
+        "septiembre",
+        "octubre",
+        "noviembre",
+        "diciembre",
+    ]
+    
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(
+                fecha_de_nacimiento,
+                "{} de {} de {}".format(dia, meses[int(mes) - 1], anio),
+                "Probando que fecha_de_nacimiento esté asignada correctamente",
+            )
+            self.assertEqual(dia, fecha[0], "Probando que dia esté asignada correctamente")
+            self.assertEqual(mes, fecha[1], "Probando que mes esté asignado correctamente")
+            self.assertEqual(anio, fecha[2], "Probando que anio esté asignado correctamente")
+
+
+    myTests().main()
