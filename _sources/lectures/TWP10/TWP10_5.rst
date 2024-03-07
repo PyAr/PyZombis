@@ -44,4 +44,5 @@ Estructuras anidadas
     print("Cuenta telefonica : $%6.2f" % (minutos * precio))
 
 + Note que las estructuras anidadas pueden crecer.
++ Python dada sus características proporciona la clausula ``elif``.
 + Se utiliza para verificar múltiples condiciones.
