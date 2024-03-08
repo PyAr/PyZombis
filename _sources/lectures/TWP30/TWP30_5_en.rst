@@ -11,21 +11,14 @@ Repetitions
     :language: python3
     :python3_interpreter: brython 
 
-    from browser import document as doc
-    from browser import html
     from browser import timer
 
     print("Welcome!")
     number = 0
 
-    doc <= html.DIV(id="div_game")
-
-    # Create the button to play
-    doc["div_game"] <= html.BUTTON("Play", id="btn_play")
-
     # Define what the button will do when pressed
     def guess():
-    
+
         global number
         number = int(input("Guess the number: "))
         if number == 42:
@@ -35,20 +28,13 @@ Repetitions
                 print("High")
             else:
                 print("Low")
-        
+
         if number != 42:
-            # If the number was not guessed, repeat the function after 
-            # 3 seconds 
+            # If the number was not guessed, repeat the function after
+            # 3 seconds
             timer.set_timeout(guess, 3000)
 
-    
-    def start(ev):
-        guess()
-    
-    # When the button is pressed, it will call the start function, 
-    # which in turn will call guess
-    doc["btn_play"].bind("click", start)
-
+    guess()
 
 .. image:: ../img/TWP15_007.png
     :height: 14.804cm

@@ -6,8 +6,6 @@ Sortear el número a adivinar
     :language: python3
     :python3_interpreter: brython
 
-    from browser import document as doc
-    from browser import html
     from browser import timer
     from random import randint
 
@@ -15,32 +13,23 @@ Sortear el número a adivinar
     azar = randint(1, 100)
     numero = 0
 
-    doc <= html.DIV(id="div_juego_2")
-
-    # Creamos una caja de texto donde ingresar el número que queramos
-    doc["div_juego_2"] <= html.INPUT(id="inp_adivinar", placeholder="Adivine el número", type="number")
-    # Creamos el botón para adivinar
-    doc["div_juego_2"] <= html.BUTTON("Enviar adivinanza", id="btn_adivinar") + html.BR()
-
-    def confirmar_adivinanza(e):
+    def confirmar_adivinanza():
         global numero
-        numero = int(doc["inp_adivinar"].value)
+        numero = int(input("Adivine el número"))
 
         if numero == azar:
             print("¡Ganaste!")
             print("¡Fin del juego!")
-            # Si el número es adivinado, el botón desaparece y el juego 
-            # termina
-            doc["btn_adivinar"].style.display = "none"
         else:
             if numero > azar:
                 print("Alto")
             else:
                 print("Bajo")
 
-    # Al apretar el botón, invoca a la función confirmar_adivinanza
-    doc["btn_adivinar"].bind("click", confirmar_adivinanza)
+        if numero != azar:
+            timer.set_timeout(adivinar, 3000)
 
+    confirmar_adivinanza()
 
 ¡Ahora sí!
 ----------

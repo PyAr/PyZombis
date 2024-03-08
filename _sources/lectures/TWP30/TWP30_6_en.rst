@@ -6,40 +6,29 @@ Raffle the number to guess
     :language: python3
     :python3_interpreter: brython
 
-    from browser import document as doc
-    from browser import html
     from browser import timer
     from random import randint
 
     print("Welcome!")
-    random_number = randint(1, 100)
+    random_number = randint(1, 100) 
     number = 0
 
-    doc <= html.DIV(id="div_game_2")
-
-    # We create a text box where to enter the number we want
-    doc["div_game_2"] <= html.INPUT(id="inp_guess", placeholder="Guess the number", type="number")
-    # We create the button to guess
-    doc["div_game_2"] <= html.BUTTON("Submit guess", id="btn_guess") + html.BR()
-
-    def confirm_guess(e):
+    def confirm_guess():
         global number
-        number = int(doc["inp_guess"].value)
-
+        number = int(input("Guess the number"))
+        
         if number == random_number:
             print("You won!")
             print("End of game!")
-            # If the number is guessed, the button disappears and the game ends
-            doc["btn_guess"].style.display = "none"
         else:
             if number > random_number:
                 print("High")
             else:
                 print("Low")
+        if number!=random_number:
+            timer.set_timeout(confirm_guess, 3000)
 
-    # When you press the button, it invokes the confirm_guess function
-    doc["btn_guess"].bind("click", confirm_guess)
-
+    confirm_guess()
 
 Now it's on!
 ------------

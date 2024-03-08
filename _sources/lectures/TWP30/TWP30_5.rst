@@ -12,17 +12,10 @@ Repeticiones
     :language: python3
     :python3_interpreter: brython 
 
-    from browser import document as doc
-    from browser import html
     from browser import timer
 
     print("¡Bienvenido!")
     numero = 0
-
-    doc <= html.DIV(id="div_juego")
-
-    # Creamos el botón para jugar
-    doc["div_juego"] <= html.BUTTON("Jugar", id="btn_jugar")
 
     # Definimos lo que hará el boton cuando sea apretado
     def adivinar():
@@ -42,14 +35,7 @@ Repeticiones
             # 3 segundos 
             timer.set_timeout(adivinar, 3000)
 
-    
-    def empezar(ev):
-        adivinar()
-    
-    # Cuando el botón sea apretado, llamará a la función empezar, 
-    # que a su vez llamará a adivinar.
-    doc["btn_jugar"].bind("click", empezar)
-
+    adivinar()
 
 .. image:: ../img/TWP15_007.png
     :height: 14.804cm
