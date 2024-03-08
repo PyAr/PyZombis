@@ -21,23 +21,31 @@ Catching the Exception
 Handling Exceptions
 ---------------------
 
-.. code-block :: python
+.. activecode:: ac_l54_2a_en
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
+
+   from browser import window, prompt, alert
 
    def save_data():
       try:
-         fileD = open("orders.txt","a")
-         fileD.write("Destination:\n")
-         fileD.write("%s\n" %destination.get())
-         fileD.write("Description:\n")
-         fileD.write("%s\n" %description.get())
-         fileD.write("Speech:\n")
-         fileD.write("%s\n" %Speech.get("1.0",END))
-         destination.set(None)
-         description.delete(0,END)
-         address.delete("1.0",END)
+         destination = prompt("Enter Destination")
+         if not destination:
+               raise ValueError("Destination cannot be empty")
+         window.sessionStorage["Destination"] = destination
+         description= prompt("Enter Description")
+         if not description:
+               raise ValueError("Description cannot be empty")
+         window.sessionStorage["Description"] = description
+         speech= prompt("Enter Speech")
+         if not speech:
+               raise ValueError("Speech cannot be empty")
+         window.sessionStorage["Speech"] = speech
       except Exception as exception:
-         app.title('Recording file %s' %exception)
+         alert(f'Error: {exception}')
 
+   save_data()
 
 
 + Note: to test the exception you will need to change the properties of the file
