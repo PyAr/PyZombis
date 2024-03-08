@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - 6 &#8212; PyZombis aayush/issue#240@fccb83f</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+
+
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
+    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quiz - 7" href="Quiz7_en.html" />
+    <link rel="prev" title="Quiz - 5" href="Quiz5_en.html" />
+
+
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+
+<script>
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'PyZombis';
+    eBookConfig.basecourse = 'PyZombis';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.enableCompareMe = eBookConfig.useRunestoneServices;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../_static/img/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">
+          
+          PyZombis aayush/issue#240@fccb83f
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='../genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/assignments/chooseAssignment.html'>Assignments</a></li>
+            <li><a href='/runestone/assignments/practice'>Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link"><a href='/runestone/admin/index'>Instructor's Page</a></li>
+            
+            <li><a href='/runestone/dashboard/studentreport'>Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()" />
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode" >Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=Quiz6_en'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - Quiz - 5" data-toggle="tooltip">
+    <a href="Quiz5_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Quiz - 7' data-toggle="tooltip" >              
+    <a href="Quiz7_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  document.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Quiz - 5' data-toggle="tooltip">
+  <a href="Quiz5_en.html" aria-label="Previous - Quiz - 5">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 7' data-toggle="tooltip" >
+    <a href="Quiz7_en.html" aria-label="Next - Quiz - 7">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
+<!-- Ad Serving for Runestone Campaign -->
+
+
+  
+  <div class="section" id="quiz-6">
+<h1>Quiz - 6<a class="headerlink" href="#quiz-6" title="Permalink to this headline">¶</a></h1>
+<div id='quiz6' data-component="tabbedStuff"  class='alert alert-warning'><div data-component="tab" data-tabname="Exercise 1" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q6_1_en data-question_label="1">
+<div id=q6_1_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">sleep</span></code> that takes two parameters,
+<code class="docutils literal notranslate"><span class="pre">weekday</span></code> and <code class="docutils literal notranslate"><span class="pre">holiday</span></code>, both parameters take boolean values,
+meaning they can be either <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>. The function acts as follows:
+you can sleep when it’s a holiday or when it’s not a weekday.
+<code class="docutils literal notranslate"><span class="pre">sleep</span></code> will return <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> whether or not you will sleep. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">sleep(False,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">sleep(True,</span> <span class="pre">False)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q6_1_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def sleep(weekday, holiday):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(sleep(False, False), True, "Excellent! Obtained: True Expected: True")
+      self.assertEqual(sleep(True, False), False, "Excellent! Obtained: False Expected: False")
+      self.assertEqual(sleep(False, True), True, "Excellent! Obtained: True Expected: True")
+      self.assertEqual(sleep(True, True), True, "Excellent! Obtained: True Expected: True")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 2" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q6_2_en data-question_label="2">
+<div id=q6_2_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">students_in_trouble</span></code> that takes two parameters,
+<code class="docutils literal notranslate"><span class="pre">a_smiling</span></code> and <code class="docutils literal notranslate"><span class="pre">b_smiling</span></code>. a and b represent two students.
+<code class="docutils literal notranslate"><span class="pre">a_smiling</span></code> and <code class="docutils literal notranslate"><span class="pre">b_smiling</span></code> indicate if a and b are smiling. When both
+are smiling or both are not smiling we have trouble. <code class="docutils literal notranslate"><span class="pre">students_in_trouble</span></code>
+should return <code class="docutils literal notranslate"><span class="pre">True</span></code> when there is trouble. Otherwise, it will return <code class="docutils literal notranslate"><span class="pre">False</span></code>.
+<br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">students_in_trouble(True,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">students_in_trouble(False,</span> <span class="pre">True)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q6_2_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def students_in_trouble(a_smiling, b_smiling):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(students_in_trouble(True, True), True, "Expected: True")
+      self.assertEqual(students_in_trouble(False, False), True, "Expected: True")
+      self.assertEqual(students_in_trouble(True, False), False, "Expected: False")
+      self.assertEqual(students_in_trouble(False, True), False, "Expected: False")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 3" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q6_3_en data-question_label="3">
+<div id=q6_3_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">double_sum</span></code> that takes two parameters, <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code>.
+Both are integers. The function should return the sum of <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code>.
+However, if the numbers are equal, it returns twice the sum. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">double_sum(1,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">3</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">double_sum(2,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">8</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q6_3_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def double_sum(a, b):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(double_sum(1, 2), 3, "Excellent! gotten: 3 expected: 3")
+      self.assertEqual(double_sum(3, 2), 5, "Excellent! gotten: 5 expected: 5")
+      self.assertEqual(double_sum(2, 2), 8, "Excellent! gotten: 8 expected: 8")
+      self.assertEqual(double_sum(-1, 0), -1, "Excellent! gotten: -1 expected: -1")
+      self.assertEqual(double_sum(0, 0), 0, "Excellent! gotten: 0 expected: 0")
+      self.assertEqual(double_sum(0, 1), 1, "Excellent! gotten: 1 expected: 1")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 4" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q6_4_en data-question_label="4">
+<div id=q6_4_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">absolute_difference_21</span></code> that takes a parameter, <code class="docutils literal notranslate"><span class="pre">n</span></code>,
+and returns the absolute difference between <code class="docutils literal notranslate"><span class="pre">n</span></code> and 21 only if <code class="docutils literal notranslate"><span class="pre">n</span></code>
+is less than or equal to 21. If it is greater, then it returns twice the
+absolute difference between the number and 21. <strong>Remember</strong>: <code class="docutils literal notranslate"><span class="pre">abs(x)</span></code> returns
+the absolute value of x. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">absolute_difference_21(19)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">2</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">absolute_difference_21(25)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">8</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q6_4_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def absolute_difference_21(n):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(absolute_difference_21(19), 2, "Expected: 2")
+      self.assertEqual(absolute_difference_21(10), 11, "Expected: 11")
+      self.assertEqual(absolute_difference_21(21), 0, "Expected: 0")
+      self.assertEqual(absolute_difference_21(22), 2, "Expected: 2")
+      self.assertEqual(absolute_difference_21(25), 8, "Expected: 8")
+      self.assertEqual(absolute_difference_21(30), 18, "Expected: 18")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 5" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q6_5_en data-question_label="5">
+<div id=q6_5_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">parrot_trouble</span></code> that takes two parameters,
+<code class="docutils literal notranslate"><span class="pre">talking</span></code>, which can be <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>, and <code class="docutils literal notranslate"><span class="pre">hour</span></code>, which takes a value
+between 0 and 23. We have a parrot, and there is trouble if the parrot is talking
+before 7 hours or after 20 hours. Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if there are
+problems or <code class="docutils literal notranslate"><span class="pre">False</span></code> if there are not. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">parrot_trouble(True,</span> <span class="pre">6)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">parrot_trouble(True,</span> <span class="pre">20)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q6_5_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def parrot_trouble(talking, hour):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(parrot_trouble(True, 6), True, "Expected: True")
+      self.assertEqual(parrot_trouble(True, 7), False, "Expected: False")
+      self.assertEqual(parrot_trouble(True, 21), True, "Expected: True")
+      self.assertEqual(parrot_trouble(True, 23), True, "Expected: True")
+      self.assertEqual(parrot_trouble(True, 20), False, "Expected: False")
+      self.assertEqual(parrot_trouble(False, 6), False, "Expected: False")
+      self.assertEqual(parrot_trouble(False, 21), False, "Expected: False")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 6" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q6_6_en data-question_label="6">
+<div id=q6_6_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">makes10</span></code> that takes two parameters, <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code>.
+Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if one of the parameters is 10, or if the sum of both
+is 10. Otherwise, it returns <code class="docutils literal notranslate"><span class="pre">False</span></code>. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">makes10(9,10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">makes10(1,9)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">makes10(8,3)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q6_6_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def makes10(a, b):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(makes10(9, 10), True, "Expected: True")
+      self.assertEqual(makes10(9, 9), False, "Expected: False")
+      self.assertEqual(makes10(1, 9), True, "Expected: True")
+      self.assertEqual(makes10(10, 1), True, "Expected: True")
+      self.assertEqual(makes10(10, 10), True, "Expected: True")
+      self.assertEqual(makes10(8, 2), True, "Expected: True")
+      self.assertEqual(makes10(8, 3), False, "Expected: False")
+      self.assertEqual(makes10(10, 42), True, "Expected: True")
+      self.assertEqual(makes10(12, -2), True, "Expected: True")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 7" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q6_7_en data-question_label="7">
+<div id=q6_7_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">near_hundred</span></code> that takes <code class="docutils literal notranslate"><span class="pre">n</span></code>
+as a parameter, which is an integer. Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if
+the absolute difference between <code class="docutils literal notranslate"><span class="pre">n</span></code> and 100 or <code class="docutils literal notranslate"><span class="pre">n</span></code> and 200 is less than or
+equal to 10. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">near_hundred(93)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">near_hundred(90)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">near_hundred(89)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">near_hundred(210)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">near_hundred(211)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q6_7_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def near_hundred(n):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(near_hundred(93), True, "Expected: True")
+      self.assertEqual(near_hundred(90), True, "Expected: True")
+      self.assertEqual(near_hundred(89), False, "Expected: False")
+      self.assertEqual(near_hundred(110), True, "Expected: True")
+      self.assertEqual(near_hundred(111), False, "Expected: False")
+      self.assertEqual(near_hundred(121), False, "Expected: False")
+      self.assertEqual(near_hundred(0), False, "Expected: False")
+      self.assertEqual(near_hundred(5), False, "Expected: False")
+      self.assertEqual(near_hundred(191), True, "Expected: True")
+      self.assertEqual(near_hundred(189), False, "Expected: False")
+      self.assertEqual(near_hundred(190), True, "Expected: True")
+      self.assertEqual(near_hundred(200), True, "Expected: True")
+      self.assertEqual(near_hundred(210), True, "Expected: True")
+      self.assertEqual(near_hundred(211), False, "Expected: False")
+      self.assertEqual(near_hundred(290), False, "Expected: False")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 8" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q6_8_en data-question_label="8">
+<div id=q6_8_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">remover_iesimo</span></code> that receives a non-empty string <code class="docutils literal notranslate"><span class="pre">s</span></code> and a positive integer <code class="docutils literal notranslate"><span class="pre">i</span></code>, and returns the original string without the i-th character. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;Hello&quot;,</span> <span class="pre">1)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ello&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;Hi&quot;,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;H&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">remover_iesimo(&quot;PyZombiess&quot;,</span> <span class="pre">10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;PyZombies&quot;</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q6_8_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def remover_iesimo(s, i):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(quitar_caracter("Hi", 0), "i", "Expected: i")
+      self.assertEqual(quitar_caracter("Hi", 1), "H", "Expected: H")
+      self.assertEqual(quitar_caracter("code", 0), "ode", "Expected: ode")
+      self.assertEqual(quitar_caracter("code", 1), "cde", "Expected: cde")
+      self.assertEqual(quitar_caracter("code", 2), "coe", "Expected: coe")
+      self.assertEqual(quitar_caracter("code", 3), "cod", "Expected: cod")
+      self.assertEqual(quitar_caracter("gatito", 1), "gtito", "Expected: gtito")
+      self.assertEqual(quitar_caracter("gatito", 0), "atito", "Expected: atito")
+      self.assertEqual(quitar_caracter("gatito", 4), "gatio", "Expected: gatio")
+      self.assertEqual(quitar_caracter("chocolate", 8), "chocolat", "Expected: chocolat")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Exercise 9" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q6_9_en data-question_label="9">
+<div id=q6_9_en_question class="ac_question col-md-12">
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">intercambiar</span></code> that takes <code class="docutils literal notranslate"><span class="pre">s</span></code> as a parameter, representing a string. If <code class="docutils literal notranslate"><span class="pre">s</span></code> has a length of 1 or less, the same string is returned. Otherwise, the first and last letter of <code class="docutils literal notranslate"><span class="pre">s</span></code> are exchanged. <br /> <br />
+Examples: <br />
+<code class="docutils literal notranslate"><span class="pre">intercambiar(&quot;codigo&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;oodigc&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">intercambiar(&quot;a&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;a&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">intercambiar(&quot;ab&quot;)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;ba&quot;</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q6_9_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def intercambiar(s):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+   def testOne(self):
+      self.assertEqual(intercambiar("code"), "eodc", "Expected: eodc")
+      self.assertEqual(intercambiar("a"), "a", "Expected: a")
+      self.assertEqual(intercambiar("ab"), "ba", "Expected: ba")
+      self.assertEqual(intercambiar("abc"), "cba", "Expected: cba")
+      self.assertEqual(intercambiar(" "), " ", "Expected: ' '")
+      self.assertEqual(intercambiar("nythoP"), "Python", "Expected: Python")
+      self.assertEqual(intercambiar("hello"), "oellh", "Expected: oellh")
+      self.assertEqual(intercambiar("Chocolate"), "ehocolatC", "Expected: ehocolatC")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+    </div>
+
+</div>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
+  </div>
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Quiz - 5' data-toggle="tooltip">
+  <a href="Quiz5_en.html" aria-label="Previous - Quiz - 5">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 7' data-toggle="tooltip" >
+    <a href="Quiz7_en.html" aria-label="Next - Quiz - 7">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      
+      <span id='numuserspan'></span><span class='loggedinuser'></span>
+      
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> 
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  </body>
+</html>
