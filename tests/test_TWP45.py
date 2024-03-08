@@ -17,7 +17,8 @@ def test_l45_1(page):
 
     # Test the src attribute from image matches the Facebook URL
     assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
- 
+
+    
 @pytest.mark.vcr()
 def test_l45_3(page):
     # Go to TWP45 page
