@@ -3,30 +3,24 @@ Raffle the number to guess
 
 
 .. activecode:: ac_l30_6_en
-    :language: python3
-    :python3_interpreter: brython
+    :nocodelens:
+    :stdin:
 
-    from browser import timer
     from random import randint
 
-    print("Welcome!")
     random_number = randint(1, 100) 
     number = 0
 
     def confirm_guess():
         global number
-        number = int(input("Guess the number"))
+        number = int(input("Welcome!\nGuess the number"))
         
-        if number == random_number:
-            print("You won!")
-            print("End of game!")
-        else:
+        while number != random_number:
             if number > random_number:
-                print("High")
+                number = int(input("High\nTry again!"))
             else:
-                print("Low")
-        if number!=random_number:
-            timer.set_timeout(confirm_guess, 3000)
+                number = int(input("Low\nTry again!"))
+        print("You won!")
 
     confirm_guess()
 

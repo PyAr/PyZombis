@@ -3,31 +3,23 @@ Sortear el número a adivinar
 
 
 .. activecode:: ac_l30_6
-    :language: python3
-    :python3_interpreter: brython
+    :nocodelens:
+    :stdin:
 
-    from browser import timer
     from random import randint
-
-    print("¡Bienvenido!")
     azar = randint(1, 100)
     numero = 0
 
     def confirmar_adivinanza():
         global numero
-        numero = int(input("Adivine el número"))
+        numero = int(input("¡Bienvenido!\nAdivine el número"))
 
-        if numero == azar:
-            print("¡Ganaste!")
-            print("¡Fin del juego!")
-        else:
+        while numero != azar:
             if numero > azar:
-                print("Alto")
+                numero = int(input("Alto\n¡Inténtalo de nuevo!"))
             else:
-                print("Bajo")
-
-        if numero != azar:
-            timer.set_timeout(adivinar, 3000)
+                numero = int(input("Bajo\n¡Inténtalo de nuevo!"))
+        print("¡Ganaste!")
 
     confirmar_adivinanza()
 

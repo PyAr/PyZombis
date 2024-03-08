@@ -8,32 +8,19 @@ Repetitions
     :alt: 
 
 .. activecode:: ac_l30_5_en
-    :language: python3
-    :python3_interpreter: brython 
+    :nocodelens:
+    :stdin:
 
-    from browser import timer
-
-    print("Welcome!")
     number = 0
-
-    # Define what the button will do when pressed
     def guess():
-
         global number
-        number = int(input("Guess the number: "))
-        if number == 42:
-            print("You won!")
-        else:
+        number = int(input("Welcome!\nGuess the number: "))
+        while number != 42:
             if number > 42:
-                print("High")
+                number = int(input("High\nTry again!"))
             else:
-                print("Low")
-
-        if number != 42:
-            # If the number was not guessed, repeat the function after
-            # 3 seconds
-            timer.set_timeout(guess, 3000)
-
+                number = int(input("Low\nTry again!"))
+        print("You won!")
     guess()
 
 .. image:: ../img/TWP15_007.png

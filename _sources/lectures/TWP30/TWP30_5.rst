@@ -9,32 +9,21 @@ Repeticiones
 
 
 .. activecode:: ac_l30_5
-    :language: python3
-    :python3_interpreter: brython 
+    :nocodelens:
+    :stdin:
 
-    from browser import timer
 
-    print("¡Bienvenido!")
     numero = 0
-
-    # Definimos lo que hará el boton cuando sea apretado
     def adivinar():
-    
         global numero
-        numero = int(input("Adivine el número: "))
-        if numero == 42:
-            print("¡Ganaste!")
-        else:
+        numero = int(input("¡Bienvenido!\nAdivine el número: "))
+        while numero != 42:
             if numero > 42:
-                print("Alto")
+                numero = int(input("Alto\n¡Inténtalo de nuevo!"))
             else:
-                print("Bajo")
+                numero = int(input("Bajo\n¡Inténtalo de nuevo!"))
+        print("¡Ganaste!")
         
-        if numero != 42:
-            # Si el número no se adivinó, se repite la función después de
-            # 3 segundos 
-            timer.set_timeout(adivinar, 3000)
-
     adivinar()
 
 .. image:: ../img/TWP15_007.png
