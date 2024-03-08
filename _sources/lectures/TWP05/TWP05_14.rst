@@ -22,7 +22,6 @@ Prueba de escritorio o simulación
    ====== ====== ========
 
 .. fillintheblank:: tw2
-  
    :casei:
 
    Usando "deuda = deuda + compra, inicialmente deuda = 0, compra = 100", complete los espacios en blanco en la tabla.
