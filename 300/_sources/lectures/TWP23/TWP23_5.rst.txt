@@ -1,0 +1,48 @@
+Diccionarios
+============
+
+
++ El diccionario en sí consiste en relacionar una clave con un valor específico
++ A diferencia de las listas, donde el índice es un número, los diccionarios usar sus claves como índice
++ Para agregar nuevos elementos que no necesito agregar, solo haga la sesión
+
+    + Si la clave ya existe: el valor asociado cambia
+    + Si la clave no existe: se agrega la nueva clave
+
+.. codelens:: cl_l23_5a
+         
+    d = {}
+    d["a"] = "alpha"
+    d["o"] = "omega"
+    d["g"] = "gama"
+    print(d)
+    print(d["a"])
+
+
+.. activecode:: ac_l23_5
+    :nocodelens:
+    :stdin:
+
+    d = {}
+    d["a"] = "alpha"
+    d["o"] = "omega"
+    d["g"] = "gama"
+    print(d)
+
+
+    # Esta línea va a resultar en error porque no hay 
+    # una clave "x" en el diccionario
+    print(d["x"])
+
+.. codelens:: cl_l23_5b
+         
+    d = {}
+    d["a"] = "alpha"
+    d["o"] = "omega"
+    d["g"] = "gama"
+    print(d.keys())
+    print(d.values())
+    print("g" in d)
+    print("x" in d)
+    for clave in d:
+        print(clave)
