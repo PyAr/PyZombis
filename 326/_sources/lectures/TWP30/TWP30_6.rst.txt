@@ -1,0 +1,43 @@
+Sortear el número a adivinar
+============================
+ 
+ 
+.. activecode:: ac_l30_6
+    :nocodelens:
+    :stdin:
+ 
+    from random import randint
+    azar = randint(1, 100)
+    numero = 0
+ 
+    def confirmar_adivinanza():
+        global numero
+        numero = int(input("¡Bienvenido!\nAdivine el número"))
+ 
+        while numero != azar:
+            if numero > azar:
+                numero = int(input("Alto\n¡Inténtalo de nuevo!"))
+            else:
+                numero = int(input("Bajo\n¡Inténtalo de nuevo!"))
+        print("¡Ganaste!")
+ 
+    confirmar_adivinanza()
+ 
+¡Ahora sí!
+----------
+ 
+.. image:: ../img/TWP30_012.jpg
+    :height: 10.873cm
+    :width: 14.154cm
+    :alt: 
+ 
+ 
+Resumen
+-------
+ 
++ ¡Creaste un juego!
++ Los comandos hacen cosas
++ Las condicionales deciden las cosas
++ Los ciclos repiten cosas
++ Las condiciones te ayudan a decidir si algo es verdadero o falso
++ La asignación define un nombre para un valor.
