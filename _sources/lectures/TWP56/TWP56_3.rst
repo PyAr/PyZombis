@@ -8,41 +8,43 @@ Se ve genial, ¡ahora agreguemos un volumen!
    :alt: 
 
 
-.. code-block :: python
+.. activecode:: lect_56_3_es
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   from tkinter import *
-   import pygame.mixer
+   from browser import document, html
 
-   app = Tk()
-   app.title('DJ Mix')
-   app.geometry('250x100+200+100')
-
-   som = '50459_M_RED_Nephlimizer.wav'
-   mixer = pygame.mixer
-   mixer.init()
-
-   def termina():
-      track.stop()
-      app.destroy()
-   def muda():
-      if tocando.get() == 1:
-         track.play(loops = -1)
+   def toggle_play(ev):
+      if ev.target.checked:
+         document['audio_player'].play()
       else:
-         track.stop()
-   def muda_volume(v):
-      track.set_volume(volume.get())
+         document['audio_player'].pause()
 
-   track = mixer.Sound(som)
-   tocando = IntVar()
-   tocar = Checkbutton(app,variable = tocando, command = muda, text = som)
-   tocar.pack(side = LEFT)
-   volume = DoubleVar()
-   volume.set(track.get_volume())
-   escala = Scale(variable = volume , from = 0.0 , to = 1.0 , resolution = 0.1, command = muda_volume, label = 'Volume',orient = HORIZONTAL)
+   def change_volume(ev):
+      document['audio_player'].volume = float(ev.target.value)
 
-   escala.pack(side = RIGHT)
-   app.protocol('WM_DELETE_WINDOW',terminal)
-   app.mainloop()
+   audio_src = 'https://bigsoundbank.com/UPLOAD/mp3/0751.mp3'
+
+   audio_player = html.AUDIO(src=audio_src, id='audio_player')
+
+   toggle_button = html.INPUT(type='checkbox', id='toggle_play')
+   toggle_button.bind('change', toggle_play)
+   toggle_label = html.LABEL('Reproducir sonido')
+   toggle_label <= toggle_button
+
+   volume_slider = html.INPUT(type='range', id='volume', min='0', max='1', step='0.1')
+   volume_slider.bind('input', change_volume)
+   volume_label = html.LABEL('Volumen')
+   volume_label <= volume_slider
+
+   app_div = html.DIV(id='app')
+   app_div <= audio_player
+   app_div <= toggle_label
+   app_div <= volume_label
+
+   document <= app_div
+
 
 
 .. image:: ../img/TWP56_010.jpg
