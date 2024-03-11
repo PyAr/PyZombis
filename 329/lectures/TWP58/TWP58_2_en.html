@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Class = object factory &#8212; PyZombis aayush/issue#218@fd5845f</title>
+    <title>2. Class = object factory &#8212; PyZombis aayush/issue#218@321ced6</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis aayush/issue#218@fd5845f
+          PyZombis aayush/issue#218@321ced6
         </a>
       </div>
     </div>
@@ -328,32 +328,70 @@ window.addEventListener('load', (event) => {
 <a class="reference internal image-reference" href="../../_images/TWP58_007.jpg"><img alt="" class="align-center" src="../../_images/TWP58_007.jpg" style="width: 22.647cm; height: 9.471cm;" /></a>
 <div class="section" id="class-soundpanel">
 <h2><span class="section-number">2.1. </span>Class SoundPanel<a class="headerlink" href="#class-soundpanel" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">pygame.mixer</span>
 
-<span class="k">class</span> <span class="nc">SoundPanel</span><span class="p">(</span><span class="n">Frame</span><span class="p">):</span>
-   <span class="k">def</span> <span class="nf">track_toggle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">track_playing</span><span class="o">.</span><span class="n">get</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-         <span class="bp">self</span><span class="o">.</span><span class="n">track</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">loops</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-      <span class="k">else</span><span class="p">:</span>
-         <span class="bp">self</span><span class="o">.</span><span class="n">track</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
-   <span class="k">def</span> <span class="nf">change_volume</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">v</span><span class="p">):</span>
-      <span class="bp">self</span><span class="o">.</span><span class="n">track</span><span class="o">.</span><span class="n">set_volume</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">volume</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">app</span><span class="p">,</span><span class="n">mixer</span><span class="p">,</span><span class="n">sound_file</span><span class="p">):</span>
-      <span class="n">Frame</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">app</span><span class="p">)</span>
-      <span class="bp">self</span><span class="o">.</span><span class="n">track</span> <span class="o">=</span> <span class="n">mixer</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span><span class="n">sound_file</span><span class="p">)</span>
-      <span class="bp">self</span><span class="o">.</span><span class="n">track_playing</span> <span class="o">=</span> <span class="n">IntVar</span><span class="p">()</span>
-      <span class="n">track_button</span> <span class="o">=</span> <span class="n">Checkbutton</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">variable</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">track_playing</span><span class="p">,</span><span class="n">command</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">track_toggle</span><span class="p">,</span><span class="n">text</span> <span class="o">=</span> <span class="n">sound_file</span><span class="p">)</span>
-      <span class="n">track_button</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span> <span class="o">=</span> <span class="n">LEFT</span><span class="p">)</span>
-      <span class="bp">self</span><span class="o">.</span><span class="n">volume</span> <span class="o">=</span> <span class="n">DoubleVar</span><span class="p">()</span>
-      <span class="bp">self</span><span class="o">.</span><span class="n">volume</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">track</span><span class="o">.</span><span class="n">get_volume</span><span class="p">())</span>
-      <span class="n">volume_scale</span> <span class="o">=</span> <span class="n">Scale</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">variable</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">volume</span><span class="p">,</span> <span class="n">from_</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">to</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">resolution</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">change_volume</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Volume&quot;</span><span class="p">,</span> <span class="n">orient</span> <span class="o">=</span> <span class="n">HORIZONTAL</span><span class="p">)</span>
-      <span class="n">volume_scale</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span> <span class="o">=</span> <span class="n">RIGHT</span><span class="p">)</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=lect_58_2_en data-question_label="2.1.1">
+<div id=lect_58_2_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="lect_58_2_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython'  style="visibility: hidden;">
+from browser import document, html
+
+class SoundPanel:
+   def __init__(self, sound_file):
+     self.sound_file = sound_file  # Add this line
+     self.track = html.AUDIO(src=sound_file)
+     self.track_playing = False
+     self.volume = 1.0
+
+   def track_toggle(self, ev):
+      if self.track_playing:
+         self.track.pause()
+         print("Stopping:", self.sound_file)
+      else:
+         self.track.play()
+         print("Playing:", self.sound_file)
+      self.track_playing = not self.track_playing
+
+   def change_volume(self, ev):
+      self.volume = float(ev.target.value)
+      self.track.volume = self.volume
+      print("Volume changed to:", self.volume)
+
+app_div = html.DIV(id='app')
+
+sound_panel = SoundPanel('https://bigsoundbank.com/UPLOAD/mp3/0751.mp3')
+
+track_button = html.INPUT(type='checkbox')
+track_button.bind('change', sound_panel.track_toggle)
+
+track_label = html.LABEL('Play Sound')
+track_label <= track_button
+
+volume_slider = html.INPUT(type='range', min='0', max='1', step='0.1')
+volume_slider.bind('input', sound_panel.change_volume)
+
+volume_label = html.LABEL('Volume')
+volume_label <= volume_slider
+
+app_div <= sound_panel.track
+app_div <= track_label
+app_div <= volume_label
+
+document <= app_div
+</textarea>
+</div>
 </div>
 </div>
 <div class="section" id="main-program">
 <h2><span class="section-number">2.2. </span>Main program<a class="headerlink" href="#main-program" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Try running this code in your PC and see the code dynamically generate soundpanels for wav files in your directory.</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">sound_panel</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">pygame.mixer</span>
