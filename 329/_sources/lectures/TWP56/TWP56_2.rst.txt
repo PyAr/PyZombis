@@ -1,0 +1,101 @@
+Pero la canción no termina...
+=============================
+
+
+.. image:: ../img/TWP56_003.jpg
+   :height: 12.571cm
+   :width: 19.957cm
+   :align: center
+   :alt: 
+
+
+.. activecode:: lec56es1fdarhg
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
+
+   from browser import document, html
+
+   sonido = 'https://bigsoundbank.com/UPLOAD/mp3/0751.mp3'
+
+   def iniciar():
+      pista.play()
+      print("Audio iniciado")
+
+   def detener():
+      pista.pause()
+      pista.currentTime = 0
+      print("Audio detenido")
+
+   def terminar(ev):
+      pista.pause()
+      if app_div in document:
+         app_div.remove()
+      print("Aplicación terminada")
+
+   elemento_audio = html.AUDIO(src=sonido)
+
+   boton_iniciar = html.BUTTON('Iniciar')
+   boton_iniciar.bind('click', lambda ev: iniciar())
+
+   boton_detener = html.BUTTON('Detener')
+   boton_detener.bind('click', lambda ev: detener())
+
+   app_div = html.DIV()
+   app_div <= elemento_audio
+   app_div <= boton_iniciar
+   app_div <= boton_detener
+
+   document <= app_div
+
+   document.bind('beforeunload', terminar)
+
+   pista = elemento_audio
+
+Un solo botón
+-------------
+
+.. image:: ../img/TWP56_005.jpg
+   :height: 15.578cm
+   :width: 12.183cm
+   :align: center
+   :alt: 
+
+
+.. activecode:: lecture_56_2_es
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
+
+   from browser import document, html
+
+   sonido = 'https://bigsoundbank.com/UPLOAD/mp3/0751.mp3'
+
+   def terminar():
+      pista.pause()
+      if app_div in document:
+         app_div.remove()
+
+   def cambiar(ev):
+      if ev.target.checked:
+         pista.play()
+      else:
+         pista.pause()
+
+   elemento_audio = html.AUDIO(src=sonido)
+
+   boton_reproduccion = html.INPUT(type='checkbox')
+   etiqueta_reproduccion = html.LABEL('Reproducir sonido', style={'margin-left': '10px'})
+   etiqueta_reproduccion <= boton_reproduccion
+
+   app_div = html.DIV()
+   app_div <= elemento_audio
+   app_div <= etiqueta_reproduccion
+
+   document <= app_div
+
+   boton_reproduccion.bind('change', cambiar)
+
+   document.bind('beforeunload', terminar)
+
+   pista = elemento_audio
