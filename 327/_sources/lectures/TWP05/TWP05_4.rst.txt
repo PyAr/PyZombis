@@ -1,0 +1,45 @@
+Conceptos sobre variables y asignación
+======================================
+
++ Las variables se utilizan para almacenar valores y nombrar
+  un área de la memoria de la computadora
++ El símbolo para la asignación es el igual (``=``)
+
+.. codelens:: cl_l05_4a
+    
+    a = 2
+    b = 3
+    print(a + b)
+
++ Como en matemáticas, pasamos parámetros o valores para una función usando paréntesis
++ Una función ``f(x)``, donde ``f`` es el nombre de la función y ``x`` es un parámetro
++ En el ejemplo anterior, ``print`` es el nombre de la función y ``a + b`` el valor pasado como parámetro
++ También podemos usar el modo interactivo **¡Pruebelo aquí!**
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/interpreter.html
+
+
++ Las dos primeras líneas no envían nada a la pantalla, así que solo se muestra el resultado de la tercera línea
+
+Otras alternativas
+******************
+
++ Quizás se pregunte ¿por qué creamos dos variables, ``a`` y
+  ``b``, para sumar dos números?
++ Podríamos haber logrado el mismo resultado de varias maneras.
+
+.. codelens:: cl_l05_4b
+    
+    print(2 + 3)
+    print(5)
+
++ ¿Cuál es la diferencia entre el primer modo y los dos últimos?
++ El primer caso incluye la lógica que usamos para obtener el
+  resultado
++ De este modo, hacemos explícito el algoritmo que utilizamos mentalmente para
+  resolver este problema
++ En los últimos dos casos, solo ordenamos a la computadora que imprima
+  algo concreto, sin dejar en claro la lógica para llegar a ese resultado

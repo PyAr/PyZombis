@@ -1,0 +1,25 @@
+Edificio
+========
+
++ Edificio de apartamentos
+
+..  codelens:: cl_l17_1a
+
+    edificio_planta_baja = "La Familia Souza"
+    edificio_1ra_planta = "La Familia Brito"
+    edificio_2da_planta = "El Sr Jorge"
+    edificio_3ra_planta = "La Familia Tanaka"
+
++ Podemos asociar la planta baja con la planta baja, la primera es la planta 1 y etc.
+
+
+..  codelens:: cl_l17_1b
+
+    edificio = ["La Familia Souza",
+                "La Familia Brito",
+                "El Sr Jorge",
+                "La Familia Tanaka"]
+    print(edificio[0])
+    print(edificio[1])
+    print(edificio[2])
+    print(edificio[3])
