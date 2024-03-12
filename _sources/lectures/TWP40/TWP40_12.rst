@@ -21,14 +21,16 @@ Conversión de grados usando C
             printf("Celsius: %2.1f\n", C);
         }
         
-Conversión de grados usando Python
+Convirtiendo grados usando Python
 ----------------------------------
+
++ Ahora vamos a convertir el programa anterior a Python.
 
 .. code-block:: python
 
-    F = float(input("Farenheit: "))
-    C = 5.0 * (F - 32.0) // 9.0
-    print("Celsius: %2.1f" % C)   
+    F = float(input("Fahrenheit: "))
+    C = 5.0 * (F - 32.0) / 9.0
+    print("Celsius: %2.1f" % C)
 
 .. poll:: TWP40
    :scale: 3
