@@ -31,3 +31,10 @@ Converting degrees using Python
     F = float(input("Fahrenheit: "))
     C = 5.0 * (F - 32.0) / 9.0
     print("Celsius: ", C)
+    
+.. poll:: TWP40E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?

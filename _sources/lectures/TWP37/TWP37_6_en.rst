@@ -100,3 +100,11 @@ Using and sorting a dictionary
 
     for participant in sorted(scores, reverse=True):
         print(f"{scores[participant]} obtained a score of {participant:.2f}")
+
+
+.. poll:: TWP37E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?

@@ -30,3 +30,10 @@ JSON
     texto = urllib.request.urlopen(url).read()
     data = json.loads(texto)
     print(data["value"]["joke"])
+
+.. poll:: TWP35
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?
