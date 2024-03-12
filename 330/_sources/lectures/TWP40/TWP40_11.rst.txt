@@ -1,0 +1,53 @@
+Números básicos
+===============
+
++ Existen dos tipos de datos numéricos: ``int`` y ``float``.
++ ¿Por qué existen diferentes tipos?
+    + Hay diferentes datos: los contadores son números enteros y el número PI no es.
+    + Las operaciones con números enteros son mucho más rápidas.
+    + Los números de coma flotante son aproximaciones: su precisión tiene un límite.
+
+.. codelens:: cl_l40_11a
+         
+    print(type(3))
+    print(type(3.14))
+    print(type(3.0))
+    x = -32
+    print(type(x))
+    x = 32.0
+    print(type(x))
+    print(type(int(x)))
+
+
+Tabla de operadores
+-------------------
+
+
+.. table:: **Tabla de operadores**
+    :widths: auto
+
+    ======== =====================
+    Operador Operación
+    ======== =====================
+    \*        Multiplicación
+    /         División
+    \*\*      Exponenciación
+    abs()     Valor absoluto
+    %         Resto de la división
+    //        División entera
+    \-        Resta
+    \+        Suma
+    ======== =====================
+
+Operadores Numéricos
+--------------------
+
+.. codelens:: cl_l40_11b
+         
+    print(3 + 4)
+    print(3.0 + 4.0)
+    print(3.0 * 4.0)
+    print(4 ** 3)
+    print(4.0 ** 3)
+    print(abs(5))
+    print(abs(-5))
