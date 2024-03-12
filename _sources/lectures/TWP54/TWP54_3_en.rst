@@ -1,22 +1,47 @@
 Using a messagebox
 ====================
 
-.. code-block:: python
+.. activecode:: ac_l54_3a_en
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   def save_data():
+   from browser import document, alert, window, html
+
+   def save_data(event):
       try:
-         fileD = open("orders.txt","a")
-         fileD.write("Destination:\n")
-         fileD.write("%s\n" %destination.get())
-         fileD.write("Description:\n")
-         fileD.write("%s\n" %description.get())
-         fileD.write("Address:\n")
-         fileD.write("%s\n" %address.get("1.0",END))
-         destination.set(None)
-         description.delete(0,END)
-         address.delete("1.0",END)
+         destination = destination_input.value
+         description = description_input.value
+         address = address_input.value
+
+         if not destination or not description or not address:
+            raise ValueError("All fields must be filled")
+
+         window.sessionStorage["Destination"] = destination
+         window.sessionStorage["Description"] = description
+         window.sessionStorage["Address"] = address
       except Exception as exception:
-         app.title('File writing error: %s' %exception)
+         alert(f'Error: {exception}')
+
+   app = html.DIV()
+
+   app <= html.LABEL('Destination: ')
+   destination_input = html.INPUT()
+   app <= destination_input
+
+   app <= html.LABEL('Description: ')
+   description_input = html.INPUT()
+   app <= description_input
+
+   app <= html.LABEL('Address: ')
+   address_input = html.INPUT()
+   app <= address_input
+
+   button = html.BUTTON('Save')
+   button.bind('click', save_data)
+   app <= button
+
+   document <= app
 
 
 .. image:: ../img/TWP54_009.jpg
