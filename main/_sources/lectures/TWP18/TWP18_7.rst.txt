@@ -40,3 +40,10 @@ Programación en pareja
     :width: 18.201cm
     :align: center
     :alt: 
+
+.. poll:: TWP18
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?

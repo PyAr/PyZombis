@@ -100,3 +100,14 @@ Usando y ordenando un diccionario
 
     for participante in sorted(puntuaciones, reverse=True):
         print(f"{puntuaciones[participante]} obtuvo un puntaje de {participante:.2f}")
+
+
+.. poll:: TWP37
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?
+
+
+

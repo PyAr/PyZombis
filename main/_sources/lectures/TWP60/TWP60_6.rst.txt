@@ -160,3 +160,12 @@ MOUSEBUTTONUP es un tipo de evento que se activa cuando se suelta un botón del 
     timer1 = timer.set_interval(main,80)
 
 
+.. poll:: TWP60
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?
+
+
+
