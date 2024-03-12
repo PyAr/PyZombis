@@ -1,0 +1,25 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP18/TWP18_1.rst:2
+msgid "Comillas de varios tipos"
+msgstr ""
+
+#: ../_sources/lectures/TWP18/TWP18_1.rst:4
+msgid "¿Puedo usar comillas simples, dobles o triples?"
+msgstr ""

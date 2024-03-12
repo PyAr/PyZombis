@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/quiz/Quiz9.rst:3
+msgid "Quiz - 9"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:17
+msgid "Desarrolle la función ``cerca_de_10`` que recibe un entero ``n`` y devuelve ``True`` cuando ``n`` sea múltiplo de 10, o cuando ``n`` esté a una o dos unidades de serlo. En caso contrario devuelva ``False``. |br| |br| Ejemplos: |br| ``cerca_de_10(12)`` -> ``True`` |br| ``cerca_de_10(17)`` -> ``False`` |br| ``cerca_de_10(19)`` -> ``True`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:59
+msgid "Desarrolle una función llamada ``suma_loca`` que recibe tres números enteros ``a``, ``b`` y ``c``. La función debe devolver la suma de los tres números con la condición de que si algún número aparece repetido no será contado en la suma. |br| |br| Ejemplos:|br| ``suma_loca(1, 2, 3)`` -> ``6`` |br| ``suma_loca(3, 2, 3)`` -> ``2`` |br| ``suma_loca(3, 3, 3)`` -> ``0`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:95
+msgid "Desarrolle la función llamada ``suma_con_suerte`` que recibe tres números enteros ``a``, ``b`` y ``c``. La función debe devolver la suma de los tres números con la condición de que si uno de los números es el **13**, éste no cuenta en la suma así como todos los números que se encuentren a su derecha. |br| |br| Ejemplos: |br| ``suma_con_suerte(1, 2, 3)`` -> ``6`` |br| ``suma_con_suerte(1, 2, 13)`` -> ``3`` |br| ``suma_con_suerte(1, 13, 3)`` -> ``1`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:133
+msgid "Desarrolle la función ``caracteres_dobles`` que recibe una cadena ``s`` y debe devolver los caracteres de la cadena original duplicados. |br| |br| Ejemplos: |br| ``caracteres_dobles('The')`` -> ``\"TThhee\"`` |br| ``caracteres_dobles('AAbb')`` -> ``\"AAAAbbbb\"`` |br| ``caracteres_dobles('Hi-There')`` -> ``\"HHii--TThheerree\"`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:168
+msgid "Desarrolle la función, ``contar_saludo`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``\"hola\"`` en ``s``. |br| |br| Ejemplos: |br| ``contar_saludo(\"abc hola ho\")`` -> ``1`` |br| ``contar_saludo(\"ABChola hola\")`` -> ``2`` |br| ``contar_saludo(\"holahola\")`` -> ``2`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:203
+msgid "Desarrolle la función ``gato_perro`` que recibe como parámetro una cadena ``s`` y devuelve ``True`` si en la cadena ``s`` aparece el mismo número de veces la cadena ``\"gato\"`` y la cadena ``\"perro\"`` o devuelve ``False`` en caso contrario. |br| |br| Ejemplos: |br| ``gato_perro(\"gatoperro\")`` -> ``True`` |br| ``gato_perro(\"gatogato\")`` -> ``False`` |br| ``gato_perro(\"1gato1cadoperro\")`` -> ``True`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:242
+msgid "Desarrolle la función ``contar_code`` que recibe como parámetro una cadena ``s`` y devuelve el número de veces que aparece la cadena ``\"code\"`` en ``s`` pero con la condición de que la letra ``'d'`` puede ser intercambiada por cualquier otra. Así, las cadenas ``\"coze\"`` y ``\"coxe\"`` deben ser contadas igualmente. |br| |br| Ejemplos:|br| ``contar_code(\"aaacodebbb\")`` -> ``1`` |br| ``contar_code(\"codexxcode\")`` -> ``2`` |br| ``contar_code(\"cozexxcope\")`` -> ``2`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:282
+msgid "Sabiendo que la función ``lower()`` convierte los carácteres de una cadena en minúsculas. Desarrolle una función llamada ``finales_iguales`` que recibe dos cadenas ``a`` y ``b`` como parámetros. La función devolverá ``True`` si al final de la cadena ``a`` se encuentra la cadena ``b`` o si al final de la cadena ``b`` se encuentra la cadena ``a``. |br| |br| Ejemplos: |br| ``finales_iguales(\"Hiabc\", \"abc\")`` -> ``True`` |br| ``finales_iguales(\"AbC\", \"HiaBc\")`` -> ``True`` |br| ``finales_iguales(\"abc\", \"abXabc\")`` -> ``True`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:322
+msgid "Desarrolle la función ``contar_pares`` que recibe una lista ``numeros`` de números enteros y devuelve la cantidad números pares que se encuentran en la lista. |br| |br| Ejemplos: |br| ``contar_pares([2, 1, 2, 3, 4])`` -> ``3`` |br| ``contar_pares([2, 2, 0])`` -> ``3`` |br| ``contar_pares([1, 3, 5])`` -> ``0`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:356
+msgid "Desarrolle la función ``suma_con_mas_suerte`` que recibe una lista ``numeros`` de números enteros y devuelve la suma de los números de la lista con la condición de que si uno de los números es el **13**, éste no cuenta en la suma así como todos los números que se encuentren a su derecha. |br| |br| Ejemplos: |br| ``suma_con_mas_suerte([1, 2, 2, 1])`` -> ``6`` |br| ``suma_con_mas_suerte([1, 1])`` -> ``2`` |br| ``suma_con_mas_suerte([1, 2, 13, 1, 13])`` -> ``3`` |br| ``suma_con_mas_suerte([13, 1, 2, 3, 4])`` -> ``0`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:399
+msgid "Desarrolle la función ``tiene_2`` que recibe como parámetro una lista ``numeros`` de números enteros y devuelve ``True`` si en la lista aparecen dos números iguales consecutivos y ``False`` en caso contrario. |br| |br| Ejemplos: |br| ``tiene_2([1, 2, 2])`` -> ``True`` |br| ``tiene_2([1, 2, 1, 2])`` -> ``False`` |br| ``tiene_2([2, 1, 2])`` -> ``False`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:439
+msgid "Desarrolle la función ``suma_en_lista`` que recibe dos parámetros, un entero ``n`` y un lista ``numeros`` de números. La función debe devolver ``True`` si existen dos elementos distintos de la lista que su suma da como resultado ``n`` y devolver ``False`` en caso contrario. |br| |br| Ejemplos: |br| ``suma_en_lista(5, [1, 2, 3, 4])`` -> ``True`` |br| ``suma_en_lista(9, [1, 2, 3, 4])`` -> ``False`` |br| ``suma_en_lista(0, [1, 2, 3, 4])`` -> ``False`` |br| ``suma_en_lista(8, [1, 2, 3, 4])`` -> ``False`` |br| ``suma_en_lista(4, [2, 2, 2, 2])`` -> ``False`` |br| ``suma_en_lista(4, [2, 2, 1, 3])`` -> ``True`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:477
+msgid "En una construcción se desea construir una fila de ladrillos. Se tienen ladrillos pequeños y ladrillos grandes. Los ladrillos pequeños son de 1 unidad de longitud mientras que los ladrillos grandes son de 5 unidades de longitud. Desarrolle la función ``construir_fila`` que recibe tres parámetros, ``n_lad_peq``, ``n_lad_grand`` y ``longitud_fila``. Estos parámetros son números enteros que representan la cantidad de ladrillos pequeños, cantidad de ladrillos grandes y la longitud de la fila que se quiere construir, respectivamente. La función debe devolver ``True`` si es posible armar la fila, o ``False`` en caso contrario. |br| |br| Ejemplos: |br| ``construir_fila(3, 1, 8)`` -> ``True`` |br| *Explicación*: Para construir una longitud de 8 metros, se usarían 1 ladrillo grande y 3 ladrillos pequeños |br| *Por lo tanto*: 1 + 1 + 1 + 5 = 8 |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:483
+msgid "``construir_fila(3, 1, 9)`` -> ``False`` |br| *Explicación*: Para construir una longitud de 9 metros no se podría porque solamente se tienen 3 ladrillos pequeños (de 1 metro de longitud) y 1 ladrillo grande (de 5 metros de longitud). |br| *Por lo tanto*: 1 + 1 + 1 + 5 < 9 en este caso se necesitaría 1 ladrillo grande y 4 pequeños. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz9.rst:487
+msgid "``construir_fila(3, 2, 10)`` -> ``True`` |br| *Explicación*: Para llenar una longitud de 10 metros, se usarían solamente los 2 ladrillos grandes disponibles. |br| *Por lo tanto*: 5 + 5 = 10 |br|"
+msgstr ""

@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP25/TWP25_5.rst:2
+msgid "Múltiple herencia y ¿Qué objeto es?"
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_5.rst:4
+msgid "Se puede heredar de varias clases."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_5.rst:5
+msgid "Pueden existir momentos en que quieras verificar el tipo de una instancia."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_5.rst:6
+msgid "En Python existe la función ``isinstance``."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_5.rst:7
+msgid "Permite verificar si una instancia de una clase es realmente de una clase dada."
+msgstr ""

@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/quiz/Quiz10.rst:3
+msgid "Quiz - 10"
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:17
+msgid ""
+"Desarrolle la función ``cuantas_donas`` que toma a ``n``, un número "
+"entero positivo, como parámetro, y devuelve una cadena de forma "
+"``\"Número de donas: n\"``, donde ``n`` es el valor que se le pasó a la "
+"función como argumento. No obstante, si ``n`` >= 10, ``cuantas_donas`` "
+"devolverá ``\"muchas\"`` en vez de ``n``. |br| |br| Ejemplos: |br| "
+"``cuantas_donas(5)`` -> ``\"Número de donas: 5\"`` |br| "
+"``cuantas_donas(23)`` -> ``\"Número de donas: muchas\"`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:58
+msgid ""
+"Desarrolla la función ``cadena_de_extremos`` que, dada una cadena ``s``, "
+"devuelva una cadena con las dos primeras y las dos últimas letras de "
+"``s``. Sin embargo, si la cadena tiene menos de 2 letras, devuelve una "
+"cadena vacía. |br| |br| Ejemplos: |br| "
+"``cadena_de_extremos(\"palmeras\")`` -> ``\"paas\"`` |br| "
+"``cadena_de_extremos(\"a\")`` -> ``\"\"`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:92
+msgid ""
+"Desarrolle la función ``remplazar_primer_caracter`` que, dada una cadena "
+"``s``, devuelva una cadena en la que todas las apariciones del primer "
+"carácter en ``s`` se reemplacen por \"*\", a excepción del primero. "
+"**Nota:** use el método ``.replace(valor_a_replazar, nuevo_valor)`` para "
+"resolver el ejercicio. |br| |br| Ejemplos: |br| "
+"``remplazar_primer_caracter(\"google\")`` -> ``\"goo*le\"`` |br| "
+"``remplazar_primer_caracter(\"dona\")`` -> ``\"dona\"`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:126
+msgid ""
+"Desarrolle la función ``combinar_dos_cadenas`` que tome dos cadenas como "
+"argumentos, ``a`` y ``b``, y devuelva una nueva cadena de la siguiente "
+"forma:"
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:129
+msgid "La nueva cadena tiene que ser una combinación de ``a`` y ``b``."
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:130
+msgid ""
+"La nueva cadena tendrá la forma ``\"<a> <b>\"``, note el espacio entre "
+"ambas."
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:131
+msgid "La nueva cadena intercambiará las primeras dos letras de ``a`` y ``b``."
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:133
+msgid ""
+"Suponga que ``a`` y ``b`` tienen más de 2 caracteres. Para mayor "
+"claridad, observe los siguientes ejemplos. |br| |br| Ejemplos: |br| "
+"``combinar_dos_cadenas(\"mix\", \"pod\")`` -> ``\"pox mid\"`` |br| "
+"``combinar_dos_cadenas(\"pezzy\", \"firm\")`` -> ``\"fizzy perm\"`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:169
+msgid ""
+"Desarrolle la función ``es_palindromo`` que toma una cadena ``s`` como "
+"parámetro y verifica si ``s`` es palíndromo o no, devolviendo ``True`` o "
+"``False`` respectivamente. |br| |br| Ejemplos: |br| "
+"``es_palindromo(\"asa\")`` -> ``True`` |br| ``es_palindromo(\"casa\")`` "
+"-> ``False``  |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz10.rst:203
+msgid ""
+"Desarrolle la función ``contar_ocurrencias`` que toma dos parámetros: "
+"``frase`` y ``palabra``, ambos de tipo cadena. La función debe devolver "
+"el número de veces que ``palabra`` se encuentra en ``frase``. |br| |br| "
+"Ejemplos: |br| ``contar_ocurrencias(\"a ana y a mariana les gustan las "
+"manzanas\", \"ana\")`` -> ``3`` |br|"
+msgstr ""
+

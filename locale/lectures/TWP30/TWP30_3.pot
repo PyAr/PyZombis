@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:2
+msgid "¿Qué tipos de errores?"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:4
+msgid "Errores de sintaxis: un lenguaje de programación es formal, diferente de los lenguajes naturales, tiene una sintaxis rígida"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:5
+msgid "Errores de tiempo de ejecución"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:6
+msgid "Errores semánticos (más difíciles de encontrar)"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:10
+msgid "¿Cómo encontrar y manejar errores?"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:12
+msgid "Sintáctica: mucha atención y práctica"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:13
+msgid "En tiempo de ejecución: manejo de excepciones"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:14
+msgid "Semántica: prueba de escritorio o simulación"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:18
+msgid "Entonces, ¿cómo ejecutas tu código?"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:20
+msgid "Hay dos cosas para ejecutar el programa de adivinación: un editor y un intérprete"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:21
+msgid "El editor guarda el código escrito en un archivo en el disco"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:29
+msgid "Las computadoras no pueden procesar texto porque solo entienden binario (ceros y unos)"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:30
+msgid "El intérprete convierte el código fuente en un archivo binario para la computadora"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:39
+msgid "El intérprete de Python funciona en dos modos: interactivo y de edición."
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:40
+msgid "El modo interactivo es ideal para probar comandos y obtener respuestas instantáneas"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:42
+msgid "Sin embargo, el modo de edición es el más utilizado para desarrollar los programas."
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:42
+msgid "Los nombres de archivo generalmente terminan con \".py\""
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:43
+msgid "Si usa otra extensión, perderá colores ..."
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_3.rst:44
+msgid "Un programa es más que una lista de comandos"
+msgstr ""

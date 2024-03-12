@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:2
+msgid "Conceptos sobre variables y asignación"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:4
+msgid "Las variables se utilizan para almacenar valores y nombrar un área de la memoria de la computadora"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:6
+msgid "El símbolo para la asignación es el igual (``=``)"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:14
+msgid "Como en matemáticas, pasamos parámetros o valores para una función usando paréntesis"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:15
+msgid "Una función ``f(x)``, donde ``f`` es el nombre de la función y ``x`` es un parámetro"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:16
+msgid "En el ejemplo anterior, ``print`` es el nombre de la función y ``a + b`` el valor pasado como parámetro"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:17
+msgid "También podemos usar el modo interactivo **¡Pruebelo aquí!**"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:25
+msgid "Las dos primeras líneas no envían nada a la pantalla, así que solo se muestra el resultado de la tercera línea"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:28
+msgid "Otras alternativas"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:30
+msgid "Quizás se pregunte ¿por qué creamos dos variables, ``a`` y ``b``, para sumar dos números?"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:32
+msgid "Podríamos haber logrado el mismo resultado de varias maneras."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:39
+msgid "¿Cuál es la diferencia entre el primer modo y los dos últimos?"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:40
+msgid "El primer caso incluye la lógica que usamos para obtener el resultado"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:42
+msgid "De este modo, hacemos explícito el algoritmo que utilizamos mentalmente para resolver este problema"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_4.rst:44
+msgid "En los últimos dos casos, solo ordenamos a la computadora que imprima algo concreto, sin dejar en claro la lógica para llegar a ese resultado"
+msgstr ""

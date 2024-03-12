@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP25/TWP25_2.rst:2
+msgid "Clase Cliente y Clase Cuenta"
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_2.rst:4
+msgid "Automatizarás el banco TATU, controlando el saldo de las cuentas corriente."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_2.rst:5
+msgid "Cada cuenta corriente puede tener uno o más clientes como titular."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_2.rst:6
+msgid "El banco controla solo el nombre y el número de teléfono."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_2.rst:7
+msgid "La cuenta corriente muestra un saldo y un estado de cuenta de las operaciones de retiro y depósito."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_2.rst:8
+msgid "No hay cuentas especiales, por lo que el cliente no puede retirar más de lo que tiene de saldo."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_2.rst:39
+msgid "Utilizando las clases Cliente y Cuenta"
+msgstr ""

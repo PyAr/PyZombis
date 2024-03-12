@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/quiz/Quiz13.rst:3
+msgid "Quiz - 13"
+msgstr ""
+
+#: ../_sources/quiz/Quiz13.rst:17
+msgid "Desarrolle la función ``remover_iguales`` que recibe una lista ``numeros`` de enteros. La función debe devolver una lista sin los elementos repetidos y ordenados de manera ascendente. |br| |br| Ejemplos: |br| ``remover_iguales([1, 2, 2, 3])`` -> ``[1, 2, 3]`` |br| ``remover_iguales([1, 2, 3])`` -> ``[1, 2, 3]`` |br| ``remover_iguales([1, 2, 2, 1])`` -> ``[1, 2]`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz13.rst:52
+msgid "Desarrolle la función ``encriptar`` que recibe una cadena ``frase``. La función debe devolver una nueva cadena encriptada, siguiendo las siguientes reglas: |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz13.rst:54
+msgid "Se deben retirar todas las letras repetidas de cada una de las palabras de la frase. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz13.rst:55
+msgid "Se deben ordenar las letras restantes de cada una de las palabras. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz13.rst:57
+msgid "Ejemplo: |br| ``encriptar(\"anita lava la tina\")`` -> ``\"aint alv al aint\"`` |br| *Consejo*: intente convertir la frase en una lista de palabras, luego intente ordenar las letras y construya una cadena con el resultado. |br|"
+msgstr ""

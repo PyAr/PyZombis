@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP15/TWP15_3.rst:2
+msgid "Contadores"
+msgstr ""
+
+#: ../_sources/lectures/TWP15/TWP15_3.rst:4
+msgid "Ahora imprima de 1 a un número ingresado por el usuario"
+msgstr ""
+
+#: ../_sources/lectures/TWP15/TWP15_3.rst:16
+msgid "Imprima números pares entre 0 y un número dado por el usuario usando ``if``"
+msgstr ""
+
+#: ../_sources/lectures/TWP15/TWP15_3.rst:30
+msgid "Imprima números pares entre 0 y un número proporcionado sin usar ``if``"
+msgstr ""
+
+#: ../_sources/lectures/TWP15/TWP15_3.rst:45
+msgid "Algunos ejercicios"
+msgstr ""
+
+#: ../_sources/lectures/TWP15/TWP15_3.rst:50
+msgid "Modifique el programa anterior para imprimir del 1 al número ingresado por el usuario, pero esta vez solo los números impares."
+msgstr ""
+
+#: ../_sources/lectures/TWP15/TWP15_3.rst:59
+msgid "Escriba un programa que imprima los primeros 10 múltiplos de 3."
+msgstr ""

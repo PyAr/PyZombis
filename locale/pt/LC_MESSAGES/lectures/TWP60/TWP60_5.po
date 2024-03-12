@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:2
+msgid "Sounds and Sprites"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:122
+msgid "Player.png aparece en la escala deseada"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:123
+msgid "Genero aleatoriamente 20 cerezas iniciales"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:138
+msgid "Uso dos canales, uno para música de fondo y uno para cada"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:137
+msgid "cereza escogida"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:154
+msgid ""
+"Tecla ‘m’ pausa o fundo musical e o click do mouse planta uma cerejinha "
+"na posição clicada"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:169
+msgid "Las cerezas se generan aleatoriamente con cada pasada en el bucle."
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:168
+msgid "principal"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:188
+msgid "Removo cerejas “comidas”, claro engordando!"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:189
+msgid "Todas as “blitadas” aparecem no update"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:190
+msgid "FPS == Frames Per Second"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:191
+msgid "Variável que controla o mainClock.tick()"
+msgstr ""
+
+#: ../_sources/lectures/TWP60/TWP60_5.rst:192
+msgid ""
+"Os monstrinhos possuem um tamanho mínimo e máximo e sua velocidade é "
+"controlada"
+msgstr ""
+

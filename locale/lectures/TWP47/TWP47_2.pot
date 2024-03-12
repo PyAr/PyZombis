@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP47/TWP47_2.rst:2
+msgid "Venta Salgados por turnos"
+msgstr ""
+
+#: ../_sources/lectures/TWP47/TWP47_2.rst:5
+msgid "Venta Salgados Tarde / Noche"
+msgstr ""
+
+#: ../_sources/lectures/TWP47/TWP47_2.rst:34
+msgid "Formato corregido por el alumno!"
+msgstr ""
+
+#: ../_sources/lectures/TWP47/TWP47_2.rst:38
+msgid "Venta Salgados Mañana"
+msgstr ""
+
+#: ../_sources/lectures/TWP47/TWP47_2.rst:65
+msgid "Productos modificados, ¡pero olvidé el formato!"
+msgstr ""
+
+#: ../_sources/lectures/TWP47/TWP47_2.rst:69
+msgid "Módulo banco.py"
+msgstr ""
+
+#: ../_sources/lectures/TWP47/TWP47_2.rst:88
+msgid "Nota: dejar en el mismo directorio que los programas de mañana y tarde / noche"
+msgstr ""

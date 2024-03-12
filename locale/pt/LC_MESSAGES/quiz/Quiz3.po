@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/quiz/Quiz3.rst:3
+msgid "Quiz - 3"
+msgstr ""
+
+#: ../_sources/quiz/Quiz3.rst:17
+msgid ""
+"Decimos que un número natural es triangular si es el producto de tres "
+"números naturales consecutivos. |br| |br| Ejemplo: 120 es triangular, ya "
+"que 4 x 5 x 6 = 120. Dado un número entero no negativo ``n``, verifique "
+"si ``n`` es triangular. Devuelva ``True`` si el número es triangular o "
+"``False`` si no lo es. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz3.rst:46
+msgid ""
+"Indique cómo se debe devolver un cambio utilizando un número mínimo de "
+"billetes. Su algoritmo debe leer el monto de la factura a pagar, "
+"``cobro``, y el monto del pago realizado, ``pago``, sin tener en cuenta "
+"los centavos. |br| Suponga que los billetes para el cambio son 50, 20, "
+"10, 5, 2 y 1, y que ninguno de ellos falta en la caja registradora. "
+"Devuelva una lista con la cantidad de cada billete que represente el "
+"cambio. |br| El primer elemento de la lista coincide con la cantidad 50, "
+"el siguiente con 20, y así sucesivamente hasta 1. (El mismo orden que se "
+"muestra arriba). |br| |br| Ejemplos: |br| ``calcular_cambio(50, 100)`` ->"
+" [1,0,0,0,0,0] |br| ``calcular_cambio(92, 100)`` -> [0,0,0,1,1,1] |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz3.rst:81
+msgid ""
+"Compruebe que un número entero positivo ``n`` sea primo. |br| Devuelva "
+"``True`` si es primo o ``False`` si no lo es. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz3.rst:110
+msgid ""
+"Dado un número entero positivo ``n``, determine su descomposición en "
+"factores primos calculando también la multiplicidad de cada factor. "
+"Devuelve un diccionario con las claves como primos y sus respectivos "
+"valores como la frecuencia del primo en la factorización primaria del "
+"número. |br| |br| Ejemplos: |br| ``factores(5)`` -> {5:1} |br| "
+"``factores(420)`` -> {2:2, 3:1, 5:1, 7:1} |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz3.rst:144
+msgid ""
+"Haga un programa que solicite un número entero positivo ``n`` y lo "
+"muestre invertido. Por ejemplo: 1234 genera 4321. Devuelve el número "
+"invertido. |br| |br| Ejemplos: |br| ``invertir_numero(123456789)`` -> "
+"987654321 |br| ``invertir_numero(1000)`` -> 1 |br|"
+msgstr ""
+

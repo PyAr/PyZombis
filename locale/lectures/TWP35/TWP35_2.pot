@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:2
+#: ../_sources/lectures/TWP35/TWP35_2.rst:14
+msgid "Nueva sugerencia de programa"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:5
+msgid "Starbuzz no tiene granos"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:7
+msgid "El director de Starbuzz quiere una opción para comprar rápidamente, sin esperar a que baje el precio"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:9
+msgid "Al ejecutar el programa, te preguntaré si quieres comprar ahora o no"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:10
+msgid "Si el usuario responde que sí, tomaré el precio actual y compraré"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:11
+msgid "Si no, esperaré reducirlo a menos de 4.74"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:51
+msgid "Programa feo ..."
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:54
+msgid "No duplique su código ..."
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:55
+msgid "Esto conduce a un exceso de código, lo que hace que el mantenimiento de su código dificil"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:57
+msgid "Intente reutilizar su código"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:58
+msgid "Definiendo funciones reutilizaremos código"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:59
+msgid "¿Cuál es la diferencia?"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_2.rst:60
+msgid "Si tengo que cambiar algo, lo cambiaré en un solo lugar"
+msgstr ""

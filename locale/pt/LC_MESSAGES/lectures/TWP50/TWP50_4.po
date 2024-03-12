@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:2
+msgid "Versión final del show de preguntas Zombis"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:53
+msgid "Falta algo importante."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:54
+msgid "¡Los resultados de cada una de las opciones!"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:62
+msgid "Cambiemos la ventana para agregar una etiqueta que cambie su valor."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:63
+msgid "El valor aumentará cada vez que se presione el botón respectivo"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:126
+msgid "¡Muy bien! ya todo funciona perfectamente."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:127
+msgid "Puedes cambiar el audio para cada opción."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:128
+msgid "El jefe está feliz por el Show de preguntas Zombis."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:138
+msgid "Recuerda"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:140
+msgid "Uso de las funcionalidades con el componente de ``brython``."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:141
+msgid "No es la única forma de crear interfaces gráficas."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:142
+msgid "Uso de la biblioteca de terceros: ``pygame`` y ``tkinter``."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:143
+msgid "Para manejar los eventos se usa un controlador de eventos."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_4.rst:144
+msgid "Controlador de eventos: función que se ejecuta cuando ocurre el evento."
+msgstr ""
+

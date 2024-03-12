@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP10/TWP10_3.rst:2
+msgid "``if``"
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_3.rst:4
+msgid "Lea dos valores enteros e imprima el más grande"
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_3.rst:17
+msgid "Dos puntos e identación"
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_3.rst:19
+msgid ""
+"Note que en Python es obligatorio culminar cualquier condición (if) con "
+"``:``."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_3.rst:20
+msgid ""
+"Recuerda también identar los bloques de código dentro de las condiciones,"
+" es obligatorio."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_3.rst:23
+msgid ""
+"Verificar si un auto es nuevo o viejo: + Si el auto tiene al menos tres "
+"años de creado, es nuevo, es viejo en caso contrario."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_3.rst:34
+msgid "Pregunte la velocidad de un automóvil, suponiendo que es un número entero."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_3.rst:35
+msgid ""
+"En caso de que la velocidad supere los 110 km/h, muestre un mensaje que "
+"dice que el usuario ha sido multado."
+msgstr ""
+
+#: ../_sources/lectures/TWP10/TWP10_3.rst:36
+msgid ""
+"Muestre el monto de la multa si es multado, cobrando ``$5.00`` por cada "
+"km por encima de los 110 km/h."
+msgstr ""
+

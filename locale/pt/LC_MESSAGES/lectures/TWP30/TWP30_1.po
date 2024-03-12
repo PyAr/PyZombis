@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:2
+msgid "Lo que aprendimos"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:5
+msgid "Terminamos el primer libro"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:15
+msgid "Empecemos el segundo"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:25
+msgid "Lo que hemos aprendimos"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:27
+msgid "Variables y entrada de datos"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:28
+msgid "Condiciones"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:29
+msgid "Repeticiones"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:30
+msgid "Listas"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:31
+msgid "Strings"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:32
+msgid "Funciones"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:33
+msgid "Archivos"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:34
+msgid "Diccionarios"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:35
+msgid "Clases y objetos"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:39
+msgid "¿Qué aprenderemos en el segundo?"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:41
+msgid "¡Las mismas cosas!"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:42
+msgid "Hacer juegos"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:43
+msgid "Acceso a sitios web para ver el precio del café"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:44
+msgid "Uso de interfaces gráficas"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:45
+msgid "Manejo de excepciones"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:46
+msgid "Uso de la base de datos de surfistas"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:47
+msgid "Mezcla de canciones"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:51
+msgid "Encontrando tu camino"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:53
+msgid ""
+"Si solo usa el software de otros, siempre estará limitado a lo que lo que"
+" otras personas piensan que quieres hacer"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:55
+msgid "Escribe tus propios programas"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:56
+msgid "¿Quieres ser programado o ser el programador?"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_1.rst:57
+msgid "Puedes tomar el control"
+msgstr ""
+

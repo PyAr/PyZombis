@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/quiz/Quiz5.rst:3
+msgid "Quiz - 5"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:35
+msgid ""
+"Traduzca el programa anterior (con la declaración en el lugar correcto) "
+"al lenguaje Python utilizando el siguiente bloque de código. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:45
+msgid "Q-3: ¿Qué imprime el programa anterior?"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:47 ../_sources/quiz/Quiz5.rst:81
+#: ../_sources/quiz/Quiz5.rst:125 ../_sources/quiz/Quiz5.rst:171
+#: ../_sources/quiz/Quiz5.rst:274
+msgid "Tu respuesta es correcta, ¡buen trabajo!"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:48 ../_sources/quiz/Quiz5.rst:82
+#: ../_sources/quiz/Quiz5.rst:126 ../_sources/quiz/Quiz5.rst:172
+#: ../_sources/quiz/Quiz5.rst:275
+msgid "Tu respuesta es incorrecta, intenta nuevamente."
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:68
+msgid ""
+"Traduzca el programa anterior al lenguaje Python utilizando el siguiente "
+"bloque de código. |br| **Nota**: en nuestro pseudolenguaje, el ciclo "
+"incluye los extremos, es decir, 1 a 4 significa 1, 2, 3, 4. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:79
+msgid "Q-5: ¿Cuántas veces el programa anterior imprime ``\"Hola\"``?"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:92
+msgid ""
+"Desarrolle la función ``pares_divisibles_7`` que recibe como parámetros "
+"dos enteros positivos, ``inicio`` y ``fin`` que representan el inicio y "
+"el fin de un intervalo de números, la función tiene que devolver la "
+"cantidad de números que son pares y también divisibles por 7. |br| |br| "
+"Ejemplos: |br| ``pares_divisibles_7(1, 7)`` -> ``0`` |br| "
+"``pares_divisibles_7(25, 123)`` -> ``7`` |br| ``pares_divisibles_7(13, "
+"245)`` -> ``17`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:123
+msgid ""
+"Q-7: Utilice la función creada en el ejercicio anterior para responder "
+"¿Cuántos números son pares y también divisibles por 7 entre 1067 y 3627 "
+"(inclusive)?"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:136
+msgid ""
+"Daniela es una persona muy supersticiosa. Para ella, un número tiene "
+"**suerte** si contiene el dígito ``2`` pero no el ``7``. Ella además es "
+"muy curiosa y está interesada en saber ¿cuántos números de la suerte hay "
+"en un intervalo de números (incluido los extremos)?. Para ello le ha "
+"solicitado a usted que haga la función llamada ``cuantos_tienen_suerte``,"
+"  que recibe como parámetros dos enteros positivos, ``inicio`` y ``fin`` "
+"que representan el inicio y el fin de un intervalo de números, la función"
+" tiene que devolver la cantidad de números que tienen **suerte**. |br| "
+"|br| Ejemplos: |br| ``cuantos_tienen_suerte(1, 7)`` -> ``1`` |br| "
+"``cuantos_tienen_suerte(1, 20)`` -> ``3`` |br| "
+"``cuantos_tienen_suerte(25, 123)`` -> ``16`` |br| "
+"``cuantos_tienen_suerte(13, 245)`` -> ``74`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:169
+msgid ""
+"Q-9: Utilice la función creada en el ejercicio anterior para responder "
+"¿Cuántos números tienen suerte entre 18644 y 33087 (inclusive)?"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:182
+msgid ""
+"En el tranquilo pueblo rural de *Ponteironuloville*, todos los teléfonos "
+"tienen 6 dígitos. La compañía telefónica establece las siguientes reglas "
+"sobre los números: |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:184
+msgid "No puede haber dos dígitos idénticos consecutivos, porque esto es aburrido"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:185
+msgid "La suma de los dígitos debe ser par, porque esto es legal"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:186
+msgid ""
+"El último dígito no puede ser el mismo que el primero, porque eso es mala"
+" suerte."
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:188
+msgid ""
+"Entonces, dadas estas reglas perfectamente razonables, bien diseñadas y "
+"maduras, desarrolle la función que se llama "
+"``es_numero_ponteironuloville`` que recibe una cadena de enteros "
+"positivos y devuelve ``True`` si el número es valido de acuerdo a las "
+"reglas de *Ponteironuloville* y ``False`` en caso contrario. |br| |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:191
+msgid ""
+"Ejemplos: |br| ``es_numero_ponteironuloville(\"123457\")`` -> ``True`` "
+"|br| ``es_numero_ponteironuloville(\"234562\")`` -> ``False`` |br| "
+"``es_numero_ponteironuloville(\"222222\")`` -> ``False`` |br| "
+"``es_numero_ponteironuloville(\"123456\")`` -> ``False`` |br| "
+"``es_numero_ponteironuloville(\"312214\")`` -> ``False`` |br| "
+"``es_numero_ponteironuloville(\"312312\")`` -> ``True`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:231
+msgid ""
+"Sabiendo que la función ``split()`` divide una cadena en múltiples "
+"cadenas, utilice la función creada en el ejercicio anterior "
+"(**OBLIGATORIO** haberla terminado antes y haber pasado todas las "
+"pruebas) para terminar la función ``contar_validos`` que devuelve la "
+"cantidad de números válidos de la lista de números dada en el siguiente "
+"bloque de código. |br| |br| **Nota**: la lista de números es una cadena, "
+"utilice sabiamente la función ``split()`` para obtener un arreglo de "
+"cadenas."
+msgstr ""
+
+#: ../_sources/quiz/Quiz5.rst:272
+msgid ""
+"Q-12: Utilice la función creada en el ejercicio anterior para responder "
+"¿Cuántos números de la lista son válidos de acuerdo a las reglas de "
+"*Ponteironuloville*?"
+msgstr ""
+

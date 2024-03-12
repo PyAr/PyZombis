@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/quiz/Quiz8.rst:3
+msgid "Quiz - 8"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:17
+msgid ""
+"Defina una función ``primer_o_ultimo_6`` que compruebe si 6 es el primer "
+"o el último elemento en la lista de números ``numeros`` que se le pase "
+"como parámetro. Si lo es, devolver ``True``, de lo contrario devolver "
+"``False``. |br| |br| Ejemplos: |br| ``primer_o_ultimo_6([1, 2, 6])`` -> "
+"``True`` |br| ``primer_o_ultimo_6([6, 1, 2, 3])`` -> ``True`` |br| "
+"``primer_o_ultimo_6([3, 2, 1])`` -> ``False`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:52
+msgid ""
+"Defina una función ``extremos_iguales`` que tome una lista ``numeros`` "
+"como parámetro, y regrese ``True`` si la lista de números tiene al menos "
+"un elemento y el primer elemento es igual al último. De lo contrario "
+"devolver ``False``. |br| |br| Ejemplos: |br| ``extremos_iguales([1, 2, "
+"3])`` -> ``False`` |br| ``extremos_iguales([1, 2, 3, 1])`` -> ``True`` "
+"|br| ``extremos_iguales([1, 2, 1])`` -> ``True`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:90
+msgid ""
+"Defina una función ``extremo_comun`` que tome dos listas ``a`` y ``b`` "
+"como parámetros, y verifique que los dos primeros números de ambas listas"
+" son iguales o que los dos últimos números de ambas listas son iguales. "
+"Suponga que ambas listas tienen por lo menos un elemento. |br| |br| "
+"Ejemplos: |br| ``extremo_comun([1, 2, 3], [7, 3])`` -> ``True`` |br| "
+"``extremo_comun([1, 2, 3], [7, 3, 2])`` -> ``False`` |br| "
+"``extremo_comun([1, 2, 3], [1, 3])`` -> ``True`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:141
+msgid ""
+"Defina una función ``mayor_extremo`` que tome la lista ``numeros`` como "
+"parámetro, compare los extremos de la lista y regrese una nueva lista del"
+" mismo tamaño donde todos los elementos son el extremo de mayor magnitud."
+" |br| |br| Ejemplos: |br| ``mayor_extremo([1, 2, 3])`` -> ``[3, 3, 3]`` "
+"|br| ``mayor_extremo([1, 3, 2])`` -> ``[2, 2, 2]`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:209
+msgid ""
+"Defina una función ``sumar_primeros_dos`` que tome la lista ``numeros`` "
+"de número enteros de cualquier tamaño como parámetro, y regrese la suma "
+"de los dos primeros elementos. Si la lista tiene menos de dos elementos, "
+"sume 0s. |br| |br| Ejemplos: |br| ``sumar_primeros_dos([1, 2, 3])`` -> "
+"``3`` |br| ``sumar_primeros_dos([1, 1])`` -> ``2`` |br| "
+"``sumar_primeros_dos([])`` -> ``0`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:252
+msgid ""
+"Defina una función ``al_medio`` que tome dos listas ``a`` y ``b`` de "
+"números enteros como parámetros, y regrese una lista de tamaño 2 que "
+"contenga los elementos de en medio de ``a`` y ``b``. Suponga que las "
+"listas tienen un tamaño impar. |br| |br| Ejemplos: |br| ``al_medio([1, 2,"
+" 3], [4, 5, 6])`` -> ``[2, 5]`` |br| ``al_medio([7, 7, 7], [3, 8, 0])`` "
+"-> ``[7, 8]`` |br| ``al_medio([5, 2, 9], [1, 4, 5])`` -> ``[2, 4]`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:312
+msgid ""
+"Define una función ``cita_de_lujo``. La función tomará dos parámetros "
+"``mi_punt`` y ``pareja_punt``. Suponga que va un restaurante con su "
+"pareja. Los parámetros representan la puntuación de la ropa que llevan "
+"puesta del 0 al 10. Cuanto más alto es el puntaje, más elegante se han "
+"vestido. El puntaje de su ropa determinará si les dan una mesa en el "
+"restaurante o no, de acuerdo a las siguientes reglas:|br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:318
+msgid ""
+"Si la puntuación de la ropa de uno de los dos es menor o igual a 2, no "
+"tendrán derecho a una mesa (``0``). |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:320
+msgid ""
+"Si las calificaciones son más altas, entonces si una de las dos es muy "
+"elegante (puntuación >= 8) sí tendrán derecho a mesa (``2``). |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:322
+msgid "De lo contrario, la respuesta es tal vez (``1``). |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:324
+msgid ""
+"Entonces ``cita_de_lujo`` devuelve un número entre 0, 1 y 2 que "
+"significan No, Tal vez y Si respectivamente |br| |br| Ejemplos: |br| "
+"``cita_de_lujo(5, 10)`` -> ``2`` |br| ``cita_de_lujo(5, 2)`` -> ``0`` "
+"|br| ``cita_de_lujo(5, 5)`` -> ``1`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:363
+msgid ""
+"El equipo de fútbol *ardillas* normalmente juega cuando la temperatura "
+"está entre 60 y 90 grados Fahrenheit, pero cuando es verano la "
+"temperatura superior a la que juegan las *ardillas* es de 100 grados "
+"Fahrenheit en lugar de 90. Defina una función ``juegan_ardillas`` que "
+"tome 2 parámetros, ``temp`` representando la temperatura, y "
+"``es_verano``, que puede ser ``True`` si es verano o ``False`` si no lo "
+"es. La función debe regresar ``True`` si las *ardillas* juegan o "
+"``False`` si no. |br| |br| Ejemplos: |br| ``juegan_ardillas(70, False)`` "
+"-> ``True`` |br| ``juegan_ardillas(95, False)`` -> ``False`` |br| "
+"``juegan_ardillas(95, True)`` -> ``True`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:408
+msgid ""
+"Simulemos un velocímetro que te aplica una multa en caso de exceder la "
+"velociad máxima:"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:410
+msgid "Velocidad <= 60: sin multa |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:411
+msgid "Velocidad entre 61 y 80: multa media |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:412
+msgid "Velocidad superior a 80: multa severa |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:414
+msgid ""
+"Si es tu cumpleaños la velocidad puede ser 5 km/h mayor en todos los "
+"casos. |br| Defina una función ``aplicar_multa`` que reciba como "
+"parámetros a ``velocidad`` y ``cumplo_anios``. El primero representa la "
+"velocidad a la que ibas, y el segundo puede ser ``True`` si es tu "
+"cumpleaños o ``False`` si no lo es. Esta función debe regresar 0, 1 o 2 "
+"de acuerdo a lo siguiente: |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:420
+msgid "sin multa = 0 |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:421
+msgid "multa media = 1 |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:422
+msgid "multa severa = 2 |br| |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:424
+msgid ""
+"Ejemplos: |br| ``aplicar_multa(60, False)`` -> ``0`` |br| "
+"``aplicar_multa(65, False)`` -> ``1`` |br| ``aplicar_multa(65, True)`` ->"
+" ``0``  |br| ``aplicar_multa(80, False)`` -> ``1`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:466
+msgid ""
+"Defina una función ``poner_alarma`` que tome dos parámetros: El primer "
+"parámetro ``dia`` es un número del 0-6 que representa un día de la semana"
+" de acuerdo a lo siguiente: |br| día: 0 = domingo, 1 = lunes, 2 = martes,"
+" ..., 6 = sábado. |br| El segundo parámetro ``vacaciones`` tomará el "
+"valor ``True`` si estás de vacaciones o ``False`` si no lo estás. La "
+"función regresará un string que indica cuándo sonará el despertador de "
+"acuerdo a lo siguiente: |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:473
+msgid "Días de la semana: '07:00' |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:474
+msgid "Fines de semana: '10:00' |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:476
+msgid "A menos que esté de vacaciones, en este caso: |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:478
+msgid "Días de la semana: '10:00' |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:479
+msgid "Fines de semana: 'libre' |br| |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz8.rst:481
+msgid ""
+"Ejemplos: |br| ``poner_alarma(1, False)`` -> ``\"7:00\"`` |br| "
+"``poner_alarma(1, True)`` -> ``\"10:00\"`` |br| ``poner_alarma(6, True)``"
+" -> ``\"libre\"`` |br| ``poner_alarma(0, False)`` -> ``\"10:00\"`` |br|"
+msgstr ""
+

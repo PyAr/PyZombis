@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP45/TWP45_1.rst:2
+msgid "Facebook Hacking"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_1.rst:13
+msgid "¿Los hackers no son \"malvados\"?"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_1.rst:15
+msgid ""
+"Facebook está dirigido por hackers. La mayoría de la gente piensa en un "
+"hacker como alguien que irrumpe en un sistema informático. Pero nosotros "
+"vemos esto como una filosofía. Aquí, los hackers asumen que siempre hay "
+"una forma mejor y más eficiente de resolver problemas \". "
+"facebook.com/careers (2012)"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_1.rst:29
+msgid "Obtener foto de perfil de Facebook"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_1.rst:31
+msgid ""
+"Para este ejercicio utilizaremos un intérprete de Python llamado Brython."
+" Éste incluye un módulo llamado browser que, a diferencia de los "
+"ejercicios anteriores, nos permitirá mostrar una página con elementos "
+"HTML (botones, cajas de texto, títulos, etc.), en lugar de solo mostrar "
+"impresiones en consola. En el siguiente enlace puedes encontrar una guía "
+"de todos los elementos HTML que Brython soporta: "
+"https://brython.info/static_doc/en/html.html"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_1.rst:43
+msgid ""
+"Este ejercicio obtiene la foto de perfil según el nombre de usuario de un"
+" perfil público de Facebook. Pruébalo por tu propia cuenta!"
+msgstr ""
+

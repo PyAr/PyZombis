@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP23/TWP23_5.rst:2
+msgid "Diccionarios"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_5.rst:5
+msgid "El diccionario en sí consiste en relacionar una clave con un valor específico"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_5.rst:6
+msgid "A diferencia de las listas, donde el índice es un número, los diccionarios usar sus claves como índice"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_5.rst:7
+msgid "Para agregar nuevos elementos que no necesito agregar, solo haga la sesión"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_5.rst:9
+msgid "Si la clave ya existe: el valor asociado cambia"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_5.rst:10
+msgid "Si la clave no existe: se agrega la nueva clave"
+msgstr ""

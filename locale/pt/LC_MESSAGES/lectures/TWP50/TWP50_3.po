@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:2
+msgid "Ventana básica"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:10
+msgid "La interfaz de texto funciona, pero es muy limitada y antigua."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:11
+msgid ""
+"Por tanto, ahora que la lógica detrás del show funciona, creemos una "
+"interfaz de usuario y mejorar esta de texto."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:15
+msgid ""
+"Comencemos con una interfaz básica, nuevamente usando el modulo de "
+"``brython``."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:13
+msgid "Usaremos unas herramientas o widgets que se encuentran en Brython."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:14
+msgid "Estas herramientas ya se encuentran implementadas."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:15
+msgid ""
+"Permiten la creación de diálogos o pequeñas ventanas para interactuar con"
+" el usuario."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:18
+msgid "Ventana con Brython"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:36
+msgid "Pudiste notar que en la ventana básica los botones no hacían nada."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:37
+msgid "Es necesario enlazar un evento a cada botón."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:38
+msgid "Esto se denomina programación orientada a eventos."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:39
+msgid "Esperar a las acciones del usuario."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:43
+msgid "Capturando un evento"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:45
+msgid "Para capturar un evento de un botón es necesario crear una función."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:46
+msgid "En la función se encontrará toda la lógica que se quiere para el botón."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:47
+msgid ""
+"Crearemos una ventana nueva con un botón y vamos a capturar o enlazar un "
+"evento."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:48
+msgid ""
+"Mostraremos en pantalla un mensaje cada vez que el usuario presione el "
+"botón."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:68
+msgid "Perfecto ya sabes como capturar eventos."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:69
+msgid ""
+"Puedes capturar eventos usando la función ``.bind()`` especificando el "
+"evento o utilizando una intrucción ``@bind`` también llamado decorador o "
+"*decorator*."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:70
+msgid ""
+"Esta instrucción se escribe en una línea anterior a la función que "
+"realiza el botón."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:71
+msgid "Sabiendo está lógica podemos terminar el Show de preguntas Zombis."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_3.rst:72
+msgid ""
+"Recuerda la reproducción de los sonidos y la lógica de las diferentes "
+"opciones."
+msgstr ""
+

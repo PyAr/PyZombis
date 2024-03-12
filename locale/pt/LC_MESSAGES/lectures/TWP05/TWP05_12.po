@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:2
+msgid "Operaciones con strings"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:4
+msgid "Las operaciones básicas son corte, concatenación y composición."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:5
+msgid "La operación corte le permite usar parte de la cadena"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:6
+msgid "La operación concatenación en cambio sirve para unir dos o más cadenas"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:7
+msgid ""
+"Por último la composición se usa mucho cuando enviamos mensajes a la "
+"pantalla y consiste en usar cadenas como patrones donde podemos insertar "
+"datos"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:12
+msgid "Concatenación"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:22
+msgid "Corte"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:24
+msgid ""
+"Podemos realizar la operación de corte utilizando "
+"``[indice_comienzo:indice_fin]``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:35
+msgid ""
+"Podemos omitir índices, sustituyendo el índice correspondiente y también "
+"podemos tener índices negativos: -1 último, -2 penúltimo"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:48
+msgid "Composición"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:50
+msgid "Unir cadenas múltiples no siempre es práctico"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:51
+msgid ""
+"Podemos usar marcadores de posición para reemplazar valores dentro de "
+"cadenas"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:58
+#, python-format
+msgid ""
+"Los marcadores principales son ``%d`` para números enteros, ``%s`` para "
+"cadenas y ``%f`` para números de punto flotante"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:60
+#, python-format
+msgid "% 03d completo con ceros adicionales"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:61
+#, python-format
+msgid "% 3d significa tres posiciones sin ceros adicionales"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:69
+#, python-format
+msgid "``%5.2f`` significa 5 caracteres en total y 2 decimales"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:76
+msgid "f-strings"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:78
+msgid "Otra manera de unir cadenas es mediante las f-strings"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_12.rst:79
+msgid ""
+"Todo lo que esté entre llaves {} se reemplazará si se definió "
+"anteriormente. En el ejemplo .2f significa dos lugares decimales."
+msgstr ""
+

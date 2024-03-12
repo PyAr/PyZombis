@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:2
+msgid "Show de preguntas Zombis"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:4
+msgid "Comencemos con la lógica del programa utilizando una interfaz de texto."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:8
+msgid "Recuerda los requerimientos:"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:6
+msgid "La *opción 1* es para la respuesta correcta y la *opción 2* para la respuesta incorrecta."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:7
+msgid "Contar cuántas respuestas correctas e incorrectas hubo."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:8
+msgid "La *opción 0* es para terminar."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:27
+msgid "Resultado"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:41
+msgid "¡Perfecto! el jefe está contento funciona de maravilla."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:42
+msgid "Faltaría el requerimiento de los sonidos."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_2.rst:43
+msgid "Sin embargo... ¿La interfaz de texto es nueva?"
+msgstr ""

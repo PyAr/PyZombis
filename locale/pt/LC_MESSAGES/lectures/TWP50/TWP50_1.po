@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:2
+msgid "Introducción a una interfaz gráfica"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:4
+msgid "En la programación no basta con hacer solamente el código."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:5
+msgid ""
+"No es suficiente para trabajar, también debe ser atractivo para el "
+"usuario."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:6
+msgid "Las interfaces basadas en texto funcionan, pero son limitadas y antiguas."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:7
+msgid ""
+"Motivado a esto, se necesita crear interfaces gráficas de usuario, "
+"también conocida por sus iniciales del inglés GUI *graphical user "
+"interface*"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:10
+msgid ""
+"Las interfaces gráficas de usuario podemos encontrarlas en diferentes "
+"sitios:"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:9
+msgid ""
+"En programas para la computadora, por ejemplo, una muy conocida es el "
+"programa Office. Estas interfaces las podemos llamar *interfaces de "
+"escritorio*."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:10
+msgid ""
+"También podemos encontrar interfaces que se ven dentro del navegador, "
+"como por ejemplo la página de Facebook, estas interfaces podemos "
+"llamarlas *interfaces web*."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:11
+msgid ""
+"Por último, encontramos interfaces en las aplicaciones para nuestros "
+"teléfonos inteligentes, un ejemplo es la aplicación Whatsapp, "
+"representando a las *interfaces móviles*."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:12
+msgid ""
+"En Python existen diferentes herramientas y librerías para la creación de"
+" interfaces, entre las conocidas para crear interfaces de escritorio se "
+"encuentran las librerías ``tkinter`` y ``PyQt``."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:13
+msgid ""
+"Ya que nuestro objetivo es crear interfaces dentro del navegador, "
+"utilizaremos nuevamente ``brython``."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:14
+msgid ""
+"Brython permite a través de su sintaxis la capacidad de crear interfaces "
+"gráficas simples."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:15
+msgid "Crearemos en este ejercicio el **Show de preguntas Zombis**."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:18
+msgid "Show de preguntas Zombis"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:20
+msgid "Es un juego con diferentes opciones."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:21
+msgid ""
+"La *opción 1* es para la respuesta correcta y la *opción 2* para la "
+"respuesta incorrecta."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:22
+msgid "El programa tendrá un efecto de sonido para cada respuesta."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:23
+msgid "El programa debe contar cuántas respuestas correctas e incorrectas hubo."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:24
+msgid "Finalmente presione 0 para terminar."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:28
+msgid "Reproduciendo un audio"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:30
+msgid "Comencemos hacer la lógica de reproducir un audio."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:31
+msgid ""
+"Hay diversas formas de hacerlo, una opción puede ser con la librería "
+"``pygame`` entre otras."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:32
+msgid "Nuevamente usaremos el modulo de Brython."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:33
+msgid "El código de abajo genera un elemento de HTML llamado ``audio``."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:36
+msgid ""
+"En está `página <https://bigsoundbank.com/UPLOAD/ogg/>`_ puedes obtener "
+"sonidos libres que puedes usar en el programa."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:35
+msgid "Solo necesitas copiar y pegar la url del sónido que te guste."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:50
+msgid ""
+"Notaste que se creó el elemento de audio con los controles para "
+"reproducirlo y detenerlo."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:51
+msgid "Puedes agregar cuantos sonidos quieras."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:53
+msgid ""
+"¿Pero cómo manejo por el programa cuándo se reproduce y cuándo se detiene"
+" el sonido?"
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:53
+msgid "Vamos a enlazar eventos para poder lograrlo."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:97
+msgid "Se oyen muy bien los audios."
+msgstr ""
+
+#: ../_sources/lectures/TWP50/TWP50_1.rst:98
+msgid "Ahora que el audio está funcionando, ¡hagamos el Show de preguntas Zombis!"
+msgstr ""
+

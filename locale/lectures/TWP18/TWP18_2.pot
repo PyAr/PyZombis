@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP18/TWP18_2.rst:2
+msgid "Rebanar"
+msgstr ""
+
+#: ../_sources/lectures/TWP18/TWP18_2.rst:4
+msgid "Rebanada del primer índice al anterior del segundo"
+msgstr ""
+
+#: ../_sources/lectures/TWP18/TWP18_2.rst:16
+msgid "Podemos omitir índices, sustituyendo el extremo correspondiente y también podemos tener índices negativos: -1 último, -2 penúltimo"
+msgstr ""
+
+#: ../_sources/lectures/TWP18/TWP18_2.rst:31
+msgid "Incremento en el corte"
+msgstr ""
+
+#: ../_sources/lectures/TWP18/TWP18_2.rst:33
+msgid "Puedo usar un incremento al cortar el string"
+msgstr ""
+
+#: ../_sources/lectures/TWP18/TWP18_2.rst:43
+msgid "Comprobar si una palabra es palíndrome"
+msgstr ""

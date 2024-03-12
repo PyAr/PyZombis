@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:2
+msgid "Clase = fábrica de objetos"
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:20
+msgid "Clase SoundPanel"
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:48
+msgid "Programa principal"
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:76
+msgid "¡Felicidades! Ahora sabes cómo crear programas complejos con poco código."
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:94
+msgid "Recuerda"
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:96
+msgid "Las clases son fábricas de objetos"
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:97
+msgid "Classe = métodos + datos"
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:98
+msgid "Crear objetos =  instanciar una clase"
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:99
+msgid "class – comienza la definición de una clase"
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:100
+msgid "self – autoasignado al objeto actual"
+msgstr ""
+
+#: ../_sources/lectures/TWP58/TWP58_2.rst:101
+msgid "__init__() Se llama al crear el objeto"
+msgstr ""

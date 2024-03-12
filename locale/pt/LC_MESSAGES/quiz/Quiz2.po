@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/quiz/Quiz2.rst:3
+msgid "Quiz - 2"
+msgstr ""
+
+#: ../_sources/quiz/Quiz2.rst:17
+msgid ""
+"Desarrolle la función ``es_triangulo`` que recibe tres enteros positivos "
+"``a``, ``b`` y ``c``. Éstos representan los lados de un triángulo. En la "
+"función debe verificar que con los parámetros dados se forma un "
+"triángulo. Si los parámetros dados forman un triángulo, la función debe "
+"devolver una cadena indicando su tipo, es decir, ``\"Equilátero\"``, "
+"``\"Isósceles\"`` o ``\"Escaleno\"``, en caso contrario, la función debe "
+"devolver la cadena, ``\"No es triángulo\"``. |br| **Nota**: recuerde que "
+"no es un triángulo cuando el lado de mayor longitud es mayor o igual que "
+"la suma de los otros dos. |br| |br| Ejemplos: |br| ``es_triangulo(2, 2, "
+"2)`` -> ``\"Equilátero\"`` |br| ``es_triangulo(3, 2, 2)`` -> "
+"``\"Isósceles\"`` |br| ``es_triangulo(4, 2, 6)`` -> ``\"No es "
+"triángulo\"`` |br| ``es_triangulo(2, 1, 8)`` -> ``\"No es triángulo\"`` "
+"|br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz2.rst:54
+msgid ""
+"Desarrolle la función ``es_bisiesto`` que recibe el parámetro ``anio`` "
+"que es un entero positivo mayor que cero y representa un año. La función "
+"debe verificar si el parámetro dado es un año bisiesto, por lo tanto debe"
+" devolver ``True`` si lo es, o ``False`` en caso contrario. Un año es "
+"bisiesto, si es divisible entre 400 o también si es divisible entre 4 "
+"pero no divisible entre 100. |br| |br| Ejemplos: |br| "
+"``es_bisiesto(2014)`` -> ``False`` |br| ``es_bisiesto(2016)`` -> ``True``"
+" |br| ``es_bisiesto(1900)`` -> ``False`` |br| ``es_bisiesto(2000)`` -> "
+"``True`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz2.rst:90
+msgid ""
+"Juan Pablo el pescador, es un buen hombre que trabaja todos los días de "
+"la semana. Al final de cada día de trabajo, Juan debe reportar al estado."
+" Cada vez que trae un peso de pescado mayor al establecido por la "
+"normativa de pesca (50 kilogramos) debe pagar una multa de 4.00 unidades "
+"por kilogramo adicional. Para llevar un registro, él compro una "
+"computadora para controlar los ingresos de su trabajo y te solicitó que "
+"hicieras la función llamada ``generar_reporte`` que recibe una lista de "
+"flotantes positivos ``pesos``, que representan la cantidad que pescó Juan"
+" cada día de la semana. La función debe devolver un arreglo de tuplas, "
+"donde cada tupla debe ser un par de la forma ``(adicional, multa)``, que "
+"representan la cantidad de kilogramos adicional que pescó Juan durante un"
+" día y la multa que tuvo que pagar respectivamente. De no haber pagado "
+"multa el resultado será ``0.0`` en ambos casos. |br| |br| Ejemplos: |br| "
+"``generar_reporte([25.5, 50.5, 60.25, 15, 100, 50, 30.50])`` -> ``[(0.0, "
+"0.0), (0.5, 2.0), (10.25, 41.0), (0.0, 0.0), (50.0, 200.0), (0.0, 0.0),``"
+" |br| ``(0.0, 0.0)]``"
+msgstr ""
+
+#: ../_sources/quiz/Quiz2.rst:124
+msgid ""
+"Desarrolle la función ``mayor_tres`` que recibe tres números enteros "
+"``a``, ``b`` y ``c``. La función debe devolver el mayor de los tres "
+"números, sin usar las funciones ``max`` o ``min``. |br| |br| Ejemplos: "
+"|br| ``mayor_tres(5, 2, 3)`` -> ``5`` |br| ``mayor_tres(-5, 0, -2)`` -> "
+"``0`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz2.rst:154
+msgid ""
+"Desarrolle la función ``mayor_menor_tres`` que recibe tres números "
+"enteros ``a``, ``b`` y ``c``. La función debe devolver una tupla de la "
+"forma ``(mayor, menor)`` que representan el mayor y el menor de los tres "
+"números, sin usar las funciones ``max`` o ``min``. |br| |br| Ejemplos: "
+"|br| ``mayor_menor_tres(5, 2, 3)`` -> ``(2, 5)`` |br| "
+"``mayor_menor_tres(-5, 0, -2)`` -> ``(-2, 0)`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz2.rst:184
+msgid ""
+"Un trabajador de una empresa recibe un salario mensual bruto calculado "
+"por la cantidad de horas trabajadas multiplicada por su valor. De este "
+"``salario_bruto`` se le descuentan al mes el ``11%`` por impuestos, el "
+"``8%`` de seguro médico y ``5%`` como pago al sindicato. Desarrolle la "
+"función ``calcular_salario`` que recibe un flotante ``valor_hora`` y un "
+"entero ``cantidad_horas`` que representan cuánto gana por hora y la "
+"cantidad de horas trabajadas durante el mes. La función debe devolver un "
+"diccionario de la forma: |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz2.rst:186
+msgid ""
+"``{\"salario_bruto\": A, \"impuestos\": B,`` |br| ``\"seguro_medico\": C,"
+" \"sindicato\": E, \"salario_neto\": F}``. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz2.rst:188
+msgid ""
+"Donde A, B, C y D representan la cantidad de dinero correspondiente para "
+"cada ítem. |br| |br| Ejemplos: |br| ``calcular_salario(15.0, 120)`` -> "
+"``{\"salario_bruto\": 1800.00, \"impuestos\": 198.00,`` |br| "
+"``\"seguro_medico\": 144.0, \"sindicato\": 90.0, \"salario_neto\": "
+"1368.00}``. |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz2.rst:261
+msgid ""
+"La pintura que venden en su ferretería de confianza tiene una cobertura "
+"de 1 litro por cada 3 metros cuadrados y la pintura se vende solo en "
+"botes de 18 litros que cuestan cada uno ``80.00`` unidades. Desarrolle la"
+" función ``puedo_pintar`` que recibe una cantidad en metros cuadrados de "
+"un área a pintar como un entero positivo ``area``. La función debe "
+"devolver una tupla con las cantidad de botes de pintura que se necesitan "
+"comprar para cubrir toda el área, así como su precio total, es decir, "
+"utilizando la forma ``(cantidad_botes, precio_total)``. |br| **Nota**: "
+"solo se vende un número entero de botes de pintura. |br| |br| Ejemplos: "
+"|br| ``puedo_pintar(10)`` -> ``(1, 80.00)`` |br| ``puedo_pintar(100)`` ->"
+" ``(2, 160.00)`` |br| ``puedo_pintar(54)`` -> ``(1, 80.00)`` |br| "
+"``puedo_pintar(55)`` -> ``(2, 160.00)`` |br|"
+msgstr ""
+

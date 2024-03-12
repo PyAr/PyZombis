@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP33/TWP33_1.rst:2
+msgid "Starbuzz Café"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_1.rst:12
+msgid "Código Starbuzz actual"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_1.rst:27
+msgid "El CEO solo quiere el precio"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_1.rst:36
+msgid "Este es el texto HTML \"en bruto\", que es el formato de las páginas web."
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_1.rst:37
+msgid "El precio está incrustado en HTML"
+msgstr ""
+
+#: ../_sources/lectures/TWP33/TWP33_1.rst:50
+msgid "Recibimos el output anterior como una string o cadena de caracteres."
+msgstr ""
+

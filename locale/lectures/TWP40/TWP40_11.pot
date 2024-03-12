@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:2
+msgid "Números básicos"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:4
+msgid "Existen dos tipos de datos numéricos: ``int`` y ``float``."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:8
+msgid "¿Por qué existen diferentes tipos?"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:6
+msgid "Hay diferentes datos: los contadores son números enteros y el número PI no es."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:7
+msgid "Las operaciones con números enteros son mucho más rápidas."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:8
+msgid "Los números de coma flotante son aproximaciones: su precisión tiene un límite."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:23
+msgid "Tabla de operadores"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:26
+msgid "**Tabla de operadores**"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:30
+msgid "Operador"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:30
+msgid "Operación"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:32
+msgid "\\*"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:32
+msgid "Multiplicación"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:33
+msgid "/"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:33
+msgid "División"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:34
+msgid "\\*\\*"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:34
+msgid "Exponenciación"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:35
+msgid "abs()"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:35
+msgid "Valor absoluto"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:36
+msgid "%"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:36
+msgid "Resto de la división"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:37
+msgid "//"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:37
+msgid "División entera"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:38
+msgid "\\-"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:38
+msgid "Resta"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:39
+msgid "\\+"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:39
+msgid "Suma"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_11.rst:43
+msgid "Operadores Numéricos"
+msgstr ""

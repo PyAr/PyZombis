@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP40/TWP40_8.rst:2
+msgid "Asignación múltiple"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_8.rst:20
+msgid "¡Para intercambiar variables, la siguiente secuencia no funciona!"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_8.rst:29
+msgid "Una solución sería usar una variable ``temporal``."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_8.rst:39
+msgid "También se puede utilizar la asignación múltiple que es más elegante."
+msgstr ""
+

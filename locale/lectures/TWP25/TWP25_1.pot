@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:2
+msgid "Clases y objetos"
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:4
+msgid "Las clases asocian datos (atributos) y operaciones (métodos) en una estructura."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:5
+msgid "Un objeto es una variable cuyo tipo es una clase, es decir, un objeto es una instancia de una clase."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:6
+msgid "Solo veremos los conceptos básicos de la programación orientada a objetos."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:25
+msgid "Cuando declaramos una clase, estamos creando un nuevo tipo de datos."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:26
+msgid "Al igual que cuando creamos una lista o una cadena, estamos creando instancias o creando una instancia de estas clases."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:27
+msgid "Es lo mismo hacer ``list = []`` o ``list = list ()``"
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:28
+msgid "El método ``__init__`` se llama constructor y se llama al crear el objeto."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:29
+msgid "El parámetro ``self`` significa el objeto de televisión en sí."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:30
+msgid "``self.conectado`` es un valor del objeto ``television``."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:31
+msgid "Siempre que queramos crear atributos de un objeto, debemos asociarlos con uno mismo utilizando ``self``."
+msgstr ""
+
+#: ../_sources/lectures/TWP25/TWP25_1.rst:32
+msgid "De lo contrario, si escribimos solamente ``conectado = False``, ``conectado`` sería solo una variable local del método y no un atributo."
+msgstr ""

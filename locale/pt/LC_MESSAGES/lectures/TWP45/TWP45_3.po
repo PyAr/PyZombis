@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:2
+msgid "Probando la API de TasteDive"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:4
+msgid "TasteDive es una herramienta que:"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:6
+msgid ""
+"le ayuda a descubrir nueva música, películas, programas de televisión, "
+"libros, autores, juegos, podcasts y personas con intereses compartidos. "
+"-- TasteDive"
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:10
+msgid ""
+"En el siguiente ejercicio usaremos la API de TasteDive para buscar obras "
+"o artistas similares a otra de nuestra elección. La documentación de la "
+"API de `TasteDive <https://tastedive.com/read/api>`_."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:18
+msgid ""
+"En este caso, utilizaremos la librería ``requests`` para hacer la "
+"solicitud a la API. La url base es "
+"``\"https://tastedive.com/api/similar\"``. A esta url se le va a pasar un"
+" parámetro ``q`` con el valor de la artista Ariana Grande. Al final la "
+"url se va a ver de la siguiente forma: "
+"``\"https://tastedive.com/api/similar?q=ariana+grande\"``. Note que "
+"después de la url base se escribe un ``?`` para indicar que siguen los "
+"parámetros."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:46
+msgid ""
+"En el ejemplo anterior pudo apreciar que la API regresa un texto, que si "
+"lo pasamos por ``json.loads`` se transforma a un diccionario de Python. "
+"Sin embargo, no es del todo legible. Esto se puede solucionar con "
+"``json.dumps``."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:55
+msgid ""
+"Ahora vamos a solicitar información de la banda Coldplay. Esta vez vamos "
+"a imprimir los datos de forma que sean legibles. Esto lo hacemos con el "
+"argumento ``indent`` de la función ``dumps`` de ``json``. Vamos a usar "
+"``urllib`` para hacer la solicitud."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:82
+msgid "El siguiente ejercicio viene con calificación automática."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:88
+msgid ""
+"Ahora va a preguntar a TasteDive por la película Coco. Entonces el "
+"diccionario ``parametros`` debe tener el valor ``\"Coco\"`` asignado a la"
+" llave ``\"q\"``. Además, esta vez solo queremos 5 resultados en vez de "
+"20. Para esto existe un parámetro llamado ``\"limit\"``, que puede ser "
+"asignado al número de resultados que se necesiten. Otro parámetro que le "
+"pasará a la url será ``\"info\"`` y tendrá el valor de 1. Lo que hará "
+"esto es que los resultados vendrán con un texto extra con información "
+"sobre la película."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:94
+msgid ""
+"Primero, va a solicitar a la API lo descrito anteriormente, y guardará "
+"esto en la variable ``solicitud``. En otra variable, ``solicitud_url``, "
+"guarde la url de la solicitud. Después asignará los datos a la variable "
+"``datos``. Después va asignar a la variable ``resultados`` el número de "
+"resultados que arrojó la solicitud (como se hizo en el ejemplo anterior)."
+" Como pusimos un límite, este número debe coincidir con el límite."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:99
+msgid ""
+"Ahora va a crear la lista ``peliculas_similares``. Dentro de ``datos`` "
+"usted tiene un diccionario de diccionarios y listas. Lo que hará será "
+"buscar los conjuntos dentro de los cuales se encuentren los nombres de "
+"las películas similares a Coco, y va a agregar a ``peliculas_similares`` "
+"el nombre de esas películas. En total deben ser 5. **Pista**: los datos "
+"de las películas se encuentran dentro de "
+"``datos[\"Similar\"][\"Results\"]``, y la llave para acceder a ellas es "
+"``\"Name\"``."
+msgstr ""
+
+#: ../_sources/lectures/TWP45/TWP45_3.rst:105
+msgid ""
+"Por último, va a buscar el número de veces que aparece la palabra "
+"``\"Pixar\"`` en los textos de información de las películas relacionadas "
+"a Coco. Ese número lo va a guardar en la variable ``pixar``. **Pista**: "
+"``\"wTeaser\"`` es la llave que guarda el texto. Esta llave se encuentra "
+"en el mismo diccionario que el nombre de las películas."
+msgstr ""
+

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:2
+msgid "Ordenar la lista sería mejor"
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:12
+msgid "Ordenar es más fácil en la memoria"
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:14
+msgid ""
+"Los datos del disco son persistentes: si tira del cable de la toma de "
+"corriente,  la computadora no olvidará la información grabada en el "
+"disco."
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:15
+msgid ""
+"Los datos en la memoria son mucho más rápidos, pero no persistentes: los "
+"datos en la memoria desaparecen cuando sale de su programa o cuando el la"
+" computadora está apagada."
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:16
+msgid "Compensación de diseño: persistencia x velocidad."
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:20
+msgid "Primero: lea los datos en la memoria"
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:30
+msgid "Wow, usemos un tren de datos"
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:32
+msgid "Matriz, lista, vector son nombres comunes para un lote completo de datos."
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:33
+msgid "Solo necesito una sola variable para todo el tren de datos."
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:44
+msgid "Volviendo al surf ..."
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:46
+msgid "Podemos crear una lista ``puntuaciones``."
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:47
+msgid "Para insertar cada nueva puntuación, use ``.append()``"
+msgstr ""
+
+#: ../_sources/lectures/TWP37/TWP37_4.rst:48
+msgid ""
+"El mejor puesto serán las ``puntuaciones[0]``, ``puntuaciones[1]`` y "
+"``puntuaciones[2]``."
+msgstr ""
+
