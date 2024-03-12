@@ -2,6 +2,17 @@ import pytest
 import requests
 import json
 
+def test_l45_2():
+    """Tests fetching data from the provided URL"""
+    # Send a GET request to the URL
+    url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
+
+    # Send a GET request to the URL
+    response = requests.get(url, headers = {'User-agent': 'pyZombis'})
+
+    # Check for successful response (status code 200)
+    assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}"
+
 
 def test_l45_1(page):
     page.goto("lectures/TWP45/TWP45_1.html")
@@ -18,6 +29,16 @@ def test_l45_1(page):
     # Test the src attribute from image matches the Facebook URL
     assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
 
+def est_l45_2(page):
+    #Go to TWP45_2 page
+    page.goto("lectures/TWP45/TWP45_2.html")
+    # Click Save & Run
+    page.click("text=Save & Run")
+    #Allows the API sufficient time to retrieve the data
+    time.sleep(20)
+
+    #Verifies whether the API's result is null or not
+    assert page.query_selector('//*[@id="ac_l45_2"]/div/div[5]/pre').inner_text() != ''
 
 @pytest.mark.vcr()
 def test_l45_3(page):
