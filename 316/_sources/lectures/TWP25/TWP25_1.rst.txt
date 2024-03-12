@@ -1,0 +1,53 @@
+Clases y objetos
+=================
+
++ Las clases asocian datos (atributos) y operaciones (métodos) en una estructura.
++ Un objeto es una variable cuyo tipo es una clase, es decir, un objeto es una instancia de una clase.
++ Solo veremos los conceptos básicos de la programación orientada a objetos.
+
+..  codelens:: cl_l25_1a
+         
+    class Television:
+        def __init__(self):
+            self.conectado = False
+            self.canal = 2
+
+
+    tv_cuarto = Television()
+    tv_sala = Television()
+    print(tv_cuarto.conectado)
+    print(tv_cuarto.canal)
+    tv_sala.conectado = True
+    tv_sala.canal = 5
+    print(tv_sala.conectado)
+    print(tv_sala.canal)
+
++ Cuando declaramos una clase, estamos creando un nuevo tipo de datos.
++ Al igual que cuando creamos una lista o una cadena, estamos creando instancias o creando una instancia de estas clases.
++ Es lo mismo hacer ``list = []`` o ``list = list ()``
++ El método ``__init__`` se llama constructor y se llama al crear el objeto.
++ El parámetro ``self`` significa el objeto de televisión en sí.
++ ``self.conectado`` es un valor del objeto ``television``.
++ Siempre que queramos crear atributos de un objeto, debemos asociarlos con uno mismo utilizando ``self``.
++ De lo contrario, si escribimos solamente ``conectado = False``, ``conectado`` sería solo una variable local del método y no un atributo.
+
+..  codelens:: cl_l25_1b
+         
+    class Television:
+        def __init__(self):
+            self.conectado = False
+            self.canal = 2
+
+        def cambiar_canal_hacia_abajo(self):
+            self.canal -= 1
+
+        def cambiar_canal_hacia_arriba(self):
+            self.canal += 1
+
+
+    tv = Television()
+    tv.cambiar_canal_hacia_arriba()
+    tv.cambiar_canal_hacia_arriba()
+    print(tv.canal)
+    tv.cambiar_canal_hacia_abajo()
+    print(tv.canal)

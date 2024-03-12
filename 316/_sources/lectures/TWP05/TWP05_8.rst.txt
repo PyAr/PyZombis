@@ -1,0 +1,68 @@
+Variables lógicas
+=================
+
++ Podemos almacenar verdadero y falso 
++ Las variables de este tipo se llaman lógicas o booleanas
++ En Python podemos inicializar variables de este tipo con ``True`` o ``False``
++ Tenga en cuenta que la T y la F están en mayúsculas, cualquier otra forma genera
+  un error de sintaxis
+
+Operadores relacionales
+-----------------------
+
+.. table:: **Operadores relacionales**
+   :widths: auto
+
+   ======== ============== ==============================
+   Operador Operación      Símbolo matemático equivalente
+   ======== ============== ==============================
+   ==       igual          =
+   >        mayor que      >
+   <        menor que      <
+   !=       diferente      <>
+   >=       mayor o igual  >=
+   <=       menor o igual  <=
+   ======== ============== ==============================
+
++ Tenga en cuenta que el operador de igualdad son dos iguales (``==``)
+
+Ejemplos:
+---------
+
+.. codelens:: cl_l05_8a
+    
+    a = 1
+    b = 5
+    c = 2
+    d = 1
+    print(a == b)
+    print(b > a)
+    print(a < b)
+    print(a == d)
+    print(b >= a)
+    print(c <= b)
+    print(d != a)
+    print(d != b)
+
+Ejemplo importante
+------------------
+
++ >= o <= para valores iguales
+
+.. codelens:: cl_l05_8b
+    
+    print(5 >= 5)
+    print(5 <= 5)
+
+Ejemplo
+-------
+
++ Podemos usar operadores relacionales para inicializar variables del
+  tipo lógico
+
+.. codelens:: cl_l05_8c
+    
+    nota = 8
+    promedio = 6
+    aprobado = nota > promedio
+    print(aprobado)
