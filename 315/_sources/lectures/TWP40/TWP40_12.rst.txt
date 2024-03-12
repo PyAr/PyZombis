@@ -20,6 +20,15 @@ Conversión de grados usando C
             C = 5.0 * (F - 32.0) / 9.0;
             printf("Celsius: %2.1f\n", C);
         }
+        
+Conversión de grados usando Python
+----------------------------------
+
+.. code-block:: python
+
+    F = float(input("Farenheit: "))
+    C = 5.0 * (F - 32.0) // 9.0
+    print("Celsius: %2.1f" % C)   
 
 .. poll:: TWP40
    :scale: 3
@@ -27,3 +36,5 @@ Conversión de grados usando C
 
    En una escala del 1 (a mejorar) al 3 (excelente), 
    ¿cómo calificaría este capítulo?
+
+  

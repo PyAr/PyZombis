@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Usando un messagebox &#8212; PyZombis aayush/issue#241@30efb05</title>
+    <title>3. Usando un messagebox &#8212; PyZombis aayush/issue#241@56efe0f</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis aayush/issue#241@30efb05
+          PyZombis aayush/issue#241@56efe0f
         </a>
       </div>
     </div>
@@ -324,27 +324,61 @@ window.addEventListener('load', (event) => {
   
   <div class="section" id="usando-un-messagebox">
 <h1><span class="section-number">3. </span>Usando un messagebox<a class="headerlink" href="#usando-un-messagebox" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">salvar_dados</span><span class="p">():</span>
-   <span class="k">try</span><span class="p">:</span>
-      <span class="n">fileD</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;encomendas.txt&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Destino:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">destino</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Descricao:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">descricao</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Endereco:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">endereco</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="n">END</span><span class="p">))</span>
-      <span class="n">destino</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
-      <span class="n">descricao</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-      <span class="n">endereco</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-   <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">excecao</span><span class="p">:</span>
-      <span class="n">app</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Erro de gravacao no arquivo </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">excecao</span><span class="p">)</span>
-</pre></div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l54_3a data-question_label="3.1">
+<div id=ac_l54_3a_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l54_3a_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython'  style="visibility: hidden;">
+from browser import document, alert, window, html
+
+def guardar_datos(event):
+   try:
+      destino = entrada_destino.value
+      descripcion = entrada_descripcion.value
+      direccion = entrada_direccion.value
+
+      if not destino or not descripcion or not direccion:
+         raise ValueError("Todos los campos deben estar llenos")
+
+      window.sessionStorage["Destino"] = destino
+      window.sessionStorage["Descripción"] = descripcion
+      window.sessionStorage["Dirección"] = direccion
+   except Exception as excepcion:
+      alert(f'Error: {excepcion}')
+
+app = html.DIV()
+
+app <= html.LABEL('Destino: ')
+entrada_destino = html.INPUT()
+app <= entrada_destino
+
+app <= html.LABEL('Descripción: ')
+entrada_descripcion = html.INPUT()
+app <= entrada_descripcion
+
+app <= html.LABEL('Dirección: ')
+entrada_direccion = html.INPUT()
+app <= entrada_direccion
+
+boton = html.BUTTON('Guardar')
+boton.bind('click', guardar_datos)
+app <= boton
+
+document <= app
+</textarea>
+</div>
 </div>
 <a class="reference internal image-reference" href="../../_images/TWP54_009.jpg"><img alt="" class="align-center" src="../../_images/TWP54_009.jpg" style="width: 18.335cm; height: 8.042cm;" /></a>
 <a class="reference internal image-reference" href="../../_images/TWP54_010.jpg"><img alt="" class="align-center" src="../../_images/TWP54_010.jpg" style="width: 13.348cm; height: 15.573cm;" /></a>
 
 <div class="runestone">
-<ul data-component="poll" id=TWP54 data-comment class='alert alert-warning' data-results='instructor' data-question_label="3.1" >
+<ul data-component="poll" id=TWP54 data-comment class='alert alert-warning' data-results='instructor' data-question_label="3.2" >
 En una escala del 1 (a mejorar) al 3 (excelente),
 ¿cómo calificaría este capítulo?
 

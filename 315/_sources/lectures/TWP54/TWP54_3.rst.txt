@@ -1,23 +1,47 @@
 Usando un messagebox
 ====================
 
-.. code-block :: python
+.. activecode:: ac_l54_3a
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   def salvar_dados():
+   from browser import document, alert, window, html
+
+   def guardar_datos(event):
       try:
-         fileD = open("encomendas.txt","a")
-         fileD.write("Destino:\n")
-         fileD.write("%s\n" %destino.get())
-         fileD.write("Descricao:\n")
-         fileD.write("%s\n" %descricao.get())
-         fileD.write("Endereco:\n")
-         fileD.write("%s\n" %endereco.get("1.0",END))
-         destino.set(None)
-         descricao.delete(0,END)
-         endereco.delete("1.0",END)
-      except Exception as excecao:
-         app.title('Erro de gravacao no arquivo %s' %excecao)
+         destino = entrada_destino.value
+         descripcion = entrada_descripcion.value
+         direccion = entrada_direccion.value
 
+         if not destino or not descripcion or not direccion:
+            raise ValueError("Todos los campos deben estar llenos")
+
+         window.sessionStorage["Destino"] = destino
+         window.sessionStorage["Descripción"] = descripcion
+         window.sessionStorage["Dirección"] = direccion
+      except Exception as excepcion:
+         alert(f'Error: {excepcion}')
+
+   app = html.DIV()
+
+   app <= html.LABEL('Destino: ')
+   entrada_destino = html.INPUT()
+   app <= entrada_destino
+
+   app <= html.LABEL('Descripción: ')
+   entrada_descripcion = html.INPUT()
+   app <= entrada_descripcion
+
+   app <= html.LABEL('Dirección: ')
+   entrada_direccion = html.INPUT()
+   app <= entrada_direccion
+
+   boton = html.BUTTON('Guardar')
+   boton.bind('click', guardar_datos)
+   app <= boton
+
+   document <= app
 
 .. image:: ../img/TWP54_009.jpg
    :height: 8.042cm

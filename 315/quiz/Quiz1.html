@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 1 &#8212; PyZombis aayush/issue#241@30efb05</title>
+    <title>Quiz - 1 &#8212; PyZombis aayush/issue#241@56efe0f</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis aayush/issue#241@30efb05
+          PyZombis aayush/issue#241@56efe0f
         </a>
       </div>
     </div>
@@ -329,7 +329,9 @@ window.addEventListener('load', (event) => {
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q1_1 data-question_label="1">
 <div id=q1_1_question class="ac_question col-md-12">
-<p>Haga un programa que pida dos números enteros e imprima la suma de esos dos números. <br /></p>
+<p>Haga un programa que dado dos números enteros, devuelva la suma de esos dos números. <br />
+* Reemplazar los <cite>…</cite> por la fórmula correspondiente.
+* Los números son dados en las variables n y m (parámetros)</p>
 
 </div>
 <textarea data-lang="python" id="q1_1_editor" 
@@ -338,7 +340,11 @@ window.addEventListener('load', (event) => {
            data-wasm=/_static
        style="visibility: hidden;">
 def suma(n, m):
+    resultado = ...
+    return resultado
 
+# Ejemplo para comprobación:
+print("El resultado es:", suma(2, 3))
 
 ====
 from unittest.gui import TestCaseGui
@@ -519,7 +525,7 @@ class myTests(TestCaseGui):
     def testOne(self):
 
         self.assertEqual(tiempo(5, 5), 1, "Esperado: 1")
-        self.assertEqual(tiempo(100, 3), 100/3, "Esperado: " + str(100/3))
+        self.assertEqual(round(tiempo(100, 3), 2), 33.33, "Esperado: 33.33")
         self.assertEqual(tiempo(10500, 30), 350, "Esperado: 350")
         self.assertEqual(tiempo(8600, 50), 172, "Esperado: 172")
         self.assertEqual(tiempo(130, 200), 0.65, "Esperado: 0.65")
@@ -586,11 +592,11 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(fahrenheit_a_celsius(21), ((21 - 32) * 5) / 9, "Esperado: " + str(((21 - 32) * 5) / 9))
-        self.assertEqual(fahrenheit_a_celsius(108), ((108 - 32) * 5) / 9, "Esperado: " + str(((108 - 32) * 5) / 9))
-        self.assertEqual(fahrenheit_a_celsius(0), ((0 - 32) * 5) / 9, "Esperado: " + str(((0 - 32) * 5) / 9))
-        self.assertEqual(fahrenheit_a_celsius(-10), ((-10 - 32) * 5) / 9, "Esperado: " + str(((-10 - 32) * 5) / 9))
-        self.assertEqual(fahrenheit_a_celsius(14), ((14 - 32) * 5) / 9, "Esperado: " + str(((14 - 32) * 5) / 9))
+        self.assertEqual(round(fahrenheit_a_celsius(21), 2), round(((21 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((21 - 32) * 5) / 9))
+        self.assertEqual(round(fahrenheit_a_celsius(108), 2), round(((108 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((108 - 32) * 5) / 9))
+        self.assertEqual(round(fahrenheit_a_celsius(0), 2), round(((0 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((0 - 32) * 5) / 9))
+        self.assertEqual(round(fahrenheit_a_celsius(-10), 2), round(((-10 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((-10 - 32) * 5) / 9))
+        self.assertEqual(round(fahrenheit_a_celsius(14), 2), round(((14 - 32) * 5) / 9, 2), "Esperado: %.2f" % (((14 - 32) * 5) / 9))
 
 
 myTests().main()
@@ -605,7 +611,7 @@ myTests().main()
 <p>Escriba un programa que pregunte por la cantidad de kilómetros recorridos
 por un automóvil alquilado, así como el número de días que ha estado alquilado
 el coche. Calcule el precio a pagar, sabiendo que el coche cuesta R $ 60,00
-por día y R $ 0,15 por km recorrido. <br /></p>
+por día y $ 0,15 por km recorrido. <br /></p>
 
 </div>
 <textarea data-lang="python" id="q1_9_editor" 
@@ -660,12 +666,10 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(
-                fumador(10, 1), ((10 * 1 * 365) * 10) / 1440, "Esperado: " + str(((10 * 1 * 365) * 10) / 1440)
-        )
-        self.assertEqual(fumador(3, 5), ((3 * 5 * 365) * 10) / 1440, "Esperado: " + str(((3 * 5 * 365) * 10) / 1440))
-        self.assertEqual(fumador(1, 8), ((1 * 8 * 365) * 10) / 1440, "Esperado: " + str(((1 * 8 * 365) * 10) / 1440))
-        self.assertEqual(fumador(2, 3), ((2 * 3 * 365) * 10) / 1440, "Esperado: " + str(((2 * 3 * 365) * 10) / 1440))
+        for c, a, e in ((10, 1, 25.35), (3, 5, 38.02), (1, 8, 20.28), (2, 3, 15.21)):
+            self.assertEqual(
+                round(fumador(c, a), 2), e, "Esperado: %.2f para %d cig. en %d años" % (e, c, a)
+            )
 
 
 myTests().main()
@@ -678,7 +682,7 @@ myTests().main()
 <div data-component="activecode" id=q1_11 data-question_label="11">
 <div id=q1_11_question class="ac_question col-md-12">
 <p>Sabiendo que  <code class="docutils literal notranslate"><span class="pre">str()</span></code> convierte valores numéricos en cadenas,
-calcule cuántos dígitos hay en 2 elevados a un millón. <br /></p>
+calcule cuántos dígitos hay en 2 elevado a la potencia de mil. <br /></p>
 
 </div>
 <textarea data-lang="python" id="q1_11_editor" 
@@ -696,7 +700,7 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(digitos(), 301030, "Esperado: 301030")
+        self.assertEqual(digitos(), 302, "Esperado: 302 digitos")
 
 
 myTests().main()
