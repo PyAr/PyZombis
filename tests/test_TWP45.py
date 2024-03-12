@@ -18,6 +18,19 @@ def test_l45_1(page):
     # Test the src attribute from image matches the Facebook URL
     assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
 
+def test_l45_2(page):
+    import time
+    
+    #Go to TWP45_2 page
+    page.goto("lectures/TWP45/TWP45_2.html")
+    # Click Save & Run
+    page.click("text=Save & Run")
+    #Allows the API sufficient time to retrieve the data
+    time.sleep(20)
+    
+    #Verifies whether the API's result is null or not
+    assert page.query_selector('//*[@id="ac_l45_2"]/div/div[5]/pre').inner_text() != ''
+
 
 @pytest.mark.vcr()
 def test_l45_3(page):

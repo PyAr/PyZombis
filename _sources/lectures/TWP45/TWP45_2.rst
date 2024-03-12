@@ -11,13 +11,21 @@ En este ejercicio vamos a acceder a Reddit para obetener datos como los de la si
 
 .. activecode:: ac_l45_2
     :nocodelens:
-    :language: python
+    :language: python3
+    :python3_interpreter: brython
 
+    ~~~~
+    import sys
+    sys.path.append("../../_static")
+
+    ^^^^
     import urllib.request
+    from urllibProxy import urllibConnectProxy
     import json
-    
+
     # La url de Reddit a la que accederemos
-    url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
+    url = "https://www.reddit.com/r/Python/.json"
+
     resp = urllib.request.urlopen(url).read()
     
     # La respuesta se da en formato json, se debe transformar a  
