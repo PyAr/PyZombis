@@ -66,3 +66,10 @@ Python Tools
 + The method ``text.find()`` searches for a substring.
 + ``float()`` converts something to a floating point number.
 + Libraries: ``urllib.request`` and ``time``.
+
+.. poll:: TWP33E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?
