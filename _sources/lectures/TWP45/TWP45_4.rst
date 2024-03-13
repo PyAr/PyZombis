@@ -65,3 +65,10 @@ Aprendizajes
 
 
 |
+
+.. poll:: TWP45
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?

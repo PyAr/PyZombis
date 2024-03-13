@@ -142,3 +142,10 @@ Remember
     + Use of third-party library: ``pygame`` and ``tkinter``.
 + To handle events, an event controller is used.
     + Event controller: function that is executed when the event occurs.
+
+.. poll:: TWP50E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?
