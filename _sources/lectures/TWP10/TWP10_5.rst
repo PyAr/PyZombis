@@ -11,6 +11,7 @@ Estructuras anidadas
     :alt:
 
 + Pueden crearse condiciones anidadas.
++ Python dada sus características proporciona la clausula ``elif``.
 + Recuerda identar las porciones de código que se encuentren anidadas.
 
 .. codelens:: cl_l10_5a
