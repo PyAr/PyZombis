@@ -45,3 +45,10 @@ Remember
 + Computers only understand machine language.
 + Python is a high-level interpreted language.
 + The Python interpreter converts instructions command by command into machine language.
+
+.. poll:: TWP38E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?

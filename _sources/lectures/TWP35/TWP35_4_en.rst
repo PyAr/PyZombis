@@ -28,3 +28,10 @@ JSON
     text = urllib.request.urlopen(url).read()
     data = json.loads(text)
     print(data["value"]["joke"])
+
+.. poll:: TWP35E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?
