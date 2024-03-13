@@ -98,3 +98,11 @@ Accesorios
 + Train Counter Game
 + Quiz Builder
 + EcardsOnMap (es grande...)
+
+.. poll:: TWP65
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?
+

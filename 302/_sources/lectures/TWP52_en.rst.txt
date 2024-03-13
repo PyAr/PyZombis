@@ -23,54 +23,40 @@ HEAD-Ex Logistics and Transportation
    :alt: 
 
 
-
 HEAD-Ex Logistics and Transportation
 ====================================
 
+.. activecode:: ac_l52_1a_en
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-.. code-block :: python
+   from browser import document, html
 
-   
-   def salvar_dados():
-      fileD = open('encomendas.txt','a')
-      fileD.write('Destino: ')
-      fileD.write('%s\n' %destino.get())
-      fileD.write('Descripcion: ')
-      fileD.write('%s\n' %descricao.get())
-      fileD.write('Habla a: ')
-      fileD.write('%s\n' %endereco.get('1.0',END))
-      destino.delete(0,END)
-      descricao.delete(0,END)
-      endereco.delete('1.0',END)
+   def save_data(event):
+      # Add your save data logic here
+      print(f"Destination: {destination.value}, Description: {description.value}, Speak to: {address.value}")
+  
+   app = html.DIV()
+   app <= html.H2('HEAD-Ex Logistics and Transport')
 
+   app <= html.LABEL('Destination: ')
+   destination = html.INPUT()
+   app <= destination
 
+   app <= html.LABEL('Description: ')
+   description = html.INPUT()
+   app <= description
 
-HEAD-Ex Logistics and Transportation
-====================================
+   app <= html.LABEL('Speak to: ')
+   address = html.INPUT()
+   app <= address
 
+   button = html.BUTTON('Save')
+   button.bind('click', save_data)
+   app <= button
 
-.. code-block :: python
-
-   from tkinter import *
-
-   app = Tk()
-   app.title('HEAD-Ex Logística y Transporte')
-   app.geometry("250x180+200+100")
-
-   Label(app,text = "Destino: ").pack()
-   destino = Entry(app)
-   destino.pack()
-
-   Label(app,text = "Descripcion: ").pack()
-   descricao = Entry(app)
-   descricao.pack()
-
-   Label(app,text = "Habla a: ").pack()
-   endereco = Entry(app)
-   endereco.pack()
-
-   Button(app, text = "Salvar" , command = salvar_dados).pack()
-   app.mainloop()
+   document <= app
 
 
 HEAD-Ex Logistics and Transportation
@@ -154,14 +140,29 @@ HEAD-Ex Logistics and Transportation
 + Vision is the featured radio button
 + Control is the tkinter code that manages all this
 
-.. code-block :: python
+.. activecode:: ac_l52_1b_en
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   Label(app, text = 'Destino: ').pack()
-   destino = StringVar()
-   destino.set(None)
-   Radiobutton(app, variable = destino , text = 'Cambridge , MA', value = 'Cambridge , MA').pack()
-   Radiobutton(app, variable = destino , text = 'Cambridge , UK', value = 'Cambridge , UK').pack()
-   Radiobutton(app, variable = destino , text = 'Seattle, WA', value = 'Seattle , WA').pack()
+   from browser import document, html
+
+   def on_change(event):
+      print(f"Destination: {event.target.value}")
+
+   app = html.DIV()
+
+   app <= html.LABEL('Destination: ')
+
+   destinations = ['Cambridge, MA', 'Cambridge, UK', 'Seattle, WA']
+   for destination in destinations:
+      radio = html.INPUT(Type="radio", name="destination", value=destination)
+      radio.bind('change', on_change)
+      app <= radio
+      app <= html.LABEL(destination)
+      app <= html.BR()
+
+   document <= app
 
 
 HEAD-Ex Logistics and Transportation
@@ -191,54 +192,92 @@ HEAD-Ex Logistics and Transportation
 ====================================
 
 
-.. code-block :: python
+.. activecode:: ac_l52_1c_en
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
    
-   def salvar_dados():
-      fileD = open('encomendas.txt','a')
-      fileD.write('Destino: ')
-      fileD.write('%s\n' %destino.get())
-      fileD.write('Descricao: ')
-      fileD.write('%s\n' %descricao.get())
-      fileD.write('Endereco: ')
-      fileD.write('%s\n' %endereco.get('1.0',END))
-      destino.delete(0,END)
-      descricao.delete(0,END)
-      endereco.delete('1.0',END)
+   from browser import document, html, window
 
-   def ler_destinos(archivo):
-      destinos = []
-      f = open(archivo)
-      for linha in f:
-         destinos.append(linha.rstrip())
-      return destinos
+   def save_data(event):
+      window.localStorage['Destination'] = destination.value
+      window.localStorage['Description'] = description.value
+      window.localStorage['Address'] = address.value
+      destination.value = ''
+      description.value = ''
+      address.value = ''
+
+   def read_destinations():
+      destinations = []
+      for key in window.localStorage:
+         destinations.append(window.localStorage[key])
+      return destinations
+
+   app = html.DIV()
+
+   app <= html.LABEL('Destination: ')
+   destination = html.INPUT()
+   app <= destination
+
+   app <= html.LABEL('Description: ')
+   description = html.INPUT()
+   app <= description
+
+   app <= html.LABEL('Address: ')
+   address = html.TEXTAREA()
+   app <= address
+
+   button = html.BUTTON('Save')
+   button.bind('click', save_data)
+   app <= button
+
+   document <= app
 
 
 HEAD-Ex Logistics and Transportation
 ====================================
 
 
-.. code-block :: python
+.. activecode:: ac_l52_1d_en
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   from tkinter import *
+   from browser import document, html, window, console
 
-   app = Tk()
-   app.title('HEAD-Ex Logística e Transporte')
-   Label(app,text = "Destino: ").pack()
-   destino = StringVar()
-   destino.set(None)
+   def save_data(event):
+      window.localStorage['Destination'] = destination.value
+      window.localStorage['Description'] = description.value
+      window.localStorage['Address'] = address.value
+      console.log(f"Saved data: Destination - {destination.value}, Description - {description.value}, Address - {address.value}")
+      destination.value = ''
+      description.value = ''
+      address.value = ''
 
-   opcoes = ler_destinos("cidades.txt")
-   OptionMenu(app,destino,*opcoes).pack()
+   app = html.DIV()
+   app <= html.H2('HEAD-Ex Logistics and Transport')
 
-   Label(app,text = "Descripcion: ").pack()
-   descricao = Entry(app)
-   descricao.pack()
-   Label(app,text = "Habla a: ").pack()
-   endereco = Entry(app)
-   endereco.pack()
-   Button(app, text = "Ahorrar" , command = salvar_dados).pack()
-   app.mainloop()
+   app <= html.LABEL('Destination: ')
+   destination = html.SELECT()
+   options = ["Option 1", "Option 2", "Option 3"]  # Replace with your options
+   for option in options:
+      destination <= html.OPTION(option)
+   app <= destination
+
+   app <= html.LABEL('Description: ')
+   description = html.INPUT()
+   app <= description
+
+   app <= html.LABEL('Speak to: ')
+   address = html.INPUT()
+   app <= address
+
+   button = html.BUTTON('Save')
+   button.bind('click', save_data)
+   app <= button
+
+   document <= app
 
 
 
@@ -253,7 +292,7 @@ HEAD-Ex Logistics and Transportation
    :alt: 
 
 
-review
+Review
 ======
 
 
