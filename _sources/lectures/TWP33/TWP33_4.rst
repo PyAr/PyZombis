@@ -22,6 +22,20 @@ Programa de fidelización
     texto = pagina.read()
     print(texto[234:238])
 
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testThree(self):
+            response_html = "<html><head><title>Welcome to the Beans'R'Us Pricing Page</title>"
+            
+            self.assertIn(response_html, texto, "Check if Actual Value is present in Expected Value")
+            self.assertEqual(texto[234:238], "bean", "Check if Actual Value is present in Expected Value")
+
+
+    myTests().main()
+
 + ¡No funcionó! la cadena "Bean" apareció en lugar del precio. ¿Por qué sera?
 
 
