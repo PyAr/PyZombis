@@ -1,5 +1,5 @@
 =====================
-Bienvenido a PyZombis
+Welcome to PyZombis
 =====================
 -----------------------------
 un curso de Python en español
