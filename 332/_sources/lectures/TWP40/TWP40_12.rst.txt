@@ -28,7 +28,7 @@ Conversión de grados usando Python
 
 .. code-block:: python
 
-    F = float(input("Fahrenheit: "))
+    F = float(input("Farenheit: "))
     C = 5.0 * (F - 32.0) / 9.0
     print("Celsius: %2.1f" % C)
 
