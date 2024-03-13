@@ -21,8 +21,8 @@ Conversión de grados usando C
             printf("Celsius: %2.1f\n", C);
         }
         
-Convirtiendo grados usando Python
-----------------------------------
+Conversión de grados usando Python
+-----------------------------------
 
 + Ahora vamos a convertir el programa anterior a Python.
 
