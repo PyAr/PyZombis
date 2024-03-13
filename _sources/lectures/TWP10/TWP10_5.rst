@@ -36,11 +36,10 @@ Estructuras anidadas
     else:
         if minutos <= 400:
             precio = 0.18
+        elif minutos <= 800:
+            precio = 0.15
         else:
-            if minutos <= 800:
-                precio = 0.15
-            else:
-                precio = 0.08
+            precio = 0.08
     print("Cuenta telefonica : $%6.2f" % (minutos * precio))
 
 + Note que las estructuras anidadas pueden crecer.

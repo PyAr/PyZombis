@@ -36,11 +36,10 @@ Nested Structures
     else:
         if minutes <= 400:
             price = 0.18
+        elif minutes <= 800:
+            price = 0.15
         else:
-            if minutes <= 800:
-                price = 0.15
-            else:
-                price = 0.08
+            price = 0.08
     print("Telephone bill : $%6.2f" % (minutes * price))
 
 + Note that nested structures can grow.
