@@ -1,0 +1,40 @@
+Expresiones lógicas
+===================
+
++ Podemos combinar los operadores lógicos para formar expresiones lógicas complejas
++ El orden de evaluación es: ``not`` > ``and`` > ``or``. Esto significa que en una 
+  expresión se evalúa primero el operador lógico ``not``, después ``and`` y por último ``or``.
+
+Veamos un ejemplo
+
+.. codelens:: cl_l05_10a
+
+   print(not False or False and True)
+   print(False or True and True)
+   print(not False and True or False)
+
+Ejemplo
+-------
+
++ La condición para otorgar un préstamo de compra de una motocicleta son: tener un
+  salario mayor que $1,000.00 y ser mayor de 18 años. Compruebe si José puede obtener el
+  préstamo
+
+.. codelens:: cl_l05_10b
+    
+    salario = 500.0
+    edad = 20
+    print(salario > 1000 and edad > 18)
+
+Ejemplo
+-------
+
++ Verifique si un estudiante aprobó dado que obtuvo una puntuación promedio de 5.8 en
+  el programa de ejercicios y obtuvo un puntaje promedio de 7 en las pruebas
+
+.. codelens:: cl_l05_10c
+    
+    ep = 5.8
+    p = 7
+    aprobado = ep >= 6 and p >= 6
+    print(aprobado)

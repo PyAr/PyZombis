@@ -1,0 +1,57 @@
+Se lanza una excepción
+======================
+
+.. image:: ../img/TWP54_004.jpg
+   :height: 11.211cm
+   :width: 22.859cm
+   :align: center
+   :alt: 
+
+
+Atrapando la excepción
+----------------------
+
+.. image:: ../img/TWP54_005.jpg
+   :height: 14.432cm
+   :width: 22.771cm
+   :align: center
+   :alt: 
+
+
+Manejo de excepciones
+---------------------
+
+.. activecode:: ac_l54_2a
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
+
+   from browser import window, prompt, alert
+
+   def guardar_datos():
+      try:
+         destino = prompt("Ingrese Destino")
+         if not destino:
+            raise ValueError("El destino no puede estar vacío")
+         window.sessionStorage["Destino"] = destino
+         descripcion = prompt("Ingrese Descripción")
+         if not descripcion:
+            raise ValueError("La descripción no puede estar vacía")
+         window.sessionStorage["Descripción"] = descripcion
+         discurso = prompt("Ingrese Discurso")
+         if not discurso:
+            raise ValueError("El discurso no puede estar vacío")
+         window.sessionStorage["Discurso"] = discurso
+      except Exception as excepcion:
+         alert(f'Error: {excepcion}')
+
+   guardar_datos()
+
++ Obs.: para você testar a exceção deverá alterar as propriedades do arquivo
+
+
+.. image:: ../img/TWP54_007.jpg
+   :height: 7.611cm
+   :width: 22.859cm
+   :align: center
+   :alt: 
