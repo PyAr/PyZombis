@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MVC &#8212; PyZombis mvc_e2e@aefcd45</title>
+    <title>MVC &#8212; PyZombis mvc_e2e@e111255</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis mvc_e2e@aefcd45
+          PyZombis mvc_e2e@e111255
         </a>
       </div>
     </div>
@@ -331,153 +331,235 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="id1">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">salvar_dados</span><span class="p">():</span>
-   <span class="n">fileD</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;encomendas.txt&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Destino: &#39;</span><span class="p">)</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">destino</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Descripcion: &#39;</span><span class="p">)</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">descricao</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Habla a: &#39;</span><span class="p">)</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">endereco</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;1.0&#39;</span><span class="p">,</span><span class="n">END</span><span class="p">))</span>
-   <span class="n">destino</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-   <span class="n">descricao</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-   <span class="n">endereco</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s1">&#39;1.0&#39;</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-</pre></div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l52_1a_en data-question_label="1">
+<div id=ac_l52_1a_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l52_1a_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython'  style="visibility: hidden;">
+from browser import document, html
+
+def save_data(event):
+   # Add your save data logic here
+   print(f"Destination: {destination.value}, Description: {description.value}, Speak to: {address.value}")
+
+app = html.DIV()
+app <= html.H2('HEAD-Ex Logistics and Transport')
+
+app <= html.LABEL('Destination: ')
+destination = html.INPUT()
+app <= destination
+
+app <= html.LABEL('Description: ')
+description = html.INPUT()
+app <= description
+
+app <= html.LABEL('Speak to: ')
+address = html.INPUT()
+app <= address
+
+button = html.BUTTON('Save')
+button.bind('click', save_data)
+app <= button
+
+document <= app
+</textarea>
+</div>
 </div>
 </div>
 <div class="section" id="id2">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
-<span class="n">app</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;HEAD-Ex Logística y Transporte&#39;</span><span class="p">)</span>
-<span class="n">app</span><span class="o">.</span><span class="n">geometry</span><span class="p">(</span><span class="s2">&quot;250x180+200+100&quot;</span><span class="p">)</span>
-
-<span class="n">Label</span><span class="p">(</span><span class="n">app</span><span class="p">,</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Destino: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">destino</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
-<span class="n">destino</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-
-<span class="n">Label</span><span class="p">(</span><span class="n">app</span><span class="p">,</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Descripcion: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">descricao</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
-<span class="n">descricao</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-
-<span class="n">Label</span><span class="p">(</span><span class="n">app</span><span class="p">,</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Habla a: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">endereco</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
-<span class="n">endereco</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-
-<span class="n">Button</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Salvar&quot;</span> <span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="n">salvar_dados</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">app</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
-</pre></div>
-</div>
+<a class="reference internal image-reference" href="../_images/TWP52_005.jpg"><img alt="" class="align-center" src="../_images/TWP52_005.jpg" style="width: 19.302cm; height: 12.571cm;" /></a>
 </div>
 <div class="section" id="id3">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP52_005.jpg"><img alt="" class="align-center" src="../_images/TWP52_005.jpg" style="width: 19.302cm; height: 12.571cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP52_006.jpg"><img alt="" class="align-center" src="../_images/TWP52_006.jpg" style="width: 17.401cm; height: 15.565cm;" /></a>
 </div>
 <div class="section" id="id4">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP52_006.jpg"><img alt="" class="align-center" src="../_images/TWP52_006.jpg" style="width: 17.401cm; height: 15.565cm;" /></a>
-</div>
-<div class="section" id="id5">
-<h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Radio Buttons</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/TWP52_007.png"><img alt="" class="align-center" src="../_images/TWP52_007.png" style="width: 15.801cm; height: 13.973cm;" /></a>
 </div>
+<div class="section" id="id5">
+<h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP52_008.jpg"><img alt="" class="align-center" src="../_images/TWP52_008.jpg" style="width: 7.831cm; height: 8.254cm;" /></a>
+</div>
 <div class="section" id="id6">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP52_008.jpg"><img alt="" class="align-center" src="../_images/TWP52_008.jpg" style="width: 7.831cm; height: 8.254cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP52_009.jpg"><img alt="" class="align-center" src="../_images/TWP52_009.jpg" style="width: 15.212cm; height: 12.571cm;" /></a>
 </div>
 <div class="section" id="id7">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP52_009.jpg"><img alt="" class="align-center" src="../_images/TWP52_009.jpg" style="width: 15.212cm; height: 12.571cm;" /></a>
+<a class="reference internal image-reference" href="../_images/TWP52_013.jpg"><img alt="" class="align-center" src="../_images/TWP52_013.jpg" style="width: 18.123cm; height: 9.048cm;" /></a>
 </div>
 <div class="section" id="id8">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP52_013.jpg"><img alt="" class="align-center" src="../_images/TWP52_013.jpg" style="width: 18.123cm; height: 9.048cm;" /></a>
-</div>
-<div class="section" id="id9">
-<h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP52_014.png"><img alt="" class="align-center" src="../_images/TWP52_014.png" style="width: 13cm; height: 4.176cm;" /></a>
 <ul class="simple">
 <li><p>Model is the stored data</p></li>
 <li><p>Vision is the featured radio button</p></li>
 <li><p>Control is the tkinter code that manages all this</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Label</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Destino: &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">destino</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
-<span class="n">destino</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
-<span class="n">Radiobutton</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">variable</span> <span class="o">=</span> <span class="n">destino</span> <span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Cambridge , MA&#39;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;Cambridge , MA&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">Radiobutton</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">variable</span> <span class="o">=</span> <span class="n">destino</span> <span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Cambridge , UK&#39;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;Cambridge , UK&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">Radiobutton</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">variable</span> <span class="o">=</span> <span class="n">destino</span> <span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Seattle, WA&#39;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;Seattle , WA&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-</pre></div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l52_1b_en data-question_label="2">
+<div id=ac_l52_1b_en_question class="ac_question col-md-12">
+
 </div>
+<textarea data-lang="python3" id="ac_l52_1b_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython'  style="visibility: hidden;">
+from browser import document, html
+
+def on_change(event):
+   print(f"Destination: {event.target.value}")
+
+app = html.DIV()
+
+app <= html.LABEL('Destination: ')
+
+destinations = ['Cambridge, MA', 'Cambridge, UK', 'Seattle, WA']
+for destination in destinations:
+   radio = html.INPUT(Type="radio", name="destination", value=destination)
+   radio.bind('change', on_change)
+   app <= radio
+   app <= html.LABEL(destination)
+   app <= html.BR()
+
+document <= app
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/TWP52_016.jpg"><img alt="" class="align-center" src="../_images/TWP52_016.jpg" style="width: 20.401cm; height: 14.578cm;" /></a>
 </div>
 <div class="section" id="id10">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/TWP52_016.jpg"><img alt="" class="align-center" src="../_images/TWP52_016.jpg" style="width: 20.401cm; height: 14.578cm;" /></a>
-</div>
-<div class="section" id="id11">
-<h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP52_017.png"><img alt="" class="align-center" src="../_images/TWP52_017.png" style="width: 18.208cm; height: 12.571cm;" /></a>
 <ul class="simple">
 <li><p>And now??</p></li>
 </ul>
 </div>
+<div class="section" id="id11">
+<h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l52_1c_en data-question_label="3">
+<div id=ac_l52_1c_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l52_1c_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython'  style="visibility: hidden;">
+from browser import document, html, window
+
+def save_data(event):
+   window.localStorage['Destination'] = destination.value
+   window.localStorage['Description'] = description.value
+   window.localStorage['Address'] = address.value
+   destination.value = ''
+   description.value = ''
+   address.value = ''
+
+def read_destinations():
+   destinations = []
+   for key in window.localStorage:
+      destinations.append(window.localStorage[key])
+   return destinations
+
+app = html.DIV()
+
+app <= html.LABEL('Destination: ')
+destination = html.INPUT()
+app <= destination
+
+app <= html.LABEL('Description: ')
+description = html.INPUT()
+app <= description
+
+app <= html.LABEL('Address: ')
+address = html.TEXTAREA()
+app <= address
+
+button = html.BUTTON('Save')
+button.bind('click', save_data)
+app <= button
+
+document <= app
+</textarea>
+</div>
+</div>
+</div>
 <div class="section" id="id12">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">salvar_dados</span><span class="p">():</span>
-   <span class="n">fileD</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;encomendas.txt&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Destino: &#39;</span><span class="p">)</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">destino</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Descricao: &#39;</span><span class="p">)</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">descricao</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Endereco: &#39;</span><span class="p">)</span>
-   <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">endereco</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;1.0&#39;</span><span class="p">,</span><span class="n">END</span><span class="p">))</span>
-   <span class="n">destino</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-   <span class="n">descricao</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-   <span class="n">endereco</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s1">&#39;1.0&#39;</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">ler_destinos</span><span class="p">(</span><span class="n">archivo</span><span class="p">):</span>
-   <span class="n">destinos</span> <span class="o">=</span> <span class="p">[]</span>
-   <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span>
-   <span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
-      <span class="n">destinos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">linha</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>
-   <span class="k">return</span> <span class="n">destinos</span>
-</pre></div>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l52_1d_en data-question_label="4">
+<div id=ac_l52_1d_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l52_1d_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython'  style="visibility: hidden;">
+from browser import document, html, window, console
+
+def save_data(event):
+   window.localStorage['Destination'] = destination.value
+   window.localStorage['Description'] = description.value
+   window.localStorage['Address'] = address.value
+   console.log(f"Saved data: Destination - {destination.value}, Description - {description.value}, Address - {address.value}")
+   destination.value = ''
+   description.value = ''
+   address.value = ''
+
+app = html.DIV()
+app <= html.H2('HEAD-Ex Logistics and Transport')
+
+app <= html.LABEL('Destination: ')
+destination = html.SELECT()
+options = ["Option 1", "Option 2", "Option 3"]  # Replace with your options
+for option in options:
+   destination <= html.OPTION(option)
+app <= destination
+
+app <= html.LABEL('Description: ')
+description = html.INPUT()
+app <= description
+
+app <= html.LABEL('Speak to: ')
+address = html.INPUT()
+app <= address
+
+button = html.BUTTON('Save')
+button.bind('click', save_data)
+app <= button
+
+document <= app
+</textarea>
+</div>
 </div>
 </div>
 <div class="section" id="id13">
 <h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
-<span class="n">app</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;HEAD-Ex Logística e Transporte&#39;</span><span class="p">)</span>
-<span class="n">Label</span><span class="p">(</span><span class="n">app</span><span class="p">,</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Destino: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">destino</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
-<span class="n">destino</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
-
-<span class="n">opcoes</span> <span class="o">=</span> <span class="n">ler_destinos</span><span class="p">(</span><span class="s2">&quot;cidades.txt&quot;</span><span class="p">)</span>
-<span class="n">OptionMenu</span><span class="p">(</span><span class="n">app</span><span class="p">,</span><span class="n">destino</span><span class="p">,</span><span class="o">*</span><span class="n">opcoes</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-
-<span class="n">Label</span><span class="p">(</span><span class="n">app</span><span class="p">,</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Descripcion: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">descricao</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
-<span class="n">descricao</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">Label</span><span class="p">(</span><span class="n">app</span><span class="p">,</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Habla a: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">endereco</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
-<span class="n">endereco</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">Button</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Ahorrar&quot;</span> <span class="p">,</span> <span class="n">command</span> <span class="o">=</span> <span class="n">salvar_dados</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-<span class="n">app</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="id14">
-<h2>HEAD-Ex Logistics and Transportation<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/TWP52_020.jpg"><img alt="" class="align-center" src="../_images/TWP52_020.jpg" style="width: 17.025cm; height: 12.571cm;" /></a>
 </div>
 <div class="section" id="review">
-<h2>review<a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h2>
+<h2>Review<a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>MVC - Model, View, Control</p></li>
 <li><p>Entry()</p></li>
