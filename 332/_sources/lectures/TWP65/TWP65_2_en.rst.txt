@@ -12,10 +12,11 @@ Hello World
 + New basic application: "Hello World"
 + Edit the default.py controller
 
-.. activecode:: fdssd
-   :nocodelens:
-   :language: python3
-   :python3_interpreter: brython
+.. code-block:: python
+
+
+  def index():
+    return "My first message"
 
 
 + ctrl+S
