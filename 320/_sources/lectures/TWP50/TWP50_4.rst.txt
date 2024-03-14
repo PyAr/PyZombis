@@ -139,6 +139,14 @@ Recuerda
 
 + Uso de las funcionalidades con el componente de ``brython``.
 + No es la única forma de crear interfaces gráficas.
-    + Uso de la biblioteca de terceros: ``pygame`` y ``tkinter``.
++ Uso de la biblioteca de terceros: ``pygame`` y ``tkinter``.
 + Para manejar los eventos se usa un controlador de eventos.
-    + Controlador de eventos: función que se ejecuta cuando ocurre el evento.
++ Controlador de eventos: función que se ejecuta cuando ocurre el evento.
+
+.. poll:: TWP50
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?
+

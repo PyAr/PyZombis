@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Sortear el número a adivinar &#8212; PyZombis aayush/issue#289@78888b8</title>
+    <title>6. Sortear el número a adivinar &#8212; PyZombis aayush/issue#289@6d034b4</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
-    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
 
@@ -23,9 +23,9 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
-    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
     <script src="../../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis aayush/issue#289@78888b8
+          PyZombis aayush/issue#289@6d034b4
         </a>
       </div>
     </div>
@@ -330,45 +330,29 @@ window.addEventListener('load', (event) => {
 <div id=ac_l30_6_question class="ac_question col-md-12">
 
 </div>
-<textarea data-lang="python3" id="ac_l30_6_editor" 
+<textarea data-lang="python" id="ac_l30_6_editor" 
       data-timelimit=25000     
-    data-audio=''      
+    data-audio=''   data-stdin=''   
            data-wasm=/_static
-     data-python3_interpreter='brython'  style="visibility: hidden;">
-from browser import document as doc
-from browser import html
-from browser import timer
+       style="visibility: hidden;">
 from random import randint
+import time
 
-print("¡Bienvenido!")
-azar = randint(1, 100)
-numero = 0
-
-doc <= html.DIV(id="div_juego_2")
-
-# Creamos una caja de texto donde ingresar el número que queramos
-doc["div_juego_2"] <= html.INPUT(id="inp_adivinar", placeholder="Adivine el número", type="number")
-# Creamos el botón para adivinar
-doc["div_juego_2"] <= html.BUTTON("Enviar adivinanza", id="btn_adivinar") + html.BR()
-
-def confirmar_adivinanza(e):
-    global numero
-    numero = int(doc["inp_adivinar"].value)
-
-    if numero == azar:
-        print("¡Ganaste!")
-        print("¡Fin del juego!")
-        # Si el número es adivinado, el botón desaparece y el juego
-        # termina
-        doc["btn_adivinar"].style.display = "none"
+print('¡Bienvenido!')
+sorteado = randint(1,100)
+chute = 0
+while chute != sorteado:
+  g = input('Ingrese un numero: ')
+  chute = int(g)
+  if chute == sorteado:
+    print('¡Ganaste!')
+  else:
+    if chute > sorteado:
+      print('Alto')
     else:
-        if numero > azar:
-            print("Alto")
-        else:
-            print("Bajo")
-
-# Al apretar el botón, invoca a la función confirmar_adivinanza
-doc["btn_adivinar"].bind("click", confirmar_adivinanza)
+      print('Bajo')
+  time.sleep(1)
+print('Fin del juego!')
 </textarea>
 </div>
 </div>
