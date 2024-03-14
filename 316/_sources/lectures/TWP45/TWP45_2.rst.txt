@@ -17,7 +17,7 @@ En este ejercicio vamos a acceder a Reddit para obetener datos como los de la si
     import json
     
     # La url de Reddit a la que accederemos
-    url = "https://api.allorigins.win/raw?url=http://www.reddit.com/r/Python/.json"
+    url = "https://api.reddit.com/r/Python/.json"
     resp = urllib.request.urlopen(url).read()
     
     # La respuesta se da en formato json, se debe transformar a  

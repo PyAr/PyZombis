@@ -26,16 +26,15 @@ The documentation for the `TasteDive API <https://tastedive.com/read/api>`_.
     import json
 
     api_url = "https://tastedive.com/api/similar"
-    proxy = "https://api.allorigins.win/raw?url="
 
     # The parameters that will be passed to the url are written inside a dictionary
-    parameters = {"q": "ariana grande"}
+    parameters = {"q": "ariana+grande"}
 
     # We encode the parameters
     params = urllib.parse.urlencode(parameters)
 
     # We request the data from the api
-    response = urllib.request.urlopen(proxy + api_url + '?' + params)
+    response = urllib.request.urlopen(api_url + '?' + params)
 
     # We read the response
     data = response.read()
@@ -66,12 +65,11 @@ transforms into a Python dictionary. However, it is not entirely readable. This 
     import json
 
     api_url = "https://tastedive.com/api/similar?"
-    proxy = "https://api.allorigins.win/raw?url="
 
     # The following line is for the url parameters
     parameters = urllib.parse.urlencode({"q": "coldplay"})
 
-    request = urllib.request.urlopen(proxy + api_url + parameters)
+    request = urllib.request.urlopen(api_url + '?' + parameters)
     data = json.loads(request.read())
 
     # We print the data in a user-readable format
@@ -114,7 +112,6 @@ The following exercise comes with automatic grading.
     import json
 
     api_url = "https://tastedive.com/api/similar"
-    proxy = "https://api.allorigins.win/raw?url="
 
     # Add the parameters
     parameters = {}
@@ -147,8 +144,8 @@ The following exercise comes with automatic grading.
         def testOne(self):
             self.assertEqual(
                 request_url,
-                "https://api.allorigins.win/raw?url=https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
-                "Testing that the url is: https://api.allorigins.win/raw?url=https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                "https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                "Testing that the url is: https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
             )
             self.assertEqual(results, 5, "Testing that results is assigned correctly.")
             self.assertEqual(len(similar_movies), 5, "Testing that similar_movies are: 5")
