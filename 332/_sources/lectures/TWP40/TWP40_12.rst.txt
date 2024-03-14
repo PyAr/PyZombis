@@ -15,7 +15,7 @@ Conversión de grados usando C
 
         int main(void){
             float F, C;
-            printf("Farenheit: ");
+            printf("Fahrenheit: ");
             scanf("%f", &F);
             C = 5.0 * (F - 32.0) / 9.0;
             printf("Celsius: %2.1f\n", C);
@@ -28,7 +28,7 @@ Conversión de grados usando Python
 
 .. code-block:: python
 
-    F = float(input("Farenheit: "))
+    F = float(input("Fahrenheit: "))
     C = 5.0 * (F - 32.0) / 9.0
     print("Celsius: %2.1f" % C)
 
