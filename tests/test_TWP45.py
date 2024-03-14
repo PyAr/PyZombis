@@ -5,7 +5,7 @@ import json
 def test_l45_2():
     """Tests fetching data from the provided URL"""
     # Send a GET request to the URL
-    url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
+    url = "https://api.reddit.com/r/Python/.json"
 
     # Send a GET request to the URL
     response = requests.get(url, headers = {'User-agent': 'pyZombis'})
@@ -28,6 +28,7 @@ def test_l45_1(page):
 
     # Test the src attribute from image matches the Facebook URL
     assert img_src == "https://graph.facebook.com/ACDC/picture?type=large"
+    
 
 @pytest.mark.vcr()
 def test_l45_3(page):
