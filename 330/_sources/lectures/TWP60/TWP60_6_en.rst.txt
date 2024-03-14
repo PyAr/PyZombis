@@ -157,3 +157,11 @@ MOUSEBUTTONUP is an event type that is fired when a mouse button is released.
 
     timer1 = timer.set_interval(main,80)
 
+.. poll:: TWP60E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?
+
+

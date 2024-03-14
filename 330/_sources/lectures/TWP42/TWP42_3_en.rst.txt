@@ -335,3 +335,10 @@ Grouping of data
   
    # close the cursor
    cursor.close()
+
+.. poll:: TWP42E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?
