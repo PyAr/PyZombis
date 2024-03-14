@@ -1,0 +1,36 @@
+Obtener datos de Reddit
+=======================
+
+En este ejercicio vamos a acceder a Reddit para obetener datos como los de la siguiente imagen.
+
+.. image:: ../img/TWP45_050.png
+    :height: 9.39cm
+    :width: 23.344cm
+    :align: center
+    :alt:
+
+.. activecode:: ac_l45_2
+    :nocodelens:
+    :language: python
+
+    import urllib.request
+    import json
+    
+    # La url de Reddit a la que accederemos
+    url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
+    resp = urllib.request.urlopen(url).read()
+    
+    # La respuesta se da en formato json, se debe transformar a  
+    # un diccionario de Python con json.loads
+    texto = json.loads(resp)
+
+    # Puede ver los datos que se recibieron si quita el comentario de abajo
+    # print(texto)
+    
+    # Buscamos e imprimimos los datos que queremos
+    for item in texto["data"]["children"]:
+        doc = item["data"]
+        print(doc["title"])
+        print("#comments: %d" % doc["num_comments"])
+        print(doc["url"])
+        print()

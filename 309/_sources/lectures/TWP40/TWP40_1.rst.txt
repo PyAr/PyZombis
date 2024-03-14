@@ -1,0 +1,55 @@
+El proceso de desarrollo de software
+====================================
+
++ Ejecutar programas creados por otros es relativamente simple
++ Lo difícil es comenzar a crear tus propios programas
++ Las computadoras son muy estrictas y hay muchos detalles
++ Entonces es necesario ser muy sistemático
+
+Pasos en el proceso de desarrollo de software
+---------------------------------------------
+
++ Analizar el problema:
+    + Comprender exactamente ¿cuál es el problema a resolver?
+    + Problema bien definido, medio problema resuelto.
+
++ Especificación de lo que hará el programa:
+    + Describe exactamente lo que hará tu programa.
+    + En esta etapa, no debería preocuparme sobre ¿cómo voy a hacer mi programa?, pero mas decidir exactamente ¿qué hará?
+    + ¿Cuáles son las entradas y salidas del programa?
+
++ Diseñar el programa:
+    + Formular la estructura general del programa.
+    + Podemos usar pseudocódigo en este paso.
+
++ Implementar el programa:
+    + Diseñar algunas pruebas para validar tu programa.
+    + Traduce el proyecto a cualquier lenguaje de programación.
+    + En este curso usaremos Python.
+
+Ejemplo: convertidor de temperatura Fahrenheit a Celsius
+--------------------------------------------------------
+
++ Análisis del problema:
+    + Dada una temperatura en grados *Fahrenheit*, obtenga la conversión en Celsius.
+
++ Especificación de lo que hará el programa:
+    + Entrada: temperatura en Fahrenheit
+    + Salida: temperatura en grados Celsius
+    + Salida: 5 * (F-32) / 9
+
++ Diseñar ¿cómo funcionará el programa?:
+    + Leer el valor de temperatura en Fahrenheit.
+    + Convertir el valor usando la fórmula ``5 * (F-32) / 9``
+    + Imprimir el valor convertido.
+
++ Implementación del problema:
+    + Pruebas: 32F = 0C y 100F = 37.8C
+
+.. activecode:: ac_l40_1
+    :nocodelens:
+    :stdin:
+
+    F = float(input("Fahrenheit: "))
+    C = 5 * (F - 32) / 9
+    print("Celsius: %2.1f" % C)
