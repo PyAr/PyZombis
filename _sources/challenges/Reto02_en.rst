@@ -142,7 +142,7 @@ This challenge consists of deciphering a scroll from Python code
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(prep_B, 76, "Expected: Testing that prep_B has the correct value")
+                    self.assertEqual(prep_B, 76, "Expected: prep_B should have correct value")
 
 
             myTests().main()
@@ -176,7 +176,7 @@ This challenge consists of deciphering a scroll from Python code
                 def testOne(self):
 
                     self.assertEqual(verbs_B, 86, "Expected: Testing that verbs_B has the correct value")
-                    self.assertEqual(person_1_B, 76, "Expected: Testing that person_1_B has the correct value.")
+                    self.assertEqual(person_1_B, 76, "Expected: person_1_B should have correct value.")
 
 
             myTests().main()
@@ -226,7 +226,7 @@ This challenge consists of deciphering a scroll from Python code
                     'sgkk', 'sfbvz', 'hzjwqn', 'hmqhxfpb', 'hbtn', 'hbjr', 'hbjvpw', 'hbcv', 'hslbhksz', 'hsd', 'hpzmp', 'hpb', 'hphjhns', 'hnss', 'hnw', 'hwswwqg', 'hwjbnqwv', 'hwlqvc', 'hlsssh', 'hlcnqnw', 'hrwx', 'hcr', 'hckr', 'hcv', 'hcdp', 'hxmjpmnv', 'hxhjznc', 'hxl', 'hxfq', 'hqntlps', 'hvbncjw', 'hdqzjc', 
                     'hdfrtd', 'hgjjksxf', 'hgkkwd', 'hfhp', 'jzsgkb', 'jzjbjgp', 'jzknzgk', 'jms', 'jbtcbqm', 'jtxhfvr', 'jtkqhh', 'jtg', 'jsl', 'jhxpngr', 'jhg', 'jjc', 'jpnx', 'jnzznp', 'jnwp', 'jwbt', 'jwhvvrtr', 'jwnwz', 'jwvbhl', 'jlmwtcs', 'jgz', 'jgngwzc', 'jgrt', 'jgxn', 'jfdjq', 'pmznqzh', 'pmcmrmvf', 'pbzqnc', 'pbmlw', 'pbvtkm', 'ptkp', 'ptqtwp', 'ptfhnlc', 'pslzhzhc', 'psr', 'phmhxkck', 'phcxvpf', 'pjjzqkvx', 'ppldgl', 'ppq', 'pnbqqbk', 'pwbfdmtc', 
                     'pwj', 'pwlhnpgf', 'plzxjqlk', 'plr', 'prmqclss', 'pchqk', 'pxzm', 'pxwt', 'pxv', 'pkj', 'pvpcmx', 'pvgkrhd', 'pvf', 'pgft', 'pfs', 'pfnpqh', 'pfrxglb', 'pfvnpwj', 'nzn', 'nmzhrrqn', 'nmjkkmpg', 'nmpx', 'nmddl', 'nbbkqjt', 'nbjbkrz', 'ntnhcl', 'ntk', 'nssd', 'nsnv', 'nsxmr', 'nhfptrsg', 'njxtbh', 'njdm', 'npqqm', 'npdd', 'npfvr', 'nnzbqwgs', 'nnmr', 'nnw', 'nndtsx', 'nwmm', 'nwnlmbx', 'nwkjt', 'nrzdkx', 'nrvfgs', 'nczkp', 'nckdtf', 'ncv', 'nqlnsk', 'ngrngr', 'nfpnlr', 'nfw', 'nfchzb', 'nfkjfn', 'nfgxqmb', 'nfgkxsw', 'wzjcvj', 'wbswcvbh', 'wbpdssgm', 'wbnxl', 'wbdxk', 'wtbfv', 'wsmngb', 'wshnn', 'wslrbz', 'whts', 'wjfktwv', 'wps', 'wnxsmnx', 'wndwxs', 'wlsdx', 'wlkdtjz', 'wrmv', 'wrnn', 'wrrdnmjz', 'wkfxqzkx', 'wvsscb', 'wvcsmb', 'wvcpw', 'lzlbc', 'lmz', 'lmpfkk', 'lbjrnmt', 'lbrhbn', 'lbcxxgsf', 'lthk', 'lhld', 'ljhqlbhs', 'lpj', 'lpwl', 'lpwqpn', 'lntr', 'lljfz', 'llw', 'lcrdlc', 'lcxc', 'lcgsgjvh', 'lxccgcxh', 'lktdlrlx', 'lkd', 'lqmxbx', 'lqrdrz', 'lqklxr', 'lvmptxcd', 'lvsbxzv', 'lvd', 'ldzzlkg', 'lfn', 'rzmjrbfb', 'rzv', 'rzfmdp', 'rbsfrrcf', 'rtvmzn', 'rspxz', 'rslljk', 'rsfpxl', 'rhjtsvv', 'rjjp', 'rjlfpch', 'rjrlrfk', 'rjd', 'rpgtkzz', 'rntpnh', 'rnwqq', 'rncp', 'rnxhwgd', 'rnvdjpc', 'rwmbvt', 'rrpzcwp', 'rcltszw', 'rkln', 'rkkxqk', 'rqprpvj', 'rqrsw', 'rvqzhmm', 'rvqw', 'rvfqp', 'rdzhzx', 'rdp', 'rgc', 'rfkvbr', 'rffn', 'cmh', 'cmg', 'cbmhp', 'cbwjfldn', 'cbvwhf', 'ctvfgxzv', 'cslq', 'chnz', 'cjvrwg', 'cnsmqxwn', 'cnhgxsd', 'cnxck', 'cwh', 'cwnf', 'clbpzcpd', 'clnr', 'clvtxn', 'crjnct', 'crkxcs', 'ckm', 'ckx', 'ckvmtbvf', 'cqlphsk', 'cvl', 'cvr', 'cvrjxjq', 'cvdk', 'cdbdwsjf', 'cdvr', 'cgfwq', 'xzrz', 'xmszj', 'xmwth', 'xmchrvwx', 'xbwknvmr', 'xtm', 'xtxsblgt', 'xtkdp', 'xsnhn', 'xhhg', 'xhcvvc', 'xhxsqp', 'xhk', 'xhqdvhmp', 'xjnjhgh', 'xpjkjxc', 'xnk', 'xlbnkbw', 'xlt', 'xrzwj', 'xcfstz', 'xxtctgsj', 'xxd', 'xvsbdw', 'xvhcb', 'xvpztf', 'xvrvsdf', 'xdvs', 'xgnfggb', 'xgw', 'xfmnsjc', 'xfrmgqqj', 'kmhj', 'kbmfjgs', 'kbndtscg', 'kbcbg', 'ktzb', 'ksfgcvw', 'kjtqpxhw', 'kjdkt', 'kpr', 'knbhrwgs', 'kwfj', 'klzsxz', 'klmjxg', 'kltqfx', 'klhtb', 'krnn', 'krrkl', 'kctx', 'kcsb', 'kcnr', 'kccw', 'kckksgp', 'kxgdbxhh', 'kqt', 'kqj', 'kqwjtrcg', 'kqwxr', 'kvqwc', 'kdtxsj', 'kgzcf', 'kgmq', 'kgsh', 'kfpqcpx', 'kfvg', 'qznnxl', 'qzcsksd', 'qzd', 'qmrr', 'qbm', 'qbxwpg', 'qbqbvpsm', 'qtwhllw', 'qtlmgsh', 'qsjgzzzp', 'qph', 'qpnnjwl', 'qnmtrvx', 'qnnxhm', 'qnkfd', 'qndpq', 'qlw', 'qlrhnww', 'qlgpv', 'qcgpc', 'qxp', 'qxpm', 'qxrs', 'qdvjskx', 'qddzdv', 'qgzf', 'qgjs', 'vbmd', 'vbxj', 'vbf', 'vtlxg', 'vtksnpbb', 'vtfbq', 'vsdrhj', 'vhbnd', 'vhpbdwd', 'vjhlfgld', 'vjwsjpw', 'vjxgbs', 'vjqqxsp', 'vjgrlfs', 'vpkpbsn', 'vpkgwcd', 'vpvwnjtg', 'vnxr', 'vwtbh', 'vlj', 'vlgfskcx', 'vrqq', 'vxgcfc', 'vkjnkkv', 'vkdns', 'vkgfc', 'vqmkgkb', 'vqbhj', 'vvwtkrf', 'vvlhntpt', 'vdb', 'vdslwsdk', 'vddhjkq', 'dzsvqbnx', 'dzcjppjm', 'dzxpk', 'dzftkjr', 'dmzwnfgm', 'dtlsp', 'dtrmkn', 'dsrdq', 'dpzrl', 'dpmdnz', 'dpptqzc', 'dpcj', 'dpf', 'dpff', 'dwqnsgj', 'dljps', 'drrlpnr', 'drfrgjx', 'dcnhhltm', 'dcx', 'dcxggwhc', 'dqt', 'dqtswd', 'dvsl', 'dvfqjqsf', 'ddqmr', 'dgbwpk', 'dfcbw', 'gbb', 'gbjz', 'gbwdh', 'gbgw', 'gth', 'gtps', 'gtd', 'gswg', 'gsxm', 'ghm', 'ghhmdq', 'ghhq', 'gjdn', 'gph', 'gplktxj', 'gpgpqtrc', 'gwbvj', 'gwtll', 'gwdxkhr', 'glzb', 'grtkzrwh', 'grwpg', 'gcgg', 'gqz', 'gvp', 'gvc', 'gdzj', 'gggck', 'gfbrqn', 'fzzx', 'fmzf', 'fmt', 'fmvx', 'fbbhqvg', 'fbbkvdhr', 'fbg', 'fttbf', 'ftkgv', 'fst', 'fsjmrvcx', 'fpvxzwmx', 'fwrgdmjt', 'frp', 'frgwz', 'frfbhk', 'fcffvg', 'fxt', 'fxh', 'fkm', 'fkhr', 'fkwkbd', 'fkvl', 'fqfqcjtd', 'fvjkmj', 'fvxsmsbx', 'fvfgnzx', 'fgn', 'ffkbj', 'ffq']
-                    self.assertEqual(list_B, B, "Testing that list_B has the correct value")
+                    self.assertEqual(list_B, B, "list_B should have correct value")
 
 
             myTests().main()
@@ -283,7 +283,7 @@ This challenge consists of deciphering a scroll from Python code
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(mag_num, 6, "Testing that magic_num has the correct value")
+                    self.assertEqual(mag_num, 6, "magic_num should have correct value")
                     self.assertEqual(
                         Magic,
                         ["vbxj", "jnwp", "cdvr", "bksx", "jtg", "gjdn"],
