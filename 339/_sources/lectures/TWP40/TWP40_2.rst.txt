@@ -1,0 +1,21 @@
+Variables
+=========
+
++ Las variables son referencias a regiones de memoria que definiste para usarla en el programa.
++ Las variables ``F`` y ``C`` del ejemplo anterior son referencias a regiones de memoria.
++ Las variables ``F`` y ``f`` son diferentes, al igual que ``C`` y ``c``.
++ ``"F"`` o ``"C"`` no son variables.
+
+Variables con valores definidos e indefinidos
+---------------------------------------------
+
++ Solo se puede usar el contenido de una variable si ya tiene un valor *definido* antes.
++ Si se usa variable que no tiene valor definido o se encuentra *indefinido* daría como resultado un error como el siguiente.
+
+.. activecode:: ac_l40_2
+    :nocodelens:
+    :stdin:
+
+    x = 42
+    print(x)
+    print(y)
