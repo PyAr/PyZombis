@@ -27,3 +27,10 @@ Repeticiones anidadas
 
 
 “La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
+
+.. poll:: TWP15
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?

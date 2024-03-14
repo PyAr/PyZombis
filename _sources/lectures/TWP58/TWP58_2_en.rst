@@ -99,3 +99,10 @@ Remember
 + class - begins the definition of a class
 + self - assigned to the current object
 + __init__() - called when the object is created
+
+.. poll:: TWP58E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?

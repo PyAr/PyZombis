@@ -20,3 +20,10 @@ Converting degrees using C
             C = 5.0 * (F - 32.0) / 9.0;
             printf("Celsius: %2.1f\n", C);
         }
+
+.. poll:: TWP40E
+   :scale: 3
+   :allowcomment:
+
+   On a scale from 1 (needs improvement) to 3 (excellent),
+   how would you rate this chapter?
