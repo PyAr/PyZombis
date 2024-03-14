@@ -4,7 +4,7 @@ Contadores
 + Ahora imprima de 1 a un número ingresado por el usuario
 
 .. activecode:: ac_l15_3a
-   :nocodelens:
+
    :stdin:
 
    fin = int(input("Ingrese el último número: "))
@@ -16,7 +16,7 @@ Contadores
 + Imprima números pares entre 0 y un número dado por el usuario usando ``if``
 
 .. activecode:: ac_l15_3b
-   :nocodelens:
+
    :stdin:
 
    fin = int(input("Ingrese el último número: "))

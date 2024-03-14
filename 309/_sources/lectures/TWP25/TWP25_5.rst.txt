@@ -49,3 +49,10 @@ Múltiple herencia y ¿Qué objeto es?
     print(isinstance(wlan0, Ethernet))
     print(isinstance(eth0, PCI))
     print(isinstance(eth0, USB))
+
+.. poll:: TWP25
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?

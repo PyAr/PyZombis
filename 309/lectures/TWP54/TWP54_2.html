@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Se lanza una excepción &#8212; PyZombis reto_02_en@85e2698</title>
+    <title>2. Se lanza una excepción &#8212; PyZombis reto_02_en@5218f43</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis reto_02_en@85e2698
+          PyZombis reto_02_en@5218f43
         </a>
       </div>
     </div>
@@ -331,21 +331,39 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="manejo-de-excepciones">
 <h2><span class="section-number">2.2. </span>Manejo de excepciones<a class="headerlink" href="#manejo-de-excepciones" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">salvar_dados</span><span class="p">():</span>
-   <span class="k">try</span><span class="p">:</span>
-      <span class="n">fileD</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;encomendas.txt&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Destino:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">destino</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Descripcion:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">descripcion</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Habla:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-      <span class="n">fileD</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">Habla</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="n">END</span><span class="p">))</span>
-      <span class="n">destino</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
-      <span class="n">descricao</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-      <span class="n">endereco</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="n">END</span><span class="p">)</span>
-   <span class="k">except</span> <span class="n">Excepción</span> <span class="n">como</span> <span class="n">excepciones</span><span class="p">:</span>
-      <span class="n">app</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;archivo de grabación </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">excepcion</span><span class="p">)</span>
-</pre></div>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l54_2a data-question_label="2.2.1">
+<div id=ac_l54_2a_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l54_2a_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython'  style="visibility: hidden;">
+from browser import window, prompt, alert
+
+def guardar_datos():
+   try:
+      destino = prompt("Ingrese Destino")
+      if not destino:
+         raise ValueError("El destino no puede estar vacío")
+      window.sessionStorage["Destino"] = destino
+      descripcion = prompt("Ingrese Descripción")
+      if not descripcion:
+         raise ValueError("La descripción no puede estar vacía")
+      window.sessionStorage["Descripción"] = descripcion
+      discurso = prompt("Ingrese Discurso")
+      if not discurso:
+         raise ValueError("El discurso no puede estar vacío")
+      window.sessionStorage["Discurso"] = discurso
+   except Exception as excepcion:
+      alert(f'Error: {excepcion}')
+
+guardar_datos()
+</textarea>
+</div>
 </div>
 <ul class="simple">
 <li><p>Obs.: para você testar a exceção deverá alterar as propriedades do arquivo</p></li>

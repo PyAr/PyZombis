@@ -48,3 +48,11 @@ Recuerde
 + Python es un lenguaje interpretado de alto nivel
 + El intérprete de Python convierte los comandos instrucción por instrucción
   a lenguaje máquina
+
+
+.. poll:: TWP38
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?
