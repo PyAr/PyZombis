@@ -8,7 +8,7 @@ def test_l45_2():
     url = "https://api.reddit.com/r/Python/.json"
 
     # Send a GET request to the URL
-    response = requests.get(url, headers = {'User-agent': 'pyZombis'})
+    response = requests.get(url, headers = {'User-agent': 'Chrome/122.0.0.0'})
 
     # Check for successful response (status code 200)
     assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}"
