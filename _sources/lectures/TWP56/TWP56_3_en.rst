@@ -8,42 +8,42 @@ It looks great, now let's add some volume!
    :alt: 
 
 
-.. code-block :: python
+.. activecode:: lecture_56_3_en
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   from tkinter import *
-   import pygame.mixer
+   from browser import document, html
 
-   app = Tk()
-   app.title('DJ Mix')
-   app.geometry('250x100+200+100')
-
-   som = '50459_M_RED_Nephlimizer.wav'
-   mixer = pygame.mixer
-   mixer.init()
-
-   def terminate():
-      track.stop()
-      app.destroy()
-   def toggle_play():
-      if playing.get() == 1:
-         track.play(loops = -1)
+   def toggle_play(ev):
+      if ev.target.checked:
+         document['audio_player'].play()
       else:
-         track.stop()
-   def change_volume(v):
-      track.set_volume(volume.get())
+         document['audio_player'].pause()
 
-   track = mixer.Sound(som)
-   playing = IntVar()
-   toggle = Checkbutton(app, variable=playing, command=toggle_play, text=som)
-   toggle.pack(side=LEFT)
-   volume = DoubleVar()
-   volume.set(track.get_volume())
-   scale = Scale(variable=volume, from_=0.0, to=1.0, resolution=0.1, command=change_volume, label='Volume', orient=HORIZONTAL)
+   def change_volume(ev):
+      document['audio_player'].volume = float(ev.target.value)
 
-   scale.pack(side=RIGHT)
-   app.protocol('WM_DELETE_WINDOW', terminate)
-   app.mainloop()
+   audio_src = 'https://bigsoundbank.com/UPLOAD/mp3/0751.mp3'
 
+   audio_player = html.AUDIO(src=audio_src, id='audio_player')
+
+   toggle_button = html.INPUT(type='checkbox', id='toggle_play')
+   toggle_button.bind('change', toggle_play)
+   toggle_label = html.LABEL('Play Sound')
+   toggle_label <= toggle_button
+
+   volume_slider = html.INPUT(type='range', id='volume', min='0', max='1', step='0.1')
+   volume_slider.bind('input', change_volume)
+   volume_label = html.LABEL('Volume')
+   volume_label <= volume_slider
+
+   app_div = html.DIV(id='app')
+   app_div <= audio_player
+   app_div <= toggle_label
+   app_div <= volume_label
+
+   document <= app_div
 
 .. image:: ../img/TWP56_010.jpg
    :height: 15.024cm

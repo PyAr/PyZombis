@@ -8,35 +8,48 @@ But the song never ends...
    :alt: 
 
 
-.. code-block :: python
+.. activecode:: lecture_56_2_en
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   from tkinter import *
-   import pygame.mixer
+   from browser import document, html
 
-   app = Tk()
-   app.title('DJ Mix')
-   app.geometry('250x100+200+100')
-
-   sound = '50459_M_RED_Nephlimizer.wav'
-   mixer = pygame.mixer
-   mixer.init()
+   sound = 'https://bigsoundbank.com/UPLOAD/mp3/0751.mp3'
 
    def start():
-      track.play(loops = -1)
+      track.play()
+      print("Audio started")
+
    def stop():
-      track.stop()
-   def terminate():
-      track.stop()
-      app.destroy()
+      track.pause()
+      track.currentTime = 0
+      print("Audio stopped")
 
-   track = mixer.Sound(sound)
-   start_button = Button(app, command = start, text = 'Start')
-   start_button.pack(side = LEFT)
-   stop_button = Button(app, command = stop, text = 'Stop')
-   stop_button.pack(side = RIGHT)
+   def terminate(ev):
+      track.pause()
+      if app_div in document:
+         app_div.remove()
+      print("Application terminated")
 
-   app.protocol('WM_DELETE_WINDOW',terminate)
-   app.mainloop()
+   audio_element = html.AUDIO(src=sound)
+
+   start_button = html.BUTTON('Start')
+   start_button.bind('click', lambda ev: start())
+
+   stop_button = html.BUTTON('Stop')
+   stop_button.bind('click', lambda ev: stop())
+
+   app_div = html.DIV()
+   app_div <= audio_element
+   app_div <= start_button
+   app_div <= stop_button
+
+   document <= app_div
+
+   document.bind('beforeunload', terminate)
+
+   track = audio_element
 
 
 One button only
@@ -49,32 +62,41 @@ One button only
    :alt: 
 
 
-.. code-block :: python
+.. activecode:: lec56esdgdbf
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   from tkinter import *
-   import pygame.mixer
+   from browser import document, html
 
-   app = Tk()
-   app.title('DJ Mix')
-   app.geometry('250x100+200+100')
-
-   sound = '50459_M_RED_Nephlimizer.wav'
-   mixer = pygame.mixer
-   mixer.init()
+   sound = 'https://bigsoundbank.com/UPLOAD/mp3/0751.mp3'
 
    def terminate():
-      track.stop()
-      app.destroy()
-   def switch():
-      if playing.get() == 1:
-         track.play(loops = -1)
+      track.pause()
+      if app_div in document:
+         app_div.remove()
+
+   def switch(ev):
+      if ev.target.checked:
+         track.play()
       else:
-         track.stop()
+         track.pause()
 
-   track = mixer.Sound(sound)
-   playing = IntVar()
-   play_button = Checkbutton(app, variable = playing, command = switch, text = sound)
-   play_button.pack()
+   audio_element = html.AUDIO(src=sound)
 
-   app.protocol('WM_DELETE_WINDOW',terminate)
-   app.mainloop()
+   play_button = html.INPUT(type='checkbox')
+   play_label = html.LABEL('Play Sound', style={'margin-left': '10px'})
+   play_label <= play_button
+
+   app_div = html.DIV()
+   app_div <= audio_element
+   app_div <= play_label
+
+   document <= app_div
+
+   play_button.bind('change', switch)
+
+   document.bind('beforeunload', terminate)
+
+   track = audio_element
+

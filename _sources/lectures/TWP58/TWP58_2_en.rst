@@ -19,33 +19,61 @@ Class = object factory
 Class SoundPanel
 ----------------
 
-.. code-block :: python
+.. activecode:: lect_58_2_en
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   from tkinter import *
-   import pygame.mixer
+   from browser import document, html
 
-   class SoundPanel(Frame):
-      def track_toggle(self):
-         if self.track_playing.get() == 1:
-            self.track.play(loops = -1)
+   class SoundPanel:
+      def __init__(self, sound_file):
+        self.sound_file = sound_file  # Add this line
+        self.track = html.AUDIO(src=sound_file)
+        self.track_playing = False
+        self.volume = 1.0
+
+      def track_toggle(self, ev):
+         if self.track_playing:
+            self.track.pause()
+            print("Stopping:", self.sound_file)
          else:
-            self.track.stop()
-      def change_volume(self,v):
-         self.track.set_volume(self.volume.get())
-      def __init__(self,app,mixer,sound_file):
-         Frame.__init__(self,app)
-         self.track = mixer.Sound(sound_file)
-         self.track_playing = IntVar()
-         track_button = Checkbutton(self,variable = self.track_playing,command = self.track_toggle,text = sound_file)
-         track_button.pack(side = LEFT)
-         self.volume = DoubleVar()
-         self.volume.set(self.track.get_volume())
-         volume_scale = Scale(self,variable = self.volume, from_ = 0.0, to = 1.0, resolution = 0.1, command = self.change_volume, label = "Volume", orient = HORIZONTAL)
-         volume_scale.pack(side = RIGHT)
+            self.track.play()
+            print("Playing:", self.sound_file)
+         self.track_playing = not self.track_playing
+
+      def change_volume(self, ev):
+         self.volume = float(ev.target.value)
+         self.track.volume = self.volume
+         print("Volume changed to:", self.volume)
+
+   app_div = html.DIV(id='app')
+
+   sound_panel = SoundPanel('https://bigsoundbank.com/UPLOAD/mp3/0751.mp3')
+
+   track_button = html.INPUT(type='checkbox')
+   track_button.bind('change', sound_panel.track_toggle)
+
+   track_label = html.LABEL('Play Sound')
+   track_label <= track_button
+
+   volume_slider = html.INPUT(type='range', min='0', max='1', step='0.1')
+   volume_slider.bind('input', sound_panel.change_volume)
+
+   volume_label = html.LABEL('Volume')
+   volume_label <= volume_slider
+
+   app_div <= sound_panel.track
+   app_div <= track_label
+   app_div <= volume_label
+
+   document <= app_div
 
 
 Main program
 ------------------
+
++ Try running this code in your PC and see the code dynamically generate soundpanels for wav files in your directory.
 
 .. code-block :: python
 
