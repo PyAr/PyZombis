@@ -50,7 +50,7 @@ Contents:
    quiz/QuizExtras_en.rst
    quiz/QuizExtras2_en.rst
    challenges/Reto01_en.rst
-   challenges/Reto02.rst
+   challenges/Reto02_en.rst
    challenges/Reto03_en.rst
    challenges/Reto04_en.rst
    challenges/Reto05_en.rst
