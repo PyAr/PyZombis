@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - 2 &#8212; PyZombis logpuzzle@5d32c65</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+
+
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
+    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quiz - 3" href="Quiz3.html" />
+    <link rel="prev" title="Quiz - 1" href="Quiz1.html" />
+
+
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+
+<script>
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'PyZombis';
+    eBookConfig.basecourse = 'PyZombis';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.enableCompareMe = eBookConfig.useRunestoneServices;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../_static/img/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">
+          
+          PyZombis logpuzzle@5d32c65
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='../genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/assignments/chooseAssignment.html'>Assignments</a></li>
+            <li><a href='/runestone/assignments/practice'>Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link"><a href='/runestone/admin/index'>Instructor's Page</a></li>
+            
+            <li><a href='/runestone/dashboard/studentreport'>Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()" />
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode" >Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=Quiz2'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - Quiz - 1" data-toggle="tooltip">
+    <a href="Quiz1.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Quiz - 3' data-toggle="tooltip" >              
+    <a href="Quiz3.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  document.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Quiz - 1' data-toggle="tooltip">
+  <a href="Quiz1.html" aria-label="Previous - Quiz - 1">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 3' data-toggle="tooltip" >
+    <a href="Quiz3.html" aria-label="Next - Quiz - 3">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
+<!-- Ad Serving for Runestone Campaign -->
+
+
+  
+  <div class="section" id="quiz-2">
+<h1>Quiz - 2<a class="headerlink" href="#quiz-2" title="Permalink to this headline">¶</a></h1>
+<div id='quiz2' data-component="tabbedStuff"  class='alert alert-warning'><div data-component="tab" data-tabname="Ejercicio 1" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_1 data-question_label="1">
+<div id=q2_1_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">es_triangulo</span></code> que recibe tres enteros positivos <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> y <code class="docutils literal notranslate"><span class="pre">c</span></code>. Éstos representan los lados de un triángulo. En la función debe verificar que con los parámetros dados se forma un triángulo. Si los parámetros dados forman un triángulo, la función debe devolver una cadena indicando su tipo, es decir, <code class="docutils literal notranslate"><span class="pre">&quot;Equilátero&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;Isósceles&quot;</span></code> o <code class="docutils literal notranslate"><span class="pre">&quot;Escaleno&quot;</span></code>, en caso contrario, la función debe devolver la cadena, <code class="docutils literal notranslate"><span class="pre">&quot;No</span> <span class="pre">es</span> <span class="pre">triángulo&quot;</span></code>. <br />
+<strong>Nota</strong>: recuerde que no es un triángulo cuando el lado de mayor longitud es mayor o igual que la suma de los otros dos. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">es_triangulo(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Equilátero&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_triangulo(3,</span> <span class="pre">2,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Isósceles&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_triangulo(4,</span> <span class="pre">2,</span> <span class="pre">6)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;No</span> <span class="pre">es</span> <span class="pre">triángulo&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_triangulo(2,</span> <span class="pre">1,</span> <span class="pre">8)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;No</span> <span class="pre">es</span> <span class="pre">triángulo&quot;</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q2_1_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def es_triangulo(a, b, c):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(es_triangulo(2, 2, 2), "Equilátero", "Esperado: Equilátero")
+        self.assertEqual(es_triangulo(2, 1, 2), "Isósceles", "Esperado: Isósceles")
+        self.assertEqual(es_triangulo(2, 1, 3), "No es triángulo", "Esperado: No es triángulo")
+        self.assertEqual(es_triangulo(2, 1, 8), "No es triángulo", "Esperado: No es triángulo")
+        self.assertEqual(es_triangulo(4, 2, 1), "No es triángulo", "Esperado: No es triángulo")
+        self.assertEqual(es_triangulo(4, 1000, 1000), "Isósceles", "Esperado: Isósceles")
+        self.assertEqual(es_triangulo(10000, 10000, 10000), "Equilátero", "Esperado: Equilátero")
+        self.assertEqual(es_triangulo(3, 2, 2), "Isósceles", "Esperado: Isósceles")
+        self.assertEqual(es_triangulo(10000, 1, 9999), "No es triángulo", "Esperado: No es triángulo")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Ejercicio 2" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_2 data-question_label="2">
+<div id=q2_2_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">es_bisiesto</span></code> que recibe el parámetro <code class="docutils literal notranslate"><span class="pre">anio</span></code> que es un entero positivo mayor que cero y representa un año. La función debe verificar si el parámetro dado es un año bisiesto, por lo tanto debe devolver <code class="docutils literal notranslate"><span class="pre">True</span></code> si lo es, o <code class="docutils literal notranslate"><span class="pre">False</span></code> en caso contrario. Un año es bisiesto, si es divisible entre 400 o también si es divisible entre 4 pero no divisible entre 100. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">es_bisiesto(2014)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_bisiesto(2016)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_bisiesto(1900)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">es_bisiesto(2000)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q2_2_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def es_bisiesto(anio):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(es_bisiesto(2000), True, "Esperado: True")
+        self.assertEqual(es_bisiesto(2001), False, "Esperado: False")
+        self.assertEqual(es_bisiesto(2020), True, "Esperado: True")
+        self.assertEqual(es_bisiesto(2016), True, "Esperado: True")
+        self.assertEqual(es_bisiesto(2400), True, "Esperado: True")
+        self.assertEqual(es_bisiesto(1952), True, "Esperado: True")
+        self.assertEqual(es_bisiesto(1900), False, "Esperado: False")
+        self.assertEqual(es_bisiesto(2200), False, "Esperado: False")
+        self.assertEqual(es_bisiesto(2100), False, "Esperado: False")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Ejercicio 3" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_3 data-question_label="3">
+<div id=q2_3_question class="ac_question col-md-12">
+<p>Juan Pablo el pescador, es un buen hombre que trabaja todos los días de la semana. Al final de cada día de trabajo, Juan debe reportar al estado. Cada vez que trae un peso de pescado mayor al establecido por la normativa de pesca (50 kilogramos) debe pagar una multa de 4.00 unidades por kilogramo adicional. Para llevar un registro, él compro una computadora para controlar los ingresos de su trabajo y te solicitó que hicieras la función llamada <code class="docutils literal notranslate"><span class="pre">generar_reporte</span></code> que recibe una lista de flotantes positivos <code class="docutils literal notranslate"><span class="pre">pesos</span></code>, que representan la cantidad que pescó Juan cada día de la semana. La función debe devolver un arreglo de tuplas, donde cada tupla debe ser un par de la forma <code class="docutils literal notranslate"><span class="pre">(adicional,</span> <span class="pre">multa)</span></code>, que representan la cantidad de kilogramos adicional que pescó Juan durante un día y la multa que tuvo que pagar respectivamente. De no haber pagado multa el resultado será <code class="docutils literal notranslate"><span class="pre">0.0</span></code> en ambos casos. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">generar_reporte([25.5,</span> <span class="pre">50.5,</span> <span class="pre">60.25,</span> <span class="pre">15,</span> <span class="pre">100,</span> <span class="pre">50,</span> <span class="pre">30.50])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[(0.0,</span> <span class="pre">0.0),</span> <span class="pre">(0.5,</span> <span class="pre">2.0),</span> <span class="pre">(10.25,</span> <span class="pre">41.0),</span> <span class="pre">(0.0,</span> <span class="pre">0.0),</span> <span class="pre">(50.0,</span> <span class="pre">200.0),</span> <span class="pre">(0.0,</span> <span class="pre">0.0),</span></code> <br /> <code class="docutils literal notranslate"><span class="pre">(0.0,</span> <span class="pre">0.0)]</span></code></p>
+
+</div>
+<textarea data-lang="python" id="q2_3_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def generar_reporte(pesos):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(
+            generar_reporte([25.5, 50.5, 60.25, 15.0, 100.0, 50.0, 30.50]),
+            [(0.0, 0.0), (0.5, 2.0), (10.25, 41.0), (0.0, 0.0), (50.0, 200.0), (0.0, 0.0), (0.0, 0.0)],
+            "Esperado: [(0.0, 0.0), (0.5, 2.0), (10.25, 41.0), (0.0, 0.0), (50.0, 200.0), (0.0, 0.0), (0.0, 0.0)]",
+        )
+        self.assertEqual(
+            generar_reporte([5.55, 50.0, 10.25, 15.0, 0.0, 50.0, 51.0]),
+            [(0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (1.0, 4.0)],
+            "Esperado: [(0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (1.0, 4.0)]",
+        )
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Ejercicio 4" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_4 data-question_label="4">
+<div id=q2_4_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">mayor_tres</span></code> que recibe tres números enteros <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> y <code class="docutils literal notranslate"><span class="pre">c</span></code>. La función debe devolver el mayor de los tres números, sin usar las funciones <code class="docutils literal notranslate"><span class="pre">max</span></code> o <code class="docutils literal notranslate"><span class="pre">min</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_tres(5,</span> <span class="pre">2,</span> <span class="pre">3)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">5</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_tres(-5,</span> <span class="pre">0,</span> <span class="pre">-2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">0</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q2_4_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def mayor_tres(a, b, c):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(mayor_tres(1, 2, 3), 3, "Esperado: 3")
+        self.assertEqual(mayor_tres(9, 2, 3), 9, "Esperado: 9")
+        self.assertEqual(mayor_tres(-9, 2, 1), 2, "Esperado: 2")
+        self.assertEqual(mayor_tres(1, 1, 1), 1, "Esperado: 1")
+        self.assertEqual(mayor_tres(5, 5, 4), 5, "Esperado: 5")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Ejercicio 5" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_5 data-question_label="5">
+<div id=q2_5_question class="ac_question col-md-12">
+<p>Desarrolle la función <code class="docutils literal notranslate"><span class="pre">mayor_menor_tres</span></code> que recibe tres números enteros <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> y <code class="docutils literal notranslate"><span class="pre">c</span></code>. La función debe devolver una tupla de la forma <code class="docutils literal notranslate"><span class="pre">(mayor,</span> <span class="pre">menor)</span></code> que representan el mayor y el menor de los tres números, sin usar las funciones <code class="docutils literal notranslate"><span class="pre">max</span></code> o <code class="docutils literal notranslate"><span class="pre">min</span></code>. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_menor_tres(5,</span> <span class="pre">2,</span> <span class="pre">3)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">5)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">mayor_menor_tres(-5,</span> <span class="pre">0,</span> <span class="pre">-2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(-2,</span> <span class="pre">0)</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q2_5_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def mayor_menor_tres(a, b, c):
+
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(mayor_menor_tres(1, 2, 3), (1, 3), "Esperado: (1, 3)")
+        self.assertEqual(mayor_menor_tres(9, 2, 3), (2, 9), "Esperado: (2, 9)")
+        self.assertEqual(mayor_menor_tres(-9, 2, 1), (-9, 2), "Esperado: (-9, 2)")
+        self.assertEqual(mayor_menor_tres(1, 1, 1), (1, 1), "Esperado: (1, 1)")
+        self.assertEqual(mayor_menor_tres(5, 5, 4), (4, 5), "Esperado: (4, 5)")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Ejercicio 6" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_6 data-question_label="6">
+<div id=q2_6_question class="ac_question col-md-12">
+<p>Un trabajador de una empresa recibe un salario mensual bruto calculado por la cantidad de horas trabajadas multiplicada por su valor. De este <code class="docutils literal notranslate"><span class="pre">salario_bruto</span></code> se le descuentan al mes el <code class="docutils literal notranslate"><span class="pre">11%</span></code> por impuestos, el <code class="docutils literal notranslate"><span class="pre">8%</span></code> de seguro médico y <code class="docutils literal notranslate"><span class="pre">5%</span></code> como pago al sindicato. Desarrolle la función <code class="docutils literal notranslate"><span class="pre">calcular_salario</span></code> que recibe un flotante <code class="docutils literal notranslate"><span class="pre">valor_hora</span></code> y un entero <code class="docutils literal notranslate"><span class="pre">cantidad_horas</span></code> que representan cuánto gana por hora y la cantidad de horas trabajadas durante el mes. La función debe devolver un diccionario de la forma: <br /></p>
+<p><code class="docutils literal notranslate"><span class="pre">{&quot;salario_bruto&quot;:</span> <span class="pre">A,</span> <span class="pre">&quot;impuestos&quot;:</span> <span class="pre">B,</span></code> <br /> <code class="docutils literal notranslate"><span class="pre">&quot;seguro_medico&quot;:</span> <span class="pre">C,</span> <span class="pre">&quot;sindicato&quot;:</span> <span class="pre">E,</span> <span class="pre">&quot;salario_neto&quot;:</span> <span class="pre">F}</span></code>. <br /></p>
+<p>Donde A, B, C y D representan la cantidad de dinero correspondiente para cada ítem. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">calcular_salario(15.0,</span> <span class="pre">120)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">{&quot;salario_bruto&quot;:</span> <span class="pre">1800.00,</span> <span class="pre">&quot;impuestos&quot;:</span> <span class="pre">198.00,</span></code> <br /> <code class="docutils literal notranslate"><span class="pre">&quot;seguro_medico&quot;:</span> <span class="pre">144.0,</span> <span class="pre">&quot;sindicato&quot;:</span> <span class="pre">90.0,</span> <span class="pre">&quot;salario_neto&quot;:</span> <span class="pre">1368.00}</span></code>. <br /></p>
+
+</div>
+<textarea data-lang="python" id="q2_6_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def calcular_salario(valor_hora, cantidad_horas):
+
+
+====
+from unittest.gui import TestCaseGui
+import random
+
+
+class myTests(TestCaseGui):
+    def get_expected_dictionary(self, salary):
+        result = {
+            "salario_bruto": salary,
+            "impuestos": salary * 0.11,
+            "seguro_medico": salary * 0.08,
+            "sindicato": salary * 0.05,
+        }
+        result["salario_neto"] = (salary - result["impuestos"] -
+            result["seguro_medico"] - result["sindicato"])
+        return result
+
+    def testOne(self):
+        test_numbers = 10
+        min_hour = 50
+        max_hour = 200
+        min_price_hour = 7
+        max_price_hour = 30
+        for test in range(test_numbers):
+            hour = random.randint(min_hour, max_hour)
+            price = round(random.uniform(min_price_hour, max_price_hour), 2)
+            salary = price * hour
+            expected = self.get_expected_dictionary(salary)
+            result = calcular_salario(price, hour)
+            current_test = test + 1
+
+            self.assertEqual(
+                round(result["salario_bruto"], 2),
+                round(expected["salario_bruto"], 2),
+                f"Test #{current_test} - Salario Bruto esperado: {round(expected['salario_bruto'], 2)}",
+            )
+            self.assertEqual(
+                round(result["impuestos"], 2),
+                round(expected["impuestos"], 2),
+                f"Test #{current_test} - Impuestos esperado: {round(expected['impuestos'], 2)}",
+            )
+            self.assertEqual(
+                round(result["seguro_medico"], 2),
+                round(expected["seguro_medico"], 2),
+                f"Test #{current_test} - Seguro médico esperado: {round(expected['seguro_medico'], 2)}",
+            )
+            self.assertEqual(
+                round(result["sindicato"], 2),
+                round(expected["sindicato"], 2),
+                f"Test #{current_test} - Sindicato esperado: {round(expected['sindicato'], 2)}",
+            )
+            self.assertEqual(
+                round(result["salario_neto"], 2),
+                round(expected["salario_neto"], 2),
+                f"Test #{current_test} - Salario neto esperado: {round(expected['salario_neto'], 2)}",
+            )
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div><div data-component="tab" data-tabname="Ejercicio 7" >
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=q2_7 data-question_label="7">
+<div id=q2_7_question class="ac_question col-md-12">
+<p>La pintura que venden en su ferretería de confianza tiene una cobertura de 1 litro por cada 3 metros cuadrados y la pintura se vende solo en botes de 18 litros que cuestan cada uno <code class="docutils literal notranslate"><span class="pre">80.00</span></code> unidades. Desarrolle la función <code class="docutils literal notranslate"><span class="pre">puedo_pintar</span></code> que recibe una cantidad en metros cuadrados de un área a pintar como un entero positivo <code class="docutils literal notranslate"><span class="pre">area</span></code>. La función debe devolver una tupla con las cantidad de botes de pintura que se necesitan comprar para cubrir toda el área, así como su precio total, es decir, utilizando la forma <code class="docutils literal notranslate"><span class="pre">(cantidad_botes,</span> <span class="pre">precio_total)</span></code>. <br />
+<strong>Nota</strong>: solo se vende un número entero de botes de pintura. <br /> <br />
+Ejemplos: <br />
+<code class="docutils literal notranslate"><span class="pre">puedo_pintar(10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">80.00)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">puedo_pintar(100)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">160.00)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">puedo_pintar(54)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">80.00)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">puedo_pintar(55)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">160.00)</span></code> <br /></p>
+
+</div>
+<textarea data-lang="python" id="q2_7_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+       style="visibility: hidden;">
+def puedo_pintar(area):
+
+====
+from unittest.gui import TestCaseGui
+
+
+class myTests(TestCaseGui):
+    def testOne(self):
+
+        self.assertEqual(puedo_pintar(10), (1, 80.00), "Esperado: (1, 80.00)")
+        self.assertEqual(puedo_pintar(100), (2, 160.00), "Esperado: (2, 160.00)")
+        self.assertEqual(puedo_pintar(54), (1, 80.00), "Esperado: (1, 80.00)")
+        self.assertEqual(puedo_pintar(55), (2, 160.00), "Esperado: (2, 160.00)")
+        self.assertEqual(puedo_pintar(1000), (19, 1520.00), "Esperado: (19, 1520.00)")
+        self.assertEqual(puedo_pintar(500), (10, 800.00), "Esperado: (10, 800.00)")
+        self.assertEqual(puedo_pintar(250), (5, 400.00), "Esperado: (5, 400.00)")
+        self.assertEqual(puedo_pintar(125), (3, 240.00), "Esperado: (3, 240.00)")
+
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+    </div>
+
+</div>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
+  </div>
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Quiz - 1' data-toggle="tooltip">
+  <a href="Quiz1.html" aria-label="Previous - Quiz - 1">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Quiz - 3' data-toggle="tooltip" >
+    <a href="Quiz3.html" aria-label="Next - Quiz - 3">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      
+      <span id='numuserspan'></span><span class='loggedinuser'></span>
+      
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> 
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  </body>
+</html>
