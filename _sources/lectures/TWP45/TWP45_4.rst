@@ -4,7 +4,7 @@ Probando la API de University Domains
 `University Domains and Names Data List & API <https://github.com/Hipo/university-domains-list>`_ es una API que 
 contiene  dominios, nombres y países de la mayoría de las universidades del mundo.
 
-.. activecode:: ac_l45_4a
+.. activecode:: ac_l45_4a_es
     :language: python3
     :python3_interpreter: brython
 
@@ -16,7 +16,7 @@ contiene  dominios, nombres y países de la mayoría de las universidades del mu
     import urllib.parse
     import json
 
-    api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search?"
+    api_url = "http://universities.hipolabs.com/search?"
     parametros = urllib.parse.urlencode({"name": "middle", "country": "turkey"})
 
     solicitud = urllib.request.urlopen(api_url + parametros)
@@ -25,7 +25,7 @@ contiene  dominios, nombres y países de la mayoría de las universidades del mu
     print(json.dumps(datos_json, indent=4))
 
 
-.. activecode:: ac_l45_4b
+.. activecode:: ac_l45_4b_es
     :nocodelens:
     :language: python
 
@@ -35,7 +35,7 @@ contiene  dominios, nombres y países de la mayoría de las universidades del mu
     import requests
     import json
 
-    api_url = "https://cors.bridged.cc/http://universities.hipolabs.com/search"
+    api_url = "http://universities.hipolabs.com/search"
     parametros = {"country": "colombia"}
 
     solicitud = requests.get(api_url, params=parametros)
