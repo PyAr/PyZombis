@@ -5,7 +5,7 @@ import json
 def test_l45_1_api():
     """Tests fetching data from the provided URL"""
     # Send a GET request to the URL for a sample user
-    url = "https://graph.facebook.com/arianagrande/picture?type=large"
+    url = "https://graph.facebook.com/arianagrafsdfsdnde/picture?type=large"
 
     # Send a GET request to the URL
     response = requests.get(url)
