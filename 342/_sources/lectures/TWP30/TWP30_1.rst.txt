@@ -1,0 +1,57 @@
+Lo que aprendimos
+=================
+
+Terminamos el primer libro
+--------------------------
+
+.. image:: ../img/TWP30_001.jpeg
+    :height: 14.384cm
+    :width: 10cm
+    :align: center
+    :alt: 
+
+
+Empecemos el segundo
+--------------------
+
+.. image:: ../img/TWP30_002.jpeg
+    :height: 13.801cm
+    :width: 13.801cm
+    :align: center
+    :alt: 
+
+
+Lo que hemos aprendimos
+-----------------------
+
++ Variables y entrada de datos
++ Condiciones
++ Repeticiones
++ Listas
++ Strings
++ Funciones
++ Archivos
++ Diccionarios
++ Clases y objetos
+
+
+¿Qué aprenderemos en el segundo?
+--------------------------------
+
++ ¡Las mismas cosas!
++ Hacer juegos
++ Acceso a sitios web para ver el precio del café
++ Uso de interfaces gráficas
++ Manejo de excepciones
++ Uso de la base de datos de surfistas
++ Mezcla de canciones
+
+
+Encontrando tu camino
+---------------------
+
++ Si solo usa el software de otros, siempre estará limitado a lo que
+  lo que otras personas piensan que quieres hacer
++ Escribe tus propios programas
++ ¿Quieres ser programado o ser el programador?
++ Puedes tomar el control
