@@ -6,7 +6,6 @@ Repeticiones anidadas
 
 
 .. activecode:: ac_l15_6
-   :nocodelens:
    :stdin:
 
    tabla_de_multiplicar = 1

@@ -27,7 +27,6 @@ HTML
 
 
 .. activecode:: ac_l23_4
-    :nocodelens:
     :datafile: hola.html
 
     Pruebe el programa anterior.

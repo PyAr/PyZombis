@@ -16,7 +16,6 @@ Validar dirección IP
 
 
 .. activecode:: ac_l23_3
-    :nocodelens:
     :datafile: Validos.txt, Invalidos.txt
 
     def ip_ok(ip):
