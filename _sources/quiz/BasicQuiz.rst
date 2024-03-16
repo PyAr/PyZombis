@@ -66,6 +66,9 @@ Ejercicios básicos
             Dada una lista de tuplas no vacías, devuelve una lista ordenada en orden creciente por el último elemento en cada tupla. |br|
 
             ~~~~
+            # Extraer el último elemento de una tupla, utilizado para ordenación personalizada a continuación
+            def last(a):
+
             def sort_last(tuples):
 
             ====
@@ -135,7 +138,7 @@ Ejercicios básicos
         .. activecode:: basic_q6es
             :nocodelens:
 
-            Dada una cadena s, devuelve una cadena donde todas las ocurrencias de su primer carácter se han cambiado a '*', excepto no cambie el primer carácter en sí. Por ejemplo, 'babble' produce 'ba**le'. Suponga que la cadena tiene una longitud de 1 o más. |br|
+            Dada una cadenas, devuelve una cadena donde todas las ocurrencias de su primer carácter se han cambiado a '*', excepto no cambie el primer carácter en sí. Por ejemplo, 'babble' produce 'ba**le'. Suponga que la cadena tiene una longitud de 1 o más. |br|
 
             ~~~~
             def fix_start(s):

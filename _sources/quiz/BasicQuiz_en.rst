@@ -66,6 +66,7 @@ Basic Exercises
             Given a list of non-empty tuples, return a list sorted in increasing order by the last element in each tuple. |br|
 
             ~~~~
+            # Extract the last element from a tuple -- used for custom sorting below.
             def last(a):
             
             def sort_last(tuples):
