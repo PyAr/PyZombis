@@ -341,7 +341,7 @@ import urllib.request
 import json
 
 # La url de Reddit a la que accederemos
-url = "https://cors.bridged.cc/http://www.reddit.com/r/Python/.json"
+url = "https://api.reddit.com/r/Python/.json"
 resp = urllib.request.urlopen(url).read()
 
 # La respuesta se da en formato json, se debe transformar a
