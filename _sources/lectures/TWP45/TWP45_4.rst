@@ -4,7 +4,7 @@ Probando la API de University Domains
 `University Domains and Names Data List & API <https://github.com/Hipo/university-domains-list>`_ es una API que 
 contiene  dominios, nombres y países de la mayoría de las universidades del mundo.
 
-.. activecode:: ac_l45_4a_es
+.. activecode:: ac_l45_4a
     :language: python3
     :python3_interpreter: brython
 
@@ -25,7 +25,7 @@ contiene  dominios, nombres y países de la mayoría de las universidades del mu
     print(json.dumps(datos_json, indent=4))
 
 
-.. activecode:: ac_l45_4b_es
+.. activecode:: ac_l45_4b
     :nocodelens:
     :language: python
 
