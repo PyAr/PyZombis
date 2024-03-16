@@ -1,140 +1,127 @@
-Probando la API de TasteDive
-============================
+Probando la API de TVMaze
+=========================
 
-TasteDive es una herramienta que:
+TVMaze es una herramienta que:
 
-    le ayuda a descubrir nueva música, películas, programas de televisión, libros, autores, juegos, 
-    podcasts y personas con intereses compartidos.
-    -- TasteDive
+    Te permite buscar programas de televisión y obtener información sobre ellos.
+    Proporciona una API RESTful para acceder a los datos.
 
-En el siguiente ejercicio usaremos la API de TasteDive para buscar obras o artistas similares a otra de nuestra
-elección.
-La documentación de la API de `TasteDive <https://tastedive.com/read/api>`_.
+En el siguiente ejemplo, utilizaremos la API de TVMaze para buscar programas de televisión. La URL base es API de `TVMaze <http://api.tvmaze.com/search/shows>`_.
 
-.. activecode:: ac_l45_3a
+.. activecode:: ac_l45_3a_es
     :nocodelens:
     :language: python
 
-    En este caso, utilizaremos la librería ``requests`` para hacer la solicitud a la API. La url base 
-    es ``"https://tastedive.com/api/similar"``. A esta url se le va a pasar un parámetro ``q`` con el 
-    valor de la artista Ariana Grande. Al final la url se va a ver de la siguiente forma: ``"https://tastedive.com/api/similar?q=ariana+grande"``.
-    Note que después de la url base se escribe un ``?`` para indicar que siguen los parámetros.
+    En este caso, utilizaremos la biblioteca ``requests`` para hacer la solicitud a la API. La URL base 
+    es ``"https://api.tvmaze.com/search/shows"``. A esta URL se le pasará un parámetro ``q`` con el 
+    valor del programa "big bang theory". Finalmente, la URL se verá así: ``"https://api.tvmaze.com/search/shows?q=big+bang+theory"``.
+    Ten en cuenta que después de la URL base, se escribe un ``?`` para indicar que siguen los parámetros.
 
     ~~~~
     import requests
     import json
 
-    api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    api_url = "http://api.tvmaze.com/search/shows"
 
-    # Los parámetros que se le pasaran a la url los escribimos dentro de un diccionario
-    parametros = {"q": "ariana grande"}
+    # Los parámetros que se pasarán a la URL se escriben dentro de un diccionario
+    # no necesitamos agregar espacios en los parámetros, porque la biblioteca requests lo hará por nosotros
+    parameters = {"q": "big bang theory"}
 
-    # Solicitamos a la api los datos
-    respuesta = requests.get(proxy + api_url, params=parametros)
 
-    # Ahora imprimimos la url
-    print(respuesta.url)
+    # Solicitamos los datos de la API
+    response = requests.get(api_url, params=parameters)
+
+    # Ahora imprimimos la URL
+    print(response.url)
     print()
 
-    # Transformamos los datos de formato json a Python
-    datos = json.loads(respuesta.text)
+    # Transformamos los datos en formato JSON a datos de Python
+    data = json.loads(response.text)
 
-    print(datos)
+    print(data)
+
     
 
-En el ejemplo anterior pudo apreciar que la API regresa un texto, que si lo pasamos por ``json.loads`` 
-se transforma a un diccionario de Python. Sin embargo, no es del todo legible. Esto se puede solucionar con 
+En el ejemplo anterior, pudiste ver que la API devuelve texto, que si se pasa a través de ``json.loads``,
+se transforma en un diccionario de Python. Sin embargo, no es completamente legible. Esto se puede solucionar con
 ``json.dumps``.
 
-.. activecode:: ac_l45_3b
+.. activecode:: ac_l45_3b_es
     :language: python3
     :python3_interpreter: brython
     
 
-    Ahora vamos a solicitar información de la banda Coldplay. Esta vez vamos a imprimir los datos de forma 
-    que sean legibles. Esto lo hacemos con el argumento ``indent`` de la función ``dumps`` de ``json``.
-    Vamos a usar ``urllib`` para hacer la solicitud.
+    Ahora, solicitaremos información sobre el programa "golden girls". Esta vez imprimiremos los datos en un 
+    formato legible para el usuario. Utilizaremos ``urllib`` para hacer la solicitud.
 
     ~~~~
     import urllib.request
     import urllib.parse
     import json
 
-    api_url = "https://tastedive.com/api/similar?"
-    proxy = "https://cors.bridged.cc/"
-    # La siguiente línea es para los parámetros de la url.
-    parametros = urllib.parse.urlencode({"q": "coldplay"})
+    api_url = "http://api.tvmaze.com/search/shows?"
+    # La siguiente línea es para los parámetros de la URL
+    # no necesitamos agregar espacios en los parámetros, porque la biblioteca requests lo hará por nosotros
+    parameters = urllib.parse.urlencode({"q": "golden girls"})
 
-    solicitud = urllib.request.urlopen(proxy + api_url + parametros)
-    datos = json.loads(solicitud.read())
+    request = urllib.request.urlopen(api_url + parameters)
+    data = json.loads(request.read())
 
-    # Imprimimos los datos de forma legible para un usuario
-    print(json.dumps(datos, indent=4))
+    # Imprimimos los datos en un formato legible para el usuario
+    print(json.dumps(data, indent=4))
+    print("La consulta devolvió " + str(len(data)) + " resultados")
 
-    # Podemos ver que la api arrojó 20 resultados relacionados con
-    # la solicitud
-    print(len(datos["Similar"]["Results"]))
 
 
 |
 
 El siguiente ejercicio viene con calificación automática.
 
-.. activecode:: ac_l45_3c
+.. activecode:: ac_l45_3c_es
     :nocodelens:
     :language: python
 
-    Ahora va a preguntar a TasteDive por la película Coco. Entonces el diccionario ``parametros`` debe tener el 
-    valor ``"Coco"`` asignado a la llave ``"q"``. Además, esta vez solo queremos 5 resultados en vez de 20. Para 
-    esto existe un parámetro llamado ``"limit"``, que puede ser asignado al número de resultados que se necesiten. 
-    Otro parámetro que le pasará a la url será ``"info"`` y tendrá el valor de 1. Lo que hará esto es que los 
-    resultados vendrán con un texto extra con información sobre la película.
+    Ahora pediremos a TVMaze el programa "suits". Luego, al diccionario ``parameters`` se le deberá asignar el valor 
+    ``"suits"`` a la clave ``"q"``.
 
-    Primero, va a solicitar a la API lo descrito anteriormente, y guardará esto en la variable ``solicitud``. En 
-    otra variable, ``solicitud_url``, guarde la url de la solicitud. Después asignará los datos a la variable ``datos``. 
-    Después va asignar a la variable ``resultados`` el número de resultados que arrojó la solicitud 
-    (como se hizo en el ejemplo anterior). Como pusimos un límite, este número debe coincidir con el límite.
+    Primero, solicitarás desde la API lo que se describió anteriormente, y guardarás esto en la variable ``request``.
+    En otra variable, ``request_url``, guarda la URL de la solicitud. Luego, asigna los datos a la variable ``data``.
+    A continuación, asignarás a la variable ``results`` el número de resultados que devolvió la solicitud 
+    (como se hizo en el ejemplo anterior).
 
-    Ahora va a crear la lista ``peliculas_similares``. Dentro de ``datos`` usted tiene un diccionario de diccionarios 
-    y listas. Lo que hará será buscar los conjuntos dentro de los cuales se encuentren los nombres de las películas 
-    similares a Coco, y va a agregar a ``peliculas_similares`` el nombre de esas películas. En total deben ser 5. 
-    **Pista**: los datos de las películas se encuentran dentro de ``datos["Similar"]["Results"]``, y la llave para 
-    acceder a ellas es ``"Name"``.
+    Ahora, calcularás el promedio de clasificación de todos los programas que se devolvieron. 
+    Guardarás esto en la variable ``average_rating``. **Sugerencia**: las clasificaciones se encuentran dentro de 
+    ``data["show"]["rating"]["average"]``. Necesitarás usar un bucle for para calcular el promedio.
 
-    Por último, va a buscar el número de veces que aparece la palabra ``"Pixar"`` en los textos de información de las 
-    películas relacionadas a Coco. Ese número lo va a guardar en la variable ``pixar``. **Pista**: ``"wTeaser"`` es la 
-    llave que guarda el texto. Esta llave se encuentra en el mismo diccionario que el nombre de las películas.
+    Por último, buscarás el número de veces que aparece la palabra ``"Drama"`` en los géneros relacionados con suits. 
+    Guarda ese número en la variable ``drama_count``. **Sugerencia**: los géneros se encuentran dentro de 
+    ``data["show"]["genres"]``. Necesitarás usar un bucle for para calcular el número de dramas.
+
 
     ~~~~
     import requests
     import json
 
-    api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    api_url = "http://api.tvmaze.com/search/shows"
+    parameters = {}
+    request = 
+    request_url = 
+    data = 
+    results = 
 
-    # Agregue los parámetros
-    parametros = {}
-    
-    # Complete el código
-    solicitud = 
-    solicitud_url = 
-    datos = 
+    total_rating = 0
+    rated_shows = 0
+    for show in data:
+    # completar el bucle
 
-    # Asigne la variable resultados 
-    
-    # print(f"resultados: {resultados}")
-    
-    # Cree peliculas_similares
-    # Utilice un ciclo for para encontrar las peliculas similares y agregarlas
-    # a la variable correspondiente
+    drama_count = 0
+    for show in data:
+    # completar el bucle
 
-    # print(f"Pelis: {peliculas_similares} len: {len(peliculas_similares)}")
-
-    pixar = 0
-    # Busque el número de ocurrencias de "Pixar" dentro de los datos
-
-    # print(f"Pixar: {pixar}")
+    print("URL de la solicitud:", request_url)
+    print("Resultados:", results)
+    print("Clasificación promedio:", average_rating)
+    print("Número de dramas:", drama_count)
 
     ====
     from unittest.gui import TestCaseGui
@@ -143,18 +130,14 @@ El siguiente ejercicio viene con calificación automática.
     class myTests(TestCaseGui):
         def testOne(self):
             self.assertEqual(
-                solicitud_url,
-                "https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
-                "Probando que la url sea: https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                request_url,
+                "http://api.tvmaze.com/search/shows?q=suits",
+                "Probando que la URL sea: http://api.tvmaze.com/search/shows?q=suits",
             )
-            self.assertEqual(resultados, 5, "Probando que resultados esté asignado correctamente.")
-            self.assertEqual(len(peliculas_similares), 5, "Probando que peliculas_similares sean: 5")
-            self.assertEqual(
-                peliculas_similares,
-                ["Toy Story 3", "Finding Nemo", "Inside Out", "Spirited Away", "Monsters, Inc."],
-                "Esperado: ['Toy Story 3', 'Finding Nemo', 'Inside Out', 'Spirited Away', 'Monsters, Inc.']",
-            )
-            self.assertEqual(pixar, 5, "Probando que pixar esté asignado correctamente.")
+            self.assertEqual(results, 10, "Probando que los resultados se asignen correctamente.")
+            self.assertEqual(average_rating, 7.8, "Probando que la clasificación promedio sea: 7.8")
+            self.assertEqual(drama_count, 6, "Probando que drama_count se asigne correctamente.")
 
 
     myTests().main()
+

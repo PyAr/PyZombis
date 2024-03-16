@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Probando la API de TasteDive &#8212; PyZombis aayush/issue#247@f262102</title>
+    <title>3. Probando la API de TVMaze &#8212; PyZombis aayush/issue#247@ef8d4be</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis aayush/issue#247@f262102
+          PyZombis aayush/issue#247@ef8d4be
         </a>
       </div>
     </div>
@@ -322,28 +322,25 @@ window.addEventListener('load', (event) => {
 
 
   
-  <div class="section" id="probando-la-api-de-tastedive">
-<h1><span class="section-number">3. </span>Probando la API de TasteDive<a class="headerlink" href="#probando-la-api-de-tastedive" title="Permalink to this headline">¶</a></h1>
-<p>TasteDive es una herramienta que:</p>
+  <div class="section" id="probando-la-api-de-tvmaze">
+<h1><span class="section-number">3. </span>Probando la API de TVMaze<a class="headerlink" href="#probando-la-api-de-tvmaze" title="Permalink to this headline">¶</a></h1>
+<p>TVMaze es una herramienta que:</p>
 <blockquote>
-<div><p>le ayuda a descubrir nueva música, películas, programas de televisión, libros, autores, juegos,
-podcasts y personas con intereses compartidos.
-– TasteDive</p>
+<div><p>Te permite buscar programas de televisión y obtener información sobre ellos.
+Proporciona una API RESTful para acceder a los datos.</p>
 </div></blockquote>
-<p>En el siguiente ejercicio usaremos la API de TasteDive para buscar obras o artistas similares a otra de nuestra
-elección.
-La documentación de la API de <a class="reference external" href="https://tastedive.com/read/api">TasteDive</a>.</p>
+<p>En el siguiente ejemplo, utilizaremos la API de TVMaze para buscar programas de televisión. La URL base es API de <a class="reference external" href="http://api.tvmaze.com/search/shows">TVMaze</a>.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_3a data-question_label="3.1">
-<div id=ac_l45_3a_question class="ac_question col-md-12">
-<p>En este caso, utilizaremos la librería <code class="docutils literal notranslate"><span class="pre">requests</span></code> para hacer la solicitud a la API. La url base
-es <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar&quot;</span></code>. A esta url se le va a pasar un parámetro <code class="docutils literal notranslate"><span class="pre">q</span></code> con el
-valor de la artista Ariana Grande. Al final la url se va a ver de la siguiente forma: <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar?q=ariana+grande&quot;</span></code>.
-Note que después de la url base se escribe un <code class="docutils literal notranslate"><span class="pre">?</span></code> para indicar que siguen los parámetros.</p>
+<div data-component="activecode" id=ac_l45_3a_es data-question_label="3.1">
+<div id=ac_l45_3a_es_question class="ac_question col-md-12">
+<p>En este caso, utilizaremos la biblioteca <code class="docutils literal notranslate"><span class="pre">requests</span></code> para hacer la solicitud a la API. La URL base
+es <code class="docutils literal notranslate"><span class="pre">&quot;https://api.tvmaze.com/search/shows&quot;</span></code>. A esta URL se le pasará un parámetro <code class="docutils literal notranslate"><span class="pre">q</span></code> con el
+valor del programa “big bang theory”. Finalmente, la URL se verá así: <code class="docutils literal notranslate"><span class="pre">&quot;https://api.tvmaze.com/search/shows?q=big+bang+theory&quot;</span></code>.
+Ten en cuenta que después de la URL base, se escribe un <code class="docutils literal notranslate"><span class="pre">?</span></code> para indicar que siguen los parámetros.</p>
 
 </div>
-<textarea data-lang="python" id="ac_l45_3a_editor" 
+<textarea data-lang="python" id="ac_l45_3a_es_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -351,39 +348,39 @@ Note que después de la url base se escribe un <code class="docutils literal not
 import requests
 import json
 
-api_url = "https://tastedive.com/api/similar"
-proxy = "https://cors.bridged.cc/"
+api_url = "http://api.tvmaze.com/search/shows"
 
-# Los parámetros que se le pasaran a la url los escribimos dentro de un diccionario
-parametros = {"q": "ariana grande"}
+# Los parámetros que se pasarán a la URL se escriben dentro de un diccionario
+# no necesitamos agregar espacios en los parámetros, porque la biblioteca requests lo hará por nosotros
+parameters = {"q": "big bang theory"}
 
-# Solicitamos a la api los datos
-respuesta = requests.get(proxy + api_url, params=parametros)
 
-# Ahora imprimimos la url
-print(respuesta.url)
+# Solicitamos los datos de la API
+response = requests.get(api_url, params=parameters)
+
+# Ahora imprimimos la URL
+print(response.url)
 print()
 
-# Transformamos los datos de formato json a Python
-datos = json.loads(respuesta.text)
+# Transformamos los datos en formato JSON a datos de Python
+data = json.loads(response.text)
 
-print(datos)
+print(data)
 </textarea>
 </div>
 </div>
-<p>En el ejemplo anterior pudo apreciar que la API regresa un texto, que si lo pasamos por <code class="docutils literal notranslate"><span class="pre">json.loads</span></code>
-se transforma a un diccionario de Python. Sin embargo, no es del todo legible. Esto se puede solucionar con
+<p>En el ejemplo anterior, pudiste ver que la API devuelve texto, que si se pasa a través de <code class="docutils literal notranslate"><span class="pre">json.loads</span></code>,
+se transforma en un diccionario de Python. Sin embargo, no es completamente legible. Esto se puede solucionar con
 <code class="docutils literal notranslate"><span class="pre">json.dumps</span></code>.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_3b data-question_label="3.2">
-<div id=ac_l45_3b_question class="ac_question col-md-12">
-<p>Ahora vamos a solicitar información de la banda Coldplay. Esta vez vamos a imprimir los datos de forma
-que sean legibles. Esto lo hacemos con el argumento <code class="docutils literal notranslate"><span class="pre">indent</span></code> de la función <code class="docutils literal notranslate"><span class="pre">dumps</span></code> de <code class="docutils literal notranslate"><span class="pre">json</span></code>.
-Vamos a usar <code class="docutils literal notranslate"><span class="pre">urllib</span></code> para hacer la solicitud.</p>
+<div data-component="activecode" id=ac_l45_3b_es data-question_label="3.2">
+<div id=ac_l45_3b_es_question class="ac_question col-md-12">
+<p>Ahora, solicitaremos información sobre el programa “golden girls”. Esta vez imprimiremos los datos en un
+formato legible para el usuario. Utilizaremos <code class="docutils literal notranslate"><span class="pre">urllib</span></code> para hacer la solicitud.</p>
 
 </div>
-<textarea data-lang="python3" id="ac_l45_3b_editor" 
+<textarea data-lang="python3" id="ac_l45_3b_es_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -392,20 +389,17 @@ import urllib.request
 import urllib.parse
 import json
 
-api_url = "https://tastedive.com/api/similar?"
-proxy = "https://cors.bridged.cc/"
-# La siguiente línea es para los parámetros de la url.
-parametros = urllib.parse.urlencode({"q": "coldplay"})
+api_url = "http://api.tvmaze.com/search/shows?"
+# La siguiente línea es para los parámetros de la URL
+# no necesitamos agregar espacios en los parámetros, porque la biblioteca requests lo hará por nosotros
+parameters = urllib.parse.urlencode({"q": "golden girls"})
 
-solicitud = urllib.request.urlopen(proxy + api_url + parametros)
-datos = json.loads(solicitud.read())
+request = urllib.request.urlopen(api_url + parameters)
+data = json.loads(request.read())
 
-# Imprimimos los datos de forma legible para un usuario
-print(json.dumps(datos, indent=4))
-
-# Podemos ver que la api arrojó 20 resultados relacionados con
-# la solicitud
-print(len(datos["Similar"]["Results"]))
+# Imprimimos los datos en un formato legible para el usuario
+print(json.dumps(data, indent=4))
+print("La consulta devolvió " + str(len(data)) + " resultados")
 </textarea>
 </div>
 </div>
@@ -415,28 +409,23 @@ print(len(datos["Similar"]["Results"]))
 <p>El siguiente ejercicio viene con calificación automática.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_3c data-question_label="3.3">
-<div id=ac_l45_3c_question class="ac_question col-md-12">
-<p>Ahora va a preguntar a TasteDive por la película Coco. Entonces el diccionario <code class="docutils literal notranslate"><span class="pre">parametros</span></code> debe tener el
-valor <code class="docutils literal notranslate"><span class="pre">&quot;Coco&quot;</span></code> asignado a la llave <code class="docutils literal notranslate"><span class="pre">&quot;q&quot;</span></code>. Además, esta vez solo queremos 5 resultados en vez de 20. Para
-esto existe un parámetro llamado <code class="docutils literal notranslate"><span class="pre">&quot;limit&quot;</span></code>, que puede ser asignado al número de resultados que se necesiten.
-Otro parámetro que le pasará a la url será <code class="docutils literal notranslate"><span class="pre">&quot;info&quot;</span></code> y tendrá el valor de 1. Lo que hará esto es que los
-resultados vendrán con un texto extra con información sobre la película.</p>
-<p>Primero, va a solicitar a la API lo descrito anteriormente, y guardará esto en la variable <code class="docutils literal notranslate"><span class="pre">solicitud</span></code>. En
-otra variable, <code class="docutils literal notranslate"><span class="pre">solicitud_url</span></code>, guarde la url de la solicitud. Después asignará los datos a la variable <code class="docutils literal notranslate"><span class="pre">datos</span></code>.
-Después va asignar a la variable <code class="docutils literal notranslate"><span class="pre">resultados</span></code> el número de resultados que arrojó la solicitud
-(como se hizo en el ejemplo anterior). Como pusimos un límite, este número debe coincidir con el límite.</p>
-<p>Ahora va a crear la lista <code class="docutils literal notranslate"><span class="pre">peliculas_similares</span></code>. Dentro de <code class="docutils literal notranslate"><span class="pre">datos</span></code> usted tiene un diccionario de diccionarios
-y listas. Lo que hará será buscar los conjuntos dentro de los cuales se encuentren los nombres de las películas
-similares a Coco, y va a agregar a <code class="docutils literal notranslate"><span class="pre">peliculas_similares</span></code> el nombre de esas películas. En total deben ser 5.
-<strong>Pista</strong>: los datos de las películas se encuentran dentro de <code class="docutils literal notranslate"><span class="pre">datos[&quot;Similar&quot;][&quot;Results&quot;]</span></code>, y la llave para
-acceder a ellas es <code class="docutils literal notranslate"><span class="pre">&quot;Name&quot;</span></code>.</p>
-<p>Por último, va a buscar el número de veces que aparece la palabra <code class="docutils literal notranslate"><span class="pre">&quot;Pixar&quot;</span></code> en los textos de información de las
-películas relacionadas a Coco. Ese número lo va a guardar en la variable <code class="docutils literal notranslate"><span class="pre">pixar</span></code>. <strong>Pista</strong>: <code class="docutils literal notranslate"><span class="pre">&quot;wTeaser&quot;</span></code> es la
-llave que guarda el texto. Esta llave se encuentra en el mismo diccionario que el nombre de las películas.</p>
+<div data-component="activecode" id=ac_l45_3c_es data-question_label="3.3">
+<div id=ac_l45_3c_es_question class="ac_question col-md-12">
+<p>Ahora pediremos a TVMaze el programa “suits”. Luego, al diccionario <code class="docutils literal notranslate"><span class="pre">parameters</span></code> se le deberá asignar el valor
+<code class="docutils literal notranslate"><span class="pre">&quot;suits&quot;</span></code> a la clave <code class="docutils literal notranslate"><span class="pre">&quot;q&quot;</span></code>.</p>
+<p>Primero, solicitarás desde la API lo que se describió anteriormente, y guardarás esto en la variable <code class="docutils literal notranslate"><span class="pre">request</span></code>.
+En otra variable, <code class="docutils literal notranslate"><span class="pre">request_url</span></code>, guarda la URL de la solicitud. Luego, asigna los datos a la variable <code class="docutils literal notranslate"><span class="pre">data</span></code>.
+A continuación, asignarás a la variable <code class="docutils literal notranslate"><span class="pre">results</span></code> el número de resultados que devolvió la solicitud
+(como se hizo en el ejemplo anterior).</p>
+<p>Ahora, calcularás el promedio de clasificación de todos los programas que se devolvieron.
+Guardarás esto en la variable <code class="docutils literal notranslate"><span class="pre">average_rating</span></code>. <strong>Sugerencia</strong>: las clasificaciones se encuentran dentro de
+<code class="docutils literal notranslate"><span class="pre">data[&quot;show&quot;][&quot;rating&quot;][&quot;average&quot;]</span></code>. Necesitarás usar un bucle for para calcular el promedio.</p>
+<p>Por último, buscarás el número de veces que aparece la palabra <code class="docutils literal notranslate"><span class="pre">&quot;Drama&quot;</span></code> en los géneros relacionados con suits.
+Guarda ese número en la variable <code class="docutils literal notranslate"><span class="pre">drama_count</span></code>. <strong>Sugerencia</strong>: los géneros se encuentran dentro de
+<code class="docutils literal notranslate"><span class="pre">data[&quot;show&quot;][&quot;genres&quot;]</span></code>. Necesitarás usar un bucle for para calcular el número de dramas.</p>
 
 </div>
-<textarea data-lang="python" id="ac_l45_3c_editor" 
+<textarea data-lang="python" id="ac_l45_3c_es_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -444,31 +433,26 @@ llave que guarda el texto. Esta llave se encuentra en el mismo diccionario que e
 import requests
 import json
 
-api_url = "https://tastedive.com/api/similar"
-proxy = "https://cors.bridged.cc/"
+api_url = "http://api.tvmaze.com/search/shows"
+parameters = {}
+request =
+request_url =
+data =
+results =
 
-# Agregue los parámetros
-parametros = {}
+total_rating = 0
+rated_shows = 0
+for show in data:
+# completar el bucle
 
-# Complete el código
-solicitud =
-solicitud_url =
-datos =
+drama_count = 0
+for show in data:
+# completar el bucle
 
-# Asigne la variable resultados
-
-# print(f"resultados: {resultados}")
-
-# Cree peliculas_similares
-# Utilice un ciclo for para encontrar las peliculas similares y agregarlas
-# a la variable correspondiente
-
-# print(f"Pelis: {peliculas_similares} len: {len(peliculas_similares)}")
-
-pixar = 0
-# Busque el número de ocurrencias de "Pixar" dentro de los datos
-
-# print(f"Pixar: {pixar}")
+print("URL de la solicitud:", request_url)
+print("Resultados:", results)
+print("Clasificación promedio:", average_rating)
+print("Número de dramas:", drama_count)
 
 ====
 from unittest.gui import TestCaseGui
@@ -477,18 +461,13 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
         self.assertEqual(
-            solicitud_url,
-            "https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
-            "Probando que la url sea: https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+            request_url,
+            "http://api.tvmaze.com/search/shows?q=suits",
+            "Probando que la URL sea: http://api.tvmaze.com/search/shows?q=suits",
         )
-        self.assertEqual(resultados, 5, "Probando que resultados esté asignado correctamente.")
-        self.assertEqual(len(peliculas_similares), 5, "Probando que peliculas_similares sean: 5")
-        self.assertEqual(
-            peliculas_similares,
-            ["Toy Story 3", "Finding Nemo", "Inside Out", "Spirited Away", "Monsters, Inc."],
-            "Esperado: ['Toy Story 3', 'Finding Nemo', 'Inside Out', 'Spirited Away', 'Monsters, Inc.']",
-        )
-        self.assertEqual(pixar, 5, "Probando que pixar esté asignado correctamente.")
+        self.assertEqual(results, 10, "Probando que los resultados se asignen correctamente.")
+        self.assertEqual(average_rating, 7.8, "Probando que la clasificación promedio sea: 7.8")
+        self.assertEqual(drama_count, 6, "Probando que drama_count se asigne correctamente.")
 
 
 myTests().main()
