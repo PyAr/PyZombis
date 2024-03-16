@@ -1,0 +1,105 @@
+Introducción a una interfaz gráfica
+===================================
+
++ En la programación no basta con hacer solamente el código.
++ No es suficiente para trabajar, también debe ser atractivo para el usuario.
++ Las interfaces basadas en texto funcionan, pero son limitadas y antiguas.
++ Motivado a esto, se necesita crear interfaces gráficas de usuario, también conocida por sus iniciales del inglés GUI *graphical user interface*
++ Las interfaces gráficas de usuario podemos encontrarlas en diferentes sitios:
+    + En programas para la computadora, por ejemplo, una muy conocida es el programa Office. Estas interfaces las podemos llamar *interfaces de escritorio*.
+    + También podemos encontrar interfaces que se ven dentro del navegador, como por ejemplo la página de Facebook, estas interfaces podemos llamarlas *interfaces web*.
+    + Por último, encontramos interfaces en las aplicaciones para nuestros teléfonos inteligentes, un ejemplo es la aplicación Whatsapp, representando a las *interfaces móviles*.
++ En Python existen diferentes herramientas y librerías para la creación de interfaces, entre las conocidas para crear interfaces de escritorio se encuentran las librerías ``tkinter`` y ``PyQt``.
++ Ya que nuestro objetivo es crear interfaces dentro del navegador, utilizaremos nuevamente ``brython``.
++ Brython permite a través de su sintaxis la capacidad de crear interfaces gráficas simples.
++ Crearemos en este ejercicio el **Show de preguntas Zombis**.
+
+Show de preguntas Zombis
+------------------------
+
++ Es un juego con diferentes opciones.
++ La *opción 1* es para la respuesta correcta y la *opción 2* para la respuesta incorrecta.
++ El programa tendrá un efecto de sonido para cada respuesta.
++ El programa debe contar cuántas respuestas correctas e incorrectas hubo.
++ Finalmente presione 0 para terminar.
+
+
+Reproduciendo un audio
+----------------------
+
++ Comencemos hacer la lógica de reproducir un audio.
++ Hay diversas formas de hacerlo, una opción puede ser con la librería ``pygame`` entre otras.
++ Nuevamente usaremos el modulo de Brython.
++ El código de abajo genera un elemento de HTML llamado ``audio``.
++ En está `página <https://bigsoundbank.com/UPLOAD/ogg/>`_ puedes obtener sonidos libres que puedes usar en el programa.
+    + Solo necesitas copiar y pegar la url del sónido que te guste.
+
+
+.. activecode:: ac_l50_1a
+    :nocodelens:
+    :language: python3
+    :python3_interpreter: brython
+
+
+    from browser import document, html
+
+    url_audio = "" # Agrega un enlace de un audio para reproducirlo
+    print("Creando el elemento audio")
+    document <= html.AUDIO(id="audio", src=url_audio, controls=True)
+
++ Notaste que se creó el elemento de audio con los controles para reproducirlo y detenerlo.
++ Puedes agregar cuantos sonidos quieras.
++ ¿Pero cómo manejo por el programa cuándo se reproduce y cuándo se detiene el sonido?
+    + Vamos a enlazar eventos para poder lograrlo.
+
+.. activecode:: ac_l50_1b
+    :nocodelens:
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import document, html, timer
+
+
+    def crear_elemento(url_audio, nombre_audio):
+        print(f"Creando el elemento audio {url_audio}")
+        document <= html.AUDIO(id=nombre_audio, src=url_audio)
+
+    # Función para iniciar el audio
+    def iniciar_audio(elemento):
+        document[elemento].play()
+
+    # Función para pausar el audio
+    def pausar_audio(elemento):
+        document[elemento].pause()
+
+
+    # Sonido de campana
+    crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/0001.ogg", "audio_1")
+    # Sonido de golpeteo
+    crear_elemento("https://bigsoundbank.com/UPLOAD/ogg/0005.ogg", "audio_2")
+
+    # Iniciar los audios
+    iniciar_audio("audio_1")
+    iniciar_audio("audio_2")
+
+    # Reproduce solamente 10 segundos del audio luego se detiene
+    timer.set_timeout(pausar_audio, 10000, "audio_1")
+
+    # Reproduce solamente 5 segundos del audio luego se detiene
+    timer.set_timeout(pausar_audio, 5000, "audio_2")
+
+.. image:: ../img/TWP50_004.png
+    :height: 9.626cm
+    :width: 6.118cm
+    :align: center
+    :alt:
+
++ Se oyen muy bien los audios.
++ Ahora que el audio está funcionando, ¡hagamos el Show de preguntas Zombis!
+
+.. image:: ../img/TWP50_007.jpg
+   :height: 7.487cm
+   :width: 10.688cm
+   :align: center
+   :alt:
+

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poder de Pandas &#8212; PyZombis Pandas@3763880</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
+
+
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
+    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Revisión general 1" href="../TWP30/toctree.html" />
+    <link rel="prev" title="5. Múltiple herencia y ¿Qué objeto es?" href="../TWP25/TWP25_5.html" />
+
+
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+
+<script>
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'PyZombis';
+    eBookConfig.basecourse = 'PyZombis';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.enableCompareMe = eBookConfig.useRunestoneServices;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../../_static/img/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="../../index.html" aria-label="index-page">
+          
+          PyZombis Pandas@3763880
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='../../genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/assignments/chooseAssignment.html'>Assignments</a></li>
+            <li><a href='/runestone/assignments/practice'>Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link"><a href='/runestone/admin/index'>Instructor's Page</a></li>
+            
+            <li><a href='/runestone/dashboard/studentreport'>Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()" />
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode" >Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=TWP28'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">5. </span>Múltiple herencia y ¿Qué objeto es?" data-toggle="tooltip">
+    <a href="../TWP25/TWP25_5.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Revisión general 1' data-toggle="tooltip" >              
+    <a href="../TWP30/toctree.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  document.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 5. Múltiple herencia y ¿Qué objeto es?' data-toggle="tooltip">
+  <a href="../TWP25/TWP25_5.html" aria-label="Previous - 5. Múltiple herencia y ¿Qué objeto es?">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Revisión general 1' data-toggle="tooltip" >
+    <a href="../TWP30/toctree.html" aria-label="Next - Revisión general 1">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
+<!-- Ad Serving for Runestone Campaign -->
+
+
+  
+  <div class="section" id="poder-de-pandas">
+<h1>Poder de Pandas<a class="headerlink" href="#poder-de-pandas" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../../_images/TWP10_001.jpeg"><img alt="" class="align-center" src="../../_images/TWP10_001.jpeg" style="width: 9.258cm; height: 14.925cm;" /></a>
+<div class="section" id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h2>
+<p>Esta conferencia trata sobre una de las herramientas más poderosas en el ecosistema de Python para análisis de datos: Pandas. En esta conferencia, nos embarcaremos en un viaje para explorar los entresijos de Pandas, comprendiendo sus capacidades para manejar, manipular y analizar datos de manera efectiva.</p>
+</div>
+<div class="section" id="entendiendo-los-conceptos-basicos-de-pandas">
+<h2>Entendiendo los Conceptos Básicos de Pandas<a class="headerlink" href="#entendiendo-los-conceptos-basicos-de-pandas" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Pandas, construido sobre NumPy, proporciona estructuras de datos y funciones para trabajar con datos estructurados.</p></li>
+<li><p>Componentes clave: Serie (arreglo unidimensional etiquetado) y DataFrame (estructura de datos etiquetada bidimensional).</p></li>
+<li><p>Importando Pandas y cargando datos: <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pandas</span> <span class="pre">as</span> <span class="pre">pd</span></code> y <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="analisis-exploratorio-de-datos-eda-con-pandas">
+<h2>Análisis Exploratorio de Datos (EDA) con Pandas<a class="headerlink" href="#analisis-exploratorio-de-datos-eda-con-pandas" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Verificando las dimensiones de los datos: <code class="docutils literal notranslate"><span class="pre">df.shape</span></code>.</p></li>
+<li><p>Obteniendo estadísticas resumidas: <code class="docutils literal notranslate"><span class="pre">df.describe()</span></code>.</p></li>
+<li><p>Examinando tipos de datos y valores faltantes: <code class="docutils literal notranslate"><span class="pre">df.info()</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="limpieza-y-transformacion-de-datos">
+<h2>Limpieza y Transformación de Datos<a class="headerlink" href="#limpieza-y-transformacion-de-datos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Renombrando columnas para mayor claridad: <code class="docutils literal notranslate"><span class="pre">df.rename(columns={'old_name':</span> <span class="pre">'new_name'},</span> <span class="pre">inplace=True)</span></code>.</p></li>
+<li><p>Manejando datos faltantes: <code class="docutils literal notranslate"><span class="pre">df.dropna()</span></code>, <code class="docutils literal notranslate"><span class="pre">df.fillna()</span></code>.</p></li>
+<li><p>Conversión de tipos de datos: <code class="docutils literal notranslate"><span class="pre">df.astype()</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="manipulacion-y-agregacion-de-datos">
+<h2>Manipulación y Agregación de Datos<a class="headerlink" href="#manipulacion-y-agregacion-de-datos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Seleccionando columnas y filas: <code class="docutils literal notranslate"><span class="pre">df['column_name']</span></code>, <code class="docutils literal notranslate"><span class="pre">df.loc[]</span></code>, <code class="docutils literal notranslate"><span class="pre">df.iloc[]</span></code>.</p></li>
+<li><p>Filtrando datos: <code class="docutils literal notranslate"><span class="pre">df.query()</span></code>.</p></li>
+<li><p>Agrupación y agregación de datos: <code class="docutils literal notranslate"><span class="pre">df.groupby().agg()</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="visualizacion-de-datos-con-pandas">
+<h2>Visualización de Datos con Pandas<a class="headerlink" href="#visualizacion-de-datos-con-pandas" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Utilizando la integración de Matplotlib y Seaborn para visualizaciones.</p></li>
+<li><p>Gráficos básicos: <code class="docutils literal notranslate"><span class="pre">df.plot()</span></code>.</p></li>
+<li><p>Gráficos de barras, histogramas, diagramas de caja: <code class="docutils literal notranslate"><span class="pre">df.plot(kind='bar')</span></code>, <code class="docutils literal notranslate"><span class="pre">df.plot(kind='hist')</span></code>, <code class="docutils literal notranslate"><span class="pre">df.plot(kind='box')</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="tecnicas-avanzadas-de-analisis-de-datos">
+<h2>Técnicas Avanzadas de Análisis de Datos<a class="headerlink" href="#tecnicas-avanzadas-de-analisis-de-datos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Análisis de series temporales: Manejo de datos de fecha y hora con Pandas.</p></li>
+<li><p>Fusión y unión de conjuntos de datos: <code class="docutils literal notranslate"><span class="pre">pd.merge()</span></code>, <code class="docutils literal notranslate"><span class="pre">pd.concat()</span></code>.</p></li>
+<li><p>Manejo de duplicados: <code class="docutils literal notranslate"><span class="pre">df.drop_duplicates()</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="aplicaciones-del-mundo-real-y-estudios-de-caso">
+<h2>Aplicaciones del Mundo Real y Estudios de Caso<a class="headerlink" href="#aplicaciones-del-mundo-real-y-estudios-de-caso" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Análisis de datos de atención médica: Exploración de tiempos de espera de pacientes, distribución de servicios y tendencias geográficas.</p></li>
+<li><p>Análisis de datos financieros: Análisis del mercado de valores, gestión de carteras.</p></li>
+<li><p>Análisis de datos en redes sociales: Análisis de sentimientos, detección de tendencias.</p></li>
+</ul>
+</div>
+<div class="section" id="mejores-practicas-y-optimizacion-del-rendimiento">
+<h2>Mejores Prácticas y Optimización del Rendimiento<a class="headerlink" href="#mejores-practicas-y-optimizacion-del-rendimiento" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Carga y almacenamiento eficientes de datos: Utilización de fragmentación, optimización de tipos de datos.</p></li>
+<li><p>Operaciones vectorizadas: Aprovechamiento de operaciones vectorizadas de Pandas para cálculos más rápidos.</p></li>
+<li><p>Gestión de memoria: Reducción del uso de memoria para conjuntos de datos grandes.</p></li>
+</ul>
+</div>
+<div class="section" id="ejemplo">
+<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Aquí hay algo que puedes desarrollar usando Pandas. Este ejemplo utiliza datos de productos de helado de Beijing. Los datos se leen de un archivo CSV y luego se visualizan usando matplotlib. El usuario puede seleccionar un sabor de helado y el gráfico mostrará la calificación del sabor seleccionado.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">js</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">from</span> <span class="nn">pyodide.http</span> <span class="kn">import</span> <span class="n">open_url</span>
+<span class="kn">from</span> <span class="nn">pyodide.ffi</span> <span class="kn">import</span> <span class="n">create_proxy</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv&quot;</span>
+<span class="p">)</span>
+<span class="n">ice_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">open_url</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
+
+<span class="n">current_selected</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">flavour_elements</span> <span class="o">=</span> <span class="n">js</span><span class="o">.</span><span class="n">document</span><span class="o">.</span><span class="n">getElementsByName</span><span class="p">(</span><span class="s2">&quot;flavour&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">22</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+    <span class="n">bars</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;rating&quot;</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">bars</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Rating of ice cream flavours of your choice&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s2">&quot;graph-area&quot;</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">select_flavour</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">ele</span> <span class="ow">in</span> <span class="n">flavour_elements</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ele</span><span class="o">.</span><span class="n">checked</span><span class="p">:</span>
+            <span class="n">current_selected</span> <span class="o">=</span> <span class="n">ele</span><span class="o">.</span><span class="n">value</span>
+            <span class="k">break</span>
+    <span class="k">if</span> <span class="n">current_selected</span> <span class="o">==</span> <span class="s2">&quot;ALL&quot;</span><span class="p">:</span>
+        <span class="n">plot</span><span class="p">(</span><span class="n">ice_data</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">filter</span> <span class="o">=</span> <span class="n">ice_data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">ele</span><span class="o">.</span><span class="n">value</span> <span class="ow">in</span> <span class="n">x</span><span class="p">[</span><span class="s2">&quot;ingredients&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">plot</span><span class="p">(</span><span class="n">ice_data</span><span class="p">[</span><span class="nb">filter</span><span class="p">])</span>
+
+<span class="n">ele_proxy</span> <span class="o">=</span> <span class="n">create_proxy</span><span class="p">(</span><span class="n">select_flavour</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">ele</span> <span class="ow">in</span> <span class="n">flavour_elements</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">ele</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s2">&quot;ALL&quot;</span><span class="p">:</span>
+        <span class="n">ele</span><span class="o">.</span><span class="n">checked</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">current_selected</span> <span class="o">=</span> <span class="n">ele</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">ele</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s2">&quot;change&quot;</span><span class="p">,</span> <span class="n">ele_proxy</span><span class="p">)</span>
+
+<span class="n">plot</span><span class="p">(</span><span class="n">ice_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<br>
+<html>
+  <head>
+    <title>Selector de Helado</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+
+    <py-config>
+      packages = ["matplotlib", "pandas"]
+    </py-config>
+
+    <py-script>
+
+    import js
+    import pandas as pd
+    import matplotlib.pyplot as plt
+
+    from pyodide.http import open_url
+    from pyodide.ffi import create_proxy
+
+    url = (
+        "https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv"
+    )
+    ice_data = pd.read_csv(open_url(url))
+
+    current_selected = []
+    flavour_elements = js.document.getElementsByName("flavour")
+
+    def plot(data):
+        plt.rcParams["figure.figsize"] = (22,20)
+        fig, ax = plt.subplots()
+        bars = ax.barh(data["name"], data["rating"], height=0.7)
+        ax.bar_label(bars)
+        plt.title("Rating of ice cream flavours of your choice")
+        display(fig, target="graph-area", append=False)
+
+    def select_flavour(event):
+        for ele in flavour_elements:
+            if ele.checked:
+                current_selected = ele.value
+                break
+        if current_selected == "ALL":
+            plot(ice_data)
+        else:
+            filter = ice_data.apply(lambda x: ele.value in x["ingredients"], axis=1)
+            plot(ice_data[filter])
+
+    ele_proxy = create_proxy(select_flavour)
+
+    for ele in flavour_elements:
+        if ele.value == "ALL":
+            ele.checked = True
+            current_selected = ele.value
+        ele.addEventListener("change", ele_proxy)
+
+    plot(ice_data)
+
+    </py-script>
+
+    <div id="input" style="margin-left: 250px;">
+        Seleccione su sabor de 🍨: <br/>
+        <input type="radio" id="all" name="flavour" value="ALL">
+        <label for="all"> Todos 🍧</label>
+        <input type="radio" id="chocolate" name="flavour" value="COCOA">
+        <label for="chocolate"> Chocolate 🍫</label>
+        <input type="radio" id="cherrie" name="flavour" value="CHERRIES">
+        <label for="cherrie"> Cerezas 🍒</label>
+        <input type="radio" id="berries" name="flavour" value="BERRY">
+        <label for="berries"> Bayas 🍓</label>
+        <input type="radio" id="cheese" name="flavour" value="CHEESE">
+        <label for="cheese"> Queso 🧀</label>
+        <input type="radio" id="peanut" name="flavour" value="PEANUT">
+        <label for="peanut"> Cacahuate 🥜</label>
+    </div>
+
+    <div id="graph-area" style="width: 1000px; height: 600px;"></div>
+
+  </body>
+</html></div>
+</div>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
+  </div>
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 5. Múltiple herencia y ¿Qué objeto es?' data-toggle="tooltip">
+  <a href="../TWP25/TWP25_5.html" aria-label="Previous - 5. Múltiple herencia y ¿Qué objeto es?">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Revisión general 1' data-toggle="tooltip" >
+    <a href="../TWP30/toctree.html" aria-label="Next - Revisión general 1">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      
+      <span id='numuserspan'></span><span class='loggedinuser'></span>
+      
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> 
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  </body>
+</html>
