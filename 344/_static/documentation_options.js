@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '5d32c6570ffabc1122b6eaa67c6a679762644cc8-logpuzzle',
+    VERSION: '500503dd1a9d8f25e3ab9c03e0e7cf6aac57df64-logpuzzle',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
