@@ -119,3 +119,15 @@ def test_l45_3_en(page):
     page.hover("#ac_l45_3c_en >> text=You passed:")
     assert page.inner_text(
         "#ac_l45_3c_en >> text=You passed:") == "You passed: 100.0% of the tests"
+    
+
+def test_l45_3_api():
+    """Tests fetching data from the provided URL"""
+    # Send a GET request to the URL for a sample user
+    url = "http://api.tvmaze.com/search/shows?q=suits"
+
+    # Send a GET request to the URL
+    response = requests.get(url)
+
+    # Check for successful response (status code 200)
+    assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}, Data can not be fetched from the provided URL"
