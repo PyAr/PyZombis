@@ -3,7 +3,7 @@ MVC
 ===
 
 
-.. image:: img/TWP10_001.jpeg
+.. image:: ../img/TWP10_001.jpeg
    :height: 14.925cm
    :width: 9.258cm
    :align: center
@@ -16,7 +16,7 @@ HEAD-Ex Logística y Transporte
 
 
 
-.. image:: img/TWP52_001.jpg
+.. image:: ../img/TWP52_001.jpg
    :height: 11.207cm
    :width: 15.193cm
    :align: center
@@ -64,7 +64,7 @@ HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_005.jpg
+.. image:: ../img/TWP52_005.jpg
    :height: 12.571cm
    :width: 19.302cm
    :align: center
@@ -75,7 +75,7 @@ HEAD-Ex Logística y Transporte
 ==============================
 
 
-.. image:: img/TWP52_006.jpg
+.. image:: ../img/TWP52_006.jpg
    :height: 15.565cm
    :width: 17.401cm
    :align: center
@@ -88,7 +88,7 @@ HEAD-Ex Logística y Transporte
 + Radio Buttons
 
 
-.. image:: img/TWP52_007.png
+.. image:: ../img/TWP52_007.png
    :height: 13.973cm
    :width: 15.801cm
    :align: center
@@ -99,7 +99,7 @@ HEAD-Ex Logística y Transporte
 ==============================
 
 
-.. image:: img/TWP52_008.jpg
+.. image:: ../img/TWP52_008.jpg
    :height: 8.254cm
    :width: 7.831cm
    :align: center
@@ -110,7 +110,7 @@ HEAD-Ex Logística y Transporte
 ==============================
 
 
-.. image:: img/TWP52_009.jpg
+.. image:: ../img/TWP52_009.jpg
    :height: 12.571cm
    :width: 15.212cm
    :align: center
@@ -121,7 +121,7 @@ HEAD-Ex Logística y Transporte
 ==============================
 
 
-.. image:: img/TWP52_013.jpg
+.. image:: ../img/TWP52_013.jpg
    :height: 9.048cm
    :width: 18.123cm
    :align: center
@@ -131,7 +131,7 @@ HEAD-Ex Logística y Transporte
 HEAD-Ex Logística y Transporte
 ==============================
 
-.. image:: img/TWP52_014.png
+.. image:: ../img/TWP52_014.png
    :height: 4.176cm
    :width: 13cm
    :align: center
@@ -170,7 +170,7 @@ HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_016.jpg
+.. image:: ../img/TWP52_016.jpg
    :height: 14.578cm
    :width: 20.401cm
    :align: center
@@ -181,7 +181,7 @@ HEAD-Ex Logística e Transporte
 ==============================
 
 
-.. image:: img/TWP52_017.png
+.. image:: ../img/TWP52_017.png
    :height: 12.571cm
    :width: 18.208cm
    :align: center
@@ -285,7 +285,7 @@ HEAD-Ex Logística y Transporte
 ==============================
 
 
-.. image:: img/TWP52_020.jpg
+.. image:: ../img/TWP52_020.jpg
    :height: 12.571cm
    :width: 17.025cm
    :align: center
