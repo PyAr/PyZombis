@@ -1,0 +1,142 @@
+Probando la API de TVMaze
+=========================
+
+TVMaze es una herramienta que:
+
+    Te permite buscar programas de televisión y obtener información sobre ellos.
+    Proporciona una API RESTful para acceder a los datos.
+
+En el siguiente ejemplo, utilizaremos la API de TVMaze para buscar programas de televisión. La URL base es API de `TVMaze <http://api.tvmaze.com/search/shows>`_.
+
+.. activecode:: ac_l45_3a_es
+    :nocodelens:
+    :language: python
+
+    En este caso, utilizaremos la biblioteca ``requests`` para hacer la solicitud a la API. La URL base 
+    es ``"https://api.tvmaze.com/search/shows"``. A esta URL se le pasará un parámetro ``q`` con el 
+    valor del programa "big bang theory". Finalmente, la URL se verá así: ``"https://api.tvmaze.com/search/shows?q=big+bang+theory"``.
+    Ten en cuenta que después de la URL base, se escribe un ``?`` para indicar que siguen los parámetros.
+
+    ~~~~
+    import requests
+    import json
+
+    api_url = "http://api.tvmaze.com/search/shows"
+
+    # Los parámetros que se pasarán a la URL se escriben dentro de un diccionario
+    # no necesitamos agregar espacios en los parámetros, porque la biblioteca requests lo hará por nosotros
+    parameters = {"q": "big bang theory"}
+
+
+    # Solicitamos los datos de la API
+    response = requests.get(api_url, params=parameters)
+
+    # Ahora imprimimos la URL
+    print(response.url)
+    print()
+
+    # Transformamos los datos en formato JSON a datos de Python
+    data = json.loads(response.text)
+
+    print(data)
+
+    
+
+En el ejemplo anterior, pudiste ver que la API devuelve texto, que si se pasa a través de ``json.loads``,
+se transforma en un diccionario de Python. Sin embargo, no es completamente legible. Esto se puede solucionar con
+``json.dumps``.
+
+.. activecode:: ac_l45_3b_es
+    :language: python3
+    :python3_interpreter: brython
+    
+
+    Ahora, solicitaremos información sobre el programa "golden girls". Esta vez imprimiremos los datos en un 
+    formato legible para el usuario. Utilizaremos ``urllib`` para hacer la solicitud.
+
+    ~~~~
+    import urllib.request
+    import urllib.parse
+    import json
+
+    api_url = "http://api.tvmaze.com/search/shows?"
+    # La siguiente línea es para los parámetros de la URL
+    # no necesitamos agregar espacios en los parámetros, porque la biblioteca requests lo hará por nosotros
+    parameters = urllib.parse.urlencode({"q": "golden girls"})
+
+    request = urllib.request.urlopen(api_url + parameters)
+    data = json.loads(request.read())
+
+    # Imprimimos los datos en un formato legible para el usuario
+    print(json.dumps(data, indent=4))
+    print("La consulta devolvió " + str(len(data)) + " resultados")
+
+
+
+|
+
+El siguiente ejercicio viene con calificación automática.
+
+.. activecode:: ac_l45_3c_es
+    :nocodelens:
+    :language: python
+
+    Ahora pediremos a TVMaze el programa "suits". Luego, al diccionario ``parameters`` se le deberá asignar el valor 
+    ``"suits"`` a la clave ``"q"``.
+
+    Primero, solicitarás desde la API lo que se describió anteriormente, y guardarás esto en la variable ``request``.
+    En otra variable, ``request_url``, guarda la URL de la solicitud. Luego, asigna los datos a la variable ``data``.
+    A continuación, asignarás a la variable ``results`` el número de resultados que devolvió la solicitud 
+    (como se hizo en el ejemplo anterior).
+
+    Ahora, calcularás el promedio de clasificación de todos los programas que se devolvieron. 
+    Guardarás esto en la variable ``average_rating``. **Sugerencia**: las clasificaciones se encuentran dentro de 
+    ``data["show"]["rating"]["average"]``. Necesitarás usar un bucle for para calcular el promedio.
+
+    Por último, buscarás el número de veces que aparece la palabra ``"Drama"`` en los géneros relacionados con suits. 
+    Guarda ese número en la variable ``drama_count``. **Sugerencia**: los géneros se encuentran dentro de 
+    ``data["show"]["genres"]``. Necesitarás usar un bucle for para calcular el número de dramas.
+
+
+    ~~~~
+    import requests
+    import json
+
+    api_url = "http://api.tvmaze.com/search/shows"
+    parameters = {}
+    request = 
+    request_url = 
+    data = 
+    results = 
+
+    total_rating = 0
+    rated_shows = 0
+    for show in data:
+    # completar el bucle
+
+    drama_count = 0
+    for show in data:
+    # completar el bucle
+
+    print("URL de la solicitud:", request_url)
+    print("Resultados:", results)
+    print("Clasificación promedio:", average_rating)
+    print("Número de dramas:", drama_count)
+
+    ====
+    from unittest.gui import TestCaseGui
+
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(
+                request_url,
+                "http://api.tvmaze.com/search/shows?q=suits",
+                "Probando que la URL sea: http://api.tvmaze.com/search/shows?q=suits",
+            )
+            self.assertEqual(results, 10, "Probando que los resultados se asignen correctamente.")
+            self.assertEqual(average_rating, 7.8, "Probando que la clasificación promedio sea: 7.8")
+            self.assertEqual(drama_count, 6, "Probando que drama_count se asigne correctamente.")
+
+
+    myTests().main()

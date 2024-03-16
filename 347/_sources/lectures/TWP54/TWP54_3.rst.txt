@@ -1,0 +1,64 @@
+Usando un messagebox
+====================
+
+.. activecode:: ac_l54_3a
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
+
+   from browser import document, alert, window, html
+
+   def guardar_datos(event):
+      try:
+         destino = entrada_destino.value
+         descripcion = entrada_descripcion.value
+         direccion = entrada_direccion.value
+
+         if not destino or not descripcion or not direccion:
+            raise ValueError("Todos los campos deben estar llenos")
+
+         window.sessionStorage["Destino"] = destino
+         window.sessionStorage["Descripción"] = descripcion
+         window.sessionStorage["Dirección"] = direccion
+      except Exception as excepcion:
+         alert(f'Error: {excepcion}')
+
+   app = html.DIV()
+
+   app <= html.LABEL('Destino: ')
+   entrada_destino = html.INPUT()
+   app <= entrada_destino
+
+   app <= html.LABEL('Descripción: ')
+   entrada_descripcion = html.INPUT()
+   app <= entrada_descripcion
+
+   app <= html.LABEL('Dirección: ')
+   entrada_direccion = html.INPUT()
+   app <= entrada_direccion
+
+   boton = html.BUTTON('Guardar')
+   boton.bind('click', guardar_datos)
+   app <= boton
+
+   document <= app
+
+.. image:: ../img/TWP54_009.jpg
+   :height: 8.042cm
+   :width: 18.335cm
+   :align: center
+   :alt: 
+
+
+.. image:: ../img/TWP54_010.jpg
+   :height: 15.573cm
+   :width: 13.348cm
+   :align: center
+   :alt: 
+
+.. poll:: TWP54
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?
