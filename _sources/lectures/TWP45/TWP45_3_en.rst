@@ -1,36 +1,36 @@
-Testing the TasteDive API
-============================
+Testing the TVMaze API
+======================
 
-TasteDive is a tool that:
+TVMaze is a tool that: 
 
-    helps you discover new music, movies, TV shows, books, authors, games, 
-    podcasts, and people with shared interests.
-    -- TasteDive
+    Allows you to search for TV shows and get information about them.
+    Provides a RESTful API to access the data.
 
-In the following exercise, we will use the TasteDive API to search for works or artists similar to another of our choice.
-The documentation for the `TasteDive API <https://tastedive.com/read/api>`_.
 
-.. activecode:: ac_l45_3a_en
+In the following example, we will use the TVMaze API to search for TV shows. The base url is `TVMaze API <http://api.tvmaze.com/search/shows>`_.
+
+.. activecode:: ac_l45_3a_en_
     :nocodelens:
     :language: python
 
     In this case, we will use the ``requests`` library to make the API request. The base url 
-    is ``"https://tastedive.com/api/similar"``. To this url, a parameter ``q`` with the 
-    value of the artist Ariana Grande will be passed. Finally, the url will look like this: ``"https://tastedive.com/api/similar?q=ariana+grande"``.
+    is ``"https://api.tvmaze.com/search/shows"``. To this url, a parameter ``q`` with the 
+    value of the show big bang theory will be passed. Finally, the url will look like this: ``"https://api.tvmaze.com/search/shows?q=big+bang+theory"``.
     Note that after the base url, a ``?`` is written to indicate that the parameters follow.
 
     ~~~~
     import requests
     import json
 
-    api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    api_url = "http://api.tvmaze.com/search/shows"
 
     # The parameters that will be passed to the url are written inside a dictionary
-    parameters = {"q": "ariana grande"}
+    # we don't need to add spaces in parameters, because the requests library will do it for us
+    parameters = {"q": "big bang theory"}
+
 
     # We request the data from the api
-    response = requests.get(proxy + api_url, params=parameters)
+    response = requests.get(api_url, params=parameters)
 
     # Now we print the url
     print(response.url)
@@ -46,12 +46,12 @@ In the previous example, you could see that the API returns text, which if passe
 transforms into a Python dictionary. However, it is not entirely readable. This can be solved with 
 ``json.dumps``.
 
-.. activecode:: ac_l45_3b_en
+.. activecode:: ac_l4fds5_3b_en_
     :language: python3
     :python3_interpreter: brython
     
 
-    Now, we will request information about the band Coldplay. This time we will print the data in a 
+    Now, we will request information about the show golden girls. This time we will print the data in a 
     readable format. We will use ``urllib`` to make the request.
 
     ~~~~
@@ -59,78 +59,68 @@ transforms into a Python dictionary. However, it is not entirely readable. This 
     import urllib.parse
     import json
 
-    api_url = "https://tastedive.com/api/similar?"
-    proxy = "https://cors.bridged.cc/"
+    api_url = "http://api.tvmaze.com/search/shows?"
     # The following line is for the url parameters
-    parameters = urllib.parse.urlencode({"q": "coldplay"})
+    # we don't need to add spaces in parameters, because the requests library will do it for us
+    parameters = urllib.parse.urlencode({"q": "golden girls"})
 
-    request = urllib.request.urlopen(proxy + api_url + parameters)
+    request = urllib.request.urlopen(api_url + parameters)
     data = json.loads(request.read())
 
     # We print the data in a user-readable format
     print(json.dumps(data, indent=4))
-
-    # We can see that the api returned 20 results related to the request
-    print(len(data["Similar"]["Results"]))
+    print("The query returned " + str(len(data)) + " results")
 
 
 |
 
 The following exercise comes with automatic grading.
 
-.. activecode:: ac_l45_3c_en
+.. activecode:: ac_l45_3c_en_
     :nocodelens:
     :language: python
 
-    Now we will ask TasteDive for the movie Coco. Then the dictionary ``parameters`` should have the 
-    value ``"Coco"`` assigned to the key ``"q"``. Additionally, this time we only want 5 results instead of 20. 
-    For this, there is a parameter called ``"limit"``, which can be assigned to the number of results needed. 
-    Another parameter that will be passed to the url will be ``"info"`` and its value will be 1. This will make 
-    the results come with extra text with information about the movie.
+    Now we will ask TVMaze for the show suits. Then the dictionary ``parameters`` should have the value 
+    ``"suits"`` assigned to the key ``"q"``.
 
-    First, you will request from the API what was described above, and save this in the variable ``request``. 
-    In another variable, ``request_url``, save the url of the request. Then, assign the data to the variable ``data``. 
+    First, you will request from the API what was described above, and save this in the variable ``request``.
+    In another variable, ``request_url``, save the url of the request. Then, assign the data to the variable ``data``.
     Next, assign the variable ``results`` the number of results that the request returned 
-    (as was done in the previous example). Because we set a limit, this number should match the limit.
+    (as was done in the previous example).
 
-    Now, you will create the list ``similar_movies``. Inside ``data`` you have a dictionary of dictionaries 
-    and lists. What you will do is to search through the sets within which are the names of the movies 
-    similar to Coco, and you will add the names of those movies to ``similar_movies``. There should be 5 in total. 
-    **Hint**: the movie data is located within ``data["Similar"]["Results"]``, and the key to access it is ``"Name"``.
+    Now, you will calculate the average rating of all the shows that were returned. 
+    You will save this in the variable ``average_rating``. **Hint**: the ratings are located within 
+    ``data["show"]["rating"]["average"]``. You will need to use a for loop to calculate the average.
 
-    Lastly, you will search for the number of times the word ``"Pixar"`` appears in the information texts of the 
-    movies related to Coco. You will save that number in the variable ``pixar``. **Hint**: ``"wTeaser"`` is the 
-    key that stores the text. This key is located in the same dictionary as the movie names.
+    Lastly you will search for the number of times the word ``"Drama"`` appears in the genres related to suits. 
+    You will save that number in the variable ``drama_count``. **Hint**: the genres are located within 
+    ``data["show"]["genres"]``. You will need to use a for loop to calculate the number of dramas.
+
 
     ~~~~
     import requests
     import json
 
-    api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
-
-    # Add the parameters
+    api_url = "http://api.tvmaze.com/search/shows"
     parameters = {}
-    
-    # Complete the code
     request = 
     request_url = 
     data = 
+    results = 
 
-    # Assign the variable results 
-    
-    # print(f"results: {results}")
-    
-    # Create similar_movies
-    # Use a for loop to find the similar movies and add them
-    # to the corresponding variable
+    total_rating = 0
+    rated_shows = 0
+    for show in data:
+    # complete the loop
 
-    # print(f"Movies: {similar_movies} len: {len(similar_movies)}")
+    drama_count = 0
+    for show in data:
+    # complete the loop
 
-    pixar = 0
-    # Find the number of occurrences of "Pixar" within the data
-
-    # print(f"Pixar: {pixar}")
+    print("Request url:", request_url)
+    print("Results:", results)
+    print("Average rating:", average_rating)
+    print("Number of dramas:", drama_count)
 
     ====
     from unittest.gui import TestCaseGui
@@ -140,17 +130,12 @@ The following exercise comes with automatic grading.
         def testOne(self):
             self.assertEqual(
                 request_url,
-                "https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
-                "Testing that the url is: https://cors.bridged.cc/https://tastedive.com/api/similar?q=Coco&limit=5&info=1",
+                "http://api.tvmaze.com/search/shows?q=suits",
+                "Testing that the url is: http://api.tvmaze.com/search/shows?q=suits",
             )
-            self.assertEqual(results, 5, "Testing that results is assigned correctly.")
-            self.assertEqual(len(similar_movies), 5, "Testing that similar_movies are: 5")
-            self.assertEqual(
-                similar_movies,
-                ["Toy Story 3", "Finding Nemo", "Inside Out", "Spirited Away", "Monsters, Inc."],
-                "Expected: ['Toy Story 3', 'Finding Nemo', 'Inside Out', 'Spirited Away', 'Monsters, Inc.']",
-            )
-            self.assertEqual(pixar, 5, "Testing that pixar is assigned correctly.")
+            self.assertEqual(results, 10, "Testing that results is assigned correctly.")
+            self.assertEqual(average_rating, 7.8, "Testing that similar_movies are: 7.8")
+            self.assertEqual(drama_count, 6, "Testing that drama_count is assigned correctly.")
 
 
     myTests().main()
