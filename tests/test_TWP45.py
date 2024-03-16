@@ -2,6 +2,17 @@ import pytest
 import requests
 import json
 
+def test_l45_2():
+    """Tests fetching data from the provided URL"""
+    # Send a GET request to the URL
+    url = "https://reddit.com/r/Python/.json"
+
+    # Send a GET request to the URL
+    response = requests.get(url, headers = {'User-agent': 'Chrome/122.0.0.0', 'Accept': '*/*'})
+
+    # Check for successful response (status code 200)
+    assert response.status_code == 200, f"Expected status code 200, but got {response.status_code}"
+
 
 def test_l45_1(page):
     page.goto("lectures/TWP45/TWP45_1.html")
