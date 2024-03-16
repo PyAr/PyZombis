@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Testing the TasteDive API &#8212; PyZombis aayush/issue#247@77eef35</title>
+    <title>3. Testing the TasteDive API &#8212; PyZombis aayush/issue#247@1952d29</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis aayush/issue#247@77eef35
+          PyZombis aayush/issue#247@1952d29
         </a>
       </div>
     </div>
@@ -334,15 +334,15 @@ podcasts, and people with shared interests.
 The documentation for the <a class="reference external" href="https://tastedive.com/read/api">TasteDive API</a>.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_3a_en data-question_label="3.1">
-<div id=ac_l45_3a_en_question class="ac_question col-md-12">
+<div data-component="activecode" id=ac_l45_3a_enfds data-question_label="3.1">
+<div id=ac_l45_3a_enfds_question class="ac_question col-md-12">
 <p>In this case, we will use the <code class="docutils literal notranslate"><span class="pre">requests</span></code> library to make the API request. The base url
 is <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar&quot;</span></code>. To this url, a parameter <code class="docutils literal notranslate"><span class="pre">q</span></code> with the
 value of the artist Ariana Grande will be passed. Finally, the url will look like this: <code class="docutils literal notranslate"><span class="pre">&quot;https://tastedive.com/api/similar?q=ariana+grande&quot;</span></code>.
 Note that after the base url, a <code class="docutils literal notranslate"><span class="pre">?</span></code> is written to indicate that the parameters follow.</p>
 
 </div>
-<textarea data-lang="python" id="ac_l45_3a_en_editor" 
+<textarea data-lang="python" id="ac_l45_3a_enfds_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -350,14 +350,13 @@ Note that after the base url, a <code class="docutils literal notranslate"><span
 import requests
 import json
 
-api_url = "https://tastedive.com/api/similar"
-proxy = "https://cors.bridged.cc/"
+api_url = "https://uselessfacts.jsph.pl/api/v2/facts/random"
 
 # The parameters that will be passed to the url are written inside a dictionary
-parameters = {"q": "ariana grande"}
+parameters = {"language": "en"}
 
 # We request the data from the api
-response = requests.get(proxy + api_url, params=parameters)
+response = requests.get(api_url, params=parameters)
 
 # Now we print the url
 print(response.url)
@@ -375,13 +374,13 @@ transforms into a Python dictionary. However, it is not entirely readable. This 
 <code class="docutils literal notranslate"><span class="pre">json.dumps</span></code>.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l45_3b_en data-question_label="3.2">
-<div id=ac_l45_3b_en_question class="ac_question col-md-12">
+<div data-component="activecode" id=ac_l45_3hb_efdf data-question_label="3.2">
+<div id=ac_l45_3hb_efdf_question class="ac_question col-md-12">
 <p>Now, we will request information about the band Coldplay. This time we will print the data in a
 readable format. We will use <code class="docutils literal notranslate"><span class="pre">urllib</span></code> to make the request.</p>
 
 </div>
-<textarea data-lang="python3" id="ac_l45_3b_en_editor" 
+<textarea data-lang="python3" id="ac_l45_3hb_efdf_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
@@ -390,19 +389,19 @@ import urllib.request
 import urllib.parse
 import json
 
-api_url = "https://tastedive.com/api/similar?"
-proxy = "https://cors.bridged.cc/"
-# The following line is for the url parameters
-parameters = urllib.parse.urlencode({"q": "coldplay"})
+api_url = "https://uselessfacts.jsph.pl/api/v2/facts/random?"
 
-request = urllib.request.urlopen(proxy + api_url + parameters)
+# The following line is for the url parameters
+parameters = urllib.parse.urlencode({"language": "en"})
+
+request = urllib.request.urlopen(api_url + parameters)
 data = json.loads(request.read())
 
 # We print the data in a user-readable format
 print(json.dumps(data, indent=4))
 
-# We can see that the api returned 20 results related to the request
-print(len(data["Similar"]["Results"]))
+# We can see that api returned 6 related fields for the random fact
+print(len(data))
 </textarea>
 </div>
 </div>

@@ -10,7 +10,7 @@ TasteDive is a tool that:
 In the following exercise, we will use the TasteDive API to search for works or artists similar to another of our choice.
 The documentation for the `TasteDive API <https://tastedive.com/read/api>`_.
 
-.. activecode:: ac_l45_3a_en
+.. activecode:: ac_l45_3a_enfds
     :nocodelens:
     :language: python
 
@@ -23,14 +23,13 @@ The documentation for the `TasteDive API <https://tastedive.com/read/api>`_.
     import requests
     import json
 
-    api_url = "https://tastedive.com/api/similar"
-    proxy = "https://cors.bridged.cc/"
+    api_url = "https://uselessfacts.jsph.pl/api/v2/facts/random"
 
     # The parameters that will be passed to the url are written inside a dictionary
-    parameters = {"q": "ariana grande"}
+    parameters = {"language": "en"}
 
     # We request the data from the api
-    response = requests.get(proxy + api_url, params=parameters)
+    response = requests.get(api_url, params=parameters)
 
     # Now we print the url
     print(response.url)
@@ -46,7 +45,7 @@ In the previous example, you could see that the API returns text, which if passe
 transforms into a Python dictionary. However, it is not entirely readable. This can be solved with 
 ``json.dumps``.
 
-.. activecode:: ac_l45_3b_en
+.. activecode:: ac_l45_3hb_efdf
     :language: python3
     :python3_interpreter: brython
     
@@ -59,19 +58,19 @@ transforms into a Python dictionary. However, it is not entirely readable. This 
     import urllib.parse
     import json
 
-    api_url = "https://tastedive.com/api/similar?"
-    proxy = "https://cors.bridged.cc/"
-    # The following line is for the url parameters
-    parameters = urllib.parse.urlencode({"q": "coldplay"})
+    api_url = "https://uselessfacts.jsph.pl/api/v2/facts/random?"
 
-    request = urllib.request.urlopen(proxy + api_url + parameters)
+    # The following line is for the url parameters
+    parameters = urllib.parse.urlencode({"language": "en"})
+
+    request = urllib.request.urlopen(api_url + parameters)
     data = json.loads(request.read())
 
     # We print the data in a user-readable format
     print(json.dumps(data, indent=4))
 
-    # We can see that the api returned 20 results related to the request
-    print(len(data["Similar"]["Results"]))
+    # We can see that api returned 6 related fields for the random fact
+    print(len(data))
 
 
 |
