@@ -9,7 +9,7 @@ Variables
 Variables con valores definidos e indefinidos
 ---------------------------------------------
 
-+ Solo se puede usar el contenido de una variable si ya tiene un valor *definido* antes.
++ Solo se puede usar el Content de una variable si ya tiene un valor *definido* antes.
 + Si se usa variable que no tiene valor definido o se encuentra *indefinido* daría como resultado un error como el siguiente.
 
 .. activecode:: ac_l40_2

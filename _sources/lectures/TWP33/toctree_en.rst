@@ -17,7 +17,7 @@ String Review
 + Y aprenderemos uno de los conceptos más importantes de orientación a la objetos: métodos
 
 .. toctree::
-   :caption: Contenido
+   :caption: Content
    :maxdepth: 1
    :numbered:
 

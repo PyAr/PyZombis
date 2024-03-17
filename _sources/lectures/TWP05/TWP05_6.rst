@@ -7,7 +7,7 @@ Tipos de variables
    :align: center
    :alt: 
 
-+ El contenido de una variable tiene un tipo
++ El Content de una variable tiene un tipo
 + El tipo define la naturaleza de los datos que almacena la variable
 + Los tipos más comunes son:
     + **Numéricas:** numeros enteros, números de coma flotante.

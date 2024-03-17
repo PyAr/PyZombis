@@ -90,7 +90,7 @@ Accediendo a la base alumnos.bd
    cur.execute('insert into alumnos values("masanori",421)')
    cur.execute('insert into alumnos values("emengarda",666)')
 
-   # selecciona todo el contenido de la tabla de alumnos
+   # selecciona todo el Content de la tabla de alumnos
    cur.execute('select * from alumnos')
 
    result = cur.fetchall()

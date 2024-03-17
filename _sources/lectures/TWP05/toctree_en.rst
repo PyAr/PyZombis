@@ -11,7 +11,7 @@ Variables and Input of Data
 
 
 .. toctree::
-   :caption: Contenido
+   :caption: Content
    :maxdepth: 1
    :numbered:
 
