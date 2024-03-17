@@ -297,7 +297,7 @@ revisión
 
 
 
-+ MVC - Modelo, Visión, Control
++ MVC - Modelo, Vista, Controlador
 + Entry()
 + Texto()
 + StringVar()
