@@ -12,6 +12,54 @@ Reto Pygame -Tirador de zombies
  '../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"]);
    </script>
 
+.. tabbed:: Reto03
+
+    .. tab:: challenge 1
+
+        In the pyzombis game, Color of game over is mixed with background
+        chage that color to black it's code is 0,0,0
+
+        .. mchoice:: color-change
+            :answer_a: Color(255,255,255)
+            :answer_b: Color(0,0,0)
+            :answer_c: Color(200,100,100)
+            :answer_d: Color(230,220,170)
+            :answer_e: Color(0,0,255)
+            :correct: b
+            :feedback_a: Wrong, Try again
+            :feedback_b: Correct, Now change this in game anf play to get black :D
+            :feedback_c: Wrong, Try again
+            :feedback_d: Wrong, Try again
+            :feedback_e: Wrong, Try again
+
+            Which of the following will change the color of game over to black?
+            and correct replacement to the code
+
+            game=font.render('Game Over -\n Press run to Play Again',True, __________________)
+    
+    .. tab:: challenge 2
+
+        .. parsonsprob:: key-event
+
+            In the game, even if the player position goes out of bounds,
+            it still logs the keystrokes, arrange the following code 
+            to solve that problem
+            -----
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_LEFT:
+                    if p1.shooterX > 0:
+                        p1.shooterX1 -= 15
+                if event.key == pygame.K_RIGHT:
+                    if p1.shooterX < 500:
+                        p1.shooterX1 += 15
+                if event.key == pygame.K_UP:
+                    if p1.shooterY < 550:
+                        p1.shooterY1 -= 15
+                if event.key == pygame.K_DOWN:
+                    if p1.shooterY > 400:
+                        p1.shooterY1+=15
+
+
 
 .. activecode:: ac_r03_1
     :language: python3
