@@ -1,0 +1,70 @@
+Ejercicio
+=========
+
++ Queremos desarrollar un programa que determine el valor futuro de una inversión, dado el valor inicial y la tasa de interés
++ Seguimos los pasos para el desarrollo.
+
+
++ Análisis:
+    + El dinero inicial genera una tasa de interés anual
+    + ¿Cuánto valdrá en 10 años?
+    + Entrada: monto inicial, tasa de interés
+    + Salida: valor en 10 años
+
++ Especificación:
+    + El usuario ingresa la cantidad inicial invertida
+    + El usuario ingresa la tasa de interés anual
+    + Valor de la fórmula matemática financiera * (1 + interés)
+
++ Diseño:
+    + Ingrese el monto de inversión inicial.
+    + Ingrese la tasa de interés.
+    + Repite 10 veces:
+        + valor inicial = valor inicial * (1 + tasa de interés)
+    + Imprime el valor actualizado.
+
++ Implementación:
+    + Valores de prueba:
+        + 1000 dolares de inversión y 3% la tasa de interés anual
+        + 1000 dolares de inversión y 10% la tasa de interés anual
+
+.. activecode:: ac_l40_10
+    :nocodelens:
+    :stdin:
+
+    valor = float(input("Cantidad inicial invertida: "))
+    tasa = float(input("Tasa de interés anual: "))
+    for i in range(10):
+        valor = valor * (1 + tasa / 100)
+    print("Valor después de 10 años:  %5.2f" % valor)
+
+
+Preguntas frecuentes
+--------------------
+.. mchoice:: feedback_l40_10_1
+    :random:
+    :answer_a: nos ayuda a construir el producto correcto sin desperdicios ni redundancias
+    :feedback_a: A menudo tiene sentido escribir la prueba primero y luego escribir tanto código como sea necesario para permitir que la prueba pase.
+    :answer_b: Hace que el código se ejecute más rápido.
+    :feedback_b: es incorrecto porque la definición de pruebas no afecta directamente la velocidad del código.
+    :answer_c: Permite al programador escribir menos código.
+    :feedback_c: es incorrecto porque escribir pruebas en realidad requiere que se escriba más código.
+    :answer_d: No es necesario para una buena programación.
+    :feedback_d: es incorrecto porque definir pruebas es un aspecto importante de las buenas prácticas de programación.
+    :correct: a
+
+    Por qué definir algunas pruebas antes de la implementación es una buena práctica de programación?
+
+.. mchoice:: feedback_l40_10_2
+    :random:
+    :answer_a: Permite probar el flujo lógico del programa antes de codificarlo.
+    :feedback_a: Escribir pseudocódigo en la etapa de diseño brinda varios beneficios, incluida la capacidad de probar la lógica y la estructura del programa antes de escribir cualquier código real.
+    :answer_b: Ahorra tiempo y esfuerzo en la codificación más adelante.
+    :feedback_b: es incorrecto porque escribir pseudocódigo requiere tiempo y esfuerzo, pero es una inversión que vale la pena en la etapa de diseño.
+    :answer_c: Ayuda a identificar errores de sintaxis en el código.
+    :feedback_c: Esto ayuda a identificar errores lógicos, lagunas y lagunas en el diseño del programa, lo que ahorra tiempo y esfuerzo a largo plazo.
+    :answer_d: Facilita la depuración del código.
+    :feedback_d: Esto ayuda a identificar errores lógicos, lagunas y lagunas en el diseño del programa, lo que ahorra tiempo y esfuerzo a largo plazo.
+    :correct: a
+
+    Cuál es la ventaja de escribir pseudocódigo en la etapa de diseño?
