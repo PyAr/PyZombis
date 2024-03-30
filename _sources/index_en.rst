@@ -54,6 +54,8 @@ Contents:
    challenges/Reto03_en.rst
    challenges/Reto04_en.rst
    challenges/Reto05_en.rst
+   poc/poc_en.rst
+   poc/poc_1.rst
 
    
 
