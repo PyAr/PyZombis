@@ -1,0 +1,13 @@
+Funciones ``find`` y ``replace``
+================================
+
+
+.. codelens:: cl_l18_5
+         
+    s = "un tigre, dos tigres, tres tigres"
+    print(s.find("tigre"))
+    print(s.find("tigre", 4))
+    print(s.find("tigre", 16))
+    print(s.replace("tigre", "gato"))
+    s = s.replace("tigre", "gato")
+    print(s)

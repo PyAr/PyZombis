@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pandas Exercise &#8212; PyZombis aayush/poc_pandas@68cf776</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+
+
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
+    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="PyMaze" href="../challenges/Reto05_en.html" />
+
+
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+
+<script>
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'PyZombis';
+    eBookConfig.basecourse = 'PyZombis';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.enableCompareMe = eBookConfig.useRunestoneServices;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../_static/img/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">
+          
+          PyZombis aayush/poc_pandas@68cf776
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='../genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/assignments/chooseAssignment.html'>Assignments</a></li>
+            <li><a href='/runestone/assignments/practice'>Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link"><a href='/runestone/admin/index'>Instructor's Page</a></li>
+            
+            <li><a href='/runestone/dashboard/studentreport'>Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()" />
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode" >Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=pandas_en'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - PyMaze" data-toggle="tooltip">
+    <a href="../challenges/Reto05_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+    <li class="divider-vertical"></li>
+  
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  document.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - PyMaze' data-toggle="tooltip">
+  <a href="../challenges/Reto05_en.html" aria-label="Previous - PyMaze">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
+<!-- Ad Serving for Runestone Campaign -->
+
+
+  
+  <div class="section" id="pandas-exercise">
+<h1>Pandas Exercise<a class="headerlink" href="#pandas-exercise" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Pandas is a Python library for data manipulation and analysis, offering:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>: Two-dimensional labeled data structure resembling a spreadsheet.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Series</span></code>: One-dimensional labeled arrays, the building blocks of DataFrames.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Manipulation</span></code>: Functions for reading, writing, filtering, and transforming data.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Integration</span></code>: Seamless integration with other Python libraries.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Performance</span></code>: Built on NumPy for fast array operations, optimized for large datasets.</p></li>
+</ol>
+</div>
+<div class="section" id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<p>This exercise will cover the basics of Pandas</p>
+<p>This is a sample code for plotting a graph using Pandas</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">js</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Dataset of programming languages and their popularity ratings</span>
+<span class="n">languages_data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Language&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">,</span> <span class="s2">&quot;C++&quot;</span><span class="p">,</span> <span class="s2">&quot;C#&quot;</span><span class="p">,</span> <span class="s2">&quot;PHP&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;Popularity&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mf">4.8</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="mf">4.2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">],</span>
+<span class="p">}</span>
+
+<span class="n">languages_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">languages_data</span><span class="p">)</span>
+
+<span class="n">current_selected</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">flavour_elements</span> <span class="o">=</span> <span class="n">js</span><span class="o">.</span><span class="n">document</span><span class="o">.</span><span class="n">getElementsByName</span><span class="p">(</span><span class="s2">&quot;flavour&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="c1"># Calculate plot dimensions</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="mi">400</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="mi">300</span>
+    <span class="n">margin</span> <span class="o">=</span> <span class="mi">50</span>
+    <span class="n">plot_width</span> <span class="o">=</span> <span class="n">width</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">margin</span>
+    <span class="n">plot_height</span> <span class="o">=</span> <span class="n">height</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">margin</span>
+
+    <span class="c1"># Calculate scale for y-axis</span>
+    <span class="n">max_rating</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;Popularity&quot;</span><span class="p">])</span>
+    <span class="n">y_scale</span> <span class="o">=</span> <span class="n">plot_height</span> <span class="o">/</span> <span class="n">max_rating</span>
+
+    <span class="c1"># Generate SVG for the plot</span>
+    <span class="n">svg</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;&lt;svg width=&quot;</span><span class="si">{</span><span class="n">width</span><span class="si">}</span><span class="s1">&quot; height=&quot;</span><span class="si">{</span><span class="n">height</span><span class="si">}</span><span class="s1">&quot; viewBox=&quot;0 0 </span><span class="si">{</span><span class="n">width</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">height</span><span class="si">}</span><span class="s1">&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&#39;</span>
+
+    <span class="c1"># Draw y-axis</span>
+    <span class="n">svg</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;&lt;line x1=&quot;</span><span class="si">{</span><span class="n">margin</span><span class="si">}</span><span class="s1">&quot; y1=&quot;</span><span class="si">{</span><span class="n">margin</span><span class="si">}</span><span class="s1">&quot; x2=&quot;</span><span class="si">{</span><span class="n">margin</span><span class="si">}</span><span class="s1">&quot; y2=&quot;</span><span class="si">{</span><span class="n">height</span> <span class="o">-</span> <span class="n">margin</span><span class="si">}</span><span class="s1">&quot; stroke=&quot;black&quot; /&gt;&#39;</span>
+    <span class="n">svg</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;&lt;text x=&quot;</span><span class="si">{</span><span class="n">margin</span> <span class="o">-</span> <span class="mi">10</span><span class="si">}</span><span class="s1">&quot; y=&quot;</span><span class="si">{</span><span class="n">margin</span> <span class="o">-</span> <span class="mi">10</span><span class="si">}</span><span class="s1">&quot; fill=&quot;black&quot; font-size=&quot;10&quot; text-anchor=&quot;end&quot;&gt;Popularity&lt;/text&gt;&#39;</span>
+
+    <span class="c1"># Draw y-axis scale</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">max_rating</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">height</span> <span class="o">-</span> <span class="n">margin</span> <span class="o">-</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="n">plot_height</span> <span class="o">/</span> <span class="n">max_rating</span><span class="p">)</span>
+        <span class="n">svg</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;&lt;line x1=&quot;</span><span class="si">{</span><span class="n">margin</span> <span class="o">-</span> <span class="mi">5</span><span class="si">}</span><span class="s1">&quot; y1=&quot;</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1">&quot; x2=&quot;</span><span class="si">{</span><span class="n">margin</span><span class="si">}</span><span class="s1">&quot; y2=&quot;</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1">&quot; stroke=&quot;black&quot; stroke-dasharray=&quot;2&quot;/&gt;&#39;</span>
+        <span class="n">svg</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;&lt;text x=&quot;</span><span class="si">{</span><span class="n">margin</span> <span class="o">-</span> <span class="mi">10</span><span class="si">}</span><span class="s1">&quot; y=&quot;</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1">&quot; fill=&quot;black&quot; font-size=&quot;8&quot; text-anchor=&quot;end&quot;&gt;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&lt;/text&gt;&#39;</span>
+
+    <span class="c1"># Draw x-axis</span>
+    <span class="n">svg</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;&lt;line x1=&quot;</span><span class="si">{</span><span class="n">margin</span><span class="si">}</span><span class="s1">&quot; y1=&quot;</span><span class="si">{</span><span class="n">height</span> <span class="o">-</span> <span class="n">margin</span><span class="si">}</span><span class="s1">&quot; x2=&quot;</span><span class="si">{</span><span class="n">width</span> <span class="o">-</span> <span class="n">margin</span><span class="si">}</span><span class="s1">&quot; y2=&quot;</span><span class="si">{</span><span class="n">height</span> <span class="o">-</span> <span class="n">margin</span><span class="si">}</span><span class="s1">&quot; stroke=&quot;black&quot; /&gt;&#39;</span>
+    <span class="n">svg</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;&lt;text x=&quot;</span><span class="si">{</span><span class="n">width</span> <span class="o">-</span> <span class="n">margin</span> <span class="o">+</span> <span class="mi">10</span><span class="si">}</span><span class="s1">&quot; y=&quot;</span><span class="si">{</span><span class="n">height</span> <span class="o">-</span> <span class="n">margin</span> <span class="o">+</span> <span class="mi">10</span><span class="si">}</span><span class="s1">&quot; fill=&quot;black&quot; font-size=&quot;10&quot;&gt;Language&lt;/text&gt;&#39;</span>
+
+    <span class="c1"># Calculate bar width and spacing</span>
+    <span class="n">num_bars</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">bar_width</span> <span class="o">=</span> <span class="n">plot_width</span> <span class="o">/</span> <span class="n">num_bars</span> <span class="o">*</span> <span class="mf">0.6</span>
+    <span class="n">spacing</span> <span class="o">=</span> <span class="n">plot_width</span> <span class="o">/</span> <span class="n">num_bars</span> <span class="o">*</span> <span class="mf">0.4</span>
+
+    <span class="c1"># Draw bars</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="p">(</span><span class="n">language</span><span class="p">,</span> <span class="n">popularity</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;Language&quot;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;Popularity&quot;</span><span class="p">])):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">margin</span> <span class="o">+</span> <span class="n">idx</span> <span class="o">*</span> <span class="p">(</span><span class="n">bar_width</span> <span class="o">+</span> <span class="n">spacing</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">height</span> <span class="o">-</span> <span class="n">margin</span> <span class="o">-</span> <span class="p">(</span><span class="n">popularity</span> <span class="o">*</span> <span class="n">y_scale</span><span class="p">)</span>
+        <span class="n">svg</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;&lt;rect x=&quot;</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">&quot; y=&quot;</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1">&quot; width=&quot;</span><span class="si">{</span><span class="n">bar_width</span><span class="si">}</span><span class="s1">&quot; height=&quot;</span><span class="si">{</span><span class="n">popularity</span> <span class="o">*</span> <span class="n">y_scale</span><span class="si">}</span><span class="s1">&quot; fill=&quot;skyblue&quot; /&gt;&#39;</span>
+        <span class="n">svg</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;&lt;text x=&quot;</span><span class="si">{</span><span class="n">x</span> <span class="o">+</span> <span class="n">bar_width</span> <span class="o">/</span> <span class="mi">2</span><span class="si">}</span><span class="s1">&quot; y=&quot;</span><span class="si">{</span><span class="n">height</span> <span class="o">-</span> <span class="n">margin</span> <span class="o">+</span> <span class="mi">20</span><span class="si">}</span><span class="s1">&quot; fill=&quot;black&quot; font-size=&quot;8&quot; text-anchor=&quot;middle&quot;&gt;</span><span class="si">{</span><span class="n">language</span><span class="si">}</span><span class="s1">&lt;/text&gt;&#39;</span>
+
+    <span class="n">svg</span> <span class="o">+=</span> <span class="s1">&#39;&lt;/svg&gt;&#39;</span>
+
+    <span class="c1"># Display SVG in the graph area</span>
+    <span class="n">js</span><span class="o">.</span><span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;graph-area&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">svg</span>
+
+<span class="k">def</span> <span class="nf">select_language</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">ele</span> <span class="ow">in</span> <span class="n">flavour_elements</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ele</span><span class="o">.</span><span class="n">checked</span><span class="p">:</span>
+            <span class="n">current_selected</span> <span class="o">=</span> <span class="n">ele</span><span class="o">.</span><span class="n">value</span>
+            <span class="k">break</span>
+    <span class="k">if</span> <span class="n">current_selected</span> <span class="o">==</span> <span class="s2">&quot;ALL&quot;</span><span class="p">:</span>
+        <span class="n">plot</span><span class="p">(</span><span class="n">languages_df</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">filter</span> <span class="o">=</span> <span class="n">languages_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">ele</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">x</span><span class="p">[</span><span class="s2">&quot;Language&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">plot</span><span class="p">(</span><span class="n">languages_df</span><span class="p">[</span><span class="nb">filter</span><span class="p">])</span>
+
+<span class="n">ele_proxy</span> <span class="o">=</span> <span class="n">select_language</span>
+
+<span class="k">for</span> <span class="n">ele</span> <span class="ow">in</span> <span class="n">flavour_elements</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">ele</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s2">&quot;ALL&quot;</span><span class="p">:</span>
+      <span class="n">ele</span><span class="o">.</span><span class="n">checked</span> <span class="o">=</span> <span class="kc">True</span>
+      <span class="n">current_selected</span> <span class="o">=</span> <span class="n">ele</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">ele</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s2">&quot;change&quot;</span><span class="p">,</span> <span class="n">ele_proxy</span><span class="p">)</span>
+
+<span class="n">plot</span><span class="p">(</span><span class="n">languages_df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
+<p>Press <code class="docutils literal notranslate"><span class="pre">SHIFT</span> <span class="pre">+</span> <span class="pre">ENTER</span></code> to run the code</p>
+<br>
+<html>
+<head>
+    <title>Programming Language Ratings</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+
+    <py-config>
+    packages = ["pandas"]
+    </py-config>
+
+    <py-script>
+    import js
+    import pandas as pd
+
+    # Dataset of programming languages and their popularity ratings
+    languages_data = {
+        "Language": ["Python", "JavaScript", "Java", "C++", "C#", "PHP"],
+        "Popularity": [5, 4.8, 4.5, 4.2, 4, 3.8],
+    }
+
+    languages_df = pd.DataFrame(languages_data)
+
+    current_selected = []
+    flavour_elements = js.document.getElementsByName("flavour")
+
+    def plot(data):
+        # Calculate plot dimensions
+        width = 400
+        height = 300
+        margin = 50
+        plot_width = width - 2 * margin
+        plot_height = height - 2 * margin
+
+        # Calculate scale for y-axis
+        max_rating = max(data["Popularity"])
+        y_scale = plot_height / max_rating
+
+        # Generate SVG for the plot
+        svg = f'<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">'
+
+        # Draw y-axis
+        svg += f'<line x1="{margin}" y1="{margin}" x2="{margin}" y2="{height - margin}" stroke="black" />'
+        svg += f'<text x="{margin - 10}" y="{margin - 10}" fill="black" font-size="10" text-anchor="end">Popularity</text>'
+
+        # Draw y-axis scale
+        for i in range(1, int(max_rating) + 1):
+            y = height - margin - (i * plot_height / max_rating)
+            svg += f'<line x1="{margin - 5}" y1="{y}" x2="{margin}" y2="{y}" stroke="black" stroke-dasharray="2"/>'
+            svg += f'<text x="{margin - 10}" y="{y}" fill="black" font-size="8" text-anchor="end">{i}</text>'
+
+        # Draw x-axis
+        svg += f'<line x1="{margin}" y1="{height - margin}" x2="{width - margin}" y2="{height - margin}" stroke="black" />'
+        svg += f'<text x="{width - margin + 10}" y="{height - margin + 10}" fill="black" font-size="10">Language</text>'
+
+        # Calculate bar width and spacing
+        num_bars = len(data)
+        bar_width = plot_width / num_bars * 0.6
+        spacing = plot_width / num_bars * 0.4
+
+        # Draw bars
+        for idx, (language, popularity) in enumerate(zip(data["Language"], data["Popularity"])):
+            x = margin + idx * (bar_width + spacing)
+            y = height - margin - (popularity * y_scale)
+            svg += f'<rect x="{x}" y="{y}" width="{bar_width}" height="{popularity * y_scale}" fill="skyblue" />'
+            svg += f'<text x="{x + bar_width / 2}" y="{height - margin + 20}" fill="black" font-size="8" text-anchor="middle">{language}</text>'
+
+        svg += '</svg>'
+
+        # Display SVG in the graph area
+        js.document.getElementById("graph-area").innerHTML = svg
+
+    def select_language(event):
+        for ele in flavour_elements:
+            if ele.checked:
+                current_selected = ele.value
+                break
+        if current_selected == "ALL":
+            plot(languages_df)
+        else:
+            filter = languages_df.apply(lambda x: ele.value.lower() in x["Language"].lower(), axis=1)
+            plot(languages_df[filter])
+
+    ele_proxy = select_language
+
+    for ele in flavour_elements:
+        if ele.value == "ALL":
+            ele.checked = True
+            current_selected = ele.value
+        ele.addEventListener("change", ele_proxy)
+
+    plot(languages_df)
+
+    </py-script>
+
+    <py-repl>
+    languages_df
+    </py-repl>
+
+    <div id="graph-area"></div>
+</body>
+</html></div>
+</div>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
+  </div>
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - PyMaze' data-toggle="tooltip">
+  <a href="../challenges/Reto05_en.html" aria-label="Previous - PyMaze">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      
+      <span id='numuserspan'></span><span class='loggedinuser'></span>
+      
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> 
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  </body>
+</html>
