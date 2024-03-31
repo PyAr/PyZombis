@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PyScript - Running Python in the Browser &#8212; PyZombis aayush/POC@30eed5c</title>
+    <title>PyScript - Running Python in the Browser &#8212; PyZombis aayush/POC@851033b</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
@@ -89,7 +89,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis aayush/POC@30eed5c
+          PyZombis aayush/POC@851033b
         </a>
       </div>
     </div>
@@ -327,48 +327,75 @@ You can run the code by pressing <code class="docutils literal notranslate"><spa
 It is Provided by <code class="docutils literal notranslate"><span class="pre">py-repl</span></code> tag, this has been changed to <code class="docutils literal notranslate"><span class="pre">script</span> <span class="pre">type=&quot;py-editor&quot;</span></code> in the latest release.
 I plan to use the latest stable release but for this POC we’ll stick to <code class="docutils literal notranslate"><span class="pre">py-repl</span></code> tag.</p>
 <p>Feel free to interact with the Python shell and run Python code in the code editor below.
-Happy Coding!</p>
-<br>
+Happy coding!</p>
+</div>
+<div class="section" id="useful-information">
+<h2>Useful Information<a class="headerlink" href="#useful-information" title="Permalink to this headline">¶</a></h2>
+<p>Try Running the code below to see a simple example of Python code running in the browser.
+This uses the <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, and <code class="docutils literal notranslate"><span class="pre">pandas</span></code> library to plot a graph.
+A Brython environment can not run this code, but PyScript can.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.tri</span> <span class="k">as</span> <span class="nn">tri</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># First create the x and y coordinates of the points.</span>
+<span class="n">n_angles</span> <span class="o">=</span> <span class="mi">36</span>
+<span class="n">n_radii</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">min_radius</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">radii</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">min_radius</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="n">n_radii</span><span class="p">)</span>
+
+<span class="n">angles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">n_angles</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">angles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">angles</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">],</span> <span class="n">n_radii</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">angles</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">n_angles</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">radii</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angles</span><span class="p">))</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">radii</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angles</span><span class="p">))</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">radii</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">angles</span><span class="p">))</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+<span class="c1"># Create the Triangulation; no triangles so Delaunay triangulation created.</span>
+<span class="n">triang</span> <span class="o">=</span> <span class="n">tri</span><span class="o">.</span><span class="n">Triangulation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Mask off unwanted triangles.</span>
+<span class="n">triang</span><span class="o">.</span><span class="n">set_mask</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">hypot</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">triang</span><span class="o">.</span><span class="n">triangles</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                        <span class="n">y</span><span class="p">[</span><span class="n">triang</span><span class="o">.</span><span class="n">triangles</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+                <span class="o">&lt;</span> <span class="n">min_radius</span><span class="p">)</span>
+
+<span class="n">fig1</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">tpc</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">tripcolor</span><span class="p">(</span><span class="n">triang</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">shading</span><span class="o">=</span><span class="s1">&#39;flat&#39;</span><span class="p">)</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">tpc</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;tripcolor of Delaunay triangulation, flat shading&#39;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">fig1</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+  <iframe
+    height="500px"
+    width="100%"
+    srcdoc='
 <html>
-<head>
-    <title>PyFront - Simple</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-</head>
-<body>
-
-    <py-config>
-        packages = ["numpy", "pandas", "matplotlib"]
+    <head>
+      <title>PyFront - Simple</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+      <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+       <style>
+            .py-repl-run-button{opacity: 1;}
+        </style>
+    </head>
+    <body>
+      <py-config>
+        packages = ["numpy", "pandas", "matplotlib"] 
         terminal = true
-    </py-config>
+      </py-config>
 
-    <py-repl>
-    import pandas as pd
-    import numpy as np
-    import matplotlib.pyplot as plt
-
-    # Dummy data for sales performance of products in different regions
-    regions = ['North', 'South', 'East', 'West']
-    products = ['Product A', 'Product B', 'Product C', 'Product D', 'Product E']
-    sales_data = pd.DataFrame(np.random.randint(1000, 5000, size=(len(regions), len(products))), columns=products, index=regions)
-
-    def plot(data):
-        plt.rcParams["figure.figsize"] = (12, 8)
-        data.plot(kind='bar', stacked=True)
-        plt.xlabel('Regions')
-        plt.ylabel('Sales')
-        plt.title('Sales Performance of Products in Different Regions')
-        plt.xticks(rotation=0)
-        plt.legend(title='Products', bbox_to_anchor=(1.05, 1), loc='upper left')
-        plt.show()
-
-    # Initial plot
-    plot(sales_data)
-    sales_data
-    </py-repl>
-</body>
-</html></div>
+      <py-repl> </py-repl>
+    </body>
+  </html>'
+  ></iframe>
+</div>
+</div>
 </div>
 
 
