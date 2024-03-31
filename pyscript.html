@@ -1,5 +1,5 @@
 <div>
-    <iframe height="400" width="100%" srcdoc='
+    <iframe height="600px" width="100%" srcdoc='
         <!DOCTYPE html>
             <html>
             <head>
@@ -13,12 +13,11 @@
             <body>
                 <py-config>
                     terminal = false
-                    packages = ["pandas", "matplotlib"]
+                    packages = ["pandas", "matplotlib", "numpy"]
                 </py-config>
                 <py-repl id="code"> 
                 </py-repl>
                 
-                <div id="graph-area" style="width: 100px; height: 100px;"></div>
             </body>
             </html>'
             style="border: 8px solid #ccc;border-radius: 10px;"
