@@ -18,48 +18,49 @@ It is Provided by ``py-repl`` tag, this has been changed to ``script type="py-ed
 I plan to use the latest stable release but for this POC we'll stick to ``py-repl`` tag.
 
 Feel free to interact with the Python shell and run Python code in the code editor below.
-Happy Coding!
+Happy coding!
+
+Useful Information
+------------------
+Try Running the code below to see a simple example of Python code running in the browser.
+This uses the ``matplotlib``, ``numpy``, and ``pandas`` library to plot a graph.
+A Brython environment can not run this code, but PyScript can.
+
+.. code:: python
+
+    import matplotlib.pyplot as plt
+    import matplotlib.tri as tri
+    import numpy as np
+
+    # First create the x and y coordinates of the points.
+    n_angles = 36
+    n_radii = 8
+    min_radius = 0.25
+    radii = np.linspace(min_radius, 0.95, n_radii)
+
+    angles = np.linspace(0, 2 * np.pi, n_angles, endpoint=False)
+    angles = np.repeat(angles[..., np.newaxis], n_radii, axis=1)
+    angles[:, 1::2] += np.pi / n_angles
+
+    x = (radii * np.cos(angles)).flatten()
+    y = (radii * np.sin(angles)).flatten()
+    z = (np.cos(radii) * np.cos(3 * angles)).flatten()
+
+    # Create the Triangulation; no triangles so Delaunay triangulation created.
+    triang = tri.Triangulation(x, y)
+
+    # Mask off unwanted triangles.
+    triang.set_mask(np.hypot(x[triang.triangles].mean(axis=1),
+                            y[triang.triangles].mean(axis=1))
+                    < min_radius)
+
+    fig1, ax1 = plt.subplots()
+    ax1.set_aspect('equal')
+    tpc = ax1.tripcolor(triang, z, shading='flat')
+    fig1.colorbar(tpc)
+    ax1.set_title('tripcolor of Delaunay triangulation, flat shading')
+
+    display(fig1)
 
 .. raw:: html
-
-    <br>
-    <html>
-    <head>
-        <title>PyFront - Simple</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-    </head>
-    <body>
-
-        <py-config>
-            packages = ["numpy", "pandas", "matplotlib"]
-            terminal = true
-        </py-config>
-        
-        <py-repl>
-        import pandas as pd
-        import numpy as np
-        import matplotlib.pyplot as plt
-
-        # Dummy data for sales performance of products in different regions
-        regions = ['North', 'South', 'East', 'West']
-        products = ['Product A', 'Product B', 'Product C', 'Product D', 'Product E']
-        sales_data = pd.DataFrame(np.random.randint(1000, 5000, size=(len(regions), len(products))), columns=products, index=regions)
-
-        def plot(data):
-            plt.rcParams["figure.figsize"] = (12, 8)
-            data.plot(kind='bar', stacked=True)
-            plt.xlabel('Regions')
-            plt.ylabel('Sales')
-            plt.title('Sales Performance of Products in Different Regions')
-            plt.xticks(rotation=0)
-            plt.legend(title='Products', bbox_to_anchor=(1.05, 1), loc='upper left')
-            plt.show()
-
-        # Initial plot
-        plot(sales_data)
-        sales_data
-        </py-repl>
-    </body>
-    </html>
+    :file: ./_static/component.html
