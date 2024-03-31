@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pygame Challenge - Zombie Shooter &#8212; PyZombis aayush/matplotlib@acd586a</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme-overrides.css?v=2DAFE138" />
+
+
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
+    <script src="../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Google babynames exercise" href="Reto04_en.html" />
+    <link rel="prev" title="Hangman Challenge" href="Reto01_en.html" />
+
+
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+
+<script>
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'PyZombis';
+    eBookConfig.basecourse = 'PyZombis';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.enableCompareMe = eBookConfig.useRunestoneServices;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../_static/img/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">
+          
+          PyZombis aayush/matplotlib@acd586a
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='../genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/assignments/chooseAssignment.html'>Assignments</a></li>
+            <li><a href='/runestone/assignments/practice'>Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link"><a href='/runestone/admin/index'>Instructor's Page</a></li>
+            
+            <li><a href='/runestone/dashboard/studentreport'>Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()" />
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode" >Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=Reto03_en'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - Hangman Challenge" data-toggle="tooltip">
+    <a href="Reto01_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Google babynames exercise' data-toggle="tooltip" >              
+    <a href="Reto04_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  document.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Hangman Challenge' data-toggle="tooltip">
+  <a href="Reto01_en.html" aria-label="Previous - Hangman Challenge">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Google babynames exercise' data-toggle="tooltip" >
+    <a href="Reto04_en.html" aria-label="Next - Google babynames exercise">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
+<!-- Ad Serving for Runestone Campaign -->
+
+
+  
+  <div class="section" id="pygame-challenge-zombie-shooter">
+<h1>Pygame Challenge - Zombie Shooter<a class="headerlink" href="#pygame-challenge-zombie-shooter" title="Permalink to this headline">¶</a></h1>
+  <script src='../_static/game.js'></script>
+
+  <script type="module">
+     window.gamejs.init();
+     window.gamejs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.png', '../_static/BlueBar1.jpg',
+'../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"]);
+  </script>
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_r03_1_en data-question_label="1">
+<div id=ac_r03_1_en_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_r03_1_en_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='brython'  style="visibility: hidden;">
+from browser import load, timer, window
+load('../_static/game.js')
+load('../_static/pygame.brython.js')
+gjs = window.gamejs
+gjs.image.preload(["../_static/zomb.png", "../_static/bg2.jpg", '../_static/human.png', '../_static/BlueBar1.jpg',\
+'../_static/bullet.png', '../_static/blast.png',  "../_static/bg1.jpg"])
+gjs.ready()
+
+^^^^
+import pygame
+from pygame.color import *
+from pygame.locals import *
+import random
+import math
+
+timer1=None
+
+class Chaser:
+    def __init__(self):
+
+        self.running=True
+        #----shooter----<
+        self.shooterX = 235
+        self.shooterY = 500
+        self.shooterX1 = 0
+        self.shooterY1 = 0
+        #----Enemy-------<
+        self.enemyImg = []
+        self.enemyX = []
+        self.enemyY = []
+        self.enemyX1 = []
+        self.enemyY1 = []
+        self.enemyBullet = []
+        self.enemyBulY=0
+        self.bulY1=[]
+        self.enemybulX=0
+        #---bullet----<
+        self.bulletY = 500
+        self.bulletX = 0
+        self.bulletX1 = 0
+        self.bulletY1 = 30
+        self.bulletState = 'Ready'
+        #-----score----<
+        self.score_value=0
+        self.j=0
+
+
+    def score(self, scr):
+        font=pygame.font.SysFont('timesnewroman',30)
+        score=font.render('Score: '+ str(self.score_value),True, Color(255,255,255),Color(200,100,100))
+        scr.blit(score,(10,10))
+
+
+    def shooter(self, x, y, scr):
+        if x <= 0:
+            x = 0
+        elif x >= 500:
+            x = 500
+        elif y <= 400:
+            y=400
+        elif y >= 550:
+            y=550
+        scr.blit(pygame.image.load('../_static/human.png'), (x, y))
+
+    def enemy(self):
+        for i in range(8):
+            self.enemyImg.append(pygame.image.load('../_static/zomb.png'))
+            self.enemyX.append(random.randint(0, 500))
+            self.enemyY.append(random.randint(5, 60))
+            self.enemyX1.append(10)
+            self.enemyY1.append(40)
+            self.bulY1.append(2)
+            self.enemyBullet.append(pygame.image.load('../_static/BlueBar1.jpg'))
+
+    def bullet(self, x, y, scr):
+        self.bulletState='fire'
+        scr.blit(pygame.image.load('../_static/bullet.png'), (x+8, y))
+
+    def collision_e_b(self, X, Y, i):
+        dist=math.sqrt((self.enemyX[i]-X)**2+(self.enemyY[i]-Y)**2)
+        if dist <=30: return True
+        else: return False
+
+    def collision_E_S(self, x, y, i):
+        dist = math.sqrt((x-self.enemyX[i])**2+(y-self.enemyY[i])**2)
+        if dist <= 35: return True
+        else: return False
+
+    def collision_enemyBul_S(self,enemybulX,enemyBulY,shooterX,shooterY):
+        dist=math.sqrt((enemybulX-shooterX)**2+(enemyBulY-shooterY)**2)
+        if dist <=24 :
+            scr.blit(pygame.image.load('../_static/blast.png'),(self.shooterX,self.shooterY))
+            return True
+        else: return False
+
+
+def over():
+    scr.blit(pygame.image.load('../_static/bg2.jpg'),(0,0))
+    scr.blit(game,(50,int(600/2)))
+    pygame.display.update()
+
+def over_helper():
+    global timer1
+    timer.clear_interval(timer1)
+    timer1 = None
+    over()
+
+
+
+scr = pygame.display.set_mode((550, 600))
+font=pygame.font.SysFont('timesnewroman',30)
+game=font.render('Game Over -\n Press run to Play Again',True, Color(230,220,170))
+p1= Chaser()
+p1.enemy()
+p1.enemybulX=p1.enemyX[random.randint(0,7)]
+
+
+def func():
+    scr.blit(pygame.image.load('../_static/bg2.jpg'),(0,0))
+    scr.blit(pygame.image.load('../_static/BlueBar1.jpg'),(p1.enemybulX+15,p1.enemyBulY+12))
+    p1.enemyBulY+=24
+
+    if p1.enemyBulY>=600:
+        p1.enemyBulY=p1.enemyY[random.randint(0,7)]
+        p1.enemybulX=p1.enemyX[random.randint(0,7)]
+
+    for event in pygame.event.get():
+        #---Shooter Movement------<
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                p1.shooterX1 -= 15
+            if event.key == pygame.K_RIGHT:
+                p1.shooterX1 += 15
+            if event.key == pygame.K_UP:
+                p1.shooterY1-=15
+            if event.key == pygame.K_DOWN:
+                p1.shooterY1+=15
+            if event.key == pygame.K_SPACE:
+                if p1.bulletState == 'Ready':
+                    p1.bulletX = p1.shooterX
+                    p1.bulletY = p1.shooterY
+                    p1.bullet(p1.bulletX, p1.bulletY, scr)
+        if event.type == pygame.KEYUP:
+            p1.shooterX1 = 0
+            p1.shooterY1 = 0
+    p1.shooterX += p1.shooterX1
+    p1.shooterY += p1.shooterY1
+    p1.shooter(p1.shooterX, p1.shooterY, scr)
+
+    # ------Enemy-----<
+    for i in range(8):
+        p1.enemyX[i] += p1.enemyX1[i]
+        if p1.enemyX[i] <= 0:
+            p1.enemyX1[i] = 14
+            p1.enemyY[i] += p1.enemyY1[i]
+        elif p1.enemyX[i] >= 500:
+            p1.enemyX1[i] =- 14
+            p1.enemyY[i] += p1.enemyY1[i]
+        scr.blit(p1.enemyImg[i], (p1.enemyX[i], p1.enemyY[i]))
+
+        #-------collision of bullet and enemy--------<
+        col = p1.collision_e_b(p1.bulletX, p1.bulletY, i)
+        if p1.bulletState == 'fire':
+            if col:
+                scr.blit(pygame.image.load('../_static/blast.png'),(p1.bulletX,p1.bulletY))
+                p1.score_value += 1
+                p1.bulletY = 500
+                p1.bulletState='Ready'
+                p1.enemyX[i] = random.randint(0,500)
+                p1.enemyY[i] = random.randint(5,60)
+
+        #-------collision of Shooter and enemy--------<
+        col2 = p1.collision_E_S(p1.shooterX, p1.shooterY, i)
+        if col2:
+            # scr.blit(pygame.image.load('Icons\\bgover.png'),(550,600))
+            scr.blit(pygame.image.load('../_static/blast.png'),(p1.shooterX,p1.shooterY))
+            over_helper()
+
+
+
+
+        #------Collision of Bottom and Enemy--------<
+        if p1.enemyY[i] >= 600:
+            p1.enemyX[i] = random.randint(0,500)
+            p1.enemyY[i] = random.randint(5,60)
+
+        #-------Collision of EnemyBul and Shooter-------<
+        col3= p1.collision_enemyBul_S(p1.enemybulX,p1.enemyBulY,p1.shooterX,p1.shooterY)
+        if col3:
+            scr.blit(pygame.image.load('../_static/bg2.jpg'),(550,600))
+            scr.blit(pygame.image.load('../_static/blast.png'),(p1.shooterX,p1.shooterY))
+            over_helper()
+
+
+
+
+        #------Collision of Bottom and Enemy--------<
+        if p1.enemyY[i] >= 600:
+            p1.enemyX[i] = random.randint(0,500)
+            p1.enemyY[i] = random.randint(5,60)
+
+        #-------Collision of EnemyBul and Shooter-------<
+        col3= p1.collision_enemyBul_S(p1.enemybulX,p1.enemyBulY,p1.shooterX,p1.shooterY)
+        if col3:
+            scr.blit(pygame.image.load('../_static/bg2.jpg'),(550,600))
+            scr.blit(pygame.image.load('../_static/blast.png'),(p1.shooterX,p1.shooterY))
+            over_helper()
+            # break
+
+    #--------Shooter Bullet------<
+    if p1.bulletY <= 0:
+        p1.bulletY = 480
+        p1.bulletState = 'Ready'
+    if p1.bulletState == 'fire':
+        p1.bullet(p1.bulletX, p1.bulletY, scr)
+        p1.bulletY -= p1.bulletY1
+
+    p1.score(scr)
+    p1.j+=1
+    pygame.display.update()
+
+
+
+pygame.init()
+
+timer1 = timer.set_interval(func,80)
+</textarea>
+</div>
+</div>
+</div>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
+  </div>
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - Hangman Challenge' data-toggle="tooltip">
+  <a href="Reto01_en.html" aria-label="Previous - Hangman Challenge">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - Google babynames exercise' data-toggle="tooltip" >
+    <a href="Reto04_en.html" aria-label="Next - Google babynames exercise">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      
+      <span id='numuserspan'></span><span class='loggedinuser'></span>
+      
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> 
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  </body>
+</html>

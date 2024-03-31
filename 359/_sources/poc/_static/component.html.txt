@@ -1,0 +1,26 @@
+<div>
+  <iframe
+    height="1000px"
+    width="100%"
+    srcdoc='
+<html>
+    <head>
+      <title>PyFront - Simple</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+      <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+       <style>
+            .py-repl-run-button{opacity: 1;}
+        </style>
+    </head>
+    <body>
+      <py-config>
+        packages = ["numpy", "pandas", "matplotlib"] 
+        terminal = true
+      </py-config>
+
+      <py-repl> </py-repl>
+    </body>
+  </html>'
+  ></iframe>
+</div>
