@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PyScript Component &#8212; PyZombis pyscriptide@bb038e4</title>
+    <title>PyScript Component &#8212; PyZombis pyscriptide@cba1d82</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/matrixeq.css?v=58BC228F" />
@@ -89,7 +89,7 @@
         
         <a class="navbar-brand" href="index.html" aria-label="index-page">
           
-          PyZombis pyscriptide@bb038e4
+          PyZombis pyscriptide@cba1d82
         </a>
       </div>
     </div>
@@ -315,7 +315,7 @@ window.addEventListener('load', (event) => {
 <h1>PyScript Component<a class="headerlink" href="#pyscript-component" title="Permalink to this headline">¶</a></h1>
 <p>This is a demo implementation of a PyScript component. It is a simple component that takes a Python script as input and executes it. This component also has support for Pandas library.</p>
 <div>
-    <iframe height="400" width="100%" srcdoc='
+    <iframe height="600px" width="100%" srcdoc='
         <!DOCTYPE html>
             <html>
             <head>
@@ -329,12 +329,11 @@ window.addEventListener('load', (event) => {
             <body>
                 <py-config>
                     terminal = false
-                    packages = ["pandas", "matplotlib"]
+                    packages = ["pandas", "matplotlib", "numpy"]
                 </py-config>
                 <py-repl id="code"> 
                 </py-repl>
                 
-                <div id="graph-area" style="width: 100px; height: 100px;"></div>
             </body>
             </html>'
             style="border: 8px solid #ccc;border-radius: 10px;"

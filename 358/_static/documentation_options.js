@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: 'bb038e4d147fd6b0a7c885c6b44b4dd836e020ec-pyscriptide',
+    VERSION: 'cba1d82fa39b0b8416a33a8a355009bdc6defea8-pyscriptide',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
