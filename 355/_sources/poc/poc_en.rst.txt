@@ -28,39 +28,25 @@ A Brython environment can not run this code, but PyScript can.
 
 .. code:: python
 
+    import pandas as pd
     import matplotlib.pyplot as plt
-    import matplotlib.tri as tri
-    import numpy as np
 
-    # First create the x and y coordinates of the points.
-    n_angles = 36
-    n_radii = 8
-    min_radius = 0.25
-    radii = np.linspace(min_radius, 0.95, n_radii)
+    # Sample data
+    data = {
+        'Year': [2010, 2011, 2012, 2013, 2014],
+        'Sales': [1000, 1500, 1800, 2000, 2100]
+    }
 
-    angles = np.linspace(0, 2 * np.pi, n_angles, endpoint=False)
-    angles = np.repeat(angles[..., np.newaxis], n_radii, axis=1)
-    angles[:, 1::2] += np.pi / n_angles
+    # Create DataFrame
+    df = pd.DataFrame(data)
 
-    x = (radii * np.cos(angles)).flatten()
-    y = (radii * np.sin(angles)).flatten()
-    z = (np.cos(radii) * np.cos(3 * angles)).flatten()
-
-    # Create the Triangulation; no triangles so Delaunay triangulation created.
-    triang = tri.Triangulation(x, y)
-
-    # Mask off unwanted triangles.
-    triang.set_mask(np.hypot(x[triang.triangles].mean(axis=1),
-                            y[triang.triangles].mean(axis=1))
-                    < min_radius)
-
-    fig1, ax1 = plt.subplots()
-    ax1.set_aspect('equal')
-    tpc = ax1.tripcolor(triang, z, shading='flat')
-    fig1.colorbar(tpc)
-    ax1.set_title('tripcolor of Delaunay triangulation, flat shading')
-
-    display(fig1)
+    # Plotting using Pandas and Matplotlib
+    df.plot(x='Year', y='Sales', kind='line', marker='o', color='skyblue')
+    plt.title('Sales Over Years')
+    plt.xlabel('Year')
+    plt.ylabel('Sales ($)')
+    plt.grid(True)
+    display(plt)
 
 .. raw:: html
     :file: ./_static/component.html
