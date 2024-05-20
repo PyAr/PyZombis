@@ -204,7 +204,7 @@ Quiz - 10
             ``phrase`` and ``word``, both of type string. The function should return 
             the number of times that ``word`` occurs in ``phrase``. |br| |br|
             Examples: |br|  
-            ``count_occurrences("a ana y a mariana les gustan las manzanas", "ana")`` -> ``3`` |br|
+            ``count_occurrences("ana and mariana like amanatsu", "ana")`` -> ``3`` |br|
 
             ~~~~
             def count_occurrences(frase, palabra):
@@ -218,7 +218,7 @@ Quiz - 10
                 def testOne(self):
             
                     self.assertEqual(
-                        count_occurrences("Ana and Mariana like amanatsu", "ana"),
+                        count_occurrences("ana and Mariana like amanatsu", "ana"),
                         3,
                         "Expected output: 3",
                     )
