@@ -44,8 +44,8 @@ Quiz - 3
          :nocodelens:
 
          Indicate how to make change using the minimum number of bills. 
-         Your algorithm should read the amount of the bill to be paid, ``cobro``, and the amount 
-         paid, ``pago``, without taking into account the cents. |br|
+         Your algorithm should read the amount of the bill to be paid, ``payment``, and the amount 
+         paid, ``pay``, without taking into account the cents. |br|
          Suppose the bills for change are 50, 20, 10, 5, 2 and 1, and that none of them is missing in the cash register. 
          Return a list with the quantity of each bill that represents the change. |br|
          The first element of the list matches the quantity of 50, 
@@ -55,7 +55,7 @@ Quiz - 3
          ``calculate_change(92, 100)`` -> [0,0,0,1,1,1] |br|
 
          ~~~~
-         def calculate_change(cobro, pago):
+         def calculate_change(payment, pay):
       
 
          ====
