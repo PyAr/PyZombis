@@ -39,7 +39,7 @@ def test_quiz3_2_en(page):
 
     # Do the exercise
     page.click("text=Exercise 2")
-    page.click("text=def calculate_change(cobro, pago):")
+    page.click("text=def calculate_change(payment, pay):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
 
