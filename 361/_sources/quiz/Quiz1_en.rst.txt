@@ -17,7 +17,7 @@ Quiz - 1
             Make a program that asks for two integer numbers and prints the sum of those two numbers. |br|
    
             ~~~~
-            def suma(n, m):
+            def sum(n, m):
 
 
             ====
@@ -27,10 +27,10 @@ Quiz - 1
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(suma(24, 42), 66, "Expected: 66")
-                    self.assertEqual(suma(17, 13), 30, "Expected: 30")
-                    self.assertEqual(suma(-11, 6), -5, "Expected: -5")
-                    self.assertEqual(suma(0, 9), 9, "Expected: 9")
+                    self.assertEqual(sum(24, 42), 66, "Expected: 66")
+                    self.assertEqual(sum(17, 13), 30, "Expected: 30")
+                    self.assertEqual(sum(-11, 6), -5, "Expected: -5")
+                    self.assertEqual(sum(0, 9), 9, "Expected: 9")
 
 
             myTests().main()
@@ -44,7 +44,7 @@ Quiz - 1
             Write a program that reads a value in meters and shows it converted to millimeters. |br|
 
             ~~~~
-            def metros_a_milimetros(n):
+            def meters_to_millimeters(n):
 
 
             ====
@@ -54,9 +54,9 @@ Quiz - 1
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(metros_a_milimetros(1), 1000,"Expected: 1000")
-                    self.assertEqual(metros_a_milimetros(0.2), 200,"Expected: 200")
-                    self.assertEqual(metros_a_milimetros(30), 30000,"Expected: 30000")
+                    self.assertEqual(meters_to_millimeters(1), 1000,"Expected: 1000")
+                    self.assertEqual(meters_to_millimeters(0.2), 200,"Expected: 200")
+                    self.assertEqual(meters_to_millimeters(30), 30000,"Expected: 30000")
 
 
             myTests().main()
@@ -71,7 +71,7 @@ Quiz - 1
             the user. Calculate the total number of seconds. |br|
 
             ~~~~
-            def tiempo_en_segundos(dias, horas, minutos, segundos):
+            def time_in_seconds(dias, horas, minutos, segundos):
 
 
             ====
@@ -81,10 +81,10 @@ Quiz - 1
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(tiempo_en_segundos(2, 5, 2, 5), 190925, "Expected: 190925")
-                    self.assertEqual(tiempo_en_segundos(10, 89, 5, 0), 1184700, "Expected: 1184700")
-                    self.assertEqual(tiempo_en_segundos(8, 0, 2, 0), 691320, "Expected: 691320")
-                    self.assertEqual(tiempo_en_segundos(0, 5, 55, 6), 21306, "Expected: 21306")
+                    self.assertEqual(time_in_seconds(2, 5, 2, 5), 190925, "Expected: 190925")
+                    self.assertEqual(time_in_seconds(10, 89, 5, 0), 1184700, "Expected: 1184700")
+                    self.assertEqual(time_in_seconds(8, 0, 2, 0), 691320, "Expected: 691320")
+                    self.assertEqual(time_in_seconds(0, 5, 55, 6), 21306, "Expected: 21306")
 
 
             myTests().main()
@@ -100,7 +100,7 @@ Quiz - 1
             the increase and the new salary. |br|
             
             ~~~~
-            def aumento(salario, porcentaje):
+            def rise(salary, percentage):
                     #Return the values in a tuple like: return (increase, new_salary)
         
 
@@ -111,10 +111,10 @@ Quiz - 1
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(aumento(30500, 10), (3050, 33550), "Expected: (3050,33550)")
-                    self.assertEqual(aumento(10400, 25), (2600, 13000), "Expected: (2600,13000)")
-                    self.assertEqual(aumento(50100, 8), (4008, 54108), "Expected: (4008,54108)")
-                    self.assertEqual(aumento(25000, 3), (750, 25750), "Expected: (750,25750)")
+                    self.assertEqual(rise(30500, 10), (3050, 33550), "Expected: (3050,33550)")
+                    self.assertEqual(rise(10400, 25), (2600, 13000), "Expected: (2600,13000)")
+                    self.assertEqual(rise(50100, 8), (4008, 54108), "Expected: (4008,54108)")
+                    self.assertEqual(rise(25000, 3), (750, 25750), "Expected: (750,25750)")
             
             
             myTests().main()
@@ -129,7 +129,7 @@ Quiz - 1
             Display the discount amount and the final price. |br|
 
             ~~~~
-            def precio_con_descuento(precio, porcentaje):
+            def price_with_discount(precio, porcentaje):
                     #Return the values in a tuple like: return (discount, final_price)
             
     
@@ -140,10 +140,10 @@ Quiz - 1
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(precio_con_descuento(100100, 10), (10010, 90090), "Expected: (10010,90090)")
-                    self.assertEqual(precio_con_descuento(20523, 4), (820.92, 19702.08), "Expected: (820.92,19702.08)")
-                    self.assertEqual(precio_con_descuento(55566, 50), (27783, 27783), "Expected: (27783,27783)")
-                    self.assertEqual(precio_con_descuento(75660, 24), (18158.4, 57501.6), "Expected: (18158.4,57501.6)")
+                    self.assertEqual(price_with_discount(100100, 10), (10010, 90090), "Expected: (10010,90090)")
+                    self.assertEqual(price_with_discount(20523, 4), (820.92, 19702.08), "Expected: (820.92,19702.08)")
+                    self.assertEqual(price_with_discount(55566, 50), (27783, 27783), "Expected: (27783,27783)")
+                    self.assertEqual(price_with_discount(75660, 24), (18158.4, 57501.6), "Expected: (18158.4,57501.6)")
 
 
             myTests().main()
