@@ -22,7 +22,7 @@ def test_quiz2_2_en(page):
 
     # Do the exercise
     page.click("text=Exercise 2")
-    page.click("text=def es_bisiesto(anio):")
+    page.click("text=def is_leap(year):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
     page.keyboard.type(
