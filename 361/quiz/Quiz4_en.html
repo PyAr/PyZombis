@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 4 &#8212; PyZombis english-fixes@135ce0f</title>
+    <title>Quiz - 4 &#8212; PyZombis english-fixes@06327c1</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis english-fixes@135ce0f
+          PyZombis english-fixes@06327c1
         </a>
       </div>
     </div>
@@ -329,11 +329,11 @@ window.addEventListener('load', (event) => {
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q4_1_en data-question_label="1">
 <div id=q4_1_en_question class="ac_question col-md-12">
-<p>Develop the function <code class="docutils literal notranslate"><span class="pre">valores_extremos</span></code> which takes the parameter <code class="docutils literal notranslate"><span class="pre">numeros</span></code>, representing a list of <strong>10</strong> random numbers between 0-100.
-The function should return a tuple <code class="docutils literal notranslate"><span class="pre">(a,</span> <span class="pre">b)</span></code>, where a and b are the maximum and minimum values respectively of the <code class="docutils literal notranslate"><span class="pre">numeros</span></code> list. Solve the problem without using
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">extreme_values</span></code> which takes the parameter <code class="docutils literal notranslate"><span class="pre">numbers</span></code>, representing a list of <strong>10</strong> random numbers between 0-100.
+The function should return a tuple <code class="docutils literal notranslate"><span class="pre">(a,</span> <span class="pre">b)</span></code>, where a and b are the maximum and minimum values respectively of the <code class="docutils literal notranslate"><span class="pre">numbers</span></code> list. Solve the problem without using
 the functions <code class="docutils literal notranslate"><span class="pre">max</span></code> nor <code class="docutils literal notranslate"><span class="pre">min</span></code>. <br /> <br />
 Example: <br />
-<code class="docutils literal notranslate"><span class="pre">valores_extremos([15,</span> <span class="pre">48,</span> <span class="pre">0,</span> <span class="pre">27,</span> <span class="pre">13,</span> <span class="pre">62,</span> <span class="pre">32,</span> <span class="pre">57,</span> <span class="pre">85,</span> <span class="pre">18])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(85,</span> <span class="pre">0)</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">extreme_values([15,</span> <span class="pre">48,</span> <span class="pre">0,</span> <span class="pre">27,</span> <span class="pre">13,</span> <span class="pre">62,</span> <span class="pre">32,</span> <span class="pre">57,</span> <span class="pre">85,</span> <span class="pre">18])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(85,</span> <span class="pre">0)</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q4_1_en_editor" 
@@ -341,7 +341,7 @@ Example: <br />
     data-audio=''      
            data-wasm=/_static
        style="visibility: hidden;">
-def valores_extremos(numeros):
+def extreme_values(numbers):
 
 
 ====
@@ -351,21 +351,21 @@ from random import sample
 
 class myTests(TestCaseGui):
     def testOne(self):
-        numeros = sample(range(100), 10)
+        numbers = sample(range(100), 10)
         self.assertEqual(
-            valores_extremos(numeros), (max(numeros), min(numeros)), f"Expected: ({max(numeros)}, {min(numeros)})"
+            extreme_values(numbers), (max(numbers), min(numbers)), f"Expected: ({max(numbers)}, {min(numbers)})"
         )
 
     def testTwo(self):
-        numeros = sample(range(100), 10)
+        numbers = sample(range(100), 10)
         self.assertEqual(
-            valores_extremos(numeros), (max(numeros), min(numeros)), f"Expected: ({max(numeros)}, {min(numeros)})"
+            extreme_values(numbers), (max(numbers), min(numbers)), f"Expected: ({max(numbers)}, {min(numbers)})"
         )
 
     def testThree(self):
-        numeros = sample(range(100), 10)
+        numbers = sample(range(100), 10)
         self.assertEqual(
-            valores_extremos(numeros), (max(numeros), min(numeros)), f"Expected: ({max(numeros)}, {min(numeros)})"
+            extreme_values(numbers), (max(numbers), min(numbers)), f"Expected: ({max(numbers)}, {min(numbers)})"
         )
 
 
@@ -378,9 +378,9 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q4_2_en data-question_label="2">
 <div id=q4_2_en_question class="ac_question col-md-12">
-<p>Develop the function <code class="docutils literal notranslate"><span class="pre">pares_e_impares</span></code> which takes the parameter <code class="docutils literal notranslate"><span class="pre">numeros</span></code>. <code class="docutils literal notranslate"><span class="pre">numeros</span></code> represents a list of <strong>20</strong> random numbers between 1-100.
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">even_and_odd</span></code> which takes the parameter <code class="docutils literal notranslate"><span class="pre">numbers</span></code>. <code class="docutils literal notranslate"><span class="pre">numbers</span></code> represents a list of <strong>20</strong> random numbers between 1-100.
 The function should return a tuple of lists of the form <code class="docutils literal notranslate"><span class="pre">([even],</span> <span class="pre">[odd])</span></code>, where even and odd are lists of even and odd numbers that are
-in <code class="docutils literal notranslate"><span class="pre">numeros</span></code>, respectively. <br /> <br /></p>
+in <code class="docutils literal notranslate"><span class="pre">numbers</span></code>, respectively. <br /> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q4_2_en_editor" 
@@ -388,7 +388,7 @@ in <code class="docutils literal notranslate"><span class="pre">numeros</span></
     data-audio=''      
            data-wasm=/_static
        style="visibility: hidden;">
-def pares_e_impares(numeros):
+def even_and_odd(numbers):
 
 
 ====
@@ -398,27 +398,27 @@ from random import sample
 
 class myTests(TestCaseGui):
     def testOne(self):
-        numeros = sample(range(1, 100), 20)
+        numbers = sample(range(1, 100), 20)
         self.assertEqual(
-            pares_e_impares(numeros),
-            ([n for n in numeros if n % 2 == 0], [n for n in numeros if n % 2 != 0]),
-            f"Expected: ({[n for n in numeros if n%2 == 0]}, {[n for n in numeros if n%2 != 0]})",
+            even_and_odd(numbers),
+            ([n for n in numbers if n % 2 == 0], [n for n in numbers if n % 2 != 0]),
+            f"Expected: ({[n for n in numbers if n%2 == 0]}, {[n for n in numbers if n%2 != 0]})",
         )
 
     def testTwo(self):
-        numeros = sample(range(1, 100), 20)
+        numbers = sample(range(1, 100), 20)
         self.assertEqual(
-            pares_e_impares(numeros),
-            ([n for n in numeros if n % 2 == 0], [n for n in numeros if n % 2 != 0]),
-            f"Expected: ({[n for n in numeros if n%2 == 0]}, {[n for n in numeros if n%2 != 0]})",
+            even_and_odd(numbers),
+            ([n for n in numbers if n % 2 == 0], [n for n in numbers if n % 2 != 0]),
+            f"Expected: ({[n for n in numbers if n%2 == 0]}, {[n for n in numbers if n%2 != 0]})",
         )
 
     def testThree(self):
-        numeros = sample(range(1, 100), 20)
+        numbers = sample(range(1, 100), 20)
         self.assertEqual(
-            pares_e_impares(numeros),
-            ([n for n in numeros if n % 2 == 0], [n for n in numeros if n % 2 != 0]),
-            f"Expected: ({[n for n in numeros if n%2 == 0]}, {[n for n in numeros if n%2 != 0]})",
+            even_and_odd(numbers),
+            ([n for n in numbers if n % 2 == 0], [n for n in numbers if n % 2 != 0]),
+            f"Expected: ({[n for n in numbers if n%2 == 0]}, {[n for n in numbers if n%2 != 0]})",
         )
 
 
@@ -431,10 +431,10 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q4_3_en data-question_label="3">
 <div id=q4_3_en_question class="ac_question col-md-12">
-<p>Develop the function <code class="docutils literal notranslate"><span class="pre">intercalar_listas</span></code> which takes two parameters, <code class="docutils literal notranslate"><span class="pre">l1</span></code> and <code class="docutils literal notranslate"><span class="pre">l2</span></code>, representing lists of <strong>10</strong> random numbers between 1-100.
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">collate_lists</span></code> which takes two parameters, <code class="docutils literal notranslate"><span class="pre">l1</span></code> and <code class="docutils literal notranslate"><span class="pre">l2</span></code>, representing lists of <strong>10</strong> random numbers between 1-100.
 The function should generate a third list composed of the elements of <code class="docutils literal notranslate"><span class="pre">l1</span></code> and <code class="docutils literal notranslate"><span class="pre">l2</span></code> interleaved. This third list will be returned. <br /> <br />
 Example: <br />
-<code class="docutils literal notranslate"><span class="pre">intercalar_listas([1,</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">.....],</span> <span class="pre">[2,</span> <span class="pre">4,</span> <span class="pre">6,</span> <span class="pre">....])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">....]</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">collate_lists([1,</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">.....],</span> <span class="pre">[2,</span> <span class="pre">4,</span> <span class="pre">6,</span> <span class="pre">....])</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">....]</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q4_3_en_editor" 
@@ -442,7 +442,7 @@ Example: <br />
     data-audio=''      
            data-wasm=/_static
        style="visibility: hidden;">
-def intercalar_listas(l1, l2):
+def collate_lists(l1, l2):
 
 
 ====
@@ -455,7 +455,7 @@ class myTests(TestCaseGui):
         l1 = sample(range(100), 10)
         l2 = sample(range(100), 10)
         self.assertEqual(
-            intercalar_listas(l1, l2),
+            collate_lists(l1, l2),
             [val for pair in zip(l1, l2) for val in pair],
             f"Expected: {[val for pair in zip(l1, l2) for val in pair]}",
         )
@@ -464,7 +464,7 @@ class myTests(TestCaseGui):
         l1 = sample(range(100), 10)
         l2 = sample(range(100), 10)
         self.assertEqual(
-            intercalar_listas(l1, l2),
+            collate_lists(l1, l2),
             [val for pair in zip(l1, l2) for val in pair],
             f"Expected: {[val for pair in zip(l1, l2) for val in pair]}",
         )
@@ -479,7 +479,7 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q4_4_en data-question_label="4">
 <div id=q4_4_en_question class="ac_question col-md-12">
-<p>The function <code class="docutils literal notranslate"><span class="pre">buscar_palabras</span></code> will be passed the following <code class="docutils literal notranslate"><span class="pre">texto</span></code> as argument: <br />
+<p>The function <code class="docutils literal notranslate"><span class="pre">search_for_words</span></code> will be passed the following <code class="docutils literal notranslate"><span class="pre">text</span></code> as argument: <br />
 <em>“The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on
 mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and
 whatever your background, we welcome you.”</em> <br />
@@ -493,7 +493,7 @@ and be careful with capitalization. <br /> <br /></p>
     data-audio=''      
            data-wasm=/_static
        style="visibility: hidden;">
-def buscar_palabras(texto):
+def search_for_words(text):
 
 
 ====
@@ -512,7 +512,7 @@ class myTests(TestCaseGui):
             for word in text.lower().replace(".", "").replace(",", "").split()
             if word[0] in "python" or word[-1] in "python"
         ]
-        self.assertEqual(buscar_palabras(text), res, f"Expected: {res}")
+        self.assertEqual(search_for_words(text), res, f"Expected: {res}")
 
 
 myTests().main()
@@ -524,8 +524,8 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q4_5_en data-question_label="5">
 <div id=q4_5_en_question class="ac_question col-md-12">
-<p>Now you will develop the function <code class="docutils literal notranslate"><span class="pre">buscar_palabras_2</span></code>, which will be passed the previous text as a parameter. Again you will separate the
-text into words, just like you did in <em>Exercise 4</em>. This time, you should calculate the number of words within <code class="docutils literal notranslate"><span class="pre">texto</span></code> that have any
+<p>Now you will develop the function <code class="docutils literal notranslate"><span class="pre">search_for_words_2</span></code>, which will be passed the previous text as a parameter. Again you will separate the
+text into words, just like you did in <em>Exercise 4</em>. This time, you should calculate the number of words within <code class="docutils literal notranslate"><span class="pre">text</span></code> that have any
 of the letters in the string <code class="docutils literal notranslate"><span class="pre">&quot;python&quot;</span></code>, and also have a length greater than 4 characters. <br /> <br /></p>
 
 </div>
@@ -534,7 +534,7 @@ of the letters in the string <code class="docutils literal notranslate"><span cl
     data-audio=''      
            data-wasm=/_static
        style="visibility: hidden;">
-def buscar_palabras_2(texto):
+def search_for_words_2(text):
 
 
 ====
@@ -547,7 +547,7 @@ class myTests(TestCaseGui):
                 encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement,
                 and we are working to help each other live up to these principles. We want our community to be more diverse:
                 whoever you are, and whatever your background, we welcome you."""
-        self.assertEqual(buscar_palabras_2(text), 24, "Expected: 24")
+        self.assertEqual(search_for_words_2(text), 24, "Expected: 24")
 
 
 myTests().main()
