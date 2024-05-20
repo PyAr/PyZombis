@@ -1,4 +1,3 @@
-
 def test_quiz11_1(page):
     # Go to http://localhost:8000/quiz/Quiz11.html
     page.goto("quiz/Quiz11.html")
