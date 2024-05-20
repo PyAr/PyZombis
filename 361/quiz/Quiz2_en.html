@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - 2 &#8212; PyZombis english-fixes@75aba61</title>
+    <title>Quiz - 2 &#8212; PyZombis english-fixes@b1b8ba1</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../index.html" aria-label="index-page">
           
-          PyZombis english-fixes@75aba61
+          PyZombis english-fixes@b1b8ba1
         </a>
       </div>
     </div>
@@ -329,13 +329,13 @@ window.addEventListener('load', (event) => {
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q2_1_en data-question_label="1">
 <div id=q2_1_en_question class="ac_question col-md-12">
-<p>Develop the function <code class="docutils literal notranslate"><span class="pre">es_triangulo</span></code> that receives three positive integers <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code>. They represent the sides of a triangle. The function should verify that a triangle is formed with the given parameters. If the given parameters form a triangle, the function should return a string indicating its type, i.e., <code class="docutils literal notranslate"><span class="pre">&quot;Equilátero&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;Isósceles&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;Escaleno&quot;</span></code>, otherwise, the function should return the string, <code class="docutils literal notranslate"><span class="pre">&quot;No</span> <span class="pre">es</span> <span class="pre">triángulo&quot;</span></code>.|br|
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">is_triangle</span></code> that receives three positive integers <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span></code>. They represent the sides of a triangle. The function should verify that a triangle is formed with the given parameters. If the given parameters form a triangle, the function should return a string indicating its type, i.e., <code class="docutils literal notranslate"><span class="pre">&quot;Equilateral&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;Isosceles&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;Escaleno&quot;</span></code>, otherwise, the function should return the string, <code class="docutils literal notranslate"><span class="pre">&quot;Is</span> <span class="pre">not</span> <span class="pre">triangle&quot;</span></code>.|br|
 <strong>Note</strong>: remember that it is not a triangle when the longest side is greater than or equal to the sum of the other two. <br /> <br />
 Examples: <br />
-<code class="docutils literal notranslate"><span class="pre">es_triangulo(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Equilátero&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">es_triangulo(3,</span> <span class="pre">2,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Isósceles&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">es_triangulo(4,</span> <span class="pre">2,</span> <span class="pre">6)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;No</span> <span class="pre">es</span> <span class="pre">triángulo&quot;</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">es_triangulo(2,</span> <span class="pre">1,</span> <span class="pre">8)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;No</span> <span class="pre">es</span> <span class="pre">triángulo&quot;</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">is_triangle(2,</span> <span class="pre">2,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Equilateral&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">is_triangle(3,</span> <span class="pre">2,</span> <span class="pre">2)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Isosceles&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">is_triangle(4,</span> <span class="pre">2,</span> <span class="pre">6)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Is</span> <span class="pre">not</span> <span class="pre">triangle&quot;</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">is_triangle(2,</span> <span class="pre">1,</span> <span class="pre">8)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">&quot;Is</span> <span class="pre">not</span> <span class="pre">triangle&quot;</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q2_1_en_editor" 
@@ -343,7 +343,7 @@ Examples: <br />
     data-audio=''      
            data-wasm=/_static
        style="visibility: hidden;">
-def es_triangulo(a, b, c):
+def is_triangle(a, b, c):
 
 
 ====
@@ -353,15 +353,15 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(es_triangulo(2, 2, 2), "Equilátero", "Expected: Equilátero")
-        self.assertEqual(es_triangulo(2, 1, 2), "Isósceles", "Expected: Isósceles")
-        self.assertEqual(es_triangulo(2, 1, 3), "No es triángulo", "Expected: No es triángulo")
-        self.assertEqual(es_triangulo(2, 1, 8), "No es triángulo", "Expected: No es triángulo")
-        self.assertEqual(es_triangulo(4, 2, 1), "No es triángulo", "Expected: No es triángulo")
-        self.assertEqual(es_triangulo(4, 1000, 1000), "Isósceles", "Expected: Isósceles")
-        self.assertEqual(es_triangulo(10000, 10000, 10000), "Equilátero", "Expected: Equilátero")
-        self.assertEqual(es_triangulo(3, 2, 2), "Isósceles", "Expected: Isósceles")
-        self.assertEqual(es_triangulo(10000, 1, 9999), "No es triángulo", "Expected: No es triángulo")
+        self.assertEqual(is_triangle(2, 2, 2), "Equilateral", "Expected: Equilateral")
+        self.assertEqual(is_triangle(2, 1, 2), "Isosceles", "Expected: Isosceles")
+        self.assertEqual(is_triangle(2, 1, 3), "Is not triangle", "Expected: Is not triangle")
+        self.assertEqual(is_triangle(2, 1, 8), "Is not triangle", "Expected: Is not triangle")
+        self.assertEqual(is_triangle(4, 2, 1), "Is not triangle", "Expected: Is not triangle")
+        self.assertEqual(is_triangle(4, 1000, 1000), "Isosceles", "Expected: Isosceles")
+        self.assertEqual(is_triangle(10000, 10000, 10000), "Equilateral", "Expected: Equilateral")
+        self.assertEqual(is_triangle(3, 2, 2), "Isosceles", "Expected: Isosceles")
+        self.assertEqual(is_triangle(10000, 1, 9999), "Is not triangle", "Expected: Is not triangle")
 
 
 myTests().main()
@@ -373,12 +373,12 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q2_2_en data-question_label="2">
 <div id=q2_2_en_question class="ac_question col-md-12">
-<p>Develop the function <code class="docutils literal notranslate"><span class="pre">es_bisiesto</span></code> that receives the parameter <code class="docutils literal notranslate"><span class="pre">anio</span></code> which is a positive integer greater than zero and represents a year. The function should verify if the given parameter is a leap year, therefore, it should return <code class="docutils literal notranslate"><span class="pre">True</span></code> if it is, or <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise. A year is a leap year if it is divisible by 400, or also if it is divisible by 4 but not divisible by 100. <br /> <br />
+<p>Develop the function <code class="docutils literal notranslate"><span class="pre">is_leap</span></code> that receives the parameter <code class="docutils literal notranslate"><span class="pre">year</span></code> which is a positive integer greater than zero and represents a year. The function should verify if the given parameter is a leap year, therefore, it should return <code class="docutils literal notranslate"><span class="pre">True</span></code> if it is, or <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise. A year is a leap year if it is divisible by 400, or also if it is divisible by 4 but not divisible by 100. <br /> <br />
 Examples: <br />
-<code class="docutils literal notranslate"><span class="pre">es_bisiesto(2014)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">es_bisiesto(2016)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">es_bisiesto(1900)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">es_bisiesto(2000)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">is_leap(2014)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">is_leap(2016)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">is_leap(1900)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">False</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">is_leap(2000)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">True</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q2_2_en_editor" 
@@ -386,7 +386,7 @@ Examples: <br />
     data-audio=''      
            data-wasm=/_static
        style="visibility: hidden;">
-def es_bisiesto(anio):
+def is_leap(year):
 
 
 ====
@@ -396,15 +396,15 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(es_bisiesto(2000), True, "Expected: True")
-        self.assertEqual(es_bisiesto(2001), False, "Expected: False")
-        self.assertEqual(es_bisiesto(2020), True, "Expected: True")
-        self.assertEqual(es_bisiesto(2016), True, "Expected: True")
-        self.assertEqual(es_bisiesto(2400), True, "Expected: True")
-        self.assertEqual(es_bisiesto(1952), True, "Expected: True")
-        self.assertEqual(es_bisiesto(1900), False, "Expected: False")
-        self.assertEqual(es_bisiesto(2200), False, "Expected: False")
-        self.assertEqual(es_bisiesto(2100), False, "Expected: False")
+        self.assertEqual(is_leap(2000), True, "Expected: True")
+        self.assertEqual(is_leap(2001), False, "Expected: False")
+        self.assertEqual(is_leap(2020), True, "Expected: True")
+        self.assertEqual(is_leap(2016), True, "Expected: True")
+        self.assertEqual(is_leap(2400), True, "Expected: True")
+        self.assertEqual(is_leap(1952), True, "Expected: True")
+        self.assertEqual(is_leap(1900), False, "Expected: False")
+        self.assertEqual(is_leap(2200), False, "Expected: False")
+        self.assertEqual(is_leap(2100), False, "Expected: False")
 
 
 myTests().main()
@@ -531,11 +531,11 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q2_6_en data-question_label="6">
 <div id=q2_6_en_question class="ac_question col-md-12">
-<p>An employee of a company receives a monthly gross salary calculated by the amount of hours worked multiplied by its value. From this <code class="docutils literal notranslate"><span class="pre">salary</span></code>, the month’s <code class="docutils literal notranslate"><span class="pre">11%</span></code> for taxes, <code class="docutils literal notranslate"><span class="pre">8%</span></code> for health insurance, and <code class="docutils literal notranslate"><span class="pre">5%</span></code> for payment to the union are deducted. Develop the function <code class="docutils literal notranslate"><span class="pre">calcular_salario</span></code> that receives a float <code class="docutils literal notranslate"><span class="pre">valor_hora</span></code> and an integer <code class="docutils literal notranslate"><span class="pre">cantidad_horas</span></code> that represent how much he earns per hour and the amount of hours worked during the month. The function must return a dictionary of the form: <br /></p>
-<p><code class="docutils literal notranslate"><span class="pre">{&quot;salario_bruto&quot;:</span> <span class="pre">A,</span> <span class="pre">&quot;impuestos&quot;:</span> <span class="pre">B,</span></code> <br /> <code class="docutils literal notranslate"><span class="pre">&quot;seguro_medico&quot;:</span> <span class="pre">C,</span> <span class="pre">&quot;sindicato&quot;:</span> <span class="pre">E,</span> <span class="pre">&quot;salario_neto&quot;:</span> <span class="pre">F}</span></code>. <br /></p>
+<p>An employee of a company receives a monthly gross income calculated by the amount of hours worked multiplied by its value. From this <code class="docutils literal notranslate"><span class="pre">income</span></code>, the month’s <code class="docutils literal notranslate"><span class="pre">11%</span></code> for taxes, <code class="docutils literal notranslate"><span class="pre">8%</span></code> for medical insurance, and <code class="docutils literal notranslate"><span class="pre">5%</span></code> for payment to the union of workers are deducted. Develop the function <code class="docutils literal notranslate"><span class="pre">calculate_income</span></code> that receives a float <code class="docutils literal notranslate"><span class="pre">hour_value</span></code> and an integer <code class="docutils literal notranslate"><span class="pre">ammount_value</span></code> that represent how much he earns per hour and the amount of hours worked during the month. The function must return a dictionary of the form: <br /></p>
+<p><code class="docutils literal notranslate"><span class="pre">{&quot;gross_income&quot;:</span> <span class="pre">A,</span> <span class="pre">&quot;taxes&quot;:</span> <span class="pre">B,</span></code> <br /> <code class="docutils literal notranslate"><span class="pre">&quot;medical_insurance&quot;:</span> <span class="pre">C,</span> <span class="pre">&quot;union_of_workers&quot;:</span> <span class="pre">E,</span> <span class="pre">&quot;net_income&quot;:</span> <span class="pre">F}</span></code>. <br /></p>
 <p>Where A, B, C, and D represent the amount of money corresponding to each item. <br /> <br />
 Examples: <br />
-<code class="docutils literal notranslate"><span class="pre">calcular_salario(15.0,</span> <span class="pre">120)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">{&quot;salario_bruto&quot;:</span> <span class="pre">1800.00,</span> <span class="pre">&quot;impuestos&quot;:</span> <span class="pre">198.00,</span></code> <br /> <code class="docutils literal notranslate"><span class="pre">&quot;seguro_medico&quot;:</span> <span class="pre">144.0,</span> <span class="pre">&quot;sindicato&quot;:</span> <span class="pre">90.0,</span> <span class="pre">&quot;salario_neto&quot;:</span> <span class="pre">1368.00}</span></code>. <br /></p>
+<code class="docutils literal notranslate"><span class="pre">calculate_income(15.0,</span> <span class="pre">120)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">{&quot;gross_income&quot;:</span> <span class="pre">1800.00,</span> <span class="pre">&quot;taxes&quot;:</span> <span class="pre">198.00,</span></code> <br /> <code class="docutils literal notranslate"><span class="pre">&quot;medical_insurance&quot;:</span> <span class="pre">144.0,</span> <span class="pre">&quot;union_of_workers&quot;:</span> <span class="pre">90.0,</span> <span class="pre">&quot;net_income&quot;:</span> <span class="pre">1368.00}</span></code>. <br /></p>
 
 </div>
 <textarea data-lang="python" id="q2_6_en_editor" 
@@ -543,7 +543,7 @@ Examples: <br />
     data-audio=''      
            data-wasm=/_static
        style="visibility: hidden;">
-def calcular_salario(valor_hora, cantidad_horas):
+def calculate_income(hour_value, ammount_value):
 
 
 ====
@@ -552,15 +552,15 @@ import random
 
 
 class myTests(TestCaseGui):
-    def get_expected_dictionary(self, salary):
+    def get_expected_dictionary(self, income):
         result = {
-            "salario_bruto": salary,
-            "impuestos": salary * 0.11,
-            "seguro_medico": salary * 0.08,
-            "sindicato": salary * 0.05,
+            "gross_income": income,
+            "taxes": income * 0.11,
+            "medical_insurance": income * 0.08,
+            "union_of_workers": income * 0.05,
         }
-        result["salario_neto"] = (salary - result["impuestos"] -
-            result["seguro_medico"] - result["sindicato"])
+        result["net_income"] = (income - result["taxes"] -
+            result["medical_insurance"] - result["union_of_workers"])
         return result
 
     def testOne(self):
@@ -572,35 +572,35 @@ class myTests(TestCaseGui):
         for test in range(test_numbers):
             hour = random.randint(min_hour, max_hour)
             price = round(random.uniform(min_price_hour, max_price_hour), 2)
-            salary = price * hour
-            expected = self.get_expected_dictionary(salary)
-            result = calcular_salario(price, hour)
+            income = price * hour
+            expected = self.get_expected_dictionary(income)
+            result = calculate_income(price, hour)
             current_test = test + 1
 
             self.assertEqual(
-                round(result["salario_bruto"], 2),
-                round(expected["salario_bruto"], 2),
-                f"Test #{current_test} - Expected gross salary: {round(expected['salario_bruto'], 2)}",
+                round(result["gross_income"], 2),
+                round(expected["gross_income"], 2),
+                f"Test #{current_test} - Expected gross income: {round(expected['gross_income'], 2)}",
             )
             self.assertEqual(
-                round(result["impuestos"], 2),
-                round(expected["impuestos"], 2),
-                f"Test #{current_test} - Expected taxes: {round(expected['impuestos'], 2)}",
+                round(result["taxes"], 2),
+                round(expected["taxes"], 2),
+                f"Test #{current_test} - Expected taxes: {round(expected['taxes'], 2)}",
             )
             self.assertEqual(
-                round(result["seguro_medico"], 2),
-                round(expected["seguro_medico"], 2),
-                f"Test #{current_test} - Expected health insurance: {round(expected['seguro_medico'], 2)}",
+                round(result["medical_insurance"], 2),
+                round(expected["medical_insurance"], 2),
+                f"Test #{current_test} - Expected health insurance: {round(expected['medical_insurance'], 2)}",
             )
             self.assertEqual(
-                round(result["sindicato"], 2),
-                round(expected["sindicato"], 2),
-                f"Test #{current_test} - Expected union payment: {round(expected['sindicato'], 2)}",
+                round(result["union_of_workers"], 2),
+                round(expected["union_of_workers"], 2),
+                f"Test #{current_test} - Expected union payment: {round(expected['union_of_workers'], 2)}",
             )
             self.assertEqual(
-                round(result["salario_neto"], 2),
-                round(expected["salario_neto"], 2),
-                f"Test #{current_test} - Expected net salary: {round(expected['salario_neto'], 2)}",
+                round(result["net_income"], 2),
+                round(expected["net_income"], 2),
+                f"Test #{current_test} - Expected net income: {round(expected['net_income'], 2)}",
             )
 
 
@@ -613,13 +613,13 @@ myTests().main()
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=q2_7_en data-question_label="7">
 <div id=q2_7_en_question class="ac_question col-md-12">
-<p>The paint sold at your trusted hardware store has a coverage of 1 liter per every 3 square meters and the paint is sold only in cans of 18 liters that cost each one <code class="docutils literal notranslate"><span class="pre">80.00</span></code> units. Develop the function <code class="docutils literal notranslate"><span class="pre">puedo_pintar</span></code> that receives an amount in square meters of an area to be painted as a positive integer <code class="docutils literal notranslate"><span class="pre">area</span></code>. The function should return a tuple with the amount of cans of paint that need to be bought to cover the entire area, as well as their total price, that is, using the form <code class="docutils literal notranslate"><span class="pre">(amount_cans,</span> <span class="pre">total_price)</span></code>. <br />
+<p>The paint sold at your trusted hardware store has a coverage of 1 liter per every 3 square meters and the paint is sold only in cans of 18 liters that cost each one <code class="docutils literal notranslate"><span class="pre">80.00</span></code> units. Develop the function <code class="docutils literal notranslate"><span class="pre">can_paint</span></code> that receives an amount in square meters of an area to be painted as a positive integer <code class="docutils literal notranslate"><span class="pre">area</span></code>. The function should return a tuple with the amount of cans of paint that need to be bought to cover the entire area, as well as their total price, that is, using the form <code class="docutils literal notranslate"><span class="pre">(amount_cans,</span> <span class="pre">total_price)</span></code>. <br />
 <strong>Note</strong>: only an integer number of cans of paint is sold. <br /> <br />
 Examples: <br />
-<code class="docutils literal notranslate"><span class="pre">puedo_pintar(10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">80.00)</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">puedo_pintar(100)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">160.00)</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">puedo_pintar(54)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">80.00)</span></code> <br />
-<code class="docutils literal notranslate"><span class="pre">puedo_pintar(55)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">160.00)</span></code> <br /></p>
+<code class="docutils literal notranslate"><span class="pre">can_paint(10)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">80.00)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">can_paint(100)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">160.00)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">can_paint(54)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">80.00)</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">can_paint(55)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">160.00)</span></code> <br /></p>
 
 </div>
 <textarea data-lang="python" id="q2_7_en_editor" 
@@ -627,7 +627,7 @@ Examples: <br />
     data-audio=''      
            data-wasm=/_static
        style="visibility: hidden;">
-def puedo_pintar(area):
+def can_paint(area):
 
 ====
 from unittest.gui import TestCaseGui
@@ -636,14 +636,14 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
 
-        self.assertEqual(puedo_pintar(10), (1, 80.00), "Expected: (1, 80.00)")
-        self.assertEqual(puedo_pintar(100), (2, 160.00), "Expected: (2, 160.00)")
-        self.assertEqual(puedo_pintar(54), (1, 80.00), "Expected: (1, 80.00)")
-        self.assertEqual(puedo_pintar(55), (2, 160.00), "Expected: (2, 160.00)")
-        self.assertEqual(puedo_pintar(1000), (19, 1520.00), "Expected: (19, 1520.00)")
-        self.assertEqual(puedo_pintar(500), (10, 800.00), "Expected: (10, 800.00)")
-        self.assertEqual(puedo_pintar(250), (5, 400.00), "Expected: (5, 400.00)")
-        self.assertEqual(puedo_pintar(125), (3, 240.00), "Expected: (3, 240.00)")
+        self.assertEqual(can_paint(10), (1, 80.00), "Expected: (1, 80.00)")
+        self.assertEqual(can_paint(100), (2, 160.00), "Expected: (2, 160.00)")
+        self.assertEqual(can_paint(54), (1, 80.00), "Expected: (1, 80.00)")
+        self.assertEqual(can_paint(55), (2, 160.00), "Expected: (2, 160.00)")
+        self.assertEqual(can_paint(1000), (19, 1520.00), "Expected: (19, 1520.00)")
+        self.assertEqual(can_paint(500), (10, 800.00), "Expected: (10, 800.00)")
+        self.assertEqual(can_paint(250), (5, 400.00), "Expected: (5, 400.00)")
+        self.assertEqual(can_paint(125), (3, 240.00), "Expected: (3, 240.00)")
 
 
 myTests().main()

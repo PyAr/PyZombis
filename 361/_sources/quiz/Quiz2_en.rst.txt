@@ -14,15 +14,15 @@ Quiz - 2
         .. activecode:: q2_1_en
             :nocodelens:
 
-            Develop the function ``es_triangulo`` that receives three positive integers ``a``, ``b``, and ``c``. They represent the sides of a triangle. The function should verify that a triangle is formed with the given parameters. If the given parameters form a triangle, the function should return a string indicating its type, i.e., ``"Equilátero"``, ``"Isósceles"``, or ``"Escaleno"``, otherwise, the function should return the string, ``"No es triángulo"``.|br|
+            Develop the function ``is_triangle`` that receives three positive integers ``a``, ``b``, and ``c``. They represent the sides of a triangle. The function should verify that a triangle is formed with the given parameters. If the given parameters form a triangle, the function should return a string indicating its type, i.e., ``"Equilateral"``, ``"Isosceles"``, or ``"Escaleno"``, otherwise, the function should return the string, ``"Is not triangle"``.|br|
             **Note**: remember that it is not a triangle when the longest side is greater than or equal to the sum of the other two. |br| |br|
             Examples: |br|
-            ``es_triangulo(2, 2, 2)`` -> ``"Equilátero"`` |br|
-            ``es_triangulo(3, 2, 2)`` -> ``"Isósceles"`` |br|
-            ``es_triangulo(4, 2, 6)`` -> ``"No es triángulo"`` |br|
-            ``es_triangulo(2, 1, 8)`` -> ``"No es triángulo"`` |br|
+            ``is_triangle(2, 2, 2)`` -> ``"Equilateral"`` |br|
+            ``is_triangle(3, 2, 2)`` -> ``"Isosceles"`` |br|
+            ``is_triangle(4, 2, 6)`` -> ``"Is not triangle"`` |br|
+            ``is_triangle(2, 1, 8)`` -> ``"Is not triangle"`` |br|
             ~~~~
-            def es_triangulo(a, b, c):
+            def is_triangle(a, b, c):
 
 
             ====
@@ -32,15 +32,15 @@ Quiz - 2
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(es_triangulo(2, 2, 2), "Equilátero", "Expected: Equilátero")
-                    self.assertEqual(es_triangulo(2, 1, 2), "Isósceles", "Expected: Isósceles")
-                    self.assertEqual(es_triangulo(2, 1, 3), "No es triángulo", "Expected: No es triángulo")
-                    self.assertEqual(es_triangulo(2, 1, 8), "No es triángulo", "Expected: No es triángulo")
-                    self.assertEqual(es_triangulo(4, 2, 1), "No es triángulo", "Expected: No es triángulo")
-                    self.assertEqual(es_triangulo(4, 1000, 1000), "Isósceles", "Expected: Isósceles")
-                    self.assertEqual(es_triangulo(10000, 10000, 10000), "Equilátero", "Expected: Equilátero")
-                    self.assertEqual(es_triangulo(3, 2, 2), "Isósceles", "Expected: Isósceles")
-                    self.assertEqual(es_triangulo(10000, 1, 9999), "No es triángulo", "Expected: No es triángulo")
+                    self.assertEqual(is_triangle(2, 2, 2), "Equilateral", "Expected: Equilateral")
+                    self.assertEqual(is_triangle(2, 1, 2), "Isosceles", "Expected: Isosceles")
+                    self.assertEqual(is_triangle(2, 1, 3), "Is not triangle", "Expected: Is not triangle")
+                    self.assertEqual(is_triangle(2, 1, 8), "Is not triangle", "Expected: Is not triangle")
+                    self.assertEqual(is_triangle(4, 2, 1), "Is not triangle", "Expected: Is not triangle")
+                    self.assertEqual(is_triangle(4, 1000, 1000), "Isosceles", "Expected: Isosceles")
+                    self.assertEqual(is_triangle(10000, 10000, 10000), "Equilateral", "Expected: Equilateral")
+                    self.assertEqual(is_triangle(3, 2, 2), "Isosceles", "Expected: Isosceles")
+                    self.assertEqual(is_triangle(10000, 1, 9999), "Is not triangle", "Expected: Is not triangle")
 
 
             myTests().main()
@@ -51,14 +51,14 @@ Quiz - 2
         .. activecode:: q2_2_en
             :nocodelens:
 
-            Develop the function ``es_bisiesto`` that receives the parameter ``anio`` which is a positive integer greater than zero and represents a year. The function should verify if the given parameter is a leap year, therefore, it should return ``True`` if it is, or ``False`` otherwise. A year is a leap year if it is divisible by 400, or also if it is divisible by 4 but not divisible by 100. |br| |br|
+            Develop the function ``is_leap`` that receives the parameter ``year`` which is a positive integer greater than zero and represents a year. The function should verify if the given parameter is a leap year, therefore, it should return ``True`` if it is, or ``False`` otherwise. A year is a leap year if it is divisible by 400, or also if it is divisible by 4 but not divisible by 100. |br| |br|
             Examples: |br|
-            ``es_bisiesto(2014)`` -> ``False`` |br|
-            ``es_bisiesto(2016)`` -> ``True`` |br|
-            ``es_bisiesto(1900)`` -> ``False`` |br|
-            ``es_bisiesto(2000)`` -> ``True`` |br|
+            ``is_leap(2014)`` -> ``False`` |br|
+            ``is_leap(2016)`` -> ``True`` |br|
+            ``is_leap(1900)`` -> ``False`` |br|
+            ``is_leap(2000)`` -> ``True`` |br|
             ~~~~
-            def es_bisiesto(anio):
+            def is_leap(year):
 
 
             ====
@@ -68,15 +68,15 @@ Quiz - 2
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(es_bisiesto(2000), True, "Expected: True")
-                    self.assertEqual(es_bisiesto(2001), False, "Expected: False")
-                    self.assertEqual(es_bisiesto(2020), True, "Expected: True")
-                    self.assertEqual(es_bisiesto(2016), True, "Expected: True")
-                    self.assertEqual(es_bisiesto(2400), True, "Expected: True")
-                    self.assertEqual(es_bisiesto(1952), True, "Expected: True")
-                    self.assertEqual(es_bisiesto(1900), False, "Expected: False")
-                    self.assertEqual(es_bisiesto(2200), False, "Expected: False")
-                    self.assertEqual(es_bisiesto(2100), False, "Expected: False")
+                    self.assertEqual(is_leap(2000), True, "Expected: True")
+                    self.assertEqual(is_leap(2001), False, "Expected: False")
+                    self.assertEqual(is_leap(2020), True, "Expected: True")
+                    self.assertEqual(is_leap(2016), True, "Expected: True")
+                    self.assertEqual(is_leap(2400), True, "Expected: True")
+                    self.assertEqual(is_leap(1952), True, "Expected: True")
+                    self.assertEqual(is_leap(1900), False, "Expected: False")
+                    self.assertEqual(is_leap(2200), False, "Expected: False")
+                    self.assertEqual(is_leap(2100), False, "Expected: False")
 
 
             myTests().main()
@@ -181,15 +181,15 @@ Quiz - 2
         .. activecode:: q2_6_en
             :nocodelens:
 
-            An employee of a company receives a monthly gross salary calculated by the amount of hours worked multiplied by its value. From this ``salary``, the month's ``11%`` for taxes, ``8%`` for health insurance, and ``5%`` for payment to the union are deducted. Develop the function ``calcular_salario`` that receives a float ``valor_hora`` and an integer ``cantidad_horas`` that represent how much he earns per hour and the amount of hours worked during the month. The function must return a dictionary of the form: |br|
+            An employee of a company receives a monthly gross income calculated by the amount of hours worked multiplied by its value. From this ``income``, the month's ``11%`` for taxes, ``8%`` for medical insurance, and ``5%`` for payment to the union of workers are deducted. Develop the function ``calculate_income`` that receives a float ``hour_value`` and an integer ``ammount_value`` that represent how much he earns per hour and the amount of hours worked during the month. The function must return a dictionary of the form: |br|
 
-            ``{"salario_bruto": A, "impuestos": B,`` |br| ``"seguro_medico": C, "sindicato": E, "salario_neto": F}``. |br|
+            ``{"gross_income": A, "taxes": B,`` |br| ``"medical_insurance": C, "union_of_workers": E, "net_income": F}``. |br|
 
             Where A, B, C, and D represent the amount of money corresponding to each item. |br| |br|
             Examples: |br|
-            ``calcular_salario(15.0, 120)`` -> ``{"salario_bruto": 1800.00, "impuestos": 198.00,`` |br| ``"seguro_medico": 144.0, "sindicato": 90.0, "salario_neto": 1368.00}``. |br|
+            ``calculate_income(15.0, 120)`` -> ``{"gross_income": 1800.00, "taxes": 198.00,`` |br| ``"medical_insurance": 144.0, "union_of_workers": 90.0, "net_income": 1368.00}``. |br|
             ~~~~
-            def calcular_salario(valor_hora, cantidad_horas):
+            def calculate_income(hour_value, ammount_value):
 
 
             ====
@@ -198,15 +198,15 @@ Quiz - 2
 
 
             class myTests(TestCaseGui):
-                def get_expected_dictionary(self, salary):
+                def get_expected_dictionary(self, income):
                     result = {
-                        "salario_bruto": salary,
-                        "impuestos": salary * 0.11,
-                        "seguro_medico": salary * 0.08,
-                        "sindicato": salary * 0.05,
+                        "gross_income": income,
+                        "taxes": income * 0.11,
+                        "medical_insurance": income * 0.08,
+                        "union_of_workers": income * 0.05,
                     }
-                    result["salario_neto"] = (salary - result["impuestos"] -
-                        result["seguro_medico"] - result["sindicato"])
+                    result["net_income"] = (income - result["taxes"] -
+                        result["medical_insurance"] - result["union_of_workers"])
                     return result
 
                 def testOne(self):
@@ -218,35 +218,35 @@ Quiz - 2
                     for test in range(test_numbers):
                         hour = random.randint(min_hour, max_hour)
                         price = round(random.uniform(min_price_hour, max_price_hour), 2)
-                        salary = price * hour
-                        expected = self.get_expected_dictionary(salary)
-                        result = calcular_salario(price, hour)
+                        income = price * hour
+                        expected = self.get_expected_dictionary(income)
+                        result = calculate_income(price, hour)
                         current_test = test + 1
 
                         self.assertEqual(
-                            round(result["salario_bruto"], 2),
-                            round(expected["salario_bruto"], 2),
-                            f"Test #{current_test} - Expected gross salary: {round(expected['salario_bruto'], 2)}",
+                            round(result["gross_income"], 2),
+                            round(expected["gross_income"], 2),
+                            f"Test #{current_test} - Expected gross income: {round(expected['gross_income'], 2)}",
                         )
                         self.assertEqual(
-                            round(result["impuestos"], 2),
-                            round(expected["impuestos"], 2),
-                            f"Test #{current_test} - Expected taxes: {round(expected['impuestos'], 2)}",
+                            round(result["taxes"], 2),
+                            round(expected["taxes"], 2),
+                            f"Test #{current_test} - Expected taxes: {round(expected['taxes'], 2)}",
                         )
                         self.assertEqual(
-                            round(result["seguro_medico"], 2),
-                            round(expected["seguro_medico"], 2),
-                            f"Test #{current_test} - Expected health insurance: {round(expected['seguro_medico'], 2)}",
+                            round(result["medical_insurance"], 2),
+                            round(expected["medical_insurance"], 2),
+                            f"Test #{current_test} - Expected health insurance: {round(expected['medical_insurance'], 2)}",
                         )
                         self.assertEqual(
-                            round(result["sindicato"], 2),
-                            round(expected["sindicato"], 2),
-                            f"Test #{current_test} - Expected union payment: {round(expected['sindicato'], 2)}",
+                            round(result["union_of_workers"], 2),
+                            round(expected["union_of_workers"], 2),
+                            f"Test #{current_test} - Expected union payment: {round(expected['union_of_workers'], 2)}",
                         )
                         self.assertEqual(
-                            round(result["salario_neto"], 2),
-                            round(expected["salario_neto"], 2),
-                            f"Test #{current_test} - Expected net salary: {round(expected['salario_neto'], 2)}",
+                            round(result["net_income"], 2),
+                            round(expected["net_income"], 2),
+                            f"Test #{current_test} - Expected net income: {round(expected['net_income'], 2)}",
                         )
 
 
@@ -258,16 +258,16 @@ Quiz - 2
         .. activecode:: q2_7_en
             :nocodelens:
 
-            The paint sold at your trusted hardware store has a coverage of 1 liter per every 3 square meters and the paint is sold only in cans of 18 liters that cost each one ``80.00`` units. Develop the function ``puedo_pintar`` that receives an amount in square meters of an area to be painted as a positive integer ``area``. The function should return a tuple with the amount of cans of paint that need to be bought to cover the entire area, as well as their total price, that is, using the form ``(amount_cans, total_price)``. |br|
+            The paint sold at your trusted hardware store has a coverage of 1 liter per every 3 square meters and the paint is sold only in cans of 18 liters that cost each one ``80.00`` units. Develop the function ``can_paint`` that receives an amount in square meters of an area to be painted as a positive integer ``area``. The function should return a tuple with the amount of cans of paint that need to be bought to cover the entire area, as well as their total price, that is, using the form ``(amount_cans, total_price)``. |br|
             **Note**: only an integer number of cans of paint is sold. |br| |br|
             Examples: |br|
-            ``puedo_pintar(10)`` -> ``(1, 80.00)`` |br|
-            ``puedo_pintar(100)`` -> ``(2, 160.00)`` |br|
-            ``puedo_pintar(54)`` -> ``(1, 80.00)`` |br|
-            ``puedo_pintar(55)`` -> ``(2, 160.00)`` |br|
+            ``can_paint(10)`` -> ``(1, 80.00)`` |br|
+            ``can_paint(100)`` -> ``(2, 160.00)`` |br|
+            ``can_paint(54)`` -> ``(1, 80.00)`` |br|
+            ``can_paint(55)`` -> ``(2, 160.00)`` |br|
 
             ~~~~
-            def puedo_pintar(area):
+            def can_paint(area):
 
             ====
             from unittest.gui import TestCaseGui
@@ -276,14 +276,14 @@ Quiz - 2
             class myTests(TestCaseGui):
                 def testOne(self):
 
-                    self.assertEqual(puedo_pintar(10), (1, 80.00), "Expected: (1, 80.00)")
-                    self.assertEqual(puedo_pintar(100), (2, 160.00), "Expected: (2, 160.00)")
-                    self.assertEqual(puedo_pintar(54), (1, 80.00), "Expected: (1, 80.00)")
-                    self.assertEqual(puedo_pintar(55), (2, 160.00), "Expected: (2, 160.00)")
-                    self.assertEqual(puedo_pintar(1000), (19, 1520.00), "Expected: (19, 1520.00)")
-                    self.assertEqual(puedo_pintar(500), (10, 800.00), "Expected: (10, 800.00)")
-                    self.assertEqual(puedo_pintar(250), (5, 400.00), "Expected: (5, 400.00)")
-                    self.assertEqual(puedo_pintar(125), (3, 240.00), "Expected: (3, 240.00)")
+                    self.assertEqual(can_paint(10), (1, 80.00), "Expected: (1, 80.00)")
+                    self.assertEqual(can_paint(100), (2, 160.00), "Expected: (2, 160.00)")
+                    self.assertEqual(can_paint(54), (1, 80.00), "Expected: (1, 80.00)")
+                    self.assertEqual(can_paint(55), (2, 160.00), "Expected: (2, 160.00)")
+                    self.assertEqual(can_paint(1000), (19, 1520.00), "Expected: (19, 1520.00)")
+                    self.assertEqual(can_paint(500), (10, 800.00), "Expected: (10, 800.00)")
+                    self.assertEqual(can_paint(250), (5, 400.00), "Expected: (5, 400.00)")
+                    self.assertEqual(can_paint(125), (3, 240.00), "Expected: (3, 240.00)")
 
 
             myTests().main()
