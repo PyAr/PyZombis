@@ -28,7 +28,7 @@ def test_quiz1_1_en(page):
 
     # Do the exercise
     page.click("text=Exercise 1")
-    page.click("text=def suma(n, m):")
+    page.click("text=def sum(n, m):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
     page.keyboard.type("return n+m")
@@ -68,7 +68,7 @@ def test_quiz1_2_en(page):
     # Do the exercise
 
     page.click("text=Exercise 2")
-    page.click("text=def metros_a_milimetros(n):")
+    page.click("text=def meters_to_millimeters(n):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
     page.keyboard.type("return n * 1000")
