@@ -4,7 +4,7 @@ def test_quiz11_1(page):
     page.wait_for_load_state()
 
     # Do the exercise
-    page.click("text=def verbo(s):")
+    page.click("text=def verb(s):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
 
@@ -35,7 +35,7 @@ def test_quiz11_1_en(page):
     page.goto("quiz/Quiz11_en.html")
     page.wait_for_load_state()
 
-    page.click("text=def verbo(s):")
+    page.click("text=def verb(s):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
 
