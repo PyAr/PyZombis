@@ -1,0 +1,33 @@
+<div style="padding: 20px 40px; background-color: #fcf8e3; border-radius: 5px">
+  <div>
+    <iframe
+      height="300px"
+      width="100%"
+      srcdoc='
+    <html>
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+      <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+       <style>
+            .py-repl-run-button{opacity: 1;}
+            .input-section{background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #ccc;}
+        </style>
+    </head>
+    <body>
+      <py-config>
+        packages = ["numpy", "pandas", "matplotlib"] 
+        terminal = false
+      </py-config>
+      <div class="input-section">
+        <py-repl> 
+            print("Hello, World!")
+        </py-repl>
+      </div>
+    </body>
+  </html>'
+      style="border: 1px solid #ccc; background-color: #fff"
+    >
+    </iframe>
+  </div>
+</div>
