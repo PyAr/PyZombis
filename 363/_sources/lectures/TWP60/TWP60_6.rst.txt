@@ -1,0 +1,171 @@
+Eventos
+=======
+
+.. raw:: html
+
+   <script src='../_static/game.js'></script>
+
+   <script type="module">
+      window.gamejs.init();
+   </script>
+
+Los eventos en pygame se manejan a través del módulo pygame.event.
+El método pygame.event.get() obtiene todos los eventos de la cola de eventos.
+La cola de eventos es una lista de objetos de eventos enviados al programa por el administrador de ventanas.
+o el propio programa pygame.
+El método pygame.event.get() devuelve una lista de objetos pygame.event.Event.
+Cada objeto de evento tiene un tipo de evento almacenado en el atributo de tipo.
+El atributo de tipo se puede comparar con las constantes definidas en el módulo pygame.locals.
+El módulo pygame.locals define constantes para los tipos de eventos.
+Los tipos de eventos se utilizan para determinar qué tipo de evento ha ocurrido.
+Los tipos de eventos se enumeran a continuación:
+
++ KEYUP
++ KEYDOWN
++ MOUSEMOTION
++ MOUSEBUTTONUP
++ MOUSEBUTTONDOWN
+
+KEYDOWN es un tipo de evento que se dispara cuando se presiona una tecla. como cuando presionas una tecla en el teclado.
+
+KEYUP es un tipo de evento que se activa cuando se suelta una tecla. como cuando quitas el dedo de una tecla.
+
+
+.. activecode:: ac_l60_6_en
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import load, timer, window
+    load('../../_static/game.js')
+    load('../../_static/pygame.brython.js')
+    gjs = window.gamejs
+    gjs.ready()
+
+    ^^^^
+    import pygame
+    from pygame.locals import *
+
+    # Pygame to show keyevents
+    # green box moves with arrow keys
+
+    # set up the colors
+    BLACK = pygame.color.Color('black')
+    WHITE = pygame.color.Color('white')
+    GREEN = pygame.color.Color('green')
+    
+    screen = pygame.display.set_mode((400,300))
+    screen.fill(WHITE)
+    pygame.draw.rect(screen, GREEN, pygame.Rect(100, 100, 50, 50))
+
+    blockX = 100
+    blockY = 100
+
+    def main():
+
+
+        # keyboard event loop
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                global blockX
+                global blockY
+                if event.key == pygame.K_LEFT:
+                    blockX -= 10
+                if event.key == pygame.K_RIGHT:
+                    blockX += 10
+                if event.key == pygame.K_UP:
+                    blockY -= 10
+                if event.key == pygame.K_DOWN:
+                    blockY += 10
+
+            
+            screen.fill(WHITE)
+            pygame.draw.rect(screen, GREEN, pygame.Rect(blockX, blockY, 50, 50))
+
+            # draw the window onto the screen
+            pygame.display.update()
+                
+            
+
+
+    pygame.init()
+
+    timer1 = timer.set_interval(main,80)
+
+        
+MOUSEMOTION es un tipo de evento que se dispara cuando se mueve el mouse.
+
+MOUSEBUTTONDOWN es un tipo de evento que se activa cuando se presiona un botón del mouse.
+
+MOUSEBUTTONUP es un tipo de evento que se activa cuando se suelta un botón del mouse.
+
+
+.. activecode:: ac_l60_6_2
+    :language: python3
+    :python3_interpreter: brython
+
+    from browser import load, timer, window
+    load('../../_static/game.js')
+    load('../../_static/pygame.brython.js')
+    gjs = window.gamejs
+    gjs.ready()
+
+    ^^^^
+    import pygame
+    from pygame.locals import *
+
+    # Pygame para mostrar eventos del mouse
+    # Si el mouse se está moviendo, mostraremos el texto "El mouse se está moviendo"
+    # Si se hace clic con el mouse, mostraremos el texto "Se hace clic con el mouse"
+    # Si se suelta el mouse, mostraremos el texto "Se suelta el mouse"
+    # También mostraremos la posición del mouse y en qué botón se hace clic
+
+    BLACK = pygame.color.Color('black')
+    WHITE = pygame.color.Color('white')
+    GREEN = pygame.color.Color('green')
+    
+    screen = pygame.display.set_mode((800,800))
+    screen.fill(GREEN)
+
+    font=pygame.font.SysFont('timesnewroman',30)
+    left_key = font.render('se hace clic en el botón izquierdo del ratón',True,BLACK)
+    right_key = font.render('se hace clic en el botón derecho del ratón',True,BLACK)
+    mouse = font.render('El mouse se está moviendo',True,BLACK)
+    button_down = font.render('Se suelta el mouse',True,BLACK)
+    mouse_pos = font.render('Posición del mouse',True,BLACK)
+
+    def main():
+
+        # mouse event loop
+        for event in pygame.event.get():
+            screen.fill(GREEN)
+            if event.type == pygame.MOUSEMOTION:
+                screen.blit(mouse,(100,100))
+                mouse_position = pygame.mouse.get_pos()
+                screen.blit(mouse_pos,(100,200))
+                screen.blit(font.render(str(mouse_position),True,BLACK),(400,200))
+            if event.type == pygame.MOUSEBUTTONUP:
+                mouse_keys = pygame.mouse.get_pressed()
+                if mouse_keys[0]:
+                    screen.blit(left_key,(100,100))
+                if mouse_keys[2]:
+                    screen.blit(right_key,(100,100))
+            else :
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    screen.blit(button_down,(100,100))
+            
+            pygame.display.update()
+
+    pygame.init()
+
+    timer1 = timer.set_interval(main,80)
+
+
+.. poll:: TWP60
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?
+
+
+

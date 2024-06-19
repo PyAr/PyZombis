@@ -1,0 +1,34 @@
+Nombres de variables
+====================
+
++ En Python, los nombres de las variables deben comenzar con un
+  letra o guión bajo ``_``
++ ¡Acentos están permitidos!
++ Ejemplo de nombres válidos: ``precio``, ``acción``, ``salario``, ``_x``,
+  ``año_2011``, ``salario_promedio``
+
+.. code-block:: python
+
+    >>> a = 2
+    >>> precio = 500
+    >>> print(a)
+    2
+    >>> print(precio)
+    500
+
++ Ejemplo de nombres no válidos: ``salario promedio``, ``3x``, ``1er``, ``@``, ``$``
+
+.. code-block:: python
+
+    >>> 3x = "texto"
+      File "<stdin>", line 1
+        3x = "texto"
+        ^
+    SyntaxError: invalid syntax
+
+**Defina variables válidas e invalidas a continuación**
+
+.. only:: html
+
+   .. raw:: html
+      :file: ../_static/interpreter.html
