@@ -17,6 +17,7 @@ import sys, os, subprocess
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 # sys.path.insert(0, os.path.abspath('../modules'))
+sys.path.insert(0, os.path.abspath('_ext'))
 
 from runestone import runestone_static_dirs, runestone_extensions, setup
 import pkg_resources
@@ -28,7 +29,7 @@ import pkg_resources
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ["sphinx.ext.mathjax"] + runestone_extensions()
+extensions = ["sphinx.ext.mathjax", "pyscript"] + runestone_extensions()
 
 # ,'runestone.video','runestone.reveal','runestone.poll','runestone.tabbedStuff','runestone.disqus','runestone.codelens','runestone.activecode', 'runestone.assess', 'runestone.animation','runestone.meta', 'runestone.parsons', 'runestone.blockly', 'runestone.livecode','runestone.accessibility']
 
