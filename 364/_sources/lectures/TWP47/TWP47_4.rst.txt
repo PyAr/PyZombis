@@ -1,0 +1,51 @@
+Descuentos
+==========
+
++ ¡Ahora bajo una nueva dirección, las sales en FATEC tendrán un 10% de descuento!
++ Para esto, se creará un módulo fatec.py
++ Inicialmente, el descuento será del 10% para todos los bocadillos
+
+
+.. image:: ../img/TWP47_015.png
+   :height: 1.799cm
+   :width: 9.524cm
+   :align: center
+   :alt: 
+
+
+.. code-block:: python
+   
+   from banco import *
+   from fatec import *
+
+   articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
+   precios = [1.50,2.20,1.80,1.20]
+   corriendo = True
+
+   while corriendo:
+      opcion = 1
+      for elegir in articulos:
+         print(str(opcion) + "." + elegir)
+         opcion += 1
+      print(str(opcion) + ".Finalizar")
+      elegir = int(input("Elige una opcion"))
+      if elegir == opcion:
+         # eligió la última opción Finalizar
+         corriendo = False
+      else:
+         tarjeta = input("Numero de tarjeta de credito: ")
+         precio = descuento(precios[elegir-1]) 
+         guardar_transacción(precio,tarjeta,articulos[elegir-1])
+
+
+
++ Tendremos un descuento adicional del 50% para pasteles a causa de
+  colonia japonesa
++ Nuevo módulo japa.py
+
+
+.. image:: ../img/TWP47_017.png
+   :height: 2.199cm
+   :width: 12.158cm
+   :align: center
+   :alt: 

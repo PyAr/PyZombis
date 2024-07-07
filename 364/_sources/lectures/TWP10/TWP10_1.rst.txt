@@ -1,0 +1,15 @@
+Condiciones
+===========
+
+.. codelens:: cl_l10_1
+
+    print("¡Bienvenido a mi programa!")
+    print("¡Vuelva siempre!")
+
+.. image:: ../img/TWP10_002.jpg
+    :height: 5.524cm
+    :width: 22.859cm
+    :align: center
+    :alt:
+
++ Tus programas no siempre serán simples secuencias de comandos
