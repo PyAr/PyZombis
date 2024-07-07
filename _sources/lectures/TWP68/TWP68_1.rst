@@ -203,7 +203,7 @@ Parte 6: Ejemplo
 
 Aquí hay un ejemplo de visualización de datos de ventas usando Matplotlib. El ejemplo usa datos de ventas de un archivo CSV y luego los visualiza usando varios tipos de gráficos.
 
-.. activecode:: ac_l68_1a_en
+.. activecode:: ac_l68_1a
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript
@@ -230,7 +230,7 @@ Aquí hay un ejemplo de visualización de datos de ventas usando Matplotlib. El 
    display(fig)
 
 
-.. activecode:: ac_l68_1b_en
+.. activecode:: ac_l68_1b
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript
