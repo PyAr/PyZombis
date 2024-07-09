@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumPy Quiz</title>
+</head>
+<body>
+    <h3>Quiz: Test Your Knowledge</h3>
+
+    <form id="quizForm">
+        <label for="q1">1. What is the correct way to import NumPy?</label><br>
+        <input type="radio" id="q1a" name="q1" value="a"> <label for="q1a">import np as numpy</label><br>
+        <input type="radio" id="q1b" name="q1" value="b"> <label for="q1b">import numpy as np</label><br>
+        <input type="radio" id="q1c" name="q1" value="c"> <label for="q1c">import numpy</label><br>
+        
+        <br>
+        <label for="q2">2. How do you create a 1D NumPy array with the elements 1, 2, 3, 4, 5?</label><br>
+        <input type="radio" id="q2a" name="q2" value="a"> <label for="q2a">arr = np.array([1, 2, 3, 4, 5])</label><br>
+        <input type="radio" id="q2b" name="q2" value="b"> <label for="q2b">arr = np.array(1, 2, 3, 4, 5)</label><br>
+        <input type="radio" id="q2c" name="q2" value="c"> <label for="q2c">arr = np.array((1, 2, 3, 4, 5))</label><br>
+
+        <br>
+        <label for="q3">3. Which function is used to calculate the sum of all elements in a NumPy array?</label><br>
+        <input type="radio" id="q3a" name="q3" value="a"> <label for="q3a">np.sum()</label><br>
+        <input type="radio" id="q3b" name="q3" value="b"> <label for="q3b">np.add()</label><br>
+        <input type="radio" id="q3c" name="q3" value="c"> <label for="q3c">np.total()</label><br>
+        
+        <br>
+        <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <p id="quizResult"></p>
+
+    <script>
+        function checkAnswers() {
+            var correctAnswers = 0;
+            var q1 = document.querySelector('input[name="q1"]:checked');
+            var q2 = document.querySelector('input[name="q2"]:checked');
+            var q3 = document.querySelector('input[name="q3"]:checked');
+            var results = [];
+
+            if (q1 && q1.value == 'b') {
+                correctAnswers++;
+                results.push("Q1: Correct");
+            } else if (q1) {
+                results.push("Q1: Wrong");
+            }
+
+            if (q2 && q2.value == 'a') {
+                correctAnswers++;
+                results.push("Q2: Correct");
+            } else if (q2) {
+                results.push("Q2: Wrong");
+            }
+
+            if (q3 && q3.value == 'a') {
+                correctAnswers++;
+                results.push("Q3: Correct");
+            } else if (q3) {
+                results.push("Q3: Wrong");
+            }
+
+            var resultText = "You got " + correctAnswers + " out of 3 correct.<br>";
+            resultText += results.join("<br>");
+            document.getElementById("quizResult").innerHTML = resultText;
+        }
+    </script>
+</body>
+</html>
