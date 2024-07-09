@@ -1,0 +1,129 @@
+==================
+El Poder de Pandas
+==================
+
+Introduction
+------------
+Esta conferencia se centra en Pandas, una poderosa biblioteca de Python para manipulación y análisis de datos. Exploraremos sus capacidades en el manejo efectivo de datos estructurados.
+
+Understanding Pandas Basics
+---------------------------
+Pandas proporciona estructuras de datos como Series y DataFrame. Está construido sobre NumPy, lo que facilita trabajar con datos estructurados.
+
+.. code-block:: python
+   :caption: Importando Pandas y Cargando Datos Ficticios
+
+   import pandas as pd
+
+   # Datos ficticios
+   data = {
+       'Nombre': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+       'Edad': [28, 23, 25, 24, 30],
+       'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
+   }
+
+   # Creando un DataFrame
+   df = pd.DataFrame(data)
+
+   # Mostrando el DataFrame
+   print(df)
+
+Análisis Exploratorio de Datos (EDA) con Pandas
+-----------------------------------------------
+Verifica las dimensiones de los datos y examina su estructura:
+
+.. code-block:: python
+   :caption: Verificando Dimensiones de los Datos e Información
+
+   # Forma del DataFrame
+   print(df.shape)
+   
+   # Información sobre el DataFrame
+   print(df.info())
+
+Limpieza y Transformación de Datos
+----------------------------------
+Renombra columnas, maneja datos faltantes y convierte tipos de datos:
+
+.. code-block:: python
+   :caption: Limpieza y Transformación de Datos
+
+   # Renombrando columnas
+   df.rename(columns={'Nombre': 'Nombre Completo', 'Ciudad': 'Ubicación'}, inplace=True)
+   
+   # Manejo de datos faltantes (no aplicable para estos datos ficticios)
+   
+   # Conversión de tipos de datos (no necesario para estos datos ficticios)
+
+Manipulación y Agregación de Datos
+----------------------------------
+Selecciona, filtra, agrupa y agrega datos:
+
+.. code-block:: python
+   :caption: Manipulación y Agregación de Datos
+
+   # Seleccionando columnas
+   print(df[['Nombre', 'Edad']])
+   
+   # Filtrando datos
+   datos_filtrados = df[df['Edad'] > 25]
+   print(datos_filtrados)
+   
+   # Agrupando y agregando datos
+   estadisticas_grupo_edad = df.groupby('Edad').size()
+   print(estadisticas_grupo_edad)
+
+Visualización de Datos con Pandas y Matplotlib
+----------------------------------------------
+Utiliza Matplotlib para visualizaciones:
+
+.. code-block:: python
+   :caption: Visualización de Datos
+
+   import matplotlib.pyplot as plt
+
+   # Ejemplo de gráfico
+   df['Edad'].plot(kind='hist', bins=5)
+   plt.title('Distribución de Edades')
+   plt.xlabel('Edad')
+   plt.ylabel('Frecuencia')
+   plt.show()
+
+Ejemplo Interactivo
+-------------------
+Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame por edad y visualizar los resultados:
+
+.. note:: 
+    Estamos usando PyScript para ejecutar Pandas en el navegador. Utiliza `plt.show()` en lugar de `display()` para mostrar los resultados.
+
+.. activecode:: ac_l66_es_3a
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   import pandas as pd
+   import matplotlib.pyplot as plt
+
+   # Datos ficticios
+   data = {
+       'Nombre': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+       'Edad': [28, 23, 25, 24, 30],
+       'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
+   }
+
+   # Crear DataFrame
+   df = pd.DataFrame(data)
+
+   # Filtrar DataFrame por edad
+   df_filtrado = df[df['Edad'] > 25]
+
+   # Graficar datos filtrados
+   df_filtrado.plot(kind='bar', x='Nombre', y='Edad', color='skyblue')
+   plt.title('Distribución de Edades para Individuos Mayores de 25 Años')
+   plt.xlabel('Nombre')
+   plt.ylabel('Edad')
+   display(plt)
+
+Ejercicio
+---------
+Escribe código para calcular la edad promedio de las personas en el DataFrame.

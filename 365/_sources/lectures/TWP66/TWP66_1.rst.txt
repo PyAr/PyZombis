@@ -1,0 +1,115 @@
+====================
+Introducción a NumPy
+====================
+
+.. image:: ../img/TWP66_001.png
+    :height: 9.258cm
+    :width: 14.925cm
+    :align: center
+    :alt:
+
+Introducción
+------------
+Esta completa lección se centra en dominar NumPy, una de las bibliotecas más populares en Python para cálculos numéricos. Exploraremos diversas funcionalidades de NumPy, comprendiendo cómo crear y manipular matrices para realizar operaciones numéricas de manera efectiva.
+
+Parte 1: Entendiendo los Fundamentos de NumPy
+---------------------------------------------
+
+.. contents::
+    :local:
+
+Visión general
+~~~~~~~~~~~~~~
+NumPy es una potente biblioteca para cálculos numéricos en Python. Proporciona soporte para grandes matrices y matrices multidimensionales, junto con una colección de funciones matemáticas para operar en estas matrices.
+
+Instalación de NumPy
+~~~~~~~~~~~~~~~~~~~~
+Instala NumPy usando pip::
+
+    pip install numpy
+
+Importar NumPy
+~~~~~~~~~~~~~~
+Importa NumPy en tu script de Python::
+
+    import numpy as np
+
+Creación de Arrays
+~~~~~~~~~~~~~~~~~~
+**Array 1D**::
+
+    import numpy as np
+
+    # Crear un array 1D
+    arr = np.array([1, 2, 3, 4, 5])
+    print("Array 1D:", arr)
+
+**Array 2D**::
+
+    import numpy as np
+
+    # Crear un array 2D
+    arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
+    print("Array 2D:\n", arr_2d)
+
+Operaciones con Arrays
+~~~~~~~~~~~~~~~~~~~~~~
+**Operaciones Básicas**::
+
+    import numpy as np
+
+    # Crear un array
+    arr = np.array([1, 2, 3, 4, 5])
+
+    # Realizar operaciones básicas
+    print("Suma:", np.sum(arr))
+    print("Media:", np.mean(arr))
+
+**Operaciones Elemento a Elemento**::
+
+    import numpy as np
+
+    # Crear arrays
+    arr1 = np.array([1, 2, 3])
+    arr2 = np.array([4, 5, 6])
+
+    # Adición elemento a elemento
+    print("Adición Elemento a Elemento:", arr1 + arr2)
+
+    # Multiplicación elemento a elemento
+    print("Multiplicación Elemento a Elemento:", arr1 * arr2)
+
+Manipulación de Forma
+~~~~~~~~~~~~~~~~~~~~~
+**Reformatear Arrays**::
+
+    import numpy as np
+
+    # Crear un array 1D
+    arr = np.array([1, 2, 3, 4, 5, 6])
+
+    # Reformatear el array a 2x3
+    arr_reformateado = np.reshape(arr, (2, 3))
+    print("Array Reformateado:\n", arr_reformateado)
+
+**Aplanamiento de Arrays**::
+
+    import numpy as np
+
+    # Crear un array 2D
+    arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
+
+    # Aplanar el array
+    arr_aplanado = arr_2d.flatten()
+    print("Array Aplanado:", arr_aplanado)
+
+Conclusión
+----------
+NumPy es fundamental para cálculos numéricos en Python. Comprender los fundamentos de la creación y manipulación de arrays es crucial para la ciencia de datos y el aprendizaje automático.
+
+Asegúrate de explorar la documentación de NumPy para conocer características y funcionalidades más avanzadas.
+
+Quiz
+----
+.. raw:: html
+    :file: ../_static/TWP66/TWP66_1.html

@@ -1,0 +1,86 @@
+Lista de Ejercicios “again”
+===========================
+
++ Condiciones
+
+.. activecode:: ac_l10_7_001
+   :nocodelens:
+   :stdin:
+
+   print("¡Bienvenido a mi programa!")
+   print("¡Vuelva siempre!")
+
++ Condiciones -- if
+
+.. activecode:: ac_l10_7_002
+   :nocodelens:
+   :stdin:
+   
+   a = 8
+   b = 5
+   if a > b:
+     print("El primer número es el más grande")
+   if b > a:
+     print("¡El segundo número es el más grande!")
+
+
++ Condiciones -- if / else
+
+.. activecode:: ac_l10_7_003
+   :nocodelens:
+   :stdin:
+   
+   anio_creacion = 1
+   if anio_creacion <= 3:
+    print("Su auto es nuevo")
+   if anio_creacion > 3:
+    print("Su auto es viejo")
+
+
++ Estructuras anidadas
+
+.. activecode:: ac_l10_7_004
+   :nocodelens:
+   :stdin:
+   
+   minutos = 800
+   if minutos < 200:
+       precio = 0.20
+   else:
+      if minutos <= 400:
+         precio = 0.18
+      else:
+         precio = 0.15 
+   print("Cuenta telefonica : $%6.2f" % (minutos * precio))
+
++ elif
+
+.. activecode:: ac_l10_7_005
+   :nocodelens:
+   :stdin:
+   
+   minutos = 1000
+   if minutos < 200:
+      precio = 0.2
+   elif minutos <= 400:
+      precio = 0.18
+   elif minutos <= 800:
+      precio = 0.15
+   else:
+      precio = 0.08
+   print("Cuenta telefonica : $%6.2f" % (minutos * precio))
+
+.. image:: ../img/TWP05_041.jpeg
+    :height: 12.571cm
+    :width: 9.411cm
+    :align: center
+    :alt:
+
+“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein
+
+.. poll:: TWP10
+   :scale: 3
+   :allowcomment:
+
+   En una escala del 1 (a mejorar) al 3 (excelente), 
+   ¿cómo calificaría este capítulo?

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de NumPy</title>
+</head>
+<body>
+    <h3>Quiz: Pon a prueba tu conocimiento</h3>
+
+    <form id="quizForm">
+        <label for="q1">1. ¿Cuál es la forma correcta de importar NumPy?</label><br>
+        <input type="radio" id="q1a" name="q1" value="a"> <label for="q1a">import np as numpy</label><br>
+        <input type="radio" id="q1b" name="q1" value="b"> <label for="q1b">import numpy as np</label><br>
+        <input type="radio" id="q1c" name="q1" value="c"> <label for="q1c">import numpy</label><br>
+        
+        <br>
+        <label for="q2">2. ¿Cómo creas un array NumPy 1D con los elementos 1, 2, 3, 4, 5?</label><br>
+        <input type="radio" id="q2a" name="q2" value="a"> <label for="q2a">arr = np.array([1, 2, 3, 4, 5])</label><br>
+        <input type="radio" id="q2b" name="q2" value="b"> <label for="q2b">arr = np.array(1, 2, 3, 4, 5)</label><br>
+        <input type="radio" id="q2c" name="q2" value="c"> <label for="q2c">arr = np.array((1, 2, 3, 4, 5))</label><br>
+
+        <br>
+        <label for="q3">3. ¿Qué función se utiliza para calcular la suma de todos los elementos en un array NumPy?</label><br>
+        <input type="radio" id="q3a" name="q3" value="a"> <label for="q3a">np.sum()</label><br>
+        <input type="radio" id="q3b" name="q3" value="b"> <label for="q3b">np.add()</label><br>
+        <input type="radio" id="q3c" name="q3" value="c"> <label for="q3c">np.total()</label><br>
+        
+        <br>
+        <button type="button" onclick="checkAnswers()">Enviar</button>
+    </form>
+
+    <p id="quizResult"></p>
+
+    <script>
+        function checkAnswers() {
+            var correctAnswers = 0;
+            var q1 = document.querySelector('input[name="q1"]:checked');
+            var q2 = document.querySelector('input[name="q2"]:checked');
+            var q3 = document.querySelector('input[name="q3"]:checked');
+            var results = [];
+
+            if (q1 && q1.value == 'b') {
+                correctAnswers++;
+                results.push("Q1: Correcto");
+            } else if (q1) {
+                results.push("Q1: Incorrecto");
+            }
+
+            if (q2 && q2.value == 'a') {
+                correctAnswers++;
+                results.push("Q2: Correcto");
+            } else if (q2) {
+                results.push("Q2: Incorrecto");
+            }
+
+            if (q3 && q3.value == 'a') {
+                correctAnswers++;
+                results.push("Q3: Correcto");
+            } else if (q3) {
+                results.push("Q3: Incorrecto");
+            }
+
+            var resultText = "Obtuviste " + correctAnswers + " de 3 correctas.<br>";
+            resultText += results.join("<br>");
+            document.getElementById("quizResult").innerHTML = resultText;
+        }
+    </script>
+</body>
+</html>

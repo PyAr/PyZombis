@@ -1,0 +1,59 @@
+===================================
+NumPy: Temas Avanzados y Ejercicios
+===================================
+
+Overview
+--------
+En esta conferencia, profundizaremos en NumPy, explorando temas avanzados y proporcionando ejercicios para reforzar tu comprensión.
+
+Parte 1: Operaciones Avanzadas en NumPy
+---------------------------------------
+
+Broadcasting
+~~~~~~~~~~~~
+La transmisión (broadcasting) en NumPy permite que funciones universales trabajen con arrays de diferentes formas. Por ejemplo:
+
+.. activecode:: ac_l66_es_2a
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   import numpy as np
+
+   a = np.array([1, 2, 3])
+   b = np.array([10, 20, 30])
+   c = a[:, np.newaxis] + b
+   print(c)
+
+Ejercicio 1: Broadcasting
+~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Crea un array NumPy `x` de forma (3, 4) con enteros aleatorios.
+2. Crea un array NumPy `y` de forma (3, 1) con enteros aleatorios.
+3. Realiza broadcasting para sumar `y` a `x` elemento por elemento.
+
+Indexación y Segmentación
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Los arrays NumPy admiten potentes operaciones de indexación y segmentación:
+
+.. activecode:: ac_l66_es_2b
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   import numpy as np
+
+   arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+   slice = arr[:2, 1:]
+   print(slice)
+
+Ejercicio 2: Indexación y Segmentación
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Crea un array NumPy `z` de forma (5, 5) con enteros secuenciales comenzando desde 1.
+2. Extrae la submatriz 3x3 de la esquina inferior derecha utilizando segmentación.
+
+Conclusion
+----------
+En esta conferencia, hemos cubierto operaciones avanzadas en NumPy y ejercicios para reforzar tu aprendizaje. Practica estos conceptos para profundizar tu comprensión de los arrays NumPy y sus funcionalidades.
+
+.. note::
+   Asegúrate de tener NumPy instalado (`pip install numpy`) para ejecutar los ejemplos de código.
