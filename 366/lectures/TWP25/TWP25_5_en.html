@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5. Multiple Inheritance and What Object is It? &#8212; PyZombis pyscript_testing@02d6264</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
+    <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
+
+
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="../../_static/animationbase.js?v=A043C3A7"></script>
+    <script src="../../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../../_static/webglinteractive.js?v=2B768384"></script>
+    <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="../../_static/runtime.bundle.js?v=e9212b0c23d64327d840"></script>
+    <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
+    <script src="../../_static/runestone.bundle.js?v=b1b68110e1d2451692d0"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="General review 1" href="../TWP30/toctree_en.html" />
+    <link rel="prev" title="4. Other examples of OOP" href="TWP25_4_en.html" />
+
+
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+
+<script>
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'PyZombis';
+    eBookConfig.basecourse = 'PyZombis';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.enableCompareMe = eBookConfig.useRunestoneServices;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '5.8.1';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="/runestone/default/user/login" aria-label="Login"><img src="../../_static/img/logo_small.png" alt=""></a>
+        
+        <a class="navbar-brand" href="../../index.html" aria-label="index-page">
+          
+          PyZombis pyscript_testing@02d6264
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='../../genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/assignments/chooseAssignment.html'>Assignments</a></li>
+            <li><a href='/runestone/assignments/practice'>Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link"><a href='/runestone/admin/index'>Instructor's Page</a></li>
+            
+            <li><a href='/runestone/dashboard/studentreport'>Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()" />
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode" >Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=PyZombis&page=TWP25_5_en'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">4. </span>Other examples of OOP" data-toggle="tooltip">
+    <a href="TWP25_4_en.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - General review 1' data-toggle="tooltip" >              
+    <a href="../TWP30/toctree_en.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  document.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 4. Other examples of OOP' data-toggle="tooltip">
+  <a href="TWP25_4_en.html" aria-label="Previous - 4. Other examples of OOP">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - General review 1' data-toggle="tooltip" >
+    <a href="../TWP30/toctree_en.html" aria-label="Next - General review 1">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+
+<!-- Ad Serving for Runestone Campaign -->
+
+
+  
+  <div class="section" id="multiple-inheritance-and-what-object-is-it">
+<h1><span class="section-number">5. </span>Multiple Inheritance and What Object is It?<a class="headerlink" href="#multiple-inheritance-and-what-object-is-it" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Multiple inheritance is possible.</p></li>
+<li><p>There may be times when you want to check the type of an instance.</p></li>
+<li><p>Python has the <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> function.</p></li>
+<li><p>It allows you to check if an instance of a class is actually of a given class.</p></li>
+</ul>
+
+<div class="runestone" style="max-width: none;">
+    <div class="alert alert-warning cd_section" data-component="codelens" data-question_label="5.1">
+        <div class="pytutorVisualizer" id="cl_l25_5_en"
+           data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'>
+        </div>
+        <p class="runestone_caption"><span class="runestone_caption_text">Activity: CodeLens 5.1 (cl_l25_5_en)</span> </p>
+    </div>
+
+<script>
+var cl_l25_5_en_vis;
+
+if (allTraceData === undefined) {
+   var allTraceData = {};
+}
+
+allTraceData["cl_l25_5_en"] = {"code": "class Ethernet:\n    def __init__(self, name, mac_address):\n        self.name = name\n        self.mac_address = mac_address\n\n\nclass Wireless(Ethernet):\n    def __init__(self, name, mac_address):\n        Ethernet.__init__(self, name, mac_address)\n\n\nclass PCI:\n    def __init__(self, bus, manufacturer):\n        self.bus = bus\n        self.manufacturer = manufacturer\n\n\nclass USB:\n    def __init__(self, device):\n        self.device = device\n\n\nclass PCIEthernet(PCI, Ethernet):\n    def __init__(self, bus, manufacturer, name, mac_address):\n        PCI.__init__(self, bus, manufacturer)\n        Ethernet.__init__(self, name, mac_address)\n\n\nclass USBWireless(USB, Wireless):\n    def __init__(self, device, name, mac_address):\n        USB.__init__(self, device)\n        Wireless.__init__(self, name, mac_address)\n\n\nwlan0 = USBWireless(\"usb0\", \"wlan0\", \"00:33:44:55:66\")\neth0 = PCIEthernet(\"pci :0:0:1\", \"realtek\", \"eth0\", \"00:11:22:33:44\")\n\n\nprint(isinstance(wlan0, Ethernet))\nprint(isinstance(eth0, PCI))\nprint(isinstance(eth0, USB))", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1]}, "ordered_globals": ["Ethernet"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null]}, "stdout": ""}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3]}, "ordered_globals": ["Ethernet", "Wireless"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null]}, "stdout": ""}, {"line": 18, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5]}, "ordered_globals": ["Ethernet", "Wireless", "PCI"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null]}, "stdout": ""}, {"line": 23, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null]}, "stdout": ""}, {"line": 29, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null]}, "stdout": ""}, {"line": 35, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 30, "event": "call", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"13": ["INSTANCE", "USBWireless"], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 31, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"13": ["INSTANCE", "USBWireless"], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 19, "event": "call", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0"}, "ordered_varnames": ["self", "device"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f2"}], "heap": {"13": ["INSTANCE", "USBWireless"], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 20, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0"}, "ordered_varnames": ["self", "device"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f2"}], "heap": {"13": ["INSTANCE", "USBWireless"], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 20, "event": "return", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 2, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "__return__": null}, "ordered_varnames": ["self", "device", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f2"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 32, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 8, "event": "call", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f3"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f3"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 2, "event": "call", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f3"}, {"func_name": "__init__", "is_parent": false, "frame_id": 4, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f4"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f3"}, {"func_name": "__init__", "is_parent": false, "frame_id": 4, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f4"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f3"}, {"func_name": "__init__", "is_parent": false, "frame_id": 4, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f4"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["name", "wlan0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f3"}, {"func_name": "__init__", "is_parent": false, "frame_id": 4, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66", "__return__": null}, "ordered_varnames": ["self", "name", "mac_address", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f4"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 9, "event": "return", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66"}, "ordered_varnames": ["self", "device", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f1"}, {"func_name": "__init__", "is_parent": false, "frame_id": 3, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "name": "wlan0", "mac_address": "00:33:44:55:66", "__return__": null}, "ordered_varnames": ["self", "name", "mac_address", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f3"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 32, "event": "return", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 13], "device": "usb0", "name": "wlan0", "mac_address": "00:33:44:55:66", "__return__": null}, "ordered_varnames": ["self", "device", "name", "mac_address", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f1"}], "heap": {"13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null]}, "stdout": ""}, {"line": 36, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 24, "event": "call", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f5"}], "heap": {"14": ["INSTANCE", "PCIEthernet"], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 25, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f5"}], "heap": {"14": ["INSTANCE", "PCIEthernet"], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 13, "event": "call", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f5"}, {"func_name": "__init__", "is_parent": false, "frame_id": 6, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek"}, "ordered_varnames": ["self", "bus", "manufacturer"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f6"}], "heap": {"14": ["INSTANCE", "PCIEthernet"], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 14, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f5"}, {"func_name": "__init__", "is_parent": false, "frame_id": 6, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek"}, "ordered_varnames": ["self", "bus", "manufacturer"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f6"}], "heap": {"14": ["INSTANCE", "PCIEthernet"], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 15, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f5"}, {"func_name": "__init__", "is_parent": false, "frame_id": 6, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek"}, "ordered_varnames": ["self", "bus", "manufacturer"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f6"}], "heap": {"14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 15, "event": "return", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f5"}, {"func_name": "__init__", "is_parent": false, "frame_id": 6, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "__return__": null}, "ordered_varnames": ["self", "bus", "manufacturer", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f6"}], "heap": {"14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["manufacturer", "realtek"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 26, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f5"}], "heap": {"14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["manufacturer", "realtek"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 2, "event": "call", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f5"}, {"func_name": "__init__", "is_parent": false, "frame_id": 7, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f7"}], "heap": {"14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["manufacturer", "realtek"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f5"}, {"func_name": "__init__", "is_parent": false, "frame_id": 7, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f7"}], "heap": {"14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["manufacturer", "realtek"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f5"}, {"func_name": "__init__", "is_parent": false, "frame_id": 7, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "name", "mac_address"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f7"}], "heap": {"14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["manufacturer", "realtek"], ["name", "eth0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44"}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address"], "is_zombie": false, "is_highlighted": false, "unique_hash": "__init___f5"}, {"func_name": "__init__", "is_parent": false, "frame_id": 7, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "name": "eth0", "mac_address": "00:11:22:33:44", "__return__": null}, "ordered_varnames": ["self", "name", "mac_address", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f7"}], "heap": {"14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["mac_address", "00:11:22:33:44"], ["manufacturer", "realtek"], ["name", "eth0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 26, "event": "return", "func_name": "__init__", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0"], "stack_to_render": [{"func_name": "__init__", "is_parent": false, "frame_id": 5, "parent_frame_id_list": [], "encoded_locals": {"self": ["REF", 14], "bus": "pci :0:0:1", "manufacturer": "realtek", "name": "eth0", "mac_address": "00:11:22:33:44", "__return__": null}, "ordered_varnames": ["self", "bus", "manufacturer", "name", "mac_address", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "__init___f5"}], "heap": {"14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["mac_address", "00:11:22:33:44"], ["manufacturer", "realtek"], ["name", "eth0"]], "1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]]}, "stdout": ""}, {"line": 39, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13], "eth0": ["REF", 14]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0", "eth0"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]], "14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["mac_address", "00:11:22:33:44"], ["manufacturer", "realtek"], ["name", "eth0"]]}, "stdout": ""}, {"line": 40, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13], "eth0": ["REF", 14]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0", "eth0"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]], "14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["mac_address", "00:11:22:33:44"], ["manufacturer", "realtek"], ["name", "eth0"]]}, "stdout": "True\n"}, {"line": 41, "event": "step_line", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13], "eth0": ["REF", 14]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0", "eth0"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]], "14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["mac_address", "00:11:22:33:44"], ["manufacturer", "realtek"], ["name", "eth0"]]}, "stdout": "True\nTrue\n"}, {"line": 41, "event": "return", "func_name": "<module>", "globals": {"Ethernet": ["REF", 1], "Wireless": ["REF", 3], "PCI": ["REF", 5], "USB": ["REF", 7], "PCIEthernet": ["REF", 9], "USBWireless": ["REF", 11], "wlan0": ["REF", 13], "eth0": ["REF", 14]}, "ordered_globals": ["Ethernet", "Wireless", "PCI", "USB", "PCIEthernet", "USBWireless", "wlan0", "eth0"], "stack_to_render": [], "heap": {"1": ["CLASS", "Ethernet", [], ["__init__", ["REF", 2]]], "2": ["FUNCTION", "__init__(self, name, mac_address)", null], "3": ["CLASS", "Wireless", ["Ethernet"], ["__init__", ["REF", 4]]], "4": ["FUNCTION", "__init__(self, name, mac_address)", null], "5": ["CLASS", "PCI", [], ["__init__", ["REF", 6]]], "6": ["FUNCTION", "__init__(self, bus, manufacturer)", null], "7": ["CLASS", "USB", [], ["__init__", ["REF", 8]]], "8": ["FUNCTION", "__init__(self, device)", null], "9": ["CLASS", "PCIEthernet", ["PCI", "Ethernet"], ["__init__", ["REF", 10]]], "10": ["FUNCTION", "__init__(self, bus, manufacturer, name, mac_address)", null], "11": ["CLASS", "USBWireless", ["USB", "Wireless"], ["__init__", ["REF", 12]]], "12": ["FUNCTION", "__init__(self, device, name, mac_address)", null], "13": ["INSTANCE", "USBWireless", ["device", "usb0"], ["mac_address", "00:33:44:55:66"], ["name", "wlan0"]], "14": ["INSTANCE", "PCIEthernet", ["bus", "pci :0:0:1"], ["mac_address", "00:11:22:33:44"], ["manufacturer", "realtek"], ["name", "eth0"]]}, "stdout": "True\nTrue\nFalse\n"}]};
+</script>
+</div>
+
+<div class="runestone">
+<ul data-component="poll" id=TWP25E data-comment class='alert alert-warning' data-results='instructor' data-question_label="5.2" >
+On a scale from 1 (needs improvement) to 3 (excellent),
+how would you rate this chapter?
+
+<li>1</li>
+
+<li>2</li>
+
+<li>3</li>
+</ul></div></div>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page <div id="subchapterprogress" aria-label="Page progress"></div>
+  </div>
+  
+    <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title='Previous Section - 4. Other examples of OOP' data-toggle="tooltip">
+  <a href="TWP25_4_en.html" aria-label="Previous - 4. Other examples of OOP">
+    <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title='Next Section - General review 1' data-toggle="tooltip" >
+    <a href="../TWP30/toctree_en.html" aria-label="Next - General review 1">
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      
+      <span id='numuserspan'></span><span class='loggedinuser'></span>
+      
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021 Python Argentina et al..
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.8.1.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> 
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch(); 
+  });
+</script>
+
+
+  </body>
+</html>
