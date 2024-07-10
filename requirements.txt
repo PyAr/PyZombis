@@ -1,4 +1,4 @@
-git+https://github.com/PyAr/RunestoneComponents.git@master#runestone
+git+https://github.com/its-ChaTTy/RunestoneComponents.git@pyscriptinteg#runestone
 pytest==6.2.4
 playwright==1.18.0
 pytest-playwright==0.1.1
