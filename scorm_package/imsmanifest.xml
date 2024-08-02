@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="com.example.scorm" version="1.2">
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+    </metadata>
+    <organizations default="ORG1">
+        <organization identifier="ORG1">
+            <title>SCORM Course</title>
+            <item identifier="ITEM1" identifierref="RES1">
+                <title>Lesson 1</title>
+            </item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="RES1" type="webcontent" href="index.html">
+            <file href="index.html"/>
+            <file href="scripts/scorm_functions.js"/>
+        </resource>
+    </resources>
+</manifest>
