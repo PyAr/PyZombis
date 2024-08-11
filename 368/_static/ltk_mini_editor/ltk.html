@@ -1,0 +1,113 @@
+<!-- working code with error handling -->
+
+<html lang="en">
+<head>
+    <title>LTK on MicroPython</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!-- Codemirror Interactive Editor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/python/python.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css" >
+
+
+</head>
+<body>
+    <script type="mpy" config='{
+    "files": {
+        "https://raw.githubusercontent.com/pyscript/ltk/main/ltk/jquery.py": "ltk/jquery.py",
+        "https://raw.githubusercontent.com/pyscript/ltk/main/ltk/widgets.py": "ltk/widgets.py",
+        "https://raw.githubusercontent.com/pyscript/ltk/main/ltk/pubsub.py": "ltk/pubsub.py",
+        "https://raw.githubusercontent.com/pyscript/ltk/main/ltk/__init__.py": "ltk/__init__.py",
+        "https://raw.githubusercontent.com/pyscript/ltk/main/ltk/logger.py": "ltk/logger.py",
+        "https://raw.githubusercontent.com/pyscript/ltk/main/ltk/ltk.js": "ltk/ltk.js",
+        "https://raw.githubusercontent.com/pyscript/ltk/main/ltk/ltk.css": "ltk/ltk.css"
+    }
+    }'>
+    import ltk
+
+    class Editor(ltk.Div):
+        classes = [ "editor" ]
+
+        def __init__(self, value):
+            ltk.Div.__init__(self)
+            self.create(value)
+            ltk.schedule(lambda: self.editor.refresh(value), "Refresh after load")
+
+        def create(self, value):
+            config = ltk.to_js({
+                "mode": {
+                    "name": "python",
+                    "version": 3,
+                    "singleLineStringErrors": False
+                },
+                "lineNumbers": True,
+                "indentUnit": 4,
+                "matchBrackets": True,
+            })
+            self.editor = ltk.window.CodeMirror(self.element[0], config)
+            self.editor.setSize("100%", "100%")
+            self.text(value)
+
+        def text(self, text=None):
+            return self.editor.setValue(text) if text is not None else self.editor.getValue()
+
+    source = """   
+    ltk.VBox(
+        ltk.Span("Change me!")
+            .css("padding", 10),
+        
+        ltk.Button("Hello World", lambda event: ltk.window.alert("Hello World!"))
+            .css("margin", 10),
+        
+        ltk.Span("Delete me!")
+            .css("padding", 10) 
+            
+    )
+    """.strip()
+
+
+    editor = Editor(source)
+
+    def show_output():
+        try:
+            text = editor.text()
+            ui = eval(text)
+            ltk.find("#editor-output").empty().append(ui.element)
+        except Exception as e:
+            pass  # Silently catch and ignore any errors
+
+    ltk.schedule(ltk.proxy(lambda: show_output()), "show output", 1)
+
+
+    (
+        ltk.VBox(
+            ltk.Div()
+                .css("border", "1px solid gray")
+                .css("height", 405)
+                .attr("id", "editor-output"),
+            ltk.Text("Edit the text below and see the changes in real-time above."),
+            editor
+                .on("keyup", ltk.proxy(lambda event: show_output()))
+                .css("border", "1px solid gray")
+                .css("height", 405)
+                .attr("id", "editor"),
+        )
+        .css("width", 900)
+        .css("font-size", 14)
+        .attr("name", "Editor")
+        .appendTo(ltk.window.document.body)
+    )
+
+    </script>
+  
+</body>
+</html>
