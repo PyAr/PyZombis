@@ -50,7 +50,7 @@ Creación de Arrays
 
     # Crear un array 2D
     arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
-    print("Array 2D:\n", arr_2d)
+    print("Array 2D:", arr_2d)
 
 Operaciones con Arrays
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -90,7 +90,7 @@ Manipulación de Forma
 
     # Reformatear el array a 2x3
     arr_reformateado = np.reshape(arr, (2, 3))
-    print("Array Reformateado:\n", arr_reformateado)
+    print("Array Reformateado:", arr_reformateado)
 
 **Aplanamiento de Arrays**::
 

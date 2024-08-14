@@ -1,129 +1,73 @@
-===============
-Power of Pandas
-===============
+=========================
+Advanced NumPy Operations
+=========================
 
 Introduction
 ------------
-This lecture focuses on Pandas, a powerful Python library for data manipulation and analysis. We'll explore its capabilities in handling structured data effectively.
+In this exercise, we will use Python to explore the use of the NumPy and Matplotlib libraries.
 
-Understanding Pandas Basics
----------------------------
-Pandas provides data structures like Series and DataFrame. It is built on top of NumPy, making it easy to work with structured data.
+Code Example
+------------
+We will use the NumPy library to define the domain and range of a function, and Matplotlib to plot the results.
 
-.. code-block:: python
-   :caption: Importing Pandas and Loading Dummy Data
-
-   import pandas as pd
-
-   # Dummy data
-   data = {
-       'Name': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
-       'Age': [28, 23, 25, 24, 30],
-       'City': ['New York', 'Paris', 'Berlin', 'London', 'Tokyo']
-   }
-
-   # Creating a DataFrame
-   df = pd.DataFrame(data)
-
-   # Displaying the DataFrame
-   print(df)
-
-Exploratory Data Analysis (EDA) with Pandas
--------------------------------------------
-Check data dimensions and examine its structure:
+**Define the Domain and Range**
 
 .. code-block:: python
-   :caption: Checking Data Dimensions and Info
 
-   # Shape of the DataFrame
-   print(df.shape)
-   
-   # Information about the DataFrame
-   print(df.info())
+    import numpy as np
 
-Data Cleaning and Transformation
---------------------------------
-Rename columns, handle missing data, and convert data types:
+    # Define the DOMAIN of a FUNCTION
+    N = 55
+    X = np.linspace(-5, 5, N)  # -5 lower limit, 5 upper limit, N number of points to generate
+    # Display the values
+    print(X)
 
-.. code-block:: python
-   :caption: Cleaning and Transforming Data
+    # Calculate the RANGE of a FUNCTION
+    Y = np.sin(X)
+    # Display the calculated values
+    print(Y)
 
-   # Rename columns
-   df.rename(columns={'Name': 'Full Name', 'City': 'Location'}, inplace=True)
-   
-   # Handle missing data (not applicable for this dummy data)
-   
-   # Convert data types (not necessary for this dummy data)
-
-Data Manipulation and Aggregation
----------------------------------
-Select, filter, group, and aggregate data:
+**Plot the Values**
 
 .. code-block:: python
-   :caption: Data Manipulation and Aggregation
 
-   # Selecting columns
-   print(df[['Name', 'Age']])
-   
-   # Filtering data
-   filtered_data = df[df['Age'] > 25]
-   print(filtered_data)
-   
-   # Grouping and aggregating data
-   age_group_stats = df.groupby('Age').size()
-   print(age_group_stats)
+    from matplotlib import pyplot as plt
 
-Data Visualization with Pandas and Matplotlib
-----------------------------------------------
-Utilize Matplotlib for visualizations:
+    # Plot the values of X and Y with red circles
+    plt.plot(X, Y, 'ro')
+    plt.grid(True)
 
-.. code-block:: python
-   :caption: Data Visualization
+    # Plot the values of X and Y with blue lines
+    plt.plot(X, Y, 'b-')
+    plt.grid(True)
 
-   import matplotlib.pyplot as plt
-
-   # Plotting example
-   df['Age'].plot(kind='hist', bins=5)
-   plt.title('Age Distribution')
-   plt.xlabel('Age')
-   plt.ylabel('Frequency')
-   plt.show()
-
-Interactive Example
---------------------
-Here's an interactive example where you can filter the DataFrame based on age and visualize the results:
+    # Display the plot
+    diplay(plt)
 
 .. note:: 
-    We are using PyScript to run Pandas in the browser. Use `plt.show()` instead of `display()` for displaying results.
+   use `plt.show()` instead of `display(plt)` if recreating on local machine.
+   
+**Interactive Code Editor**
 
-.. activecode:: ac_l66_3a
+To experiment with the code interactively, use the provided interactive code blocks below. Run all the code blocks to see the results and explore different functionalities.
+
+.. activecode:: ac_l66_1a
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript
 
-   import pandas as pd
+   import numpy as np
    import matplotlib.pyplot as plt
 
-   # Dummy data
-   data = {
-       'Name': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
-       'Age': [28, 23, 25, 24, 30],
-       'City': ['New York', 'Paris', 'Berlin', 'London', 'Tokyo']
-   }
+   # Define the domain
+   N = 55
+   X = np.linspace(-5, 5, N)
+   Y = np.sin(X)
 
-   # Create DataFrame
-   df = pd.DataFrame(data)
-
-   # Filter DataFrame by age
-   filtered_df = df[df['Age'] > 25]
-
-   # Plotting filtered data
-   filtered_df.plot(kind='bar', x='Name', y='Age', color='skyblue')
-   plt.title('Age Distribution for Individuals Older than 25')
-   plt.xlabel('Name')
-   plt.ylabel('Age')
+   # Plotting the values
+   plt.plot(X, Y, 'b-')
+   plt.grid(True)
    display(plt)
 
-Exercise
---------
-Write code to calculate the average age of the individuals in the DataFrame.
+.. note::
+    Ensure you run all the code blocks provided to see the complete results and understand the functionalities demonstrated.

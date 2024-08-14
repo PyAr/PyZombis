@@ -1,59 +1,132 @@
-===================================
-NumPy: Temas Avanzados y Ejercicios
-===================================
+=====================
+Introducción a Pandas
+=====================
 
-Overview
---------
-En esta conferencia, profundizaremos en NumPy, explorando temas avanzados y proporcionando ejercicios para reforzar tu comprensión.
+Introduction
+------------
+Esta conferencia se centra en Pandas, una poderosa biblioteca de Python para manipulación y análisis de datos. Exploraremos sus capacidades en el manejo efectivo de datos estructurados.
 
-Parte 1: Operaciones Avanzadas en NumPy
----------------------------------------
+Understanding Pandas Basics
+---------------------------
+Pandas proporciona estructuras de datos como Series y DataFrame. Está construido sobre NumPy, lo que facilita trabajar con datos estructurados.
 
-Broadcasting
-~~~~~~~~~~~~
-La transmisión (broadcasting) en NumPy permite que funciones universales trabajen con arrays de diferentes formas. Por ejemplo:
+.. code-block:: python
+   :caption: Importando Pandas y Cargando Datos Ficticios
 
-.. activecode:: ac_l66_es_2a
+   import pandas as pd
+
+   # Datos ficticios
+   data = {
+       'Nombre': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+       'Edad': [28, 23, 25, 24, 30],
+       'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
+   }
+
+   # Creando un DataFrame
+   df = pd.DataFrame(data)
+
+   # Mostrando el DataFrame
+   print(df)
+
+Análisis Exploratorio de Datos (EDA) con Pandas
+-----------------------------------------------
+Verifica las dimensiones de los datos y examina su estructura:
+
+.. code-block:: python
+   :caption: Verificando Dimensiones de los Datos e Información
+
+   # Forma del DataFrame
+   print(df.shape)
+   
+   # Información sobre el DataFrame
+   print(df.info())
+
+Limpieza y Transformación de Datos
+----------------------------------
+Renombra columnas, maneja datos faltantes y convierte tipos de datos:
+
+.. code-block:: python
+   :caption: Limpieza y Transformación de Datos
+
+   # Renombrando columnas
+   df.rename(columns={'Nombre': 'Nombre Completo', 'Ciudad': 'Ubicación'}, inplace=True)
+   
+   # Manejo de datos faltantes (no aplicable para estos datos ficticios)
+   
+   # Conversión de tipos de datos (no necesario para estos datos ficticios)
+
+Manipulación y Agregación de Datos
+----------------------------------
+Selecciona, filtra, agrupa y agrega datos:
+
+.. code-block:: python
+   :caption: Manipulación y Agregación de Datos
+
+   # Seleccionando columnas
+   print(df[['Nombre', 'Edad']])
+   
+   # Filtrando datos
+   datos_filtrados = df[df['Edad'] > 25]
+   print(datos_filtrados)
+   
+   # Agrupando y agregando datos
+   estadisticas_grupo_edad = df.groupby('Edad').size()
+   print(estadisticas_grupo_edad)
+
+Visualización de Datos con Pandas y Matplotlib
+----------------------------------------------
+Utiliza Matplotlib para visualizaciones:
+
+.. code-block:: python
+   :caption: Visualización de Datos
+
+   import matplotlib.pyplot as plt
+
+   # Ejemplo de gráfico
+   df['Edad'].plot(kind='hist', bins=5)
+   plt.title('Distribución de Edades')
+   plt.xlabel('Edad')
+   plt.ylabel('Frecuencia')
+   display(plt)
+
+.. note:: 
+   use `plt.show()` en lugar de `display(plt)` si lo recrea en su máquina local.
+
+
+Ejemplo Interactivo
+-------------------
+Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame por edad y visualizar los resultados:
+
+.. note:: 
+
+.. activecode:: ac_l66_2_1es
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript
 
-   import numpy as np
+   import pandas as pd
+   import matplotlib.pyplot as plt
 
-   a = np.array([1, 2, 3])
-   b = np.array([10, 20, 30])
-   c = a[:, np.newaxis] + b
-   print(c)
+   # Datos ficticios
+   data = {
+       'Nombre': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+       'Edad': [28, 23, 25, 24, 30],
+       'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
+   }
 
-Ejercicio 1: Broadcasting
-~~~~~~~~~~~~~~~~~~~~~~~~~
-1. Crea un array NumPy `x` de forma (3, 4) con enteros aleatorios.
-2. Crea un array NumPy `y` de forma (3, 1) con enteros aleatorios.
-3. Realiza broadcasting para sumar `y` a `x` elemento por elemento.
+   # Crear DataFrame
+   df = pd.DataFrame(data)
 
-Indexación y Segmentación
-~~~~~~~~~~~~~~~~~~~~~~~~~
-Los arrays NumPy admiten potentes operaciones de indexación y segmentación:
+   # Filtrar DataFrame por edad
+   df_filtrado = df[df['Edad'] > 25]
 
-.. activecode:: ac_l66_es_2b
-   :nocodelens:
-   :language: python3
-   :python3_interpreter: pyscript
+   # Graficar datos filtrados
+   df_filtrado.plot(kind='bar', x='Nombre', y='Edad', color='skyblue')
+   plt.title('Distribución de Edades para Individuos Mayores de 25 Años')
+   plt.xlabel('Nombre')
+   plt.ylabel('Edad')
+   display(plt)
 
-   import numpy as np
-
-   arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-   slice = arr[:2, 1:]
-   print(slice)
-
-Ejercicio 2: Indexación y Segmentación
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1. Crea un array NumPy `z` de forma (5, 5) con enteros secuenciales comenzando desde 1.
-2. Extrae la submatriz 3x3 de la esquina inferior derecha utilizando segmentación.
-
-Conclusion
-----------
-En esta conferencia, hemos cubierto operaciones avanzadas en NumPy y ejercicios para reforzar tu aprendizaje. Practica estos conceptos para profundizar tu comprensión de los arrays NumPy y sus funcionalidades.
-
-.. note::
-   Asegúrate de tener NumPy instalado (`pip install numpy`) para ejecutar los ejemplos de código.
+Ejercicio
+---------
+Escribe código para calcular la edad promedio de las personas en el DataFrame.
