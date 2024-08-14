@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Introduction to NumPy &#8212; PyZombis numpy_pandas@b9cb011</title>
+    <title>1. Introduction to NumPy &#8212; PyZombis numpy_pandas@57640b0</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
-    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
 
@@ -21,17 +21,17 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
+    <script src="../../_static/runtime.bundle.js?v=daab993c1563e629a69d"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. NumPy: Advanced Topics and Exercises" href="TWP66_2_en.html" />
+    <link rel="next" title="2. Introduction to Pandas" href="TWP66_2_en.html" />
     <link rel="prev" title="Data Manipulation" href="toctree_en.html" />
 
 
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis numpy_pandas@b9cb011
+          PyZombis numpy_pandas@57640b0
         </a>
       </div>
     </div>
@@ -246,7 +246,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - <span class="section-number">2. </span>NumPy: Advanced Topics and Exercises' data-toggle="tooltip" >              
+  <li id="relations-next" title='Next Chapter - <span class="section-number">2. </span>Introduction to Pandas' data-toggle="tooltip" >              
     <a href="TWP66_2_en.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -286,8 +286,8 @@
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 2. NumPy: Advanced Topics and Exercises' data-toggle="tooltip" >
-    <a href="TWP66_2_en.html" aria-label="Next - 2. NumPy: Advanced Topics and Exercises">
+  <li id="relations-next" class="navLink" title='Next Section - 2. Introduction to Pandas' data-toggle="tooltip" >
+    <a href="TWP66_2_en.html" aria-label="Next - 2. Introduction to Pandas">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>
@@ -324,7 +324,7 @@ window.addEventListener('load', (event) => {
   
   <div class="section" id="introduction-to-numpy">
 <h1><span class="section-number">1. </span>Introduction to NumPy<a class="headerlink" href="#introduction-to-numpy" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../../_images/TWP66_001.png"><img alt="" class="align-center" src="../../_images/TWP66_001.png" style="width: 14.925cm; height: 9.258cm;" /></a>
+<img alt="" class="align-center" src="../../_images/TWP66_001.png" />
 <div class="section" id="introduction">
 <h2><span class="section-number">1.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>This comprehensive lecture focuses on mastering NumPy, one of the most popular libraries in Python for numerical computations. We will explore various functionalities of NumPy, understanding how to create and manipulate arrays to effectively perform numerical operations.</p>
@@ -374,7 +374,7 @@ window.addEventListener('load', (event) => {
 
 <span class="c1"># Create a 2D array</span>
 <span class="n">arr_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2D Array:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">arr_2d</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2D Array:&quot;</span><span class="p">,</span> <span class="n">arr_2d</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -416,7 +416,7 @@ window.addEventListener('load', (event) => {
 
 <span class="c1"># Reshape the array to 2x3</span>
 <span class="n">reshaped_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reshaped Array:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">reshaped_arr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reshaped Array:&quot;</span><span class="p">,</span> <span class="n">reshaped_arr</span><span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Flattening Arrays</strong>:</p>
@@ -432,13 +432,8 @@ window.addEventListener('load', (event) => {
 </div>
 </div>
 </div>
-<div class="section" id="conclusion">
-<h2><span class="section-number">1.3. </span>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
-<p>NumPy is essential for numerical computations in Python. Understanding the basics of array creation and manipulation is crucial for data science and machine learning.</p>
-<p>Make sure to explore the NumPy documentation for more advanced features and functionalities.</p>
-</div>
 <div class="section" id="quiz">
-<h2><span class="section-number">1.4. </span>Quiz<a class="headerlink" href="#quiz" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.3. </span>Quiz<a class="headerlink" href="#quiz" title="Permalink to this headline">¶</a></h2>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -524,8 +519,8 @@ window.addEventListener('load', (event) => {
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 2. NumPy: Advanced Topics and Exercises' data-toggle="tooltip" >
-    <a href="TWP66_2_en.html" aria-label="Next - 2. NumPy: Advanced Topics and Exercises">
+  <li id="relations-next" class="navLink" title='Next Section - 2. Introduction to Pandas' data-toggle="tooltip" >
+    <a href="TWP66_2_en.html" aria-label="Next - 2. Introduction to Pandas">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>

@@ -3,8 +3,6 @@ Introduction to NumPy
 =====================
 
 .. image:: ../img/TWP66_001.png
-    :height: 9.258cm
-    :width: 14.925cm
     :align: center
     :alt:
 
@@ -50,7 +48,7 @@ Creating Arrays
 
     # Create a 2D array
     arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
-    print("2D Array:\n", arr_2d)
+    print("2D Array:", arr_2d)
 
 Array Operations
 ~~~~~~~~~~~~~~~~
@@ -90,7 +88,7 @@ Shape Manipulation
 
     # Reshape the array to 2x3
     reshaped_arr = np.reshape(arr, (2, 3))
-    print("Reshaped Array:\n", reshaped_arr)
+    print("Reshaped Array:", reshaped_arr)
 
 **Flattening Arrays**::
 
@@ -102,12 +100,6 @@ Shape Manipulation
     # Flatten the array
     flat_arr = arr_2d.flatten()
     print("Flattened Array:", flat_arr)
-
-Conclusion
-----------
-NumPy is essential for numerical computations in Python. Understanding the basics of array creation and manipulation is crucial for data science and machine learning.
-
-Make sure to explore the NumPy documentation for more advanced features and functionalities.
 
 Quiz
 ----

@@ -1,0 +1,136 @@
+==================
+SymPy con Gráficas
+==================
+
+Introducción
+------------
+En este ejercicio, utilizaremos la biblioteca SymPy de Python para crear y visualizar expresiones matemáticas utilizando gráficos en 2D y 3D.
+
+Ejemplo de Código: Gráficas 2D
+------------------------------
+Usaremos la biblioteca SymPy para definir expresiones simbólicas y visualizarlas utilizando gráficos en 2D.
+
+**Definir la Variable Simbólica**
+
+.. code-block:: python
+
+    from sympy import Symbol
+    from sympy.plotting import plot
+    
+    # Definir la variable simbólica
+    x = Symbol('x')
+    
+    # Mostrar la variable simbólica
+    print(x)
+
+**Graficar las Expresiones**
+
+.. code-block:: python
+
+    # Graficar la función cuadrática x^2 con un color personalizado
+    plot(x**2, line_color='fucsia')
+
+    # Graficar la función cuadrática x^2 con un código de color diferente
+    plot(x**2, line_color='#e30052')
+
+    # Graficar la función cuadrática x^2 con el color predeterminado
+    plot(x**2)
+
+    # Graficar las funciones seno y coseno en un intervalo específico
+    plot(sin(x), cos(x), (x, -pi, pi))
+
+    # Graficar múltiples funciones con diferentes intervalos y un título personalizado
+    plot((sin(x), (x, -2*pi, 2*pi)), (cos(x), (x, -pi, pi)), 
+         line_color='verde', title='Ejemplo de Gráfica con SymPy')
+
+.. note:: 
+   Usa estas gráficas para explorar el comportamiento de las funciones dentro de intervalos específicos.
+
+Ejemplo de Código: Gráficas 3D
+------------------------------
+También podemos crear gráficos de superficies 3D utilizando SymPy.
+
+**Gráfico de Superficie 3D**
+
+.. code-block:: python
+
+    from sympy.plotting import plot3d
+    from sympy import Symbol
+
+    # Definir variables simbólicas para gráficos 3D
+    x = Symbol('x')
+    y = Symbol('y')
+
+    # Mostrar las variables simbólicas
+    print(x, y)
+
+    # Graficar una superficie 3D para la expresión x * y
+    plot3d(x * y, (x, -10, 10), (y, -10, 10))
+
+    # Graficar múltiples superficies 3D
+    plot3d(x * y, x / y, (x, -5, 5), (y, -5, 5))
+
+    # Graficar superficies con expresiones más complejas
+    plot3d((x**2 + y**2, (x, -5, 5), (y, -5, 5)), 
+           (x * y, (x, -3, 3), (y, -3, 3)))
+
+**Gráficas Paramétricas 3D**
+
+.. code-block:: python
+
+    from sympy.plotting import plot3d_parametric_line
+    from sympy import cos, sin
+
+    # Graficar una línea paramétrica 3D
+    plot3d_parametric_line(cos(x), sin(x), x, (x, -5, 5))
+
+    # Graficar una superficie paramétrica 3D
+    from sympy.plotting import plot3d_parametric_surface
+    u, v = symbols('u v')
+    plot3d_parametric_surface(cos(u + v), sin(u - v), u - v, 
+                              (u, -5, 5), (v, -5, 5))
+
+**Gráficas Implícitas**
+
+.. code-block:: python
+
+    from sympy import plot_implicit, Eq, And
+    from sympy import symbols
+    
+    # Definir las variables simbólicas
+    x, y = symbols('x y')
+    
+    # Graficar una ecuación implícita
+    p1 = plot_implicit(Eq(x**2 + y**2, 5), 
+                       (x, -5, 5), (y, -2, 2), 
+                       adaptive=False, points=400)
+
+    # Graficar una región definida por una desigualdad
+    p2 = plot_implicit(y > x**2)
+
+    # Graficar utilizando conjunciones booleanas
+    p3 = plot_implicit(And(y > x, y > -x))
+
+.. note:: 
+   Experimenta con estas gráficas para entender cómo SymPy maneja las matemáticas simbólicas y la visualización.
+
+Editor de Código Interactivo
+----------------------------
+Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivos proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.
+
+.. activecode:: ac_l66_5_1
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   from sympy import Symbol, sin, cos, pi
+   from sympy.plotting import plot
+
+   # Definir la variable simbólica
+   x = Symbol('x')
+
+   # Graficar las funciones seno y coseno
+   plot(sin(x), cos(x), (x, -pi, pi))
+
+.. note::
+    Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.

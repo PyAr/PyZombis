@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. El Poder de Pandas &#8212; PyZombis numpy_pandas@b9cb011</title>
+    <title>3. Operaciones Avanzadas de NumPy &#8212; PyZombis numpy_pandas@57640b0</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
-    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
 
@@ -21,18 +21,18 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
+    <script src="../../_static/runtime.bundle.js?v=daab993c1563e629a69d"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Quiz - 1" href="../../quiz/Quiz1.html" />
-    <link rel="prev" title="2. NumPy: Temas Avanzados y Ejercicios" href="TWP66_2.html" />
+    <link rel="next" title="4. Explorando Más a Fondo las Bibliotecas de Python" href="TWP66_4.html" />
+    <link rel="prev" title="2. Introducción a Pandas" href="TWP66_2.html" />
 
 
 <link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis numpy_pandas@b9cb011
+          PyZombis numpy_pandas@57640b0
         </a>
       </div>
     </div>
@@ -240,14 +240,14 @@
         
         <!-- 
           
-  <li id="relations-prev" title="Previous Chapter - <span class="section-number">2. </span>NumPy: Temas Avanzados y Ejercicios" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">2. </span>Introducción a Pandas" data-toggle="tooltip">
     <a href="TWP66_2.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Quiz - 1' data-toggle="tooltip" >              
-    <a href="../../quiz/Quiz1.html" >
+  <li id="relations-next" title='Next Chapter - <span class="section-number">4. </span>Explorando Más a Fondo las Bibliotecas de Python' data-toggle="tooltip" >              
+    <a href="TWP66_4.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -280,14 +280,14 @@
 
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
-<li id="relations-prev" class="navLink" title='Previous Section - 2. NumPy: Temas Avanzados y Ejercicios' data-toggle="tooltip">
-  <a href="TWP66_2.html" aria-label="Previous - 2. NumPy: Temas Avanzados y Ejercicios">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. Introducción a Pandas' data-toggle="tooltip">
+  <a href="TWP66_2.html" aria-label="Previous - 2. Introducción a Pandas">
     <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - Quiz - 1' data-toggle="tooltip" >
-    <a href="../../quiz/Quiz1.html" aria-label="Next - Quiz - 1">
+  <li id="relations-next" class="navLink" title='Next Section - 4. Explorando Más a Fondo las Bibliotecas de Python' data-toggle="tooltip" >
+    <a href="TWP66_4.html" aria-label="Next - 4. Explorando Más a Fondo las Bibliotecas de Python">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>
@@ -322,147 +322,81 @@ window.addEventListener('load', (event) => {
 
 
   
-  <div class="section" id="el-poder-de-pandas">
-<h1><span class="section-number">3. </span>El Poder de Pandas<a class="headerlink" href="#el-poder-de-pandas" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2><span class="section-number">3.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Esta conferencia se centra en Pandas, una poderosa biblioteca de Python para manipulación y análisis de datos. Exploraremos sus capacidades en el manejo efectivo de datos estructurados.</p>
+  <div class="section" id="operaciones-avanzadas-de-numpy">
+<h1><span class="section-number">3. </span>Operaciones Avanzadas de NumPy<a class="headerlink" href="#operaciones-avanzadas-de-numpy" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduccion">
+<h2><span class="section-number">3.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h2>
+<p>En este ejercicio, utilizaremos Python para explorar el uso de las bibliotecas NumPy y Matplotlib.</p>
 </div>
-<div class="section" id="understanding-pandas-basics">
-<h2><span class="section-number">3.2. </span>Understanding Pandas Basics<a class="headerlink" href="#understanding-pandas-basics" title="Permalink to this headline">¶</a></h2>
-<p>Pandas proporciona estructuras de datos como Series y DataFrame. Está construido sobre NumPy, lo que facilita trabajar con datos estructurados.</p>
-<div class="literal-block-wrapper docutils container" id="id1">
-<div class="code-block-caption"><span class="caption-text">Importando Pandas y Cargando Datos Ficticios</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="section" id="ejemplo-de-codigo">
+<h2><span class="section-number">3.2. </span>Ejemplo de Código<a class="headerlink" href="#ejemplo-de-codigo" title="Permalink to this headline">¶</a></h2>
+<p>Usaremos la biblioteca NumPy para definir el dominio y el rango de una función, y Matplotlib para graficar los resultados.</p>
+<p><strong>Definir el Dominio y Rango</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Datos ficticios</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Nombre&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Anna&#39;</span><span class="p">,</span> <span class="s1">&#39;Peter&#39;</span><span class="p">,</span> <span class="s1">&#39;Linda&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;Edad&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
-    <span class="s1">&#39;Ciudad&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Nueva York&#39;</span><span class="p">,</span> <span class="s1">&#39;París&#39;</span><span class="p">,</span> <span class="s1">&#39;Berlín&#39;</span><span class="p">,</span> <span class="s1">&#39;Londres&#39;</span><span class="p">,</span> <span class="s1">&#39;Tokio&#39;</span><span class="p">]</span>
-<span class="p">}</span>
+<span class="c1"># Definir el DOMINIO de una FUNCIÓN</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">55</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>  <span class="c1"># -5 límite inferior, 5 límite superior, N número de puntos a generar</span>
+<span class="c1"># Mostrar los valores</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
-<span class="c1"># Creando un DataFrame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-
-<span class="c1"># Mostrando el DataFrame</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="c1"># Calcular el RANGO de una FUNCIÓN</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="c1"># Mostrar los valores calculados</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="analisis-exploratorio-de-datos-eda-con-pandas">
-<h2><span class="section-number">3.3. </span>Análisis Exploratorio de Datos (EDA) con Pandas<a class="headerlink" href="#analisis-exploratorio-de-datos-eda-con-pandas" title="Permalink to this headline">¶</a></h2>
-<p>Verifica las dimensiones de los datos y examina su estructura:</p>
-<div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">Verificando Dimensiones de los Datos e Información</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Forma del DataFrame</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<p><strong>Graficar los Valores</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
-<span class="c1"># Información sobre el DataFrame</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+<span class="c1"># Graficar los valores de X e Y con círculos rojos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Graficar los valores de X e Y con líneas azules</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="s1">&#39;b-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Mostrar la gráfica</span>
+<span class="n">diplay</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="limpieza-y-transformacion-de-datos">
-<h2><span class="section-number">3.4. </span>Limpieza y Transformación de Datos<a class="headerlink" href="#limpieza-y-transformacion-de-datos" title="Permalink to this headline">¶</a></h2>
-<p>Renombra columnas, maneja datos faltantes y convierte tipos de datos:</p>
-<div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">Limpieza y Transformación de Datos</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Renombrando columnas</span>
-<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Nombre&#39;</span><span class="p">:</span> <span class="s1">&#39;Nombre Completo&#39;</span><span class="p">,</span> <span class="s1">&#39;Ciudad&#39;</span><span class="p">:</span> <span class="s1">&#39;Ubicación&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="c1"># Manejo de datos faltantes (no aplicable para estos datos ficticios)</span>
-
-<span class="c1"># Conversión de tipos de datos (no necesario para estos datos ficticios)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="manipulacion-y-agregacion-de-datos">
-<h2><span class="section-number">3.5. </span>Manipulación y Agregación de Datos<a class="headerlink" href="#manipulacion-y-agregacion-de-datos" title="Permalink to this headline">¶</a></h2>
-<p>Selecciona, filtra, agrupa y agrega datos:</p>
-<div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">Manipulación y Agregación de Datos</span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Seleccionando columnas</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Nombre&#39;</span><span class="p">,</span> <span class="s1">&#39;Edad&#39;</span><span class="p">]])</span>
-
-<span class="c1"># Filtrando datos</span>
-<span class="n">datos_filtrados</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">datos_filtrados</span><span class="p">)</span>
-
-<span class="c1"># Agrupando y agregando datos</span>
-<span class="n">estadisticas_grupo_edad</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Edad&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">estadisticas_grupo_edad</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="visualizacion-de-datos-con-pandas-y-matplotlib">
-<h2><span class="section-number">3.6. </span>Visualización de Datos con Pandas y Matplotlib<a class="headerlink" href="#visualizacion-de-datos-con-pandas-y-matplotlib" title="Permalink to this headline">¶</a></h2>
-<p>Utiliza Matplotlib para visualizaciones:</p>
-<div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">Visualización de Datos</span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="c1"># Ejemplo de gráfico</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;hist&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Edades&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Edad&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frecuencia&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="ejemplo-interactivo">
-<h2><span class="section-number">3.7. </span>Ejemplo Interactivo<a class="headerlink" href="#ejemplo-interactivo" title="Permalink to this headline">¶</a></h2>
-<p>Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame por edad y visualizar los resultados:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Estamos usando PyScript para ejecutar Pandas en el navegador. Utiliza <cite>plt.show()</cite> en lugar de <cite>display()</cite> para mostrar los resultados.</p>
+<p>utiliza <cite>plt.show()</cite> en lugar de <cite>display(plt)</cite> si estás recreando esto en una máquina local.</p>
 </div>
+<p><strong>Editor de Código Interactivo</strong></p>
+<p>Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivos proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l66_es_3a data-question_label="3.7.1">
-<div id=ac_l66_es_3a_question class="ac_question col-md-12">
+<div data-component="activecode" id=ac_l66_3_1 data-question_label="3.2.1">
+<div id=ac_l66_3_1_question class="ac_question col-md-12">
 
 </div>
-<textarea data-lang="python3" id="ac_l66_es_3a_editor" 
+<textarea data-lang="python3" id="ac_l66_3_1_editor" 
       data-timelimit=25000     
     data-audio=''      
            data-wasm=/_static
      data-python3_interpreter='pyscript'  style="visibility: hidden;">
-import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 
-# Datos ficticios
-data = {
-    'Nombre': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
-    'Edad': [28, 23, 25, 24, 30],
-    'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
-}
+# Definir el dominio
+N = 55
+X = np.linspace(-5, 5, N)
+Y = np.sin(X)
 
-# Crear DataFrame
-df = pd.DataFrame(data)
-
-# Filtrar DataFrame por edad
-df_filtrado = df[df['Edad'] > 25]
-
-# Graficar datos filtrados
-df_filtrado.plot(kind='bar', x='Nombre', y='Edad', color='skyblue')
-plt.title('Distribución de Edades para Individuos Mayores de 25 Años')
-plt.xlabel('Nombre')
-plt.ylabel('Edad')
+# Graficando los valores
+plt.plot(X, Y, 'b-')
+plt.grid(True)
 display(plt)
 </textarea>
 </div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.</p>
 </div>
-<div class="section" id="ejercicio">
-<h2><span class="section-number">3.8. </span>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this headline">¶</a></h2>
-<p>Escribe código para calcular la edad promedio de las personas en el DataFrame.</p>
 </div>
 </div>
 
@@ -472,14 +406,14 @@ display(plt)
   </div>
   
     <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
-<li id="relations-prev" class="navLink" title='Previous Section - 2. NumPy: Temas Avanzados y Ejercicios' data-toggle="tooltip">
-  <a href="TWP66_2.html" aria-label="Previous - 2. NumPy: Temas Avanzados y Ejercicios">
+<li id="relations-prev" class="navLink" title='Previous Section - 2. Introducción a Pandas' data-toggle="tooltip">
+  <a href="TWP66_2.html" aria-label="Previous - 2. Introducción a Pandas">
     <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - Quiz - 1' data-toggle="tooltip" >
-    <a href="../../quiz/Quiz1.html" aria-label="Next - Quiz - 1">
+  <li id="relations-next" class="navLink" title='Next Section - 4. Explorando Más a Fondo las Bibliotecas de Python' data-toggle="tooltip" >
+    <a href="TWP66_4.html" aria-label="Next - 4. Explorando Más a Fondo las Bibliotecas de Python">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>

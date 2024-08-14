@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Introducción a NumPy &#8212; PyZombis numpy_pandas@b9cb011</title>
+    <title>1. Introducción a NumPy &#8212; PyZombis numpy_pandas@57640b0</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
-    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
 
@@ -21,17 +21,17 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
+    <script src="../../_static/runtime.bundle.js?v=daab993c1563e629a69d"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. NumPy: Temas Avanzados y Ejercicios" href="TWP66_2.html" />
+    <link rel="next" title="2. Introducción a Pandas" href="TWP66_2.html" />
     <link rel="prev" title="Manipulación de Datos" href="toctree.html" />
 
 
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis numpy_pandas@b9cb011
+          PyZombis numpy_pandas@57640b0
         </a>
       </div>
     </div>
@@ -246,7 +246,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - <span class="section-number">2. </span>NumPy: Temas Avanzados y Ejercicios' data-toggle="tooltip" >              
+  <li id="relations-next" title='Next Chapter - <span class="section-number">2. </span>Introducción a Pandas' data-toggle="tooltip" >              
     <a href="TWP66_2.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -286,8 +286,8 @@
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 2. NumPy: Temas Avanzados y Ejercicios' data-toggle="tooltip" >
-    <a href="TWP66_2.html" aria-label="Next - 2. NumPy: Temas Avanzados y Ejercicios">
+  <li id="relations-next" class="navLink" title='Next Section - 2. Introducción a Pandas' data-toggle="tooltip" >
+    <a href="TWP66_2.html" aria-label="Next - 2. Introducción a Pandas">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>
@@ -324,66 +324,66 @@ window.addEventListener('load', (event) => {
   
   <div class="section" id="introduccion-a-numpy">
 <h1><span class="section-number">1. </span>Introducción a NumPy<a class="headerlink" href="#introduccion-a-numpy" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../../_images/TWP66_001.png"><img alt="" class="align-center" src="../../_images/TWP66_001.png" style="width: 14.925cm; height: 9.258cm;" /></a>
+<img alt="" class="align-center" src="../../_images/TWP66_001.png" />
 <div class="section" id="introduccion">
 <h2><span class="section-number">1.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h2>
-<p>Esta completa lección se centra en dominar NumPy, una de las bibliotecas más populares en Python para cálculos numéricos. Exploraremos diversas funcionalidades de NumPy, comprendiendo cómo crear y manipular matrices para realizar operaciones numéricas de manera efectiva.</p>
+<p>Esta conferencia integral se centra en dominar NumPy, una de las bibliotecas más populares en Python para cálculos numéricos. Exploraremos varias funcionalidades de NumPy, entendiendo cómo crear y manipular arreglos para realizar operaciones numéricas de manera efectiva.</p>
 </div>
-<div class="section" id="parte-1-entendiendo-los-fundamentos-de-numpy">
-<h2><span class="section-number">1.2. </span>Parte 1: Entendiendo los Fundamentos de NumPy<a class="headerlink" href="#parte-1-entendiendo-los-fundamentos-de-numpy" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="parte-1-entendiendo-los-conceptos-basicos-de-numpy">
+<h2><span class="section-number">1.2. </span>Parte 1: Entendiendo los Conceptos Básicos de NumPy<a class="headerlink" href="#parte-1-entendiendo-los-conceptos-basicos-de-numpy" title="Permalink to this headline">¶</a></h2>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#vision-general" id="id1">Visión general</a></p></li>
-<li><p><a class="reference internal" href="#instalacion-de-numpy" id="id2">Instalación de NumPy</a></p></li>
-<li><p><a class="reference internal" href="#importar-numpy" id="id3">Importar NumPy</a></p></li>
-<li><p><a class="reference internal" href="#creacion-de-arrays" id="id4">Creación de Arrays</a></p></li>
-<li><p><a class="reference internal" href="#operaciones-con-arrays" id="id5">Operaciones con Arrays</a></p></li>
-<li><p><a class="reference internal" href="#manipulacion-de-forma" id="id6">Manipulación de Forma</a></p></li>
+<li><p><a class="reference internal" href="#vision-general" id="id1">Visión General</a></p></li>
+<li><p><a class="reference internal" href="#instalando-numpy" id="id2">Instalando NumPy</a></p></li>
+<li><p><a class="reference internal" href="#importando-numpy" id="id3">Importando NumPy</a></p></li>
+<li><p><a class="reference internal" href="#creando-arreglos" id="id4">Creando Arreglos</a></p></li>
+<li><p><a class="reference internal" href="#operaciones-con-arreglos" id="id5">Operaciones con Arreglos</a></p></li>
+<li><p><a class="reference internal" href="#manipulacion-de-la-forma" id="id6">Manipulación de la Forma</a></p></li>
 </ul>
 </div>
 <div class="section" id="vision-general">
-<h3><a class="toc-backref" href="#id1"><span class="section-number">1.2.1. </span>Visión general</a><a class="headerlink" href="#vision-general" title="Permalink to this headline">¶</a></h3>
-<p>NumPy es una potente biblioteca para cálculos numéricos en Python. Proporciona soporte para grandes matrices y matrices multidimensionales, junto con una colección de funciones matemáticas para operar en estas matrices.</p>
+<h3><a class="toc-backref" href="#id1"><span class="section-number">1.2.1. </span>Visión General</a><a class="headerlink" href="#vision-general" title="Permalink to this headline">¶</a></h3>
+<p>NumPy es una poderosa biblioteca para cálculos numéricos en Python. Proporciona soporte para grandes arreglos y matrices multidimensionales, junto con una colección de funciones matemáticas para operar sobre estos arreglos.</p>
 </div>
-<div class="section" id="instalacion-de-numpy">
-<h3><a class="toc-backref" href="#id2"><span class="section-number">1.2.2. </span>Instalación de NumPy</a><a class="headerlink" href="#instalacion-de-numpy" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="instalando-numpy">
+<h3><a class="toc-backref" href="#id2"><span class="section-number">1.2.2. </span>Instalando NumPy</a><a class="headerlink" href="#instalando-numpy" title="Permalink to this headline">¶</a></h3>
 <p>Instala NumPy usando pip:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="importar-numpy">
-<h3><a class="toc-backref" href="#id3"><span class="section-number">1.2.3. </span>Importar NumPy</a><a class="headerlink" href="#importar-numpy" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="importando-numpy">
+<h3><a class="toc-backref" href="#id3"><span class="section-number">1.2.3. </span>Importando NumPy</a><a class="headerlink" href="#importando-numpy" title="Permalink to this headline">¶</a></h3>
 <p>Importa NumPy en tu script de Python:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="creacion-de-arrays">
-<h3><a class="toc-backref" href="#id4"><span class="section-number">1.2.4. </span>Creación de Arrays</a><a class="headerlink" href="#creacion-de-arrays" title="Permalink to this headline">¶</a></h3>
-<p><strong>Array 1D</strong>:</p>
+<div class="section" id="creando-arreglos">
+<h3><a class="toc-backref" href="#id4"><span class="section-number">1.2.4. </span>Creando Arreglos</a><a class="headerlink" href="#creando-arreglos" title="Permalink to this headline">¶</a></h3>
+<p><strong>Arreglo 1D</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Crear un array 1D</span>
+<span class="c1"># Crear un arreglo 1D</span>
 <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Array 1D:&quot;</span><span class="p">,</span> <span class="n">arr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Arreglo 1D:&quot;</span><span class="p">,</span> <span class="n">arr</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>Array 2D</strong>:</p>
+<p><strong>Arreglo 2D</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Crear un array 2D</span>
+<span class="c1"># Crear un arreglo 2D</span>
 <span class="n">arr_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Array 2D:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">arr_2d</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Arreglo 2D:&quot;</span><span class="p">,</span> <span class="n">arr_2d</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="operaciones-con-arrays">
-<h3><a class="toc-backref" href="#id5"><span class="section-number">1.2.5. </span>Operaciones con Arrays</a><a class="headerlink" href="#operaciones-con-arrays" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="operaciones-con-arreglos">
+<h3><a class="toc-backref" href="#id5"><span class="section-number">1.2.5. </span>Operaciones con Arreglos</a><a class="headerlink" href="#operaciones-con-arreglos" title="Permalink to this headline">¶</a></h3>
 <p><strong>Operaciones Básicas</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Crear un array</span>
+<span class="c1"># Crear un arreglo</span>
 <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
 
 <span class="c1"># Realizar operaciones básicas</span>
@@ -394,51 +394,46 @@ window.addEventListener('load', (event) => {
 <p><strong>Operaciones Elemento a Elemento</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Crear arrays</span>
+<span class="c1"># Crear arreglos</span>
 <span class="n">arr1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">arr2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
 
-<span class="c1"># Adición elemento a elemento</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adición Elemento a Elemento:&quot;</span><span class="p">,</span> <span class="n">arr1</span> <span class="o">+</span> <span class="n">arr2</span><span class="p">)</span>
+<span class="c1"># Suma elemento a elemento</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma Elemento a Elemento:&quot;</span><span class="p">,</span> <span class="n">arr1</span> <span class="o">+</span> <span class="n">arr2</span><span class="p">)</span>
 
 <span class="c1"># Multiplicación elemento a elemento</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Multiplicación Elemento a Elemento:&quot;</span><span class="p">,</span> <span class="n">arr1</span> <span class="o">*</span> <span class="n">arr2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="manipulacion-de-forma">
-<h3><a class="toc-backref" href="#id6"><span class="section-number">1.2.6. </span>Manipulación de Forma</a><a class="headerlink" href="#manipulacion-de-forma" title="Permalink to this headline">¶</a></h3>
-<p><strong>Reformatear Arrays</strong>:</p>
+<div class="section" id="manipulacion-de-la-forma">
+<h3><a class="toc-backref" href="#id6"><span class="section-number">1.2.6. </span>Manipulación de la Forma</a><a class="headerlink" href="#manipulacion-de-la-forma" title="Permalink to this headline">¶</a></h3>
+<p><strong>Cambio de Forma de Arreglos</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Crear un array 1D</span>
+<span class="c1"># Crear un arreglo 1D</span>
 <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
 
-<span class="c1"># Reformatear el array a 2x3</span>
-<span class="n">arr_reformateado</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Array Reformateado:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">arr_reformateado</span><span class="p">)</span>
+<span class="c1"># Cambiar la forma del arreglo a 2x3</span>
+<span class="n">arr_reshaped</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Arreglo con Forma Cambiada:&quot;</span><span class="p">,</span> <span class="n">arr_reshaped</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>Aplanamiento de Arrays</strong>:</p>
+<p><strong>Aplanamiento de Arreglos</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Crear un array 2D</span>
+<span class="c1"># Crear un arreglo 2D</span>
 <span class="n">arr_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
 
-<span class="c1"># Aplanar el array</span>
-<span class="n">arr_aplanado</span> <span class="o">=</span> <span class="n">arr_2d</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Array Aplanado:&quot;</span><span class="p">,</span> <span class="n">arr_aplanado</span><span class="p">)</span>
+<span class="c1"># Aplanar el arreglo</span>
+<span class="n">arr_flat</span> <span class="o">=</span> <span class="n">arr_2d</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Arreglo Aplanado:&quot;</span><span class="p">,</span> <span class="n">arr_flat</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="conclusion">
-<h2><span class="section-number">1.3. </span>Conclusión<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
-<p>NumPy es fundamental para cálculos numéricos en Python. Comprender los fundamentos de la creación y manipulación de arrays es crucial para la ciencia de datos y el aprendizaje automático.</p>
-<p>Asegúrate de explorar la documentación de NumPy para conocer características y funcionalidades más avanzadas.</p>
-</div>
-<div class="section" id="quiz">
-<h2><span class="section-number">1.4. </span>Quiz<a class="headerlink" href="#quiz" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cuestionario">
+<h2><span class="section-number">1.3. </span>Cuestionario<a class="headerlink" href="#cuestionario" title="Permalink to this headline">¶</a></h2>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -524,8 +519,8 @@ window.addEventListener('load', (event) => {
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 2. NumPy: Temas Avanzados y Ejercicios' data-toggle="tooltip" >
-    <a href="TWP66_2.html" aria-label="Next - 2. NumPy: Temas Avanzados y Ejercicios">
+  <li id="relations-next" class="navLink" title='Next Section - 2. Introducción a Pandas' data-toggle="tooltip" >
+    <a href="TWP66_2.html" aria-label="Next - 2. Introducción a Pandas">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>

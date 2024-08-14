@@ -1,129 +1,73 @@
-==================
-El Poder de Pandas
-==================
+==============================
+Operaciones Avanzadas de NumPy
+==============================
 
-Introduction
+Introducción
 ------------
-Esta conferencia se centra en Pandas, una poderosa biblioteca de Python para manipulación y análisis de datos. Exploraremos sus capacidades en el manejo efectivo de datos estructurados.
+En este ejercicio, utilizaremos Python para explorar el uso de las bibliotecas NumPy y Matplotlib.
 
-Understanding Pandas Basics
----------------------------
-Pandas proporciona estructuras de datos como Series y DataFrame. Está construido sobre NumPy, lo que facilita trabajar con datos estructurados.
+Ejemplo de Código
+-----------------
+Usaremos la biblioteca NumPy para definir el dominio y el rango de una función, y Matplotlib para graficar los resultados.
 
-.. code-block:: python
-   :caption: Importando Pandas y Cargando Datos Ficticios
-
-   import pandas as pd
-
-   # Datos ficticios
-   data = {
-       'Nombre': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
-       'Edad': [28, 23, 25, 24, 30],
-       'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
-   }
-
-   # Creando un DataFrame
-   df = pd.DataFrame(data)
-
-   # Mostrando el DataFrame
-   print(df)
-
-Análisis Exploratorio de Datos (EDA) con Pandas
------------------------------------------------
-Verifica las dimensiones de los datos y examina su estructura:
+**Definir el Dominio y Rango**
 
 .. code-block:: python
-   :caption: Verificando Dimensiones de los Datos e Información
 
-   # Forma del DataFrame
-   print(df.shape)
-   
-   # Información sobre el DataFrame
-   print(df.info())
+    import numpy as np
 
-Limpieza y Transformación de Datos
-----------------------------------
-Renombra columnas, maneja datos faltantes y convierte tipos de datos:
+    # Definir el DOMINIO de una FUNCIÓN
+    N = 55
+    X = np.linspace(-5, 5, N)  # -5 límite inferior, 5 límite superior, N número de puntos a generar
+    # Mostrar los valores
+    print(X)
 
-.. code-block:: python
-   :caption: Limpieza y Transformación de Datos
+    # Calcular el RANGO de una FUNCIÓN
+    Y = np.sin(X)
+    # Mostrar los valores calculados
+    print(Y)
 
-   # Renombrando columnas
-   df.rename(columns={'Nombre': 'Nombre Completo', 'Ciudad': 'Ubicación'}, inplace=True)
-   
-   # Manejo de datos faltantes (no aplicable para estos datos ficticios)
-   
-   # Conversión de tipos de datos (no necesario para estos datos ficticios)
-
-Manipulación y Agregación de Datos
-----------------------------------
-Selecciona, filtra, agrupa y agrega datos:
+**Graficar los Valores**
 
 .. code-block:: python
-   :caption: Manipulación y Agregación de Datos
 
-   # Seleccionando columnas
-   print(df[['Nombre', 'Edad']])
-   
-   # Filtrando datos
-   datos_filtrados = df[df['Edad'] > 25]
-   print(datos_filtrados)
-   
-   # Agrupando y agregando datos
-   estadisticas_grupo_edad = df.groupby('Edad').size()
-   print(estadisticas_grupo_edad)
+    from matplotlib import pyplot as plt
 
-Visualización de Datos con Pandas y Matplotlib
-----------------------------------------------
-Utiliza Matplotlib para visualizaciones:
+    # Graficar los valores de X e Y con círculos rojos
+    plt.plot(X, Y, 'ro')
+    plt.grid(True)
 
-.. code-block:: python
-   :caption: Visualización de Datos
+    # Graficar los valores de X e Y con líneas azules
+    plt.plot(X, Y, 'b-')
+    plt.grid(True)
 
-   import matplotlib.pyplot as plt
-
-   # Ejemplo de gráfico
-   df['Edad'].plot(kind='hist', bins=5)
-   plt.title('Distribución de Edades')
-   plt.xlabel('Edad')
-   plt.ylabel('Frecuencia')
-   plt.show()
-
-Ejemplo Interactivo
--------------------
-Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame por edad y visualizar los resultados:
+    # Mostrar la gráfica
+    diplay(plt)
 
 .. note:: 
-    Estamos usando PyScript para ejecutar Pandas en el navegador. Utiliza `plt.show()` en lugar de `display()` para mostrar los resultados.
+   utiliza `plt.show()` en lugar de `display(plt)` si estás recreando esto en una máquina local.
 
-.. activecode:: ac_l66_es_3a
+**Editor de Código Interactivo**
+
+Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivos proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.
+
+.. activecode:: ac_l66_3_1
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript
 
-   import pandas as pd
+   import numpy as np
    import matplotlib.pyplot as plt
 
-   # Datos ficticios
-   data = {
-       'Nombre': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
-       'Edad': [28, 23, 25, 24, 30],
-       'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
-   }
+   # Definir el dominio
+   N = 55
+   X = np.linspace(-5, 5, N)
+   Y = np.sin(X)
 
-   # Crear DataFrame
-   df = pd.DataFrame(data)
-
-   # Filtrar DataFrame por edad
-   df_filtrado = df[df['Edad'] > 25]
-
-   # Graficar datos filtrados
-   df_filtrado.plot(kind='bar', x='Nombre', y='Edad', color='skyblue')
-   plt.title('Distribución de Edades para Individuos Mayores de 25 Años')
-   plt.xlabel('Nombre')
-   plt.ylabel('Edad')
+   # Graficando los valores
+   plt.plot(X, Y, 'b-')
+   plt.grid(True)
    display(plt)
 
-Ejercicio
----------
-Escribe código para calcular la edad promedio de las personas en el DataFrame.
+.. note::
+    Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.

@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. NumPy: Advanced Topics and Exercises &#8212; PyZombis numpy_pandas@b9cb011</title>
+    <title>2. Introduction to Pandas &#8212; PyZombis numpy_pandas@57640b0</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
-    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css?v=58BC228F" />
     <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css?v=B36B48D" />
     <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css?v=50109A2C" />
     <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/theme-overrides.css?v=2DAFE138" />
 
@@ -21,17 +21,17 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/animationbase.js?v=A043C3A7"></script>
     <script src="../../_static/html4css1.css?v=4533ACD3"></script>
+    <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=e476ce06ce356667798d"></script>
+    <script src="../../_static/runtime.bundle.js?v=daab993c1563e629a69d"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3. Power of Pandas" href="TWP66_3_en.html" />
+    <link rel="next" title="3. Advanced NumPy Operations" href="TWP66_3_en.html" />
     <link rel="prev" title="1. Introduction to NumPy" href="TWP66_1_en.html" />
 
 
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis numpy_pandas@b9cb011
+          PyZombis numpy_pandas@57640b0
         </a>
       </div>
     </div>
@@ -246,7 +246,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - <span class="section-number">3. </span>Power of Pandas' data-toggle="tooltip" >              
+  <li id="relations-next" title='Next Chapter - <span class="section-number">3. </span>Advanced NumPy Operations' data-toggle="tooltip" >              
     <a href="TWP66_3_en.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -286,8 +286,8 @@
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 3. Power of Pandas' data-toggle="tooltip" >
-    <a href="TWP66_3_en.html" aria-label="Next - 3. Power of Pandas">
+  <li id="relations-next" class="navLink" title='Next Section - 3. Advanced NumPy Operations' data-toggle="tooltip" >
+    <a href="TWP66_3_en.html" aria-label="Next - 3. Advanced NumPy Operations">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>
@@ -322,84 +322,149 @@ window.addEventListener('load', (event) => {
 
 
   
-  <div class="section" id="numpy-advanced-topics-and-exercises">
-<h1><span class="section-number">2. </span>NumPy: Advanced Topics and Exercises<a class="headerlink" href="#numpy-advanced-topics-and-exercises" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
-<h2><span class="section-number">2.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>In this lecture, we’ll dive deeper into NumPy, exploring advanced topics and providing exercises to help reinforce your understanding.</p>
+  <div class="section" id="introduction-to-pandas">
+<h1><span class="section-number">2. </span>Introduction to Pandas<a class="headerlink" href="#introduction-to-pandas" title="Permalink to this headline">¶</a></h1>
+<img alt="" class="align-center" src="../../_images/TWP66_002.png" />
+<div class="section" id="introduction">
+<h2><span class="section-number">2.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This lecture focuses on Pandas, a powerful Python library for data manipulation and analysis. We’ll explore its capabilities in handling structured data effectively.</p>
 </div>
-<div class="section" id="part-1-advanced-numpy-operations">
-<h2><span class="section-number">2.2. </span>Part 1: Advanced NumPy Operations<a class="headerlink" href="#part-1-advanced-numpy-operations" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="broadcasting">
-<h3><span class="section-number">2.2.1. </span>Broadcasting<a class="headerlink" href="#broadcasting" title="Permalink to this headline">¶</a></h3>
-<p>Broadcasting in NumPy allows universal functions to work with arrays of different shapes. For example:</p>
+<div class="section" id="understanding-pandas-basics">
+<h2><span class="section-number">2.2. </span>Understanding Pandas Basics<a class="headerlink" href="#understanding-pandas-basics" title="Permalink to this headline">¶</a></h2>
+<p>Pandas provides data structures like Series and DataFrame. It is built on top of NumPy, making it easy to work with structured data.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Importing Pandas and Loading Dummy Data</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l66_2a data-question_label="2.2.1.1">
-<div id=ac_l66_2a_question class="ac_question col-md-12">
+<span class="c1"># Dummy data</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Anna&#39;</span><span class="p">,</span> <span class="s1">&#39;Peter&#39;</span><span class="p">,</span> <span class="s1">&#39;Linda&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
+    <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="s1">&#39;Paris&#39;</span><span class="p">,</span> <span class="s1">&#39;Berlin&#39;</span><span class="p">,</span> <span class="s1">&#39;London&#39;</span><span class="p">,</span> <span class="s1">&#39;Tokyo&#39;</span><span class="p">]</span>
+<span class="p">}</span>
 
-</div>
-<textarea data-lang="python3" id="ac_l66_2a_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static
-     data-python3_interpreter='pyscript'  style="visibility: hidden;">
-import numpy as np
+<span class="c1"># Creating a DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
-a = np.array([1, 2, 3])
-b = np.array([10, 20, 30])
-c = a[:, np.newaxis] + b
-print(c)
-</textarea>
+<span class="c1"># Displaying the DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="exercise-1-broadcasting">
-<h3><span class="section-number">2.2.2. </span>Exercise 1: Broadcasting<a class="headerlink" href="#exercise-1-broadcasting" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li><p>Create a NumPy array <cite>x</cite> of shape (3, 4) with random integers.</p></li>
-<li><p>Create a NumPy array <cite>y</cite> of shape (3, 1) with random integers.</p></li>
-<li><p>Perform broadcasting to add <cite>y</cite> to <cite>x</cite> element-wise.</p></li>
-</ol>
-</div>
-<div class="section" id="indexing-and-slicing">
-<h3><span class="section-number">2.2.3. </span>Indexing and Slicing<a class="headerlink" href="#indexing-and-slicing" title="Permalink to this headline">¶</a></h3>
-<p>NumPy arrays support powerful indexing and slicing operations:</p>
+<div class="section" id="exploratory-data-analysis-eda-with-pandas">
+<h2><span class="section-number">2.3. </span>Exploratory Data Analysis (EDA) with Pandas<a class="headerlink" href="#exploratory-data-analysis-eda-with-pandas" title="Permalink to this headline">¶</a></h2>
+<p>Check data dimensions and examine its structure:</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Checking Data Dimensions and Info</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Shape of the DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
-<div class="runestone explainer ac_section alert alert-warning">
-<div data-component="activecode" id=ac_l66_2b data-question_label="2.2.3.1">
-<div id=ac_l66_2b_question class="ac_question col-md-12">
+<span class="c1"># Information about the DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="data-cleaning-and-transformation">
+<h2><span class="section-number">2.4. </span>Data Cleaning and Transformation<a class="headerlink" href="#data-cleaning-and-transformation" title="Permalink to this headline">¶</a></h2>
+<p>Rename columns:</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Cleaning and Transforming Data</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Rename columns</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Full Name&#39;</span><span class="p">,</span> <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="s1">&#39;Location&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="data-manipulation-and-aggregation">
+<h2><span class="section-number">2.5. </span>Data Manipulation and Aggregation<a class="headerlink" href="#data-manipulation-and-aggregation" title="Permalink to this headline">¶</a></h2>
+<p>Select, filter, group, and aggregate data:</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">Data Manipulation and Aggregation</span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Selecting columns</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">]])</span>
 
-</div>
-<textarea data-lang="python3" id="ac_l66_2b_editor" 
-      data-timelimit=25000     
-    data-audio=''      
-           data-wasm=/_static
-     data-python3_interpreter='pyscript'  style="visibility: hidden;">
-import numpy as np
+<span class="c1"># Filtering data</span>
+<span class="n">filtered_data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filtered_data</span><span class="p">)</span>
 
-arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-slice = arr[:2, 1:]
-print(slice)
-</textarea>
+<span class="c1"># Grouping and aggregating data</span>
+<span class="n">age_group_stats</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Age&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">age_group_stats</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="exercise-2-indexing-and-slicing">
-<h3><span class="section-number">2.2.4. </span>Exercise 2: Indexing and Slicing<a class="headerlink" href="#exercise-2-indexing-and-slicing" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li><p>Create a NumPy array <cite>z</cite> of shape (5, 5) with sequential integers starting from 1.</p></li>
-<li><p>Extract the bottom-right 3x3 sub-array using slicing.</p></li>
-</ol>
+<div class="section" id="data-visualization-with-pandas-and-matplotlib">
+<h2><span class="section-number">2.6. </span>Data Visualization with Pandas and Matplotlib<a class="headerlink" href="#data-visualization-with-pandas-and-matplotlib" title="Permalink to this headline">¶</a></h2>
+<p>Utilize Matplotlib for visualizations:</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">Data Visualization</span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Plotting example</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;hist&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Age Distribution&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Age&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
-<div class="section" id="conclusion">
-<h2><span class="section-number">2.3. </span>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
-<p>In this lecture, we’ve covered advanced NumPy operations and exercises to reinforce your learning. Practice these concepts to deepen your understanding of NumPy arrays and their functionalities.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Ensure you have NumPy installed (<cite>pip install numpy</cite>) to run the code examples.</p>
+<p>We are using PyScript to run NumPy and Matplotlib in the browser.
+Use <cite>plt.show()</cite> instead of <cite>display(plt)</cite> to show the plots if you are running code locally.</p>
 </div>
+</div>
+<div class="section" id="interactive-example">
+<h2><span class="section-number">2.7. </span>Interactive Example<a class="headerlink" href="#interactive-example" title="Permalink to this headline">¶</a></h2>
+<p>Here’s an interactive example where you can filter the DataFrame based on age and visualize the results:</p>
+
+<div class="runestone explainer ac_section alert alert-warning">
+<div data-component="activecode" id=ac_l66_2_en_1 data-question_label="2.7.1">
+<div id=ac_l66_2_en_1_question class="ac_question col-md-12">
+
+</div>
+<textarea data-lang="python3" id="ac_l66_2_en_1_editor" 
+      data-timelimit=25000     
+    data-audio=''      
+           data-wasm=/_static
+     data-python3_interpreter='pyscript'  style="visibility: hidden;">
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Dummy data
+data = {
+    'Name': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+    'Age': [28, 23, 25, 24, 30],
+    'City': ['New York', 'Paris', 'Berlin', 'London', 'Tokyo']
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Filter DataFrame by age
+filtered_df = df[df['Age'] > 25]
+
+# Plotting filtered data
+filtered_df.plot(kind='bar', x='Name', y='Age', color='skyblue')
+plt.title('Age Distribution for Individuals Older than 25')
+plt.xlabel('Name')
+plt.ylabel('Age')
+display(plt)
+</textarea>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ensure you run all the code blocks provided to see the complete results and understand the functionalities demonstrated.</p>
+</div>
+</div>
+<div class="section" id="exercise">
+<h2><span class="section-number">2.8. </span>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<p>Write code to calculate the average age of the individuals in the DataFrame.</p>
 </div>
 </div>
 
@@ -415,8 +480,8 @@ print(slice)
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 3. Power of Pandas' data-toggle="tooltip" >
-    <a href="TWP66_3_en.html" aria-label="Next - 3. Power of Pandas">
+  <li id="relations-next" class="navLink" title='Next Section - 3. Advanced NumPy Operations' data-toggle="tooltip" >
+    <a href="TWP66_3_en.html" aria-label="Next - 3. Advanced NumPy Operations">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>

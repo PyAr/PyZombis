@@ -1,59 +1,135 @@
-===================================
-NumPy: Temas Avanzados y Ejercicios
-===================================
+=====================
+Introducción a Pandas
+=====================
 
-Overview
---------
-En esta conferencia, profundizaremos en NumPy, explorando temas avanzados y proporcionando ejercicios para reforzar tu comprensión.
+.. image:: ../img/TWP66_002.png
+    :align: center
+    :alt:
 
-Parte 1: Operaciones Avanzadas en NumPy
----------------------------------------
 
-Broadcasting
-~~~~~~~~~~~~
-La transmisión (broadcasting) en NumPy permite que funciones universales trabajen con arrays de diferentes formas. Por ejemplo:
+Introducción
+------------
+Esta lección se centra en Pandas, una poderosa biblioteca de Python para la manipulación y el análisis de datos. Exploraremos sus capacidades para manejar datos estructurados de manera efectiva.
 
-.. activecode:: ac_l66_es_2a
-   :nocodelens:
-   :language: python3
-   :python3_interpreter: pyscript
+Entendiendo los Conceptos Básicos de Pandas
+-------------------------------------------
+Pandas proporciona estructuras de datos como Series y DataFrame. Está construido sobre NumPy, lo que facilita el trabajo con datos estructurados.
 
-   import numpy as np
+.. code-block:: python
+   :caption: Importando Pandas y Cargando Datos de Ejemplo
 
-   a = np.array([1, 2, 3])
-   b = np.array([10, 20, 30])
-   c = a[:, np.newaxis] + b
-   print(c)
+   import pandas as pd
 
-Ejercicio 1: Broadcasting
-~~~~~~~~~~~~~~~~~~~~~~~~~
-1. Crea un array NumPy `x` de forma (3, 4) con enteros aleatorios.
-2. Crea un array NumPy `y` de forma (3, 1) con enteros aleatorios.
-3. Realiza broadcasting para sumar `y` a `x` elemento por elemento.
+   # Datos de ejemplo
+   data = {
+       'Nombre': ['Juan', 'Ana', 'Pedro', 'Linda', 'Jacobo'],
+       'Edad': [28, 23, 25, 24, 30],
+       'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
+   }
 
-Indexación y Segmentación
-~~~~~~~~~~~~~~~~~~~~~~~~~
-Los arrays NumPy admiten potentes operaciones de indexación y segmentación:
+   # Creando un DataFrame
+   df = pd.DataFrame(data)
 
-.. activecode:: ac_l66_es_2b
-   :nocodelens:
-   :language: python3
-   :python3_interpreter: pyscript
+   # Mostrando el DataFrame
+   print(df)
 
-   import numpy as np
+Análisis Exploratorio de Datos (EDA) con Pandas
+-----------------------------------------------
+Revisa las dimensiones de los datos y examina su estructura:
 
-   arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-   slice = arr[:2, 1:]
-   print(slice)
+.. code-block:: python
+   :caption: Verificando las Dimensiones y la Información de los Datos
 
-Ejercicio 2: Indexación y Segmentación
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1. Crea un array NumPy `z` de forma (5, 5) con enteros secuenciales comenzando desde 1.
-2. Extrae la submatriz 3x3 de la esquina inferior derecha utilizando segmentación.
+   # Forma del DataFrame
+   print(df.shape)
+   
+   # Información sobre el DataFrame
+   print(df.info())
 
-Conclusion
-----------
-En esta conferencia, hemos cubierto operaciones avanzadas en NumPy y ejercicios para reforzar tu aprendizaje. Practica estos conceptos para profundizar tu comprensión de los arrays NumPy y sus funcionalidades.
+Limpieza y Transformación de Datos
+----------------------------------
+Renombra columnas:
+
+.. code-block:: python
+   :caption: Limpiando y Transformando Datos
+
+   # Renombrar columnas
+   df.rename(columns={'Nombre': 'Nombre Completo', 'Ciudad': 'Ubicación'}, inplace=True)
+   
+
+Manipulación y Agregación de Datos
+----------------------------------
+Selecciona, filtra, agrupa y agrega datos:
+
+.. code-block:: python
+   :caption: Manipulación y Agregación de Datos
+
+   # Seleccionando columnas
+   print(df[['Nombre', 'Edad']])
+   
+   # Filtrando datos
+   datos_filtrados = df[df['Edad'] > 25]
+   print(datos_filtrados)
+   
+   # Agrupando y agregando datos
+   estadisticas_edad = df.groupby('Edad').size()
+   print(estadisticas_edad)
+
+Visualización de Datos con Pandas y Matplotlib
+----------------------------------------------
+Utiliza Matplotlib para visualizaciones:
+
+.. code-block:: python
+   :caption: Visualización de Datos
+
+   import matplotlib.pyplot as plt
+
+   # Ejemplo de gráfico
+   df['Edad'].plot(kind='hist', bins=5)
+   plt.title('Distribución de Edades')
+   plt.xlabel('Edad')
+   plt.ylabel('Frecuencia')
+   display(plt)
 
 .. note::
-   Asegúrate de tener NumPy instalado (`pip install numpy`) para ejecutar los ejemplos de código.
+   Estamos usando PyScript para ejecutar NumPy y Matplotlib en el navegador.
+   Utiliza `plt.show()` en lugar de `display(plt)` para mostrar los gráficos si estás ejecutando el código localmente.
+
+Ejemplo Interactivo
+--------------------
+Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame según la edad y visualizar los resultados:
+
+.. activecode:: ac_l66_2_1
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   import pandas as pd
+   import matplotlib.pyplot as plt
+
+   # Datos de ejemplo
+   data = {
+       'Nombre': ['Juan', 'Ana', 'Pedro', 'Linda', 'Jacobo'],
+       'Edad': [28, 23, 25, 24, 30],
+       'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
+   }
+
+   # Crear DataFrame
+   df = pd.DataFrame(data)
+
+   # Filtrar DataFrame por edad
+   df_filtrado = df[df['Edad'] > 25]
+
+   # Graficando los datos filtrados
+   df_filtrado.plot(kind='bar', x='Nombre', y='Edad', color='skyblue')
+   plt.title('Distribución de Edad para Individuos Mayores de 25 Años')
+   plt.xlabel('Nombre')
+   plt.ylabel('Edad')
+   display(plt)
+
+.. note::
+    Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.
+
+Ejercicio
+---------
+Escribe un código para calcular la edad promedio de los individuos en el DataFrame.
