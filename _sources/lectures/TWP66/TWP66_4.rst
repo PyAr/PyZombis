@@ -1,0 +1,89 @@
+================================================
+Explorando Más a Fondo las Bibliotecas de Python
+================================================
+
+Introducción
+------------
+En esta sección, profundizaremos en el uso de las bibliotecas de Python, centrándonos específicamente en operaciones avanzadas con NumPy y visualizaciones utilizando Matplotlib.
+
+**Trabajando con Funciones**
+
+Comenzaremos definiendo el dominio de una función y calculando su rango correspondiente, seguido de la representación gráfica de estos valores.
+
+.. code-block:: python
+
+    import numpy as np
+
+    # Definir el DOMINIO de una FUNCIÓN
+    N = 35
+    X = np.linspace(-5, 5, N)  # -5 límite inferior, 5 límite superior, N número de puntos a generar
+    # Mostrar los valores
+    print(X)
+
+    # Calcular el CO-DOMINIO de una FUNCIÓN
+    Y = np.sin(X) / X
+    # Mostrar los valores calculados
+    print(Y)
+
+**Graficando Funciones Complejas**
+
+Vamos a graficar los valores calculados y explorar técnicas de graficado más avanzadas.
+
+.. code-block:: python
+
+    from matplotlib import pyplot as plt
+
+    # Graficar los valores de X e Y con círculos rojos
+    plt.plot(X, Y, 'ro')
+    plt.grid(True)
+
+    # Graficar los valores de X e Y con círculos cian
+    plt.plot(X, Y, 'co')
+    plt.grid(True)
+
+    # Graficar los valores de X e Y con líneas azules
+    plt.plot(X, Y, 'b-')
+    plt.grid(True)
+    display(plt)
+
+**Explorando y Componiendo Funciones**
+
+También podemos explorar y componer funciones utilizando NumPy y Matplotlib.
+
+.. code-block:: python
+
+    Z = (np.sin(X)) ** 2
+    plt.plot(X, Z, '.-')
+    plt.grid(True)
+    display(plt)
+
+**Editor de Código Interactivo**
+
+Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivos proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.
+
+.. activecode:: ac_l66_4_1
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   import numpy as np
+   import matplotlib.pyplot as plt
+
+   # Definir el dominio
+   N = 35
+   X = np.linspace(-5, 5, N)
+   Y = np.sin(X) / X
+
+   # Graficando los valores
+   plt.plot(X, Y, 'b-')
+   plt.grid(True)
+   display(plt)
+
+   # Explorando la composición de funciones
+   Z = (np.sin(X)) ** 2
+   plt.plot(X, Z, '.-')
+   plt.grid(True)
+   display(plt)
+
+.. note:: 
+   utiliza `plt.show()` en lugar de `display(plt)` si estás recreando esto en una máquina local.

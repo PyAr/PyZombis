@@ -99,7 +99,7 @@ Interactive Example
 --------------------
 Here's an interactive example where you can filter the DataFrame based on age and visualize the results:
 
-.. activecode:: ac_l66_2_1
+.. activecode:: ac_l66_2_en_1
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript

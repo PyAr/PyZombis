@@ -46,12 +46,12 @@ We will use the NumPy library to define the domain and range of a function, and 
 
 .. note:: 
    use `plt.show()` instead of `display(plt)` if recreating on local machine.
-   
+
 **Interactive Code Editor**
 
 To experiment with the code interactively, use the provided interactive code blocks below. Run all the code blocks to see the results and explore different functionalities.
 
-.. activecode:: ac_l66_1a
+.. activecode:: ac_l66_3_en_1
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript

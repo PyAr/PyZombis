@@ -2,22 +2,27 @@
 Introducción a Pandas
 =====================
 
-Introduction
-------------
-Esta conferencia se centra en Pandas, una poderosa biblioteca de Python para manipulación y análisis de datos. Exploraremos sus capacidades en el manejo efectivo de datos estructurados.
+.. image:: ../img/TWP66_002.png
+    :align: center
+    :alt:
 
-Understanding Pandas Basics
----------------------------
-Pandas proporciona estructuras de datos como Series y DataFrame. Está construido sobre NumPy, lo que facilita trabajar con datos estructurados.
+
+Introducción
+------------
+Esta lección se centra en Pandas, una poderosa biblioteca de Python para la manipulación y el análisis de datos. Exploraremos sus capacidades para manejar datos estructurados de manera efectiva.
+
+Entendiendo los Conceptos Básicos de Pandas
+-------------------------------------------
+Pandas proporciona estructuras de datos como Series y DataFrame. Está construido sobre NumPy, lo que facilita el trabajo con datos estructurados.
 
 .. code-block:: python
-   :caption: Importando Pandas y Cargando Datos Ficticios
+   :caption: Importando Pandas y Cargando Datos de Ejemplo
 
    import pandas as pd
 
-   # Datos ficticios
+   # Datos de ejemplo
    data = {
-       'Nombre': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+       'Nombre': ['Juan', 'Ana', 'Pedro', 'Linda', 'Jacobo'],
        'Edad': [28, 23, 25, 24, 30],
        'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
    }
@@ -30,10 +35,10 @@ Pandas proporciona estructuras de datos como Series y DataFrame. Está construid
 
 Análisis Exploratorio de Datos (EDA) con Pandas
 -----------------------------------------------
-Verifica las dimensiones de los datos y examina su estructura:
+Revisa las dimensiones de los datos y examina su estructura:
 
 .. code-block:: python
-   :caption: Verificando Dimensiones de los Datos e Información
+   :caption: Verificando las Dimensiones y la Información de los Datos
 
    # Forma del DataFrame
    print(df.shape)
@@ -43,17 +48,14 @@ Verifica las dimensiones de los datos y examina su estructura:
 
 Limpieza y Transformación de Datos
 ----------------------------------
-Renombra columnas, maneja datos faltantes y convierte tipos de datos:
+Renombra columnas:
 
 .. code-block:: python
-   :caption: Limpieza y Transformación de Datos
+   :caption: Limpiando y Transformando Datos
 
-   # Renombrando columnas
+   # Renombrar columnas
    df.rename(columns={'Nombre': 'Nombre Completo', 'Ciudad': 'Ubicación'}, inplace=True)
    
-   # Manejo de datos faltantes (no aplicable para estos datos ficticios)
-   
-   # Conversión de tipos de datos (no necesario para estos datos ficticios)
 
 Manipulación y Agregación de Datos
 ----------------------------------
@@ -70,8 +72,8 @@ Selecciona, filtra, agrupa y agrega datos:
    print(datos_filtrados)
    
    # Agrupando y agregando datos
-   estadisticas_grupo_edad = df.groupby('Edad').size()
-   print(estadisticas_grupo_edad)
+   estadisticas_edad = df.groupby('Edad').size()
+   print(estadisticas_edad)
 
 Visualización de Datos con Pandas y Matplotlib
 ----------------------------------------------
@@ -89,17 +91,15 @@ Utiliza Matplotlib para visualizaciones:
    plt.ylabel('Frecuencia')
    display(plt)
 
-.. note:: 
-   use `plt.show()` en lugar de `display(plt)` si lo recrea en su máquina local.
-
+.. note::
+   Estamos usando PyScript para ejecutar NumPy y Matplotlib en el navegador.
+   Utiliza `plt.show()` en lugar de `display(plt)` para mostrar los gráficos si estás ejecutando el código localmente.
 
 Ejemplo Interactivo
--------------------
-Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame por edad y visualizar los resultados:
+--------------------
+Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame según la edad y visualizar los resultados:
 
-.. note:: 
-
-.. activecode:: ac_l66_2_1es
+.. activecode:: ac_l66_2_1
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript
@@ -107,9 +107,9 @@ Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame por edad y
    import pandas as pd
    import matplotlib.pyplot as plt
 
-   # Datos ficticios
+   # Datos de ejemplo
    data = {
-       'Nombre': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+       'Nombre': ['Juan', 'Ana', 'Pedro', 'Linda', 'Jacobo'],
        'Edad': [28, 23, 25, 24, 30],
        'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
    }
@@ -120,13 +120,16 @@ Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame por edad y
    # Filtrar DataFrame por edad
    df_filtrado = df[df['Edad'] > 25]
 
-   # Graficar datos filtrados
+   # Graficando los datos filtrados
    df_filtrado.plot(kind='bar', x='Nombre', y='Edad', color='skyblue')
-   plt.title('Distribución de Edades para Individuos Mayores de 25 Años')
+   plt.title('Distribución de Edad para Individuos Mayores de 25 Años')
    plt.xlabel('Nombre')
    plt.ylabel('Edad')
    display(plt)
 
+.. note::
+    Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.
+
 Ejercicio
 ---------
-Escribe código para calcular la edad promedio de las personas en el DataFrame.
+Escribe un código para calcular la edad promedio de los individuos en el DataFrame.

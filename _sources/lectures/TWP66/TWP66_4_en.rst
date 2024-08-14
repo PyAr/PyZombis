@@ -61,7 +61,7 @@ We can also explore and compose functions using NumPy and Matplotlib.
 
 To experiment with the code interactively, use the provided interactive code blocks below. Run all the code blocks to see the results and explore different functionalities.
 
-.. activecode:: ac_l66_2b
+.. activecode:: ac_l66_4_en_1
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript

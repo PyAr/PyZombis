@@ -1,0 +1,154 @@
+=============================================
+Visualización Interactiva de Datos con Python
+=============================================
+
+En esta lección, exploraremos el uso de bibliotecas de Python para crear visualizaciones de datos interactivas. Aprenderás a generar varios tipos de gráficos, incluyendo gráficos de líneas, gráficos de barras y gráficos de pastel. También cubriremos cómo interactuar dinámicamente con estos gráficos. Al final de esta lección, tendrás un conocimiento sólido de cómo crear y manipular representaciones visuales de datos en Python.
+
+.. contents:: Tabla de Contenidos
+   :depth: 2
+   :local:
+
+.. note::
+   Asegúrate de tener instaladas todas las bibliotecas necesarias de Python. Esta lección asume que ya estás familiarizado con NumPy y Matplotlib.
+
+Gráficos de Líneas
+------------------
+
+Comencemos con un gráfico de líneas simple para comparar las temperaturas promedio en Argentina entre los años 1991 y 2020.
+
+.. code-block:: python
+
+   import matplotlib.pyplot as plt
+
+   temp_1991 = [20.5, 20.0, 18.9, 14.8, 11.9, 8.2, 7.3, 8.9, 12.4, 13.8, 17.3, 18.6]
+   temp_2020 = [21.5, 20.1, 20.0, 14.9, 11.0, 8.3, 6.4, 9.7, 12.5, 15.5, 19.0, 20.3]
+
+   plt.plot(temp_1991, linewidth=3, label='1991')
+   plt.plot(temp_2020, linestyle='dashed', linewidth=3, label='2020')
+
+   plt.ylabel('Temperaturas')
+   plt.title('Comparativa de 1991 y 2020')
+   plt.xlabel('Mes')
+   plt.legend()
+   plt.grid(True)
+   display(plt)  # Reemplaza plt.show() si ejecutas el código localmente
+
+.. note::
+    Reemplaza `display(plt)` con `plt.show()` si ejecutas el código localmente.
+
+Ahora, etiquetemos los meses en el eje x:
+
+.. code-block:: python
+
+   meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 
+            'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+
+   plt.plot(meses, temp_1991, linewidth=3, label='1991')
+   plt.plot(meses, temp_2020, linestyle='dashed', linewidth=3, label='2020')
+
+   plt.ylabel('Temperaturas')
+   plt.title('Comparativa de 1991 y 2020')
+   plt.xlabel('Mes')
+   plt.legend()
+   plt.grid(True)
+   display(plt)  # Reemplaza plt.show() si ejecutas el código localmente
+
+Gráficos de Barras
+------------------
+
+Comparemos las temperaturas utilizando un gráfico de barras:
+
+.. code-block:: python
+
+   import numpy as np
+
+   ancho = 0.35
+   x = np.arange(len(temp_1991))
+   fig, ax = plt.subplots()
+   rects1 = ax.bar(x - ancho/2, temp_1991, ancho, color='b', label='1991')
+   rects2 = ax.bar(x + ancho/2, temp_2020, ancho, color='g', label='2020')
+
+   ax.set_ylabel('Temperaturas')
+   ax.set_title('Comparativa')
+   ax.set_xticks(x)
+   ax.set_xticklabels(meses)
+   ax.legend()
+
+   display(plt)  # Reemplaza plt.show() si ejecutas el código localmente
+
+Gráficos de Pastel
+------------------
+
+Visualiza la distribución de estudiantes femeninas en diferentes áreas de estudio en 2018 utilizando un gráfico de pastel:
+
+.. code-block:: python
+
+   est_mujeres = [10512, 4774, 16232, 22904, 36700]
+   etiquetas = ['Ciencias Aplicadas', 'Ciencias Básicas', 
+                'Ciencias de la Salud', 'Ciencias Humanas', 
+                'Ciencias Sociales']
+
+   fig1, ax = plt.subplots()
+   ax.set_title('Estudiantes 2018 según área de estudio')
+   ax.axis('equal')
+   ax.pie(est_mujeres, labels=etiquetas, autopct='%1.2f%%')
+
+   display(plt)   # Reemplaza plt.show() si ejecutas el código localmente
+
+Interacción con Widgets
+-----------------------
+
+Intenta cambiar el grado de un polinomio:
+
+.. code-block:: python
+
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+    def plot_function(degree=3, num_points=5):
+        # Generar valores de x
+        x = np.linspace(-10, 10, num_points)
+        # Calcular valores de y en función del grado del polinomio
+        y = x**degree
+        
+        # Crear una nueva figura con tamaño especificado
+        plt.figure(figsize=(12, 8))
+        # Graficar los valores de x e y con círculos rojos y una línea
+        plt.plot(x, y, 'ro-')
+        # Agregar líneas de cuadrícula al gráfico
+        plt.grid(True)
+        # Mostrar el gráfico
+        display(plt)  # Reemplaza plt.show() si ejecutas el código localmente
+
+    # Ejemplo de uso
+    degree = 3  # Establecer el grado del polinomio
+    num_points = 5  # Establecer el número de puntos a graficar
+    plot_function(degree, num_points)
+
+
+Ejercicio: Crea Tu Propia Visualización
+---------------------------------------
+
+**Tarea:** Crea un gráfico de barras que compare las temperaturas promedio en Argentina en tres años diferentes: 1991, 2000 y 2020.
+
+**Pista:** Puedes usar los datos para el año 2000 de la siguiente manera:
+
+.. code-block:: python
+
+   temp_2000 = [21.2, 19.4, 17.0, 14.5, 10.1, 8.1, 5.6, 8.9, 10.8, 14.9, 16.3, 19.6]
+
+Sigue los pasos de los ejemplos anteriores para crear y mostrar tu gráfico.
+
+Editor Interactivo
+------------------
+
+.. note::
+   Usa este editor para ejecutar los códigos, practicar y hacer los ejercicios para ver los resultados.
+
+.. activecode:: ac_l66_6_1
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   # Puedes comenzar a practicar aquí copiando y pegando los ejemplos de código de arriba,
+   # o escribiendo tu propio código para explorar diferentes visualizaciones.

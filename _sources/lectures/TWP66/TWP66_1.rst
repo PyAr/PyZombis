@@ -3,62 +3,60 @@ Introducción a NumPy
 ====================
 
 .. image:: ../img/TWP66_001.png
-    :height: 9.258cm
-    :width: 14.925cm
     :align: center
     :alt:
 
 Introducción
 ------------
-Esta completa lección se centra en dominar NumPy, una de las bibliotecas más populares en Python para cálculos numéricos. Exploraremos diversas funcionalidades de NumPy, comprendiendo cómo crear y manipular matrices para realizar operaciones numéricas de manera efectiva.
+Esta conferencia integral se centra en dominar NumPy, una de las bibliotecas más populares en Python para cálculos numéricos. Exploraremos varias funcionalidades de NumPy, entendiendo cómo crear y manipular arreglos para realizar operaciones numéricas de manera efectiva.
 
-Parte 1: Entendiendo los Fundamentos de NumPy
----------------------------------------------
+Parte 1: Entendiendo los Conceptos Básicos de NumPy
+---------------------------------------------------
 
 .. contents::
     :local:
 
-Visión general
+Visión General
 ~~~~~~~~~~~~~~
-NumPy es una potente biblioteca para cálculos numéricos en Python. Proporciona soporte para grandes matrices y matrices multidimensionales, junto con una colección de funciones matemáticas para operar en estas matrices.
+NumPy es una poderosa biblioteca para cálculos numéricos en Python. Proporciona soporte para grandes arreglos y matrices multidimensionales, junto con una colección de funciones matemáticas para operar sobre estos arreglos.
 
-Instalación de NumPy
-~~~~~~~~~~~~~~~~~~~~
+Instalando NumPy
+~~~~~~~~~~~~~~~~
 Instala NumPy usando pip::
 
     pip install numpy
 
-Importar NumPy
-~~~~~~~~~~~~~~
+Importando NumPy
+~~~~~~~~~~~~~~~~
 Importa NumPy en tu script de Python::
 
     import numpy as np
 
-Creación de Arrays
-~~~~~~~~~~~~~~~~~~
-**Array 1D**::
+Creando Arreglos
+~~~~~~~~~~~~~~~~
+**Arreglo 1D**::
 
     import numpy as np
 
-    # Crear un array 1D
+    # Crear un arreglo 1D
     arr = np.array([1, 2, 3, 4, 5])
-    print("Array 1D:", arr)
+    print("Arreglo 1D:", arr)
 
-**Array 2D**::
+**Arreglo 2D**::
 
     import numpy as np
 
-    # Crear un array 2D
+    # Crear un arreglo 2D
     arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
-    print("Array 2D:", arr_2d)
+    print("Arreglo 2D:", arr_2d)
 
-Operaciones con Arrays
-~~~~~~~~~~~~~~~~~~~~~~
+Operaciones con Arreglos
+~~~~~~~~~~~~~~~~~~~~~~~~
 **Operaciones Básicas**::
 
     import numpy as np
 
-    # Crear un array
+    # Crear un arreglo
     arr = np.array([1, 2, 3, 4, 5])
 
     # Realizar operaciones básicas
@@ -69,47 +67,41 @@ Operaciones con Arrays
 
     import numpy as np
 
-    # Crear arrays
+    # Crear arreglos
     arr1 = np.array([1, 2, 3])
     arr2 = np.array([4, 5, 6])
 
-    # Adición elemento a elemento
-    print("Adición Elemento a Elemento:", arr1 + arr2)
+    # Suma elemento a elemento
+    print("Suma Elemento a Elemento:", arr1 + arr2)
 
     # Multiplicación elemento a elemento
     print("Multiplicación Elemento a Elemento:", arr1 * arr2)
 
-Manipulación de Forma
-~~~~~~~~~~~~~~~~~~~~~
-**Reformatear Arrays**::
+Manipulación de la Forma
+~~~~~~~~~~~~~~~~~~~~~~~~
+**Cambio de Forma de Arreglos**::
 
     import numpy as np
 
-    # Crear un array 1D
+    # Crear un arreglo 1D
     arr = np.array([1, 2, 3, 4, 5, 6])
 
-    # Reformatear el array a 2x3
-    arr_reformateado = np.reshape(arr, (2, 3))
-    print("Array Reformateado:", arr_reformateado)
+    # Cambiar la forma del arreglo a 2x3
+    arr_reshaped = np.reshape(arr, (2, 3))
+    print("Arreglo con Forma Cambiada:", arr_reshaped)
 
-**Aplanamiento de Arrays**::
+**Aplanamiento de Arreglos**::
 
     import numpy as np
 
-    # Crear un array 2D
+    # Crear un arreglo 2D
     arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
 
-    # Aplanar el array
-    arr_aplanado = arr_2d.flatten()
-    print("Array Aplanado:", arr_aplanado)
+    # Aplanar el arreglo
+    arr_flat = arr_2d.flatten()
+    print("Arreglo Aplanado:", arr_flat)
 
-Conclusión
-----------
-NumPy es fundamental para cálculos numéricos en Python. Comprender los fundamentos de la creación y manipulación de arrays es crucial para la ciencia de datos y el aprendizaje automático.
-
-Asegúrate de explorar la documentación de NumPy para conocer características y funcionalidades más avanzadas.
-
-Quiz
-----
+Cuestionario
+------------
 .. raw:: html
     :file: ../_static/TWP66/TWP66_1.html

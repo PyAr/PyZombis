@@ -31,7 +31,10 @@ Let's start with a simple line plot to compare the average temperatures in Argen
    plt.xlabel('Mes')
    plt.legend()
    plt.grid(True)
-   display(plt)  # Replace plt.show()
+   display(plt)  # Replace plt.show() if running locally
+
+.. note::
+    Replace `display(plt)` with `plt.show()` if running the code locally.
 
 Now, let's label the months on the x-axis:
 
@@ -48,7 +51,7 @@ Now, let's label the months on the x-axis:
    plt.xlabel('Mes')
    plt.legend()
    plt.grid(True)
-   display(plt)  # Replace plt.show()
+   display(plt)  # Replace plt.show() if running locally
 
 Bar Charts
 ----------
@@ -71,7 +74,7 @@ Let's compare the temperatures using a bar chart:
    ax.set_xticklabels(meses)
    ax.legend()
 
-   display(plt)  # Replace plt.show()
+   display(plt)  # Replace plt.show() if running locally
 
 Pie Charts
 ----------
@@ -90,28 +93,38 @@ Visualize the distribution of female students across different study areas in 20
    ax.axis('equal')
    ax.pie(est_mujeres, labels=etiquetas, autopct='%1.2f%%')
 
-   display(plt)  # Replace plt.show()
+   display(plt)   # Replace plt.show() if running locally
 
-Interactive Widgets
---------------------
+Interact with your Widgets
+--------------------------
 
-Add interactivity to your plots using widgets. For example, dynamically change the degree of a polynomial:
+Try changing the degree of a polynomial:
 
 .. code-block:: python
 
-   import numpy as np
-   import matplotlib.pyplot as plt
-   import ipywidgets as widgets
-   from IPython.display import display
+    import numpy as np
+    import matplotlib.pyplot as plt
 
-   @widgets.interact(grado=(0, 9), N_puntos=(5, 35))
-   def mi_plot(grado=3, N_puntos=5):    
-       x = np.linspace(-10, 10, N_puntos)
-       y = x**grado
-       plt.figure(figsize=(12,8))
-       plt.plot(x, y, 'ro-')
-       plt.grid(True)
-       display(plt)  # Replace plt.show()
+    def plot_function(degree=3, num_points=5):
+        # Generate x values
+        x = np.linspace(-10, 10, num_points)
+        # Compute y values based on the polynomial degree
+        y = x**degree
+        
+        # Create a new figure with specified size
+        plt.figure(figsize=(12, 8))
+        # Plot the x and y values with red circles and a line
+        plt.plot(x, y, 'ro-')
+        # Add grid lines to the plot
+        plt.grid(True)
+        # Show the plot
+        display(plt)  # Replace plt.show() if running locally
+
+    # Example usage
+    degree = 3  # Set the degree of the polynomial
+    num_points = 5  # Set the number of points to plot
+    plot_function(degree, num_points)
+
 
 Exercise: Create Your Own Visualization
 ---------------------------------------
@@ -132,11 +145,10 @@ Interactive Editor
 .. note::
    Use this editor to run the codes, practice, and do exercises to see the results.
 
-.. activecode:: ac_l66_5_1a
+.. activecode:: ac_l66_6_en_1
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript
 
    # You can start practicing here by copying and pasting the code examples from above,
    # or by writing your own code to explore different visualizations.
-
