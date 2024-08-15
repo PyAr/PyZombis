@@ -46,6 +46,17 @@ We will use the SymPy library to define symbolic expressions and visualize them 
 .. note:: 
    Use these plots to explore the behavior of functions within specified intervals.
 
+**Converting Plots to PNG**
+
+In some cases, especially when working in a web environment like this interactive code editor, we need to convert plots into images (such as PNG) for them to be displayed. This is because the editor may not support direct rendering of SymPy plots in their native format. By converting the plots into images and encoding them as base64, we can embed them into HTML for visualization within the notebook or a web page.
+
+Alternatively, if you're working locally on your own machine, you can directly display plots without converting them to images by using the `show()` method provided by SymPy's plotting module. This method will render the plot in a new window or within your Jupyter Notebook if you're using one.
+
+.. code-block:: python
+
+    # Directly plot the expression without conversion when working locally
+    plot(sin(x), cos(x), (x, -pi, pi), show=True)
+
 Code Example: 3D Plots
 -----------------------
 We can also create 3D surface plots using SymPy.
@@ -123,14 +134,29 @@ To experiment with the code interactively, use the provided interactive code blo
    :language: python3
    :python3_interpreter: pyscript
 
-   from sympy import Symbol, sin, cos, pi
-   from sympy.plotting import plot
+    from sympy import Symbol, sin, cos, pi
+    from sympy.plotting import plot
+    from io import BytesIO
+    import base64
 
-   # Define the symbolic variable
-   x = Symbol('x')
+    x = Symbol('x')
+    p = plot(sin(x), cos(x), (x, -pi, pi), show=False)
 
-   # Plotting the sine and cosine functions
-   plot(sin(x), cos(x), (x, -pi, pi))
+    # Convert plot to PNG
+    buffer = BytesIO()
+    p.save(buffer)
+    buffer.seek(0)
+    img = buffer.getvalue()
+
+    # Encode to base64
+    img_base64 = base64.b64encode(img).decode('utf-8')
+
+    # Create HTML img tag
+    img_tag = f'<img src="data:image/png;base64,{img_base64}">'
+
+    # Display using PyScript's HTML class
+    from pyscript import HTML
+    display(HTML(img_tag))
 
 .. note::
     Ensure you run all the code blocks provided to see the complete results and understand the functionalities demonstrated.

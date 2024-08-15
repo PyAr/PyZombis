@@ -4,7 +4,7 @@ SymPy con Gráficas
 
 Introducción
 ------------
-En este ejercicio, utilizaremos la biblioteca SymPy de Python para crear y visualizar expresiones matemáticas utilizando gráficos en 2D y 3D.
+En este ejercicio, utilizaremos la biblioteca SymPy de Python para crear y visualizar expresiones matemáticas utilizando gráficos tanto en 2D como en 3D.
 
 Ejemplo de Código: Gráficas 2D
 ------------------------------
@@ -28,7 +28,7 @@ Usaremos la biblioteca SymPy para definir expresiones simbólicas y visualizarla
 .. code-block:: python
 
     # Graficar la función cuadrática x^2 con un color personalizado
-    plot(x**2, line_color='fucsia')
+    plot(x**2, line_color='fuchsia')
 
     # Graficar la función cuadrática x^2 con un código de color diferente
     plot(x**2, line_color='#e30052')
@@ -36,28 +36,39 @@ Usaremos la biblioteca SymPy para definir expresiones simbólicas y visualizarla
     # Graficar la función cuadrática x^2 con el color predeterminado
     plot(x**2)
 
-    # Graficar las funciones seno y coseno en un intervalo específico
+    # Graficar las funciones seno y coseno sobre un intervalo específico
     plot(sin(x), cos(x), (x, -pi, pi))
 
     # Graficar múltiples funciones con diferentes intervalos y un título personalizado
     plot((sin(x), (x, -2*pi, 2*pi)), (cos(x), (x, -pi, pi)), 
-         line_color='verde', title='Ejemplo de Gráfica con SymPy')
+         line_color='green', title='Ejemplo de Gráfica con SymPy')
 
 .. note:: 
-   Usa estas gráficas para explorar el comportamiento de las funciones dentro de intervalos específicos.
+   Utiliza estas gráficas para explorar el comportamiento de las funciones dentro de intervalos especificados.
+
+**Explicación: Convirtiendo Gráficas a PNG**
+
+En algunos casos, especialmente cuando se trabaja en un entorno web como este editor de código interactivo, necesitamos convertir las gráficas en imágenes (como PNG) para que se puedan mostrar. Esto se debe a que el editor puede no soportar la representación directa de las gráficas de SymPy en su formato nativo. Al convertir las gráficas en imágenes y codificarlas en base64, podemos incrustarlas en HTML para su visualización dentro del cuaderno o de una página web.
+
+Alternativamente, si estás trabajando localmente en tu propia máquina, puedes mostrar las gráficas directamente sin convertirlas en imágenes utilizando el método `show()` proporcionado por el módulo de gráficos de SymPy. Este método renderizará la gráfica en una nueva ventana o dentro de tu Jupyter Notebook si estás utilizando uno.
+
+.. code-block:: python
+
+    # Graficar directamente la expresión sin conversión cuando se trabaja localmente
+    plot(sin(x), cos(x), (x, -pi, pi), show=True)
 
 Ejemplo de Código: Gráficas 3D
 ------------------------------
-También podemos crear gráficos de superficies 3D utilizando SymPy.
+También podemos crear gráficos de superficies en 3D utilizando SymPy.
 
-**Gráfico de Superficie 3D**
+**Gráfica de Superficie 3D**
 
 .. code-block:: python
 
     from sympy.plotting import plot3d
     from sympy import Symbol
 
-    # Definir variables simbólicas para gráficos 3D
+    # Definir variables simbólicas para graficar en 3D
     x = Symbol('x')
     y = Symbol('y')
 
@@ -115,22 +126,37 @@ También podemos crear gráficos de superficies 3D utilizando SymPy.
    Experimenta con estas gráficas para entender cómo SymPy maneja las matemáticas simbólicas y la visualización.
 
 Editor de Código Interactivo
-----------------------------
-Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivos proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.
+-----------------------------
+Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivo proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.
 
 .. activecode:: ac_l66_5_1
    :nocodelens:
    :language: python3
    :python3_interpreter: pyscript
 
-   from sympy import Symbol, sin, cos, pi
-   from sympy.plotting import plot
+    from sympy import Symbol, sin, cos, pi
+    from sympy.plotting import plot
+    from io import BytesIO
+    import base64
 
-   # Definir la variable simbólica
-   x = Symbol('x')
+    x = Symbol('x')
+    p = plot(sin(x), cos(x), (x, -pi, pi), show=False)
 
-   # Graficar las funciones seno y coseno
-   plot(sin(x), cos(x), (x, -pi, pi))
+    # Convertir la gráfica a PNG
+    buffer = BytesIO()
+    p.save(buffer)
+    buffer.seek(0)
+    img = buffer.getvalue()
 
+    # Codificar en base64
+    img_base64 = base64.b64encode(img).decode('utf-8')
+
+    # Crear la etiqueta HTML img
+    img_tag = f'<img src="data:image/png;base64,{img_base64}">'
+
+    # Mostrar utilizando la clase HTML de PyScript
+    from pyscript import HTML
+    display(HTML(img_tag))
+   
 .. note::
-    Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.
+    Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y entender las funcionalidades demostradas.
