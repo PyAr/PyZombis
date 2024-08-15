@@ -1,20 +1,20 @@
 =============================================
-Visualización Interactiva de Datos con Python
+Visualización de Datos Interactiva con Python
 =============================================
 
-En esta lección, exploraremos el uso de bibliotecas de Python para crear visualizaciones de datos interactivas. Aprenderás a generar varios tipos de gráficos, incluyendo gráficos de líneas, gráficos de barras y gráficos de pastel. También cubriremos cómo interactuar dinámicamente con estos gráficos. Al final de esta lección, tendrás un conocimiento sólido de cómo crear y manipular representaciones visuales de datos en Python.
+En esta lección, exploraremos el uso de bibliotecas de Python para crear visualizaciones de datos interactivas. Aprenderás a generar varios tipos de gráficos, incluidos gráficos de líneas, gráficos de barras y gráficos circulares. También cubriremos cómo interactuar con estos gráficos de manera dinámica. Al final de esta lección, tendrás una comprensión sólida de cómo crear y manipular representaciones visuales de datos en Python.
 
 .. contents:: Tabla de Contenidos
    :depth: 2
    :local:
 
 .. note::
-   Asegúrate de tener instaladas todas las bibliotecas necesarias de Python. Esta lección asume que ya estás familiarizado con NumPy y Matplotlib.
+   Asegúrate de tener instaladas todas las bibliotecas de Python necesarias. Esta lección asume que ya estás familiarizado con NumPy y Matplotlib.
 
 Gráficos de Líneas
 ------------------
 
-Comencemos con un gráfico de líneas simple para comparar las temperaturas promedio en Argentina entre los años 1991 y 2020.
+Comencemos con un gráfico de líneas simple para comparar las temperaturas medias en Argentina entre los años 1991 y 2020.
 
 .. code-block:: python
 
@@ -31,7 +31,7 @@ Comencemos con un gráfico de líneas simple para comparar las temperaturas prom
    plt.xlabel('Mes')
    plt.legend()
    plt.grid(True)
-   display(plt)  # Reemplaza plt.show() si ejecutas el código localmente
+   display(plt, "plot_area")  # Reemplaza con plt.show() si ejecutas localmente
 
 .. note::
     Reemplaza `display(plt)` con `plt.show()` si ejecutas el código localmente.
@@ -51,12 +51,12 @@ Ahora, etiquetemos los meses en el eje x:
    plt.xlabel('Mes')
    plt.legend()
    plt.grid(True)
-   display(plt)  # Reemplaza plt.show() si ejecutas el código localmente
+   display(plt, "plot_area")  # Reemplaza con plt.show() si ejecutas localmente
 
 Gráficos de Barras
 ------------------
 
-Comparemos las temperaturas utilizando un gráfico de barras:
+Compararemos las temperaturas usando un gráfico de barras:
 
 .. code-block:: python
 
@@ -74,12 +74,12 @@ Comparemos las temperaturas utilizando un gráfico de barras:
    ax.set_xticklabels(meses)
    ax.legend()
 
-   display(plt)  # Reemplaza plt.show() si ejecutas el código localmente
+   display(plt, "plot_area")  # Reemplaza con plt.show() si ejecutas localmente
 
-Gráficos de Pastel
-------------------
+Gráficos Circulares
+-------------------
 
-Visualiza la distribución de estudiantes femeninas en diferentes áreas de estudio en 2018 utilizando un gráfico de pastel:
+Visualiza la distribución de estudiantes mujeres en diferentes áreas de estudio en 2018 usando un gráfico circular:
 
 .. code-block:: python
 
@@ -93,12 +93,12 @@ Visualiza la distribución de estudiantes femeninas en diferentes áreas de estu
    ax.axis('equal')
    ax.pie(est_mujeres, labels=etiquetas, autopct='%1.2f%%')
 
-   display(plt)   # Reemplaza plt.show() si ejecutas el código localmente
+   display(plt, "plot_area")   # Reemplaza con plt.show() si ejecutas localmente
 
-Interacción con Widgets
------------------------
+Interactúa con tus Widgets
+---------------------------
 
-Intenta cambiar el grado de un polinomio:
+Prueba cambiar el grado de un polinomio:
 
 .. code-block:: python
 
@@ -108,7 +108,7 @@ Intenta cambiar el grado de un polinomio:
     def plot_function(degree=3, num_points=5):
         # Generar valores de x
         x = np.linspace(-10, 10, num_points)
-        # Calcular valores de y en función del grado del polinomio
+        # Calcular valores de y basados en el grado del polinomio
         y = x**degree
         
         # Crear una nueva figura con tamaño especificado
@@ -118,18 +118,17 @@ Intenta cambiar el grado de un polinomio:
         # Agregar líneas de cuadrícula al gráfico
         plt.grid(True)
         # Mostrar el gráfico
-        display(plt)  # Reemplaza plt.show() si ejecutas el código localmente
+        display(plt, "plot_area")  # Reemplaza con plt.show() si ejecutas localmente
 
-    # Ejemplo de uso
-    degree = 3  # Establecer el grado del polinomio
-    num_points = 5  # Establecer el número de puntos a graficar
+    # Uso de ejemplo
+    degree = 3  # Establece el grado del polinomio
+    num_points = 5  # Establece el número de puntos a graficar
     plot_function(degree, num_points)
 
-
-Ejercicio: Crea Tu Propia Visualización
+Ejercicio: Crea tu propia Visualización
 ---------------------------------------
 
-**Tarea:** Crea un gráfico de barras que compare las temperaturas promedio en Argentina en tres años diferentes: 1991, 2000 y 2020.
+**Tarea:** Crea un gráfico de barras que compare las temperaturas medias en Argentina a lo largo de tres años diferentes: 1991, 2000 y 2020.
 
 **Pista:** Puedes usar los datos para el año 2000 de la siguiente manera:
 
@@ -143,12 +142,11 @@ Editor Interactivo
 ------------------
 
 .. note::
-   Usa este editor para ejecutar los códigos, practicar y hacer los ejercicios para ver los resultados.
+   Usa este editor para ejecutar los códigos, practicar y hacer ejercicios para ver los resultados.
 
 .. activecode:: ac_l66_6_1
-   :nocodelens:
    :language: python3
    :python3_interpreter: pyscript
 
-   # Puedes comenzar a practicar aquí copiando y pegando los ejemplos de código de arriba,
+   # Puedes comenzar a practicar aquí copiando y pegando los ejemplos de código anteriores,
    # o escribiendo tu propio código para explorar diferentes visualizaciones.

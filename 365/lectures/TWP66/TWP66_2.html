@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Introducción a Pandas &#8212; PyZombis numpy_pandas@8f7df55</title>
+    <title>2. Introducción a Pandas &#8212; PyZombis numpy_pandas@19da491</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
@@ -26,12 +26,12 @@
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=daab993c1563e629a69d"></script>
+    <script src="../../_static/runtime.bundle.js?v=81aa2202b6b8ac548b3c"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3. Operaciones Avanzadas de NumPy" href="TWP66_3.html" />
+    <link rel="next" title="3. Operaciones Avanzadas con NumPy" href="TWP66_3.html" />
     <link rel="prev" title="1. Introducción a NumPy" href="TWP66_1.html" />
 
 
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis numpy_pandas@8f7df55
+          PyZombis numpy_pandas@19da491
         </a>
       </div>
     </div>
@@ -246,7 +246,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - <span class="section-number">3. </span>Operaciones Avanzadas de NumPy' data-toggle="tooltip" >              
+  <li id="relations-next" title='Next Chapter - <span class="section-number">3. </span>Operaciones Avanzadas con NumPy' data-toggle="tooltip" >              
     <a href="TWP66_3.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -286,8 +286,8 @@
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 3. Operaciones Avanzadas de NumPy' data-toggle="tooltip" >
-    <a href="TWP66_3.html" aria-label="Next - 3. Operaciones Avanzadas de NumPy">
+  <li id="relations-next" class="navLink" title='Next Section - 3. Operaciones Avanzadas con NumPy' data-toggle="tooltip" >
+    <a href="TWP66_3.html" aria-label="Next - 3. Operaciones Avanzadas con NumPy">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>
@@ -329,18 +329,18 @@ window.addEventListener('load', (event) => {
 <h2><span class="section-number">2.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h2>
 <p>Esta lección se centra en Pandas, una poderosa biblioteca de Python para la manipulación y el análisis de datos. Exploraremos sus capacidades para manejar datos estructurados de manera efectiva.</p>
 </div>
-<div class="section" id="entendiendo-los-conceptos-basicos-de-pandas">
-<h2><span class="section-number">2.2. </span>Entendiendo los Conceptos Básicos de Pandas<a class="headerlink" href="#entendiendo-los-conceptos-basicos-de-pandas" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="comprendiendo-los-conceptos-basicos-de-pandas">
+<h2><span class="section-number">2.2. </span>Comprendiendo los conceptos básicos de Pandas<a class="headerlink" href="#comprendiendo-los-conceptos-basicos-de-pandas" title="Permalink to this headline">¶</a></h2>
 <p>Pandas proporciona estructuras de datos como Series y DataFrame. Está construido sobre NumPy, lo que facilita el trabajo con datos estructurados.</p>
 <div class="literal-block-wrapper docutils container" id="id1">
-<div class="code-block-caption"><span class="caption-text">Importando Pandas y Cargando Datos de Ejemplo</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">Importando Pandas y Cargando Datos Simulados</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="c1"># Datos de ejemplo</span>
+<span class="c1"># Datos simulados</span>
 <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Nombre&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Juan&#39;</span><span class="p">,</span> <span class="s1">&#39;Ana&#39;</span><span class="p">,</span> <span class="s1">&#39;Pedro&#39;</span><span class="p">,</span> <span class="s1">&#39;Linda&#39;</span><span class="p">,</span> <span class="s1">&#39;Jacobo&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;Edad&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
-    <span class="s1">&#39;Ciudad&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Nueva York&#39;</span><span class="p">,</span> <span class="s1">&#39;París&#39;</span><span class="p">,</span> <span class="s1">&#39;Berlín&#39;</span><span class="p">,</span> <span class="s1">&#39;Londres&#39;</span><span class="p">,</span> <span class="s1">&#39;Tokio&#39;</span><span class="p">]</span>
+    <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Anna&#39;</span><span class="p">,</span> <span class="s1">&#39;Peter&#39;</span><span class="p">,</span> <span class="s1">&#39;Linda&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
+    <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Nueva York&#39;</span><span class="p">,</span> <span class="s1">&#39;París&#39;</span><span class="p">,</span> <span class="s1">&#39;Berlín&#39;</span><span class="p">,</span> <span class="s1">&#39;Londres&#39;</span><span class="p">,</span> <span class="s1">&#39;Tokio&#39;</span><span class="p">]</span>
 <span class="p">}</span>
 
 <span class="c1"># Creando un DataFrame</span>
@@ -354,9 +354,9 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="analisis-exploratorio-de-datos-eda-con-pandas">
 <h2><span class="section-number">2.3. </span>Análisis Exploratorio de Datos (EDA) con Pandas<a class="headerlink" href="#analisis-exploratorio-de-datos-eda-con-pandas" title="Permalink to this headline">¶</a></h2>
-<p>Revisa las dimensiones de los datos y examina su estructura:</p>
+<p>Verifica las dimensiones de los datos y examina su estructura:</p>
 <div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">Verificando las Dimensiones y la Información de los Datos</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="code-block-caption"><span class="caption-text">Verificando Dimensiones e Información de los Datos</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Forma del DataFrame</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
@@ -368,11 +368,11 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="limpieza-y-transformacion-de-datos">
 <h2><span class="section-number">2.4. </span>Limpieza y Transformación de Datos<a class="headerlink" href="#limpieza-y-transformacion-de-datos" title="Permalink to this headline">¶</a></h2>
-<p>Renombra columnas:</p>
+<p>Renombrar columnas:</p>
 <div class="literal-block-wrapper docutils container" id="id3">
 <div class="code-block-caption"><span class="caption-text">Limpiando y Transformando Datos</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Renombrar columnas</span>
-<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Nombre&#39;</span><span class="p">:</span> <span class="s1">&#39;Nombre Completo&#39;</span><span class="p">,</span> <span class="s1">&#39;Ciudad&#39;</span><span class="p">:</span> <span class="s1">&#39;Ubicación&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Nombre Completo&#39;</span><span class="p">,</span> <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="s1">&#39;Ubicación&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -390,37 +390,37 @@ window.addEventListener('load', (event) => {
 <span class="nb">print</span><span class="p">(</span><span class="n">datos_filtrados</span><span class="p">)</span>
 
 <span class="c1"># Agrupando y agregando datos</span>
-<span class="n">estadisticas_edad</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Edad&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">estadisticas_edad</span><span class="p">)</span>
+<span class="n">estadisticas_por_edad</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Edad&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">estadisticas_por_edad</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="visualizacion-de-datos-con-pandas-y-matplotlib">
 <h2><span class="section-number">2.6. </span>Visualización de Datos con Pandas y Matplotlib<a class="headerlink" href="#visualizacion-de-datos-con-pandas-y-matplotlib" title="Permalink to this headline">¶</a></h2>
-<p>Utiliza Matplotlib para visualizaciones:</p>
+<p>Utiliza Matplotlib para las visualizaciones:</p>
 <div class="literal-block-wrapper docutils container" id="id5">
 <div class="code-block-caption"><span class="caption-text">Visualización de Datos</span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="c1"># Ejemplo de gráfico</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;hist&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Edades&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Edad&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Edad&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frecuencia&#39;</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">,</span> <span class="s2">&quot;plot_area&quot;</span><span class="p">)</span> <span class="c1"># Reemplazar con plt.show() si se ejecuta localmente</span>
 </pre></div>
 </div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Estamos usando PyScript para ejecutar NumPy y Matplotlib en el navegador.
-Utiliza <cite>plt.show()</cite> en lugar de <cite>display(plt)</cite> para mostrar los gráficos si estás ejecutando el código localmente.</p>
+<p>Estamos utilizando PyScript para ejecutar NumPy y Matplotlib en el navegador.
+Usa <cite>plt.show()</cite> en lugar de <cite>display(plt, “plot_area”)</cite> para mostrar los gráficos si ejecutas el código localmente.</p>
 </div>
 </div>
 <div class="section" id="ejemplo-interactivo">
 <h2><span class="section-number">2.7. </span>Ejemplo Interactivo<a class="headerlink" href="#ejemplo-interactivo" title="Permalink to this headline">¶</a></h2>
-<p>Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame según la edad y visualizar los resultados:</p>
+<p>Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame en función de la edad y visualizar los resultados:</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_l66_2_1 data-question_label="2.7.1">
@@ -435,11 +435,11 @@ Utiliza <cite>plt.show()</cite> en lugar de <cite>display(plt)</cite> para mostr
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Datos de ejemplo
+# Datos simulados
 data = {
-    'Nombre': ['Juan', 'Ana', 'Pedro', 'Linda', 'Jacobo'],
-    'Edad': [28, 23, 25, 24, 30],
-    'Ciudad': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
+    'Name': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+    'Age': [28, 23, 25, 24, 30],
+    'City': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
 }
 
 # Crear DataFrame
@@ -448,12 +448,13 @@ df = pd.DataFrame(data)
 # Filtrar DataFrame por edad
 df_filtrado = df[df['Edad'] > 25]
 
-# Graficando los datos filtrados
+# Graficando datos filtrados
 df_filtrado.plot(kind='bar', x='Nombre', y='Edad', color='skyblue')
-plt.title('Distribución de Edad para Individuos Mayores de 25 Años')
+plt.title('Distribución de Edad para Personas Mayores de 25 Años')
 plt.xlabel('Nombre')
 plt.ylabel('Edad')
-display(plt)
+print("El gráfico se muestra abajo en el campo:")
+display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
 </textarea>
 </div>
 </div>
@@ -464,7 +465,7 @@ display(plt)
 </div>
 <div class="section" id="ejercicio">
 <h2><span class="section-number">2.8. </span>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this headline">¶</a></h2>
-<p>Escribe un código para calcular la edad promedio de los individuos en el DataFrame.</p>
+<p>Escribe un código para calcular la edad promedio de las personas en el DataFrame.</p>
 </div>
 </div>
 
@@ -480,8 +481,8 @@ display(plt)
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 3. Operaciones Avanzadas de NumPy' data-toggle="tooltip" >
-    <a href="TWP66_3.html" aria-label="Next - 3. Operaciones Avanzadas de NumPy">
+  <li id="relations-next" class="navLink" title='Next Section - 3. Operaciones Avanzadas con NumPy' data-toggle="tooltip" >
+    <a href="TWP66_3.html" aria-label="Next - 3. Operaciones Avanzadas con NumPy">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>

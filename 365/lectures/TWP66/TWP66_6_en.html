@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Interactive Data Visualization with Python &#8212; PyZombis numpy_pandas@8f7df55</title>
+    <title>6. Interactive Data Visualization with Python &#8212; PyZombis numpy_pandas@19da491</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
@@ -26,7 +26,7 @@
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=daab993c1563e629a69d"></script>
+    <script src="../../_static/runtime.bundle.js?v=81aa2202b6b8ac548b3c"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis numpy_pandas@8f7df55
+          PyZombis numpy_pandas@19da491
         </a>
       </div>
     </div>
@@ -356,7 +356,7 @@ window.addEventListener('load', (event) => {
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Mes&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>  <span class="c1"># Replace plt.show() if running locally</span>
+<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">,</span> <span class="s2">&quot;plot_area&quot;</span><span class="p">)</span>  <span class="c1"># Replace plt.show() if running locally</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -375,7 +375,7 @@ window.addEventListener('load', (event) => {
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Mes&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>  <span class="c1"># Replace plt.show() if running locally</span>
+<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">,</span> <span class="s2">&quot;plot_area&quot;</span><span class="p">)</span>  <span class="c1"># Replace plt.show() if running locally</span>
 </pre></div>
 </div>
 </div>
@@ -396,7 +396,7 @@ window.addEventListener('load', (event) => {
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">meses</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
-<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>  <span class="c1"># Replace plt.show() if running locally</span>
+<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">,</span> <span class="s2">&quot;plot_area&quot;</span><span class="p">)</span>  <span class="c1"># Replace plt.show() if running locally</span>
 </pre></div>
 </div>
 </div>
@@ -413,7 +413,7 @@ window.addEventListener('load', (event) => {
 <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">est_mujeres</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">etiquetas</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.2f%%</span><span class="s1">&#39;</span><span class="p">)</span>
 
-<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>   <span class="c1"># Replace plt.show() if running locally</span>
+<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">,</span> <span class="s2">&quot;plot_area&quot;</span><span class="p">)</span>   <span class="c1"># Replace plt.show() if running locally</span>
 </pre></div>
 </div>
 </div>
@@ -436,7 +436,7 @@ window.addEventListener('load', (event) => {
     <span class="c1"># Add grid lines to the plot</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
     <span class="c1"># Show the plot</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>  <span class="c1"># Replace plt.show() if running locally</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">,</span> <span class="s2">&quot;plot_area&quot;</span><span class="p">)</span>  <span class="c1"># Replace plt.show() if running locally</span>
 
 <span class="c1"># Example usage</span>
 <span class="n">degree</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># Set the degree of the polynomial</span>

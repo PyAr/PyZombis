@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Operaciones Avanzadas de NumPy &#8212; PyZombis numpy_pandas@8f7df55</title>
+    <title>3. Operaciones Avanzadas con NumPy &#8212; PyZombis numpy_pandas@19da491</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
@@ -26,12 +26,12 @@
     <script src="../../_static/matrixeq.js?v=D64CFA5A"></script>
     <script src="../../_static/webglinteractive.js?v=2B768384"></script>
     <script src="../../_static/FileSaver.min.js?v=8408C997"></script>
-    <script src="../../_static/runtime.bundle.js?v=daab993c1563e629a69d"></script>
+    <script src="../../_static/runtime.bundle.js?v=81aa2202b6b8ac548b3c"></script>
     <script src="../../_static/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-e60694.bundle.js?v=02c928219c61d5ca913a"></script>
     <script src="../../_static/runestone.bundle.js?v=db4b57b8df6b9b8f470a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4. Explorando Más a Fondo las Bibliotecas de Python" href="TWP66_4.html" />
+    <link rel="next" title="4. Explorando Más Bibliotecas de Python" href="TWP66_4.html" />
     <link rel="prev" title="2. Introducción a Pandas" href="TWP66_2.html" />
 
 
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis numpy_pandas@8f7df55
+          PyZombis numpy_pandas@19da491
         </a>
       </div>
     </div>
@@ -246,7 +246,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - <span class="section-number">4. </span>Explorando Más a Fondo las Bibliotecas de Python' data-toggle="tooltip" >              
+  <li id="relations-next" title='Next Chapter - <span class="section-number">4. </span>Explorando Más Bibliotecas de Python' data-toggle="tooltip" >              
     <a href="TWP66_4.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -286,8 +286,8 @@
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 4. Explorando Más a Fondo las Bibliotecas de Python' data-toggle="tooltip" >
-    <a href="TWP66_4.html" aria-label="Next - 4. Explorando Más a Fondo las Bibliotecas de Python">
+  <li id="relations-next" class="navLink" title='Next Section - 4. Explorando Más Bibliotecas de Python' data-toggle="tooltip" >
+    <a href="TWP66_4.html" aria-label="Next - 4. Explorando Más Bibliotecas de Python">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>
@@ -322,8 +322,8 @@ window.addEventListener('load', (event) => {
 
 
   
-  <div class="section" id="operaciones-avanzadas-de-numpy">
-<h1><span class="section-number">3. </span>Operaciones Avanzadas de NumPy<a class="headerlink" href="#operaciones-avanzadas-de-numpy" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="operaciones-avanzadas-con-numpy">
+<h1><span class="section-number">3. </span>Operaciones Avanzadas con NumPy<a class="headerlink" href="#operaciones-avanzadas-con-numpy" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduccion">
 <h2><span class="section-number">3.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h2>
 <p>En este ejercicio, utilizaremos Python para explorar el uso de las bibliotecas NumPy y Matplotlib.</p>
@@ -331,7 +331,7 @@ window.addEventListener('load', (event) => {
 <div class="section" id="ejemplo-de-codigo">
 <h2><span class="section-number">3.2. </span>Ejemplo de Código<a class="headerlink" href="#ejemplo-de-codigo" title="Permalink to this headline">¶</a></h2>
 <p>Usaremos la biblioteca NumPy para definir el dominio y el rango de una función, y Matplotlib para graficar los resultados.</p>
-<p><strong>Definir el Dominio y Rango</strong></p>
+<p><strong>Definir el Dominio y el Rango</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="c1"># Definir el DOMINIO de una FUNCIÓN</span>
@@ -349,21 +349,21 @@ window.addEventListener('load', (event) => {
 <p><strong>Graficar los Valores</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
-<span class="c1"># Graficar los valores de X e Y con círculos rojos</span>
+<span class="c1"># Graficar los valores de X y Y con círculos rojos</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="c1"># Graficar los valores de X e Y con líneas azules</span>
+<span class="c1"># Graficar los valores de X y Y con líneas azules</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="s1">&#39;b-&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="c1"># Mostrar la gráfica</span>
-<span class="n">diplay</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">display</span><span class="p">(</span><span class="n">plt</span><span class="p">,</span> <span class="s2">&quot;plot_area&quot;</span><span class="p">)</span> <span class="c1"># Reemplazar con plt.show() si se ejecuta localmente</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>utiliza <cite>plt.show()</cite> en lugar de <cite>display(plt)</cite> si estás recreando esto en una máquina local.</p>
+<p>Usa <cite>plt.show()</cite> en lugar de <cite>display(plt, “plot_area”)</cite> si lo recreas en una máquina local.</p>
 </div>
 <p><strong>Editor de Código Interactivo</strong></p>
 <p>Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivos proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.</p>
@@ -386,10 +386,11 @@ N = 55
 X = np.linspace(-5, 5, N)
 Y = np.sin(X)
 
-# Graficando los valores
+# Graficar los valores
 plt.plot(X, Y, 'b-')
 plt.grid(True)
-display(plt)
+print("El gráfico se muestra abajo en el campo:")
+display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
 </textarea>
 </div>
 </div>
@@ -412,8 +413,8 @@ display(plt)
   </a>
 </li>
 
-  <li id="relations-next" class="navLink" title='Next Section - 4. Explorando Más a Fondo las Bibliotecas de Python' data-toggle="tooltip" >
-    <a href="TWP66_4.html" aria-label="Next - 4. Explorando Más a Fondo las Bibliotecas de Python">
+  <li id="relations-next" class="navLink" title='Next Section - 4. Explorando Más Bibliotecas de Python' data-toggle="tooltip" >
+    <a href="TWP66_4.html" aria-label="Next - 4. Explorando Más Bibliotecas de Python">
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
     </a>
   </li>

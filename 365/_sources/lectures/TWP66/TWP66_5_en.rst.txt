@@ -134,29 +134,32 @@ To experiment with the code interactively, use the provided interactive code blo
    :language: python3
    :python3_interpreter: pyscript
 
-    from sympy import Symbol, sin, cos, pi
-    from sympy.plotting import plot
-    from io import BytesIO
-    import base64
+   from sympy import Symbol, sin, cos, pi
+   from sympy.plotting import plot
+   from io import BytesIO
+   import base64
 
-    x = Symbol('x')
-    p = plot(sin(x), cos(x), (x, -pi, pi), show=False)
+   x = Symbol('x')
+   p = plot(sin(x), cos(x), (x, -pi, pi), show=False)
 
-    # Convert plot to PNG
-    buffer = BytesIO()
-    p.save(buffer)
-    buffer.seek(0)
-    img = buffer.getvalue()
+   # You can directly display the plot using plot() when working locally
 
-    # Encode to base64
-    img_base64 = base64.b64encode(img).decode('utf-8')
+   # Convert plot to PNG
+   buffer = BytesIO()
+   p.save(buffer)
+   buffer.seek(0)
+   img = buffer.getvalue()
+   
+   # Encode to base64
+   img_base64 = base64.b64encode(img).decode('utf-8')
 
-    # Create HTML img tag
-    img_tag = f'<img src="data:image/png;base64,{img_base64}">'
+   # Create HTML img tag
+   img_tag = f'<img src="data:image/png;base64,{img_base64}">'
 
-    # Display using PyScript's HTML class
-    from pyscript import HTML
-    display(HTML(img_tag))
+   # Display using PyScript's HTML class
+   from pyscript import HTML
+   print("The plot is displayed below in the field:")
+   display(plt, "plot_area") # Replace with plt.show() if running locally
 
 .. note::
     Ensure you run all the code blocks provided to see the complete results and understand the functionalities demonstrated.

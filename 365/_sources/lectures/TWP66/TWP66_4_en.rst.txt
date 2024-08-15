@@ -44,7 +44,7 @@ Let's plot the calculated values and explore more advanced plotting techniques.
     # Plot the values of X and Y with blue lines
     plt.plot(X, Y, 'b-')
     plt.grid(True)
-    display(plt)
+    display(plt, "plot_area") # Replace with plt.show() if running locally
 
 **Exploring and Composing Functions**
 
@@ -55,7 +55,7 @@ We can also explore and compose functions using NumPy and Matplotlib.
     Z = (np.sin(X)) ** 2
     plt.plot(X, Z, '.-')
     plt.grid(True)
-    display(plt)
+    display(plt, "plot_area") # Replace with plt.show() if running locally
 
 **Interactive Code Editor**
 
@@ -83,7 +83,8 @@ To experiment with the code interactively, use the provided interactive code blo
    Z = (np.sin(X)) ** 2
    plt.plot(X, Z, '.-')
    plt.grid(True)
-   display(plt)
+   print("The plot is displayed below in the field:")
+   display(plt, "plot_area") # Replace with plt.show() if running locally
 
 .. note:: 
-   use `plt.show()` instead of `display(plt)` if recreating on local machine.
+   use `plt.show()` instead of `display(plt, "plot_area")` if recreating on local machine.

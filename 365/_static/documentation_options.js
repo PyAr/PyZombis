@@ -1,6 +1,6 @@
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '8f7df55e384d4982b31522fcdb07bc133acdd03d-numpy_pandas',
+    VERSION: '19da491d022d4d930698e285b890e47042239983-numpy_pandas',
     LANGUAGE: 'None',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',

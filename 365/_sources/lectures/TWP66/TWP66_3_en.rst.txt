@@ -42,10 +42,10 @@ We will use the NumPy library to define the domain and range of a function, and 
     plt.grid(True)
 
     # Display the plot
-    diplay(plt)
+    diplay(plt, "plot_area") # Replace with plt.show() if running locally
 
 .. note:: 
-   use `plt.show()` instead of `display(plt)` if recreating on local machine.
+   use `plt.show()` instead of `display(plt, "plot_area")` if recreating on local machine.
 
 **Interactive Code Editor**
 
@@ -67,7 +67,8 @@ To experiment with the code interactively, use the provided interactive code blo
    # Plotting the values
    plt.plot(X, Y, 'b-')
    plt.grid(True)
-   display(plt)
+   print("The plot is displayed below in the field:")
+   display(plt, "plot_area") # Replace with plt.show() if running locally
 
 .. note::
     Ensure you run all the code blocks provided to see the complete results and understand the functionalities demonstrated.
