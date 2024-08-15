@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5. SymPy with Graphs &#8212; PyZombis numpy_pandas@57640b0</title>
+    <title>5. SymPy with Graphs &#8212; PyZombis numpy_pandas@8f7df55</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis numpy_pandas@57640b0
+          PyZombis numpy_pandas@8f7df55
         </a>
       </div>
     </div>
@@ -364,6 +364,13 @@ window.addEventListener('load', (event) => {
 <p class="admonition-title">Note</p>
 <p>Use these plots to explore the behavior of functions within specified intervals.</p>
 </div>
+<p><strong>Converting Plots to PNG</strong></p>
+<p>In some cases, especially when working in a web environment like this interactive code editor, we need to convert plots into images (such as PNG) for them to be displayed. This is because the editor may not support direct rendering of SymPy plots in their native format. By converting the plots into images and encoding them as base64, we can embed them into HTML for visualization within the notebook or a web page.</p>
+<p>Alternatively, if you’re working locally on your own machine, you can directly display plots without converting them to images by using the <cite>show()</cite> method provided by SymPy’s plotting module. This method will render the plot in a new window or within your Jupyter Notebook if you’re using one.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Directly plot the expression without conversion when working locally</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">pi</span><span class="p">,</span> <span class="n">pi</span><span class="p">),</span> <span class="n">show</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="code-example-3d-plots">
 <h2><span class="section-number">5.3. </span>Code Example: 3D Plots<a class="headerlink" href="#code-example-3d-plots" title="Permalink to this headline">¶</a></h2>
@@ -442,14 +449,29 @@ window.addEventListener('load', (event) => {
     data-audio=''      
            data-wasm=/_static
      data-python3_interpreter='pyscript'  style="visibility: hidden;">
-from sympy import Symbol, sin, cos, pi
-from sympy.plotting import plot
+ from sympy import Symbol, sin, cos, pi
+ from sympy.plotting import plot
+ from io import BytesIO
+ import base64
 
-# Define the symbolic variable
-x = Symbol('x')
+ x = Symbol('x')
+ p = plot(sin(x), cos(x), (x, -pi, pi), show=False)
 
-# Plotting the sine and cosine functions
-plot(sin(x), cos(x), (x, -pi, pi))
+ # Convert plot to PNG
+ buffer = BytesIO()
+ p.save(buffer)
+ buffer.seek(0)
+ img = buffer.getvalue()
+
+ # Encode to base64
+ img_base64 = base64.b64encode(img).decode('utf-8')
+
+ # Create HTML img tag
+ img_tag = f'<img src="data:image/png;base64,{img_base64}">'
+
+ # Display using PyScript's HTML class
+ from pyscript import HTML
+ display(HTML(img_tag))
 </textarea>
 </div>
 </div>

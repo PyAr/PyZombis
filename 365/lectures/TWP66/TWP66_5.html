@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5. SymPy con Gráficas &#8212; PyZombis numpy_pandas@57640b0</title>
+    <title>5. SymPy con Gráficas &#8212; PyZombis numpy_pandas@8f7df55</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/CodeChat.css" />
@@ -90,7 +90,7 @@
         
         <a class="navbar-brand" href="../../index.html" aria-label="index-page">
           
-          PyZombis numpy_pandas@57640b0
+          PyZombis numpy_pandas@8f7df55
         </a>
       </div>
     </div>
@@ -326,7 +326,7 @@ window.addEventListener('load', (event) => {
 <h1><span class="section-number">5. </span>SymPy con Gráficas<a class="headerlink" href="#sympy-con-graficas" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduccion">
 <h2><span class="section-number">5.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h2>
-<p>En este ejercicio, utilizaremos la biblioteca SymPy de Python para crear y visualizar expresiones matemáticas utilizando gráficos en 2D y 3D.</p>
+<p>En este ejercicio, utilizaremos la biblioteca SymPy de Python para crear y visualizar expresiones matemáticas utilizando gráficos tanto en 2D como en 3D.</p>
 </div>
 <div class="section" id="ejemplo-de-codigo-graficas-2d">
 <h2><span class="section-number">5.2. </span>Ejemplo de Código: Gráficas 2D<a class="headerlink" href="#ejemplo-de-codigo-graficas-2d" title="Permalink to this headline">¶</a></h2>
@@ -344,7 +344,7 @@ window.addEventListener('load', (event) => {
 </div>
 <p><strong>Graficar las Expresiones</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Graficar la función cuadrática x^2 con un color personalizado</span>
-<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;fucsia&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;fuchsia&#39;</span><span class="p">)</span>
 
 <span class="c1"># Graficar la función cuadrática x^2 con un código de color diferente</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;#e30052&#39;</span><span class="p">)</span>
@@ -352,27 +352,34 @@ window.addEventListener('load', (event) => {
 <span class="c1"># Graficar la función cuadrática x^2 con el color predeterminado</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="c1"># Graficar las funciones seno y coseno en un intervalo específico</span>
+<span class="c1"># Graficar las funciones seno y coseno sobre un intervalo específico</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">pi</span><span class="p">,</span> <span class="n">pi</span><span class="p">))</span>
 
 <span class="c1"># Graficar múltiples funciones con diferentes intervalos y un título personalizado</span>
 <span class="n">plot</span><span class="p">((</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)),</span> <span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">pi</span><span class="p">,</span> <span class="n">pi</span><span class="p">)),</span>
-     <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;verde&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Ejemplo de Gráfica con SymPy&#39;</span><span class="p">)</span>
+     <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Ejemplo de Gráfica con SymPy&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Usa estas gráficas para explorar el comportamiento de las funciones dentro de intervalos específicos.</p>
+<p>Utiliza estas gráficas para explorar el comportamiento de las funciones dentro de intervalos especificados.</p>
+</div>
+<p><strong>Explicación: Convirtiendo Gráficas a PNG</strong></p>
+<p>En algunos casos, especialmente cuando se trabaja en un entorno web como este editor de código interactivo, necesitamos convertir las gráficas en imágenes (como PNG) para que se puedan mostrar. Esto se debe a que el editor puede no soportar la representación directa de las gráficas de SymPy en su formato nativo. Al convertir las gráficas en imágenes y codificarlas en base64, podemos incrustarlas en HTML para su visualización dentro del cuaderno o de una página web.</p>
+<p>Alternativamente, si estás trabajando localmente en tu propia máquina, puedes mostrar las gráficas directamente sin convertirlas en imágenes utilizando el método <cite>show()</cite> proporcionado por el módulo de gráficos de SymPy. Este método renderizará la gráfica en una nueva ventana o dentro de tu Jupyter Notebook si estás utilizando uno.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Graficar directamente la expresión sin conversión cuando se trabaja localmente</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">pi</span><span class="p">,</span> <span class="n">pi</span><span class="p">),</span> <span class="n">show</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="ejemplo-de-codigo-graficas-3d">
 <h2><span class="section-number">5.3. </span>Ejemplo de Código: Gráficas 3D<a class="headerlink" href="#ejemplo-de-codigo-graficas-3d" title="Permalink to this headline">¶</a></h2>
-<p>También podemos crear gráficos de superficies 3D utilizando SymPy.</p>
-<p><strong>Gráfico de Superficie 3D</strong></p>
+<p>También podemos crear gráficos de superficies en 3D utilizando SymPy.</p>
+<p><strong>Gráfica de Superficie 3D</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy.plotting</span> <span class="kn">import</span> <span class="n">plot3d</span>
 <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span>
 
-<span class="c1"># Definir variables simbólicas para gráficos 3D</span>
+<span class="c1"># Definir variables simbólicas para graficar en 3D</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 
@@ -430,7 +437,7 @@ window.addEventListener('load', (event) => {
 </div>
 <div class="section" id="editor-de-codigo-interactivo">
 <h2><span class="section-number">5.4. </span>Editor de Código Interactivo<a class="headerlink" href="#editor-de-codigo-interactivo" title="Permalink to this headline">¶</a></h2>
-<p>Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivos proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.</p>
+<p>Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivo proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.</p>
 
 <div class="runestone explainer ac_section alert alert-warning">
 <div data-component="activecode" id=ac_l66_5_1 data-question_label="5.4.1">
@@ -442,20 +449,35 @@ window.addEventListener('load', (event) => {
     data-audio=''      
            data-wasm=/_static
      data-python3_interpreter='pyscript'  style="visibility: hidden;">
-from sympy import Symbol, sin, cos, pi
-from sympy.plotting import plot
+ from sympy import Symbol, sin, cos, pi
+ from sympy.plotting import plot
+ from io import BytesIO
+ import base64
 
-# Definir la variable simbólica
-x = Symbol('x')
+ x = Symbol('x')
+ p = plot(sin(x), cos(x), (x, -pi, pi), show=False)
 
-# Graficar las funciones seno y coseno
-plot(sin(x), cos(x), (x, -pi, pi))
+ # Convertir la gráfica a PNG
+ buffer = BytesIO()
+ p.save(buffer)
+ buffer.seek(0)
+ img = buffer.getvalue()
+
+ # Codificar en base64
+ img_base64 = base64.b64encode(img).decode('utf-8')
+
+ # Crear la etiqueta HTML img
+ img_tag = f'<img src="data:image/png;base64,{img_base64}">'
+
+ # Mostrar utilizando la clase HTML de PyScript
+ from pyscript import HTML
+ display(HTML(img_tag))
 </textarea>
 </div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.</p>
+<p>Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y entender las funcionalidades demostradas.</p>
 </div>
 </div>
 </div>
