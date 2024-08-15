@@ -1,0 +1,53 @@
+for == while oculto
+===================
+
++ Códigos equivalentes: FOR durante el día se convierte WHILE por la noche.
+
+
+.. codelens:: cl_l20_1a
+         
+    for letra in "aeiou":
+        print(letra)
+
+.. codelens:: cl_l20_1b
+         
+    texto = "aeiou"
+    k = 0
+    while k < len(texto):
+        letra = texto[k]
+        print(letra)
+        k = k + 1
+
+
++ Códigos equivalentes:
+
+.. codelens:: cl_l20_1c
+         
+    for i in range(5):
+        print(i)
+
+.. codelens:: cl_l20_1d
+         
+    lista = list(range(5))
+    k = 0
+    while k < len(lista):
+        i = lista[k]
+        print(i)
+        k = k + 1
+
+
++ Códigos equivalentes:
+
+.. codelens:: cl_l20_1e
+         
+    for x in ["cpbr6", 42, 3.14]:
+        print(x)
+
+.. codelens:: cl_l20_1f
+         
+    lista = ["cpbr6", 42, 3.14]
+    k = 0
+    while k < len(lista):
+        x = lista[k]
+        print(x)
+        k = k + 1

@@ -1,0 +1,165 @@
+==================
+SymPy con Gráficas
+==================
+
+Introducción
+------------
+En este ejercicio, utilizaremos la biblioteca SymPy de Python para crear y visualizar expresiones matemáticas usando gráficos tanto en 2D como en 3D.
+
+Ejemplo de Código: Gráficas en 2D
+----------------------------------
+Usaremos la biblioteca SymPy para definir expresiones simbólicas y visualizarlas mediante gráficos en 2D.
+
+**Definir la Variable Simbólica**
+
+.. code-block:: python
+
+    from sympy import Symbol
+    from sympy.plotting import plot
+    
+    # Definir la variable simbólica
+    x = Symbol('x')
+    
+    # Mostrar la variable simbólica
+    print(x)
+
+**Graficar las Expresiones**
+
+.. code-block:: python
+
+    # Graficar la función cuadrática x^2 con un color personalizado
+    plot(x**2, line_color='fuchsia')
+
+    # Graficar la función cuadrática x^2 con un código de color diferente
+    plot(x**2, line_color='#e30052')
+
+    # Graficar la función cuadrática x^2 con el color predeterminado
+    plot(x**2)
+
+    # Graficar las funciones seno y coseno en un intervalo específico
+    plot(sin(x), cos(x), (x, -pi, pi))
+
+    # Graficar múltiples funciones con diferentes intervalos y un título personalizado
+    plot((sin(x), (x, -2*pi, 2*pi)), (cos(x), (x, -pi, pi)), 
+         line_color='green', title='Ejemplo de Gráfico con SymPy')
+
+.. note:: 
+   Utiliza estos gráficos para explorar el comportamiento de las funciones dentro de los intervalos especificados.
+
+**Convertir Gráficas a PNG**
+
+En algunos casos, especialmente cuando se trabaja en un entorno web como este editor de código interactivo, necesitamos convertir los gráficos en imágenes (como PNG) para que se puedan mostrar. Esto se debe a que el editor puede no soportar la representación directa de gráficos SymPy en su formato nativo. Al convertir los gráficos en imágenes y codificarlos como base64, podemos incrustarlos en HTML para visualizarlos dentro del cuaderno o en una página web.
+
+Alternativamente, si estás trabajando localmente en tu propia máquina, puedes mostrar los gráficos directamente sin convertirlos en imágenes utilizando el método `show()` proporcionado por el módulo de gráficos de SymPy. Este método renderizará el gráfico en una nueva ventana o dentro de tu Jupyter Notebook si estás utilizando uno.
+
+.. code-block:: python
+
+    # Graficar la expresión directamente sin conversión cuando se trabaja localmente
+    plot(sin(x), cos(x), (x, -pi, pi), show=True)
+
+Ejemplo de Código: Gráficas en 3D
+----------------------------------
+También podemos crear gráficos de superficie en 3D utilizando SymPy.
+
+**Gráfico de Superficie en 3D**
+
+.. code-block:: python
+
+    from sympy.plotting import plot3d
+    from sympy import Symbol
+
+    # Definir variables simbólicas para la representación 3D
+    x = Symbol('x')
+    y = Symbol('y')
+
+    # Mostrar las variables simbólicas
+    print(x, y)
+
+    # Graficar una superficie 3D para la expresión x * y
+    plot3d(x * y, (x, -10, 10), (y, -10, 10))
+
+    # Graficar múltiples superficies 3D
+    plot3d(x * y, x / y, (x, -5, 5), (y, -5, 5))
+
+    # Graficar superficies con expresiones más complejas
+    plot3d((x**2 + y**2, (x, -5, 5), (y, -5, 5)), 
+           (x * y, (x, -3, 3), (y, -3, 3)))
+
+**Gráficas Paramétricas en 3D**
+
+.. code-block:: python
+
+    from sympy.plotting import plot3d_parametric_line
+    from sympy import cos, sin
+
+    # Graficar una línea paramétrica 3D
+    plot3d_parametric_line(cos(x), sin(x), x, (x, -5, 5))
+
+    # Graficar una superficie paramétrica 3D
+    from sympy.plotting import plot3d_parametric_surface
+    u, v = symbols('u v')
+    plot3d_parametric_surface(cos(u + v), sin(u - v), u - v, 
+                              (u, -5, 5), (v, -5, 5))
+
+**Gráficas Implícitas**
+
+.. code-block:: python
+
+    from sympy import plot_implicit, Eq, And
+    from sympy import symbols
+    
+    # Definir las variables simbólicas
+    x, y = symbols('x y')
+    
+    # Graficar una ecuación implícita
+    p1 = plot_implicit(Eq(x**2 + y**2, 5), 
+                       (x, -5, 5), (y, -2, 2), 
+                       adaptive=False, points=400)
+
+    # Graficar una región definida por una desigualdad
+    p2 = plot_implicit(y > x**2)
+
+    # Graficar usando conjunciones booleanas
+    p3 = plot_implicit(And(y > x, y > -x))
+
+.. note:: 
+   Experimenta con estos gráficos para entender cómo SymPy maneja la matemática simbólica y la visualización.
+
+Editor de Código Interactivo
+-----------------------------
+Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivos proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.
+
+.. activecode:: ac_l66_5_1
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   from sympy import Symbol, sin, cos, pi
+   from sympy.plotting import plot
+   from io import BytesIO
+   import base64
+
+   x = Symbol('x')
+   p = plot(sin(x), cos(x), (x, -pi, pi), show=False)
+
+   # Puedes mostrar directamente el gráfico usando plot() cuando trabajas localmente
+
+   # Convertir gráfico a PNG
+   buffer = BytesIO()
+   p.save(buffer)
+   buffer.seek(0)
+   img = buffer.getvalue()
+   
+   # Codificar a base64
+   img_base64 = base64.b64encode(img).decode('utf-8')
+
+   # Crear etiqueta HTML de imagen
+   img_tag = f'<img src="data:image/png;base64,{img_base64}">'
+
+   # Mostrar usando la clase HTML de PyScript
+   from pyscript import HTML
+   print("El gráfico se muestra abajo en el campo:")
+   display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
+
+.. note::
+    Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y entender las funcionalidades demostradas.

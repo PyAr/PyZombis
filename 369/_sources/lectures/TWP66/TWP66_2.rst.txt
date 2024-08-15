@@ -1,0 +1,136 @@
+=====================
+Introducción a Pandas
+=====================
+
+.. image:: ../img/TWP66_002.png
+    :align: center
+    :alt:
+
+
+Introducción
+------------
+Esta lección se centra en Pandas, una poderosa biblioteca de Python para la manipulación y el análisis de datos. Exploraremos sus capacidades para manejar datos estructurados de manera efectiva.
+
+Comprendiendo los conceptos básicos de Pandas
+---------------------------------------------
+Pandas proporciona estructuras de datos como Series y DataFrame. Está construido sobre NumPy, lo que facilita el trabajo con datos estructurados.
+
+.. code-block:: python
+   :caption: Importando Pandas y Cargando Datos Simulados
+
+   import pandas as pd
+
+   # Datos simulados
+   data = {
+       'Name': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+       'Age': [28, 23, 25, 24, 30],
+       'City': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
+   }
+
+   # Creando un DataFrame
+   df = pd.DataFrame(data)
+
+   # Mostrando el DataFrame
+   print(df)
+
+Análisis Exploratorio de Datos (EDA) con Pandas
+-----------------------------------------------
+Verifica las dimensiones de los datos y examina su estructura:
+
+.. code-block:: python
+   :caption: Verificando Dimensiones e Información de los Datos
+
+   # Forma del DataFrame
+   print(df.shape)
+   
+   # Información sobre el DataFrame
+   print(df.info())
+
+Limpieza y Transformación de Datos
+----------------------------------
+Renombrar columnas:
+
+.. code-block:: python
+   :caption: Limpiando y Transformando Datos
+
+   # Renombrar columnas
+   df.rename(columns={'Name': 'Nombre Completo', 'City': 'Ubicación'}, inplace=True)
+   
+
+Manipulación y Agregación de Datos
+----------------------------------
+Selecciona, filtra, agrupa y agrega datos:
+
+.. code-block:: python
+   :caption: Manipulación y Agregación de Datos
+
+   # Seleccionando columnas
+   print(df[['Nombre', 'Edad']])
+   
+   # Filtrando datos
+   datos_filtrados = df[df['Edad'] > 25]
+   print(datos_filtrados)
+   
+   # Agrupando y agregando datos
+   estadisticas_por_edad = df.groupby('Edad').size()
+   print(estadisticas_por_edad)
+
+Visualización de Datos con Pandas y Matplotlib
+----------------------------------------------
+Utiliza Matplotlib para las visualizaciones:
+
+.. code-block:: python
+   :caption: Visualización de Datos
+
+   import matplotlib.pyplot as plt
+
+   # Ejemplo de gráfico
+   df['Edad'].plot(kind='hist', bins=5)
+   plt.title('Distribución de Edad')
+   plt.xlabel('Edad')
+   plt.ylabel('Frecuencia')
+   display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
+
+.. note::
+   Estamos utilizando PyScript para ejecutar NumPy y Matplotlib en el navegador. 
+   Usa `plt.show()` en lugar de `display(plt, "plot_area")` para mostrar los gráficos si ejecutas el código localmente.
+
+Ejemplo Interactivo
+--------------------
+Aquí tienes un ejemplo interactivo donde puedes filtrar el DataFrame en función de la edad y visualizar los resultados:
+
+.. activecode:: ac_l66_2_1
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   import pandas as pd
+   import matplotlib.pyplot as plt
+
+   # Datos simulados
+   data = {
+       'Name': ['John', 'Anna', 'Peter', 'Linda', 'Jack'],
+       'Age': [28, 23, 25, 24, 30],
+       'City': ['Nueva York', 'París', 'Berlín', 'Londres', 'Tokio']
+   }
+
+   # Crear DataFrame
+   df = pd.DataFrame(data)
+
+   # Filtrar DataFrame por edad
+   df_filtrado = df[df['Edad'] > 25]
+
+   # Graficando datos filtrados
+   df_filtrado.plot(kind='bar', x='Nombre', y='Edad', color='skyblue')
+   plt.title('Distribución de Edad para Personas Mayores de 25 Años')
+   plt.xlabel('Nombre')
+   plt.ylabel('Edad')
+   print("El gráfico se muestra abajo en el campo:")
+   display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
+
+.. note::
+    Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.
+
+Ejercicio
+---------
+Escribe un código para calcular la edad promedio de las personas en el DataFrame.

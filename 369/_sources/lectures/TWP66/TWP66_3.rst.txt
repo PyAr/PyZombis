@@ -1,0 +1,74 @@
+===============================
+Operaciones Avanzadas con NumPy
+===============================
+
+Introducción
+------------
+En este ejercicio, utilizaremos Python para explorar el uso de las bibliotecas NumPy y Matplotlib.
+
+Ejemplo de Código
+-----------------
+Usaremos la biblioteca NumPy para definir el dominio y el rango de una función, y Matplotlib para graficar los resultados.
+
+**Definir el Dominio y el Rango**
+
+.. code-block:: python
+
+    import numpy as np
+
+    # Definir el DOMINIO de una FUNCIÓN
+    N = 55
+    X = np.linspace(-5, 5, N)  # -5 límite inferior, 5 límite superior, N número de puntos a generar
+    # Mostrar los valores
+    print(X)
+
+    # Calcular el RANGO de una FUNCIÓN
+    Y = np.sin(X)
+    # Mostrar los valores calculados
+    print(Y)
+
+**Graficar los Valores**
+
+.. code-block:: python
+
+    from matplotlib import pyplot as plt
+
+    # Graficar los valores de X y Y con círculos rojos
+    plt.plot(X, Y, 'ro')
+    plt.grid(True)
+
+    # Graficar los valores de X y Y con líneas azules
+    plt.plot(X, Y, 'b-')
+    plt.grid(True)
+
+    # Mostrar el gráfico
+    display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
+
+.. note:: 
+   Usa `plt.show()` en lugar de `display(plt, "plot_area")` si lo recreas en una máquina local.
+
+**Editor de Código Interactivo**
+
+Para experimentar con el código de forma interactiva, utiliza los bloques de código interactivos proporcionados a continuación. Ejecuta todos los bloques de código para ver los resultados y explorar diferentes funcionalidades.
+
+.. activecode:: ac_l66_3_1
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: pyscript
+
+   import numpy as np
+   import matplotlib.pyplot as plt
+
+   # Definir el dominio
+   N = 55
+   X = np.linspace(-5, 5, N)
+   Y = np.sin(X)
+
+   # Graficar los valores
+   plt.plot(X, Y, 'b-')
+   plt.grid(True)
+   print("El gráfico se muestra abajo en el campo:")
+   display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
+
+.. note::
+    Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.

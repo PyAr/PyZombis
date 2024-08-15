@@ -1,0 +1,107 @@
+====================
+Introducción a NumPy
+====================
+
+.. image:: ../img/TWP66_001.png
+    :align: center
+    :alt:
+
+Introducción
+------------
+Esta conferencia integral se centra en dominar NumPy, una de las bibliotecas más populares en Python para cálculos numéricos. Exploraremos varias funcionalidades de NumPy, entendiendo cómo crear y manipular arreglos para realizar operaciones numéricas de manera efectiva.
+
+Parte 1: Entendiendo los Conceptos Básicos de NumPy
+---------------------------------------------------
+
+.. contents::
+    :local:
+
+Visión General
+~~~~~~~~~~~~~~
+NumPy es una poderosa biblioteca para cálculos numéricos en Python. Proporciona soporte para grandes arreglos y matrices multidimensionales, junto con una colección de funciones matemáticas para operar sobre estos arreglos.
+
+Instalando NumPy
+~~~~~~~~~~~~~~~~
+Instala NumPy usando pip::
+
+    pip install numpy
+
+Importando NumPy
+~~~~~~~~~~~~~~~~
+Importa NumPy en tu script de Python::
+
+    import numpy as np
+
+Creando Arreglos
+~~~~~~~~~~~~~~~~
+**Arreglo 1D**::
+
+    import numpy as np
+
+    # Crear un arreglo 1D
+    arr = np.array([1, 2, 3, 4, 5])
+    print("Arreglo 1D:", arr)
+
+**Arreglo 2D**::
+
+    import numpy as np
+
+    # Crear un arreglo 2D
+    arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
+    print("Arreglo 2D:", arr_2d)
+
+Operaciones con Arreglos
+~~~~~~~~~~~~~~~~~~~~~~~~
+**Operaciones Básicas**::
+
+    import numpy as np
+
+    # Crear un arreglo
+    arr = np.array([1, 2, 3, 4, 5])
+
+    # Realizar operaciones básicas
+    print("Suma:", np.sum(arr))
+    print("Media:", np.mean(arr))
+
+**Operaciones Elemento a Elemento**::
+
+    import numpy as np
+
+    # Crear arreglos
+    arr1 = np.array([1, 2, 3])
+    arr2 = np.array([4, 5, 6])
+
+    # Suma elemento a elemento
+    print("Suma Elemento a Elemento:", arr1 + arr2)
+
+    # Multiplicación elemento a elemento
+    print("Multiplicación Elemento a Elemento:", arr1 * arr2)
+
+Manipulación de la Forma
+~~~~~~~~~~~~~~~~~~~~~~~~
+**Cambio de Forma de Arreglos**::
+
+    import numpy as np
+
+    # Crear un arreglo 1D
+    arr = np.array([1, 2, 3, 4, 5, 6])
+
+    # Cambiar la forma del arreglo a 2x3
+    arr_reshaped = np.reshape(arr, (2, 3))
+    print("Arreglo con Forma Cambiada:", arr_reshaped)
+
+**Aplanamiento de Arreglos**::
+
+    import numpy as np
+
+    # Crear un arreglo 2D
+    arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
+
+    # Aplanar el arreglo
+    arr_flat = arr_2d.flatten()
+    print("Arreglo Aplanado:", arr_flat)
+
+Cuestionario
+------------
+.. raw:: html
+    :file: ../_static/TWP66/TWP66_1.html
