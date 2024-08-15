@@ -89,11 +89,11 @@ Utilize Matplotlib for visualizations:
    plt.title('Age Distribution')
    plt.xlabel('Age')
    plt.ylabel('Frequency')
-   display(plt)
+   display(plt, "plot_area") # Replace with plt.show() if running locally
 
 .. note::
    We are using PyScript to run NumPy and Matplotlib in the browser. 
-   Use `plt.show()` instead of `display(plt)` to show the plots if you are running code locally.
+   Use `plt.show()` instead of `display(plt, "plot_area")` to show the plots if you are running code locally.
 
 Interactive Example
 --------------------
@@ -125,7 +125,8 @@ Here's an interactive example where you can filter the DataFrame based on age an
    plt.title('Age Distribution for Individuals Older than 25')
    plt.xlabel('Name')
    plt.ylabel('Age')
-   display(plt)
+   print("The plot is displayed below in the field:")
+   display(plt, "plot_area") # Replace with plt.show() if running locally
 
 .. note::
     Ensure you run all the code blocks provided to see the complete results and understand the functionalities demonstrated.

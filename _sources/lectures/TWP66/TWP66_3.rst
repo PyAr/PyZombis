@@ -1,6 +1,6 @@
-==============================
-Operaciones Avanzadas de NumPy
-==============================
+===============================
+Operaciones Avanzadas con NumPy
+===============================
 
 Introducción
 ------------
@@ -10,7 +10,7 @@ Ejemplo de Código
 -----------------
 Usaremos la biblioteca NumPy para definir el dominio y el rango de una función, y Matplotlib para graficar los resultados.
 
-**Definir el Dominio y Rango**
+**Definir el Dominio y el Rango**
 
 .. code-block:: python
 
@@ -33,19 +33,19 @@ Usaremos la biblioteca NumPy para definir el dominio y el rango de una función,
 
     from matplotlib import pyplot as plt
 
-    # Graficar los valores de X e Y con círculos rojos
+    # Graficar los valores de X y Y con círculos rojos
     plt.plot(X, Y, 'ro')
     plt.grid(True)
 
-    # Graficar los valores de X e Y con líneas azules
+    # Graficar los valores de X y Y con líneas azules
     plt.plot(X, Y, 'b-')
     plt.grid(True)
 
-    # Mostrar la gráfica
-    diplay(plt)
+    # Mostrar el gráfico
+    display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
 
 .. note:: 
-   utiliza `plt.show()` en lugar de `display(plt)` si estás recreando esto en una máquina local.
+   Usa `plt.show()` en lugar de `display(plt, "plot_area")` si lo recreas en una máquina local.
 
 **Editor de Código Interactivo**
 
@@ -64,10 +64,11 @@ Para experimentar con el código de forma interactiva, utiliza los bloques de c�
    X = np.linspace(-5, 5, N)
    Y = np.sin(X)
 
-   # Graficando los valores
+   # Graficar los valores
    plt.plot(X, Y, 'b-')
    plt.grid(True)
-   display(plt)
+   print("El gráfico se muestra abajo en el campo:")
+   display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
 
 .. note::
     Asegúrate de ejecutar todos los bloques de código proporcionados para ver los resultados completos y comprender las funcionalidades demostradas.

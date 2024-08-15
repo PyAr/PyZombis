@@ -1,10 +1,10 @@
-================================================
-Explorando Más a Fondo las Bibliotecas de Python
-================================================
+====================================
+Explorando Más Bibliotecas de Python
+====================================
 
 Introducción
 ------------
-En esta sección, profundizaremos en el uso de las bibliotecas de Python, centrándonos específicamente en operaciones avanzadas con NumPy y visualizaciones utilizando Matplotlib.
+En esta sección, profundizaremos en el uso de bibliotecas de Python, enfocándonos específicamente en operaciones avanzadas con NumPy y visualizaciones utilizando Matplotlib.
 
 **Trabajando con Funciones**
 
@@ -27,24 +27,24 @@ Comenzaremos definiendo el dominio de una función y calculando su rango corresp
 
 **Graficando Funciones Complejas**
 
-Vamos a graficar los valores calculados y explorar técnicas de graficado más avanzadas.
+Vamos a graficar los valores calculados y explorar técnicas de representación gráfica más avanzadas.
 
 .. code-block:: python
 
     from matplotlib import pyplot as plt
 
-    # Graficar los valores de X e Y con círculos rojos
+    # Graficar los valores de X y Y con círculos rojos
     plt.plot(X, Y, 'ro')
     plt.grid(True)
 
-    # Graficar los valores de X e Y con círculos cian
+    # Graficar los valores de X y Y con círculos cian
     plt.plot(X, Y, 'co')
     plt.grid(True)
 
-    # Graficar los valores de X e Y con líneas azules
+    # Graficar los valores de X y Y con líneas azules
     plt.plot(X, Y, 'b-')
     plt.grid(True)
-    display(plt)
+    display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
 
 **Explorando y Componiendo Funciones**
 
@@ -55,7 +55,7 @@ También podemos explorar y componer funciones utilizando NumPy y Matplotlib.
     Z = (np.sin(X)) ** 2
     plt.plot(X, Z, '.-')
     plt.grid(True)
-    display(plt)
+    display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
 
 **Editor de Código Interactivo**
 
@@ -74,7 +74,7 @@ Para experimentar con el código de forma interactiva, utiliza los bloques de c�
    X = np.linspace(-5, 5, N)
    Y = np.sin(X) / X
 
-   # Graficando los valores
+   # Graficar los valores
    plt.plot(X, Y, 'b-')
    plt.grid(True)
    display(plt)
@@ -83,7 +83,9 @@ Para experimentar con el código de forma interactiva, utiliza los bloques de c�
    Z = (np.sin(X)) ** 2
    plt.plot(X, Z, '.-')
    plt.grid(True)
-   display(plt)
+   print("El gráfico se muestra abajo en el campo:")
+   display(plt, "plot_area") # Reemplazar con plt.show() si se ejecuta localmente
+
 
 .. note:: 
-   utiliza `plt.show()` en lugar de `display(plt)` si estás recreando esto en una máquina local.
+   Usa `plt.show()` en lugar de `display(plt, "plot_area")` si lo recreas en una máquina local.

@@ -31,7 +31,7 @@ Let's start with a simple line plot to compare the average temperatures in Argen
    plt.xlabel('Mes')
    plt.legend()
    plt.grid(True)
-   display(plt)  # Replace plt.show() if running locally
+   display(plt, "plot_area")  # Replace plt.show() if running locally
 
 .. note::
     Replace `display(plt)` with `plt.show()` if running the code locally.
@@ -51,7 +51,7 @@ Now, let's label the months on the x-axis:
    plt.xlabel('Mes')
    plt.legend()
    plt.grid(True)
-   display(plt)  # Replace plt.show() if running locally
+   display(plt, "plot_area")  # Replace plt.show() if running locally
 
 Bar Charts
 ----------
@@ -74,7 +74,7 @@ Let's compare the temperatures using a bar chart:
    ax.set_xticklabels(meses)
    ax.legend()
 
-   display(plt)  # Replace plt.show() if running locally
+   display(plt, "plot_area")  # Replace plt.show() if running locally
 
 Pie Charts
 ----------
@@ -93,7 +93,7 @@ Visualize the distribution of female students across different study areas in 20
    ax.axis('equal')
    ax.pie(est_mujeres, labels=etiquetas, autopct='%1.2f%%')
 
-   display(plt)   # Replace plt.show() if running locally
+   display(plt, "plot_area")   # Replace plt.show() if running locally
 
 Interact with your Widgets
 --------------------------
@@ -118,7 +118,7 @@ Try changing the degree of a polynomial:
         # Add grid lines to the plot
         plt.grid(True)
         # Show the plot
-        display(plt)  # Replace plt.show() if running locally
+        display(plt, "plot_area")  # Replace plt.show() if running locally
 
     # Example usage
     degree = 3  # Set the degree of the polynomial
