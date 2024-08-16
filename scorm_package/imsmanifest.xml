@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest identifier="com.example.scorm" version="1.2">
-    <metadata>
-        <schema>ADL SCORM</schema>
-        <schemaversion>1.2</schemaversion>
-    </metadata>
-    <organizations default="ORG1">
-        <organization identifier="ORG1">
-            <title>SCORM Course</title>
-            <item identifier="ITEM1" identifierref="RES1">
-                <title>Lesson 1</title>
-            </item>
-        </organization>
-    </organizations>
-    <resources>
-        <resource identifier="RES1" type="webcontent" href="index.html">
-            <file href="index.html"/>
-            <file href="scripts/scorm_functions.js"/>
-        </resource>
-    </resources>
+<manifest identifier="com.example.scormminimal" version="1.2"
+    xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+    xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+    http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <adlcp:location>metadata.xml</adlcp:location>
+  </metadata>
+  <organizations default="org">
+    <organization identifier="org">
+      <title>Your Course Title</title>
+      <item identifier="item1" identifierref="resource1">
+        <title>Chapter 1</title>
+      </item>
+      <item identifier="item2" identifierref="resource2">
+        <title>Chapter 2</title>
+      </item>
+      <!-- Add more items for additional chapters -->
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="resource1" type="webcontent" adlcp:scormtype="sco" href="chapter1.html">
+      <file href="chapter1.html"/>
+      <file href="../_static/SCORMFunctions.js"/>
+      <file href="../_static/APIWrapper.js"/>
+    </resource>
+    <resource identifier="resource2" type="webcontent" adlcp:scormtype="sco" href="chapter2.html">
+      <file href="chapter2.html"/>
+      <file href="../_static/SCORMFunctions.js"/>
+      <file href="../_static/APIWrapper.js"/>
+    </resource>
+    <!-- Add more resources for additional chapters -->
+  </resources>
 </manifest>

@@ -306,7 +306,7 @@ Review
 
 
 .. raw:: html
-    :file: ../../scorm_package/index.html
+    :file: ../../scorm_package/chapter1.html
 
 .. disqus::
    :shortname: pyzombis
