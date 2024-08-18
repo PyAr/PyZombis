@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="../_static/auth.js"></script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form onsubmit="return loginUser()">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="checkbox" id="rememberMe" name="rememberMe"> Remember Me<br><br>
+        <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+</body>
+</html>

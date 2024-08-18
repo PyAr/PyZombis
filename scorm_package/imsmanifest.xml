@@ -24,15 +24,25 @@
   </organizations>
   <resources>
     <resource identifier="resource1" type="webcontent" adlcp:scormtype="sco" href="chapter1.html">
-      <file href="chapter1.html"/>
-      <file href="../_static/SCORMFunctions.js"/>
-      <file href="../_static/APIWrapper.js"/>
+        <file href="chapter1.html"/>
+        <file href="../_static/SCORMFunctions.js"/>
+        <file href="../_static/APIWrapper.js"/>
+        <file href="../_static/auth.js"/>
     </resource>
     <resource identifier="resource2" type="webcontent" adlcp:scormtype="sco" href="chapter2.html">
-      <file href="chapter2.html"/>
-      <file href="../_static/SCORMFunctions.js"/>
-      <file href="../_static/APIWrapper.js"/>
+        <file href="chapter2.html"/>
+        <file href="../_static/SCORMFunctions.js"/>
+        <file href="../_static/APIWrapper.js"/>
+        <file href="../_static/auth.js"/>
     </resource>
-    <!-- Add more resources for additional chapters -->
-  </resources>
+    <resource identifier="loginResource" type="webcontent" adlcp:scormtype="sco" href="login.html">
+        <file href="login.html"/>
+        <file href="../_static/auth.js"/>
+    </resource>
+    <resource identifier="signupResource" type="webcontent" adlcp:scormtype="sco" href="signup.html">
+        <file href="signup.html"/>
+        <file href="../_static/auth.js"/>
+    </resource>
+    <!-- Add more resources as needed -->
+</resources>
 </manifest>

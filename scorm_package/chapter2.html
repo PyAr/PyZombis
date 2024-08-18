@@ -6,10 +6,16 @@
     <title>Chapter 2</title>
     <script src="../_static/APIWrapper.js"></script>
     <script src="../_static/SCORMFunctions.js"></script>
+    <script src="../_static/auth.js"></script>
 </head>
-<body onload="loadPage()" onunload="unloadPage()">
+<body onload="loadChapter('chapter2')" onunload="unloadPage()">
     <h1>Chapter 2: Uff</h1>
-    <p>Complete this chapter by clicking the button below.</p>
-    <button onclick="completeChapter('chapter2')">Complete Chapter 2</button>
+    <button onclick="logoutUser()">Logout</button>
+    <p id="completion-status">Checking completion status...</p>
+    <button id="complete-button" onclick="completeChapter('chapter2')">Mark this Chapter as Completed</button>
+    <button id="reset-button" onclick="resetChapter('chapter2')">Reset Progress</button>
+
+    <!-- Textbox for user to write and save data -->
+    <textarea id="chapter-textbox" rows="10" cols="50" placeholder="Write your notes here..."></textarea>
 </body>
 </html>

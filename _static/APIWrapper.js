@@ -43,3 +43,17 @@ function setProgress(progress) {
         API.LMSCommit("");
     }
 }
+
+function setSuspendData(data) {
+    if (API != null) {
+        API.LMSSetValue("cmi.suspend_data", data);
+        API.LMSCommit("");
+    }
+}
+
+function getSuspendData() {
+    if (API != null) {
+        return API.LMSGetValue("cmi.suspend_data");
+    }
+    return "";
+}
