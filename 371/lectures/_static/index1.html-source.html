@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title><title><no title></title></title>
+  <meta http-equiv="content-type" content="text/html; charset=None">
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css">
+</head>
+<body>
+<h2><title><no title></title></h2>
+
+<div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./mini-coi.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width,initial-scale=1&quot;</span> <span class="p">/&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">link</span>
+      <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span>
+      <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://pyscript.net/releases/2024.7.1/core.css&quot;</span>
+    <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span>
+      <span class="na">type</span><span class="o">=</span><span class="s">&quot;module&quot;</span>
+      <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://pyscript.net/releases/2024.7.1/core.js&quot;</span>
+    <span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://code.jquery.com/jquery-3.6.0.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://code.jquery.com/ui/1.13.2/jquery-ui.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span>
+      <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span>
+      <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css&quot;</span>
+    <span class="p">/&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="c">/* Container for editor and output */</span>
+      <span class="p">#</span><span class="nn">container</span> <span class="p">{</span>
+        <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#333</span><span class="p">;</span> <span class="c">/* Dark border */</span>
+        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Rounded corners */</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Space inside the container */</span>
+        <span class="k">margin</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span> <span class="kc">auto</span><span class="p">;</span> <span class="c">/* Center the container horizontally and add top/bottom margin */</span>
+        <span class="k">max-width</span><span class="p">:</span> <span class="mi">90</span><span class="kt">%</span><span class="p">;</span> <span class="c">/* Maximum width of the container */</span>
+        <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">8</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">);</span> <span class="c">/* Subtle shadow */</span>
+      <span class="p">}</span>
+
+      <span class="c">/* Output Div styling */</span>
+      <span class="p">#</span><span class="nn">output</span> <span class="p">{</span>
+        <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">margin-top</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">overflow</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+        <span class="k">resize</span><span class="p">:</span> <span class="kc">both</span><span class="p">;</span> <span class="c">/* Allows the div to be resizable */</span>
+        <span class="k">max-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="c">/* Ensures it doesn&#39;t overflow the viewport */</span>
+        <span class="k">max-height</span><span class="p">:</span> <span class="mi">80</span><span class="kt">vh</span><span class="p">;</span> <span class="c">/* Limits height to 80% of viewport height */</span>
+      <span class="p">}</span>
+
+      <span class="c">/* Clear button styling */</span>
+      <span class="p">#</span><span class="nn">clear-output-button</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+        <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="kc">auto</span><span class="p">;</span> <span class="c">/* Center the button horizontally */</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">6</span><span class="kt">px</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Smaller padding */</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* Smaller font size */</span>
+        <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#007bff</span><span class="p">;</span> <span class="c">/* Bootstrap primary color */</span>
+        <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+        <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="p">#</span><span class="nn">clear-output-button</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="mh">#0056b3</span><span class="p">;</span> <span class="c">/* Darker blue on hover */</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">script</span>
+        <span class="na">type</span><span class="o">=</span><span class="s">&quot;py-editor&quot;</span>
+        <span class="na">config</span><span class="o">=</span><span class="s">&#39;{</span>
+<span class="s">        &quot;packages&quot;: [&quot;pyscript-ltk&quot;, &quot;matplotlib&quot;, &quot;numpy&quot;, &quot;pandas&quot;, &quot;sympy&quot;],</span>
+<span class="s">        &quot;files&quot;: {</span>
+<span class="s">            &quot;https://raw.githubusercontent.com/pyscript/ltk/main/ltk/ltk.js&quot;: &quot;ltk/ltk.js&quot;,</span>
+<span class="s">            &quot;https://raw.githubusercontent.com/pyscript/ltk/main/ltk/ltk.css&quot;: &quot;ltk/ltk.css&quot;</span>
+<span class="s">        }}&#39;</span>
+      <span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;clear-output-button&quot;</span><span class="p">&gt;</span>Clear Display Area<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+      <span class="c">&lt;!-- Output Div --&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;output&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+      <span class="c1">// JavaScript function to clear the output div</span>
+      <span class="nb">document</span>
+        <span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;clear-output-button&quot;</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;output&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+        <span class="p">});</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+Interrumpiendo la repetición
+============================
+
+
++ Calcule la suma de números enteros hasta que se ingrese cero
+
+
+.. activecode:: ac_l15_5a
+   :nocodelens:
+   :stdin:
+
+   suma = 0
+   while True:
+       x = int(input("Ingrese un numero (0 salir): "))
+       if x == 0:
+           break
+       suma = suma + x
+
+   print("Suma: %d" %suma)
+
+
++ Calcule el promedio de los números ingresados hasta que se ingrese cero
+
+
+.. activecode:: ac_l15_5b
+   :nocodelens:
+   :stdin:
+
+   suma = 0
+   n = 0
+   while True:
+       x = int(input("Ingrese un numero (0 salir): "))
+       if x == 0:
+           break
+       else:
+           n = n + 1
+       suma = suma + x
+
+   print("Media: %5.2f" %(suma / n))

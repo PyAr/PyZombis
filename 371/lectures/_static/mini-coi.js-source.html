@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title><title><no title></title></title>
+  <meta http-equiv="content-type" content="text/html; charset=None">
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css">
+</head>
+<body>
+<h2><title><no title></title></h2>
+
+<div class="highlight"><pre><span></span><span class="cm">/*! coi-serviceworker v0.1.7 - Guido Zuidhof and contributors, licensed under MIT */</span>
+<span class="cm">/*! mini-coi - Andrea Giammarchi and contributors, licensed under MIT */</span>
+<span class="p">(({</span> <span class="nb">document</span><span class="o">:</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">navigator</span><span class="o">:</span> <span class="p">{</span> <span class="nx">serviceWorker</span><span class="o">:</span> <span class="nx">s</span> <span class="p">}</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="p">{</span> <span class="nx">currentScript</span><span class="o">:</span> <span class="nx">c</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">d</span><span class="p">;</span>
+        <span class="nx">s</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">src</span><span class="p">,</span> <span class="p">{</span> <span class="nx">scope</span><span class="o">:</span> <span class="nx">c</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;scope&#39;</span><span class="p">)</span> <span class="o">||</span> <span class="s1">&#39;.&#39;</span> <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">r</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="nx">r</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;updatefound&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">location</span><span class="p">.</span><span class="nx">reload</span><span class="p">());</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">active</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">s</span><span class="p">.</span><span class="nx">controller</span><span class="p">)</span> <span class="nx">location</span><span class="p">.</span><span class="nx">reload</span><span class="p">();</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;install&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">skipWaiting</span><span class="p">());</span>
+        <span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;activate&#39;</span><span class="p">,</span> <span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">waitUntil</span><span class="p">(</span><span class="nx">clients</span><span class="p">.</span><span class="nx">claim</span><span class="p">()));</span>
+        <span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;fetch&#39;</span><span class="p">,</span> <span class="nx">e</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="kd">const</span> <span class="p">{</span> <span class="nx">request</span><span class="o">:</span> <span class="nx">r</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">e</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">cache</span> <span class="o">===</span> <span class="s1">&#39;only-if-cached&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">r</span><span class="p">.</span><span class="nx">mode</span> <span class="o">!==</span> <span class="s1">&#39;same-origin&#39;</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+            <span class="nx">e</span><span class="p">.</span><span class="nx">respondWith</span><span class="p">(</span><span class="nx">fetch</span><span class="p">(</span><span class="nx">r</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">r</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                <span class="kd">const</span> <span class="p">{</span> <span class="nx">body</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">statusText</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">r</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">status</span> <span class="o">||</span> <span class="nx">status</span> <span class="o">&gt;</span> <span class="mf">399</span><span class="p">)</span> <span class="k">return</span> <span class="nx">r</span><span class="p">;</span>
+                <span class="kd">const</span> <span class="nx">h</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Headers</span><span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">headers</span><span class="p">);</span>
+                <span class="nx">h</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;Cross-Origin-Opener-Policy&#39;</span><span class="p">,</span> <span class="s1">&#39;same-origin&#39;</span><span class="p">);</span>
+                <span class="nx">h</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;Cross-Origin-Embedder-Policy&#39;</span><span class="p">,</span> <span class="s1">&#39;require-corp&#39;</span><span class="p">);</span>
+                <span class="nx">h</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;Cross-Origin-Resource-Policy&#39;</span><span class="p">,</span> <span class="s1">&#39;cross-origin&#39;</span><span class="p">);</span>
+                <span class="k">return</span> <span class="k">new</span> <span class="nx">Response</span><span class="p">(</span><span class="nx">body</span><span class="p">,</span> <span class="p">{</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">statusText</span><span class="p">,</span> <span class="nx">headers</span><span class="o">:</span> <span class="nx">h</span> <span class="p">});</span>
+            <span class="p">}));</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">})(</span><span class="nx">self</span><span class="p">);</span>
+</pre></div>
+</body>
+</html>

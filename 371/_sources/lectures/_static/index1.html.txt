@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./mini-coi.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://pyscript.net/releases/2024.7.1/core.css"
+    />
+    <script
+      type="module"
+      src="https://pyscript.net/releases/2024.7.1/core.js"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+
+    <style>
+      /* Container for editor and output */
+      #container {
+        border: 2px solid #333; /* Dark border */
+        border-radius: 8px; /* Rounded corners */
+        padding: 20px; /* Space inside the container */
+        margin: 20px auto; /* Center the container horizontally and add top/bottom margin */
+        max-width: 90%; /* Maximum width of the container */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+      }
+
+      /* Output Div styling */
+      #output {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-top: 10px;
+        overflow: auto;
+        resize: both; /* Allows the div to be resizable */
+        max-width: 100%; /* Ensures it doesn't overflow the viewport */
+        max-height: 80vh; /* Limits height to 80% of viewport height */
+      }
+
+      /* Clear button styling */
+      #clear-output-button {
+        display: block;
+        margin: 10px auto; /* Center the button horizontally */
+        padding: 6px 12px; /* Smaller padding */
+        font-size: 14px; /* Smaller font size */
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff; /* Bootstrap primary color */
+        color: white;
+        cursor: pointer;
+      }
+
+      #clear-output-button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <script
+        type="py-editor"
+        config='{
+        "packages": ["pyscript-ltk", "matplotlib", "numpy", "pandas", "sympy"],
+        "files": {
+            "https://raw.githubusercontent.com/pyscript/ltk/main/ltk/ltk.js": "ltk/ltk.js",
+            "https://raw.githubusercontent.com/pyscript/ltk/main/ltk/ltk.css": "ltk/ltk.css"
+        }}'
+      ></script>
+      <button id="clear-output-button">Clear Display Area</button>
+
+      <!-- Output Div -->
+      <div id="output"></div>
+    </div>
+
+    <script>
+      // JavaScript function to clear the output div
+      document
+        .getElementById("clear-output-button")
+        .addEventListener("click", function () {
+          document.getElementById("output").innerHTML = "";
+        });
+    </script>
+  </body>
+</html>
