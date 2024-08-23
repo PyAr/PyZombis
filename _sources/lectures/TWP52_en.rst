@@ -306,10 +306,34 @@ Review
 
 
 .. raw:: html
+    :file: ../_static/APIWrapper.js
 
-    <iframe src="https://dev.python.org.ar/mod/scorm/player.php?a=7&scoid=16" width="100%" height="600px">
-      Your browser does not support iframes.
-   </iframe>
+.. raw:: html
+    :file: ../_static/SCORMFunctions.js
+
+.. raw:: html
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        loadChapter('TWP15_3');
+    });
+
+    window.addEventListener('beforeunload', function() {
+        unloadPage();
+    });
+
+    function hookSaveButton() {
+        var saveButton = document.querySelector('button'); // Adjust selector to target your save/run button
+        if (saveButton) {
+            saveButton.addEventListener('click', function() {
+                completeChapter('TWP15_3');
+            });
+        }
+    }
+
+    hookSaveButton();
+    </script>
+
 
 .. disqus::
    :shortname: pyzombis
