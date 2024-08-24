@@ -1,4 +1,10 @@
-Introduction to a Graphical User Interface
+.. raw:: html
+    :file: ../_static/APIWrapper.js
+
+.. raw:: html
+    :file: ../_static/SCORMFunctions.js
+
+|Introduction to a Graphical User Interface
 ===========================================
 
 + In programming, just writing code is not enough.
@@ -39,7 +45,6 @@ Playing Audio
     :language: python3
     :python3_interpreter: brython
 
-
     from browser import document, html
 
     url_audio = "" # Add a link of an audio to play it
@@ -57,7 +62,6 @@ Playing Audio
     :python3_interpreter: brython
 
     from browser import document, html, timer
-
 
     def create_element(url_audio, audio_name):
         print(f"Creating the audio element {url_audio}")
@@ -101,3 +105,10 @@ Playing Audio
    :width: 10.688cm
    :align: center
    :alt:
+
+.. raw:: html
+
+    <script>
+        // Save the chapter progress and suspend data at the end of the chapter
+        completeChapter("Introduction to a Graphical User Interface");
+    </script>

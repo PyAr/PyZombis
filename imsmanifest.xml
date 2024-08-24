@@ -13,32 +13,16 @@
     <organization identifier="org">
       <title>Your Course Title</title>
       <item identifier="item1" identifierref="resource1">
-        <title>TWP15_3</title>
-      </item>
-      <item identifier="item2" identifierref="resource2">
-        <title>TWP15_4</title>
-      </item>
-      <item identifier="item3" identifierref="resource3">
-        <title>TWP15_5</title>
+        <title>TWP50_1_en</title>
       </item>
       <!-- Add more items for additional chapters -->
     </organization>
   </organizations>
   <resources>
-    <resource identifier="resource1" type="webcontent" adlcp:scormtype="sco" href="TWP15_3.html">
-        <file href="TWP15_3.html"/>
-        <file href="../_static/SCORMFunctions.js"/>
-        <file href="../_static/APIWrapper.js"/>
-    </resource>
-    <resource identifier="resource2" type="webcontent" adlcp:scormtype="sco" href="TWP15_4.html">
-        <file href="TWP15_4.html"/>
-        <file href="../_static/SCORMFunctions.js"/>
-        <file href="../_static/APIWrapper.js"/>
-    </resource>
-    <resource identifier="resource3" type="webcontent" adlcp:scormtype="sco" href="TWP15_5.html">
-        <file href="TWP15_5.html"/>
-        <file href="../_static/SCORMFunctions.js"/>
-        <file href="../_static/APIWrapper.js"/>
+    <resource identifier="resource1" type="webcontent" adlcp:scormtype="sco" href="_sorces/lectures/TWP50/TWP50_1_en.rst">
+        <file href="_sorces/lectures/TWP50/TWP50_1_en.rst"/>
+        <file href="_static/SCORMFunctions.js"/>
+        <file href="_static/APIWrapper.js"/>
     </resource>
   </resources>
 </manifest>
