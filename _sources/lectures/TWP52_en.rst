@@ -304,9 +304,6 @@ Review
 + RadioButton()
 + OptionMenu()
 
-
-
-
 .. disqus::
    :shortname: pyzombis
    :identifier: lecture19
