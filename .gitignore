@@ -66,3 +66,7 @@ docs/_build/
 target/
 
 .vscode
+
+# Build Files
+.tool-versions
+build-info
