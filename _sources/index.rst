@@ -32,3 +32,4 @@ Contenidos:
 
    index_es
    index_en
+   pycomponent
