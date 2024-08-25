@@ -305,7 +305,11 @@ Review
 + OptionMenu()
 
 
+.. raw:: html
 
+    <iframe src="https://dev.python.org.ar/mod/scorm/player.php?a=7&scoid=16" width="100%" height="600px">
+      Your browser does not support iframes.
+   </iframe>
 
 .. disqus::
    :shortname: pyzombis

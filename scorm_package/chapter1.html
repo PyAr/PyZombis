@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1</title>
+    <script src="../_static/APIWrapper.js"></script>
+    <script src="../_static/SCORMFunctions.js"></script>
+    <script src="../_static/auth.js"></script>
+</head>
+<body onload="loadChapter('chapter1')" onunload="unloadPage()">
+    <h1>Chapter 1: Introduction</h1>
+    <button onclick="logoutUser()">Logout</button>
+    <p id="completion-status">Checking completion status...</p>
+    <button id="complete-button" onclick="completeChapter('chapter1')">Mark this Chapter as Completed</button>
+    <button id="reset-button" onclick="resetChapter('chapter1')">Reset Progress</button>
+
+    <!-- Textbox for user to write and save data -->
+    <textarea id="chapter-textbox" rows="10" cols="50" placeholder="Write your notes here..."></textarea>
+</body>
+</html>
