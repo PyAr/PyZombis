@@ -19,33 +19,60 @@ Clase = fábrica de objetos
 Clase SoundPanel
 ----------------
 
-.. code-block :: python
+.. activecode:: lect_58_2_es
+   :nocodelens:
+   :language: python3
+   :python3_interpreter: brython
 
-   from tkinter import *
-   import pygame.mixer
+   from browser import document, html
 
-   class SoundPanel(Frame):
-      def track_toggle(self):
-         if self.track_playing.get() == 1:
-            self.track.play(loops = -1)
-         else:
-            self.track.stop()
-      def change_volume(self,v):
-         self.track.set_volume(self.volume.get())
-      def __init__(self,app,mixer,sound_file):
-         Frame.__init__(self,app)
-         self.track = mixer.Sound(sound_file)
-         self.track_playing = IntVar()
-         track_button = Checkbutton(self,variable = self.track_playing,command = self.track_toggle,text = sound_file)
-         track_button.pack(side = LEFT)
-         self.volume = DoubleVar()
-         self.volume.set(self.track.get_volume())
-         volume_scale = Scale(self,variable = self.volume, from_ = 0.0, to = 1.0, resolution = 0.1, command = self.change_volume, label = "Volume", orient = HORIZONTAL)
-         volume_scale.pack(side = RIGHT)
+   class PanelSonido:  # Panel de Sonido (Sound Panel)
+      def __init__(self, archivo_sonido):  # Archivo de Sonido (Sound File)
+          self.archivo_sonido = archivo_sonido
+          self.pista = html.AUDIO(src=archivo_sonido)
+          self.reproduciendo = False
+          self.volumen = 1.0
 
+      def alternar_pista(self, ev):  # Alternar Pista (Track Toggle)
+          if self.reproduciendo:
+              self.pista.pause()
+              print("Deteniendo:", self.archivo_sonido)
+          else:
+              self.pista.play()
+              print("Reproduciendo:", self.archivo_sonido)
+          self.reproduciendo = not self.reproduciendo
+
+      def cambiar_volumen(self, ev):  # Cambiar Volumen (Change Volume)
+          self.volumen = float(ev.target.value)
+          self.pista.volume = self.volumen
+          print("Volumen cambiado a:", self.volumen)
+
+   contenedor_app = html.DIV(id='app')  # Contenedor de la Aplicación (App Container)
+
+   panel_sonido = PanelSonido('https://bigsoundbank.com/UPLOAD/mp3/0751.mp3')
+
+   boton_pista = html.INPUT(type='checkbox')
+   boton_pista.bind('change', panel_sonido.alternar_pista)
+
+   etiqueta_pista = html.LABEL('Reproducir Sonido')  # Etiqueta de Pista (Track Label)
+   etiqueta_pista <= boton_pista
+
+   slider_volumen = html.INPUT(type='range', min='0', max='1', step='0.1')
+   slider_volumen.bind('input', panel_sonido.cambiar_volumen)
+
+   etiqueta_volumen = html.LABEL('Volumen')  # Etiqueta de Volumen (Volume Label)
+   etiqueta_volumen <= slider_volumen
+
+   contenedor_app <= panel_sonido.pista
+   contenedor_app <= etiqueta_pista
+   contenedor_app <= etiqueta_volumen
+
+   document <= contenedor_app
 
 Programa principal
 ------------------
+
++ Prueba ejecutar este código en tu PC y observa cómo genera dinámicamente paneles de sonido para archivos WAV en tu directorio.
 
 .. code-block :: python
 
