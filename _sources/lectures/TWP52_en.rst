@@ -305,7 +305,8 @@ Review
 + OptionMenu()
 
 
-
+.. raw:: html
+    :file: ../../scorm_package/chapter1.html
 
 .. disqus::
    :shortname: pyzombis
