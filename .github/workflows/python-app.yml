@@ -71,7 +71,7 @@ jobs:
       run: |
         playwright install
     - name: Download generated content artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: website-output
         path: build/PyZombis/
