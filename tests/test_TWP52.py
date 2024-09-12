@@ -1,5 +1,5 @@
 def test_l52_1(page):
-    page.goto("lectures/TWP52_en.html")
+    page.goto("lectures/TWP52/TWP52_en.html")
 
     # Run the exercise
     page.click("#ac_l52_1a_en >> *css=button >> text=Run")
@@ -25,7 +25,7 @@ def test_l52_1(page):
 
 
 def test_l52_2(page):
-    page.goto("lectures/TWP52.html")
+    page.goto("lectures/TWP52/TWP52.html")
 
     # Run the exercise
     page.click("#ac_l52_1a >> *css=button >> text=Run")
@@ -50,7 +50,7 @@ def test_l52_2(page):
     frame.click("text=Guardar")
 
 def test_l52_3(page):
-    page.goto("lectures/TWP52_en.html")
+    page.goto("lectures/TWP52/TWP52_en.html")
 
     # Click #ac_l52_1b_en >> text=Run
     page.click("#ac_l52_1b_en >> *css=button >> text=Run")
@@ -70,7 +70,7 @@ def test_l52_3(page):
     frame.click("input[name=\"destination\"]")
 
 def test_l52_4(page):
-    page.goto("lectures/TWP52.html")
+    page.goto("lectures/TWP52/TWP52.html")
 
     # Click #ac_l52_1b >> text=Run
     page.click("#ac_l52_1b >> *css=button >> text=Run")
@@ -90,7 +90,7 @@ def test_l52_4(page):
     frame.click("input[name=\"destino\"]")
 
 def test_l52_5(page):
-    page.goto("lectures/TWP52_en.html")
+    page.goto("lectures/TWP52/TWP52_en.html")
 
     # Click #ac_l52_1c_en >> text=Run
     page.click("#ac_l52_1c_en >> *css=button >> text=Run")
@@ -121,7 +121,7 @@ def test_l52_5(page):
     page.frame(url="about:srcdoc").click("text=Save")
 
 def test_l52_6(page):
-    page.goto("lectures/TWP52.html")
+    page.goto("lectures/TWP52/TWP52.html")
 
     # Click #ac_l52_1c >> text=Run
     page.click("#ac_l52_1c >> *css=button >> text=Run")
@@ -152,7 +152,7 @@ def test_l52_6(page):
     page.frame(url="about:srcdoc").click("text=Guardar")
 
 def test_l52_7(page):
-    page.goto("lectures/TWP52_en.html")
+    page.goto("lectures/TWP52/TWP52_en.html")
 
     # Click #ac_l52_1d_en >> text=Run
     page.click("#ac_l52_1d_en >> *css=button >> text=Run")
@@ -182,7 +182,7 @@ def test_l52_7(page):
     page.frame(url="about:srcdoc").click("text=Save")
 
 def test_l52_8(page):
-    page.goto("lectures/TWP52.html")
+    page.goto("lectures/TWP52/TWP52.html")
 
     # Click #ac_l52_1d_en >> text=Run
     page.click("#ac_l52_1d >> *css=button >> text=Run")
