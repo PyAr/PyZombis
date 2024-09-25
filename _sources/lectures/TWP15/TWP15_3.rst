@@ -51,6 +51,20 @@ Algunos ejercicios
    pero esta vez solo los números impares.
    
    ~~~~
+   def print_odd_numbers(n):
+
+
+   ====
+   from unittest.gui import TestCaseGui
+
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(print_odd_numbers(10), [1, 3, 5, 7, 9], "Esperado [1, 3, 5, 7, 9]")
+         self.assertEqual(print_odd_numbers(1), [1], "Esperado [1]")
+         self.assertEqual(print_odd_numbers(0), [], "Esperado []")
+
+   myTests().main()
 
 
 .. activecode:: ac_l15_3e
@@ -59,3 +73,14 @@ Algunos ejercicios
    Escriba un programa que imprima los primeros 10 múltiplos de 3.
    
    ~~~~
+   def print_multiples_of_3():
+
+   ====
+   from unittest.gui import TestCaseGui
+
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(print_multiples_of_3(), [3, 6, 9, 12, 15, 18, 21, 24, 27, 30], "Esperado [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]")
+
+   myTests().main()

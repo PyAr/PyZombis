@@ -51,7 +51,20 @@ Some Exercises
    the user, but this time only the odd numbers.
    
    ~~~~
+   def print_odd_numbers(n):
 
+
+   ====
+   from unittest.gui import TestCaseGui
+
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(print_odd_numbers(10), [1, 3, 5, 7, 9], "Expected [1, 3, 5, 7, 9]")
+         self.assertEqual(print_odd_numbers(1), [1], "Expected [1]")
+         self.assertEqual(print_odd_numbers(0), [], "Expected []")
+
+   myTests().main()
 
 .. activecode:: ac_l15_3e_en
    :nocodelens:
@@ -59,3 +72,14 @@ Some Exercises
    Write a program that prints the first 10 multiples of 3.
    
    ~~~~
+   def print_multiples_of_3():
+
+   ====
+   from unittest.gui import TestCaseGui
+
+
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(print_multiples_of_3(), [3, 6, 9, 12, 15, 18, 21, 24, 27, 30], "Expected [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]")
+
+   myTests().main()
