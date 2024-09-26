@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP23/TWP23_4.rst:2
+msgid "HTML"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_4.rst:4
+msgid "Las páginas web están escritas en HTML (lenguaje de marcado de hipertexto)"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_4.rst:5
+msgid "Las etiquetas HTML comienzan con <y terminan con>"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_4.rst:6
+msgid ""
+"La página web está escrita entre <html> y </html>, que es la etiqueta más"
+" grande nivel"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_4.rst:7
+msgid "Normalmente insertamos código javascript"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_4.rst:8
+msgid "Javascript no es un subconjunto de Java"
+msgstr ""
+
+#: ../_sources/lectures/TWP23/TWP23_4.rst:33
+msgid "Pruebe el programa anterior."
+msgstr ""
+

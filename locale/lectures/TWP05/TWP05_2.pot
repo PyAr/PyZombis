@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:2
+msgid "Primer mensaje de error"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:4
+msgid "Las letras mayúsculas y minúsculas son diferentes"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:5
+msgid "``print()`` es diferente de ``Print()``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:14
+#: ../_sources/lectures/TWP05/TWP05_2.rst:32
+#: ../_sources/lectures/TWP05/TWP05_2.rst:51
+#: ../_sources/lectures/TWP05/TWP05_2.rst:71
+msgid "**¡Ahora inténtelo por su propia cuenta!**"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:20
+msgid "Si no usamos comillas, la computadora interpretará nuestro mensaje como un comando de Python, generando un error de sintaxis"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:22
+msgid "``\"hola mundo\"`` es diferente de ``hola mundo``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:40
+msgid "En la versión de Python que usamos (Python 3), los paréntesis no son opcionales al usar ``print()``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:41
+msgid "``print(\"hola mundo\")`` es diferente de ``print \"hola mundo\"``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:59
+msgid "Los espacios iniciales tienen un significado en Python que veremos más adelante, en este caso genera nuevamente un error de sintaxis"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_2.rst:61
+msgid "Estos espacios se llaman indentaciones o sangrías"
+msgstr ""

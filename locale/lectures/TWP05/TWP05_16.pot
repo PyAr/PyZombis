@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:2
+msgid "Lista de Ejercicios"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:4
+msgid "Utilice el intérprete de modo interactivo aquí abajo para solucionar los siguientes ejercicios."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:6
+msgid "Su salario actual es de $6500. Calcule su nuevo salario con un aumento del 5%"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:7
+msgid "Muestre su nombre en la pantalla"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:8
+msgid "Calcule la suma de tres variables"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:9
+msgid "¿Qué sucede si escribo textos en las tres variables anteriores?"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:10
+msgid "Indique el tipo de los siguientes valores: ``5``, ``5.0``, ``4.3``, ``-2``, ``100``, ``1.333``, ``\"10\"``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:11
+msgid "Experimente en el intérprete interactivo de Python utilizar ``type(x)`` donde ``x`` es cada uno de los valores anteriores"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:12
+msgid "¿Es posible calcular 2 elevado a un millón?"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:13
+msgid "Pruebe asignar a una variable ``saludo`` la cadena de caracteres ``'hola'`` (string)."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:14
+msgid "Solicite que el usuario ingrese su nombre, y guardelo en otra variable ``nombre``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:15
+msgid "¿Es posible unir ambas cadenas de caracteres (strings) ``saludo`` y ``nombre``?"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:16
+msgid "Intente obtener la longitud de las cadena de caracteres con ``len(x)``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:30
+msgid "Para calcular un aumento del 5% podemos multiplicar nuestro valor por 1.05, por lo que tenemos: ``6500*1.05 = 6825.0``. Entonces, después del aumento, su salario será de $6825."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:31
+msgid "``print(\"tu nombre\")``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:32
+msgid "Suponga las variables ``x = 1``, ``y = 2`` y ``z = 3``. Para sumarlas es necesario usar el símbolo + de la siguiente manera: ``x + y + z``. Que resulta en el valor 6."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:33
+msgid "Supongamos ahora que las variables son ``x = \"Me\"``, ``y = \"gusta\"`` y ``z = \"Python\"``. Si sumamos estas variables tendremos la respuesta: \"MegustaPython\"."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:34
+msgid "Las respuestas correctas son int, float, float, int, int, float y str."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:35
+msgid "Para conocer el tipo de una variable usamos el método ``type`` de la siguiente manera: ``type(5)``. Este código devolverá ``<class 'int'>`` indicando que esta variable es de tipo entero."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:36
+msgid "Es posible, para eso solo haz ``2**1000000`` y tendrás el resultado."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:37
+msgid "Para crear una variable de tipo string, podemos escribir su valor entre comillas simples o dobles: ``saludo = \"Hello\"`` o ``saludo = 'Hello'``."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:38
+msgid "``nombre = input(\"Escribe tu nombre: \")``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:39
+msgid "Sí. Cuando agregamos dos cadenas, Python las concatena. Supongamos las variables ``x = \"saludo\"`` e ``y = \"nombre\"``. Si sumamos ``x + y`` tendremos como respuesta “saludonombre”."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:40
+msgid "Supongamos que queremos la longitud de la cadena “saludo”. Para saber esto hacemos ``len(saludo)`` cuyo resultado es 6."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_16.rst:50
+msgid "“La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote”. - Einstein"
+msgstr ""

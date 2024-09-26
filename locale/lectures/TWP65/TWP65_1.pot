@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:2
+msgid "Desarrollo web"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:5
+msgid "Solicitudes y respuestas"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:23
+msgid "\"Python: el único lenguaje con más marcos web que palabras clave\""
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:24
+msgid "Frameworks: Plone, Django, Web2py, Pyramid"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:25
+msgid "Micro Frameworks: CherryPy, Botella, Frasco"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:26
+msgid "WSGI (interfaz de puerta de enlace del servidor web)"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:28
+msgid "Patrones de acceso y comunicación entre servidores web y aplicaciones Python"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:29
+msgid "No es J2EE ;-)"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:33
+msgid "Web2py"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:35
+msgid "InfoWorld: best full-stack Python framework"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:36
+msgid "Bossie: Best Open Source Development Software"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:37
+msgid "MVC:"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:39
+msgid "Modelo: datos"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:40
+msgid "Controladores: reglas de negocio"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:41
+msgid "Vistas: presentación"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:43
+msgid "Autocontido == full-stack framework"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:44
+msgid "Seguro"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:45
+msgid "DAL (Data Access Layer)"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:46
+msgid "Deploy rápido e distribuição fácil"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:47
+msgid "Princípios Python"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:49
+msgid "DRY – Don’t Repeat Yourself"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:50
+msgid "Debe haber solo una forma obvia de hacer algo"
+msgstr ""
+
+#: ../_sources/lectures/TWP65/TWP65_1.rst:51
+msgid "Explícito es mejor que implícito (no sigue)"
+msgstr ""

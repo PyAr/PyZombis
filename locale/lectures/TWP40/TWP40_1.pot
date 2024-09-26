@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:2
+msgid "El proceso de desarrollo de software"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:4
+msgid "Ejecutar programas creados por otros es relativamente simple"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:5
+msgid "Lo difícil es comenzar a crear tus propios programas"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:6
+msgid "Las computadoras son muy estrictas y hay muchos detalles"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:7
+msgid "Entonces es necesario ser muy sistemático"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:10
+msgid "Pasos en el proceso de desarrollo de software"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:14
+msgid "Analizar el problema:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:13
+msgid "Comprender exactamente ¿cuál es el problema a resolver?"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:14
+msgid "Problema bien definido, medio problema resuelto."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:19
+#: ../_sources/lectures/TWP40/TWP40_1.rst:39
+msgid "Especificación de lo que hará el programa:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:17
+msgid "Describe exactamente lo que hará tu programa."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:18
+msgid "En esta etapa, no debería preocuparme sobre ¿cómo voy a hacer mi programa?, pero mas decidir exactamente ¿qué hará?"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:19
+msgid "¿Cuáles son las entradas y salidas del programa?"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:23
+msgid "Diseñar el programa:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:22
+msgid "Formular la estructura general del programa."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:23
+msgid "Podemos usar pseudocódigo en este paso."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:28
+msgid "Implementar el programa:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:26
+msgid "Diseñar algunas pruebas para validar tu programa."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:27
+msgid "Traduce el proyecto a cualquier lenguaje de programación."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:28
+msgid "En este curso usaremos Python."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:31
+msgid "Ejemplo: convertidor de temperatura Fahrenheit a Celsius"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:34
+msgid "Análisis del problema:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:34
+msgid "Dada una temperatura en grados *Fahrenheit*, obtenga la conversión en Celsius."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:37
+msgid "Entrada: temperatura en Fahrenheit"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:38
+msgid "Salida: temperatura en grados Celsius"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:39
+msgid "Salida: 5 * (F-32) / 9"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:44
+msgid "Diseñar ¿cómo funcionará el programa?:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:42
+msgid "Leer el valor de temperatura en Fahrenheit."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:43
+msgid "Convertir el valor usando la fórmula ``5 * (F-32) / 9``"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:44
+msgid "Imprimir el valor convertido."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:47
+msgid "Implementación del problema:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_1.rst:47
+msgid "Pruebas: 32F = 0C y 100F = 37.8C"
+msgstr ""

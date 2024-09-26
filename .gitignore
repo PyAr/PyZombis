@@ -52,10 +52,6 @@ coverage.xml
 *,cover
 videos/
 
-# Translations
-*.mo
-*.pot
-
 # Django stuff:
 *.log
 

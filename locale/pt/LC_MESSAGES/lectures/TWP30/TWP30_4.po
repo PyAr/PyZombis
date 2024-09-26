@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP30/TWP30_4.rst:2
+msgid "El programa es una red de carreteras"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_4.rst:23
+msgid "En la red eliges tu camino"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_4.rst:33
+msgid "Consejos"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_4.rst:35
+msgid "El programa de adivinar números solo dice si lo hiciste bien o no"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_4.rst:36
+msgid ""
+"Para ayudarlo a decir \"Alto\" o \"Bajo\" si la persona está equivocada "
+"¿Cómo se vería el camino?"
+msgstr ""
+
+#: ../_sources/lectures/TWP30/TWP30_4.rst:62
+msgid "A los usuarios todavía no les gusta"
+msgstr ""
+

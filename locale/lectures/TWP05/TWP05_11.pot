@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:2
+msgid "Variable String"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:4
+msgid "Almacene cadenas como nombres y texto en general"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:5
+msgid "Llamamos cadenas a una secuencia de símbolos como letras, números, signos de puntuación, etc."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:7
+msgid "Para diferenciar sus comandos de una cadena, usamos comillas en principio y fin"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:15
+msgid "Tenga en cuenta que no hay problema al usar espacios para separar palabras"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:16
+msgid "Una cadena tiene una longitud asociada"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:17
+msgid "Podemos obtener el tamaño a través de la función de ``len`` incorporada en Python"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:24
+msgid "Podemos acceder a los caracteres en la cadena usando un número entero para representar su posición en la cadena"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:26
+msgid "Este número se llama índice y comenzamos a contar desde cero"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:27
+msgid "Accedemos al carácter proporcionando el índice entre corchetes ``[]``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_11.rst:38
+msgid "**Precaución**: no podemos acceder a un índice mayor que la cantidad de caracteres de cadena"
+msgstr ""

@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:2
+msgid "Ejercicio"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:4
+msgid "Cambie el programa anterior para que pueda ingresar un valor e ingresar correr por n veces en lugar del valor 10. Asigne ese valor a una variable llamada ``n``."
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:6
+msgid "**Debe llamar su variable n para que su programa pase la prueba, de lo contrario dará error.**"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:34
+msgid "Resumen"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:36
+msgid "La descripción de una secuencia de pasos para resolver un problema se llama algoritmo computacional."
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:38
+msgid "Los algoritmos son programas (software) que determinan que hará la computadora (hardware)."
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:40
+msgid "El proceso de creación de software se llama programación."
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:44
+msgid "Recuerde"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:46
+msgid "Los lenguajes de programación tienen una sintaxis formal"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:47
+msgid "Las computadoras solo entienden el lenguaje de máquina"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:48
+msgid "Python es un lenguaje interpretado de alto nivel"
+msgstr ""
+
+#: ../_sources/lectures/TWP38/TWP38_4.rst:49
+msgid "El intérprete de Python convierte los comandos instrucción por instrucción a lenguaje máquina"
+msgstr ""

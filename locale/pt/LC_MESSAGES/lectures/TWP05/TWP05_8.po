@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:2
+msgid "Variables lógicas"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:4
+msgid "Podemos almacenar verdadero y falso"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:5
+msgid "Las variables de este tipo se llaman lógicas o booleanas"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:6
+msgid ""
+"En Python podemos inicializar variables de este tipo con ``True`` o "
+"``False``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:7
+msgid ""
+"Tenga en cuenta que la T y la F están en mayúsculas, cualquier otra forma"
+" genera un error de sintaxis"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:11
+msgid "Operadores relacionales"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:13
+msgid "**Operadores relacionales**"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:17
+msgid "Operador"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:17
+msgid "Operación"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:17
+msgid "Símbolo matemático equivalente"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:19
+msgid "=="
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:19
+msgid "igual"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:19
+msgid "="
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:20
+msgid ">"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:20
+msgid "mayor que"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:21
+msgid "<"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:21
+msgid "menor que"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:22
+msgid "!="
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:22
+msgid "diferente"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:22
+msgid "<>"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:23
+msgid ">="
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:23
+msgid "mayor o igual"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:24
+msgid "<="
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:24
+msgid "menor o igual"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:27
+msgid "Tenga en cuenta que el operador de igualdad son dos iguales (``==``)"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:30
+msgid "Ejemplos:"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:48
+msgid "Ejemplo importante"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:50
+msgid ">= o <= para valores iguales"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:58
+msgid "Ejemplo"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_8.rst:60
+msgid ""
+"Podemos usar operadores relacionales para inicializar variables del tipo "
+"lógico"
+msgstr ""
+

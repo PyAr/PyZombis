@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:2
+msgid "Prueba de escritorio o simulación"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:4
+msgid ""
+"Comprender que el valor de las variables puede cambiar durante la "
+"ejecución de un programa no es tan natural, pero es fundamental a la hora"
+" de programar"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:6
+msgid ""
+"Un programa no puede leerse como texto, sino con cuidado analizando línea"
+" por línea"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:8
+msgid "Puedes entrenar con lápiz, borrador y papel"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:11
+msgid "**Prueba de mesa o simulación**"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:16
+msgid "deuda"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:16
+msgid "compra"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:16
+msgid "Pantalla"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:18
+msgid "-0-"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:18
+#: ../_sources/lectures/TWP05/TWP05_14.rst:19
+msgid "-100-"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:18
+#: ../_sources/lectures/TWP05/TWP05_14.rst:21
+msgid "600"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:19
+msgid "-200-"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:20
+msgid "-300-"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:20
+msgid "300"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_14.rst:26
+msgid "No tengas prisa por la prueba de escritorio"
+msgstr ""
+

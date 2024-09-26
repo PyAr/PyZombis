@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:2
+msgid "Variables numéricas"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:4
+msgid "Los enteros no tienen decimales: ``42``, ``-7``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:5
+msgid "Los valores del tipo entero en Python se llaman ``int``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:6
+msgid "Los números en coma flotante tienen decimales: ``1.0``, ``3.1415``, ``1234.56``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:8
+msgid "Tenga en cuenta que ``1.0``, incluso teniendo cero en la parte decimal, es un número en punto flotante"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:10
+msgid "Los valores de tipo coma flotante en Python se llaman ``float``."
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:14
+msgid "Representación de valores numéricos"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:16
+msgid "Internamente todos los números son representados con el sistema binario"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:18
+msgid "Este sistema permite solo los dígitos ``0`` o ``1``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:19
+msgid "Los números en punto flotante pueden no tener una correcta representación en el sistema binario"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:21
+msgid "Tecleando en el intérprete ``3 * 0.1`` tendremos como respuesta: ``0.30000000000000004``"
+msgstr ""
+
+#: ../_sources/lectures/TWP05/TWP05_7.rst:23
+msgid "**¡Pruebelo aquí!**"
+msgstr ""

@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/quiz/QuizExtras2.rst:3
+msgid "Quiz - Extras 2"
+msgstr ""
+
+#: ../_sources/quiz/QuizExtras2.rst:17
+msgid ""
+"Una escuela primaria tiene planeado hacer una visita al zoológico a "
+"algunos de sus alumnos. Para esto la escuela solo puede gastar "
+"exactamente ``presupuesto`` unidades. Se sabe que la entrada al zoológico"
+" cuesta 5 unidades para menores de 12 años y 7 unidades para los que "
+"tengan 12 años o más. Desarrolle la función ``maximo_estudiantes`` que "
+"recibe ``presupuesto`` un entero positivo que indica el presupuesto que "
+"pretende gasta la escuela. La función debe devolver una tupla ``(p, g)`` "
+"con el número máximo pequeños y grandes alumnos que la escuela puede "
+"llevar al zoológico considerando todos los valores como enteros. |br| "
+"|br|"
+msgstr ""
+
+#: ../_sources/quiz/QuizExtras2.rst:48
+msgid ""
+"Desarrolle la función ``a_romano`` que recibe un entero ``n`` positivo "
+"mayor que cero. La función debe devolver la conversión del número en "
+"sistema arábigo al sistema a romano. La función debe devolver una cadena "
+"que represente el número en romano. |br| |br| Ejemplos: |br| "
+"``a_romano(5)`` -> ``\"V\"`` |br| ``a_romano(10)`` -> ``\"X\"`` |br| "
+"``a_romano(25)`` -> ``\"XXV\"`` |br| ``a_romano(2011)`` -> ``\"MMXI\"`` "
+"|br|"
+msgstr ""
+
+#: ../_sources/quiz/QuizExtras2.rst:88
+msgid ""
+"Desarrolle la función ``calcular_pi`` que recibe un parámetro ``n`` "
+"positivo mayor a 0. La función debe calcular el valor aproximado de "
+"``pi`` con ``n`` terminos, de acuerdo con la siguiente fórmula. |br|"
+msgstr ""
+
+#: ../_sources/quiz/QuizExtras2.rst:90
+msgid "``pi = (4/1) - (4/3) + (4/5) - (4/7) ...`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/QuizExtras2.rst:92
+msgid ""
+"El resultado debe ser redondeado a 2 decimales y devuelto como una "
+"cadena. |br| |br|"
+msgstr ""
+
+#: ../_sources/quiz/QuizExtras2.rst:94
+msgid ""
+"Ejemplos: |br| ``calcular_pi(4)`` -> ``\"2.90\"`` |br| *Explicación*: Los"
+" primero 4 términos siguiendo la formula son: ``(4/1) - (4/3) + (4/5) - "
+"(4/7)`` que dan como resultado ``2.895238095``, redondeando a dos "
+"decimales el resultado final sería ``2.90`` |br| ``calcular_pi(24)`` -> "
+"``\"3.10\"`` |br| ``calcular_pi(61)`` -> ``\"3.16\"`` |br| "
+"``calcular_pi(100)`` -> ``\"3.13\"`` |br|"
+msgstr ""
+

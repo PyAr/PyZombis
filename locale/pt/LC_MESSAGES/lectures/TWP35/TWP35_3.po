@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:2
+#: ../_sources/lectures/TWP35/TWP35_3.rst:14
+msgid "Programa con funciones"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:5
+msgid "Funciones"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:7
+msgid "Las funciones son códigos compartibles"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:8
+msgid "Defino un nombre y llamo a la función en todo el programa"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:9
+msgid "La función debe estar definida antes de poder llamarla"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:10
+msgid ""
+"Si desea devolver un valor al sujeto que llama la función, debe usa el "
+"comando de retorno ``return``"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:44
+msgid "No hay preguntas tontas"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:47
+msgid ""
+"¿Es el comando de retorno lo mismo que imprimir? No, ``print()`` muestra "
+"algo en la pantalla, mientras que ``return`` devuelve un valor para quien"
+" llamó a la función."
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:49
+msgid ""
+"Si no hay ``return`` dentro de la función, ¿qué devuelve? Deuelve nada: "
+"``None``. ¿Debería ``return`` siempre aparecer al final de la función? No"
+" siempre, depende de la lógica de la función"
+msgstr ""
+
+#: ../_sources/lectures/TWP35/TWP35_3.rst:52
+msgid ""
+"¿Puede una función devolver más de un valor? Sí, incluidas listas o "
+"diccionarios."
+msgstr ""
+

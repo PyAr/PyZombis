@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP54/TWP54_1.rst:2
+msgid "Introducción a las excepciones"
+msgstr ""
+
+#: ../_sources/lectures/TWP54/TWP54_1.rst:11
+msgid "A veces las cosas salen mal. Y necesitas tratarlas."
+msgstr ""
+
+#: ../_sources/lectures/TWP54/TWP54_1.rst:13
+msgid "Siempre hay cosas que están fuera de tu control. Las redes fallan. Los archivos desaparecen."
+msgstr ""
+
+#: ../_sources/lectures/TWP54/TWP54_1.rst:16
+msgid "Los códigos inteligentes aprenden a lidiar con estos errores y hacen que programa para recuperarse sin problemas."
+msgstr ""
+
+#: ../_sources/lectures/TWP54/TWP54_1.rst:21
+msgid "¡Qué mal olor!"
+msgstr ""

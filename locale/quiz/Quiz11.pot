@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/quiz/Quiz11.rst:3
+msgid "Quiz - 11"
+msgstr ""
+
+#: ../_sources/quiz/Quiz11.rst:16
+msgid "Desarrolle la función ``verbo`` que recibe una cadena ``s`` como parámetro. Si la longitud de la cadena es al menos 3, debe devolver la cadena original concatenando ``\"ing\"`` al final. Si la cadena ``s`` ya termina en ``\"ing\"``, concatene la cadena ``\"ly\"``. Si la longitud de la cadena es menor que 3, devuelve la cadena original. |br| |br| Ejemplos: |br| ``verbo(\"singing\")`` -> ``\"singingly\"`` |br| ``verbo(\"travel\")`` -> ``\"traveling\"`` |br| ``verbo(\"do\")`` -> ``\"do\"`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz11.rst:51
+msgid "Desarrolle la función ``no_es_malo`` que recibe una cadena ``s`` como parámetro. La función debe buscar la primera aparición de la cadena ``\"no es\"`` y la última aparición de la cadena ``\"malo\"`` o la cadena ``\"mala\"``, si alguna de ellas aparece después de la primera, reemplace ``\"no es\" ... \"malo\"`` o ``\"no es\" ... \"mala\"`` por las cadenas ``\"es bueno\"`` o ``\"es buena\"`` respectivamente, luego devuelva el resultado. |br| |br| Ejemplos: |br| ``no_es_malo(\"El té no es malo\")`` -> ``\"El té es bueno\"`` |br| ``no_es_malo(\"La película no es mala\")`` -> ``\"La película es buena\"`` |br| ``no_es_malo(\"El precio de esta casa no es para nada malo\")`` -> ``\"El precio de esta casa es bueno\"`` |br| ``no_es_malo(\"El teléfono es malo\")`` -> ``\"El teléfono es malo\"`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz11.rst:111
+msgid "Desarrolle la función ``inicio_final`` que recibe dos cadenas ``a`` y ``b``. Las cadenas tienen que ser dividas en dos, si alguna de las cadenas tiene un número impar de caracteres, la primera mitad será la subcadena más larga (por ejemplo ``perro`` se dividirá entre: ``per`` y ``ro``). Dada las dos cadenas, devuelva una nueva cadena formada de la siguiente manera ``a_inicio + b_inicio + a_final + b_final``. |br| |br| Ejemplos: |br| ``inicio_final(\"abcd\", \"1234\")`` -> ``\"ab12cd34\"`` |br| ``inicio_final(\"abc\", \"1234\")`` -> ``\"ab12c34\"`` |br| ``inicio_final(\"abc\", \"123\")`` -> ``\"ab12c3\"`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz11.rst:152
+msgid "Desarrolle la función ``cuantos_ceros`` que dado un entero ``n`` positivo, devuelva la cantidad de ceros al final del entero ``n``. |br| |br| Ejemplos: |br| ``cuantos_ceros(10010)`` -> ``1`` |br| ``cuantos_ceros(908007000)`` -> ``3`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz11.rst:189
+msgid "Desarrolle la función ``contar_2`` que recibe un entero ``n`` positivo mayor que 0. La función debe devolver la cantidad de veces que el dígito 2 aparece en el intervalo ``[0, n-1]``. |br| |br| Ejemplos: |br| ``contar_2(20)`` -> ``2`` |br| ``contar_2(5)`` -> ``1`` |br| ``contar_2(1)`` -> ``0`` |br|"
+msgstr ""
+
+#: ../_sources/quiz/Quiz11.rst:222
+msgid "Desarrolle la función ``inicio_potencia`` que recibe un entero ``n`` positivo mayor que 0. La función debe devolver la primera potencia de 2 que comienza con ``n``. |br| |br| Ejemplos: |br| ``inicio_potencia(65)`` -> ``16`` |br| *Explicación*: para ``n = 65`` la potencia ``2^16`` da como resultado ``65536`` que contiene a ``n`` al comienzo. |br| |br| ``inicio_potencia(4)`` -> ``2`` |br| *Explicación*: para ``n = 4`` la potencia ``2^2`` da como resultado ``4`` que contiene a ``n`` al comienzo. |br| |br| ``inicio_potencia(3)`` -> ``5`` |br| *Explicación*: para ``n = 3`` la potencia ``2^5`` da como resultado ``32`` que contiene a ``n`` al comienzo. |br|"
+msgstr ""

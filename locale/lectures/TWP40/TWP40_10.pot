@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Python Argentina et al.
+# This file is distributed under the same license as the Python para Zombis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python para Zombis c197793c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-25 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:2
+msgid "Ejercicio"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:4
+msgid "Queremos desarrollar un programa que determine el valor futuro de una inversión, dado el valor inicial y la tasa de interés"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:5
+msgid "Seguimos los pasos para el desarrollo."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:12
+msgid "Análisis:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:9
+msgid "El dinero inicial genera una tasa de interés anual"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:10
+msgid "¿Cuánto valdrá en 10 años?"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:11
+msgid "Entrada: monto inicial, tasa de interés"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:12
+msgid "Salida: valor en 10 años"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:17
+msgid "Especificación:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:15
+msgid "El usuario ingresa la cantidad inicial invertida"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:16
+msgid "El usuario ingresa la tasa de interés anual"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:17
+msgid "Valor de la fórmula matemática financiera * (1 + interés)"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:24
+msgid "Diseño:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:20
+msgid "Ingrese el monto de inversión inicial."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:21
+msgid "Ingrese la tasa de interés."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:22
+msgid "Repite 10 veces:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:23
+msgid "valor inicial = valor inicial * (1 + tasa de interés)"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:24
+msgid "Imprime el valor actualizado."
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:29
+msgid "Implementación:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:29
+msgid "Valores de prueba:"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:28
+msgid "1000 dolares de inversión y 3% la tasa de interés anual"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:29
+msgid "1000 dolares de inversión y 10% la tasa de interés anual"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:43
+msgid "Preguntas frecuentes"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:45
+msgid "¿Por qué definir algunas pruebas antes de la implementación es una buena práctica de programación?"
+msgstr ""
+
+#: ../_sources/lectures/TWP40/TWP40_10.rst:46
+msgid "¿Cuál es la ventaja de escribir pseudocódigo en la etapa de diseño?"
+msgstr ""
