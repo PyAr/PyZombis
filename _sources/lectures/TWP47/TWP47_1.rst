@@ -23,30 +23,47 @@ Archivo Transactions.txt
 Venta Salgados
 --------------
 
-.. code-block:: python
+.. datafile:: transacoes.txt
+   :rows: 10
+   :cols: 20
+   :edit:
+   :hide:
 
-   def salva_transacao(precio, tarjeta_de_credito, descripcion):
-      file = open('transacoes.txt',"a")
-      file.write("%16s%07d%16s\n" %(tarjeta_de_credito,precio*100,descripcion))
-      file.close()
 
+
+
+.. activecode:: ac_l47_01
+   :nocodelens:
+   :datafile: transacoes.txt
+   :stdin:
+
+
+   def salva_transacao(file,precio, tarjeta_de_credito, descripcion):
+      file.write("%16s %07d %16s\n" %(tarjeta_de_credito,precio*100,descripcion))
+
+
+   file = open('transacoes.txt',"a")
    articulos = ["Sfiha","Cocina","Pastel","Pan de queso"]
    precios = [1.50,2.20,1.80,1.20]
    corriendo = True
 
+   opcion = 1
+   for elegir in articulos:
+      print(str(opcion) + "." + elegir)
+      opcion += 1
+   print(str(opcion) + ".Finalizar")
+
    while corriendo:
-      opción = 1
-      for elegir in alrticulos					:
-         print(str(opcion) + "." + elegir)
-         opcao += 1
-      print(str(opcion) + ".Finalizar")
       elegir = int(input("Escoja una opción: "))
-      if elegir == opcion:
+      if elegir == 5:
          #escolheu a ultima opcion Finalizar
          corriendo = False
       else:
          credito = input("Número de tarjeta de crédito: ")
-         guardar_transacción(precios[elegir-1],tarjeta,articulos[elegir-1]) 
+         salva_transacao(file,precios[elegir-1],credito,articulos[elegir-1])
+      print()
+
+   file.close()
 
 
 .. image:: ../img/TWP47_004.jpg
