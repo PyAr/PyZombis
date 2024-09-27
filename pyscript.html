@@ -1,0 +1,53 @@
+<div>
+    <iframe height="600px" width="100%" srcdoc='
+        <!DOCTYPE html>
+            <html>
+            <head>
+                <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+                <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+                <style>
+                    .py-repl-run-button{opacity: 1;}
+                    .py-repl-output{margin-top: 1rem;background-color: #000;color: #fff;font-family: monospace;padding: 0.5rem;min-height: 10em;overflow: auto;}
+                </style>
+            </head>
+            <body>
+                <py-config>
+                    terminal = false
+                    packages = ["pandas", "matplotlib", "numpy"]
+                </py-config>
+                <py-repl id="code"> 
+                </py-repl>
+                
+            </body>
+            </html>'
+            style="border: 8px solid #ccc;border-radius: 10px;"
+        >
+    </iframe>
+</div>
+
+<!-- import pandas as pd
+
+# Create a dictionary of data
+data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Age': [25, 30, 35, 40],
+        'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']}
+
+# Create a DataFrame from the dictionary
+df = pd.DataFrame(data)
+
+# Print the DataFrame
+print("Original DataFrame:")
+print(df)
+print()
+
+# Add a new column
+df['Salary'] = [50000, 60000, 70000, 80000]
+
+# Print the modified DataFrame
+print("DataFrame with Salary column added:")
+print(df)
+print()
+
+# Calculate the average age
+average_age = df['Age'].mean()
+print("Average age:", average_age) -->
