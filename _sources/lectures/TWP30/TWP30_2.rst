@@ -12,7 +12,6 @@ Adivinando números
 ------------------
 
 .. activecode:: ac_l30_2
-    :nocodelens:
     :stdin:
 
     print("Bienvenido!")

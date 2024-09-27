@@ -8,7 +8,6 @@
 
 
 .. activecode:: ac_l23_6
-    :nocodelens:
     :available_files: alice_archivo.txt
     :Language: python
 
