@@ -22,7 +22,7 @@ def test_quiz10_3_en(page):
 
     # Do the exercise
     page.click("text=Exercise 3")
-    page.click("text=def remplazar_primer_caracter(s):")
+    page.click("text=def replace_first_character(s):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
     page.keyboard.type("return s[0] + s[1:].replace(s[0], '*')")

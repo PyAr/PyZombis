@@ -22,11 +22,11 @@ def test_quiz2_2_en(page):
 
     # Do the exercise
     page.click("text=Exercise 2")
-    page.click("text=def es_bisiesto(anio):")
+    page.click("text=def is_leap(year):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
     page.keyboard.type(
-        "return anio % 4 == 0 and (anio % 100 != 0 or anio % 400 == 0)")
+        "return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)")
 
     # Run the exercise and check it passed all unit tests
     page.click("#q2_2_en >> *css=button >> text=Run")

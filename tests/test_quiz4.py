@@ -21,7 +21,7 @@ def test_quiz4_en(page):
     page.goto("quiz/Quiz4_en.html")
 
     # Do the exercise
-    page.click("text=def valores_extremos(numeros):")
+    page.click("text=def extreme_values(numbers):")
     page.keyboard.press("ArrowDown")
     page.keyboard.press("Tab")
     page.keyboard.type("return (max(numeros), min(numeros))")
