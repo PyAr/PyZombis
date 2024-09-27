@@ -64,12 +64,16 @@ def context(
     yield context
     current_video_name = context.current_video_name
     current_video_path = current_video_name
-    updated_video_path = os.path.join(video_path, f"{request.node.originalname}_{browser_name}.webm")
+    updated_video_path = os.path.join(
+        video_path, f"{request.node.originalname}_{browser_name}.webm"
+    )
     context.close()
     os.rename(current_video_path, updated_video_path)
 
 
-def _handle_page_goto(page: Page, args: List[Any], kwargs: Dict[str, Any], base_url: str) -> None:
+def _handle_page_goto(
+    page: Page, args: List[Any], kwargs: Dict[str, Any], base_url: str
+) -> None:
     url = args.pop()
     if not (url.startswith("http://") or url.startswith("https://")):
         url = base_url + url
